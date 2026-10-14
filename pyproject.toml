@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prism-business-news-api"
+version = "0.2.0"
+description = "Prism Business News Exploration API — business news, company events, funding and measured trends"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "Proprietary. © Fliar Business Intelligence. All rights reserved."}
+authors = [{name = "Fliar Business Intelligence"}]
+dependencies = [
+  "prism-news-api @ git+ssh://git@github.com/fliarbi/prism-news-api.git@e4023780605a4b1e81e977e02c65f17f6337c713",
+  "fastapi>=0.115,<0.117",
+  "uvicorn>=0.30",
+  "gunicorn>=21",
+  "pydantic>=2.7,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27"]
+
+[tool.setuptools]
+packages = ["prism_business_api", "prism_business_api.features"]
+
+[tool.setuptools.package-data]
+prism_business_api = ["data/*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
