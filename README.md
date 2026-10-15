@@ -110,11 +110,6 @@ official client interfaces or claims of live service availability. Open the
 </table>
 <!-- demos:end -->
 
-
-
-
-
-
 ## Running the service
 
 Copy `.env.example` to `.env` and fill in the deployment's addresses, credentials and table names. `.env` is never committed. Then:
