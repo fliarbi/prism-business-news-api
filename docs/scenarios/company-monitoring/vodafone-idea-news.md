@@ -111,12 +111,12 @@ prism-business-news events --company myvi.in --since 2026-01-01 --until 2026-04-
 The first request with curl, and the second in Python:
 
 ```bash
-curl -sS --get "$API_BASE/v1/business/companies/myvi.in/news" -H "X-API-Key: $PRISM_API_KEY" --data-urlencode 'since=2026-01-01' --data-urlencode 'until=2026-04-30' --data-urlencode 'limit=12'
+curl -sS --get "$PRISM_BUSINESS_API_BASE/v1/business/companies/myvi.in/news" -H "X-API-Key: $PRISM_API_KEY" --data-urlencode 'since=2026-01-01' --data-urlencode 'until=2026-04-30' --data-urlencode 'limit=12'
 ```
 
 ```python
 import os, requests
-r = requests.post(os.environ["API_BASE"] + "/v1/business/event-trends", headers={"X-API-Key": os.environ["PRISM_API_KEY"]},
+r = requests.post(os.environ.get("PRISM_BUSINESS_API_BASE", "https://radar-api.fliarbi.com/business-news") + "/v1/business/event-trends", headers={"X-API-Key": os.environ["PRISM_API_KEY"]},
                   json={"company": "myvi.in", "since": "2025-05-01", "until": "2026-04-30", "granularity": "monthly"}, timeout=60)
 print(r.json()["data"])
 ```

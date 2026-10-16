@@ -247,9 +247,9 @@ def cli_lines(s: dict) -> list[str]:
 
 def run_it(s: dict) -> str:
     first = s["calls"][0]
-    curl = (f"curl -sS --get \"$API_BASE{first['path']}\" -H \"X-API-Key: $PRISM_API_KEY\" " +
+    curl = (f"curl -sS --get \"$PRISM_BUSINESS_API_BASE{first['path']}\" -H \"X-API-Key: $PRISM_API_KEY\" " +
             " ".join(f"--data-urlencode '{k}={v}'" for k, v in first["body"].items())) if first["method"] == "GET" else \
-        (f"curl -sS \"$API_BASE{first['path']}\" -H \"X-API-Key: $PRISM_API_KEY\" -H 'Content-Type: application/json' \\\n  -d '{json.dumps(first['body'])}'")
+        (f"curl -sS \"$PRISM_BUSINESS_API_BASE{first['path']}\" -H \"X-API-Key: $PRISM_API_KEY\" -H 'Content-Type: application/json' \\\n  -d '{json.dumps(first['body'])}'")
     second = s["calls"][1]
     return f"""## Run it yourself
 
@@ -267,7 +267,7 @@ The first request with curl, and the second in Python:
 
 ```python
 import os, requests
-r = requests.{second['method'].lower()}(os.environ["API_BASE"] + "{second['path']}", headers={{"X-API-Key": os.environ["PRISM_API_KEY"]}},
+r = requests.{second['method'].lower()}(os.environ.get("PRISM_BUSINESS_API_BASE", "https://radar-api.fliarbi.com/business-news") + "{second['path']}", headers={{"X-API-Key": os.environ["PRISM_API_KEY"]}},
                   {'json' if second['method'] == 'POST' else 'params'}={json.dumps(second['body'])}, timeout=60)
 print(r.json()["data"])
 ```

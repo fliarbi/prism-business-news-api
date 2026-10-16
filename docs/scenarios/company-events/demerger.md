@@ -66,13 +66,13 @@ prism-business-news sentiment --event-type company_announcement --event-type ma 
 The first request with curl, and the second in Python:
 
 ```bash
-curl -sS "$API_BASE/v1/business/event-trends" -H "X-API-Key: $PRISM_API_KEY" -H 'Content-Type: application/json' \
+curl -sS "$PRISM_BUSINESS_API_BASE/v1/business/event-trends" -H "X-API-Key: $PRISM_API_KEY" -H 'Content-Type: application/json' \
   -d '{"event_type": ["company_announcement", "ma"], "q": "demerger", "since": "2025-05-01", "until": "2026-04-30", "granularity": "monthly"}'
 ```
 
 ```python
 import os, requests
-r = requests.post(os.environ["API_BASE"] + "/v1/business/events", headers={"X-API-Key": os.environ["PRISM_API_KEY"]},
+r = requests.post(os.environ.get("PRISM_BUSINESS_API_BASE", "https://radar-api.fliarbi.com/business-news") + "/v1/business/events", headers={"X-API-Key": os.environ["PRISM_API_KEY"]},
                   json={"event_type": ["company_announcement", "ma"], "q": "demerger", "since": "2026-01-01", "until": "2026-04-30", "sort": "newest", "limit": 15, "resolve": true}, timeout=60)
 print(r.json()["data"])
 ```

@@ -25,20 +25,20 @@ Search business headlines, monitor company events, and analyze funding deals. Th
 
 1. Sign in to the [Fliar dashboard](https://fliarbi.com/radar/dashboard?tab=radarapi), open **API keys** (in the Radar or the Fliar Prism workspace) and choose **Create or manage API keys**. On the key page, choose **Connect Radar session**, pick **All data** or **News only** access and create a key. It starts with `rdr_` and also works on the Radar API.
 2. You receive the key once; copy it when shown. The same key works on the general News API.
-3. Set `API_BASE=https://radar-api.fliarbi.com/business-news` and `PRISM_API_KEY` to the issued key. Keep the key private and out of public application code.
+3. Set `PRISM_BUSINESS_API_BASE=https://radar-api.fliarbi.com/business-news` and `PRISM_API_KEY` to the issued key. Keep the key private and out of public application code.
 
 ```bash
-API_BASE=https://radar-api.fliarbi.com/business-news
+PRISM_BUSINESS_API_BASE=https://radar-api.fliarbi.com/business-news
 read -r -s -p 'API key: ' PRISM_API_KEY
-export API_BASE PRISM_API_KEY
+export PRISM_BUSINESS_API_BASE PRISM_API_KEY
 
-curl -sS "$API_BASE/v1/me" -H "X-API-Key: $PRISM_API_KEY"
+curl -sS "$PRISM_BUSINESS_API_BASE/v1/me" -H "X-API-Key: $PRISM_API_KEY"
 ```
 
 Either `X-API-Key` or `Authorization: Bearer` is accepted:
 
 ```bash
-curl -sS --get "$API_BASE/v1/business/headlines" \
+curl -sS --get "$PRISM_BUSINESS_API_BASE/v1/business/headlines" \
   -H "Authorization: Bearer $PRISM_API_KEY" \
   --data-urlencode 'q=acquisition' --data-urlencode 'limit=100'
 ```
@@ -51,7 +51,7 @@ The Python examples use `requests` and this helper. `GET/POST` endpoints accept 
 import os
 import requests
 
-BASE = os.environ["API_BASE"].rstrip("/")
+BASE = os.environ.get("PRISM_BUSINESS_API_BASE", "https://radar-api.fliarbi.com/business-news")
 session = requests.Session()
 session.headers["X-API-Key"] = os.environ["PRISM_API_KEY"]
 
@@ -98,12 +98,12 @@ Business headline, theme, sentiment and trend requests default to GCP content pa
 GCP content codes represent public standardized content paths. Code **`0`** is `/News/Business News/Company News`, and is a valid filter even though its value is zero.
 
 ```bash
-curl -sS --get "$API_BASE/v1/classes" \
+curl -sS --get "$PRISM_BUSINESS_API_BASE/v1/classes" \
   -H "X-API-Key: $PRISM_API_KEY" \
   --data-urlencode 'q=company' --data-urlencode 'limit=5'
-curl -sS "$API_BASE/v1/classes/0" -H "X-API-Key: $PRISM_API_KEY"
+curl -sS "$PRISM_BUSINESS_API_BASE/v1/classes/0" -H "X-API-Key: $PRISM_API_KEY"
 
-curl -sS "$API_BASE/v1/business/headlines" \
+curl -sS "$PRISM_BUSINESS_API_BASE/v1/business/headlines" \
   -H "X-API-Key: $PRISM_API_KEY" -H 'Content-Type: application/json' \
   --data '{"q":"acquisition","sentiment":"negative","priority_min":7,"classes":[0],"limit":100}'
 ```
@@ -179,7 +179,7 @@ Headlines, single articles and exports **do not return theme metadata**. Select 
 ## Company events
 
 ```bash
-curl -sS --get "$API_BASE/v1/business/events" \
+curl -sS --get "$PRISM_BUSINESS_API_BASE/v1/business/events" \
   -H "X-API-Key: $PRISM_API_KEY" \
   --data-urlencode 'company=amazon.com' \
   --data-urlencode 'event_type=layoffs,ipo' \
@@ -256,7 +256,7 @@ The aggregation window is at most **366 days**, possibly shorter under account l
 ### Business overview
 
 ```bash
-curl -sS "$API_BASE/v1/business/overview" \
+curl -sS "$PRISM_BUSINESS_API_BASE/v1/business/overview" \
   -H "X-API-Key: $PRISM_API_KEY" -H 'Content-Type: application/json' \
   --data '{"q":"acquisition","sentiment":"negative","priority_min":7,"classes":[0]}'
 ```
@@ -425,7 +425,7 @@ The article count is supplied by Fliar; query counts reflect the available match
 
 `/v1/me` gives your effective limits and usage. Both APIs and all account keys share request, delivered-article and rate allowances. Monthly allowances reset on the first day of the UTC month. Draft plans and prices do not imply an active checkout or public launch.
 
-Headlines and exports default to 100 on every plan. Caps are 100 for Free/Pro, 500 for Business and 1,000 for Enterprise; verify your own `max_results` and `max_export_batch` in `/v1/me`. Theme and GCP discovery remain capped at five on every plan.
+Headlines and exports default to 100 on every plan. Caps are 100 for Free/Pro, 500 for Business and 1,000 for Enterprise; verify your own `max_results` and `max_export_batch` in `/v1/me`. Theme and GCP discovery remain capped at five on every plan. Each account may also run a limited number of requests at once (`concurrent_requests`: 2 on Free, 5 on Pro, 10 on Business, 25 on Enterprise); extra requests receive `429 rate_limited` with `Retry-After`. Usage levels lift the per-minute and concurrent limits as an account's lifetime prepaid credit usage grows (Growth from 10,000 credits, Scale from 100,000, Premier from 1,000,000); `/v1/me` returns `data.level` and the effective `data.limits`.
 
 Every business operation listed below uses monthly request allowance, including the three aggregations and the combined company briefing. Single articles and exports additionally consume allowance per full article delivered. Validation or data failures after metering can consume a request. Repeating a successful full-article request consumes export allowance again.
 
