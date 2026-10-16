@@ -440,6 +440,7 @@ Shared `/v1/me`, `/v1/status`, `/v1/vocabulary`, GCP code search and GCP code de
 | `429 rate_limited` | Honor `Retry-After` and reduce concurrency. |
 | `500 internal` / `502 upstream` | Retry a limited number of times with backoff; report persistent failures with sanitized request details. |
 | `503 coverage_unavailable` | Coverage could not be established; retry later, and do not record the result as zero. |
+| Note: *Part of the archive is temporarily offline* | The answer uses the available part of the archive; treat its counts as minimums. |
 
 Use bounded exponential backoff with jitter for transient failures, for example up to three retries with roughly 1, 2 and 4 seconds between attempts, or a longer `Retry-After`. Retries can consume request allowance. After a full-article or export timeout, check saved output and usage before repeating; there is no documented idempotency key.
 
