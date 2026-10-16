@@ -4,7 +4,7 @@ Explore business news within Fliar’s **450M+ news archive**. Archive size is s
 
 Search business coverage, monitor company events, and explore funding deals. Combine sentiment, priority, GCP content codes and themes to turn a broad news search into a focused reading list.
 
-**Private preview.** Production dashboard key issuance and the public API rollout are pending. Proposed API hosts are preview addresses, not confirmed live services. Use the business `API_BASE` supplied when access is granted. Plans are drafts; there is no active checkout.
+**Live.** Base URL `https://radar-api.fliarbi.com/business-news` (general news endpoints: `https://radar-api.fliarbi.com/news`). Create your own key in the Fliar dashboard; one key works on the Radar API and both News APIs. Free tier included; see [plans and prices](#plans-and-prices). While part of the archive is offline, answers say so in `meta.notes` and their counts are lower bounds.
 
 <!-- scenarios:start -->
 ## 200 worked demonstrations
@@ -78,15 +78,12 @@ official client interfaces or claims of live service availability. Open the
 
 Requires Bash, curl and Python 3.8+. The installer adds `prism-news` and
 `prism-business-news` (one client for both APIs) to `~/.local/bin`. It never uses
-sudo, edits shell profiles or starts services. During the private preview, export
-`GH_TOKEN` with **Contents: read** access to this repository, then run:
+sudo, edits shell profiles or starts services.
 
 ```bash
-bash -o pipefail -c 'curl -fsSL --config <(printf "header = \"Authorization: Bearer %s\"\n" "${GH_TOKEN:?Export GH_TOKEN first}") https://raw.githubusercontent.com/fliarbi/prism-business-news-api/main/scripts/install.sh | bash'
+curl -fsSL https://raw.githubusercontent.com/fliarbi/prism-business-news-api/main/scripts/install.sh | bash
 ```
 
-Once the repository is public, the same installer runs without a token:
-`curl -fsSL https://raw.githubusercontent.com/fliarbi/prism-business-news-api/main/scripts/install.sh | bash`.
 See [Getting started](docs/GETTING_STARTED.md) for options, every command and troubleshooting.
 
 ## Get started in five steps
@@ -111,10 +108,24 @@ See [Getting started](docs/GETTING_STARTED.md) for options, every command and tr
 | Business headlines | `prism-business-news headlines "layoffs" --priority-min 7 --table` | `POST /v1/business/headlines` |
 | Any endpoint | `prism-business-news call POST /v1/business/themes '{"q": "acquisition"}'` | any |
 
+## Plans and prices
+
+| Plan | Price / month (excl. GST) | Requests | Full-text exports | Headlines per call | History |
+|---|---|---:|---:|---:|---|
+| Free | ₹0 | 1,000 | 100 | 100 | Last 365 days |
+| Pro | ₹4,000 (US$49) | 25,000 | 2,500 | 100 | Full archive |
+| Business | ₹15,000 (US$180) | 150,000 | 15,000 | 500 | Full archive |
+| Enterprise | Custom | 2,000,000 | 200,000 | 1,000 | Full archive |
+
+One plan covers both the Prism News API and the Prism Business News API. Upgrade in the
+[Fliar dashboard](https://fliarbi.com/radar/dashboard?ws=marketai&tab=radarapi) under
+**API keys → Prism News API plans**; Enterprise is by arrangement with Fliar. `/v1/me`
+always shows the limits that apply to your key.
+
 ## Make a first request with curl or Python
 
 1. Sign in to the [Fliar dashboard](https://fliarbi.com/radar/dashboard?tab=radarapi), open **API keys** (in the Radar or the Fliar Prism workspace) and choose **Create or manage API keys**. On the key page, choose **Connect Radar session**, pick **All data** or **News only** access and create a key. It starts with `rdr_` and also works on the Radar API.
-2. Set `API_BASE` to the Business News API base URL supplied with your access and `PRISM_API_KEY` to your issued key. The two APIs use the same key and share account quotas.
+2. Set `API_BASE=https://radar-api.fliarbi.com/business-news` and `PRISM_API_KEY` to your issued key. The two APIs use the same key and share account quotas.
 3. Check access, then search:
 
 ```bash

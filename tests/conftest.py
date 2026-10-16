@@ -302,3 +302,11 @@ def general_client(fake_redis, fake_ch, stub_auth):
 
 def H(c):
     return {"X-API-Key": c.key}
+
+
+@pytest.fixture(autouse=True)
+def _strict_coverage_by_default(monkeypatch):
+    """Tests assume the strict coverage gate whatever the deployment's .env sets
+    (PRISM_SERVE_PARTIAL); partial-serving tests switch it on explicitly."""
+    from prism_news_api import config as _config
+    monkeypatch.setattr(_config, "PARTIAL_CAPTURE", False)

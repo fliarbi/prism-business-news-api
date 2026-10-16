@@ -4,7 +4,7 @@ Explore business news within Fliar’s **450M+ news archive**. Archive size is s
 
 Search business headlines, monitor company events, and analyze funding deals. This guide covers the business workflows and endpoint reference. The [shared News API guide](https://github.com/fliarbi/prism-news-api/blob/main/docs/USER_GUIDE.md) explains common filters, GCP content codes, export formats, quotas and errors in detail.
 
-**Access status: private preview.** Production dashboard key issuance and the public API rollout are pending. Proposed hosts are preview addresses, not confirmed live services. Use the business `API_BASE` supplied with your access. Plans and prices are drafts; there is no active checkout.
+**Access status: live.** Base URL `https://radar-api.fliarbi.com/business-news`; general news endpoints are at `https://radar-api.fliarbi.com/news`. Create a key in the Fliar dashboard under **API keys** (one key works on the Radar API and both News APIs). Free, Pro (₹4,000/month), Business (₹15,000/month) and Enterprise plans; prices exclude GST.
 
 ## Contents
 
@@ -25,10 +25,10 @@ Search business headlines, monitor company events, and analyze funding deals. Th
 
 1. Sign in to the [Fliar dashboard](https://fliarbi.com/radar/dashboard?tab=radarapi), open **API keys** (in the Radar or the Fliar Prism workspace) and choose **Create or manage API keys**. On the key page, choose **Connect Radar session**, pick **All data** or **News only** access and create a key. It starts with `rdr_` and also works on the Radar API.
 2. You receive the key once; copy it when shown. The same key works on the general News API.
-3. Set `API_BASE` to the Business News API base URL supplied with access and `PRISM_API_KEY` to the issued key. Keep the key private and out of public application code.
+3. Set `API_BASE=https://radar-api.fliarbi.com/business-news` and `PRISM_API_KEY` to the issued key. Keep the key private and out of public application code.
 
 ```bash
-read -r -p 'Business API base URL supplied with your access: ' API_BASE
+API_BASE=https://radar-api.fliarbi.com/business-news
 read -r -s -p 'API key: ' PRISM_API_KEY
 export API_BASE PRISM_API_KEY
 
@@ -425,7 +425,7 @@ Archive size is supplied by Fliar; query counts reflect the available matching c
 
 `/v1/me` gives your effective limits and usage. Both APIs and all account keys share request, delivered-article and rate allowances. Monthly allowances reset on the first day of the UTC month. Draft plans and prices do not imply an active checkout or public launch.
 
-Headlines and exports default to 100 on every plan. Current draft caps are 100 for Free/Pro, 500 for Business and 1,000 for Enterprise; verify your own `max_results` and `max_export_batch` in `/v1/me`. Theme and GCP discovery remain capped at five on every plan.
+Headlines and exports default to 100 on every plan. Caps are 100 for Free/Pro, 500 for Business and 1,000 for Enterprise; verify your own `max_results` and `max_export_batch` in `/v1/me`. Theme and GCP discovery remain capped at five on every plan.
 
 Every business operation listed below uses monthly request allowance, including the three aggregations and the combined company briefing. Single articles and exports additionally consume allowance per full article delivered. Validation or data failures after metering can consume a request. Repeating a successful full-article request consumes export allowance again.
 
@@ -435,7 +435,7 @@ Shared `/v1/me`, `/v1/status`, `/v1/vocabulary`, GCP code search and GCP code de
 |---|---|
 | `400 bad_request` | Correct parameters. Check discovery `q` and limit, domain-only company operations, unsupported filters, listing controls on summaries and cursor/sort consistency. |
 | `401 unauthenticated` / `invalid_key` | Supply a valid key header or replace the key through your access process. |
-| `402 quota_exceeded` | Inspect `/v1/me`; wait for reset or contact Fliar about access. There is no active checkout. |
+| `402 quota_exceeded` | Inspect `/v1/me`; wait for the monthly reset or upgrade in the Fliar dashboard under **API keys → Prism News API plans**. |
 | `404 no_data` | Read the reason; verify the route, dates, company and filters. A missing source article is possible even when an event/deal exists. |
 | `429 rate_limited` | Honor `Retry-After` and reduce concurrency. |
 | `500 internal` / `502 upstream` | Retry a limited number of times with backoff; report persistent failures with sanitized request details. |
@@ -467,7 +467,7 @@ All `/v1` endpoints require a key. Common news filters and business extras are d
 | `GET /v1/classes` | `q` or nonroot `prefix`, `limit=1–5` (default 5); bounded GCP code search. |
 | `GET /v1/classes/{code}` | Code detail, at most five children, no theme suggestions. Code `0` is valid. |
 | `GET /v1/classes/{code}/headlines` | Common news filters and a GCP code; 100 headlines by default. Metered. |
-| `GET /v1/vocabulary` | Static public sentiment/priority and request options; draft plan metadata, no dynamic dictionary. |
+| `GET /v1/vocabulary` | Static public sentiment/priority and request options; plan metadata, no dynamic dictionary. |
 | `GET /v1/me` | Key summary, access limits and usage. |
 | `GET /v1/status` | Public availability and freshness with publisher-supplied archive description. |
 
