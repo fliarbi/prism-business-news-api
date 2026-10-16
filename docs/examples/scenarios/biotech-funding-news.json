@@ -1,0 +1,2363 @@
+{
+ "slug": "biotech-funding-news",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:16Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "biotech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "biotech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 318,
+      "deals_with_amount": 298,
+      "deals_without_amount": 20,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 20622635700.0,
+      "median_amount_usd": 19700000.0,
+      "largest_amount_usd": 2000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 24,
+       "deals_with_amount": 21,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1144131200.0,
+       "median_amount_usd": 25000000.0,
+       "largest_amount_usd": 365000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 18,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 604934000.0,
+       "median_amount_usd": 14000000.0,
+       "largest_amount_usd": 135000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 523446000.0,
+       "median_amount_usd": 9580000.0,
+       "largest_amount_usd": 212112000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 35,
+       "deals_with_amount": 33,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 6335340600.0,
+       "median_amount_usd": 50000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 18,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 533022000.0,
+       "median_amount_usd": 8250000.0,
+       "largest_amount_usd": 213000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 36,
+       "deals_with_amount": 30,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1905535400.0,
+       "median_amount_usd": 18500000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 39,
+       "deals_with_amount": 37,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 3542856000.0,
+       "median_amount_usd": 20800000.0,
+       "largest_amount_usd": 1300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 34,
+       "deals_with_amount": 33,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1697572500.0,
+       "median_amount_usd": 14535000.0,
+       "largest_amount_usd": 284900000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 28,
+       "deals_with_amount": 28,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2080324000.0,
+       "median_amount_usd": 62250000.0,
+       "largest_amount_usd": 287000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 18,
+       "deals_with_amount": 18,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 760715000.0,
+       "median_amount_usd": 20840000.0,
+       "largest_amount_usd": 140000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 26,
+       "deals_with_amount": 25,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 626565000.0,
+       "median_amount_usd": 11308500.0,
+       "largest_amount_usd": 183600000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 22,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1200454000.0,
+       "median_amount_usd": 22250000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.035,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.04
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "biotech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "biotech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "aa2b860c9701dbd8",
+       "company_name": "royalty pharma",
+       "domain": "royaltypharma.com",
+       "round_type": "Funding partnership",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "revolution medicines",
+         "domain": "revmed.com",
+         "amount": 2000000000.0
+        }
+       ],
+       "sector": "Pharmaceutical, Biotech",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Funding partnership for development of daraxonrasib",
+       "source_sentence": "Royalty Pharma plc (NASDAQ:RPRX) entered a $2 billion funding partnership with Revolution Medicines for the development of daraxonrasib, a Phase 3 cancer therapy, including a synthetic royalty of up to $1.25 billion while allowing the partner to retain control over pipeline development.",
+       "published_at": "2025-08-29T08:54:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b4471c3ddf2630a8e47bdd"
+       ],
+       "article_id": "68b4471c3ddf2630a8e47bdd"
+      },
+      {
+       "id": "bdf28c3c44b2a47a",
+       "company_name": "halozyme therapeutics",
+       "domain": "halozyme.com",
+       "round_type": "convertible_debt",
+       "amount_usd": 1300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1300000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "biotech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Repurchase existing convertible notes maturing in 2027 and 2028; working capital, capital expenditures, and potential acquisition of Elektrofi, Inc.",
+       "source_sentence": "Halozyme Therapeutics, Inc. has priced two new tranches of convertible senior notes totaling $1.3 billion, a move that blends capital efficiency with strategic financial repositioning.",
+       "published_at": "2025-11-08T17:01:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "6997f53ea9a137bc0bdef12a"
+       ],
+       "article_id": "6997f53ea9a137bc0bdef12a"
+      },
+      {
+       "id": "044e6c32eef5f19e",
+       "company_name": "halozyme therapeutics",
+       "domain": "halozyme.com",
+       "round_type": "convertible senior notes",
+       "amount_usd": 1300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Qualified institutional buyers",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "biotech",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Repay existing 2027/2028 convertible notes; working capital; capital expenditures; potential acquisition of Elektrofi, Inc.",
+       "source_sentence": "Halozyme Therapeutics, Inc. (NASDAQ: HALO) announced the pricing of US$650 million aggregate principal amount of 0% convertible senior notes due 2031 and US$650 million aggregate principal amount of 0.875% convertible senior notes due 2032.",
+       "published_at": "2025-11-08T05:51:20",
+       "coverage_count": 2,
+       "article_ids": [
+        "69319b9534551716f0f22a76",
+        "69baeb0988a452392c427012"
+       ],
+       "article_id": "69319b9534551716f0f22a76"
+      },
+      {
+       "id": "365c81985b6f6624",
+       "company_name": "royalty pharma",
+       "domain": "royaltypharma.com",
+       "round_type": "Acquisition",
+       "amount_usd": 885000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 885000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Pharmaceutical, Biotech",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Acquisition of royalty interest in Amgen’s Imdelltra",
+       "source_sentence": "The company also acquired a royalty interest in Amgen’s Imdelltra, a DLL3-targeting bispecific T-cell engager for small cell lung cancer, for $885 million upfront, with options for additional royalties up to $65 million, expanding its oncology portfolio.",
+       "published_at": "2025-08-29T08:54:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b4471c3ddf2630a8e47bdd"
+       ],
+       "article_id": "68b4471c3ddf2630a8e47bdd"
+      },
+      {
+       "id": "8e68f0ab7631f405",
+       "company_name": "gerresheimer ag",
+       "domain": "gerresheimer.de",
+       "round_type": "revolving credit facility",
+       "amount_usd": 729000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 675000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "pharma biotech cosmetics",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "providing flexible financial structure for strategic investments",
+       "source_sentence": "Gerresheimer has improved the flexibility of its revolving credit facility of EUR 675 million",
+       "published_at": "2025-08-28T09:35:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c585d1f59f2fdc28884f21"
+       ],
+       "article_id": "68c585d1f59f2fdc28884f21"
+      },
+      {
+       "id": "de09336a8135d772",
+       "company_name": "gerresheimer ag",
+       "domain": "gerresheimer.de",
+       "round_type": "bridge financing",
+       "amount_usd": 567000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 525000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "pharma biotech cosmetics",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "optimising financial structure for predictable and flexible financial operations",
+       "source_sentence": "the remaining bridge financing of around EUR 525 million",
+       "published_at": "2025-08-28T09:35:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c585d1f59f2fdc28884f21"
+       ],
+       "article_id": "68c585d1f59f2fdc28884f21"
+      },
+      {
+       "id": "54d891ebd8a7b55c",
+       "company_name": "Canton Strategic Holdings",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 540000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to launch a digital asset treasury in Canton Coin",
+       "source_sentence": "US biotech firm Canton Strategic Holdings is raising $540m in capital to launch a digital asset treasury in Canton Coin.",
+       "published_at": "2025-11-10T10:30:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bca960ada7f1c36000267a"
+       ],
+       "article_id": "69bca960ada7f1c36000267a"
+      },
+      {
+       "id": "67c7770fece96533",
+       "company_name": "valneva",
+       "domain": "valneva.com",
+       "round_type": "loan agreement",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pharmakon advisors",
+         "domain": "pharmakonadvisors.com",
+         "amount": null
+        }
+       ],
+       "sector": "biotech",
+       "country": null,
+       "city": "Nantes",
+       "use_of_funds": "repay existing loan and support cash flow",
+       "source_sentence": "Valneva has secured a new loan agreement that will provide up to $500 million in non-dilutive financing from investment funds managed by Pharmakon Advisors.",
+       "published_at": "2025-10-07T10:27:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2c8db601121844c3e96bd"
+       ],
+       "article_id": "69e2c8db601121844c3e96bd"
+      },
+      {
+       "id": "c8cf668d506bee87",
+       "company_name": "maplight therapeutics",
+       "domain": "alvaradotherapeutics.com",
+       "round_type": "Series D",
+       "amount_usd": 372500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 372500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Forbion",
+         "domain": "forbion.com",
+         "amount": null
+        },
+        {
+         "name": "Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sanofi",
+         "domain": "sanofi.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "Avego Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "novo holdings",
+         "domain": "novoholdings.dk",
+         "amount": null
+        },
+        {
+         "name": "5am ventures",
+         "domain": "5amventures.com",
+         "amount": null
+        },
+        {
+         "name": "blue owl",
+         "domain": "blueowl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "USA",
+       "city": "California",
+       "use_of_funds": "Advance neuroscience drug pipeline",
+       "source_sentence": "MapLight Therapeutics, a California-based biotech startup targeting brain and central nervous system disorders, landed a colossal $372.5 million Series D round to advance its neuroscience drug pipeline.",
+       "published_at": "2025-08-01T23:55:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d974062c909880704baad6"
+       ],
+       "article_id": "68d974062c909880704baad6"
+      },
+      {
+       "id": "35e2675f28872578",
+       "company_name": "tubulis",
+       "domain": "tubulis.com",
+       "round_type": "Series C",
+       "amount_usd": 371520000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 344000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "janus henderson investors",
+         "domain": "janushenderson.com",
+         "amount": null
+        },
+        {
+         "name": "Blackstone Multi-Asset Investing",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "venrock healthcare capital partners",
+         "domain": "venrockcp.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "Ascenta Capital",
+         "domain": "ascentacap.com",
+         "amount": null
+        },
+        {
+         "name": "nextech invest",
+         "domain": "nextechinvest.com",
+         "amount": null
+        },
+        {
+         "name": "EQT Life Sciences",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "frazier life sciences",
+         "domain": "frazierhealthcare.com",
+         "amount": null
+        },
+        {
+         "name": "andera partners",
+         "domain": "anderapartners.com",
+         "amount": null
+        },
+        {
+         "name": "deep track capital",
+         "domain": "deeptrackcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Biotech is adding another 36 million euros to its Series C in the second closing to a total volume of 344 million euros.",
+       "published_at": "2025-11-03T15:47:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f40348d29a990b6f90346"
+       ],
+       "article_id": "698f40348d29a990b6f90346"
+      },
+      {
+       "id": "ff8b4c690ba496d9",
+       "company_name": "Pathos AI",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 365000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1600000000.0,
+       "currency": "USD",
+       "amount": 365000000.0,
+       "valuation": 1600000000.0,
+       "investors": [],
+       "sector": "AI-driven biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support the advancement of its clinical-stage pipeline and continued investment in its proprietary AI Foundation Model that is purpose-built for oncology",
+       "source_sentence": "Pathos AI, a leading AI-driven biotech company, raised $365 million in Series D financing, bringing its post-money valuation to approximately $1.6 billion.",
+       "published_at": "2025-05-19T17:25:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "69864891dac7b0ca9c5f3d14",
+        "6a0421c6220687a966b6b286"
+       ],
+       "article_id": "6a0421c6220687a966b6b286"
+      },
+      {
+       "id": "4c4784979c13c650",
+       "company_name": "tubulis",
+       "domain": "tubulis.com",
+       "round_type": "Series-C",
+       "amount_usd": 332640000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 308000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "venrock healthcare capital partners",
+         "domain": "venrockcp.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "Ascenta Capital",
+         "domain": "ascentacap.com",
+         "amount": null
+        },
+        {
+         "name": "nextech invest",
+         "domain": "nextechinvest.com",
+         "amount": null
+        },
+        {
+         "name": "EQT Life Sciences",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "frazier life sciences",
+         "domain": "frazierhealthcare.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "Germany",
+       "city": "Berlin/Hamburg",
+       "use_of_funds": null,
+       "source_sentence": "YPOG advised lead investor Venrock Healthcare Capital Partners on the successful series-C financing round of Martinsrieder Biotech company Tubulis. The round is worth EUR 308 million (USD 361 million) and is one of the largest private financing rounds for a European biotech company this year.",
+       "published_at": "2025-10-20T09:29:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "695e9ea6097627ca647b5b72"
+       ],
+       "article_id": "695e9ea6097627ca647b5b72"
+      },
+      {
+       "id": "1c219f853d7afe13",
+       "company_name": "Beeline Medicines",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "autoimmune and inflammatory disease therapies",
+       "source_sentence": "Beeline Medicines raises $300M Series A for precision autoimmune and inflammatory drug development",
+       "published_at": "2026-04-15T21:57:55",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e852757bb1410d4c6a2a53",
+        "69e8e26b5cfa3e5ba54f4498"
+       ],
+       "article_id": "69e852757bb1410d4c6a2a53"
+      },
+      {
+       "id": "7c6a9df5aaa494c2",
+       "company_name": "Corxel Pharmaceuticals",
+       "domain": null,
+       "round_type": "Series D1",
+       "amount_usd": 287000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 287000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sr one",
+         "domain": "srone.com",
+         "amount": null
+        },
+        {
+         "name": "TCGX Holdings",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "RA Capital",
+         "domain": "ra-capital.co",
+         "amount": null
+        },
+        {
+         "name": "rtw investments",
+         "domain": "rtwfunds.com",
+         "amount": null
+        },
+        {
+         "name": "Hengdian Group Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotech obesity drug",
+       "country": "USA",
+       "city": "New Jersey",
+       "use_of_funds": "Accelerate global testing of oral GLP‑1 therapy.",
+       "source_sentence": "Corxel Pharmaceuticals, a biotech startup developing an oral GLP‑1 obesity drug, announced a $287 million Series D1 on Jan. 22, 2026.",
+       "published_at": "2026-01-23T00:00:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "6985ebe5ca3bd326c7793b8f"
+       ],
+       "article_id": "6985ebe5ca3bd326c7793b8f"
+      },
+      {
+       "id": "db4265b01c7f274e",
+       "company_name": "galecto",
+       "domain": "galecto.com",
+       "round_type": "private placement",
+       "amount_usd": 284900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 284900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Viking Global",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "RA Capital",
+         "domain": "ra-capital.co",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "biotech",
+       "country": "Denmark",
+       "city": null,
+       "use_of_funds": "support progress across multiple clinical‑stage programs",
+       "source_sentence": "Last month, Galecto landed nearly $284.9 million in a private placement led by Fairmount.",
+       "published_at": "2025-12-23T08:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6991ffb740184cd708692af4"
+       ],
+       "article_id": "6991ffb740184cd708692af4"
+      },
+      {
+       "id": "daf6b121fe92b1b1",
+       "company_name": "ITM Isotope Technologies Munich SE",
+       "domain": null,
+       "round_type": "growth financing",
+       "amount_usd": 262500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 262500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blue owl",
+         "domain": "blueowl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Radiopharmaceutical biotech",
+       "country": "Germany",
+       "city": "Garching near Munich",
+       "use_of_funds": "growth financing",
+       "source_sentence": "The radiopharmaceutical biotech company ITM Isotope Technologies Munich SE from Garching near Munich has invested up to USD 262.5 million in growth financing by Blue Owl in 2025.",
+       "published_at": "2025-12-25T11:47:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "698fba669ca02490ec2672ba"
+       ],
+       "article_id": "698fba669ca02490ec2672ba"
+      },
+      {
+       "id": "9e44efe2f5d17f24",
+       "company_name": "Mirador Therapeutics",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Biotech",
+       "country": "USA",
+       "city": "San Diego",
+       "use_of_funds": "to advance precision medicines for immune‑mediated inflammatory and fibrotic diseases",
+       "source_sentence": "Mirador Therapeutics closed a $250 million Series B to advance precision medicines for immune‑mediated inflammatory and fibrotic diseases.",
+       "published_at": "2026-01-20T02:25:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84e967bb1410d4c67d89a"
+       ],
+       "article_id": "69e84e967bb1410d4c67d89a"
+      },
+      {
+       "id": "ab0bd199842620c6",
+       "company_name": "centessa pharmaceuticals",
+       "domain": "centessa.com",
+       "round_type": "secondary issue of ADSes",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jefferies",
+         "domain": "jefferies.com",
+         "amount": null
+        },
+        {
+         "name": "guggenheim securities",
+         "domain": "guggenheimpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "help finance the continued development of its product pipeline; general corporate purposes",
+       "source_sentence": "Just under 11.63 million of these securities will be sold in an underwritten public offering priced at $21.50 apiece. The resulting gross proceeds should amount to roughly $250 million.",
+       "published_at": "2025-11-12T23:27:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931b974b72fd1fcc3f21e8c"
+       ],
+       "article_id": "6931b974b72fd1fcc3f21e8c"
+      },
+      {
+       "id": "0f0ef576562eb1f6",
+       "company_name": "tenpoint therapeutics",
+       "domain": "tenpointtherapeutics.com",
+       "round_type": "Series B",
+       "amount_usd": 235000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 235000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Janus Henderson",
+         "domain": "hendersoneurotrust.com",
+         "amount": null
+        },
+        {
+         "name": "EQT Nexus",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hillhouse",
+         "domain": "hillhouseinvestment.com",
+         "amount": null
+        },
+        {
+         "name": "british business bank",
+         "domain": "british-business-bank.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "biotech (vision)",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "scale‑up manufacturing and commercialization of YUVEZZI",
+       "source_sentence": "Tenpoint Therapeutics, a biotech developing treatments for age‑related vision loss, secured $235 million in Series B funding to support the U.S. launch of its presbyopia eye drop.",
+       "published_at": "2026-01-29T22:51:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988ed8f94d3f481f3dc28a0"
+       ],
+       "article_id": "6988ed8f94d3f481f3dc28a0"
+      },
+      {
+       "id": "d871025f3a3a9bb0",
+       "company_name": "gerresheimer ag",
+       "domain": "gerresheimer.de",
+       "round_type": "loan",
+       "amount_usd": 216000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bayernlb",
+         "domain": "bayernlb.de",
+         "amount": null
+        },
+        {
+         "name": "Landesbank Hessen-Thüringen",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "pharma biotech cosmetics",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "repayment part of the bridge financing for the Bormioli Pharma acquisition ahead of schedule",
+       "source_sentence": "The company has secured loans totaling EUR 200 million from BayernLB and Landesbank Hessen-Thüringen.",
+       "published_at": "2025-08-28T09:35:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c585d1f59f2fdc28884f21",
+        "68c5cab79f14b99474ca1e41"
+       ],
+       "article_id": "68c585d1f59f2fdc28884f21"
+      },
+      {
+       "id": "16d2d828318ad9c9",
+       "company_name": "odyssey therapeutics",
+       "domain": "odysseytherapeutics.com",
+       "round_type": "Series D",
+       "amount_usd": 213000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 213000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Dimension Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jeito capital",
+         "domain": "jeito.life",
+         "amount": null
+        }
+       ],
+       "sector": "biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "advancing targeted medicines for multiple autoimmune diseases",
+       "source_sentence": "The $213 million Series D announced Wednesday involved all of Odyssey’s existing investors as well as a half dozen other firms, among them Dimension Capital and Jeito Capital.",
+       "published_at": "2025-09-10T11:33:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c5858a6f4a0a1b368845df",
+        "6a04057b9c4aac09353f1b60"
+       ],
+       "article_id": "68c5858a6f4a0a1b368845df"
+      },
+      {
+       "id": "dfd6d996b41fa37a",
+       "company_name": "Biotech Booster",
+       "domain": null,
+       "round_type": "second round",
+       "amount_usd": 212112000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 196400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "National Growth Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "Netherlands",
+       "city": "Amsterdam",
+       "use_of_funds": "Continue programme through 2032, supporting development and market entry of biotech innovations",
+       "source_sentence": "Biotech Booster a national programme based in Amsterdam, has secured €196.4 million in its second round of funding from the National Growth Fund.",
+       "published_at": "2025-07-07T11:15:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988adcaafe26ce3df6773b6",
+        "698e7f088d29a990b6ea9495"
+       ],
+       "article_id": "698e7f088d29a990b6ea9495"
+      },
+      {
+       "id": "71b2a03f4b550432",
+       "company_name": "Windward Bio",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 206789999.99999997,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CHF",
+       "amount": 183000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Start-ups such as Windward Bio (CHF 183 million), GlycoEra (CHF 108 million) and CeQur (CHF 109 million) exemplify this trend.",
+       "published_at": "2025-08-14T08:42:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d305b8d29a990b6d1b162"
+       ],
+       "article_id": "698d305b8d29a990b6d1b162"
+      },
+      {
+       "id": "d7de42f86818333e",
+       "company_name": "celcuity",
+       "domain": "celcuity.com",
+       "round_type": "Convertible Senior Notes",
+       "amount_usd": 201250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 201250000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "working capital and general corporate purposes, including research and development and business expansion",
+       "source_sentence": "On July 30, 2025, Celcuity Inc. entered into an underwriting agreement with several underwriters to issue and sell $175 million in Convertible Senior Notes, with an additional option exercised for $26.25 million, resulting in a total issuance of $201.25 million completed on August 1, 2025. The proceeds, approximately $194.5 million after expenses, are intended for working capital and general corporate purposes, including research and development and business expansion.",
+       "published_at": "2025-08-01T20:33:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc2d156bf4fc1dd52ea459"
+       ],
+       "article_id": "69bc2d156bf4fc1dd52ea459"
+      },
+      {
+       "id": "6a2f5d2d7de771ff",
+       "company_name": "AirNexis Therapeutics",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "frazier life sciences",
+         "domain": "frazierhealthcare.com",
+         "amount": null
+        },
+        {
+         "name": "orbimed",
+         "domain": "orbimed.com",
+         "amount": null
+        },
+        {
+         "name": "sr one",
+         "domain": "srone.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "longitude capital",
+         "domain": "longitudecapital.com",
+         "amount": null
+        },
+        {
+         "name": "enavate sciences",
+         "domain": "enavatesciences.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "biotech – pulmonary diseases",
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": "fund global Phase 2 clinical trials of AN-01 and expand its pulmonary therapeutics pipeline",
+       "source_sentence": "Amount Raised: $200 million",
+       "published_at": "2026-01-12T22:01:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "69894f9a94d3f481f3e35ac1"
+       ],
+       "article_id": "69894f9a94d3f481f3e35ac1"
+      },
+      {
+       "id": "7fd39fc520fc5a27",
+       "company_name": "genfit",
+       "domain": "genfit.com",
+       "round_type": "royalty acquisition",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "healthcare royalty partners",
+         "domain": "healthcareroyalty.com",
+         "amount": 200000000.0
+        }
+       ],
+       "sector": "Biotech",
+       "country": "France",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It was almost a $200 million deal, where now we receive a percentage of sales or turnover by Ipsen.",
+       "published_at": "2025-12-01T11:36:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd85e493b550fcb82767d4"
+       ],
+       "article_id": "69bd85e493b550fcb82767d4"
+      },
+      {
+       "id": "4c39806ff294a4c4",
+       "company_name": "Braveheart Bio",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 185000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 185000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Forbion",
+         "domain": "forbion.com",
+         "amount": null
+        },
+        {
+         "name": "orbimed",
+         "domain": "orbimed.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech/Cardiology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Support development of BHB-1893 drug for hypertrophic cardiomyopathy",
+       "source_sentence": "Dive Brief: Braveheart Bio formally debuted on Wednesday with $185 million in Series A funding that’ll support development of a drug it envisions as a “best-in-class” treatment for a heart condition known as hypertrophic cardiomyopathy.",
+       "published_at": "2025-11-05T06:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "694af6cfedd4d8e72e75c96a",
+        "6986488e514cbd23b5c286c9",
+        "69975e78219d71cf48d307e5",
+        "69bb6b013a84223cbf2b52a1",
+        "6a042560220687a966b85c3d"
+       ],
+       "article_id": "6a042560220687a966b85c3d"
+      },
+      {
+       "id": "6c4f99e7f936c1fe",
+       "company_name": "Laigo Bio",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 183600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 170000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Biovance Capital",
+         "domain": "biovancecapital.com",
+         "amount": null
+        },
+        {
+         "name": "kurma partners",
+         "domain": "kurmapartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "Netherlands",
+       "city": "Utrecht",
+       "use_of_funds": "Advance SureTACs platform",
+       "source_sentence": "Laigo Bio, a Utrecht-based biotech, has completed the final close of an oversubscribed €17 million seed round, with Biovance Capital joining as new colead alongside existing colead Kurma Partners, to advance its SureTACs platform.",
+       "published_at": "2026-03-29T12:05:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cf67428cba4b4f9f0ff6f5"
+       ],
+       "article_id": "69cf67428cba4b4f9f0ff6f5"
+      },
+      {
+       "id": "085cc8c5cbeae6f5",
+       "company_name": "Expedition Therapeutics",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 165000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 165000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sofinnova investments",
+         "domain": "sofinnova.com",
+         "amount": null
+        },
+        {
+         "name": "novo holdings",
+         "domain": "novoholdings.dk",
+         "amount": null
+        },
+        {
+         "name": "venrock",
+         "domain": "venrock.com",
+         "amount": null
+        },
+        {
+         "name": "BVF Partners",
+         "domain": "bvflp.com",
+         "amount": null
+        }
+       ],
+       "sector": "biotech",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Develop a drug for chronic obstructive pulmonary disease (COPD)",
+       "source_sentence": "The money comes from Sofinnova Investments and Novo Holdings, which co-led the Series A round.",
+       "published_at": "2025-10-09T10:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "68f70963e97e6da31e2b3ce9",
+        "68f71c4be97e6da31e2d098b",
+        "68fe301f9f5ecb55fa283cc9"
+       ],
+       "article_id": "68f71c4be97e6da31e2d098b"
+      },
+      {
+       "id": "ae5568ad396e06d5",
+       "company_name": "arthrosi therapeutics",
+       "domain": "arthrosi.com",
+       "round_type": "Series E",
+       "amount_usd": 153000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 153000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Prime Eight Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "CR Biotech",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Highlight Capital",
+         "domain": "highlightcapital.com",
+         "amount": null
+        },
+        {
+         "name": "HM Venture Partners",
+         "domain": "hmventurepartners.com",
+         "amount": null
+        },
+        {
+         "name": "ReliantTech Limited",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "other existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "USA",
+       "city": "San Diego",
+       "use_of_funds": null,
+       "source_sentence": "Arthrosi Therapeutics Snags $153M Series E for Next-Gen Gout Drug.",
+       "published_at": "2025-10-08T22:06:50",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f71009017a8a94832bdeb4",
+        "68f71268b5f4abc34a2c16e8"
+       ],
+       "article_id": "68f71268b5f4abc34a2c16e8"
+      },
+      {
+       "id": "95eff7007887e646",
+       "company_name": "strand therapeutics",
+       "domain": "strandtx.com",
+       "round_type": "Series B",
+       "amount_usd": 153000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 153000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kinnevik",
+         "domain": "kinnevik.com",
+         "amount": null
+        },
+        {
+         "name": "Regeneron Ventures",
+         "domain": "regeneronventures.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "amgen ventures",
+         "domain": "amgenbd.com",
+         "amount": null
+        },
+        {
+         "name": "Alderline Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "JIC-VGI",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lg technology ventures",
+         "domain": "lgtechventures.com",
+         "amount": null
+        },
+        {
+         "name": "gradiant",
+         "domain": "gradiant.com",
+         "amount": null
+        },
+        {
+         "name": "fpv ventures",
+         "domain": "fpvventures.com",
+         "amount": null
+        },
+        {
+         "name": "playground global",
+         "domain": "playground.global",
+         "amount": null
+        },
+        {
+         "name": "eli lilly",
+         "domain": "lilly.com",
+         "amount": null
+        },
+        {
+         "name": "anri",
+         "domain": "anri.vc",
+         "amount": null
+        },
+        {
+         "name": "Potentum",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "etc",
+         "domain": "etcc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "Advance pipeline of next‑gen cancer treatments and fuel expansion of programmable mRNA platform",
+       "source_sentence": "Strand Therapeutics, a Boston-based biotech startup … secured $153 million in Series B funding to advance its pipeline of next‑gen cancer treatments.",
+       "published_at": "2025-08-09T01:26:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "68a176753ff75e010c30bd60"
+       ],
+       "article_id": "68a176753ff75e010c30bd60"
+      },
+      {
+       "id": "ae1a23772eb0dc05",
+       "company_name": "carmot therapeutics",
+       "domain": "carmot.us",
+       "round_type": "Series E",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "therapies combating obesity and diabetes",
+       "source_sentence": "Carmot Therapeutics secured $150 million in Series E for therapies combating obesity and diabetes, underscoring biotech's momentum.",
+       "published_at": "2026-04-24T18:51:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efab7b8a54b8f07c96e246"
+       ],
+       "article_id": "69efab7b8a54b8f07c96e246"
+      },
+      {
+       "id": "e401ed617a5f2e94",
+       "company_name": "Syneron Bio",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "arch venture partners",
+         "domain": "archventure.com",
+         "amount": null
+        },
+        {
+         "name": "lilly asia ventures",
+         "domain": "lillyasiaventures.com",
+         "amount": null
+        },
+        {
+         "name": "tencent",
+         "domain": "tencent.com",
+         "amount": null
+        },
+        {
+         "name": "Alexandria Venture Investments",
+         "domain": "alexandriaventureinvestments.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "altitude life science ventures",
+         "domain": "altitudelsv.com",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "astrazeneca",
+         "domain": "astrazeneca.com",
+         "amount": null
+        },
+        {
+         "name": "5Y Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "GL Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sinovation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Lenovo Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Buildout of Synova™ macrocyclic peptide discovery platform and advance pipeline programs into clinical development",
+       "source_sentence": "Syneron Bio completion of a $150 million Series B financing, announced on 03 Apr 2026, with proceeds earmarked for its Synova™ macrocyclic peptide discovery platform and for advancing multiple pipeline programs toward the clinic.",
+       "published_at": "2026-04-04T14:30:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e87a119baafc73568b49b4"
+       ],
+       "article_id": "69e87a119baafc73568b49b4"
+      },
+      {
+       "id": "88bb7ab584255bd5",
+       "company_name": "azafaros",
+       "domain": "azafaros.com",
+       "round_type": "Series B",
+       "amount_usd": 142560000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 132000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "Netherlands",
+       "city": "Leiden",
+       "use_of_funds": null,
+       "source_sentence": "The company raised €132mn in a Series B round in June 2025",
+       "published_at": "2025-07-01T15:14:23",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c8dec7a9208441ac67772e",
+        "68c8df337e3b558e9c678322"
+       ],
+       "article_id": "68c8dec7a9208441ac67772e"
+      },
+      {
+       "id": "e41fe5729eb217e0",
+       "company_name": "azafaros",
+       "domain": "azafaros.com",
+       "round_type": "Series B",
+       "amount_usd": 142560000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 132000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "fund phase 3 trials of brain-penetrant drug",
+       "source_sentence": "Dutch biotech Azafaros gains €132 million ($147 million) Series B to fund phase 3 trials of brain-penetrant drug.",
+       "published_at": "2025-05-19T17:25:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "69864891dac7b0ca9c5f3d14",
+        "6a0421c6220687a966b6b286"
+       ],
+       "article_id": "6a0421c6220687a966b6b286"
+      },
+      {
+       "id": "dfc1a894ca5df561",
+       "company_name": "aavantgarde bio",
+       "domain": "aavantgardebio.com",
+       "round_type": "Series B",
+       "amount_usd": 141000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 141000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rtw investments",
+         "domain": "rtwfunds.com",
+         "amount": null
+        },
+        {
+         "name": "Forbion",
+         "domain": "forbion.com",
+         "amount": null
+        },
+        {
+         "name": "sofinnova partners",
+         "domain": "sofinnovapartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Gene therapy, biotech",
+       "country": "Italy",
+       "city": null,
+       "use_of_funds": "Fund ongoing clinical trials and support the expansion of its ophthalmology and neurology pipeline",
+       "source_sentence": "AAVantgarde Bio Closes $141M in Series B Funding for Gene Therapy Innovation.",
+       "published_at": "2025-11-03T23:50:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "690e3cb485603ba94c2492ca"
+       ],
+       "article_id": "690e3cb485603ba94c2492ca"
+      },
+      {
+       "id": "210228a88f01902a",
+       "company_name": "adlai nortye",
+       "domain": "adlainortye.com",
+       "round_type": "Private placement",
+       "amount_usd": 140000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 140000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cormorant asset management",
+         "domain": "cormorant.com",
+         "amount": null
+        },
+        {
+         "name": "columbia threadneedle investments",
+         "domain": "columbiathreadneedle.com",
+         "amount": null
+        },
+        {
+         "name": "Balyasny Asset Management L.P.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "point72",
+         "domain": "point72.com",
+         "amount": null
+        },
+        {
+         "name": "Squadron Capital Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "casdin capital",
+         "domain": "casdincapital.com",
+         "amount": null
+        },
+        {
+         "name": "Yang Lu",
+         "domain": null,
+         "amount": 55000000.0
+        }
+       ],
+       "sector": "Biotech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": null,
+       "source_sentence": "Adlai Nortye Ltd. (Nasdaq: ANL) (the “Company” or “Adlai Nortye”), a clinical-stage biotechnology company focused on the development of innovative cancer therapies, today announced that it has entered into securities purchase agreements for a private investment in public equity financing that is expected to result in gross proceeds of approximately $140.0 million, before deducting placement agent fees and other expenses.",
+       "published_at": "2026-02-03T12:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "699702b45fbe93703d5f72d2"
+       ],
+       "article_id": "699702b45fbe93703d5f72d2"
+      },
+      {
+       "id": "5b30936108af0a8b",
+       "company_name": "setpoint medical",
+       "domain": "setpointmedical.com",
+       "round_type": "Series D",
+       "amount_usd": 140000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 140000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "elevage medical technologies",
+         "domain": "elevagemedicaltechnologies.com",
+         "amount": null
+        },
+        {
+         "name": "ally bridge group",
+         "domain": "ally-bridge.com",
+         "amount": null
+        },
+        {
+         "name": "northwell health",
+         "domain": "northwell.edu",
+         "amount": null
+        },
+        {
+         "name": "Sprig Equity",
+         "domain": "sprigequity.com",
+         "amount": null
+        },
+        {
+         "name": "norwest venture partners",
+         "domain": "nvp.com",
+         "amount": null
+        },
+        {
+         "name": "new enterprise associates",
+         "domain": "nea.com",
+         "amount": null
+        },
+        {
+         "name": "viking global investors",
+         "domain": "vikingglobal.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech / Healthcare",
+       "country": "USA",
+       "city": "California",
+       "use_of_funds": "Commercialization of bioelectronic therapy and development of treatments for other autoimmune diseases.",
+       "source_sentence": "SetPoint Medical has secured $140 million in private financing to propel the U.S. launch of its novel neuroimmune therapy for rheumatoid arthritis.",
+       "published_at": "2025-08-11T20:26:41",
+       "coverage_count": 3,
+       "article_ids": [
+        "68ab3fa92e28036801bc692e",
+        "68ab3faf2e28036801be20d2",
+        "68ab3fb42e28036801bf382a"
+       ],
+       "article_id": "68ab3fa92e28036801bc692e"
+      },
+      {
+       "id": "c63a98deeb9ed353",
+       "company_name": "Sidewinder Therapeutics",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 137000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 137000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "frazier life sciences",
+         "domain": "frazierhealthcare.com",
+         "amount": null
+        },
+        {
+         "name": "novartis venture fund",
+         "domain": "nvfund.com",
+         "amount": null
+        },
+        {
+         "name": "orbimed",
+         "domain": "orbimed.com",
+         "amount": null
+        },
+        {
+         "name": "Astellas Venture Management",
+         "domain": "astellasventure.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "Advance lead programs into clinical trials and expand bispecific ADC pipeline",
+       "source_sentence": "Sidewinder Therapeutics, developing “precision” bispecific antibody‑drug conjugates (ADCs) for cancer, secured $137 million in a Series B round.",
+       "published_at": "2026-04-08T21:23:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2d15d3aab8d96aa3ca110"
+       ],
+       "article_id": "69e2d15d3aab8d96aa3ca110"
+      },
+      {
+       "id": "145ad357fbde83bd",
+       "company_name": "SpliceBio",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 135000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 135000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "EQT Life Sciences",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sanofi ventures",
+         "domain": "sanofiventures.com",
+         "amount": null
+        },
+        {
+         "name": "Roche Venture Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "new enterprise associates",
+         "domain": "nea.com",
+         "amount": null
+        },
+        {
+         "name": "novartis venture fund",
+         "domain": "nvfund.com",
+         "amount": null
+        }
+       ],
+       "sector": "gene therapy biotech for inherited diseases",
+       "country": "Spain",
+       "city": "Barcelona",
+       "use_of_funds": "Advance lead gene therapy for Stargardt disease and accelerate additional AAV therapies",
+       "source_sentence": "Spanish biotechnology startup SpliceBio has raised $135 million in a Series B financing.",
+       "published_at": "2025-06-11T20:59:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5a10b209ed6c919c6b65a"
+       ],
+       "article_id": "68c5a10b209ed6c919c6b65a"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 318,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDYtMTEgMjA6NTk6MjgiLCJrIjoiMTQ2NjcxNzAwMzUwMzc5NzE4MSIsImEiOjEzNTAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 318,
+      "deals_with_amount": 298,
+      "deals_without_amount": 20,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 20622635700.0,
+      "median_amount_usd": 19700000.0,
+      "largest_amount_usd": 2000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.216,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.221
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "biotech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "biotech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "ae0c8c4aa17d26b7",
+       "company_name": "mbiomics",
+       "domain": "mbiomics.com",
+       "round_type": "Series A",
+       "amount_usd": 32400000.000000004,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mig fonds",
+         "domain": "mig-fonds.de",
+         "amount": null
+        },
+        {
+         "name": "bayern kapital",
+         "domain": "bayernkapital.de",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "move from building its platform to running clinical studies and scaling manufacturing",
+       "source_sentence": "The round includes existing investors like MIG Fonds and Bayern Kapital.",
+       "published_at": "2026-04-30T04:10:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8aaf88937ef12fc0b1078"
+       ],
+       "article_id": "69f8aaf88937ef12fc0b1078"
+      },
+      {
+       "id": "ae1a23772eb0dc05",
+       "company_name": "carmot therapeutics",
+       "domain": "carmot.us",
+       "round_type": "Series E",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "therapies combating obesity and diabetes",
+       "source_sentence": "Carmot Therapeutics secured $150 million in Series E for therapies combating obesity and diabetes, underscoring biotech's momentum.",
+       "published_at": "2026-04-24T18:51:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efab7b8a54b8f07c96e246"
+       ],
+       "article_id": "69efab7b8a54b8f07c96e246"
+      },
+      {
+       "id": "d7f7e3ea1ed9f68d",
+       "company_name": "10x Science",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 4800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4800000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "initialized capital",
+         "domain": "initialized.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "civilization ventures",
+         "domain": "civilizationventures.com",
+         "amount": null
+        },
+        {
+         "name": "Founder Factor",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "biotech",
+       "country": "US",
+       "city": "San Francisco",
+       "use_of_funds": "Rapid growth, hiring engineers, refining SaaS model, expanding integration with broader cellular insights",
+       "source_sentence": "The company announced a $4.8 million seed round led by Initialized Capital, with participation from Y Combinator, Civilization Ventures, and Founder Factor.",
+       "published_at": "2026-04-22T17:17:06",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e99dccbdd09a23d09370a0",
+        "69ea1f4f8266d9339994a613",
+        "69ea231a73206aa299ec4a90"
+       ],
+       "article_id": "69e99dccbdd09a23d09370a0"
+      },
+      {
+       "id": "e448344425683f24",
+       "company_name": "clean food group",
+       "domain": "cleanfood.group",
+       "round_type": null,
+       "amount_usd": 889000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "innovate uk",
+         "domain": "innovateuk.gov.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "United Kingdom",
+       "city": "Liverpool",
+       "use_of_funds": null,
+       "source_sentence": "The company has also received a £700,000 non-dilutive grant from Innovate UK.",
+       "published_at": "2026-04-21T14:06:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e886bb5cfa3e5ba50792cf"
+       ],
+       "article_id": "69e886bb5cfa3e5ba50792cf"
+      },
+      {
+       "id": "ff6393c68b77eeac",
+       "company_name": "biolamina",
+       "domain": "biolamina.com",
+       "round_type": null,
+       "amount_usd": 21600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "support the development of cell therapies for chronic diseases",
+       "source_sentence": "BioLamina, a Stockholm-based biotech scale-up focused on matrix biology and cell culture has secured a €20 million financing commitment from the European Investment Bank (EIB) to support the development of cell therapies for chronic diseases.",
+       "published_at": "2026-04-18T06:02:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e1045cfa3e5ba54e24f7"
+       ],
+       "article_id": "69e8e1045cfa3e5ba54e24f7"
+      },
+      {
+       "id": "f009fa505b4fbfd1",
+       "company_name": "storm therapeutics",
+       "domain": "stormtherapeutics.com",
+       "round_type": "Series C",
+       "amount_usd": 56000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 56000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Biotech",
+       "country": "United Kingdom",
+       "city": "Cambridge",
+       "use_of_funds": null,
+       "source_sentence": "STORM Therapeutics, a Cambridge-based clinical-stage biotech company focused on RNA-targeted cancer therapies, has raised $56 million in Series C funding.",
+       "published_at": "2026-04-18T06:02:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e1045cfa3e5ba54e24f7"
+       ],
+       "article_id": "69e8e1045cfa3e5ba54e24f7"
+      },
+      {
+       "id": "2c4993c034aa6995",
+       "company_name": "ProtierBiotech",
+       "domain": null,
+       "round_type": "Pre-Series A",
+       "amount_usd": 2450000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2450000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Hana Ventures",
+         "domain": "hanaventures.co.kr",
+         "amount": null
+        },
+        {
+         "name": "IBK Venture Investment",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "T Investment",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": "The capital will support the development of its molecular glue cancer therapy platform.",
+       "source_sentence": "South Korean biotech startup ProtierBiotech raised $2.45 million in Pre-Series A funding led by Hana Ventures, IBK Venture Investment, and T Investment.",
+       "published_at": "2026-04-17T09:30:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e862f15cfa3e5ba5f12028"
+       ],
+       "article_id": "69e862f15cfa3e5ba5f12028"
+      },
+      {
+       "id": "6daab875aee5dc7b",
+       "company_name": "terremoto biosciences",
+       "domain": "terremotobio.com",
+       "round_type": "Series C",
+       "amount_usd": 108000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 108000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ra capital management",
+         "domain": "racap.com",
+         "amount": null
+        },
+        {
+         "name": "deep track capital",
+         "domain": "deeptrackcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Osage University Partners",
+         "domain": "osageuniversitypartners.com",
+         "amount": null
+        },
+        {
+         "name": "BeOne Medicines",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "orbimed",
+         "domain": "orbimed.com",
+         "amount": null
+        },
+        {
+         "name": "third rock ventures",
+         "domain": "thirdrockventures.com",
+         "amount": null
+        },
+        {
+         "name": "novo holdings",
+         "domain": "novoholdings.dk",
+         "amount": null
+        },
+        {
+         "name": "cormorant asset management",
+         "domain": "cormorant.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "USA",
+       "city": "South San Francisco",
+       "use_of_funds": "small molecule drugs targeting cancer and rare diseases",
+       "source_sentence": "Terremoto Biosciences Raises $108M Series C for selective AKT1 therapies in oncology and rare disease",
+       "published_at": "2026-04-15T21:57:55",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e852757bb1410d4c6a2a53",
+        "69e8e26b5cfa3e5ba54f4498"
+       ],
+       "article_id": "69e852757bb1410d4c6a2a53"
+      },
+      {
+       "id": "1c219f853d7afe13",
+       "company_name": "Beeline Medicines",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "autoimmune and inflammatory disease therapies",
+       "source_sentence": "Beeline Medicines raises $300M Series A for precision autoimmune and inflammatory drug development",
+       "published_at": "2026-04-15T21:57:55",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e852757bb1410d4c6a2a53",
+        "69e8e26b5cfa3e5ba54f4498"
+       ],
+       "article_id": "69e852757bb1410d4c6a2a53"
+      },
+      {
+       "id": "ceb3ec8913069ce4",
+       "company_name": "uluu",
+       "domain": "uluu.com.au",
+       "round_type": "grant",
+       "amount_usd": 2100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Industry Growth Program",
+         "domain": null,
+         "amount": 2100000.0
+        }
+       ],
+       "sector": "biotech",
+       "country": "Australia",
+       "city": "Perth",
+       "use_of_funds": "to fast-track its commercial-scale production of plastic alternatives from seaweed",
+       "source_sentence": "Perth startup Uluu has secured $2.1 million through the Industry Growth Program to supercharge its mission to replace plastic with seaweed.",
+       "published_at": "2026-04-15T00:08:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84a245cfa3e5ba5e2d98b"
+       ],
+       "article_id": "69e84a245cfa3e5ba5e2d98b"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 95,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTUgMDA6MDg6MzYiLCJrIjoiMTQ4OTQ1MDg0NjYxMTgyMzc0MTIifQ",
+     "totals": {
+      "deals": 95,
+      "deals_with_amount": 93,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 4668058000.0,
+      "median_amount_usd": 22140000.0,
+      "largest_amount_usd": 300000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.094,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.105
+    }
+   }
+  }
+ ]
+}

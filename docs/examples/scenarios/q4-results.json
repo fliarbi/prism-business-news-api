@@ -1,0 +1,806 @@
+{
+ "slug": "q4-results",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:48Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "earnings"
+     ],
+     "q": "Q4",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "q4",
+      "match": "any",
+      "event_type": [
+       "earnings"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 698,
+       "by_type": {
+        "earnings": 698
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 160,
+       "by_type": {
+        "earnings": 160
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 111,
+       "by_type": {
+        "earnings": 111
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 148,
+       "by_type": {
+        "earnings": 148
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 53,
+       "by_type": {
+        "earnings": 53
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 41,
+       "by_type": {
+        "earnings": 41
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 54,
+       "by_type": {
+        "earnings": 54
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 59,
+       "by_type": {
+        "earnings": 59
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 336,
+       "by_type": {
+        "earnings": 336
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 753,
+       "by_type": {
+        "earnings": 753
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 281,
+       "by_type": {
+        "earnings": 281
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 441,
+       "by_type": {
+        "earnings": 441
+       }
+      }
+     ],
+     "totals": {
+      "events": 3135,
+      "articles": 2912,
+      "companies": 2176,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "earnings": 3135
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.127,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.131
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "earnings"
+     ],
+     "q": "Q4",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "q4",
+      "event_type": [
+       "earnings"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69fa00df7b2d589e845384de",
+       "headline": "Based on currently available information, FatPipe expects for the fourth quarter: 4th Quarter revenue in the range of $6.6 million to $7.0 million , representing approximately 79% YoY growth at the midpoint 4th Quarter Adjusted EBITDA in the range of $3.0 million to $3.2 million for Q4 FY2026 as compared to $0.2 million for Q4 FY2025",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "fatpipeinc.com",
+       "published_at": "2026-04-30T18:54:00",
+       "url": "https://www.stocktitan.net/news/FATN/fat-pipe-inc-provides-preliminary-fourth-quarter-fiscal-2026-results-4jpq1by1jyw9.html",
+       "publisher": "stocktitan.net",
+       "title": "FatPipe puts quarterly EBITDA at $3M-$3.2M before May 18 report"
+      },
+      {
+       "id": "69f8851bbbf1d3145598e86b",
+       "headline": "Revenue from operations rose 196 percent year on year to Rs 17,292 crore in Q4 from Rs 5,833 crore a year ago while also increasing sequentially from Rs 16,315 crore.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "eternal.bio",
+       "published_at": "2026-04-30T12:57:39",
+       "url": "https://www.franchiseindia.com/insights/en/news/eternal-reports-robust-q4-revenue-growth.58811",
+       "publisher": "franchiseindia.com",
+       "title": "Eternal Reports Robust Q4 Revenue Growth"
+      },
+      {
+       "id": "69f9d746a088760d34c0e86a",
+       "headline": "Petroleum and natural gas sales of CA$4.6 million during Q4 2025 and CA$18.0 million for the year ended December 31, 2025, an increase of 17% and 12% from the same periods in 2024, respectively.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "southernenergycorp.com",
+       "published_at": "2026-04-30T12:33:07",
+       "url": "https://beforeitsnews.com/energy/2026/04/energy-co-delivers-massive-debt-free-gulf-coast-turnaround-2473710.html",
+       "publisher": "beforeitsnews.com",
+       "title": "Energy Co. Delivers Massive Debt-Free Gulf Coast Turnaround | Energy | Before It's News"
+      },
+      {
+       "id": "69f8a6ccbbf1d314559a278b",
+       "headline": "Consolidated revenue from operations stood at INR 327.2 crore (Q4 FY25: INR 299.0 crore), driven by favourable momentum in batteries (Alkaline grew by 82%) and double – digit growth in lighting segment (up by 17.0%).",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "evereadyindustries.com",
+       "published_at": "2026-04-30T12:15:52",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8836cbbf1d3145597f06d",
+       "headline": "IndiaMART Ltd reported a sharp decline in its Q4 net profit, which fell 72.2% year-on-year to ₹50.2 crore from ₹180.6 crore a year earlier. However, revenue from operations grew 13.9% YoY to ₹404.3 crore from ₹355.1 crore in the year-ago period, while EBITDA rose marginally by 1.7% to ₹132.6 crore from ₹130.4 crore in Q4FY25.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "indiamart.com",
+       "published_at": "2026-04-30T11:44:16",
+       "url": "https://www.cnbctv18.com/market/indiamart-share-price-q4fy26-results-net-profit-revenue-ebitda-margins-dividend-record-date-ws-l-19896807.htm",
+       "publisher": "cnbctv18.com",
+       "title": "IndiaMART Q4 results: Profit plunges 72%, margins contract; ₹60 dividend announced - CNBC TV18"
+      },
+      {
+       "id": "69f8a97a8937ef12fc0b0170",
+       "headline": "HUL Q4 adex up by 6% at Rs 1,509 crore; 'Well positioned to navigate volatility' says CEO Priya Nair Hindustan Unilever on Thursday reported a 20% year-on-year increase in consolidated profit from continuing operations for the fourth quarter of FY26, driven by steady revenue growth and controlled sequential costs. The FMCG major posted a profit of Rs 3,002 crore for the January–March quarter, compared with Rs 2,501 crore in the same period last fiscal.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "hul.co.in",
+       "published_at": "2026-04-30T11:36:02",
+       "url": "https://www.storyboard18.com/special-coverage/hul-q4-adex-up-by-6-at-rs-1509-crore-youtube-powers-alphabets-ai-push-96814.htm",
+       "publisher": "storyboard18.com",
+       "title": "HUL Q4 adex up by 6% at Rs 1,509 crore | YouTube powers Alphabet’s AI push"
+      },
+      {
+       "id": "69f9d40da088760d34bebbb3",
+       "headline": "NDTV reported a net loss of Rs 98.57 crore in Q4 FY26, significantly higher than the Rs 61.97 crore loss recorded a year ago, reflecting a widening of about 59 per cent.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "ndtv.com",
+       "published_at": "2026-04-30T11:18:45",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8ab7043843dd771d28194",
+       "headline": "Adani Ports and Special Economic Zone on Thursday reported a 9% rise in consolidated Q4 net profit. Profit came at Rs 3,308 crore in last quarter against Rs 3023 crore in the year ago period.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "adaniports.com",
+       "published_at": "2026-04-30T10:33:59",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f884b643843dd771d0d21f",
+       "headline": "Dr Lal PathLabs reported a mixed set of Q4 results on Thursday, April 30, with strong revenue growth offset by pressure on profitability margins.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "lalpathlabs.com",
+       "published_at": "2026-04-30T10:30:51",
+       "url": "https://www.cnbctv18.com/market/dr-lal-pathlabs-share-price-q4-results-profit-falls-15-pc-revenue-jumps-17-pc-announces-rs-4-dividend-ws-l-19896713.htm",
+       "publisher": "cnbctv18.com",
+       "title": "Dr Lal PathLabs Q4 Results: Profit slips 15% despite strong revenue growth; ₹4 dividend announced - CNBC TV18"
+      },
+      {
+       "id": "69f883b6bbf1d31455981943",
+       "headline": "The company reported a consolidated net profit of Rs 2,539 crore in Q4 FY26.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "bajajfinserv.in",
+       "published_at": "2026-04-30T10:20:18",
+       "url": "https://www.financialexpress.com/business/industry-bajaj-finserv-q4-fy26-results-net-profit-up-5-to-rs-2539-crore-net-income-jumps-to-rs-14209-crorenbsp-4223194/",
+       "publisher": "financialexpress.com",
+       "title": "Bajaj Finserv Q4 FY26 results: Net profit up 5% to Rs 2,539 crore, Net Income jumps to Rs 14,209 crore"
+      },
+      {
+       "id": "69f9dd85a088760d34c5e127",
+       "headline": "Adani Enterprises reported a profit before tax of Rs 730 crore for Q4 FY26, against Rs 1,310 crore in the same quarter last year — a 44.3% year-on-year decline.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "adanienterprises.com",
+       "published_at": "2026-04-30T10:11:55",
+       "url": "https://www.businessupturn.com/business/corporates/adani-enterprises-q4-fy26-pbt-falls-44-to-rs-730-crore-but-a-rs-3940-crore-exceptional-item-last-year-is-distorting-the-entire-comparison/",
+       "publisher": "businessupturn.com",
+       "title": "Adani Enterprises Q4 FY26: PBT down 44% to Rs 730 crore — but here is why the number is misleading"
+      },
+      {
+       "id": "69f9d7e3a088760d34c15794",
+       "headline": "For Q4 FY26, the company posted consolidated revenue of ₹10,738 crore, up 26 per cent year-on-year, while EBITDA rose 20 per cent to ₹6,020 crore. Net profit for the quarter increased 9 per cent to ₹3,308 crore, reflecting steady operational performance despite global trade uncertainties.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "adaniports.com",
+       "published_at": "2026-04-30T09:01:40",
+       "url": "https://www.thehindubusinessline.com/companies/adani-ports-quarterly-profit-rises-as-cargo-volumes-grow/article70923941.ece",
+       "publisher": "thehindubusinessline.com",
+       "title": "Amid global uncertainties, strong cargo volumes steer Adani Ports Q4 earnings"
+      },
+      {
+       "id": "69f9d4867b2d589e844ae942",
+       "headline": "Solar module manufacturer Waaree Energies’ revenue from operations for the fourth quarter (Q4) of the financial year (FY) 2026 rose 111.8% year-over-year (YoY) to ₹84.80 billion (~$894.34 million) from ₹40.04 billion (~$422.28 million).",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "waaree.com",
+       "published_at": "2026-04-30T07:32:01",
+       "url": "https://mercomindia.com/strong-solar-module-sales-drive-waaree-energies-revenue-for-q4-fy-2026-up-112",
+       "publisher": "mercomindia.com",
+       "title": "Strong Solar Module Sales Drive Waaree Energies’ Revenue for Q4 FY 2026 Up 112% - Mercom India"
+      },
+      {
+       "id": "69f8a5c943843dd771d23d17",
+       "headline": "Waaree Energies reported a 71.44% year-on-year rise in consolidated net profit to ₹1,061.1 crore for Q4 FY26, compared with ₹618.91 crore in the same quarter last year. Revenue from operations surged 111.79% to ₹8,480.25 crore, reflecting strong demand and scale-up in operations.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "waaree.com",
+       "published_at": "2026-04-30T07:07:53",
+       "url": "https://www.outlookbusiness.com/markets/waaree-energies-shares-sink-11-after-q4-weak-margins-spook-investors",
+       "publisher": "outlookbusiness.com",
+       "title": "Waaree Energies Shares Sink 11% After Q4, Weak Margins Spook Investors – Outlook Business"
+      },
+      {
+       "id": "69f8a9218937ef12fc0afe98",
+       "headline": "In Q4, consolidated sales came at Rs 1,666.58 crore in March 2026, up 29.42% from Rs 1,287.75 crore in March 2025 quarter. Net profit cmae at Rs 78.06 crore in March 2026 quarter rising 62.94% from Rs 47.91 crore in March 2025. EBITDA rose 32% to Rs 174.95 crore in March 2026 quarter from Rs 132.72 crore in March 2025 quarter. Skipper’s earnings per share rose to Rs 6.96 in March 2026 quarter from Rs 4.30 in March 2025.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "skipperlimited.com",
+       "published_at": "2026-04-30T06:12:12",
+       "url": "https://www.businesstoday.in/markets/stocks/story/price-targets-upgrades-for-this-multibagger-stock-but-west-asia-headwinds-remain-buy-or-sell-528175-2026-04-30",
+       "publisher": "businesstoday.in",
+       "title": "Price target upgrades for this multibagger stock but West Asia headwinds remain; Buy or sell? - BusinessToday"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 1811,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMzAgMDY6MTI6MTIiLCJpIjoiNjlmOGE5MjE4OTM3ZWYxMmZjMGFmZTk4IiwiZG0iOiJza2lwcGVybGltaXRlZC5jb20iLCJldCI6ImVhcm5pbmdzIiwicm8iOiJwcmltYXJ5In0",
+     "by_type": {
+      "earnings": 1811
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.215,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 3 event(s)"
+     ],
+     "request_seconds": 4.218
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "earnings"
+     ],
+     "q": "Q4",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "q4",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "earnings"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 4778,
+     "carrying": 4772,
+     "carrier_share_pct": 99.87,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 57,
+       "share": 1.19
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 715,
+       "share": 14.98
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 35,
+       "share": 0.73
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 2197,
+       "share": 46.04
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 133,
+       "share": 2.79
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 1591,
+       "share": 33.34
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 44,
+       "share": 0.92
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 772,
+       "share": 16.18
+      },
+      {
+       "group": "neutral",
+       "count": 35,
+       "share": 0.73
+      },
+      {
+       "group": "positive",
+       "count": 3965,
+       "share": 83.09
+      }
+     ],
+     "negative_to_positive_ratio": 0.195,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.26,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 995,
+       "negative": 157,
+       "neutral": 9,
+       "positive": 829,
+       "negative_share": 15.78,
+       "positive_share": 83.32,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 5,
+        "fair_neg": 0,
+        "slight_neg": 152,
+        "none": 9,
+        "slight_pos": 547,
+        "fair_pos": 28,
+        "very_pos": 248,
+        "extreme_pos": 6
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 2047,
+       "negative": 327,
+       "neutral": 13,
+       "positive": 1707,
+       "negative_share": 15.97,
+       "positive_share": 83.39,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 27,
+        "fair_neg": 0,
+        "slight_neg": 300,
+        "none": 13,
+        "slight_pos": 986,
+        "fair_pos": 69,
+        "very_pos": 626,
+        "extreme_pos": 26
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 757,
+       "negative": 138,
+       "neutral": 8,
+       "positive": 611,
+       "negative_share": 18.23,
+       "positive_share": 80.71,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 7,
+        "fair_neg": 0,
+        "slight_neg": 131,
+        "none": 8,
+        "slight_pos": 332,
+        "fair_pos": 25,
+        "very_pos": 253,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 973,
+       "negative": 150,
+       "neutral": 5,
+       "positive": 818,
+       "negative_share": 15.42,
+       "positive_share": 84.07,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 18,
+        "fair_neg": 0,
+        "slight_neg": 132,
+        "none": 5,
+        "slight_pos": 332,
+        "fair_pos": 11,
+        "very_pos": 464,
+        "extreme_pos": 11
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.619,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.622
+    }
+   }
+  }
+ ]
+}

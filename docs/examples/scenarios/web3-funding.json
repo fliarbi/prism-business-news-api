@@ -1,0 +1,2348 @@
+{
+ "slug": "web3-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:18Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "web3",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "web3"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 52,
+      "deals_with_amount": 48,
+      "deals_without_amount": 4,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 3764653890.05,
+      "median_amount_usd": 4160000.0,
+      "largest_amount_usd": 2500000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 52480002.54,
+       "median_amount_usd": 2381251.27,
+       "largest_amount_usd": 40000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 10,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 569499887.51,
+       "median_amount_usd": 3175000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 4,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 535074000.0,
+       "median_amount_usd": 17500000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 7500000.0,
+       "median_amount_usd": 2300000.0,
+       "largest_amount_usd": 4000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 5,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 98800000.0,
+       "median_amount_usd": 13500000.0,
+       "largest_amount_usd": 48300000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2505600000.0,
+       "median_amount_usd": 1252800000.0,
+       "largest_amount_usd": 2500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 8250000.0,
+       "median_amount_usd": 3100000.0,
+       "largest_amount_usd": 5000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 99000000.0,
+       "median_amount_usd": 3500000.0,
+       "largest_amount_usd": 90000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 355950000.0,
+       "median_amount_usd": 7500000.0,
+       "largest_amount_usd": 332500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2000000.0,
+       "median_amount_usd": 2000000.0,
+       "largest_amount_usd": 2000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 3,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 30500000.0,
+       "median_amount_usd": 7500000.0,
+       "largest_amount_usd": 20000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.172,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.201
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "web3",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "web3"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "a6a49e038c59339b",
+       "company_name": "obex",
+       "domain": "obex.es",
+       "round_type": null,
+       "amount_usd": 2500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sky",
+         "domain": "sky.com.br",
+         "amount": null
+        }
+       ],
+       "sector": "Web3",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Sky, which recently approved a governance vote to inject up to $2.5B of USDS stablecoins into Obex.",
+       "published_at": "2025-11-19T09:11:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cb57cdb39cc503f50e857c"
+       ],
+       "article_id": "69cb57cdb39cc503f50e857c"
+      },
+      {
+       "id": "5ef11d9af9d18728",
+       "company_name": "nano labs",
+       "domain": "nano.cn",
+       "round_type": "Convertible promissory notes",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Web3 infrastructure",
+       "country": null,
+       "city": null,
+       "use_of_funds": "General corporate purposes; conversion of notes into shares",
+       "source_sentence": "Back on June 24, Nano Labs raised $500 million through convertible promissory notes.",
+       "published_at": "2025-07-30T17:54:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f072f8d29a990b6f4d868"
+       ],
+       "article_id": "698f072f8d29a990b6f4d868"
+      },
+      {
+       "id": "879aeb8dcb66dbd1",
+       "company_name": "nano labs",
+       "domain": "nano.cn",
+       "round_type": "zero-coupon convertible promissory notes",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Web3 infrastructure and product solution provider",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Nano Labs Ltd (Nasdaq: NA), a Web3 infrastructure and product solution provider, has announced plans to raise $500 million from the issuance of zero-coupon convertible promissory notes, with several investors agreeing to subscribe to the offer.",
+       "published_at": "2025-06-24T16:39:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a263cce5e8458c2f965cd"
+       ],
+       "article_id": "698a263cce5e8458c2f965cd"
+      },
+      {
+       "id": "d3cfa24debb1d076",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "Series C",
+       "amount_usd": 332500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 332500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Blockchain, Cryptocurrency, Decentralized Finance (DeFi), FinTech, Web3",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-02-02T11:27:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "69888801868e86f9ec6c8019",
+        "6988a49469527f36baae5af5"
+       ],
+       "article_id": "69888801868e86f9ec6c8019"
+      },
+      {
+       "id": "c9471d33bb0cc82d",
+       "company_name": "Jiuzi Holdings, Inc.",
+       "domain": null,
+       "round_type": "Non-binding MOU for strategic investment",
+       "amount_usd": 90000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 90000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan international",
+         "domain": "morganintl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Blockchain infrastructure, Digital assets, Web3",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Infrastructure development, digital asset initiatives, Web3 ecosystem development",
+       "source_sentence": "Morgan International Finance Ltd under which Morgan International Finance intends to invest up to $90 million at a price of $3.00 per share.",
+       "published_at": "2026-01-27T18:59:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69983bf5a9a137bc0be04ecc"
+       ],
+       "article_id": "69983bf5a9a137bc0be04ecc"
+      },
+      {
+       "id": "1da89a5a1c92707a",
+       "company_name": "Jiuzi Holdings, Inc.",
+       "domain": null,
+       "round_type": "Strategic investment",
+       "amount_usd": 90000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 90000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan international",
+         "domain": "morganintl.com",
+         "amount": 90000000.0
+        }
+       ],
+       "sector": "Blockchain infrastructure, digital asset, Web3",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "infrastructure and digital asset initiatives",
+       "source_sentence": "Jiuzi Holdings, Inc. (Nasdaq: JZXN) disclosed that it has signed a non-binding memorandum of understanding with Morgan International Finance Ltd under which Morgan International Finance intends to invest up to $90 million at a price of $3.00 per share.",
+       "published_at": "2026-01-27T18:59:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbf6510f458341919ac57f"
+       ],
+       "article_id": "69bbf6510f458341919ac57f"
+      },
+      {
+       "id": "a7d48177ed864e22",
+       "company_name": "Astra Nova",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 48300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 48300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "outlier ventures",
+         "domain": "outlierventures.io",
+         "amount": null
+        },
+        {
+         "name": "Investors from Saudi Arabia",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Investors from UAE",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Investors from Bahrain",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3 entertainment",
+       "country": null,
+       "city": null,
+       "use_of_funds": "enhance its AI-powered Web3 content tools",
+       "source_sentence": "On October 18, Astra Nova raised $48.3 million to enhance its AI-powered Web3 content tools, with funding led by Outlier Ventures and investors from Saudi Arabia, the UAE, and Bahrain.",
+       "published_at": "2025-10-18T20:28:59",
+       "coverage_count": 2,
+       "article_ids": [
+        "68fe23e646325a41ca28a3cf",
+        "68fe2f92f2b4270823282cb8"
+       ],
+       "article_id": "68fe23e646325a41ca28a3cf"
+      },
+      {
+       "id": "f0473605a7429de6",
+       "company_name": "hypernative",
+       "domain": "hypernative.io",
+       "round_type": null,
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Web3 security",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Hypernative raised $40 million to protect over $100 billion in crypto assets from real-time threats.",
+       "published_at": "2025-06-10T23:09:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988f46094d3f481f3dca38d"
+       ],
+       "article_id": "6988f46094d3f481f3dca38d"
+      },
+      {
+       "id": "12808ce3f2a9c356",
+       "company_name": "hypernative",
+       "domain": "hypernative.io",
+       "round_type": "Series B",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Ten Eleven Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ballistic Ventures",
+         "domain": "ballistic-studio.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "boldstart ventures",
+         "domain": "boldstart.vc",
+         "amount": null
+        },
+        {
+         "name": "IBI Tech Fund",
+         "domain": "tech.ibi.co.il",
+         "amount": null
+        }
+       ],
+       "sector": "Web3 Security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Support expansion of fraud prevention and wallet-level transaction protection, AI model improvements, and team growth.",
+       "source_sentence": "Hypernative, the leading provider of real-time threat prevention in Web3, today announced a $40 million Series B funding round co-led by Ten Eleven Ventures and Ballistic Ventures, with participation from StepStone Group, and existing investors boldstart ventures and IBI Tech Fund.",
+       "published_at": "2025-06-10T13:36:26",
+       "coverage_count": 2,
+       "article_ids": [
+        "6898b001ab03b1b156db1e7f",
+        "69bd5a04edbbccf919a314a7"
+       ],
+       "article_id": "6898b001ab03b1b156db1e7f"
+      },
+      {
+       "id": "5f23240ca5bd759d",
+       "company_name": "azen",
+       "domain": "azengroup.com",
+       "round_type": "equity",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Royal Front LLC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3 infrastructure",
+       "country": "UAE",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "In addition, aZen’s holding company has secured a $40 million equity investment from UAE-based Royal Front LLC to drive long-term expansion and ecosystem development.",
+       "published_at": "2025-05-02T04:28:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "686410cc8882abb7e301a03e"
+       ],
+       "article_id": "686410cc8882abb7e301a03e"
+      },
+      {
+       "id": "a5e401a4896ea203",
+       "company_name": "The Open Platform",
+       "domain": "top.co",
+       "round_type": "Series A",
+       "amount_usd": 28500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 28500000.0,
+       "valuation": 1000000000.0,
+       "investors": [
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "pantera capital",
+         "domain": "panteracapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Web3 / Blockchain",
+       "country": "United Arab Emirates",
+       "city": "Dubai",
+       "use_of_funds": "geographical expansion and investment in go-to-market strategies, regulatory licensing, compliance infrastructure, and security enhancements",
+       "source_sentence": "The Open Platform raised $28.5 million in an extended Series A funding round, led by Ribbit Capital, with Pantera Capital also participating.",
+       "published_at": "2025-07-03T13:31:17",
+       "coverage_count": 8,
+       "article_ids": [
+        "6898b02fab03b1b156e3a401",
+        "68ab3fae2e28036801bdae56",
+        "694b4c4988cca3cbff75b322",
+        "6991fdb240184cd708690705",
+        "69980997ed628db051256ba1",
+        "69bc1a228a0c2dc739ede171",
+        "69c9d630c534852e935dae1a",
+        "69e298de9b322e6b3e9ba2af"
+       ],
+       "article_id": "6898b02fab03b1b156e3a401"
+      },
+      {
+       "id": "bfeb0c3b494368cd",
+       "company_name": "Yueda Digital Holding",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 28000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 28000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Web3 and digital-economy",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": null,
+       "source_sentence": "Yueda Digital Holding (Nasdaq: YDKG) (the 'Company'), a Web3 and digital-economy company with a focus on the long-term accumulation of mainstream cryptocurrencies, today announced that it has entered into a definitive agreement with certain investors for the purchase and sale of an aggregate of 28,000,000 units (each a 'Unit'), consisting of one ordinary share of the Company, par value $0.04 per share ... at a purchase price of $1.00 per unit in a registered direct offering.",
+       "published_at": "2025-10-15T13:29:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2b42fa85be7e5065fbf12"
+       ],
+       "article_id": "69e2b42fa85be7e5065fbf12"
+      },
+      {
+       "id": "0bf324d3730d36e6",
+       "company_name": "QLink World",
+       "domain": null,
+       "round_type": "Strategic Investment",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "foresight ventures",
+         "domain": "foresightventures.com",
+         "amount": 20000000.0
+        }
+       ],
+       "sector": "Web3 / Crypto Economy",
+       "country": "United Arab Emirates",
+       "city": "Dubai",
+       "use_of_funds": "to jointly build a new civilization of global value interconnection",
+       "source_sentence": "Leading the Web3 super gateways: QLink World received $20 million strategic investment led by Foresight Ventures, aiming to jointly build a new civilization of global value interconnection",
+       "published_at": "2026-04-21T05:37:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9a2fdbdd09a23d09542ed"
+       ],
+       "article_id": "69e9a2fdbdd09a23d09542ed"
+      },
+      {
+       "id": "0d32c2f0bf9e43d1",
+       "company_name": "OneBalance",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cyber•Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blockchain capital",
+         "domain": "blockchain.capital",
+         "amount": null
+        },
+        {
+         "name": "Mirana Ventures",
+         "domain": "mirana.xyz",
+         "amount": null
+        },
+        {
+         "name": "L2IV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "developer platform for improving crypto/Web3 user experience",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Fuel further development of platform and tools to simplify crypto user experience",
+       "source_sentence": "OneBalance closed a $20 million Series A funding round on June 11.",
+       "published_at": "2025-06-11T20:59:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5a10b209ed6c919c6b65a"
+       ],
+       "article_id": "68c5a10b209ed6c919c6b65a"
+      },
+      {
+       "id": "fdbd51f8d729c8b7",
+       "company_name": "KGen",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 13500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "prosus",
+         "domain": "prosus.com",
+         "amount": null
+        },
+        {
+         "name": "jump crypto",
+         "domain": "jumpcrypto.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "web3",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Web3 player KGen closed a $13.5 million round backed by Prosus, Jump Crypto, and Accel.",
+       "published_at": "2025-10-11T14:21:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f73001f3ba9a3da52c6e18"
+       ],
+       "article_id": "68f73001f3ba9a3da52c6e18"
+      },
+      {
+       "id": "9a239e7e33b65099",
+       "company_name": "based",
+       "domain": "getbased.com",
+       "round_type": "Series A",
+       "amount_usd": 11500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 11500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pantera capital",
+         "domain": "panteracapital.com",
+         "amount": null
+        },
+        {
+         "name": "coinbase ventures",
+         "domain": "ventures.coinbase.com",
+         "amount": null
+        },
+        {
+         "name": "Wintermute Ventures",
+         "domain": "wintermuteventures.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "Karatage",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3 crypto superapp",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "Support global expansion and scaling of its on‑chain financial infrastructure.",
+       "source_sentence": "Based, a Singapore‑based crypto/Web3 startup, has raised $11.5 million in a Series A round ...",
+       "published_at": "2026-02-24T22:34:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7ed1518fdf38742d8ea3"
+       ],
+       "article_id": "69bc7ed1518fdf38742d8ea3"
+      },
+      {
+       "id": "c569df175e8e329c",
+       "company_name": "Oh",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "L1D",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Auros Global",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hashed",
+         "domain": "hashed.com",
+         "amount": null
+        },
+        {
+         "name": "Maelstrom Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cadenza ventures",
+         "domain": "cadenza.vc",
+         "amount": null
+        },
+        {
+         "name": "Cyber Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kosmos VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tangent",
+         "domain": "tangent.com",
+         "amount": null
+        }
+       ],
+       "sector": "Web3 AI, generative AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Web3 AI project Oh has completed a $7.5 million Series A funding round, led by Maven11 Capital, with participation from L1D, Auros Global, Hashed, Maelstrom Fund, and Cadenza Ventures. Existing seed investors Cyber Fund, Kosmos VC, and Tangent also participated.",
+       "published_at": "2026-04-09T02:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2da7fc1991f786cf465c7",
+        "69f88765bbf1d3145599f5b1"
+       ],
+       "article_id": "69e2da7fc1991f786cf465c7"
+      },
+      {
+       "id": "d968f0968aae2fb5",
+       "company_name": "Bullshot",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "animoca brands",
+         "domain": "animocabrands.co.jp",
+         "amount": null
+        },
+        {
+         "name": "TBV Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "OneAM Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "leading family offices",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "other strategic backers",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate product development, expand ecosystem partnerships, enhance security, and scale global user acquisition",
+       "source_sentence": "$7.5 Million Raised from Top-Tier Investors",
+       "published_at": "2026-02-12T12:33:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc70c0bc0fe678ea67f647"
+       ],
+       "article_id": "69bc70c0bc0fe678ea67f647"
+      },
+      {
+       "id": "2deba39ae87ba59b",
+       "company_name": "Pieverse",
+       "domain": null,
+       "round_type": "Strategic Seed",
+       "amount_usd": 7000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "animoca brands",
+         "domain": "animocabrands.co.jp",
+         "amount": null
+        },
+        {
+         "name": "UOB Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "10k ventures",
+         "domain": "10kv.super.site",
+         "amount": null
+        },
+        {
+         "name": "signum capital",
+         "domain": "signum.capital",
+         "amount": null
+        },
+        {
+         "name": "morningstar ventures",
+         "domain": "morningstar.ventures",
+         "amount": null
+        },
+        {
+         "name": "undefined labs",
+         "domain": "undefinedlabs.com",
+         "amount": null
+        },
+        {
+         "name": "Sonic Foundation",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3 payment infrastructure",
+       "country": null,
+       "city": null,
+       "use_of_funds": "team growth and multi‑chain integrations",
+       "source_sentence": "Pieverse, a Web3 startup building blockchain‑native payment and compliance infrastructure, closed a $7 million strategic seed round co‑led by Animoca Brands and UOB Ventures.",
+       "published_at": "2025-10-26T02:35:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe83c400ca996aa1d834fd"
+       ],
+       "article_id": "68fe83c400ca996aa1d834fd"
+      },
+      {
+       "id": "afeb8ba4af16da7b",
+       "company_name": "freename",
+       "domain": "freename.io",
+       "round_type": "Series A",
+       "amount_usd": 6500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "entrée capital",
+         "domain": "entreecap.com",
+         "amount": null
+        },
+        {
+         "name": "polymorphic capital",
+         "domain": "polymorphic.capital",
+         "amount": null
+        },
+        {
+         "name": "sparkle ventures",
+         "domain": "sparkleventures.vc",
+         "amount": null
+        },
+        {
+         "name": "blockchain founders fund",
+         "domain": "blockchainff.com",
+         "amount": null
+        },
+        {
+         "name": "Golden Record Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "angel backers including Mike Lobanov",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3 domain platform",
+       "country": "Switzerland",
+       "city": "Zurich",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2025-07-24T00:05:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c588bfc6a4a9c884889c1b"
+       ],
+       "article_id": "68c588bfc6a4a9c884889c1b"
+      },
+      {
+       "id": "e42ff67f8fea44c0",
+       "company_name": "xp",
+       "domain": "xpi.com.br",
+       "round_type": null,
+       "amount_usd": 6200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blockchange ventures",
+         "domain": "blockchange.vc",
+         "amount": null
+        },
+        {
+         "name": "L1D",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Reflexive Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3 Ticketing",
+       "country": "USA",
+       "city": "New York City",
+       "use_of_funds": "expanding ticketing innovations including AI-powered price comparison",
+       "source_sentence": "Web3 ticketing platform XP has announced a $6.2 million raise and doubled down on plans “to build the most fulfilling ticketing experience for fans.”",
+       "published_at": "2025-05-24T06:15:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69313bfd3cc6c7d69af22078"
+       ],
+       "article_id": "69313bfd3cc6c7d69af22078"
+      },
+      {
+       "id": "5b75da9b9618fcee",
+       "company_name": "AAA LifeOS & C(H+A)RM",
+       "domain": null,
+       "round_type": "Seed+",
+       "amount_usd": 5600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "YZi Labs",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Huobi Ventures",
+         "domain": "huobiventures.capital",
+         "amount": null
+        }
+       ],
+       "sector": "AI, Web3, Longevity",
+       "country": "US",
+       "city": "Palo Alto",
+       "use_of_funds": "Accelerate the rollout of Vital and Anima - two core systems designed to extend human life and preserve digital consciousness through AI.",
+       "source_sentence": "AAA LifeOS & C(H+A)RM, an open-source framework uniting AI Immortality and Biological Longevity, has raised $5.6 million in a Seed+ round led by YZi Labs, NVentures (NVIDIA's venture capital arm), and Huobi Ventures.",
+       "published_at": "2025-11-18T16:53:32",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bceaee41245450861f0f45",
+        "69bd04cbec94907df10ecb35"
+       ],
+       "article_id": "69bceaee41245450861f0f45"
+      },
+      {
+       "id": "700f9fb82c83c382",
+       "company_name": "Neuramint",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "maelstrom",
+         "domain": "maelstrom.fund",
+         "amount": null
+        },
+        {
+         "name": "borderless capital",
+         "domain": "borderlesscapital.io",
+         "amount": null
+        },
+        {
+         "name": "Selini Capital",
+         "domain": "selinicapital.com",
+         "amount": null
+        },
+        {
+         "name": "symbolic capital",
+         "domain": "symbolicvc.com",
+         "amount": null
+        },
+        {
+         "name": "Lattice Fund",
+         "domain": "latticefund.com",
+         "amount": null
+        },
+        {
+         "name": "node capital",
+         "domain": "nodecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Web3 AI",
+       "country": "United States",
+       "city": "Denver",
+       "use_of_funds": "Accelerate platform development, expand Web3-native SDK integrations, support public launch of Neuramint Beta, and drive further integration with DeFi protocols, blockchain networks, enabling DeFi automation, NFT operations, cross-chain bridging, and DAO governance at scale.",
+       "source_sentence": "Neuramint, the leading AI agent platform empowering developers to build and manage autonomous Web3 workflows, today announced the successful completion of its $5 million seed funding round.",
+       "published_at": "2026-01-16T11:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6991c0a7bbd90153241083eb"
+       ],
+       "article_id": "6991c0a7bbd90153241083eb"
+      },
+      {
+       "id": "25e42361bce2c3ce",
+       "company_name": "Neuramint",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "maelstrom",
+         "domain": "maelstrom.fund",
+         "amount": null
+        },
+        {
+         "name": "borderless capital",
+         "domain": "borderlesscapital.io",
+         "amount": null
+        },
+        {
+         "name": "Selini Capital",
+         "domain": "selinicapital.com",
+         "amount": null
+        },
+        {
+         "name": "symbolic capital",
+         "domain": "symbolicvc.com",
+         "amount": null
+        },
+        {
+         "name": "Lattice Fund",
+         "domain": "latticefund.com",
+         "amount": null
+        },
+        {
+         "name": "node capital",
+         "domain": "nodecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Web3 AI",
+       "country": null,
+       "city": "Denver",
+       "use_of_funds": "accelerate platform development, expand Web3-native SDK integrations, support the upcoming public launch of Neuramint Beta",
+       "source_sentence": "Neuramint, a Denver, CO-based Web3 AI company developing an AI agent platform, raised $5M in Seed funding. Backers included Maelstrom, Borderless Capital, Selini Capital, Symbolic Capital, Lattice Fund, and Node Capital.",
+       "published_at": "2026-01-12T16:38:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e85ad49baafc7356776603"
+       ],
+       "article_id": "69e85ad49baafc7356776603"
+      },
+      {
+       "id": "ecf733efe8757e1f",
+       "company_name": "AllScale",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "YZi Labs",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Informed Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Generative Ventures",
+         "domain": "genventures.xyz",
+         "amount": null
+        },
+        {
+         "name": "BNB Chain ecosystem partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "web3",
+       "country": "USA",
+       "city": "New York City",
+       "use_of_funds": "build stablecoin bank for microbusinesses",
+       "source_sentence": "AllScale, a New York City‑based fintech startup, has raised $5 million in seed funding to launch the world’s first self‑custody stablecoin neobank for global microbusinesses.",
+       "published_at": "2025-12-08T22:19:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "694df0d7f5b4e0ec84f3025e"
+       ],
+       "article_id": "694df0d7f5b4e0ec84f3025e"
+      },
+      {
+       "id": "02cadce3e1249fa9",
+       "company_name": "dedge security",
+       "domain": "dedgesecurity.com",
+       "round_type": "seed",
+       "amount_usd": 4320000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Tritemius",
+         "domain": "tritemius.com",
+         "amount": null
+        }
+       ],
+       "sector": "Web3 security",
+       "country": "Spain",
+       "city": null,
+       "use_of_funds": "continue building its platform, expand its team, and accelerate its roadmap towards becoming the leading Web3 security partner",
+       "source_sentence": "Spanish cybersecurity firm Dedge Security, which offers an application security posture management (ASPM) platform tailored for Web3, has raised €4m in seed funding.",
+       "published_at": "2025-06-02T09:31:40",
+       "coverage_count": 2,
+       "article_ids": [
+        "698d185f8d29a990b6cfed61",
+        "698d481a8d29a990b6d372e6"
+       ],
+       "article_id": "698d481a8d29a990b6d372e6"
+      },
+      {
+       "id": "30afbc38bfa86f59",
+       "company_name": "AAA C(H+A)RM",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 4000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "YZi Labs",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Huobi Ventures",
+         "domain": "huobiventures.capital",
+         "amount": null
+        }
+       ],
+       "sector": "AI, Web3",
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": "accelerate its open, AI-first Orchestration Platform",
+       "source_sentence": "Autonomous AI Agents startup AAA C(H+A)RM has raised $4M in seed funding from YZi Labs, Nvidia, and Huobi Ventures to accelerate its open, AI-first Orchestration Platform — a next-gen Launchpad & Layer3 where humans and autonomous AI agents build, scale, and operate together.",
+       "published_at": "2025-09-13T15:24:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d101b3300ed74c762ccddc"
+       ],
+       "article_id": "68d101b3300ed74c762ccddc"
+      },
+      {
+       "id": "fe1911678ab008ca",
+       "company_name": "YOAKE",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 3200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sony innovation fund",
+         "domain": "sonyinnovationfund.com",
+         "amount": 3200000.0
+        }
+       ],
+       "sector": "Web3 entertainment ecosystem",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate expansion of on-chain entertainment scenarios on Sony's Soneium blockchain network",
+       "source_sentence": "PANews reported on February 13th that YOAKE, a Web3 entertainment ecosystem project, announced an additional investment of approximately $3.2 million from Sony Innovation Fund.",
+       "published_at": "2026-02-13T15:08:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcc3796760819e3848ea21"
+       ],
+       "article_id": "69bcc3796760819e3848ea21"
+      },
+      {
+       "id": "aa01b8aa08dacb7b",
+       "company_name": "Coinsilium Group",
+       "domain": "coinsilium.com",
+       "round_type": "Placing",
+       "amount_usd": 3175002.54,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 2500002.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Web3",
+       "country": "Gibraltar",
+       "city": "Gibraltar",
+       "use_of_funds": "to further the development of Forza (Gibraltar) Limited, to fund further investments and general working capital.",
+       "source_sentence": "Coinsilium Group Limited (AQUIS:COIN, OTCQB:CINGF), the Web3 investor, advisor, and venture builder is pleased to announce that it has raised GBP £2,500,002 gross via a broker led placing of 41,666,700 new ordinary shares of no par value at a price of 6 pence per share.",
+       "published_at": "2025-05-29T17:29:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb43220047e0373b1fe253"
+       ],
+       "article_id": "69bb43220047e0373b1fe253"
+      },
+      {
+       "id": "b9d9b99df37697bc",
+       "company_name": "Coinsilium Group",
+       "domain": "coinsilium.com",
+       "round_type": "Retail offer",
+       "amount_usd": 3175000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Web3",
+       "country": "Gibraltar",
+       "city": null,
+       "use_of_funds": "Proceeds will be used to further Forza (Gibraltar) Limited and for general working capital and further investments.",
+       "source_sentence": "WRAP Retail Offer of approximately £2,500,000",
+       "published_at": "2025-06-16T17:34:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc8bc2518fdf38742db457"
+       ],
+       "article_id": "69bc8bc2518fdf38742db457"
+      },
+      {
+       "id": "cc32d8b2148f94d8",
+       "company_name": "takadao",
+       "domain": "takadao.io",
+       "round_type": null,
+       "amount_usd": 3100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Hasan.VC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3 FinTech",
+       "country": "Saudi Arabia, Singapore",
+       "city": "Riyadh, Singapore",
+       "use_of_funds": "Support the launch of The LifeCard and expand LifeDAO ecosystem",
+       "source_sentence": "With this round, Takadao has raised US$3.1 million (RM13 million) in total funding, reinforcing its position as a global leader in ethical, community-governed fintech.",
+       "published_at": "2025-12-01T08:56:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f83759ca02490ec228f42"
+       ],
+       "article_id": "698f83759ca02490ec228f42"
+      },
+      {
+       "id": "6e847efbb49e0011",
+       "company_name": "Claw Intelligence",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Castrum Istanbul",
+         "domain": "castrum.istanbul",
+         "amount": null
+        },
+        {
+         "name": "titans ventures",
+         "domain": "titan-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "super labs",
+         "domain": "superlabs.com.br",
+         "amount": null
+        },
+        {
+         "name": "genesis capital",
+         "domain": "genesis.cz",
+         "amount": null
+        }
+       ],
+       "sector": "Web3",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Claw Intelligence, a Web3 intelligent layer project, announced the completion of a $3 million seed round of financing.",
+       "published_at": "2026-04-15T03:42:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d9f4a088760d34c2e19c"
+       ],
+       "article_id": "69f9d9f4a088760d34c2e19c"
+      },
+      {
+       "id": "4090ff7ad7a8758e",
+       "company_name": "GLHF",
+       "domain": "glhfgroup.com",
+       "round_type": "Seed",
+       "amount_usd": 2300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "1confirmation",
+         "domain": "1confirmation.com",
+         "amount": null
+        },
+        {
+         "name": "unnamed",
+         "domain": "unnamed.co",
+         "amount": null
+        }
+       ],
+       "sector": "Gaming – Web3",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "to introduce new gameplay features and expand the Gigaverse universe",
+       "source_sentence": "GLHF, a crypto‑native game studio, announced a $2.3 million funding round aimed at scaling up its flagship Web3 game, Gigaverse.",
+       "published_at": "2025-09-03T22:57:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5d112d7fe179be1ca9f73"
+       ],
+       "article_id": "68c5d112d7fe179be1ca9f73"
+      },
+      {
+       "id": "18219933561c5450",
+       "company_name": "PeakAI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cogitent ventures",
+         "domain": "cogitent.ventures",
+         "amount": null
+        },
+        {
+         "name": "Covey Network",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "catchervc",
+         "domain": "catchervc.chaincatcher.com",
+         "amount": null
+        },
+        {
+         "name": "10k ventures",
+         "domain": "10kv.super.site",
+         "amount": null
+        },
+        {
+         "name": "marblex",
+         "domain": "marblex.io",
+         "amount": null
+        },
+        {
+         "name": "paka",
+         "domain": "paka.life",
+         "amount": null
+        },
+        {
+         "name": "viabtc capital",
+         "domain": "capital.viabtc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Web3 marketing analytics",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "PeakAI, an AI-powered Web3 marketing analytics platform, has closed a $2 million seed funding round backed by seven investors including Cogitent Ventures, CatcherVC, and ViaBTC Capital.",
+       "published_at": "2026-03-26T07:07:14",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cc1d729d3d4bff9ce8036f",
+        "69e883b79baafc7356917714"
+       ],
+       "article_id": "69cc1d729d3d4bff9ce8036f"
+      },
+      {
+       "id": "d0864df9217f7787",
+       "company_name": "A47",
+       "domain": "a47.in",
+       "round_type": "pre-seed",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "institutional and angel investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3 AI-native news platform",
+       "country": "UAE",
+       "city": null,
+       "use_of_funds": "to build an AI‑native news platform prioritizing clarity, accuracy, and relevance",
+       "source_sentence": "UAE’s A47 raised USD 2M in pre‑seed funding to build an AI‑native news platform prioritizing clarity, accuracy, and relevance.",
+       "published_at": "2026-01-21T07:44:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "698d66c88d29a990b6d5dabe",
+        "69e1f07def7caa4b80daaf91"
+       ],
+       "article_id": "698d66c88d29a990b6d5dabe"
+      },
+      {
+       "id": "20ba85a5b4877325",
+       "company_name": "otomato",
+       "domain": "otomato.io",
+       "round_type": "Equity",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Unnamed UK-based deep-tech venture builder",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3 Automation",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Coinsilium Group Limited (AQSE: COIN | OTCQB: CINGF) has restructured its exposure to Otomato Web3 Agent Protocol following the latter’s USD2 million strategic investment from an unnamed UK-based deep-tech venture builder.",
+       "published_at": "2026-01-01T14:01:29",
+       "coverage_count": 2,
+       "article_ids": [
+        "69baed51ef75d9246559d0d0",
+        "69bbcc93f50f9c5e387185d9"
+       ],
+       "article_id": "69baed51ef75d9246559d0d0"
+      },
+      {
+       "id": "e868ca51cb8f5602",
+       "company_name": "PoobahAI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "FourTwoAlpha Ltd",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3, AI, no-code platform, decentralized infrastructure",
+       "country": "USA",
+       "city": "Fort Worth",
+       "use_of_funds": "accelerate product scaling for its flagship MCP Server, drive go-to-market initiatives and expand waitlist across North America, Europe and Asia",
+       "source_sentence": "PoobahAI, the AI-powered no-code platform empowering creators, entrepreneurs, and builders to launch decentralized Web3 applications, tokenized ecosystems, and AI agents in just weeks without technical barriers, announced it has raised $2 million in seed funding from FourTwoAlpha Ltd.",
+       "published_at": "2025-10-29T15:17:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69023a626053f8c1f9d839ae"
+       ],
+       "article_id": "69023a626053f8c1f9d839ae"
+      },
+      {
+       "id": "92a3c2ee7227dc20",
+       "company_name": "Coinsilium Group",
+       "domain": "coinsilium.com",
+       "round_type": "Broker led Placing",
+       "amount_usd": 1587500.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 1250000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Web3",
+       "country": "Gibraltar",
+       "city": "Gibraltar",
+       "use_of_funds": "Forza (Gibraltar) Limited subsidiary, general working capital, and further investments.",
+       "source_sentence": "Through a separate announcement earlier today, the Company announced it has raised gross proceeds of £1,250,000 through the issue of 41,666,657 Ordinary Shares through a broker led placing (“Placing”).",
+       "published_at": "2025-05-15T17:30:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7a050f7c42aae0d41cfa"
+       ],
+       "article_id": "69bc7a050f7c42aae0d41cfa"
+      },
+      {
+       "id": "138f8532ecff99c1",
+       "company_name": "YOAKE",
+       "domain": null,
+       "round_type": "Extended Seed",
+       "amount_usd": 1250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1250000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Web3 entertainment ecosystem",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "YOAKE has raised approximately $4.45 million in total funding to date, including $1.25 million in the Extended Seed round completed in April 2025.",
+       "published_at": "2026-02-13T15:08:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcc3796760819e3848ea21"
+       ],
+       "article_id": "69bcc3796760819e3848ea21"
+      },
+      {
+       "id": "9f012a72a672ab0c",
+       "company_name": "Epoch Protocol",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Web3",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "grow its engineering team and deepen Web3 partnerships",
+       "source_sentence": "Meanwhile, Singapore’s Epoch Protocol raised $1.2 million to grow its engineering team and deepen Web3 partnerships as it develops its task organization platform.",
+       "published_at": "2025-09-19T09:00:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d68549ca02490ecfa8628"
+       ],
+       "article_id": "698d68549ca02490ecfa8628"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 52,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDktMTkgMDk6MDA6MjciLCJrIjoiMTE0NTc0ODU1OTg5MTQ0MjM1NjQiLCJhIjoxMjAwMDAwLjB9",
+     "totals": {
+      "deals": 52,
+      "deals_with_amount": 48,
+      "deals_without_amount": 4,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 3764653890.05,
+      "median_amount_usd": 4160000.0,
+      "largest_amount_usd": 2500000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.089,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.097
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "web3",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "web3"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "0bf324d3730d36e6",
+       "company_name": "QLink World",
+       "domain": null,
+       "round_type": "Strategic Investment",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "foresight ventures",
+         "domain": "foresightventures.com",
+         "amount": 20000000.0
+        }
+       ],
+       "sector": "Web3 / Crypto Economy",
+       "country": "United Arab Emirates",
+       "city": "Dubai",
+       "use_of_funds": "to jointly build a new civilization of global value interconnection",
+       "source_sentence": "Leading the Web3 super gateways: QLink World received $20 million strategic investment led by Foresight Ventures, aiming to jointly build a new civilization of global value interconnection",
+       "published_at": "2026-04-21T05:37:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9a2fdbdd09a23d09542ed"
+       ],
+       "article_id": "69e9a2fdbdd09a23d09542ed"
+      },
+      {
+       "id": "6e847efbb49e0011",
+       "company_name": "Claw Intelligence",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Castrum Istanbul",
+         "domain": "castrum.istanbul",
+         "amount": null
+        },
+        {
+         "name": "titans ventures",
+         "domain": "titan-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "super labs",
+         "domain": "superlabs.com.br",
+         "amount": null
+        },
+        {
+         "name": "genesis capital",
+         "domain": "genesis.cz",
+         "amount": null
+        }
+       ],
+       "sector": "Web3",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Claw Intelligence, a Web3 intelligent layer project, announced the completion of a $3 million seed round of financing.",
+       "published_at": "2026-04-15T03:42:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d9f4a088760d34c2e19c"
+       ],
+       "article_id": "69f9d9f4a088760d34c2e19c"
+      },
+      {
+       "id": "c569df175e8e329c",
+       "company_name": "Oh",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "L1D",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Auros Global",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hashed",
+         "domain": "hashed.com",
+         "amount": null
+        },
+        {
+         "name": "Maelstrom Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cadenza ventures",
+         "domain": "cadenza.vc",
+         "amount": null
+        },
+        {
+         "name": "Cyber Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kosmos VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tangent",
+         "domain": "tangent.com",
+         "amount": null
+        }
+       ],
+       "sector": "Web3 AI, generative AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Web3 AI project Oh has completed a $7.5 million Series A funding round, led by Maven11 Capital, with participation from L1D, Auros Global, Hashed, Maelstrom Fund, and Cadenza Ventures. Existing seed investors Cyber Fund, Kosmos VC, and Tangent also participated.",
+       "published_at": "2026-04-09T02:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2da7fc1991f786cf465c7",
+        "69f88765bbf1d3145599f5b1"
+       ],
+       "article_id": "69e2da7fc1991f786cf465c7"
+      },
+      {
+       "id": "39305b71ce50c9db",
+       "company_name": "Libeara",
+       "domain": "libeara.com",
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gsr",
+         "domain": "gsr-inc.com",
+         "amount": null
+        },
+        {
+         "name": "sc ventures",
+         "domain": "scventures.io",
+         "amount": null
+        }
+       ],
+       "sector": "tokenization, Web3",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its compliant on-chain tokenization infrastructure for financial institutions and asset managers, and broaden coverage across additional asset classes, markets, and investor segments.",
+       "source_sentence": "market maker GSR led a funding round for Libeara, a tokenization platform backed by SC Ventures, to support its strategy of building a Web3 \"investment bank.\"",
+       "published_at": "2026-04-08T00:36:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e8c6a47bb1410d4cbe0f15",
+        "69f9d8c2713680636eef31f0",
+        "69f9da18713680636ef02ea3"
+       ],
+       "article_id": "69f9da18713680636ef02ea3"
+      },
+      {
+       "id": "18219933561c5450",
+       "company_name": "PeakAI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cogitent ventures",
+         "domain": "cogitent.ventures",
+         "amount": null
+        },
+        {
+         "name": "Covey Network",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "catchervc",
+         "domain": "catchervc.chaincatcher.com",
+         "amount": null
+        },
+        {
+         "name": "10k ventures",
+         "domain": "10kv.super.site",
+         "amount": null
+        },
+        {
+         "name": "marblex",
+         "domain": "marblex.io",
+         "amount": null
+        },
+        {
+         "name": "paka",
+         "domain": "paka.life",
+         "amount": null
+        },
+        {
+         "name": "viabtc capital",
+         "domain": "capital.viabtc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Web3 marketing analytics",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "PeakAI, an AI-powered Web3 marketing analytics platform, has closed a $2 million seed funding round backed by seven investors including Cogitent Ventures, CatcherVC, and ViaBTC Capital.",
+       "published_at": "2026-03-26T07:07:14",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cc1d729d3d4bff9ce8036f",
+        "69e883b79baafc7356917714"
+       ],
+       "article_id": "69cc1d729d3d4bff9ce8036f"
+      },
+      {
+       "id": "9a239e7e33b65099",
+       "company_name": "based",
+       "domain": "getbased.com",
+       "round_type": "Series A",
+       "amount_usd": 11500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 11500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pantera capital",
+         "domain": "panteracapital.com",
+         "amount": null
+        },
+        {
+         "name": "coinbase ventures",
+         "domain": "ventures.coinbase.com",
+         "amount": null
+        },
+        {
+         "name": "Wintermute Ventures",
+         "domain": "wintermuteventures.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "Karatage",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3 crypto superapp",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "Support global expansion and scaling of its on‑chain financial infrastructure.",
+       "source_sentence": "Based, a Singapore‑based crypto/Web3 startup, has raised $11.5 million in a Series A round ...",
+       "published_at": "2026-02-24T22:34:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7ed1518fdf38742d8ea3"
+       ],
+       "article_id": "69bc7ed1518fdf38742d8ea3"
+      },
+      {
+       "id": "fe1911678ab008ca",
+       "company_name": "YOAKE",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 3200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sony innovation fund",
+         "domain": "sonyinnovationfund.com",
+         "amount": 3200000.0
+        }
+       ],
+       "sector": "Web3 entertainment ecosystem",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate expansion of on-chain entertainment scenarios on Sony's Soneium blockchain network",
+       "source_sentence": "PANews reported on February 13th that YOAKE, a Web3 entertainment ecosystem project, announced an additional investment of approximately $3.2 million from Sony Innovation Fund.",
+       "published_at": "2026-02-13T15:08:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcc3796760819e3848ea21"
+       ],
+       "article_id": "69bcc3796760819e3848ea21"
+      },
+      {
+       "id": "138f8532ecff99c1",
+       "company_name": "YOAKE",
+       "domain": null,
+       "round_type": "Extended Seed",
+       "amount_usd": 1250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1250000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Web3 entertainment ecosystem",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "YOAKE has raised approximately $4.45 million in total funding to date, including $1.25 million in the Extended Seed round completed in April 2025.",
+       "published_at": "2026-02-13T15:08:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcc3796760819e3848ea21"
+       ],
+       "article_id": "69bcc3796760819e3848ea21"
+      },
+      {
+       "id": "d968f0968aae2fb5",
+       "company_name": "Bullshot",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "animoca brands",
+         "domain": "animocabrands.co.jp",
+         "amount": null
+        },
+        {
+         "name": "TBV Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "OneAM Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "leading family offices",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "other strategic backers",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Web3",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate product development, expand ecosystem partnerships, enhance security, and scale global user acquisition",
+       "source_sentence": "$7.5 Million Raised from Top-Tier Investors",
+       "published_at": "2026-02-12T12:33:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc70c0bc0fe678ea67f647"
+       ],
+       "article_id": "69bc70c0bc0fe678ea67f647"
+      },
+      {
+       "id": "d3cfa24debb1d076",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "Series C",
+       "amount_usd": 332500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 332500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Blockchain, Cryptocurrency, Decentralized Finance (DeFi), FinTech, Web3",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-02-02T11:27:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "69888801868e86f9ec6c8019",
+        "6988a49469527f36baae5af5"
+       ],
+       "article_id": "69888801868e86f9ec6c8019"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 16,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDItMDIgMTE6Mjc6MTMiLCJrIjoiMTUyNjI1OTYxMTc3MzIzODA3OTAifQ",
+     "totals": {
+      "deals": 16,
+      "deals_with_amount": 15,
+      "deals_without_amount": 1,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 487450000.0,
+      "median_amount_usd": 5000000.0,
+      "largest_amount_usd": 332500000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.041,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.047
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,2383 @@
+{
+ "slug": "construction-tech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:21Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "construction",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "construction"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 288,
+      "deals_with_amount": 249,
+      "deals_without_amount": 39,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 5768385750.0,
+      "median_amount_usd": 8536250.0,
+      "largest_amount_usd": 415000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 38,
+       "deals_with_amount": 32,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 457124000.0,
+       "median_amount_usd": 6500000.0,
+       "largest_amount_usd": 166000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 18,
+       "deals_with_amount": 17,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 440731000.0,
+       "median_amount_usd": 10500000.0,
+       "largest_amount_usd": 200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 19,
+       "deals_with_amount": 15,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 681365300.0,
+       "median_amount_usd": 8000000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 8,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 141928000.0,
+       "median_amount_usd": 13900000.0,
+       "largest_amount_usd": 41040000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 39,
+       "deals_with_amount": 29,
+       "deals_without_amount": 10,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 441372050.0,
+       "median_amount_usd": 6480000.0,
+       "largest_amount_usd": 87780000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 26,
+       "deals_with_amount": 25,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 716602000.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 28,
+       "deals_with_amount": 24,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 726994000.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 415000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 28,
+       "deals_with_amount": 24,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 510722000.0,
+       "median_amount_usd": 12480000.0,
+       "largest_amount_usd": 120000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 16,
+       "deals_with_amount": 13,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 291184300.0,
+       "median_amount_usd": 4400000.0,
+       "largest_amount_usd": 172800000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 28,
+       "deals_with_amount": 27,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1093944800.0,
+       "median_amount_usd": 4560000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 18,
+       "deals_with_amount": 18,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 279459800.0,
+       "median_amount_usd": 10500000.0,
+       "largest_amount_usd": 112000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 17,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 146266500.0,
+       "median_amount_usd": 5400000.0,
+       "largest_amount_usd": 30000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.061,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.064
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "construction",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "construction"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "6ef101f239de2779",
+       "company_name": "companycam",
+       "domain": "companycam.com",
+       "round_type": "late-stage equity investment",
+       "amount_usd": 415000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 415000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        }
+       ],
+       "sector": "Construction site documentation and project management",
+       "country": "USA",
+       "city": "Lincoln",
+       "use_of_funds": null,
+       "source_sentence": "Leaders at CompanyCam declined to disclose the amount raised during the round. However, data from private capital market research platform PitchBook shows the investment totaled $415 million, which makes it the largest single equity investment round (excluding debt financing) in Nebraska startup history.",
+       "published_at": "2025-11-25T11:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "694b077168a37c988175ba4b"
+       ],
+       "article_id": "694b077168a37c988175ba4b"
+      },
+      {
+       "id": "951a14fde662c23b",
+       "company_name": "Bedrock Robotics",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1750000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 1750000000.0,
+       "investors": [
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Nvidia’s venture arm",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Valor Equity Partners’ artificial intelligence fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Proptech / Construction Technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate the construction process, especially for data centers",
+       "source_sentence": "Proptech startup Bedrock Robotics has nailed down nearly $300M to accelerate the construction process, especially for data centers.",
+       "published_at": "2026-02-04T20:52:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc2aaba75fc0dcb0210ed7"
+       ],
+       "article_id": "69bc2aaba75fc0dcb0210ed7"
+      },
+      {
+       "id": "0684ec4e2adafe0b",
+       "company_name": "dexco",
+       "domain": "dexcoinc.com",
+       "round_type": "public issuance of unsecured, non-convertible debentures",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "BRL",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Forestry, Wood Panel, Construction Materials",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "Support Dexco’s corporate initiatives across its forestry, wood panel, and construction materials divisions, including its joint venture LD Celulose",
+       "source_sentence": "Dexco’s third public issuance of unsecured, non-convertible debentures, totaling BRL 1.5 billion (approx. USD 279 million)",
+       "published_at": "2025-10-30T15:42:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a880eefc5d2f542bcd58"
+       ],
+       "article_id": "6988a880eefc5d2f542bcd58"
+      },
+      {
+       "id": "4b2451a7169ee1a5",
+       "company_name": "shapoorji pallonji",
+       "domain": "shapoorji.in",
+       "round_type": "loan",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "construction",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "refinance existing loan",
+       "source_sentence": "Shapoorji Pallonji & Co., the construction arm of the Shapoorji Pallonji Group, is in talks with banks to borrow about USD 300 million (roughly Rs. 25 billion).",
+       "published_at": "2025-07-04T10:42:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "68a176573ff75e010c2a0dad"
+       ],
+       "article_id": "68a176573ff75e010c2a0dad"
+      },
+      {
+       "id": "79297c52ca5246a7",
+       "company_name": "Bedrock Robotics",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 270000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 270000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Valor Atreides AI Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "emergence capital",
+         "domain": "emergencecapitalpartnersltd.com",
+         "amount": null
+        },
+        {
+         "name": "xora",
+         "domain": "xora.com",
+         "amount": null
+        },
+        {
+         "name": "tishman speyer",
+         "domain": "tishmanspeyer.com",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics/Autonomous Construction",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "product development and large-scale field deployments",
+       "source_sentence": "Bedrock Robotics builds retrofit kits ... the company raised $270 million in a Series B round ... to expand beyond single-machine deployments.",
+       "published_at": "2026-02-04T23:35:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "6986a952ca3bd326c77cffbf",
+        "69bb171c68bf20e367f75d05"
+       ],
+       "article_id": "6986a952ca3bd326c77cffbf"
+      },
+      {
+       "id": "9bf96af66bb9425d",
+       "company_name": "bedrock",
+       "domain": "bedrock.com",
+       "round_type": "Series B",
+       "amount_usd": 270000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 270000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Valor Atreides AI Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "xora",
+         "domain": "xora.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "emergence capital",
+         "domain": "emergencecapitalpartnersltd.com",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "tishman speyer",
+         "domain": "tishmanspeyer.com",
+         "amount": null
+        },
+        {
+         "name": "Massachusetts Institute of Technology",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "Incharge Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "C4 Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous construction equipment",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Accelerate construction automation, deploy autonomous machines, collect data, develop models, testing, and expand operations",
+       "source_sentence": "Bedrock Robotics Inc., a developer of autonomous construction equipment, today said it has raised $270 million in Series B funding.",
+       "published_at": "2026-02-04T21:14:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989c2bc94d3f481f3ebe448"
+       ],
+       "article_id": "6989c2bc94d3f481f3ebe448"
+      },
+      {
+       "id": "59ebf4262082d278",
+       "company_name": "Corporate Strategies",
+       "domain": null,
+       "round_type": "debt financing",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bank",
+         "domain": "bank.co.jp",
+         "amount": 25.0
+        },
+        {
+         "name": "private lender",
+         "domain": "myprivatelender.com",
+         "amount": 175.0
+        }
+       ],
+       "sector": "industrial construction",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Corporate Strategies completed a $200 million debt financing and $65 million recapitalization for one of the nation’s oldest full-service, multi-discipline industrial construction, fabrication and maintenance firms.",
+       "published_at": "2025-06-11T04:45:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a89eb2a4bc21b9427a63"
+       ],
+       "article_id": "69c3a89eb2a4bc21b9427a63"
+      },
+      {
+       "id": "dc7219becfb22629",
+       "company_name": "ramery",
+       "domain": "ramery.fr",
+       "round_type": "structured financing plan",
+       "amount_usd": 172800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 160000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "septentrion",
+         "domain": "septentrion-design.com",
+         "amount": null
+        }
+       ],
+       "sector": "consulting engineering, energy performance, construction, circular economy, renewable energy",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to support its growth and acceleration of its new activities",
+       "source_sentence": "Ramery (3,000 employees, 700 million euros from CA 2025) signed a structured financing plan of 160 million euros at the end of January 2026 to support its growth and acceleration of its new activities.",
+       "published_at": "2026-01-26T16:40:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8a09e9baafc7356a6f9ca"
+       ],
+       "article_id": "69e8a09e9baafc7356a6f9ca"
+      },
+      {
+       "id": "11a5952492bcef8a",
+       "company_name": "buildots",
+       "domain": "buildots.com",
+       "round_type": "Series D",
+       "amount_usd": 166000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 166000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "qumra capital",
+         "domain": "qumracapital.com",
+         "amount": null
+        },
+        {
+         "name": "OG Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tlv partners",
+         "domain": "tlv.partners",
+         "amount": null
+        },
+        {
+         "name": "Poalim Equity",
+         "domain": "poalimequity.com",
+         "amount": null
+        },
+        {
+         "name": "future energy ventures",
+         "domain": "fev.vc",
+         "amount": null
+        },
+        {
+         "name": "viola growth",
+         "domain": "viola-group.com",
+         "amount": null
+        }
+       ],
+       "sector": "construction tech",
+       "country": "USA",
+       "city": "Chicago",
+       "use_of_funds": "expand product across construction lifecycle stages and train AI models",
+       "source_sentence": "Buildots, a Chicago-based AI-driven construction tech startup, raised $45 million in a Series D round.",
+       "published_at": "2025-05-29T22:18:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "690e3093db65e9a9d024a022"
+       ],
+       "article_id": "690e3093db65e9a9d024a022"
+      },
+      {
+       "id": "08aaa21b18ed5919",
+       "company_name": "infra.market",
+       "domain": "infra.market",
+       "round_type": "Debt",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mars Growth Capital",
+         "domain": "marsgrowth.com",
+         "amount": null
+        }
+       ],
+       "sector": "Infrastructure and Construction",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "to double down on core, high-margin product categories where the company is already seeing strong traction",
+       "source_sentence": "Infra.Market has raised $150 million in structured debt financing from Mars Growth Capital, a joint venture between MUFG and Liquidity Group.",
+       "published_at": "2025-07-07T16:06:26",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d9ac6dc149d2bca77f265f",
+        "69bbf1876467b30648e0bcc3",
+        "69bc2c754583f4645ff4b5b4"
+       ],
+       "article_id": "69bbf1876467b30648e0bcc3"
+      },
+      {
+       "id": "d78500feb61b2e22",
+       "company_name": "morgan construction",
+       "domain": "morganconstruction.org",
+       "round_type": "Credit Facility",
+       "amount_usd": 148000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gordon brothers",
+         "domain": "gordonbrothers.com",
+         "amount": 200000000.0
+        }
+       ],
+       "sector": "Construction",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "working capital, new equipment purchases and growth",
+       "source_sentence": "On July 8, 2025, Gordon Brothers announced that they have agented C$200 million in financing, consisting of a five-year C$150 million revolving credit facility and a C$50 million accordion, to support Morgan Construction’s working capital, new equipment purchases and growth.",
+       "published_at": "2025-07-08T18:04:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "694b0ab3f3c4fb93f675b225"
+       ],
+       "article_id": "694b0ab3f3c4fb93f675b225"
+      },
+      {
+       "id": "618a084a8e97c9e2",
+       "company_name": "morgan construction",
+       "domain": "morganconstruction.org",
+       "round_type": "loan",
+       "amount_usd": 148000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gordon brothers",
+         "domain": "gordonbrothers.com",
+         "amount": null
+        }
+       ],
+       "sector": "Construction",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "new equipment, growth, working capital",
+       "source_sentence": "Gordon Brothers acts as agent for $200 million in Morgan Construction's new equipment and growth.",
+       "published_at": "2025-07-08T18:04:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "694d6450d82b7cd315f2f07f"
+       ],
+       "article_id": "694d6450d82b7cd315f2f07f"
+      },
+      {
+       "id": "d376919f36d78e37",
+       "company_name": "North American Construction Group",
+       "domain": "nacg.ca",
+       "round_type": "private placement",
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "National Bank Capital Markets",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ATB Securities Inc.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "scotia capital",
+         "domain": "gbm.scotiabank.com",
+         "amount": null
+        },
+        {
+         "name": "td securities",
+         "domain": "tdsecurities.com",
+         "amount": null
+        },
+        {
+         "name": "bmo nesbitt burns",
+         "domain": "bmo.com",
+         "amount": null
+        },
+        {
+         "name": "cibc world markets",
+         "domain": "cibcwm.com",
+         "amount": null
+        },
+        {
+         "name": "Canaccord Genuity",
+         "domain": "canaccordgenuity.com",
+         "amount": null
+        },
+        {
+         "name": "raymond james",
+         "domain": "raymondjames.com",
+         "amount": null
+        }
+       ],
+       "sector": "heavy civil construction and mining services",
+       "country": "Canada",
+       "city": "Acheson",
+       "use_of_funds": "repay indebtedness under its existing Credit Agreement, and for general corporate purposes",
+       "source_sentence": "North American Construction Group Ltd. (“NACG”) announced the closure of its private placement offering of an additional $125 million aggregate principal amount of its 7.75% Senior Unsecured Notes due May 1, 2030.",
+       "published_at": "2025-10-22T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe320d9f5ecb55fa28771f",
+        "6996bf16e7ff408e2d6e04fe",
+        "6998109ad24b4781ec0753e4"
+       ],
+       "article_id": "6996bf16e7ff408e2d6e04fe"
+      },
+      {
+       "id": "eac7e198189a8c0b",
+       "company_name": "orion group holdings",
+       "domain": "oriongroupholdingsinc.com",
+       "round_type": "Senior Credit Facility",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "umb bank",
+         "domain": "umb.com",
+         "amount": 120000000.0
+        }
+       ],
+       "sector": "specialty construction",
+       "country": "USA",
+       "city": "Houston",
+       "use_of_funds": "repay outstanding borrowings of $23 million and for general corporate purposes",
+       "source_sentence": "Orion Group Holdings, Inc. today announced that it has entered into a new, five-year $120 million Senior Credit Facility with UMB Bank.",
+       "published_at": "2025-12-29T12:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996e019e0523bedf7b1a89b"
+       ],
+       "article_id": "6996e019e0523bedf7b1a89b"
+      },
+      {
+       "id": "48e9f86433241cf2",
+       "company_name": "Hindustan Construction Company",
+       "domain": "hccindia.com",
+       "round_type": "rights issue",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "construction",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Shares of Hindustan Construction Company (HCC) Ltd. surged as much as 10% on Monday, December 22, after its ₹1,000 crore rights issue saw full subscription on the final day of bidding.",
+       "published_at": "2025-12-22T06:55:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "6991c4987a11353017a27d29"
+       ],
+       "article_id": "6991c4987a11353017a27d29"
+      },
+      {
+       "id": "f76b6b5248f37a32",
+       "company_name": "Hindustan Construction",
+       "domain": "hccindia.com",
+       "round_type": "rights issue",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Construction",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Hindustan Construction Company Ltd. (HCC), on Monday night, finalized the terms of its rights issue, through which the company intends to raise ₹1,000 crore.",
+       "published_at": "2025-12-02T03:27:05",
+       "coverage_count": 2,
+       "article_ids": [
+        "693133764b2dcb732af20719",
+        "69453b956b368d3859a33fde"
+       ],
+       "article_id": "693133764b2dcb732af20719"
+      },
+      {
+       "id": "177f8844fe7447d1",
+       "company_name": "next geosolutions",
+       "domain": "nextgeosolutions.com",
+       "round_type": "Acquisition financing",
+       "amount_usd": 112000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 112000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "intesa sanpaolo",
+         "domain": "intesasanpaolo.com",
+         "amount": null
+        },
+        {
+         "name": "Cassa Depositi e Prestiti",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Marine Geosciences and Offshore Construction",
+       "country": "Italy",
+       "city": null,
+       "use_of_funds": "Acquisition of vessel Siem Day (renamed NG Supporter) to expand fleet",
+       "source_sentence": "The two financial institutions are providing 70% of the funding, with a 10-year repayment term. Intesa Sanpaolo is acting as lead bank, underwriting 60% of the financed amount, while CDP is contributing the remaining 40%.",
+       "published_at": "2026-03-18T07:50:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4e33c4c503be0189a54"
+       ],
+       "article_id": "69c3a4e33c4c503be0189a54"
+      },
+      {
+       "id": "c161dfbe36726b95",
+       "company_name": "infra.market",
+       "domain": "infra.market",
+       "round_type": "Series G",
+       "amount_usd": 87780000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 7315000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "founders",
+         "domain": "founders.com.br",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "NK Squared",
+         "domain": "nksquared.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "accel india",
+         "domain": "accelindia.com",
+         "amount": null
+        },
+        {
+         "name": "nexus",
+         "domain": "nexushospitals.com.au",
+         "amount": null
+        },
+        {
+         "name": "Evolvence",
+         "domain": "evolvence.com",
+         "amount": null
+        }
+       ],
+       "sector": "Building materials / Construction / Full-stack supply platform",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "support its supply of structural and finishing construction products.",
+       "source_sentence": "Building materials platform Infra.Market has raised INR 731.5 crore in a Series G round led by Silverline Homes (founders), with investments from Tiger Global, NK Squared, Accel India, Nexus, Evolvence, etc. The round is at a flat valuation (same as previous round). Funds will support its supply of structural and finishing construction products.",
+       "published_at": "2025-09-18T15:19:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "698ce0d59ca02490ecf08108"
+       ],
+       "article_id": "698ce0d59ca02490ecf08108"
+      },
+      {
+       "id": "1806706be65a6581",
+       "company_name": "infra.market",
+       "domain": "infra.market",
+       "round_type": null,
+       "amount_usd": 83000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 83000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "silverline",
+         "domain": "silverlinecrm.com",
+         "amount": null
+        }
+       ],
+       "sector": "Construction",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Construction materials marketplace Infra.Market raised around $83 million from promoters and existing shareholders, valuing the company at around $2.8 billion.",
+       "published_at": "2025-09-26T15:03:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d98c8982f590e7fe7e78f8"
+       ],
+       "article_id": "68d98c8982f590e7fe7e78f8"
+      },
+      {
+       "id": "3904c522096e8276",
+       "company_name": "Bedrock Robotics",
+       "domain": null,
+       "round_type": "Seed and Series A",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Construction technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The company emerged from stealth in July 2025 with $80 million in Seed and Series A funding.",
+       "published_at": "2026-02-05T04:26:46",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a3dca88ad7b9aae09de4",
+        "69bc2959a3b9608a9aeccf14"
+       ],
+       "article_id": "6988a3dca88ad7b9aae09de4"
+      },
+      {
+       "id": "82c2d475f114a04c",
+       "company_name": "bedrock",
+       "domain": "bedrock.com",
+       "round_type": "Series A",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Autonomous construction equipment",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Build retrofit kits for excavators",
+       "source_sentence": "In July 2025, the San Francisco-based company emerged from stealth with $80 million in Series A funding to begin building retrofit kits for excavators.",
+       "published_at": "2026-02-04T21:14:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989c2bc94d3f481f3ebe448"
+       ],
+       "article_id": "6989c2bc94d3f481f3ebe448"
+      },
+      {
+       "id": "c9e6e9142404f7d0",
+       "company_name": "see group",
+       "domain": "seegroupholdings.com",
+       "round_type": null,
+       "amount_usd": 67000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 67000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ellerston capital",
+         "domain": "ellerstoncapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "civil construction and mining services",
+       "country": "Australia",
+       "city": null,
+       "use_of_funds": "expand heavy plant and fleet, strengthen mining and civil infrastructure capability, pursue larger projects",
+       "source_sentence": "We’re pleased to announce Ellerston Capital’s $67 million investment in SEE Group, a leading civil construction and mining services company operating across Queensland and New South Wales.",
+       "published_at": "2025-11-11T23:15:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e285c6bd7b10565a3313a5"
+       ],
+       "article_id": "69e285c6bd7b10565a3313a5"
+      },
+      {
+       "id": "86c6558115a1d439",
+       "company_name": "Corporate Strategies",
+       "domain": null,
+       "round_type": "recapitalization",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "industrial construction",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "This recapitalization includes $200 million in new debt financing and the conversion of approximately $65 million in related-party owner debt into preferred equity.",
+       "published_at": "2025-06-11T04:45:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a89eb2a4bc21b9427a63"
+       ],
+       "article_id": "69c3a89eb2a4bc21b9427a63"
+      },
+      {
+       "id": "ef6a3a285cf1a801",
+       "company_name": "permitflow",
+       "domain": "permitflow.com",
+       "round_type": "Series B",
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 54000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "initialized capital",
+         "domain": "initialized.com",
+         "amount": null
+        },
+        {
+         "name": "altos ventures",
+         "domain": "altos.vc",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Construction / AI / Automation",
+       "country": "United States",
+       "city": "New York City",
+       "use_of_funds": "The funds will be used to expand PermitFlow’s suite of AI agents for permitting, inspections, and license management, accelerate product development, and grow the team to meet rising demand.",
+       "source_sentence": "PermitFlow, a New York-based AI platform for construction, has raised $54 million in a Series B round.",
+       "published_at": "2025-12-03T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "694512da09e9b8b37aa341f6",
+        "6988a720a88ad7b9aae0b73c",
+        "6989e43194d3f481f3ee3c70",
+        "698f781a9ca02490ec21ace4",
+        "69bd5a6c981d28529ed50930"
+       ],
+       "article_id": "698f781a9ca02490ec21ace4"
+      },
+      {
+       "id": "8f1416f61eb7d546",
+       "company_name": "permitflow",
+       "domain": "permitflow.com",
+       "round_type": "Series B",
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 54000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "initialized capital",
+         "domain": "initialized.com",
+         "amount": null
+        },
+        {
+         "name": "altos ventures",
+         "domain": "altos.vc",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Construction AI",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "accelerate product development across its growing suite of AI agents, including modules for permitting, inspections, and license management, and expand its team",
+       "source_sentence": "PermitFlow, the nation’s leading AI platform for construction, today announced it has raised $54 million in Series B funding led by Accel, with participation from Kleiner Perkins, Felicis, Initialized Capital, Altos Ventures, Y Combinator, and existing investors.",
+       "published_at": "2025-12-02T19:44:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "6931254cc5771b2045f21648",
+        "693129aa4d1258c91cf20725",
+        "6988883e5302bdff25876177"
+       ],
+       "article_id": "6931254cc5771b2045f21648"
+      },
+      {
+       "id": "2036f4357fe31907",
+       "company_name": "Shivalaya Construction",
+       "domain": "sccgroup.co.in",
+       "round_type": "IPO",
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 4500000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Infrastructure engineering, procurement and construction (EPC)",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "debt repayment (₹340 crore), working capital, expansion into power transmission, solar EPC, railway infrastructure",
+       "source_sentence": "Shivalaya Construction Limited has filed draft red herring prospectus documents with the Securities and Exchange Board of India (SEBI) to raise up to ₹450 crore through a fresh equity issue.",
+       "published_at": "2025-09-08T04:10:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "699808452da3986a3f892072",
+        "69bbaeae5214db4f61f7aee0"
+       ],
+       "article_id": "699808452da3986a3f892072"
+      },
+      {
+       "id": "4794f239fcb23b31",
+       "company_name": "ohla",
+       "domain": "ohla-group.com",
+       "round_type": null,
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "construction",
+       "country": null,
+       "city": null,
+       "use_of_funds": "extension to deal with the execution of guarantees for a work of 40 million in Kuwait",
+       "source_sentence": "The construction company, which was part of the Amodio brothers (21 per cent), has raised 50 million euros in the stock market through an extension to deal with the execution of guarantees for a work of 40 million in Kuwait.",
+       "published_at": "2025-05-21T00:28:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcbce1ec94907df10dd460"
+       ],
+       "article_id": "69bcbce1ec94907df10dd460"
+      },
+      {
+       "id": "f5aea8900df24539",
+       "company_name": "FAKTUS",
+       "domain": null,
+       "round_type": "Debt",
+       "amount_usd": 50760000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 47000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "insight investment",
+         "domain": "insightinvestment.com",
+         "amount": null
+        },
+        {
+         "name": "Fost Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Construction",
+       "country": null,
+       "city": null,
+       "use_of_funds": "providing loans exclusively to construction SMEs via Faktus Financement",
+       "source_sentence": "Up to €47 million in debt from certain funds under the management of Insight Investment and Fost Capital via Faktus Financement.",
+       "published_at": "2025-10-30T07:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "690321801f07225b86d83a24"
+       ],
+       "article_id": "690321801f07225b86d83a24"
+      },
+      {
+       "id": "b0019be08f887b53",
+       "company_name": "permitflow",
+       "domain": "permitflow.com",
+       "round_type": "Series B",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "altos ventures",
+         "domain": "altos.vc",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "initialized capital",
+         "domain": "initialized.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Construction, Enterprise Software, Software",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "7. PermitFlow $54.0M",
+       "published_at": "2026-01-07T09:27:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988881d34d0159e4e74bfc0"
+       ],
+       "article_id": "6988881d34d0159e4e74bfc0"
+      },
+      {
+       "id": "1a2f5fd6e54d580c",
+       "company_name": "aim",
+       "domain": "aimfiltration.com",
+       "round_type": null,
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "human capital",
+         "domain": "human.capital",
+         "amount": null
+        },
+        {
+         "name": "Ironspring Ventures",
+         "domain": "ironspring.com",
+         "amount": null
+        },
+        {
+         "name": "mantis",
+         "domain": "meditatingmantis.com",
+         "amount": null
+        },
+        {
+         "name": "dcvc",
+         "domain": "dcvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Construction and Mining",
+       "country": "USA",
+       "city": "Redmond",
+       "use_of_funds": "transform the global construction and mining industries.",
+       "source_sentence": "AIM, the world’s first embodied AI platform for earthmoving machinery, announced it has raised $50 million to transform the global construction and mining industries.",
+       "published_at": "2025-06-18T12:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bae29d5e05f5e7db7ff4c6"
+       ],
+       "article_id": "69bae29d5e05f5e7db7ff4c6"
+      },
+      {
+       "id": "bd8103a1da91fc08",
+       "company_name": "GreenLite Technologies",
+       "domain": "greenlite.io",
+       "round_type": "Series B",
+       "amount_usd": 49500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 49500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "energize capital",
+         "domain": "energize.vc",
+         "amount": null
+        },
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "LiveOak Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "chicago ventures",
+         "domain": "chicagoventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Construction Technology / AI Compliance & Permitting",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "GreenLite will use the funds to expand its go-to-market efforts, enter new verticals, including lodging, logistics, clean energy, and residential development, and further advance its AI-powered compliance platform.",
+       "source_sentence": "GreenLite, a New York-based AI-powered permitting and compliance solutions provider, has raised $49.5 million in Series B funding.",
+       "published_at": "2025-09-16T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f93a89ca02490ec23b5ce"
+       ],
+       "article_id": "698f93a89ca02490ec23b5ce"
+      },
+      {
+       "id": "91621b08b4216103",
+       "company_name": "kojo",
+       "domain": "usekojo.com",
+       "round_type": "Series C extension",
+       "amount_usd": 49000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 49000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "wesco",
+         "domain": "wesco.com",
+         "amount": null
+        }
+       ],
+       "sector": "construction technology",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "expand platform capabilities and onboard more supplier networks",
+       "source_sentence": "Wesco has invested $10 million in Kojo, a construction technology startup, injecting new funding for artificial intelligence (AI) technology.",
+       "published_at": "2025-09-17T20:08:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "6991ce2e40184cd7086572ee"
+       ],
+       "article_id": "6991ce2e40184cd7086572ee"
+      },
+      {
+       "id": "d287164d0e6592d1",
+       "company_name": "buildots",
+       "domain": "buildots.com",
+       "round_type": "Series D",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "qumra capital",
+         "domain": "qumracapital.com",
+         "amount": null
+        },
+        {
+         "name": "OG Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tlv partners",
+         "domain": "tlv.partners",
+         "amount": null
+        },
+        {
+         "name": "Poalim Equity",
+         "domain": "poalimequity.com",
+         "amount": null
+        },
+        {
+         "name": "future energy ventures",
+         "domain": "fev.vc",
+         "amount": null
+        },
+        {
+         "name": "viola growth",
+         "domain": "viola-group.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Construction Management",
+       "country": "Israel",
+       "city": "Tel Aviv",
+       "use_of_funds": "The company will use the funds to scale its platform capabilities across the construction lifecycle and expand its presence—particularly in North America.",
+       "source_sentence": "Buildots, a Tel Aviv, Israel-based construction technology company, has raised $45 million in Series D funding.",
+       "published_at": "2025-05-30T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f70f39ca02490ec21214b"
+       ],
+       "article_id": "698f70f39ca02490ec21214b"
+      },
+      {
+       "id": "e5ffc38dfbfbb868",
+       "company_name": "buildots",
+       "domain": "buildots.com",
+       "round_type": "Series D",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Construction technology",
+       "country": "United States",
+       "city": "Chicago",
+       "use_of_funds": "expand product to cover more stages of construction life cycle",
+       "source_sentence": "Buildots, a Chicago-based construction technology startup founded in 2018, has successfully raised $45 million in a Series D funding round.",
+       "published_at": "2025-05-29T13:21:03",
+       "coverage_count": 3,
+       "article_ids": [
+        "6988b84794d3f481f3d8286c",
+        "698e76698d29a990b6e9e0c2",
+        "69bcbc8e0f7c42aae0d4d570"
+       ],
+       "article_id": "6988b84794d3f481f3d8286c"
+      },
+      {
+       "id": "1e9a713fb2de1afd",
+       "company_name": "buildots",
+       "domain": "buildots.com",
+       "round_type": null,
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "qumra capital",
+         "domain": "qumracapital.com",
+         "amount": null
+        },
+        {
+         "name": "OG Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tlv partners",
+         "domain": "tlv.partners",
+         "amount": null
+        },
+        {
+         "name": "Poalim Equity",
+         "domain": "poalimequity.com",
+         "amount": null
+        },
+        {
+         "name": "future energy ventures",
+         "domain": "fev.vc",
+         "amount": null
+        },
+        {
+         "name": "viola growth",
+         "domain": "viola-group.com",
+         "amount": null
+        }
+       ],
+       "sector": "Construction management, AI, computer vision",
+       "country": null,
+       "city": null,
+       "use_of_funds": "continued development of Buildots’ platform",
+       "source_sentence": "Buildots, a leader in AI-powered construction management, announced the completion of a USD 45 million funding round led by Qumra Capital with participation from OG Venture Partners, TLV Partners, Poalim Equity, Future Energy Ventures, and Viola Growth.",
+       "published_at": "2025-05-29T12:07:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a9368fb0ea95e97738fe"
+       ],
+       "article_id": "6988a9368fb0ea95e97738fe"
+      },
+      {
+       "id": "3b8c86654d804e5c",
+       "company_name": "JFB Construction Holdings Class A",
+       "domain": null,
+       "round_type": "PIPE",
+       "amount_usd": 44000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 44000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "real estate development and construction",
+       "country": null,
+       "city": null,
+       "use_of_funds": "retire the company’s Class B Common Stock owned by the CEO and for general corporate expenses.",
+       "source_sentence": "On October 2, 2025, JFB Construction Holdings announced the closing of a private investment in public equity (PIPE) financing, raising approximately $44 million. The proceeds will be used to retire the company’s Class B Common Stock owned by the CEO and for general corporate expenses.",
+       "published_at": "2025-10-02T21:28:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd929a59b1861412dbd54d"
+       ],
+       "article_id": "69bd929a59b1861412dbd54d"
+      },
+      {
+       "id": "0ed13c7a09897463",
+       "company_name": "plancraft",
+       "domain": "plancraft.de",
+       "round_type": "Series B",
+       "amount_usd": 41040000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 38000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "headline",
+         "domain": "headline.fr",
+         "amount": null
+        },
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        },
+        {
+         "name": "htgf",
+         "domain": "htgf.de",
+         "amount": null
+        },
+        {
+         "name": "xdeck",
+         "domain": "xdeck.de",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS Construction AI",
+       "country": "Germany",
+       "city": "Hamburg",
+       "use_of_funds": "to accelerate development of its AI-driven workflow platform",
+       "source_sentence": "Plancraft, a Hamburg, Germany-based SaaS startup focused on construction and skilled trades, has secured a €38 million Series B round to accelerate development of its AI-driven workflow platform.",
+       "published_at": "2025-08-13T20:32:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "68ab3fb42e28036801bf382a",
+        "68d9ae8b983a16828b7f59d7"
+       ],
+       "article_id": "68d9ae8b983a16828b7f59d7"
+      },
+      {
+       "id": "1bfa0840bcc6c15b",
+       "company_name": "trunk tools",
+       "domain": "trunktools.com",
+       "round_type": null,
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Prudence Holdings",
+         "domain": "prudenceholdings.com",
+         "amount": null
+        },
+        {
+         "name": "liberty mutual strategic ventures",
+         "domain": "libertymutual.com",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Construction Tech AI",
+       "country": "USA",
+       "city": "New York City",
+       "use_of_funds": "advance its AI-powered construction management platform that connects data to project schedules, flagging potential issues before they cause delays or rework",
+       "source_sentence": "Trunk Tools secured $40 million to advance its AI-powered construction management platform.",
+       "published_at": "2025-08-01T14:05:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d10560fb0e8d0abe2d1703"
+       ],
+       "article_id": "68d10560fb0e8d0abe2d1703"
+      },
+      {
+       "id": "47ddc5726e1d70c8",
+       "company_name": "trunk tools",
+       "domain": "trunktools.com",
+       "round_type": "Series B",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "innovation endeavors",
+         "domain": "innovationendeavors.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone",
+         "domain": "stepstone.com",
+         "amount": null
+        },
+        {
+         "name": "liberty mutual strategic ventures",
+         "domain": "libertymutual.com",
+         "amount": null
+        },
+        {
+         "name": "prudence",
+         "domain": "prudence.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Construction technology",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Expanding engineering, product, go-to-market teams, field enablement program, and scaling AI platform capabilities",
+       "source_sentence": "Trunk Tools, the AI-powered platform revolutionizing how construction teams interact with project data, today announced a $40 million Series B funding round led by global software investor Insight Partners with participation from Redpoint Ventures, Innovation Endeavors, Stepstone, Liberty Mutual Strategic Ventures, and Prudence.",
+       "published_at": "2025-07-24T15:38:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "6983a213bb7245ef1950a58a"
+       ],
+       "article_id": "6983a213bb7245ef1950a58a"
+      },
+      {
+       "id": "75a30a5c0b8b77b9",
+       "company_name": "trunk tools",
+       "domain": "trunktools.com",
+       "round_type": "Series B",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "innovation endeavors",
+         "domain": "innovationendeavors.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone",
+         "domain": "stepstone.com",
+         "amount": null
+        },
+        {
+         "name": "liberty mutual strategic ventures",
+         "domain": "libertymutual.com",
+         "amount": null
+        },
+        {
+         "name": "prudence",
+         "domain": "prudence.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Construction",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Product development and go-to-market strategy",
+       "source_sentence": "Insight Partners led the startup's $40 million Series B round, which included participation from Redpoint Ventures, Innovation Endeavors, Stepstone, Liberty Mutual Strategic Ventures, and Prudence.",
+       "published_at": "2025-07-24T13:00:01",
+       "coverage_count": 3,
+       "article_ids": [
+        "6898ce252f01d48cd3107934",
+        "68d0e45891b46c685a2b15dc",
+        "6988b0fdcfd8658683eb5f98"
+       ],
+       "article_id": "68d0e45891b46c685a2b15dc"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 288,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDctMjQgMTM6MDA6MDEiLCJrIjoiODQ3NjYzMDMxNDA4ODM2Mzk2MSIsImEiOjQwMDAwMDAwLjB9",
+     "totals": {
+      "deals": 288,
+      "deals_with_amount": 249,
+      "deals_without_amount": 39,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 5768385750.0,
+      "median_amount_usd": 8536250.0,
+      "largest_amount_usd": 415000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.212,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.217
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "construction",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "construction"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "b4707c472a7d1817",
+       "company_name": "highway data systems",
+       "domain": "highwaydata.co.uk",
+       "round_type": null,
+       "amount_usd": 1587500.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 1250000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Investment Fund for Scotland",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "maven capital partners",
+         "domain": "mavencp.com",
+         "amount": null
+        },
+        {
+         "name": "british business bank",
+         "domain": "british-business-bank.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Road construction technology",
+       "country": "UK",
+       "city": "Glasgow",
+       "use_of_funds": "Product development and enhancement of automated digital solutions for UK and international markets",
+       "source_sentence": "Growth support Rob Stevenson of Maven and Joe Charlesworth Highway Data Systems, which provides quality assurance technology to the road construction sector, has secured £1.25 million for growth, including expansion of its foothold in the US.",
+       "published_at": "2026-04-30T08:34:31",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f881f7bbf1d31455972b47",
+        "69f9d51da088760d34bf6d72"
+       ],
+       "article_id": "69f881f7bbf1d31455972b47"
+      },
+      {
+       "id": "ac64cc465c6f36e6",
+       "company_name": "monumental",
+       "domain": "monumental.co",
+       "round_type": "seed",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Construction robotics",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "As we previously covered, Monumental, a Dutch startup, has built a working bricklaying robot that has already completed commercial projects in the Netherlands and raised $25 million at the seed stage.",
+       "published_at": "2026-04-29T08:00:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f215ac7d251ccff640ed95"
+       ],
+       "article_id": "69f215ac7d251ccff640ed95"
+      },
+      {
+       "id": "777480a0fa0c94c9",
+       "company_name": "All3",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rtp global",
+         "domain": "rtp.vc",
+         "amount": null
+        },
+        {
+         "name": "SuperSeed",
+         "domain": "superseed.com",
+         "amount": null
+        },
+        {
+         "name": "begin capital",
+         "domain": "begincl.com",
+         "amount": null
+        },
+        {
+         "name": "s16vc",
+         "domain": "s16vc.com",
+         "amount": null
+        },
+        {
+         "name": "vnv global",
+         "domain": "vnv.global",
+         "amount": null
+        }
+       ],
+       "sector": "construction robotics",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Strengthen research and development in London and Belgrade; deploy fleets of robots to active construction sites in Germany",
+       "source_sentence": "All3, a construction robotics company, has raised $25 million in seed funding to bring its robotic construction platform to market.",
+       "published_at": "2026-04-29T08:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f215cfda8ae7be8d21cc4c",
+        "69f228d8c6105443aa5cc8e6"
+       ],
+       "article_id": "69f228d8c6105443aa5cc8e6"
+      },
+      {
+       "id": "56fa4eedecea1d3b",
+       "company_name": "TimberHP",
+       "domain": "timberhp.com",
+       "round_type": "Strategic investment",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "FTAI Infrastructure",
+         "domain": "fipinc.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "finance authority of maine",
+         "domain": "famemaine.com",
+         "amount": null
+        },
+        {
+         "name": "other municipal bond investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Construction materials",
+       "country": "United States",
+       "city": "Madison",
+       "use_of_funds": "Support ramp‑up of production at its Madison, Maine facility and expansion of its commercial footprint across North America",
+       "source_sentence": "TimberHP, the first U.S.-based manufacturer of wood fiber insulation, today announced a strategic investment from FTAI Infrastructure Inc.",
+       "published_at": "2026-04-28T13:21:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e913d32561089420d9a2"
+       ],
+       "article_id": "69f0e913d32561089420d9a2"
+      },
+      {
+       "id": "e57f41d5d9e864f1",
+       "company_name": "ballas",
+       "domain": "ballas.biz",
+       "round_type": "Series B",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "SMBC Edge",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Z Venture Capital",
+         "domain": "zvc.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Construction Tech",
+       "country": "Japan",
+       "city": null,
+       "use_of_funds": "The funding will support supply chain modernisation in the construction industry and expand its digital infrastructure solutions.",
+       "source_sentence": "Japanese construction technology company BALLAS Inc. raised $15 million (¥2.4 billion) in a Series B round co-led by SMBC Edge and Z Venture Capital.",
+       "published_at": "2026-04-17T09:30:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e862f15cfa3e5ba5f12028"
+       ],
+       "article_id": "69e862f15cfa3e5ba5f12028"
+      },
+      {
+       "id": "83a8b4aeb32fc0b3",
+       "company_name": "ballas",
+       "domain": "ballas.biz",
+       "round_type": "Series B",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "persol venture partners",
+         "domain": "vp.persol-group.co.jp",
+         "amount": null
+        }
+       ],
+       "sector": "Construction",
+       "country": "Japan",
+       "city": "Tokyo",
+       "use_of_funds": null,
+       "source_sentence": "Persol Holdings has invested in the Series B round of Tokyo-based Ballas, a company that designs, develops, manufactures and sells custom-made components for the construction sector using AI.",
+       "published_at": "2026-04-15T16:20:14",
+       "coverage_count": 6,
+       "article_ids": [
+        "69e84ad05cfa3e5ba5e33b2d",
+        "69e852c69baafc7356728684",
+        "69e852cf5cfa3e5ba5e7d977",
+        "69e8d43e7bb1410d4cc8ef80",
+        "69e8d4469baafc7356d1dea7",
+        "69e8d4495cfa3e5ba5440334"
+       ],
+       "article_id": "69e84ad05cfa3e5ba5e33b2d"
+      },
+      {
+       "id": "25f80976801a0d7e",
+       "company_name": "conxai",
+       "domain": "conxai.com",
+       "round_type": "Series A",
+       "amount_usd": 5800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5800000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "baybg venture capital",
+         "domain": "baybg-vc.de",
+         "amount": null
+        },
+        {
+         "name": "capricorn partners",
+         "domain": "capricorn.be",
+         "amount": null
+        },
+        {
+         "name": "pi labs",
+         "domain": "pilabs.com",
+         "amount": null
+        },
+        {
+         "name": "earlybird",
+         "domain": "getearlybird.io",
+         "amount": null
+        },
+        {
+         "name": "noa",
+         "domain": "noapotions.se",
+         "amount": null
+        },
+        {
+         "name": "Zacua Ventures",
+         "domain": "zacuaventures.com",
+         "amount": null
+        },
+        {
+         "name": "argonautic ventures",
+         "domain": "argonauticventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Construction technology",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "expand operations and its business reach",
+       "source_sentence": "Conxai, a Munich, Germany-based provider of a construction tech platform, raised $5.8m in Series A funding.",
+       "published_at": "2026-04-14T17:58:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8496e5cfa3e5ba5e26602"
+       ],
+       "article_id": "69e8496e5cfa3e5ba5e26602"
+      },
+      {
+       "id": "0f2ddfb37a0b1623",
+       "company_name": "Alliance Tool Hire",
+       "domain": null,
+       "round_type": "investment",
+       "amount_usd": 381000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Alliance Tool Hire",
+         "domain": null,
+         "amount": 300000.0
+        }
+       ],
+       "sector": "construction rental",
+       "country": "United Kingdom",
+       "city": "Poole",
+       "use_of_funds": "Launching a dedicated lifting division, purchasing equipment and software",
+       "source_sentence": "A Poole-based construction rental supplier has invested £300,000 in launching a dedicated lifting division",
+       "published_at": "2026-04-14T09:59:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e99217d47fc0283211ac5f"
+       ],
+       "article_id": "69e99217d47fc0283211ac5f"
+      },
+      {
+       "id": "99381a0bedb7b972",
+       "company_name": "primepoint",
+       "domain": "primepoint.com",
+       "round_type": "seed",
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "penny jar capital",
+         "domain": "pennyjar.com",
+         "amount": null
+        },
+        {
+         "name": "nextview ventures",
+         "domain": "nextviewventures.com",
+         "amount": null
+        },
+        {
+         "name": "navitas capital",
+         "domain": "navitascap.com",
+         "amount": null
+        },
+        {
+         "name": "gs futures",
+         "domain": "gsfutures.vc",
+         "amount": null
+        },
+        {
+         "name": "aglaé ventures",
+         "domain": "aglaeventures.com",
+         "amount": null
+        },
+        {
+         "name": "Dr. Yann LeCun",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Construction technology",
+       "country": "United States",
+       "city": "San Mateo",
+       "use_of_funds": "expand its platform capabilities and grow its customer base among large commercial general contractors across the United States.",
+       "source_sentence": "Primepoint, a San Mateo, CA-based provider of a construction intelligence platform for workflows project teams, raised $10M in seed funding.",
+       "published_at": "2026-04-14T07:31:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d7719baafc7356d49453"
+       ],
+       "article_id": "69e8d7719baafc7356d49453"
+      },
+      {
+       "id": "ee31f17a3e2842ed",
+       "company_name": "Goldfields Testing Laboratory",
+       "domain": null,
+       "round_type": "grant",
+       "amount_usd": 43000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 43000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Construction materials testing",
+       "country": "Australia",
+       "city": "Kalgoorlie-Boulder",
+       "use_of_funds": "Establish a local round determinate panel testing service for fibre-reinforced concrete used in mining operations.",
+       "source_sentence": "Kalgoorlie-Boulder-based Goldfields Testing Laboratory has secured $43,000 to establish a local round determinate panel testing service, a specialised quality assurance test used to verify the performance of fibre-reinforced concrete, known as fibrecrete.",
+       "published_at": "2026-04-09T18:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e32381660da7a6a2021b7c",
+        "69e873115cfa3e5ba5fb6206"
+       ],
+       "article_id": "69e32381660da7a6a2021b7c"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 82,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDkgMTg6MDA6MDAiLCJrIjoiMTcxNjM3NjUxNjIyMTY4MDEwMDUifQ",
+     "totals": {
+      "deals": 82,
+      "deals_with_amount": 75,
+      "deals_without_amount": 7,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 1810855400.0,
+      "median_amount_usd": 7500000.0,
+      "largest_amount_usd": 300000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.187,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.19
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,3080 @@
+{
+ "slug": "series-d-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:16Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "round_type": "series d",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "round_type": [
+       "series d"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 384,
+      "deals_with_amount": 370,
+      "deals_without_amount": 14,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 97322682000.0,
+      "median_amount_usd": 100000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 25,
+       "deals_with_amount": 23,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1896160000.0,
+       "median_amount_usd": 93000000.0,
+       "largest_amount_usd": 365000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 35,
+       "deals_with_amount": 35,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3254544000.0,
+       "median_amount_usd": 75000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 14,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 999000000.0,
+       "median_amount_usd": 57500000.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 47,
+       "deals_with_amount": 46,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3838068000.0,
+       "median_amount_usd": 60300000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 37,
+       "deals_with_amount": 37,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 24404380000.0,
+       "median_amount_usd": 150000000.0,
+       "largest_amount_usd": 13000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 22,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3455070000.0,
+       "median_amount_usd": 105000000.0,
+       "largest_amount_usd": 600000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 22,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 12433210000.0,
+       "median_amount_usd": 500000000.0,
+       "largest_amount_usd": 2300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 26,
+       "deals_with_amount": 25,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3211210000.0,
+       "median_amount_usd": 104000000.0,
+       "largest_amount_usd": 700000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 51,
+       "deals_with_amount": 51,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 10940950000.0,
+       "median_amount_usd": 128000000.0,
+       "largest_amount_usd": 5300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 47,
+       "deals_with_amount": 47,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 24866300000.0,
+       "median_amount_usd": 117000000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 37,
+       "deals_with_amount": 32,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 21670790000.0,
+       "median_amount_usd": 101500000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 18,
+       "deals_with_amount": 16,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 4906000000.0,
+       "median_amount_usd": 155000000.0,
+       "largest_amount_usd": 1750000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.119,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.129
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "series d",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "round_type": [
+       "series d"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "c3d093818aa00b98",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Automotive, Autonomous Vehicles, Sensor, Transportation",
+       "country": null,
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": "Mountain View-based Waymo is a mobility technology company that improves transportation by developing self‑driving solutions for travelers and daily commuters.",
+       "published_at": "2026-03-27T09:27:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69cc4289cb088e024d2646bf"
+      },
+      {
+       "id": "aa7d8bd1c06b4f8d",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 126000000000.0,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": 126000000000.0,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer",
+         "domain": "dragoneergrowth.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous Vehicles",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": "Expand robotaxi rollout into new U.S. cities and its first international market",
+       "source_sentence": "Waymo secures $16B in funding to accelerate robotaxi expansion",
+       "published_at": "2026-02-03T23:42:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "6985ebb211e3205ec98ec05b"
+       ],
+       "article_id": "6985ebb211e3205ec98ec05b"
+      },
+      {
+       "id": "6ba817d3cca57dc9",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series D",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI safety research, scaling to meet enterprise demand, and international expansion",
+       "source_sentence": "The funding round was led by Iconiq, Fidelity Management & Research, and Lightspeed Venture Partners. Heavyweights like Altimeter, General Catalyst, and Coatue also threw money in.",
+       "published_at": "2025-09-03T00:49:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb42f788a452392c43a4be"
+       ],
+       "article_id": "69bb42f788a452392c43a4be"
+      },
+      {
+       "id": "b4de12d77042486c",
+       "company_name": "xai",
+       "domain": "x.ai",
+       "round_type": "Series D",
+       "amount_usd": 5300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5300000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "This was followed by $5.3 billion in equity and debt in 2025.",
+       "published_at": "2026-01-24T08:06:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb01f2cdd39d5d9721a676"
+       ],
+       "article_id": "69bb01f2cdd39d5d9721a676"
+      },
+      {
+       "id": "ea954af6106913fe",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series D",
+       "amount_usd": 3500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3500000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Generative artificial intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The new fundraising comes a few months after the previous round of $3.5 billion announced in March, after which Anthropic was valued at “only” $61.5 billion",
+       "published_at": "2025-09-03T14:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5a22c209ed6c919c6cd93"
+       ],
+       "article_id": "68c5a22c209ed6c919c6cd93"
+      },
+      {
+       "id": "5f439909e85b7112",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "Series D (facility)",
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo-managed funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech – Buy‑now‑pay‑later",
+       "country": "Saudi Arabia",
+       "city": "Riyadh",
+       "use_of_funds": null,
+       "source_sentence": "Tamara has secured up to $2.4 billion in fresh funding backed by Goldman Sachs, Citi, and Apollo-managed funds.",
+       "published_at": "2025-09-15T15:19:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9a0da5af1b12a767e10dc"
+       ],
+       "article_id": "68d9a0da5af1b12a767e10dc"
+      },
+      {
+       "id": "dc73719cf984b487",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": "Series D",
+       "amount_usd": 2300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2300000000.0,
+       "valuation": 29300000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "AI coding startup Anysphere completed a $2.3 billion Series D funding round on Thursday, valuing the company at $29.3 billion. Accel and Coatue co-led the round, with substantial investments from tech giants like Nvidia and Google.",
+       "published_at": "2025-11-14T16:09:22",
+       "coverage_count": 2,
+       "article_ids": [
+        "693168fa657e62559bf212e8",
+        "698dc0678d29a990b6dc6e9b"
+       ],
+       "article_id": "693168fa657e62559bf212e8"
+      },
+      {
+       "id": "cdc545b9a34e4e81",
+       "company_name": "cursor",
+       "domain": "cursor.com",
+       "round_type": "Series D",
+       "amount_usd": 2300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2300000000.0,
+       "valuation": 29300000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "scaling compute, deepening integrations, expanding enterprise accounts",
+       "source_sentence": "Cursor has vaulted into the top tier of private AI companies after securing a massive $2.3 billion Series D at a $29.3 billion valuation.",
+       "published_at": "2025-11-13T22:15:57",
+       "coverage_count": 3,
+       "article_ids": [
+        "6931960c4b1bcf7fdbf20d91",
+        "69319937a12f2e382cf22a5b",
+        "69baeba40623092a924ad5cb"
+       ],
+       "article_id": "6931960c4b1bcf7fdbf20d91"
+      },
+      {
+       "id": "ac5fb3db698b1149",
+       "company_name": "saronic",
+       "domain": "saronic.com",
+       "round_type": "Series D",
+       "amount_usd": 1750000000.0,
+       "amount_flag": null,
+       "valuation_usd": 9250000000.0,
+       "currency": "USD",
+       "amount": 1750000000.0,
+       "valuation": 9250000000.0,
+       "investors": [
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        }
+       ],
+       "sector": "defense technology",
+       "country": "United States",
+       "city": "Austin",
+       "use_of_funds": "fund a massive new shipyard, Port Alpha, to ramp up production of medium and large-class vessels",
+       "source_sentence": "Leading the pack was Saronic's monumental $1.75 billion Series D funding round, the largest ever for an Austin-based startup and a boon for defense technology",
+       "published_at": "2026-04-03T19:08:44",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e2876090d9a716b4b8847a",
+        "69e287c1601121844c3147f3",
+        "69e2d934c1991f786cf41867"
+       ],
+       "article_id": "69e2876090d9a716b4b8847a"
+      },
+      {
+       "id": "f19ac951d074d7ad",
+       "company_name": "Saronic Technologies",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 1750000000.0,
+       "amount_flag": null,
+       "valuation_usd": 9250000000.0,
+       "currency": "USD",
+       "amount": 1750000000.0,
+       "valuation": 9250000000.0,
+       "investors": [
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "franklin templeton",
+         "domain": "franklintempletonindia.com",
+         "amount": null
+        }
+       ],
+       "sector": "defense technology",
+       "country": "USA",
+       "city": "Austin, Texas",
+       "use_of_funds": "new capital will accelerate Saronic's ability to bring that model to life, generate entirely new classes of autonomous ships and maritime capabilities, and scale U.S. shipbuilding capacity on a timeline not seen since World War II",
+       "source_sentence": "Saronic Technologies said on Tuesday it had raised $1.75 billion in a late-stage funding round led by venture capital firm Kleiner Perkins, more than doubling the valuation of the maker of autonomous ships in just over a year.",
+       "published_at": "2026-03-31T10:21:46",
+       "coverage_count": 4,
+       "article_ids": [
+        "69cbe6761c2c193028d5b131",
+        "69ccee21adb5f291e0c65f0b",
+        "69d1d08e0b06d48049759ff8",
+        "69e2daa490d9a716b4c9fa93"
+       ],
+       "article_id": "69e2daa490d9a716b4c9fa93"
+      },
+      {
+       "id": "c08c8940f9adb9a3",
+       "company_name": "metropolis",
+       "domain": "metropolis.vdtrxn",
+       "round_type": "Term Loan B & Series D",
+       "amount_usd": 1600000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5000000000.0,
+       "currency": "USD",
+       "amount": 1600000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "JPMorgan Chase Bank, N.A.",
+         "domain": null,
+         "amount": 1100000000.0
+        },
+        {
+         "name": "liontree",
+         "domain": "liontree.com",
+         "amount": 500000000.0
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "dfj",
+         "domain": "dfj.com",
+         "amount": null
+        },
+        {
+         "name": "eldridge industries",
+         "domain": "eldridge.com",
+         "amount": null
+        },
+        {
+         "name": "slow ventures",
+         "domain": "slow-prod.herokuapp.com",
+         "amount": null
+        },
+        {
+         "name": "SoftBank Vision Fund 2",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tekne Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "vista",
+         "domain": "vista.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-Physical Infrastructure / Recognition Economy",
+       "country": "United States",
+       "city": "Los Angeles",
+       "use_of_funds": "to accelerate its expansion in parking, retail, hospitality, fueling, and mobility, while building intelligent infrastructure that connects people seamlessly to the physical world.",
+       "source_sentence": "Metropolis, a Los Angeles, CA-based company that applies artificial intelligence to real-world environments, has secured $1.6 billion in financing.",
+       "published_at": "2025-11-07T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f196e9ca02490ec1ab7b4"
+       ],
+       "article_id": "698f196e9ca02490ec1ab7b4"
+      },
+      {
+       "id": "2048dea02bd3453b",
+       "company_name": "wayve",
+       "domain": "wayve.ai",
+       "round_type": "Series D",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8600000000.0,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": 8600000000.0,
+       "investors": [
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "institutional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous Vehicles",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "scaling up robotaxi deployments and strengthening driver assistance technology",
+       "source_sentence": "Wayve said including “additional milestone-based” investments from Uber, it has secured $1.5bn (R23,887,442,400) in funding with this round, bringing its total raised so far to $2.8bn (R44,589,892,480) and boosting its valuation to $8.6bn (R136,954,669,760).",
+       "published_at": "2026-02-25T06:15:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69c9cb10fcc2d4d6468dc98c",
+        "69c9cc18fe85228ad69b1730",
+        "69c9cde9288a36c0c7baf51e",
+        "69e854375cfa3e5ba5e8b374"
+       ],
+       "article_id": "69c9cc18fe85228ad69b1730"
+      },
+      {
+       "id": "3ec6ae4697e81cfe",
+       "company_name": "PT Garuda Indonesia",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 1491210000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "IDR",
+       "amount": 23670000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "state asset fund Danantara",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Aviation / Airlines",
+       "country": "Indonesia",
+       "city": null,
+       "use_of_funds": "Allocate 37% to working capital and operations (including aircraft maintenance and repair) and 63% to subsidiary Citilink to strengthen its cash flow and repay a US$225 million debt to Pertamina.",
+       "source_sentence": "National airline PT Garuda Indonesia plans to issue 315.6 billion series D shares to raise Rp 23.67 trillion (US$1.4 billion), comprising Rp 17.02 trillion in capital deposits and Rp 6.65 trillion in shareholder loan conversion into equity, in a bid to support its operations and strengthen its financial position.",
+       "published_at": "2025-11-10T05:15:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "693196ab787b9cf425f21fd7"
+       ],
+       "article_id": "693196ab787b9cf425f21fd7"
+      },
+      {
+       "id": "007ebbe9348f2baa",
+       "company_name": "wayve",
+       "domain": "wayve.ai",
+       "round_type": "Series D",
+       "amount_usd": 1260000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1260000000.0,
+       "valuation": 8600000000.0,
+       "investors": [
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "arm",
+         "domain": "arm.com",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous driving",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Wayve, a company specialized in autonomous driving, has expanded its Series D financing round by $60 million.",
+       "published_at": "2026-04-16T14:01:37",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e865939baafc73567de07f",
+        "69e8e26e9baafc7356dd700c"
+       ],
+       "article_id": "69e8e26e9baafc7356dd700c"
+      },
+      {
+       "id": "0863384b971f558d",
+       "company_name": "wayve",
+       "domain": "wayve.ai",
+       "round_type": "Series D",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8600000000.0,
+       "currency": "USD",
+       "amount": 1200000000.0,
+       "valuation": 8600000000.0,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "Balderton",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "SoftBank Vision Fund 2",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers’ Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "british business bank",
+         "domain": "british-business-bank.co.uk",
+         "amount": null
+        },
+        {
+         "name": "icehouse ventures",
+         "domain": "icehouseventures.co.nz",
+         "amount": null
+        },
+        {
+         "name": "schroders capital",
+         "domain": "schroderscapital.com",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": null
+        },
+        {
+         "name": "mercedes-benz",
+         "domain": "mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "nissan",
+         "domain": "nissan.co.jp",
+         "amount": null
+        },
+        {
+         "name": "stellantis",
+         "domain": "stellantis.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous Vehicles",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Scale commercial deployment of the end-to-end AI platform",
+       "source_sentence": "Wayve, the leader in embodied AI for autonomous driving, today announced it has raised $1.2 billion in a Series D investment round, bringing its post-money valuation to $8.6 billion.",
+       "published_at": "2026-02-25T00:02:01",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc7ed68db8b8187dd9b82a",
+        "69e28ea63aab8d96aa2e9c2e"
+       ],
+       "article_id": "69e28ea63aab8d96aa2e9c2e"
+      },
+      {
+       "id": "3883e6cfb12c06bd",
+       "company_name": "wayve",
+       "domain": "wayve.ai",
+       "round_type": "Series D",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8600000000.0,
+       "currency": "USD",
+       "amount": 1200000000.0,
+       "valuation": 8600000000.0,
+       "investors": [
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": null
+        },
+        {
+         "name": "mercedes-benz",
+         "domain": "mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "nissan",
+         "domain": "nissan.co.jp",
+         "amount": null
+        },
+        {
+         "name": "stellantis",
+         "domain": "stellantis.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous vehicle technology",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "the commercial rollout of Wayve's end-to-end AI Driver platform across consumer vehicles and ride-hailing fleets globally",
+       "source_sentence": "British autonomous vehicle technology company Wayve announced in May 2025 that it has closed a US$1.2bn Series D funding round, bringing its post-money valuation to US$8.6bn.",
+       "published_at": "2026-02-25T00:01:14",
+       "coverage_count": 10,
+       "article_ids": [
+        "69c9c9d5b68ade25f5c89c12",
+        "69c9d919eff444794ed89a4d",
+        "69c9da8003caa0b7b4a5303d",
+        "69ca23cdc14329b30ec94be2",
+        "69cc4289cb088e024d2646bf",
+        "69e84ba37bb1410d4c65fe5e",
+        "69e84cc97bb1410d4c66a639",
+        "69e852419baafc7356722caa",
+        "69e852827bb1410d4c6a3279",
+        "69e860859baafc73567aaf02"
+       ],
+       "article_id": "69e852419baafc7356722caa"
+      },
+      {
+       "id": "0bd36e07110e794e",
+       "company_name": "Erisha E Mobility",
+       "domain": "erishaev.com",
+       "round_type": "Series D",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "H1 2025 witnessed five funding rounds exceeding $100 million. Some of those who raised these large rounds included Erisha E Mobility's $1.0 billion Series D round, GreenLine's $275 million Series A round, and Infra. Market's $222 million Series F round.",
+       "published_at": "2025-06-25T09:30:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0d7722fbd4282d19d9c43"
+       ],
+       "article_id": "68d0d7722fbd4282d19d9c43"
+      },
+      {
+       "id": "3302dd1bdfb9cd8c",
+       "company_name": "stoke space",
+       "domain": "stokespace.com",
+       "round_type": "Series D",
+       "amount_usd": 860000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 860000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "space launch",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Stoke Space closed its Series D at $860 million — total funding now at $1.34B — for a rocket that hasn't reached orbit.",
+       "published_at": "2026-02-25T13:34:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbac0e7fd59372e7cf65f7"
+       ],
+       "article_id": "69cbac0e7fd59372e7cf65f7"
+      },
+      {
+       "id": "bd644be2d2b75d8c",
+       "company_name": "stoke space technologies",
+       "domain": "stoke-space.com",
+       "round_type": "Series D",
+       "amount_usd": 860000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 860000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Launch vehicles",
+       "country": "United States",
+       "city": "Kent",
+       "use_of_funds": "Accelerate technology development, vehicle readiness, and production capacity for the Nova launch vehicle and future product roadmap",
+       "source_sentence": "Stoke Space Technologies has expanded its previously announced Series D financing round to a total of 860 million dollars",
+       "published_at": "2026-02-13T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfeecd86bd23245a9271a9"
+       ],
+       "article_id": "69dfeecd86bd23245a9271a9"
+      },
+      {
+       "id": "5689ac05795d9d58",
+       "company_name": "X-Energy Reactor Company, LLC (X-energy)",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ARK Invest",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "galvanize",
+         "domain": "galvanizetx.com",
+         "amount": null
+        },
+        {
+         "name": "hood river capital management",
+         "domain": "hoodrivercapital.com",
+         "amount": null
+        },
+        {
+         "name": "point72",
+         "domain": "point72.com",
+         "amount": null
+        },
+        {
+         "name": "reaves asset management",
+         "domain": "reavesam.com",
+         "amount": null
+        },
+        {
+         "name": "XTX Ventures",
+         "domain": "xtxventures.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "Ares Management funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "corner capital",
+         "domain": "cornercapitalpartners.com",
+         "amount": null
+        },
+        {
+         "name": "emerson collective",
+         "domain": "emersoncollective.com",
+         "amount": null
+        },
+        {
+         "name": "ngp",
+         "domain": "ngpenergy.com",
+         "amount": null
+        },
+        {
+         "name": "Segra Capital Management",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "advanced nuclear reactor and fuel technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "X-Energy Reactor Company, LLC (X-energy), a leader in advanced nuclear reactor and fuel technology, has announced it has closed an oversubscribed Series D financing round of approximately US$700 million led by Jane Street, from new investors including ARK Invest, Galvanize, Hood River Capital Management, Point72, Reaves Asset Management, XTX Ventures, and various others, as well as existing investors including Ares Management funds, Corner Capital, Emerson Collective, NGP, Segra Capital Management, and others.",
+       "published_at": "2025-12-01T06:59:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69314324be9bf459b3f224cc"
+       ],
+       "article_id": "69314324be9bf459b3f224cc"
+      },
+      {
+       "id": "30eeac4110fde3df",
+       "company_name": "X-Energy Reactor Company",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        },
+        {
+         "name": "ARK Invest",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "point72",
+         "domain": "point72.com",
+         "amount": null
+        },
+        {
+         "name": "reaves asset management",
+         "domain": "reavesam.com",
+         "amount": null
+        },
+        {
+         "name": "XTX Ventures",
+         "domain": "xtxventures.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "ares management",
+         "domain": "aresmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "Energy | Nuclear",
+       "country": "USA",
+       "city": "Rockville",
+       "use_of_funds": "Scale advanced small modular reactors and fuel supply chain",
+       "source_sentence": "X‑Energy Reactor Company, a Rockville, Md.-based startup developing advanced small modular nuclear reactors and fuel technology, has closed a massive $700 million Series D funding round.",
+       "published_at": "2025-11-26T01:02:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931648366546b0621f20829"
+       ],
+       "article_id": "6931648366546b0621f20829"
+      },
+      {
+       "id": "385284a876b08e4f",
+       "company_name": "X-Energy Reactor Company LLC",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ARK Invest",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "galvanize",
+         "domain": "galvanizetx.com",
+         "amount": null
+        },
+        {
+         "name": "hood river capital management",
+         "domain": "hoodrivercapital.com",
+         "amount": null
+        },
+        {
+         "name": "point72",
+         "domain": "point72.com",
+         "amount": null
+        },
+        {
+         "name": "reaves asset management",
+         "domain": "reavesam.com",
+         "amount": null
+        },
+        {
+         "name": "Ares Management funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "corner capital",
+         "domain": "cornercapitalpartners.com",
+         "amount": null
+        },
+        {
+         "name": "emerson collective",
+         "domain": "emersoncollective.com",
+         "amount": null
+        },
+        {
+         "name": "ngp",
+         "domain": "ngpenergy.com",
+         "amount": null
+        },
+        {
+         "name": "Segra Capital Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Nuclear Energy",
+       "country": null,
+       "city": "Rockville",
+       "use_of_funds": "Expansion of its supply chain and commercial pipeline in support of an orderbook of more than 11 gigawatts that represent roughly 144 advanced small modular reactors",
+       "source_sentence": "X-Energy Reactor Company LLC, a nuclear reactor and fuel design engineering company based in Rockville, announced it has closed an oversubscribed Series D financing round of approximately $700 million from several new and existing investors.",
+       "published_at": "2025-11-25T18:32:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d82519ca02490ecfc595f"
+       ],
+       "article_id": "698d82519ca02490ecfc595f"
+      },
+      {
+       "id": "1d344f9105badd19",
+       "company_name": "X-energy",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ARK Invest",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "galvanize",
+         "domain": "galvanizetx.com",
+         "amount": null
+        },
+        {
+         "name": "hood river capital management",
+         "domain": "hoodrivercapital.com",
+         "amount": null
+        },
+        {
+         "name": "point72",
+         "domain": "point72.com",
+         "amount": null
+        },
+        {
+         "name": "reaves asset management",
+         "domain": "reavesam.com",
+         "amount": null
+        },
+        {
+         "name": "XTX Ventures",
+         "domain": "xtxventures.vdtrxn",
+         "amount": null
+        }
+       ],
+       "sector": "Nuclear technology",
+       "country": "United States",
+       "city": "Rockville",
+       "use_of_funds": "proceeds aimed at helping the company expand its supply chain and commercial pipeline",
+       "source_sentence": "Nuclear technology company X-energy announced that it has raised $700 million in a Series D financing round, with proceeds aimed at helping the company expand its supply chain and commercial pipeline.",
+       "published_at": "2025-11-24T15:49:13",
+       "coverage_count": 6,
+       "article_ids": [
+        "693164d97f7fb519dcf211c3",
+        "694b0cd16b6869c40c75b900",
+        "6985eeb011e3205ec98ed371",
+        "6991c158af40e5ac580c7290",
+        "69bb487d680e91ccbda1b887",
+        "69bb487e5e05f5e7db816a9a"
+       ],
+       "article_id": "694b0cd16b6869c40c75b900"
+      },
+      {
+       "id": "1f9830775e4979d2",
+       "company_name": "true anomaly",
+       "domain": "trueanomaly.space",
+       "round_type": "Series D",
+       "amount_usd": 650000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 650000000.0,
+       "valuation": 2200000000.0,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "riot ventures",
+         "domain": "riot.vc",
+         "amount": null
+        },
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        },
+        {
+         "name": "atreides",
+         "domain": "atreides.io",
+         "amount": null
+        },
+        {
+         "name": "g squared",
+         "domain": "gsquared.com",
+         "amount": null
+        },
+        {
+         "name": "the private shares fund",
+         "domain": "privatesharesfund.com",
+         "amount": null
+        },
+        {
+         "name": "vaneck",
+         "domain": "vaneck.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "acme capital",
+         "domain": "acme.vc",
+         "amount": null
+        },
+        {
+         "name": "Space VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Meritech Capital",
+         "domain": "meritechcap.com",
+         "amount": null
+        },
+        {
+         "name": "Narya",
+         "domain": "naryavc.com",
+         "amount": null
+        },
+        {
+         "name": "645 ventures",
+         "domain": "645ventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Space technology",
+       "country": "USA",
+       "city": "Centennial",
+       "use_of_funds": "Dedicated to securing the space domain",
+       "source_sentence": "True Anomaly today announced its $650 million Series D funding round.",
+       "published_at": "2026-04-28T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69f0e98b45272de32e8c6336",
+        "69f1c957399b489398dfa657",
+        "69f1c98c1e3933a6dd8f0bca",
+        "69f22ee627117df83f957741",
+        "69f8ac4443843dd771d28f71"
+       ],
+       "article_id": "69f1c957399b489398dfa657"
+      },
+      {
+       "id": "ef27d24ba9a7bfce",
+       "company_name": "temporal technologies",
+       "domain": "temporal.io",
+       "round_type": "Series D",
+       "amount_usd": 649500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 649500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "amplify partners",
+         "domain": "amplifypartners.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "madrona",
+         "domain": "madrona.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        }
+       ],
+       "sector": "Information Technology, Internet, Open Source, Software",
+       "country": "USA",
+       "city": "Bellevue",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "da90cba11d60a3b5",
+       "company_name": "digital edge",
+       "domain": "wearedigitaledge.co.uk",
+       "round_type": "Series D",
+       "amount_usd": 640000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 640000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Digital Edge raised a total of $640 million in a Series D round.",
+       "published_at": "2025-09-30T23:25:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f7208f17f4f9d43d2b0a33"
+       ],
+       "article_id": "68f7208f17f4f9d43d2b0a33"
+      },
+      {
+       "id": "0042bc387faf9f5f",
+       "company_name": "neolix",
+       "domain": "neolix.cn",
+       "round_type": "Series D",
+       "amount_usd": 600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 600000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "autonomous logistics",
+       "country": "China",
+       "city": "Beijing",
+       "use_of_funds": "Advance algorithm upgrades, product development, commercialization, and global expansion",
+       "source_sentence": "The company announced on Thursday that it had secured over $600 million in series D financing, the largest private fundraising in the country's autonomous driving industry to date.",
+       "published_at": "2025-10-28T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69453e84ed545fec0aa358d7",
+        "6989b0ad94d3f481f3ea8333",
+        "698e51c19ca02490ec0bba8e"
+       ],
+       "article_id": "69453e84ed545fec0aa358d7"
+      },
+      {
+       "id": "7d19a376a5814dac",
+       "company_name": "neolix",
+       "domain": "neolix.cn",
+       "round_type": "Series D",
+       "amount_usd": 600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Stone Venture",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "gaocheng capital",
+         "domain": "gaochengcapital.com",
+         "amount": null
+        },
+        {
+         "name": "citic capital",
+         "domain": "citiccapital.com",
+         "amount": null
+        },
+        {
+         "name": "cdh",
+         "domain": "cdhfund.com",
+         "amount": null
+        },
+        {
+         "name": "Sparkedge Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Beijing AI Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "one of the largest internet platforms in China",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "legend capital",
+         "domain": "legendcapital.com.cn",
+         "amount": null
+        },
+        {
+         "name": "Gaorong Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Templewater",
+         "domain": "templewater.com",
+         "amount": null
+        },
+        {
+         "name": "saic",
+         "domain": "saicmobility.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous driving",
+       "country": "China",
+       "city": "Beijing",
+       "use_of_funds": "Advance autonomous driving algorithms, accelerate product development across new commercial use cases, enhance service network and user experience, and fuel global expansion plans",
+       "source_sentence": "Neolix, the world’s largest provider of L4 autonomous delivery (RoboVan) solutions, has raised over US$600 million in its Series D financing.",
+       "published_at": "2025-10-24T03:56:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe387df2b4270823292fe6"
+       ],
+       "article_id": "68fe387df2b4270823292fe6"
+      },
+      {
+       "id": "ff44f45258ad3882",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Legora , a collaborative AI platform for legal teams, has raised $550 million in a Series D funding round, valuing the company at $5.55 billion.",
+       "published_at": "2026-03-14T06:38:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd23936f67c5f5aa6638b"
+       ],
+       "article_id": "69cbd23936f67c5f5aa6638b"
+      },
+      {
+       "id": "49f779fbd1a3ab61",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5500000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5500000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Legora Raises $550M in Series D Funding to Expand AI in Legal Operations",
+       "published_at": "2026-03-10T22:32:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cc41766e63f1d240550f7c",
+        "69f8854b43843dd771d132fb"
+       ],
+       "article_id": "69cc41766e63f1d240550f7c"
+      },
+      {
+       "id": "6ce6a2310c2e5ecc",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "FirstMark Capital",
+         "domain": "firstmarkcap.com",
+         "amount": null
+        },
+        {
+         "name": "sands capital",
+         "domain": "sandscapital.com",
+         "amount": null
+        },
+        {
+         "name": "starwood capital",
+         "domain": "starwoodcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal Tech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "fuel rapid U.S. expansion",
+       "source_sentence": "Today, we’re thrilled to announce that Menlo Ventures has joined Legora’s $550 million Series D, alongside Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Redpoint Ventures, Y Combinator, Alkeon Capital, Bain Capital, Firstmark Capital, Sands Capital, and Starwood Capital.",
+       "published_at": "2026-03-10T12:00:00",
+       "coverage_count": 20,
+       "article_ids": [
+        "69c3a285c8a71dc7ae87a085",
+        "69c3a479836293942ef6807a",
+        "69c3a5563653d7fe6e7e3f03",
+        "69c3a6f16d029f77a1d3fa36",
+        "69c3a897f7c4e6f108e480ec",
+        "69cbd09bbf09457014d4cbc0",
+        "69cbd09f7aa9ae690c974fff",
+        "69cbd1e02e41fb6223042ccd",
+        "69cc1ddb1e1adbe011d85dd1",
+        "69cc3f8eda8c239a52930b7f",
+        "69e2836c90d9a716b4b7c27c",
+        "69e6468e2461615d5f46c48a",
+        "69e882157bb1410d4c87ec9e",
+        "69e8e3179baafc7356de01b8",
+        "69f87fff43843dd771ce435f",
+        "69f88276bbf1d31455976b0a",
+        "69f8851bbbf1d3145598e7c3",
+        "69f8854b43843dd771d132fb",
+        "69f8a84cbbf1d314559a3e99",
+        "69f8aae6bbf1d314559a5d72"
+       ],
+       "article_id": "69e2836c90d9a716b4b7c27c"
+      },
+      {
+       "id": "2caf1bcb01f1efc3",
+       "company_name": "strive health",
+       "domain": "strivehealth.com",
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        },
+        {
+         "name": "cvs health ventures",
+         "domain": "cvshealth.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "echo health ventures",
+         "domain": "echohealthventures.com",
+         "amount": null
+        },
+        {
+         "name": "town hall ventures",
+         "domain": "townhallventures.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "BlackRock affiliates",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hercules capital",
+         "domain": "htgc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "USA",
+       "city": "Denver",
+       "use_of_funds": "Invest in AI, grow business, expand care delivery to adjacent conditions (e.g., congestive heart failure)",
+       "source_sentence": "Strive Health has secured a massive $550 million in Series D funding.",
+       "published_at": "2025-09-10T02:58:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d94c2b8b9b1745e6108e29"
+       ],
+       "article_id": "68d94c2b8b9b1745e6108e29"
+      },
+      {
+       "id": "cfb29f228b9d4259",
+       "company_name": "strive health",
+       "domain": "strivehealth.com",
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "new enterprise associates",
+         "domain": "nea.com",
+         "amount": null
+        },
+        {
+         "name": "hercules capital",
+         "domain": "htgc.com",
+         "amount": null
+        },
+        {
+         "name": "cvs health ventures",
+         "domain": "cvshealth.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "echo health ventures",
+         "domain": "echohealthventures.com",
+         "amount": null
+        },
+        {
+         "name": "town hall ventures",
+         "domain": "townhallventures.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-driven kidney care",
+       "country": null,
+       "city": null,
+       "use_of_funds": "strengthen partnerships, grow services and expand AI-driven tools and analytics for kidney care",
+       "source_sentence": "Strive Health, which offers an AI-driven kidney care model, has raised $550 million in a Series D funding round, with $300 million secured via a Series D equity round and $250 million via debt financing.",
+       "published_at": "2025-09-09T14:11:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbc34f52cbf28bda9b9d8a"
+       ],
+       "article_id": "69bbc34f52cbf28bda9b9d8a"
+      },
+      {
+       "id": "4ed49e04846933e4",
+       "company_name": "chaos industries",
+       "domain": "getchaos.com",
+       "round_type": "Series D",
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 510000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        }
+       ],
+       "sector": "Defense technology",
+       "country": "United States",
+       "city": "Los Angeles",
+       "use_of_funds": "Ramp up manufacturing and scale workforce",
+       "source_sentence": "Counter-drone radar manufacturer Chaos Industries raised $510 million in a funding round that closed last month, the company's CEO said.",
+       "published_at": "2025-11-13T10:16:21",
+       "coverage_count": 2,
+       "article_ids": [
+        "69317363f20f8bf353f20c31",
+        "698d59fd9ca02490ecf97618"
+       ],
+       "article_id": "69317363f20f8bf353f20c31"
+      },
+      {
+       "id": "27e3677e0584afaa",
+       "company_name": "stoke space",
+       "domain": "stokespace.com",
+       "round_type": "Series D & Debt Raise",
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 510000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Thomas Tull’s USIT",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "silicon valley bank",
+         "domain": "svb.com",
+         "amount": null
+        }
+       ],
+       "sector": "Space Technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Launch first reusable Nova rocket and build launch site.",
+       "source_sentence": "Stoke Space Raises A $510M Series D",
+       "published_at": "2025-11-04T09:00:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "694af8b813240442ec75cae3"
+       ],
+       "article_id": "694af8b813240442ec75cae3"
+      },
+      {
+       "id": "5285247ea8646c95",
+       "company_name": "stoke space",
+       "domain": "stokespace.com",
+       "round_type": "Series D",
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 510000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "US Innovative Technology Fund",
+         "domain": "usinnovativetechnologyfund.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "washington harbour partners",
+         "domain": "washingtonharbour.com",
+         "amount": null
+        },
+        {
+         "name": "General Innovation Capital Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "776",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "breakthrough energy",
+         "domain": "breakthroughenergy.org",
+         "amount": null
+        },
+        {
+         "name": "glade brook capital partners",
+         "domain": "gladebrookcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Industrious Ventures",
+         "domain": "industrious.vc",
+         "amount": null
+        },
+        {
+         "name": "nfx",
+         "domain": "nfx.com",
+         "amount": null
+        },
+        {
+         "name": "sparta group",
+         "domain": "spartagroup.ca",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "woven capital",
+         "domain": "woven.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "development of its Nova rocket",
+       "source_sentence": "Stoke Space has raised a whopping $510M Series D to fund development of its Nova rocket.",
+       "published_at": "2025-10-09T12:38:52",
+       "coverage_count": 2,
+       "article_ids": [
+        "698a203794ebde7b3e65d602",
+        "69bb5b2b51c35210b7b7788c"
+       ],
+       "article_id": "698a203794ebde7b3e65d602"
+      },
+      {
+       "id": "51f45fcee61ec90f",
+       "company_name": "stoke space technologies",
+       "domain": "stoke-space.com",
+       "round_type": "Series D",
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 510000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "US Innovative Technology Fund",
+         "domain": "usinnovativetechnologyfund.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "washington harbour partners",
+         "domain": "washingtonharbour.com",
+         "amount": null
+        },
+        {
+         "name": "General Innovation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "776",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "breakthrough energy ventures",
+         "domain": "breakthroughenergy.org",
+         "amount": null
+        },
+        {
+         "name": "Glade Brook Capital",
+         "domain": "gladebrookcapital.com",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "other backers",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Space",
+       "country": "USA",
+       "city": "Kent",
+       "use_of_funds": null,
+       "source_sentence": "Stoke Space landed $510M Series D to accelerate reusable rockets.",
+       "published_at": "2025-10-08T22:06:50",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f71009017a8a94832bdeb4",
+        "68f71268b5f4abc34a2c16e8"
+       ],
+       "article_id": "68f71268b5f4abc34a2c16e8"
+      },
+      {
+       "id": "5ff13c9f6469c39f",
+       "company_name": "elevenlabs",
+       "domain": "elevenlabs.io",
+       "round_type": "Series-D",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 11000000000.0,
+       "investors": [],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "ElevenLabs has raised a $500m Series-D funding round that values the company at $11bn according to the Wall Street Journal.",
+       "published_at": "2026-02-05T13:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996dd0b33af8f1ff8a1c7ea"
+       ],
+       "article_id": "6996dd0b33af8f1ff8a1c7ea"
+      },
+      {
+       "id": "1b25759f5874d5ac",
+       "company_name": "elevenlabs",
+       "domain": "elevenlabs.io",
+       "round_type": "Series D",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Voice AI & Multimodal AI",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "expand beyond voice, developing multimodal AI agents",
+       "source_sentence": "ElevenLabs ... raised $500 million in a Series D round led by Sequoia Capital at an $11 billion valuation.",
+       "published_at": "2026-02-04T23:35:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "6986a952ca3bd326c77cffbf",
+        "69bd8f9c0ad23ae1115329db"
+       ],
+       "article_id": "6986a952ca3bd326c77cffbf"
+      },
+      {
+       "id": "aa9380c9c8f34b8e",
+       "company_name": "metropolis",
+       "domain": "metropolis.vdtrxn",
+       "round_type": "Series D",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "liontree",
+         "domain": "liontree.com",
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered parking and commerce platform",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "Expand urban transaction infrastructure, new sectors",
+       "source_sentence": "Metropolis raised $500 million Series D.",
+       "published_at": "2025-11-06T23:19:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "693196c14bc82ccb0df222a2"
+       ],
+       "article_id": "693196c14bc82ccb0df222a2"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 384,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTEtMDYgMjM6MTk6NTYiLCJrIjoiMTIyOTEzMDk0MTIxNzIzODUxNjYiLCJhIjo1MDAwMDAwMDAuMH0",
+     "totals": {
+      "deals": 384,
+      "deals_with_amount": 370,
+      "deals_without_amount": 14,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 97322682000.0,
+      "median_amount_usd": 100000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.178,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.187
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "series d",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "round_type": [
+       "series d"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "9aba0a1f2334b36a",
+       "company_name": "rogo",
+       "domain": "rogodata.com",
+       "round_type": "Series D",
+       "amount_usd": 160000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 160000000.0,
+       "valuation": 2000000000.0,
+       "investors": [
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "thrive",
+         "domain": "thrivenextgen.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan Growth Equity",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "boxgroup",
+         "domain": "boxgroup.com",
+         "amount": null
+        },
+        {
+         "name": "Mantis Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jack Altman",
+         "domain": "jackealtman.com",
+         "amount": null
+        },
+        {
+         "name": "evantic",
+         "domain": "evantic.com",
+         "amount": null
+        },
+        {
+         "name": "Positive Sum Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "financial technology",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Scaling its agentic platform and deepening the capabilities of Felix for more complex, long running workflows. Global expansion, particularly into EMEA and Asia, building on the existing London presence. Strengthening institutional partnerships through embedded engineering teams at client sites and tighter integrations. Enhancing product depth in areas like proprietary data handling, auditability, and workflow automation to maintain a moat in a highly regulated industry.",
+       "source_sentence": "Rogo Raises $160M in Series D Funding for Finance AI Platform",
+       "published_at": "2026-04-29T22:40:14",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f882b343843dd771cfbf3f",
+        "69f8aa108937ef12fc0b0627"
+       ],
+       "article_id": "69f882b343843dd771cfbf3f"
+      },
+      {
+       "id": "3f0aa81eeae6d1f7",
+       "company_name": "rogo",
+       "domain": "rogodata.com",
+       "round_type": "Series D",
+       "amount_usd": 160000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 160000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "j.p. morgan growth equity partners",
+         "domain": "am.jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI finance",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "The new capital will go toward deepening Rogo’s integration footprint inside large institutions and expanding its on‑site engineering and investment‑banking teams.",
+       "source_sentence": "Rogo closed a 160 million dollar Series D round led by Kleiner Perkins, lifting total funding above 300 million dollars to scale its “agentic platform for finance” across major institutions.",
+       "published_at": "2026-04-29T16:35:47",
+       "coverage_count": 5,
+       "article_ids": [
+        "69f883d543843dd771d05739",
+        "69f885d0bbf1d314559980b7",
+        "69f8ab6ebbf1d314559a65c4",
+        "69f9d4c67b2d589e844b1270",
+        "69f9d6f97b2d589e844c8b8d"
+       ],
+       "article_id": "69f883d543843dd771d05739"
+      },
+      {
+       "id": "94c4344d1dec42f8",
+       "company_name": "hightouch",
+       "domain": "hightouch.com",
+       "round_type": "Series D",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2750000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 2750000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "amplify partners",
+         "domain": "amplifypartners.com",
+         "amount": null
+        },
+        {
+         "name": "Y-Combinator",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "TD7",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Marketing technology",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "continued investment in Hightouch’s platform, expanding its capabilities in AI-driven campaign orchestration, decisioning, and cross-channel execution, with the goal of becoming the end-to-end system for agentic marketing",
+       "source_sentence": "Hightouch , the leader in data and AI for marketing, today announced a $150 million Series D financing led by Growth Equity at Goldman Sachs Alternatives and Bain Capital Ventures, valuing the company at $2.75 billion.",
+       "published_at": "2026-04-29T11:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "69f23011c6105443aa5ec84e",
+        "69f88484bbf1d31455988e30",
+        "69f884a08937ef12fc0962c1",
+        "69f8abce43843dd771d28975",
+        "69f9d6f97b2d589e844c8b8d",
+        "69f9d7b77b2d589e844d16ef"
+       ],
+       "article_id": "69f9d7b77b2d589e844d16ef"
+      },
+      {
+       "id": "e7fe4708aeb78d31",
+       "company_name": "Snabbit",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 56000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000.0,
+       "currency": "USD",
+       "amount": 56000000.0,
+       "valuation": 350000000.0,
+       "investors": [
+        {
+         "name": "Susquehanna Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mirae Asset Venture Investments’ Unicorn Growth Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bertelsmann india investments",
+         "domain": "biifund.com",
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "fj labs",
+         "domain": "fjlabs.com",
+         "amount": null
+        }
+       ],
+       "sector": "On-demand home services",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "extend the runway, deepen its presence and expand into new service categories",
+       "source_sentence": "Snabbit, an Indian on-demand home services startup, has closed a $56 million funding round, confirming TechCrunch’s earlier report.",
+       "published_at": "2026-04-28T03:30:00",
+       "coverage_count": 13,
+       "article_ids": [
+        "69f0e1ab45272de32e8bdfce",
+        "69f0e1bf836d28f995cb4b41",
+        "69f0e273836d28f995cb579c",
+        "69f0e58445272de32e8c2287",
+        "69f0e5eb45272de32e8c2b16",
+        "69f0e69645272de32e8c376a",
+        "69f0e86fd32561089420cf8d",
+        "69f0e88745272de32e8c5339",
+        "69f0ea9f836d28f995cbd9b2",
+        "69f1c82b1e3933a6dd8e687c",
+        "69f1cf25399b489398e25bc1",
+        "69f8807fbbf1d31455964d20",
+        "69f884a343843dd771d0c7ea"
+       ],
+       "article_id": "69f0e273836d28f995cb579c"
+      },
+      {
+       "id": "b91b686280567906",
+       "company_name": "Snabbit",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 56000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 56000000.0,
+       "valuation": 350000000.0,
+       "investors": [
+        {
+         "name": "bertelsmann india investments",
+         "domain": "biifund.com",
+         "amount": null
+        },
+        {
+         "name": "Susquehanna Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mirae Asset Venture Investments' Unicorn Growth Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "fj labs",
+         "domain": "fjlabs.com",
+         "amount": null
+        }
+       ],
+       "sector": "home services",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Expanding into new cities while deepening density and leadership in existing markets; Scaling additional high-frequency service categories with proven product-market fit; Strengthening the balance sheet to ensure long-term runway and disciplined capital allocation.",
+       "source_sentence": "Snabbit, India's fastest-growing quick home services platform, today announced a $56 million Series D round co-led by Bertelsmann India Investments, which is doubling down on its investment in the company, along with Susquehanna Venture Capital and Mirae Asset Venture Investments' Unicorn Growth Fund.",
+       "published_at": "2026-04-28T00:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "69f0e27b45272de32e8befb2",
+        "69f0e57d836d28f995cb8e4c",
+        "69f1ca42a5706a322e10bf25",
+        "69f1cc0c399b489398e0c078",
+        "69f22d81c6105443aa5d96e3",
+        "6a040e37220687a966adcc60"
+       ],
+       "article_id": "69f1ca42a5706a322e10bf25"
+      },
+      {
+       "id": "1f9830775e4979d2",
+       "company_name": "true anomaly",
+       "domain": "trueanomaly.space",
+       "round_type": "Series D",
+       "amount_usd": 650000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 650000000.0,
+       "valuation": 2200000000.0,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "riot ventures",
+         "domain": "riot.vc",
+         "amount": null
+        },
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        },
+        {
+         "name": "atreides",
+         "domain": "atreides.io",
+         "amount": null
+        },
+        {
+         "name": "g squared",
+         "domain": "gsquared.com",
+         "amount": null
+        },
+        {
+         "name": "the private shares fund",
+         "domain": "privatesharesfund.com",
+         "amount": null
+        },
+        {
+         "name": "vaneck",
+         "domain": "vaneck.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "acme capital",
+         "domain": "acme.vc",
+         "amount": null
+        },
+        {
+         "name": "Space VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Meritech Capital",
+         "domain": "meritechcap.com",
+         "amount": null
+        },
+        {
+         "name": "Narya",
+         "domain": "naryavc.com",
+         "amount": null
+        },
+        {
+         "name": "645 ventures",
+         "domain": "645ventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Space technology",
+       "country": "USA",
+       "city": "Centennial",
+       "use_of_funds": "Dedicated to securing the space domain",
+       "source_sentence": "True Anomaly today announced its $650 million Series D funding round.",
+       "published_at": "2026-04-28T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69f0e98b45272de32e8c6336",
+        "69f1c957399b489398dfa657",
+        "69f1c98c1e3933a6dd8f0bca",
+        "69f22ee627117df83f957741",
+        "69f8ac4443843dd771d28f71"
+       ],
+       "article_id": "69f1c957399b489398dfa657"
+      },
+      {
+       "id": "d5d29685cca17ca5",
+       "company_name": "Snabbit",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mirae Asset Venture Investments",
+         "domain": "miraeassetvc.co.in",
+         "amount": null
+        },
+        {
+         "name": "bertelsmann india investments",
+         "domain": "biifund.com",
+         "amount": null
+        }
+       ],
+       "sector": "On-demand home services",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "enable Snabbit to scale across neighborhood clusters and strengthen its service network",
+       "source_sentence": "Bengaluru-based startup Snabbit is in advanced talks to secure $50-60 million in fresh funding.",
+       "published_at": "2026-04-26T03:37:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efab748a54b8f07c96dd80"
+       ],
+       "article_id": "69efab748a54b8f07c96dd80"
+      },
+      {
+       "id": "d855224706ffffc2",
+       "company_name": "wayve",
+       "domain": "wayve.ai",
+       "round_type": "Series D extension",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "qualcomm",
+         "domain": "qualcomm.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "arm",
+         "domain": "arm.com",
+         "amount": null
+        }
+       ],
+       "sector": "autonomous driving software",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The extension totals $60 million and adds three household names in automotive computing to a shareholder register that already spans cloud infrastructure, mobility platforms and global manufacturers.",
+       "published_at": "2026-04-17T15:54:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8693b7bb1410d4c7804d4"
+       ],
+       "article_id": "69e8693b7bb1410d4c7804d4"
+      },
+      {
+       "id": "007ebbe9348f2baa",
+       "company_name": "wayve",
+       "domain": "wayve.ai",
+       "round_type": "Series D",
+       "amount_usd": 1260000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1260000000.0,
+       "valuation": 8600000000.0,
+       "investors": [
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "arm",
+         "domain": "arm.com",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous driving",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Wayve, a company specialized in autonomous driving, has expanded its Series D financing round by $60 million.",
+       "published_at": "2026-04-16T14:01:37",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e865939baafc73567de07f",
+        "69e8e26e9baafc7356dd700c"
+       ],
+       "article_id": "69e8e26e9baafc7356dd700c"
+      },
+      {
+       "id": "6d774cedf6370b06",
+       "company_name": "wayve",
+       "domain": "wayve.ai",
+       "round_type": "Series D extension",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Advanced Micro Devices",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "arm",
+         "domain": "arm.com",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous Vehicles",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Wayve Raises $60M in Series D Extension for Hardware-Agnostic Autonomous Driving AI",
+       "published_at": "2026-04-15T21:57:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e852757bb1410d4c6a2a53"
+       ],
+       "article_id": "69e852757bb1410d4c6a2a53"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 153,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTUgMjE6NTc6NTUiLCJrIjoiNzg4Nzg1Nzg1NzI4NDQ3NTY1NCJ9",
+     "totals": {
+      "deals": 153,
+      "deals_with_amount": 146,
+      "deals_without_amount": 7,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 45444040000.0,
+      "median_amount_usd": 119000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.149,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.152
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,2325 @@
+{
+ "slug": "carlyle-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:25Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Carlyle",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "carlyle"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 55,
+      "deals_with_amount": 45,
+      "deals_without_amount": 10,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 26306105438.13,
+      "median_amount_usd": 313200000.0,
+      "largest_amount_usd": 8509000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 0,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 3,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 1602400000.0,
+       "median_amount_usd": 801200000.0,
+       "largest_amount_usd": 1300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4700000000.0,
+       "median_amount_usd": 2350000000.0,
+       "largest_amount_usd": 2700000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 0,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 350280000.0,
+       "median_amount_usd": 175140000.0,
+       "largest_amount_usd": 260780000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 6,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 10053000000.0,
+       "median_amount_usd": 700000000.0,
+       "largest_amount_usd": 8509000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 669325438.13,
+       "median_amount_usd": 89500000.0,
+       "largest_amount_usd": 529041438.13,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 475200000.0,
+       "median_amount_usd": 237600000.0,
+       "largest_amount_usd": 313200000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 30000000.0,
+       "median_amount_usd": 30000000.0,
+       "largest_amount_usd": 30000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2690400000.0,
+       "median_amount_usd": 252000000.0,
+       "largest_amount_usd": 2247900000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4490000000.0,
+       "median_amount_usd": 145000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 4,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2335000000.0,
+       "median_amount_usd": 875000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.107,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.11
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Carlyle",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "carlyle"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "7e7276d8ec2ab231",
+       "company_name": "basf coatings",
+       "domain": "basf-coatings.com",
+       "round_type": null,
+       "amount_usd": 8509000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 6700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "basf",
+         "domain": "basf.com",
+         "amount": null
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "BASF and global investment firm Carlyle are investing £6.7bn in BASF Coatings",
+       "published_at": "2025-10-13T08:07:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d57868d29a990b6d4b5b1"
+       ],
+       "article_id": "698d57868d29a990b6d4b5b1"
+      },
+      {
+       "id": "72fc8c8e7ac9872f",
+       "company_name": "yes bank",
+       "domain": "yesbank.in",
+       "round_type": "equity",
+       "amount_usd": 2700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sumitomo mitsui financial group",
+         "domain": "smbcgroup.com",
+         "amount": null
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        }
+       ],
+       "sector": "Banking",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The fresh investment would bring the total amount to $2.7 billion, giving SMFG a roughly 25% stake in Yes Bank.",
+       "published_at": "2025-07-15T09:12:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "6914cd3b9b28596bdaf38cd9"
+       ],
+       "article_id": "6914cd3b9b28596bdaf38cd9"
+      },
+      {
+       "id": "b727785446d60b84",
+       "company_name": "the very group",
+       "domain": "theverygroup.com",
+       "round_type": "securitisation",
+       "amount_usd": 2247900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 1770000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        }
+       ],
+       "sector": "retail",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The Very Group extended its £1.77bn UK securitisation facility to February 2029",
+       "published_at": "2026-02-16T12:13:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbbea28b79b55c827735b2"
+       ],
+       "article_id": "69bbbea28b79b55c827735b2"
+      },
+      {
+       "id": "828e928cd16bd3f6",
+       "company_name": "diversified energy",
+       "domain": "div.energy",
+       "round_type": null,
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        }
+       ],
+       "sector": "Energy",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "investment in U.S. natural gas and oil assets",
+       "source_sentence": "A recently announced partnership with Carlyle intends to invest USD2 billion in U.S. natural gas and oil assets, expected to boost non-dilutive financing and accelerate company growth.",
+       "published_at": "2025-07-03T16:06:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0ecbb91b46c685a2ba09c"
+       ],
+       "article_id": "68d0ecbb91b46c685a2ba09c"
+      },
+      {
+       "id": "6ae1fd760c7198a9",
+       "company_name": "Trucordia",
+       "domain": null,
+       "round_type": "equity",
+       "amount_usd": 1300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Carlyle Group",
+         "domain": null,
+         "amount": 1300000000.0
+        }
+       ],
+       "sector": "insurance brokerage",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "financial flexibility to pursue strategic initiatives and repurchase of equity from current minority shareholders",
+       "source_sentence": "The refinancing coincides with a $1.3bn investment from the Carlyle Group, announced earlier this month.",
+       "published_at": "2025-06-19T13:37:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d4ce9baafc7356d24a53"
+       ],
+       "article_id": "69e8d4ce9baafc7356d24a53"
+      },
+      {
+       "id": "39b5bda6ee7f9602",
+       "company_name": "Trucordia",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1300000000.0,
+       "valuation": 5700000000.0,
+       "investors": [
+        {
+         "name": "Carlyle’s Global Credit platform",
+         "domain": null,
+         "amount": 1300000000.0
+        }
+       ],
+       "sector": "Insurance",
+       "country": "USA",
+       "city": "Lindon",
+       "use_of_funds": "Reduce debt and simplify governance structure",
+       "source_sentence": "Trucordia today announced it will receive a $1.3 billion strategic investment from global investment firm Carlyle’s Global Credit platform.",
+       "published_at": "2025-06-04T10:00:53",
+       "coverage_count": 3,
+       "article_ids": [
+        "6988b00e69527f36baaee6ac",
+        "698cee3a9ca02490ecf173bf",
+        "69e84a8f5cfa3e5ba5e316b1"
+       ],
+       "article_id": "698cee3a9ca02490ecf173bf"
+      },
+      {
+       "id": "e250010bd2e3778f",
+       "company_name": "nxtra data",
+       "domain": "nxtradata.com",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "Anchorage Capital",
+         "domain": null,
+         "amount": 35000000.0
+        },
+        {
+         "name": "airtel",
+         "domain": "airtel.com",
+         "amount": null
+        }
+       ],
+       "sector": "data centre",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "significantly scale up its data centre infrastructure and expand service offerings to enterprises, hyperscalers and government organisations.",
+       "source_sentence": "The company’s announcement of a $1 billion investment in Nxtra Data by global investors including Alpha Wave Global, Carlyle and Anchorage Capital.",
+       "published_at": "2026-04-01T04:54:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03f99a62bbf617b03d6ed5"
+       ],
+       "article_id": "6a03f99a62bbf617b03d6ed5"
+      },
+      {
+       "id": "2f37f858f6a9c6a1",
+       "company_name": "nxtra",
+       "domain": "nxtra.in",
+       "round_type": "Strategic",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "Anchorage Capital",
+         "domain": null,
+         "amount": 35000000.0
+        },
+        {
+         "name": "Bharti Airtel",
+         "domain": "airtel.in",
+         "amount": 290000000.0
+        }
+       ],
+       "sector": "Data Center Infrastructure",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Scale infrastructure, expand service offerings and strengthen AI-driven operations",
+       "source_sentence": "Bharti Airtel’s data centre subsidiary Nxtra has raised $1 billion (around Rs 9,400 crore) in a strategic funding round led by Alpha Wave Global, alongside existing investor Carlyle and Anchorage Capital.",
+       "published_at": "2026-03-31T10:17:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d11127c47f8fc6a1668bc9"
+       ],
+       "article_id": "69d11127c47f8fc6a1668bc9"
+      },
+      {
+       "id": "c7661c6bbda49f60",
+       "company_name": "nxtra data",
+       "domain": "nxtradata.com",
+       "round_type": "investment",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "the carlyle group",
+         "domain": "carlyle.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "anchorage capital group",
+         "domain": "anchoragecap.com",
+         "amount": 35000000.0
+        },
+        {
+         "name": "Bharti Airtel",
+         "domain": "airtel.in",
+         "amount": 290000000.0
+        }
+       ],
+       "sector": "Data centre",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "AI data center expansion and to fuel the next phase of growth.",
+       "source_sentence": "Bharti Airtel announced a $1 billion investment in its data centre arm, Nxtra Data led by global investors Alpha Wave Global, The Carlyle Group and Anchorage Capital Group.",
+       "published_at": "2026-03-31T10:10:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d14f09c8ed73346ef1bcb6"
+       ],
+       "article_id": "69d14f09c8ed73346ef1bcb6"
+      },
+      {
+       "id": "95306980c38076ce",
+       "company_name": "Nxtra (Nxtra Data Ltd)",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "Anchorage Capital",
+         "domain": null,
+         "amount": 35000000.0
+        },
+        {
+         "name": "Bharti Airtel",
+         "domain": "airtel.in",
+         "amount": 290000000.0
+        }
+       ],
+       "sector": "Data Center",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "accelerate growth and expand infrastructure and service portfolio",
+       "source_sentence": "Bharti Airtel Ltd announced on Monday,31 March, a new financial infusion of around $1 billion into its data centre subsidiary Nxtra, as the telecom giant seeks to expand its digital infrastructure footprint in India amid increased demand for AI-led and cloud services.",
+       "published_at": "2026-03-31T07:50:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d14f88080d96e8a0c60b2d"
+       ],
+       "article_id": "69d14f88080d96e8a0c60b2d"
+      },
+      {
+       "id": "90832de0d86ac21c",
+       "company_name": "nxtra",
+       "domain": "nxtra.in",
+       "round_type": "Strategic funding round",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "Anchorage Capital",
+         "domain": null,
+         "amount": 35000000.0
+        },
+        {
+         "name": "airtel",
+         "domain": "airtel.com",
+         "amount": 290000000.0
+        }
+       ],
+       "sector": "Data centre services",
+       "country": "India",
+       "city": "Delhi NCR",
+       "use_of_funds": "accelerate its growth plans, scale its infrastructure and broaden its portfolio of services",
+       "source_sentence": "In a statement, Bharti Airtel said that Alpha Wave will invest $435 Mn (₹4,107 Cr), while Carlyle will infuse $240 Mn (₹2,266 Cr) in the data centre company. Anchorage Capital will also invest $35 Mn (₹330.5 Cr), with the remaining $290 Mn (₹2,738 Cr) coming from Airtel.",
+       "published_at": "2026-03-30T17:56:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc155562898d9e03c8938a"
+       ],
+       "article_id": "69cc155562898d9e03c8938a"
+      },
+      {
+       "id": "9303ec3470a76913",
+       "company_name": "nxtra",
+       "domain": "nxtra.in",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "Anchorage Capital",
+         "domain": null,
+         "amount": 35000000.0
+        },
+        {
+         "name": "Bharti Airtel",
+         "domain": "airtel.in",
+         "amount": 290000000.0
+        }
+       ],
+       "sector": "Data Center",
+       "country": "India",
+       "city": "Delhi NCR",
+       "use_of_funds": "Expansion of data center capacity and development of AI‑ready campuses",
+       "source_sentence": "Bharti Airtel is stepping up its presence in India’s fast-growing data center space, announcing a fresh $1 billion investment into its subsidiary Nxtra.",
+       "published_at": "2026-03-30T17:17:58",
+       "coverage_count": 7,
+       "article_ids": [
+        "69cba87c71a014f1df2aa782",
+        "69cc168d1e8126b2deb1550b",
+        "69cc5dce23fe82b9abca83cc",
+        "69d1d05217c374136f82cf6c",
+        "69e2941b90d9a716b4baa459",
+        "69e2aea6d754bf662cd9831b",
+        "69e33fc1446b93653125b86d"
+       ],
+       "article_id": "69cba87c71a014f1df2aa782"
+      },
+      {
+       "id": "6d954e290bcab216",
+       "company_name": "nxtra data",
+       "domain": "nxtradata.com",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 400000000.0
+        },
+        {
+         "name": "airtel",
+         "domain": "airtel.com",
+         "amount": 300000000.0
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 300000000.0
+        }
+       ],
+       "sector": "Data center / AI infrastructure",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": "Expand capacity to gigawatt scale",
+       "source_sentence": "Nxtra Data plans $1bn fundraise to expand capacity. Alpha Wave Global expected to invest about $400mn. Funds support gigawatt-scale AI data centre expansion in India.",
+       "published_at": "2026-03-09T07:15:58",
+       "coverage_count": 17,
+       "article_ids": [
+        "69c3a52be557041f410f45c3",
+        "69cbdfa33e6b5ee693666036",
+        "69ccf135adb5f291e0c69019",
+        "69d10b4d20d9f696ce6491b7",
+        "69d10b50d6ecaa4ef289a391",
+        "69d10e824d4cef0112bc1bed",
+        "69d1112a27737c4d41401506",
+        "69d1112db214788b49df9d77",
+        "69d115580fb3296461588260",
+        "69d14f09b3ae2d64de41b3a0",
+        "69d1cc9f4a89907878e554d8",
+        "69d1ccb317c374136f825db7",
+        "69d1d0848ef71961aa13f54c",
+        "69d1d14f4a89907878e5e8b2",
+        "69e3545da8697b10fabeec66",
+        "69e35b1fc70111d65ec93aa5",
+        "69e4fb449d0e7fe469a3bce4"
+       ],
+       "article_id": "69c3a52be557041f410f45c3"
+      },
+      {
+       "id": "829f7c2933ec1001",
+       "company_name": "nxtra",
+       "domain": "nxtra.in",
+       "round_type": "investment",
+       "amount_usd": 965000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 965000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        },
+        {
+         "name": "Bharti Airtel",
+         "domain": "airtel.in",
+         "amount": null
+        }
+       ],
+       "sector": "Data centre provider",
+       "country": "India",
+       "city": "Delhi NCR",
+       "use_of_funds": "speed up the company's expansion goals, scale its infrastructure, and expand its service offerings",
+       "source_sentence": "Alpha Wave Global and Carlyle have each committed $435 million and $240 million, respectively, to the data centre company, with Airtel contributing $290 million.",
+       "published_at": "2026-03-31T07:57:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbdf831c2c193028d4fe38"
+       ],
+       "article_id": "69cbdf831c2c193028d4fe38"
+      },
+      {
+       "id": "963310ed9ebbba38",
+       "company_name": "bridgepointe technologies",
+       "domain": "bridgepointetechnologies.com",
+       "round_type": "senior debt",
+       "amount_usd": 875000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 875000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley private credit",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "charlesbank capital partners",
+         "domain": "charlesbank.com",
+         "amount": null
+        },
+        {
+         "name": "Bridgepointe management",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Technology advisory services",
+       "country": "USA",
+       "city": "San Mateo",
+       "use_of_funds": null,
+       "source_sentence": "Morgan Stanley Investment Management announced today that funds managed by Morgan Stanley Private Credit have led an $875 million senior debt financing package for Bridgepointe Technologies (Bridgepointe or the Company)...",
+       "published_at": "2026-04-29T12:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f232fec6105443aa6075b4"
+       ],
+       "article_id": "69f232fec6105443aa6075b4"
+      },
+      {
+       "id": "24104edd48d9a8c2",
+       "company_name": "FCA Re",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fortitude re",
+         "domain": "fortitude-re.com",
+         "amount": null
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        },
+        {
+         "name": "T&D Insurance Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "alliancebernstein",
+         "domain": "alliancebernstein.com",
+         "amount": null
+        },
+        {
+         "name": "Shinhan Life",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "National Pension Service of Korea (NPS)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Other institutional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Reinsurance",
+       "country": "Bermuda",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "FCA Re is capitalized with more than $700 million in deployable capital, comprising both equity and anticipated debt capacity.",
+       "published_at": "2025-10-21T13:30:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f46588d29a990b6f98270"
+       ],
+       "article_id": "698f46588d29a990b6f98270"
+      },
+      {
+       "id": "1cd54ff8ccb2d561",
+       "company_name": "nep group",
+       "domain": "nepgroup.com",
+       "round_type": null,
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "26North Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        }
+       ],
+       "sector": "broadcast technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "continued expansion",
+       "source_sentence": "26North Partners has led a $700m investment in the NEP Group events and broadcast technology company.",
+       "published_at": "2025-10-20T13:30:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bb552e8dcdeb577ebba305",
+        "69e29111601121844c32c49f"
+       ],
+       "article_id": "69bb552e8dcdeb577ebba305"
+      },
+      {
+       "id": "50380748f834847a",
+       "company_name": "nep group",
+       "domain": "nepgroup.com",
+       "round_type": "equity",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "26North",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        }
+       ],
+       "sector": "media services and technology partner for content producers worldwide",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "NEP Group, a media technology provider working across most major global sporting events, has secured a $700M equity investment led by 26North, the firm started by Commanders owner Josh Harris. Existing investor Carlyle also participated in the funding round and will remain NEP Group’s lead shareholder.",
+       "published_at": "2025-10-20T13:08:41",
+       "coverage_count": 2,
+       "article_ids": [
+        "68fe2f899f5ecb55fa282d62",
+        "698e7f148d29a990b6ea95d5"
+       ],
+       "article_id": "698e7f148d29a990b6ea95d5"
+      },
+      {
+       "id": "38d0422caf7637db",
+       "company_name": "nep group",
+       "domain": "nepgroup.com",
+       "round_type": "equity investment",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "26North Partners LP (26North)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        }
+       ],
+       "sector": "media services and technology",
+       "country": "United States",
+       "city": "Pittsburgh",
+       "use_of_funds": "enable the company to accelerate operations globally, developing new partnerships and products to enhance its capabilities and speed to market",
+       "source_sentence": "NEP Group, the media services and technology partner for content producers worldwide, has announced a new $700 million (€600m) equity investment in the company led by 26North Partners LP (26North), together with a group of co-investors.",
+       "published_at": "2025-10-17T04:00:34",
+       "coverage_count": 4,
+       "article_ids": [
+        "68fe30d592ef2af9ad285186",
+        "6986b3edfdcc616c15e04f6d",
+        "6988f48494d3f481f3dca65a",
+        "698f4dd48d29a990b6fa1897"
+       ],
+       "article_id": "68fe30d592ef2af9ad285186"
+      },
+      {
+       "id": "123e95abf8de6365",
+       "company_name": "spicejet",
+       "domain": "spicejet.com",
+       "round_type": "Equity",
+       "amount_usd": 529041438.132,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 44086786511.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle aviation partners",
+         "domain": "carlyle.aero",
+         "amount": null
+        }
+       ],
+       "sector": "Aviation",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The budget carrier recently completed the allotment of equity shares to Carlyle Aviation Partners.",
+       "published_at": "2025-11-24T10:14:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "698fa0149ca02490ec248db7"
+       ],
+       "article_id": "698fa0149ca02490ec248db7"
+      },
+      {
+       "id": "aa6906026a3b3339",
+       "company_name": "orbcomm",
+       "domain": "orbcomm.com",
+       "round_type": "Refinancing",
+       "amount_usd": 460000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 460000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        },
+        {
+         "name": "Bain Credit’s Private Credit Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "morgan stanley private credit",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "support growth initiatives and large-scale customer deployments and expand its platform",
+       "source_sentence": "Orbcomm has closed a $460 million refinancing that the company says will support growth initiatives and large-scale customer deployments and expand its platform.",
+       "published_at": "2026-04-29T18:28:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d5b7a088760d34bfd813"
+       ],
+       "article_id": "69f9d5b7a088760d34bfd813"
+      },
+      {
+       "id": "40bec91ce4311d44",
+       "company_name": "orbcomm",
+       "domain": "orbcomm.com",
+       "round_type": "debt refinancing",
+       "amount_usd": 460000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 460000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        },
+        {
+         "name": "Bain Credit's Private Credit Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "morgan stanley private credit",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": "Industrial Internet of Things",
+       "country": "United States",
+       "city": "Sterling",
+       "use_of_funds": "long-term growth initiatives, customer deployments, and platform expansion",
+       "source_sentence": "STERLING, Va., April 29, 2026 (GLOBE NEWSWIRE) -- ORBCOMM Inc., a global leader in industrial IoT, today announced the closing of a $460 million refinancing with support from Carlyle, Bain Credit's Private Credit Group and Morgan Stanley Private Credit.",
+       "published_at": "2026-04-29T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d8887b2d589e844daae0"
+       ],
+       "article_id": "69f9d8887b2d589e844daae0"
+      },
+      {
+       "id": "e73f8bbc21ad3c1f",
+       "company_name": "mecachrome",
+       "domain": "mecachrome.com",
+       "round_type": null,
+       "amount_usd": 313200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 290000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        }
+       ],
+       "sector": "aerospace and defence",
+       "country": "France",
+       "city": "Blagnac",
+       "use_of_funds": "Debt restructuring, expansion of production capacity, and strategic acquisitions",
+       "source_sentence": "The US investment company Carlyle announces that its Global Credit platform provides €290 million in funding to support Mecachrome (5,000 employees, CA 2024: €640 million), a designer and manufacturer of high-precision components for the aerospace and defence sectors based in Blagnac, Upper Garonne.",
+       "published_at": "2025-12-10T14:31:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1cfa78ef71961aa13e86c"
+       ],
+       "article_id": "69d1cfa78ef71961aa13e86c"
+      },
+      {
+       "id": "8c3fb565df59cd43",
+       "company_name": "fitness park",
+       "domain": "fitnesspark.fr",
+       "round_type": null,
+       "amount_usd": 302400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 280000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 280000000.0
+        }
+       ],
+       "sector": "Fitness club",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "Scale through acquisitions in France and internationally and enhance member experience.",
+       "source_sentence": "Carlyle, a global investment firm, has extended a €280 million financing package to Fitness Park, France’s largest value-focused fitness club franchisor, as the company looks to scale through acquisitions in France and internationally and enhance its member experience.",
+       "published_at": "2025-06-04T19:52:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8a8b443843dd771d2618f"
+       ],
+       "article_id": "69f8a8b443843dd771d2618f"
+      },
+      {
+       "id": "85ef914c03d47f12",
+       "company_name": "spicejet",
+       "domain": "spicejet.com",
+       "round_type": "Settlement",
+       "amount_usd": 260780000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 260780000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle aviation partners",
+         "domain": "carlyle.aero",
+         "amount": null
+        }
+       ],
+       "sector": "Aviation",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "Cash maintenance reserves, cash maintenance credits, lease obligation restructuring, equity share issuance",
+       "source_sentence": "SpiceJet Limited has reached a settlement with Carlyle Aviation Partners, unlocking US $ 79.6 Million in cash maintenance reserves for future aircraft and engine maintenance, plus US $ 9.9 Million in cash maintenance credits to offset its lease obligations. This agreement significantly enhances airline’s liquidity and supports its ongoing restructuring efforts. These liquidity enhancements are part of overall settlement agreement with Carlyle Aviation Partners and its affiliated entities, under which the Lessors shall restructure certain lease obligations totalling US $ 121.18 Million in conjunction with the issuance of equity shares aggregating to US $ 50 Million.",
+       "published_at": "2025-09-11T05:07:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0e13c5d9c6dd21b1ef15f"
+       ],
+       "article_id": "68d0e13c5d9c6dd21b1ef15f"
+      },
+      {
+       "id": "a478bba618e95354",
+       "company_name": "Nido Home Finance",
+       "domain": "nidohomefin.com",
+       "round_type": "equity",
+       "amount_usd": 252000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 21000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 21000000000.0
+        }
+       ],
+       "sector": "housing finance",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "primary equity capital infusion",
+       "source_sentence": "U.S. private equity firm Carlyle will invest 21 billion rupees ($232 million) in the housing finance unit of India's Edelweiss Financial, the Indian firm said on Tuesday.",
+       "published_at": "2026-02-10T11:03:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbb7b6fa8c4837c97408ec"
+       ],
+       "article_id": "69bbb7b6fa8c4837c97408ec"
+      },
+      {
+       "id": "c88c8962a8ab82ba",
+       "company_name": "the very group",
+       "domain": "theverygroup.com",
+       "round_type": "Capital injection",
+       "amount_usd": 190500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        }
+       ],
+       "sector": "Retail",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "Support future growth and refinance debt",
+       "source_sentence": "Carlyle’s capital injection reduced total group debt by £150m.",
+       "published_at": "2026-02-17T10:55:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbc730ac5a7877f6e74870"
+       ],
+       "article_id": "69bbc730ac5a7877f6e74870"
+      },
+      {
+       "id": "267b72632a50ee30",
+       "company_name": "the very group",
+       "domain": "theverygroup.com",
+       "round_type": "Debt",
+       "amount_usd": 190500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 150000000.0
+        }
+       ],
+       "sector": "Fashion Retail",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The £150 million capital support from Carlyle is a reflection of their strong and ongoing support for the business.",
+       "published_at": "2026-02-16T08:10:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd80e7518fdf3874310b01"
+       ],
+       "article_id": "69bd80e7518fdf3874310b01"
+      },
+      {
+       "id": "f5f7d6156f87ee63",
+       "company_name": "the very group",
+       "domain": "theverygroup.com",
+       "round_type": "Capital support",
+       "amount_usd": 190500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 150000000.0
+        }
+       ],
+       "sector": "Retail",
+       "country": "United Kingdom",
+       "city": "Liverpool",
+       "use_of_funds": null,
+       "source_sentence": "The £150m capital support from Carlyle is a reflection of their strong and ongoing support for the business.",
+       "published_at": "2026-02-16T07:35:09",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bbbea28b79b55c827735b2",
+        "69c98af9d3c89f36ed49c0b2"
+       ],
+       "article_id": "69c98af9d3c89f36ed49c0b2"
+      },
+      {
+       "id": "5ef85eabbdb3ccfd",
+       "company_name": "picus capital",
+       "domain": "picuscap.com",
+       "round_type": "Preferred Equity",
+       "amount_usd": 162000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "additional capital for new investments and support the continued growth of its existing portfolio",
+       "source_sentence": "Picus Capital, a global venture capital company, has successfully completed a Preferred Equity financing of EUR 150 million with Carlyle AlpInvest, a leading global private markets manager.",
+       "published_at": "2025-12-23T15:58:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d1a848d29a990b6d017da"
+       ],
+       "article_id": "698d1a848d29a990b6d017da"
+      },
+      {
+       "id": "6fadfbbbfd6439d1",
+       "company_name": "ReNew Green Energy Solutions",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 145000000.0,
+       "amount_flag": null,
+       "valuation_usd": 78000000000.0,
+       "currency": "USD",
+       "amount": 145000000.0,
+       "valuation": 78000000000.0,
+       "investors": [
+        {
+         "name": "leapfrog investments",
+         "domain": "leapfroginvest.com",
+         "amount": null
+        },
+        {
+         "name": "Emerging Market Climate Action Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "renewable energy",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "LeapFrog Investments, with co-investors Emerging Market Climate Action Fund and Carlyle AlpInvest invested $ 95 million in ReNew Green Energy Solutions, the commerical and industrial platform of ReNew Energy Global. LeapFrog , Profit with Purpose investor, committed $50 million in the deal.",
+       "published_at": "2026-03-16T11:57:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a5a9cb385b3a4597df7f"
+       ],
+       "article_id": "69c3a5a9cb385b3a4597df7f"
+      },
+      {
+       "id": "597080d0911d72e7",
+       "company_name": "id fresh food",
+       "domain": "idfreshfood.com",
+       "round_type": null,
+       "amount_usd": 144000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 12000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        },
+        {
+         "name": "kedaara",
+         "domain": "kedaara.com",
+         "amount": null
+        },
+        {
+         "name": "chryscapital",
+         "domain": "chryscapital.com",
+         "amount": null
+        },
+        {
+         "name": "Multiples",
+         "domain": "multiples.cc",
+         "amount": null
+        },
+        {
+         "name": "verlinvest",
+         "domain": "verlinvest.com",
+         "amount": null
+        }
+       ],
+       "sector": "Food & Beverage",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "raise fresh capital",
+       "source_sentence": "Bengaluru-based iD Fresh Food, known for its ready-to-cook staples like idli and dosa batter, is in advanced discussions with private equity firms including Carlyle, Kedaara, ChrysCapital, Multiples, and Verlinvest to raise about Rs 1,200 crore.",
+       "published_at": "2025-10-10T04:21:21",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f71ce3b5f4abc34a2d17e1",
+        "68f73670f3ba9a3da52d08f3"
+       ],
+       "article_id": "68f71ce3b5f4abc34a2d17e1"
+      },
+      {
+       "id": "6e8aecddefcb7c80",
+       "company_name": "renew",
+       "domain": "renewstrategies.com",
+       "round_type": "equity investment",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "leapfrog investments",
+         "domain": "leapfroginvest.com",
+         "amount": null
+        },
+        {
+         "name": "Emerging Market Climate Action Fund (EMCAF)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its commercial and industrial (C&I) platform, ReNew Green",
+       "source_sentence": "The report comes after ReNew, earlier this week, attracted a USD-95-million equity investment to expand its commercial and industrial (C&I) platform, ReNew Green.",
+       "published_at": "2026-03-18T12:38:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4fce36c3064e455d3ac"
+       ],
+       "article_id": "69c3a4fce36c3064e455d3ac"
+      },
+      {
+       "id": "82a93f07bf397eb6",
+       "company_name": "ReNew Green Energy Solutions",
+       "domain": null,
+       "round_type": "Stake Sale",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": 850000000.0,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": 850000000.0,
+       "investors": [
+        {
+         "name": "leapfrog investments",
+         "domain": "leapfroginvest.com",
+         "amount": null
+        },
+        {
+         "name": "Emerging Market Climate Action Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Renewable Energy",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "ReNew Monday said it sold around 11% stake in its commercial and industrial (C&I) power generation power unit to three investors-Leapfrog Investments, Emerging Market Climate Action Fund, and Carlyle AlpInvest. The new investors will collectively infuse $95 million (₹876 crore) in ReNew Green Energy Solutions, the entity housing the C&I business, according to a company release.",
+       "published_at": "2026-03-17T07:02:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e4fb63430a4927fdc0e08b"
+       ],
+       "article_id": "69e4fb63430a4927fdc0e08b"
+      },
+      {
+       "id": "57b6bdc8b424d5ab",
+       "company_name": "ReNew Green Energy Solutions",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": 850000000.0,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": 850000000.0,
+       "investors": [
+        {
+         "name": "leapfrog investments",
+         "domain": "leapfroginvest.com",
+         "amount": null
+        },
+        {
+         "name": "Emerging Market Climate Action Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Renewable Energy",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": null,
+       "source_sentence": "New Delhi: ReNew Monday said it sold around 11% stake in its commercial and industrial (C&I) power generation power unit to three investors-Leapfrog Investments, Emerging Market Climate Action Fund, and Carlyle AlpInvest.",
+       "published_at": "2026-03-16T18:55:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2b715dc480588dca21bd6"
+       ],
+       "article_id": "69e2b715dc480588dca21bd6"
+      },
+      {
+       "id": "b0f129e116fb0799",
+       "company_name": "ReNew Green",
+       "domain": null,
+       "round_type": "equity",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "leapfrog investments",
+         "domain": "leapfroginvest.com",
+         "amount": null
+        },
+        {
+         "name": "Emerging Market Climate Action Fund (EMCAF)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "renewable energy",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expansion of the company’s renewable energy platform to deliver more clean electricity to corporate and industrial customers",
+       "source_sentence": "India-based decarbonization solutions provider ReNew Energy announced today that its commercial and industrial-focused platform ReNew Green has raised $95 million through a new equity investment.",
+       "published_at": "2026-03-16T15:33:52",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cbd2314edcd0af9c886392",
+        "69cbf7361c2c193028d6c383"
+       ],
+       "article_id": "69cbd2314edcd0af9c886392"
+      },
+      {
+       "id": "b90e907de229f22f",
+       "company_name": "renew green energy",
+       "domain": "renewgreenenergy.co.uk",
+       "round_type": "equity",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "leapfrog investments",
+         "domain": "leapfroginvest.com",
+         "amount": 50000000.0
+        },
+        {
+         "name": "Emerging Market Climate Action Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "clean energy",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expand its Commercial & Industrial platform",
+       "source_sentence": "ReNew Energy Global Plc (“ReNew” or the “Company”), a leading decarbonization solutions company announces that its commercial and industrial platform, ReNew Green Energy Solutions Private Limited (“ReNew Green”) has secured $95 million equity investment.",
+       "published_at": "2026-03-16T12:01:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a56fe557041f410f474b"
+       ],
+       "article_id": "69c3a56fe557041f410f474b"
+      },
+      {
+       "id": "c0a62fca2776b90b",
+       "company_name": "renew green energy",
+       "domain": "renewgreenenergy.co.uk",
+       "round_type": "Equity",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "leapfrog investments",
+         "domain": "leapfroginvest.com",
+         "amount": 50000000.0
+        },
+        {
+         "name": "Emerging Market Climate Action Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Canadian Pension Plan Investment Board",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "abu dhabi investment authority",
+         "domain": "adia.ae",
+         "amount": null
+        },
+        {
+         "name": "British International Investment",
+         "domain": "bii.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Clean Energy",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand commercial and industrial platform",
+       "source_sentence": "ReNew Green Energy Solutions Private Limited (ReNew Green) has secured $95 million (around ₹878 crore) equity investment.",
+       "published_at": "2026-03-16T11:46:09",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cbd24c7fd59372e7d17d16",
+        "69cbe84d837ebf2e172b2f93"
+       ],
+       "article_id": "69cbe84d837ebf2e172b2f93"
+      },
+      {
+       "id": "d2cb70fa18dfcb63",
+       "company_name": "ReNew Green Energy Solutions",
+       "domain": null,
+       "round_type": "Equity",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "leapfrog investments",
+         "domain": "leapfroginvest.com",
+         "amount": 50000000.0
+        },
+        {
+         "name": "Emerging Market Climate Action Fund (EMCAF)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Renewable Energy",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expansion of ReNew’s clean power offerings for commercial and industrial customers",
+       "source_sentence": "ReNew Energy Global today announced that that its commercial and industrial platform, ReNew Green Energy Solutions, has secured $95 million equity investment.",
+       "published_at": "2026-03-16T10:59:35",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cbd27371a014f1df2d343f",
+        "69e8d40c5cfa3e5ba543d482"
+       ],
+       "article_id": "69e8d40c5cfa3e5ba543d482"
+      },
+      {
+       "id": "bdeba1dfd10adfb2",
+       "company_name": "spicejet",
+       "domain": "spicejet.com",
+       "round_type": "Liquidity Support",
+       "amount_usd": 89500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 89500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle aviation partners",
+         "domain": "carlyle.aero",
+         "amount": null
+        }
+       ],
+       "sector": "Aviation / Airline",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Cash maintenance reserves and credits for aircraft maintenance and lease payments",
+       "source_sentence": "SpiceJet will gain access to $89.5 million in total liquidity support.",
+       "published_at": "2025-11-20T14:32:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "693141074defebcee9f218f2"
+       ],
+       "article_id": "693141074defebcee9f218f2"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 55,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTEtMjAgMTQ6MzI6MTYiLCJrIjoiMTM2ODUyMDk4NzUzNTIzMTM3NzgiLCJhIjo4OTUwMDAwMC4wfQ",
+     "totals": {
+      "deals": 55,
+      "deals_with_amount": 45,
+      "deals_without_amount": 10,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 26306105438.13,
+      "median_amount_usd": 313200000.0,
+      "largest_amount_usd": 8509000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.122,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.125
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Carlyle",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "carlyle"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "aa6906026a3b3339",
+       "company_name": "orbcomm",
+       "domain": "orbcomm.com",
+       "round_type": "Refinancing",
+       "amount_usd": 460000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 460000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        },
+        {
+         "name": "Bain Credit’s Private Credit Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "morgan stanley private credit",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "support growth initiatives and large-scale customer deployments and expand its platform",
+       "source_sentence": "Orbcomm has closed a $460 million refinancing that the company says will support growth initiatives and large-scale customer deployments and expand its platform.",
+       "published_at": "2026-04-29T18:28:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d5b7a088760d34bfd813"
+       ],
+       "article_id": "69f9d5b7a088760d34bfd813"
+      },
+      {
+       "id": "963310ed9ebbba38",
+       "company_name": "bridgepointe technologies",
+       "domain": "bridgepointetechnologies.com",
+       "round_type": "senior debt",
+       "amount_usd": 875000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 875000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley private credit",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "charlesbank capital partners",
+         "domain": "charlesbank.com",
+         "amount": null
+        },
+        {
+         "name": "Bridgepointe management",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Technology advisory services",
+       "country": "USA",
+       "city": "San Mateo",
+       "use_of_funds": null,
+       "source_sentence": "Morgan Stanley Investment Management announced today that funds managed by Morgan Stanley Private Credit have led an $875 million senior debt financing package for Bridgepointe Technologies (Bridgepointe or the Company)...",
+       "published_at": "2026-04-29T12:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f232fec6105443aa6075b4"
+       ],
+       "article_id": "69f232fec6105443aa6075b4"
+      },
+      {
+       "id": "40bec91ce4311d44",
+       "company_name": "orbcomm",
+       "domain": "orbcomm.com",
+       "round_type": "debt refinancing",
+       "amount_usd": 460000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 460000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        },
+        {
+         "name": "Bain Credit's Private Credit Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "morgan stanley private credit",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": "Industrial Internet of Things",
+       "country": "United States",
+       "city": "Sterling",
+       "use_of_funds": "long-term growth initiatives, customer deployments, and platform expansion",
+       "source_sentence": "STERLING, Va., April 29, 2026 (GLOBE NEWSWIRE) -- ORBCOMM Inc., a global leader in industrial IoT, today announced the closing of a $460 million refinancing with support from Carlyle, Bain Credit's Private Credit Group and Morgan Stanley Private Credit.",
+       "published_at": "2026-04-29T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d8887b2d589e844daae0"
+       ],
+       "article_id": "69f9d8887b2d589e844daae0"
+      },
+      {
+       "id": "974c01aba33e7550",
+       "company_name": "bridgepointe technologies",
+       "domain": "bridgepointetechnologies.com",
+       "round_type": "growth investment",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "charlesbank capital partners",
+         "domain": "charlesbank.com",
+         "amount": null
+        },
+        {
+         "name": "Carlyle AlpInvest",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "technology services distribution",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate acquisitions, enhance data and technology capabilities, and expand go-to-market efforts",
+       "source_sentence": "Bridgepointe Technologies announced a growth investment led by Charlesbank Capital Partners, with participation from Carlyle AlpInvest, valuing the company at over $1 billion.",
+       "published_at": "2026-04-10T10:20:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d30c9baafc7356d0f85f"
+       ],
+       "article_id": "69e8d30c9baafc7356d0f85f"
+      },
+      {
+       "id": "e250010bd2e3778f",
+       "company_name": "nxtra data",
+       "domain": "nxtradata.com",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "Anchorage Capital",
+         "domain": null,
+         "amount": 35000000.0
+        },
+        {
+         "name": "airtel",
+         "domain": "airtel.com",
+         "amount": null
+        }
+       ],
+       "sector": "data centre",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "significantly scale up its data centre infrastructure and expand service offerings to enterprises, hyperscalers and government organisations.",
+       "source_sentence": "The company’s announcement of a $1 billion investment in Nxtra Data by global investors including Alpha Wave Global, Carlyle and Anchorage Capital.",
+       "published_at": "2026-04-01T04:54:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03f99a62bbf617b03d6ed5"
+       ],
+       "article_id": "6a03f99a62bbf617b03d6ed5"
+      },
+      {
+       "id": "2f37f858f6a9c6a1",
+       "company_name": "nxtra",
+       "domain": "nxtra.in",
+       "round_type": "Strategic",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "Anchorage Capital",
+         "domain": null,
+         "amount": 35000000.0
+        },
+        {
+         "name": "Bharti Airtel",
+         "domain": "airtel.in",
+         "amount": 290000000.0
+        }
+       ],
+       "sector": "Data Center Infrastructure",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Scale infrastructure, expand service offerings and strengthen AI-driven operations",
+       "source_sentence": "Bharti Airtel’s data centre subsidiary Nxtra has raised $1 billion (around Rs 9,400 crore) in a strategic funding round led by Alpha Wave Global, alongside existing investor Carlyle and Anchorage Capital.",
+       "published_at": "2026-03-31T10:17:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d11127c47f8fc6a1668bc9"
+       ],
+       "article_id": "69d11127c47f8fc6a1668bc9"
+      },
+      {
+       "id": "c7661c6bbda49f60",
+       "company_name": "nxtra data",
+       "domain": "nxtradata.com",
+       "round_type": "investment",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "the carlyle group",
+         "domain": "carlyle.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "anchorage capital group",
+         "domain": "anchoragecap.com",
+         "amount": 35000000.0
+        },
+        {
+         "name": "Bharti Airtel",
+         "domain": "airtel.in",
+         "amount": 290000000.0
+        }
+       ],
+       "sector": "Data centre",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "AI data center expansion and to fuel the next phase of growth.",
+       "source_sentence": "Bharti Airtel announced a $1 billion investment in its data centre arm, Nxtra Data led by global investors Alpha Wave Global, The Carlyle Group and Anchorage Capital Group.",
+       "published_at": "2026-03-31T10:10:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d14f09c8ed73346ef1bcb6"
+       ],
+       "article_id": "69d14f09c8ed73346ef1bcb6"
+      },
+      {
+       "id": "829f7c2933ec1001",
+       "company_name": "nxtra",
+       "domain": "nxtra.in",
+       "round_type": "investment",
+       "amount_usd": 965000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 965000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": null
+        },
+        {
+         "name": "Bharti Airtel",
+         "domain": "airtel.in",
+         "amount": null
+        }
+       ],
+       "sector": "Data centre provider",
+       "country": "India",
+       "city": "Delhi NCR",
+       "use_of_funds": "speed up the company's expansion goals, scale its infrastructure, and expand its service offerings",
+       "source_sentence": "Alpha Wave Global and Carlyle have each committed $435 million and $240 million, respectively, to the data centre company, with Airtel contributing $290 million.",
+       "published_at": "2026-03-31T07:57:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbdf831c2c193028d4fe38"
+       ],
+       "article_id": "69cbdf831c2c193028d4fe38"
+      },
+      {
+       "id": "95306980c38076ce",
+       "company_name": "Nxtra (Nxtra Data Ltd)",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "Anchorage Capital",
+         "domain": null,
+         "amount": 35000000.0
+        },
+        {
+         "name": "Bharti Airtel",
+         "domain": "airtel.in",
+         "amount": 290000000.0
+        }
+       ],
+       "sector": "Data Center",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "accelerate growth and expand infrastructure and service portfolio",
+       "source_sentence": "Bharti Airtel Ltd announced on Monday,31 March, a new financial infusion of around $1 billion into its data centre subsidiary Nxtra, as the telecom giant seeks to expand its digital infrastructure footprint in India amid increased demand for AI-led and cloud services.",
+       "published_at": "2026-03-31T07:50:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d14f88080d96e8a0c60b2d"
+       ],
+       "article_id": "69d14f88080d96e8a0c60b2d"
+      },
+      {
+       "id": "90832de0d86ac21c",
+       "company_name": "nxtra",
+       "domain": "nxtra.in",
+       "round_type": "Strategic funding round",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3100000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 3100000000.0,
+       "investors": [
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": 435000000.0
+        },
+        {
+         "name": "carlyle",
+         "domain": "carlylesofa.com",
+         "amount": 240000000.0
+        },
+        {
+         "name": "Anchorage Capital",
+         "domain": null,
+         "amount": 35000000.0
+        },
+        {
+         "name": "airtel",
+         "domain": "airtel.com",
+         "amount": 290000000.0
+        }
+       ],
+       "sector": "Data centre services",
+       "country": "India",
+       "city": "Delhi NCR",
+       "use_of_funds": "accelerate its growth plans, scale its infrastructure and broaden its portfolio of services",
+       "source_sentence": "In a statement, Bharti Airtel said that Alpha Wave will invest $435 Mn (₹4,107 Cr), while Carlyle will infuse $240 Mn (₹2,266 Cr) in the data centre company. Anchorage Capital will also invest $35 Mn (₹330.5 Cr), with the remaining $290 Mn (₹2,738 Cr) coming from Airtel.",
+       "published_at": "2026-03-30T17:56:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc155562898d9e03c8938a"
+       ],
+       "article_id": "69cc155562898d9e03c8938a"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 26,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMzAgMTc6NTY6NTgiLCJrIjoiMTA0MTMyMTcyMDcxMzc1MTgxMDgifQ",
+     "totals": {
+      "deals": 26,
+      "deals_with_amount": 25,
+      "deals_without_amount": 1,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 8545400000.0,
+      "median_amount_usd": 252000000.0,
+      "largest_amount_usd": 2247900000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.208,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.22
+    }
+   }
+  }
+ ]
+}

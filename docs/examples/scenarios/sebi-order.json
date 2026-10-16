@@ -1,0 +1,806 @@
+{
+ "slug": "sebi-order",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:12Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "regulatory"
+     ],
+     "q": "SEBI",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "sebi",
+      "match": "any",
+      "event_type": [
+       "regulatory"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 17,
+       "by_type": {
+        "regulatory": 17
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 8,
+       "by_type": {
+        "regulatory": 8
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 15,
+       "by_type": {
+        "regulatory": 15
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 22,
+       "by_type": {
+        "regulatory": 22
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 41,
+       "by_type": {
+        "regulatory": 41
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 25,
+       "by_type": {
+        "regulatory": 25
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "regulatory": 12
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "regulatory": 12
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 13,
+       "by_type": {
+        "regulatory": 13
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "regulatory": 11
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "regulatory": 12
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 14,
+       "by_type": {
+        "regulatory": 14
+       }
+      }
+     ],
+     "totals": {
+      "events": 202,
+      "articles": 177,
+      "companies": 142,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "regulatory": 202
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.081,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.086
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "regulatory"
+     ],
+     "q": "SEBI",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "sebi",
+      "event_type": [
+       "regulatory"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f0e71d836d28f995cba321",
+       "headline": "Cupid Limited has been issued an administrative warning letter by the Securities and Exchange Board of India (SEBI) dated April 23, 2026.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "cupidltd.in",
+       "published_at": "2026-04-28T13:52:49",
+       "url": "https://www.businessupturn.com/business/cupid-receives-administrative-warning-from-sebi-for-non-compliance/",
+       "publisher": "businessupturn.com",
+       "title": "Cupid receives administrative warning from SEBI for non-compliance - Business Upturn"
+      },
+      {
+       "id": "69efaa498a54b8f07c95fbe6",
+       "headline": "Manappuram Finance's Chairman and Managing Director, V.P. Nandakumar, has received an administrative warning from the Securities and Exchange Board of India (SEBI) for delayed disclosure of encumbrance of shares.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "manappuram.com",
+       "published_at": "2026-04-25T08:20:49",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e99169bdd09a23d089dc79",
+       "headline": "The Multi Commodity Exchange of India Limited (MCX) on Monday said it has received approval from market regulator the Securities and Exchange Board of India (SEBI) to invest in a proposed coal exchange, marking its entry into the segment.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "mcxindia.com",
+       "published_at": "2026-04-20T08:18:01",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8811d5cfa3e5ba503fa20",
+       "headline": "Multi Commodity Exchange of India Ltd (MCX) on Monday said it has received approval from the Securities and Exchange Board of India (Sebi) to invest in a proposed coal exchange company.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "mcxindia.com",
+       "published_at": "2026-04-20T07:51:41",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e85b4a9baafc735677a60c",
+       "headline": "Sun Pharma's April 10 regulatory filing to BSE and NSE, issued by Company Secretary Anoop Deshpande, stated explicitly that the information circulating in the market was speculative in nature and did not qualify as a material event requiring disclosure under Regulation 30 of the SEBI LODR Regulations.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "sunpharma.com",
+       "published_at": "2026-04-16T05:56:13",
+       "url": "https://www.businessupturn.com/business/sun-pharma-places-aggressive-bid-for-organon-contradicting-companys-own-earlier-clarification-of-speculative-reports/",
+       "publisher": "businessupturn.com",
+       "title": "Sun Pharma Organon acquisition bid 2026: Bloomberg report, $12 billion deal, clarification latest"
+      },
+      {
+       "id": "69e8d4269baafc7356d1c5a8",
+       "headline": "In a separate development last month, the company informed exchanges about violations of its Code of Conduct under Sebi’s Insider Trading Regulations by two designated persons.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "stringbio.com",
+       "published_at": "2026-04-15T07:59:12",
+       "url": "https://www.businesstoday.in/markets/stocks/story/upcoming-stock-split-check-record-date-ratio-pre-and-post-split-face-value-525741-2026-04-15",
+       "publisher": "businesstoday.in",
+       "title": "Upcoming stock split: Check record date, ratio, pre  and post split face value - BusinessToday"
+      },
+      {
+       "id": "69e9916575f157062ca7b4cc",
+       "headline": "Allcargo Terminals Limited has submitted Compliance certificate under Reg 74(5) of SEBI (DP) Regulation 2018 for the quarter ended March 2026",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "allcargoterminals.com",
+       "published_at": "2026-04-15T00:00:00",
+       "url": "https://economictimes.indiatimes.com/allcargo-terminals-ltd/stocksupdate/companyid-2116783.cms",
+       "publisher": "economictimes.indiatimes.com",
+       "title": "Allcargo Terminals  News - Allcargo Terminals  Announcement, Latest News on Allcargo Terminals  - The Economic Times"
+      },
+      {
+       "id": "69e87dc15cfa3e5ba501d772",
+       "headline": "The floor price of ₹390.26 per share has been determined in line with the pricing formula prescribed under SEBI ICDR Regulations.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "poonawallafincorp.com",
+       "published_at": "2026-04-10T04:17:25",
+       "url": "https://www.livemint.com/market/stock-market-news/poonawalla-fincorp-launches-qip-at-a-floor-price-of-rs-390-26-per-share-down-2-6-from-previous-close-11775793977004.html",
+       "publisher": "livemint.com",
+       "title": "Poonawalla Fincorp launches QIP at a floor price of  ₹390.26 per share, down 2.6% from previous close; stock up 3% | Stock Market News"
+      },
+      {
+       "id": "69e4f2ced5e7fc42ee077802",
+       "headline": "The Securities and Exchange Board of India (SEBI) has issued an Administrative Warning to Gujarat Mineral Development Corporation (GMDC) following an investigation into suspected insider trading activities related to the company's shares.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "gmdcltd.com",
+       "published_at": "2026-04-08T13:19:21",
+       "url": "https://www.businessupturn.com/business/gujarat-mineral-development-corporation-receives-sebi-administrative-warning/",
+       "publisher": "businessupturn.com",
+       "title": "Gujarat Mineral Development Corporation receives SEBI administrative warning - Business Upturn"
+      },
+      {
+       "id": "69e2c0e090d9a716b4c41b37",
+       "headline": "Ashiana Housing has submitted a regulatory intimation to the National Stock Exchange of India and BSE confirming that it does not fall under the category of Large Corporates as defined in SEBI Circular SEBI/HO/DDHS/P/CIR/2021/613 dated 10th August 2021 (updated as on 13th April 2022).",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "ashianahousing.com",
+       "published_at": "2026-04-08T06:06:47",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e2d7a39b322e6b3ea945bf",
+       "headline": "Shree Cement has submitted a confirmation certificate from its Registrar and Share Transfer Agent (RTA), MUFG Intime India Private Limited, pursuant to Regulation 74(5) of the SEBI (Depositories and Participants) Regulations, 2018 for the quarter ended 31st March 2026.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "shreecement.com",
+       "published_at": "2026-04-07T11:02:59",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e2948e90d9a716b4babc6f",
+       "headline": "After the deal was eventually announced and confirmed to be true, Sebi issued a show-cause notice to Reliance in December 2021, alleging violation of two sections of its Listing Obligations and Disclosure Requirements Regulations, 2015.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "reliancerent.com",
+       "published_at": "2026-04-06T00:05:12",
+       "url": "https://www.livemint.com/companies/news/reliance-stock-exchange-silence-on-trumps-claims-test-limits-of-sebis-disclosure-norms-11775379759499.html",
+       "publisher": "livemint.com",
+       "title": "Reliance, stock exchange silence on Trump's claims test limits of Sebi's disclosure norms | Company Business News"
+      },
+      {
+       "id": "69e9941fd47fc02832134fef",
+       "headline": "Bajaj Finserv Direct Limited (\"Bajaj Markets\") offers to its customers, various financial products and services through its digital platform as a registered Corporate Agent with IRDAI, registered Investment Adviser with SEBI and as DSA or Digital lending platform of its Partners.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "bajajfinservmarkets.in",
+       "published_at": "2026-04-05T23:37:54",
+       "url": "https://www.bajajfinservmarkets.in/credit-card/kotak-mahindra-bank-credit-card-status",
+       "publisher": "bajajfinservmarkets.in",
+       "title": "Bajaj Finserv Direct Limited (\"Bajaj Markets\") offers to its customers, various financial products and services through its digital platform as a registered Corporate Agent with IRDAI, registered Investment Adviser with SEBI and as DSA or Digital lending platform of its Partners. Further, Bajaj Mark"
+      },
+      {
+       "id": "69e3c7a8b8c34c1508f31b1b",
+       "headline": "Approval from market regulator Sebi is also expected shortly.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "rblbank.com",
+       "published_at": "2026-04-02T07:28:40",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69d14d021245d599fe4ff405",
+       "headline": "The Securities and Exchange Board of India (SEBI) recently approved the applications made by Sammaan Asset Management Ltd (SAML) which is a wholly-owned subsidiary of the company.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "sammaancapital.com",
+       "published_at": "2026-03-28T17:01:02",
+       "url": "https://www.thehindu.com/business/sammaan-capital-bags-all-approvals-for-stake-acquisition-by-avenir-investment/article70796701.ece",
+       "publisher": "thehindu.com",
+       "title": "Sammaan Capital bags all approvals for stake acquisition by Avenir Investment"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 50,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjggMTc6MDE6MDIiLCJpIjoiNjlkMTRkMDIxMjQ1ZDU5OWZlNGZmNDA1IiwiZG0iOiJzYW1tYWFuY2FwaXRhbC5jb20iLCJldCI6InJlZ3VsYXRvcnkiLCJybyI6InByaW1hcnkifQ",
+     "by_type": {
+      "regulatory": 50
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.385,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 6 event(s)"
+     ],
+     "request_seconds": 4.39
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "regulatory"
+     ],
+     "q": "SEBI",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "sebi",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "regulatory"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 58,
+     "carrying": 58,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 9,
+       "share": 15.52
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 1,
+       "share": 1.72
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 17,
+       "share": 29.31
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 2,
+       "share": 3.45
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 9,
+       "share": 15.52
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 3,
+       "share": 5.17
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 17,
+       "share": 29.31
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 27,
+       "share": 46.55
+      },
+      {
+       "group": "neutral",
+       "count": 2,
+       "share": 3.45
+      },
+      {
+       "group": "positive",
+       "count": 29,
+       "share": 50.0
+      }
+     ],
+     "negative_to_positive_ratio": 0.931,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 1.26,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 12,
+       "negative": 9,
+       "neutral": 0,
+       "positive": 3,
+       "negative_share": 75.0,
+       "positive_share": 25.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 5,
+        "fair_neg": 1,
+        "slight_neg": 3,
+        "none": 0,
+        "slight_pos": 1,
+        "fair_pos": 0,
+        "very_pos": 2,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 15,
+       "negative": 5,
+       "neutral": 1,
+       "positive": 9,
+       "negative_share": 33.33,
+       "positive_share": 60.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 1,
+        "slight_pos": 3,
+        "fair_pos": 0,
+        "very_pos": 6,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 18,
+       "negative": 10,
+       "neutral": 1,
+       "positive": 7,
+       "negative_share": 55.56,
+       "positive_share": 38.89,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 0,
+        "slight_neg": 8,
+        "none": 1,
+        "slight_pos": 2,
+        "fair_pos": 1,
+        "very_pos": 4,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 13,
+       "negative": 3,
+       "neutral": 0,
+       "positive": 10,
+       "negative_share": 23.08,
+       "positive_share": 76.92,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 0,
+        "slight_pos": 3,
+        "fair_pos": 2,
+        "very_pos": 5,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.827,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.829
+    }
+   }
+  }
+ ]
+}

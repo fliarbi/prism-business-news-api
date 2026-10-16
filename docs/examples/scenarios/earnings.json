@@ -1,0 +1,798 @@
+{
+ "slug": "earnings",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:16Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "earnings"
+     ],
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "event_type": [
+       "earnings"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 11582,
+       "by_type": {
+        "earnings": 11582
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 2477,
+       "by_type": {
+        "earnings": 2477
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 7366,
+       "by_type": {
+        "earnings": 7366
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 11351,
+       "by_type": {
+        "earnings": 11351
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 4364,
+       "by_type": {
+        "earnings": 4364
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 7977,
+       "by_type": {
+        "earnings": 7977
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 9938,
+       "by_type": {
+        "earnings": 9938
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 2836,
+       "by_type": {
+        "earnings": 2836
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 6805,
+       "by_type": {
+        "earnings": 6805
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 11395,
+       "by_type": {
+        "earnings": 11395
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 4665,
+       "by_type": {
+        "earnings": 4665
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 7910,
+       "by_type": {
+        "earnings": 7910
+       }
+      }
+     ],
+     "totals": {
+      "events": 88666,
+      "articles": 81212,
+      "companies": 17926,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "earnings": 88666
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.305,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.336
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "earnings"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "event_type": [
+       "earnings"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f87fdc43843dd771ce2eaf",
+       "headline": "The company reported $8.55 EPS for the quarter, topping the consensus estimate of $7.26 by $1.29. Eli Lilly and Company had revenue of $19.80 billion for the quarter, ... The company’s quarterly revenue was up 55.5% compared to the same quarter last year.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "lillyinsulinedu.com",
+       "published_at": "2026-04-30T23:58:44",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f87f938937ef12fc06884d",
+       "headline": "Illumina (NASDAQ:ILMN – Get Free Report) posted its earnings results on Thursday. The life sciences company reported $1.15 earnings per share (EPS) for the quarter, beating analysts’ consensus estimates of $1.05 by $0.10.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "illumina.com",
+       "published_at": "2026-04-30T23:46:57",
+       "url": "https://www.tickerreport.com/banking-finance/13424267/illumina-nasdaqilmn-releases-earnings-results-beats-estimates-by-0-10-eps.html",
+       "publisher": "tickerreport.com",
+       "title": "Illumina (NASDAQ:ILMN) Releases Earnings Results, Beats Estimates By $0.10 EPS"
+      },
+      {
+       "id": "69f87fc68937ef12fc06a70e",
+       "headline": "The company reported $0.70 earnings per share for the quarter, missing analysts’ consensus estimates of $1.53 by ($0.83). The company’s quarterly revenue was up 12.8% compared to the same quarter last year.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "brunswickgroup.com",
+       "published_at": "2026-04-30T23:46:54",
+       "url": "https://baseballnewssource.com/2026/04/30/brunswick-nysebc-updates-fy-2026-earnings-guidance/11105196.html",
+       "publisher": "baseballnewssource.com",
+       "title": "Brunswick (NYSE:BC) Updates FY 2026 Earnings Guidance"
+      },
+      {
+       "id": "69f87f7ebbf1d3145595adb8",
+       "headline": "The software maker reported $0.76 EPS for the quarter, beating analysts’ consensus estimates of $0.68 by $0.08, FiscalAI reports. Five9 had a net margin of 3.43% and a return on equity of 10.95%. The company had revenue of $305.32 million during the quarter, compared to the consensus estimate of $299.92 million.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "five9.com",
+       "published_at": "2026-04-30T23:46:54",
+       "url": "https://baseballnewssource.com/2026/04/30/five9-nasdaqfivn-releases-earnings-results-beats-estimates-by-0-08-eps/11105195.html",
+       "publisher": "baseballnewssource.com",
+       "title": "Five9 (NASDAQ:FIVN) Releases Earnings Results, Beats Estimates By $0.08 EPS"
+      },
+      {
+       "id": "69f87f7643843dd771cdf351",
+       "headline": "The company reported ($0.35) EPS for the quarter, topping analysts’ consensus estimates of ($0.66) by $0.31, and had revenue of $199.39 million for the quarter.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "irhythmtech.com",
+       "published_at": "2026-04-30T23:46:54",
+       "url": "https://baseballnewssource.com/2026/04/30/irhythm-technologies-nasdaqirtc-issues-earnings-results-beats-estimates-by-0-31-eps/11105193.html",
+       "publisher": "baseballnewssource.com",
+       "title": "iRhythm Technologies (NASDAQ:IRTC) Issues Earnings Results, Beats Estimates By $0.31 EPS"
+      },
+      {
+       "id": "69f8804443843dd771ce6dbf",
+       "headline": "The company reported $0.70 earnings per share (EPS) for the quarter, missing analysts’ consensus estimates of $1.53 by ($0.83).",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "brunswickgroup.com",
+       "published_at": "2026-04-30T23:46:53",
+       "url": "https://www.thelincolnianonline.com/2026/04/30/brunswick-nysebc-releases-q2-2026-earnings-guidance.html",
+       "publisher": "thelincolnianonline.com",
+       "title": "Brunswick (NYSE:BC) Releases Q2 2026 Earnings Guidance"
+      },
+      {
+       "id": "69f880578937ef12fc07005b",
+       "headline": "Q1 results beat the high end of guidance with total revenue of $305M (+9% YoY) and subscription revenue up 13%.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "five9.com",
+       "published_at": "2026-04-30T23:46:52",
+       "url": "https://www.thelincolnianonline.com/2026/04/30/five9-nasdaqfivn-announces-quarterly-earnings-results.html",
+       "publisher": "thelincolnianonline.com",
+       "title": "Five9 (NASDAQ:FIVN) Announces Quarterly Earnings Results"
+      },
+      {
+       "id": "69f8804f43843dd771ce73f6",
+       "headline": "The Ensign Group (NASDAQ:ENSG – Get Free Report) announced its quarterly earnings data on Thursday. The company reported $1.85 earnings per share for the quarter, topping analysts’ consensus estimates of $1.80 by $0.05,",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "theensigngroup.com",
+       "published_at": "2026-04-30T23:46:52",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f87fcbbbf1d3145595dd01",
+       "headline": "The company reported ($0.42) EPS for the quarter, beating the consensus estimate of ($0.44) by $0.02, FiscalAI reports.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "orthopediatrics.com",
+       "published_at": "2026-04-30T23:46:52",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f880d243843dd771cec2cc",
+       "headline": "Sinclair reported revenue of $807 million (up 4%) and adjusted EBITDA of $126 million (up 13%)",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "sinclair.com",
+       "published_at": "2026-04-30T23:32:44",
+       "url": "https://www.tickerreport.com/banking-finance/13424258/sinclair-nasdaqsbgi-announces-quarterly-earnings-results.html",
+       "publisher": "tickerreport.com",
+       "title": "Sinclair (NASDAQ:SBGI) Announces Quarterly Earnings Results"
+      },
+      {
+       "id": "69f8802cbbf1d314559618b0",
+       "headline": "Trane Technologies (NYSE:TT – Get Free Report) issued an update on its FY 2026 earnings guidance on Thursday morning. The company provided earnings per share guidance of 14.750-14.950 for the period, compared to the consensus earnings per share estimate of 14.800. The company issued revenue guidance of $23.3 billion-$23.3 billion, compared to the consensus revenue estimate of $23.2 billion.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "tranetechnologies.com",
+       "published_at": "2026-04-30T23:30:52",
+       "url": "https://www.tickerreport.com/banking-finance/13424256/trane-technologies-nysett-releases-fy-2026-earnings-guidance.html",
+       "publisher": "tickerreport.com",
+       "title": "Trane Technologies (NYSE:TT) Releases FY 2026 Earnings Guidance"
+      },
+      {
+       "id": "69f87f9443843dd771ce0466",
+       "headline": "The bank reported $0.57 EPS for the quarter, missing the consensus estimate of $0.58 by ($0.01), FiscalAI reports.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "bancochile.cl",
+       "published_at": "2026-04-30T23:30:52",
+       "url": "https://www.tickerreport.com/banking-finance/13424255/banco-de-chile-nysebch-posts-earnings-results-misses-estimates-by-0-01-eps.html",
+       "publisher": "tickerreport.com",
+       "title": "Banco De Chile (NYSE:BCH) Posts Earnings Results, Misses Estimates By $0.01 EPS"
+      },
+      {
+       "id": "69f881078937ef12fc076e05",
+       "headline": "Fortive last released its earnings results on Thursday, April 30th. The technology company reported $0.70 earnings per share (EPS) for the quarter, beating analysts’ consensus estimates of $0.64 by $0.06. Fortive had a return on equity of 11.98% and a net margin of 12.48%.The firm had revenue of $2.14 billion for the quarter, compared to analysts’ expectations of $1.04 billion. During the same quarter in the previous year, the business posted $0.85 earnings per share. The business’s revenue for the quarter was up 7.7% on a year-over-year basis.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "fortive.com",
+       "published_at": "2026-04-30T23:30:51",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f880238937ef12fc06e062",
+       "headline": "The firm had revenue of $696.38 million for the quarter, compared to analyst estimates of $678.11 million.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "belden.com",
+       "published_at": "2026-04-30T23:30:50",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8802dbbf1d314559619f5",
+       "headline": "The company reported $0.32 earnings per share for the quarter, topping analysts’ consensus estimates of $0.30 by $0.02, Briefing.com reports.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "apigroupinc.com",
+       "published_at": "2026-04-30T23:30:49",
+       "url": "https://baseballnewssource.com/2026/04/30/api-group-nyseapg-announces-earnings-results-beats-estimates-by-0-02-eps/11105183.html",
+       "publisher": "baseballnewssource.com",
+       "title": "APi Group (NYSE:APG) Announces Earnings Results, Beats Estimates By $0.02 EPS"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 30775,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMzAgMjM6MzA6NDkiLCJpIjoiNjlmODgwMmRiYmYxZDMxNDU1OTYxOWY1IiwiZG0iOiJhcGlncm91cGluYy5jb20iLCJldCI6ImVhcm5pbmdzIiwicm8iOiJwcmltYXJ5In0",
+     "by_type": {
+      "earnings": 30775
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.584,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.687
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "earnings"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "earnings"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 27943,
+     "carrying": 27922,
+     "carrier_share_pct": 99.92,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 521,
+       "share": 1.87
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 7,
+       "share": 0.03
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 3901,
+       "share": 13.97
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 274,
+       "share": 0.98
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 11551,
+       "share": 41.37
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 677,
+       "share": 2.42
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 10679,
+       "share": 38.25
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 312,
+       "share": 1.12
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 4429,
+       "share": 15.86
+      },
+      {
+       "group": "neutral",
+       "count": 274,
+       "share": 0.98
+      },
+      {
+       "group": "positive",
+       "count": 23219,
+       "share": 83.16
+      }
+     ],
+     "negative_to_positive_ratio": 0.191,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.26,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 6105,
+       "negative": 932,
+       "neutral": 50,
+       "positive": 5123,
+       "negative_share": 15.27,
+       "positive_share": 83.91,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 111,
+        "fair_neg": 1,
+        "slight_neg": 820,
+        "none": 50,
+        "slight_pos": 2686,
+        "fair_pos": 145,
+        "very_pos": 2242,
+        "extreme_pos": 50
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 10440,
+       "negative": 1693,
+       "neutral": 102,
+       "positive": 8645,
+       "negative_share": 16.22,
+       "positive_share": 82.81,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 221,
+        "fair_neg": 1,
+        "slight_neg": 1471,
+        "none": 102,
+        "slight_pos": 4123,
+        "fair_pos": 242,
+        "very_pos": 4148,
+        "extreme_pos": 132
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 4253,
+       "negative": 710,
+       "neutral": 45,
+       "positive": 3498,
+       "negative_share": 16.69,
+       "positive_share": 82.25,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 62,
+        "fair_neg": 3,
+        "slight_neg": 645,
+        "none": 45,
+        "slight_pos": 1656,
+        "fair_pos": 107,
+        "very_pos": 1687,
+        "extreme_pos": 48
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 7124,
+       "negative": 1094,
+       "neutral": 77,
+       "positive": 5953,
+       "negative_share": 15.36,
+       "positive_share": 83.56,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 127,
+        "fair_neg": 2,
+        "slight_neg": 965,
+        "none": 77,
+        "slight_pos": 3086,
+        "fair_pos": 183,
+        "very_pos": 2602,
+        "extreme_pos": 82
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.937,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.94
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,2353 @@
+{
+ "slug": "b2b-marketplace-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:21Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "marketplace",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "marketplace"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 136,
+      "deals_with_amount": 118,
+      "deals_without_amount": 18,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 7727614920.0,
+      "median_amount_usd": 8340000.0,
+      "largest_amount_usd": 1000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 6,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 30220000.0,
+       "median_amount_usd": 3240000.0,
+       "largest_amount_usd": 15700000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 7,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 746700000.0,
+       "median_amount_usd": 30000000.0,
+       "largest_amount_usd": 370000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 9,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 452080000.0,
+       "median_amount_usd": 9000000.0,
+       "largest_amount_usd": 220000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 9,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 159845000.0,
+       "median_amount_usd": 2675000.0,
+       "largest_amount_usd": 115000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 927636000.0,
+       "median_amount_usd": 7000000.0,
+       "largest_amount_usd": 800000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 18,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1253963000.0,
+       "median_amount_usd": 6500000.0,
+       "largest_amount_usd": 510000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 13,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 155038920.0,
+       "median_amount_usd": 3240000.0,
+       "largest_amount_usd": 49320000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 200284000.0,
+       "median_amount_usd": 8150000.0,
+       "largest_amount_usd": 160000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 192904000.0,
+       "median_amount_usd": 21260000.0,
+       "largest_amount_usd": 150000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 11,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 443110000.0,
+       "median_amount_usd": 18360000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 19,
+       "deals_with_amount": 13,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1512558000.0,
+       "median_amount_usd": 4822000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 13,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1697976000.0,
+       "median_amount_usd": 7686000.0,
+       "largest_amount_usd": 950400000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.044,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.047
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "marketplace",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "marketplace"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "bbfd77b1c97ae1ab",
+       "company_name": "upstart",
+       "domain": "upstart.com",
+       "round_type": "forward-flow commitment",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Eltura Capital Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "aperture investors",
+         "domain": "apertureinvestors.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI lending marketplace",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Consumer loans origination via Upstart platform",
+       "source_sentence": "Artificial intelligence (AI) lending marketplace Upstart has secured a $1bn (£0.74bn) forward-flow commitment with alternative asset managers Eltura Capital Management and Aperture Investors, alongside co-investors.",
+       "published_at": "2026-03-17T15:26:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1f57aa9ae690c97699f"
+       ],
+       "article_id": "69cbd1f57aa9ae690c97699f"
+      },
+      {
+       "id": "ae6024da4d02261c",
+       "company_name": "vinted",
+       "domain": "vinted.com",
+       "round_type": "secondary funding",
+       "amount_usd": 950400000.0000001,
+       "amount_flag": null,
+       "valuation_usd": 8640000000.0,
+       "currency": "EUR",
+       "amount": 880000000.0,
+       "valuation": 8000000000.0,
+       "investors": [],
+       "sector": "online secondhand marketplace",
+       "country": "Lithuania",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Following an investment round of 880 million euros, the secondhand platform Vinted is now valued at 8 billion euros.",
+       "published_at": "2026-04-28T07:54:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e452836d28f995cb7d66"
+       ],
+       "article_id": "69f0e452836d28f995cb7d66"
+      },
+      {
+       "id": "3b758223f2ddd71b",
+       "company_name": "vinted",
+       "domain": "vinted.com",
+       "round_type": "secondary funding round",
+       "amount_usd": 950400000.0000001,
+       "amount_flag": null,
+       "valuation_usd": 8640000000.0,
+       "currency": "EUR",
+       "amount": 880000000.0,
+       "valuation": 8000000000.0,
+       "investors": [],
+       "sector": "online secondhand marketplace",
+       "country": "Lithuania",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Following an investment round of 880 million euros, the secondhand platform Vinted is now valued at 8 billion euros.",
+       "published_at": "2026-04-27T14:33:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e1ebd3256108942068df"
+       ],
+       "article_id": "69f0e1ebd3256108942068df"
+      },
+      {
+       "id": "b79ed37311048992",
+       "company_name": "vinted",
+       "domain": "vinted.com",
+       "round_type": "secondary share transaction",
+       "amount_usd": 950400000.0000001,
+       "amount_flag": null,
+       "valuation_usd": 8640000000.0,
+       "currency": "EUR",
+       "amount": 880000000.0,
+       "valuation": 8000000000.0,
+       "investors": [
+        {
+         "name": "eqt",
+         "domain": "eqt.com",
+         "amount": null
+        },
+        {
+         "name": "schroders capital",
+         "domain": "schroderscapital.com",
+         "amount": null
+        },
+        {
+         "name": "Teachers' Venture Growth",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "lombard odier investment managers",
+         "domain": "loim.com",
+         "amount": null
+        },
+        {
+         "name": "Pinegrove Opportunity Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "marketplace",
+       "country": "Lithuania",
+       "city": "Vilnius",
+       "use_of_funds": "liquidity for existing shareholders",
+       "source_sentence": "Vinted has completed a €880 million secondary share transaction at an equity valuation of €8 billion, with participation from a mix of new and existing investors led by EQT, Schroders Capital, and Teachers' Venture Growth.",
+       "published_at": "2026-04-27T13:04:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f0e2bed3256108942075e0",
+        "69f0e5c4d32561089420a65e",
+        "69f0e6e7836d28f995cba011"
+       ],
+       "article_id": "69f0e5c4d32561089420a65e"
+      },
+      {
+       "id": "13e18474d5655916",
+       "company_name": "stubhub",
+       "domain": "stubhub.com",
+       "round_type": "IPO",
+       "amount_usd": 800000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 800000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "ticket marketplace",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": null,
+       "source_sentence": "StubHub raised $800 million via its entrance onto the New York Stock Exchange.",
+       "published_at": "2025-09-22T00:45:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbae726cf348266d08f156"
+       ],
+       "article_id": "69bbae726cf348266d08f156"
+      },
+      {
+       "id": "a3cfcc3b7f9d8086",
+       "company_name": "carsome",
+       "domain": "carsome.my",
+       "round_type": null,
+       "amount_usd": 600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 600000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Automotive Marketplace",
+       "country": "Malaysia",
+       "city": null,
+       "use_of_funds": "revolutionizing automotive sales since 2015",
+       "source_sentence": "Carsome, the pioneering used car e-marketplace, leads with over $600 million raised, revolutionizing automotive sales since 2015.",
+       "published_at": "2026-04-08T18:19:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2d0df90d9a716b4c7bd20",
+        "69e507a69d0e7fe469ab1162"
+       ],
+       "article_id": "69e2d0df90d9a716b4c7bd20"
+      },
+      {
+       "id": "500896d804181b4d",
+       "company_name": "meesho",
+       "domain": "meesho.com",
+       "round_type": "equity",
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 42500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "Highway Series 1",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Y Combinator Continuity Holdings I LLC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "golden",
+         "domain": "golden.com",
+         "amount": null
+        },
+        {
+         "name": "VH Capital",
+         "domain": "vhcapital.com",
+         "amount": null
+        },
+        {
+         "name": "VH Capital XI",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Vidit Aatrey",
+         "domain": "https://www.linkedin.com/in/vidit-aatrey-a3639120",
+         "amount": null
+        },
+        {
+         "name": "Sanjeev Kumar",
+         "domain": "http://www.linkedin.com/in/sanjeevkumarprofile",
+         "amount": null
+        },
+        {
+         "name": "Man Hay Tam",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce marketplace",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "investment in cloud infrastructure, AI and machine learning development, marketing and brand initiatives, inorganic growth opportunities, acquisitions, and general corporate purposes",
+       "source_sentence": "Bengaluru-based online marketplace Meesho has filed its updated draft red herring prospectus (UDRHP) with the SEBI to raise up to ₹4,250 crore through a fresh equity issue.",
+       "published_at": "2025-10-19T08:51:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f7372af3ba9a3da52d1f05"
+       ],
+       "article_id": "68f7372af3ba9a3da52d1f05"
+      },
+      {
+       "id": "d735fbec97464a8c",
+       "company_name": "moglix",
+       "domain": "moglix.com",
+       "round_type": null,
+       "amount_usd": 370000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 370000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        }
+       ],
+       "sector": "Industrial Tools & Equipment B2B Marketplace",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Moglix has raised over $370 million to date.",
+       "published_at": "2025-06-24T12:08:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b4343a3ddf2630a8c2b382"
+       ],
+       "article_id": "68b4343a3ddf2630a8c2b382"
+      },
+      {
+       "id": "b97284e5003cfcab",
+       "company_name": "mercor",
+       "domain": "mercor.com",
+       "round_type": "Series C",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI talent marketplace",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "grow its expert network, improve its AI-matching systems, and speed up project delivery",
+       "source_sentence": "Mercor, which connects AI labs with domain experts for training their foundational AI models, has raised $350 million at a $10 billion valuation, the company confirmed to TechCrunch.",
+       "published_at": "2025-10-27T15:53:34",
+       "coverage_count": 6,
+       "article_ids": [
+        "68ffdbb64192c82a52d8374d",
+        "69000f02d2f3814859d83830",
+        "6914b2b33503abfeddf38d75",
+        "69bb0f1d6ae47bec695f7b9b",
+        "69bb571ebb3472e5f4c584f0",
+        "69c3a5ace3cfcce8916b12ae"
+       ],
+       "article_id": "68ffdbb64192c82a52d8374d"
+      },
+      {
+       "id": "22283ef53d7d6a24",
+       "company_name": "kavak",
+       "domain": "kavak.com",
+       "round_type": "Series E",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "wcm investment management",
+         "domain": "wcminvest.com",
+         "amount": null
+        },
+        {
+         "name": "Foxhaven Asset Management",
+         "domain": "foxhavencap.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Used Car Marketplace",
+       "country": "Mexico",
+       "city": "Mexico City",
+       "use_of_funds": "The Series E funds will support further expansion and technology development.",
+       "source_sentence": "Kavak raises $300M in Series E funding led by Andreessen Horowitz to expand its used car platform",
+       "published_at": "2026-02-18T23:54:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c89643ebfc0891032ac3e3"
+       ],
+       "article_id": "69c89643ebfc0891032ac3e3"
+      },
+      {
+       "id": "990fbee31213a5e9",
+       "company_name": "kavak",
+       "domain": "kavak.com",
+       "round_type": "Series F",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz's Growth Fund (a16z)",
+         "domain": null,
+         "amount": 200000000.0
+        },
+        {
+         "name": "wcm investment management",
+         "domain": "wcminvest.com",
+         "amount": null
+        },
+        {
+         "name": "Lingotto Innovation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Foxhaven",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "galdana ventures",
+         "domain": "galdanaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Stelac",
+         "domain": "stelac.com",
+         "amount": null
+        },
+        {
+         "name": "Allen & Company LLC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Automotive marketplace",
+       "country": "Mexico",
+       "city": "Mexico City",
+       "use_of_funds": "Part of the new investment will be allocated to supporting Kavak’s financial arm, Kuna Capital, which originates $600 million in loans annually.",
+       "source_sentence": "Kavak, a digital platform for buying, selling, financing and services for semi-trailers, announced on Tuesday, 17, a $300 million Series F round led by Andreessen Horowitz's Growth Fund (a16z).",
+       "published_at": "2026-02-17T11:43:52",
+       "coverage_count": 5,
+       "article_ids": [
+        "69bbcb10cd833681ce9878d1",
+        "69c998030fe98f3340bf0f33",
+        "69cc4289cb088e024d2646bf",
+        "69e31a8cc5a11d238525d55e",
+        "69e85a9b5cfa3e5ba5ec6408"
+       ],
+       "article_id": "69bbcb10cd833681ce9878d1"
+      },
+      {
+       "id": "5a40314fab04d7ec",
+       "company_name": "whop",
+       "domain": "whop.com",
+       "round_type": "Venture",
+       "amount_usd": 273000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 273000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Tether Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "E-Commerce, Internet, Marketplace",
+       "country": "USA",
+       "city": "Brooklyn",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "4af0ababc56676ca",
+       "company_name": "whatnot",
+       "domain": "whatnot.com",
+       "round_type": "Series F",
+       "amount_usd": 225000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 225000000.0,
+       "valuation": 11500000000.0,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "a16z",
+         "domain": "a16z.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Live shopping, e-commerce marketplace",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "accelerate international expansion, support engineering and marketing teams, drive product innovation, strengthen market leadership, enhance trust and safety, roll out new features for a seamless shopping experience",
+       "source_sentence": "Whatnot, one of the live shopping platforms across the U.S., UK, and Europe, has landed $225 million in Series F funding. The round was co-led by DST Global and CapitalG, with participation from Sequoia Capital, Alkeon Capital, and returning investors including a16z, Greycroft, and BOND.",
+       "published_at": "2025-10-29T13:43:49",
+       "coverage_count": 3,
+       "article_ids": [
+        "698954de94d3f481f3e3c1b0",
+        "69c972000fe98f3340be23c5",
+        "69e854ff5cfa3e5ba5e93121"
+       ],
+       "article_id": "698954de94d3f481f3e3c1b0"
+      },
+      {
+       "id": "a908e3f70b086baa",
+       "company_name": "whatnot",
+       "domain": "whatnot.com",
+       "round_type": "Series F",
+       "amount_usd": 225000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 225000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Avra Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "live commerce marketplace",
+       "country": "United States",
+       "city": "Los Angeles",
+       "use_of_funds": "Buy back shares from early investors and accelerate growth of live e‑commerce",
+       "source_sentence": "Whatnot raised $225 million in Series F funding",
+       "published_at": "2025-10-28T22:16:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "6901703277c5828be2d83a4f"
+       ],
+       "article_id": "6901703277c5828be2d83a4f"
+      },
+      {
+       "id": "52ddebb509adfa36",
+       "company_name": "airalo",
+       "domain": "airalo.com",
+       "round_type": "Growth Round",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cvc",
+         "domain": "cvc.com.au",
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "eSIM Marketplace",
+       "country": "United States",
+       "city": "Lewes, Delaware",
+       "use_of_funds": "Airalo will use the funds to scale its platform, enhance customer experience with new products and support, and expand its enterprise offerings.",
+       "source_sentence": "Airalo will use the funds to scale its platform, enhance customer experience with new products and support, and expand its enterprise offerings.",
+       "published_at": "2025-07-10T23:11:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "690301ecdf771495f9d83b20"
+       ],
+       "article_id": "690301ecdf771495f9d83b20"
+      },
+      {
+       "id": "6fcb279b04b32d17",
+       "company_name": "whop",
+       "domain": "whop.com",
+       "round_type": "Late-Stage",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "E-Commerce / Marketplace",
+       "country": "USA",
+       "city": "New York City",
+       "use_of_funds": null,
+       "source_sentence": "Top 10 NYC Venture Capital Deals — February 2026 # Company Amount Round Sector 4 Whop $200M Late-Stage E-Commerce / Marketplace",
+       "published_at": "2026-03-10T11:27:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a48b6d029f77a1d3efa5"
+       ],
+       "article_id": "69c3a48b6d029f77a1d3efa5"
+      },
+      {
+       "id": "e9dc156459aceb69",
+       "company_name": "whop",
+       "domain": "whop.com",
+       "round_type": "investment",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1600000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 1600000000.0,
+       "investors": [
+        {
+         "name": "tether",
+         "domain": "tether.to",
+         "amount": 200000000.0
+        }
+       ],
+       "sector": "Digital commerce marketplace",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expansion of Whop’s platform connecting creators and digital economies, integrating Tether’s Wallet Development Kit and USAT stablecoin for seamless settlement; accelerate global reach, especially across Europe and Asia, and embed AI-powered business tools that enhance user monetization and commerce experiences",
+       "source_sentence": "Digital commerce marketplace Whop raised a $200 million investment from stablecoin giant Tether, valuing the company at ~$1.6 billion.",
+       "published_at": "2026-03-02T16:08:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cb5cca8a9312907d58f570"
+       ],
+       "article_id": "69cb5cca8a9312907d58f570"
+      },
+      {
+       "id": "0d51541cea073269",
+       "company_name": "whop",
+       "domain": "whop.com",
+       "round_type": "Venture",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Tether Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "E-Commerce, Internet, Marketplace",
+       "country": null,
+       "city": "Brooklyn",
+       "use_of_funds": null,
+       "source_sentence": "Investors in the round: Tether Ventures",
+       "published_at": "2026-03-02T11:27:15",
+       "coverage_count": 3,
+       "article_ids": [
+        "69cb5b6072135531f265dce1",
+        "69cc4289cb088e024d2646bf",
+        "69e63de02461615d5f41b00d"
+       ],
+       "article_id": "69cb5b6072135531f265dce1"
+      },
+      {
+       "id": "675582cabb5c990c",
+       "company_name": "spinny",
+       "domain": "spinny.com",
+       "round_type": "Series F",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "fundamentum",
+         "domain": "fundamentum.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "automotive marketplace",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "Largest funding round in the used-car space",
+       "source_sentence": "Used car marketplace Spinny has secured $30 million in primary capital from investment firm WestBridge Capital, as part of an extension to its ongoing Series F funding round, according to a source familiar with the matter.",
+       "published_at": "2025-06-13T10:39:58",
+       "coverage_count": 4,
+       "article_ids": [
+        "691484a45df5f2205135d7bc",
+        "693141294998bc312ff21a1b",
+        "698ef1da8d29a990b6f325d1",
+        "69bc2c754583f4645ff4b5b4"
+       ],
+       "article_id": "693141294998bc312ff21a1b"
+      },
+      {
+       "id": "1c12e92c8c3b2d4e",
+       "company_name": "spinny",
+       "domain": "spinny.com",
+       "round_type": "Series G",
+       "amount_usd": 160000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 160000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Accel Leaders Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        },
+        {
+         "name": "New investor",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Used-Car Marketplace",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "payouts related to Spinny’s acquisition of GoMechanic and support its smooth operations",
+       "source_sentence": "India’s online used-car marketplace Spinny is set to raise approximately $160–165 million to acquire car service startup GoMechanic, according to various reports.",
+       "published_at": "2025-12-14T20:24:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69892c4494d3f481f3e08dac"
+       ],
+       "article_id": "69892c4494d3f481f3e08dac"
+      },
+      {
+       "id": "70cc9278470a4ce3",
+       "company_name": "preply",
+       "domain": "preply.com",
+       "round_type": "Series D",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1200000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1200000000.0,
+       "investors": [
+        {
+         "name": "westcap",
+         "domain": "westcapmgt.ca",
+         "amount": null
+        },
+        {
+         "name": "The European Bank for Reconstruction and Development (EBRD)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "horizon capital",
+         "domain": "horizoncapital.co.uk",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Language learning marketplace",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Preply will strengthen its commitment to delivering the world's most personalized learning experiences at scale, advancing its AI and data capabilities, expanding product and engineering teams, and accelerating global growth.",
+       "source_sentence": "Preply, the #1 global language learning marketplace, today announced the closing of its Series D round, securing $150 million in funding led by WestCap.",
+       "published_at": "2026-01-21T13:05:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd7b558a0c2dc739f24efb"
+       ],
+       "article_id": "69bd7b558a0c2dc739f24efb"
+      },
+      {
+       "id": "4e1b729cf0b4610f",
+       "company_name": "preply",
+       "domain": "preply.com",
+       "round_type": "Series D",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1200000000.0,
+       "investors": [
+        {
+         "name": "horizon capital",
+         "domain": "horizoncapital.co.uk",
+         "amount": null
+        },
+        {
+         "name": "hoxton ventures",
+         "domain": "hoxton.vc",
+         "amount": null
+        },
+        {
+         "name": "owl ventures",
+         "domain": "owlventures.com.au",
+         "amount": null
+        },
+        {
+         "name": "Techstars Berlin",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Language Learning Marketplace",
+       "country": "USA",
+       "city": "Kiev",
+       "use_of_funds": "Strengthen AI and data analytics capabilities, expand product and engineering teams, and accelerate global growth",
+       "source_sentence": "Language learning marketplace Preply is now valued at $1.2 billion after raising a $150 million Series D round that marks a new chapter for the 14‑year‑old company, whose previous backers include Horizon Capital, Hoxton Ventures, Owl Ventures and Techstars Berlin.",
+       "published_at": "2026-01-21T12:00:00",
+       "coverage_count": 12,
+       "article_ids": [
+        "6985fc319438ce100b14bb84",
+        "6986a85511e3205ec9928352",
+        "69888905b09f47b0d90b0c82",
+        "6988a7f194d3f481f3d71505",
+        "698a1faa1953fdcb20df2d56",
+        "698cec208d29a990b6ccaec1",
+        "698d17f59ca02490ecf47d43",
+        "698de4ec9ca02490ec03912f",
+        "698f03868d29a990b6f48ff9",
+        "698f03c38d29a990b6f49477",
+        "69bb00bad7b120f5da0314fb",
+        "69bc5498dded76ae100ed2d6"
+       ],
+       "article_id": "6985fc319438ce100b14bb84"
+      },
+      {
+       "id": "c7369366b8f3db35",
+       "company_name": "spinny",
+       "domain": "spinny.com",
+       "round_type": "Series F",
+       "amount_usd": 131000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 131000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Accel (US)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nandan Nilekani’s Fundamentum",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Used car marketplace",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": null,
+       "source_sentence": "Earlier this year, the Gurugram-based startup had raised $131 million from marquee investors including Accel (US), Nandan Nilekani’s Fundamentum, Tiger Global, and Elevation Capital.",
+       "published_at": "2025-06-13T10:00:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988b105a88ad7b9aae14826"
+       ],
+       "article_id": "6988b105a88ad7b9aae14826"
+      },
+      {
+       "id": "4b970acd7aef51af",
+       "company_name": "hyugalife",
+       "domain": "hyugalife.com",
+       "round_type": "Series A",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ivycap ventures",
+         "domain": "ivycapventures.com",
+         "amount": null
+        },
+        {
+         "name": "first bridge fund",
+         "domain": "firstbridgefund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Protein and supplements marketplace",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "strengthen AI-powered personalization layers, a dark store network for quicker deliveries, and establish an offline retail presence",
+       "source_sentence": "HyugaLife, founded by Sachin Parikh, Anvi Shah, and Neehar Modi, has raised ₹100 Cr in its Series A funding round, led by IvyCap Ventures. The round also saw participation from First Bridge Fund.",
+       "published_at": "2026-04-28T08:00:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e8a1d32561089420d11c"
+       ],
+       "article_id": "69f0e8a1d32561089420d11c"
+      },
+      {
+       "id": "c30f0f99a9c23022",
+       "company_name": "gohealth",
+       "domain": "gohealthuc.com",
+       "round_type": "Debt",
+       "amount_usd": 115000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 115000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Health insurance marketplace",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support operations and strategic plans ahead of the Medicare annual enrolment period",
+       "source_sentence": "The health insurance marketplace secured a senior secured superpriority term loan facility, including $80m in new-money term loans and $35m in roll-up loans, to support operations and strategic plans ahead of the Medicare annual enrolment period.",
+       "published_at": "2025-08-08T14:14:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f6ed58d29a990b6fc738c"
+       ],
+       "article_id": "698f6ed58d29a990b6fc738c"
+      },
+      {
+       "id": "adfc90b0808842c7",
+       "company_name": "udaan",
+       "domain": "udaan.com",
+       "round_type": null,
+       "amount_usd": 114000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 114000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "M&G Prudential (UK)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "B2B ecommerce marketplace",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The company's rival, Udaan, announced on June 2 that it closed a $114 million funding round led by existing investors M&G Prudential (UK) and Lightspeed Venture Partners at a flat valuation of $1.8 billion.",
+       "published_at": "2025-07-29T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898cd742f01d48cd3fc2539"
+       ],
+       "article_id": "6898cd742f01d48cd3fc2539"
+      },
+      {
+       "id": "9b75007786d20843",
+       "company_name": "caronsale",
+       "domain": "caronsale.com",
+       "round_type": "Series C",
+       "amount_usd": 75600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "northzone",
+         "domain": "northzone.com",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "stripes",
+         "domain": "stripes.co",
+         "amount": null
+        },
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        }
+       ],
+       "sector": "Used car B2B marketplace",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "expand across European markets, scale toward annual sales of 1 million used cars, enhance product and service offering",
+       "source_sentence": "German CarOnSale, a digital B2B marketplace for used car trading, has successfully closed a €70 million Series C round to expand across European markets",
+       "published_at": "2025-07-07T08:23:41",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d98a0294c916e3e07e4a25",
+        "6988adcaafe26ce3df6773b6",
+        "698e7dd38d29a990b6ea7c76"
+       ],
+       "article_id": "68d98a0294c916e3e07e4a25"
+      },
+      {
+       "id": "13e4ca3e67422488",
+       "company_name": "JSW One Platforms",
+       "domain": "jswonemsme.com",
+       "round_type": null,
+       "amount_usd": 69000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 5750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "B2B e-commerce marketplace",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Proceeds will be used to scale its technology platform, expand its distribution and logistics network, and strengthen its non-banking financial company (NBFC) arm to widen credit access for MSMEs and enhance underwriting capabilities.",
+       "source_sentence": "JSW One Platforms raises Rs 575 crore",
+       "published_at": "2025-10-06T01:36:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "68f70a8eb5f4abc34a2b5919",
+        "68f7183ee97e6da31e2ca7c9",
+        "68f728946ecd416e342bb987",
+        "698e28fa9ca02490ec08b54e"
+       ],
+       "article_id": "68f728946ecd416e342bb987"
+      },
+      {
+       "id": "25e0ed443dc75353",
+       "company_name": "carro",
+       "domain": "carro.co",
+       "round_type": "seed",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Auto marketplace",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "ramp up demand for Japanese cars across the Asia Pacific",
+       "source_sentence": "Leading the headlines, Carro, a Singapore-based online car marketplace, raised $60 million in a seed round to ramp up demand for Japanese cars across the Asia Pacific, further solidifying its position as a dominant player in regional auto commerce.",
+       "published_at": "2025-09-19T09:00:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d68549ca02490ecfa8628"
+       ],
+       "article_id": "698d68549ca02490ecfa8628"
+      },
+      {
+       "id": "3d975cff65935e91",
+       "company_name": "docmorris",
+       "domain": "docmorris.de",
+       "round_type": "Convertible Bond Offering",
+       "amount_usd": 56047999.99999999,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CHF",
+       "amount": 49600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Online pharmacy, telemedicine, marketplace",
+       "country": "Switzerland",
+       "city": "Frauenfeld",
+       "use_of_funds": "The proceeds from the New Bond Offering, will be used to fund the early buyback of its outstanding CHF 87.6 million 2026 convertible bond (“Outstanding Convertible Bonds due 2026”) and for general corporate purposes outside of Switzerland",
+       "source_sentence": "The proceeds from the New Bond Offering, will be used to fund the early buyback of its outstanding CHF 87.6 million 2026 convertible bond (“Outstanding Convertible Bonds due 2026”) and for general corporate purposes outside of Switzerland",
+       "published_at": "2025-10-22T07:00:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb8a569e3448abf0a1d850"
+       ],
+       "article_id": "69bb8a569e3448abf0a1d850"
+      },
+      {
+       "id": "e99115f0d60bf3c4",
+       "company_name": "recur club",
+       "domain": "recurclub.com",
+       "round_type": null,
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "InfoEdge Ventures",
+         "domain": "infoedgeventures.in",
+         "amount": null
+        },
+        {
+         "name": "LC Nueva",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Physis Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "string ventures",
+         "domain": "stringventures.com",
+         "amount": null
+        },
+        {
+         "name": "finvolve",
+         "domain": "finvolve.co",
+         "amount": null
+        },
+        {
+         "name": "incred",
+         "domain": "incred.com",
+         "amount": null
+        },
+        {
+         "name": "ugro capital",
+         "domain": "ugrocapital.com",
+         "amount": null
+        },
+        {
+         "name": "aditya birla capital",
+         "domain": "adityabirlacapital.com",
+         "amount": null
+        },
+        {
+         "name": "lighthouse canton",
+         "domain": "lighthouse-canton.com",
+         "amount": null
+        }
+       ],
+       "sector": "Debt marketplace",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand product offerings and scale into Tier‑2 and Tier‑3 cities",
+       "source_sentence": "Recur Club, an AI-native debt marketplace for startups and SMEs, has raised $50 million in a mix of equity and debt.",
+       "published_at": "2025-09-29T14:38:26",
+       "coverage_count": 2,
+       "article_ids": [
+        "68dae4199cba6bd322888c11",
+        "68f70f80e97e6da31e2bd382"
+       ],
+       "article_id": "68dae4199cba6bd322888c11"
+      },
+      {
+       "id": "b2dae298919c98dc",
+       "company_name": "Yubi Group",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 49320000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 4110000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "evolutionx debt capital",
+         "domain": "evolutionx.com.sg",
+         "amount": 3360000000.0
+        },
+        {
+         "name": "Gaurav Kumar",
+         "domain": "https://www.linkedin.com/in/gauravkumar1",
+         "amount": 750000000.0
+        }
+       ],
+       "sector": "Debt marketplace",
+       "country": "India",
+       "city": "Chennai",
+       "use_of_funds": "Yubi’s expansion into Southeast Asia and the US, strengthen its presence in the Middle East, and deepen investments in its proprietary AI products.",
+       "source_sentence": "Peak XV and TVS Capital-backed Yubi Group has raised ₹411 crore in a fresh round through a mix of long-term structured debt and equity.",
+       "published_at": "2025-11-18T19:01:20",
+       "coverage_count": 3,
+       "article_ids": [
+        "69316f98b0d6b9ba72f219ee",
+        "6945384431c41a2ef1a35e05",
+        "698de6779ca02490ec03b015"
+       ],
+       "article_id": "69316f98b0d6b9ba72f219ee"
+      },
+      {
+       "id": "eeaafc140785d2e8",
+       "company_name": "GoTu Technology",
+       "domain": null,
+       "round_type": "Growth investment",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "long ridge equity partners",
+         "domain": "long-ridge.com",
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan Asset Management",
+         "domain": "jpmorgan.am",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare Labor Marketplace",
+       "country": "U.S.",
+       "city": null,
+       "use_of_funds": "enhance platform, deepen professional pool, expand into states",
+       "source_sentence": "GoTu Technology Secures $45M in Funding to Scale Its Dental Staffing Marketplace",
+       "published_at": "2025-11-19T00:32:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69316df67d94faa13ff22608"
+       ],
+       "article_id": "69316df67d94faa13ff22608"
+      },
+      {
+       "id": "6cdaf5c16c59bbf2",
+       "company_name": "reshamandi",
+       "domain": "reshamandi.com",
+       "round_type": "Equity",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Marketplace",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "B2B natural fibres marketplace Reshamandi, for example, was not able to figure out its unit economics and had to scale down considerably in 2024 after raising $40 Mn+ in equity funding.",
+       "published_at": "2026-01-22T14:12:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a7c83757765ee8263bd9"
+       ],
+       "article_id": "6988a7c83757765ee8263bd9"
+      },
+      {
+       "id": "b616e04cd8d45836",
+       "company_name": "ever",
+       "domain": "ever.com",
+       "round_type": "Series A",
+       "amount_usd": 31000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 31000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "ibex investors",
+         "domain": "ibexinvestors.com",
+         "amount": null
+        },
+        {
+         "name": "lifeline ventures",
+         "domain": "lifelineventures.com",
+         "amount": null
+        },
+        {
+         "name": "jimco",
+         "domain": "jimcotest.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-native EV marketplace",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "scale operations and expand to new markets",
+       "source_sentence": "Ever, an online marketplace for electric vehicles, has raised $31 million in Series A funding to accelerate its growth.",
+       "published_at": "2026-02-12T23:38:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc942041245450861e12c3"
+       ],
+       "article_id": "69bc942041245450861e12c3"
+      },
+      {
+       "id": "50442e4dbe19243f",
+       "company_name": "kavak",
+       "domain": "kavak.com",
+       "round_type": "equity",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": 20000000.0
+        },
+        {
+         "name": "wcm investment management",
+         "domain": "wcminvest.com",
+         "amount": 10000000.0
+        },
+        {
+         "name": "Foxhaven Asset Management",
+         "domain": "foxhavencap.com",
+         "amount": null
+        }
+       ],
+       "sector": "online used car marketplace",
+       "country": "Mexico",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Mexico-based online used car marketplace Kavak raised $300M in an equity round led by Andreessen Horowitz, which invested $200M. WCM Investment Management co-led with $100M, alongside Foxhaven Asset Management.",
+       "published_at": "2026-02-17T17:13:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbe9b2d95eacb99a4bd0ea"
+       ],
+       "article_id": "69bbe9b2d95eacb99a4bd0ea"
+      },
+      {
+       "id": "188681e63ee247e4",
+       "company_name": "supertails",
+       "domain": "supertails.com",
+       "round_type": "Series C",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Venturi Partners",
+         "domain": "venturi.partners",
+         "amount": null
+        }
+       ],
+       "sector": "Petcare Marketplace",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "to expand its marketplace, deepen veterinary product offerings, and enhance omnichannel services for pet parents across India.",
+       "source_sentence": "SuperTails, a petcare platform, raised $30 million in a financing round led by Venturi Partners.",
+       "published_at": "2026-02-10T13:06:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc1286d95eacb99a4c4203"
+       ],
+       "article_id": "69bc1286d95eacb99a4c4203"
+      },
+      {
+       "id": "3340104757adffa9",
+       "company_name": "courtyard",
+       "domain": "courtyard.io",
+       "round_type": "Series A",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "left lane capital",
+         "domain": "leftlanecap.com",
+         "amount": null
+        },
+        {
+         "name": "forerunner ventures",
+         "domain": "forerunnerventures.com",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "digital marketplace",
+       "country": "USA",
+       "city": "New York City",
+       "use_of_funds": "The funding will support the expansion of its product offerings and market reach.",
+       "source_sentence": "Courtyard, founded in 2022 and based in New York City, is building a digital vending machine platform for collectible items. The company has secured $30 million in a Series A round led by Left Lane Capital, with participation from Forerunner ventures, and other investors.",
+       "published_at": "2025-08-07T23:50:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "69316270170dbf6f65f20ae2"
+       ],
+       "article_id": "69316270170dbf6f65f20ae2"
+      },
+      {
+       "id": "8ef8cc3bac72707a",
+       "company_name": "spinny",
+       "domain": "spinny.com",
+       "round_type": "Series F – Extension",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": 30000000.0
+        }
+       ],
+       "sector": "Used car marketplace",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "Deployment of new capital to establish an NBFC, expand media arm including acquisition of Autocar India and related titles, and strengthen core B2C marketplace and B2B operations.",
+       "source_sentence": "Used car marketplace Spinny has secured $30 million in primary capital from investment firm WestBridge Capital, as part of an extension to its ongoing Series F funding round.",
+       "published_at": "2025-06-13T10:00:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988b105a88ad7b9aae14826"
+       ],
+       "article_id": "6988b105a88ad7b9aae14826"
+      },
+      {
+       "id": "102facb93339652b",
+       "company_name": "eatclub",
+       "domain": "eatclub.in",
+       "round_type": "Series B",
+       "amount_usd": 27000000.0,
+       "amount_flag": null,
+       "valuation_usd": 200000000.0,
+       "currency": "USD",
+       "amount": 27000000.0,
+       "valuation": 200000000.0,
+       "investors": [
+        {
+         "name": "marbruck",
+         "domain": "marbruck.com",
+         "amount": null
+        },
+        {
+         "name": "evp",
+         "domain": "evp.com.au",
+         "amount": null
+        },
+        {
+         "name": "coact",
+         "domain": "coact.org.au",
+         "amount": null
+        }
+       ],
+       "sector": "restaurant marketplace",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Move into other cities, expand EatClub Earn loyalty program, invest in AI tools for restaurants",
+       "source_sentence": "EatClub has raised $27 million in a Series B round as it accelerates UK expansion, following rapid growth in London and rising restaurant sign-ups.",
+       "published_at": "2026-02-22T21:36:37",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc7dc44755dcbc8758e8a6",
+        "69c9c9061f37db75688872ac"
+       ],
+       "article_id": "69bc7dc44755dcbc8758e8a6"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 136,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDItMjIgMjE6MzY6MzciLCJrIjoiMTE2NjM0MDczOTk0MDU3NDUwNyIsImEiOjI3MDAwMDAwLjB9",
+     "totals": {
+      "deals": 136,
+      "deals_with_amount": 118,
+      "deals_without_amount": 18,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 7727614920.0,
+      "median_amount_usd": 8340000.0,
+      "largest_amount_usd": 1000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.274,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.276
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "marketplace",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "marketplace"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "553f0bd85ff66c0f",
+       "company_name": "Udora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 9936000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 9200000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Marketplace",
+       "country": "UAE",
+       "city": "Dubai",
+       "use_of_funds": "growth",
+       "source_sentence": "The marketplace specializing in gifts Flowwow has closed an investment round of 9.2 million euros with which a new stage begins under a new name: Udora.",
+       "published_at": "2026-04-30T09:15:29",
+       "coverage_count": 4,
+       "article_ids": [
+        "69f8842fbbf1d31455985e44",
+        "69f8aba5bbf1d314559a681b",
+        "69f9d462a088760d34bef266",
+        "69f9d463a088760d34bef352"
+       ],
+       "article_id": "69f9d462a088760d34bef266"
+      },
+      {
+       "id": "3c742939fb11decc",
+       "company_name": "sprect",
+       "domain": "sprect.com",
+       "round_type": null,
+       "amount_usd": 240000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Subhkam Ventures",
+         "domain": "subhkam.com",
+         "amount": 20000000.0
+        }
+       ],
+       "sector": "consumer-to-consumer (C2C) knowledge marketplace",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "accelerate product development, grow its network of verified professionals (PROs), and expand demand from seekers on the platform",
+       "source_sentence": "Sprect (Super Connect) has raised Rs. 2 crore in funding from Subhkam Ventures (I) Private Limited, a registered NBFC firm that invests across public markets and private equity.",
+       "published_at": "2026-04-29T12:38:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f8804c43843dd771ce726a",
+        "69f882e143843dd771cfd730"
+       ],
+       "article_id": "69f8804c43843dd771ce726a"
+      },
+      {
+       "id": "e3e4e14bf1f1f95a",
+       "company_name": "vinted",
+       "domain": "vinted.com",
+       "round_type": "Secondary transaction",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eqt",
+         "domain": "eqt.com",
+         "amount": null
+        },
+        {
+         "name": "schroders capital",
+         "domain": "schroderscapital.com",
+         "amount": null
+        },
+        {
+         "name": "Teachers’ Venture Growth (TVG)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "lombard odier investment managers",
+         "domain": "loim.com",
+         "amount": null
+        },
+        {
+         "name": "Pinegrove Opportunity Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        }
+       ],
+       "sector": "C2C second-hand marketplace",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Liquidity for employees and existing investors",
+       "source_sentence": "The transaction was led by EQT, Schroders Capital, and Teachers’ Venture Growth (TVG), Ontario Teachers’ Pension Plan’s late-stage venture platform, with participation from both new and existing investors.",
+       "published_at": "2026-04-28T09:32:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e170d32561089420627b"
+       ],
+       "article_id": "69f0e170d32561089420627b"
+      },
+      {
+       "id": "4b970acd7aef51af",
+       "company_name": "hyugalife",
+       "domain": "hyugalife.com",
+       "round_type": "Series A",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ivycap ventures",
+         "domain": "ivycapventures.com",
+         "amount": null
+        },
+        {
+         "name": "first bridge fund",
+         "domain": "firstbridgefund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Protein and supplements marketplace",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "strengthen AI-powered personalization layers, a dark store network for quicker deliveries, and establish an offline retail presence",
+       "source_sentence": "HyugaLife, founded by Sachin Parikh, Anvi Shah, and Neehar Modi, has raised ₹100 Cr in its Series A funding round, led by IvyCap Ventures. The round also saw participation from First Bridge Fund.",
+       "published_at": "2026-04-28T08:00:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e8a1d32561089420d11c"
+       ],
+       "article_id": "69f0e8a1d32561089420d11c"
+      },
+      {
+       "id": "ae6024da4d02261c",
+       "company_name": "vinted",
+       "domain": "vinted.com",
+       "round_type": "secondary funding",
+       "amount_usd": 950400000.0000001,
+       "amount_flag": null,
+       "valuation_usd": 8640000000.0,
+       "currency": "EUR",
+       "amount": 880000000.0,
+       "valuation": 8000000000.0,
+       "investors": [],
+       "sector": "online secondhand marketplace",
+       "country": "Lithuania",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Following an investment round of 880 million euros, the secondhand platform Vinted is now valued at 8 billion euros.",
+       "published_at": "2026-04-28T07:54:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e452836d28f995cb7d66"
+       ],
+       "article_id": "69f0e452836d28f995cb7d66"
+      },
+      {
+       "id": "2059e737fbd8d69f",
+       "company_name": "vinted",
+       "domain": "vinted.com",
+       "round_type": "primary funding round",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": 5000000000.0,
+       "currency": "USD",
+       "amount": null,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "Marketplace, e-commerce, second-hand",
+       "country": "Lithuania",
+       "city": "Vilnius",
+       "use_of_funds": null,
+       "source_sentence": "In 2024 it brought in fresh investors in a round led by US investment group TPG, valuing it at $5bn.",
+       "published_at": "2026-04-27T15:03:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e6e7836d28f995cba011"
+       ],
+       "article_id": "69f0e6e7836d28f995cba011"
+      },
+      {
+       "id": "3b758223f2ddd71b",
+       "company_name": "vinted",
+       "domain": "vinted.com",
+       "round_type": "secondary funding round",
+       "amount_usd": 950400000.0000001,
+       "amount_flag": null,
+       "valuation_usd": 8640000000.0,
+       "currency": "EUR",
+       "amount": 880000000.0,
+       "valuation": 8000000000.0,
+       "investors": [],
+       "sector": "online secondhand marketplace",
+       "country": "Lithuania",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Following an investment round of 880 million euros, the secondhand platform Vinted is now valued at 8 billion euros.",
+       "published_at": "2026-04-27T14:33:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e1ebd3256108942068df"
+       ],
+       "article_id": "69f0e1ebd3256108942068df"
+      },
+      {
+       "id": "b79ed37311048992",
+       "company_name": "vinted",
+       "domain": "vinted.com",
+       "round_type": "secondary share transaction",
+       "amount_usd": 950400000.0000001,
+       "amount_flag": null,
+       "valuation_usd": 8640000000.0,
+       "currency": "EUR",
+       "amount": 880000000.0,
+       "valuation": 8000000000.0,
+       "investors": [
+        {
+         "name": "eqt",
+         "domain": "eqt.com",
+         "amount": null
+        },
+        {
+         "name": "schroders capital",
+         "domain": "schroderscapital.com",
+         "amount": null
+        },
+        {
+         "name": "Teachers' Venture Growth",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "lombard odier investment managers",
+         "domain": "loim.com",
+         "amount": null
+        },
+        {
+         "name": "Pinegrove Opportunity Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "marketplace",
+       "country": "Lithuania",
+       "city": "Vilnius",
+       "use_of_funds": "liquidity for existing shareholders",
+       "source_sentence": "Vinted has completed a €880 million secondary share transaction at an equity valuation of €8 billion, with participation from a mix of new and existing investors led by EQT, Schroders Capital, and Teachers' Venture Growth.",
+       "published_at": "2026-04-27T13:04:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f0e2bed3256108942075e0",
+        "69f0e5c4d32561089420a65e",
+        "69f0e6e7836d28f995cba011"
+       ],
+       "article_id": "69f0e5c4d32561089420a65e"
+      },
+      {
+       "id": "e81e42fb7f7172dd",
+       "company_name": "SparesHub.com",
+       "domain": null,
+       "round_type": "Second round",
+       "amount_usd": 240000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Anthill Scale Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "esvee technologies",
+         "domain": "esveetech.com",
+         "amount": null
+        },
+        {
+         "name": "Chennai Angels",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Other high net-worth individuals (HNIs)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Automobile parts marketplace",
+       "country": "India",
+       "city": "Pune",
+       "use_of_funds": "Grow customer base, expand geographically, strengthen technology platform",
+       "source_sentence": "Online autoparts marketplace SparesHub.com has raised Rs 2 crore from Singapore-based Anthill Scale Ventures, US-based Esvee Technologies, Chennai Angels and other high net-worth individuals (HNIs).",
+       "published_at": "2026-04-15T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfc057c1e955063e15420f"
+       ],
+       "article_id": "69dfc057c1e955063e15420f"
+      },
+      {
+       "id": "cad0cd2e9efd4288",
+       "company_name": "CredR (Incredible Technologies Private)",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 5772000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 481000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Yamaha Motors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "omidyar network india",
+         "domain": "omidyarnetwork.in",
+         "amount": null
+        },
+        {
+         "name": "eight roads ventures",
+         "domain": "eightroads.com",
+         "amount": null
+        },
+        {
+         "name": "astarc ventures",
+         "domain": "astarcventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Used two-wheeler marketplace",
+       "country": "India",
+       "city": "Bangalore",
+       "use_of_funds": "consolidating its market position, strengthening its technology platform and expanding customer offerings, and scaling rapidly",
+       "source_sentence": "Bangalore-based CredR (Incredible Technologies Private) used two-wheeler platform has raised Rs 48.1 crore ($ 6.5 million) in its latest round led by Yamaha Motors, existing investors Omidyar Network India, Eight Roads Ventures, with participation from automotive focused Astarc Ventures.",
+       "published_at": "2026-04-15T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfbb6144a6646a5b2b821a"
+       ],
+       "article_id": "69dfbb6144a6646a5b2b821a"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 50,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTUgMDA6MDA6MDAiLCJrIjoiMTQ2MTQ0MDYzOTA5MzY4NDY5ODQifQ",
+     "totals": {
+      "deals": 50,
+      "deals_with_amount": 42,
+      "deals_without_amount": 8,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 3846548000.0,
+      "median_amount_usd": 8100000.0,
+      "largest_amount_usd": 1000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.201,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.211
+    }
+   }
+  }
+ ]
+}

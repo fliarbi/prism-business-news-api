@@ -1,0 +1,826 @@
+{
+ "slug": "antitrust-lawsuit",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:47Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "lawsuit",
+      "regulatory"
+     ],
+     "q": "antitrust",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "antitrust",
+      "match": "any",
+      "event_type": [
+       "lawsuit",
+       "regulatory"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 8,
+       "by_type": {
+        "lawsuit": 4,
+        "regulatory": 4
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 31,
+       "by_type": {
+        "lawsuit": 13,
+        "regulatory": 18
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 34,
+       "by_type": {
+        "lawsuit": 21,
+        "regulatory": 13
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 45,
+       "by_type": {
+        "lawsuit": 25,
+        "regulatory": 20
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 52,
+       "by_type": {
+        "lawsuit": 31,
+        "regulatory": 21
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 34,
+       "by_type": {
+        "lawsuit": 19,
+        "regulatory": 15
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 35,
+       "by_type": {
+        "lawsuit": 18,
+        "regulatory": 17
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 26,
+       "by_type": {
+        "lawsuit": 5,
+        "regulatory": 21
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 14,
+       "by_type": {
+        "lawsuit": 2,
+        "regulatory": 12
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 39,
+       "by_type": {
+        "lawsuit": 21,
+        "regulatory": 18
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 77,
+       "by_type": {
+        "lawsuit": 64,
+        "regulatory": 13
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 48,
+       "by_type": {
+        "lawsuit": 34,
+        "regulatory": 14
+       }
+      }
+     ],
+     "totals": {
+      "events": 443,
+      "articles": 302,
+      "companies": 196,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "lawsuit": 257,
+      "regulatory": 186
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.075,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.079
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "lawsuit",
+      "regulatory"
+     ],
+     "q": "antitrust",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "antitrust",
+      "event_type": [
+       "lawsuit",
+       "regulatory"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f1cc0b399b489398e0c02b",
+       "headline": "Seoul, April 29, 2026 South Korea’s antitrust regulator on Wednesday newly designated Kim Bom, founder of US-listed e-commerce giant Coupang, as the company’s de facto controlling entity,",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "coupang.com",
+       "published_at": "2026-04-29T09:02:05",
+       "url": "https://yespunjab.com/watchdog-names-coupang-founder-kim-bom-as-controlling-figure-under-tighter-oversight/",
+       "publisher": "yespunjab.com",
+       "title": "Watchdog names Coupang founder Kim Bom as controlling figure under tighter oversight - Yes Punjab News"
+      },
+      {
+       "id": "69efaa5ba84b609af2b2a7d7",
+       "headline": "The Italian antitrust authority has opened investigations against the thermomix manufacturer Vorwerk.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "vorwerk.com",
+       "published_at": "2026-04-24T08:01:37",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f0e495836d28f995cb825e",
+       "headline": "Siegfried obtains antitrust clearance for acquisition of three drug substances sites in the US and Australia 24-Apr-2026",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "siegfried.ch",
+       "published_at": "2026-04-24T00:00:00",
+       "url": "https://www.finanznachrichten.de/nachrichten-2026-04/68289369-adhoc-siegfried-ag-siegfried-obtains-antitrust-clearance-for-acquisition-of-three-drug-substances-sites-in-the-us-and-australia-023.htm",
+       "publisher": "finanznachrichten.de",
+       "title": "Adhoc: Siegfried AG: Siegfried obtains antitrust clearance for acquisition of three drug substances sites in the US and Australia"
+      },
+      {
+       "id": "69ea50447e2e51112025d2be",
+       "headline": "Paramount will have to pay a penalty of $7 billion if US antitrust authorities block the merger with Warner.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "paramount.com",
+       "published_at": "2026-04-23T15:34:20",
+       "url": "https://www.elfinanciero.com.mx/empresas/2026/04/23/accionistas-de-warner-bros-aprueban-fusion-de-110-mil-mdd-con-paramount-que-sigue/",
+       "publisher": "elfinanciero.com.mx",
+       "title": "Accionistas de Warner Bros aprueban fusión de 110 mil mdd con Paramount: ¿Qué sigue?"
+      },
+      {
+       "id": "69ea2e5e73206aa299ed335f",
+       "headline": "Despite shareholder approval, the transaction remains subject to regulatory clearance from U.S. authorities, particularly the antitrust division of the Department of Justice.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "wbd.com",
+       "published_at": "2026-04-23T14:27:22",
+       "url": "https://www.businessupturn.com/entertainment/warner-bros-discovery-shareholders-approve-paramount-skydance-merger-in-110-billion-hollywood-mega-deal/",
+       "publisher": "businessupturn.com",
+       "title": "Warner Bros. Discovery shareholders approve Paramount Skydance merger in $110 billion Hollywood mega‑deal - Business Upturn"
+      },
+      {
+       "id": "69e886d17bb1410d4c8b0298",
+       "headline": "Attorney General Rob Bonta sued Amazon in San Francisco Superior Court in 2022 accusing the company of violating the state’s antitrust and unfair competition laws.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "amazon.com",
+       "published_at": "2026-04-21T16:34:45",
+       "url": "https://www.10news.com/consumer/california-says-amazon-pressured-retailers-to-boost-prices-on-their-websites-to-not-undercut-it",
+       "publisher": "10news.com",
+       "title": "California says Amazon pressured retailers to boost prices on their websites to not undercut it"
+      },
+      {
+       "id": "69e99618bdd09a23d08d951c",
+       "headline": "A federal judge on Friday blocked the $6 billion merger of Nexstar, the largest owner of TV stations in the United States, with its rival Tegna, until an antitrust lawsuit is resolved.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "tegna.com",
+       "published_at": "2026-04-21T12:11:30",
+       "url": "https://thedailyrecord.com/2026/04/21/nexstar-tegna-tv-merger-blocked-california/",
+       "publisher": "thedailyrecord.com",
+       "title": "Federal judge blocks $6B Nexstar-Tegna TV merger"
+      },
+      {
+       "id": "69e99618bdd09a23d08d951c",
+       "headline": "A federal judge on Friday blocked the $6 billion merger of Nexstar, the largest owner of TV stations in the United States, with its rival Tegna, until an antitrust lawsuit is resolved.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "nexstardigital.com",
+       "published_at": "2026-04-21T12:11:30",
+       "url": "https://thedailyrecord.com/2026/04/21/nexstar-tegna-tv-merger-blocked-california/",
+       "publisher": "thedailyrecord.com",
+       "title": "Federal judge blocks $6B Nexstar-Tegna TV merger"
+      },
+      {
+       "id": "69e99618bdd09a23d08d951c",
+       "headline": "A federal judge on Friday blocked the $6 billion merger of Nexstar, the largest owner of TV stations in the United States, with its rival Tegna, until an antitrust lawsuit is resolved.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "directv.com",
+       "published_at": "2026-04-21T12:11:30",
+       "url": "https://thedailyrecord.com/2026/04/21/nexstar-tegna-tv-merger-blocked-california/",
+       "publisher": "thedailyrecord.com",
+       "title": "Federal judge blocks $6B Nexstar-Tegna TV merger"
+      },
+      {
+       "id": "69e9950fd47fc028321413f4",
+       "headline": "Attorney General Rob Bonta sued Amazon in San Francisco Superior Court in 2022 accusing the company of violating the state’s antitrust and unfair competition laws.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "amazon.com",
+       "published_at": "2026-04-20T21:33:29",
+       "url": "https://www.courant.com/2026/04/20/amazon-forced-prices-lawsuit-california-ag/",
+       "publisher": "courant.com",
+       "title": "California says Amazon pressured retailers to boost prices on their websites to not undercut it"
+      },
+      {
+       "id": "69e87ec29baafc73568e3a23",
+       "headline": "Attorney General Rob Bonta sued Amazon in San Francisco Superior Court in 2022 accusing the company of violating the state’s antitrust and unfair competition laws.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "amazon.com",
+       "published_at": "2026-04-20T21:33:29",
+       "url": "https://www.bostonherald.com/2026/04/20/amazon-forced-prices-lawsuit-california-ag/",
+       "publisher": "bostonherald.com",
+       "title": "California says Amazon pressured retailers to boost prices on their websites to not undercut it"
+      },
+      {
+       "id": "69e887869baafc735693eeea",
+       "headline": "Evidence detailing the alleged attempts to set prices were disclosed as part of the antitrust process driven by Attorney General Rob Bonta against Amazon, which has already lasted three and a half years.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "amazon.com",
+       "published_at": "2026-04-20T19:06:06",
+       "url": "https://valor.globo.com/empresas/noticia/2026/04/20/conivencia-da-amazon-elevou-precos-ao-consumidor-diz-governo-da-california.ghtml",
+       "publisher": "valor.globo.com",
+       "title": "Conivência da Amazon elevou preços ao consumidor, diz governo da Califórnia"
+      },
+      {
+       "id": "69e87f0e7bb1410d4c8604a4",
+       "headline": "The first is European antitrust clearance — expected by May at the earliest — which is the last regulatory approval outside Brazil before closing can occur.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "braskem.com.br",
+       "published_at": "2026-04-20T13:54:24",
+       "url": "https://www.riotimesonline.com/braskem-novonor-ig4-shine-contract-signed-april-2026/",
+       "publisher": "riotimesonline.com",
+       "title": "Braskem Sale Becomes Binding: IG4 Fund Secures 50.1% Stake"
+      },
+      {
+       "id": "69e994f8bdd09a23d08cadba",
+       "headline": "Evidence detailing alleged efforts to fix prices was unsealed on Monday, as part of Attorney General Rob Bonta's 3½-year-old antitrust lawsuit against Amazon.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "amazon.com",
+       "published_at": "2026-04-20T00:00:00",
+       "url": "https://www.ksl.com/article/51485994/amazons-collusion-drove-up-consumer-prices-california-says-citing-new-evidence",
+       "publisher": "ksl.com",
+       "title": "Amazon's collusion drove up consumer prices, California says, citing new evidence"
+      },
+      {
+       "id": "69e876627bb1410d4c809f43",
+       "headline": "Earlier in April, SunOpta also announced early termination of the Hart-Scott-Rodino waiting period, which removed a major U.S. antitrust hurdle.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "sunopta.com",
+       "published_at": "2026-04-19T14:31:06",
+       "url": "https://business-news-today.com/sunoptas-buyout-just-cleared-a-major-hurdle-is-there-anything-left-that-can-stop-refresco-now/",
+       "publisher": "business-news-today.com",
+       "title": "SunOpta’s buyout just cleared a major hurdle. Is there anything left that"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 178,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTkgMTQ6MzE6MDYiLCJpIjoiNjllODc2NjI3YmIxNDEwZDRjODA5ZjQzIiwiZG0iOiJzdW5vcHRhLmNvbSIsImV0IjoicmVndWxhdG9yeSIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "lawsuit": 121,
+      "regulatory": 57
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.181,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 1 event(s)"
+     ],
+     "request_seconds": 4.184
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "lawsuit",
+      "regulatory"
+     ],
+     "q": "antitrust",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "antitrust",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "lawsuit",
+       "regulatory"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 150,
+     "carrying": 150,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 18,
+       "share": 12.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 2,
+       "share": 1.33
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 101,
+       "share": 67.33
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 1,
+       "share": 0.67
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 15,
+       "share": 10.0
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 5,
+       "share": 3.33
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 8,
+       "share": 5.33
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 121,
+       "share": 80.67
+      },
+      {
+       "group": "neutral",
+       "count": 1,
+       "share": 0.67
+      },
+      {
+       "group": "positive",
+       "count": 28,
+       "share": 18.67
+      }
+     ],
+     "negative_to_positive_ratio": 4.321,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 5.83,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 29,
+       "negative": 26,
+       "neutral": 0,
+       "positive": 3,
+       "negative_share": 89.66,
+       "positive_share": 10.34,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 1,
+        "slight_neg": 23,
+        "none": 0,
+        "slight_pos": 3,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 43,
+       "negative": 29,
+       "neutral": 0,
+       "positive": 14,
+       "negative_share": 67.44,
+       "positive_share": 32.56,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 28,
+        "none": 0,
+        "slight_pos": 2,
+        "fair_pos": 5,
+        "very_pos": 7,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 32,
+       "negative": 27,
+       "neutral": 0,
+       "positive": 5,
+       "negative_share": 84.38,
+       "positive_share": 15.62,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 0,
+        "slight_neg": 25,
+        "none": 0,
+        "slight_pos": 4,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 46,
+       "negative": 39,
+       "neutral": 1,
+       "positive": 6,
+       "negative_share": 84.78,
+       "positive_share": 13.04,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 13,
+        "fair_neg": 1,
+        "slight_neg": 25,
+        "none": 1,
+        "slight_pos": 6,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.4,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.403
+    }
+   }
+  }
+ ]
+}

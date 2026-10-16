@@ -1,0 +1,3478 @@
+{
+ "slug": "plug-and-play-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:29Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Plug and Play",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "plug and play"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 87,
+      "deals_with_amount": 73,
+      "deals_without_amount": 14,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 438238725.0,
+      "median_amount_usd": 4000000.0,
+      "largest_amount_usd": 75000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 11,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 253000000.0,
+       "median_amount_usd": 12000000.0,
+       "largest_amount_usd": 75000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 10808000.0,
+       "median_amount_usd": 1728000.0,
+       "largest_amount_usd": 8000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 4,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 12996000.0,
+       "median_amount_usd": 4400000.0,
+       "largest_amount_usd": 7300000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 7,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 22552000.0,
+       "median_amount_usd": 3500000.0,
+       "largest_amount_usd": 14364000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 8,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 31956000.0,
+       "median_amount_usd": 4200000.0,
+       "largest_amount_usd": 7800000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 10,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 29743200.0,
+       "median_amount_usd": 2160000.0,
+       "largest_amount_usd": 12000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 1,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 8000000.0,
+       "median_amount_usd": 8000000.0,
+       "largest_amount_usd": 8000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 36432000.0,
+       "median_amount_usd": 4000000.0,
+       "largest_amount_usd": 16200000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4000000.0,
+       "median_amount_usd": 4000000.0,
+       "largest_amount_usd": 4000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 7,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 15173525.0,
+       "median_amount_usd": 1387500.0,
+       "largest_amount_usd": 6100000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 5,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 9930000.0,
+       "median_amount_usd": 1830000.0,
+       "largest_amount_usd": 6000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 7,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 20248000.0,
+       "median_amount_usd": 3690000.0,
+       "largest_amount_usd": 4500000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.086,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.09
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Plug and Play",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "plug and play"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "84be68f859daa6eb",
+       "company_name": "Nawy Real Estate",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Partech Africa",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "e& Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "march capital",
+         "domain": "marchcp.com",
+         "amount": null
+        },
+        {
+         "name": "Verod-Kepple Africa Ventures (VKAV)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Development Partners International’s Nclude Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "shorooq partners",
+         "domain": "shorooq.com",
+         "amount": null
+        },
+        {
+         "name": "venturesouq",
+         "domain": "venturesouq.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "Outliers VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hof capital",
+         "domain": "hofcapital.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play tech center",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "Real Estate Technology",
+       "country": "Egypt",
+       "city": "Cairo",
+       "use_of_funds": "Scale Nawy’s operations across North Africa, enhance AI-driven tech stack, and expand into new markets including Morocco",
+       "source_sentence": "Transaction Summary Nawy Real Estate (Nawy), an Egyptian property technology platform, raised $75 million through Series A equity and debt financing.",
+       "published_at": "2025-05-13T11:39:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03ff919c4aac09353c9b65"
+       ],
+       "article_id": "6a03ff919c4aac09353c9b65"
+      },
+      {
+       "id": "e2ce33959acfcf5b",
+       "company_name": "nawy",
+       "domain": "nawy.com",
+       "round_type": "Series A",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Partech Africa",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Development Partners International’s Nclude Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "e& Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "hof capital",
+         "domain": "hofcapital.com",
+         "amount": null
+        },
+        {
+         "name": "March Capital Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "outliers",
+         "domain": "outliers.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "shorooq partners",
+         "domain": "shorooq.com",
+         "amount": null
+        },
+        {
+         "name": "venturesouq",
+         "domain": "venturesouq.com",
+         "amount": null
+        },
+        {
+         "name": "Verod-Kepple Africa Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Egypt’s top banks",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Proptech",
+       "country": "Egypt",
+       "city": null,
+       "use_of_funds": "Expand beyond Egypt into North Africa and the broader Middle East, support ongoing product development, and drive the integration of AI across its operations",
+       "source_sentence": "Africa’s leading proptech platform, Nawy raises $52 million in Series A funding, led by Partech Africa—a venture capital firm focused on the continent. This funding round also includes $23 million in debt financing from Egypt’s top banks, pushing the total to $75 million—making it one of the largest Series A rounds ever for an African startup.",
+       "published_at": "2025-05-12T06:56:29",
+       "coverage_count": 4,
+       "article_ids": [
+        "68d0fcefdc3d3099e62ca815",
+        "698ec30f9ca02490ec144121",
+        "698fe51d8d29a990b60529dc",
+        "69bc21b9a3b9608a9aecba30"
+       ],
+       "article_id": "698fe51d8d29a990b60529dc"
+      },
+      {
+       "id": "da7dca4858d1c2b6",
+       "company_name": "nawy",
+       "domain": "nawy.com",
+       "round_type": "Series A",
+       "amount_usd": 52000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 52000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "DPI Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "partech",
+         "domain": "partechpartners.com",
+         "amount": null
+        },
+        {
+         "name": "e&",
+         "domain": "eand.com",
+         "amount": null
+        },
+        {
+         "name": "March Capital Investments (MCI)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Verod-Kepple Africa Ventures (VKAV)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "venturesouq",
+         "domain": "venturesouq.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "shorooq partners",
+         "domain": "shorooq.com",
+         "amount": null
+        },
+        {
+         "name": "outliers",
+         "domain": "outliers.com",
+         "amount": null
+        },
+        {
+         "name": "hof capital",
+         "domain": "hofcapital.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "real estate",
+       "country": "Egypt",
+       "city": "Cairo",
+       "use_of_funds": "scale operations in Egypt, expand into new MENA markets, enhance AI-driven technology stack, and accelerate the growth of its licensed mortgage vertical",
+       "source_sentence": "DPI Venture Capital, the venture capital platform of Development Partners International (DPI), has participated via the Nclude Fund in Nawy’s $52 million Series A funding round, supporting the company’s mission to transform real estate access and unlock new growth opportunities across the Middle East and Africa.",
+       "published_at": "2025-05-12T08:33:07",
+       "coverage_count": 2,
+       "article_ids": [
+        "6997175233af8f1ff8a2fb11",
+        "69e28cdad754bf662cd2fea3"
+       ],
+       "article_id": "69e28cdad754bf662cd2fea3"
+      },
+      {
+       "id": "41c81ebb8df9ad71",
+       "company_name": "nawy",
+       "domain": "nawy.com",
+       "round_type": "Series A equity",
+       "amount_usd": 52000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 52000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "partech",
+         "domain": "partechpartners.com",
+         "amount": null
+        },
+        {
+         "name": "e& capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "March Capital Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Verod-Kepple Africa Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "DPI (via Nclude)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "venturesouq",
+         "domain": "venturesouq.com",
+         "amount": null
+        },
+        {
+         "name": "outliers",
+         "domain": "outliers.com",
+         "amount": null
+        },
+        {
+         "name": "hof capital",
+         "domain": "hofcapital.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "shorooq partners",
+         "domain": "shorooq.com",
+         "amount": null
+        }
+       ],
+       "sector": "proptech",
+       "country": "Egypt",
+       "city": "Cairo",
+       "use_of_funds": "scale operations across MENA, enhance AI capabilities, revolutionize real estate services",
+       "source_sentence": "Nawy raised USD 52M in Series A equity led by Partech, plus USD 23M in debt to scale across MENA.",
+       "published_at": "2025-05-12T05:10:54",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c5d57bd7fe179be1caf52c",
+        "698d83869ca02490ecfc7166"
+       ],
+       "article_id": "698d83869ca02490ecfc7166"
+      },
+      {
+       "id": "c6816489638f0043",
+       "company_name": "nawy",
+       "domain": "nawy.com",
+       "round_type": "Series A",
+       "amount_usd": 52000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 52000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "partech ventures",
+         "domain": "partechventures.com",
+         "amount": null
+        },
+        {
+         "name": "e& capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "March Capital Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Verod-Kepple Africa Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "nclude",
+         "domain": "nclude.com",
+         "amount": null
+        },
+        {
+         "name": "venturesouq",
+         "domain": "venturesouq.com",
+         "amount": null
+        },
+        {
+         "name": "outliers",
+         "domain": "outliers.com",
+         "amount": null
+        },
+        {
+         "name": "hof capital",
+         "domain": "hofcapital.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "shorooq partners",
+         "domain": "shorooq.com",
+         "amount": null
+        }
+       ],
+       "sector": "Proptech, real‑estate services",
+       "country": "Egypt",
+       "city": "Cairo",
+       "use_of_funds": "Support its “Move Now, Pay Later” scheme and expand beyond Egypt into Saudi Arabia, Morocco, and the UAE",
+       "source_sentence": "Nawy, the Egypt-based proptech, has raised USD 52 million in a series A funding round, alongside an additional USD 23 million in debt financing from Egypt-based banks.",
+       "published_at": "2025-05-12T00:00:00",
+       "coverage_count": 9,
+       "article_ids": [
+        "6898cd782f01d48cd3fcfc77",
+        "698ce5ab9ca02490ecf0c6c7",
+        "698f20a19ca02490ec1b4955",
+        "69bb00a4c9a954196de08af6",
+        "69bb078feec96a7343009280",
+        "69cbe328c3c72beece9170f1",
+        "69db6d1dc046ed139388f9e6",
+        "69dfb2b8f2a6294de7f768d5",
+        "69e35c4544a7294eaacd547e"
+       ],
+       "article_id": "69db6d1dc046ed139388f9e6"
+      },
+      {
+       "id": "2b0fcddcf4924052",
+       "company_name": "bitstack",
+       "domain": "bitstack-app.com",
+       "round_type": "Series A",
+       "amount_usd": 16200000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "13books Capital",
+         "domain": "13bookscapital.com",
+         "amount": null
+        },
+        {
+         "name": "ag2r la mondiale",
+         "domain": "ag2rlamondiale.fr",
+         "amount": null
+        },
+        {
+         "name": "plug and play ventures",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "serena",
+         "domain": "serena.vc",
+         "amount": null
+        },
+        {
+         "name": "stillmark",
+         "domain": "stillmark.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech (Bitcoin)",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "Accelerate European expansion and launch first Visa debit card",
+       "source_sentence": "Bitstack raises €15M to accelerate its European expansion and launches its first Visa debit card.",
+       "published_at": "2025-12-15T12:14:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a5514e0667c07f27914c"
+       ],
+       "article_id": "69c3a5514e0667c07f27914c"
+      },
+      {
+       "id": "43c4905df0f7a06f",
+       "company_name": "kota",
+       "domain": "kota.com",
+       "round_type": "Series A",
+       "amount_usd": 14500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eurazeo",
+         "domain": "eurazeo.com",
+         "amount": null
+        },
+        {
+         "name": "eqt ventures",
+         "domain": "eqtventures.com",
+         "amount": null
+        },
+        {
+         "name": "northzone",
+         "domain": "northzone.com",
+         "amount": null
+        },
+        {
+         "name": "frontline ventures",
+         "domain": "frontline.vc",
+         "amount": null
+        },
+        {
+         "name": "9yards",
+         "domain": "9yards.nl",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "Employee Health Insurance and Benefits Platform",
+       "country": "Ireland",
+       "city": "Dublin",
+       "use_of_funds": "expanding its teams, building insurance partnerships and extending consumer reach",
+       "source_sentence": "Irish insurance and employee benefits platform Kota has announced a raised of $14.5m in a Series A funding round, bringing its total raise to nearly $23m.",
+       "published_at": "2025-05-22T02:49:50",
+       "coverage_count": 9,
+       "article_ids": [
+        "6898b02aab03b1b156e2cdff",
+        "6898b6f9ace6dc7b1fc3a3a6",
+        "68d0f78d91b46c685a2c48b9",
+        "68d961618b9b1745e612e3d2",
+        "68d988861645babb987e34de",
+        "6988a407eefc5d2f542ba183",
+        "698cbdb79ca02490ecedfbdd",
+        "698db5cc8d29a990b6db979d",
+        "698f763e9ca02490ec2189c2"
+       ],
+       "article_id": "6898b6f9ace6dc7b1fc3a3a6"
+      },
+      {
+       "id": "c6dc9926c4fa52ee",
+       "company_name": "certivity",
+       "domain": "certivity.io",
+       "round_type": "Series A",
+       "amount_usd": 14364000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 13300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "almaz capital",
+         "domain": "almazcapital.com",
+         "amount": null
+        },
+        {
+         "name": "uvc partners",
+         "domain": "uvcpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Earlybird X",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "High-Tech Gründerfonds (HTGF)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "RegTech",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "enhance its platform’s AI capabilities, broaden regulatory coverage, deepen integrations, expand its team, and accelerate entry into new industries and international markets",
+       "source_sentence": "Certivity, a Munich, Germany-based RegTech software solutions provider, has raised €13.3 million in Series A funding.",
+       "published_at": "2025-08-12T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988debd94d3f481f3db0aee"
+       ],
+       "article_id": "6988debd94d3f481f3db0aee"
+      },
+      {
+       "id": "b80816180082904f",
+       "company_name": "certivity",
+       "domain": "certivity.io",
+       "round_type": "Series A",
+       "amount_usd": 14364000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 13300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "almaz capital",
+         "domain": "almazcapital.com",
+         "amount": null
+        },
+        {
+         "name": "uvc partners",
+         "domain": "uvcpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Earlybird X",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "High-Tech Gründerfonds (HTGF)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "RegTech",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "speed up its go-to-market strategy, enhance product development, and expand into new industries and global markets",
+       "source_sentence": "Certivity, a RegTech company based in Munich, Germany, developing an AI-powered platform for managing technical compliance, has raised €13.3 million in Series A funding.",
+       "published_at": "2025-08-11T10:13:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988b008afe26ce3df67a006",
+        "69cba7aa4edcd0af9c841624"
+       ],
+       "article_id": "6988b008afe26ce3df67a006"
+      },
+      {
+       "id": "36f5fcff99faa67d",
+       "company_name": "chari",
+       "domain": "chari.com",
+       "round_type": "Series A",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spe capital",
+         "domain": "spe-capital.com",
+         "amount": null
+        },
+        {
+         "name": "Orange Ventures",
+         "domain": "ventures.orange.com",
+         "amount": null
+        },
+        {
+         "name": "Verod-Kepple",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "global founders capital",
+         "domain": "globalfounderscapital.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "Pincus Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Al Khwarizmi Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "um6p ventures",
+         "domain": "um6pventures.com",
+         "amount": null
+        },
+        {
+         "name": "Axian Group",
+         "domain": "axian-group.com",
+         "amount": null
+        },
+        {
+         "name": "uncovered fund",
+         "domain": "uncoveredfund.com",
+         "amount": null
+        },
+        {
+         "name": "AfriMobility",
+         "domain": "afrimobility.com",
+         "amount": null
+        },
+        {
+         "name": "p1 ventures",
+         "domain": "p1.ventures",
+         "amount": null
+        },
+        {
+         "name": "reflect ventures",
+         "domain": "reflectventures.com",
+         "amount": null
+        },
+        {
+         "name": "dragon capital",
+         "domain": "dragoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "myasia vc",
+         "domain": "myasiavc.com",
+         "amount": null
+        },
+        {
+         "name": "Harambean Prosperity Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "H&S Invest Holding",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech, E-commerce",
+       "country": "Morocco",
+       "city": "Casablanca",
+       "use_of_funds": "Scale operations regionally and broaden its product set to include embedded fintech features for corporates and startups",
+       "source_sentence": "Chari, the Moroccan startup supported by Y Combinator and founded in 2020 by the couple Ismael Belkhayat and Sophia Alj, announces a fundraising of $12 million in Series A, the most important of this type in Morocco.",
+       "published_at": "2025-10-15T10:00:38",
+       "coverage_count": 16,
+       "article_ids": [
+        "68fe1f3a41f75f6827281596",
+        "68fe20d341f75f68272845e2",
+        "6989320e94d3f481f3e10021",
+        "698cbc5f8d29a990b6c943ef",
+        "698cc617b58ff92da7541796",
+        "698cd28e8d29a990b6cace75",
+        "698d77048d29a990b6d70a6c",
+        "698f84f58d29a990b6fe2bce",
+        "6991c3d4c659adee96838f56",
+        "69baef52c08180591b8172e9",
+        "69bafec288dbabbbb7c7dfdf",
+        "69bb00bad7b120f5da0314e2",
+        "69bc3015edbbccf9199e99d0",
+        "69dfb2d9a8835284b0419f07",
+        "69e1f0b1c25f02fb0ea00f6a",
+        "69f9d4e1a088760d34bf4457"
+       ],
+       "article_id": "69bc3015edbbccf9199e99d0"
+      },
+      {
+       "id": "fb8c49ee33174006",
+       "company_name": "vuz",
+       "domain": "vuz.com",
+       "round_type": "Pre-Series C",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "international finance corporation",
+         "domain": "ifc.org",
+         "amount": null
+        },
+        {
+         "name": "Al Jazira Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Crosswork VC Success Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "e& capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kbw ventures",
+         "domain": "kbw-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "srmg ventures",
+         "domain": "srmg.vc",
+         "amount": null
+        },
+        {
+         "name": "Vision Fund",
+         "domain": "visionfund.org",
+         "amount": null
+        },
+        {
+         "name": "caruso ventures",
+         "domain": "carusoventures.com",
+         "amount": null
+        },
+        {
+         "name": "shorooq partners",
+         "domain": "shorooq.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play ventures",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "hala ventures",
+         "domain": "halavc.com",
+         "amount": null
+        }
+       ],
+       "sector": "immersive media platform",
+       "country": "Saudi Arabia",
+       "city": null,
+       "use_of_funds": "accelerate global expansion and product development in immersive live streaming, AI-powered content delivery, and spatial media experiences",
+       "source_sentence": "Vuz, the immersive media platform, has announced a strategic investment from the International Finance Corporation (IFC), a member of the World Bank Group, as part of its $12m Pre-Series C funding round.",
+       "published_at": "2025-05-19T10:34:01",
+       "coverage_count": 3,
+       "article_ids": [
+        "698ce4158d29a990b6cc0a99",
+        "698fc5b78d29a990b602d4c1",
+        "69bb647eb54f2a520bb6ab5f"
+       ],
+       "article_id": "69bb647eb54f2a520bb6ab5f"
+      },
+      {
+       "id": "1bcfa32684c017cc",
+       "company_name": "queens carbon",
+       "domain": "queenscarbon.com",
+       "round_type": "seed",
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "clean energy venture group",
+         "domain": "cevg.com",
+         "amount": null
+        },
+        {
+         "name": "Buzzi Unicem USA",
+         "domain": "buzziunicemusa.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cement technology, construction materials",
+       "country": "USA",
+       "city": "Pine Brook",
+       "use_of_funds": "Scale energy‑efficient cement platform, expand team and operations, build 2,000‑ton‑per‑year pilot facility",
+       "source_sentence": "Queens Carbon, a developer of next‑generation cement technology, announced it has secured $10 million in seed funding to scale its platform for energy‑efficient cement and supplementary cementitious materials (SCMs).",
+       "published_at": "2025-05-06T10:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bae24bd7b120f5da02a798"
+       ],
+       "article_id": "69bae24bd7b120f5da02a798"
+      },
+      {
+       "id": "b4ad7b5b9815ae74",
+       "company_name": "Lyzr",
+       "domain": "lyzr.ai",
+       "round_type": "Series A",
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accenture",
+         "domain": "accenture.com",
+         "amount": null
+        },
+        {
+         "name": "firstsource",
+         "domain": "firstsource.com",
+         "amount": null
+        },
+        {
+         "name": "GFT Ventures",
+         "domain": "gft.vc",
+         "amount": null
+        },
+        {
+         "name": "plug and play tech center",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "BGV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Partnership Fund for New York City",
+         "domain": "partnershipfundnyc.org",
+         "amount": null
+        },
+        {
+         "name": "arka",
+         "domain": "arka.com",
+         "amount": null
+        },
+        {
+         "name": "Rocketship.vc",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure, enterprise software",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Advance platform capabilities, expand partnerships, and support enterprise adoption across global markets",
+       "source_sentence": "Lyzr, the enterprise agentic AI infrastructure company, announced that it has raised an $8 million Series A round led by Rocketship.vc.",
+       "published_at": "2025-11-06T10:46:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "6914807b39bc74e04435b919"
+       ],
+       "article_id": "6914807b39bc74e04435b919"
+      },
+      {
+       "id": "c8be2a9a24e69288",
+       "company_name": "Lyzr",
+       "domain": "lyzr.ai",
+       "round_type": "Series A",
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rocketship",
+         "domain": "rocketship.vc",
+         "amount": null
+        },
+        {
+         "name": "GFT Ventures",
+         "domain": "gft.vc",
+         "amount": null
+        },
+        {
+         "name": "firstsource",
+         "domain": "firstsource.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play tech center",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "BGV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Partnership Fund for New York City",
+         "domain": "partnershipfundnyc.org",
+         "amount": null
+        },
+        {
+         "name": "arka",
+         "domain": "arka.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "Jersey City",
+       "use_of_funds": null,
+       "source_sentence": "Accenture’s venture investment arm was part of the $8 million Series A funding round for Lyzr, a Jersey City, NJ-based provider of enterprise agentic AI infrastructure.",
+       "published_at": "2025-10-30T11:20:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "698d5fb49ca02490ecf9ebdb",
+        "69c3a285c8a71dc7ae87a059"
+       ],
+       "article_id": "698d5fb49ca02490ecf9ebdb"
+      },
+      {
+       "id": "a04afabf7198b154",
+       "company_name": "hirundo",
+       "domain": "hirundo.es",
+       "round_type": "seed",
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "maverick ventures israel",
+         "domain": "maverick.vc",
+         "amount": null
+        },
+        {
+         "name": "SuperSeed",
+         "domain": "superseed.com",
+         "amount": null
+        },
+        {
+         "name": "alpha intelligence capital",
+         "domain": "aicapital.ai",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI / machine learning",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": "Building a machine unlearning platform to help enterprise AI systems forget sensitive or outdated data.",
+       "source_sentence": "Hirundo, which closed an $8 million seed round led by Maverick Ventures Israel, with participation from SuperSeed, Alpha Intelligence Capital, and Plug and Play. The company is building a machine unlearning platform.",
+       "published_at": "2025-06-13T10:28:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e29669ca02490ec08be07"
+       ],
+       "article_id": "698e29669ca02490ec08be07"
+      },
+      {
+       "id": "c461905a422bc981",
+       "company_name": "hirundo",
+       "domain": "hirundo.es",
+       "round_type": "Seed",
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "SuperSeed",
+         "domain": "superseed.com",
+         "amount": null
+        },
+        {
+         "name": "alpha intelligence capital",
+         "domain": "aicapital.ai",
+         "amount": null
+        },
+        {
+         "name": "Tachles VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "AI.FUND",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play tech center",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "Technology",
+       "country": "Israel",
+       "city": "Tel Aviv",
+       "use_of_funds": "Develop and commercialize proprietary machine unlearning technologies",
+       "source_sentence": "Hirundo, a Tel Aviv, Israel-based company developing industry-first solutions to \"make AI forget\" hallucinations, biases, and vulnerabilities, has raised $8 million in seed funding.",
+       "published_at": "2025-06-10T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698df1bf9ca02490ec0495ac"
+       ],
+       "article_id": "698df1bf9ca02490ec0495ac"
+      },
+      {
+       "id": "e99d59bbada0e454",
+       "company_name": "Myriad AI",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 7800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7800000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Category Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "long journey ventures",
+         "domain": "longjourney.vc",
+         "amount": null
+        },
+        {
+         "name": "10vc",
+         "domain": "10vc.com",
+         "amount": null
+        },
+        {
+         "name": "n1 ventures",
+         "domain": "n1ventures.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play tech center",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Breakwater VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Caesar VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "BD Partners",
+         "domain": "bdpartners.cz",
+         "amount": null
+        },
+        {
+         "name": "Preston-Werner Ventures",
+         "domain": "prestonwernerventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise Software / Regulatory Compliance / AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its engineering team in the EU and the US, accelerate global go-to-market activities, and advance its AI development.",
+       "source_sentence": "Myriad AI, a San Francisco- and Prague-based startup specializing in automating regulatory compliance for enterprises, has raised $7.8 million in a Seed funding round.",
+       "published_at": "2025-09-18T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cbd379ca02490ecedf243"
+       ],
+       "article_id": "698cbd379ca02490ecedf243"
+      },
+      {
+       "id": "0ffc353aab1c0b02",
+       "company_name": "Traini",
+       "domain": "traini.mystrikingly.com",
+       "round_type": "seed",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Banyan Tree",
+         "domain": "banyantree.com",
+         "amount": null
+        },
+        {
+         "name": "Silver Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ZhaoTai Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "NYX Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Starting Gate Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jade capital",
+         "domain": "en.jadecap.cn",
+         "amount": null
+        },
+        {
+         "name": "NVIDIA technical VPs",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Weihe Zheng of Cowin Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jia He of Nanshan Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Peter Xu of Plug and Play China",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Zach Zhang of Edgewater Investments",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "pet emotional intelligence AI",
+       "country": null,
+       "city": "Palo Alto",
+       "use_of_funds": "funds will advance R&D, product iteration, and market expansion",
+       "source_sentence": "Traini, a Palo Alto-based pet emotional intelligence startup, has raised $7.5 million to develop its real-time human-dog conversational AI technology.",
+       "published_at": "2025-12-30T04:22:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd88dcfa79fa6ed8bd44e8"
+       ],
+       "article_id": "69bd88dcfa79fa6ed8bd44e8"
+      },
+      {
+       "id": "cdcfcc40b52afb53",
+       "company_name": "VAUDIT",
+       "domain": "vaudit.es",
+       "round_type": "seed",
+       "amount_usd": 7300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mucker capital",
+         "domain": "mucker.com",
+         "amount": null
+        },
+        {
+         "name": "avv",
+         "domain": "avv.com",
+         "amount": null
+        },
+        {
+         "name": "appworks",
+         "domain": "appworks.tw",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Kyber Knight",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AdTech",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "accelerate the development of its agentic workflows and refine AI models to detect anomalies in ad spend",
+       "source_sentence": "Vaudit, formerly BlokID, announced the successful closing of a $7.3 million seed round of financing led by Mucker Capital, with participation from AVV, AppWorks, Plug and Play, and Kyber Knight.",
+       "published_at": "2025-07-28T10:07:44",
+       "coverage_count": 2,
+       "article_ids": [
+        "690e39662a5f111a94244c19",
+        "69bb6c9785c39bb46c6fe6d1"
+       ],
+       "article_id": "69bb6c9785c39bb46c6fe6d1"
+      },
+      {
+       "id": "dc6eabce7283db12",
+       "company_name": "Atomic Canyon",
+       "domain": "atomic-canyon.com",
+       "round_type": "Seed/Funding round",
+       "amount_usd": 7000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Energy Impact Partners – Elevate Future Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Commonweal Ventures",
+         "domain": "commonwealventures.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play ventures",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "wischoff ventures",
+         "domain": "wischoff.com",
+         "amount": null
+        },
+        {
+         "name": "Tower Research Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "angels",
+         "domain": "angelscafe.co.za",
+         "amount": null
+        }
+       ],
+       "sector": "energy AI / nuclear",
+       "country": "USA",
+       "city": "San Luis Obispo",
+       "use_of_funds": "accelerate deployments of AI platform and support product development",
+       "source_sentence": "Atomic Canyon, a San Luis Obispo, CA-based startup, has raised $7 million to advance its AI-powered document search and generative platform for nuclear power plants.",
+       "published_at": "2025-05-29T22:18:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "690e3093db65e9a9d024a022"
+       ],
+       "article_id": "690e3093db65e9a9d024a022"
+      },
+      {
+       "id": "bbbcb56f18942ec7",
+       "company_name": "Airrived",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 6100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Cannage Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play ventures",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Rebellion Ventures",
+         "domain": "rebellionvc.com",
+         "amount": null
+        },
+        {
+         "name": "inner loop capital",
+         "domain": "innerloopcap.com",
+         "amount": null
+        },
+        {
+         "name": "Manoj Apte",
+         "domain": "https://www.linkedin.com/in/manojapte/",
+         "amount": null
+        },
+        {
+         "name": "Mahendra Ramsinghani",
+         "domain": "https://www.linkedin.com/in/mahendraram/",
+         "amount": null
+        },
+        {
+         "name": "Saqib E. Awan",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "enterprise cybersecurity, IT, agentic AI",
+       "country": "USA",
+       "city": "DUBLIN",
+       "use_of_funds": "Accelerate product development, scale deployments across large enterprises, expand go-to-market efforts, and further build out the Agentic OS as a foundational layer for enterprise intelligence.",
+       "source_sentence": "Airrived announced its launch from stealth, backed by $6.1 million in seed funding, to bring agentic AI to the core of enterprise cybersecurity, IT, and business operations. The round was led by Cannage Capital, with participation from Plug and Play Ventures, Rebellion Ventures, and Inner Loop Capital, alongside strategic investments from cybersecurity veterans Manoj Apte, Mahendra Ramsinghani, and Saqib E. Awan.",
+       "published_at": "2026-02-05T11:45:09",
+       "coverage_count": 4,
+       "article_ids": [
+        "6985ffeb11e3205ec98f1404",
+        "69bafa17b7032a7d5ce00695",
+        "69bb62e09153720f4d7337b0",
+        "69c8972af0008e738c5d37a9"
+       ],
+       "article_id": "6985ffeb11e3205ec98f1404"
+      },
+      {
+       "id": "cc9f85ba76d5bf7b",
+       "company_name": "artemis",
+       "domain": "artemislp.com",
+       "round_type": null,
+       "amount_usd": 6000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "long journey ventures",
+         "domain": "longjourney.vc",
+         "amount": null
+        },
+        {
+         "name": "Copec WIND Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ludlow ventures",
+         "domain": "ludlowventures.com",
+         "amount": null
+        },
+        {
+         "name": "shrug capital",
+         "domain": "shrug.vc",
+         "amount": null
+        },
+        {
+         "name": "coalition operators",
+         "domain": "coalitionoperators.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play ventures",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "fj labs",
+         "domain": "fjlabs.com",
+         "amount": null
+        },
+        {
+         "name": "Tribeca Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "palm tree crew",
+         "domain": "palmtreecrew.com",
+         "amount": null
+        },
+        {
+         "name": "Scott Banister",
+         "domain": "http://www.linkedin.com/in/banister",
+         "amount": null
+        }
+       ],
+       "sector": "Distributed energy software",
+       "country": "United States",
+       "city": "Houston",
+       "use_of_funds": "Engineering and product development",
+       "source_sentence": "Houston-based Artemis, previously operating as Monalee, secured $6 million in a funding round to expand its software platform for the distributed energy sector.",
+       "published_at": "2026-03-05T14:52:16",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bced8dec94907df10e6e4a",
+        "69cbd1b631f507d55385aada"
+       ],
+       "article_id": "69bced8dec94907df10e6e4a"
+      },
+      {
+       "id": "9418a4c3e322e688",
+       "company_name": "artemis",
+       "domain": "artemislp.com",
+       "round_type": null,
+       "amount_usd": 6000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "long journey ventures",
+         "domain": "longjourney.vc",
+         "amount": null
+        },
+        {
+         "name": "Copec WIND Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ludlow ventures",
+         "domain": "ludlowventures.com",
+         "amount": null
+        },
+        {
+         "name": "shrug capital",
+         "domain": "shrug.vc",
+         "amount": null
+        },
+        {
+         "name": "coalition operators",
+         "domain": "coalitionoperators.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play ventures",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "fj labs",
+         "domain": "fjlabs.com",
+         "amount": null
+        },
+        {
+         "name": "Tribeca Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "palm tree crew",
+         "domain": "palmtreecrew.com",
+         "amount": null
+        },
+        {
+         "name": "Scott Banister",
+         "domain": "http://www.linkedin.com/in/banister",
+         "amount": null
+        }
+       ],
+       "sector": "Distributed Energy Software",
+       "country": "USA",
+       "city": "Houston",
+       "use_of_funds": "accelerate product development, expand customer support, and scale go-to-market operations",
+       "source_sentence": "Artemis (formerly Monalee) today announced it has closed a $6 million financing round co‑led by Long Journey and Copec WIND Ventures and joining Ludlow Ventures, Shrug Capital, Coalition Operators , Plug and Play Ventures, FJ Labs, Tribeca Ventures, Palm Tree Crew, and Scott Banister.",
+       "published_at": "2026-03-04T14:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8c8765cfa3e5ba53aba9e"
+       ],
+       "article_id": "69e8c8765cfa3e5ba53aba9e"
+      },
+      {
+       "id": "5d00a393f6cd5788",
+       "company_name": "MarvelX",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 6000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eqt ventures",
+         "domain": "eqtventures.com",
+         "amount": null
+        },
+        {
+         "name": "Jobi George",
+         "domain": "https://www.linkedin.com/in/jobigeorge",
+         "amount": null
+        },
+        {
+         "name": "Keith Grose",
+         "domain": "https://www.linkedin.com/in/keithgrose",
+         "amount": null
+        },
+        {
+         "name": "Yana Abramova",
+         "domain": "https://www.linkedin.com/in/yana-abramova/",
+         "amount": null
+        },
+        {
+         "name": "Humphrey Valenbreder",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mehdi Ghissassi",
+         "domain": "https://www.linkedin.com/in/mghissassi",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurance",
+       "country": "Netherlands",
+       "city": null,
+       "use_of_funds": "accelerate product development, expand its team of AI engineers and insurance domain experts, and scale its platform across Europe and beyond",
+       "source_sentence": "Today, it announced a $6 million funding round led by EQT Ventures and the launch of ClaimOS MaX.",
+       "published_at": "2025-05-13T07:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d989fa94c916e3e07e49d9",
+        "69bafaf5acefda883e44031e"
+       ],
+       "article_id": "69bafaf5acefda883e44031e"
+      },
+      {
+       "id": "3a8c491a8b8cff76",
+       "company_name": "axiology",
+       "domain": "axiologybeauty.com",
+       "round_type": "seed",
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Exponential Science",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "e2vc",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "coinvest capital",
+         "domain": "coinvestcapital.com.br",
+         "amount": null
+        },
+        {
+         "name": "TIBAS Ventures",
+         "domain": "tibasventures.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "BSV Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "NGL Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "capital market infrastructure",
+       "country": "Lithuania",
+       "city": "Vilnius",
+       "use_of_funds": "Launch tokenized investment services under the EU DLT pilot regime and accelerate go‑to‑market strategy",
+       "source_sentence": "The capital market infrastructure provider Axiology has received seed financing of EUR 5 million to introduce new tokenized investment services under the EU DLT pilot regime.",
+       "published_at": "2026-02-06T06:45:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988fd9c94d3f481f3dd5695",
+        "6989557a94d3f481f3e3cdbf"
+       ],
+       "article_id": "6989557a94d3f481f3e3cdbf"
+      },
+      {
+       "id": "85be7f5fe4f4f5eb",
+       "company_name": "axiology",
+       "domain": "axiologybeauty.com",
+       "round_type": "seed",
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Exponential Science",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "e2vc",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "coinvest capital",
+         "domain": "coinvestcapital.com.br",
+         "amount": null
+        },
+        {
+         "name": "TIBAS Ventures",
+         "domain": "tibasventures.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "BSV Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "NGL Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Lithuania",
+       "city": "Vilnius",
+       "use_of_funds": "Expand tokenised securities capabilities, accelerate product expansion, deepen institutional collaborations and advance interoperability across Europe.",
+       "source_sentence": "Capital markets infrastructure provider Axiology, based in Vilnius, has raised €5 million in seed funding to expand its tokenised securities capabilities under the EU’s DLT Pilot Regime. The round was led by Exponential Science, e2vc, and Coinvest Capital, with fresh backing from TIBAS Ventures and Plug and Play. Previous supporters, including BSV Ventures and NGL Ventures, also participated, bringing Axiology’s total funding to €7 million.",
+       "published_at": "2026-02-04T08:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "6983a305e67557fb8553d094",
+        "698e6a669ca02490ec0d8c33",
+        "69baeeea0623092a924adfdf"
+       ],
+       "article_id": "69baeeea0623092a924adfdf"
+      },
+      {
+       "id": "1824b92380656343",
+       "company_name": "catena",
+       "domain": "catenafastigheter.se",
+       "round_type": "seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Shaper Capital",
+         "domain": "shapercap.com",
+         "amount": null
+        },
+        {
+         "name": "Teamworthy",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "springtime ventures",
+         "domain": "springtimeventures.com",
+         "amount": null
+        },
+        {
+         "name": "Liquid 2",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blue moon",
+         "domain": "bluemoon.com.cn",
+         "amount": null
+        },
+        {
+         "name": "Blue Impact Supply Chain Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "logistics",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "to accelerate product development, expand integrations with telematics and logistics data providers, and scale partnerships with brokers, insurers, shippers, and fintech firms",
+       "source_sentence": "The company announced it has raised a $5 million seed round led by Floating Point, with participation from Shaper Capital, Teamworthy, Plug and Play, SpringTime Ventures, Liquid 2, Blue Moon, and Blue Impact Supply Chain Ventures.",
+       "published_at": "2025-09-18T13:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d9b1f9c149d2bca77fb7ad",
+        "68fe301c606fcdbfff283c56"
+       ],
+       "article_id": "68d9b1f9c149d2bca77fb7ad"
+      },
+      {
+       "id": "4dc1cc95a1ff93e1",
+       "company_name": "infinity loop",
+       "domain": "infinityloop.co.jp",
+       "round_type": "seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Restive Ventures",
+         "domain": "restive.com",
+         "amount": null
+        },
+        {
+         "name": "several angels",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "contract intelligence",
+       "country": "US",
+       "city": "New York",
+       "use_of_funds": "Scale go‑to‑market operations",
+       "source_sentence": "Infinity Loop, a New York–based AI‑native contract intelligence platform, raised US$5 million in a seed round",
+       "published_at": "2025-08-16T17:22:50",
+       "coverage_count": 3,
+       "article_ids": [
+        "6988a435127162d16e0abf10",
+        "69cba7aa4edcd0af9c841624",
+        "69d124ab78e97f45a1a29df8"
+       ],
+       "article_id": "69d124ab78e97f45a1a29df8"
+      },
+      {
+       "id": "cde3c043fda53d50",
+       "company_name": "infinity loop",
+       "domain": "infinityloop.co.jp",
+       "round_type": "Seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "glasswing ventures",
+         "domain": "glasswing.vc",
+         "amount": null
+        },
+        {
+         "name": "TIAA Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Restive Ventures",
+         "domain": "restive.com",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Contract Intelligence / Procurement Optimization",
+       "country": "US",
+       "city": "New York",
+       "use_of_funds": "scale its go-to-market operations",
+       "source_sentence": "Infinity Loop has raised $5 million in a seed funding round.",
+       "published_at": "2025-08-15T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996b86a5fbe93703d5dfde1"
+       ],
+       "article_id": "6996b86a5fbe93703d5dfde1"
+      },
+      {
+       "id": "5c0890a3355ada64",
+       "company_name": "infinity loop",
+       "domain": "infinityloop.co.jp",
+       "round_type": "Seed Round",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "glasswing ventures",
+         "domain": "glasswing.vc",
+         "amount": null
+        },
+        {
+         "name": "TIAA Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Restive Ventures",
+         "domain": "restive.com",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate go-to-market expansion to meet rapidly growing enterprise demand",
+       "source_sentence": "Infinity Loop, the AI-native contract intelligence platform built to help enterprises save money on vendor contracts, announced it has raised a $5M Seed Round, led by Glasswing Ventures and TIAA Ventures, with participation from Plug and Play, Restive Ventures, and angel investors.",
+       "published_at": "2025-08-14T15:11:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d98e7359ff3bc3607e9787"
+       ],
+       "article_id": "68d98e7359ff3bc3607e9787"
+      },
+      {
+       "id": "559194f9eda944e1",
+       "company_name": "Vibranium Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 4600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "calibrate ventures",
+         "domain": "calibratevc.com",
+         "amount": null
+        },
+        {
+         "name": "mirae asset",
+         "domain": "miraeasset.co.id",
+         "amount": null
+        },
+        {
+         "name": "franklin templeton",
+         "domain": "franklintempletonindia.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "gaingels",
+         "domain": "gaingels.com",
+         "amount": null
+        },
+        {
+         "name": "Wildcard Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "falconx",
+         "domain": "falconx.io",
+         "amount": null
+        },
+        {
+         "name": "dcg",
+         "domain": "dcg.net",
+         "amount": null
+        }
+       ],
+       "sector": "AI, Software, Incident Management",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "accelerate product innovation, expand engineering and go-to-market teams, and deepen partnerships in industries including finance, healthcare, media/entertainment, e-commerce/retail, and defense",
+       "source_sentence": "Vibranium Labs, a NYC-based provider of AI-powered incident management solutions that help on-call engineering and SRE teams proactively detect, triage, and resolve infrastructure issues in real time, raised $4.6m in seed funding.",
+       "published_at": "2025-12-29T12:01:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e85de57bb1410d4c70eb16"
+       ],
+       "article_id": "69e85de57bb1410d4c70eb16"
+      },
+      {
+       "id": "ce07b6e51e5eff8c",
+       "company_name": "Vibranium Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 4600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "calibrate ventures",
+         "domain": "calibratevc.com",
+         "amount": null
+        },
+        {
+         "name": "mirae asset",
+         "domain": "miraeasset.co.id",
+         "amount": null
+        },
+        {
+         "name": "a16z",
+         "domain": "a16z.com",
+         "amount": null
+        },
+        {
+         "name": "franklin templeton",
+         "domain": "franklintempletonindia.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "gaingels",
+         "domain": "gaingels.com",
+         "amount": null
+        },
+        {
+         "name": "Wildcard Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "falconx",
+         "domain": "falconx.io",
+         "amount": null
+        },
+        {
+         "name": "dcg",
+         "domain": "dcg.net",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "advancing product development, growing technical and sales teams, strengthening relationships with partners in finance, healthcare, media, e-commerce, and defense sectors",
+       "source_sentence": "The startup last Thursday announced $4.6 million in seed funding to scale Vibe AI, a 24/7 incident response platform built to handle those emergencies before humans log in.",
+       "published_at": "2025-09-23T16:01:10",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d96554bf1dd95b86134a93",
+        "68d9b307983a16828b7fcf31",
+        "693179ac8156ea3eaaf209aa"
+       ],
+       "article_id": "68d96554bf1dd95b86134a93"
+      },
+      {
+       "id": "30f6e1884f8de89b",
+       "company_name": "Vibranium Labs",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 4600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "calibrate ventures",
+         "domain": "calibratevc.com",
+         "amount": null
+        },
+        {
+         "name": "mirae asset",
+         "domain": "miraeasset.co.id",
+         "amount": null
+        },
+        {
+         "name": "a16z",
+         "domain": "a16z.com",
+         "amount": null
+        },
+        {
+         "name": "franklin templeton",
+         "domain": "franklintempletonindia.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "gaingels",
+         "domain": "gaingels.com",
+         "amount": null
+        },
+        {
+         "name": "Wildcard Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "falconx",
+         "domain": "falconx.io",
+         "amount": null
+        },
+        {
+         "name": "dcg",
+         "domain": "dcg.net",
+         "amount": null
+        },
+        {
+         "name": "other strategic investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered incident management / SRE / DevOps AI",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "accelerate product innovation, expand engineering and go-to-market teams, and strengthen partnerships across industries where uptime is mission-critical",
+       "source_sentence": "Vibranium Labs, a New York-based provider of AI-powered incident management solutions, has raised $4.6 million in seed funding.",
+       "published_at": "2025-09-19T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f70e7d017a8a94832bba5f",
+        "69bae27e6ae47bec695ed864"
+       ],
+       "article_id": "69bae27e6ae47bec695ed864"
+      },
+      {
+       "id": "b74cf3394d588ee2",
+       "company_name": "UnblockPay",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 4500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "prelude",
+         "domain": "prelude.co",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "wintermute",
+         "domain": "wintermute.com",
+         "amount": null
+        },
+        {
+         "name": "Signature Ventures",
+         "domain": "signatureventures.com",
+         "amount": null
+        },
+        {
+         "name": "stone",
+         "domain": "stone.co",
+         "amount": null
+        },
+        {
+         "name": "ifood",
+         "domain": "ifood.com.br",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "Strengthen regulatory and compliance framework, pursue stablecoin license, accelerate product development, and expand into Latin America and Asia",
+       "source_sentence": "UnblockPay raised $4.5 million in a seed round led by Prelude, with participation from Plug and Play, Wintermute, Signature Ventures, and angel investors from companies such as Stone and iFood.",
+       "published_at": "2026-04-03T09:30:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e28287277be6ed2d954e46"
+       ],
+       "article_id": "69e28287277be6ed2d954e46"
+      },
+      {
+       "id": "1fc63b7ad43408d8",
+       "company_name": "Nexxa.ai",
+       "domain": null,
+       "round_type": "Pre-Seed",
+       "amount_usd": 4400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "a16z Speedrun",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "augment ventures",
+         "domain": "augmentventures.com",
+         "amount": null
+        },
+        {
+         "name": "Propeller Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Beat Ventures",
+         "domain": "beatventures.com",
+         "amount": null
+        },
+        {
+         "name": "sbi",
+         "domain": "sbi.co.in",
+         "amount": null
+        },
+        {
+         "name": "untapped ventures",
+         "domain": "untapped.ventures",
+         "amount": null
+        },
+        {
+         "name": "Cross Atlantic Angels",
+         "domain": "crossatlanticangels.com",
+         "amount": null
+        },
+        {
+         "name": "Rick Berry",
+         "domain": "https://www.linkedin.com/in/rick-berry-343309",
+         "amount": null
+        },
+        {
+         "name": "Pat McCarthy",
+         "domain": "https://www.linkedin.com/in/patbss",
+         "amount": null
+        }
+       ],
+       "sector": "AI / Industrial Engineering / Intelligent Automation",
+       "country": "United States",
+       "city": "Sunnyvale",
+       "use_of_funds": "expand its engineering team, accelerate AI development, and scale into additional industrial sectors.",
+       "source_sentence": "Nexxa.ai, a Sunnyvale, CA-based AI-native company transforming how industrial engineers operate in digital environments, has raised $4.4 million in pre-seed funding.",
+       "published_at": "2025-07-22T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "698e15a09ca02490ec0732bb",
+        "69baef0088dbabbbb7c7a360"
+       ],
+       "article_id": "698e15a09ca02490ec0732bb"
+      },
+      {
+       "id": "abd91d132d36b4aa",
+       "company_name": "Nexxa.ai",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 4400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreesen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "augment ventures",
+         "domain": "augmentventures.com",
+         "amount": null
+        },
+        {
+         "name": "Propeller Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Beat Ventures",
+         "domain": "beatventures.com",
+         "amount": null
+        },
+        {
+         "name": "sbi",
+         "domain": "sbi.co.in",
+         "amount": null
+        },
+        {
+         "name": "untapped ventures",
+         "domain": "untapped.ventures",
+         "amount": null
+        },
+        {
+         "name": "Cross Atlantic Angels",
+         "domain": "crossatlanticangels.com",
+         "amount": null
+        },
+        {
+         "name": "Rick Berry",
+         "domain": "https://www.linkedin.com/in/rick-berry-343309",
+         "amount": null
+        },
+        {
+         "name": "Pat McCarthy",
+         "domain": "https://www.linkedin.com/in/patbss",
+         "amount": null
+        }
+       ],
+       "sector": "AI for heavy industries",
+       "country": "USA",
+       "city": "Sunnyvale",
+       "use_of_funds": "grow the company’s engineering resources and expand into more industries",
+       "source_sentence": "Nexxa.ai, an AI-native company working to transform how industrial engineers operate in digital environments, announced a $4.4 million pre-seed funding round.",
+       "published_at": "2025-07-21T08:00:11",
+       "coverage_count": 3,
+       "article_ids": [
+        "6898cd762f01d48cd3fc961a",
+        "6988ade7eefc5d2f542c0dba",
+        "69bc7071834bfa2337fb5c0c"
+       ],
+       "article_id": "6898cd762f01d48cd3fc961a"
+      },
+      {
+       "id": "5c4858e858d20398",
+       "company_name": "Predicti ApS",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 4200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tx ventures",
+         "domain": "tx.ventures",
+         "amount": null
+        },
+        {
+         "name": "dreamcraft ventures",
+         "domain": "dreamcraft.vc",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech / Predictive AI for Financial Services",
+       "country": "Denmark",
+       "city": "Aarhus",
+       "use_of_funds": "Expand across the Nordics and further develop its AI technology",
+       "source_sentence": "Predicti, an Aarhus, Denmark–based fintech specializing in AI-powered predictive insights for financial institutions, has raised $4.2 million in funding.",
+       "published_at": "2025-09-23T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69974070ce6c02cbf157f7c6"
+       ],
+       "article_id": "69974070ce6c02cbf157f7c6"
+      },
+      {
+       "id": "f382567e9ccae6b7",
+       "company_name": "Predicti",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 4200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tx ventures",
+         "domain": "tx.ventures",
+         "amount": null
+        },
+        {
+         "name": "dreamcraft ventures",
+         "domain": "dreamcraft.vc",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Denmark",
+       "city": "Aarhus",
+       "use_of_funds": "To accelerate growth and advance its AI platform, including the development of AI‑powered technology that enables financial institutions to anticipate customer needs before they arise.",
+       "source_sentence": "Danish fintech Predicti has secured $4.2 million in funding led by TX Ventures and Dreamcraft Ventures, with participation from Plug and Play, to accelerate growth and advance its AI platform.",
+       "published_at": "2025-09-22T12:30:55",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d981c759ff3bc3607dc09a",
+        "6996b79b5fbe93703d5df8d9"
+       ],
+       "article_id": "68d981c759ff3bc3607dc09a"
+      },
+      {
+       "id": "150a56a11dcc34b5",
+       "company_name": "omniscient",
+       "domain": "o8t.com",
+       "round_type": "pre‑seed",
+       "amount_usd": 4100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "MS&AD",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "raise",
+         "domain": "raise.co",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        }
+       ],
+       "sector": "Decision Intelligence",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "Replace fragmented intelligence tools",
+       "source_sentence": "Omniscient, the Paris‑based decision intelligence platform built for boards and senior executives, has raised $4.1 million in a pre‑seed round led by Seedcamp, with participation from Plug and Play, MS&AD, Raise, and Bpifrance, to replace the 150+ fragmented intelligence tools that large organisations currently manage.",
+       "published_at": "2026-04-05T08:29:40",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2ad233aab8d96aa34833c",
+        "69e2d9587f3a572cf4b6c5a3"
+       ],
+       "article_id": "69e2ad233aab8d96aa34833c"
+      },
+      {
+       "id": "f0f5d898892a7c69",
+       "company_name": "omniscient",
+       "domain": "o8t.com",
+       "round_type": "pre-seed",
+       "amount_usd": 4100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        },
+        {
+         "name": "Drysdale",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "MS&AD",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "raise",
+         "domain": "raise.co",
+         "amount": null
+        },
+        {
+         "name": "Anamcara",
+         "domain": "anamcaracapital.com",
+         "amount": null
+        },
+        {
+         "name": "xdeck",
+         "domain": "xdeck.de",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        }
+       ],
+       "sector": "decision intelligence platform",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "expand operations and development efforts",
+       "source_sentence": "Omniscient, a Paris, France-based provider of a decision intelligence platform built for boards and senior executives, raised $4.1M in pre-seed funding.",
+       "published_at": "2026-04-02T10:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d7a47bb1410d4ccbb96c"
+       ],
+       "article_id": "69e8d7a47bb1410d4ccbb96c"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 87,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDQtMDIgMTA6MDA6MDAiLCJrIjoiMTczNjMwMjIwODgwNDQ3MDY5MjEiLCJhIjo0MTAwMDAwLjB9",
+     "totals": {
+      "deals": 87,
+      "deals_with_amount": 73,
+      "deals_without_amount": 14,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 438238725.0,
+      "median_amount_usd": 4000000.0,
+      "largest_amount_usd": 75000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.209,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.212
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Plug and Play",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "plug and play"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "9b3e1a273cf4888d",
+       "company_name": "synaps",
+       "domain": "synaps.io",
+       "round_type": "pre-seed",
+       "amount_usd": 3600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Fil Rouge Capital",
+         "domain": "filrougecapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI design",
+       "country": "Austria",
+       "city": "Vienna",
+       "use_of_funds": null,
+       "source_sentence": "Five months later, Synaps is announcing a $3.6 million pre‑seed funding round from US‑based accelerator and VC Plug and Play, and Zagreb‑based Fil Rouge Capital.",
+       "published_at": "2026-04-30T07:31:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8854abbf1d31455990b53"
+       ],
+       "article_id": "69f8854abbf1d31455990b53"
+      },
+      {
+       "id": "eedeae5c9f2bdc5f",
+       "company_name": "OGold",
+       "domain": null,
+       "round_type": "Strategic Investment",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "plug and play ventures",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "United Arab Emirates",
+       "city": "Dubai",
+       "use_of_funds": "Product innovation, global rollout of the OGold App and Mastercard, expansion into international markets",
+       "source_sentence": "OGold has secured a strategic investment from Plug and Play Ventures",
+       "published_at": "2026-04-27T13:57:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e227836d28f995cb533b"
+       ],
+       "article_id": "69f0e227836d28f995cb533b"
+      },
+      {
+       "id": "9dd9c951943e2b1a",
+       "company_name": "Fermeate",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Newfund Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sosv",
+         "domain": "sosv.com",
+         "amount": null
+        },
+        {
+         "name": "Ajinomoto Group Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ki Tua Fund",
+         "domain": "kituafund.com",
+         "amount": null
+        },
+        {
+         "name": "Heuristic Capital Partners",
+         "domain": "heuristiccapital.com",
+         "amount": null
+        },
+        {
+         "name": "momentum capital",
+         "domain": "momentum-capital.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Tesserakt Ventures",
+         "domain": "tesserakt.ventures",
+         "amount": null
+        },
+        {
+         "name": "Ag Startup Engine",
+         "domain": "agstartupengine.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biomanufacturing",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "scale its technology and improve fermentation productivity",
+       "source_sentence": "Fermeate—a California-based startup using light to turbocharge cell productivity in biomanufacturing—has closed a $2 million seed round led by Newfund Capital.",
+       "published_at": "2026-04-27T13:00:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e45ed325610894208a18"
+       ],
+       "article_id": "69f0e45ed325610894208a18"
+      },
+      {
+       "id": "27024fe0ce0d7cf1",
+       "company_name": "Ralio",
+       "domain": null,
+       "round_type": "pre-Seed",
+       "amount_usd": 2268000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Seed X",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "love ventures",
+         "domain": "loveventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "rule30",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Adeline Arts and Science",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "endurance ventures",
+         "domain": "enduranceventures.com",
+         "amount": null
+        },
+        {
+         "name": "campus fund",
+         "domain": "yourcampusfund.com",
+         "amount": null
+        },
+        {
+         "name": "FinTech investor Alan Morgan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech, Payments",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "further develop its core platform and expand its engineering team in London; accelerate product development and ensure AI transacts within accountability framework",
+       "source_sentence": "Ralio, a London-based FinTech startup building a payments platform tailored for business AI agents, has announced a €2.1 million ($2.5 million) pre-Seed funding round to further develop its core platform and expand its engineering team in London.",
+       "published_at": "2026-04-13T00:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e6f58e0f1aa5003e105198",
+        "69e840b79baafc73566765fd",
+        "69e8c7825cfa3e5ba539f3bc",
+        "69e8cbae5cfa3e5ba53d5444"
+       ],
+       "article_id": "69e840b79baafc73566765fd"
+      },
+      {
+       "id": "150a56a11dcc34b5",
+       "company_name": "omniscient",
+       "domain": "o8t.com",
+       "round_type": "pre‑seed",
+       "amount_usd": 4100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "MS&AD",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "raise",
+         "domain": "raise.co",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        }
+       ],
+       "sector": "Decision Intelligence",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "Replace fragmented intelligence tools",
+       "source_sentence": "Omniscient, the Paris‑based decision intelligence platform built for boards and senior executives, has raised $4.1 million in a pre‑seed round led by Seedcamp, with participation from Plug and Play, MS&AD, Raise, and Bpifrance, to replace the 150+ fragmented intelligence tools that large organisations currently manage.",
+       "published_at": "2026-04-05T08:29:40",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2ad233aab8d96aa34833c",
+        "69e2d9587f3a572cf4b6c5a3"
+       ],
+       "article_id": "69e2ad233aab8d96aa34833c"
+      },
+      {
+       "id": "b74cf3394d588ee2",
+       "company_name": "UnblockPay",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 4500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "prelude",
+         "domain": "prelude.co",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "wintermute",
+         "domain": "wintermute.com",
+         "amount": null
+        },
+        {
+         "name": "Signature Ventures",
+         "domain": "signatureventures.com",
+         "amount": null
+        },
+        {
+         "name": "stone",
+         "domain": "stone.co",
+         "amount": null
+        },
+        {
+         "name": "ifood",
+         "domain": "ifood.com.br",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "Strengthen regulatory and compliance framework, pursue stablecoin license, accelerate product development, and expand into Latin America and Asia",
+       "source_sentence": "UnblockPay raised $4.5 million in a seed round led by Prelude, with participation from Plug and Play, Wintermute, Signature Ventures, and angel investors from companies such as Stone and iFood.",
+       "published_at": "2026-04-03T09:30:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e28287277be6ed2d954e46"
+       ],
+       "article_id": "69e28287277be6ed2d954e46"
+      },
+      {
+       "id": "dcdb4d2f9501639b",
+       "company_name": "omniscient",
+       "domain": "o8t.com",
+       "round_type": "pre-seed",
+       "amount_usd": 3780000.0000000005,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 3500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        },
+        {
+         "name": "Drysdale",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "MS&AD",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "raise",
+         "domain": "raise.co",
+         "amount": null
+        },
+        {
+         "name": "Anamcara",
+         "domain": "anamcaracapital.com",
+         "amount": null
+        },
+        {
+         "name": "xdeck",
+         "domain": "xdeck.de",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "make key engineering hires, further develop its product, and support the rollout of its commercial strategy",
+       "source_sentence": "Omniscient, a Paris-based decision intelligence platform for boards and senior executives, has raised €3.5 million ($4.1 million) in pre-seed funding.",
+       "published_at": "2026-04-02T10:35:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e27eb5a85be7e506552fbd",
+        "69e2b11fc1991f786ceb0648"
+       ],
+       "article_id": "69e27eb5a85be7e506552fbd"
+      },
+      {
+       "id": "f0f5d898892a7c69",
+       "company_name": "omniscient",
+       "domain": "o8t.com",
+       "round_type": "pre-seed",
+       "amount_usd": 4100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        },
+        {
+         "name": "Drysdale",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "MS&AD",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "raise",
+         "domain": "raise.co",
+         "amount": null
+        },
+        {
+         "name": "Anamcara",
+         "domain": "anamcaracapital.com",
+         "amount": null
+        },
+        {
+         "name": "xdeck",
+         "domain": "xdeck.de",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        }
+       ],
+       "sector": "decision intelligence platform",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "expand operations and development efforts",
+       "source_sentence": "Omniscient, a Paris, France-based provider of a decision intelligence platform built for boards and senior executives, raised $4.1M in pre-seed funding.",
+       "published_at": "2026-04-02T10:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d7a47bb1410d4ccbb96c"
+       ],
+       "article_id": "69e8d7a47bb1410d4ccbb96c"
+      },
+      {
+       "id": "5ebdb996b3f30b89",
+       "company_name": "Skillsvest",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 660000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "plug and play ventures",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Sascha Mornell",
+         "domain": "http://www.linkedin.com/in/saschamornell",
+         "amount": null
+        },
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "student financing, regulatory and compliance readiness, expanding go-to-market and partnership efforts",
+       "source_sentence": "Skillsvest has announced the closure of its ₹5.5 crore pre-seed funding round, comprising a mix of equity and debt, to expand its mission of supporting students as an asset class and offering an alternative to traditional education loans.",
+       "published_at": "2026-03-30T12:20:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "69d14d8a96395f5ca3c31cd7",
+        "69e29253601121844c32fc53"
+       ],
+       "article_id": "69d14d8a96395f5ca3c31cd7"
+      },
+      {
+       "id": "1e106466d582f446",
+       "company_name": "WhiteBridge AI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "FIRSTPICK VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "First Degree",
+         "domain": "firstdegreenyc.com",
+         "amount": null
+        },
+        {
+         "name": "NGL.VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Scalewolf.VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "BADideas.fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nectolabs",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "a group of angel investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "people-search, digital identity",
+       "country": "Lithuania",
+       "city": "Vilnius",
+       "use_of_funds": "accelerate its mission of setting a new standard for how data about people is discovered, verified, and used",
+       "source_sentence": "WhiteBridge AI, the Vilnius-based people-search and digital identity platform, has raised a $3 million seed round, equivalent to roughly €2.6 million, led by FIRSTPICK VC.",
+       "published_at": "2026-03-16T10:31:53",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a900a528a35e1f41fd3d",
+        "69c437c8bcb4bea65814adc0"
+       ],
+       "article_id": "69c437c8bcb4bea65814adc0"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 24,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMTYgMTA6MzE6NTMiLCJrIjoiMjE2NjM0MTgxMzU5Njc3OTU5MCJ9",
+     "totals": {
+      "deals": 24,
+      "deals_with_amount": 20,
+      "deals_without_amount": 4,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 49351525.0,
+      "median_amount_usd": 3000000.0,
+      "largest_amount_usd": 6100000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.162,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.165
+    }
+   }
+  }
+ ]
+}

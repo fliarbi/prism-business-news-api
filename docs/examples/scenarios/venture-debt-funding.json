@@ -1,0 +1,1918 @@
+{
+ "slug": "venture-debt-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:17Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "round_type": "venture debt",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "round_type": [
+       "venture debt"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 53,
+      "deals_with_amount": 49,
+      "deals_without_amount": 4,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 792617000.0,
+      "median_amount_usd": 17550000.0,
+      "largest_amount_usd": 100000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 67900000.0,
+       "median_amount_usd": 13550000.0,
+       "largest_amount_usd": 37800000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 67700000.0,
+       "median_amount_usd": 18900000.0,
+       "largest_amount_usd": 27000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 87480000.0,
+       "median_amount_usd": 21600000.0,
+       "largest_amount_usd": 22680000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 121336000.0,
+       "median_amount_usd": 14250000.0,
+       "largest_amount_usd": 91800000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 5,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 67805000.0,
+       "median_amount_usd": 18900000.0,
+       "largest_amount_usd": 25000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 59400000.0,
+       "median_amount_usd": 29700000.0,
+       "largest_amount_usd": 43200000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 40255000.0,
+       "median_amount_usd": 12000000.0,
+       "largest_amount_usd": 20000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 5,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 62670000.0,
+       "median_amount_usd": 14175000.0,
+       "largest_amount_usd": 30000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 6044000.0,
+       "median_amount_usd": 2000000.0,
+       "largest_amount_usd": 3780000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 59327000.0,
+       "median_amount_usd": 16000000.0,
+       "largest_amount_usd": 27000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 112500000.0,
+       "median_amount_usd": 56250000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 3,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 40200000.0,
+       "median_amount_usd": 11100000.0,
+       "largest_amount_usd": 21600000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.098,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.12
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "venture debt",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "round_type": [
+       "venture debt"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "922082a1d0914d6c",
+       "company_name": "sokin",
+       "domain": "sokin.com",
+       "round_type": "venture debt",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "oxford finance llc",
+         "domain": "oxfordfinance.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "The Oxford funding will support increased commercial activity and expansion across Sokin’s North American operations, together with wider investment in international platform development, including R&D, enhanced staffing, and further improvements to product capability and reach.",
+       "source_sentence": "Mishcon de Reya has advised global payments group Sokin on all UK aspects of a $100 million syndicated secured venture debt facility led by Oxford Finance LLC, acting as agent and lead lender.",
+       "published_at": "2026-03-24T10:49:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e281de3aab8d96aa2c5a00"
+       ],
+       "article_id": "69e281de3aab8d96aa2c5a00"
+      },
+      {
+       "id": "fc30a218ebda0409",
+       "company_name": "roadsurfer",
+       "domain": "roadsurfer.com",
+       "round_type": "ABS and Venture Debt",
+       "amount_usd": 91800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 85000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "macquarie group",
+         "domain": "macquarie.com",
+         "amount": 60000000.0
+        },
+        {
+         "name": "bbva",
+         "domain": "bbva.es",
+         "amount": 25000000.0
+        }
+       ],
+       "sector": "Outdoor travel / campervan rental",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "expansion of fleet, digital development, overall growth",
+       "source_sentence": "The Munich-based company Roadsurfer has received financing totaling €85 million. The funds come from two separate sources: an asset-backed securities (ABS) financing of €60 million from Macquarie Group and a €25 million venture debt financing from the Spanish banking group BBVA.",
+       "published_at": "2025-08-06T13:26:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb3ce185c39bb46c6f3f24"
+       ],
+       "article_id": "69bb3ce185c39bb46c6f3f24"
+      },
+      {
+       "id": "3073c5c597170173",
+       "company_name": "meva energy",
+       "domain": "mevaenergy.com",
+       "round_type": "Venture Debt Financing",
+       "amount_usd": 43200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": "Biogas technology for industrial decarbonization",
+       "country": "Sweden",
+       "city": "Gothenburg",
+       "use_of_funds": "scale operations, build additional biogas units, accelerate commercialization",
+       "source_sentence": "Meva Energy, a Gothenburg, Sweden-based cleantech startup, has secured €40 million (approximately $42 million) in venture debt financing from the European Investment Bank (EIB) to scale its on-site biogas technology.",
+       "published_at": "2025-10-24T02:57:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe2906e01ff0caa62936c4"
+       ],
+       "article_id": "68fe2906e01ff0caa62936c4"
+      },
+      {
+       "id": "be69dc579a824e0a",
+       "company_name": "sidekick health",
+       "domain": "sidekickhealth.com",
+       "round_type": "venture debt",
+       "amount_usd": 37800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": "digital health, therapeutics",
+       "country": "Luxembourg",
+       "city": "Luxembourg",
+       "use_of_funds": "to advance R&D, AI-driven innovation",
+       "source_sentence": "The European Investment Bank (EIB) has entered into a €35 million venture debt agreement with Sidekick Health",
+       "published_at": "2025-05-01T12:58:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8550f5cfa3e5ba5e93969"
+       ],
+       "article_id": "69e8550f5cfa3e5ba5e93969"
+      },
+      {
+       "id": "a275060de0ef32af",
+       "company_name": "samba tv",
+       "domain": "samba.tv",
+       "round_type": "venture debt",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Horizon Technology Finance Corporation",
+         "domain": "horizontechfinance.com",
+         "amount": null
+        }
+       ],
+       "sector": "media and advertising",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "accelerate AI transformation in media and advertising, support global operations and strategic partnerships",
+       "source_sentence": "Samba TV has announced that it has secured new financing from Horizon Technology Finance Corporation, an affiliate of Monroe Capital, with an initial venture debt facility of $30 million, and up to $30 million more to support future growth.",
+       "published_at": "2025-12-08T21:03:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "694534c0889358402ba33ae6"
+       ],
+       "article_id": "694534c0889358402ba33ae6"
+      },
+      {
+       "id": "f6c1735b0f433893",
+       "company_name": "samba tv",
+       "domain": "samba.tv",
+       "round_type": "venture debt",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Horizon Technology Finance Corporation",
+         "domain": "horizontechfinance.com",
+         "amount": 30000000.0
+        }
+       ],
+       "sector": "AI-driven media intelligence, advertising",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate the AI transformation in media and advertising, scale global operations, and expand strategic partnerships.",
+       "source_sentence": "Samba TV, the global leader in AI-driven media intelligence, today announced it has secured financing from Horizon Technology Finance Corporation (NASDAQ: HRZN), an affiliate of Monroe Capital, with an initial close of $30 million, and up to $30 million to support future growth.",
+       "published_at": "2025-12-08T15:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "699753b00d0db262fa5a47e1"
+       ],
+       "article_id": "699753b00d0db262fa5a47e1"
+      },
+      {
+       "id": "ffb9ddaf0333d953",
+       "company_name": "oq technology",
+       "domain": "oqtec.space",
+       "round_type": "venture debt",
+       "amount_usd": 27000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": 25000000.0
+        }
+       ],
+       "sector": null,
+       "country": "Luxembourg",
+       "city": null,
+       "use_of_funds": "Develop and launch 20+ satellites in the next two years",
+       "source_sentence": "The European Investment Bank (EIB) extended €25M ($29.5M) in venture debt financing to Luxembourg-based D2D satellite operator OQ Technology.",
+       "published_at": "2026-02-25T13:46:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9c8ffcae5463acf01e45b"
+       ],
+       "article_id": "69c9c8ffcae5463acf01e45b"
+      },
+      {
+       "id": "6c867c724845fa0c",
+       "company_name": "oq technology",
+       "domain": "oqtec.space",
+       "round_type": "venture debt loan",
+       "amount_usd": 27000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerating R&D and rolling out its space-connectivity network",
+       "source_sentence": "Luxembourg spacetech scale-up OQ Technology has secured a €25 million venture debt loan through the European Investment Bank, aimed at accelerating R&D and rolling out its space-connectivity network.",
+       "published_at": "2026-02-25T10:55:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7ebf3ca60e76cf2f9f97"
+       ],
+       "article_id": "69bc7ebf3ca60e76cf2f9f97"
+      },
+      {
+       "id": "151c0740275f03e3",
+       "company_name": "roadsurfer",
+       "domain": "roadsurfer.com",
+       "round_type": "venture debt",
+       "amount_usd": 27000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bbva",
+         "domain": "bbva.es",
+         "amount": 25000000.0
+        },
+        {
+         "name": "european investment fund",
+         "domain": "eif.org",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "international expansion of camper van rental platform and accelerate growth across Europe and North America",
+       "source_sentence": "In its latest funding round, roadsurfer secured a €25 million venture-debt financing from BBVA, supported by the European Investment Fund under the InvestEU programme.",
+       "published_at": "2025-08-11T11:42:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bad5adc08180591b810f10"
+       ],
+       "article_id": "69bad5adc08180591b810f10"
+      },
+      {
+       "id": "d584ae27751916af",
+       "company_name": "roadsurfer",
+       "domain": "roadsurfer.com",
+       "round_type": "Venture-debt",
+       "amount_usd": 27000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bbva",
+         "domain": "bbva.es",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "Further development of the fleet and scaling",
+       "source_sentence": "The Munich-based company Roadsurfer has received a total financing of 85 million euros. The funds come from two separate pots: an asset-backed securities (ABS) financing of EUR 60 million from the Macquarie Group and a venture-debt financing of EUR 25 million from the Spanish banking group BBVA.",
+       "published_at": "2025-08-06T13:26:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb1c05c9a954196de0eea7"
+       ],
+       "article_id": "69bb1c05c9a954196de0eea7"
+      },
+      {
+       "id": "8cf41042b00f2324",
+       "company_name": "gatewatcher",
+       "domain": "gatewatcher.com",
+       "round_type": "venture debt",
+       "amount_usd": 27000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": 25000000.0
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "Enhance detection algorithms, launch new AI modules, and expand internationally across Europe, the Middle East, Asia, and Africa.",
+       "source_sentence": "Gatewatcher, a French cybersecurity company, has received a €25m venture debt facility from the European Investment Bank (EIB).",
+       "published_at": "2025-06-30T14:23:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a9bd94d3f481f3d734ce"
+       ],
+       "article_id": "6988a9bd94d3f481f3d734ce"
+      },
+      {
+       "id": "506daa05fd7d3433",
+       "company_name": "Trifecta Capital’s Fund IV",
+       "domain": null,
+       "round_type": "Venture debt fund investment",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "international finance corporation",
+         "domain": "ifc.org",
+         "amount": null
+        }
+       ],
+       "sector": "Venture debt fund investment",
+       "country": null,
+       "city": null,
+       "use_of_funds": "The fund offers debt financing for Series A and beyond, targeting EVs, financial services, climate tech, AI infrastructure, and expanding into consumer, education, and healthcare.",
+       "source_sentence": "The International Finance Corporation is set to invest $25 million in Trifecta Capital’s fourth venture debt fund. The fund offers debt financing for Series A and beyond, targeting EVs, financial services, climate tech, AI infrastructure, and expanding into consumer, education, and healthcare.",
+       "published_at": "2025-09-18T15:19:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "698ce0d59ca02490ecf08108"
+       ],
+       "article_id": "698ce0d59ca02490ecf08108"
+      },
+      {
+       "id": "ba6398423ae970bf",
+       "company_name": "danads",
+       "domain": "danads.com",
+       "round_type": "venture debt",
+       "amount_usd": 22680000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": 21000000.0
+        }
+       ],
+       "sector": "adtech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "Expand platform operations and R&D through 2029",
+       "source_sentence": "(PRESS RELEASE) LUXEMBOURG, 2-Jul-2025 — /EuropaWire/ — The European Investment Bank (EIB) is providing a €21 million venture debt facility to Stockholm-based DanAds, empowering the adtech specialist to broaden its self-serve, AI-driven advertising platform for publishers.",
+       "published_at": "2025-07-02T16:21:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f41da8d29a990b6f92588"
+       ],
+       "article_id": "698f41da8d29a990b6f92588"
+      },
+      {
+       "id": "56d8c70d20aa05fd",
+       "company_name": "HEN Technologies",
+       "domain": null,
+       "round_type": "Series A + Venture Debt",
+       "amount_usd": 22000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 22000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "O’Neil Strategic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "NSFO",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tanas Capital",
+         "domain": "tcapital.sg",
+         "amount": null
+        },
+        {
+         "name": "z21 ventures",
+         "domain": "z21.ventures",
+         "amount": null
+        },
+        {
+         "name": "silicon valley bank",
+         "domain": "svb.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered Fire Defense / IoT & Predictive Safety",
+       "country": "United States",
+       "city": "Hayward",
+       "use_of_funds": "The funding will expand HEN’s IoT-enabled hardware infrastructure, scale partner enablement, customer experience, and technical operations, and capture the first comprehensive operational fire dataset for predictive AI models.",
+       "source_sentence": "HEN Technologies, a Hayward, California-based deep-tech company, has closed an oversubscribed $20 million Series A financing round, along with $2 million in venture debt.",
+       "published_at": "2025-12-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cbe048d29a990b6c962ce"
+       ],
+       "article_id": "698cbe048d29a990b6c962ce"
+      },
+      {
+       "id": "eddcc26131aed2f2",
+       "company_name": "biolamina",
+       "domain": "biolamina.com",
+       "round_type": "venture debt",
+       "amount_usd": 21600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": 20000000.0
+        }
+       ],
+       "sector": "Biotechnology",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "expand development of laminin technologies, scale production, expand product portfolio, reinforce technological base, bolster business growth",
+       "source_sentence": "BioLamina, a Stockholm-based BioTech scale-up specialising in matrix biology and cell culture, has secured a €20 million financing commitment from the European Investment Bank (EIB) to enable cell therapies for serious chronic diseases.",
+       "published_at": "2026-04-17T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e24e9baafc7356dd5755"
+       ],
+       "article_id": "69e8e24e9baafc7356dd5755"
+      },
+      {
+       "id": "08e199cee913859a",
+       "company_name": "stiq",
+       "domain": "stiq.com",
+       "round_type": "venture debt",
+       "amount_usd": 21600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": "foodtech",
+       "country": "Greece",
+       "city": "Athens",
+       "use_of_funds": "R&D, digital tools, and global expansion",
+       "source_sentence": "Athens-based STIQ which is redefining healthy dining in Greece, has secured €20 million in funding from the European Investment Bank (EIB).",
+       "published_at": "2025-07-28T12:07:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d13ac9ca02490ecf434d0"
+       ],
+       "article_id": "698d13ac9ca02490ecf434d0"
+      },
+      {
+       "id": "959f9671383ad5fe",
+       "company_name": "solynta",
+       "domain": "solynta.com",
+       "round_type": "venture debt",
+       "amount_usd": 21600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "Netherlands",
+       "city": null,
+       "use_of_funds": "The funds will help the company develop climate‑resilient and disease‑resistant potato varieties and advance research into using true potato seeds instead of tubers for cultivation.",
+       "source_sentence": "Dutch biotech company Solynta, based in Gelderland, has raised €20M in venture debt from the European Investment Bank (EIB) under the InvestEU programme.",
+       "published_at": "2025-07-19T11:55:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "698dbc568d29a990b6dc1f10"
+       ],
+       "article_id": "698dbc568d29a990b6dc1f10"
+      },
+      {
+       "id": "59315157e9dec731",
+       "company_name": "pulpac",
+       "domain": "pulpac.com",
+       "round_type": "venture-debt",
+       "amount_usd": 21600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": "Sustainable packaging",
+       "country": "Sweden",
+       "city": "Gothenburg",
+       "use_of_funds": "support PulPac’s research, development, and global commercialization efforts from 2025 through 2029",
+       "source_sentence": "The European Investment Bank (EIB) is lending €20 million to PulPac, a Swedish pioneer in sustainable packaging, to scale its Dry Molded Fiber technology as an eco-friendly alternative to single-use plastics.",
+       "published_at": "2025-07-04T12:02:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc406e2ca99408382e8a97"
+       ],
+       "article_id": "69cc406e2ca99408382e8a97"
+      },
+      {
+       "id": "d5d21a64def9e908",
+       "company_name": "leyden",
+       "domain": "leyden.com.ar",
+       "round_type": "venture debt",
+       "amount_usd": 21600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology",
+       "country": "Netherlands",
+       "city": null,
+       "use_of_funds": "support the development of Leyden Labs’ antibody programmes aimed at countering viral infections",
+       "source_sentence": "Dutch-based Leyden Laboratories BV, a clinical-stage biotech company, announced that it has signed a €20M venture debt financing from the European Investment Bank (EIB).",
+       "published_at": "2025-06-04T03:30:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69451dfaefa1370a97a33a37"
+       ],
+       "article_id": "69451dfaefa1370a97a33a37"
+      },
+      {
+       "id": "0a7ce02349631339",
+       "company_name": "heura",
+       "domain": "heurafoods.com",
+       "round_type": "venture debt",
+       "amount_usd": 21600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Heura secured €20M in venture debt from the European Investment Bank (EIB).",
+       "published_at": "2025-05-19T05:31:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc373276d3f16aa936c340"
+       ],
+       "article_id": "69bc373276d3f16aa936c340"
+      },
+      {
+       "id": "01fe12b488f9e7e9",
+       "company_name": "overland ai",
+       "domain": "overland.ai",
+       "round_type": "Venture Debt",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "triplepoint capital",
+         "domain": "triplepointcapital.com",
+         "amount": 20000000.0
+        }
+       ],
+       "sector": "Defense / Autonomous Ground Systems",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "support general operations and capital expenditures",
+       "source_sentence": "The total funding announced includes a $20 million venture debt facility from TriplePoint Capital.",
+       "published_at": "2026-02-08T03:00:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a2d6b3aeee4a53ffa2af0"
+       ],
+       "article_id": "698a2d6b3aeee4a53ffa2af0"
+      },
+      {
+       "id": "0cac1c431e35dccc",
+       "company_name": "pixellot",
+       "domain": "pixellot.tv",
+       "round_type": "Venture Debt",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "psg equity",
+         "domain": "psgequity.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "PSG invested an additional $15M with $20M structured as venture debt financing.",
+       "published_at": "2025-11-13T12:34:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e887489baafc735693bfe2"
+       ],
+       "article_id": "69e887489baafc735693bfe2"
+      },
+      {
+       "id": "ed8a1a73c61080d5",
+       "company_name": "extend",
+       "domain": "extend.com",
+       "round_type": "Series ?? (equity & venture debt)",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "march capital",
+         "domain": "marchcp.com",
+         "amount": null
+        },
+        {
+         "name": "Point72 Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "fintech collective",
+         "domain": "fintech.io",
+         "amount": null
+        },
+        {
+         "name": "commerce ventures",
+         "domain": "commerce.vc",
+         "amount": null
+        }
+       ],
+       "sector": "B2B expense management / SaaS",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Capital to accelerate profitability and launch paid SaaS offering",
+       "source_sentence": "Extend, a leading spend and expense management platform, announced it has secured $20 million in additional capital, including new venture debt and an equity investment led by B Capital, with participation from March Capital, Point72 Ventures, FinTech Collective, and new investor, Commerce Ventures.",
+       "published_at": "2025-09-18T23:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d1066b65fd12d4142d2f8d"
+       ],
+       "article_id": "68d1066b65fd12d4142d2f8d"
+      },
+      {
+       "id": "714d23d0a42f7c9d",
+       "company_name": "Joltie",
+       "domain": "joltie.com",
+       "round_type": "venture debt",
+       "amount_usd": 18900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": "Electric Vehicle Charging",
+       "country": "Greece",
+       "city": "Attica",
+       "use_of_funds": "Roll out approximately 2,200 new electric vehicle charging points across Greece and Cyprus by 2029, accelerating the installation of public charging infrastructure and expanding the integrated network in underserved regions.",
+       "source_sentence": "The European Investment Bank (EIB) has approved up to €17.5 million in venture debt financing for Joltie SA, a Greek EV charging operator, to accelerate the installation of public charging points across Greece and Cyprus.",
+       "published_at": "2025-09-08T14:05:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2c5927f3a572cf4b24695"
+       ],
+       "article_id": "69e2c5927f3a572cf4b24695"
+      },
+      {
+       "id": "c22b79847119e4c7",
+       "company_name": "deciphex",
+       "domain": "deciphex.com",
+       "round_type": "venture debt",
+       "amount_usd": 16200000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "claret capital partners",
+         "domain": "claret-capital.com",
+         "amount": null
+        }
+       ],
+       "sector": "medtech",
+       "country": "Ireland",
+       "city": "Dublin",
+       "use_of_funds": "accelerate its expansion into the US and become the leading provider of histopathology reporting services in the UK by 2027",
+       "source_sentence": "Deciphex, a Dublin-based medtech specialising in AI-powered digital pathology, has raised €15m in venture debt funding from Claret Capital Partners to accelerate its expansion into the US.",
+       "published_at": "2025-10-02T11:14:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f721c517f4f9d43d2b2330"
+       ],
+       "article_id": "68f721c517f4f9d43d2b2330"
+      },
+      {
+       "id": "e8b8b51bbeedea2a",
+       "company_name": "Artec 3D",
+       "domain": "artec3d.vn",
+       "round_type": "venture debt",
+       "amount_usd": 16200000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": 15000000.0
+        }
+       ],
+       "sector": "3D scanning technology and software",
+       "country": "Luxembourg",
+       "city": "Luxembourg",
+       "use_of_funds": "R&D for next-generation scanning technologies, AI-enhanced data-processing algorithms, and new product development at Luxembourg and Portugal facilities",
+       "source_sentence": "Artec 3D, a Luxembourg-based developer of portable 3D scanners and software, has secured a €15 million venture debt facility from the European Investment Bank under the InvestEU initiative.",
+       "published_at": "2025-06-17T17:04:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a83aff2654c79d673ec9"
+       ],
+       "article_id": "69e2a83aff2654c79d673ec9"
+      },
+      {
+       "id": "eed881a80181d3b3",
+       "company_name": "Artec 3D",
+       "domain": "artec3d.vn",
+       "round_type": "venture debt",
+       "amount_usd": 16200000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": 15000000.0
+        }
+       ],
+       "sector": "portable, high-precision 3D scanning technologies",
+       "country": "Luxembourg",
+       "city": "Luxembourg",
+       "use_of_funds": "boost R&D in next-gen 3D scanning technologies and AI‑driven software",
+       "source_sentence": "Luxembourg-based Artec 3D has received €15 million in venture debt from the European Investment Bank (EIB) to boost R&D in next‑gen 3D scanning technologies and AI‑driven software.",
+       "published_at": "2025-06-17T15:57:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9ca2fcae5463acf01ed08"
+       ],
+       "article_id": "69c9ca2fcae5463acf01ed08"
+      },
+      {
+       "id": "4c384cf12d4d14ee",
+       "company_name": "greater good health",
+       "domain": "greatergoodhealth.com",
+       "round_type": "venture debt",
+       "amount_usd": 12500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hsbc innovation banking",
+         "domain": "hsbcinnovationbanking.com",
+         "amount": null
+        }
+       ],
+       "sector": "Digital Health",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Greater Good Health has secured a $20.5M Series B led by Allumia Ventures, alongside up to $12.5M in venture debt from HSBC Innovation Banking.",
+       "published_at": "2026-03-05T11:11:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bcee4e6760819e38498b97",
+        "69e27fa2601121844c2f9c1f"
+       ],
+       "article_id": "69bcee4e6760819e38498b97"
+      },
+      {
+       "id": "5e8add0e62347e5b",
+       "company_name": "wonder",
+       "domain": "wonder.com",
+       "round_type": "venture debt",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hsbc innovation banking",
+         "domain": "hsbcinnovationbanking.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech / Payments",
+       "country": "Hong Kong",
+       "city": "Hong Kong",
+       "use_of_funds": "Support growth across Asia Pacific region, T+0 instant settlement, and product development",
+       "source_sentence": "Wonder, a leading fintech and payments platform for merchants in Hong Kong and Asia Pacific, today announced it has raised a USD 12 million venture debt from HSBC Innovation Banking in Hong Kong.",
+       "published_at": "2026-02-02T02:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb6c255e05f5e7db81eee8"
+       ],
+       "article_id": "69bb6c255e05f5e7db81eee8"
+      },
+      {
+       "id": "15995877ba516d57",
+       "company_name": "wonder",
+       "domain": "wonder.com",
+       "round_type": "venture debt",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hsbc innovation banking",
+         "domain": "hsbcinnovationbanking.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech, Payments",
+       "country": "Hong Kong",
+       "city": "Hong Kong",
+       "use_of_funds": "Growth capital to scale operations, support T+0 instant settlement and product development across Asia Pacific",
+       "source_sentence": "Wonder, a leading fintech and payments platform for merchants in Hong Kong and Asia Pacific, announced it has raised a USD 12 million venture debt from HSBC Innovation Banking in Hong Kong.",
+       "published_at": "2026-02-02T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69864930514cbd23b5c289b7",
+        "6986877a54148f65ea328e47",
+        "6988aa51127162d16e0b0582",
+        "6989a55094d3f481f3e9a6e2",
+        "698d5a569ca02490ecf97d46"
+       ],
+       "article_id": "6986877a54148f65ea328e47"
+      },
+      {
+       "id": "7d6ad3ff498e44d8",
+       "company_name": "ultrahuman",
+       "domain": "ultrahuman.com",
+       "round_type": "venture debt",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alteria capital",
+         "domain": "alteriacapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Wearables",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "to scale its products and expand into more markets",
+       "source_sentence": "Ultrahuman has raised INR 100 Cr ($11.2 Mn) in venture debt from Alteria Capital as it looks to scale its products and expand into more markets",
+       "published_at": "2025-11-20T16:21:58",
+       "coverage_count": 3,
+       "article_ids": [
+        "69313b9e3cc6c7d69af216d8",
+        "69bd0efb6bf4fc1dd5313a00",
+        "69c3d2a3a195857674c7e108"
+       ],
+       "article_id": "69bd0efb6bf4fc1dd5313a00"
+      },
+      {
+       "id": "6a53118e1c07fa2c",
+       "company_name": "ultrahuman",
+       "domain": "ultrahuman.com",
+       "round_type": "venture debt",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alteria capital",
+         "domain": "alteriacapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "health-tech, wearables",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "support its rapid expansion across Canada, Mexico and Australia",
+       "source_sentence": "Bengaluru-based health-tech and wearables startup Ultrahuman has raised ₹100 crore in venture debt from Alteria Capital, with the company saying the infusion will support its rapid expansion across Canada, Mexico and Australia.",
+       "published_at": "2025-11-20T15:24:05",
+       "coverage_count": 2,
+       "article_ids": [
+        "694df5bcdc18f08d21f2efcc",
+        "698cc6599c6a3801f5b6c472"
+       ],
+       "article_id": "694df5bcdc18f08d21f2efcc"
+      },
+      {
+       "id": "6d5f341e215123e8",
+       "company_name": "common wealth",
+       "domain": "commonwealthretirement.com",
+       "round_type": "venture debt",
+       "amount_usd": 11100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "flow capital",
+         "domain": "flowcap.com",
+         "amount": 15000000.0
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": null,
+       "source_sentence": "This funding builds on the $15 million in venture debt that Common Wealth secured from Flow Capital in mid-2025.",
+       "published_at": "2026-04-14T19:06:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84a7f5cfa3e5ba5e30cd9"
+       ],
+       "article_id": "69e84a7f5cfa3e5ba5e30cd9"
+      },
+      {
+       "id": "15c34fe2c8113cfe",
+       "company_name": "laka",
+       "domain": "laka.co",
+       "round_type": "venture debt",
+       "amount_usd": 8255000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 6500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hsbc innovation banking",
+         "domain": "hsbcinnovationbanking.com",
+         "amount": null
+        }
+       ],
+       "sector": "insurance",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "support Laka’s European expansion and fund a disciplined acquisition strategy",
+       "source_sentence": "Today, the company recently secured a £6.5 million venture debt facility from HSBC Innovation Banking, bringing its total Series B funding to £14.1 million.",
+       "published_at": "2025-11-13T09:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6989574a94d3f481f3e3f18f",
+        "698e14749ca02490ec071b7e"
+       ],
+       "article_id": "6989574a94d3f481f3e3f18f"
+      },
+      {
+       "id": "cf28e6437110af5b",
+       "company_name": "laka",
+       "domain": "laka.co",
+       "round_type": "Venture Debt Facility",
+       "amount_usd": 8255000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 6500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hsbc innovation banking",
+         "domain": "hsbcinnovationbanking.com",
+         "amount": null
+        }
+       ],
+       "sector": "insurance",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support further strategic acquisitions and expansion across Europe",
+       "source_sentence": "Laka, the award-winning insurer for cyclists and green mobility users, has secured a £6.5 million Venture Debt Facility from HSBC Innovation Banking, bringing its total Series B funding to £14.1 million.",
+       "published_at": "2025-11-13T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "693196e3c179691691f22568"
+       ],
+       "article_id": "693196e3c179691691f22568"
+      },
+      {
+       "id": "bb8e60e4361f9684",
+       "company_name": "ph7 technologies",
+       "domain": "ph7technologies.ca",
+       "round_type": "Venture Debt",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rbcx",
+         "domain": "rbcx.com",
+         "amount": null
+        }
+       ],
+       "sector": "cleantech",
+       "country": "Canada",
+       "city": "Vancouver",
+       "use_of_funds": null,
+       "source_sentence": "The company has layered on $7.5 million in venture debt from RBCx—its second facility of this kind from the bank.",
+       "published_at": "2026-04-13T10:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e50845430a4927fdc84923"
+       ],
+       "article_id": "69e50845430a4927fdc84923"
+      },
+      {
+       "id": "5fea45ee7ec182c2",
+       "company_name": "pimberly",
+       "domain": "pimberly.com",
+       "round_type": "venture debt",
+       "amount_usd": 6350000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "virgin money",
+         "domain": "virginmoney.com",
+         "amount": 5000000.0
+        }
+       ],
+       "sector": "SaaS",
+       "country": "UK",
+       "city": "Manchester",
+       "use_of_funds": "Support UK and US expansion, create more than 30 high-skilled jobs, and continue product roadmap development",
+       "source_sentence": "Pimberly has secured £5 million in venture debt funding from Virgin Money as the Manchester-based SaaS firm steps up its UK and US expansion plans.",
+       "published_at": "2025-12-17T16:41:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a85a8fb0ea95e9772c1d"
+       ],
+       "article_id": "6988a85a8fb0ea95e9772c1d"
+      },
+      {
+       "id": "0b58853f8773402e",
+       "company_name": "dub",
+       "domain": "dubapp.com",
+       "round_type": "Venture debt",
+       "amount_usd": 5500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "silicon valley bank",
+         "domain": "svb.com",
+         "amount": 5500000.0
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The funding also includes a $5.5 million venture debt facility from Silicon Valley Bank.",
+       "published_at": "2025-05-02T08:21:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb9775680e91ccbda29d05"
+       ],
+       "article_id": "69bb9775680e91ccbda29d05"
+      },
+      {
+       "id": "213acd260e607a34",
+       "company_name": "qida",
+       "domain": "qida.es",
+       "round_type": "Venture Debt",
+       "amount_usd": 4320000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "caixabank",
+         "domain": "caixabank.com",
+         "amount": 4000000.0
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "Spain",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The company has signed with CaixaBank a four million euro financing through its debt fund for start-up Venture Debt and the division specializing in start-ups DayOne.",
+       "published_at": "2025-12-12T23:03:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6997d642ee086e6a7c37fd63",
+        "69bb16b592d3c72cc1abae5c"
+       ],
+       "article_id": "69bb16b592d3c72cc1abae5c"
+      },
+      {
+       "id": "957bef8d5e676267",
+       "company_name": "Hospital Capillar",
+       "domain": null,
+       "round_type": "venture debt",
+       "amount_usd": 3780000.0000000005,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 3500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "inveready",
+         "domain": "inveready.com",
+         "amount": null
+        },
+        {
+         "name": "trainera",
+         "domain": "trainera-inc.com",
+         "amount": null
+        }
+       ],
+       "sector": "hair surgery",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Reorganize shareholding and promote opening of new hair health clinics; allow a management buyout (MBO)",
+       "source_sentence": "Inveready, through its venture debt vehicle (debt) and in collaboration with Trainera — the Banco Santander investment vehicle managed by Inveready — has closed an investment of 3.5 million euros in debt at Hospital Capillar, a company specializing in hair surgery.",
+       "published_at": "2026-01-21T10:57:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb2776a2269239ea2593a8"
+       ],
+       "article_id": "69bb2776a2269239ea2593a8"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 53,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDEtMjEgMTA6NTc6MDkiLCJrIjoiMTA3NzE0NjYzMjQyMzk5MzQwNTUiLCJhIjozNzgwMDAwLjAwMDAwMDAwMDV9",
+     "totals": {
+      "deals": 53,
+      "deals_with_amount": 49,
+      "deals_without_amount": 4,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 792617000.0,
+      "median_amount_usd": 17550000.0,
+      "largest_amount_usd": 100000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.246,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.26
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "venture debt",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "round_type": [
+       "venture debt"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "12a7832c429a3399",
+       "company_name": "ph7 technologies",
+       "domain": "ph7technologies.ca",
+       "round_type": "Venture debt",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rbcx",
+         "domain": "rbcx.com",
+         "amount": null
+        }
+       ],
+       "sector": "Mining",
+       "country": "Canada",
+       "city": "Vancouver",
+       "use_of_funds": "To support supply chain resilience amid rising geopolitical competition, providing venture debt financing",
+       "source_sentence": "pH7 has secured venture debt financing from RBCx, bringing the total financing package, including Series B equity and venture debt, to approximately CAD $55 million (USD ~$39 million).",
+       "published_at": "2026-04-17T07:20:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e3567bb1410d4cd5114f"
+       ],
+       "article_id": "69e8e3567bb1410d4cd5114f"
+      },
+      {
+       "id": "eddcc26131aed2f2",
+       "company_name": "biolamina",
+       "domain": "biolamina.com",
+       "round_type": "venture debt",
+       "amount_usd": 21600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": 20000000.0
+        }
+       ],
+       "sector": "Biotechnology",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "expand development of laminin technologies, scale production, expand product portfolio, reinforce technological base, bolster business growth",
+       "source_sentence": "BioLamina, a Stockholm-based BioTech scale-up specialising in matrix biology and cell culture, has secured a €20 million financing commitment from the European Investment Bank (EIB) to enable cell therapies for serious chronic diseases.",
+       "published_at": "2026-04-17T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e24e9baafc7356dd5755"
+       ],
+       "article_id": "69e8e24e9baafc7356dd5755"
+      },
+      {
+       "id": "6d5f341e215123e8",
+       "company_name": "common wealth",
+       "domain": "commonwealthretirement.com",
+       "round_type": "venture debt",
+       "amount_usd": 11100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "flow capital",
+         "domain": "flowcap.com",
+         "amount": 15000000.0
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": null,
+       "source_sentence": "This funding builds on the $15 million in venture debt that Common Wealth secured from Flow Capital in mid-2025.",
+       "published_at": "2026-04-14T19:06:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84a7f5cfa3e5ba5e30cd9"
+       ],
+       "article_id": "69e84a7f5cfa3e5ba5e30cd9"
+      },
+      {
+       "id": "b311fda7562c5fa6",
+       "company_name": "ph7 technologies",
+       "domain": "ph7technologies.ca",
+       "round_type": "venture debt",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rbcx",
+         "domain": "rbcx.com",
+         "amount": null
+        }
+       ],
+       "sector": "Critical mineral extraction",
+       "country": "Canada",
+       "city": "Vancouver",
+       "use_of_funds": null,
+       "source_sentence": "pH7 Technologies Inc. ... secured venture debt financing from RBCx, bringing the total financing package, including Series B equity and venture debt, to approximately CAD $55M (USD ~$39M).",
+       "published_at": "2026-04-13T13:58:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8dcec5cfa3e5ba54aea71"
+       ],
+       "article_id": "69e8dcec5cfa3e5ba54aea71"
+      },
+      {
+       "id": "bb8e60e4361f9684",
+       "company_name": "ph7 technologies",
+       "domain": "ph7technologies.ca",
+       "round_type": "Venture Debt",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rbcx",
+         "domain": "rbcx.com",
+         "amount": null
+        }
+       ],
+       "sector": "cleantech",
+       "country": "Canada",
+       "city": "Vancouver",
+       "use_of_funds": null,
+       "source_sentence": "The company has layered on $7.5 million in venture debt from RBCx—its second facility of this kind from the bank.",
+       "published_at": "2026-04-13T10:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e50845430a4927fdc84923"
+       ],
+       "article_id": "69e50845430a4927fdc84923"
+      },
+      {
+       "id": "922082a1d0914d6c",
+       "company_name": "sokin",
+       "domain": "sokin.com",
+       "round_type": "venture debt",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "oxford finance llc",
+         "domain": "oxfordfinance.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "The Oxford funding will support increased commercial activity and expansion across Sokin’s North American operations, together with wider investment in international platform development, including R&D, enhanced staffing, and further improvements to product capability and reach.",
+       "source_sentence": "Mishcon de Reya has advised global payments group Sokin on all UK aspects of a $100 million syndicated secured venture debt facility led by Oxford Finance LLC, acting as agent and lead lender.",
+       "published_at": "2026-03-24T10:49:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e281de3aab8d96aa2c5a00"
+       ],
+       "article_id": "69e281de3aab8d96aa2c5a00"
+      },
+      {
+       "id": "4c384cf12d4d14ee",
+       "company_name": "greater good health",
+       "domain": "greatergoodhealth.com",
+       "round_type": "venture debt",
+       "amount_usd": 12500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hsbc innovation banking",
+         "domain": "hsbcinnovationbanking.com",
+         "amount": null
+        }
+       ],
+       "sector": "Digital Health",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Greater Good Health has secured a $20.5M Series B led by Allumia Ventures, alongside up to $12.5M in venture debt from HSBC Innovation Banking.",
+       "published_at": "2026-03-05T11:11:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bcee4e6760819e38498b97",
+        "69e27fa2601121844c2f9c1f"
+       ],
+       "article_id": "69bcee4e6760819e38498b97"
+      },
+      {
+       "id": "ffb9ddaf0333d953",
+       "company_name": "oq technology",
+       "domain": "oqtec.space",
+       "round_type": "venture debt",
+       "amount_usd": 27000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": 25000000.0
+        }
+       ],
+       "sector": null,
+       "country": "Luxembourg",
+       "city": null,
+       "use_of_funds": "Develop and launch 20+ satellites in the next two years",
+       "source_sentence": "The European Investment Bank (EIB) extended €25M ($29.5M) in venture debt financing to Luxembourg-based D2D satellite operator OQ Technology.",
+       "published_at": "2026-02-25T13:46:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9c8ffcae5463acf01e45b"
+       ],
+       "article_id": "69c9c8ffcae5463acf01e45b"
+      },
+      {
+       "id": "6c867c724845fa0c",
+       "company_name": "oq technology",
+       "domain": "oqtec.space",
+       "round_type": "venture debt loan",
+       "amount_usd": 27000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerating R&D and rolling out its space-connectivity network",
+       "source_sentence": "Luxembourg spacetech scale-up OQ Technology has secured a €25 million venture debt loan through the European Investment Bank, aimed at accelerating R&D and rolling out its space-connectivity network.",
+       "published_at": "2026-02-25T10:55:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7ebf3ca60e76cf2f9f97"
+       ],
+       "article_id": "69bc7ebf3ca60e76cf2f9f97"
+      },
+      {
+       "id": "01fe12b488f9e7e9",
+       "company_name": "overland ai",
+       "domain": "overland.ai",
+       "round_type": "Venture Debt",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "triplepoint capital",
+         "domain": "triplepointcapital.com",
+         "amount": 20000000.0
+        }
+       ],
+       "sector": "Defense / Autonomous Ground Systems",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "support general operations and capital expenditures",
+       "source_sentence": "The total funding announced includes a $20 million venture debt facility from TriplePoint Capital.",
+       "published_at": "2026-02-08T03:00:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a2d6b3aeee4a53ffa2af0"
+       ],
+       "article_id": "698a2d6b3aeee4a53ffa2af0"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 16,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDItMDggMDM6MDA6NDUiLCJrIjoiMTQzNTcyODA0NzIzOTI3MDE3In0",
+     "totals": {
+      "deals": 16,
+      "deals_with_amount": 14,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 218071000.0,
+      "median_amount_usd": 11550000.0,
+      "largest_amount_usd": 100000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.039,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.043
+    }
+   }
+  }
+ ]
+}

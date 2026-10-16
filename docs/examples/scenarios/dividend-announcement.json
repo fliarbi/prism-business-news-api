@@ -1,0 +1,806 @@
+{
+ "slug": "dividend-announcement",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:05Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "dividend",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "dividend",
+      "match": "any",
+      "event_type": [
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 25,
+       "by_type": {
+        "company_announcement": 25
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 25,
+       "by_type": {
+        "company_announcement": 25
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 15,
+       "by_type": {
+        "company_announcement": 15
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 29,
+       "by_type": {
+        "company_announcement": 29
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 40,
+       "by_type": {
+        "company_announcement": 40
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 33,
+       "by_type": {
+        "company_announcement": 33
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 26,
+       "by_type": {
+        "company_announcement": 26
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 26,
+       "by_type": {
+        "company_announcement": 26
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 31,
+       "by_type": {
+        "company_announcement": 31
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 39,
+       "by_type": {
+        "company_announcement": 39
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 39,
+       "by_type": {
+        "company_announcement": 39
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 35,
+       "by_type": {
+        "company_announcement": 35
+       }
+      }
+     ],
+     "totals": {
+      "events": 363,
+      "articles": 350,
+      "companies": 259,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 363
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.084,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.086
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "dividend",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "dividend",
+      "event_type": [
+       "company_announcement"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f8aa1c8937ef12fc0b070e",
+       "headline": "LWCC is distributing $28.73 million to nearly 5,000 employers across Southeast Louisiana as part of its 2025 dividend program, reinforcing the workers’ compensation insurer’s long‑term practice of returning profits to policyholder businesses statewide.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "lwcc.com",
+       "published_at": "2026-04-30T19:35:35",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d5bc713680636eecfde8",
+       "headline": "To accelerate the transition towards the new capital target we will pay an extraordinary dividend of DKK 5 billion following the release of our interim report for the first quarter of 2026.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "danskebank.fi",
+       "published_at": "2026-04-30T12:13:20",
+       "url": "https://globalfintechseries.com/banking/danske-bank-announces-financial-targets-for-2028-and-an-updated-capital-framework/",
+       "publisher": "globalfintechseries.com",
+       "title": "Danske Bank Announces Financial Targets for 2028 and an Updated Capital Framework"
+      },
+      {
+       "id": "69f1c9ce1e3933a6dd8f341d",
+       "headline": "The Board of Directors of American Electric Power (Nasdaq: AEP ) has declared a regular quarterly cash dividend of 95 cents per share on the company's common stock.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "aep.com",
+       "published_at": "2026-04-28T17:50:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f0e24945272de32e8bec1a",
+       "headline": "UltraTech Cement declares mega dividend: Record Rs 240 payout surpasses last 4 years combined",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "ultratechcement.com",
+       "published_at": "2026-04-27T13:02:11",
+       "url": "https://www.financialexpress.com/business/industry-amazon-now-targets-1000-micro-fulfilment-centres-across-100-cities-4219714/",
+       "publisher": "financialexpress.com",
+       "title": "Amazon Now targets 1,000 micro-fulfilment centres across 100 cities"
+      },
+      {
+       "id": "69f0e87f45272de32e8c5297",
+       "headline": "The company raised its dividend for the seventieth consecutive year, continuing a streak that stretches back to its incorporation in 1890.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "pg.com",
+       "published_at": "2026-04-26T22:29:10",
+       "url": "https://www.pymnts.com/news/retail/2026/pgs-tech-bet-starts-showing-up-in-sales/",
+       "publisher": "pymnts.com",
+       "title": "P&G’s Tech Bet Starts Showing Up in Sales | PYMNTS.com"
+      },
+      {
+       "id": "69efab26727212302c5f5080",
+       "headline": "The company also declared an interim dividend of ₹11 per share, with April 30 set as the record date.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "hzlindia.com",
+       "published_at": "2026-04-25T07:32:44",
+       "url": "https://www.outlookbusiness.com/corporate/hindustan-zinc-eyes-capacity-doubling-by-2030-demerger-talks-may-resume",
+       "publisher": "outlookbusiness.com",
+       "title": "Hindustan Zinc Eyes Capacity Doubling by 2030, Demerger Talks May Resume – Outlook Business"
+      },
+      {
+       "id": "69ec1e30836bff4eb975982e",
+       "headline": "The bank also announced a final dividend of Rs35 per share, translating into an 88% payout ratio, the highest since 2012.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "nbp.com.pk",
+       "published_at": "2026-04-24T12:07:30",
+       "url": "https://mettisglobal.news/NBP-bets-big-on-digital-future-59964",
+       "publisher": "mettisglobal.news",
+       "title": "NBP bets big on digital future"
+      },
+      {
+       "id": "69eafa72cb232e514c41cb5c",
+       "headline": "The company also recently declared a quarterly dividend, which will be paid on Thursday, July 9th. Investors of record on Thursday, June 11th will be issued a dividend of $0.9503 per share.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "tsmc.com",
+       "published_at": "2026-04-23T21:17:18",
+       "url": "https://www.themarketsdaily.com/2026/04/23/taiwan-semiconductor-manufacturing-nysetsm-stock-price-down-1-3-whats-next.html",
+       "publisher": "themarketsdaily.com",
+       "title": "Taiwan Semiconductor Manufacturing (NYSE:TSM) Stock Price Down 1.3%  – What’s Next?"
+      },
+      {
+       "id": "69e884477bb1410d4c895eaf",
+       "headline": "The company has announced an interim dividend of Rs. 24 on every share for FY 2026-27.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "hcltech.com",
+       "published_at": "2026-04-22T05:26:03",
+       "url": "https://www.livehindustan.com/business/hcl-technologies-share-dropped-over-9-percent-after-q4-weak-results-analysts-cuts-share-target-price-201776835097184.html",
+       "publisher": "livehindustan.com",
+       "title": "24 रुपये डिविडेंड बांटने का ऐलान, 4488 करोड़ रुपये का हुआ मुनाफा, फिर भी IT शेयर धड़ाम"
+      },
+      {
+       "id": "69e1c71def7caa4b80da096b",
+       "headline": "2013 -Visagar Polytex Declared final Dividend @ 10% on Equity Shares.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "vpl.visagar.com",
+       "published_at": "2026-04-17T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e863297bb1410d4c740ea2",
+       "headline": "The group has signaled a desire to bring its dividend payout ratio closer to 50% of its profits.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "kering.com",
+       "published_at": "2026-04-16T12:21:52",
+       "url": "https://time.news/kering-unveils-strategic-plan-to-double-profitability-and-regain-investor-trust/",
+       "publisher": "time.news",
+       "title": "Kering Unveils Strategic Plan to Double Profitability and Regain Investor Trust - Time News"
+      },
+      {
+       "id": "69e8df995cfa3e5ba54d0a53",
+       "headline": "The French luxury group Kering, owner of firms such as Gucci or Balenciaga, presented on Thursday its new strategy 'ReconKering' that seeks to accelerate the transformation of the company by boosting the attractiveness of its brands, as well as increasing capital efficiency and profitability, with the medium-term goal of doubling the percentage of the recurrent operating margin and a dividend policy consisting of a 'payout' ratio of close to 50% of the recurring net result.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "kering.com",
+       "published_at": "2026-04-16T09:43:03",
+       "url": "https://www.pressdigital.es/articulo/economia/2026-04-16/5846729-dueno-gucci-pretende-doblar-rentabilidad-medio-plazo-acercar-payout-50",
+       "publisher": "pressdigital.es",
+       "title": "El dueño de Gucci pretende doblar la rentabilidad a medio plazo y acercar el 'payout' al 50%"
+      },
+      {
+       "id": "69e8d8e99baafc7356d5c038",
+       "headline": "Peyto Exploration & Development Corp. (TSX: PEY) (“Peyto”) confirms that the monthly dividend with respect to April 2026 of $0.11 per common share is to be paid on May 15, 2026, for shareholders of record on April 30, 2026.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "peyto.com",
+       "published_at": "2026-04-15T21:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69dfc7f186bd23245a91d58b",
+       "headline": "The Board has also decided to maintain the dividend payout at a range between 18-30 percent.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "marutisuzuki.com",
+       "published_at": "2026-04-15T00:00:00",
+       "url": "https://www.autocarpro.in/news-national/maruti-amt-production-ramped-upto-5000-monthly-months-6707",
+       "publisher": "autocarpro.in",
+       "title": "Maruti’s AMT production to be ramped upto 5000 monthly in next 2 months | Autocar Professional"
+      },
+      {
+       "id": "69e8e0ce5cfa3e5ba54df9c4",
+       "headline": "Realty Income Corporation (Realty Income, NYSE: O), The Monthly Dividend Company®, today announced that it has declared its 670th consecutive common stock monthly dividend.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "realtyincome.com",
+       "published_at": "2026-04-14T20:05:00",
+       "url": "http://www.prnewswire.com/news-releases/realty-income-announces-670th-consecutive-common-stock-monthly-dividend-302742170.html",
+       "publisher": "prnewswire.com",
+       "title": "Realty Income Announces 670th Consecutive Common Stock Monthly Dividend"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 144,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTQgMjA6MDU6MDAiLCJpIjoiNjllOGUwY2U1Y2ZhM2U1YmE1NGRmOWM0IiwiZG0iOiJyZWFsdHlpbmNvbWUuY29tIiwiZXQiOiJjb21wYW55X2Fubm91bmNlbWVudCIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "company_announcement": 144
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.128,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 4 event(s)"
+     ],
+     "request_seconds": 4.131
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "dividend",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "dividend",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 68,
+     "carrying": 68,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 4,
+       "share": 5.88
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 4,
+       "share": 5.88
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 35,
+       "share": 51.47
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 7,
+       "share": 10.29
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 17,
+       "share": 25.0
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 1.47
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 4,
+       "share": 5.88
+      },
+      {
+       "group": "neutral",
+       "count": 4,
+       "share": 5.88
+      },
+      {
+       "group": "positive",
+       "count": 60,
+       "share": 88.24
+      }
+     ],
+     "negative_to_positive_ratio": 0.067,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.09,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 22,
+       "negative": 0,
+       "neutral": 1,
+       "positive": 21,
+       "negative_share": 0.0,
+       "positive_share": 95.45,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 1,
+        "slight_pos": 20,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 15,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 14,
+       "negative_share": 6.67,
+       "positive_share": 93.33,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 8,
+        "fair_pos": 1,
+        "very_pos": 4,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 18,
+       "negative": 3,
+       "neutral": 0,
+       "positive": 15,
+       "negative_share": 16.67,
+       "positive_share": 83.33,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 0,
+        "slight_pos": 4,
+        "fair_pos": 6,
+        "very_pos": 5,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 13,
+       "negative": 0,
+       "neutral": 3,
+       "positive": 10,
+       "negative_share": 0.0,
+       "positive_share": 76.92,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 3,
+        "slight_pos": 3,
+        "fair_pos": 0,
+        "very_pos": 7,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.216,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.22
+    }
+   }
+  }
+ ]
+}

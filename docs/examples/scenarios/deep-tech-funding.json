@@ -1,0 +1,2308 @@
+{
+ "slug": "deep-tech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:17Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "deep tech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "deep tech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 44,
+      "deals_with_amount": 38,
+      "deals_without_amount": 6,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 2881089600.0,
+      "median_amount_usd": 4500000.0,
+      "largest_amount_usd": 963360000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 35200000.0,
+       "median_amount_usd": 6600000.0,
+       "largest_amount_usd": 24000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 8500000.0,
+       "median_amount_usd": 8500000.0,
+       "largest_amount_usd": 8500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4662000.0,
+       "median_amount_usd": 2331000.0,
+       "largest_amount_usd": 2664000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 13975000.0,
+       "median_amount_usd": 6987500.0,
+       "largest_amount_usd": 10800000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 4,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 23495000.0,
+       "median_amount_usd": 4410000.0,
+       "largest_amount_usd": 14040000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1753100000.0,
+       "median_amount_usd": 6000000.0,
+       "largest_amount_usd": 850000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 23558000.0,
+       "median_amount_usd": 2808000.0,
+       "largest_amount_usd": 20000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 7147600.0,
+       "median_amount_usd": 2000000.0,
+       "largest_amount_usd": 5000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 979642000.0,
+       "median_amount_usd": 6350000.0,
+       "largest_amount_usd": 963360000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 6,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 20510000.0,
+       "median_amount_usd": 835000.0,
+       "largest_amount_usd": 12700000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 1,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 11300000.0,
+       "median_amount_usd": 11300000.0,
+       "largest_amount_usd": 11300000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.051,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.055
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "deep tech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "deep tech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "477ad2721ff51507",
+       "company_name": "Mundi Ventures",
+       "domain": "mundiventures.com",
+       "round_type": null,
+       "amount_usd": 963360000.0000001,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 892000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "deep tech growth fund",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "European investors powered $892 million close for Mundi Ventures’ deep tech growth fund…",
+       "published_at": "2026-02-13T11:59:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcbc6a06529d470d44c9f9"
+       ],
+       "article_id": "69bcbc6a06529d470d44c9f9"
+      },
+      {
+       "id": "d1a6f51bde934d0a",
+       "company_name": "India Deep Tech Alliance (IDTA)",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 850000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 850000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "deep tech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The India Deep Tech Alliance (IDTA) has secured fresh commitments of over Rs 7,500 crore ($850 million) and expanded its membership with the entry of Nvidia and Qualcomm Ventures, the coalition said on Wednesday.",
+       "published_at": "2025-11-05T15:00:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931bb4deb0b28e47ef20e1b"
+       ],
+       "article_id": "6931bb4deb0b28e47ef20e1b"
+      },
+      {
+       "id": "c0159f076bd340c6",
+       "company_name": "India Deep Tech Alliance",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 850000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 850000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "robotics, AI and space startups and mentorships",
+       "source_sentence": "NVIDIA and Qualcomm Ventures have invested more than 850 million dollars in India Deep Tech Alliance.",
+       "published_at": "2025-11-05T11:08:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931737a5a28515a99f20fe3"
+       ],
+       "article_id": "6931737a5a28515a99f20fe3"
+      },
+      {
+       "id": "dc6e1dd15533ad90",
+       "company_name": "Delvitech",
+       "domain": "delvitech.tech",
+       "round_type": "Series B",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "EGS Beteiligungen",
+         "domain": "egs-beteiligungen.ch",
+         "amount": null
+        },
+        {
+         "name": "CREADD Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "several European private investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI-native Automated Optical Inspection, Deep Tech",
+       "country": "Switzerland",
+       "city": null,
+       "use_of_funds": "Expand into India and open manufacturing facility",
+       "source_sentence": "Swiss deep tech startup Delvitech has raised $40 million in Series B funding.",
+       "published_at": "2025-11-11T09:00:00",
+       "coverage_count": 10,
+       "article_ids": [
+        "6931738b4e9768644af212c6",
+        "693196454b1bcf7fdbf214fb",
+        "698d2cfc9ca02490ecf61631",
+        "698db9759ca02490ec006e8e",
+        "698ddda68d29a990b6de9191",
+        "6996fc6d5fbe93703d5f558a",
+        "69971acb0d0db262fa592dd9",
+        "69bc6e709a756ebbcf2ced22",
+        "69bd5ed9bc0fe678ea6b11cf",
+        "69e853f29baafc7356733efc"
+       ],
+       "article_id": "698ddda68d29a990b6de9191"
+      },
+      {
+       "id": "660296c9775b3f75",
+       "company_name": "Tan90 Thermal Solutions",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 24000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blue ashva capital",
+         "domain": "blueashvacapital.com",
+         "amount": null
+        },
+        {
+         "name": "Capital-A",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "3i partners",
+         "domain": "3ipartners.ca",
+         "amount": null
+        }
+       ],
+       "sector": "Deep tech, sustainable thermal energy management",
+       "country": "India",
+       "city": "Chennai",
+       "use_of_funds": "Create new product lines for cold chains, HVAC systems, and data centers, and expand footprint in Southeast Asia, the Middle East and Africa",
+       "source_sentence": "NABVENTURES led a Series A funding round for deep tech startup Tan90 Thermal Solutions, which raised Rs 20 crore ($2.35 million) with participation from Blue Ashva Capital, Capital-A, and 3i Partners.",
+       "published_at": "2025-05-26T07:02:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988b19f69527f36baaf01e3"
+       ],
+       "article_id": "6988b19f69527f36baaf01e3"
+      },
+      {
+       "id": "6dd7dce46365d6de",
+       "company_name": "SynaXG Technologies",
+       "domain": null,
+       "round_type": "inaugural",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "january capital",
+         "domain": "january.capital",
+         "amount": null
+        },
+        {
+         "name": "vertex ventures",
+         "domain": "vertexventures.com",
+         "amount": null
+        },
+        {
+         "name": "qualgro",
+         "domain": "qualgro.com",
+         "amount": null
+        }
+       ],
+       "sector": "deep tech, AI",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "accelerate product development, expand engineering teams, deepen collaborations with operators and enterprise partners",
+       "source_sentence": "SynaXG Technologies, a deep tech company building wireless infrastructure for the artificial intelligence era, has raised over USD 20 million in its inaugural funding round.",
+       "published_at": "2025-12-03T06:15:01",
+       "coverage_count": 2,
+       "article_ids": [
+        "698d59d89ca02490ecf97356",
+        "698d5b378d29a990b6d500b6"
+       ],
+       "article_id": "698d59d89ca02490ecf97356"
+      },
+      {
+       "id": "8551bb97c2f58743",
+       "company_name": "kiutra",
+       "domain": "kiutra.com",
+       "round_type": "equity",
+       "amount_usd": 14040000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 13000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Novacapital",
+         "domain": "novacapital.eu",
+         "amount": null
+        },
+        {
+         "name": "55 north",
+         "domain": "55north.com",
+         "amount": null
+        },
+        {
+         "name": "High-Tech Gründerfonds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "other existing backers",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "deep tech quantum cooling",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "accelerate global scale-up and deliver helium-3-free cooling systems",
+       "source_sentence": "kiutra, the globally leading provider of magnetic cooling for quantum technologies, today announced the successful closing of a €13 million equity round to accelerate global scale-up and deliver helium-3-free cooling systems that strengthen quantum supply chain resilience.",
+       "published_at": "2025-10-02T13:12:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d20ae8d29a990b6d08cef"
+       ],
+       "article_id": "698d20ae8d29a990b6d08cef"
+      },
+      {
+       "id": "f0ccd254f34ed88f",
+       "company_name": "Empirical Ventures",
+       "domain": "empiricalventures.vc",
+       "round_type": null,
+       "amount_usd": 12700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "british business bank",
+         "domain": "british-business-bank.co.uk",
+         "amount": 10000000.0
+        }
+       ],
+       "sector": "deep tech, life science",
+       "country": "UK",
+       "city": "Bristol",
+       "use_of_funds": "deep tech and life science projects",
+       "source_sentence": "Empirical Ventures, a UK-based investment group that backs entrepreneurial scientists, has secured a £10m commitment from the British Business Bank.",
+       "published_at": "2026-03-30T10:00:20",
+       "coverage_count": 4,
+       "article_ids": [
+        "69cbe66e12cf28a458fcc896",
+        "69cc5d3b74cdb9f7951dd090",
+        "69d1122f44cbe22144534fcf",
+        "69d14e535dd71f6d112f1181"
+       ],
+       "article_id": "69cc5d3b74cdb9f7951dd090"
+      },
+      {
+       "id": "0c229571c60959de",
+       "company_name": "Atomic Tessellator",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 11300000.0,
+       "amount_flag": null,
+       "valuation_usd": 50000000.0,
+       "currency": "USD",
+       "amount": 11300000.0,
+       "valuation": 50000000.0,
+       "investors": [
+        {
+         "name": "crane venture partners",
+         "domain": "crane.vc",
+         "amount": null
+        },
+        {
+         "name": "in-q-tel",
+         "domain": "iqt.org",
+         "amount": null
+        },
+        {
+         "name": "icehouse ventures",
+         "domain": "icehouseventures.co.nz",
+         "amount": null
+        },
+        {
+         "name": "outset ventures",
+         "domain": "outset.ventures",
+         "amount": null
+        },
+        {
+         "name": "GD1",
+         "domain": "gd1.vc",
+         "amount": null
+        },
+        {
+         "name": "Salus Ventures",
+         "domain": "salus.vc",
+         "amount": null
+        },
+        {
+         "name": "Side Stage Ventures",
+         "domain": "sidestage.vc",
+         "amount": null
+        },
+        {
+         "name": "confluent",
+         "domain": "confluent.io",
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech",
+       "country": "New Zealand",
+       "city": "Auckland",
+       "use_of_funds": "The fresh funding will be used to expand the team and support plans to build out an in-house lab and alloy production capabilities.",
+       "source_sentence": "Atomic Tessellator has raised $11.3 million in seed funding.",
+       "published_at": "2026-04-17T01:19:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e15a9baafc7356dc9914"
+       ],
+       "article_id": "69e8e15a9baafc7356dc9914"
+      },
+      {
+       "id": "15b9a919bc47c98a",
+       "company_name": "LeydenJar",
+       "domain": null,
+       "round_type": "Customer funding",
+       "amount_usd": 10800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Leading US-based consumer electronics company",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "deep tech battery",
+       "country": "Netherlands",
+       "city": "Eindhoven",
+       "use_of_funds": "development and installation of key production equipment",
+       "source_sentence": "In parallel, the company secured €10 million in customer funding from a leading US-based consumer electronics company for the development and installation of key production equipment.",
+       "published_at": "2025-09-10T14:49:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d95943bf1dd95b861205d8",
+        "69bb1c12c9a954196de0ef11"
+       ],
+       "article_id": "68d95943bf1dd95b861205d8"
+      },
+      {
+       "id": "32597c2f5f06882b",
+       "company_name": "colugo systems",
+       "domain": "colugo-sys.com",
+       "round_type": "first round",
+       "amount_usd": 8500000.0,
+       "amount_flag": null,
+       "valuation_usd": 65000000.0,
+       "currency": "USD",
+       "amount": 8500000.0,
+       "valuation": 65000000.0,
+       "investors": [
+        {
+         "name": "Ayalon Insurance and Finance",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "deep tech",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Colugo Systems, which makes electric drones used by the military and in civil operations, raised $8.5 million in its first round. The deal was led by Ayalon Insurance and Finance, with a pre‑money valuation of $65 million.",
+       "published_at": "2025-06-13T10:28:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e29669ca02490ec08be07"
+       ],
+       "article_id": "698e29669ca02490ec08be07"
+      },
+      {
+       "id": "28098025dd07a51f",
+       "company_name": "Stanhope AI",
+       "domain": "stanhopeai.com",
+       "round_type": "seed",
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "frontline ventures",
+         "domain": "frontline.vc",
+         "amount": null
+        },
+        {
+         "name": "paladin capital group",
+         "domain": "paladincapgroup.com",
+         "amount": null
+        },
+        {
+         "name": "Auxxo Female Catalyst Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ucl technology fund",
+         "domain": "ucltf.co.uk",
+         "amount": null
+        },
+        {
+         "name": "mmc ventures",
+         "domain": "mmc.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Deep tech Artificial Intelligence",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "advance Real World Model",
+       "source_sentence": "Stanhope AI, a London-based deep tech startup pioneering brain-inspired artificial intelligence, has closed an $8m (£6m) seed funding round.",
+       "published_at": "2026-02-12T08:43:50",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bb27e9eec96a7343010c34",
+        "69bc71586bf4fc1dd52f5458",
+        "69e28d5990d9a716b4b9814b"
+       ],
+       "article_id": "69bb27e9eec96a7343010c34"
+      },
+      {
+       "id": "80cab5d2ed8d41e7",
+       "company_name": "Uviquity",
+       "domain": "uviquity.ai",
+       "round_type": "Seed",
+       "amount_usd": 6600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Emerald Development Managers",
+         "domain": "emeraldmanagers.com",
+         "amount": null
+        },
+        {
+         "name": "agfunder",
+         "domain": "agfunder.com",
+         "amount": null
+        },
+        {
+         "name": "MANN+HUMMEL",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech Disinfection",
+       "country": "USA",
+       "city": "Raleigh",
+       "use_of_funds": "accelerate R&D and productize its fingertip-sized far‑UVC chips for wide deployment",
+       "source_sentence": "Uviquity, a Raleigh, N.C.-based deep tech startup, emerged from stealth with $6.6 million in seed funding.",
+       "published_at": "2025-05-07T23:53:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab364ebfdb4fb6639d5a27"
+       ],
+       "article_id": "68ab364ebfdb4fb6639d5a27"
+      },
+      {
+       "id": "47be4869b4fee5f4",
+       "company_name": "Refute Ltd.",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 6350000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "amadeus capital partners",
+         "domain": "amadeuscapital.com",
+         "amount": null
+        },
+        {
+         "name": "playfair",
+         "domain": "playfair.com",
+         "amount": null
+        },
+        {
+         "name": "episode 1",
+         "domain": "episode1.com",
+         "amount": null
+        },
+        {
+         "name": "Osney Capital",
+         "domain": "osneycapital.com",
+         "amount": null
+        },
+        {
+         "name": "NSSIF",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Disinformation Analytics / Cybersecurity / Deep Tech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "expand its engineering team, enhance AI detection models, and advance response capabilities across European markets.",
+       "source_sentence": "Refute, a London, UK-based AI-powered counter-disinformation company, has raised £5 million in Seed funding.",
+       "published_at": "2026-02-06T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bae261cd833681ce95a501"
+       ],
+       "article_id": "69bae261cd833681ce95a501"
+      },
+      {
+       "id": "3210724800d160d5",
+       "company_name": "Refute Ltd.",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 6350000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "amadeus capital partners",
+         "domain": "amadeuscapital.com",
+         "amount": null
+        },
+        {
+         "name": "playfair",
+         "domain": "playfair.com",
+         "amount": null
+        },
+        {
+         "name": "episode 1",
+         "domain": "episode1.com",
+         "amount": null
+        },
+        {
+         "name": "Osney Capital",
+         "domain": "osneycapital.com",
+         "amount": null
+        },
+        {
+         "name": "NSSIF",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Disinformation Analytics, Cybersecurity, Deep Tech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "expand its engineering team, enhance AI detection models, and advance response capabilities across European markets.",
+       "source_sentence": "Refute, a London, UK-based AI-powered counter-disinformation company, has raised £5 million in Seed funding.",
+       "published_at": "2026-02-06T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988aa594727a5abdc89e7f2"
+       ],
+       "article_id": "6988aa594727a5abdc89e7f2"
+      },
+      {
+       "id": "06ba8ab988bb9a13",
+       "company_name": "Strataphy",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 6000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Outliers VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Shorooq",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "PlusVC (+VC)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech | Geothermal Cooling",
+       "country": "Saudi Arabia",
+       "city": "Dammam",
+       "use_of_funds": "to advance its technology, expand its full-service stack, and grow its engineering and operations teams to support new deployments across giga-projects, industrial facilities, and hyperscale data centers in MENA and beyond.",
+       "source_sentence": "Geothermal cooling company Strataphy has announced the completion of a seed funding round, successfully raising $6 million in a round Outliers VC and joined by Shorooq, with participation from PlusVC (+VC).",
+       "published_at": "2025-11-25T11:50:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "6931648366546b0621f20829",
+        "69c8cba653330b012d7dbffe"
+       ],
+       "article_id": "69c8cba653330b012d7dbffe"
+      },
+      {
+       "id": "a70765047cc74d40",
+       "company_name": "upsurgeon",
+       "domain": "upsurgeon.com",
+       "round_type": null,
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "simest",
+         "domain": "simest.it",
+         "amount": null
+        },
+        {
+         "name": "Deep Blue Ventures",
+         "domain": "deepblueventures.com",
+         "amount": null
+        },
+        {
+         "name": "Deep Ocean Capital Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "azimut libera impresa",
+         "domain": "azimutliberaimpresa.it",
+         "amount": null
+        },
+        {
+         "name": "fbh",
+         "domain": "fbh-berlin.de",
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech / Medical Device / Surgical Training",
+       "country": "Italy",
+       "city": null,
+       "use_of_funds": "Global expansion, enhancing proprietary platforms across new surgical specialities, and accelerating research and development activities",
+       "source_sentence": "UpSurgeOn has announced that it has closed a €5 million investment round.",
+       "published_at": "2026-03-20T13:02:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd20e2e41fb6223043035"
+       ],
+       "article_id": "69cbd20e2e41fb6223043035"
+      },
+      {
+       "id": "b2cc89ebfa6f627f",
+       "company_name": "Vimag Labs",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Chakra Growth Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ThinKuvate",
+         "domain": "thinkuvate.com",
+         "amount": null
+        }
+       ],
+       "sector": "Deep tech — electric motor tech without rare earth metals",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Accelerate commercialization, expand engineering and manufacturing capabilities, and advance industrial and EV applications",
+       "source_sentence": "Deep-tech startup Vimag Labs rises $5 Mn led by Accel",
+       "published_at": "2026-01-29T16:08:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d485a9ca02490ecf80778"
+       ],
+       "article_id": "698d485a9ca02490ecf80778"
+      },
+      {
+       "id": "f6cdf4f258f032e4",
+       "company_name": "Tan90 Thermal Solutions",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 4600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "social alpha",
+         "domain": "socialalpha.org",
+         "amount": null
+        }
+       ],
+       "sector": "Deep tech, sustainable thermal energy management",
+       "country": "India",
+       "city": "Chennai",
+       "use_of_funds": null,
+       "source_sentence": "In the past, the Chennai-based business has raised $4.6 million from sources like Social Alpha.",
+       "published_at": "2025-05-26T07:02:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988b19f69527f36baaf01e3"
+       ],
+       "article_id": "6988b19f69527f36baaf01e3"
+      },
+      {
+       "id": "fbfc979e07ffee7a",
+       "company_name": "dmat",
+       "domain": "dmat.co",
+       "round_type": "First round",
+       "amount_usd": 4500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Primo Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "safar partners",
+         "domain": "safar.partners",
+         "amount": null
+        },
+        {
+         "name": "peoplefund",
+         "domain": "peoplefund.com",
+         "amount": null
+        },
+        {
+         "name": "deep future",
+         "domain": "deepfuture.tech",
+         "amount": null
+        },
+        {
+         "name": "Corbites",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Deep tech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support the commercialisation and internationalisation of the technology",
+       "source_sentence": "DMAT, a deep tech company developing technology capable of doubling the service life and reducing the carbon footprint of concrete by 60%, has received a $4.5 million capital investment in an oversubscribed first round led by Primo Capital through its Primo Climate fund.",
+       "published_at": "2025-10-20T08:37:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "69973a465fbe93703d608fc1"
+       ],
+       "article_id": "69973a465fbe93703d608fc1"
+      },
+      {
+       "id": "ae167cb0eb16862f",
+       "company_name": "kiutra",
+       "domain": "kiutra.com",
+       "round_type": "grant",
+       "amount_usd": 4320000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "deep tech quantum cooling",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "advance this development",
+       "source_sentence": "In 2024, kiutra secured a €4 million EIC grant to advance this development.",
+       "published_at": "2025-10-02T13:12:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d20ae8d29a990b6d08cef"
+       ],
+       "article_id": "698d20ae8d29a990b6d08cef"
+      },
+      {
+       "id": "1913b362165fa0e0",
+       "company_name": "Number 0",
+       "domain": null,
+       "round_type": "funding",
+       "amount_usd": 4300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "4 investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "deep tech infrastructure platform",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Number 0, a deep tech infrastructure platform for building distributed networks, has raised $4.3M in funding according to a recent SEC filing.",
+       "published_at": "2025-11-03T09:27:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69888863868e86f9ec6c856f"
+       ],
+       "article_id": "69888863868e86f9ec6c856f"
+      },
+      {
+       "id": "992c188ecc8325f7",
+       "company_name": "boobybiome",
+       "domain": "boobybiome.com",
+       "round_type": "seed",
+       "amount_usd": 3175000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Empirical Ventures",
+         "domain": "empiricalventures.vc",
+         "amount": null
+        },
+        {
+         "name": "the helm",
+         "domain": "thehelm.co",
+         "amount": null
+        },
+        {
+         "name": "xfactor ventures",
+         "domain": "xfactor.ventures",
+         "amount": null
+        },
+        {
+         "name": "Lavender Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kayan Ventures",
+         "domain": "kayan.vc",
+         "amount": null
+        },
+        {
+         "name": "Evenlode Investment",
+         "domain": "evenlodeinvestment.com",
+         "amount": null
+        },
+        {
+         "name": "Dominic Hollamby",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Lord Ara Darzi",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "deep tech, infant nutrition, microbiome",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "Accelerate global commercial scaling, support partnerships with infant bottle manufacturers, and fund further scientific research and clinical trials.",
+       "source_sentence": "The £2.5 million seed round was led by specialist deep tech investor Empirical Ventures, with backing from The Helm, XFactor Ventures, Lavender Ventures, Kayan Ventures, Evenlode Investment, and angel investors including Dominic Hollamby and Lord Ara Darzi.",
+       "published_at": "2025-09-08T11:37:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "699814c9a9a137bc0bdf86a6"
+       ],
+       "article_id": "699814c9a9a137bc0bdf86a6"
+      },
+      {
+       "id": "1a447143615ea60c",
+       "company_name": "random power",
+       "domain": "randompower.eu",
+       "round_type": null,
+       "amount_usd": 2808000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Deep Blue Ventures",
+         "domain": "deepblueventures.com",
+         "amount": null
+        },
+        {
+         "name": "Emerald Development Managers",
+         "domain": "emeraldmanagers.com",
+         "amount": null
+        },
+        {
+         "name": "40Jemz Ventures",
+         "domain": "40jemz.com",
+         "amount": null
+        },
+        {
+         "name": "galaxia",
+         "domain": "galaxia.ca",
+         "amount": null
+        },
+        {
+         "name": "CDP Venture Capital’s Technology Transfer Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Obloo Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech; Quantum Security; Cybersecurity",
+       "country": "Italy",
+       "city": null,
+       "use_of_funds": "Accelerate the transformation of quantum research into industrial infrastructure, commercialise the quantum random number generator (QRNG) platform, strengthen European leadership in quantum security, and support industrial production, sales expansion and strategic partnerships.",
+       "source_sentence": "Alongside the lead investors, the €2.6 million round sees the participation of a pool of strategic investors including 40Jemz Ventures and Galaxia, the national technology transfer hub for aerospace, created on the initiative of CDP Venture Capital’s Technology Transfer Fund together with Obloo Ventures.",
+       "published_at": "2025-12-12T07:58:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "698eb9b69ca02490ec13a2e3"
+       ],
+       "article_id": "698eb9b69ca02490ec13a2e3"
+      },
+      {
+       "id": "9b6ae49671351f4b",
+       "company_name": "rivr",
+       "domain": "rivr.uk",
+       "round_type": "Seed",
+       "amount_usd": 2664000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 3600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "greensky ventures",
+         "domain": "greensky.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech / AI / Video Search & Discovery",
+       "country": "Canada",
+       "city": "Montreal",
+       "use_of_funds": "The company will use the funds to grow its team and further refine and commercialize its video search and discovery platform.",
+       "source_sentence": "Rivr, a Montreal, Canada-based AI-powered in-media search and content discovery platform for video creators and brands, has raised $3.6 million CAD ($2.5M USD) in seed funding.",
+       "published_at": "2025-07-09T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698df3ed8d29a990b6e0325b"
+       ],
+       "article_id": "698df3ed8d29a990b6e0325b"
+      },
+      {
+       "id": "6695b987d3c01423",
+       "company_name": "Aule Space",
+       "domain": null,
+       "round_type": "Pre‑seed",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pi ventures",
+         "domain": "piventures.in",
+         "amount": null
+        }
+       ],
+       "sector": "Deep tech / Space technology",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Advanced research and development, hiring specialised engineering talent, and building space‑grade technology systems.",
+       "source_sentence": "Deep tech startup Aule Space has raised $2 million in a pre‑seed funding round led by pi Ventures.",
+       "published_at": "2026-01-15T15:06:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e22a09ca02490ec0839d6"
+       ],
+       "article_id": "698e22a09ca02490ec0839d6"
+      },
+      {
+       "id": "7ba79dd198b6c8bc",
+       "company_name": "balthazar",
+       "domain": "balthazar.org",
+       "round_type": "Pre-Seed",
+       "amount_usd": 1998000.0000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1850000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "capitalt",
+         "domain": "capitaltvc.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Dutch innovation funders",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech R&D / Lab Automation / AI-Enabled Experimentation",
+       "country": "Netherlands",
+       "city": "Amsterdam",
+       "use_of_funds": "product development, enhance AI capabilities, and expand the Balthazar team",
+       "source_sentence": "The company will use the funding to support product development, enhance AI capabilities, and expand the Balthazar team.",
+       "published_at": "2025-07-03T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a43a51953fdcb20e1a953"
+       ],
+       "article_id": "698a43a51953fdcb20e1a953"
+      },
+      {
+       "id": "6a6867b589d6d917",
+       "company_name": "H3 Zoom",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 1800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1800000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "JRE Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sginnovate",
+         "domain": "sginnovate.com",
+         "amount": null
+        },
+        {
+         "name": "m7 holdings",
+         "domain": "m7holdings.com",
+         "amount": null
+        }
+       ],
+       "sector": "Deep tech AI-powered inspection and asset management for critical infrastructure",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "Support expansion into Japan and Hong Kong, strengthen operations in Singapore, and accelerate research and development",
+       "source_sentence": "Singapore-based deep tech startup H3 Zoom has secured $1.8 million in the first closing of its Series A funding round, led by JRE Ventures, the corporate venture capital arm of JR East, with participation from SGInnovate and M7 Holdings.",
+       "published_at": "2025-11-11T16:01:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "698d5c178d29a990b6d51284",
+        "69971bab33af8f1ff8a316b8"
+       ],
+       "article_id": "69971bab33af8f1ff8a316b8"
+      },
+      {
+       "id": "078bbe6851f595cd",
+       "company_name": "ewigbyte",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 1728000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "baystartup",
+         "domain": "baystartup.de",
+         "amount": null
+        },
+        {
+         "name": "business angels from BayStartUP investor network",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "bring a new glass-based storage technology to market maturity and strengthen long-term data security and digital resilience in Europe",
+       "source_sentence": "The Munich Deep-Tech ewigbyte has completed pre-seed financing of 1.6 million euros. The round was accompanied by BayStartUP. The aim is to bring a new glass-based storage technology to market maturity and thus to strengthen long-term data security and digital resilience in Europe. The financing of Vanagon Ventures and Bayern Kapital is led. It is complemented by several business angels from the BayStartUP investor network.",
+       "published_at": "2026-02-18T16:45:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a6e88ec6ce19127fcd01",
+        "69c945d377f2c3a5a19314cb"
+       ],
+       "article_id": "69c945d377f2c3a5a19314cb"
+      },
+      {
+       "id": "1853af190a54cdd8",
+       "company_name": "metaBIX",
+       "domain": null,
+       "round_type": "extension",
+       "amount_usd": 1300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dalus capital",
+         "domain": "daluscapital.com",
+         "amount": null
+        },
+        {
+         "name": "EWA Capital",
+         "domain": "ewa.capital",
+         "amount": null
+        }
+       ],
+       "sector": "Deep tech biotech",
+       "country": "Uruguay",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Uruguayan deep tech startup metaBIX Biotech raised a $1.3M extension round from Dalus Capital and EWA Capital.",
+       "published_at": "2026-03-13T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e1d1ecbe295898c6dc2232"
+       ],
+       "article_id": "69e1d1ecbe295898c6dc2232"
+      },
+      {
+       "id": "36b2e74345e010ce",
+       "company_name": "Planet Smart",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 1000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "General Inception",
+         "domain": "generalinception.com",
+         "amount": null
+        },
+        {
+         "name": "vertical venture partners",
+         "domain": "vvp.vc",
+         "amount": null
+        },
+        {
+         "name": "innovate uk",
+         "domain": "innovateuk.gov.uk",
+         "amount": null
+        },
+        {
+         "name": "Undaunted Accelerator",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "deep tech",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "launch its inaugural product",
+       "source_sentence": "London-based Planet Smart has secured $1 million in pre-seed funding to launch its inaugural product.",
+       "published_at": "2025-11-18T07:27:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e7ae58d29a990b6ea3fd1"
+       ],
+       "article_id": "698e7ae58d29a990b6ea3fd1"
+      },
+      {
+       "id": "9d78eea30d25500e",
+       "company_name": "Quintrans",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 750000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Capital-A",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sumeet Kabra of RR Global",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sanchiconnect",
+         "domain": "sanchiconnect.com",
+         "amount": null
+        },
+        {
+         "name": "AIC-Pinnacle",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "IIMA Ventures",
+         "domain": "iimaventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "deep tech, industrial automation, robotics, equipment manufacturing",
+       "country": "India",
+       "city": "Pune",
+       "use_of_funds": "The capital raised will be used to establish an in-house manufacturing and advanced testing facility in Pune, accelerate R&D across electromagnetic actuation, and build the core engineering and operations team required for commercial rollout.",
+       "source_sentence": "Capital-A, India’s specialist venture capital fund for manufacturing and deep tech, has led a $750K pre‑seed round in Quintrans, a deep tech engineering startup developing India‑built direct‑drive linear motion systems for industrial automation, robotics and equipment manufacturing.",
+       "published_at": "2025-12-17T03:06:18",
+       "coverage_count": 4,
+       "article_ids": [
+        "6989570294d3f481f3e3ebeb",
+        "698d578f9ca02490ecf944c0",
+        "698e21f68d29a990b6e398ca",
+        "6997edc35c8cb467048ffee7"
+       ],
+       "article_id": "698e21f68d29a990b6e398ca"
+      },
+      {
+       "id": "108fb800d90a3787",
+       "company_name": "Hartley Ultrafast",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 635000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sowing Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "OVC Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "deep tech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "has secured £500,000 of their pre-seed round in just six weeks with the help of ThatRound — an aggregator connecting startups with multiple investor partners.",
+       "published_at": "2025-10-27T09:20:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "69975d2fe0523bedf7b4189b"
+       ],
+       "article_id": "69975d2fe0523bedf7b4189b"
+      },
+      {
+       "id": "5351935d9c011db7",
+       "company_name": "stratificare",
+       "domain": "stratificare.com",
+       "round_type": null,
+       "amount_usd": 370000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "SGD",
+       "amount": 500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TIS Inc.",
+         "domain": null,
+         "amount": 500000.0
+        }
+       ],
+       "sector": "Deep tech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": null,
+       "source_sentence": "Logice, Sembuh AI and StratifiCare each awarded S$500,000 by major Japan IT company TIS Inc., as part of its S$7.6 million commitment to co-develop and scale the accelerator programme.",
+       "published_at": "2026-03-27T06:42:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2b358dc480588dca146a9"
+       ],
+       "article_id": "69e2b358dc480588dca146a9"
+      },
+      {
+       "id": "1767f47706d3c92d",
+       "company_name": "Logice",
+       "domain": "logiceindonesia.com",
+       "round_type": null,
+       "amount_usd": 370000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "SGD",
+       "amount": 500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TIS Inc.",
+         "domain": null,
+         "amount": 500000.0
+        }
+       ],
+       "sector": "Deep tech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": null,
+       "source_sentence": "Logice, Sembuh AI and StratifiCare each awarded S$500,000 by major Japan IT company TIS Inc., as part of its S$7.6 million commitment to co-develop and scale the accelerator programme.",
+       "published_at": "2026-03-27T06:42:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2b358dc480588dca146a9"
+       ],
+       "article_id": "69e2b358dc480588dca146a9"
+      },
+      {
+       "id": "160f1e1fbfff917c",
+       "company_name": "Sembuh AI",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 370000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "SGD",
+       "amount": 500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TIS Inc.",
+         "domain": null,
+         "amount": 500000.0
+        }
+       ],
+       "sector": "Deep tech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": null,
+       "source_sentence": "Logice, Sembuh AI and StratifiCare each awarded S$500,000 by major Japan IT company TIS Inc., as part of its S$7.6 million commitment to co-develop and scale the accelerator programme.",
+       "published_at": "2026-03-27T06:42:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2b358dc480588dca146a9"
+       ],
+       "article_id": "69e2b358dc480588dca146a9"
+      },
+      {
+       "id": "9eaf1c99bd6611ca",
+       "company_name": "Reneonix",
+       "domain": null,
+       "round_type": "Pre-seed",
+       "amount_usd": 204000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 17000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "inflection point ventures",
+         "domain": "ipventures.in",
+         "amount": null
+        },
+        {
+         "name": "government of india",
+         "domain": "india.gov.in",
+         "amount": null
+        },
+        {
+         "name": "NSRCEL-IIM Bangalore",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "SustainTN",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ITEL Foundation",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech",
+       "country": "India",
+       "city": "Chennai",
+       "use_of_funds": "Research and Development for hardware innovation and material science",
+       "source_sentence": "Deep Tech startup Reneonix has raised ₹1.70 Crore in Pre-seed round led by Inflection Point Ventures.",
+       "published_at": "2026-02-26T05:29:04",
+       "coverage_count": 4,
+       "article_ids": [
+        "69bc7decdfa7512de3870306",
+        "69bc7f368bf856b2461809f4",
+        "69bc92355d6eab2ab8fcc4b4",
+        "69c9c8f4eff444794ed81f92"
+       ],
+       "article_id": "69c9c8f4eff444794ed81f92"
+      },
+      {
+       "id": "5f23b276bb78cc44",
+       "company_name": "OneARVO",
+       "domain": null,
+       "round_type": "Pre-seed",
+       "amount_usd": 147600.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 12300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "inflection point ventures",
+         "domain": "ipventures.in",
+         "amount": null
+        }
+       ],
+       "sector": "Deep tech — AI + blockchain",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Build out technology team, establish an AI lab, and accelerate go-to-market implementation",
+       "source_sentence": "Deep-tech startup OneARVO raises pre-seed round led by IPV",
+       "published_at": "2026-01-29T16:08:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d485a9ca02490ecf80778"
+       ],
+       "article_id": "698d485a9ca02490ecf80778"
+      },
+      {
+       "id": "70a9a46879f52789",
+       "company_name": "Innovinnprom",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european union",
+         "domain": "europa.eu",
+         "amount": null
+        }
+       ],
+       "sector": "deep tech",
+       "country": "Ukraine",
+       "city": null,
+       "use_of_funds": "Bridge financing gap for deep tech startups; progress from development to market-ready deployment.",
+       "source_sentence": "The EU is awarding €20 million in funding to 41 cutting‑edge Ukrainian start‑ups and SMEs, following a European Innovation Council call to help them turn groundbreaking ideas into real‑world solutions.",
+       "published_at": "2026-04-02T22:06:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27f6ac1991f786ce14eb8"
+       ],
+       "article_id": "69e27f6ac1991f786ce14eb8"
+      },
+      {
+       "id": "47e5f1a2d4170324",
+       "company_name": "Farsight vision",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european union",
+         "domain": "europa.eu",
+         "amount": null
+        }
+       ],
+       "sector": "deep tech",
+       "country": "Ukraine",
+       "city": null,
+       "use_of_funds": "Bridge financing gap for deep tech startups; progress from development to market-ready deployment.",
+       "source_sentence": "The EU is awarding €20 million in funding to 41 cutting‑edge Ukrainian start‑ups and SMEs, following a European Innovation Council call to help them turn groundbreaking ideas into real‑world solutions.",
+       "published_at": "2026-04-02T22:06:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27f6ac1991f786ce14eb8"
+       ],
+       "article_id": "69e27f6ac1991f786ce14eb8"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 44,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDQtMDIgMjI6MDY6NTEiLCJrIjoiNTE4MDgxMjYyODAwNDg5NzU3MiIsImEiOjAuMH0",
+     "totals": {
+      "deals": 44,
+      "deals_with_amount": 38,
+      "deals_without_amount": 6,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 2881089600.0,
+      "median_amount_usd": 4500000.0,
+      "largest_amount_usd": 963360000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.15,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.154
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "deep tech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "deep tech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "0c229571c60959de",
+       "company_name": "Atomic Tessellator",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 11300000.0,
+       "amount_flag": null,
+       "valuation_usd": 50000000.0,
+       "currency": "USD",
+       "amount": 11300000.0,
+       "valuation": 50000000.0,
+       "investors": [
+        {
+         "name": "crane venture partners",
+         "domain": "crane.vc",
+         "amount": null
+        },
+        {
+         "name": "in-q-tel",
+         "domain": "iqt.org",
+         "amount": null
+        },
+        {
+         "name": "icehouse ventures",
+         "domain": "icehouseventures.co.nz",
+         "amount": null
+        },
+        {
+         "name": "outset ventures",
+         "domain": "outset.ventures",
+         "amount": null
+        },
+        {
+         "name": "GD1",
+         "domain": "gd1.vc",
+         "amount": null
+        },
+        {
+         "name": "Salus Ventures",
+         "domain": "salus.vc",
+         "amount": null
+        },
+        {
+         "name": "Side Stage Ventures",
+         "domain": "sidestage.vc",
+         "amount": null
+        },
+        {
+         "name": "confluent",
+         "domain": "confluent.io",
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech",
+       "country": "New Zealand",
+       "city": "Auckland",
+       "use_of_funds": "The fresh funding will be used to expand the team and support plans to build out an in-house lab and alloy production capabilities.",
+       "source_sentence": "Atomic Tessellator has raised $11.3 million in seed funding.",
+       "published_at": "2026-04-17T01:19:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e15a9baafc7356dc9914"
+       ],
+       "article_id": "69e8e15a9baafc7356dc9914"
+      },
+      {
+       "id": "70a9a46879f52789",
+       "company_name": "Innovinnprom",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european union",
+         "domain": "europa.eu",
+         "amount": null
+        }
+       ],
+       "sector": "deep tech",
+       "country": "Ukraine",
+       "city": null,
+       "use_of_funds": "Bridge financing gap for deep tech startups; progress from development to market-ready deployment.",
+       "source_sentence": "The EU is awarding €20 million in funding to 41 cutting‑edge Ukrainian start‑ups and SMEs, following a European Innovation Council call to help them turn groundbreaking ideas into real‑world solutions.",
+       "published_at": "2026-04-02T22:06:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27f6ac1991f786ce14eb8"
+       ],
+       "article_id": "69e27f6ac1991f786ce14eb8"
+      },
+      {
+       "id": "47e5f1a2d4170324",
+       "company_name": "Farsight vision",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european union",
+         "domain": "europa.eu",
+         "amount": null
+        }
+       ],
+       "sector": "deep tech",
+       "country": "Ukraine",
+       "city": null,
+       "use_of_funds": "Bridge financing gap for deep tech startups; progress from development to market-ready deployment.",
+       "source_sentence": "The EU is awarding €20 million in funding to 41 cutting‑edge Ukrainian start‑ups and SMEs, following a European Innovation Council call to help them turn groundbreaking ideas into real‑world solutions.",
+       "published_at": "2026-04-02T22:06:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27f6ac1991f786ce14eb8"
+       ],
+       "article_id": "69e27f6ac1991f786ce14eb8"
+      },
+      {
+       "id": "2db03c3a0c748e64",
+       "company_name": "Anotherland",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european union",
+         "domain": "europa.eu",
+         "amount": null
+        }
+       ],
+       "sector": "deep tech",
+       "country": "Ukraine",
+       "city": null,
+       "use_of_funds": "Bridge financing gap for deep tech startups; progress from development to market-ready deployment.",
+       "source_sentence": "The EU is awarding €20 million in funding to 41 cutting‑edge Ukrainian start‑ups and SMEs, following a European Innovation Council call to help them turn groundbreaking ideas into real‑world solutions.",
+       "published_at": "2026-04-02T22:06:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27f6ac1991f786ce14eb8"
+       ],
+       "article_id": "69e27f6ac1991f786ce14eb8"
+      },
+      {
+       "id": "f0ccd254f34ed88f",
+       "company_name": "Empirical Ventures",
+       "domain": "empiricalventures.vc",
+       "round_type": null,
+       "amount_usd": 12700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "british business bank",
+         "domain": "british-business-bank.co.uk",
+         "amount": 10000000.0
+        }
+       ],
+       "sector": "deep tech, life science",
+       "country": "UK",
+       "city": "Bristol",
+       "use_of_funds": "deep tech and life science projects",
+       "source_sentence": "Empirical Ventures, a UK-based investment group that backs entrepreneurial scientists, has secured a £10m commitment from the British Business Bank.",
+       "published_at": "2026-03-30T10:00:20",
+       "coverage_count": 4,
+       "article_ids": [
+        "69cbe66e12cf28a458fcc896",
+        "69cc5d3b74cdb9f7951dd090",
+        "69d1122f44cbe22144534fcf",
+        "69d14e535dd71f6d112f1181"
+       ],
+       "article_id": "69cc5d3b74cdb9f7951dd090"
+      },
+      {
+       "id": "5351935d9c011db7",
+       "company_name": "stratificare",
+       "domain": "stratificare.com",
+       "round_type": null,
+       "amount_usd": 370000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "SGD",
+       "amount": 500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TIS Inc.",
+         "domain": null,
+         "amount": 500000.0
+        }
+       ],
+       "sector": "Deep tech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": null,
+       "source_sentence": "Logice, Sembuh AI and StratifiCare each awarded S$500,000 by major Japan IT company TIS Inc., as part of its S$7.6 million commitment to co-develop and scale the accelerator programme.",
+       "published_at": "2026-03-27T06:42:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2b358dc480588dca146a9"
+       ],
+       "article_id": "69e2b358dc480588dca146a9"
+      },
+      {
+       "id": "1767f47706d3c92d",
+       "company_name": "Logice",
+       "domain": "logiceindonesia.com",
+       "round_type": null,
+       "amount_usd": 370000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "SGD",
+       "amount": 500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TIS Inc.",
+         "domain": null,
+         "amount": 500000.0
+        }
+       ],
+       "sector": "Deep tech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": null,
+       "source_sentence": "Logice, Sembuh AI and StratifiCare each awarded S$500,000 by major Japan IT company TIS Inc., as part of its S$7.6 million commitment to co-develop and scale the accelerator programme.",
+       "published_at": "2026-03-27T06:42:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2b358dc480588dca146a9"
+       ],
+       "article_id": "69e2b358dc480588dca146a9"
+      },
+      {
+       "id": "160f1e1fbfff917c",
+       "company_name": "Sembuh AI",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 370000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "SGD",
+       "amount": 500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TIS Inc.",
+         "domain": null,
+         "amount": 500000.0
+        }
+       ],
+       "sector": "Deep tech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": null,
+       "source_sentence": "Logice, Sembuh AI and StratifiCare each awarded S$500,000 by major Japan IT company TIS Inc., as part of its S$7.6 million commitment to co-develop and scale the accelerator programme.",
+       "published_at": "2026-03-27T06:42:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2b358dc480588dca146a9"
+       ],
+       "article_id": "69e2b358dc480588dca146a9"
+      },
+      {
+       "id": "a70765047cc74d40",
+       "company_name": "upsurgeon",
+       "domain": "upsurgeon.com",
+       "round_type": null,
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "simest",
+         "domain": "simest.it",
+         "amount": null
+        },
+        {
+         "name": "Deep Blue Ventures",
+         "domain": "deepblueventures.com",
+         "amount": null
+        },
+        {
+         "name": "Deep Ocean Capital Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "azimut libera impresa",
+         "domain": "azimutliberaimpresa.it",
+         "amount": null
+        },
+        {
+         "name": "fbh",
+         "domain": "fbh-berlin.de",
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech / Medical Device / Surgical Training",
+       "country": "Italy",
+       "city": null,
+       "use_of_funds": "Global expansion, enhancing proprietary platforms across new surgical specialities, and accelerating research and development activities",
+       "source_sentence": "UpSurgeOn has announced that it has closed a €5 million investment round.",
+       "published_at": "2026-03-20T13:02:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd20e2e41fb6223043035"
+       ],
+       "article_id": "69cbd20e2e41fb6223043035"
+      },
+      {
+       "id": "6ce021aaa15c4f99",
+       "company_name": "cortical labs",
+       "domain": "corticallabs.com",
+       "round_type": "undisclosed investment",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "horizon ventures",
+         "domain": "horizonvc.com",
+         "amount": null
+        },
+        {
+         "name": "3C",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "gobi partners",
+         "domain": "gobi.vc",
+         "amount": null
+        },
+        {
+         "name": "Tom Oxley",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Deep Tech",
+       "country": "Australia",
+       "city": "Melbourne",
+       "use_of_funds": null,
+       "source_sentence": "Cortical Labs , a Melbourne-based deep tech company developing biological computing systems, secured an undisclosed investment in a round co-led by Horizon Ventures and 3C.",
+       "published_at": "2026-03-17T03:30:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4e7b3bc4c40880e56f0"
+       ],
+       "article_id": "69c3a4e7b3bc4c40880e56f0"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 21,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMTcgMDM6MzA6MDEiLCJrIjoiNzg0NTMwNzU2NzYxNDc0MjQyNSJ9",
+     "totals": {
+      "deals": 21,
+      "deals_with_amount": 16,
+      "deals_without_amount": 5,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 1018599600.0,
+      "median_amount_usd": 2000000.0,
+      "largest_amount_usd": 963360000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.274,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.311
+    }
+   }
+  }
+ ]
+}

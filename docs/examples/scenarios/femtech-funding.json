@@ -1,0 +1,903 @@
+{
+ "slug": "femtech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:19Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "femtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "femtech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 10,
+      "deals_with_amount": 8,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 78278000.0,
+      "median_amount_usd": 3250000.0,
+      "largest_amount_usd": 55000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 6350000.0,
+       "median_amount_usd": 6350000.0,
+       "largest_amount_usd": 6350000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 11200000.0,
+       "median_amount_usd": 4000000.0,
+       "largest_amount_usd": 6000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 56728000.0,
+       "median_amount_usd": 28364000.0,
+       "largest_amount_usd": 55000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 2,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4000000.0,
+       "median_amount_usd": 2000000.0,
+       "largest_amount_usd": 2500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.033,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.038
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "femtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "femtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "1e1149e06d10a6c4",
+       "company_name": "natural cycles",
+       "domain": "naturalcycles.com",
+       "round_type": null,
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "femtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Natural Cycles, preparing a $55 million-plus round to scale its hormone‑free birth control solution.",
+       "published_at": "2025-11-03T08:23:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bae24fb54f2a520bb4d69f"
+       ],
+       "article_id": "69bae24fb54f2a520bb4d69f"
+      },
+      {
+       "id": "3a08fb5aac1a88c8",
+       "company_name": "hormona",
+       "domain": "hormona.io",
+       "round_type": "seed",
+       "amount_usd": 6350000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Voima Ventures",
+         "domain": "voimaventures.com",
+         "amount": null
+        },
+        {
+         "name": "SuperNode Global VC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FemTech, health, AI",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "expansion, launch hormone tests, grow B2B partnerships, strengthen infrastructure, marketing, sales",
+       "source_sentence": "has raised £5m ($6.7m) in seed funding.",
+       "published_at": "2025-05-27T11:57:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a6fbcfd8658683eace89"
+       ],
+       "article_id": "6988a6fbcfd8658683eace89"
+      },
+      {
+       "id": "5d1d2c07d74833b8",
+       "company_name": "plenna",
+       "domain": "soyplenna.com",
+       "round_type": "Series A",
+       "amount_usd": 6000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mazapil",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dalus capital",
+         "domain": "daluscapital.com",
+         "amount": null
+        },
+        {
+         "name": "new ventures",
+         "domain": "nvgroup.org",
+         "amount": null
+        },
+        {
+         "name": "Karla Berman",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Femtech",
+       "country": "Mexico",
+       "city": "Mexico City",
+       "use_of_funds": "Open 13 new clinics across five cities and expand AI-powered platform to reach more than 200,000 women",
+       "source_sentence": "Mexican femtech Plenna secured a $6 million Series A led by Mazapil, Dalus Capital, and New Ventures, with support from angel investor Karla Berman.",
+       "published_at": "2025-07-11T09:51:58",
+       "coverage_count": 2,
+       "article_ids": [
+        "698ce7b08d29a990b6cc5480",
+        "698f3baf8d29a990b6f8a7f1"
+       ],
+       "article_id": "698ce7b08d29a990b6cc5480"
+      },
+      {
+       "id": "281f845cc909efab",
+       "company_name": "Luma Fertility",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 4000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Peak XV’s Surge",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ameera Shah",
+         "domain": "https://www.linkedin.com/in/ameerashah",
+         "amount": null
+        },
+        {
+         "name": "B2V Ventures",
+         "domain": "b2vventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "FemTech / Fertility",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "expand in Mumbai followed by expansion in other cities",
+       "source_sentence": "Luma Fertility, a Mumbai‑based femtech provider founded by Neha K. Motwani (founder of Fitternity), has raised $4 million in a seed round led by Peak XV’s Surge, with participation from Ameera Shah (Metropolis Healthcare) and Vijay Taparia (B2V Ventures). The capital will help Luma to expand in Mumbai followed by expansion in other cities.",
+       "published_at": "2025-07-03T14:34:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e1e678d29a990b6e350f9"
+       ],
+       "article_id": "698e1e678d29a990b6e350f9"
+      },
+      {
+       "id": "3bfbb4fdb58ae582",
+       "company_name": "omooma",
+       "domain": "omooma.com",
+       "round_type": null,
+       "amount_usd": 2500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "e20 investment",
+         "domain": "e20.ae",
+         "amount": null
+        }
+       ],
+       "sector": "Femtech",
+       "country": "UAE",
+       "city": null,
+       "use_of_funds": "to 10,000 paid subscribers by end of 2022",
+       "source_sentence": "Omooma has raised $2.5 million in funding from E20 Investment LTD.",
+       "published_at": "2026-02-04T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfb820f2a6294de7f78d13"
+       ],
+       "article_id": "69dfb820f2a6294de7f78d13"
+      },
+      {
+       "id": "f53c43a78fa285b2",
+       "company_name": "Solence",
+       "domain": "solence.care",
+       "round_type": null,
+       "amount_usd": 1728000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1600000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "FemTech",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "to advance its AI-driven digital therapeutics for PCOS",
+       "source_sentence": "Solence in France raised €1.6 million to advance its AI-driven digital therapeutics for PCOS.",
+       "published_at": "2025-11-05T11:58:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "693195ef4bc82ccb0df209af",
+        "6988adaea88ad7b9aae10970"
+       ],
+       "article_id": "693195ef4bc82ccb0df209af"
+      },
+      {
+       "id": "7fd47708a10d8b9f",
+       "company_name": "nabta health",
+       "domain": "nabtahealth.com",
+       "round_type": null,
+       "amount_usd": 1500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Femtech",
+       "country": "UAE",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It raised $1.5 million in funding this year.",
+       "published_at": "2026-02-04T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfb820f2a6294de7f78d13"
+       ],
+       "article_id": "69dfb820f2a6294de7f78d13"
+      },
+      {
+       "id": "2c5beeb453b92189",
+       "company_name": "ovasave",
+       "domain": "ovasave.com",
+       "round_type": "pre-seed",
+       "amount_usd": 1200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "PlusVC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "annex investments",
+         "domain": "annexinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "25 Madison",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "UAE-based strategic angel investors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Saudi-based strategic angel investors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "prominent family offices",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FemTech, fertility and hormonal health",
+       "country": "UAE",
+       "city": "Abu Dhabi",
+       "use_of_funds": "support regional expansion across the GCC, scale corporate partnerships, and launch the next phase of Ovasave’s mobile app",
+       "source_sentence": "Ovasave, a Hub71 FemTech startup focused on fertility and hormonal health, has successfully completed its pre-seed round, raising $1.2 million from a mix of regional and international investors. The round was led by PlusVC, Annex Investments, and New York-based 25 Madison, with additional backing from UAE and Saudi-based strategic angel investors and prominent family offices.",
+       "published_at": "2025-07-17T08:01:24",
+       "coverage_count": 7,
+       "article_ids": [
+        "68d10580b4da52a1072d3919",
+        "6988b06794d3f481f3d7978c",
+        "698d5dcb8d29a990b6d53597",
+        "698dd7589ca02490ec02a5f8",
+        "69dfb51bda2167bba6000403",
+        "69e1f1591c9ae6b9f4b6590e",
+        "6a2a80c4963d76f4afd4945a"
+       ],
+       "article_id": "698dd7589ca02490ec02a5f8"
+      },
+      {
+       "id": "9707b8e872a0601a",
+       "company_name": "Peripear",
+       "domain": null,
+       "round_type": "angel syndicate investment",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "british business bank",
+         "domain": "british-business-bank.co.uk",
+         "amount": null
+        },
+        {
+         "name": "haatch",
+         "domain": "haatch.com",
+         "amount": null
+        },
+        {
+         "name": "HERmesa",
+         "domain": "hermesa.co.uk",
+         "amount": null
+        },
+        {
+         "name": "CircleRock Capital",
+         "domain": "circlerockcapital.com",
+         "amount": null
+        },
+        {
+         "name": "the games angels",
+         "domain": "thegamesangels.com",
+         "amount": null
+        },
+        {
+         "name": "Sie Ventures",
+         "domain": "sie.ventures",
+         "amount": null
+        },
+        {
+         "name": "2050 Capital",
+         "domain": "2050cap.com",
+         "amount": null
+        }
+       ],
+       "sector": "FemTech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "FemTech business Peripear, creating a wearable device to prevent perineal tears during childbirth.",
+       "published_at": "2026-02-25T09:56:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcea4c59b1861412d9495a"
+       ],
+       "article_id": "69bcea4c59b1861412d9495a"
+      },
+      {
+       "id": "f9a47bb90d9796ce",
+       "company_name": "origin",
+       "domain": "originww.com",
+       "round_type": "Series B",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sjf ventures",
+         "domain": "sjfventures.com",
+         "amount": null
+        },
+        {
+         "name": "Blue Venture Fund",
+         "domain": "blueventurefund.com",
+         "amount": null
+        },
+        {
+         "name": "gratitude railroad",
+         "domain": "gratituderailroad.com",
+         "amount": null
+        },
+        {
+         "name": "California Infrastructure and Economic Development Bank",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "femtech",
+       "country": null,
+       "city": "Brentwood",
+       "use_of_funds": "to accelerate the development of personalized, clinically-proven care journeys, powered by AI tools",
+       "source_sentence": "Origin, a femtech company based in Brentwood, announced in late January it raised a series B funding round for an undisclosed amount.",
+       "published_at": "2026-02-16T08:43:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bd813c41245450862161ce",
+        "69e886df5cfa3e5ba507abe9"
+       ],
+       "article_id": "69bd813c41245450862161ce"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 10,
+     "next_cursor": null,
+     "totals": {
+      "deals": 10,
+      "deals_with_amount": 8,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 78278000.0,
+      "median_amount_usd": 3250000.0,
+      "largest_amount_usd": 55000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.088,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.093
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "femtech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "femtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "9707b8e872a0601a",
+       "company_name": "Peripear",
+       "domain": null,
+       "round_type": "angel syndicate investment",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "british business bank",
+         "domain": "british-business-bank.co.uk",
+         "amount": null
+        },
+        {
+         "name": "haatch",
+         "domain": "haatch.com",
+         "amount": null
+        },
+        {
+         "name": "HERmesa",
+         "domain": "hermesa.co.uk",
+         "amount": null
+        },
+        {
+         "name": "CircleRock Capital",
+         "domain": "circlerockcapital.com",
+         "amount": null
+        },
+        {
+         "name": "the games angels",
+         "domain": "thegamesangels.com",
+         "amount": null
+        },
+        {
+         "name": "Sie Ventures",
+         "domain": "sie.ventures",
+         "amount": null
+        },
+        {
+         "name": "2050 Capital",
+         "domain": "2050cap.com",
+         "amount": null
+        }
+       ],
+       "sector": "FemTech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "FemTech business Peripear, creating a wearable device to prevent perineal tears during childbirth.",
+       "published_at": "2026-02-25T09:56:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcea4c59b1861412d9495a"
+       ],
+       "article_id": "69bcea4c59b1861412d9495a"
+      },
+      {
+       "id": "f9a47bb90d9796ce",
+       "company_name": "origin",
+       "domain": "originww.com",
+       "round_type": "Series B",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sjf ventures",
+         "domain": "sjfventures.com",
+         "amount": null
+        },
+        {
+         "name": "Blue Venture Fund",
+         "domain": "blueventurefund.com",
+         "amount": null
+        },
+        {
+         "name": "gratitude railroad",
+         "domain": "gratituderailroad.com",
+         "amount": null
+        },
+        {
+         "name": "California Infrastructure and Economic Development Bank",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "femtech",
+       "country": null,
+       "city": "Brentwood",
+       "use_of_funds": "to accelerate the development of personalized, clinically-proven care journeys, powered by AI tools",
+       "source_sentence": "Origin, a femtech company based in Brentwood, announced in late January it raised a series B funding round for an undisclosed amount.",
+       "published_at": "2026-02-16T08:43:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bd813c41245450862161ce",
+        "69e886df5cfa3e5ba507abe9"
+       ],
+       "article_id": "69bd813c41245450862161ce"
+      },
+      {
+       "id": "7fd47708a10d8b9f",
+       "company_name": "nabta health",
+       "domain": "nabtahealth.com",
+       "round_type": null,
+       "amount_usd": 1500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Femtech",
+       "country": "UAE",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It raised $1.5 million in funding this year.",
+       "published_at": "2026-02-04T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfb820f2a6294de7f78d13"
+       ],
+       "article_id": "69dfb820f2a6294de7f78d13"
+      },
+      {
+       "id": "3bfbb4fdb58ae582",
+       "company_name": "omooma",
+       "domain": "omooma.com",
+       "round_type": null,
+       "amount_usd": 2500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "e20 investment",
+         "domain": "e20.ae",
+         "amount": null
+        }
+       ],
+       "sector": "Femtech",
+       "country": "UAE",
+       "city": null,
+       "use_of_funds": "to 10,000 paid subscribers by end of 2022",
+       "source_sentence": "Omooma has raised $2.5 million in funding from E20 Investment LTD.",
+       "published_at": "2026-02-04T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfb820f2a6294de7f78d13"
+       ],
+       "article_id": "69dfb820f2a6294de7f78d13"
+      }
+     ],
+     "returned": 4,
+     "total_estimate": 4,
+     "next_cursor": null,
+     "totals": {
+      "deals": 4,
+      "deals_with_amount": 2,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 4000000.0,
+      "median_amount_usd": 2000000.0,
+      "largest_amount_usd": 2500000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.038,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.044
+    }
+   }
+  }
+ ]
+}

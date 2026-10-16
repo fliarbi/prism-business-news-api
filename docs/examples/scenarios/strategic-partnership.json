@@ -1,0 +1,826 @@
+{
+ "slug": "strategic-partnership",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:53Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "contracts"
+     ],
+     "q": "partnership",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "partnership",
+      "match": "any",
+      "event_type": [
+       "company_announcement",
+       "contracts"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 71,
+       "by_type": {
+        "company_announcement": 27,
+        "contracts": 44
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 75,
+       "by_type": {
+        "company_announcement": 34,
+        "contracts": 41
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 70,
+       "by_type": {
+        "company_announcement": 25,
+        "contracts": 45
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 134,
+       "by_type": {
+        "company_announcement": 55,
+        "contracts": 79
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 119,
+       "by_type": {
+        "company_announcement": 60,
+        "contracts": 59
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 99,
+       "by_type": {
+        "company_announcement": 46,
+        "contracts": 53
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 149,
+       "by_type": {
+        "company_announcement": 65,
+        "contracts": 84
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 134,
+       "by_type": {
+        "company_announcement": 47,
+        "contracts": 87
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 79,
+       "by_type": {
+        "company_announcement": 39,
+        "contracts": 40
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 150,
+       "by_type": {
+        "company_announcement": 72,
+        "contracts": 78
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 114,
+       "by_type": {
+        "company_announcement": 49,
+        "contracts": 65
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 96,
+       "by_type": {
+        "company_announcement": 40,
+        "contracts": 56
+       }
+      }
+     ],
+     "totals": {
+      "events": 1290,
+      "articles": 1027,
+      "companies": 989,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 559,
+      "contracts": 731
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.283,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.323
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "contracts"
+     ],
+     "q": "partnership",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "partnership",
+      "event_type": [
+       "company_announcement",
+       "contracts"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f1cb3da5706a322e10f967",
+       "headline": "Harry Ault, Chief Revenue Officer at SambaNova, visited Sydney to advance the strategic partnership between SambaNova and SCX, meeting with customers, government stakeholders, and ecosystem partners to discuss the future of sovereign AI infrastructure in Australia and the broader Asia‑Pacific region.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "sambanova.ai",
+       "published_at": "2026-04-29T06:07:00",
+       "url": "https://www.businessupturn.com/brand-post/scx-brings-sovereign-ai-to-equinixs-ai-ecosystem-and-confirms-national-expansion-with-sambanova-sn50/",
+       "publisher": "businessupturn.com",
+       "title": "SCX Brings Sovereign AI to Equinix’s AI Ecosystem and Confirms National Expansion with SambaNova SN50 - Business Upturn"
+      },
+      {
+       "id": "69f1ce45399b489398e1d231",
+       "headline": "DoorDash reports one of its largest grocery expansions in Canada through a new partnership with Empire Company, bringing more than 1,000 stores across 10 provinces onto its marketplace.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "doordash.com",
+       "published_at": "2026-04-28T16:14:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d5ae713680636eecf346",
+       "headline": "ST Engineering’s freighter conversion business, in partnership with EFW, secured contracts for Airbus A330-300 passenger-to-freighter conversions from aircraft lessors Hengqin Winglet Aircraft Technology and Asia Pacific Aviation Leasing.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "stengg.com",
+       "published_at": "2026-04-28T14:42:12",
+       "url": "https://aviationweek.com/mro/aircraft-propulsion/st-engineering-reports-strong-aftermarket-growth",
+       "publisher": "aviationweek.com",
+       "title": "ST Engineering Reports Strong Aftermarket Growth | Aviation Week Network"
+      },
+      {
+       "id": "69f21879da8ae7be8d2215a7",
+       "headline": "Meanwhile, ST Engineering’s freighter conversion business, in partnership with EFW, secured contracts for Airbus A330-300 passenger-to-freighter conversions from aircraft lessors Hengqin Winglet Aircraft Technology and Asia Pacific Aviation Leasing.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "stengg.com",
+       "published_at": "2026-04-28T14:42:12",
+       "url": "https://www.aviationweek.com/mro/aircraft-propulsion/st-engineering-reports-strong-aftermarket-growth",
+       "publisher": "aviationweek.com",
+       "title": "ST Engineering Reports Strong Aftermarket Growth | Aviation Week Network"
+      },
+      {
+       "id": "69f0e63245272de32e8c313d",
+       "headline": "DoorDash reports one of its largest grocery expansions in Canada through a new partnership with Empire Company, bringing more than 1,000 stores across 10 provinces onto its marketplace.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "doordash.com",
+       "published_at": "2026-04-28T13:40:00",
+       "url": "https://www.freshplaza.com/asia/article/9833077/coop-alleanza-3-0-reports-a-5-3-rise-in-fruit-and-vegetable-sales/",
+       "publisher": "freshplaza.com",
+       "title": "Coop Alleanza 3.0 reports a 5.3% rise in fruit and vegetable sales"
+      },
+      {
+       "id": "69f1cc58a5706a322e11795f",
+       "headline": "and the acquisition of The Link at Masdar City for Dh654 million in partnership with Mubadala Investment Company",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "aldar.com",
+       "published_at": "2026-04-28T07:22:35",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1c906399b489398df85dc",
+       "headline": "The company also aims to unveil a new mega development in Dubai this year after buying two plots of land near Nad Al Sheba and Palm Jebel Ali in partnership with Dubai Holding.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "aldar.com",
+       "published_at": "2026-04-28T07:22:35",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1cf9fa5706a322e13407d",
+       "headline": "Rio Tinto has a strong first quarter of 2026 — and is sending a clear signal towards sustainability with a new industrial partnership.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "riotinto.com",
+       "published_at": "2026-04-27T14:51:10",
+       "url": "https://www.boerse-express.com/news/articles/rio-tinto-prysmian-partnerschaft-fuer-low-carbon-kabel-898506",
+       "publisher": "boerse-express.com",
+       "title": "Rio Tinto: Prysmian-Partnerschaft für Low-Carbon-Kabel"
+      },
+      {
+       "id": "69f0e65b45272de32e8c3273",
+       "headline": "The companies have agreed to develop a partnership seeking the supply, installation, commissioning and maintenance of 175MW of electrolysers over the next 10 years.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "cph2.com",
+       "published_at": "2026-04-27T06:12:34",
+       "url": "https://newsnreleases.com/2026/04/27/cph2-mou-bkw-abe-gruppe-175mw-membrane-free-electrolyser/",
+       "publisher": "newsnreleases.com",
+       "title": "CPH2 inks MoU with BKW’s ABE Gruppe for 175MW rollout of membrane-free electrolyser technology - NewsnReleases"
+      },
+      {
+       "id": "69f0e65b45272de32e8c3273",
+       "headline": "The companies have agreed to develop a partnership seeking the supply, installation, commissioning and maintenance of 175MW of electrolysers over the next 10 years.",
+       "event_type": "contracts",
+       "role": "client",
+       "domain": "abe-gruppe.de",
+       "published_at": "2026-04-27T06:12:34",
+       "url": "https://newsnreleases.com/2026/04/27/cph2-mou-bkw-abe-gruppe-175mw-membrane-free-electrolyser/",
+       "publisher": "newsnreleases.com",
+       "title": "CPH2 inks MoU with BKW’s ABE Gruppe for 175MW rollout of membrane-free electrolyser technology - NewsnReleases"
+      },
+      {
+       "id": "69f0ead145272de32e8c7420",
+       "headline": "The main driver of this rally is an extended partnership with Oracle.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "bloomenergy.com",
+       "published_at": "2026-04-26T02:39:10",
+       "url": "https://www.boerse-express.com/news/articles/bloom-energy-eps-045-schlaegt-konsens-897756",
+       "publisher": "boerse-express.com",
+       "title": "Bloom Energy: EPS $0,45 schlägt Konsens"
+      },
+      {
+       "id": "69efaadaa84b609af2b308e8",
+       "headline": "To support this partnership, Air Liquide will invest over 350 million U.S. dollars to expand its production with an additional Air Separation Unit (ASU) in St. James Parish at the existing Koch Methanol facility as well as network infrastructures along the Mississippi River, further strengthening its industrial footprint and leadership in the region.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "airliquide.com",
+       "published_at": "2026-04-24T12:07:29",
+       "url": "https://www.chemengonline.com/air-liquide-enters-agreement-to-supply-gases-for-low-carbon-emissions-steel-facility/",
+       "publisher": "chemengonline.com",
+       "title": "Air Liquide enters agreement to supply gases for low-carbon-emissions steel facility - Chemical Engineering"
+      },
+      {
+       "id": "69e9b247bdd09a23d0963940",
+       "headline": "Airbus and more closely its Defence and Space division, one of the three main members of the group that has been selected as a technical partner for a baptized operation, Coffee Canopy Partnership, announced this Wednesday, April 22, 2026.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "intelligence-airbusds.com",
+       "published_at": "2026-04-23T05:12:02",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e99ecdbdd09a23d0941656",
+       "headline": "Cursor said its new partnership with SpaceX subsidiary xAI will enable it to build future AI products using xAI’s massive AI data center complex Colossus...",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "x.ai",
+       "published_at": "2026-04-22T15:47:28",
+       "url": "https://www.timesherald.com/2026/04/22/spacex-ai-coding-tool-cursor/",
+       "publisher": "timesherald.com",
+       "title": "SpaceX says it can buy AI coding tool Cursor for $60B later this year"
+      },
+      {
+       "id": "69e99ecdbdd09a23d0941656",
+       "headline": "Cursor said its new partnership with SpaceX subsidiary xAI will enable it to build future AI products using xAI’s massive AI data center complex Colossus...",
+       "event_type": "contracts",
+       "role": "client",
+       "domain": "cursor.com",
+       "published_at": "2026-04-22T15:47:28",
+       "url": "https://www.timesherald.com/2026/04/22/spacex-ai-coding-tool-cursor/",
+       "publisher": "timesherald.com",
+       "title": "SpaceX says it can buy AI coding tool Cursor for $60B later this year"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 439,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjIgMTU6NDc6MjgiLCJpIjoiNjllOTllY2RiZGQwOWEyM2QwOTQxNjU2IiwiZG0iOiJjdXJzb3IuY29tIiwiZXQiOiJjb250cmFjdHMiLCJybyI6ImNsaWVudCJ9",
+     "by_type": {
+      "contracts": 239,
+      "company_announcement": 200
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.542,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 4 event(s)"
+     ],
+     "request_seconds": 4.544
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "contracts"
+     ],
+     "q": "partnership",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "partnership",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement",
+       "contracts"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 693,
+     "carrying": 693,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 1,
+       "share": 0.14
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 12,
+       "share": 1.73
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 1,
+       "share": 0.14
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 57,
+       "share": 8.23
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 56,
+       "share": 8.08
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 543,
+       "share": 78.35
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 23,
+       "share": 3.32
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 13,
+       "share": 1.88
+      },
+      {
+       "group": "neutral",
+       "count": 1,
+       "share": 0.14
+      },
+      {
+       "group": "positive",
+       "count": 679,
+       "share": 97.98
+      }
+     ],
+     "negative_to_positive_ratio": 0.019,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.03,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 126,
+       "negative": 2,
+       "neutral": 0,
+       "positive": 124,
+       "negative_share": 1.59,
+       "positive_share": 98.41,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 0,
+        "slight_pos": 17,
+        "fair_pos": 10,
+        "very_pos": 93,
+        "extreme_pos": 4
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 206,
+       "negative": 4,
+       "neutral": 0,
+       "positive": 202,
+       "negative_share": 1.94,
+       "positive_share": 98.06,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 4,
+        "none": 0,
+        "slight_pos": 13,
+        "fair_pos": 19,
+        "very_pos": 163,
+        "extreme_pos": 7
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 167,
+       "negative": 4,
+       "neutral": 1,
+       "positive": 162,
+       "negative_share": 2.4,
+       "positive_share": 97.01,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 4,
+        "none": 1,
+        "slight_pos": 11,
+        "fair_pos": 5,
+        "very_pos": 140,
+        "extreme_pos": 6
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 194,
+       "negative": 3,
+       "neutral": 0,
+       "positive": 191,
+       "negative_share": 1.55,
+       "positive_share": 98.45,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 0,
+        "slight_pos": 16,
+        "fair_pos": 22,
+        "very_pos": 147,
+        "extreme_pos": 6
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.163,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.165
+    }
+   }
+  }
+ ]
+}

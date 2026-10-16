@@ -6,7 +6,112 @@ Search business coverage, monitor company events, and explore funding deals. Com
 
 **Private preview.** Production dashboard key issuance and the public API rollout are pending. Proposed API hosts are preview addresses, not confirmed live services. Use the business `API_BASE` supplied when access is granted. Plans are drafts; there is no active checkout.
 
-## Get access and make a first request
+<!-- scenarios:start -->
+## 200 worked demonstrations
+
+Real questions, real responses: each page answers one researched search query with
+saved live API output: twelve-month deal or event totals, a monthly series, the records
+behind them with evidence sentences and sources, plus the exact CLI, curl and Python calls.
+[Browse all 200](docs/scenarios/README.md) or start with a segment:
+
+| Segment | Pages | Start with |
+| --- | ---: | --- |
+| **[Startup funding research](docs/scenarios/funding-research/README.md)** | 50 | [Seed](docs/scenarios/funding-research/seed-funding.md) · [Series A](docs/scenarios/funding-research/series-a-funding.md) · [Series B](docs/scenarios/funding-research/series-b-funding.md) · [AI Startup](docs/scenarios/funding-research/ai-startup-funding-news.md) |
+| **[Company events research](docs/scenarios/company-events/README.md)** | 50 | [IPO](docs/scenarios/company-events/ipo.md) · [Upcoming IPO](docs/scenarios/company-events/upcoming-ipo.md) · [Product Recall](docs/scenarios/company-events/product-recall.md) · [Layoffs](docs/scenarios/company-events/layoffs.md) |
+| **[Company monitoring research](docs/scenarios/company-monitoring/README.md)** | 50 | [Vodafone Idea](docs/scenarios/company-monitoring/vodafone-idea-news.md) · [Adani](docs/scenarios/company-monitoring/adani-news.md) · [Tesla](docs/scenarios/company-monitoring/tesla-news.md) · [Nintendo](docs/scenarios/company-monitoring/nintendo-news.md) |
+| **[Investor research](docs/scenarios/investor-research/README.md)** | 50 | [KKR](docs/scenarios/investor-research/kkr-investments.md) · [Blackstone](docs/scenarios/investor-research/blackstone-investments.md) · [Mubadala](docs/scenarios/investor-research/mubadala-investments.md) · [Sequoia](docs/scenarios/investor-research/sequoia-investments.md) |
+
+Topics come from [keyword research](docs/research/KEYWORD_RESEARCH.md) (India and US monthly searches).
+Captured with 1 of 14 archive shards offline, so counts are lower bounds.
+<!-- scenarios:end -->
+
+<!-- demos:start -->
+## See the API in a research UI
+
+[6 animated Claude Code / Codex workflow concepts](docs/ANIMATED_USE_CASES.md) show
+what an assistant can build on this API. They cover AI funding rankings, a layoff tracker, a company's event profile, investor activity by stage, Indian early-stage funding and hiring versus layoffs, all from captured API responses. Each GIF labels saved API
+responses or illustrative data; these are client-built UI concepts, not recordings of
+official client interfaces or claims of live service availability. Open the
+[interactive gallery](docs/demos/index.html) locally for prompts and request recipes.
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>AI funding · April 2026</h3>
+      <a href="docs/demos/media/ai-funding-april-2026.gif"><img src="docs/demos/media/ai-funding-april-2026.gif" width="420" alt="Rank the largest AI funding rounds in a month"></a>
+      <p>Rank a sector&#x27;s rounds and keep the sentence behind every number. Saved API responses.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Layoff tracker · April 2026</h3>
+      <a href="docs/demos/media/layoffs-april-2026.gif"><img src="docs/demos/media/layoffs-april-2026.gif" width="420" alt="Track a layoff wave across companies"></a>
+      <p>Watch a signal build week by week, then read the announcements behind it. Saved API responses.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Company event mix</h3>
+      <a href="docs/demos/media/openai-company-events.gif"><img src="docs/demos/media/openai-company-events.gif" width="420" alt="See everything recorded about one company"></a>
+      <p>Get a company&#x27;s whole event profile in one call, then drill into examples. Saved API responses.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Investor activity</h3>
+      <a href="docs/demos/media/sequoia-portfolio.gif"><img src="docs/demos/media/sequoia-portfolio.gif" width="420" alt="Profile an investor&#x27;s recent deals by stage"></a>
+      <p>See where an investor is active, by stage, with the syndicate behind each round. Saved API responses.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>India early-stage · Q1 2026</h3>
+      <a href="docs/demos/media/india-early-stage-q1-2026.gif"><img src="docs/demos/media/india-early-stage-q1-2026.gif" width="420" alt="Size early-stage funding in one country"></a>
+      <p>Count a market&#x27;s rounds by stage and month, with original currencies intact. Saved API responses.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Hiring vs layoffs · Q1 2026</h3>
+      <a href="docs/demos/media/hiring-vs-layoffs-q1-2026.gif"><img src="docs/demos/media/hiring-vs-layoffs-q1-2026.gif" width="420" alt="Compare hiring and layoff announcements"></a>
+      <p>Put two business signals on one timeline and see which companies drive each. Saved API responses.</p>
+    </td>
+  </tr>
+</table>
+<!-- demos:end -->
+
+## Install in one line
+
+Requires Bash, curl and Python 3.8+. The installer adds `prism-news` and
+`prism-business-news` (one client for both APIs) to `~/.local/bin`. It never uses
+sudo, edits shell profiles or starts services. During the private preview, export
+`GH_TOKEN` with **Contents: read** access to this repository, then run:
+
+```bash
+bash -o pipefail -c 'curl -fsSL --config <(printf "header = \"Authorization: Bearer %s\"\n" "${GH_TOKEN:?Export GH_TOKEN first}") https://raw.githubusercontent.com/fliarbi/prism-business-news-api/main/scripts/install.sh | bash'
+```
+
+Once the repository is public, the same installer runs without a token:
+`curl -fsSL https://raw.githubusercontent.com/fliarbi/prism-business-news-api/main/scripts/install.sh | bash`.
+See [Getting started](docs/GETTING_STARTED.md) for options, every command and troubleshooting.
+
+## Get started in five steps
+
+| Step | Do this | You get |
+|---:|---|---|
+| 1 | Sign in to the [Fliar dashboard](https://fliarbi.com/radar/dashboard?tab=apikeys) → **Fliar Prism workspace → API keys** → create a key | One key for both News APIs (shared monthly quota) |
+| 2 | Run the one-line installer above | The `prism-news` and `prism-business-news` commands |
+| 3 | `prism-business-news login` | Base URLs and key saved owner-only in `~/.config/prism/config.json` |
+| 4 | `prism-business-news status`, then `prism-business-news me` | Data dates, your plan, limits and this month's usage |
+| 5 | Open a [demonstration](docs/scenarios/README.md), copy its commands and change the subject | Your own version of a worked example |
+
+| Task | Command | Endpoint |
+|---|---|---|
+| Business overview | `prism-business-news overview --q "acquisition" --since 2026-01-01 --until 2026-04-30` | `POST /v1/business/overview` |
+| Deal totals by month | `prism-business-news funding-summary --sector fintech --granularity monthly` | `POST /v1/business/funding/summary` |
+| Largest rounds | `prism-business-news funding --round-type "series a" --sort amount --limit 20 --table` | `POST /v1/business/funding` |
+| An investor's rounds | `prism-business-news funding --investor Sequoia --sort newest --table` | `POST /v1/business/funding` |
+| Event counts by month | `prism-business-news event-trends --event-type layoffs --granularity monthly` | `POST /v1/business/event-trends` |
+| Latest events with sources | `prism-business-news events --event-type ma --resolve true --table` | `POST /v1/business/events` |
+| One company | `prism-business-news company tesla.com --since 2026-01-01` | `GET /v1/business/companies/{domain}/news` |
+| Business headlines | `prism-business-news headlines "layoffs" --priority-min 7 --table` | `POST /v1/business/headlines` |
+| Any endpoint | `prism-business-news call POST /v1/business/themes '{"q": "acquisition"}'` | any |
+
+## Make a first request with curl or Python
 
 1. Sign in to the [Fliar dashboard](https://fliarbi.com/radar/dashboard?tab=apikeys), then open **Fliar Prism workspace → API keys**. Once enabled for your account, create and copy a key. If unavailable, request preview access from Fliar.
 2. Set `API_BASE` to the Business News API base URL supplied with your access and `PRISM_API_KEY` to your issued key. The two APIs use the same key and share account quotas.
@@ -60,55 +165,6 @@ Headline and export requests default to 100; higher limits depend on your plan. 
 Read the **[Business user guide](docs/USER_GUIDE.md)** for filters, workflows, comparisons, response fields and the endpoint reference. This guide is also served as Markdown at `/guide`. The **[shared News API guide](https://github.com/fliarbi/prism-news-api/blob/main/docs/USER_GUIDE.md)** covers authentication, sentiment and priority labels, GCP codes, export formats, errors, retry and quota rules.
 
 News articles, company events and funding deals are different units and may have different `data_through` dates. Check each response's window before comparing counts or interpreting a recent decline.
-
-<!-- demos:start -->
-## See the API in a research UI
-
-[6 animated Claude Code / Codex workflow concepts](docs/ANIMATED_USE_CASES.md) show
-what an assistant can build on this API. They cover AI funding rankings, a layoff tracker, a company's event profile, investor activity by stage, Indian early-stage funding and hiring versus layoffs, all from captured API responses. Each GIF labels saved API
-responses or illustrative data; these are client-built UI concepts, not recordings of
-official client interfaces or claims of live service availability. Open the
-[interactive gallery](docs/demos/index.html) locally for prompts and request recipes.
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>AI funding · April 2026</h3>
-      <a href="docs/demos/media/ai-funding-april-2026.gif"><img src="docs/demos/media/ai-funding-april-2026.gif" width="420" alt="Rank the largest AI funding rounds in a month"></a>
-      <p>Rank a sector&#x27;s rounds and keep the sentence behind every number. Saved API responses.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Layoff tracker · April 2026</h3>
-      <a href="docs/demos/media/layoffs-april-2026.gif"><img src="docs/demos/media/layoffs-april-2026.gif" width="420" alt="Track a layoff wave across companies"></a>
-      <p>Watch a signal build week by week, then read the announcements behind it. Saved API responses.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Company event mix</h3>
-      <a href="docs/demos/media/openai-company-events.gif"><img src="docs/demos/media/openai-company-events.gif" width="420" alt="See everything recorded about one company"></a>
-      <p>Get a company&#x27;s whole event profile in one call, then drill into examples. Saved API responses.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Investor activity</h3>
-      <a href="docs/demos/media/sequoia-portfolio.gif"><img src="docs/demos/media/sequoia-portfolio.gif" width="420" alt="Profile an investor&#x27;s recent deals by stage"></a>
-      <p>See where an investor is active, by stage, with the syndicate behind each round. Saved API responses.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>India early-stage · Q1 2026</h3>
-      <a href="docs/demos/media/india-early-stage-q1-2026.gif"><img src="docs/demos/media/india-early-stage-q1-2026.gif" width="420" alt="Size early-stage funding in one country"></a>
-      <p>Count a market&#x27;s rounds by stage and month, with original currencies intact. Saved API responses.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Hiring vs layoffs · Q1 2026</h3>
-      <a href="docs/demos/media/hiring-vs-layoffs-q1-2026.gif"><img src="docs/demos/media/hiring-vs-layoffs-q1-2026.gif" width="420" alt="Compare hiring and layoff announcements"></a>
-      <p>Put two business signals on one timeline and see which companies drive each. Saved API responses.</p>
-    </td>
-  </tr>
-</table>
-<!-- demos:end -->
 
 ## Running the service
 

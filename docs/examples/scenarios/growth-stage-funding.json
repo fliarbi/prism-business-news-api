@@ -1,0 +1,2194 @@
+{
+ "slug": "growth-stage-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:18Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "round_type": "growth",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "round_type": [
+       "growth"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 624,
+      "deals_with_amount": 441,
+      "deals_without_amount": 183,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 26338193900.0,
+      "median_amount_usd": 30000000.0,
+      "largest_amount_usd": 1750000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 50,
+       "deals_with_amount": 34,
+       "deals_without_amount": 16,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1750802000.0,
+       "median_amount_usd": 23500000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 51,
+       "deals_with_amount": 42,
+       "deals_without_amount": 9,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2461774000.0,
+       "median_amount_usd": 30000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 49,
+       "deals_with_amount": 30,
+       "deals_without_amount": 19,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3136901600.0,
+       "median_amount_usd": 51350000.0,
+       "largest_amount_usd": 835000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 48,
+       "deals_with_amount": 37,
+       "deals_without_amount": 11,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1698440000.0,
+       "median_amount_usd": 36700000.0,
+       "largest_amount_usd": 355000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 54,
+       "deals_with_amount": 38,
+       "deals_without_amount": 16,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2282014000.0,
+       "median_amount_usd": 56500000.0,
+       "largest_amount_usd": 216000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 87,
+       "deals_with_amount": 64,
+       "deals_without_amount": 23,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3039574000.0,
+       "median_amount_usd": 47260000.0,
+       "largest_amount_usd": 324000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 42,
+       "deals_with_amount": 27,
+       "deals_without_amount": 15,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2246636000.0,
+       "median_amount_usd": 42100000.0,
+       "largest_amount_usd": 510000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 52,
+       "deals_with_amount": 40,
+       "deals_without_amount": 12,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2107622000.0,
+       "median_amount_usd": 24250000.0,
+       "largest_amount_usd": 700000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 53,
+       "deals_with_amount": 35,
+       "deals_without_amount": 18,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1470818300.0,
+       "median_amount_usd": 17537500.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 54,
+       "deals_with_amount": 40,
+       "deals_without_amount": 14,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4497028000.0,
+       "median_amount_usd": 32400000.0,
+       "largest_amount_usd": 1200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 41,
+       "deals_with_amount": 26,
+       "deals_without_amount": 15,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2099555000.0,
+       "median_amount_usd": 30240000.0,
+       "largest_amount_usd": 1080000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 43,
+       "deals_with_amount": 28,
+       "deals_without_amount": 15,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2581005000.0,
+       "median_amount_usd": 24750000.0,
+       "largest_amount_usd": 1750000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.071,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.077
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "growth",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "round_type": [
+       "growth"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "7b5d82d4c93c1642",
+       "company_name": "k1x",
+       "domain": "k1x.io",
+       "round_type": "growth",
+       "amount_usd": 1750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sumeru equity partners",
+         "domain": "sumeruequity.com",
+         "amount": null
+        },
+        {
+         "name": "edison partners",
+         "domain": "edisonpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "enhance its platform capabilities, accelerate product development, expand its use of generative AI, and strengthen customer support.",
+       "source_sentence": "K1x, an AI-native tax data platform for private markets, announced it has secured a $175 million growth investment to accelerate the development of its digital infrastructure for tax compliance and reporting.",
+       "published_at": "2026-04-17T15:28:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e86a105cfa3e5ba5f599cc"
+       ],
+       "article_id": "69e86a105cfa3e5ba5f599cc"
+      },
+      {
+       "id": "0c00a11b6a13458c",
+       "company_name": "neysa",
+       "domain": "neysa.ai",
+       "round_type": "Growth / Mega Round",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "Teachers’ Venture Growth",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tvs capital funds",
+         "domain": "tvscapital.in",
+         "amount": null
+        },
+        {
+         "name": "360 ONE Asset",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Gen-AI & AI Infrastructure",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "Scale GPU capacity nationwide, deepen AI acceleration offerings, and expand enterprise and government use cases",
+       "source_sentence": "Neysa has secured over $1.2 billion in funding, led by private equity firm Blackstone with participation from Teachers’ Venture Growth, TVS Capital Funds, 360 ONE Asset and Nexus Venture Partners.",
+       "published_at": "2026-02-16T14:10:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bd86b393b550fcb8276b8a",
+        "69bd91e9834bfa2337ff38ce"
+       ],
+       "article_id": "69bd86b393b550fcb8276b8a"
+      },
+      {
+       "id": "2179e7bcc63311f6",
+       "company_name": "neura robotics",
+       "domain": "neura-robotics.com",
+       "round_type": "Growth round",
+       "amount_usd": 1080000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4320000000.0,
+       "currency": "EUR",
+       "amount": 1000000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "Tether Holdings",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI robotics",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "support accelerated product development and scaling",
+       "source_sentence": "Neura Robotics Raising €1B in Funding Round to Build Humanoid Robots",
+       "published_at": "2026-03-04T21:36:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bced046467b30648e36f15"
+       ],
+       "article_id": "69bced046467b30648e36f15"
+      },
+      {
+       "id": "9f3a96118eab37a2",
+       "company_name": "grammarly",
+       "domain": "grammarly.com",
+       "round_type": "Growth Financing",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Writing Platform",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Expand enterprise offerings, strengthen core AI models, and develop new content generation features.",
+       "source_sentence": "Grammarly Raises $1B Growth Round to Expand AI Writing Platform.",
+       "published_at": "2025-06-06T23:08:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d98fff82f590e7fe7eb674"
+       ],
+       "article_id": "68d98fff82f590e7fe7eb674"
+      },
+      {
+       "id": "94d373710f401f52",
+       "company_name": "grammarly",
+       "domain": "grammarly.com",
+       "round_type": "Growth Round",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Productivity Platform",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "scale its sales and marketing efforts and to support strategic acquisitions",
+       "source_sentence": "Grammarly, a San Francisco, CA-based AI assistant for communication and productivity, has secured $1 billion in financing.",
+       "published_at": "2025-05-30T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f24588d29a990b6f6ed6c"
+       ],
+       "article_id": "698f24588d29a990b6f6ed6c"
+      },
+      {
+       "id": "a78ec907b137f721",
+       "company_name": "5c group",
+       "domain": "5cgroupcapital.com",
+       "round_type": "Growth funding (Equity & debt)",
+       "amount_usd": 835000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 835000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Brookfield",
+         "domain": "brookfield.net.au",
+         "amount": null
+        },
+        {
+         "name": "deutsche bank",
+         "domain": "db.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure and data center provider",
+       "country": "Canada",
+       "city": "Montreal",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2025-07-24T00:05:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c588bfc6a4a9c884889c1b"
+       ],
+       "article_id": "68c588bfc6a4a9c884889c1b"
+      },
+      {
+       "id": "6d5700ee0551624c",
+       "company_name": "saviynt",
+       "domain": "saviynt.com",
+       "round_type": "growth equity",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3000000000.0,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Growth",
+         "domain": "sixthstreetgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "TenEleven",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carrick capital partners",
+         "domain": "carrickcapitalpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "United States",
+       "city": "El Segundo",
+       "use_of_funds": "build technology platform and expand footprint in Los Angeles and globally",
+       "source_sentence": "El Segundo-based cybersecurity firm Saviynt had one of the longest stretches between venture rounds, as it raised $700 million of growth equity a full seven years after its Series A funding.",
+       "published_at": "2026-02-22T09:07:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e31b268c1f2eecc2d4bd74"
+       ],
+       "article_id": "69e31b268c1f2eecc2d4bd74"
+      },
+      {
+       "id": "1bf3d6e1c4dd0c35",
+       "company_name": "saviynt",
+       "domain": "saviynt.com",
+       "round_type": "Series B Growth Equity",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3000000000.0,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Growth",
+         "domain": "sixthstreetgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "TenEleven",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carrick capital partners",
+         "domain": "carrickcapitalpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Identity Security / AI-Driven Identity & Access Management",
+       "country": null,
+       "city": "Los Angeles, New York",
+       "use_of_funds": "The company will use the funding to accelerate product development, expand AI capabilities, enable deeper integrations with cloud and SaaS platforms, and support global scaling of Saviynt’s identity security solutions.",
+       "source_sentence": "Saviynt, a Los Angeles- and New York-based identity security company, has raised $700 million in a Series B funding at a valuation of approximately $3 billion.",
+       "published_at": "2025-12-11T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f1a878d29a990b6f64647"
+       ],
+       "article_id": "698f1a878d29a990b6f64647"
+      },
+      {
+       "id": "3d4abd2766747b25",
+       "company_name": "saviynt",
+       "domain": "saviynt.com",
+       "round_type": "Series B Growth Equity Financing",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3000000000.0,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Growth",
+         "domain": "sixthstreetgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "TenEleven",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carrick capital partners",
+         "domain": "carrickcapitalpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Identity Security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "growth capital to increase, expand, and accelerate product development; generate additional AI-based utilities, methodologies, and programs that facilitate the migration from legacy solutions to Saviynt’s platform; and enable deeper integration with hyper-scalers, software/SaaS platforms, professional services firms, and value-added resellers.",
+       "source_sentence": "Saviynt, a leading identity security company, today announced a $700M Series B Growth Equity Financing at a valuation of approximately $3 billion.",
+       "published_at": "2025-12-10T06:09:31",
+       "coverage_count": 3,
+       "article_ids": [
+        "699213ff40184cd7086a9827",
+        "6996efc5feeb41363fa36274",
+        "699821f3ed628db05125e685"
+       ],
+       "article_id": "6996efc5feeb41363fa36274"
+      },
+      {
+       "id": "4e93737ebe721ebf",
+       "company_name": "saviynt",
+       "domain": "saviynt.com",
+       "round_type": "Series B Growth Equity",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3000000000.0,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Growth",
+         "domain": "sixthstreetgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "TenEleven",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carrick capital partners",
+         "domain": "carrickcapitalpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Identity Security",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "The funding will be used as growth capital to increase, expand, and accelerate product development; generate additional AI-based utilities, methodologies, and programs that facilitate the migration from legacy solutions to Saviynt’s platform; and enable deeper integration with hyper-scalers, software/SaaS platforms, professional services firms, and value-added resellers.",
+       "source_sentence": "Saviynt, a leading identity security company, today announced a $700M Series B Growth Equity Financing at a valuation of approximately $3 billion.",
+       "published_at": "2025-12-09T12:30:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e283d2a85be7e5065653aa"
+       ],
+       "article_id": "69e283d2a85be7e5065653aa"
+      },
+      {
+       "id": "a227192934f3f894",
+       "company_name": "saviynt",
+       "domain": "saviynt.com",
+       "round_type": "Series B Growth Equity Financing",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Growth",
+         "domain": "sixthstreetgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "TenEleven",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carrick capital partners",
+         "domain": "carrickcapitalpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Identity Security",
+       "country": "USA",
+       "city": "Los Angeles, New York",
+       "use_of_funds": "Growth capital to increase, expand, and accelerate product development; generate additional AI‑based utilities, methodologies, and programs that facilitate the migration from legacy solutions to Saviynt’s platform; and enable deeper integration with hyper‑scalers, software/SaaS platforms, professional services firms, and value‑added resellers.",
+       "source_sentence": "Saviynt, a leading identity security company, today announced a $700M Series B Growth Equity Financing at a valuation of approximately $3 billion.",
+       "published_at": "2025-12-09T12:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69451281ba9489700ca33a33",
+        "698ff7d78d29a990b6068bf5",
+        "69e88e285cfa3e5ba50cd1bb"
+       ],
+       "article_id": "69451281ba9489700ca33a33"
+      },
+      {
+       "id": "296ae3553fc8978b",
+       "company_name": "Stratos Wealth Holdings and its Stratos business",
+       "domain": null,
+       "round_type": "strategic growth investment",
+       "amount_usd": 527000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 527000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sei",
+         "domain": "seic.com",
+         "amount": 527000000.0
+        }
+       ],
+       "sector": "Financial Services",
+       "country": null,
+       "city": null,
+       "use_of_funds": "strengthen national network of financial advisors",
+       "source_sentence": "Alston & Bird represented Stratos Wealth Holdings and its Stratos business, a family of companies focused on supporting the success of financial advisors, in securing a $527 million strategic growth investment from SEI, a global provider of financial technology, operations, and asset management services.",
+       "published_at": "2025-07-24T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e28451277be6ed2d95a9cb"
+       ],
+       "article_id": "69e28451277be6ed2d95a9cb"
+      },
+      {
+       "id": "2cd1bb432a4076c3",
+       "company_name": "chaos industries",
+       "domain": "getchaos.com",
+       "round_type": "Growth / Late Stage",
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 510000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "strategic financial partners",
+         "domain": "sfp.us",
+         "amount": null
+        }
+       ],
+       "sector": "Defense technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "ramp manufacturing, invest in autonomous systems R&D, scale deployments with defense agencies",
+       "source_sentence": "Defense‑tech startup CHAOS Industries has raised $510 million in new funding as governments race to modernize national security infrastructure with AI‑enabled systems.",
+       "published_at": "2025-11-13T22:15:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "6931960c4b1bcf7fdbf20d91",
+        "69319937a12f2e382cf22a5b"
+       ],
+       "article_id": "6931960c4b1bcf7fdbf20d91"
+      },
+      {
+       "id": "eb15625e9262d48b",
+       "company_name": "Vero Networks",
+       "domain": "veronetworks.com",
+       "round_type": "Growth",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "braemont capital",
+         "domain": "braemont.com",
+         "amount": null
+        }
+       ],
+       "sector": "Broadband",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Broadband provider Vero Networks matched MatX with a $500 million growth round backed by Braemont Capital and others.",
+       "published_at": "2026-02-27T19:47:01",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc8814256ce3e68edb9a64",
+        "69bc8819417ea46bd33ec05a"
+       ],
+       "article_id": "69bc8814256ce3e68edb9a64"
+      },
+      {
+       "id": "266c46865f82128d",
+       "company_name": "kiteworks",
+       "domain": "kiteworks.com",
+       "round_type": "growth-equity",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Growth",
+         "domain": "sixthstreetgrowth.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Kiteworks announced a $450 million growth-equity investment from global software investors Insight Partners and Sixth Street Growth.",
+       "published_at": "2026-02-07T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988c23594d3f481f3d8dda1"
+       ],
+       "article_id": "6988c23594d3f481f3d8dda1"
+      },
+      {
+       "id": "c1fe8fbf68833525",
+       "company_name": "first due",
+       "domain": "firstdue.com",
+       "round_type": "Strategic Minority Growth Investment",
+       "amount_usd": 355000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 355000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "JMI Equity",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "serent capital",
+         "domain": "serentcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Public Safety Software / AI Operations Platform",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "expand its platform capabilities, integrate advanced AI features, enhance customer support, and scale operations to meet the evolving needs of public safety agencies",
+       "source_sentence": "First Due, a New York–based all-in-one software platform for public safety agencies, has secured a $355 million strategic minority growth investment.",
+       "published_at": "2025-08-11T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f9da38d29a990b6fff732"
+       ],
+       "article_id": "698f9da38d29a990b6fff732"
+      },
+      {
+       "id": "ad083d942f934470",
+       "company_name": "first due",
+       "domain": "firstdue.com",
+       "round_type": "Strategic Growth Investment (Minority stake)",
+       "amount_usd": 355000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 355000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "JMI Equity",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Public Safety Software",
+       "country": "USA",
+       "city": "Garden City",
+       "use_of_funds": "Accelerate product development and expand reach to more fire departments and municipalities across North America",
+       "source_sentence": "The massive growth round – one of the largest in public sector tech this year – will enable First Due To accelerate product development and expand its reach to more fire departments and municipalities across North America.",
+       "published_at": "2025-08-09T01:26:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "68a176753ff75e010c30bd60"
+       ],
+       "article_id": "68a176753ff75e010c30bd60"
+      },
+      {
+       "id": "93a85231345ed719",
+       "company_name": "return",
+       "domain": "returnhelper.com",
+       "round_type": "growth round",
+       "amount_usd": 324000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Energy storage developer",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand large-scale battery storage capacity",
+       "source_sentence": "energy storage developer Return secured a significantly larger €300 million growth round to expand large-scale battery storage capacity.",
+       "published_at": "2026-02-06T10:28:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "6998146722f0326c0f924282"
+       ],
+       "article_id": "6998146722f0326c0f924282"
+      },
+      {
+       "id": "d82a15a7aa7adcf3",
+       "company_name": "return",
+       "domain": "returnhelper.com",
+       "round_type": "growth capital",
+       "amount_usd": 324000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Return raises €300M in growth capital to scale battery storage capacity",
+       "published_at": "2025-10-17T14:21:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe32d69f5ecb55fa288dcc"
+       ],
+       "article_id": "68fe32d69f5ecb55fa288dcc"
+      },
+      {
+       "id": "58cf1b24084a468a",
+       "company_name": "ramp",
+       "domain": "ramp.network",
+       "round_type": "Growth",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Avenir Growth",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "sutter hill ventures",
+         "domain": "shv.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2025-11-17T21:56:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "693149070bcf1392ccf21b0a"
+       ],
+       "article_id": "693149070bcf1392ccf21b0a"
+      },
+      {
+       "id": "66a422b6b2b8fc81",
+       "company_name": "vantaca",
+       "domain": "vantaca.com",
+       "round_type": "growth investment",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cove hill partners",
+         "domain": "covehillpartners.com",
+         "amount": 300000000.0
+        }
+       ],
+       "sector": "Property Management Software",
+       "country": "United States",
+       "city": "Wilmington",
+       "use_of_funds": "Expand AI capabilities, national expansion, enhance platform",
+       "source_sentence": "The startup, which provides HOA solutions and community association software to property management firms, raised $300 million in private equity, at a $1.25 billion valuation, from lead investor Cove Hill Partners out of Boston.",
+       "published_at": "2025-10-21T18:34:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988894867fc62ca0ef3c53e"
+       ],
+       "article_id": "6988894867fc62ca0ef3c53e"
+      },
+      {
+       "id": "00fc99d0d0fe9d50",
+       "company_name": "vantaca",
+       "domain": "vantaca.com",
+       "round_type": "Minority Growth Investment (Late-Stage)",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cove hill partners",
+         "domain": "covehillpartners.com",
+         "amount": null
+        },
+        {
+         "name": "JMI Equity",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Community Association Management Software",
+       "country": "United States",
+       "city": "Wilmington",
+       "use_of_funds": "AI R&D (agentic automations), go-to-market expansion, resident-facing features",
+       "source_sentence": "Vantaca, a leading AI-powered platform for community association management, secured over $300 million in a minority growth investment round, valuing the company at $1.25 billion and marking its entry into unicorn status.",
+       "published_at": "2025-10-18T08:00:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a4b28fb0ea95e9770efd"
+       ],
+       "article_id": "6988a4b28fb0ea95e9770efd"
+      },
+      {
+       "id": "5f014c630678f418",
+       "company_name": "vantaca",
+       "domain": "vantaca.com",
+       "round_type": "minority growth investment",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1250000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 1250000000.0,
+       "investors": [
+        {
+         "name": "cove hill partners",
+         "domain": "covehillpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Vantaca joined the unicorn club after a minority growth investment of over $300 million led by Cove Hill Partners, raising the company's valuation to $1.25 billion.",
+       "published_at": "2025-10-17T14:41:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb5efb8b79b55c8276446e"
+       ],
+       "article_id": "69bb5efb8b79b55c8276446e"
+      },
+      {
+       "id": "76bb9b6c94c2f05f",
+       "company_name": "quavo",
+       "domain": "quavo.com",
+       "round_type": "Growth",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spectrum equity",
+         "domain": "spectrumequity.com",
+         "amount": 300000000.0
+        }
+       ],
+       "sector": "Fraud dispute management",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Quavo has secured $300m in growth funding from Spectrum Equity.",
+       "published_at": "2025-07-25T15:16:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69889db794d3f481f3d66cda"
+       ],
+       "article_id": "69889db794d3f481f3d66cda"
+      },
+      {
+       "id": "78abb385daf00928",
+       "company_name": "quavo",
+       "domain": "quavo.com",
+       "round_type": "growth funding",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spectrum equity",
+         "domain": "spectrumequity.com",
+         "amount": 300000000.0
+        }
+       ],
+       "sector": "FinTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to support expansion plans, including scaling AI-driven product development and growing client success and go-to-market teams",
+       "source_sentence": "Quavo, a fraud and dispute management platform for financial institutions, has secured $300m in growth funding from Spectrum Equity.",
+       "published_at": "2025-07-22T14:28:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988aa6b127162d16e0b0703"
+       ],
+       "article_id": "6988aa6b127162d16e0b0703"
+      },
+      {
+       "id": "83c81145a0f4e9dd",
+       "company_name": "spirit ai",
+       "domain": "spiritai.com",
+       "round_type": "growth",
+       "amount_usd": 290500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 290500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "YF Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "HongShan Capital Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Chaos Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Synstellation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "TCL Technology Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "shunwei capital",
+         "domain": "shunwei.com",
+         "amount": null
+        },
+        {
+         "name": "Fortune Capital",
+         "domain": "fortunecapital.co.in",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics",
+       "country": "China",
+       "city": null,
+       "use_of_funds": "product development and commercial scaling of its robotics solutions",
+       "source_sentence": "Chinese robotics and embodied intelligence company Spirit AI raised roughly $290.5 million in a growth funding round.",
+       "published_at": "2026-02-26T11:05:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9d94803caa0b7b4a5285e"
+       ],
+       "article_id": "69c9d94803caa0b7b4a5285e"
+      },
+      {
+       "id": "e26d996f20085dc2",
+       "company_name": "spirit ai",
+       "domain": "spiritai.com",
+       "round_type": "Growth rounds",
+       "amount_usd": 290500000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 290500000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "YF Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "HongShan Capital Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Chaos Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Synstellation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "TCL Technology Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "shunwei capital",
+         "domain": "shunwei.com",
+         "amount": null
+        },
+        {
+         "name": "Fortune Capital",
+         "domain": "fortunecapital.co.in",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics AI embodied intelligence",
+       "country": "China",
+       "city": null,
+       "use_of_funds": "accelerate development of robotics hardware and AI models",
+       "source_sentence": "The company announced roughly ¥2 billion in new funding (about $290.5 million) this week…",
+       "published_at": "2026-02-25T23:16:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7ed68db8b8187dd9b82a"
+       ],
+       "article_id": "69bc7ed68db8b8187dd9b82a"
+      },
+      {
+       "id": "e583c6ccbde94b1f",
+       "company_name": "chainguard",
+       "domain": "chainguard.dev",
+       "round_type": "Growth",
+       "amount_usd": 280000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 280000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "General Catalyst’s Customer Value Fund (CVF)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "CyberTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand Chainguard’s go-to-market capabilities and accelerate product and engineering innovation, strengthen its financial profile and operational scale while maintaining focus on long‑term value creation",
+       "source_sentence": "Chainguard raises $280m to boost secure software growth",
+       "published_at": "2025-10-24T14:34:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e1d8a9ca02490ec07d384"
+       ],
+       "article_id": "698e1d8a9ca02490ec07d384"
+      },
+      {
+       "id": "0ce932be28c41f2f",
+       "company_name": "chainguard",
+       "domain": "chainguard.dev",
+       "round_type": "growth financing",
+       "amount_usd": 280000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 280000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "General Catalyst’s Customer Value Fund (CVF)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Open-source software security",
+       "country": "US",
+       "city": "Seattle",
+       "use_of_funds": "Expand go-to-market capabilities and accelerate product and engineering innovation, strengthen financial profile, and operational scale",
+       "source_sentence": "Chainguard, a company providing trusted open-source software solutions, has raised $280m in growth financing from General Catalyst’s Customer Value Fund (CVF).",
+       "published_at": "2025-10-24T09:06:45",
+       "coverage_count": 2,
+       "article_ids": [
+        "69894bea94d3f481f3e31e96",
+        "69dcd648d9f9dee8b225648d"
+       ],
+       "article_id": "69894bea94d3f481f3e31e96"
+      },
+      {
+       "id": "df1583f544da88a3",
+       "company_name": "chainguard",
+       "domain": "chainguard.dev",
+       "round_type": "Growth financing",
+       "amount_usd": 280000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 280000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        }
+       ],
+       "sector": "Open-source software supply chain security",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "scale sales, marketing, and R&D",
+       "source_sentence": "Chainguard, a Seattle-area cybersecurity startup focused on securing the software supply chain, has raised $280 million in novel non-dilutive financing from General Catalyst’s Customer Value Fund (CVF).",
+       "published_at": "2025-10-24T02:57:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe2906e01ff0caa62936c4"
+       ],
+       "article_id": "68fe2906e01ff0caa62936c4"
+      },
+      {
+       "id": "daf6b121fe92b1b1",
+       "company_name": "ITM Isotope Technologies Munich SE",
+       "domain": null,
+       "round_type": "growth financing",
+       "amount_usd": 262500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 262500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blue owl",
+         "domain": "blueowl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Radiopharmaceutical biotech",
+       "country": "Germany",
+       "city": "Garching near Munich",
+       "use_of_funds": "growth financing",
+       "source_sentence": "The radiopharmaceutical biotech company ITM Isotope Technologies Munich SE from Garching near Munich has invested up to USD 262.5 million in growth financing by Blue Owl in 2025.",
+       "published_at": "2025-12-25T11:47:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "698fba669ca02490ec2672ba"
+       ],
+       "article_id": "698fba669ca02490ec2672ba"
+      },
+      {
+       "id": "dc47283c8abe05c2",
+       "company_name": "rezolve ai",
+       "domain": "rezolve.ai",
+       "round_type": "Growth",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Undisclosed",
+         "domain": "Undisclosed",
+         "amount": null
+        }
+       ],
+       "sector": "AI-Powered Retail / Agentic Commerce",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Advance disciplined M&A, accelerate global enterprise deployments, scale infrastructure and platform capacity, and convert growing AI adoption into sustained revenue growth.",
+       "source_sentence": "The company will use the funds to advance disciplined M&A, accelerate global enterprise deployments, scale infrastructure and platform capacity, and convert growing AI adoption into sustained revenue growth.",
+       "published_at": "2026-01-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f9b3f8d29a990b6ffc7e4"
+       ],
+       "article_id": "698f9b3f8d29a990b6ffc7e4"
+      },
+      {
+       "id": "1eb8f85471826ed3",
+       "company_name": "tebra",
+       "domain": "tebra.com",
+       "round_type": "Growth financing (Late-stage round)",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Hildred Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Montreux Growth Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "toba capital",
+         "domain": "tobacapital.com",
+         "amount": null
+        },
+        {
+         "name": "Transformation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        }
+       ],
+       "sector": "healthcare software platform",
+       "country": "United States",
+       "city": "Newport Beach",
+       "use_of_funds": "fund the development of AI features to streamline clinical documentation and administrative workflows",
+       "source_sentence": "Amount Raised: $250 million",
+       "published_at": "2026-01-12T22:01:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "69894f9a94d3f481f3e35ac1"
+       ],
+       "article_id": "69894f9a94d3f481f3e35ac1"
+      },
+      {
+       "id": "889dbb09de694c97",
+       "company_name": "gopuff",
+       "domain": "gopuff.com",
+       "round_type": "Growth",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eldridge industries",
+         "domain": "eldridge.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Logistics",
+       "country": null,
+       "city": null,
+       "use_of_funds": "refining micro‑fulfillment network, strengthening routing and demand forecasting, expanding private‑label offerings",
+       "source_sentence": "Instant‑delivery veteran Gopuff has raised $250 million in fresh funding at a reduced $8.5 billion valuation, as the company doubles down on turning rapid convenience delivery into a durable, profitable business.",
+       "published_at": "2025-11-13T22:15:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "6931960c4b1bcf7fdbf20d91",
+        "69319937a12f2e382cf22a5b"
+       ],
+       "article_id": "6931960c4b1bcf7fdbf20d91"
+      },
+      {
+       "id": "20be4176ee2e6612",
+       "company_name": "bilt",
+       "domain": "biltapp.com",
+       "round_type": "Late-stage Growth",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "gid",
+         "domain": "gid-gmbh.de",
+         "amount": null
+        },
+        {
+         "name": "united wholesale mortgage",
+         "domain": "uwm.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "United States",
+       "city": "New York City",
+       "use_of_funds": "Bilt plans to use the funds to expand its operations and roll out new offerings – including an upcoming Bilt Card 2.0 and mortgage services.",
+       "source_sentence": "Bilt plans to use the funds to expand its operations and roll out new offerings – including an upcoming Bilt Card 2.0 and mortgage services.",
+       "published_at": "2025-07-10T23:11:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "690301ecdf771495f9d83b20"
+       ],
+       "article_id": "690301ecdf771495f9d83b20"
+      },
+      {
+       "id": "76403af32634846e",
+       "company_name": "Convene Hospitality Group (CHG)",
+       "domain": null,
+       "round_type": "growth capital",
+       "amount_usd": 230000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 230000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "Ares funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Corporate conferences, meetings and event venues",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Support global expansion across CHG’s multi-brand platform, with capital allocated toward new development, technology and production capabilities and selective acquisitions",
+       "source_sentence": "Convene Hospitality Group (CHG) has secured $230 million in strategic growth capital, led by new lender TPG, with additional equity investment from existing shareholders, including Ares funds.",
+       "published_at": "2026-03-25T13:17:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc14b24a99add5b296623b"
+       ],
+       "article_id": "69cc14b24a99add5b296623b"
+      },
+      {
+       "id": "669e94d8588551f4",
+       "company_name": "centra",
+       "domain": "centratechnology.com",
+       "round_type": "growth investment",
+       "amount_usd": 230000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 230000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "columbia capital",
+         "domain": "colcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Interconnection data centers",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Finance development in Reno, NV, and Minneapolis, MN, as well as additional expansion locations in growing technology hubs to provide dedicated interconnection infrastructure in emerging cloud and AI markets.",
+       "source_sentence": "CENTRA Digital Interconnect (“CENTRA”), a leading provider of modern, purpose-built interconnection data centers in evolving AI-ready U.S. markets, announced a $230 million growth investment led by Columbia Capital.",
+       "published_at": "2025-11-03T08:48:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "690e3acd2a5f111a94247231"
+       ],
+       "article_id": "690e3acd2a5f111a94247231"
+      },
+      {
+       "id": "102d7b4572ea68b4",
+       "company_name": "airalo",
+       "domain": "airalo.com",
+       "round_type": "Growth",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cvc capital partners",
+         "domain": "cvc.com",
+         "amount": null
+        },
+        {
+         "name": "peak xv",
+         "domain": "peakxv.net",
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "eSIM connectivity",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to expand its borderless eSIM marketplace",
+       "source_sentence": "Airalo secured $220M to expand its global eSIM connectivity platform",
+       "published_at": "2026-01-06T00:00:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988efb394d3f481f3dc461b"
+       ],
+       "article_id": "6988efb394d3f481f3dc461b"
+      },
+      {
+       "id": "408628a75ac779ce",
+       "company_name": "premialab",
+       "domain": "premialab.com",
+       "round_type": "growth",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "balderton capital",
+         "domain": "balderton.com",
+         "amount": null
+        }
+       ],
+       "sector": "Quantitative investment analytics platform",
+       "country": "UAE",
+       "city": "Dubai",
+       "use_of_funds": "accelerate international expansion and product development, including scaling a QIS execution offering with Eurex",
+       "source_sentence": "The $220 million raise, joined by existing investor Balderton Capital, will fuel expansion and product development including a QIS execution offering with Eurex.",
+       "published_at": "2025-12-17T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6989cc1194d3f481f3ec8f20",
+        "69dfb58544a6646a5b2b5d83"
+       ],
+       "article_id": "69dfb58544a6646a5b2b5d83"
+      },
+      {
+       "id": "59012d069133cb8d",
+       "company_name": "premialab",
+       "domain": "premialab.com",
+       "round_type": "growth investment",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "KKR & Co. Inc.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "data, analytics, and risk management solutions for quantitative investing",
+       "country": "UAE",
+       "city": "Dubai",
+       "use_of_funds": "fuel Premialab’s global expansion, enhance core operational systems, and support the scaling of its new execution product, co-developed with Eurex, to expand access to QIS strategies.",
+       "source_sentence": "KKR & Co. Inc. (NYSE:KKR) on Tuesday disclosed that it is making a $220 million growth investment in Premialab, a global provider of data, analytics, and risk management solutions for quantitative investing.",
+       "published_at": "2025-12-16T14:50:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "694515d66bc4950159a33e9b",
+        "6989c57d94d3f481f3ec1850"
+       ],
+       "article_id": "694515d66bc4950159a33e9b"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 624,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTItMTYgMTQ6NTA6MTAiLCJrIjoiNjQxMzQ1Njg1MDU4MTQ0MTQyMSIsImEiOjIyMDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 624,
+      "deals_with_amount": 441,
+      "deals_without_amount": 183,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 26338193900.0,
+      "median_amount_usd": 30000000.0,
+      "largest_amount_usd": 1750000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.204,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.207
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "growth",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "round_type": [
+       "growth"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "1aa3828d238c9a4d",
+       "company_name": "qover",
+       "domain": "qover.com",
+       "round_type": "growth financing",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cibc innovation banking",
+         "domain": "innovationbanking.cibc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "Belgium",
+       "city": "Brussels",
+       "use_of_funds": "support Qover’s continued expansion and growth",
+       "source_sentence": "CIBC Innovation Banking today announced that it has provided growth financing to Qover, a European-based embedded insurance platform.",
+       "published_at": "2026-04-30T11:00:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f87f948937ef12fc068946"
+       ],
+       "article_id": "69f87f948937ef12fc068946"
+      },
+      {
+       "id": "3c0435b546282409",
+       "company_name": "Smart Information Technologies",
+       "domain": null,
+       "round_type": "growth loan",
+       "amount_usd": 381000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "river capital",
+         "domain": "rivercapitalfinance.com",
+         "amount": null
+        }
+       ],
+       "sector": "ERP (enterprise resource planning) software implementation and support",
+       "country": "United Kingdom",
+       "city": "Kirkham",
+       "use_of_funds": "Recruit and train new staff to meet growing demand and create up to 10 jobs.",
+       "source_sentence": "Smart Information Technologies, a Kirkham-based business specialising in ERP (enterprise resource planning) software implementation and support, has secured a £300,000 growth loan from Liverpool-based funder River Capital.",
+       "published_at": "2026-04-30T10:42:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a041801220687a966b24a40"
+       ],
+       "article_id": "6a041801220687a966b24a40"
+      },
+      {
+       "id": "d1fb2319ef770a90",
+       "company_name": "sportvot",
+       "domain": "sportvot.com",
+       "round_type": "Growth",
+       "amount_usd": 39240000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 3270000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "IAN Alpha Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "anicut capital",
+         "domain": "anicutcapital.com",
+         "amount": null
+        },
+        {
+         "name": "letsventure",
+         "domain": "letsventure.com",
+         "amount": null
+        }
+       ],
+       "sector": "Sports Tech / AI",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expand globally and strengthen its technology stack",
+       "source_sentence": "SportVot Raises ₹32.7 Cr Growth Round Sports streaming and analytics platform, SportVot, raised INR 32.7 crore led by IAN Alpha Fund.",
+       "published_at": "2026-04-29T12:18:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8809d8937ef12fc072dd3"
+       ],
+       "article_id": "69f8809d8937ef12fc072dd3"
+      },
+      {
+       "id": "91d6599b12e65ae4",
+       "company_name": "sportvot",
+       "domain": "sportvot.com",
+       "round_type": "Growth",
+       "amount_usd": 3924000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 327000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "IAN Alpha Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "anicut capital",
+         "domain": "anicutcapital.com",
+         "amount": null
+        },
+        {
+         "name": "letsventure",
+         "domain": "letsventure.com",
+         "amount": null
+        }
+       ],
+       "sector": "Sports Tech / AI",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "It will be used to expand globally and strengthen its technology stack.",
+       "source_sentence": "SportVot Raises ₹32.7 Cr Growth Round",
+       "published_at": "2026-04-29T12:18:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f229c427117df83f9439e5"
+       ],
+       "article_id": "69f229c427117df83f9439e5"
+      },
+      {
+       "id": "c144ab0386a16204",
+       "company_name": "altair semiconductor",
+       "domain": "altair-semi.com",
+       "round_type": "Strategic Growth Round (post-spinoff)",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Pitango Venture Capital",
+         "domain": "pitango.com",
+         "amount": null
+        },
+        {
+         "name": "sony",
+         "domain": "sony.net",
+         "amount": null
+        }
+       ],
+       "sector": "IoT and 5G chips",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": "Development of next-generation LTE CAT-M and NB-IoT modems and AI-capable sensor processors",
+       "source_sentence": "Altair Semiconductor has secured $50 million in funding from Pitango Group.",
+       "published_at": "2026-04-28T23:30:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cc0c399b489398e0c078"
+       ],
+       "article_id": "69f1cc0c399b489398e0c078"
+      },
+      {
+       "id": "6f059b3cc700b401",
+       "company_name": "CleanDesign",
+       "domain": "cleandesignic.com",
+       "round_type": "Growth Investment",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "edison partners",
+         "domain": "edisonpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Energy Technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerated deployment of hEMS units, expansion into additional mining and remote energy applications, and further product development.",
+       "source_sentence": "CleanDesign, a Toronto and Nashville-based software-driven energy technology company, has secured a $20 million growth investment led by Edison Partners.",
+       "published_at": "2026-04-28T16:51:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e8ce836d28f995cbbf22"
+       ],
+       "article_id": "69f0e8ce836d28f995cbbf22"
+      },
+      {
+       "id": "b6fdb36c868ae219",
+       "company_name": "openly",
+       "domain": "openly.com",
+       "round_type": "growth",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Eden Global Partners",
+         "domain": "edengp.com",
+         "amount": null
+        },
+        {
+         "name": "advance venture partners",
+         "domain": "avp.vc",
+         "amount": null
+        },
+        {
+         "name": "gradient",
+         "domain": "gradientcorp.com",
+         "amount": null
+        },
+        {
+         "name": "allianz x",
+         "domain": "allianzx.com",
+         "amount": null
+        }
+       ],
+       "sector": "homeowners insurance",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "expansion into additional states, deepen agent partnerships and broaden its product offering",
+       "source_sentence": "Openly, a tech-enabled homeowners insurance provider, has secured a growth investment round led by existing investors Eden Global Partners, Advance Venture Partners and Gradient, with strategic participation from Allianz X.",
+       "published_at": "2026-04-24T08:16:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "69efa9158a54b8f07c9516c8",
+        "69efab30a84b609af2b34bf0"
+       ],
+       "article_id": "69efa9158a54b8f07c9516c8"
+      },
+      {
+       "id": "bf8b16852d0b8fb3",
+       "company_name": "Fasal Bio",
+       "domain": null,
+       "round_type": "growth equity",
+       "amount_usd": 7560000.000000001,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 7000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackpeak capital",
+         "domain": "blackpeak-capital.com",
+         "amount": 7000000.0
+        }
+       ],
+       "sector": "Renewable materials",
+       "country": "Croatia",
+       "city": "Zagreb",
+       "use_of_funds": null,
+       "source_sentence": "Fasal Bio a Zagreb-based company developing a proprietary renewable materials platform aimed at reducing reliance on conventional plastics, has secured a €7 million growth equity investment from BlackPeak Capital.",
+       "published_at": "2026-04-23T10:53:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea1e4a75c44d9ce882011f"
+       ],
+       "article_id": "69ea1e4a75c44d9ce882011f"
+      },
+      {
+       "id": "49e2d816f52fa04f",
+       "company_name": "render networks",
+       "domain": "rendernetworks.com",
+       "round_type": "private equity growth",
+       "amount_usd": 13200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "AUD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "existing shareholders",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Telecommunications and electric infrastructure",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Render Networks announced A$20 million in private equity growth funding alongside the acquisition of mPower Innovations",
+       "published_at": "2026-04-22T16:43:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9a24a75f157062cb343df"
+       ],
+       "article_id": "69e9a24a75f157062cb343df"
+      },
+      {
+       "id": "d49afe0493ae938a",
+       "company_name": "openly",
+       "domain": "openly.com",
+       "round_type": "growth investment round",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Eden Global Partners",
+         "domain": "edengp.com",
+         "amount": null
+        },
+        {
+         "name": "advance venture partners",
+         "domain": "avp.vc",
+         "amount": null
+        },
+        {
+         "name": "gradient",
+         "domain": "gradientcorp.com",
+         "amount": null
+        },
+        {
+         "name": "allianz x",
+         "domain": "allianzx.com",
+         "amount": null
+        }
+       ],
+       "sector": "homeowners insurance",
+       "country": "United States",
+       "city": "Boston",
+       "use_of_funds": "accelerate growth into additional states, deepen agent partnerships, and expand its product offerings",
+       "source_sentence": "Openly, a tech-enabled homeowners insurance provider, today announced the close of a growth investment round led by existing investors Eden Global Partners, Advance Venture Partners, and Gradient, with strategic participation from Allianz X.",
+       "published_at": "2026-04-22T12:34:06",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e9916775f157062ca7b5fd",
+        "69ea284e8266d933999555c3",
+        "69efab2b727212302c5f53ab"
+       ],
+       "article_id": "69e9916775f157062ca7b5fd"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 191,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjIgMTI6MzQ6MDYiLCJrIjoiMTUzMTk4MzYzNzgwNjUxNzk1MzAifQ",
+     "totals": {
+      "deals": 191,
+      "deals_with_amount": 129,
+      "deals_without_amount": 62,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 10636406300.0,
+      "median_amount_usd": 25000000.0,
+      "largest_amount_usd": 1750000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.099,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.102
+    }
+   }
+  }
+ ]
+}

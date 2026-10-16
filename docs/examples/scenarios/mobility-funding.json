@@ -1,0 +1,2033 @@
+{
+ "slug": "mobility-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:18Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "mobility",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "mobility"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 278,
+      "deals_with_amount": 243,
+      "deals_without_amount": 35,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 12024948200.0,
+      "median_amount_usd": 10200000.0,
+      "largest_amount_usd": 1674000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 10,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1623340000.0,
+       "median_amount_usd": 20270000.0,
+       "largest_amount_usd": 845000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 26,
+       "deals_with_amount": 25,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1243674000.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 600000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 17,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 754584000.0,
+       "median_amount_usd": 18000000.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 8,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 701924000.0,
+       "median_amount_usd": 4250000.0,
+       "largest_amount_usd": 351000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 28,
+       "deals_with_amount": 25,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 901068000.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 21,
+       "deals_with_amount": 20,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 777340000.0,
+       "median_amount_usd": 16200000.0,
+       "largest_amount_usd": 180000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 38,
+       "deals_with_amount": 31,
+       "deals_without_amount": 7,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2856480000.0,
+       "median_amount_usd": 11000000.0,
+       "largest_amount_usd": 1674000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 17,
+       "deals_with_amount": 14,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 442860000.0,
+       "median_amount_usd": 21000000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 25,
+       "deals_with_amount": 24,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 439706200.0,
+       "median_amount_usd": 8550000.0,
+       "largest_amount_usd": 150000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 26,
+       "deals_with_amount": 24,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1062330000.0,
+       "median_amount_usd": 10875000.0,
+       "largest_amount_usd": 367200000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 34,
+       "deals_with_amount": 30,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 1579380000.0,
+       "median_amount_usd": 6000000.0,
+       "largest_amount_usd": 660000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 18,
+       "deals_with_amount": 15,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 324312000.0,
+       "median_amount_usd": 7200000.0,
+       "largest_amount_usd": 170000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.026,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.03
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "mobility",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "mobility"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "0d7b28fce5509c99",
+       "company_name": "sixt se",
+       "domain": "sixt.de",
+       "round_type": "syndicated loan",
+       "amount_usd": 1674000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Bayerische Landesbank",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "caixabank",
+         "domain": "caixabank.com",
+         "amount": null
+        },
+        {
+         "name": "commerzbank",
+         "domain": "commerzbank.com",
+         "amount": null
+        },
+        {
+         "name": "deutsche bank",
+         "domain": "db.com",
+         "amount": null
+        },
+        {
+         "name": "dz bank",
+         "domain": "dzbank.de",
+         "amount": null
+        },
+        {
+         "name": "ing",
+         "domain": "ing.com",
+         "amount": null
+        },
+        {
+         "name": "helaba",
+         "domain": "helaba.com",
+         "amount": null
+        },
+        {
+         "name": "unicredit bank",
+         "domain": "unicreditbank.si",
+         "amount": null
+        }
+       ],
+       "sector": "Mobility services",
+       "country": "Germany",
+       "city": "Pullach",
+       "use_of_funds": "Strengthen liquidity and financial flexibility.",
+       "source_sentence": "Sixt SE has replaced its previous syndicated loan of EUR 950 million with a new revolving credit line of EUR 1.55 billion ahead of schedule.",
+       "published_at": "2025-11-10T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bba0dd728db8749552b1fe",
+        "69e3558aa8697b10fabf3544"
+       ],
+       "article_id": "69e3558aa8697b10fabf3544"
+      },
+      {
+       "id": "0dde0ea38a0ffc82",
+       "company_name": "nfi group",
+       "domain": "nfigroup.com",
+       "round_type": "revolving credit facility",
+       "amount_usd": 845000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 845000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "national bank of canada",
+         "domain": "nbc.ca",
+         "amount": null
+        },
+        {
+         "name": "National Bank Financial",
+         "domain": "nbfwm.ca",
+         "amount": null
+        },
+        {
+         "name": "Bank of Nova Scotia",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bmo capital markets",
+         "domain": "capitalmarkets.bmo.com",
+         "amount": null
+        },
+        {
+         "name": "canadian imperial bank of commerce",
+         "domain": "cibc.com",
+         "amount": null
+        },
+        {
+         "name": "td bank",
+         "domain": "td.com",
+         "amount": null
+        }
+       ],
+       "sector": "bus manufacturing and mobility solutions",
+       "country": "Canada",
+       "city": "Winnipeg",
+       "use_of_funds": "improve covenants, increased liquidity and greater financial flexibility",
+       "source_sentence": "NFI Group Inc. (NFI), a leader in propulsion-agnostic bus and coach mobility solutions, today announced that it and certain of its subsidiaries (collectively, the Company) have entered into a new revolving credit facility (the First Lien Facility) with a total borrowing limit of \\$845 million, which includes \\$300 million in letter of credit availability.",
+       "published_at": "2025-05-07T21:00:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "698fe8348d29a990b6056826"
+       ],
+       "article_id": "698fe8348d29a990b6056826"
+      },
+      {
+       "id": "c3ade1ba6e7d61b6",
+       "company_name": "Ola Electric Mobility",
+       "domain": "olaelectric.com",
+       "round_type": "Initial Public Offering",
+       "amount_usd": 660000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 55000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Electric Vehicle / Mobility",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "Expand cell manufacturing capacity from 5 to 6.4 GWh",
+       "source_sentence": "In August 2024, Ola Electric Mobility raised Rs 5,500 crore through its initial public offering (IPO).",
+       "published_at": "2026-03-16T10:22:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e4f88c430a4927fdbf3f7c"
+       ],
+       "article_id": "69e4f88c430a4927fdbf3f7c"
+      },
+      {
+       "id": "f145727738835df8",
+       "company_name": "New Flyer Holdings, Inc.",
+       "domain": null,
+       "round_type": "Debt Offering",
+       "amount_usd": 600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Bus and coach mobility solutions",
+       "country": "Canada",
+       "city": "Winnipeg",
+       "use_of_funds": "Repay certain indebtedness under existing credit facilities and related fees and expenses.",
+       "source_sentence": "NFI received net proceeds of approximately $591.7 million, after deduction of certain fees, expenses and commissions.",
+       "published_at": "2025-06-13T13:20:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d359a9ca02490ecf6b2a1"
+       ],
+       "article_id": "698d359a9ca02490ecf6b2a1"
+      },
+      {
+       "id": "f4214dfa2255160b",
+       "company_name": "neot",
+       "domain": "neotcapital.com",
+       "round_type": "Equity",
+       "amount_usd": 378000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mirova",
+         "domain": "mirova.com",
+         "amount": null
+        },
+        {
+         "name": "Alba Infra Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "banque des territoires",
+         "domain": "banquedesterritoires.fr",
+         "amount": null
+        }
+       ],
+       "sector": "Low-carbon mobility",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Scale up decarbonized transportation projects across Europe",
+       "source_sentence": "This strategic initiative is backed by a new equity commitment of €350 million from Neot’s historical partners: Mirova, Alba Infra Partners, and Banque des Territoires, significantly strengthening Neot’s capacity to scale up the deployment of decarbonized transportation projects across Europe.",
+       "published_at": "2025-05-21T16:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d5e408d29a990b6d53e8b"
+       ],
+       "article_id": "698d5e408d29a990b6d53e8b"
+      },
+      {
+       "id": "a802cdd6d39f1895",
+       "company_name": "vtg",
+       "domain": "vtgdefense.com",
+       "round_type": "Loan",
+       "amount_usd": 367200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 340000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "KfW IPEX-Bank",
+         "domain": "kfw-ipex-bank.de",
+         "amount": null
+        }
+       ],
+       "sector": "rail logistics, sustainable mobility",
+       "country": "Germany",
+       "city": "Frankfurt am Main",
+       "use_of_funds": "ordering new wagons",
+       "source_sentence": "KfW IPEX-Bank arranges and syndicates funding loans for VTG Frankfurt am Main (ots) - - KfW IPEX-Bank acts as Sole Mandated Lead Arranger and Bookrunner - 340 million EUR for ordering new wagons.",
+       "published_at": "2026-02-12T09:49:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb2a03333284adb66312ca"
+       ],
+       "article_id": "69bb2a03333284adb66312ca"
+      },
+      {
+       "id": "6cc1b2aca8488262",
+       "company_name": "zenobē",
+       "domain": "zenobe.com",
+       "round_type": "senior debt",
+       "amount_usd": 351000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 325000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "infracapital",
+         "domain": "infracapital.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Crédit Agricole CIB",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "e-mobility / electric bus fleet",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Deploy up to 1,000 battery‑electric buses and trucks, along with charging infrastructure",
+       "source_sentence": "Crédit Agricole CIB has joined a €325 million (US $355 million) senior debt financing package to support Zenobē’s rapid expansion across continental Europe.",
+       "published_at": "2025-08-22T13:29:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cfef99ca02490ecf2a493"
+       ],
+       "article_id": "698cfef99ca02490ecf2a493"
+      },
+      {
+       "id": "5d8e189fdb276b32",
+       "company_name": "Vay Technology",
+       "domain": null,
+       "round_type": "Potential Additional Investment",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "grab",
+         "domain": "getgrab.com",
+         "amount": null
+        }
+       ],
+       "sector": "Mobility",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The additional US$350 million that Grab plans to invest within the first year after the US$60 million deal closes",
+       "published_at": "2025-11-10T12:46:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "693121d0ce900a2420f216a0"
+       ],
+       "article_id": "693121d0ce900a2420f216a0"
+      },
+      {
+       "id": "42aea4c62560624a",
+       "company_name": "spotawheel",
+       "domain": "spotawheel.com",
+       "round_type": "equity and debt financing",
+       "amount_usd": 324000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pollen street capital",
+         "domain": "pollencap.com",
+         "amount": null
+        }
+       ],
+       "sector": "mobility / used car subscription",
+       "country": "Greece",
+       "city": "Athens",
+       "use_of_funds": "fund the company’s growth across Europe, particularly by expanding its used car subscription service",
+       "source_sentence": "Today, Spotawheel has raised €300 million in equity and debt financing from prominent European investors, including a senior secured credit facility from Pollen Street Capital.",
+       "published_at": "2025-11-06T09:35:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f99b78d29a990b6ffab94"
+       ],
+       "article_id": "698f99b78d29a990b6ffab94"
+      },
+      {
+       "id": "b8f0349f22bebded",
+       "company_name": "Pmi Electro Mobility",
+       "domain": "pmielectro.com",
+       "round_type": null,
+       "amount_usd": 310000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 310000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        }
+       ],
+       "sector": "Electric mobility",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand Allfleet’s portfolio to over 5,000 electric buses in the near term, funding procurement, deployment and lifecycle maintenance under the Gross Cost Contract (GCC) model",
+       "source_sentence": "KKR’s decision to invest up to $310 million in PMI Electro Mobility marks a turning point in India’s electric bus market, signalling a shift from vehicle manufacturing to capital-intensive, platform-led mobility models, with the global investment firm set to acquire a majority stake in Allfleet, PMI’s fleet management platform, alongside a minority stake in its manufacturing business.",
+       "published_at": "2026-03-18T04:54:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e87a125cfa3e5ba5ffa6a0"
+       ],
+       "article_id": "69e87a125cfa3e5ba5ffa6a0"
+      },
+      {
+       "id": "2671f1ba00f35ded",
+       "company_name": "kavak",
+       "domain": "kavak.com",
+       "round_type": "equity",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": 200000000.0
+        },
+        {
+         "name": "wcm investment management",
+         "domain": "wcminvest.com",
+         "amount": null
+        },
+        {
+         "name": "Foxhaven Asset Management",
+         "domain": "foxhavencap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Mobility",
+       "country": "Mexico",
+       "city": null,
+       "use_of_funds": "Kavak has reached an annualized run rate of about $600 million in loans.",
+       "source_sentence": "The Mexico-based company raised $300 million in an equity round led by Andreessen Horowitz, which invested $200 million. WCM Investment Management co-led the $100 million round alongside Foxhaven Asset Management.",
+       "published_at": "2026-02-20T09:30:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c997f0cae5463acf00b00b",
+        "69e287c13aab8d96aa2d7ebe"
+       ],
+       "article_id": "69c997f0cae5463acf00b00b"
+      },
+      {
+       "id": "764ff5a7ccf10519",
+       "company_name": "moove",
+       "domain": "moove.io",
+       "round_type": "Equity",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2000000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 2000000000.0,
+       "investors": [],
+       "sector": "fintech, mobility",
+       "country": "Nigeria",
+       "city": "Lagos",
+       "use_of_funds": "autonomous vehicle business",
+       "source_sentence": "African mobility fintech Moove is seeking to raise over $300 million in fresh equity at a valuation exceeding $2 billion, positioning it among Africa’s most valuable startups, according to people familiar with the matter.",
+       "published_at": "2025-09-19T11:11:53",
+       "coverage_count": 4,
+       "article_ids": [
+        "68d95e34bf1dd95b8612973b",
+        "68f7072ff80e5160742b07b9",
+        "698d966d9ca02490ecfdc4a9",
+        "69bbbaa815ac997ff901c160"
+       ],
+       "article_id": "69bbbaa815ac997ff901c160"
+      },
+      {
+       "id": "a2522f8eee9581d3",
+       "company_name": "lotus technology",
+       "domain": "group-lotus.com",
+       "round_type": "convertible notes",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ATW Partners",
+         "domain": "atwpartners.com",
+         "amount": 10000000.0
+        }
+       ],
+       "sector": "luxury mobility",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "funding for transformation and operational flexibility",
+       "source_sentence": "Lotus Technology Inc. (“Lotus” or the “Company”), a leading global intelligent and luxury mobility provider, announced today that it entered into a securities purchase agreement (“the Transaction”) with ATW Partners, a New York-based investment firm that focuses on cutting-edge companies with long-term growth potential, under which the Company agreed to issue and sell convertible notes for up to an aggregate principal amount of $300 million that will be convertible into ordinary shares of the Company in the form of American depositary shares of the Company.",
+       "published_at": "2025-08-19T12:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69a1c145492dfe32543c62a6",
+        "69cc217c1e8126b2deb1a178"
+       ],
+       "article_id": "69a1c145492dfe32543c62a6"
+      },
+      {
+       "id": "fdd6e2c7dd5747c3",
+       "company_name": "moove",
+       "domain": "moove.io",
+       "round_type": "Series C",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": null
+        },
+        {
+         "name": "mubadala",
+         "domain": "mubadala.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech, Mobility",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expanding electric-vehicle financing and robotaxi fleet management, including mini-fleet leasing; building depots, charging hubs, and support services for autonomous vehicles.",
+       "source_sentence": "Moove is gearing up for its next major leap: a $300 million Series C funding round that could elevate it to an elusive $1 billion valuation.",
+       "published_at": "2025-06-14T13:24:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d10284dc3d3099e62cf952"
+       ],
+       "article_id": "68d10284dc3d3099e62cf952"
+      },
+      {
+       "id": "72d66b8bb70d28b7",
+       "company_name": "moove",
+       "domain": "moove.io",
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Urban mobility",
+       "country": "Nigeria",
+       "city": "Lagos",
+       "use_of_funds": "to provide additional firepower for Moove to compete in the increasingly crowded global mobility and electric vehicle space",
+       "source_sentence": "Moove, the Uber-backed Nigerian startup that finances vehicles for ride-hailing companies, is seeking to raise $300 million in a fresh funding round that could push its valuation past $1 billion, according to The Information.",
+       "published_at": "2025-06-13T06:25:45",
+       "coverage_count": 6,
+       "article_ids": [
+        "68d10619dc3d3099e62d2ba6",
+        "68fe66777d5e5436c8d8349b",
+        "69888a53f8e7b174cc0b8fc4",
+        "69bcedad0f7c42aae0d56edd",
+        "69cc1d4e23fe82b9abc7e127",
+        "69de0a6da83bf5ed2e2457aa"
+       ],
+       "article_id": "69bcedad0f7c42aae0d56edd"
+      },
+      {
+       "id": "f0fb739af08bb894",
+       "company_name": "Webus International",
+       "domain": null,
+       "round_type": "Non-equity financing",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "mobility",
+       "country": "China",
+       "city": null,
+       "use_of_funds": "XRP reserve for global chauffeur services payments network",
+       "source_sentence": "Webus International revealed a plan on May 29 to raise up to $300 million through non-equity financing and deploy the capital into an XRP reserve that will support the company’s global chauffeur services payments network.",
+       "published_at": "2025-05-29T22:03:07",
+       "coverage_count": 2,
+       "article_ids": [
+        "68640fd58882abb7e3c8e158",
+        "69cbd80571a014f1df2d85e1"
+       ],
+       "article_id": "68640fd58882abb7e3c8e158"
+      },
+      {
+       "id": "d0f2d53e75028dcd",
+       "company_name": "vemo",
+       "domain": "vemovilidad.com",
+       "round_type": null,
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Vision Ridge Partners",
+         "domain": "vision-ridge.com",
+         "amount": 250000000.0
+        }
+       ],
+       "sector": "green mobility",
+       "country": "Mexico",
+       "city": "Mexico City",
+       "use_of_funds": "expand its public charging infrastructure and electric transport network",
+       "source_sentence": "Mexican green mobility company VEMO secured $250 million from global investor Vision Ridge Partners to expand its public charging infrastructure and electric transport network.",
+       "published_at": "2025-09-05T10:41:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e29959ca02490ec08c173"
+       ],
+       "article_id": "698e29959ca02490ec08c173"
+      },
+      {
+       "id": "14b6c8ff2cc76ca4",
+       "company_name": "xpeng aeroht",
+       "domain": "aeroht.com",
+       "round_type": "Series B",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "urban air mobility",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate the company’s modular ‘flying car’ production plans",
+       "source_sentence": "thanks to a $250 million Series B round that’s set to accelerate the company’s modular “flying car” production plans.",
+       "published_at": "2025-07-18T23:28:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cccf79ca02490ecef0027"
+       ],
+       "article_id": "698cccf79ca02490ecef0027"
+      },
+      {
+       "id": "2d69bbaff4a0c8bf",
+       "company_name": "also",
+       "domain": "alsoweb.org",
+       "round_type": null,
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1000000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 1000000000.0,
+       "investors": [
+        {
+         "name": "Greenoaks Capital",
+         "domain": "greenoaks-capital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Electric Mobility",
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": null,
+       "source_sentence": "That startup was also backed by Eclipse, and has since raised another $200 million from Greenoaks Capital, with its valuation currently sitting around $1 billion.",
+       "published_at": "2026-03-11T16:12:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cbd2b6f331a1b39ff76be6",
+        "69e2b4519b322e6b3ea14ec8"
+       ],
+       "article_id": "69cbd2b6f331a1b39ff76be6"
+      },
+      {
+       "id": "6b1b5f668941b115",
+       "company_name": "spiro",
+       "domain": "speero.net",
+       "round_type": null,
+       "amount_usd": 180000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 180000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Equitane",
+         "domain": "equitane.com",
+         "amount": null
+        },
+        {
+         "name": "société générale",
+         "domain": "sgmaroc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Electric vehicle, mobility",
+       "country": "Kenya",
+       "city": "Nairobi",
+       "use_of_funds": null,
+       "source_sentence": "Before this round, Spiro had raised $180 million from Equitane and Société Générale.",
+       "published_at": "2025-10-21T10:53:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7de5de89f3fa1c9bf0e7"
+       ],
+       "article_id": "69bc7de5de89f3fa1c9bf0e7"
+      },
+      {
+       "id": "6d6e70b2c3c0cea6",
+       "company_name": "glydways",
+       "domain": "glydways.com",
+       "round_type": "Series C",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 700000000.0,
+       "investors": [
+        {
+         "name": "suzuki motor corporation",
+         "domain": "suzukipress.co.uk",
+         "amount": null
+        },
+        {
+         "name": "acs group",
+         "domain": "acsgrp.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "mitsui chemicals",
+         "domain": "mitsuichemicals.com",
+         "amount": null
+        },
+        {
+         "name": "Gates Frontier",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "obayashi corporation",
+         "domain": "obayashi.co.jp",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous Urban Mobility",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Operational pilots in UAE, New York area, Atlanta",
+       "source_sentence": "Glydways has raised US$170m in an oversubscribed Series C co-led by Suzuki Motor Corporation, ACS Group, and Khosla Ventures.",
+       "published_at": "2026-04-15T02:59:35",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e84c6f9baafc73566e836e",
+        "69e84cd27bb1410d4c66aa43",
+        "69e8d48a7bb1410d4cc92d55",
+        "69e8d4a79baafc7356d22bba"
+       ],
+       "article_id": "69e84c6f9baafc73566e836e"
+      },
+      {
+       "id": "f6626f64ec540243",
+       "company_name": "dott",
+       "domain": "ridedott.com",
+       "round_type": "Nordic Bonds",
+       "amount_usd": 162000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "micro-mobility",
+       "country": "Netherlands",
+       "city": "Amsterdam",
+       "use_of_funds": null,
+       "source_sentence": "the company has successfully issued €70 million of senior secured floating rate bonds in the Nordic market, within a total framework of €150 million (the “Nordic Bonds”).",
+       "published_at": "2025-10-28T16:01:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6901cce6c222380bc1d83985"
+       ],
+       "article_id": "6901cce6c222380bc1d83985"
+      },
+      {
+       "id": "c76e19418c9761ed",
+       "company_name": "aditya birla capital",
+       "domain": "adityabirlacapital.com",
+       "round_type": "Private Placement of NCDs",
+       "amount_usd": 156150000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 13012500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "asian infrastructure investment bank",
+         "domain": "aiib.org",
+         "amount": null
+        }
+       ],
+       "sector": "Renewable Energy, e-Mobility",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Accelerate financing in the renewable energy and e-mobility sectors to support India’s transition toward a sustainable infrastructure ecosystem",
+       "source_sentence": "Beijing-based multilateral funding agency Asian Infrastructure Investment Bank (AIIB) has subscribed to Rs 1,301.25 crore of Non-Convertible Debentures (NCDs) issued by Aditya Birla Capital Ltd.",
+       "published_at": "2025-07-01T02:14:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab40f32e28036801de9660"
+       ],
+       "article_id": "68ab40f32e28036801de9660"
+      },
+      {
+       "id": "ea0dcc74d620765c",
+       "company_name": "aditya birla capital",
+       "domain": "adityabirlacapital.com",
+       "round_type": "Debenture",
+       "amount_usd": 156150000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 13012500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "asian infrastructure investment bank",
+         "domain": "aiib.org",
+         "amount": 13012500000.0
+        }
+       ],
+       "sector": "Renewable Energy, Electric Mobility",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Support renewable energy generation (solar, wind, geothermal, pumped storage, hydrogen production, energy storage) and electric mobility ecosystems (EV development, batteries, charging infrastructure).",
+       "source_sentence": "The Asian Infrastructure Investment Bank (AIIB) has subscribed to ₹1,301.25 crore worth of Non-Convertible Debentures issued by Aditya Birla Capital Limited (ABCL), the companies announced Monday.",
+       "published_at": "2025-06-30T14:29:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab3feb2e28036801c97d9b"
+       ],
+       "article_id": "68ab3feb2e28036801c97d9b"
+      },
+      {
+       "id": "344c91d97335a10a",
+       "company_name": "eve air mobility",
+       "domain": "eveairmobility.com",
+       "round_type": "debt",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "itau",
+         "domain": "itau.co.za",
+         "amount": null
+        },
+        {
+         "name": "banco do brasil",
+         "domain": "bb.com.br",
+         "amount": null
+        },
+        {
+         "name": "citibank",
+         "domain": "citibank.com.vn",
+         "amount": null
+        },
+        {
+         "name": "mitsubishi ufj financial group",
+         "domain": "mufg.jp",
+         "amount": null
+        }
+       ],
+       "sector": "eVTOL, urban air mobility",
+       "country": "United States",
+       "city": "Melbourne",
+       "use_of_funds": "Accelerate development, certification, and commercialization of eVTOL",
+       "source_sentence": "Eve Air Mobility has secured $150 million in debt financing from a syndicate of leading financial institutions, strengthening its liquidity position as it advances the development of next-generation electric vertical take-off and landing solutions.",
+       "published_at": "2026-01-22T11:08:16",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bb66b5728db8749552238f",
+        "69c3a50a4cce6d943d167a61"
+       ],
+       "article_id": "69bb66b5728db8749552238f"
+      },
+      {
+       "id": "0a1cbe1589532907",
+       "company_name": "ECARX Holdings Inc.",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ATW Partners",
+         "domain": "atwpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Automotive / Mobility Technology",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "enhance liquidity, strengthen balance sheet, global expansion, product innovation, scaling partnerships with OEMs, and invest in software‑defined vehicle and intelligent cockpit technologies",
+       "source_sentence": "ECARX Holdings Inc. (Nasdaq: ECX) (“ECARX” or the “Company”), today announced that it had entered into a securities purchase agreement (the “Transaction”) with ATW Partners, a New York-based investment firm, under which the Company may issue and sell convertible notes for up to an aggregate principal amount of $150 million.",
+       "published_at": "2025-10-31T20:10:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6914872beef9debd1735c527"
+       ],
+       "article_id": "6914872beef9debd1735c527"
+      },
+      {
+       "id": "6cd3d6d84011a74b",
+       "company_name": "traxion group",
+       "domain": "traxiongroup.com",
+       "round_type": "Capital Placement",
+       "amount_usd": 116000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "MXN",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Logistics, transport and mobility",
+       "country": "Mexico",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Traxion Group, the logistics, transport and mobility company in Mexico, has concluded a successful issue of chirographer stock certificates in the local market for a total amount of 2,000 million pesos, at variable rate and in two tranches, as part of its strategy to optimize its capital structure.",
+       "published_at": "2026-02-18T19:53:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8bcf05cfa3e5ba5310afb"
+       ],
+       "article_id": "69e8bcf05cfa3e5ba5310afb"
+      },
+      {
+       "id": "063049cf2ab4bd9c",
+       "company_name": "zum",
+       "domain": "ridezum.com",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1700000000.0,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": 1700000000.0,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": 100000000.0
+        }
+       ],
+       "sector": "Connected Mobility Experience",
+       "country": "United States",
+       "city": "Redwood City",
+       "use_of_funds": "Accelerate expansion of Zum CMX across additional school districts nationwide, continue investment in AI-driven coordination and predictive operations, scale infrastructure to support large-scale real-time mobility systems.",
+       "source_sentence": "Zūm, the leader in Connected Mobility Experience (CMX™), today announced a $100 million strategic investment from TPG, bringing the company’s total funding to $430 million and valuing Zum at $1.7 billion.",
+       "published_at": "2026-04-16T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e27f7bb1410d4cd459fe"
+       ],
+       "article_id": "69e8e27f7bb1410d4cd459fe"
+      },
+      {
+       "id": "a44afe2209f30b3f",
+       "company_name": "Surf Air Mobility",
+       "domain": "surfairmobility.com",
+       "round_type": "Strategic transaction",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Air mobility",
+       "country": "United States",
+       "city": "Los Angeles",
+       "use_of_funds": "Continue development and commercialization of SurfOS flagship products (BrokerOS, OperatorOS, OwnerOS), significantly expand engineering and go-to-market capabilities, build enterprise-grade solutions, and launch new modules that will increase the Company’s potential share of the growing air mobility software market.",
+       "source_sentence": "As part of Surf Air Mobility’s recent $100 million strategic transaction, the Company directed $26 million from new equity issuances specifically to fund the continued development and commercialization of SurfOS’s flagship products (BrokerOS, OperatorOS, and OwnerOS), significantly expand engineering and go-to-market capabilities, build enterprise-grade solutions, and launch new modules that will increase the Company’s potential share of the growing air mobility software market.",
+       "published_at": "2025-12-30T11:30:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "698fac538d29a990b600fb10"
+       ],
+       "article_id": "698fac538d29a990b600fb10"
+      },
+      {
+       "id": "0edb39786f7416b9",
+       "company_name": "Lagride",
+       "domain": null,
+       "round_type": "financing facility",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "united bank for africa",
+         "domain": "ubagroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "mobility",
+       "country": "Nigeria",
+       "city": "Lagos",
+       "use_of_funds": "Expand the Drive To Own programme and enable 3,500 Lagos drivers to transition into asset owners, business operators, and mobility investors",
+       "source_sentence": "Lagride has secured a 100 million dollar financing facility from United Bank for Africa to expand its Drive To Own programme and enable 3,500 Lagos drivers to transition from daily earners into long-term asset owners, business operators and mobility investors.",
+       "published_at": "2025-12-17T15:03:49",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bb2fbf3a84223cbf2a59bb",
+        "69cbf7783e6b5ee69366e5e6"
+       ],
+       "article_id": "69cbf7783e6b5ee69366e5e6"
+      },
+      {
+       "id": "6a650ca33ffc13c2",
+       "company_name": "spiro",
+       "domain": "speero.net",
+       "round_type": "equity",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "E-mobility",
+       "country": "Kenya",
+       "city": "Nairobi",
+       "use_of_funds": "Expansion of electric motorcycle assembly operations and battery‑swapping infrastructure",
+       "source_sentence": "The two largest deals came from Spiro who raised $100million, the largest-ever investment in an e-mobility start-up on the continent, and Moniepoint which topped up their latest mega-round with an extra $90million.",
+       "published_at": "2025-11-05T05:13:55",
+       "coverage_count": 4,
+       "article_ids": [
+        "698fe5e09ca02490ec29bba7",
+        "6998210022f0326c0f9285ee",
+        "69bc7edb6760819e3847fd58",
+        "69e2c6f5601121844c3e27da"
+       ],
+       "article_id": "698fe5e09ca02490ec29bba7"
+      },
+      {
+       "id": "20878d574acbfb6b",
+       "company_name": "spiro",
+       "domain": "speero.net",
+       "round_type": "investment",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Fund for Export Development in Africa (FEDA)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "electric mobility",
+       "country": null,
+       "city": null,
+       "use_of_funds": "plans to reach over 100,000 electric motorcycles operating across the African continent",
+       "source_sentence": "Spiro has just raised an investment of $100 million, led by the Fund for Export Development in Africa (FEDA).",
+       "published_at": "2025-10-24T16:03:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb59c68b0987d8182b4b6f"
+       ],
+       "article_id": "69bb59c68b0987d8182b4b6f"
+      },
+      {
+       "id": "cb33c506cbc68925",
+       "company_name": "spiro",
+       "domain": "speero.net",
+       "round_type": "Investment round",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "in africa",
+         "domain": "in-africa.org",
+         "amount": 75000000.0
+        }
+       ],
+       "sector": "Battery swapping and mobility",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand battery-swapping infrastructure and strengthen technology platform",
+       "source_sentence": "Spiro, the electric motorcycle and battery swapping firm, has raised $100 million investment round",
+       "published_at": "2025-10-22T11:48:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe22d246325a41ca28840f"
+       ],
+       "article_id": "68fe22d246325a41ca28840f"
+      },
+      {
+       "id": "b6dad3bc5087c89b",
+       "company_name": "spiro",
+       "domain": "speero.net",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Fund for Export Development in Africa",
+         "domain": null,
+         "amount": 75000000.0
+        },
+        {
+         "name": "private equity investors",
+         "domain": "privateequityinvestors.org",
+         "amount": null
+        }
+       ],
+       "sector": "electric mobility",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Spiro, a electric mobility company that operates a battery-swapping network across six African nations, has clinched a $100 million investment round, one of the continent’s biggest for the industry.",
+       "published_at": "2025-10-21T11:28:24",
+       "coverage_count": 2,
+       "article_ids": [
+        "698e77048d29a990b6e9ed57",
+        "69e2bdc99b322e6b3ea37025"
+       ],
+       "article_id": "69e2bdc99b322e6b3ea37025"
+      },
+      {
+       "id": "0d68abbed0557e36",
+       "company_name": "spiro",
+       "domain": "speero.net",
+       "round_type": "Equity financing",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Afreximbank’s Fund for Export Development in Africa (FEDA)",
+         "domain": null,
+         "amount": 75000000.0
+        }
+       ],
+       "sector": "Electric vehicle, mobility",
+       "country": "Kenya",
+       "city": "Nairobi",
+       "use_of_funds": "expand battery-swapping network and enter new markets, including Cameroon and Tanzania",
+       "source_sentence": "Spiro, the Nairobi-headquartered electric vehicle startup, has raised $100 million in new funding to expand its battery-swapping network and enter new markets, including Cameroon and Tanzania.",
+       "published_at": "2025-10-21T10:53:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7de5de89f3fa1c9bf0e7"
+       ],
+       "article_id": "69bc7de5de89f3fa1c9bf0e7"
+      },
+      {
+       "id": "679b9aae03e07333",
+       "company_name": "spiro",
+       "domain": "speero.net",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": 350000000.0,
+       "investors": [
+        {
+         "name": "Fund for Export Development in Africa (FEDA)",
+         "domain": null,
+         "amount": 75000000.0
+        }
+       ],
+       "sector": "electric mobility",
+       "country": "United Arab Emirates",
+       "city": "Dubai",
+       "use_of_funds": "The new capital will go toward expanding Spiro’s swap network, manufacturing capacity, and R&D, as well as launching pilots in new markets like Cameroon and Tanzania.",
+       "source_sentence": "The company just announced a $100 million investment round led by the Fund for Export Development in Africa (FEDA), the development arm of Afreximbank.",
+       "published_at": "2025-10-21T09:35:22",
+       "coverage_count": 17,
+       "article_ids": [
+        "68fe2f85f2b4270823282b65",
+        "68fe38d59f5ecb55fa293c4f",
+        "6988aa86127162d16e0b0921",
+        "6988e76a94d3f481f3dbb117",
+        "69898a4194d3f481f3e78003",
+        "6989c53394d3f481f3ec12ba",
+        "698d73669ca02490ecfb5695",
+        "6997132b33af8f1ff8a2e64b",
+        "69bb009b28caee93d24dc116",
+        "69bb0cc67a841a437be52b4d",
+        "69bc372f0bf92aede2f4699f",
+        "69bc7ed358389c352a08c961",
+        "69bcdcb0fa79fa6ed8bab7df",
+        "69bd6c66ec94907df1106d8c",
+        "69c8a73c2fb9da90476b1f8a",
+        "69c9ca7dfe85228ad69b0c4c",
+        "69e2c633601121844c3dfe47"
+       ],
+       "article_id": "68fe2f85f2b4270823282b65"
+      },
+      {
+       "id": "71b330894dcd2cfe",
+       "company_name": "JBM ECOLIFE Mobility Pvt. Ltd.",
+       "domain": null,
+       "round_type": "Long-term capital investment",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "international finance corporation",
+         "domain": "ifc.org",
+         "amount": null
+        }
+       ],
+       "sector": "E-bus / Green Mobility",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Deployment of electric buses across Maharashtra, Assam, and Gujarat",
+       "source_sentence": "has secured a $100 million (INR equivalent) long-term capital investment from the International Finance Corporation (IFC), a member of the World Bank Group.",
+       "published_at": "2025-09-11T12:49:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cc0458d29a990b6c98d55"
+       ],
+       "article_id": "698cc0458d29a990b6c98d55"
+      },
+      {
+       "id": "3916a2f26cbb1284",
+       "company_name": "JBM Ecolife Mobility",
+       "domain": null,
+       "round_type": "long-term capital investment",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "International Financial Corporation (IFC)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "E-mobility",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": "deployment of modern, air-conditioned electric buses across cities in Maharashtra, Assam, and Gujarat",
+       "source_sentence": "JBM Auto on Thursday said its group firm JBM Ecolife Mobility has secured a USD 100 million long-term capital investment from International Financial Corporation (IFC).",
+       "published_at": "2025-09-11T11:30:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0df0bdf2636e3f11ecd19"
+       ],
+       "article_id": "68d0df0bdf2636e3f11ecd19"
+      },
+      {
+       "id": "4d042b8ec7b622e3",
+       "company_name": "xpeng aeroht",
+       "domain": "aeroht.com",
+       "round_type": "Series B2",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "urban air mobility",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The most recent announcement that the company has secured an additional $100 million in its Series B2 funding round brings the total amount raised to more than $750 million, with a $1B pre-revenue valuation.",
+       "published_at": "2025-07-18T23:28:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cccf79ca02490ecef0027"
+       ],
+       "article_id": "698cccf79ca02490ecef0027"
+      },
+      {
+       "id": "9e88f9ce165c3745",
+       "company_name": "notraffic",
+       "domain": "notraffic.tech",
+       "round_type": "Series C",
+       "amount_usd": 90000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 90000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "psg equity",
+         "domain": "psgequity.com",
+         "amount": null
+        },
+        {
+         "name": "M&G Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "grove ventures",
+         "domain": "grovevc.com",
+         "amount": null
+        },
+        {
+         "name": "LifeX Ventures",
+         "domain": "lifexventures.com",
+         "amount": null
+        },
+        {
+         "name": "meitav",
+         "domain": "meitavjob.co.il",
+         "amount": null
+        },
+        {
+         "name": "Next Gear Ventures",
+         "domain": "nextgear.fund",
+         "amount": null
+        }
+       ],
+       "sector": "smart mobility",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": "scale deployments in North America; expand platform’s Mobility Store; support rapid expansion of hardware and software; target eventual IPO by 2028",
+       "source_sentence": "NoTraffic, an Israeli–U.S. startup building AI-powered traffic-light systems, announced a $90 million Series C funding round led by PSG Equity.",
+       "published_at": "2026-03-24T22:15:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc07c09d3d4bff9ce784f5"
+       ],
+       "article_id": "69cc07c09d3d4bff9ce784f5"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 278,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDMtMjQgMjI6MTU6NTEiLCJrIjoiMTE0MjM2NTUxMTgzNTg5ODQ1MTciLCJhIjo5MDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 278,
+      "deals_with_amount": 243,
+      "deals_without_amount": 35,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 12024948200.0,
+      "median_amount_usd": 10200000.0,
+      "largest_amount_usd": 1674000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.133,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.135
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "mobility",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "mobility"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "a2feba3831916717",
+       "company_name": "Kovon",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TDV Partners",
+         "domain": "tdv.partners",
+         "amount": null
+        }
+       ],
+       "sector": "Workforce Mobility",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "product and platform development, strengthening employer partnerships globally, expanding candidate acquisition, and building out the skilling and training ecosystem",
+       "source_sentence": "Kovon, a cross-border workforce mobility platform, has raised $250,000 in a pre-seed funding round led by TDV Partners.",
+       "published_at": "2026-04-28T06:08:06",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f0e57d836d28f995cb8e4c",
+        "69f0e58445272de32e8c228b",
+        "69f22d81c6105443aa5d96e3"
+       ],
+       "article_id": "69f0e58445272de32e8c228b"
+      },
+      {
+       "id": "4876ea5a62a1e9b7",
+       "company_name": "Kovon",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TDV Partners",
+         "domain": "tdv.partners",
+         "amount": 250000.0
+        }
+       ],
+       "sector": "cross-border workforce mobility platform",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "product and platform development, strengthening employer partnerships globally, expanding candidate acquisition, and building out the skilling and training ecosystem",
+       "source_sentence": "Kovon, a cross-border workforce mobility platform, has raised $250,000 in a pre-seed funding round led by TDV Partners.",
+       "published_at": "2026-04-28T06:07:04",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f0e54845272de32e8c1f14",
+        "69f1ceff399b489398e24321",
+        "69f22b3f122c4392e0cfd2cf"
+       ],
+       "article_id": "69f0e54845272de32e8c1f14"
+      },
+      {
+       "id": "410ece8d7388ef1f",
+       "company_name": "Dodai",
+       "domain": "dodai.co",
+       "round_type": "Series A",
+       "amount_usd": 13000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "British International Investment",
+         "domain": "bii.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Electric mobility",
+       "country": "Ethiopia",
+       "city": "Addis Ababa",
+       "use_of_funds": "Expansion of electric motorbike fleets and battery‑swapping infrastructure in Addis Ababa",
+       "source_sentence": "British International Investment (BII), the UK’s development finance institution and impact investor, has committed $5 million in debt financing to Ethiopian electric mobility company Dodai as part of its $13 million Series A funding round.",
+       "published_at": "2026-04-28T00:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "69f1c675399b489398de0cbe",
+        "69f1c96fa5706a322e104446",
+        "69f1ce47a5706a322e12666f",
+        "69f8842fbbf1d31455985e44",
+        "69f8a72c8937ef12fc0ae41c",
+        "69f9d463a088760d34bef352"
+       ],
+       "article_id": "69f1ce47a5706a322e12666f"
+      },
+      {
+       "id": "dc7d8fbe6da17463",
+       "company_name": "Surf Air Mobility",
+       "domain": "surfairmobility.com",
+       "round_type": "registered direct offering",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "institutional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "air mobility",
+       "country": "United States",
+       "city": "Los Angeles",
+       "use_of_funds": "accelerate the implementation of our SurfOS software and electrification initiatives and/or the repayment of existing liabilities.",
+       "source_sentence": "The gross proceeds to the Company from the offering were approximately $15 million , before deducting financial advisor's fees and other offering expenses payable by the Company.",
+       "published_at": "2026-04-21T20:05:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8b1a55cfa3e5ba5283034"
+       ],
+       "article_id": "69e8b1a55cfa3e5ba5283034"
+      },
+      {
+       "id": "5991fbaa0bbb5004",
+       "company_name": "Surf Air Mobility",
+       "domain": "surfairmobility.com",
+       "round_type": null,
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Air Mobility",
+       "country": "United States",
+       "city": "Los Angeles",
+       "use_of_funds": "Accelerate SurfOS software and electrification initiatives and/or repayment of existing liabilities.",
+       "source_sentence": "The gross proceeds to the Company from the Offering are expected to be approximately $15 million, before deducting financial advisor's fees and other Offering expenses payable by the Company.",
+       "published_at": "2026-04-20T12:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e99c91d47fc028321a0e8c"
+       ],
+       "article_id": "69e99c91d47fc028321a0e8c"
+      },
+      {
+       "id": "bc914a1c01dd4f3e",
+       "company_name": "Sarla Aviation",
+       "domain": "sarla-aviation.com",
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "IndiGo Ventures",
+         "domain": null,
+         "amount": 100000000.0
+        }
+       ],
+       "sector": "eVTOL, Urban Air Mobility",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Create a nationwide air taxi network and improve middle‑distance mobility",
+       "source_sentence": "Sarla Aviation and IndiGo have announced a strategic equity investment of ₹10 crore by IndiGo Ventures in Sarla Aviation.",
+       "published_at": "2026-04-20T00:30:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e98ea5d47fc028320f0dc2"
+       ],
+       "article_id": "69e98ea5d47fc028320f0dc2"
+      },
+      {
+       "id": "a32046da03157ee5",
+       "company_name": "nawgati",
+       "domain": "nawgati.com",
+       "round_type": "Series A",
+       "amount_usd": 5200000.0,
+       "amount_flag": null,
+       "valuation_usd": 70000000.0,
+       "currency": "USD",
+       "amount": 5200000.0,
+       "valuation": 70000000.0,
+       "investors": [],
+       "sector": "fuel-tech, mobility",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "accelerate global deployments, deepen AI capabilities, strengthen enterprise and consumer offerings",
+       "source_sentence": "Nawgati, India&#39;s leading fuel-tech company, is in advanced discussions to raise $5.2 million in its upcoming Series A funding round, with the company&#39;s valuation expected to surpass $70 million.",
+       "published_at": "2026-04-16T08:13:25",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e85e1e5cfa3e5ba5ee5312",
+        "69e8e1409baafc7356dc8303"
+       ],
+       "article_id": "69e85e1e5cfa3e5ba5ee5312"
+      },
+      {
+       "id": "063049cf2ab4bd9c",
+       "company_name": "zum",
+       "domain": "ridezum.com",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1700000000.0,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": 1700000000.0,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": 100000000.0
+        }
+       ],
+       "sector": "Connected Mobility Experience",
+       "country": "United States",
+       "city": "Redwood City",
+       "use_of_funds": "Accelerate expansion of Zum CMX across additional school districts nationwide, continue investment in AI-driven coordination and predictive operations, scale infrastructure to support large-scale real-time mobility systems.",
+       "source_sentence": "Zūm, the leader in Connected Mobility Experience (CMX™), today announced a $100 million strategic investment from TPG, bringing the company’s total funding to $430 million and valuing Zum at $1.7 billion.",
+       "published_at": "2026-04-16T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e27f7bb1410d4cd459fe"
+       ],
+       "article_id": "69e8e27f7bb1410d4cd459fe"
+      },
+      {
+       "id": "a210a789d92fa7f3",
+       "company_name": "Faraday Future Intelligent Electric Inc.",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Gold King Arthur Holding Limited",
+         "domain": null,
+         "amount": 12000000.0
+        }
+       ],
+       "sector": "electric mobility",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "purchase of $500,000 common stock and $11.5 million preferred stock to support EAI strategy execution",
+       "source_sentence": "today announced that it has amended and restated the securities purchase agreement, initially entered into on February 4, 2026 (the “Initial Agreement”) with Gold King Arthur Holding Limited (the “Purchaser”), a designated third-party investor identified by AIxCrypto Holdings Inc. (NASDAQ: AIXC) to increase to the total purchase amount from $10 million to $12 million, $500,000 for common stock and $11.5 million for preferred stock;",
+       "published_at": "2026-04-15T22:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e850eb9baafc7356716155",
+        "69e854715cfa3e5ba5e8d6f5"
+       ],
+       "article_id": "69e850eb9baafc7356716155"
+      },
+      {
+       "id": "6d6e70b2c3c0cea6",
+       "company_name": "glydways",
+       "domain": "glydways.com",
+       "round_type": "Series C",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 700000000.0,
+       "investors": [
+        {
+         "name": "suzuki motor corporation",
+         "domain": "suzukipress.co.uk",
+         "amount": null
+        },
+        {
+         "name": "acs group",
+         "domain": "acsgrp.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "mitsui chemicals",
+         "domain": "mitsuichemicals.com",
+         "amount": null
+        },
+        {
+         "name": "Gates Frontier",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "obayashi corporation",
+         "domain": "obayashi.co.jp",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous Urban Mobility",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Operational pilots in UAE, New York area, Atlanta",
+       "source_sentence": "Glydways has raised US$170m in an oversubscribed Series C co-led by Suzuki Motor Corporation, ACS Group, and Khosla Ventures.",
+       "published_at": "2026-04-15T02:59:35",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e84c6f9baafc73566e836e",
+        "69e84cd27bb1410d4c66aa43",
+        "69e8d48a7bb1410d4cc92d55",
+        "69e8d4a79baafc7356d22bba"
+       ],
+       "article_id": "69e84c6f9baafc73566e836e"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 103,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTUgMDI6NTk6MzUiLCJrIjoiNzg4NTM2MzkxMDY2Mjk5OTcxOCJ9",
+     "totals": {
+      "deals": 103,
+      "deals_with_amount": 93,
+      "deals_without_amount": 10,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 3334428200.0,
+      "median_amount_usd": 8550000.0,
+      "largest_amount_usd": 660000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.12,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.125
+    }
+   }
+  }
+ ]
+}

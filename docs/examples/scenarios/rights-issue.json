@@ -1,0 +1,825 @@
+{
+ "slug": "rights-issue",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:36Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "funds_raising",
+      "capital_infusion"
+     ],
+     "q": "rights issue",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "rights issue",
+      "match": "any",
+      "event_type": [
+       "funds_raising",
+       "capital_infusion"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 5
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 7,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 7
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 12
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 13,
+       "by_type": {
+        "funds_raising": 1,
+        "capital_infusion": 12
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 18,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 18
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 6,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 6
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 11
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 9,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 9
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 11
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 6,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 6
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 19,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 19
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 8,
+       "by_type": {
+        "funds_raising": 0,
+        "capital_infusion": 8
+       }
+      }
+     ],
+     "totals": {
+      "events": 125,
+      "articles": 125,
+      "companies": 78,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "funds_raising": 1,
+      "capital_infusion": 124
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.033,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.037
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "funds_raising",
+      "capital_infusion"
+     ],
+     "q": "rights issue",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "rights issue",
+      "event_type": [
+       "funds_raising",
+       "capital_infusion"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f8a650bbf1d314559a2062",
+       "headline": "This is in addition to the INR 1,500 crore primary raise via a rights issue that was approved by Axis Finance’s Board of Directors on April 17, 2026.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "axisfinance.in",
+       "published_at": "2026-04-30T04:29:31",
+       "url": "https://www.passionateinmarketing.com/axis-finance-limited-announces-inr-2250-crore-primary-capital-raise-from-axis-bank-and-kedaara-capital/",
+       "publisher": "passionateinmarketing.com",
+       "title": "Axis Finance Raises Capital from Kedaara Capital"
+      },
+      {
+       "id": "69f2298e122c4392e0cf52a8",
+       "headline": "State-owned lender Indian Bank has announced plans to raise up to ₹5,000 crore in equity capital through multiple fundraising options, including Qualified Institutional Placement (QIP), Follow-on Public Offer (FPO), Rights Issue, or a combination of these routes.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "indianbank.in",
+       "published_at": "2026-04-29T08:40:46",
+       "url": "https://www.businessupturn.com/business/corporates/indian-bank-to-raise-rs-5000-crore-via-qip-fpo-or-other-routes/",
+       "publisher": "businessupturn.com",
+       "title": "Indian Bank to raise Rs 5,000 crore via QIP, FPO or other routes - Business Upturn"
+      },
+      {
+       "id": "69f1ce84399b489398e1f844",
+       "headline": "MWALIMU Commercial Bank (MCB) is set to raise 20.4bn/- through a rights issue following regulatory approval.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "mcb.co.tz",
+       "published_at": "2026-04-29T08:25:38",
+       "url": "https://dailynews.co.tz/mcb-targets-20-4bn-rights-issue-boost/",
+       "publisher": "dailynews.co.tz",
+       "title": "MCB targets 20.4bn/- rights issue boost - Daily News"
+      },
+      {
+       "id": "69f1c6911e3933a6dd8d6291",
+       "headline": "The rights issue is structured to raise approximately N2.44 billion at an offer price of N4.00 per share.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "neimethplc.com.ng",
+       "published_at": "2026-04-28T20:37:58",
+       "url": "https://nairametrics.com/2026/04/28/neimeth-opens-n2-44-billion-rights-issue-at-n4-per-share/",
+       "publisher": "nairametrics.com",
+       "title": "Neimeth opens N2.44 billion Rights Issue at N4 per share"
+      },
+      {
+       "id": "69efaa0e8a54b8f07c95cf21",
+       "headline": "Axis Finance Limited on Saturday announced a ₹2,250 crore primary capital raise, comprising a ₹1,500 crore rights issue from parent Axis Bank and a ₹750 crore infusion from Kedaara Capital through a preferential allotment.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "axisfinance.in",
+       "published_at": "2026-04-25T14:28:03",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8989c9baafc7356a061ac",
+       "headline": "Hayleys PLC announced that its recently concluded Rights Issue of Ordinary Voting Shares has been , surpassing the initial target of Rs. 9,000,000,000 .",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "hayleys.com",
+       "published_at": "2026-04-22T04:57:17",
+       "url": "http://bizenglish.adaderana.lk/hayleys-plc-rights-issue-oversubscribed-raising-over-rs-11-billion/",
+       "publisher": "bizenglish.adaderana.lk",
+       "title": "Hayleys PLC Rights Issue Oversubscribed, Raising Over Rs. 11 Billion - Adaderana Biz English | Sri Lanka Business News"
+      },
+      {
+       "id": "69dfcebcf2a6294de7f81fc5",
+       "headline": "Mahindra Logistics Limited (MLL), a leading third-party logistics (3PL) solutions provider in India, has announced plans to raise up to ₹750 crore through a rights issue of fully paid-up equity shares.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "mahindralogistics.com",
+       "published_at": "2026-04-15T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e28db5601121844c32421a",
+       "headline": "The Uyo-based beer maker, Champion Breweries, announced this year the opening of a N42 billion public offer of ordinary shares at N16 per share, following a N15.9 billion rights issue to existing shareholders in November.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "championbreweries.com",
+       "published_at": "2026-04-04T05:00:18",
+       "url": "https://businessday.ng/market-intelligence/article/inside-brewers-n1-2trn-capital-raise-driving-balance-sheet-recovery/",
+       "publisher": "businessday.ng",
+       "title": "Inside brewers’ N1.2trn capital raise driving balance sheet recovery - Businessday NG"
+      },
+      {
+       "id": "69d1ccaa87c2546189af2ffd",
+       "headline": "When VFD Group launched its rights issue in late 2025, it provided shareholders with an opportunity to subscribe to new ordinary shares at N10 per share to support the Group’s next phase of expansion.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "vfdgroup.com",
+       "published_at": "2026-03-31T17:37:03",
+       "url": "https://businessday.ng/companies/article/vfd-group-proposes-25-kobo-dividend-as-rights-issue-subscribers-earn-strong-returns/",
+       "publisher": "businessday.ng",
+       "title": "VFD Group proposes 25 kobo dividend as Rights Issue subscribers earn strong returns - Businessday NG"
+      },
+      {
+       "id": "69dfc2d53dd0a4354393f10b",
+       "headline": "Tata Motors plans to raise close to €1 billion through equity via either a rights issue or qualified institutional placement (QIP) and monetise its stake in Tata Capital to help repay a €3.8 billion bridge loan it will use to acquire Italy's Iveco Group.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "tatamotors.com",
+       "published_at": "2026-03-31T00:00:00",
+       "url": "https://www.autocarpro.in/news/tata-motors-to-raise-â¬1-billion-monetise-tata-capital-stake-to-fund-iveco-acquisition-127820",
+       "publisher": "autocarpro.in",
+       "title": "Tata Motors to Raise €1 Billion, Monetise Tata Capital Stake to Fund Iveco Acquisition | Autocar Professional"
+      },
+      {
+       "id": "69ca967f1725f12494e60832",
+       "headline": "Sharjah Islamic Bank has approved a capital increase through a strategic rights issue aimed at raising total proceeds of up to $705.26 million (AED2.59 billion).",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "sib.ae",
+       "published_at": "2026-03-30T10:16:13",
+       "url": "https://www.gccbusinessnews.com/sharjah-islamic-bank-rights-issue/",
+       "publisher": "gccbusinessnews.com",
+       "title": "Sharjah Islamic Bank launches strategic rights issue to raise $705mn"
+      },
+      {
+       "id": "69e2b2d0277be6ed2d9ea7d7",
+       "headline": "Fidelity Bank also emerged as a standout performer, raising N272.95 billion through a combined offer that saw a staggering 237% oversubscription for its public offer and 137.73% for its rights issue.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "bankwithfidelity.com",
+       "published_at": "2026-03-30T06:39:14",
+       "url": "https://www.vanguardngr.com/2026/03/deadline-tomorrow-n4-6trn-banks-recapitalisation-sparks-sectoral-battle-for-funds/",
+       "publisher": "vanguardngr.com",
+       "title": "Deadline Tomorrow: N4.6trn banks’ recapitalisation sparks sectoral battle for funds"
+      },
+      {
+       "id": "69cc530cf111344e7e7d348c",
+       "headline": "Lasaco Assurance Plc has announced plans to raise N18.47 billion through a rights issue as part of efforts to strengthen its capital base and support future growth.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "lasacoassurance.com",
+       "published_at": "2026-03-28T16:36:43",
+       "url": "https://nairametrics.com/2026/03/28/lasaco-assurance-opens-n18-47-billion-rights-issue-to-boost-capital-base/",
+       "publisher": "nairametrics.com",
+       "title": "Lasaco Assurance opens N18.47 billion rights issue to boost capital base"
+      },
+      {
+       "id": "69e28b3ac1991f786ce3a291",
+       "headline": "Guinea Insurance Plc has secured the approval of the Securities and Exchange Commission (SEC) for a Rights Issue of 5.295 billion ordinary shares of 50 kobo each at N1.10 per share.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "guineainsurance.com",
+       "published_at": "2026-03-26T10:11:50",
+       "url": "https://businessday.ng/companies/article/guinea-insurance-eyes-n5-8bn-from-rights-issue/",
+       "publisher": "businessday.ng",
+       "title": "Guinea Insurance eyes N5.8bn from rights issue"
+      },
+      {
+       "id": "69e647429e87ccc43e357fbb",
+       "headline": "Dangote Sugar Refinery Plc plans to raise as much as N500 billion ($330 million) through a rights issue as the company moves to shore up its balance sheet and finance expansion projects aimed at boosting local production.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "dangotesugar.com.ng",
+       "published_at": "2026-03-25T05:04:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 44,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjUgMDU6MDQ6MDAiLCJpIjoiNjllNjQ3NDI5ZTg3Y2NjNDNlMzU3ZmJiIiwiZG0iOiJkYW5nb3Rlc3VnYXIuY29tLm5nIiwiZXQiOiJjYXBpdGFsX2luZnVzaW9uIiwicm8iOiJwcmltYXJ5In0",
+     "by_type": {
+      "capital_infusion": 44
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.034,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 3 event(s)"
+     ],
+     "request_seconds": 4.036
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "funds_raising",
+      "capital_infusion"
+     ],
+     "q": "rights issue",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "rights issue",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "funds_raising",
+       "capital_infusion"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 39,
+     "carrying": 39,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 8,
+       "share": 20.51
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 4,
+       "share": 10.26
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 27,
+       "share": 69.23
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 39,
+       "share": 100.0
+      }
+     ],
+     "negative_to_positive_ratio": 0.0,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": null,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 9,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 9,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 1,
+        "fair_pos": 0,
+        "very_pos": 8,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 1,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 1,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 22,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 22,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 7,
+        "fair_pos": 3,
+        "very_pos": 12,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 7,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 7,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 1,
+        "very_pos": 6,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.825,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.827
+    }
+   }
+  }
+ ]
+}

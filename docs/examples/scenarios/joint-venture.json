@@ -1,0 +1,826 @@
+{
+ "slug": "joint-venture",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:08Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "contracts"
+     ],
+     "q": "joint venture",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "joint venture",
+      "match": "any",
+      "event_type": [
+       "company_announcement",
+       "contracts"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 50,
+       "by_type": {
+        "company_announcement": 26,
+        "contracts": 24
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 41,
+       "by_type": {
+        "company_announcement": 18,
+        "contracts": 23
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 43,
+       "by_type": {
+        "company_announcement": 21,
+        "contracts": 22
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 57,
+       "by_type": {
+        "company_announcement": 31,
+        "contracts": 26
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 47,
+       "by_type": {
+        "company_announcement": 26,
+        "contracts": 21
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 49,
+       "by_type": {
+        "company_announcement": 15,
+        "contracts": 34
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 57,
+       "by_type": {
+        "company_announcement": 17,
+        "contracts": 40
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 81,
+       "by_type": {
+        "company_announcement": 28,
+        "contracts": 53
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 47,
+       "by_type": {
+        "company_announcement": 18,
+        "contracts": 29
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 51,
+       "by_type": {
+        "company_announcement": 20,
+        "contracts": 31
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 52,
+       "by_type": {
+        "company_announcement": 18,
+        "contracts": 34
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 57,
+       "by_type": {
+        "company_announcement": 28,
+        "contracts": 29
+       }
+      }
+     ],
+     "totals": {
+      "events": 632,
+      "articles": 540,
+      "companies": 438,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 266,
+      "contracts": 366
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.039,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.041
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "contracts"
+     ],
+     "q": "joint venture",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "joint venture",
+      "event_type": [
+       "company_announcement",
+       "contracts"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f9d5657b2d589e844b7dcf",
+       "headline": "MTU is on contract with European Military Engine Team joint venture partner Safran and Spain's ITP Aero on what is called Pillar 2, the engine effort for an FCAS fighter jet.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "mtu.de",
+       "published_at": "2026-04-30T10:46:00",
+       "url": "https://www.aviationweek.com/defense/aircraft-propulsion/mtu-aero-engines-boss-now-expects-two-fcas-jets",
+       "publisher": "aviationweek.com",
+       "title": "MTU Aero Engines Boss Now Expects Two FCAS Jets | Aviation Week Network"
+      },
+      {
+       "id": "69f8a7adbbf1d314559a34a3",
+       "headline": "SATORP refinery, the company’s joint venture with Aramco located on Saudi Arabia’s east coast, was hit by incidents during the night of April 7-8, damaging three units and triggering a precautionary shutdown.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "satorp.com",
+       "published_at": "2026-04-30T04:37:27",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f22dac27117df83f94d5c3",
+       "headline": "Spain, in December, signed the €2.6 billion ($3 billion) contract to the Airbus-TAI joint venture formed to pursue the Spanish Air Force’s Integrated Advanced Training System requirement.",
+       "event_type": "contracts",
+       "role": "client",
+       "domain": "spain.ee",
+       "published_at": "2026-04-28T14:01:47",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f2289fc6105443aa5cad05",
+       "headline": "Kolomela received its first wheeled renewable electricity from Envusa Energy, a joint venture between Anglo American and EDF Renewables, achieving a 72% reduction in scope 2 carbon emissions in March.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "angloamericankumba.com",
+       "published_at": "2026-04-28T07:26:07",
+       "url": "https://www.businesslive.co.za/companies/earnings/2026-04-28-kumbas-export-sales-routes-unaffected-by-middle-east-conflict/",
+       "publisher": "businesslive.co.za",
+       "title": "Kumba’s export sales routes unaffected by Middle East conflict"
+      },
+      {
+       "id": "69f0e90e836d28f995cbc3ef",
+       "headline": "Hyundai and its joint venture partner BAIC Group (Beijing Automotive Group) have committed a combined 8 billion yuan — roughly $1.1 billion — to Beijing Hyundai under an agreement signed in December 2024.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "hyundai.com",
+       "published_at": "2026-04-27T07:53:34",
+       "url": "https://startupnews.fyi/ev-mobility/hyundai-is-betting-1-1-billion-that-china-will-forgive-it-for-being-late",
+       "publisher": "startupnews.fyi",
+       "title": "Hyundai Is Betting $1.1 Billion That China Will Forgive It for Being Late"
+      },
+      {
+       "id": "6a036266ca027fb5990ac983",
+       "headline": "Joint venture of State Government and HPCL HPCL Rajasthan Refinery Limited (HRRL) has set a target of commencing commercial production from 1 July 2026, which is being undertaken at war level to complete in time.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "hrrl.in",
+       "published_at": "2026-04-27T05:43:53",
+       "url": "https://www.livehindustan.com/rajasthan/jaipur/pachpadra-refinery-rajasthan-production-update-barmer-refinery-fire-incident-hpcl-rajasthan-refinery-inauguration-news-201777267981313.html",
+       "publisher": "livehindustan.com",
+       "title": "आग की घटना के बाद फिर पटरी पर पचपदरा रिफाइनरी, राजस्थान में उद्घाटन और प्रोडक्शन पर बड़ा अपडेट"
+      },
+      {
+       "id": "69f0e1a9836d28f995cb4aa3",
+       "headline": "Infinity Mining (ASX: IMI) has signed a binding farm-in and joint venture agreement with Mining One over the Tanjil Bren and Walhalla South Extended gold and antimony projects in Victoria.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "miningone.com.au",
+       "published_at": "2026-04-27T01:36:54",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f0e1a9836d28f995cb4aa3",
+       "headline": "Infinity Mining (ASX: IMI) has signed a binding farm-in and joint venture agreement with Mining One over the Tanjil Bren and Walhalla South Extended gold and antimony projects in Victoria.",
+       "event_type": "contracts",
+       "role": "client",
+       "domain": "infinitymining.com.au",
+       "published_at": "2026-04-27T01:36:54",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f0e87f45272de32e8c5297",
+       "headline": "P&G recorded a significant after-tax gain from the dissolution of its Glad joint venture with Clorox, which closed in January after the agreement expired.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "pg.com",
+       "published_at": "2026-04-26T22:29:10",
+       "url": "https://www.pymnts.com/news/retail/2026/pgs-tech-bet-starts-showing-up-in-sales/",
+       "publisher": "pymnts.com",
+       "title": "P&G’s Tech Bet Starts Showing Up in Sales | PYMNTS.com"
+      },
+      {
+       "id": "69f1c683a5706a322e0e8b44",
+       "headline": "Mosanada Facilities Management Services has announced securing a new five-year contract to a joint venture that includes the company, to deliver integrated facilities management services for the headquarters complex of QatarEnergy.",
+       "event_type": "contracts",
+       "role": "client",
+       "domain": "qatarenergy.qa",
+       "published_at": "2026-04-26T00:00:00",
+       "url": "https://qatarpress.qa/mosanada-secures-five-year-contract-to-manage-qatarenergy-headquarters-facilities/",
+       "publisher": "qatarpress.qa",
+       "title": "MOSANADA Secures Five-Year Contract to Manage QatarEnergy Headquarters Facilities -"
+      },
+      {
+       "id": "69efab2f727212302c5f570a",
+       "headline": "Saudi Arabia’s Ministry of Investment and SATORP, the refining joint venture between Saudi Aramco and TotalEnergies, have signed an agreement to develop and expand downstream industries linked to the Amiral petrochemical complex in Jubail on the Kingdom’s east coast.",
+       "event_type": "contracts",
+       "role": "client",
+       "domain": "satorp.com",
+       "published_at": "2026-04-24T07:53:17",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69efa9be727212302c5e4b6d",
+       "headline": "Saudi Arabia’s Ministry of Investment and SATORP, the refining joint venture between Saudi Aramco and TotalEnergies, have signed an agreement to develop and expand downstream industries linked to the Amiral petrochemical complex in Jubail on the Kingdom’s east coast.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "satorp.com",
+       "published_at": "2026-04-24T07:53:17",
+       "url": "https://www.zawya.com/projects/industry/saudi-arabia-signs-amiral-linked-deal-to-expand-downstream-industrial-value-chains-f8kh1nmr",
+       "publisher": "zawya.com",
+       "title": "Saudi Arabia signs Amiral-linked deal to expand downstream industrial value chains"
+      },
+      {
+       "id": "69ea4a9ab0517977015d2910",
+       "headline": "The same month, Agilyx transferred ownership of a Houston plastics sorting center to partners LyondellBasell and ExxonMobil as part of a restructuring of the Cyclyx joint venture.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "agilyx.com",
+       "published_at": "2026-04-23T15:06:43",
+       "url": "https://resource-recycling.com/plastics/2026/04/23/lyondellbasell-upgrade-to-prezero-assets-on-hold/",
+       "publisher": "resource-recycling.com",
+       "title": "LyondellBasell upgrade to PreZero assets on hold"
+      },
+      {
+       "id": "69ea24678266d93399950384",
+       "headline": "QatarEnergy has announced its first liquefied natural gas (LNG) export cargo from the Golden Pass LNG project in Sabine Pass, Texas, a joint venture with ExxonMobil.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "qatarenergy.qa",
+       "published_at": "2026-04-23T10:19:18",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69ea23cd75c44d9ce882615e",
+       "headline": "QatarEnergy has announced its first liquefied natural gas (LNG) export cargo from the Golden Pass LNG project in Sabine Pass, Texas, a joint venture with ExxonMobil.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "qatarenergy.qa",
+       "published_at": "2026-04-23T10:19:18",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 207,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjMgMTA6MTk6MTgiLCJpIjoiNjllYTIzY2Q3NWM0NGQ5Y2U4ODI2MTVlIiwiZG0iOiJxYXRhcmVuZXJneS5xYSIsImV0IjoiY29tcGFueV9hbm5vdW5jZW1lbnQiLCJybyI6InByaW1hcnkifQ",
+     "by_type": {
+      "contracts": 123,
+      "company_announcement": 84
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.356,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 7 event(s)"
+     ],
+     "request_seconds": 4.359
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "contracts"
+     ],
+     "q": "joint venture",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "joint venture",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement",
+       "contracts"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 170,
+     "carrying": 170,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 2,
+       "share": 1.18
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 13,
+       "share": 7.65
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 4,
+       "share": 2.35
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 25,
+       "share": 14.71
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 21,
+       "share": 12.35
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 105,
+       "share": 61.76
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 15,
+       "share": 8.82
+      },
+      {
+       "group": "neutral",
+       "count": 4,
+       "share": 2.35
+      },
+      {
+       "group": "positive",
+       "count": 151,
+       "share": 88.82
+      }
+     ],
+     "negative_to_positive_ratio": 0.099,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.13,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 53,
+       "negative": 3,
+       "neutral": 1,
+       "positive": 49,
+       "negative_share": 5.66,
+       "positive_share": 92.45,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 1,
+        "slight_pos": 7,
+        "fair_pos": 6,
+        "very_pos": 36,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 44,
+       "negative": 2,
+       "neutral": 3,
+       "positive": 39,
+       "negative_share": 4.55,
+       "positive_share": 88.64,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 3,
+        "slight_pos": 8,
+        "fair_pos": 6,
+        "very_pos": 25,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 29,
+       "negative": 4,
+       "neutral": 0,
+       "positive": 25,
+       "negative_share": 13.79,
+       "positive_share": 86.21,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 0,
+        "slight_pos": 3,
+        "fair_pos": 4,
+        "very_pos": 18,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 44,
+       "negative": 6,
+       "neutral": 0,
+       "positive": 38,
+       "negative_share": 13.64,
+       "positive_share": 86.36,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 5,
+        "none": 0,
+        "slight_pos": 7,
+        "fair_pos": 5,
+        "very_pos": 26,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.945,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.966
+    }
+   }
+  }
+ ]
+}

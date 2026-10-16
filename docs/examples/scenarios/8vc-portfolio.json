@@ -1,0 +1,3282 @@
+{
+ "slug": "8vc-portfolio",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:28Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "8VC",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "8vc"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 121,
+      "deals_with_amount": 116,
+      "deals_without_amount": 5,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 10522876800.0,
+      "median_amount_usd": 40000000.0,
+      "largest_amount_usd": 2600000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 230000000.0,
+       "median_amount_usd": 230000000.0,
+       "largest_amount_usd": 230000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 13,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 585000000.0,
+       "median_amount_usd": 30000000.0,
+       "largest_amount_usd": 200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 4,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 90000000.0,
+       "median_amount_usd": 45000000.0,
+       "largest_amount_usd": 80000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 667000000.0,
+       "median_amount_usd": 68500000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 18,
+       "deals_with_amount": 18,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1205680000.0,
+       "median_amount_usd": 40000000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 172984000.0,
+       "median_amount_usd": 45000000.0,
+       "largest_amount_usd": 67000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 596000000.0,
+       "median_amount_usd": 38000000.0,
+       "largest_amount_usd": 510000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1150000000.0,
+       "median_amount_usd": 192500000.0,
+       "largest_amount_usd": 350000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 13,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 583300000.0,
+       "median_amount_usd": 21000000.0,
+       "largest_amount_usd": 350000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 17,
+       "deals_with_amount": 17,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1310000000.0,
+       "median_amount_usd": 77500000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 17,
+       "deals_with_amount": 15,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1505412800.0,
+       "median_amount_usd": 65000000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 10,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2952500000.0,
+       "median_amount_usd": 65000000.0,
+       "largest_amount_usd": 2600000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.217,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.225
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "8VC",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "8vc"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "ff49d70863aebfe1",
+       "company_name": "saronic",
+       "domain": "saronic.com",
+       "round_type": "total equity",
+       "amount_usd": 2600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "BAM Elevate",
+         "domain": "bamelevate.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Austin",
+       "use_of_funds": null,
+       "source_sentence": "Saronic has now raised a total of $2.6B in total equity funding and is backed by 8VC, Advent International, Andreessen Horowitz, BAM Elevate, and Bessemer Venture Partners.",
+       "published_at": "2026-04-06T08:27:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bcc6ff2654c79d6bcd9b"
+       ],
+       "article_id": "69e2bcc6ff2654c79d6bcd9b"
+      },
+      {
+       "id": "4636097b040a3fd3",
+       "company_name": "chaos industries",
+       "domain": "getchaos.com",
+       "round_type": null,
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 510000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "Defense technology",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "Accelerate development and manufacturing of sensing and timing technologies for defense applications and expand distributed sensing portfolio",
+       "source_sentence": "CHAOS Industries has raised $510 million in new funding to expand development and manufacturing of its sensing and timing technologies for defense applications.",
+       "published_at": "2025-11-14T09:00:45",
+       "coverage_count": 5,
+       "article_ids": [
+        "693128f2f64e38e6c2f21b6c",
+        "69313e9ec8bec8b2f9f220bb",
+        "69451b431334aa0ca6a34c05",
+        "694af6cfedd4d8e72e75c96a",
+        "6989bff894d3f481f3ebaf78"
+       ],
+       "article_id": "69451b431334aa0ca6a34c05"
+      },
+      {
+       "id": "5afb15c51a5f9e85",
+       "company_name": "quince",
+       "domain": "quince.com",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "basis set ventures",
+         "domain": "basisset.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "MarcyPen Capital Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "notable capital",
+         "domain": "notablecapital.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "wndrco",
+         "domain": "wndrco.com",
+         "amount": null
+        }
+       ],
+       "sector": "E‑commerce",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Quince – $500.0M",
+       "published_at": "2026-03-16T08:27:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4844e0667c07f278ba3"
+       ],
+       "article_id": "69c3a4844e0667c07f278ba3"
+      },
+      {
+       "id": "cb6a8e10fa46f812",
+       "company_name": "cognition",
+       "domain": "cognition.ai",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 9800000000.0,
+       "investors": [
+        {
+         "name": "Peter Thiel’s Founders Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "pear vc",
+         "domain": "pear.vc",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI coding assistant",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate development of Devin and further the firm’s mission of “future of software engineering”",
+       "source_sentence": "Now the Wall Street Journal (WSJ) is reporting that a new round led by Founders Fund sees Cognition raise $500m toward that goal.",
+       "published_at": "2025-08-15T11:07:46",
+       "coverage_count": 2,
+       "article_ids": [
+        "68b054483b014c087aeaed6f",
+        "69d124ab78e97f45a1a29df8"
+       ],
+       "article_id": "68b054483b014c087aeaed6f"
+      },
+      {
+       "id": "852ba029de30e505",
+       "company_name": "cognition",
+       "domain": "cognition.ai",
+       "round_type": "Top-down",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10200000000.0,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": 10200000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "lux",
+         "domain": "luxresorts.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "neo",
+         "domain": "getneo.com",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "Definition Capital",
+         "domain": "definitioncapital.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "Swedish VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Christian Lawless",
+         "domain": "https://www.linkedin.com/in/christianlawless",
+         "amount": null
+        },
+        {
+         "name": "Emily Cohen (Neo)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The latest to raise funds, the Cognition start-up with a top-down round of $400 million for a post-financing valuation of $10.2 billion.",
+       "published_at": "2025-09-09T15:07:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d94abcbf1dd95b86106754"
+       ],
+       "article_id": "68d94abcbf1dd95b86106754"
+      },
+      {
+       "id": "279f5647f3156a23",
+       "company_name": "Cognition AI",
+       "domain": null,
+       "round_type": "Series B/C",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "neo",
+         "domain": "getneo.com",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "Definition Capital",
+         "domain": "definitioncapital.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "Swish VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "palantir",
+         "domain": "palantir.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI software",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Expand its AI agent ecosystem and enhance Devin’s problem‑solving skills",
+       "source_sentence": "Cognition AI, a San Francisco‑based AI software startup known for its autonomous coding agent “Devin,” has secured a colossal $400 million funding round at a valuation of about $10.2 billion.",
+       "published_at": "2025-09-08T21:13:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d98ffb59ff3bc3607eb42d"
+       ],
+       "article_id": "68d98ffb59ff3bc3607eb42d"
+      },
+      {
+       "id": "e52cf7fd167f3b8b",
+       "company_name": "cognition",
+       "domain": "cognition.ai",
+       "round_type": null,
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": 10200000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Cognition, the artificial intelligence startup that acquired Windsurf in July, said on Monday that it closed a $400 million funding round at valuation of $10.2 billion, which includes the fresh capital.",
+       "published_at": "2025-09-08T18:45:52",
+       "coverage_count": 5,
+       "article_ids": [
+        "68c163ac6a78bf0c56520cfd",
+        "68d0ff6dfb0e8d0abe2cb5ca",
+        "68d95cd0bf1dd95b8612754f",
+        "698f9ca38d29a990b6ffe362",
+        "69f880b68937ef12fc073d99"
+       ],
+       "article_id": "68d95cd0bf1dd95b8612754f"
+      },
+      {
+       "id": "f279af6ac2bf6526",
+       "company_name": "Cognition AI",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10200000000.0,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": 10200000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "Definition Capital",
+         "domain": "definitioncapital.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "Swish Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its engineering team and accelerate product development",
+       "source_sentence": "Artificial intelligence startup Cognition AI has reached a valuation of $10.2 billion in a roughly $400 million funding round – a deal that highlights the continued investor frenzy around AI-powered software development.",
+       "published_at": "2025-09-08T15:28:53",
+       "coverage_count": 6,
+       "article_ids": [
+        "69315e874ae01f1dc4f205a7",
+        "69bb0226b54f2a520bb54b80",
+        "69cbbf1d7fd59372e7d06f12",
+        "69ea32a28266d9339996074c",
+        "69efab56727212302c5f705e",
+        "69efab908a54b8f07c96f3f5"
+       ],
+       "article_id": "69cbbf1d7fd59372e7d06f12"
+      },
+      {
+       "id": "95347144e0ebd471",
+       "company_name": "Bedrock Robotics",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "C4 Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "eclipse ventures",
+         "domain": "eclipse.vc",
+         "amount": null
+        },
+        {
+         "name": "emergence capital",
+         "domain": "emergencecapitalpartnersltd.com",
+         "amount": null
+        },
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "Incharge Capital Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Massachusetts Institute of Technology",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "tishman speyer",
+         "domain": "tishmanspeyer.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "xora innovation",
+         "domain": "xora.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Information Technology, Robotics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "c22c9e32dc457a7e",
+       "company_name": "Erebor",
+       "domain": "erebor.capital",
+       "round_type": "Venture",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "Haun Ventures",
+         "domain": "haun.co",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Banking, Blockchain, Finance, Financial Services, FinTech",
+       "country": "United States",
+       "city": "Columbus",
+       "use_of_funds": null,
+       "source_sentence": "Round: Venture",
+       "published_at": "2026-01-16T09:27:11",
+       "coverage_count": 2,
+       "article_ids": [
+        "698888315302bdff258760dc",
+        "698d77be9ca02490ecfba63d"
+       ],
+       "article_id": "698888315302bdff258760dc"
+      },
+      {
+       "id": "796ff9da24816429",
+       "company_name": "Tech and digital asset banking startup co-founded by Anduril CEO Palmer Luckey",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4350000000.0,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": 4350000000.0,
+       "investors": [
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "Haun Ventures",
+         "domain": "haun.co",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Round: $350 million funding at a $4.35 billion valuation. Investors: Led by Lux Capital with participation from Founders Fund, Haun Ventures, 8VC, and more",
+       "published_at": "2025-12-31T17:07:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bae3ac8b79b55c82747a46"
+       ],
+       "article_id": "69bae3ac8b79b55c82747a46"
+      },
+      {
+       "id": "b8e8533e9bcdd8b2",
+       "company_name": "Erebor Bank",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Haun Ventures",
+         "domain": "haun.co",
+         "amount": null
+        }
+       ],
+       "sector": "Banking",
+       "country": null,
+       "city": null,
+       "use_of_funds": "hire talent and deepen its technology platform, supporting its bid to become a full‑featured bank for emerging‑tech companies",
+       "source_sentence": "Erebor Bank, a Silicon Valley startup serving crypto, AI, and defense firms, secured $350 million in fresh funding at an implied $4.35 billion valuation.",
+       "published_at": "2025-12-23T00:32:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988bcb994d3f481f3d87695"
+       ],
+       "article_id": "6988bcb994d3f481f3d87695"
+      },
+      {
+       "id": "85a8b3c9879c3057",
+       "company_name": "Erebor",
+       "domain": "erebor.capital",
+       "round_type": null,
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4350000000.0,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": 4350000000.0,
+       "investors": [
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Haun Ventures",
+         "domain": "haun.co",
+         "amount": null
+        }
+       ],
+       "sector": "digital banking",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Erebor closed a $350 million round that brought its valuation to $4.35 billion, backed by Lux Capital and funds like Founders Fund, 8VC and Haun Ventures.",
+       "published_at": "2025-12-22T20:25:51",
+       "coverage_count": 3,
+       "article_ids": [
+        "6991bbffa0538d227def58df",
+        "69bc293fbc0fe678ea673cf2",
+        "69e9934975f157062ca92ba7"
+       ],
+       "article_id": "6991bbffa0538d227def58df"
+      },
+      {
+       "id": "951a14fde662c23b",
+       "company_name": "Bedrock Robotics",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1750000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 1750000000.0,
+       "investors": [
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Nvidia’s venture arm",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Valor Equity Partners’ artificial intelligence fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Proptech / Construction Technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate the construction process, especially for data centers",
+       "source_sentence": "Proptech startup Bedrock Robotics has nailed down nearly $300M to accelerate the construction process, especially for data centers.",
+       "published_at": "2026-02-04T20:52:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc2aaba75fc0dcb0210ed7"
+       ],
+       "article_id": "69bc2aaba75fc0dcb0210ed7"
+      },
+      {
+       "id": "79297c52ca5246a7",
+       "company_name": "Bedrock Robotics",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 270000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 270000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Valor Atreides AI Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "emergence capital",
+         "domain": "emergencecapitalpartnersltd.com",
+         "amount": null
+        },
+        {
+         "name": "xora",
+         "domain": "xora.com",
+         "amount": null
+        },
+        {
+         "name": "tishman speyer",
+         "domain": "tishmanspeyer.com",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics/Autonomous Construction",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "product development and large-scale field deployments",
+       "source_sentence": "Bedrock Robotics builds retrofit kits ... the company raised $270 million in a Series B round ... to expand beyond single-machine deployments.",
+       "published_at": "2026-02-04T23:35:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "6986a952ca3bd326c77cffbf",
+        "69bb171c68bf20e367f75d05"
+       ],
+       "article_id": "6986a952ca3bd326c77cffbf"
+      },
+      {
+       "id": "9bf96af66bb9425d",
+       "company_name": "bedrock",
+       "domain": "bedrock.com",
+       "round_type": "Series B",
+       "amount_usd": 270000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 270000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Valor Atreides AI Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "xora",
+         "domain": "xora.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "emergence capital",
+         "domain": "emergencecapitalpartnersltd.com",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "tishman speyer",
+         "domain": "tishmanspeyer.com",
+         "amount": null
+        },
+        {
+         "name": "Massachusetts Institute of Technology",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "Incharge Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "C4 Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous construction equipment",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Accelerate construction automation, deploy autonomous machines, collect data, develop models, testing, and expand operations",
+       "source_sentence": "Bedrock Robotics Inc., a developer of autonomous construction equipment, today said it has raised $270 million in Series B funding.",
+       "published_at": "2026-02-04T21:14:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989c2bc94d3f481f3ebe448"
+       ],
+       "article_id": "6989c2bc94d3f481f3ebe448"
+      },
+      {
+       "id": "05873e287ccd4912",
+       "company_name": "addepar",
+       "domain": "addepar.com",
+       "round_type": "Series G",
+       "amount_usd": 230000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 230000000.0,
+       "valuation": 3250000000.0,
+       "investors": [
+        {
+         "name": "vitruvian partners",
+         "domain": "vitruvianpartners.com",
+         "amount": null
+        },
+        {
+         "name": "westcap",
+         "domain": "westcapmgt.ca",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "edbi",
+         "domain": "edbi.com",
+         "amount": null
+        }
+       ],
+       "sector": "Investment technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Provide liquidity to employees and other investors through a tender offer; accelerate investments in innovation and client capabilities",
+       "source_sentence": "Addepar, a leading global technology and data platform that investment professionals rely on to make the most informed, data-driven investment decisions, announced today the closing of its $230 million Series G investment round.",
+       "published_at": "2025-05-13T11:07:40",
+       "coverage_count": 6,
+       "article_ids": [
+        "68640f7a8882abb7e3b0c615",
+        "6988dcaa94d3f481f3dae6e7",
+        "698f078a9ca02490ec196707",
+        "698f6e4e9ca02490ec20ec74",
+        "69e8d52f9baafc7356d29948",
+        "6a0421c6220687a966b6b286"
+       ],
+       "article_id": "68640f7a8882abb7e3b0c615"
+      },
+      {
+       "id": "9cab4f5425b1acf7",
+       "company_name": "addepar",
+       "domain": "addepar.com",
+       "round_type": "Series G",
+       "amount_usd": 230000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 230000000.0,
+       "valuation": 3250000000.0,
+       "investors": [
+        {
+         "name": "vitruvian partners",
+         "domain": "vitruvianpartners.com",
+         "amount": null
+        },
+        {
+         "name": "westcap",
+         "domain": "westcapmgt.ca",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "edbi",
+         "domain": "edbi.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Provide liquidity to employees and other investors through tender offer; accelerate investments in innovation and client capabilities",
+       "source_sentence": "Addepar , a global technology and data platform on which investment professionals rely to make informed and data-based investment decisions, today announced the closure of its $230 million Series G funding cycle.",
+       "published_at": "2025-05-13T05:30:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "68d95c998b9b1745e6126dd4",
+        "6963261b489dc4c500dcc8cf",
+        "69bae25cb54f2a520bb4d70e",
+        "69bb36cb0047e0373b1fb788",
+        "69e85bcd7bb1410d4c6fb69c",
+        "69e86c265cfa3e5ba5f6f986",
+        "69e8e0295cfa3e5ba54d7837"
+       ],
+       "article_id": "68d95c998b9b1745e6126dd4"
+      },
+      {
+       "id": "24a81043cafd8ac0",
+       "company_name": "emed",
+       "domain": "emed.com",
+       "round_type": null,
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2000000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 2000000000.0,
+       "investors": [
+        {
+         "name": "AON Consulting, Inc.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "NFL legend and eMed Founding Chief Wellness Officer Tom Brady",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jeff Aronin, Founder, Chairman and CEO of Paragon Biosciences",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ara Cohen, Co-Founder and Co-Managing Member of Knighthead Capital Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Antonio Gracias, Founder and CEO of Valor Equity Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Joe Lonsdale, Founder and Managing Partner at 8VC and Co-Founder of Palantir",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "R.J. Melman, CEO, Lettuce Entertain You Restaurants",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tom Ricketts, Chairman of the Chicago Cubs",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "former X CEO and current eMed CEO Linda Yaccarino",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech",
+       "country": "USA",
+       "city": "MIAMI",
+       "use_of_funds": "expansion of digital health diagnostics platform and scaling of AI-driven healthcare delivery",
+       "source_sentence": "eMed today announced it has raised $200 million in funding at a $2 billion plus valuation.",
+       "published_at": "2026-03-26T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69cc5dccf8e7de13bc1e26d2",
+        "69dcd70a9232f7156912efca",
+        "69e29cf07f3a572cf4a9977e"
+       ],
+       "article_id": "69dcd70a9232f7156912efca"
+      },
+      {
+       "id": "1bff042789062856",
+       "company_name": "ramp",
+       "domain": "ramp.network",
+       "round_type": "Series E",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 16000000000.0,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital Partners",
+         "domain": "d1capital.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "sands capital",
+         "domain": "sandscapital.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "stripes",
+         "domain": "stripes.co",
+         "amount": null
+        },
+        {
+         "name": "137 ventures",
+         "domain": "137ventures.com",
+         "amount": null
+        },
+        {
+         "name": "Avenir Growth",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Definition Capital",
+         "domain": "definitioncapital.vdtrxn",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "continue investing in AI-driven product innovation, platform expansion, and enhancing customer efficiency",
+       "source_sentence": "Ramp, the leading financial operations platform, announced its Series E financing, bringing its valuation to $16 billion. For the fifth time, a Ramp funding round was led by Founders Fund – the company’s first and largest investor. Total size was capped at $200 million and included participation from Thrive Capital, D1 Capital Partners, General Catalyst, GIC, ICONIQ Growth, Khosla Ventures, Sands Capital, 8VC, Lux Capital, Stripes, 137 Ventures, Avenir Growth, and Definition Capital.",
+       "published_at": "2025-06-17T12:47:14",
+       "coverage_count": 5,
+       "article_ids": [
+        "69654904c8279724556772f5",
+        "698671fbfdcc616c15df1afd",
+        "6988aa77eefc5d2f542beec8",
+        "698cbc6c8d29a990b6c944bc",
+        "69baeb61b7032a7d5cdfc9a6"
+       ],
+       "article_id": "69654904c8279724556772f5"
+      },
+      {
+       "id": "51508c2ad91fed94",
+       "company_name": "Apex Space",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Point72 Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "washington harbour partners",
+         "domain": "washingtonharbour.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "Satellite bus manufacturing",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "Scale production and meet demand for satellite bus platforms",
+       "source_sentence": "Apex Space, a manufacturer of standardized satellite buses, has secured $200 million in a Series C funding round.",
+       "published_at": "2025-06-10T19:38:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d97ea559ff3bc3607d8939"
+       ],
+       "article_id": "68d97ea559ff3bc3607d8939"
+      },
+      {
+       "id": "fd85fed1d986d4b7",
+       "company_name": "Armadin",
+       "domain": null,
+       "round_type": "Seed and Series A",
+       "amount_usd": 189900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 189900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "in-q-tel",
+         "domain": "iqt.org",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Ballistic Ventures",
+         "domain": "ballistic-studio.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Armadin, an AI-native cybersecurity company focused on building the ultimate attacker, today announced it has raised an industry record $189.9 million in Seed and Series A funding.",
+       "published_at": "2026-03-31T12:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1519c080d96e8a0c656eb"
+       ],
+       "article_id": "69d1519c080d96e8a0c656eb"
+      },
+      {
+       "id": "89202cd587ad9b4b",
+       "company_name": "Armadin",
+       "domain": null,
+       "round_type": "Combined Seed and Series A",
+       "amount_usd": 189900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 189900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "in-q-tel",
+         "domain": "iqt.org",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Ballistic Ventures",
+         "domain": "ballistic-studio.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Kevin Mandia has launched a new cybersecurity company, Armadin, with $189.9 million in combined seed and Series A funding.",
+       "published_at": "2026-03-11T19:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cf601769c1992666a3b282"
+       ],
+       "article_id": "69cf601769c1992666a3b282"
+      },
+      {
+       "id": "163598edd33204c2",
+       "company_name": "Armadin",
+       "domain": null,
+       "round_type": "Seed and Series A",
+       "amount_usd": 189900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 189900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "in-q-tel",
+         "domain": "iqt.org",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Ballistic Ventures",
+         "domain": "ballistic-studio.com",
+         "amount": null
+        }
+       ],
+       "sector": "cybersecurity",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Expand platform, accelerate AI‑driven security R&D, scale operations, and hire across engineering and security research teams.",
+       "source_sentence": "Armadin, an AI-native cybersecurity company focused on building the ultimate attacker, announced it has raised an industry record $189.9 million in Seed and Series A funding.",
+       "published_at": "2026-03-10T10:59:08",
+       "coverage_count": 4,
+       "article_ids": [
+        "69cbd1a82e41fb6223042843",
+        "69cbd2512c2570848d94bf11",
+        "69cbd2744edcd0af9c886c26",
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "69cbd1a82e41fb6223042843"
+      },
+      {
+       "id": "7fa6a486d4930a1a",
+       "company_name": "harbor health",
+       "domain": "harborhealth.com",
+       "round_type": "Series C",
+       "amount_usd": 130000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 130000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "alta partners",
+         "domain": "altapartners.com",
+         "amount": null
+        },
+        {
+         "name": "DFO Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Health2047 Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lemhi ventures",
+         "domain": "lemhiventures.com",
+         "amount": null
+        },
+        {
+         "name": "martin ventures",
+         "domain": "martinventures.com",
+         "amount": null
+        },
+        {
+         "name": "breyer capital",
+         "domain": "breyercapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "healthtech",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "scale its integrated “payvider” model of care",
+       "source_sentence": "Harbor Health secured $130M in funding to scale integrated care platform.",
+       "published_at": "2025-09-10T22:25:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0fe15fb0e8d0abe2ca21b"
+       ],
+       "article_id": "68d0fe15fb0e8d0abe2ca21b"
+      },
+      {
+       "id": "6a86fcd771b09b12",
+       "company_name": "chapter",
+       "domain": "askchapter.org",
+       "round_type": "Series E",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "fifth down capital",
+         "domain": "fifthdown.vc",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "stripes",
+         "domain": "stripes.co",
+         "amount": null
+        },
+        {
+         "name": "xyz venture capital",
+         "domain": "xyz.vc",
+         "amount": null
+        },
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "narya capital",
+         "domain": "naryavc.com",
+         "amount": null
+        },
+        {
+         "name": "susa ventures",
+         "domain": "susaventures.com",
+         "amount": null
+        },
+        {
+         "name": "maverick ventures",
+         "domain": "maverickventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "accelerate growth and expand into additional financial products aimed at improving the health, wealth, and overall well‑being of retirees",
+       "source_sentence": "Chapter Raises $100M Series E Round Back to Home NEW YORK, NY, Chapter, the leading AI company focused on retirement, announced today that it has raised $100 million in Series E funding.",
+       "published_at": "2026-04-09T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e8576d5cfa3e5ba5ea917d",
+        "69e8587a7bb1410d4c6dce9a",
+        "69e8e2fa5cfa3e5ba54fbb00"
+       ],
+       "article_id": "69e8576d5cfa3e5ba5ea917d"
+      },
+      {
+       "id": "724b380a27c6cfc5",
+       "company_name": "overland ai",
+       "domain": "overland.ai",
+       "round_type": "Equity",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Point72 Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ascend venture capital",
+         "domain": "ascendstl.com",
+         "amount": null
+        },
+        {
+         "name": "shasta ventures",
+         "domain": "shasta.vc",
+         "amount": null
+        },
+        {
+         "name": "Overmatch Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "Defense / Autonomous Ground Systems",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "scale operations and deployments of its autonomous ground systems and expand manufacturing, field support, and operational integration teams",
+       "source_sentence": "Overland AI announced it raised $100 million in new funding to scale operations and deployments of its autonomous ground systems with end users across the U.S. Armed Forces, as the company seeks to expand manufacturing, field support, and operational integration teams in step with growing demand.",
+       "published_at": "2026-02-08T03:00:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a2d6b3aeee4a53ffa2af0"
+       ],
+       "article_id": "698a2d6b3aeee4a53ffa2af0"
+      },
+      {
+       "id": "46ed0e268864f530",
+       "company_name": "cambium",
+       "domain": "cambium-usa.com",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        },
+        {
+         "name": "gaingels",
+         "domain": "gaingels.com",
+         "amount": null
+        },
+        {
+         "name": "GSBackers",
+         "domain": "gsbackers.com",
+         "amount": null
+        },
+        {
+         "name": "inevitable ventures",
+         "domain": "inevitablevc.com",
+         "amount": null
+        },
+        {
+         "name": "J17 Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jackson moses",
+         "domain": "jacksonmoses.com",
+         "amount": null
+        },
+        {
+         "name": "JACS Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Lockheed Martin Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "MVP Ventures",
+         "domain": "mvp-vc.com",
+         "amount": null
+        },
+        {
+         "name": "SignalRank",
+         "domain": "signalrank.co",
+         "amount": null
+        },
+        {
+         "name": "vanderbilt university",
+         "domain": "vanderbilt.edu",
+         "amount": null
+        },
+        {
+         "name": "veteran ventures capital",
+         "domain": "veteranventures.us",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": "El Segundo",
+       "use_of_funds": null,
+       "source_sentence": "Cambium – $100.0M",
+       "published_at": "2026-01-12T08:27:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989dfe794d3f481f3edf8c3"
+       ],
+       "article_id": "6989dfe794d3f481f3edf8c3"
+      },
+      {
+       "id": "3ecb5091f42d7320",
+       "company_name": "cambium",
+       "domain": "cambium-usa.com",
+       "round_type": "Series B",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Advanced Materials",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Cambium – The advanced materials for defense, aerospace and other high-performance sectors company announced a $100M Series B financing led by 8VC.",
+       "published_at": "2026-01-09T16:15:47",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc3739650bbd41e03de4a8",
+        "69c9cfedb68ade25f5c8cc35"
+       ],
+       "article_id": "69bc3739650bbd41e03de4a8"
+      },
+      {
+       "id": "ec606a96d0d12573",
+       "company_name": "cambium",
+       "domain": "cambium-usa.com",
+       "round_type": "Series B",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Lockheed Martin Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "MVP Ventures",
+         "domain": "mvp-vc.com",
+         "amount": null
+        },
+        {
+         "name": "veteran ventures capital",
+         "domain": "veteranventures.us",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        },
+        {
+         "name": "gaingels",
+         "domain": "gaingels.com",
+         "amount": null
+        }
+       ],
+       "sector": "Advanced materials R&D",
+       "country": "USA",
+       "city": "El Segundo",
+       "use_of_funds": "to accelerate development of its advanced materials platform",
+       "source_sentence": "Cambium closed $100M Series B for advanced materials in aerospace and defense",
+       "published_at": "2026-01-06T00:00:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988efb394d3f481f3dc461b"
+       ],
+       "article_id": "6988efb394d3f481f3dc461b"
+      },
+      {
+       "id": "633660290dcffde3",
+       "company_name": "loop",
+       "domain": "loopstore.com",
+       "round_type": "Series C",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "Valor Atreides AI Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "j.p. morgan growth equity partners",
+         "domain": "am.jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "tao capital partners",
+         "domain": "taocap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Supply Chain AI / Logistics Intelligence Platform",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "The company will use the funding to expand its platform across more enterprise use cases, strengthen its product and engineering capabilities, and invest in top AI talent.",
+       "source_sentence": "Loop, a San Francisco, CA–based full-stack, verticalized AI platform for logistics and supply chains, has raised $95 million in Series C funding.",
+       "published_at": "2026-04-20T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d88d7b2d589e844dae89"
+       ],
+       "article_id": "69f9d88d7b2d589e844dae89"
+      },
+      {
+       "id": "f15beb523290c8cc",
+       "company_name": "loop",
+       "domain": "loopstore.com",
+       "round_type": null,
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "j.p. morgan growth equity partners",
+         "domain": "am.jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "tao capital partners",
+         "domain": "taocap.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Loop has now raised a total of $160M in total equity funding and is backed by 8VC, Founders Fund, Index Ventures, J.P. Morgan Growth Equity Partners, and Tao Capital Partners.",
+       "published_at": "2026-04-18T09:27:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e99023bdd09a23d088f072"
+       ],
+       "article_id": "69e99023bdd09a23d088f072"
+      },
+      {
+       "id": "8b691c1a656f811a",
+       "company_name": "loop",
+       "domain": "loopstore.com",
+       "round_type": "Series C",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "Valor Atreides AI Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "j.p. morgan growth equity partners",
+         "domain": "am.jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "tao capital partners",
+         "domain": "taocap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Logistics and supply chain AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Expand platform across a broader set of enterprise use cases, deepen product and engineering capabilities, and invest in top AI talent",
+       "source_sentence": "Loop, the full-stack, verticalized AI platform for logistics and supply chains, announced it has raised a $95 million Series C led by Valor Equity Partners and the Valor Atreides AI Fund.",
+       "published_at": "2026-04-17T00:00:00",
+       "coverage_count": 13,
+       "article_ids": [
+        "69e8631b5cfa3e5ba5f1359d",
+        "69e8699b7bb1410d4c784209",
+        "69e86a907bb1410d4c78e36b",
+        "69e884619baafc735691de1c",
+        "69e8870d7bb1410d4c8b2a62",
+        "69e8a4c69baafc7356aaaddb",
+        "69e8e0f29baafc7356dc40e9",
+        "69e98ee775f157062ca5dbe0",
+        "69e992fdd47fc02832125e07",
+        "69e995e475f157062cab5f1c",
+        "69efab30a84b609af2b34bf0",
+        "69efaba8a84b609af2b3aa77",
+        "69efac26a84b609af2b41b98"
+       ],
+       "article_id": "69e8631b5cfa3e5ba5f1359d"
+      },
+      {
+       "id": "fc8e9938aefba804",
+       "company_name": "augment technologies",
+       "domain": "augment-tech.com",
+       "round_type": "Series A",
+       "amount_usd": 85000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 85000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Shopify Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "autotech ventures",
+         "domain": "autotechvc.com",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Productivity / Logistics Automation",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "The company will use the funds to expand its capabilities, scale hiring, and drive adoption across the logistics industry.",
+       "source_sentence": "Augment, a San Francisco, CA-based AI productivity platform for logistics, has raised $85 million in Series A funding.",
+       "published_at": "2025-09-05T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69baefad88dbabbbb7c7a79e"
+       ],
+       "article_id": "69baefad88dbabbbb7c7a79e"
+      },
+      {
+       "id": "135c351d8b1a82cd",
+       "company_name": "augment",
+       "domain": "augmentcode.com",
+       "round_type": "Series A",
+       "amount_usd": 85000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 85000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Shopify Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "autotech ventures",
+         "domain": "autotechvc.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI logistics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "aggressive hiring and product development",
+       "source_sentence": "Augment, an AI logistics startup led by Deliverr co-founder Harish Abbott, has raised $85 million Series A round to expand “Augie,” its AI teammate for freight shippers, brokers, and carriers.",
+       "published_at": "2025-09-04T23:11:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d98ffe1645babb987eb4f4"
+       ],
+       "article_id": "68d98ffe1645babb987eb4f4"
+      },
+      {
+       "id": "b86e93811f98d1c5",
+       "company_name": "augment",
+       "domain": "augmentcode.com",
+       "round_type": "Series A",
+       "amount_usd": 85000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 85000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "autotech ventures",
+         "domain": "autotechvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Logistics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Hiring 50 engineers and developing new features",
+       "source_sentence": "On Thursday, Augment announced that it raised an $85 million Series A led by Redpoint, with participation from 8VC, Autotech Ventures, and others.",
+       "published_at": "2025-09-04T19:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d953d7bf1dd95b861163e8",
+        "694d77df9025cd4db1f2fea7",
+        "698e54fc8d29a990b6e76da2"
+       ],
+       "article_id": "68d953d7bf1dd95b861163e8"
+      },
+      {
+       "id": "1a8357ce25e83159",
+       "company_name": "Mendra, Inc.",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 82000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 82000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "orbimed",
+         "domain": "orbimed.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "5am ventures",
+         "domain": "5amventures.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Wing VC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biopharmaceutical",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Acquire and develop rare disease assets",
+       "source_sentence": "Mendra, Inc. (“Mendra”), a biopharmaceutical company built to advance promising therapies for rare disease medicines, utilizing artificial intelligence (AI), today announced its launch in conjunction with the closing of an $82 million oversubscribed Series A financing. The round was co-led by OrbiMed, 8VC, and 5AM Ventures with participation from Lux Capital and Wing VC.",
+       "published_at": "2026-02-05T13:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986abffdac7b0ca9c612197"
+       ],
+       "article_id": "6986abffdac7b0ca9c612197"
+      },
+      {
+       "id": "18ef4d27f25ba1ef",
+       "company_name": "overland ai",
+       "domain": "overland.ai",
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "ascend",
+         "domain": "ascendcorp.com",
+         "amount": null
+        },
+        {
+         "name": "Overmatch Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Point72 Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "shasta ventures",
+         "domain": "shasta.vc",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "US",
+       "city": "Seattle",
+       "use_of_funds": null,
+       "source_sentence": "Overland AI has now raised a total of $122.0M in total equity funding and is backed by 8VC, Ascend, Overmatch Ventures, Point72 Ventures, Shasta Ventures, StepStone Group, and Valor Equity Partners.",
+       "published_at": "2026-02-09T08:27:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996d2e8feeb41363fa2da74"
+       ],
+       "article_id": "6996d2e8feeb41363fa2da74"
+      },
+      {
+       "id": "2141b669cae95d29",
+       "company_name": "Bedrock Robotics",
+       "domain": null,
+       "round_type": "Seed + Series A",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "NVIDIA NVentures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "two sigma ventures",
+         "domain": "twosigmaventures.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "Raine Group",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "The latest funding rounds will help Bedrock grow its engineering, operations and commercialization teams, and deepen partnerships to reach its target of initial operator-less deployment in 2026.",
+       "source_sentence": "Bedrock Robotics, a San Francisco-based developer of advanced autonomous systems for construction, emerged from stealth with $80 million in Seed and Series A backing, the company announced on July 16.",
+       "published_at": "2025-07-25T00:33:56",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c584b1782885ae3c882bbe",
+        "69bc2199a3b9608a9aecb974"
+       ],
+       "article_id": "68c584b1782885ae3c882bbe"
+      },
+      {
+       "id": "9105b6b302b1700d",
+       "company_name": "Bedrock Robotics",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous vehicle technology",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "manufacturing, software development, and scaling active deployment sites across the U.S.",
+       "source_sentence": "Now, it’s breaking cover with an $80 million funding round from investors Eclipse and 8VC.",
+       "published_at": "2025-07-16T15:39:07",
+       "coverage_count": 3,
+       "article_ids": [
+        "68c58913b434e1071988a5a1",
+        "69314b87556974a33af207f1",
+        "694b094c6d73a6543d75be55"
+       ],
+       "article_id": "68c58913b434e1071988a5a1"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 121,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDctMTYgMTU6Mzk6MDciLCJrIjoiMTA0NDk5NTkzOTAzNDM2ODgyMDUiLCJhIjo4MDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 121,
+      "deals_with_amount": 116,
+      "deals_without_amount": 5,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 10522876800.0,
+      "median_amount_usd": 40000000.0,
+      "largest_amount_usd": 2600000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.169,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.176
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "8VC",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "8vc"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "97ee2e8922a28964",
+       "company_name": "Rilian",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 17500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "first in",
+         "domain": "wearefirstin.com",
+         "amount": null
+        },
+        {
+         "name": "tamarack global",
+         "domain": "tamarackglobal.com",
+         "amount": null
+        },
+        {
+         "name": "8090 Industries",
+         "domain": "8090industries.com",
+         "amount": null
+        },
+        {
+         "name": "liquid 2 ventures",
+         "domain": "liquid2.vc",
+         "amount": null
+        },
+        {
+         "name": "perot jain",
+         "domain": "perotjain.com",
+         "amount": null
+        },
+        {
+         "name": "Protego Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "defence and national security",
+       "country": "United States",
+       "city": "McLean",
+       "use_of_funds": "go-to-market expansion across the US and Gulf Cooperation Council countries, engineering hiring, and R&D in AI-powered cyber and defence solutions",
+       "source_sentence": "Rilian, a McLean, Virginia-based startup building agentic AI systems integration for defence and national security customers, has raised $17.5 million in seed and seed extension funding.",
+       "published_at": "2026-04-23T19:20:22",
+       "coverage_count": 3,
+       "article_ids": [
+        "69efa9698a54b8f07c9552eb",
+        "69efa9968a54b8f07c9574ac",
+        "69efab30a84b609af2b34bf0"
+       ],
+       "article_id": "69efa9698a54b8f07c9552eb"
+      },
+      {
+       "id": "f185f12889060902",
+       "company_name": "Rilian",
+       "domain": null,
+       "round_type": "seed and seed extension",
+       "amount_usd": 17500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "first in",
+         "domain": "wearefirstin.com",
+         "amount": null
+        },
+        {
+         "name": "tamarack global",
+         "domain": "tamarackglobal.com",
+         "amount": null
+        },
+        {
+         "name": "8090 Industries",
+         "domain": "8090industries.com",
+         "amount": null
+        },
+        {
+         "name": "liquid 2 ventures",
+         "domain": "liquid2.vc",
+         "amount": null
+        },
+        {
+         "name": "perot jain",
+         "domain": "perotjain.com",
+         "amount": null
+        },
+        {
+         "name": "Protego Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "cybersecurity, defense systems integration, AI-native",
+       "country": "USA",
+       "city": "McLean",
+       "use_of_funds": "go-to-market efforts, engineering talent acquisition, research and development in agentic AI-powered cyber and defense technology solutions",
+       "source_sentence": "Rilian Inks $17.5M Seed and Seed Extension Back to Home MCLEAN, VA, Rilian, a provider of AI-native cybersecurity and defense systems integration capabilities, today announced that it has raised $17.5 million in seed and seed extension funding.",
+       "published_at": "2026-04-23T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69ea38d175c44d9ce8847ac6",
+        "69f0e67245272de32e8c3508"
+       ],
+       "article_id": "69f0e67245272de32e8c3508"
+      },
+      {
+       "id": "633660290dcffde3",
+       "company_name": "loop",
+       "domain": "loopstore.com",
+       "round_type": "Series C",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "Valor Atreides AI Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "j.p. morgan growth equity partners",
+         "domain": "am.jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "tao capital partners",
+         "domain": "taocap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Supply Chain AI / Logistics Intelligence Platform",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "The company will use the funding to expand its platform across more enterprise use cases, strengthen its product and engineering capabilities, and invest in top AI talent.",
+       "source_sentence": "Loop, a San Francisco, CA–based full-stack, verticalized AI platform for logistics and supply chains, has raised $95 million in Series C funding.",
+       "published_at": "2026-04-20T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d88d7b2d589e844dae89"
+       ],
+       "article_id": "69f9d88d7b2d589e844dae89"
+      },
+      {
+       "id": "f15beb523290c8cc",
+       "company_name": "loop",
+       "domain": "loopstore.com",
+       "round_type": null,
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "j.p. morgan growth equity partners",
+         "domain": "am.jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "tao capital partners",
+         "domain": "taocap.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Loop has now raised a total of $160M in total equity funding and is backed by 8VC, Founders Fund, Index Ventures, J.P. Morgan Growth Equity Partners, and Tao Capital Partners.",
+       "published_at": "2026-04-18T09:27:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e99023bdd09a23d088f072"
+       ],
+       "article_id": "69e99023bdd09a23d088f072"
+      },
+      {
+       "id": "8b691c1a656f811a",
+       "company_name": "loop",
+       "domain": "loopstore.com",
+       "round_type": "Series C",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "Valor Atreides AI Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "j.p. morgan growth equity partners",
+         "domain": "am.jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "tao capital partners",
+         "domain": "taocap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Logistics and supply chain AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Expand platform across a broader set of enterprise use cases, deepen product and engineering capabilities, and invest in top AI talent",
+       "source_sentence": "Loop, the full-stack, verticalized AI platform for logistics and supply chains, announced it has raised a $95 million Series C led by Valor Equity Partners and the Valor Atreides AI Fund.",
+       "published_at": "2026-04-17T00:00:00",
+       "coverage_count": 13,
+       "article_ids": [
+        "69e8631b5cfa3e5ba5f1359d",
+        "69e8699b7bb1410d4c784209",
+        "69e86a907bb1410d4c78e36b",
+        "69e884619baafc735691de1c",
+        "69e8870d7bb1410d4c8b2a62",
+        "69e8a4c69baafc7356aaaddb",
+        "69e8e0f29baafc7356dc40e9",
+        "69e98ee775f157062ca5dbe0",
+        "69e992fdd47fc02832125e07",
+        "69e995e475f157062cab5f1c",
+        "69efab30a84b609af2b34bf0",
+        "69efaba8a84b609af2b3aa77",
+        "69efac26a84b609af2b41b98"
+       ],
+       "article_id": "69e8631b5cfa3e5ba5f1359d"
+      },
+      {
+       "id": "74abc832baab50cb",
+       "company_name": "alloy therapeutics",
+       "domain": "alloytx.com",
+       "round_type": "Series E",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1000000000.0,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": 1000000000.0,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "jic venture growth investments",
+         "domain": "j-vgi.co.jp",
+         "amount": null
+        },
+        {
+         "name": "echo capital",
+         "domain": "echocapital.ca",
+         "amount": null
+        },
+        {
+         "name": "multiple family offices",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "presight capital",
+         "domain": "presight.vc",
+         "amount": null
+        },
+        {
+         "name": "thiel capital",
+         "domain": "thielcapital.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "Alexandria Venture Investments",
+         "domain": "alexandriaventureinvestments.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "gaingels",
+         "domain": "gaingels.com",
+         "amount": null
+        },
+        {
+         "name": "Ulysses Diversified Holdings",
+         "domain": "ulyssesholdings.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "strengthening discovery services in antibodies, genetic medicines, and cell therapies; scaling downstream preclinical and clinical development capabilities; and advancing the company’s AI and data infrastructure",
+       "source_sentence": "Alloy Therapeutics, a biotechnology ecosystem company, announced a $40 million Series E financing round.",
+       "published_at": "2026-04-15T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e84e2e9baafc73566fb368",
+        "69e878575cfa3e5ba5fe9d3e"
+       ],
+       "article_id": "69e84e2e9baafc73566fb368"
+      },
+      {
+       "id": "6a86fcd771b09b12",
+       "company_name": "chapter",
+       "domain": "askchapter.org",
+       "round_type": "Series E",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "fifth down capital",
+         "domain": "fifthdown.vc",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "stripes",
+         "domain": "stripes.co",
+         "amount": null
+        },
+        {
+         "name": "xyz venture capital",
+         "domain": "xyz.vc",
+         "amount": null
+        },
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "narya capital",
+         "domain": "naryavc.com",
+         "amount": null
+        },
+        {
+         "name": "susa ventures",
+         "domain": "susaventures.com",
+         "amount": null
+        },
+        {
+         "name": "maverick ventures",
+         "domain": "maverickventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "accelerate growth and expand into additional financial products aimed at improving the health, wealth, and overall well‑being of retirees",
+       "source_sentence": "Chapter Raises $100M Series E Round Back to Home NEW YORK, NY, Chapter, the leading AI company focused on retirement, announced today that it has raised $100 million in Series E funding.",
+       "published_at": "2026-04-09T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e8576d5cfa3e5ba5ea917d",
+        "69e8587a7bb1410d4c6dce9a",
+        "69e8e2fa5cfa3e5ba54fbb00"
+       ],
+       "article_id": "69e8576d5cfa3e5ba5ea917d"
+      },
+      {
+       "id": "ff49d70863aebfe1",
+       "company_name": "saronic",
+       "domain": "saronic.com",
+       "round_type": "total equity",
+       "amount_usd": 2600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "BAM Elevate",
+         "domain": "bamelevate.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Austin",
+       "use_of_funds": null,
+       "source_sentence": "Saronic has now raised a total of $2.6B in total equity funding and is backed by 8VC, Advent International, Andreessen Horowitz, BAM Elevate, and Bessemer Venture Partners.",
+       "published_at": "2026-04-06T08:27:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bcc6ff2654c79d6bcd9b"
+       ],
+       "article_id": "69e2bcc6ff2654c79d6bcd9b"
+      },
+      {
+       "id": "29ba1391f35f7858",
+       "company_name": "sycamore",
+       "domain": "sycamore.world",
+       "round_type": "total equity",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Abhinav Gupta",
+         "domain": "https://www.linkedin.com/in/abhinav-gupta-b1977a",
+         "amount": null
+        },
+        {
+         "name": "abstract ventures",
+         "domain": "abstractvc.com",
+         "amount": null
+        },
+        {
+         "name": "Ali Ghodsi",
+         "domain": "https://www.linkedin.com/in/alighodsi",
+         "amount": null
+        },
+        {
+         "name": "Anu Bharadwaj",
+         "domain": "https://www.linkedin.com/in/anutthara/",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": null,
+       "source_sentence": "Sycamore has now raised a total of $65M in total equity funding and is backed by 8VC, Abhinav Gupta, Abstract Ventures, Ali Ghodsi, and Anu Bharadwaj.",
+       "published_at": "2026-04-06T08:27:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bcc6ff2654c79d6bcd9b"
+       ],
+       "article_id": "69e2bcc6ff2654c79d6bcd9b"
+      },
+      {
+       "id": "fc0bd6a850e73a5d",
+       "company_name": "glimpse",
+       "domain": "tryglimpse.com",
+       "round_type": "Series A",
+       "amount_usd": 35000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": "NYC",
+       "use_of_funds": "scale its platform and expand operations",
+       "source_sentence": "Glimpse, a NYC-based provider of an AI platform to automate CPG and retail operations, raised $35m in Series A funding. The round, which brings total raised to $52m, was led by Andreessen Horowitz with continued participation from 8VC and Y Combinator.",
+       "published_at": "2026-04-03T07:56:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d7bc9baafc7356d4cf7f"
+       ],
+       "article_id": "69e8d7bc9baafc7356d4cf7f"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 57,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDMgMDc6NTY6NDciLCJrIjoiMTgxNjE4NDU5NDA3MDE4Mzc5MTcifQ",
+     "totals": {
+      "deals": 57,
+      "deals_with_amount": 55,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 6251212800.0,
+      "median_amount_usd": 42000000.0,
+      "largest_amount_usd": 2600000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.049,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.054
+    }
+   }
+  }
+ ]
+}

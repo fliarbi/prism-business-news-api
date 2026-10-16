@@ -1,0 +1,806 @@
+{
+ "slug": "stock-split",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:47:54Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "split",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "split",
+      "match": "any",
+      "event_type": [
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 4,
+       "by_type": {
+        "company_announcement": 4
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "company_announcement": 5
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "company_announcement": 5
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "company_announcement": 12
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 10,
+       "by_type": {
+        "company_announcement": 10
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 7,
+       "by_type": {
+        "company_announcement": 7
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 4,
+       "by_type": {
+        "company_announcement": 4
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 16,
+       "by_type": {
+        "company_announcement": 16
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 10,
+       "by_type": {
+        "company_announcement": 10
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "company_announcement": 11
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "company_announcement": 12
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 10,
+       "by_type": {
+        "company_announcement": 10
+       }
+      }
+     ],
+     "totals": {
+      "events": 106,
+      "articles": 106,
+      "companies": 75,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 106
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.155,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.161
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "split",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "split",
+      "event_type": [
+       "company_announcement"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f880018937ef12fc06cb0b",
+       "headline": "IP is progressing on its announced plan to split into two geographic regions, one in North America and one in EMEA. IP will retain a 20% ownership stake in the EMEA spinoff company for 12 to 18 months after the split.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "internationalpaper.com",
+       "published_at": "2026-04-30T13:03:00",
+       "url": "https://www.packagingdive.com/news/international-paper-q1-2026-earnings-emea-split-cost-savings/818922/",
+       "publisher": "packagingdive.com",
+       "title": "​​​​​​​International Paper touts $200M in EMEA cuts ahead of business split"
+      },
+      {
+       "id": "6a04127762bbf617b047c708",
+       "headline": "Direct Digital Holdings, Inc. (Nasdaq: DRCT) ('Direct Digital Holdings' or the 'Company'), a leading advertising and marketing technology platform operating through its companies Colossus Media, LLC ('Colossus SSP') and Orange 142, LLC ('Orange 142'), today announced a 4-to-1 reverse stock split of all classes of its common stock.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "directdigitalholdings.com",
+       "published_at": "2026-04-23T12:30:00",
+       "url": "https://www.prnewswire.com/news-releases/direct-digital-holdings-announces-reverse-stock-split-302751255.html",
+       "publisher": "prnewswire.com",
+       "title": "Direct Digital Holdings Announces Reverse Stock Split"
+      },
+      {
+       "id": "69e8cccc7bb1410d4cc31a87",
+       "headline": "Cue Biopharma, Inc. (Nasdaq: CUE ), a clinical-stage biopharmaceutical company ... today announced that it will implement a 1-for-30 reverse stock split of the issued shares of the company’s common stock, effective at 5:00 p.m. Eastern Time on April 23, 2026.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "cuebiopharma.com",
+       "published_at": "2026-04-22T12:37:00",
+       "url": "https://www.stocktitan.net/news/CUE/cue-biopharma-announces-1-for-30-reverse-stock-g0zdxxvtxub0.html",
+       "publisher": "stocktitan.net",
+       "title": "Cue Biopharma cuts share count to 3.3M as it seeks Nasdaq compliance"
+      },
+      {
+       "id": "69e9c579d47fc028321f194a",
+       "headline": "In a significant strategic pivot, Amara Raja has revised its capacity allocation across the planned 16 GWh, moving from a largely mobility-focused plan to an equal split between mobility and energy storage solutions (ESS).",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "amararajaeandm.com",
+       "published_at": "2026-04-21T19:32:00",
+       "url": "https://economictimes.indiatimes.com/industry/renewables/amara-raja-plans-to-begin-bulk-production-of-ev-cells-in-2027/articleshow/130426634.cms",
+       "publisher": "economictimes.indiatimes.com",
+       "title": "Amara Raja plans to begin bulk production of EV cells in 2027"
+      },
+      {
+       "id": "69f22dd9c6105443aa5dd155",
+       "headline": "zSpace, Inc. (NASDAQ: ZSPC ) (“zSpace” or the “Company”), a leading provider of augmented and virtual reality (AR/VR) solutions for education and workforce development, intends to implement a 1-for-25 reverse stock split of its common stock, par value $0.00001 per share (the “Common Stock”) with trading to begin on a split-adjusted basis at the market open April 21, 2026.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "zspace.com",
+       "published_at": "2026-04-17T12:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e862af5cfa3e5ba5f0fe47",
+       "headline": "La Rosa Holdings Corp. (NASDAQ: LRHC ) (“La Rosa” or the “Company”), a real estate and PropTech enterprise, today announced that it will effect a 1-for-10 reverse split (“reverse stock split”) of its shares of common stock that will become effective on April 20, 2026 at 12:01 a.m. (Eastern Time).",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "larosaholdings.com",
+       "published_at": "2026-04-16T12:30:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69dfcf6943415b9885ab06b6",
+       "headline": "The company has secured new business orders worth US$ 120 million during FY2017, split into long-term export orders of US$ 80 million and domestic orders worth Rs 270 crore across various segments.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "bharatforge.com",
+       "published_at": "2026-04-15T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8409c7bb1410d4c5f37be",
+       "headline": "Wheels Up Experience Inc. (NYSE: UP ) (\"Wheels Up\" or the \"Company\") is announcing that effective immediately after the close of trading on The New York Stock Exchange (the \"NYSE\") on April 24, 2026 (the \"Effective Time\"), the Company expects to complete a reverse stock split (the \"Reverse Stock Split\") of its Class A common stock",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "wheelsup.com",
+       "published_at": "2026-04-14T12:30:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e89a4f5cfa3e5ba515d1a8",
+       "headline": "today announced that a reverse share split of its issued and outstanding ordinary shares, no par value per share (the 'Ordinary Shares') at a ratio of 5-for-1 is expected to be implemented after market close on April 14, 2026.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "bren-energy.com",
+       "published_at": "2026-04-10T20:30:00",
+       "url": "https://www.stocktitan.net/news/BNRG/brenmiller-energy-ltd-announces-expected-implementation-of-5-for-1-bkkpfa71djw2.html",
+       "publisher": "stocktitan.net",
+       "title": "Brenmiller will cut share count to 515,465 in 5-for-1 reverse split"
+      },
+      {
+       "id": "69e34ade158f9ddd5d75d366",
+       "headline": "\"Greenlane Holdings, Inc. (“Greenlane” or the “Company”) (Nasdaq: GNLN ), ... announced that it will effect a reverse stock split of its outstanding shares of common stock at a ratio of 1-for-8...\"",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "greenlane.eu",
+       "published_at": "2026-04-01T12:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69c819badf977dc8a5d1fcd7",
+       "headline": "Modular Medical, Inc. (\"Modular Medical\" or the \"Company\") (NASDAQ:MODD), an innovative insulin delivery technology company, today announced that it will effect a 1-for-30 reverse stock split of its outstanding common stock.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "modular-medical.com",
+       "published_at": "2026-03-26T20:05:00",
+       "url": "https://www.stocktitan.net/news/MODD/modular-medical-announces-1-for-30-reverse-stock-6kmojjlgbgtx.html",
+       "publisher": "stocktitan.net",
+       "title": "Modular Medical slashes share count to keep Nasdaq listing"
+      },
+      {
+       "id": "69cc1ea9dcf7c26bbed63883",
+       "headline": "In February, the company announced plans for a reverse stock split that would allow it to continue to trade on the Nasdaq after being warned of possible delisting.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "noodles.com",
+       "published_at": "2026-03-25T22:53:56",
+       "url": "https://www.restaurantbusinessonline.com/operations/noodles-companys-store-closures-boosting-restaurants-remain",
+       "publisher": "restaurantbusinessonline.com",
+       "title": "Noodles & Company's store closures are boosting the restaurants that remain"
+      },
+      {
+       "id": "69c8109c8ce0757f4940cccb",
+       "headline": "In February, the company announced plans for a reverse stock split that would allow it to continue to trade on the Nasdaq after being warned of possible delisting.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "noodles.com",
+       "published_at": "2026-03-25T22:53:56",
+       "url": "http://www.restaurantbusinessonline.com/operations/noodles-companys-store-closures-boosting-restaurants-remain",
+       "publisher": "restaurantbusinessonline.com",
+       "title": "Noodles & Company's store closures are boosting the restaurants that remain"
+      },
+      {
+       "id": "69c441f3516feee34003b4e8",
+       "headline": "TruGolf Holdings, Inc. (NASDAQ: TRUG), today announced a 1-for-10 reverse split of its Class A common stock.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "trugolf.com",
+       "published_at": "2026-03-25T13:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69c427daaeca06e4513a6745",
+       "headline": "Curative Biotechnology, Inc. (OTC: CUBTD) (“Curative” or the “Company”), a development-stage biomedical company focused on novel treatments for degenerative eye diseases, today announced a reverse stock split (“Reverse Stock Split”) of its common stock at a ratio of 1-for-150.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "curativebiotech.com",
+       "published_at": "2026-03-23T23:05:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 43,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjMgMjM6MDU6MDAiLCJpIjoiNjljNDI3ZGFhZWNhMDZlNDUxM2E2NzQ1IiwiZG0iOiJjdXJhdGl2ZWJpb3RlY2guY29tIiwiZXQiOiJjb21wYW55X2Fubm91bmNlbWVudCIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "company_announcement": 43
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.387,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 7 event(s)"
+     ],
+     "request_seconds": 4.39
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "split",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "split",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 32,
+     "carrying": 32,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 3,
+       "share": 9.38
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 23,
+       "share": 71.88
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 2,
+       "share": 6.25
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 4,
+       "share": 12.5
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 3,
+       "share": 9.38
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 29,
+       "share": 90.62
+      }
+     ],
+     "negative_to_positive_ratio": 0.103,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.14,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 7,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 7,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 6,
+        "fair_pos": 1,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 11,
+       "negative": 2,
+       "neutral": 0,
+       "positive": 9,
+       "negative_share": 18.18,
+       "positive_share": 81.82,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 0,
+        "slight_pos": 8,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 7,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 6,
+       "negative_share": 14.29,
+       "positive_share": 85.71,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 4,
+        "fair_pos": 0,
+        "very_pos": 2,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 7,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 7,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 5,
+        "fair_pos": 1,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.615,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.621
+    }
+   }
+  }
+ ]
+}

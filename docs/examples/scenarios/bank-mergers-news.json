@@ -1,0 +1,806 @@
+{
+ "slug": "bank-mergers-news",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:06Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "ma"
+     ],
+     "q": "bank",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "bank",
+      "match": "any",
+      "event_type": [
+       "ma"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 113,
+       "by_type": {
+        "ma": 113
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 114,
+       "by_type": {
+        "ma": 114
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 121,
+       "by_type": {
+        "ma": 121
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 125,
+       "by_type": {
+        "ma": 125
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 129,
+       "by_type": {
+        "ma": 129
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 179,
+       "by_type": {
+        "ma": 179
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 131,
+       "by_type": {
+        "ma": 131
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 125,
+       "by_type": {
+        "ma": 125
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 178,
+       "by_type": {
+        "ma": 178
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 165,
+       "by_type": {
+        "ma": 165
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 170,
+       "by_type": {
+        "ma": 170
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 138,
+       "by_type": {
+        "ma": 138
+       }
+      }
+     ],
+     "totals": {
+      "events": 1688,
+      "articles": 1080,
+      "companies": 923,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "ma": 1688
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.085,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.088
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "ma"
+     ],
+     "q": "bank",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "bank",
+      "event_type": [
+       "ma"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f9da23713680636ef03729",
+       "headline": "The bank has signed a binding agreement to acquire Worldline’s 51% stake in ANZ Worldline for an enterprise value of A$89m, giving it complete control of the business it helped establish with the French payments group in 2022.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "anz.com.au",
+       "published_at": "2026-04-30T17:03:56",
+       "url": "https://paymentsindustryintelligence.com/anz-takes-full-control-of-venture-with-worldline/",
+       "publisher": "paymentsindustryintelligence.com",
+       "title": "ANZ takes full control of venture with Worldline"
+      },
+      {
+       "id": "6a2ea92883fc01faba2420c2",
+       "headline": "LCL's acquisition of the Milleis Group, composed of Milleis Bank and its subsidiaries Milleis Vie, Cholet Dupont Oudart and Cholet Dupont Asset Management, was immediately followed by LCL's divestment of the Milleis Life Insurance Company to Crédit Agricole Assurances.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "lcl.fr",
+       "published_at": "2026-04-30T16:33:00",
+       "url": "https://fr.finance.yahoo.com/actualites/credit-agricole-lcl-cr%C3%A9dit-agricole-163300926.html",
+       "publisher": "fr.finance.yahoo.com",
+       "title": "CREDIT AGRICOLE SA : LCL et Crédit Agricole Assurances finalisent l’acquisition du Groupe Milleis et consolident leur stratégie patrimoniale"
+      },
+      {
+       "id": "69f9d9daa088760d34c2cdd4",
+       "headline": "Federal Bank has entered into an agreement with Standard Chartered Bank India to acquire the British lender’s select portfolio of credit card business for an undisclosed sum.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "federalbank.co.in",
+       "published_at": "2026-04-30T10:40:44",
+       "url": "https://www.newindianexpress.com/business/2026/Apr/30/federal-bank-snaps-up-stacs-credit-card-biz",
+       "publisher": "newindianexpress.com",
+       "title": "Federal Bank snaps up StaC’s credit card biz"
+      },
+      {
+       "id": "69f8a5eb8937ef12fc0ad530",
+       "headline": "The Board of Directors of Federal Bank, at its meeting held on April 30, 2026, has approved that the bank proceed to enter into a deed of assignment with Standard Chartered Bank, India, whereby the bank would acquire a select portfolio of retail credit cards from SCB India.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "federalbank.co.in",
+       "published_at": "2026-04-30T10:35:27",
+       "url": "https://www.outlookbusiness.com/corporate/federal-bank-skips-deutsche-bank-deal-picks-up-stancharts-credit-card-portfolio-instead",
+       "publisher": "outlookbusiness.com",
+       "title": "Federal Bank Skips Deutsche Bank Deal, Picks Up StanChart's Credit Card Portfolio Instead – Outlook Business"
+      },
+      {
+       "id": "69f9dcdda088760d34c53b78",
+       "headline": "Today announced it has successfully completed the sale of its majority stake in Novo Banco, S.A. (“novobanco” or “the bank”), Portugal’s fourth-largest bank, to BPCE",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "novobanco.pt",
+       "published_at": "2026-04-30T10:01:44",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8840a8937ef12fc090c85",
+       "headline": "Following discussions announced in December 2025, BNP Paribas announced an agreement to sell to Holmarcom Finance Company its 67% majority stake in the Moroccan Bank for Trade and Industry (BMCI).",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "holmarcom.ma",
+       "published_at": "2026-04-30T06:00:00",
+       "url": "https://tradingsat.com/bnp-paribas-acta-FR0000131104/actualites/bnp-paribas-acta-bnp-paribas-vend-la-bmci-a-holmarcom-au-maroc-1161786.html",
+       "publisher": "tradingsat.com",
+       "title": "Bnp paribas act.a : BNP Paribas vend la BMCI à Holmarcom au Maroc"
+      },
+      {
+       "id": "6a2a7849c37f6c5e66bfddd9",
+       "headline": "BNP Paribas and Holmarcom Finance Company have concluded an agreement concerning the sale by BNP Paribas to HFC of its full 67% majority stake in the Moroccan Bank for Trade and Industry (BMCI).",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "holmarcom.ma",
+       "published_at": "2026-04-29T17:15:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a2aaed2c37f6c5e66e4afc3",
+       "headline": "Sidley is representing digital finance company OppFi Inc. (NYSE: OPFI) in its US$130 million agreement to acquire BNCCORP, Inc. (OTCQX: BNCC) and its subsidiary, BNC National Bank.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "bnccorp.com",
+       "published_at": "2026-04-29T16:57:11",
+       "url": "https://www.sidley.com/ja/newslanding/newsannouncements/2026/04/sidley-represents-oppfi-in-its-acquisition-of-bncc-and-bnc-national-bank",
+       "publisher": "sidley.com",
+       "title": "Sidley Represents OppFi In Its Acquisition of BNCC and BNC National Bank | ニュース | Sidley Austin LLP"
+      },
+      {
+       "id": "69f230a3c6105443aa5f164e",
+       "headline": "MTN Nigeria Communications Plc has unveiled plans to sell a 60 percent stake in its fintech subsidiaries MoMo Payment Service Bank and Y’ello Digital Financial Services to MTN Group in a N152.06 billion deal.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "mtn.com",
+       "published_at": "2026-04-29T14:34:35",
+       "url": "https://thewillnews.com/mtn-nigeria-plans-n152bn-fintech-stake-sale-to-parent-company-retains-40-percent-holding/",
+       "publisher": "thewillnews.com",
+       "title": "MTN Nigeria Plans N152bn Fintech Stake Sale to Parent Company, Retains 40 Percent Holding"
+      },
+      {
+       "id": "69f2305027117df83f96248c",
+       "headline": "MTN Nigeria has announced it is selling a 60% majority stake in its fintech subsidiaries, MoMo Payment Service Bank and Y’ello Digital Financial Services, to its parent company, MTN Group, for ₦152 billion.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "mtn.com",
+       "published_at": "2026-04-29T14:31:11",
+       "url": "https://innovation-village.com/mtn-group-tightens-grip-on-nigerias-fintech-business-as-it-centralises-africa-payments-strategy/",
+       "publisher": "innovation-village.com",
+       "title": "MTN Group Tightens Grip on Nigeria’s Fintech Business as It Centralises Africa Payments Strategy - Innovation Village | Technology, Product Reviews, Business"
+      },
+      {
+       "id": "69f23011c6105443aa5ec8ec",
+       "headline": "Angola is the most advanced target with Equity moving to acquire a majority stake in an undisclosed Angolan bank in 2026, having reprioritized after regulatory friction in Ethiopia...",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "equitygroupholdings.com",
+       "published_at": "2026-04-29T13:51:44",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f22e4d27117df83f9540d6",
+       "headline": "MTN Nigeria Communications Plc has announced plans to sell a 60% stake in its fintech subsidiaries, MoMo Payment Service Bank and Y’ello Digital Financial Services (YDF), to MTN Group in a N152.06 billion transaction.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "mtn.com",
+       "published_at": "2026-04-29T13:10:58",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a2a761e963d76f4afcd57fe",
+       "headline": "The National Bank for Agriculture and Rural Development (NABARD) has acquired equity stake in 24×7 Moneyworks Consulting Pvt. Ltd, a next-generation agri-fintech venture.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "nabard.org",
+       "published_at": "2026-04-29T11:15:59",
+       "url": "https://www.global-agriculture.com/investment-startups/nabard-acquires-10-stake-in-agri-fintech-startup-24x7-moneyworks-consulting-pvt-ltd-to-boost-rural-credit-digitization/",
+       "publisher": "global-agriculture.com",
+       "title": "NABARD Acquires 10% Stake in Agri-Fintech Startup 24x7 Moneyworks Consulting Pvt. Ltd. to boost Rural Credit Digitization"
+      },
+      {
+       "id": "6a0b01b3636c977421398265",
+       "headline": "OppFi Inc. today announced it has signed a definitive agreement to acquire BNCCORP, Inc. and its wholly owned subsidiary, BNC National Bank, in a cash and stock transaction valued at approximately $130 million.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "bnccorp.com",
+       "published_at": "2026-04-29T11:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1cfc3a5706a322e135d10",
+       "headline": "MTN Nigeria has announced plans for its parent company, MTN Group, to acquire a 60 percent equity stake in its fintech subsidiaries, MoMo Payment Service Bank and Y’ello Digital Financial Services, in a transaction valued at N95.5 billion.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "mtn.com",
+       "published_at": "2026-04-29T09:05:46",
+       "url": "https://brandspurng.com/2026/04/29/mtn-group-to-acquire-60-percent-stake-in-momo-and-yello-digital-in-n95-5-billion-fintech-deal/",
+       "publisher": "brandspurng.com",
+       "title": "MTN Group To Acquire 60 Percent Stake In MoMo And Y’ello Digital In N95.5 Billion Fintech Deal - Brand Spur"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 651,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjkgMDk6MDU6NDYiLCJpIjoiNjlmMWNmYzNhNTcwNmEzMjJlMTM1ZDEwIiwiZG0iOiJtdG4uY29tIiwiZXQiOiJtYSIsInJvIjoiYWNxdWlyZXIifQ",
+     "by_type": {
+      "ma": 651
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.272,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.274
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "ma"
+     ],
+     "q": "bank",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "bank",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "ma"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 842,
+     "carrying": 841,
+     "carrier_share_pct": 99.88,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 5,
+       "share": 0.59
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 52,
+       "share": 6.18
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 40,
+       "share": 4.76
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 334,
+       "share": 39.71
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 106,
+       "share": 12.6
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 301,
+       "share": 35.79
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 3,
+       "share": 0.36
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 57,
+       "share": 6.78
+      },
+      {
+       "group": "neutral",
+       "count": 40,
+       "share": 4.76
+      },
+      {
+       "group": "positive",
+       "count": 744,
+       "share": 88.47
+      }
+     ],
+     "negative_to_positive_ratio": 0.077,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.1,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 208,
+       "negative": 21,
+       "neutral": 9,
+       "positive": 178,
+       "negative_share": 10.1,
+       "positive_share": 85.58,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 20,
+        "none": 9,
+        "slight_pos": 68,
+        "fair_pos": 23,
+        "very_pos": 87,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 216,
+       "negative": 11,
+       "neutral": 14,
+       "positive": 191,
+       "negative_share": 5.09,
+       "positive_share": 88.43,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 0,
+        "slight_neg": 9,
+        "none": 14,
+        "slight_pos": 80,
+        "fair_pos": 30,
+        "very_pos": 81,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 220,
+       "negative": 11,
+       "neutral": 9,
+       "positive": 200,
+       "negative_share": 5.0,
+       "positive_share": 90.91,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 10,
+        "none": 9,
+        "slight_pos": 97,
+        "fair_pos": 30,
+        "very_pos": 70,
+        "extreme_pos": 3
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 197,
+       "negative": 14,
+       "neutral": 8,
+       "positive": 175,
+       "negative_share": 7.11,
+       "positive_share": 88.83,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 13,
+        "none": 8,
+        "slight_pos": 89,
+        "fair_pos": 23,
+        "very_pos": 63,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.565,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.571
+    }
+   }
+  }
+ ]
+}

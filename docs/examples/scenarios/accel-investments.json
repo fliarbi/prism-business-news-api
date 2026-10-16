@@ -1,0 +1,3073 @@
+{
+ "slug": "accel-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:24Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Accel",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "accel"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 506,
+      "deals_with_amount": 460,
+      "deals_without_amount": 46,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 33087469600.0,
+      "median_amount_usd": 17000000.0,
+      "largest_amount_usd": 2300000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 35,
+       "deals_with_amount": 33,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3835020000.0,
+       "median_amount_usd": 26500000.0,
+       "largest_amount_usd": 900000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 37,
+       "deals_with_amount": 36,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3123004000.0,
+       "median_amount_usd": 18576000.0,
+       "largest_amount_usd": 900000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 32,
+       "deals_with_amount": 28,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4941664000.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 30,
+       "deals_with_amount": 25,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1632088000.0,
+       "median_amount_usd": 11000000.0,
+       "largest_amount_usd": 900000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 62,
+       "deals_with_amount": 59,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2297593000.0,
+       "median_amount_usd": 17604000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 57,
+       "deals_with_amount": 55,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2237042000.0,
+       "median_amount_usd": 16000000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 33,
+       "deals_with_amount": 31,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 6009251200.0,
+       "median_amount_usd": 12500000.0,
+       "largest_amount_usd": 2300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 26,
+       "deals_with_amount": 22,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2753720000.0,
+       "median_amount_usd": 58860000.0,
+       "largest_amount_usd": 1296000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 45,
+       "deals_with_amount": 41,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1119520000.0,
+       "median_amount_usd": 14000000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 52,
+       "deals_with_amount": 46,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 1559725000.0,
+       "median_amount_usd": 11000000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 63,
+       "deals_with_amount": 54,
+       "deals_without_amount": 9,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 3441922400.0,
+       "median_amount_usd": 34000000.0,
+       "largest_amount_usd": 550000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 34,
+       "deals_with_amount": 30,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3420260000.0,
+       "median_amount_usd": 14500000.0,
+       "largest_amount_usd": 1512000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.114,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.118
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Accel",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "accel"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "dc73719cf984b487",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": "Series D",
+       "amount_usd": 2300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2300000000.0,
+       "valuation": 29300000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "AI coding startup Anysphere completed a $2.3 billion Series D funding round on Thursday, valuing the company at $29.3 billion. Accel and Coatue co-led the round, with substantial investments from tech giants like Nvidia and Google.",
+       "published_at": "2025-11-14T16:09:22",
+       "coverage_count": 2,
+       "article_ids": [
+        "693168fa657e62559bf212e8",
+        "698dc0678d29a990b6dc6e9b"
+       ],
+       "article_id": "693168fa657e62559bf212e8"
+      },
+      {
+       "id": "cdc545b9a34e4e81",
+       "company_name": "cursor",
+       "domain": "cursor.com",
+       "round_type": "Series D",
+       "amount_usd": 2300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2300000000.0,
+       "valuation": 29300000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "scaling compute, deepening integrations, expanding enterprise accounts",
+       "source_sentence": "Cursor has vaulted into the top tier of private AI companies after securing a massive $2.3 billion Series D at a $29.3 billion valuation.",
+       "published_at": "2025-11-13T22:15:57",
+       "coverage_count": 3,
+       "article_ids": [
+        "6931960c4b1bcf7fdbf20d91",
+        "69319937a12f2e382cf22a5b",
+        "69baeba40623092a924ad5cb"
+       ],
+       "article_id": "6931960c4b1bcf7fdbf20d91"
+      },
+      {
+       "id": "db279d59cb6a918d",
+       "company_name": "Thinking Machines Lab",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "servicenow",
+         "domain": "servicenow.com",
+         "amount": null
+        },
+        {
+         "name": "cisco",
+         "domain": "cisco.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI safety",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Develop trustworthy AI systems and launch products beyond current models",
+       "source_sentence": "Thinking Machines Lab has raised an unprecedented $2 billion early-stage funding round led by Andreessen Horowitz.",
+       "published_at": "2025-07-15T23:22:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0dd74570f9983661eba6f"
+       ],
+       "article_id": "68d0dd74570f9983661eba6f"
+      },
+      {
+       "id": "ca10cfcfd5985b86",
+       "company_name": "thinking machines",
+       "domain": "thinkingmachin.es",
+       "round_type": null,
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "servicenow",
+         "domain": "servicenow.com",
+         "amount": null
+        },
+        {
+         "name": "cisco",
+         "domain": "cisco.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Now, she’s back in the spotlight with a jaw-dropping $2 billion raise for her new AI startup, Thinking Machines.",
+       "published_at": "2025-07-15T20:18:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0e838dc3d3099e62b48e3"
+       ],
+       "article_id": "68d0e838dc3d3099e62b48e3"
+      },
+      {
+       "id": "e680ce6faa871af3",
+       "company_name": "helsing",
+       "domain": "helsing.ai",
+       "round_type": null,
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "saab",
+         "domain": "saab.com",
+         "amount": null
+        }
+       ],
+       "sector": "Defence Technology",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "AI systems for national security",
+       "source_sentence": "Helsing has raised over €1.4 billion, achieving unicorn-plus status with a valuation around €3-4 billion in recent rounds backed by General Catalyst, Accel and Saab.",
+       "published_at": "2026-04-06T11:16:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bc0e9b322e6b3ea30c3d"
+       ],
+       "article_id": "69e2bc0e9b322e6b3ea30c3d"
+      },
+      {
+       "id": "d02ad099ddad12ed",
+       "company_name": "trade republic",
+       "domain": "traderepublic.com",
+       "round_type": "secondary",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13500000000.0,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": 12500000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Lingotto Innovation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "aglaé",
+         "domain": "design-aglae.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        }
+       ],
+       "sector": "digital savings platform",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "Berlin, 17. December 2025 (PM) – YPOG has provided comprehensive legal advice to Trade Republic Bank GmbH in the context of a secondary round of around EUR 1.2 billion, which will give the company a valuation of EUR 12.5 billion. The transaction was led by the Founders Fund on the investor side, including Wellington Management, GIC, Fidelity Management & Research Company, Khosla Ventures, Lingotto Innovation and Aglaé, the technology-oriented investment company of the Arnault family. The transaction supports Trade Republic's long-term strategy of building Europe's leading digital savings platform. The transaction will increase existing investors such as Founders Fund, Sequoia, Accel, TCV",
+       "published_at": "2025-12-18T16:27:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "695e9e3f097627ca647b4ce3",
+        "69648fde7c478026206f6397"
+       ],
+       "article_id": "69648fde7c478026206f6397"
+      },
+      {
+       "id": "de05fe8fae6553c0",
+       "company_name": "trade republic",
+       "domain": "traderepublic.com",
+       "round_type": "secondary transaction",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13500000000.0,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": 12500000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Lingotto Innovation",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Digital banking",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Long-term growth plan to build Europe’s main digital bank and savings platform.",
+       "source_sentence": "Investors have carried out a secondary transaction of 1.2 billion euros that values the company at 12.5 billion euros.",
+       "published_at": "2025-12-17T11:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "6988ae78afe26ce3df6780e6",
+        "6991c61b0833076bb991ea36",
+        "69971985feeb41363fa43cac",
+        "699740a570e6b99bb4c246ae"
+       ],
+       "article_id": "6991c61b0833076bb991ea36"
+      },
+      {
+       "id": "de4f9c5b257a466d",
+       "company_name": "trade republic",
+       "domain": "traderepublic.com",
+       "round_type": "Secondary",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13500000000.0,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": 12500000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Provides liquidity to existing shareholders and strengthens balance sheet.",
+       "source_sentence": "The company valued a secondary transaction of 1.2 billion euros at 12.5 billion euros.",
+       "published_at": "2025-12-17T07:55:24",
+       "coverage_count": 3,
+       "article_ids": [
+        "69648921a55051cde5681155",
+        "698e19ca8d29a990b6e2f16a",
+        "69e848a49baafc73566c3895"
+       ],
+       "article_id": "69e848a49baafc73566c3895"
+      },
+      {
+       "id": "756c3395509e5015",
+       "company_name": "trade republic",
+       "domain": "traderepublic.com",
+       "round_type": "secondary share sale",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13500000000.0,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": 12500000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "wellington",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Arnault family investment arm",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Agnelli family investment arm",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "thrive",
+         "domain": "thrivenextgen.com",
+         "amount": null
+        },
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        },
+        {
+         "name": "project a",
+         "domain": "project-a.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "Early investors in the Berlin-based group would sell €1.2bn in shares to other backers, including Thiel’s fund and venture capital group Sequoia, the company said on Wednesday.",
+       "published_at": "2025-12-17T05:00:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bbbffd8b79b55c82773843",
+        "69bca8d772dfd2e900a43831"
+       ],
+       "article_id": "69bbbffd8b79b55c82773843"
+      },
+      {
+       "id": "02f53b2fe04252c4",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": "Series C",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anysphere, the AI research lab behind AI coding tool Cursor, raised a sizable $900 million Series C round that values the company at nearly $10 billion. The round was led by Thrive Capital with participation from Andreessen Horowitz, Accel, and DST Global.",
+       "published_at": "2025-08-27T17:01:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "68b054613b014c087aed53ed",
+        "69bb0226b54f2a520bb54b80"
+       ],
+       "article_id": "68b054613b014c087aed53ed"
+      },
+      {
+       "id": "73c15ef06238accf",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": "investment round",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": 9900000000.0,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 9900000000.0,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Creator of AI-powered coding assistant Cursor. Startup has surpassed $500M ARR; round led by Thrive Capital with participation from Andreessen Horowitz, Accel, and DST Global.",
+       "published_at": "2025-06-14T17:14:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc42a3f111344e7e7c3654"
+       ],
+       "article_id": "69cc42a3f111344e7e7c3654"
+      },
+      {
+       "id": "b646b3c82778cec6",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": "Series C",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI coding assistant platform",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "The fresh capital will enable Anysphere to further accelerate the growth of its AI coding platform and expand its customer base among enterprises looking to boost developer productivity.",
+       "source_sentence": "Anysphere Raises $900M Round to Scale AI Coding Assistant",
+       "published_at": "2025-06-09T23:02:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c58629a4534b9023885ac3"
+       ],
+       "article_id": "68c58629a4534b9023885ac3"
+      },
+      {
+       "id": "414d07339b494077",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": null,
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": 9000000000.0,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 9000000000.0,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI coding tools",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Cursor revealed it had attracted $900 million in a fresh round of funding led by Thrive Capital.",
+       "published_at": "2025-05-05T11:06:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb702afb5301c8504034e0"
+       ],
+       "article_id": "69bb702afb5301c8504034e0"
+      },
+      {
+       "id": "62b50d4fe05bfc79",
+       "company_name": "cursor",
+       "domain": "cursor.com",
+       "round_type": null,
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz (a16z)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered coding tools",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Cursor, one of the most popular tools in the segment, has attracted $900 million in a fresh round of funding led by Thrive Capital, as per a report from the rel=&quot;nofollow&quot; href=&quot;https://www.ft.com/content/a7b34d53-a844-4e69-a55c-b9dee9a97dd2&quot;&gt;Financial Times.",
+       "published_at": "2025-05-05T06:36:26",
+       "coverage_count": 11,
+       "article_ids": [
+        "686411ae8882abb7e32cf201",
+        "68ab40622e28036801d805a7",
+        "68d0d7722fbd4282d19d9bea",
+        "68d0e4c965fd12d4142b183e",
+        "68d0ff6dfb0e8d0abe2cb5ca",
+        "694537c01f27fc9ff5a34f77",
+        "69863043514cbd23b5c1fd01",
+        "6986de12dac7b0ca9c621c91",
+        "698e519a8d29a990b6e729f9",
+        "69bca53d6467b30648e29d72",
+        "69efab348a54b8f07c96acf8"
+       ],
+       "article_id": "69863043514cbd23b5c1fd01"
+      },
+      {
+       "id": "fbae5b582efb7ad5",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": null,
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": 9000000000.0,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 9000000000.0,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz (a16z)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Accel Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI-enabled coding platform",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "scale Cursor even further",
+       "source_sentence": "Anysphere, the company behind Cursor, the AI-enabled coding platform, has raised a $900 million investment, led by Thrive Capital, Andreessen Horowitz (a16z), and Accel Ventures, the Financial Times reported on Monday.",
+       "published_at": "2025-05-05T00:00:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "685ccaafe6fd25cb9e76e2fb",
+        "68a176573ff75e010c2a11e8",
+        "6931c3433dac1de1e1f20858",
+        "698e1f7e9ca02490ec07fc30",
+        "6997da945e72b47edd12590c",
+        "69bca619db9ed6b6b93b31d0",
+        "69bcec5fada7f1c36000e977",
+        "69efa9baa84b609af2b22d96"
+       ],
+       "article_id": "69efa9baa84b609af2b22d96"
+      },
+      {
+       "id": "1f9830775e4979d2",
+       "company_name": "true anomaly",
+       "domain": "trueanomaly.space",
+       "round_type": "Series D",
+       "amount_usd": 650000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 650000000.0,
+       "valuation": 2200000000.0,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "riot ventures",
+         "domain": "riot.vc",
+         "amount": null
+        },
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        },
+        {
+         "name": "atreides",
+         "domain": "atreides.io",
+         "amount": null
+        },
+        {
+         "name": "g squared",
+         "domain": "gsquared.com",
+         "amount": null
+        },
+        {
+         "name": "the private shares fund",
+         "domain": "privatesharesfund.com",
+         "amount": null
+        },
+        {
+         "name": "vaneck",
+         "domain": "vaneck.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "acme capital",
+         "domain": "acme.vc",
+         "amount": null
+        },
+        {
+         "name": "Space VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Meritech Capital",
+         "domain": "meritechcap.com",
+         "amount": null
+        },
+        {
+         "name": "Narya",
+         "domain": "naryavc.com",
+         "amount": null
+        },
+        {
+         "name": "645 ventures",
+         "domain": "645ventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Space technology",
+       "country": "USA",
+       "city": "Centennial",
+       "use_of_funds": "Dedicated to securing the space domain",
+       "source_sentence": "True Anomaly today announced its $650 million Series D funding round.",
+       "published_at": "2026-04-28T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69f0e98b45272de32e8c6336",
+        "69f1c957399b489398dfa657",
+        "69f1c98c1e3933a6dd8f0bca",
+        "69f22ee627117df83f957741",
+        "69f8ac4443843dd771d28f71"
+       ],
+       "article_id": "69f1c957399b489398dfa657"
+      },
+      {
+       "id": "d909b31f0b16d9a1",
+       "company_name": "helsing",
+       "domain": "helsing.ai",
+       "round_type": "D-series",
+       "amount_usd": 648000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "prima materia",
+         "domain": "prima-materia.com",
+         "amount": null
+        },
+        {
+         "name": "Lightspeed Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "plural",
+         "domain": "plural.sh",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "saab",
+         "domain": "saab.com",
+         "amount": null
+        },
+        {
+         "name": "BTD & MSD Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Defence/AI",
+       "country": "Europe",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Helsing, European start-up specializing in embedded artificial intelligence (AI) for defence systems announced Tuesday that it had raised 600 million euros, a strategic step in the face of an increasing demand for digital sovereignty in Europe. This D-series fund-raising (very advanced stage) for the company that supplies drones attack to Ukraine was conducted by the investment company Prima Materia, with the participation of investors such as Lightspeed Ventures, Accel, Plural, General Catalyst, Saab, BTD & MSD Partners.",
+       "published_at": "2025-06-17T07:53:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c98136682ef7f3f76539f4",
+        "69cc439af038a023dcc3360f"
+       ],
+       "article_id": "69c98136682ef7f3f76539f4"
+      },
+      {
+       "id": "13c350d59dd80e40",
+       "company_name": "wonder",
+       "domain": "wonder.com",
+       "round_type": "Series (?)",
+       "amount_usd": 600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "new enterprise associates",
+         "domain": "nea.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "forerunner",
+         "domain": "withforerunner.com",
+         "amount": null
+        },
+        {
+         "name": "Amex Ventures",
+         "domain": "amexventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "food delivery/food hall",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "to continue accelerating the expansion of our physical retail locations",
+       "source_sentence": "Lore in a LinkedIn post Tuesday said there was participation from major existing shareholders, led by New Enterprise Associates, Accel, Google Ventures, Forerunner, as well as further investment from strategic investors, including Amex Ventures.",
+       "published_at": "2025-05-07T12:15:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe2505e01ff0caa628c13e"
+       ],
+       "article_id": "68fe2505e01ff0caa628c13e"
+      },
+      {
+       "id": "761a77791cbd6b55",
+       "company_name": "wonder",
+       "domain": "wonder.com",
+       "round_type": null,
+       "amount_usd": 600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 600000000.0,
+       "valuation": 7000000000.0,
+       "investors": [
+        {
+         "name": "new enterprise associates",
+         "domain": "nea.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "forerunner",
+         "domain": "withforerunner.com",
+         "amount": null
+        },
+        {
+         "name": "Amex Ventures",
+         "domain": "amexventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "food delivery",
+       "country": null,
+       "city": null,
+       "use_of_funds": "ramp up the expansion of its food hall locations",
+       "source_sentence": "Wonder has secured $600 million in funding to support its ongoing growth, CEO Marc Lore wrote in a LinkedIn post Tuesday.",
+       "published_at": "2025-05-06T16:29:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "698dd2728d29a990b6ddb8ed",
+        "69bc1127d95eacb99a4c3fec"
+       ],
+       "article_id": "69bc1127d95eacb99a4c3fec"
+      },
+      {
+       "id": "49f779fbd1a3ab61",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5500000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5500000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Legora Raises $550M in Series D Funding to Expand AI in Legal Operations",
+       "published_at": "2026-03-10T22:32:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cc41766e63f1d240550f7c",
+        "69f8854b43843dd771d132fb"
+       ],
+       "article_id": "69cc41766e63f1d240550f7c"
+      },
+      {
+       "id": "e3c5dcecdaa89d4f",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish start-up Legora has received 550 million dollars in a new round of financing and is now valued at 5.55 billion dollars.",
+       "published_at": "2026-03-10T14:50:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a7c57f3a572cf4abb9ee"
+       ],
+       "article_id": "69e2a7c57f3a572cf4abb9ee"
+      },
+      {
+       "id": "08695f9c2a01bfe5",
+       "company_name": "Legora",
+       "domain": "legora.com",
+       "round_type": null,
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish start-up Legora has received 550 million dollars in a new round of financing and is now valued at 5.55 billion dollars.",
+       "published_at": "2026-03-10T14:50:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03639cca027fb5990b7749"
+       ],
+       "article_id": "6a03639cca027fb5990b7749"
+      },
+      {
+       "id": "6ce6a2310c2e5ecc",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "FirstMark Capital",
+         "domain": "firstmarkcap.com",
+         "amount": null
+        },
+        {
+         "name": "sands capital",
+         "domain": "sandscapital.com",
+         "amount": null
+        },
+        {
+         "name": "starwood capital",
+         "domain": "starwoodcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal Tech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "fuel rapid U.S. expansion",
+       "source_sentence": "Today, we’re thrilled to announce that Menlo Ventures has joined Legora’s $550 million Series D, alongside Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Redpoint Ventures, Y Combinator, Alkeon Capital, Bain Capital, Firstmark Capital, Sands Capital, and Starwood Capital.",
+       "published_at": "2026-03-10T12:00:00",
+       "coverage_count": 20,
+       "article_ids": [
+        "69c3a285c8a71dc7ae87a085",
+        "69c3a479836293942ef6807a",
+        "69c3a5563653d7fe6e7e3f03",
+        "69c3a6f16d029f77a1d3fa36",
+        "69c3a897f7c4e6f108e480ec",
+        "69cbd09bbf09457014d4cbc0",
+        "69cbd09f7aa9ae690c974fff",
+        "69cbd1e02e41fb6223042ccd",
+        "69cc1ddb1e1adbe011d85dd1",
+        "69cc3f8eda8c239a52930b7f",
+        "69e2836c90d9a716b4b7c27c",
+        "69e6468e2461615d5f46c48a",
+        "69e882157bb1410d4c87ec9e",
+        "69e8e3179baafc7356de01b8",
+        "69f87fff43843dd771ce435f",
+        "69f88276bbf1d31455976b0a",
+        "69f8851bbbf1d3145598e7c3",
+        "69f8854b43843dd771d132fb",
+        "69f8a84cbbf1d314559a3e99",
+        "69f8aae6bbf1d314559a5d72"
+       ],
+       "article_id": "69e2836c90d9a716b4b7c27c"
+      },
+      {
+       "id": "4b64e4225b27a432",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "Series E",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 540000000.0,
+       "valuation": 6000000000.0,
+       "investors": [
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand product offerings, pursue strategic acquisitions, hire additional talent, and further strengthen presence in existing and new global markets",
+       "source_sentence": "Cyera, which helps enterprises protect sensitive information while adopting artificial intelligence, has secured $540m in a Series E funding round.",
+       "published_at": "2025-06-12T10:30:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a21f94d3f481f3d6c903",
+        "698f9b648d29a990b6ffcae2"
+       ],
+       "article_id": "6988a21f94d3f481f3d6c903"
+      },
+      {
+       "id": "5acdcab8c009f746",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "late-stage",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 540000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire",
+         "domain": "sapphiretechnologies.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark",
+         "domain": "sparkadvisors.com",
+         "amount": null
+        }
+       ],
+       "sector": "data security",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": "expand its platform and fuel growth efforts",
+       "source_sentence": "Cyera is on a tear. The Israeli data security startup just pulled in $540 million in a late-stage funding round, more than doubling its valuation to $6 billion in just seven months.",
+       "published_at": "2025-06-11T15:15:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9ae8f93ec9fed387f5c97"
+       ],
+       "article_id": "68d9ae8f93ec9fed387f5c97"
+      },
+      {
+       "id": "4636097b040a3fd3",
+       "company_name": "chaos industries",
+       "domain": "getchaos.com",
+       "round_type": null,
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 510000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "Defense technology",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "Accelerate development and manufacturing of sensing and timing technologies for defense applications and expand distributed sensing portfolio",
+       "source_sentence": "CHAOS Industries has raised $510 million in new funding to expand development and manufacturing of its sensing and timing technologies for defense applications.",
+       "published_at": "2025-11-14T09:00:45",
+       "coverage_count": 5,
+       "article_ids": [
+        "693128f2f64e38e6c2f21b6c",
+        "69313e9ec8bec8b2f9f220bb",
+        "69451b431334aa0ca6a34c05",
+        "694af6cfedd4d8e72e75c96a",
+        "6989bff894d3f481f3ebaf78"
+       ],
+       "article_id": "69451b431334aa0ca6a34c05"
+      },
+      {
+       "id": "e98cbc53cba11aea",
+       "company_name": "supabase",
+       "domain": "supabase.com",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": "Software, Backend Platform",
+       "country": null,
+       "city": null,
+       "use_of_funds": "global expansion, enhanced AI integrations, and employee liquidity programs",
+       "source_sentence": "Supabase is seeking to raise about $500 million in the fundraising round, although the amount could change.",
+       "published_at": "2026-04-03T03:33:01",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e27eec7f3a572cf4a3fdb8",
+        "69e28205601121844c30295d",
+        "69e8c0995cfa3e5ba5343258"
+       ],
+       "article_id": "69e8c0995cfa3e5ba5343258"
+      },
+      {
+       "id": "c873ba0926704b23",
+       "company_name": "Mind Robotics",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI robotics",
+       "country": "USA",
+       "city": "Palo Alto",
+       "use_of_funds": null,
+       "source_sentence": "Mind Robotics – $500.0M",
+       "published_at": "2026-03-16T08:27:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4844e0667c07f278ba3"
+       ],
+       "article_id": "69c3a4844e0667c07f278ba3"
+      },
+      {
+       "id": "13fa57ae7a4fd33c",
+       "company_name": "Mind Robotics",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": null,
+       "source_sentence": "Mind Robotics raises $500M Series A to automate industrial manufacturing.",
+       "published_at": "2026-03-11T22:40:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd08e6ebaadb4d432a354"
+       ],
+       "article_id": "69cbd08e6ebaadb4d432a354"
+      },
+      {
+       "id": "5b58d6fcd1c60df0",
+       "company_name": "Mind Robotics",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 2000000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Industrial Robotics",
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": "Develop what it calls ‘AI-enabled’ robotic systems",
+       "source_sentence": "Mind Robotics, an industrial robotics lab spun out of the electric vehicle maker Rivian, has raised $500 million in a Series A funding round co-led by venture firms Accel and Andreessen Horowitz.",
+       "published_at": "2026-03-11T16:12:02",
+       "coverage_count": 10,
+       "article_ids": [
+        "69c3a69c9a4470e12400bc24",
+        "69cbd2b6f331a1b39ff76be6",
+        "69cc5de9f111344e7e7dd3ef",
+        "69d1183897bd33d99f6ab6d7",
+        "69d14ed81fc956131346a215",
+        "69e2c56dc1991f786cef9122",
+        "69e854375cfa3e5ba5e8b374",
+        "69e8e2e37bb1410d4cd4accd",
+        "69e8e3387bb1410d4cd4f562",
+        "69e8ec339baafc7356e53afd"
+       ],
+       "article_id": "69cbd2b6f331a1b39ff76be6"
+      },
+      {
+       "id": "d68f1fad8bf36ee4",
+       "company_name": "wayve",
+       "domain": "wayve.ai",
+       "round_type": "Series D",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "air street capital",
+         "domain": "airstreet.com",
+         "amount": null
+        },
+        {
+         "name": "Balderton",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hoxton ventures",
+         "domain": "hoxton.vc",
+         "amount": null
+        },
+        {
+         "name": "Phoenix Court",
+         "domain": "phoenixcourt.co",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence, Autonomous Vehicles",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Wayve said it has signed a letter of intent with Nvidia to evaluate a $500 million strategic investment in the U.K. startup’s next funding round.",
+       "published_at": "2025-09-19T20:55:54",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d96c7942a4b594744b05d8",
+        "69bcbc0341af9e92ac977e58"
+       ],
+       "article_id": "68d96c7942a4b594744b05d8"
+      },
+      {
+       "id": "276476eb042e87e2",
+       "company_name": "perplexity",
+       "domain": "perplexity.ai",
+       "round_type": "Series B? (not specified)",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Search",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "This upcoming round will be led by Accel and follows a string of major hauls. ... Accel is set to lead the new round, which is expected to total $500 million.",
+       "published_at": "2025-05-13T13:21:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d950084ea4015b0110f80a"
+       ],
+       "article_id": "68d950084ea4015b0110f80a"
+      },
+      {
+       "id": "3271d99d0cc741dd",
+       "company_name": "perplexity ai",
+       "domain": "perplexity.ai",
+       "round_type": "late-stage raise",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": 500000000.0
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Perplexity AI is in late-stage talks to raise $500 million at a $14 billion valuation, a source familiar with the situation confirmed to CNBC on Monday.",
+       "published_at": "2025-05-12T16:38:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d1062b469a108b2b2d3228"
+       ],
+       "article_id": "68d1062b469a108b2b2d3228"
+      },
+      {
+       "id": "56f9fdb0c0306029",
+       "company_name": "perplexity ai",
+       "domain": "perplexity.ai",
+       "round_type": "late-stage",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Perplexity AI is in late-stage talks to raise $500 million at a $14 billion valuation.",
+       "published_at": "2025-05-12T07:08:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "6843042c210ca338eb37208a"
+       ],
+       "article_id": "6843042c210ca338eb37208a"
+      },
+      {
+       "id": "b536c03d771b29b1",
+       "company_name": "RadixArk",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": 400000000.0
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "RadixArk secured $400 million in seed investment led by Accel.",
+       "published_at": "2026-02-13T23:46:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcd4e5d0887d68fa469dd4"
+       ],
+       "article_id": "69bcd4e5d0887d68fa469dd4"
+      },
+      {
+       "id": "e11ea977be7c5372",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "Series F",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI security",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "accelerate product innovation, expand globally, and meet surging demand from Fortune 500 customers",
+       "source_sentence": "Enterprise AI security leader Cyera has secured a massive $400 million Series F funding round, bringing its total financing to over $1.7 billion.",
+       "published_at": "2026-01-08T22:59:21",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988b8f194d3f481f3d8347e",
+        "6988e46f94d3f481f3db76a2"
+       ],
+       "article_id": "6988b8f194d3f481f3d8347e"
+      },
+      {
+       "id": "cbdd3513f372ef1e",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "Series F",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": 9.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire",
+         "domain": "sapphiretechnologies.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark",
+         "domain": "sparkadvisors.com",
+         "amount": null
+        }
+       ],
+       "sector": "data security",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Extend its data and access platform into AI security, covering how AI is built, used, and controlled within large organizations; support product development, global expansion, and partnerships",
+       "source_sentence": "Cyera, the industry’s leading AI and data security company, announced a $400 million Series F funding round, bringing its total funding to over $1.7 billion.",
+       "published_at": "2026-01-08T12:59:17",
+       "coverage_count": 12,
+       "article_ids": [
+        "698678ae069c05cbe27bbc9f",
+        "6986d44fca3bd326c77dd21a",
+        "6988bcc594d3f481f3d87777",
+        "698d1aaa8d29a990b6d01ae6",
+        "6991c064c659adee968350fb",
+        "69bc043f8d57adc3f4d8ac89",
+        "69bc3739650bbd41e03de4a8",
+        "69c9cfedb68ade25f5c8cc35",
+        "69cc5abf62898d9e03cf51da",
+        "69e8e1469baafc7356dc880e",
+        "6a2aae90c37f6c5e66e4804d",
+        "6a2ae613963d76f4af1a205f"
+       ],
+       "article_id": "6986d44fca3bd326c77dd21a"
+      },
+      {
+       "id": "ed07f1103723c28a",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": null,
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": 9000000000.0,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": 9000000000.0,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": 400000000.0
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "cybersecurity",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Blackstone (BX) is leading a new $400 million investment in Cyera, a private cybersecurity startup based in Israel. According to a Wall Street Journal report, the deal values Cyera at $9 billion.",
+       "published_at": "2025-12-17T09:35:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb5715c9a954196de1c9a7"
+       ],
+       "article_id": "69bb5715c9a954196de1c9a7"
+      },
+      {
+       "id": "60f6b5cc897107d5",
+       "company_name": "armis security",
+       "domain": "armis.com",
+       "round_type": "Pre‑IPO financing",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "one equity partners",
+         "domain": "oneequity.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Brookfield Technology Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Prepare for 2026 listing",
+       "source_sentence": null,
+       "published_at": "2025-11-12T22:28:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931bbdf217f91e5e4f21f78"
+       ],
+       "article_id": "6931bbdf217f91e5e4f21f78"
+      },
+      {
+       "id": "e5e6145e73371bac",
+       "company_name": "filevine",
+       "domain": "filevine.com",
+       "round_type": "Series E & F",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Halo Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Meritech Capital",
+         "domain": "meritechcap.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone",
+         "domain": "stepstone.com",
+         "amount": null
+        },
+        {
+         "name": "run ventures",
+         "domain": "run.ventures",
+         "amount": null
+        },
+        {
+         "name": "Album Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "legal tech",
+       "country": "United States",
+       "city": "Salt Lake City",
+       "use_of_funds": "support continued product innovation and growth in the legal software market",
+       "source_sentence": "Filevine, a Salt Lake City-based legal tech startup, has raised $400 million in funding across two rounds",
+       "published_at": "2025-10-02T23:18:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f72e6a17f4f9d43d2c4aaa"
+       ],
+       "article_id": "68f72e6a17f4f9d43d2c4aaa"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 506,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTAtMDIgMjM6MTg6NDQiLCJrIjoiMTY1NjU5NTA2NzUyMjE0MjA5NzIiLCJhIjo0MDAwMDAwMDAuMH0",
+     "totals": {
+      "deals": 506,
+      "deals_with_amount": 460,
+      "deals_without_amount": 46,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 33087469600.0,
+      "median_amount_usd": 17000000.0,
+      "largest_amount_usd": 2300000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.333,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.336
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Accel",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "accel"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "3d96511ab860efb1",
+       "company_name": "dreamteam",
+       "domain": "dreamteam.gg",
+       "round_type": "Series A",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Together Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI‑CRM",
+       "country": "India",
+       "city": "Chennai",
+       "use_of_funds": "product development, engineering, go‑to‑market expansion, AI capability enhancement, global customer acquisition",
+       "source_sentence": "Chennai-based AI startup Dreamteam is in advanced discussions to raise around $40 million in its Series A funding round, with Accel and Together Fund expected to lead the investment, according to sources.",
+       "published_at": "2026-04-30T10:36:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f883f543843dd771d068de",
+        "69f9d4e77b2d589e844b24a5"
+       ],
+       "article_id": "69f9d4e77b2d589e844b24a5"
+      },
+      {
+       "id": "5828ee823ac21640",
+       "company_name": "ctruh",
+       "domain": "ctruh.com",
+       "round_type": "Seed",
+       "amount_usd": 2500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "inflection point ventures",
+         "domain": "ipventures.in",
+         "amount": null
+        },
+        {
+         "name": "Avinya Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "india accelerator",
+         "domain": "indiaaccelerator.co",
+         "amount": null
+        },
+        {
+         "name": "Founder's Avenue",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "anthill ventures",
+         "domain": "anthillventures.com",
+         "amount": null
+        },
+        {
+         "name": "lvx",
+         "domain": "maraba.lvx.com.tr",
+         "amount": null
+        },
+        {
+         "name": "Vivek Sinha",
+         "domain": "http://www.linkedin.com/in/sinhavs",
+         "amount": null
+        },
+        {
+         "name": "Shivakumar Ganesan",
+         "domain": "http://www.linkedin.com/in/shivku",
+         "amount": null
+        }
+       ],
+       "sector": "deep-tech",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "advancing its R&D initiatives, product development of its proprietary browser-native 3D engine and VersaAI generative AI platform and scaling its Go-To-Market (GTM) efforts across the United States and the UAE.",
+       "source_sentence": "Ctruh, the deep-tech company building the infrastructure layer for the spatial internet, has raised $2.5 Million in a Seed funding round led by Inflection Point Ventures. The round also saw participation from Avinya Ventures, India Accelerator, Founder's Avenue, Anthill Ventures, and LVX, alongside angel investors Vivek Sinha (Founder & CEO, Emversity; Ex-COO, Unacademy) and Shivakumar Ganesan (Founder & CEO, Exotel).",
+       "published_at": "2026-04-30T07:34:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f87fc243843dd771ce1f89"
+       ],
+       "article_id": "69f87fc243843dd771ce1f89"
+      },
+      {
+       "id": "227b48f37ae4ae53",
+       "company_name": "ctruh",
+       "domain": "ctruh.com",
+       "round_type": "Seed",
+       "amount_usd": 2500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "inflection point ventures",
+         "domain": "ipventures.in",
+         "amount": null
+        },
+        {
+         "name": "Avinya Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "india accelerator",
+         "domain": "indiaaccelerator.co",
+         "amount": null
+        },
+        {
+         "name": "Founder's Avenue",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "anthill ventures",
+         "domain": "anthillventures.com",
+         "amount": null
+        },
+        {
+         "name": "lvx",
+         "domain": "maraba.lvx.com.tr",
+         "amount": null
+        },
+        {
+         "name": "Vivek Sinha",
+         "domain": "http://www.linkedin.com/in/sinhavs",
+         "amount": null
+        },
+        {
+         "name": "Shivakumar Ganesan",
+         "domain": "http://www.linkedin.com/in/shivku",
+         "amount": null
+        }
+       ],
+       "sector": "XR",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "R&D and product development of the proprietary browser‑native 3D engine and VersaAI generative AI platform, and scaling go‑to‑market efforts across the United States and the UAE.",
+       "source_sentence": "Ctruh, the deep-tech company building the infrastructure layer for the spatial internet, has raised $2.5 Million in a Seed funding round led by Inflection Point Ventures.",
+       "published_at": "2026-04-30T07:05:19",
+       "coverage_count": 6,
+       "article_ids": [
+        "69f880408937ef12fc06f1c1",
+        "69f8835f8937ef12fc08b05a",
+        "69f88464bbf1d31455987ce8",
+        "69f8a5158937ef12fc0accda",
+        "69f8ad31bbf1d314559a7671",
+        "69f9d4f37b2d589e844b2da0"
+       ],
+       "article_id": "69f880408937ef12fc06f1c1"
+      },
+      {
+       "id": "a76602573de546d8",
+       "company_name": "Oolka",
+       "domain": "oolka.in",
+       "round_type": "Series A",
+       "amount_usd": 14000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        },
+        {
+         "name": "Vidit Aatrey",
+         "domain": "https://www.linkedin.com/in/vidit-aatrey-a3639120",
+         "amount": null
+        },
+        {
+         "name": "Sanjeev Barnwal",
+         "domain": "https://www.linkedin.com/in/sanjeev-barnwal-4099341b",
+         "amount": null
+        }
+       ],
+       "sector": "Digital Payments",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen AI engineering capabilities, expand product beyond credit use cases, and deepen partnerships with banks and NBFCs",
+       "source_sentence": "Oolka has raised $14 million in a Series A funding round led by Accel, with participation from existing investors Lightspeed and Z47.",
+       "published_at": "2026-04-30T04:26:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f882a6bbf1d3145597845a",
+        "69f9da3c7b2d589e844eed2c"
+       ],
+       "article_id": "69f882a6bbf1d3145597845a"
+      },
+      {
+       "id": "06c565906641b888",
+       "company_name": "sahi",
+       "domain": "sahi.com.tr",
+       "round_type": "Series B",
+       "amount_usd": 33000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 33000000.0,
+       "valuation": 200000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech / Trading",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": "The fresh capital will support product development, user growth, and expansion in India’s fast-growing trading market.",
+       "source_sentence": "Sahi Raises $33 Mn Series B",
+       "published_at": "2026-04-29T12:18:40",
+       "coverage_count": 4,
+       "article_ids": [
+        "69f2295b27117df83f9406df",
+        "69f229c427117df83f9439e5",
+        "69f8809d8937ef12fc072dd3",
+        "69f886468937ef12fc0aa3c6"
+       ],
+       "article_id": "69f229c427117df83f9439e5"
+      },
+      {
+       "id": "f14040932a5528c4",
+       "company_name": "sahi",
+       "domain": "sahi.com.tr",
+       "round_type": "Series B",
+       "amount_usd": 33000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 33000000.0,
+       "valuation": 200000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "wealthtech",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "enhance its technology stack, expand its product suite into the broader wealthtech segment, and scale its user base",
+       "source_sentence": "Trading platform Sahi has raised $33 Mn (around ₹312 Cr) in its Series B funding round led by Accel, with participation from Elevation Capital.",
+       "published_at": "2026-04-29T06:01:44",
+       "coverage_count": 7,
+       "article_ids": [
+        "69f1c9ac399b489398dfd0ac",
+        "69f1ca6d399b489398e041b3",
+        "69f22e05c6105443aa5def23",
+        "69f883c243843dd771d04d1a",
+        "69f884a343843dd771d0c7ea",
+        "69f9d4677b2d589e844ad42f",
+        "69f9d4c0a088760d34bf313a"
+       ],
+       "article_id": "69f1c9ac399b489398dfd0ac"
+      },
+      {
+       "id": "a820cdbb7c530caf",
+       "company_name": "sahi",
+       "domain": "sahi.com.tr",
+       "round_type": null,
+       "amount_usd": 33000000.0,
+       "amount_flag": null,
+       "valuation_usd": 200000000.0,
+       "currency": "USD",
+       "amount": 33000000.0,
+       "valuation": 200000000.0,
+       "investors": [
+        {
+         "name": "Accel Growth",
+         "domain": null,
+         "amount": 20000000.0
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "accel india",
+         "domain": "accelindia.com",
+         "amount": null
+        }
+       ],
+       "sector": "Stock trading platform",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "build new products across margin trade funding, commodity trading and mutual funds",
+       "source_sentence": "Vaz told ET that the company will use the capital to build new products across margin trade funding, commodity trading and mutual funds.",
+       "published_at": "2026-04-29T00:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9db8a7b2d589e844fe15c"
+       ],
+       "article_id": "69f9db8a7b2d589e844fe15c"
+      },
+      {
+       "id": "1f9830775e4979d2",
+       "company_name": "true anomaly",
+       "domain": "trueanomaly.space",
+       "round_type": "Series D",
+       "amount_usd": 650000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 650000000.0,
+       "valuation": 2200000000.0,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "riot ventures",
+         "domain": "riot.vc",
+         "amount": null
+        },
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        },
+        {
+         "name": "atreides",
+         "domain": "atreides.io",
+         "amount": null
+        },
+        {
+         "name": "g squared",
+         "domain": "gsquared.com",
+         "amount": null
+        },
+        {
+         "name": "the private shares fund",
+         "domain": "privatesharesfund.com",
+         "amount": null
+        },
+        {
+         "name": "vaneck",
+         "domain": "vaneck.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "acme capital",
+         "domain": "acme.vc",
+         "amount": null
+        },
+        {
+         "name": "Space VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Meritech Capital",
+         "domain": "meritechcap.com",
+         "amount": null
+        },
+        {
+         "name": "Narya",
+         "domain": "naryavc.com",
+         "amount": null
+        },
+        {
+         "name": "645 ventures",
+         "domain": "645ventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Space technology",
+       "country": "USA",
+       "city": "Centennial",
+       "use_of_funds": "Dedicated to securing the space domain",
+       "source_sentence": "True Anomaly today announced its $650 million Series D funding round.",
+       "published_at": "2026-04-28T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69f0e98b45272de32e8c6336",
+        "69f1c957399b489398dfa657",
+        "69f1c98c1e3933a6dd8f0bca",
+        "69f22ee627117df83f957741",
+        "69f8ac4443843dd771d28f71"
+       ],
+       "article_id": "69f1c957399b489398dfa657"
+      },
+      {
+       "id": "da7e6e55773ab7b0",
+       "company_name": "PvX Partners",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 10500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "T-Accelerate Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Z Venture Capital",
+         "domain": "zvc.vc",
+         "amount": null
+        },
+        {
+         "name": "drive by draftkings",
+         "domain": "drivebydraftkings.com",
+         "amount": null
+        },
+        {
+         "name": "play ventures",
+         "domain": "playventures.vc",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        }
+       ],
+       "sector": "mobile gaming and app ecosystems",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support team expansion and increase deal capacity",
+       "source_sentence": "PvX Partners has raised $10.5 million in a Series A round as the firm scales its cohort-based financing model for consumer apps.",
+       "published_at": "2026-04-24T09:40:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69efa927a84b609af2b1c04a",
+        "69f0e47d836d28f995cb8073",
+        "69f0e67e45272de32e8c35f7",
+        "6a036a157b84f58d6f73d387"
+       ],
+       "article_id": "69efa927a84b609af2b1c04a"
+      },
+      {
+       "id": "54c77a20f47eca5d",
+       "company_name": "astor",
+       "domain": "astorim.com",
+       "round_type": "seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "monashees",
+         "domain": "monashees.com.br",
+         "amount": null
+        },
+        {
+         "name": "goodwater",
+         "domain": "goodwater.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Y Combinator accelerator",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI, financial services",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "accelerate growth rate",
+       "source_sentence": "Astor, a startup founded by two Brazilians in the United States, has just lifted a $5 million seed round led by Monashees.",
+       "published_at": "2026-04-23T14:37:53",
+       "coverage_count": 2,
+       "article_ids": [
+        "69ea37a68266d9339996acb4",
+        "69efab30a84b609af2b34bf0"
+       ],
+       "article_id": "69ea37a68266d9339996acb4"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 194,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjMgMTQ6Mzc6NTMiLCJrIjoiNjEwODk4NTcwMTUxMDg1OTM1NyJ9",
+     "totals": {
+      "deals": 194,
+      "deals_with_amount": 171,
+      "deals_without_amount": 23,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 9282427400.0,
+      "median_amount_usd": 15875000.0,
+      "largest_amount_usd": 1512000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.564,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.586
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,2964 @@
+{
+ "slug": "gic-portfolio",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:29Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "GIC",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "gic"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 525,
+      "deals_with_amount": 474,
+      "deals_without_amount": 51,
+      "deals_amount_excluded": 6,
+      "sum_amount_usd": 186875813568.37,
+      "median_amount_usd": 12180000.0,
+      "largest_amount_usd": 25000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 37,
+       "deals_with_amount": 37,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1250505200.0,
+       "median_amount_usd": 6078000.0,
+       "largest_amount_usd": 450000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 35,
+       "deals_with_amount": 33,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 879545280.0,
+       "median_amount_usd": 5598000.0,
+       "largest_amount_usd": 202300000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 38,
+       "deals_with_amount": 30,
+       "deals_without_amount": 8,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 16426922000.0,
+       "median_amount_usd": 18000000.0,
+       "largest_amount_usd": 10000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 44,
+       "deals_with_amount": 41,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 833463016.0,
+       "median_amount_usd": 8700000.0,
+       "largest_amount_usd": 115000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 46,
+       "deals_with_amount": 45,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 25677139696.0,
+       "median_amount_usd": 11900000.0,
+       "largest_amount_usd": 13000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 57,
+       "deals_with_amount": 48,
+       "deals_without_amount": 9,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 13522775490.76,
+       "median_amount_usd": 12000000.0,
+       "largest_amount_usd": 6700000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 41,
+       "deals_with_amount": 36,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 23392083584.56,
+       "median_amount_usd": 12375000.0,
+       "largest_amount_usd": 18400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 42,
+       "deals_with_amount": 40,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 12070997200.0,
+       "median_amount_usd": 25007600.0,
+       "largest_amount_usd": 4000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 39,
+       "deals_with_amount": 33,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 61919651242.74,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 25000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 55,
+       "deals_with_amount": 46,
+       "deals_without_amount": 9,
+       "deals_amount_excluded": 4,
+       "sum_amount_usd": 30245144754.31,
+       "median_amount_usd": 12500000.0,
+       "largest_amount_usd": 18200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 46,
+       "deals_with_amount": 44,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 5289871000.0,
+       "median_amount_usd": 30000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 45,
+       "deals_with_amount": 41,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2177590000.0,
+       "median_amount_usd": 19908500.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.069,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.071
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "GIC",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "gic"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "e7fade47b4a0d18c",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": null,
+       "amount_usd": 25000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": 1500000000.0
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": 1500000000.0
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": 1500000000.0
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "venture capital firms",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "the venture capital giant is participating in a round led by Singapore sovereign wealth fund GIC and US investor Coatue, each of which is contributing $1.5 billion.",
+       "published_at": "2026-01-19T03:22:21",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a4483757765ee82620dc",
+        "698cf5059ca02490ecf1fc3c"
+       ],
+       "article_id": "6988a4483757765ee82620dc"
+      },
+      {
+       "id": "f70d2a978aff7c92",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series F",
+       "amount_usd": 25000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": 1500000000.0
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": 1500000000.0
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "SINGAPORE’S GIC, venture capital firm Sequoia and US investor Coatue will take part in a funding round for Anthropic which aims to raise US$25 billion at a US$350 billion valuation",
+       "published_at": "2026-01-19T01:19:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "69860901dac7b0ca9c5dce60"
+       ],
+       "article_id": "69860901dac7b0ca9c5dce60"
+      },
+      {
+       "id": "a41d7dc532cddae9",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": null,
+       "amount_usd": 20000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000000.0,
+       "currency": "USD",
+       "amount": 20000000000.0,
+       "valuation": 350000000000.0,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "g squared",
+         "domain": "gsquared.com",
+         "amount": null
+        },
+        {
+         "name": "factorial funds",
+         "domain": "factorialfunds.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anthropic, one of the fastest‑growing AI start‑ups, is preparing to raise around $20 billion from venture capital firms and other major investors, the Financial Times reported.",
+       "published_at": "2026-01-28T09:02:49",
+       "coverage_count": 8,
+       "article_ids": [
+        "69866fa3514cbd23b5c34ef3",
+        "69bae228ef75d9246559a743",
+        "69bb2f3988dbabbbb7c89205",
+        "69bb702988a452392c44415b",
+        "69bc69bcdded76ae100f1ba0",
+        "69bc8b0b6c5e9c4eedf2beee",
+        "69e2988bbd7b10565a365fba",
+        "69e997e9bdd09a23d08f0886"
+       ],
+       "article_id": "69bb702988a452392c44415b"
+      },
+      {
+       "id": "9b8fca700d24023c",
+       "company_name": "nextdecade",
+       "domain": "next-decade.com",
+       "round_type": "project financing",
+       "amount_usd": 18400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 18400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": 18400000000.0
+        }
+       ],
+       "sector": "LNG",
+       "country": "USA",
+       "city": "Brownsville",
+       "use_of_funds": "construction of liquefaction trains at RGLNG facility",
+       "source_sentence": "Sidley is representing GIC in connection with its commitment to NextDecade Corporation’s (NextDecade) (NASDAQ: NEXT) Phase 1, US$18.4 billion LNG project.",
+       "published_at": "2025-11-25T00:45:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2915bdc480588dc9a6795"
+       ],
+       "article_id": "69e2915bdc480588dc9a6795"
+      },
+      {
+       "id": "54dff64290263b45",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": null,
+       "amount_usd": 18200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000000.0,
+       "currency": "USD",
+       "amount": 18200000000.0,
+       "valuation": 350000000000.0,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": 200000000.0
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue-management.com",
+         "amount": 1000000000.0
+        },
+        {
+         "name": "Singapore’s GIC",
+         "domain": null,
+         "amount": 1000000000.0
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": 1000000000.0
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The asset manager is planning to invest some $200m in Anthropic’s current round, which values the start-up at $350bn, the news service reported, citing unnamed people.",
+       "published_at": "2026-02-11T09:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bafe95eec96a73430070d1"
+       ],
+       "article_id": "69bafe95eec96a73430070d1"
+      },
+      {
+       "id": "792db899137442b1",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series C (or unspecified)",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Iconiq Capital, Lightspeed, and Fidelity led the round, with Qatar Investment Authority participating after CEO reversed stance on Middle Eastern funding. The four-year-old San Francisco-based AI startup raised $13 billion in one of the largest venture rounds ever (TechCrunch). Singapore’s GIC jumped in. So did Qatar Investment Authority.",
+       "published_at": "2025-09-02T21:12:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84c2b7bb1410d4c664fde"
+       ],
+       "article_id": "69e84c2b7bb1410d4c664fde"
+      },
+      {
+       "id": "ef24ca482edec3ad",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series ?",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management and Research Co.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Singapore GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anthropic has closed a deal to raise $13 billion from investors in a new funding round that nearly triples its valuation to $183 billion, including dollars raised – a larger-than-expected haul that makes the artificial intelligence company one of the most valuable startups in the world.",
+       "published_at": "2025-09-02T17:36:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a575e3cfcce8916b1195"
+       ],
+       "article_id": "69c3a575e3cfcce8916b1195"
+      },
+      {
+       "id": "85027786508893c2",
+       "company_name": "TenneT Germany",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 10260000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 9500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apg",
+         "domain": "apg.nl",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Norges Bank Investment Management",
+         "domain": "nbim.no",
+         "amount": null
+        }
+       ],
+       "sector": "Energy infrastructure",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "Facilitate transmission of predominantly renewable electricity",
+       "source_sentence": "Combined, the three investors will inject 9.5 billion euro of new equity until 2029 and will collectively own 46 percent of the company.",
+       "published_at": "2025-09-24T10:05:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e28cb390d9a716b4b9683d"
+       ],
+       "article_id": "69e28cb390d9a716b4b9683d"
+      },
+      {
+       "id": "85c3c8b0b35b7467",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series",
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Coatue Management",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "GIC sovereign wealth fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Anthropic has signed a term sheet for a $10 billion funding round at an approximate $350 billion valuation, led by Coatue Management and Singapore’s GIC sovereign wealth fund, with broader investor participation also expected.",
+       "published_at": "2026-01-09T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a2f13ce5e8458c2f9e04c"
+       ],
+       "article_id": "698a2f13ce5e8458c2f9e04c"
+      },
+      {
+       "id": "bb71a6684479309f",
+       "company_name": "xai",
+       "domain": "x.ai",
+       "round_type": "equity",
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "Strategic equity investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI software",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "continued development of cutting-edge AI solutions, including one of the world’s largest data centers and its flagship Grok platform",
+       "source_sentence": "Morgan Stanley confirmed Tuesday that the company has secured $10 billion in total funding to expand Grok AI and build massive GPU infrastructure.",
+       "published_at": "2025-07-01T13:45:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c4378a51a522a9082da58a"
+       ],
+       "article_id": "68c4378a51a522a9082da58a"
+      },
+      {
+       "id": "bd98ded8b38c4704",
+       "company_name": "nextdecade",
+       "domain": "next-decade.com",
+       "round_type": "Positive FID & Financing",
+       "amount_usd": 6700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Rio Grande LNG Train 5, LLC",
+         "domain": null,
+         "amount": 3590000000.0
+        },
+        {
+         "name": "Rio Grande LNG Train 5, LLC",
+         "domain": null,
+         "amount": 500000000.0
+        },
+        {
+         "name": "nextdecade",
+         "domain": "next-decade.com",
+         "amount": 1290000000.0
+        },
+        {
+         "name": "global infrastructure partners",
+         "domain": "global-infra.com",
+         "amount": 1290000000.0
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": 1290000000.0
+        },
+        {
+         "name": "mubadala",
+         "domain": "mubadala.com",
+         "amount": 1290000000.0
+        }
+       ],
+       "sector": "Energy",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Project costs for Train 5 and related infrastructure",
+       "source_sentence": "To fully fund the expected costs for Train 5 and related infrastructure, the Company successfully closed on approximately $6.7 billion in committed financing, including:",
+       "published_at": "2025-10-22T03:18:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe2e769f5ecb55fa280e57"
+       ],
+       "article_id": "68fe2e769f5ecb55fa280e57"
+      },
+      {
+       "id": "3c42aaa6622e6000",
+       "company_name": "nextdecade",
+       "domain": "next-decade.com",
+       "round_type": "Committed Financing",
+       "amount_usd": 6700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Unnamed debt investors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "global infrastructure partners",
+         "domain": "global-infra.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "mubadala",
+         "domain": "mubadala.com",
+         "amount": null
+        }
+       ],
+       "sector": "Energy",
+       "country": "USA",
+       "city": "Brownsville",
+       "use_of_funds": "Construction of Train 5 liquefaction train and associated infrastructure",
+       "source_sentence": "NextDecade has reportedly secured the full amount in committed financing, which consists of a mix of debt and equity.",
+       "published_at": "2025-10-20T14:10:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe2fdf9f5ecb55fa2836dc"
+       ],
+       "article_id": "68fe2fdf9f5ecb55fa2836dc"
+      },
+      {
+       "id": "13bc7b179d4ae1eb",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "Series K",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 134000000000.0,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": 134000000000.0,
+       "investors": [
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "Singapore Temasek",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Macquarie Capital entities",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Singapore GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "wcm investment management",
+         "domain": "wcminvest.com",
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers’ Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "Sands Capital & Wellington Management",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Data & AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "United States data & artificial intelligence (AI) company Databrick has raised $5 billion funding at $134 billion valuation, and with additional $2 billion debt funding.",
+       "published_at": "2026-02-10T15:16:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbb81351c35210b7b8632d"
+       ],
+       "article_id": "69bbb81351c35210b7b8632d"
+      },
+      {
+       "id": "3df67027922a3dd6",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": null,
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 170000000000.0,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": 170000000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": 1000000000.0
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "Singapore’s GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "amazon",
+         "domain": "amazon.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI talent, infrastructure, and advanced model training",
+       "source_sentence": "Artificial intelligence startup Anthropic is reportedly in advanced talks to raise up to $5 billion in fresh funding, a move that would catapult its valuation to a staggering $170 billion, according to sources familiar with the matter.",
+       "published_at": "2025-07-30T10:09:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "6997f9e3d24b4781ec06df51"
+       ],
+       "article_id": "6997f9e3d24b4781ec06df51"
+      },
+      {
+       "id": "fd4c9ad5248d0ba6",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "Venture",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone group",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "infinitum",
+         "domain": "goinfinitum.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan Asset Management",
+         "domain": "jpmorgan.am",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "new enterprise associates",
+         "domain": "nea.com",
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers’ Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Strike Capital",
+         "domain": "strikecapital.net",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "winslow capital",
+         "domain": "winslowcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Analytics, Artificial Intelligence (AI), Data Storage, Information Technology, Machine Learning",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Round: Venture",
+       "published_at": "2026-01-16T09:27:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d77be9ca02490ecfba63d"
+       ],
+       "article_id": "698d77be9ca02490ecfba63d"
+      },
+      {
+       "id": "eb54bbd31d8a28a5",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "L-series",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 134000000000.0,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": 134000000000.0,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jp morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Databricks announces a $4 billion L-series release, bringing its value to $134 billion.",
+       "published_at": "2025-12-17T13:07:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb55a551c35210b7b76336"
+       ],
+       "article_id": "69bb55a551c35210b7b76336"
+      },
+      {
+       "id": "450bc5985083b40e",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "Series L",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 134000000000.0,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": 134000000000.0,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan Asset Management",
+         "domain": "jpmorgan.am",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "winslow capital",
+         "domain": "winslowcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data and AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Build AI apps and agents, provide liquidity for employees, support future AI acquisitions, deepen AI research",
+       "source_sentence": "SAN FRANCISCO, Dec. 16, 2025 /PRNewswire/ — Databricks , the Data and AI company, today announced it is raising a >$4 billion Series L investment, valuing the company at $134 billion.",
+       "published_at": "2025-12-16T13:30:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69451294ba9489700ca33ab2",
+        "698889885302bdff25877413",
+        "6989b98294d3f481f3eb32c8",
+        "69bb558b8dcdeb577ebba461",
+        "69e88e285cfa3e5ba50cd1bb"
+       ],
+       "article_id": "69bb558b8dcdeb577ebba461"
+      },
+      {
+       "id": "d2eed7296ef08e55",
+       "company_name": "nextdecade",
+       "domain": "next-decade.com",
+       "round_type": "Project Financing",
+       "amount_usd": 2571000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2571000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "global infrastructure partners",
+         "domain": "global-infra.com",
+         "amount": 1285000000.0
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": 1285000000.0
+        },
+        {
+         "name": "mubadala",
+         "domain": "mubadala.com",
+         "amount": 1285000000.0
+        },
+        {
+         "name": "nextdecade",
+         "domain": "next-decade.com",
+         "amount": 1285000000.0
+        }
+       ],
+       "sector": "LNG",
+       "country": "United States",
+       "city": "Brownsville",
+       "use_of_funds": "Train 5 LNG facility",
+       "source_sentence": "US$2.571 billion joint venture, including aggregate US$1.285 billion of equity commitments from Global Infrastructure Partners (a part of BlackRock), GIC, Mubadala Investment Company, and US$1.285 billion of equity commitments from NextDecade;",
+       "published_at": "2025-10-20T04:13:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe236246325a41ca2893ad"
+       ],
+       "article_id": "68fe236246325a41ca2893ad"
+      },
+      {
+       "id": "555ccf8bf0685f85",
+       "company_name": "nitel",
+       "domain": "nitelusa.com",
+       "round_type": "acquisition",
+       "amount_usd": 2500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "china unicom",
+         "domain": "chinaunicom.com",
+         "amount": null
+        },
+        {
+         "name": "minerva",
+         "domain": "minerva-plm.com",
+         "amount": null
+        },
+        {
+         "name": "GiCell",
+         "domain": "gicellwireless.com",
+         "amount": null
+        }
+       ],
+       "sector": "telecom",
+       "country": "Nigeria",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Nigeria’s former state telecoms monopoly, Nitel, has received a $2.5bn offer for a majority stake from a consortium comprising of China Unicom, Minerva of Dubai and a small Nigerian telecoms group- GiCell.",
+       "published_at": "2026-02-10T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dbdf4fa9753e1ddc07e249"
+       ],
+       "article_id": "69dbdf4fa9753e1ddc07e249"
+      },
+      {
+       "id": "f172295299248420",
+       "company_name": "vulcan energy",
+       "domain": "v-er.eu",
+       "round_type": null,
+       "amount_usd": 2376000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hochtief",
+         "domain": "hochtief.com",
+         "amount": 169000000.0
+        },
+        {
+         "name": "Institutional Investors",
+         "domain": null,
+         "amount": 398000000.0
+        },
+        {
+         "name": "Retail Investors",
+         "domain": null,
+         "amount": 17300000.0
+        },
+        {
+         "name": "Government Agencies",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Commercial Banks",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Strategic Industrial Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Lithium and renewable energy",
+       "country": "Germany",
+       "city": "Landau",
+       "use_of_funds": "Construction and development of Phase One Lionheart lithium and renewable energy project",
+       "source_sentence": "Secured a comprehensive €2.2 billion ($3.9 billion) financing package to fund the construction and development of Phase One Lionheart lithium and renewable energy project.",
+       "published_at": "2026-02-03T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69893b5394d3f481f3e1bfd8",
+        "69e8b8639baafc7356baaba6"
+       ],
+       "article_id": "69e8b8639baafc7356baaba6"
+      },
+      {
+       "id": "fdcbff902dac998b",
+       "company_name": "shield ai",
+       "domain": "shield.ai",
+       "round_type": "Series G",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 12700000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 12700000000.0,
+       "investors": [
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "JPMorgan Chase's Strategic Investment Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "snowpoint ventures",
+         "domain": "snowpoint.vc",
+         "amount": null
+        },
+        {
+         "name": "riot ventures",
+         "domain": "riot.vc",
+         "amount": null
+        },
+        {
+         "name": "Blackstone-managed funds",
+         "domain": null,
+         "amount": 500000000.0
+        }
+       ],
+       "sector": "Defense technology/AI",
+       "country": "United States",
+       "city": "San Diego",
+       "use_of_funds": "Expand AI-powered software and acquire simulation software maker Aechelon Technology",
+       "source_sentence": "The startup said on Thursday the Series G round was led by Advent International and co‑led by JPMorgan Chase's Strategic Investment Group, with participation from existing investors including Snowpoint Ventures and Riot Ventures.",
+       "published_at": "2026-03-26T14:01:52",
+       "coverage_count": 5,
+       "article_ids": [
+        "69c81317152f93ad885ddbf9",
+        "69c8c0184ca06a20fbc4b356",
+        "69cc43777d31e30c784fca7a",
+        "69e3404233f261aedad8b00b",
+        "69e865939baafc73567de07f"
+       ],
+       "article_id": "69e3404233f261aedad8b00b"
+      },
+      {
+       "id": "110921852419605c",
+       "company_name": "reflection ai",
+       "domain": "reflectionai.ca",
+       "round_type": null,
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8000000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 8000000000.0,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "disruptive",
+         "domain": "disruptive.tech",
+         "amount": null
+        },
+        {
+         "name": "dst",
+         "domain": "dst.com.bn",
+         "amount": null
+        },
+        {
+         "name": "1789",
+         "domain": "1789group.com",
+         "amount": null
+        },
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Eric Yuan",
+         "domain": "https://www.linkedin.com/in/ericsyuan",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "crv",
+         "domain": "crv4all.co.nz",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Reflection AI on Friday raised $2 billion at an $8 billion valuation, surpassing its previous valuation just seven months ago by 15x from $545 million.",
+       "published_at": "2025-10-10T06:12:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f71061017a8a94832be754",
+        "69bc5c098db8b8187dd95be8"
+       ],
+       "article_id": "69bc5c098db8b8187dd95be8"
+      },
+      {
+       "id": "5a10932a0334dc39",
+       "company_name": "reflection ai",
+       "domain": "reflectionai.ca",
+       "round_type": "Series B",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "disruptive",
+         "domain": "disruptive.tech",
+         "amount": null
+        },
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "citi ventures",
+         "domain": "ventures.citi.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "hillspire",
+         "domain": "hillspirellc.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "crv",
+         "domain": "crv4all.co.nz",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Open-source AI",
+       "country": "USA",
+       "city": "Brooklyn",
+       "use_of_funds": "Expand research and development of large-scale AI models",
+       "source_sentence": "Reflection AI raised a colossal $2 billion in a Series B funding round at an $8 billion valuation.",
+       "published_at": "2025-10-09T21:48:39",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f71009017a8a94832bdeb4",
+        "68f72cd96ecd416e342c202d"
+       ],
+       "article_id": "68f72cd96ecd416e342c202d"
+      },
+      {
+       "id": "f4dbe99f949caf4f",
+       "company_name": "celsa",
+       "domain": "celsa.com.co",
+       "round_type": "debt refinancing",
+       "amount_usd": 1944000000.0000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1800000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Strategic Value Partners, LLC and its affiliates (SVP)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Steel manufacturing (green steel)",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Debt and equity refinancing to support operational transformation",
+       "source_sentence": "Celsa has announced the successful completion of its refinancing. As part of the transaction, Celsa is issuing €600m of HoldCo PIK notes, co-led by funds managed by Strategic Value Partners, LLC and its affiliates (together, “SVP”), alongside a €1.2bn issuance of senior secured bonds.",
+       "published_at": "2025-12-10T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69db57d8bfc03f5a7197474f"
+       ],
+       "article_id": "69db57d8bfc03f5a7197474f"
+      },
+      {
+       "id": "e9f19c7517f8d3ef",
+       "company_name": "korea zinc",
+       "domain": "koreazinc.co.kr",
+       "round_type": null,
+       "amount_usd": 1940000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1940000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "US government",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "strategic investors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "korea zinc",
+         "domain": "koreazinc.co.kr",
+         "amount": null
+        }
+       ],
+       "sector": "Metals & Mining",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "to build a smelter in the US for about $7.4 billion",
+       "source_sentence": "Some $1.94 billion of the funding for the smelter will come from venture, consisting of the US government, strategic investors and Korea Zinc.",
+       "published_at": "2025-12-15T11:53:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69451b182eafd489b3a34692"
+       ],
+       "article_id": "69451b182eafd489b3a34692"
+      },
+      {
+       "id": "21653e1d7b8b4dbf",
+       "company_name": "AM Green Ammonia B.V.",
+       "domain": null,
+       "round_type": "investment",
+       "amount_usd": 1750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Gentari Sdn Bhd",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "GIC Holdings Pte Ltd",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "green energy",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Mint previously reported that Malaysia’s Gentari Sdn Bhd and Singapore’s GIC Holdings Pte Ltd plan to invest $1.75 billion in AM Green Ammonia, marking one of the largest energy transition deals in the world.",
+       "published_at": "2026-01-09T00:30:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "6980436a2c1b18d8c285e815"
+       ],
+       "article_id": "6980436a2c1b18d8c285e815"
+      },
+      {
+       "id": "6db3aa839060c96c",
+       "company_name": "vantage data centers",
+       "domain": "vantage-dc.com",
+       "round_type": "equity investment",
+       "amount_usd": 1600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "an affiliate of GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "a wholly owned subsidiary of the Abu Dhabi Investment Authority (ADIA)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "data center",
+       "country": null,
+       "city": null,
+       "use_of_funds": "acquisition of Yondr Group’s 300-megawatt-plus hyperscale data center campus and expansion of Vantage’s Asia Pacific platform",
+       "source_sentence": "Vantage Data Centers has completed a $1.6 billion equity investment into its Asia Pacific platform led by an affiliate of GIC, a global institutional investor, and a wholly owned subsidiary of the Abu Dhabi Investment Authority (ADIA).",
+       "published_at": "2025-11-24T14:31:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931406aee8e57de9bf20917"
+       ],
+       "article_id": "6931406aee8e57de9bf20917"
+      },
+      {
+       "id": "99ad0406a25821b2",
+       "company_name": "vantage data centers",
+       "domain": "vantage-dc.com",
+       "round_type": "Equity investment",
+       "amount_usd": 1600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "an affiliate of GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "a wholly owned subsidiary of the Abu Dhabi Investment Authority",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Data center",
+       "country": "USA, Singapore",
+       "city": null,
+       "use_of_funds": "Capital allocated to the acquisition of Yondr Group’s 300MW+ hyperscale data center campus in Johor, Malaysia.",
+       "source_sentence": "Vantage Data Centers, a leading global provider of hyperscale data center campuses, today announced that it has completed a $1.6 billion equity investment into its Asia-Pacific platform led by an affiliate of GIC, a global institutional investor, and a wholly owned subsidiary of the Abu Dhabi Investment Authority (“ADIA”).",
+       "published_at": "2025-11-24T03:11:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "694516ba2f67a2f73ba3540e"
+       ],
+       "article_id": "694516ba2f67a2f73ba3540e"
+      },
+      {
+       "id": "3bd5a0b72e7ccb43",
+       "company_name": "vantage data centers",
+       "domain": "vantage-dc.com",
+       "round_type": null,
+       "amount_usd": 1600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "adia",
+         "domain": "adia.ae",
+         "amount": null
+        }
+       ],
+       "sector": "Data Center Infrastructure",
+       "country": "Malaysia",
+       "city": "Johor",
+       "use_of_funds": "acquisition of Yondr Group’s 300 MW hyperscale data center campus in Johor, Malaysia",
+       "source_sentence": "Today we announced a $1.6 billion investment to scale our Asia-Pacific platform, led by affiliates of GIC and ADIA, along with the acquisition of Yondr Group’s hyperscale campus in Johor, Malaysia.",
+       "published_at": "2025-09-11T07:22:05",
+       "coverage_count": 3,
+       "article_ids": [
+        "68c5a225d7fe179be1c6cd9b",
+        "68d0e9565421fe0a112b6276",
+        "69bcd75b41245450861ecd7b"
+       ],
+       "article_id": "69bcd75b41245450861ecd7b"
+      },
+      {
+       "id": "b1f73f46fc163481",
+       "company_name": "reelement technologies",
+       "domain": "reelementtech.com",
+       "round_type": null,
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vulcan",
+         "domain": "vulcan.io",
+         "amount": null
+        },
+        {
+         "name": "U.S. Office of Strategic Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Rare earth element processing",
+       "country": "USA",
+       "city": "Marion",
+       "use_of_funds": "Expand purification capacity for light and heavy rare earths and build additional production capacity for rare earth oxides and magnets",
+       "source_sentence": "ReElement’s share of the funding is around $80 million, enabling it to boost capacity for the purification of both light and heavy rare earths.",
+       "published_at": "2025-11-08T13:03:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e641312be6445e4608a75c"
+       ],
+       "article_id": "69e641312be6445e4608a75c"
+      },
+      {
+       "id": "d02ad099ddad12ed",
+       "company_name": "trade republic",
+       "domain": "traderepublic.com",
+       "round_type": "secondary",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13500000000.0,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": 12500000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Lingotto Innovation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "aglaé",
+         "domain": "design-aglae.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        }
+       ],
+       "sector": "digital savings platform",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "Berlin, 17. December 2025 (PM) – YPOG has provided comprehensive legal advice to Trade Republic Bank GmbH in the context of a secondary round of around EUR 1.2 billion, which will give the company a valuation of EUR 12.5 billion. The transaction was led by the Founders Fund on the investor side, including Wellington Management, GIC, Fidelity Management & Research Company, Khosla Ventures, Lingotto Innovation and Aglaé, the technology-oriented investment company of the Arnault family. The transaction supports Trade Republic's long-term strategy of building Europe's leading digital savings platform. The transaction will increase existing investors such as Founders Fund, Sequoia, Accel, TCV",
+       "published_at": "2025-12-18T16:27:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "695e9e3f097627ca647b4ce3",
+        "69648fde7c478026206f6397"
+       ],
+       "article_id": "69648fde7c478026206f6397"
+      },
+      {
+       "id": "de05fe8fae6553c0",
+       "company_name": "trade republic",
+       "domain": "traderepublic.com",
+       "round_type": "secondary transaction",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13500000000.0,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": 12500000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Lingotto Innovation",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Digital banking",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Long-term growth plan to build Europe’s main digital bank and savings platform.",
+       "source_sentence": "Investors have carried out a secondary transaction of 1.2 billion euros that values the company at 12.5 billion euros.",
+       "published_at": "2025-12-17T11:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "6988ae78afe26ce3df6780e6",
+        "6991c61b0833076bb991ea36",
+        "69971985feeb41363fa43cac",
+        "699740a570e6b99bb4c246ae"
+       ],
+       "article_id": "6991c61b0833076bb991ea36"
+      },
+      {
+       "id": "756c3395509e5015",
+       "company_name": "trade republic",
+       "domain": "traderepublic.com",
+       "round_type": "secondary share sale",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13500000000.0,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": 12500000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "wellington",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Arnault family investment arm",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Agnelli family investment arm",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "thrive",
+         "domain": "thrivenextgen.com",
+         "amount": null
+        },
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        },
+        {
+         "name": "project a",
+         "domain": "project-a.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "Early investors in the Berlin-based group would sell €1.2bn in shares to other backers, including Thiel’s fund and venture capital group Sequoia, the company said on Wednesday.",
+       "published_at": "2025-12-17T05:00:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bbbffd8b79b55c82773843",
+        "69bca8d772dfd2e900a43831"
+       ],
+       "article_id": "69bbbffd8b79b55c82773843"
+      },
+      {
+       "id": "0752ec1c51b7caf7",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "Qualified institutional placement",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 100000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "capital group",
+         "domain": "capitalgroup.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        }
+       ],
+       "sector": "Food Delivery, Quick Commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Brand marketing and promotion, technology and cloud infrastructure, quick-commerce fulfilment network expansion, inorganic growth through acquisitions, general corporate purposes",
+       "source_sentence": "Swiggy, the Indian food delivery and quick-commerce company, has raised ₹10,000 crore through a qualified institutions placement, arming itself with fresh capital at a moment when brand visibility, speed and consumer trust are becoming as decisive as logistics in India’s crowded consumer internet market.",
+       "published_at": "2025-12-22T03:01:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cdf159ca02490ecf05d6a"
+       ],
+       "article_id": "698cdf159ca02490ecf05d6a"
+      },
+      {
+       "id": "58919b6983003d8f",
+       "company_name": "azurity pharmaceuticals",
+       "domain": "azurity.com",
+       "round_type": "Continuation fund",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pantheon ventures",
+         "domain": "pantheon.com",
+         "amount": null
+        },
+        {
+         "name": "Audax Strategic Capital",
+         "domain": "audaxstrategiccapital.com",
+         "amount": null
+        },
+        {
+         "name": "asc",
+         "domain": "artisanal-spirits.com",
+         "amount": null
+        }
+       ],
+       "sector": "Pharmaceuticals",
+       "country": "United States",
+       "city": "Woburn",
+       "use_of_funds": "support Azurity’s next phase of growth while offering liquidity to existing LPs",
+       "source_sentence": "QHP Capital has completed a $1.1 billion continuation fund for Azurity Pharmaceuticals, Inc, a Woburn, Massachusetts-based specialty drug maker.",
+       "published_at": "2026-03-19T18:30:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1c64edcd0af9c88569d"
+       ],
+       "article_id": "69cbd1c64edcd0af9c88569d"
+      },
+      {
+       "id": "311287844d4dd915",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "equity",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "canada pension plan investment board",
+         "domain": "cppib.com",
+         "amount": null
+        },
+        {
+         "name": "power corporation of canada",
+         "domain": "powercorporation.com",
+         "amount": null
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "boost firm’s growth",
+       "source_sentence": "Wealthsimple has unveiled an equity round of up to $750 million at a post-money valuation of $10 billion to accelerate the company’s product roadmap.",
+       "published_at": "2025-10-27T13:00:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "698cdefb9ca02490ecf05b61",
+        "69c947f60fe98f3340bd0e2e"
+       ],
+       "article_id": "698cdefb9ca02490ecf05b61"
+      },
+      {
+       "id": "00dc8119db756771",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "Series E Preferred Shares",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Power Corporation",
+         "domain": null,
+         "amount": 100000000.0
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": 100000000.0
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "dragoneer",
+         "domain": "dragoneergrowth.com",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Financial Innovation",
+       "country": "Canada",
+       "city": "Montreal",
+       "use_of_funds": null,
+       "source_sentence": "Power Corporation of Canada \"Power\" announced that it has agreed to subscribe, through its subsidiary Power Financial Corporation, for Class E Preferred Shares in the capital of Wealthsimple Financial Corp. for an aggregate purchase price of $100 million, as part of a financing round of up to $750 million by Wealthsimple.",
+       "published_at": "2025-10-27T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bade37bb3472e5f4c3dc81"
+       ],
+       "article_id": "69bade37bb3472e5f4c3dc81"
+      },
+      {
+       "id": "ef27d24ba9a7bfce",
+       "company_name": "temporal technologies",
+       "domain": "temporal.io",
+       "round_type": "Series D",
+       "amount_usd": 649500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 649500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "amplify partners",
+         "domain": "amplifypartners.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "madrona",
+         "domain": "madrona.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        }
+       ],
+       "sector": "Information Technology, Internet, Open Source, Software",
+       "country": "USA",
+       "city": "Bellevue",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "6c80ae1326097337",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "equity",
+       "amount_usd": 555000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 750000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "power corporation of canada",
+         "domain": "powercorporation.com",
+         "amount": null
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "accelerate product roadmap and support expansion across its investing, spending and credit offerings",
+       "source_sentence": "Wealthsimple, one of Canada’s leading FinTech companies, has announced a significant equity round of up to CAD $750m, propelling its post-money valuation to CAD $10bn.",
+       "published_at": "2025-10-28T16:12:22",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a3dc3757765ee82618e5",
+        "69e8561e9baafc73567493b1"
+       ],
+       "article_id": "6988a3dc3757765ee82618e5"
+      },
+      {
+       "id": "0fdfd35aefce2976",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "Series E",
+       "amount_usd": 555000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7400000000.0,
+       "currency": "CAD",
+       "amount": 750000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "power corporation of canada",
+         "domain": "powercorporation.com",
+         "amount": null
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "Wealthsimple plans to use this funding to accelerate its product roadmap across investing, spending, and credit, and pursue strategic opportunities to expand its platform.",
+       "source_sentence": "Toronto-based FinTech firm Wealthsimple has announced that it has signed a Series E round of up to $750 million CAD at a post-money valuation of $10 billion.",
+       "published_at": "2025-10-27T22:05:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbcfaa28caee93d25010be"
+       ],
+       "article_id": "69bbcfaa28caee93d25010be"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 525,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTAtMjcgMjI6MDU6MjkiLCJrIjoiMTE0Mzg2NTIxNzg5OTE3ODM1OCIsImEiOjU1NTAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 525,
+      "deals_with_amount": 474,
+      "deals_without_amount": 51,
+      "deals_amount_excluded": 6,
+      "sum_amount_usd": 186875813568.37,
+      "median_amount_usd": 12180000.0,
+      "largest_amount_usd": 25000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.146,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.153
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "GIC",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "gic"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "c2801ac303c1dc30",
+       "company_name": "fuelwood",
+       "domain": "fuelwood.co.uk",
+       "round_type": null,
+       "amount_usd": 3240000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "strategic investor consortium",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "Capital injection for establishing a new subsidiary to support the development of a biomass joint venture and future pellet production.",
+       "source_sentence": "a further €3 million will be injected into a newly created subsidiary, Fuelwood Finland Oy.",
+       "published_at": "2026-04-30T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8aab4bbf1d314559a5bd2"
+       ],
+       "article_id": "69f8aab4bbf1d314559a5bd2"
+      },
+      {
+       "id": "5731d7a0659504e3",
+       "company_name": "Cindrigo Holdings",
+       "domain": "cindrigo.com",
+       "round_type": null,
+       "amount_usd": 13970000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 11000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "strategic investor consortium",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "Planning to strengthen its energy platform, diversify revenues, develop a biomass joint venture, and support a new subsidiary with capital and loans.",
+       "source_sentence": "Cindrigo Holdings shares climbed sharply on Wednesday after the company unveiled an £11 million funding package alongside a new biomass joint venture in Finland aimed at strengthening its energy platform and diversifying revenues.",
+       "published_at": "2026-04-30T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8aab4bbf1d314559a5bd2"
+       ],
+       "article_id": "69f8aab4bbf1d314559a5bd2"
+      },
+      {
+       "id": "dce1ee5eda6d340b",
+       "company_name": "voicecomm",
+       "domain": "myvoicecomm.com",
+       "round_type": "Subscription",
+       "amount_usd": 24817000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "HKD",
+       "amount": 190900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "State Fortune Global Strategic LPF",
+         "domain": null,
+         "amount": 190900000.0
+        }
+       ],
+       "sector": "Artificial Intelligence, Conversational AI, Agent Platform",
+       "country": "China",
+       "city": "Wuhan",
+       "use_of_funds": null,
+       "source_sentence": "the issue of new H Shares to State Fortune Global Strategic LPF was successfully completed on 27 April 2026.",
+       "published_at": "2026-04-28T08:40:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cb47a5706a322e10feed"
+       ],
+       "article_id": "69f1cb47a5706a322e10feed"
+      },
+      {
+       "id": "ea68463065faf20b",
+       "company_name": "VisionSys AI Inc.",
+       "domain": null,
+       "round_type": "Proposed strategic investment",
+       "amount_usd": 90000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 90000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "a strategic investor",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "brain-computer interface",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Invest in core BCI algorithms and system platforms, AI-powered healthcare and biotech solutions, software/hardware integration, channel expansion, and working capital",
+       "source_sentence": "Based on the terms currently under discussion, the investor plans to invest a total of $90 million in VSA at a price of $1.50 per share.",
+       "published_at": "2026-04-27T19:45:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cadf1e3933a6dd8fa803"
+       ],
+       "article_id": "69f1cadf1e3933a6dd8fa803"
+      },
+      {
+       "id": "6d45282990b153dc",
+       "company_name": "Cresora Commerce",
+       "domain": null,
+       "round_type": "seed style",
+       "amount_usd": 4000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nashville capital network",
+         "domain": "nashvillecapital.com",
+         "amount": null
+        },
+        {
+         "name": "strategic private investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "USA",
+       "city": "Nashville",
+       "use_of_funds": "expanding operations and accelerating product development",
+       "source_sentence": "The seed style investment exceeded $4 million, led by Nashville Capital Network with participation from strategic private investors, to fuel product development and operational expansion.",
+       "published_at": "2026-04-26T07:04:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efac11727212302c600a96"
+       ],
+       "article_id": "69efac11727212302c600a96"
+      },
+      {
+       "id": "bf1b0febdc3a3550",
+       "company_name": "salmon group",
+       "domain": "salmongroup.no",
+       "round_type": "Financing",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Spice Expeditions",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Washington University Investment Management Company (WUIMC)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Moore Strategic Ventures",
+         "domain": "moorestrategicventures.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "fj labs",
+         "domain": "fjlabs.com",
+         "amount": null
+        }
+       ],
+       "sector": "Financial services holding company",
+       "country": "Philippines",
+       "city": null,
+       "use_of_funds": "Expand product suite, broaden distribution footprint across the Philippines, strengthen Salmon Bank capitalization, and grow overall balance sheet capacity.",
+       "source_sentence": "Salmon raises $100m to fuel Philippines expansion Salmon Group, a technology-driven financial services holding company building a banking and lending platform across Southeast Asia, has closed a $100m financing round aimed at accelerating its growth in the Philippines.",
+       "published_at": "2026-04-24T18:29:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efab30a84b609af2b34bf0"
+       ],
+       "article_id": "69efab30a84b609af2b34bf0"
+      },
+      {
+       "id": "e8184ad1b18293b8",
+       "company_name": "Allied Critical Metals",
+       "domain": "alliedcritical.com",
+       "round_type": "Debt",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "existing strategic investor",
+         "domain": null,
+         "amount": 15000000.0
+        }
+       ],
+       "sector": "Mining",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "Build Vila Verde and usher it into operational status.",
+       "source_sentence": "Beyond equity, the tungsten miner has secured a five-year, US$15 million financing facility with its existing strategic investor to build Vila Verde.",
+       "published_at": "2026-04-24T17:35:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efaa30727212302c5e9d6e"
+       ],
+       "article_id": "69efaa30727212302c5e9d6e"
+      },
+      {
+       "id": "d150ed8b26e3dfef",
+       "company_name": "Allied Critical Metals",
+       "domain": "alliedcritical.com",
+       "round_type": "Equity",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "new strategic investor",
+         "domain": null,
+         "amount": 15000000.0
+        },
+        {
+         "name": "existing strategic investor",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Mining",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "Transition to production at Vila Verde pilot plant, construction and commissioning.",
+       "source_sentence": "The cornerstone of this announcement is a US$25 million non-brokered private placement.",
+       "published_at": "2026-04-24T17:35:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efaa30727212302c5e9d6e"
+       ],
+       "article_id": "69efaa30727212302c5e9d6e"
+      },
+      {
+       "id": "30f6cf259724e2ce",
+       "company_name": "Allied Critical Metals",
+       "domain": "alliedcritical.com",
+       "round_type": "private placement offering",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "New Strategic Investor",
+         "domain": null,
+         "amount": 15000000.0
+        },
+        {
+         "name": "Existing Strategic Investor",
+         "domain": null,
+         "amount": 10000000.0
+        }
+       ],
+       "sector": "Mining - Tungsten",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "development of the Pilot Plant at Vila Verde, ongoing exploration and development activities on the Borralha Tungsten Project, and additional working capital",
+       "source_sentence": "The offering will be comprised of common shares of the Company issued at a price of $2.05 per share with an existing strategic investor (the \"Existing Strategic Investor\") and a new strategic investor (the \"New Strategic Investor\") for gross proceeds of U.S.$25 million.",
+       "published_at": "2026-04-24T11:35:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efa961a84b609af2b1eabe"
+       ],
+       "article_id": "69efa961a84b609af2b1eabe"
+      },
+      {
+       "id": "25cdc23279f0aee2",
+       "company_name": "Allied Critical Metals",
+       "domain": "alliedcritical.com",
+       "round_type": "project financing",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Existing Strategic Investor",
+         "domain": null,
+         "amount": 15000000.0
+        }
+       ],
+       "sector": "Mining - Tungsten",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "to build the Company's Vila Verde pilot project (Pilot Plant)",
+       "source_sentence": "The Existing Strategic Investor has also agreed to provide the Company with U.S.$15 million in project financing to build the Company’s Villa Verde pilot project (the \"Pilot Plant\").",
+       "published_at": "2026-04-24T11:35:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efa961a84b609af2b1eabe"
+       ],
+       "article_id": "69efa961a84b609af2b1eabe"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 185,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjQgMTE6MzU6NDkiLCJrIjoiMjcyNDA0Njg3MTY3ODk4ODAwMiJ9",
+     "totals": {
+      "deals": 185,
+      "deals_with_amount": 164,
+      "deals_without_amount": 21,
+      "deals_amount_excluded": 6,
+      "sum_amount_usd": 99028356997.05,
+      "median_amount_usd": 14085000.0,
+      "largest_amount_usd": 25000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.192,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.195
+    }
+   }
+  }
+ ]
+}

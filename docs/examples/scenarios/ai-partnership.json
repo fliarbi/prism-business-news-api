@@ -1,0 +1,826 @@
+{
+ "slug": "ai-partnership",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:08Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "contracts"
+     ],
+     "q": "AI",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "ai",
+      "match": "any",
+      "event_type": [
+       "company_announcement",
+       "contracts"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 174,
+       "by_type": {
+        "company_announcement": 93,
+        "contracts": 81
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 160,
+       "by_type": {
+        "company_announcement": 107,
+        "contracts": 53
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 200,
+       "by_type": {
+        "company_announcement": 131,
+        "contracts": 69
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 1008,
+       "by_type": {
+        "company_announcement": 907,
+        "contracts": 101
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 305,
+       "by_type": {
+        "company_announcement": 149,
+        "contracts": 156
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 277,
+       "by_type": {
+        "company_announcement": 123,
+        "contracts": 154
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 342,
+       "by_type": {
+        "company_announcement": 150,
+        "contracts": 192
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 280,
+       "by_type": {
+        "company_announcement": 147,
+        "contracts": 133
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 310,
+       "by_type": {
+        "company_announcement": 199,
+        "contracts": 111
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 361,
+       "by_type": {
+        "company_announcement": 242,
+        "contracts": 119
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 280,
+       "by_type": {
+        "company_announcement": 143,
+        "contracts": 137
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 377,
+       "by_type": {
+        "company_announcement": 217,
+        "contracts": 160
+       }
+      }
+     ],
+     "totals": {
+      "events": 4074,
+      "articles": 3397,
+      "companies": 1443,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 2608,
+      "contracts": 1466
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.209,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.211
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "contracts"
+     ],
+     "q": "AI",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "ai",
+      "event_type": [
+       "company_announcement",
+       "contracts"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f9d5da713680636eed1454",
+       "headline": "new research report published today by Information Services Group ( ISG ) (Nasdaq: III ), a global AI-centered technology research and advisory firm.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "isg-one.com",
+       "published_at": "2026-04-30T23:00:00",
+       "url": "https://www.stocktitan.net/news/III/companies-in-asia-pacific-accelerate-sap-y2n8rqa4xzs3.html",
+       "publisher": "stocktitan.net",
+       "title": "Asia Pacific companies speed SAP overhauls as 2027 deadline nears"
+      },
+      {
+       "id": "69f87fc2bbf1d3145595d6be",
+       "headline": "This week, Meta launched the open beta of Meta Ads AI Connectors.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "metavision.com",
+       "published_at": "2026-04-30T22:45:11",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d70ea088760d34c0c03f",
+       "headline": "Industrial gas major Air Products expects its helium supply to electronics customers in Asia to more than double by 2030, as new assets come online and long-term supply agreements gather pace amid an AI-driven “super cycle” in semiconductor demand.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "airproducts.com",
+       "published_at": "2026-04-30T14:21:31",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d65fa088760d34c04ad7",
+       "headline": "Industrial gas major Air Products expects its helium supply to electronics customers in Asia to more than double by 2030, as new assets come online and long-term supply agreements gather pace amid an AI-driven “super cycle” in semiconductor demand.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "airproducts.com",
+       "published_at": "2026-04-30T14:21:31",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a03638cc2856acf8e87bf80",
+       "headline": "Datavault AI plans to receive a 5% equity interest in King Mining Capital at the closing of the transactions contemplated by the agreement, together with a warrant to acquire an additional 5% equity interest in King Mining Capital upon completion of the GoldVault™ tokenization program.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "datavault.com",
+       "published_at": "2026-04-30T13:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9db83713680636ef13bc4",
+       "headline": "Minister of Economics Lex Delles and CEO Mario Grotz presented the Annual Report 2025 on Thursday, and also provided an update to the Luxembourg AI Factory",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "luxinnovation.lu",
+       "published_at": "2026-04-30T12:25:00",
+       "url": "https://www.wort.lu/wirtschaft/luxinnovation-schliesst-strategische-neuausrichtung-ab/150465278.html",
+       "publisher": "wort.lu",
+       "title": "Luxinnovation schließt strategische Neuausrichtung ab"
+      },
+      {
+       "id": "69f9fce4713680636ef4a250",
+       "headline": "PrivateMind solution has been selected by a Tier 1 bank for major AI deployment in its Iceland data center.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "options-it.com",
+       "published_at": "2026-04-30T11:04:06",
+       "url": "https://www.cityam.com/options-technology-expands-financial-services-footprint-with-major-tier-1-bank-ai-deployment-in-iceland/",
+       "publisher": "cityam.com",
+       "title": "Options Technology expands Financial Services Footprint with Major Tier 1 Bank AI Deployment in Iceland"
+      },
+      {
+       "id": "69f8a6a98937ef12fc0ade3d",
+       "headline": "Amazon has also committed to investing more than $35 billion in India by 2030 focusing on business expansion and other measures such as AI-driven digitisation, export growth, and job creation.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "amazon.com",
+       "published_at": "2026-04-30T07:52:28",
+       "url": "https://www.livemint.com/companies/news/amazon-now-amazon-prime-india-ceo-andy-jassy-quick-commerce-11777531511884.html",
+       "publisher": "livemint.com",
+       "title": "Amazon Now’s India orders growing 25% every month: CEO Andy Jassy | Company Business News"
+      },
+      {
+       "id": "69f8aa8cbbf1d314559a57a1",
+       "headline": "Qualcomm recently partnered with OpenAI to develop an AI chip for a future device.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "qualcomm.com",
+       "published_at": "2026-04-30T06:08:25",
+       "url": "https://www.businesstoday.in/markets/stocks/story/why-qualcomm-shares-jumped-after-ceo-cristiano-amons-comments-key-details-528176-2026-04-30",
+       "publisher": "businesstoday.in",
+       "title": "Why Qualcomm shares jumped after CEO Cristiano Amon's comments - BusinessToday"
+      },
+      {
+       "id": "69f881a3bbf1d3145596ff01",
+       "headline": "Msheireb Properties, a Qatari real estate development company, has signed a Memorandum of Understanding (MoU) with MEEZA, an IT services and solutions company, to introduce an AI digital companion across Msheireb Downtown Doha.",
+       "event_type": "contracts",
+       "role": "client",
+       "domain": "msheireb.com",
+       "published_at": "2026-04-30T03:12:34",
+       "url": "https://www.gccbusinessnews.com/msheireb-properties-meeza-ai-companion/",
+       "publisher": "gccbusinessnews.com",
+       "title": "Msheireb Properties and MEEZA unveil AI Digital Companion in Doha"
+      },
+      {
+       "id": "69f881a3bbf1d3145596ff01",
+       "headline": "Msheireb Properties, a Qatari real estate development company, has signed a Memorandum of Understanding (MoU) with MEEZA, an IT services and solutions company, to introduce an AI digital companion across Msheireb Downtown Doha.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "meeza.net",
+       "published_at": "2026-04-30T03:12:34",
+       "url": "https://www.gccbusinessnews.com/msheireb-properties-meeza-ai-companion/",
+       "publisher": "gccbusinessnews.com",
+       "title": "Msheireb Properties and MEEZA unveil AI Digital Companion in Doha"
+      },
+      {
+       "id": "6a04009362bbf617b0401992",
+       "headline": "Amazon also launched Bedrock AgentCore, a set of infra tools for building and deploying AI agents, which Amazon said is now used to deploy an agent as frequently as every 10 seconds.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "amazon.com",
+       "published_at": "2026-04-29T23:47:45",
+       "url": "https://www.theregister.com/software/2026/04/30/amazons-chips-become-a-20b-business/5221236",
+       "publisher": "theregister.com",
+       "title": "Amazon's chips become a $20B business"
+      },
+      {
+       "id": "69f8a97e43843dd771d26a8d",
+       "headline": "Amazon's rapidly expanding custom silicon business includes its Graviton processors, Trainium AI training chips, and Nitro security chips, and is growing at over 100 percent year over year, Jassy said.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "amazon.com",
+       "published_at": "2026-04-29T23:47:45",
+       "url": "https://www.theregister.com/2026/04/29/amazon_chips_20b_business/",
+       "publisher": "theregister.com",
+       "title": "Amazon's chips become a $20B business"
+      },
+      {
+       "id": "69f88479bbf1d31455988766",
+       "headline": "The cloud giant also announced a collaboration with Cerebras to deliver what it described as the fastest AI inference speeds.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "amazon.com",
+       "published_at": "2026-04-29T23:47:45",
+       "url": "https://theregister.com/2026/04/29/amazon_chips_20b_business/",
+       "publisher": "theregister.com",
+       "title": "Amazon's chips become a $20B business"
+      },
+      {
+       "id": "69f8ab4ebbf1d314559a6355",
+       "headline": "mea Platform, the fast-scaling (re)insurance AI product company, announced that BMS Group, a leading independent global (re)insurance broker, has selected mea’s Broking Operations products to enhance placement efficiency and strengthen market leadership through digital transformation.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "meaplatform.com",
+       "published_at": "2026-04-29T23:00:00",
+       "url": "https://ffnews.com/newsarticle/insurtech/bms-group-selects-mea-platforms-ai-products-to-advance-placement-efficiency-through-digital-broking-operations/",
+       "publisher": "ffnews.com",
+       "title": "BMS Group Selects mea Platform’s AI Products to Advance Placement Efficiency Through Digital Broking Operations"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 1328,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjkgMjM6MDA6MDAiLCJpIjoiNjlmOGFiNGViYmYxZDMxNDU1OWE2MzU1IiwiZG0iOiJtZWFwbGF0Zm9ybS5jb20iLCJldCI6ImNvbnRyYWN0cyIsInJvIjoiY29udHJhY3RvciJ9",
+     "by_type": {
+      "company_announcement": 801,
+      "contracts": 527
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.384,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 4 event(s)"
+     ],
+     "request_seconds": 4.388
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "contracts"
+     ],
+     "q": "AI",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "ai",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement",
+       "contracts"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 6002,
+     "carrying": 6001,
+     "carrier_share_pct": 99.98,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 121,
+       "share": 2.02
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 28,
+       "share": 0.47
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 596,
+       "share": 9.93
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 40,
+       "share": 0.67
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 1025,
+       "share": 17.08
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 616,
+       "share": 10.26
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 3527,
+       "share": 58.77
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 48,
+       "share": 0.8
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 745,
+       "share": 12.41
+      },
+      {
+       "group": "neutral",
+       "count": 40,
+       "share": 0.67
+      },
+      {
+       "group": "positive",
+       "count": 5216,
+       "share": 86.92
+      }
+     ],
+     "negative_to_positive_ratio": 0.143,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.19,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 1206,
+       "negative": 98,
+       "neutral": 6,
+       "positive": 1102,
+       "negative_share": 8.13,
+       "positive_share": 91.38,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 10,
+        "fair_neg": 3,
+        "slight_neg": 85,
+        "none": 6,
+        "slight_pos": 216,
+        "fair_pos": 117,
+        "very_pos": 761,
+        "extreme_pos": 8
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 1576,
+       "negative": 104,
+       "neutral": 7,
+       "positive": 1465,
+       "negative_share": 6.6,
+       "positive_share": 92.96,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 11,
+        "fair_neg": 6,
+        "slight_neg": 87,
+        "none": 7,
+        "slight_pos": 255,
+        "fair_pos": 162,
+        "very_pos": 1035,
+        "extreme_pos": 13
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 1470,
+       "negative": 272,
+       "neutral": 14,
+       "positive": 1184,
+       "negative_share": 18.5,
+       "positive_share": 80.54,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 33,
+        "fair_neg": 14,
+        "slight_neg": 225,
+        "none": 14,
+        "slight_pos": 267,
+        "fair_pos": 131,
+        "very_pos": 775,
+        "extreme_pos": 11
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 1749,
+       "negative": 271,
+       "neutral": 13,
+       "positive": 1465,
+       "negative_share": 15.49,
+       "positive_share": 83.76,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 67,
+        "fair_neg": 5,
+        "slight_neg": 199,
+        "none": 13,
+        "slight_pos": 287,
+        "fair_pos": 206,
+        "very_pos": 956,
+        "extreme_pos": 16
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.8,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.803
+    }
+   }
+  }
+ ]
+}

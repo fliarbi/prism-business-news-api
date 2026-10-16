@@ -1,0 +1,798 @@
+{
+ "slug": "fundraise",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:01Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "funds_raising"
+     ],
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "event_type": [
+       "funds_raising"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 138,
+       "by_type": {
+        "funds_raising": 138
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 114,
+       "by_type": {
+        "funds_raising": 114
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 166,
+       "by_type": {
+        "funds_raising": 166
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 147,
+       "by_type": {
+        "funds_raising": 147
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 205,
+       "by_type": {
+        "funds_raising": 205
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 160,
+       "by_type": {
+        "funds_raising": 160
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 246,
+       "by_type": {
+        "funds_raising": 246
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 164,
+       "by_type": {
+        "funds_raising": 164
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 214,
+       "by_type": {
+        "funds_raising": 214
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 257,
+       "by_type": {
+        "funds_raising": 257
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 228,
+       "by_type": {
+        "funds_raising": 228
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 217,
+       "by_type": {
+        "funds_raising": 217
+       }
+      }
+     ],
+     "totals": {
+      "events": 2256,
+      "articles": 1977,
+      "companies": 1203,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "funds_raising": 2256
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.015,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.018
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "funds_raising"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "event_type": [
+       "funds_raising"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "6a041c9062bbf617b04c3127",
+       "headline": "the ISQ Global Infrastructure Credit Fund II is expecting a final close in the coming months on its $2.5 billion hard-cap. The fund was launched in 2023 with a target of $1.5 billion. It achieved a first close of $1.7 billion in July 2025.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "isquaredcapital.com",
+       "published_at": "2026-04-30T17:18:17",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8a783bbf1d314559a314b",
+       "headline": "VOX Capital has just signed a check of R$ 10.8 billion in a seed round for startup. According to VOX in a note sent to Startups, this is the initial investment of its fourth fund, dedicated to AI applications aligned with strategic vocations of the Brazilian economy - in this case, the agribusiness.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "voxcapital.com.br",
+       "published_at": "2026-04-30T16:00:00",
+       "url": "https://startups.com.br/negocios/agtech/vox-aporta-r-108m-em-agtech-que-une-laser-e-ia-para-analisar-solo/",
+       "publisher": "startups.com.br",
+       "title": "VOX aporta R$ 10,8M em agtech que une laser e IA para analisar solo - Startups"
+      },
+      {
+       "id": "69f8a960bbf1d314559a4ae8",
+       "headline": "Novastar Ventures has closed its third fund, Africa People and Planet Fund III (NVIII), at $147 million, strengthening its position as one of the largest Africa-focused venture capital firms investing in climate-aligned innovation.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "novastarventures.com",
+       "published_at": "2026-04-30T13:23:01",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8803c43843dd771ce691c",
+       "headline": "The final close at $446 million beat the target of $400 million with the support of both existing and new limited partners, Private Debt Investor has learned.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "crescentcove.com",
+       "published_at": "2026-04-30T12:00:15",
+       "url": "https://www.privatedebtinvestor.com/crescent-cove-advisors-holds-close-on-448m/",
+       "publisher": "privatedebtinvestor.com",
+       "title": "Crescent Cove Advisors holds close on $446m"
+      },
+      {
+       "id": "69f8a7a1bbf1d314559a3433",
+       "headline": "BMW i Ventures plans to finance start-ups in North America and Europe with Fund III.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "bmwiventures.com",
+       "published_at": "2026-04-30T10:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8853abbf1d3145598ff96",
+       "headline": "The European Investment Fund is raising a €15 billion fund of funds to unlock up to €80 billion in scale-up funding.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "eif.org",
+       "published_at": "2026-04-30T08:15:26",
+       "url": "https://thenextweb.com/news/earlybird-360m-fund-viii-perpetual-ownership",
+       "publisher": "thenextweb.com",
+       "title": "Europe’s Earlybird VC closes €360M Fund VIII"
+      },
+      {
+       "id": "69f8853abbf1d3145598ff96",
+       "headline": "Earlybird Venture Capital has closed its eighth early-stage fund at €360 million, the largest in the Berlin firm’s 29-year history, the company announced today.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "earlybird.com",
+       "published_at": "2026-04-30T08:15:26",
+       "url": "https://thenextweb.com/news/earlybird-360m-fund-viii-perpetual-ownership",
+       "publisher": "thenextweb.com",
+       "title": "Europe’s Earlybird VC closes €360M Fund VIII"
+      },
+      {
+       "id": "69fa3b75a088760d34c83819",
+       "headline": "Fund laid up and the Handelsblatt explains to have collected with investors for 360 million euros.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "getearlybird.io",
+       "published_at": "2026-04-30T04:00:00",
+       "url": "http://www.handelsblatt.com/unternehmen/start-ups/investoren-neuer-fonds-von-earlybird-ist-groesser-als-seine-vorgaenger/100219669.html",
+       "publisher": "handelsblatt.com",
+       "title": "Investoren: Neuer Fonds von Earlybird ist grÃ¶Ãer als seine VorgÃ¤nger"
+      },
+      {
+       "id": "69f9d93c7b2d589e844e303c",
+       "headline": "Primary Wave confirmed the sizable tranche, specifically consisting of $2.225 billion in commitments, today.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "primarywave.com",
+       "published_at": "2026-04-29T17:46:16",
+       "url": "https://www.digitalmusicnews.com/2026/04/29/primary-wave-fourth-fund/",
+       "publisher": "digitalmusicnews.com",
+       "title": "Primary Wave Confirms 'Final Closing' of $2.2 Billion Fourth Fund"
+      },
+      {
+       "id": "69f9d414713680636eebd4da",
+       "headline": "BMW i Ventures has launched its third fund with a volume of $300 million.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "bmwiventures.com",
+       "published_at": "2026-04-29T16:13:22",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f22eea27117df83f957926",
+       "headline": "Illuminate Financial, the specialist venture capital firm focused on technology for financial services, today announced it has raised $135 million for its Early Growth Fund from investors including BNP Paribas, Citi, Deutsche Börse, HSBC, Jefferies, RBC, S&P Global, and TD Securities.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "illuminatefinancial.com",
+       "published_at": "2026-04-29T11:16:17",
+       "url": "https://globalfintechseries.com/finance/illuminate-financial-closes-135m-early-growth-fund-to-back-the-next-generation-of-ai-fintech-for-financial-services/",
+       "publisher": "globalfintechseries.com",
+       "title": "Illuminate Financial Closes $135m Early Growth Fund to Back the Next Generation of AI & Fintech for Financial Services"
+      },
+      {
+       "id": "69f2289127117df83f93a583",
+       "headline": "Secha Capital has reached a second close of its $40m growth fund, with E Squared Investments joining as a new backer.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "sechacapital.com",
+       "published_at": "2026-04-29T09:28:12",
+       "url": "https://www.zawya.com/en/economy/africa/new-secha-capital-fund-looks-to-close-south-africas-sme-growth-gap-xak2172l",
+       "publisher": "zawya.com",
+       "title": "New Secha Capital fund looks to close South Africa's SME growth gap"
+      },
+      {
+       "id": "69f228b8c6105443aa5cb8fa",
+       "headline": "KOMPAS VC, the Copenhagen-based specialist venture capital firm focused on physical industries, has announced the €160 million final close of its second fund, adding €10 million to the €150 million first close TFN reported in April 2025.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "kompas.vc",
+       "published_at": "2026-04-29T08:10:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1cfa7a5706a322e1346d6",
+       "headline": "Kfund has launched a new investment vehicle, “K Founders Preseed II”, with an endowment of close to 20 million euros, focused on supporting startups in very early stages.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "kfund.vc",
+       "published_at": "2026-04-29T07:43:02",
+       "url": "https://www.webcapitalriesgo.com/kfund-lanza-un-nuevo-fondo-de-e20m-para-startups-en-fase-inicial/",
+       "publisher": "webcapitalriesgo.com",
+       "title": "Kfund lanza un nuevo fondo de €20M para startups en fase inicial - Webcapitalriesgo"
+      },
+      {
+       "id": "69f1d01c399b489398e2de8c",
+       "headline": "The venture capital company KOMPAS VC has announced the final completion of its second fund of 160 million euros.",
+       "event_type": "funds_raising",
+       "role": "primary",
+       "domain": "kompas.vc",
+       "published_at": "2026-04-29T07:00:00",
+       "url": "https://www.startbase.de/news/kompas-vc-schliesst-zweiten-fonds-ueber-160-mio-euro-fuer-industrielle-technologien/",
+       "publisher": "startbase.de",
+       "title": "KOMPAS VC schließt zweiten Fonds über 160 Mio. Euro für industrielle Technologien"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 916,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjkgMDc6MDA6MDAiLCJpIjoiNjlmMWQwMWMzOTliNDg5Mzk4ZTJkZThjIiwiZG0iOiJrb21wYXMudmMiLCJldCI6ImZ1bmRzX3JhaXNpbmciLCJybyI6InByaW1hcnkifQ",
+     "by_type": {
+      "funds_raising": 916
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.523,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.526
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "funds_raising"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "funds_raising"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 800,
+     "carrying": 800,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 1,
+       "share": 0.12
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 13,
+       "share": 1.62
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 2,
+       "share": 0.25
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 72,
+       "share": 9.0
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 37,
+       "share": 4.62
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 665,
+       "share": 83.12
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 10,
+       "share": 1.25
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 14,
+       "share": 1.75
+      },
+      {
+       "group": "neutral",
+       "count": 2,
+       "share": 0.25
+      },
+      {
+       "group": "positive",
+       "count": 784,
+       "share": 98.0
+      }
+     ],
+     "negative_to_positive_ratio": 0.018,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.02,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 162,
+       "negative": 2,
+       "neutral": 0,
+       "positive": 160,
+       "negative_share": 1.23,
+       "positive_share": 98.77,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 0,
+        "slight_pos": 20,
+        "fair_pos": 4,
+        "very_pos": 133,
+        "extreme_pos": 3
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 233,
+       "negative": 2,
+       "neutral": 0,
+       "positive": 231,
+       "negative_share": 0.86,
+       "positive_share": 99.14,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 0,
+        "slight_pos": 24,
+        "fair_pos": 8,
+        "very_pos": 196,
+        "extreme_pos": 3
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 207,
+       "negative": 7,
+       "neutral": 0,
+       "positive": 200,
+       "negative_share": 3.38,
+       "positive_share": 96.62,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 7,
+        "none": 0,
+        "slight_pos": 17,
+        "fair_pos": 10,
+        "very_pos": 173,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 198,
+       "negative": 3,
+       "neutral": 2,
+       "positive": 193,
+       "negative_share": 1.52,
+       "positive_share": 97.47,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 2,
+        "slight_pos": 11,
+        "fair_pos": 15,
+        "very_pos": 163,
+        "extreme_pos": 4
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.611,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.613
+    }
+   }
+  }
+ ]
+}

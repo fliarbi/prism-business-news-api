@@ -1,0 +1,2457 @@
+{
+ "slug": "saas-funding-news",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:17Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "saas",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "saas"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 381,
+      "deals_with_amount": 326,
+      "deals_without_amount": 55,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 5703780078.0,
+      "median_amount_usd": 5500000.0,
+      "largest_amount_usd": 290000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 31,
+       "deals_with_amount": 28,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 391056200.0,
+       "median_amount_usd": 4690000.0,
+       "largest_amount_usd": 104760000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 40,
+       "deals_with_amount": 36,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 444095410.0,
+       "median_amount_usd": 7250000.0,
+       "largest_amount_usd": 82000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 36,
+       "deals_with_amount": 25,
+       "deals_without_amount": 11,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 290403500.0,
+       "median_amount_usd": 7750000.0,
+       "largest_amount_usd": 77760000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 36,
+       "deals_with_amount": 31,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 555484900.0,
+       "median_amount_usd": 5508000.0,
+       "largest_amount_usd": 128000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 44,
+       "deals_with_amount": 39,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1015382500.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 290000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 45,
+       "deals_with_amount": 41,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 445696568.0,
+       "median_amount_usd": 3000000.0,
+       "largest_amount_usd": 75000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 33,
+       "deals_with_amount": 29,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 690926000.0,
+       "median_amount_usd": 8185000.0,
+       "largest_amount_usd": 150000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 35,
+       "deals_with_amount": 30,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 720166000.0,
+       "median_amount_usd": 4100000.0,
+       "largest_amount_usd": 280000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 36,
+       "deals_with_amount": 26,
+       "deals_without_amount": 10,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 329682000.0,
+       "median_amount_usd": 2160000.0,
+       "largest_amount_usd": 189000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 19,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 302703000.0,
+       "median_amount_usd": 7600000.0,
+       "largest_amount_usd": 173500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 12,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 181284000.0,
+       "median_amount_usd": 6970000.0,
+       "largest_amount_usd": 80000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 10,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 336900000.0,
+       "median_amount_usd": 5650000.0,
+       "largest_amount_usd": 165720000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.056,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.058
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "saas",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "saas"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "a6b9bab47c2256a7",
+       "company_name": "earnix",
+       "domain": "earnix.com",
+       "round_type": "Continuation Vehicle",
+       "amount_usd": 290000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 290000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG GP Solutions",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "JVP",
+         "domain": "jvpvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI SaaS for insurance and banking",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": "support global expansion and accelerate adoption of AI decisioning across the risk cycle",
+       "source_sentence": "Earnix, a leading provider of dynamic AI for insurance and banking, has raised $290m in a Continuation Vehicle led by TPG GP Solutions alongside JVP.",
+       "published_at": "2025-09-09T10:00:17",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988aa754727a5abdc89ea2f",
+        "698f76328d29a990b6fd048a"
+       ],
+       "article_id": "6988aa754727a5abdc89ea2f"
+      },
+      {
+       "id": "a7cd044e27cf4862",
+       "company_name": "moengage",
+       "domain": "moengage.com",
+       "round_type": null,
+       "amount_usd": 280000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 280000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "chryscapital",
+         "domain": "chryscapital.com",
+         "amount": null
+        },
+        {
+         "name": "Dragon Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "mitsubishi ufj financial group",
+         "domain": "mufg.jp",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise SaaS",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "MoEngage: Enterprise software-as-a-service (SaaS) startup MoEngage closed an additional $180 million as part of its ongoing funding round, taking the total deal size to $280 million. The latest infusion was led by private equity (PE) major ChrysCapital and Singapore’s Dragon Fund, which is backed by Japan’s largest bank, Mitsubishi UFJ Financial Group.",
+       "published_at": "2025-12-26T15:34:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "69839169e67557fb85537487"
+       ],
+       "article_id": "69839169e67557fb85537487"
+      },
+      {
+       "id": "38f1ed369e6e6211",
+       "company_name": "harness",
+       "domain": "harnessdata.ai",
+       "round_type": "Series E",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": 200000000.0
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Developer Tools, DevOps, Productivity Tools, SaaS",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "investment accelerates our ability to build the systems that make that possible: unified intelligence, deep context, and automation that brings clarity to complexity",
+       "source_sentence": "The firm’s Series E, announced Thursday (Dec. 11), was led by Goldman Sachs and brought in $200 million.",
+       "published_at": "2025-12-11T19:50:45",
+       "coverage_count": 3,
+       "article_ids": [
+        "6945289a41bfb3067fa33c06",
+        "698888315302bdff258760dc",
+        "698d77be9ca02490ecfba63d"
+       ],
+       "article_id": "6945289a41bfb3067fa33c06"
+      },
+      {
+       "id": "2e6dbb5e4bc674ed",
+       "company_name": "layerx",
+       "domain": "layerxsecurity.com",
+       "round_type": "Series B",
+       "amount_usd": 192200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 192200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "mufg bank",
+         "domain": "bk.mufg.jp",
+         "amount": null
+        },
+        {
+         "name": "Mitsubishi UFJ Innovation Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jafco Group",
+         "domain": "jafcogroup.com",
+         "amount": null
+        },
+        {
+         "name": "Keyrock Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Coreline Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "JP Investment",
+         "domain": "jp-investment.co.jp",
+         "amount": null
+        }
+       ],
+       "sector": "AI SaaS",
+       "country": "Japan",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "LayerX, a Japanese AI SaaS startup that enables businesses to cut back-office workload, has raised $100 million in a Series B round led by TCV, marking the U.S. fund’s first investment in a Japanese startup. The company declined to disclose its valuation, but said both the valuation and the size of the round are among the largest ever raised by a 7-year-old Japanese startup at the Series B stage. Other investors, including MUFG Bank, Mitsubishi UFJ Innovation Partners, JAFCO Group, Keyrock Capital, Coreline Ventures, and JP Investment, also joined the Series B round, bringing the total raised to $192.2 million.",
+       "published_at": "2025-09-01T23:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9821182f590e7fe7dc687"
+       ],
+       "article_id": "68d9821182f590e7fe7dc687"
+      },
+      {
+       "id": "43e785da58f3521a",
+       "company_name": "pennylane",
+       "domain": "pennylane.com",
+       "round_type": "Series E",
+       "amount_usd": 189000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 175000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "Blackstone Growth",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Meritech Capital",
+         "domain": "meritechcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Accounting and bookkeeping SaaS for enterprises and accounting firms",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-01-20T22:03:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988f10b94d3f481f3dc6097"
+       ],
+       "article_id": "6988f10b94d3f481f3dc6097"
+      },
+      {
+       "id": "1f8cc87ac0db594a",
+       "company_name": "pennylane",
+       "domain": "pennylane.com",
+       "round_type": "Growth",
+       "amount_usd": 189000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 175000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "Blackstone Growth",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Meritech Capital",
+         "domain": "meritechcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech / Accounting & Financial Management (SaaS)",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "The company will use the funds to enhance R&D in generative AI tools for accountants, localize the platform for German regulatory requirements, expand payment and cash management offerings, and support electronic invoicing adoption.",
+       "source_sentence": "Pennylane, a Paris, France–based accounting and financial management platform for SMEs and accounting firms, has raised €175 million in a funding round.",
+       "published_at": "2026-01-20T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f973a9ca02490ec23fc56"
+       ],
+       "article_id": "698f973a9ca02490ec23fc56"
+      },
+      {
+       "id": "4331c57462c925b2",
+       "company_name": "datarails",
+       "domain": "datarails.com",
+       "round_type": "Series C",
+       "amount_usd": 173500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 173500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ClalTech",
+         "domain": "claltech.com",
+         "amount": null
+        },
+        {
+         "name": "innovation endeavors",
+         "domain": "innovationendeavors.com",
+         "amount": null
+        },
+        {
+         "name": "Joey Low",
+         "domain": "https://www.linkedin.com/in/joeylow",
+         "amount": null
+        },
+        {
+         "name": "One Peak",
+         "domain": "onepeak.tech",
+         "amount": null
+        },
+        {
+         "name": "qumra capital",
+         "domain": "qumracapital.com",
+         "amount": null
+        },
+        {
+         "name": "Vertex Growth Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "vintage investment partners",
+         "domain": "vintage-ip.com",
+         "amount": null
+        },
+        {
+         "name": "zeev ventures",
+         "domain": "zeevventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Financial Services, FinTech, Information Technology, SaaS, Software",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-02-02T11:27:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "69888801868e86f9ec6c8019",
+        "6988a49469527f36baae5af5"
+       ],
+       "article_id": "69888801868e86f9ec6c8019"
+      },
+      {
+       "id": "866d8997966dce96",
+       "company_name": "wingify",
+       "domain": "wingify.com",
+       "round_type": null,
+       "amount_usd": 165720000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 13810000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "everstone capital",
+         "domain": "everstonecapital.com",
+         "amount": 12497000000.0
+        },
+        {
+         "name": "Vyom Mankekar",
+         "domain": null,
+         "amount": 840000000.0
+        },
+        {
+         "name": "Other Investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Strategic round",
+       "source_sentence": "SaaS major Wingify is raising ₹1,381 Cr (nearly $149 Mn) in a strategic round led by majority shareholder and private equity (PE) firm Everstone Capital.",
+       "published_at": "2026-04-06T20:45:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2c40d3aab8d96aa39a3b9"
+       ],
+       "article_id": "69e2c40d3aab8d96aa39a3b9"
+      },
+      {
+       "id": "092c46af2681c4e2",
+       "company_name": "wingify",
+       "domain": "wingify.com",
+       "round_type": "rights issue",
+       "amount_usd": 165720000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 13810000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "everstone capital",
+         "domain": "everstonecapital.com",
+         "amount": 12500000000.0
+        },
+        {
+         "name": "Vyom Mankekar",
+         "domain": null,
+         "amount": 840000000.0
+        },
+        {
+         "name": "Shivanand Mankekar",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jt. Laxmi Mankekar",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kedar Mankekar",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "CEO Sparsh Gupta",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "rights issue capital raise",
+       "source_sentence": "Everstone Capital acquired a majority stake in Wingify in a $200 million deal in January 2025, in one of the largest SaaS deals and a major milestone for the bootstrapped startup.",
+       "published_at": "2026-04-06T08:19:55",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e29ccca85be7e5065ad698",
+        "69e2b652dc480588dca1f0ad"
+       ],
+       "article_id": "69e2b652dc480588dca1f0ad"
+      },
+      {
+       "id": "d7e4188eba1b6006",
+       "company_name": "wingify",
+       "domain": "wingify.com",
+       "round_type": "Growth",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "everstone capital",
+         "domain": "everstonecapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "India",
+       "city": "Delhi",
+       "use_of_funds": "product expansion, global growth, and potential acquisitions in the SaaS and martech space.",
+       "source_sentence": "Wingify Receives $150 Million Growth Investment Delhi-based SaaS company Wingify, known for its conversion optimisation platform VWO, secured $150 million in fresh capital from Everstone Capital and other investors.",
+       "published_at": "2026-04-06T12:17:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2cb6b9b322e6b3ea67a4a"
+       ],
+       "article_id": "69e2cb6b9b322e6b3ea67a4a"
+      },
+      {
+       "id": "2b4e51fa95acd834",
+       "company_name": "wingify",
+       "domain": "wingify.com",
+       "round_type": "Growth",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "everstone capital",
+         "domain": "everstonecapital.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "India",
+       "city": "Delhi",
+       "use_of_funds": "The funding will support product expansion, global growth, and potential acquisitions in the SaaS and martech space.",
+       "source_sentence": "Wingify Receives $150 Million Growth Investment Wingify, known for its conversion optimisation platform VWO, secured $150 million in fresh capital from Everstone Capital and other investors.",
+       "published_at": "2026-04-06T12:17:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2ccaec1991f786cf136bf"
+       ],
+       "article_id": "69e2ccaec1991f786cf136bf"
+      },
+      {
+       "id": "2baebb15c8626f05",
+       "company_name": "moengage",
+       "domain": "moengage.com",
+       "round_type": null,
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Last week, ET reported that MoEngage is finalising a $150 million transaction, the second tranche of a $260 million round.",
+       "published_at": "2025-11-28T16:47:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69313b2d66d6c32961f20bb2"
+       ],
+       "article_id": "69313b2d66d6c32961f20bb2"
+      },
+      {
+       "id": "db320b64f1c801d6",
+       "company_name": "Starian",
+       "domain": null,
+       "round_type": "strategic investment",
+       "amount_usd": 128000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "BRL",
+       "amount": 640000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general atlantic",
+         "domain": "generalatlantic.com",
+         "amount": null
+        }
+       ],
+       "sector": "Vertical SaaS",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "leverage M&As, strengthen the vertical SaaS model and open new business units",
+       "source_sentence": "Starian, a newly launched company that has managed all the solutions for the private sector of Softplan, has just raised R$ 640 million in a strategic investment by General Atlantic, one of the leading global investment funds.",
+       "published_at": "2025-08-22T16:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb11248b79b55c827524aa"
+       ],
+       "article_id": "69bb11248b79b55c827524aa"
+      },
+      {
+       "id": "eec1509ca79807da",
+       "company_name": "Starian",
+       "domain": null,
+       "round_type": "Strategic Investment",
+       "amount_usd": 115000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 115000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general atlantic",
+         "domain": "generalatlantic.com",
+         "amount": null
+        }
+       ],
+       "sector": "Vertical SaaS",
+       "country": "Brazil",
+       "city": "Florianópolis",
+       "use_of_funds": "The company intends to use this capital to pursue organic growth and accretive M&A, strengthen its product offerings, and expand into new business verticals.",
+       "source_sentence": "Starian, a Brazil-based multi-vertical SaaS provider, has secured R$640 million (over US$115 million) in strategic funding.",
+       "published_at": "2025-08-25T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "698ce6078d29a990b6cc3181",
+        "698e5bab8d29a990b6e7f4a4"
+       ],
+       "article_id": "698e5bab8d29a990b6e7f4a4"
+      },
+      {
+       "id": "92043ba0c2b3334c",
+       "company_name": "quo",
+       "domain": "quocard.com",
+       "round_type": "Growth Investment",
+       "amount_usd": 105000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 105000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS / Business Phone",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Scale AI-powered business phone system.",
+       "source_sentence": "Quo Raises $105M",
+       "published_at": "2025-11-04T09:00:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "694af8b813240442ec75cae3"
+       ],
+       "article_id": "694af8b813240442ec75cae3"
+      },
+      {
+       "id": "d3d655008a48544f",
+       "company_name": "Ascendx Cloud",
+       "domain": null,
+       "round_type": "growth-stage",
+       "amount_usd": 104760000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 97000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Osprey Investors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "columbia lake partners",
+         "domain": "clpgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "Charles Delingpole",
+         "domain": "http://www.linkedin.com/in/delingpole",
+         "amount": null
+        },
+        {
+         "name": "Sujay Tyle",
+         "domain": "http://www.linkedin.com/pub/sujay-tyle/15/264/962",
+         "amount": null
+        },
+        {
+         "name": "Chris North",
+         "domain": "https://www.linkedin.com/in/chrissnorth/",
+         "amount": null
+        },
+        {
+         "name": "Malte Janzarik",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "CRM SaaS",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "scale its portfolio of CRM applications and expand its team in the United States",
+       "source_sentence": "Ascendx Cloud, a London-based provider of enterprise-grade CRM SaaS solutions, has announced a €97 million funding round to scale its portfolio of CRM applications and expand its team in the United States.",
+       "published_at": "2025-05-12T08:58:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cf0a79ca02490ecf1a3eb"
+       ],
+       "article_id": "698cf0a79ca02490ecf1a3eb"
+      },
+      {
+       "id": "efacc362eee0f438",
+       "company_name": "Ascendx Cloud",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 104140000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 82000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Osprey Investors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "columbia lake partners",
+         "domain": "clpgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise software / CRM SaaS",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "to scale its portfolio of apps and expand its US team",
+       "source_sentence": "A London-based provider of enterprise-grade CRM SaaS solutions has raised £82m in funding to scale its portfolio of apps and expand its US team to help more enterprise companies leverage their CRM data as they embrace AI.",
+       "published_at": "2025-05-12T09:46:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988892067fc62ca0ef3c28e"
+       ],
+       "article_id": "6988892067fc62ca0ef3c28e"
+      },
+      {
+       "id": "692a9e8e08f590f4",
+       "company_name": "moengage",
+       "domain": "moengage.com",
+       "round_type": "Series F",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "a91 partners",
+         "domain": "a91partners.com",
+         "amount": null
+        },
+        {
+         "name": "Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Customer engagement / SaaS",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Fuel global expansion and AI-driven product development",
+       "source_sentence": "MoEngage Secures $100M in Series F Funding to Accelerate AI-Powered Customer Engagement",
+       "published_at": "2025-11-05T22:38:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931bbdf217f91e5e4f21fd9"
+       ],
+       "article_id": "6931bbdf217f91e5e4f21fd9"
+      },
+      {
+       "id": "c54ca1955ea6409b",
+       "company_name": "employee navigator",
+       "domain": "employeenavigator.com",
+       "round_type": "Minority Investment / Growth",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "JMI Equity",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spectrum equity",
+         "domain": "spectrumequity.com",
+         "amount": null
+        }
+       ],
+       "sector": "Benefits Administration & HR Software / SaaS",
+       "country": "USA",
+       "city": "Bethesda",
+       "use_of_funds": "The investment was used in a $120 million tender offer to provide liquidity to existing shareholders and support the integration of acquired assets, including Ease, while continuing to expand AI-driven applications and HR product offerings.",
+       "source_sentence": "Employee Navigator, a Bethesda, Maryland–based benefits administration and HR software provider, completed a $100 million funding round.",
+       "published_at": "2025-08-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e9c148d29a990b6ecc589"
+       ],
+       "article_id": "698e9c148d29a990b6ecc589"
+      },
+      {
+       "id": "9ccd7e624f628073",
+       "company_name": "shop circle",
+       "domain": "shopcircle.co",
+       "round_type": "Series B",
+       "amount_usd": 90720000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 84000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Nextalia Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Primo Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cdp venture capital",
+         "domain": "cdpventurecapital.it",
+         "amount": null
+        },
+        {
+         "name": "645 Select Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "FNDX",
+         "domain": "fndx.vc",
+         "amount": null
+        },
+        {
+         "name": "FG2 Capital",
+         "domain": "fg2capital.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-native B2B SaaS",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "fund M&A roadmap and accelerate AI product development",
+       "source_sentence": "London-based Shop Circle has announced the extension of its Series B funding round to a total of €84 million, combining €50 million in equity with strategic financing, in order to fund its M&A roadmap.",
+       "published_at": "2025-09-16T09:55:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d989e859ff3bc3607e4671"
+       ],
+       "article_id": "68d989e859ff3bc3607e4671"
+      },
+      {
+       "id": "aa3592760071d2c8",
+       "company_name": "linear",
+       "domain": "linear.app",
+       "round_type": "Series C",
+       "amount_usd": 82000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 82000000.0,
+       "valuation": 1250000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "01A",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "seven seven six",
+         "domain": "sevensevensix.com",
+         "amount": null
+        },
+        {
+         "name": "designer fund",
+         "domain": "designerfund.com",
+         "amount": null
+        },
+        {
+         "name": "Indie.vc",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tk ventures",
+         "domain": "tk.ventures",
+         "amount": null
+        },
+        {
+         "name": "Soleio",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jeff Weinstein",
+         "domain": "https://www.linkedin.com/in/jeweinstein",
+         "amount": null
+        },
+        {
+         "name": "Laura & Vlad Loktev",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": null,
+       "city": "San Francisco",
+       "use_of_funds": "to build more products and win over larger enterprise customers",
+       "source_sentence": "Enterprise software startup Linear has raised an $82 million Series C funding round, valuing the startup at $1.25 billion, the company said on Tuesday. Venture capital fund Accel led the round, with participation from existing investors 01A and Sequoia, and new investors Seven Seven Six and Designer Fund.",
+       "published_at": "2025-06-10T15:19:12",
+       "coverage_count": 3,
+       "article_ids": [
+        "68c57619d16fb305ef9450dc",
+        "68f723e56ecd416e342b51cf",
+        "69bd0a45981d28529ed39e8f"
+       ],
+       "article_id": "68c57619d16fb305ef9450dc"
+      },
+      {
+       "id": "6eaaad225f31db14",
+       "company_name": "Gimlet Labs",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "factory",
+         "domain": "factory.com",
+         "amount": null
+        },
+        {
+         "name": "eclipse ventures",
+         "domain": "eclipse.vc",
+         "amount": null
+        },
+        {
+         "name": "Prosperity7",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Triatomic",
+         "domain": "triatomic.ai",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI SaaS",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "support R&D for multi‑silicon deployments; scale commercial operations; grow engineering and customer success teams",
+       "source_sentence": "Gimlet Labs, an AI infrastructure startup based in San Francisco, raised $80 million in a Series A led by Menlo Ventures.",
+       "published_at": "2026-03-24T22:15:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc07c09d3d4bff9ce784f5"
+       ],
+       "article_id": "69cc07c09d3d4bff9ce784f5"
+      },
+      {
+       "id": "6a86227c501a57aa",
+       "company_name": "didomi",
+       "domain": "didomi.io",
+       "round_type": "Unknown",
+       "amount_usd": 77760000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 72000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "marlin equity partners",
+         "domain": "marlinequity.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data Privacy / Consent Management / SaaS",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "support its acquisition of Sourcepoint, drive product innovation, and expand its enterprise-grade privacy solutions.",
+       "source_sentence": "Didomi, a Paris, France-based provider of global data privacy solutions, has raised €72 million in funding.",
+       "published_at": "2025-07-10T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e94c19ca02490ec10bda9"
+       ],
+       "article_id": "698e94c19ca02490ec10bda9"
+      },
+      {
+       "id": "8e88a442e1d9f1a0",
+       "company_name": "posthog",
+       "domain": "posthog.com",
+       "round_type": null,
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "PostHog: Software-as-a-service (SaaS) startup PostHog raised $75 million in a funding round at a $1.4 billion valuation. The round was led by Peak XV Partners with participation from other existing investors.",
+       "published_at": "2025-10-03T16:23:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f70f80e97e6da31e2bd382"
+       ],
+       "article_id": "68f70f80e97e6da31e2bd382"
+      },
+      {
+       "id": "228e81fc39b63538",
+       "company_name": "posthog",
+       "domain": "posthog.com",
+       "round_type": "Series E",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1400000000.0,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": 1400000000.0,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "stripe",
+         "domain": "stripe.com",
+         "amount": null
+        },
+        {
+         "name": "Formus Capital",
+         "domain": "formuscap.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS / Developer Tools / Analytics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "enhance its suite of tools and launch new products that provide deeper product performance insights and developer-focused features.",
+       "source_sentence": "PostHog, a San Francisco, CA-based SaaS startup building a suite of tools for product engineers, has raised $75 million in a Series E round at a $1.4 billion valuation.",
+       "published_at": "2025-10-03T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f99c38d29a990b6ffac71"
+       ],
+       "article_id": "698f99c38d29a990b6ffac71"
+      },
+      {
+       "id": "34c4e6f03488598b",
+       "company_name": "zaggle",
+       "domain": "zaggle.in",
+       "round_type": "maiden QIP",
+       "amount_usd": 71400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 5950000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Fintech SaaS",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "After raising INR 595 Cr via its maiden QIP in December last year, fintech SaaS company Zaggle’s board has now approved raising INR 59.99 Cr from preferential allotment of warrants.",
+       "published_at": "2025-12-16T11:28:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a7a7a88ad7b9aae0be92"
+       ],
+       "article_id": "6988a7a7a88ad7b9aae0be92"
+      },
+      {
+       "id": "8b9ffd508f11e8fb",
+       "company_name": "posthog",
+       "domain": "posthog.com",
+       "round_type": "Series D",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "stripe",
+         "domain": "stripe.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "other existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Accelerate development of AI‑driven analytics assistant “Max AI” and expand the team to support a growing community of developers and enterprises.",
+       "source_sentence": "PostHog has secured $70 million in Series D funding.",
+       "published_at": "2025-06-16T23:35:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0f66874d3d5792a2c3ae0"
+       ],
+       "article_id": "68d0f66874d3d5792a2c3ae0"
+      },
+      {
+       "id": "e1ad5f9b8d019ea5",
+       "company_name": "gamma tech",
+       "domain": "gammatech.com",
+       "round_type": "Series B",
+       "amount_usd": 68000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2100000000.0,
+       "currency": "USD",
+       "amount": 68000000.0,
+       "valuation": 2100000000.0,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "uncork capital",
+         "domain": "uncorkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI / Visual Storytelling / Productivity SaaS",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "accelerate product development, enhance AI design capabilities, and expand Gamma’s team to meet growing global demand",
+       "source_sentence": "Gamma, a San Francisco, CA–based AI platform for visual storytelling, has secured $68 million in Series B funding at a $2.1 billion valuation.",
+       "published_at": "2025-11-11T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f6ec99ca02490ec20f5c4"
+       ],
+       "article_id": "698f6ec99ca02490ec20f5c4"
+      },
+      {
+       "id": "56d75ea4fe671f37",
+       "company_name": "keepit",
+       "domain": "keepit.com",
+       "round_type": "Refinancing",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Export and Investment Fund of Denmark (EIFO)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hsbc innovation banking",
+         "domain": "hsbcinnovationbanking.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS data protection",
+       "country": null,
+       "city": null,
+       "use_of_funds": "future-proofing the organization, supporting ongoing product development, innovation, and efforts to deepen market penetration",
+       "source_sentence": "Keepit, the world’s only vendor-neutral and truly immutable cloud dedicated to SaaS data protection, has announced a strategic financial update to upsize and refinance its credit facilities amounting to $60 million USD from the Export and Investment Fund of Denmark (EIFO) and HSBC Innovation Banking.",
+       "published_at": "2025-09-29T12:06:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cba96fe6465b4d564fe681"
+       ],
+       "article_id": "69cba96fe6465b4d564fe681"
+      },
+      {
+       "id": "c4eeaf31467e47f7",
+       "company_name": "stavtar solutions",
+       "domain": "stavtar.com",
+       "round_type": "Series A",
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "elephant",
+         "domain": "helloelephant.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Product innovation, expansion of integrated payments capabilities within its flagship product StavPay, hiring to meet rapidly increasing demand, and continued product innovation, integrated payments platform development, AI and mobile capabilities, and expanding footprint into adjacent verticals.",
+       "source_sentence": "today announced a Series A investment of $55 million from Elephant.",
+       "published_at": "2025-08-06T11:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "68a176753ff75e010c30bd60",
+        "68ab3faf2e28036801bded0c",
+        "68b0540c3b014c087ae4e696",
+        "68d93a9f571cd3f5050b287d"
+       ],
+       "article_id": "68ab3faf2e28036801bded0c"
+      },
+      {
+       "id": "b8363e8993c2ad79",
+       "company_name": "courtreserve",
+       "domain": "courtreserve.com",
+       "round_type": "Growth Investment",
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 54000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mainsail partners",
+         "domain": "mainsailpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "SportsTech / Club Management SaaS",
+       "country": "United States",
+       "city": "St. Augustine, Florida",
+       "use_of_funds": "The company will use the funds to enhance product development, expand AI-driven features, strengthen integrations, improve customer support, and scale go-to-market initiatives.",
+       "source_sentence": "CourtReserve, a St. Augustine, Florida–based club management software platform, has secured a $54 million growth investment.",
+       "published_at": "2025-10-27T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d12038d29a990b6cf7e40"
+       ],
+       "article_id": "698d12038d29a990b6cf7e40"
+      },
+      {
+       "id": "928cee19e69dc341",
+       "company_name": "evoluteiq",
+       "domain": "evoluteiq.com",
+       "round_type": "undisclosed",
+       "amount_usd": 53000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 53000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "baird capital",
+         "domain": "bairdcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "enterprise automation SaaS",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "On the SaaS front, EvoluteIQ, an enterprise automation platform, bagged $53 million from Baird Capital.",
+       "published_at": "2025-09-20T16:01:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9a8d0983a16828b7ec9f1"
+       ],
+       "article_id": "68d9a8d0983a16828b7ec9f1"
+      },
+      {
+       "id": "6c756aa88b83a562",
+       "company_name": "eon",
+       "domain": "eonhealth.com",
+       "round_type": "Series D",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Affinity Partners",
+         "domain": "affinitypartners.com.au",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        },
+        {
+         "name": "Gil Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Omri Casspi",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Swish Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "vine ventures",
+         "domain": "vine.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Cloud Data Services, Cloud Management, Data Management, SaaS",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "1. Eon $300.0M",
+       "published_at": "2026-01-07T09:27:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988881d34d0159e4e74bfc0"
+       ],
+       "article_id": "6988881d34d0159e4e74bfc0"
+      },
+      {
+       "id": "de41bf259b2008e7",
+       "company_name": "hyro",
+       "domain": "hyro.ai",
+       "round_type": "Venture",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bon secours mercy health",
+         "domain": "bsmhealth.org",
+         "amount": null
+        },
+        {
+         "name": "define ventures",
+         "domain": "definevc.com",
+         "amount": null
+        },
+        {
+         "name": "Healthier Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "servicenow ventures",
+         "domain": "servicenow.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI),B2B,Generative AI,Health Care,Health Insurance,Hospital,Natural Language Processing,SaaS,Virtual Assistant",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Hyro is a plug-and-play conversational AI platform that enables enterprises to add voice and text capabilities to their digital channels.",
+       "published_at": "2025-11-13T09:27:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a74f127162d16e0ad533"
+       ],
+       "article_id": "6988a74f127162d16e0ad533"
+      },
+      {
+       "id": "43cf0cfed46d0bb8",
+       "company_name": "rocketlane",
+       "domain": "rocketlane.com",
+       "round_type": null,
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Today, the company serves over 600 enterprises globally and has raised $45 million from investors, including Z47 (formerly Matrix Partners India), Nexus Venture Partners and 8VC.",
+       "published_at": "2025-10-28T06:39:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbbe5e52cbf28bda9b8f03"
+       ],
+       "article_id": "69bbbe5e52cbf28bda9b8f03"
+      },
+      {
+       "id": "4e35104936f111db",
+       "company_name": "plancraft",
+       "domain": "plancraft.de",
+       "round_type": "series-B",
+       "amount_usd": 41040000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 38000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        },
+        {
+         "name": "htgf",
+         "domain": "htgf.de",
+         "amount": null
+        },
+        {
+         "name": "xdeck",
+         "domain": "xdeck.de",
+         "amount": null
+        },
+        {
+         "name": "global VC headline",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "Germany",
+       "city": "Hamburg",
+       "use_of_funds": null,
+       "source_sentence": "The Hamburg-based startup Plancraft has collected 38 million euros in a series-B financing round.",
+       "published_at": "2025-08-18T09:42:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "695f250962c336f10ea60526"
+       ],
+       "article_id": "695f250962c336f10ea60526"
+      },
+      {
+       "id": "0ed13c7a09897463",
+       "company_name": "plancraft",
+       "domain": "plancraft.de",
+       "round_type": "Series B",
+       "amount_usd": 41040000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 38000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "headline",
+         "domain": "headline.fr",
+         "amount": null
+        },
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        },
+        {
+         "name": "htgf",
+         "domain": "htgf.de",
+         "amount": null
+        },
+        {
+         "name": "xdeck",
+         "domain": "xdeck.de",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS Construction AI",
+       "country": "Germany",
+       "city": "Hamburg",
+       "use_of_funds": "to accelerate development of its AI-driven workflow platform",
+       "source_sentence": "Plancraft, a Hamburg, Germany-based SaaS startup focused on construction and skilled trades, has secured a €38 million Series B round to accelerate development of its AI-driven workflow platform.",
+       "published_at": "2025-08-13T20:32:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "68ab3fb42e28036801bf382a",
+        "68d9ae8b983a16828b7f59d7"
+       ],
+       "article_id": "68d9ae8b983a16828b7f59d7"
+      },
+      {
+       "id": "21a51823bd5f036a",
+       "company_name": "plancraft",
+       "domain": "plancraft.de",
+       "round_type": "Series B",
+       "amount_usd": 41040000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 38000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "headline",
+         "domain": "headline.fr",
+         "amount": null
+        },
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        },
+        {
+         "name": "htgf",
+         "domain": "htgf.de",
+         "amount": null
+        },
+        {
+         "name": "xdeck",
+         "domain": "xdeck.de",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "Germany",
+       "city": "Hamburg",
+       "use_of_funds": "The new funding will be used primarily to build AI-first tools to handle routine tasks more efficiently for tradespeople and to further grow the team across different countries.",
+       "source_sentence": "The Hamburg-based SaaS company plancraft has secured a €38 million Series B funding round, bringing the company’s total funding to over €50 million. The round was led by Headline, with participation from existing investors Creandum, HTGF, and xdeck.",
+       "published_at": "2025-08-13T07:00:00",
+       "coverage_count": 9,
+       "article_ids": [
+        "68ab3601bfdb4fb66391f0d3",
+        "68b433dd3ddf2630a8ba186b",
+        "68b4341f3ddf2630a8bf7cf3",
+        "6988a4d569527f36baae5f4a",
+        "6988fe4d94d3f481f3dd62a8",
+        "698d33039ca02490ecf67c32",
+        "698e69588d29a990b6e8eced",
+        "69974c130d0db262fa5a2404",
+        "69cbcb30d5ebd7d5be52dc5e"
+       ],
+       "article_id": "68b433dd3ddf2630a8ba186b"
+      },
+      {
+       "id": "ef30dd078561d6af",
+       "company_name": "darwinbox",
+       "domain": "darwinbox.com",
+       "round_type": null,
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Teachers’ Venture Growth (TVG)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HR SaaS",
+       "country": "India",
+       "city": "Hyderabad",
+       "use_of_funds": "Accelerated global expansion",
+       "source_sentence": "Later secured another $40M from Canada’s Teachers’ Venture Growth (TVG) in August.",
+       "published_at": "2025-09-01T12:20:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc2c754583f4645ff4b5b4"
+       ],
+       "article_id": "69bc2c754583f4645ff4b5b4"
+      },
+      {
+       "id": "2111e837845734ec",
+       "company_name": "pelico",
+       "domain": "pelico.ai",
+       "round_type": null,
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "serena",
+         "domain": "serena.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Software (Industrial SaaS)",
+       "country": "France",
+       "city": "Miami",
+       "use_of_funds": "Growth and expansion in AI-powered manufacturing",
+       "source_sentence": "Pelico, a French start-up specializing in the development of software for pilotage in the factory, announces this June 18 a fund raising of $40 million (€34.7 million). The round table was led by the investment company General Catalyst, with the support of French Serena and the",
+       "published_at": "2025-06-18T11:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "696489509152ac030a3e5015",
+        "69bb01b3eec96a7343007b6f"
+       ],
+       "article_id": "696489509152ac030a3e5015"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 381,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDYtMTggMTE6MDA6MDAiLCJrIjoiMjM4Mjk0MTAwMjk5Njg1NjA0NCIsImEiOjQwMDAwMDAwLjB9",
+     "totals": {
+      "deals": 381,
+      "deals_with_amount": 326,
+      "deals_without_amount": 55,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 5703780078.0,
+      "median_amount_usd": 5500000.0,
+      "largest_amount_usd": 290000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.268,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.271
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "saas",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "saas"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "c010b6e8cf4f8b34",
+       "company_name": "otto",
+       "domain": "ottostore.com",
+       "round_type": "Seed",
+       "amount_usd": 500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Backfuture VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Quadri Ventures",
+         "domain": "quadriventures.com",
+         "amount": null
+        },
+        {
+         "name": "BAG Collective",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SaaS / AI",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "The funds will be used to scale product development and onboard early customers.",
+       "source_sentence": "Otto Raises $500K Seed Round",
+       "published_at": "2026-04-29T12:18:40",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f229c427117df83f9439e5",
+        "69f8809d8937ef12fc072dd3"
+       ],
+       "article_id": "69f229c427117df83f9439e5"
+      },
+      {
+       "id": "2ce8466f13f72de8",
+       "company_name": "cata",
+       "domain": "grupocata.com.br",
+       "round_type": "seed",
+       "amount_usd": 5300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "portage",
+         "domain": "portageinvest.com",
+         "amount": null
+        },
+        {
+         "name": "white star capital",
+         "domain": "whitestarcapital.com",
+         "amount": null
+        },
+        {
+         "name": "468 capital",
+         "domain": "468cap.com",
+         "amount": null
+        },
+        {
+         "name": "foodlabs",
+         "domain": "foodlabs.com",
+         "amount": null
+        },
+        {
+         "name": "fj labs",
+         "domain": "fjlabs.com",
+         "amount": null
+        },
+        {
+         "name": "rally cap",
+         "domain": "rallycap.com",
+         "amount": null
+        },
+        {
+         "name": "iterative",
+         "domain": "iterative.com.br",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS platform for enterprise-grade branded apps",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "further develop its product, including artificial intelligence (AI) capabilities, and to support international expansion",
+       "source_sentence": "The funding round was led by Portage, with participation from White Star Capital, 468 Capital, FoodLabs, FJ Labs, Rally Cap, and Iterative.",
+       "published_at": "2026-04-29T08:09:37",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f1ceaf399b489398e211a6",
+        "6a03f24662bbf617b03ab9fb"
+       ],
+       "article_id": "69f1ceaf399b489398e211a6"
+      },
+      {
+       "id": "c666190d249e200e",
+       "company_name": "fanbase",
+       "domain": "fanbase.app",
+       "round_type": "Extension",
+       "amount_usd": 600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Sports SaaS",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "product development and international expansion, including entry into Europe by 2027",
+       "source_sentence": "The startup raised a $600,000 extension round following a previous seed round.",
+       "published_at": "2026-04-24T09:30:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d499713680636eec2f97"
+       ],
+       "article_id": "69f9d499713680636eec2f97"
+      },
+      {
+       "id": "3e9081a2644c61fd",
+       "company_name": "Eaship",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Hispanic Israeli Foundation Swanlaab Venture Factory",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SaaS logistics platform",
+       "country": "Spain",
+       "city": "Valencia",
+       "use_of_funds": null,
+       "source_sentence": "The Hispanic Israeli Foundation Swanlaab Venture Factory has led a seed funding round of EUR 1 million in Eaship, a SaaS platform that allows industrial manufacturers to digitize and optimize the management of their transport and logistics.",
+       "published_at": "2026-04-23T11:42:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea1fe173206aa299ebff23"
+       ],
+       "article_id": "69ea1fe173206aa299ebff23"
+      },
+      {
+       "id": "a189270923c6d7ea",
+       "company_name": "atlas",
+       "domain": "atlasroofing.com",
+       "round_type": "Seed",
+       "amount_usd": 6000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "stellaris venture partners",
+         "domain": "stellarisvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS / Fintech infra",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "platform scaling, customer acquisition",
+       "source_sentence": "Atlas has raised $6 million in a seed round co‑led by Accel and Stellaris Venture Partners.",
+       "published_at": "2026-04-08T12:46:08",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e2e10d601121844c4424f1",
+        "69e850555cfa3e5ba5e663b0",
+        "69e852b55cfa3e5ba5e7c9b6"
+       ],
+       "article_id": "69e2e10d601121844c4424f1"
+      },
+      {
+       "id": "99cfda839fe658fa",
+       "company_name": "cloud capital",
+       "domain": "cloudcap.in",
+       "round_type": "pre-seed and seed",
+       "amount_usd": 7700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "connect ventures",
+         "domain": "connectventures.co",
+         "amount": null
+        },
+        {
+         "name": "Backed Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "middlegame ventures",
+         "domain": "middlegamevc.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": null,
+       "city": null,
+       "use_of_funds": "scaling AI-driven financial controls for enterprises",
+       "source_sentence": "Cloud Capital Raises $7.7 mn Cloud Capital, a SaaS-based cloud financial management platform, raised $7.7 million in combined pre-seed and seed funding led by Connect Ventures, Backed Ventures, and Middlegame Ventures.",
+       "published_at": "2026-04-08T05:10:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e35f2944a7294eaace0353"
+       ],
+       "article_id": "69e35f2944a7294eaace0353"
+      },
+      {
+       "id": "866d8997966dce96",
+       "company_name": "wingify",
+       "domain": "wingify.com",
+       "round_type": null,
+       "amount_usd": 165720000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 13810000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "everstone capital",
+         "domain": "everstonecapital.com",
+         "amount": 12497000000.0
+        },
+        {
+         "name": "Vyom Mankekar",
+         "domain": null,
+         "amount": 840000000.0
+        },
+        {
+         "name": "Other Investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Strategic round",
+       "source_sentence": "SaaS major Wingify is raising ₹1,381 Cr (nearly $149 Mn) in a strategic round led by majority shareholder and private equity (PE) firm Everstone Capital.",
+       "published_at": "2026-04-06T20:45:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2c40d3aab8d96aa39a3b9"
+       ],
+       "article_id": "69e2c40d3aab8d96aa39a3b9"
+      },
+      {
+       "id": "d7e4188eba1b6006",
+       "company_name": "wingify",
+       "domain": "wingify.com",
+       "round_type": "Growth",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "everstone capital",
+         "domain": "everstonecapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "India",
+       "city": "Delhi",
+       "use_of_funds": "product expansion, global growth, and potential acquisitions in the SaaS and martech space.",
+       "source_sentence": "Wingify Receives $150 Million Growth Investment Delhi-based SaaS company Wingify, known for its conversion optimisation platform VWO, secured $150 million in fresh capital from Everstone Capital and other investors.",
+       "published_at": "2026-04-06T12:17:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2cb6b9b322e6b3ea67a4a"
+       ],
+       "article_id": "69e2cb6b9b322e6b3ea67a4a"
+      },
+      {
+       "id": "2b4e51fa95acd834",
+       "company_name": "wingify",
+       "domain": "wingify.com",
+       "round_type": "Growth",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "everstone capital",
+         "domain": "everstonecapital.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "India",
+       "city": "Delhi",
+       "use_of_funds": "The funding will support product expansion, global growth, and potential acquisitions in the SaaS and martech space.",
+       "source_sentence": "Wingify Receives $150 Million Growth Investment Wingify, known for its conversion optimisation platform VWO, secured $150 million in fresh capital from Everstone Capital and other investors.",
+       "published_at": "2026-04-06T12:17:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2ccaec1991f786cf136bf"
+       ],
+       "article_id": "69e2ccaec1991f786cf136bf"
+      },
+      {
+       "id": "092c46af2681c4e2",
+       "company_name": "wingify",
+       "domain": "wingify.com",
+       "round_type": "rights issue",
+       "amount_usd": 165720000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 13810000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "everstone capital",
+         "domain": "everstonecapital.com",
+         "amount": 12500000000.0
+        },
+        {
+         "name": "Vyom Mankekar",
+         "domain": null,
+         "amount": 840000000.0
+        },
+        {
+         "name": "Shivanand Mankekar",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jt. Laxmi Mankekar",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kedar Mankekar",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "CEO Sparsh Gupta",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "rights issue capital raise",
+       "source_sentence": "Everstone Capital acquired a majority stake in Wingify in a $200 million deal in January 2025, in one of the largest SaaS deals and a major milestone for the bootstrapped startup.",
+       "published_at": "2026-04-06T08:19:55",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e29ccca85be7e5065ad698",
+        "69e2b652dc480588dca1f0ad"
+       ],
+       "article_id": "69e2b652dc480588dca1f0ad"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 81,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDYgMDg6MTk6NTUiLCJrIjoiNjYwOTgwOTYzMzk1ODgwMTYyIn0",
+     "totals": {
+      "deals": 81,
+      "deals_with_amount": 67,
+      "deals_without_amount": 14,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 1150569000.0,
+      "median_amount_usd": 5000000.0,
+      "largest_amount_usd": 189000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.398,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.418
+    }
+   }
+  }
+ ]
+}

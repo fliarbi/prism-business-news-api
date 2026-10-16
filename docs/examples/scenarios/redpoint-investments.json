@@ -1,0 +1,3186 @@
+{
+ "slug": "redpoint-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:31Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Redpoint",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "redpoint"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 108,
+      "deals_with_amount": 104,
+      "deals_without_amount": 4,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 7071234400.0,
+      "median_amount_usd": 67500000.0,
+      "largest_amount_usd": 550000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 306248000.0,
+       "median_amount_usd": 70000000.0,
+       "largest_amount_usd": 80000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 9,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 915000000.0,
+       "median_amount_usd": 70000000.0,
+       "largest_amount_usd": 540000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 7,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 159966400.0,
+       "median_amount_usd": 22000000.0,
+       "largest_amount_usd": 55000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 10,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 299020000.0,
+       "median_amount_usd": 36000000.0,
+       "largest_amount_usd": 52000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 9,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1045000000.0,
+       "median_amount_usd": 85000000.0,
+       "largest_amount_usd": 550000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 12,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 837000000.0,
+       "median_amount_usd": 150000000.0,
+       "largest_amount_usd": 180000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 11,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 536000000.0,
+       "median_amount_usd": 61000000.0,
+       "largest_amount_usd": 298000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 11,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 392000000.0,
+       "median_amount_usd": 30000000.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1067500000.0,
+       "median_amount_usd": 100000000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 450500000.0,
+       "median_amount_usd": 120000000.0,
+       "largest_amount_usd": 150000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1168000000.0,
+       "median_amount_usd": 292000000.0,
+       "largest_amount_usd": 550000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 400000000.0,
+       "median_amount_usd": 100000000.0,
+       "largest_amount_usd": 120000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.193,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.218
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Redpoint",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "redpoint"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "49f779fbd1a3ab61",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5500000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5500000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Legora Raises $550M in Series D Funding to Expand AI in Legal Operations",
+       "published_at": "2026-03-10T22:32:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cc41766e63f1d240550f7c",
+        "69f8854b43843dd771d132fb"
+       ],
+       "article_id": "69cc41766e63f1d240550f7c"
+      },
+      {
+       "id": "e3c5dcecdaa89d4f",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish start-up Legora has received 550 million dollars in a new round of financing and is now valued at 5.55 billion dollars.",
+       "published_at": "2026-03-10T14:50:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a7c57f3a572cf4abb9ee"
+       ],
+       "article_id": "69e2a7c57f3a572cf4abb9ee"
+      },
+      {
+       "id": "08695f9c2a01bfe5",
+       "company_name": "Legora",
+       "domain": "legora.com",
+       "round_type": null,
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish start-up Legora has received 550 million dollars in a new round of financing and is now valued at 5.55 billion dollars.",
+       "published_at": "2026-03-10T14:50:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03639cca027fb5990b7749"
+       ],
+       "article_id": "6a03639cca027fb5990b7749"
+      },
+      {
+       "id": "6ce6a2310c2e5ecc",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "FirstMark Capital",
+         "domain": "firstmarkcap.com",
+         "amount": null
+        },
+        {
+         "name": "sands capital",
+         "domain": "sandscapital.com",
+         "amount": null
+        },
+        {
+         "name": "starwood capital",
+         "domain": "starwoodcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal Tech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "fuel rapid U.S. expansion",
+       "source_sentence": "Today, we’re thrilled to announce that Menlo Ventures has joined Legora’s $550 million Series D, alongside Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Redpoint Ventures, Y Combinator, Alkeon Capital, Bain Capital, Firstmark Capital, Sands Capital, and Starwood Capital.",
+       "published_at": "2026-03-10T12:00:00",
+       "coverage_count": 20,
+       "article_ids": [
+        "69c3a285c8a71dc7ae87a085",
+        "69c3a479836293942ef6807a",
+        "69c3a5563653d7fe6e7e3f03",
+        "69c3a6f16d029f77a1d3fa36",
+        "69c3a897f7c4e6f108e480ec",
+        "69cbd09bbf09457014d4cbc0",
+        "69cbd09f7aa9ae690c974fff",
+        "69cbd1e02e41fb6223042ccd",
+        "69cc1ddb1e1adbe011d85dd1",
+        "69cc3f8eda8c239a52930b7f",
+        "69e2836c90d9a716b4b7c27c",
+        "69e6468e2461615d5f46c48a",
+        "69e882157bb1410d4c87ec9e",
+        "69e8e3179baafc7356de01b8",
+        "69f87fff43843dd771ce435f",
+        "69f88276bbf1d31455976b0a",
+        "69f8851bbbf1d3145598e7c3",
+        "69f8854b43843dd771d132fb",
+        "69f8a84cbbf1d314559a3e99",
+        "69f8aae6bbf1d314559a5d72"
+       ],
+       "article_id": "69e2836c90d9a716b4b7c27c"
+      },
+      {
+       "id": "2caf1bcb01f1efc3",
+       "company_name": "strive health",
+       "domain": "strivehealth.com",
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        },
+        {
+         "name": "cvs health ventures",
+         "domain": "cvshealth.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "echo health ventures",
+         "domain": "echohealthventures.com",
+         "amount": null
+        },
+        {
+         "name": "town hall ventures",
+         "domain": "townhallventures.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "BlackRock affiliates",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hercules capital",
+         "domain": "htgc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "USA",
+       "city": "Denver",
+       "use_of_funds": "Invest in AI, grow business, expand care delivery to adjacent conditions (e.g., congestive heart failure)",
+       "source_sentence": "Strive Health has secured a massive $550 million in Series D funding.",
+       "published_at": "2025-09-10T02:58:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d94c2b8b9b1745e6108e29"
+       ],
+       "article_id": "68d94c2b8b9b1745e6108e29"
+      },
+      {
+       "id": "cfb29f228b9d4259",
+       "company_name": "strive health",
+       "domain": "strivehealth.com",
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "new enterprise associates",
+         "domain": "nea.com",
+         "amount": null
+        },
+        {
+         "name": "hercules capital",
+         "domain": "htgc.com",
+         "amount": null
+        },
+        {
+         "name": "cvs health ventures",
+         "domain": "cvshealth.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "echo health ventures",
+         "domain": "echohealthventures.com",
+         "amount": null
+        },
+        {
+         "name": "town hall ventures",
+         "domain": "townhallventures.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-driven kidney care",
+       "country": null,
+       "city": null,
+       "use_of_funds": "strengthen partnerships, grow services and expand AI-driven tools and analytics for kidney care",
+       "source_sentence": "Strive Health, which offers an AI-driven kidney care model, has raised $550 million in a Series D funding round, with $300 million secured via a Series D equity round and $250 million via debt financing.",
+       "published_at": "2025-09-09T14:11:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbc34f52cbf28bda9b9d8a"
+       ],
+       "article_id": "69bbc34f52cbf28bda9b9d8a"
+      },
+      {
+       "id": "4b64e4225b27a432",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "Series E",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 540000000.0,
+       "valuation": 6000000000.0,
+       "investors": [
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand product offerings, pursue strategic acquisitions, hire additional talent, and further strengthen presence in existing and new global markets",
+       "source_sentence": "Cyera, which helps enterprises protect sensitive information while adopting artificial intelligence, has secured $540m in a Series E funding round.",
+       "published_at": "2025-06-12T10:30:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a21f94d3f481f3d6c903",
+        "698f9b648d29a990b6ffcae2"
+       ],
+       "article_id": "6988a21f94d3f481f3d6c903"
+      },
+      {
+       "id": "5acdcab8c009f746",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "late-stage",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 540000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire",
+         "domain": "sapphiretechnologies.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark",
+         "domain": "sparkadvisors.com",
+         "amount": null
+        }
+       ],
+       "sector": "data security",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": "expand its platform and fuel growth efforts",
+       "source_sentence": "Cyera is on a tear. The Israeli data security startup just pulled in $540 million in a late-stage funding round, more than doubling its valuation to $6 billion in just seven months.",
+       "published_at": "2025-06-11T15:15:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9ae8f93ec9fed387f5c97"
+       ],
+       "article_id": "68d9ae8f93ec9fed387f5c97"
+      },
+      {
+       "id": "cbdd3513f372ef1e",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "Series F",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": 9.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire",
+         "domain": "sapphiretechnologies.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark",
+         "domain": "sparkadvisors.com",
+         "amount": null
+        }
+       ],
+       "sector": "data security",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Extend its data and access platform into AI security, covering how AI is built, used, and controlled within large organizations; support product development, global expansion, and partnerships",
+       "source_sentence": "Cyera, the industry’s leading AI and data security company, announced a $400 million Series F funding round, bringing its total funding to over $1.7 billion.",
+       "published_at": "2026-01-08T12:59:17",
+       "coverage_count": 12,
+       "article_ids": [
+        "698678ae069c05cbe27bbc9f",
+        "6986d44fca3bd326c77dd21a",
+        "6988bcc594d3f481f3d87777",
+        "698d1aaa8d29a990b6d01ae6",
+        "6991c064c659adee968350fb",
+        "69bc043f8d57adc3f4d8ac89",
+        "69bc3739650bbd41e03de4a8",
+        "69c9cfedb68ade25f5c8cc35",
+        "69cc5abf62898d9e03cf51da",
+        "69e8e1469baafc7356dc880e",
+        "6a2aae90c37f6c5e66e4804d",
+        "6a2ae613963d76f4af1a205f"
+       ],
+       "article_id": "6986d44fca3bd326c77dd21a"
+      },
+      {
+       "id": "77e590704adea8b5",
+       "company_name": "function health",
+       "domain": "functionhealth.com",
+       "round_type": "Series B",
+       "amount_usd": 298000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 298000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "aglaé ventures",
+         "domain": "aglaeventures.com",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": null,
+       "city": "Austin",
+       "use_of_funds": null,
+       "source_sentence": "Function Health raised $298 million in Series B funding.",
+       "published_at": "2025-11-20T00:26:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "693165c77f7fb519dcf22a6b"
+       ],
+       "article_id": "693165c77f7fb519dcf22a6b"
+      },
+      {
+       "id": "b4c99136582f282d",
+       "company_name": "k2 space",
+       "domain": "k2space.com",
+       "round_type": "Series C",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alpine space ventures",
+         "domain": "alpinespace.vc",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "hedosophia",
+         "domain": "hedosophia.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Aerospace, Machinery Manufacturing, Manufacturing, Space Travel",
+       "country": "United States",
+       "city": "Torrance",
+       "use_of_funds": null,
+       "source_sentence": "Round: Series C",
+       "published_at": "2026-01-16T09:27:11",
+       "coverage_count": 2,
+       "article_ids": [
+        "698888315302bdff258760dc",
+        "698d77be9ca02490ecfba63d"
+       ],
+       "article_id": "698888315302bdff258760dc"
+      },
+      {
+       "id": "e70413c133f83815",
+       "company_name": "k2 space",
+       "domain": "k2space.com",
+       "round_type": "total equity funding",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alpine space ventures",
+         "domain": "alpinespace.vc",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "hedosophia",
+         "domain": "hedosophia.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "Torrance",
+       "use_of_funds": null,
+       "source_sentence": "K2 Space has now raised a total of $425.5M in total equity funding and is backed by Alpine Space Ventures, Altimeter Capital, Hedosophia, Lightspeed Venture Partners, Redpoint, and T. Rowe Price.",
+       "published_at": "2025-12-15T08:27:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a730cfd8658683ead142"
+       ],
+       "article_id": "6988a730cfd8658683ead142"
+      },
+      {
+       "id": "cd8c5d75adf03c20",
+       "company_name": "Berliner",
+       "domain": "berliner.hr",
+       "round_type": "Series-C",
+       "amount_usd": 180000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 180000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "firstminute capital",
+         "domain": "firstminute.capital",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "evantic",
+         "domain": "evantic.com",
+         "amount": null
+        },
+        {
+         "name": "visionaries club",
+         "domain": "visionaries.vc",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "deutsche telekom",
+         "domain": "telekom.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "Only six months after the completion of the Series-B financing round in March 2025, n8n has raised another USD 180 million in a spectacular Series-C round; the round was led by Accel, with participation by Meritech, Redpoint, Evantic, Visionaries Club, and the NVentures (NVIDIA) and T.Capital (Deutsche Telekom) corporate investors. Also some stock investors, e.g. Sequoia, have participated again.",
+       "published_at": "2025-10-14T07:27:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69648ff7896f319d0a13f05c"
+       ],
+       "article_id": "69648ff7896f319d0a13f05c"
+      },
+      {
+       "id": "b2cf7cd4ef4f1e88",
+       "company_name": "Berliner",
+       "domain": "berliner.hr",
+       "round_type": "Series-C",
+       "amount_usd": 180000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 180000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "evantic",
+         "domain": "evantic.com",
+         "amount": null
+        },
+        {
+         "name": "visionaries club",
+         "domain": "visionaries.vc",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "deutsche telekom",
+         "domain": "telekom.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "firstminute capital",
+         "domain": "firstminute.capital",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "Only six months after the completion of the Series-B financing round in March 2025, n8n has raised another USD 180 million in a spectacular Series-C round; the round was led by Accel, with participation by Meritech, Redpoint, Evantic, Visionaries Club, and the NVentures (NVIDIA) and T.Capital (Deutsche Telekom) corporate investors. Also some stock investors, e.g. Sequoia, have participated again.",
+       "published_at": "2025-10-14T07:27:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "695e9e66097627ca647b526d"
+       ],
+       "article_id": "695e9e66097627ca647b526d"
+      },
+      {
+       "id": "8a7af289a27a37cc",
+       "company_name": "n8n",
+       "domain": "n8n.io",
+       "round_type": "Series-C",
+       "amount_usd": 180000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2500000000.0,
+       "currency": "USD",
+       "amount": 180000000.0,
+       "valuation": 2500000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "evantic",
+         "domain": "evantic.com",
+         "amount": null
+        },
+        {
+         "name": "visionaries club",
+         "domain": "visionaries.vc",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "T.Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI orchestration",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "The Berlin-based start-up n8n has accumulated 180 million US dollars in a Series-C financing round, which increases the total financing to 240 million US dollars and the valuation to 2.5 billion US dollars. Accel is leading the round, supported by Meritech, Redpoint, Evantic, Visionaries Club, and the corporate investors NVentures and T.Capital, while existing investors are following up.",
+       "published_at": "2025-10-10T07:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988c17d94d3f481f3d8ce71"
+       ],
+       "article_id": "6988c17d94d3f481f3d8ce71"
+      },
+      {
+       "id": "a7fcee84c7c8a28d",
+       "company_name": "n8n",
+       "domain": "n8n.io",
+       "round_type": "Series C",
+       "amount_usd": 180000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 180000000.0,
+       "valuation": 2500000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "Matt Miller's Evantic",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "visionaries club",
+         "domain": "visionaries.vc",
+         "amount": null
+        },
+        {
+         "name": "t capital",
+         "domain": "t.capital",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI, Automation",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Expand engineering, develop new features, grow team, support international expansion",
+       "source_sentence": "N8n, the Berlin-based hyped AI startup which helps businesses automate tasks, has confirmed that it has raised $180m, valuing it at $2.5bn.",
+       "published_at": "2025-10-09T06:00:00",
+       "coverage_count": 10,
+       "article_ids": [
+        "68f70b69b5f4abc34a2b6dad",
+        "68f70bf9b5f4abc34a2b7ae7",
+        "69648ff4a55051cde5689520",
+        "6965403dd07c2a5fde9b95ca",
+        "6985f74e9438ce100b14a949",
+        "6988a4c2eefc5d2f542bade0",
+        "698daf388d29a990b6db0f9d",
+        "698ddbc98d29a990b6de6b9e",
+        "69bb53e151c35210b7b75e25",
+        "69bb5b2b51c35210b7b7788c"
+       ],
+       "article_id": "68f70bf9b5f4abc34a2b7ae7"
+      },
+      {
+       "id": "208983b8bae70a67",
+       "company_name": "n8n",
+       "domain": "n8n.io",
+       "round_type": "Series C",
+       "amount_usd": 180000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2500000000.0,
+       "currency": "USD",
+       "amount": 180000000.0,
+       "valuation": 2500000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "evantic",
+         "domain": "evantic.com",
+         "amount": null
+        },
+        {
+         "name": "visionaries club",
+         "domain": "visionaries.vc",
+         "amount": null
+        },
+        {
+         "name": "t capital",
+         "domain": "t.capital",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Automation / Workflow Orchestration",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "The company will use the funds to expand its engineering team, develop new features, and support international growth to meet rising enterprise demand.",
+       "source_sentence": "n8n, a Berlin, Germany-based AI businesses automation startup, has raised $180 million in a Series C round, valuing the company at $2.5 billion.",
+       "published_at": "2025-10-09T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "68f71009017a8a94832bdeb4",
+        "68f72cd96ecd416e342c202d",
+        "698f08348d29a990b6f4ece7"
+       ],
+       "article_id": "698f08348d29a990b6f4ece7"
+      },
+      {
+       "id": "babb1ad1b4b3d443",
+       "company_name": "appzen",
+       "domain": "appzen.com",
+       "round_type": "Series D",
+       "amount_usd": 180000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 180000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "riverwood capital",
+         "domain": "riverwoodcapital.com",
+         "amount": null
+        },
+        {
+         "name": "500 global",
+         "domain": "500.co",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "bloomberg beta",
+         "domain": "bloombergbeta.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise AI Finance Automation",
+       "country": "United States",
+       "city": "San Jose",
+       "use_of_funds": "Further scale its agentic AI product suite and support a larger customer base worldwide",
+       "source_sentence": "AppZen, an AI platform for enterprise finance teams, announced a $180 million Series D round on Monday. The growth financing was led exclusively by Riverwood Capital.",
+       "published_at": "2025-09-22T21:35:34",
+       "coverage_count": 4,
+       "article_ids": [
+        "68d98c1e1645babb987e6fb5",
+        "68d99f29c149d2bca77ded9d",
+        "698dba7b9ca02490ec00838d",
+        "69baef07e897e582f8794f04"
+       ],
+       "article_id": "68d99f29c149d2bca77ded9d"
+      },
+      {
+       "id": "1ac94f40f82e398b",
+       "company_name": "revel",
+       "domain": "revel-health.com",
+       "round_type": "Series B",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "abstract ventures",
+         "domain": "abstractvc.com",
+         "amount": null
+        },
+        {
+         "name": "Dylan Field",
+         "domain": "https://www.linkedin.com/in/dylanfield",
+         "amount": null
+        }
+       ],
+       "sector": "Aerospace, defense, robotics, industrial, advanced energy",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "accelerate its expansion across aerospace, defense, robotics, and industrial markets",
+       "source_sentence": "Revel today announced $150 million in Series B funding to accelerate its expansion across aerospace, defense, robotics, and industrial markets.",
+       "published_at": "2026-02-26T00:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69bc7eccd95eacb99a4d544d",
+        "69c9d94b2ef7157f445b50e2",
+        "69e11a5b18b1264689c4ebba",
+        "69e28dd7d754bf662cd3243d"
+       ],
+       "article_id": "69e11a5b18b1264689c4ebba"
+      },
+      {
+       "id": "a41e7be0c9abc87b",
+       "company_name": "Inferact",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 800000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 800000000.0,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "zhenfund",
+         "domain": "zhenfund.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI / Machine Learning Inference",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "commercialize vLLM, scale its platform for enterprise AI inference, and expand adoption among both existing and new customers.",
+       "source_sentence": "Inferact, a San Francisco, CA-based AI infrastructure startup, has secured $150 million in Seed funding at an $800 million valuation.",
+       "published_at": "2026-01-23T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "6985ebe5ca3bd326c7793b8f",
+        "69baeb777a841a437be4b1f2",
+        "69bd8f9c0ad23ae1115329db"
+       ],
+       "article_id": "69baeb777a841a437be4b1f2"
+      },
+      {
+       "id": "ba5c396d7b8b1a78",
+       "company_name": "Legora Nabs",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1800000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1800000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Legora Nabs – The collaborative AI platform for lawyers said it completed a Series C round or $150M at a $1.8B valuation. The round was led by Bessemer Venture Partners, with significant investment from existing investors ICONIQ, General Catalyst, Redpoint Ventures, Benchmark, and Y Combinator.",
+       "published_at": "2025-10-31T15:30:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcb520d0887d68fa4646fc"
+       ],
+       "article_id": "69bcb520d0887d68fa4646fc"
+      },
+      {
+       "id": "eeb6d108001e160d",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1800000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1800000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal Tech",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "to accelerate its global expansion and growing product roadmap",
+       "source_sentence": "Legora, the collaborative AI platform for lawyers, today announced the completion of a Series C round of $150 million at a $1.8 billion valuation, led by Bessemer Venture Partners, with significant investment from existing investors ICONIQ, General Catalyst, Redpoint Ventures, Benchmark, and Y Combinator, to accelerate its global expansion and growing product roadmap.",
+       "published_at": "2025-10-30T12:38:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "698cbe719ca02490ecee0a5d",
+        "699351d1379036c8ea1f387a"
+       ],
+       "article_id": "699351d1379036c8ea1f387a"
+      },
+      {
+       "id": "e41d389fad69e842",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1800000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1800000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iqoniq",
+         "domain": "iqoniq.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish legal-KI company Legora has received 150 million dollars in a new round of financing.",
+       "published_at": "2025-10-30T10:11:56",
+       "coverage_count": 4,
+       "article_ids": [
+        "69035041b0b9656d67d839b8",
+        "693196cf4bc82ccb0df223d4",
+        "69bbbecf9b159294d0127557",
+        "69bc7864ada7f1c360ff9927"
+       ],
+       "article_id": "69bc7864ada7f1c360ff9927"
+      },
+      {
+       "id": "09abe80caa777180",
+       "company_name": "juniper square",
+       "domain": "junipersquare.com",
+       "round_type": "Series D",
+       "amount_usd": 130000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 130000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "fifth wall",
+         "domain": "fifthwall.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "highsage ventures",
+         "domain": "highsage.com",
+         "amount": null
+        },
+        {
+         "name": "Blue Owl Capital",
+         "domain": "blueowl.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Private markets",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Continued expansion and development of JunieAI",
+       "source_sentence": "Juniper Square, the leading provider of connected fund software and services for the private markets, has announced the close of its Series D funding round, raising $130 million and reaching a valuation of $1.1 billion.",
+       "published_at": "2025-06-17T01:13:19",
+       "coverage_count": 3,
+       "article_ids": [
+        "68c5836b6f4a0a1b36880bff",
+        "6988aa77eefc5d2f542beec8",
+        "6988de9694d3f481f3db08a1"
+       ],
+       "article_id": "6988de9694d3f481f3db08a1"
+      },
+      {
+       "id": "f19fac8c256ccb94",
+       "company_name": "juniper square",
+       "domain": "junipersquare.com",
+       "round_type": "Series D",
+       "amount_usd": 130000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 130000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "fifth wall",
+         "domain": "fifthwall.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "highsage ventures",
+         "domain": "highsage.com",
+         "amount": null
+        },
+        {
+         "name": "Blue Owl Capital",
+         "domain": "blueowl.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Accelerate development of JunieAI, integrate it into the platform, and support scaling of team and infrastructure.",
+       "source_sentence": "Juniper Square has raised $130 million in Series D funding.",
+       "published_at": "2025-06-16T23:35:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d0f66874d3d5792a2c3ae0",
+        "69bae2a6b7032a7d5cdfa50f"
+       ],
+       "article_id": "68d0f66874d3d5792a2c3ae0"
+      },
+      {
+       "id": "55c6b0e191daf673",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": null,
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "US",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "San Francisco-based Omni provides a data collaboration and analytics platform that allows teams to explore, model, and share business data in one environment.",
+       "published_at": "2026-04-27T08:27:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbed399b489398e0b4a3"
+       ],
+       "article_id": "69f1cbed399b489398e0b4a3"
+      },
+      {
+       "id": "ca5e42c5f6a1d990",
+       "company_name": "Omni Analytics, Inc.",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Analytics / Business Intelligence",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "support continued platform development, enterprise expansion, and the scaling of adoption of its AI-powered analytics and data infrastructure.",
+       "source_sentence": "Omni, a San Francisco, CA–based AI analytics platform, has raised $120 million in Series C funding at a $1.5 billion valuation.",
+       "published_at": "2026-04-24T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d7c97b2d589e844d2456"
+       ],
+       "article_id": "69f9d7c97b2d589e844d2456"
+      },
+      {
+       "id": "9d4ff710af853733",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Omni raises $120M Series C for enterprise AI analytics",
+       "published_at": "2026-04-23T21:59:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efaa55a84b609af2b2a2d7"
+       ],
+       "article_id": "69efaa55a84b609af2b2a2d7"
+      },
+      {
+       "id": "f2e5ff75187762cc",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI analytics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "employee tender offer",
+       "source_sentence": "Omni, the AI Analytics platform, today announced its Series C funding round raising $120 million at a $1.5 billion valuation.",
+       "published_at": "2026-04-23T00:00:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "69ea1f4f8266d9339994a613",
+        "69ea210b73206aa299ec2141",
+        "69ea231a73206aa299ec4a90",
+        "69ea383773206aa299ee1b02",
+        "69efaaeda84b609af2b317e6",
+        "69efabec727212302c5fe652",
+        "69efac33a84b609af2b42b31",
+        "69f0e33e45272de32e8bfe41"
+       ],
+       "article_id": "69efac33a84b609af2b42b31"
+      },
+      {
+       "id": "5f5bbf9d601c1395",
+       "company_name": "Vega Security",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 700000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 700000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "crv",
+         "domain": "crv4all.co.nz",
+         "amount": null
+        }
+       ],
+       "sector": "cybersecurity",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "accelerated product development and expansion of the go-to-market team",
+       "source_sentence": "Proceeds will fuel accelerated product development and expansion of the go-to-market team.",
+       "published_at": "2026-02-11T03:33:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bae5e285c39bb46c6e0e1b",
+        "69bae5e2b54f2a520bb4e3b3"
+       ],
+       "article_id": "69bae5e285c39bb46c6e0e1b"
+      },
+      {
+       "id": "801ef22a29882373",
+       "company_name": "vega",
+       "domain": "vega.investments",
+       "round_type": "Series B",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "crv",
+         "domain": "crv4all.co.nz",
+         "amount": null
+        }
+       ],
+       "sector": "Security Analytics / Cybersecurity",
+       "country": "Israel",
+       "city": "New York",
+       "use_of_funds": "Build AI‑native detection, analysis and response capabilities; expand product, AI research, deployment models and global go‑to‑market.",
+       "source_sentence": "Vega, an Israeli security analytics startup founded in 2024, has raised $120 million in a Series B funding round led by Accel, signaling growing demand for security systems that work where data already lives.",
+       "published_at": "2026-02-10T16:34:23",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bbb82928caee93d24fdf7f",
+        "69bc311c59b1861412d75afb",
+        "69e10017ff6aa0a5680305d0"
+       ],
+       "article_id": "69bbb82928caee93d24fdf7f"
+      },
+      {
+       "id": "3f260de33935b2b6",
+       "company_name": "vega",
+       "domain": "vega.investments",
+       "round_type": "Series B",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "crv",
+         "domain": "crv4all.co.nz",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "product development and expansion of go-to-market team",
+       "source_sentence": "Vega, the industry's first AI-Native Security Analytics Mesh (SAM) platform, today announced it has raised $120 million in a Series B funding round, nearly doubling its valuation. Led by existing investor Accel, which also led Vega's $65M Series A just months ago, with participation from Cyberstarts, Redpoint, and CRV, the round brings the company's total funding to $185 million in under two years and signals strong continued conviction from its investors.",
+       "published_at": "2026-02-10T16:27:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc157dfa3bff8ab9a29c49"
+       ],
+       "article_id": "69bc157dfa3bff8ab9a29c49"
+      },
+      {
+       "id": "862340198f926cb0",
+       "company_name": "livekit",
+       "domain": "livekit.io",
+       "round_type": "Series C",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "Hanabi Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Real-time AI Developer Infrastructure",
+       "country": null,
+       "city": null,
+       "use_of_funds": "The funding will support expanding its real-time capabilities, developer tools and global infrastructure footprint.",
+       "source_sentence": "LiveKit, a voice, video and real-time AI developer infrastructure provider, closed a $100 million Series C at a $1 billion valuation, becoming a unicorn in its own right.",
+       "published_at": "2026-01-26T20:03:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "6983fec5e71a535a9c17b55d"
+       ],
+       "article_id": "6983fec5e71a535a9c17b55d"
+      },
+      {
+       "id": "b7ab6cd4af5a00c2",
+       "company_name": "railway",
+       "domain": "railway.app",
+       "round_type": "Series B",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tq ventures",
+         "domain": "tqventures.com",
+         "amount": null
+        },
+        {
+         "name": "FirstPath Venture",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "unusual ventures",
+         "domain": "unusual.vc",
+         "amount": null
+        }
+       ],
+       "sector": "AI‑native cloud infrastructure",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "Expand team and launch new products for hybrid‑cloud and multi‑cloud AI deployments.",
+       "source_sentence": "Railway, an Austin‑based cloud platform for AI infrastructure, announced a $100 million Series B on Jan. 22, 2026.",
+       "published_at": "2026-01-23T00:00:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "6985ebe5ca3bd326c7793b8f"
+       ],
+       "article_id": "6985ebe5ca3bd326c7793b8f"
+      },
+      {
+       "id": "fc8e9938aefba804",
+       "company_name": "augment technologies",
+       "domain": "augment-tech.com",
+       "round_type": "Series A",
+       "amount_usd": 85000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 85000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Shopify Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "autotech ventures",
+         "domain": "autotechvc.com",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Productivity / Logistics Automation",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "The company will use the funds to expand its capabilities, scale hiring, and drive adoption across the logistics industry.",
+       "source_sentence": "Augment, a San Francisco, CA-based AI productivity platform for logistics, has raised $85 million in Series A funding.",
+       "published_at": "2025-09-05T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69baefad88dbabbbb7c7a79e"
+       ],
+       "article_id": "69baefad88dbabbbb7c7a79e"
+      },
+      {
+       "id": "135c351d8b1a82cd",
+       "company_name": "augment",
+       "domain": "augmentcode.com",
+       "round_type": "Series A",
+       "amount_usd": 85000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 85000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Shopify Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "autotech ventures",
+         "domain": "autotechvc.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI logistics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "aggressive hiring and product development",
+       "source_sentence": "Augment, an AI logistics startup led by Deliverr co-founder Harish Abbott, has raised $85 million Series A round to expand “Augie,” its AI teammate for freight shippers, brokers, and carriers.",
+       "published_at": "2025-09-04T23:11:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d98ffe1645babb987eb4f4"
+       ],
+       "article_id": "68d98ffe1645babb987eb4f4"
+      },
+      {
+       "id": "2dbce94d72a5d53d",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "US",
+       "city": "Boston",
+       "use_of_funds": null,
+       "source_sentence": "Boston-based AcuityMD a medtech intelligence platform that leverages AI and precise data to support commercial decision-making.",
+       "published_at": "2026-04-27T08:27:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbed399b489398e0b4a3"
+       ],
+       "article_id": "69f1cbed399b489398e0b4a3"
+      },
+      {
+       "id": "3bcc46000ba5efa2",
+       "company_name": "AARU",
+       "domain": "aarurobot.com",
+       "round_type": "Series A",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Aaru Raises $80M Series A for Synthetic Consumer and Political Research",
+       "published_at": "2026-04-23T21:59:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efaa55a84b609af2b2a2d7"
+       ],
+       "article_id": "69efaa55a84b609af2b2a2d7"
+      },
+      {
+       "id": "7688c53bef0e0d87",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI / MedTech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "The company will use the funding to enhance its AI capabilities, deepen its proprietary MedTech data ontology, and expand its platform into broader workflows beyond commercial use cases.",
+       "source_sentence": "Funding Details Company: AcuityMD, Inc. Raised: $80.0M Round: Series C Funding Date: April 2026 Lead Investor: StepStone Group Additional Investors: Benchmark, Redpoint Ventures, ICONIQ, Atreides Management Company Website: https://www.acuitymd.com/",
+       "published_at": "2026-04-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d6327b2d589e844c0858"
+       ],
+       "article_id": "69f9d6327b2d589e844c0858"
+      },
+      {
+       "id": "97ee9c42fb1820d5",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "USA",
+       "city": "Boston, MA",
+       "use_of_funds": "advanced artificial intelligence (AI) capabilities",
+       "source_sentence": "AcuityMD Raises $80M Series C Round Back to Home BOSTON, MA, AcuityMD, the AI platform for MedTech, today announced $80 million in new funding.",
+       "published_at": "2026-04-21T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e87eee9baafc73568e5709",
+        "69e997ddbdd09a23d08efe46",
+        "69e99a20d47fc02832181d10",
+        "69f2293b27117df83f93f6f6",
+        "69f8801143843dd771ce4e0d"
+       ],
+       "article_id": "69e997ddbdd09a23d08efe46"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 108,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDQtMjEgMDA6MDA6MDAiLCJrIjoiMTA5NDc4NTk1NTU2Nzg2OTE1NDEiLCJhIjo4MDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 108,
+      "deals_with_amount": 104,
+      "deals_without_amount": 4,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 7071234400.0,
+      "median_amount_usd": 67500000.0,
+      "largest_amount_usd": 550000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.198,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.201
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Redpoint",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "redpoint"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "55c6b0e191daf673",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": null,
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "US",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "San Francisco-based Omni provides a data collaboration and analytics platform that allows teams to explore, model, and share business data in one environment.",
+       "published_at": "2026-04-27T08:27:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbed399b489398e0b4a3"
+       ],
+       "article_id": "69f1cbed399b489398e0b4a3"
+      },
+      {
+       "id": "2dbce94d72a5d53d",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "US",
+       "city": "Boston",
+       "use_of_funds": null,
+       "source_sentence": "Boston-based AcuityMD a medtech intelligence platform that leverages AI and precise data to support commercial decision-making.",
+       "published_at": "2026-04-27T08:27:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbed399b489398e0b4a3"
+       ],
+       "article_id": "69f1cbed399b489398e0b4a3"
+      },
+      {
+       "id": "ca5e42c5f6a1d990",
+       "company_name": "Omni Analytics, Inc.",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Analytics / Business Intelligence",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "support continued platform development, enterprise expansion, and the scaling of adoption of its AI-powered analytics and data infrastructure.",
+       "source_sentence": "Omni, a San Francisco, CA–based AI analytics platform, has raised $120 million in Series C funding at a $1.5 billion valuation.",
+       "published_at": "2026-04-24T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d7c97b2d589e844d2456"
+       ],
+       "article_id": "69f9d7c97b2d589e844d2456"
+      },
+      {
+       "id": "9d4ff710af853733",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Omni raises $120M Series C for enterprise AI analytics",
+       "published_at": "2026-04-23T21:59:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efaa55a84b609af2b2a2d7"
+       ],
+       "article_id": "69efaa55a84b609af2b2a2d7"
+      },
+      {
+       "id": "3bcc46000ba5efa2",
+       "company_name": "AARU",
+       "domain": "aarurobot.com",
+       "round_type": "Series A",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Aaru Raises $80M Series A for Synthetic Consumer and Political Research",
+       "published_at": "2026-04-23T21:59:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efaa55a84b609af2b2a2d7"
+       ],
+       "article_id": "69efaa55a84b609af2b2a2d7"
+      },
+      {
+       "id": "f2e5ff75187762cc",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI analytics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "employee tender offer",
+       "source_sentence": "Omni, the AI Analytics platform, today announced its Series C funding round raising $120 million at a $1.5 billion valuation.",
+       "published_at": "2026-04-23T00:00:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "69ea1f4f8266d9339994a613",
+        "69ea210b73206aa299ec2141",
+        "69ea231a73206aa299ec4a90",
+        "69ea383773206aa299ee1b02",
+        "69efaaeda84b609af2b317e6",
+        "69efabec727212302c5fe652",
+        "69efac33a84b609af2b42b31",
+        "69f0e33e45272de32e8bfe41"
+       ],
+       "article_id": "69efac33a84b609af2b42b31"
+      },
+      {
+       "id": "7688c53bef0e0d87",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI / MedTech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "The company will use the funding to enhance its AI capabilities, deepen its proprietary MedTech data ontology, and expand its platform into broader workflows beyond commercial use cases.",
+       "source_sentence": "Funding Details Company: AcuityMD, Inc. Raised: $80.0M Round: Series C Funding Date: April 2026 Lead Investor: StepStone Group Additional Investors: Benchmark, Redpoint Ventures, ICONIQ, Atreides Management Company Website: https://www.acuitymd.com/",
+       "published_at": "2026-04-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d6327b2d589e844c0858"
+       ],
+       "article_id": "69f9d6327b2d589e844c0858"
+      },
+      {
+       "id": "97ee9c42fb1820d5",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "USA",
+       "city": "Boston, MA",
+       "use_of_funds": "advanced artificial intelligence (AI) capabilities",
+       "source_sentence": "AcuityMD Raises $80M Series C Round Back to Home BOSTON, MA, AcuityMD, the AI platform for MedTech, today announced $80 million in new funding.",
+       "published_at": "2026-04-21T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e87eee9baafc73568e5709",
+        "69e997ddbdd09a23d08efe46",
+        "69e99a20d47fc02832181d10",
+        "69f2293b27117df83f93f6f6",
+        "69f8801143843dd771ce4e0d"
+       ],
+       "article_id": "69e997ddbdd09a23d08efe46"
+      },
+      {
+       "id": "96b577fa3714f445",
+       "company_name": "chainguard",
+       "domain": "chainguard.dev",
+       "round_type": "Funding",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Mantis VC",
+         "domain": "mantisvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Supporting deployment of a unified, secure-by-default software repository platform.",
+       "source_sentence": "Chainguard announced funding support from leading investors including Sequoia Capital, Redpoint Ventures, Spark Capital, and Mantis VC.",
+       "published_at": "2026-03-23T08:26:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c41b67e4862fa95aed1c87"
+       ],
+       "article_id": "69c41b67e4862fa95aed1c87"
+      },
+      {
+       "id": "49f779fbd1a3ab61",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5500000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5500000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Legora Raises $550M in Series D Funding to Expand AI in Legal Operations",
+       "published_at": "2026-03-10T22:32:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cc41766e63f1d240550f7c",
+        "69f8854b43843dd771d132fb"
+       ],
+       "article_id": "69cc41766e63f1d240550f7c"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 31,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMTAgMjI6MzI6MTgiLCJrIjoiNTMyOTg2MjgwNjQ3NzE4NzkzNyJ9",
+     "totals": {
+      "deals": 31,
+      "deals_with_amount": 30,
+      "deals_without_amount": 1,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 3086000000.0,
+      "median_amount_usd": 100000000.0,
+      "largest_amount_usd": 550000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.073,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.08
+    }
+   }
+  }
+ ]
+}

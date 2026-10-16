@@ -1,0 +1,2184 @@
+{
+ "slug": "payments-startup-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:22Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "payments",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "payments"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 245,
+      "deals_with_amount": 220,
+      "deals_without_amount": 25,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 39997399300.0,
+      "median_amount_usd": 17950000.0,
+      "largest_amount_usd": 20000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 13,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1928600000.0,
+       "median_amount_usd": 36000000.0,
+       "largest_amount_usd": 734400000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 22,
+       "deals_with_amount": 17,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 678058000.0,
+       "median_amount_usd": 14169000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 14,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 506306500.0,
+       "median_amount_usd": 12020000.0,
+       "largest_amount_usd": 248400000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 18,
+       "deals_with_amount": 16,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1196614000.0,
+       "median_amount_usd": 4900000.0,
+       "largest_amount_usd": 1100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 14,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3132800000.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 2400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 21,
+       "deals_with_amount": 16,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 1316773600.0,
+       "median_amount_usd": 21500000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 12,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1177928000.0,
+       "median_amount_usd": 24840000.0,
+       "largest_amount_usd": 540000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 24,
+       "deals_with_amount": 23,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 21922864000.0,
+       "median_amount_usd": 48166000.0,
+       "largest_amount_usd": 20000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 39,
+       "deals_with_amount": 36,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1263500000.0,
+       "median_amount_usd": 46000000.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 36,
+       "deals_with_amount": 32,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1674599200.0,
+       "median_amount_usd": 15000000.0,
+       "largest_amount_usd": 410000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3524400000.0,
+       "median_amount_usd": 25000000.0,
+       "largest_amount_usd": 2880000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 12,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1836140000.0,
+       "median_amount_usd": 4000000.0,
+       "largest_amount_usd": 1055700000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.039,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.042
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "payments",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "payments"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "c84bb7dd86bc9417",
+       "company_name": "paypay",
+       "domain": "paypay.ne.jp",
+       "round_type": "IPO",
+       "amount_usd": 20000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Payments",
+       "country": "Japan",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The offering is expected to raise over $20 billion.",
+       "published_at": "2025-12-21T09:24:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc9f4aa7b1648247b75613"
+       ],
+       "article_id": "69bc9f4aa7b1648247b75613"
+      },
+      {
+       "id": "ce3cb148facfde42",
+       "company_name": "easebuzz",
+       "domain": "easebuzz.in",
+       "round_type": null,
+       "amount_usd": 2880000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 240000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "India",
+       "city": "Pune",
+       "use_of_funds": null,
+       "source_sentence": "In April 2025, Bessemer led the Rs 240 crore infusion into the company.",
+       "published_at": "2026-03-09T00:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bd6390d9a716b4c3519a"
+       ],
+       "article_id": "69e2bd6390d9a716b4c3519a"
+      },
+      {
+       "id": "f3a6f6d1e805dae2",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "Asset-backed facility",
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "apollo funds",
+         "domain": "apollofunds.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech | Payments",
+       "country": "Saudi Arabia",
+       "city": "Dubai",
+       "use_of_funds": "Supporting the expansion into new credit and payment products, product diversification, and strengthening lending power",
+       "source_sentence": "Tamara, the first homegrown Saudi fintech unicorn, has secured the largest asset-backed facility of its kind in the region of up to $2.4 billion from major financial institutions, including Goldman Sachs, Citi and Apollo funds.",
+       "published_at": "2025-09-15T12:59:09",
+       "coverage_count": 9,
+       "article_ids": [
+        "68d0f87e91b46c685a2c5997",
+        "68d103f650268142442d1892",
+        "6988a95669527f36baae89ec",
+        "698a2b823aeee4a53ffa0794",
+        "698d3f7f8d29a990b6d2e23e",
+        "698e1d599ca02490ec07cfd3",
+        "69db6d5653ffb3b11bcd4cb6",
+        "69dfb26744a6646a5b2b4add",
+        "69dfb577a9936a33b35c3278"
+       ],
+       "article_id": "6988a95669527f36baae89ec"
+      },
+      {
+       "id": "2b96ac7586becf98",
+       "company_name": "Priority Technology Holdings, Inc.",
+       "domain": null,
+       "round_type": "credit facility",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Payments and banking solutions",
+       "country": "United States",
+       "city": "Alpharetta",
+       "use_of_funds": "refinance existing debt, satisfy outstanding obligations related to the 2023 acquisition of Plastiq, fund strategic growth initiatives and general corporate purposes",
+       "source_sentence": "Priority Technology Holdings, Inc. (“Priority” or the “Company”), the payments and banking solution that streamlines collecting, storing, lending and sending money to unlock revenue opportunities, today announced the successful closing of $1.1 billion in new senior credit facilities, consisting of a $1 billion term loan with a 7-year maturity and a $100 million revolving credit facility with a 5-year maturity.",
+       "published_at": "2025-08-12T09:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe36b7606fcdbfff28fd70"
+       ],
+       "article_id": "68fe36b7606fcdbfff28fd70"
+      },
+      {
+       "id": "a88b4c7c28c20569",
+       "company_name": "Cobrar CloudWalk Bela (FIDC)",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1055700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1055700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Cloudwalk Institutição de Pagamento e Serviços LTDA.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "banco bradesco",
+         "domain": "banco.bradesco",
+         "amount": null
+        },
+        {
+         "name": "Itaú BBA Assessoria Financeira S.A.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "BTG Pactual Investment Banking Ltda.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Limited Liability Quotas Class A of the Segment of Payments of the Investment Fund in Accounts by Cobrar CloudWalk Bela (FIDC) issued senior, mezzanine A and mezzanine B quotas of the second series, for a total amount of 1,055.7 million dollars (BRL 5.5 billion as of 28 April).",
+       "published_at": "2026-04-28T17:55:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cb84a5706a322e1119b5"
+       ],
+       "article_id": "69f1cb84a5706a322e1119b5"
+      },
+      {
+       "id": "4c9ae7e7e6e077f5",
+       "company_name": "shift4 payments",
+       "domain": "shift4.com",
+       "round_type": "Euro Notes",
+       "amount_usd": 734400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 680000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Payments technology",
+       "country": "United States",
+       "city": "Center Valley",
+       "use_of_funds": "general corporate purposes, including repayment of debt, other strategic acquisitions and growth initiatives",
+       "source_sentence": "Shift4 Payments, Inc. (NYSE: FOUR), a leader in integrated payments and commerce technology, today announced that its subsidiaries, Shift4 Payments, LLC and Shift4 Payments Finance Sub, Inc. (together with Shift4, the \"Issuers\"), have priced an offering of €680 million aggregate principal amount of 5.500% senior notes due 2033 (the \"Euro Notes\") and $550 million in aggregate principal amount of their 6.750% senior notes due 2032 (the \"New 2032 Notes\").",
+       "published_at": "2025-05-08T21:28:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68640f7f8882abb7e3b231c8"
+       ],
+       "article_id": "68640f7f8882abb7e3b231c8"
+      },
+      {
+       "id": "591d0ae7d74a43f0",
+       "company_name": "ebury",
+       "domain": "ebury.com",
+       "round_type": "Financing",
+       "amount_usd": 698500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "centerbridge partners",
+         "domain": "centerbridge.com",
+         "amount": null
+        },
+        {
+         "name": "santander",
+         "domain": "santander.com",
+         "amount": 50000000.0
+        },
+        {
+         "name": "vitruvian partners",
+         "domain": "vitruvianpartners.com",
+         "amount": null
+        },
+        {
+         "name": "83north",
+         "domain": "83north.com",
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Santander will invest 50 million pounds (67.4 million dollars) in its international payment technology company Ebury, as part of a round of financing totalling 550 million pounds, according to the Spanish banking giant.The funding rounds are being led by a group formed by Centerbridge Partners, along with current shareholders Santander, Vitruvian Partners and 83North.",
+       "published_at": "2026-04-30T11:36:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8947d8937ef12fc0abbc0"
+       ],
+       "article_id": "69f8947d8937ef12fc0abbc0"
+      },
+      {
+       "id": "ed2715caff61557e",
+       "company_name": "shift4 payments",
+       "domain": "shift4.com",
+       "round_type": "New 2032 Notes",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Payments technology",
+       "country": "United States",
+       "city": "Center Valley",
+       "use_of_funds": "general corporate purposes, including repayment of debt, other strategic acquisitions and growth initiatives",
+       "source_sentence": "Shift4 Payments, Inc. (NYSE: FOUR), a leader in integrated payments and commerce technology, today announced that its subsidiaries, Shift4 Payments, LLC and Shift4 Payments Finance Sub, Inc. (together with Shift4, the \"Issuers\"), have priced an offering of €680 million aggregate principal amount of 5.500% senior notes due 2033 (the \"Euro Notes\") and $550 million in aggregate principal amount of their 6.750% senior notes due 2032 (the \"New 2032 Notes\").",
+       "published_at": "2025-05-08T21:28:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68640f7f8882abb7e3b231c8"
+       ],
+       "article_id": "68640f7f8882abb7e3b231c8"
+      },
+      {
+       "id": "1aeb9752753b0cc9",
+       "company_name": "worldline",
+       "domain": "worldline.com",
+       "round_type": null,
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "payments processor",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support its turnaround",
+       "source_sentence": "Payments processor Worldline is to raise €500m to support its turnaround.",
+       "published_at": "2025-11-10T10:30:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bca960ada7f1c36000267a"
+       ],
+       "article_id": "69bca960ada7f1c36000267a"
+      },
+      {
+       "id": "6609a58ebe16f523",
+       "company_name": "tempo",
+       "domain": "heytempo.com",
+       "round_type": "Series A",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "SV Angel",
+         "domain": "svangel.com",
+         "amount": null
+        }
+       ],
+       "sector": "Blockchain, payments, stablecoins",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Tempo, a Layer 1 blockchain project, received $500 million in Series A funding from prominent venture capitalists Greenoaks and Thrive Capital.",
+       "published_at": "2025-10-18T00:29:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe1f4846325a41ca281793"
+       ],
+       "article_id": "68fe1f4846325a41ca281793"
+      },
+      {
+       "id": "27b6c58ad505b073",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "Asset-backed facility (refinance/upsize)",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech | Payments",
+       "country": "Saudi Arabia",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "This transaction fully refinances and upsizes a prior USD 500 million asset-backed facility arranged by Goldman Sachs.",
+       "published_at": "2025-09-15T12:59:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a95669527f36baae89ec"
+       ],
+       "article_id": "6988a95669527f36baae89ec"
+      },
+      {
+       "id": "890ba22d23475496",
+       "company_name": "Rapyd Financial",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 469900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 370000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "payments",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "NScale securing a £1.1bn investment with other major deals including Rapyd Financial, which offers payments, mobile wallets, money transfers, card issuing, and fraud protection, netting £370m and crypto and cloud infrastructure firm PS Miner landing £259m.",
+       "published_at": "2025-10-27T11:30:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc10ec41af9e92ac95b210"
+       ],
+       "article_id": "69bc10ec41af9e92ac95b210"
+      },
+      {
+       "id": "c17bdc7678ac001f",
+       "company_name": "Rapyd Financial",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 469900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 370000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "payments",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "with other major deals including Rapyd Financial, which offers payments, mobile wallets, money transfers, card issuing, and fraud protection, netting £370 million",
+       "published_at": "2025-10-27T08:18:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698888c7868e86f9ec6c8abf"
+       ],
+       "article_id": "698888c7868e86f9ec6c8abf"
+      },
+      {
+       "id": "e5690c299e6e8d73",
+       "company_name": "shift4 payments",
+       "domain": "shift4.com",
+       "round_type": "Debt Offering",
+       "amount_usd": 469800000.00000006,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 435000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "USA",
+       "city": "Center Valley",
+       "use_of_funds": "general corporate purposes, including repayment of debt, strategic acquisitions, growth initiatives, and potential share repurchases",
+       "source_sentence": "Shift4 Payments, Inc. (NYSE: FOUR), a leader in integrated payments and commerce technology, today announced that its subsidiaries, Shift4 Payments, LLC and Shift4 Payments Finance Sub, Inc. have priced an offering of €435 million aggregate principal amount of 5.500% senior notes due 2033.",
+       "published_at": "2025-12-03T23:53:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb49fb3a84223cbf2ac3cb"
+       ],
+       "article_id": "69bb49fb3a84223cbf2ac3cb"
+      },
+      {
+       "id": "163ec796c54c6e41",
+       "company_name": "liquid intelligent technologies",
+       "domain": "liquid.tech",
+       "round_type": "debt",
+       "amount_usd": 410000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 410000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "syndicate of commercial and development finance lenders",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI, cloud, data centre, payments, low latency broadband connectivity solutions",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Liquid has agreed $410 million in new ZAR and USD credit facilities from a syndicate of commercial and development finance lenders.",
+       "published_at": "2026-02-25T20:47:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7effd0887d68fa45ac6e"
+       ],
+       "article_id": "69bc7effd0887d68fa45ac6e"
+      },
+      {
+       "id": "50c74061c4b9b795",
+       "company_name": "airwallex",
+       "domain": "airwallex.com",
+       "round_type": "G Series",
+       "amount_usd": 330000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8000000000.0,
+       "currency": "USD",
+       "amount": 330000000.0,
+       "valuation": 8000000000.0,
+       "investors": [
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "T. Rowe Price Associates",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "activant",
+         "domain": "activant.eu",
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Payments and Financial Services",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "On Monday, the global payment and financial services platform, Airwallex, closed a new round of funding G Series of $330 million, increasing its valuation to $8 billion, which translates into a 30% increase over its previous round. The investment leader was Addition, with the participation of key investors such as T. Rowe Price Associates, Activant and additional support from Robinhood Ventures. The massive participation of investors shows confidence in the long-term position of the company.",
+       "published_at": "2025-12-08T22:13:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbff846c5e9c4eedf148ea"
+       ],
+       "article_id": "69bbff846c5e9c4eedf148ea"
+      },
+      {
+       "id": "4a07e2280c57008a",
+       "company_name": "liquid intelligent technologies",
+       "domain": "liquid.tech",
+       "round_type": "debt",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI, cloud, data centre, payments, low latency broadband connectivity solutions",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Liquid intends to issue a new $300 million bond to replace its existing $620 million bond in advance of its maturity in September 2026.",
+       "published_at": "2026-02-25T20:47:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7effd0887d68fa45ac6e"
+       ],
+       "article_id": "69bc7effd0887d68fa45ac6e"
+      },
+      {
+       "id": "9b36824b0fc2e52c",
+       "company_name": "corpay",
+       "domain": "payments.corpay.com",
+       "round_type": "minority investment",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mastercard",
+         "domain": "mastercard.com",
+         "amount": 300000000.0
+        }
+       ],
+       "sector": "Corporate Payments",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Cross-border business expansion",
+       "source_sentence": "Corpay, Inc. , the corporate payments company, announced that it has completed Mastercard’s $300 million minority investment into Corpay’s cross-border business.",
+       "published_at": "2025-12-09T08:26:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "69452e9eccd27e129aa33ab1"
+       ],
+       "article_id": "69452e9eccd27e129aa33ab1"
+      },
+      {
+       "id": "3354dde07812beec",
+       "company_name": "Webus International Limited",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Crypto payments",
+       "country": "China",
+       "city": "Hangzhou",
+       "use_of_funds": "XRP-focused reserve",
+       "source_sentence": "Webus International Limited filed a Form 6-K with the SEC to ask for $300 million for an XRP-focused reserve.",
+       "published_at": "2025-06-12T17:24:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc76464583f4645ff56e4f"
+       ],
+       "article_id": "69bc76464583f4645ff56e4f"
+      },
+      {
+       "id": "13b10c4b7de4665f",
+       "company_name": "airwallex",
+       "domain": "airwallex.com",
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Payments",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Global payments",
+       "source_sentence": "Airwallex raising $300 million for global payments.",
+       "published_at": "2025-05-21T22:01:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c4376551a522a90826f294"
+       ],
+       "article_id": "68c4376551a522a90826f294"
+      },
+      {
+       "id": "9f40b21feff76f64",
+       "company_name": "Advanced Digital Gaming Technology (ADGT)",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": 250000000.0
+        }
+       ],
+       "sector": "payments technology",
+       "country": "United Arab Emirates",
+       "city": "Abu Dhabi",
+       "use_of_funds": null,
+       "source_sentence": "Blackstone Inc. has invested $250 million in an Abu Dhabi–based payments technology platform, signalling confidence in the region...",
+       "published_at": "2026-03-26T13:29:27",
+       "coverage_count": 5,
+       "article_ids": [
+        "69c812a1830ca9333f0094ed",
+        "69cc21a7d11a7cee80d3ba8b",
+        "69cc417962898d9e03cc9b68",
+        "69e84bf35cfa3e5ba5e3dc3e",
+        "69e89a599baafc7356a1c06b"
+       ],
+       "article_id": "69cc21a7d11a7cee80d3ba8b"
+      },
+      {
+       "id": "97e3787137d34dff",
+       "company_name": "Advanced Digital Gaming Technology (ADGT)",
+       "domain": null,
+       "round_type": "investment",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech, Gaming Payments",
+       "country": "United Arab Emirates",
+       "city": "Abu Dhabi",
+       "use_of_funds": null,
+       "source_sentence": "Blackstone is significantly expanding its presence in the United Arab Emirates, announcing a $250 million investment in Advanced Digital Gaming Technology (ADGT), a new payments and data intelligence platform, and building on existing investments in the country’s burgeoning real estate sector.",
+       "published_at": "2026-03-26T09:31:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc1e7df8e7de13bc1b8cc9"
+       ],
+       "article_id": "69cc1e7df8e7de13bc1b8cc9"
+      },
+      {
+       "id": "6127c3a5a1f340a3",
+       "company_name": "Advanced Digital Gaming Technology",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": 250000000.0
+        }
+       ],
+       "sector": "Payments and data intelligence platform",
+       "country": "UAE",
+       "city": "Abu Dhabi",
+       "use_of_funds": "support the development of regulated digital markets globally",
+       "source_sentence": "a new UAE payments platform has launched in Abu Dhabi with $250 million investment from Blackstone.",
+       "published_at": "2026-02-15T00:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "69cc417a384faa79b68f2824",
+        "69cf66ea9a4fe3c882edf322",
+        "69d14d204a6cba658b2358e3",
+        "69dcdc13cefa445fe2337f33",
+        "69e1eeb038572612dba681f9",
+        "69e2a15c3aab8d96aa322419"
+       ],
+       "article_id": "69dcdc13cefa445fe2337f33"
+      },
+      {
+       "id": "3f15fea2a8c2fd4e",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "C Series",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1950000000.0,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 1950000000.0,
+       "investors": [],
+       "sector": "Payments",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "expand its international presence with full compliance, further enhance its platform and launch innovative products that transform the way payments are made globally",
+       "source_sentence": "Rain, a provider of business infrastructure for stablecoins payments, today announced its $250 million C Series, led by ICONIQ",
+       "published_at": "2026-01-11T03:13:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e850c05cfa3e5ba5e6a5bb"
+       ],
+       "article_id": "69e850c05cfa3e5ba5e6a5bb"
+      },
+      {
+       "id": "f18593c17691e410",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "C",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "increase its global, compliant presence, deepen platform capacity and invest in new products that redefine the way payments work worldwide",
+       "source_sentence": "Rain, the business-ready infrastructure for stablecoin-based payments, today announced a financing round of the C series of 250 million US dollars under the direction of ICONIQ and with",
+       "published_at": "2026-01-09T20:14:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8cf1c5cfa3e5ba540299c"
+       ],
+       "article_id": "69e8cf1c5cfa3e5ba540299c"
+      },
+      {
+       "id": "cdd2025a5be049fc",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "Series C",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1950000000.0,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 1950000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Expand presence in key licensed markets across North America, South America, Europe, Asia, and Africa; deepen full‑stack stablecoin payments platform through strategic acquisitions and new products.",
+       "source_sentence": "Rain will use the Series C capital to expand its presence in key licensed markets across North America, South America, Europe, Asia, and Africa, so partners can seamlessly launch compliant solutions around the world. The funding will also enable Rain to deepen its full‑stack stablecoin payments platform, including through strategic acquisitions, and to invest ahead of the curve in new products that make stablecoin‑powered payments feel invisible to businesses and consumers.",
+       "published_at": "2026-01-09T12:35:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd795758389c352a0c23fd"
+       ],
+       "article_id": "69bd795758389c352a0c23fd"
+      },
+      {
+       "id": "419dcf3e3c5a557f",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "Series C",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 1950000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        }
+       ],
+       "sector": "stablecoin payments, fintech",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "expand its stablecoin settlement infrastructure to new markets and help additional enterprises go live and scale quickly",
+       "source_sentence": "Rain, a stablecoin firm helping businesses integrate stablecoin payments into their systems, has raised $250 million in a Series C round led by global investment firm ICONIQ.",
+       "published_at": "2026-01-09T12:29:43",
+       "coverage_count": 13,
+       "article_ids": [
+        "69804b6285dcbbb2f7f3dfb9",
+        "6988882a868e86f9ec6c825d",
+        "6988a39094d3f481f3d6e587",
+        "69892aec94d3f481f3e07326",
+        "698d779c8d29a990b6d714e4",
+        "698d79288d29a990b6d7319a",
+        "698f08559ca02490ec1976b5",
+        "6996cb210d0db262fa579c49",
+        "69bbda0d0ad23ae1114db1ac",
+        "69bc6e7bdded76ae100f2b99",
+        "69bd117b1d0b3f0860f02ff1",
+        "69e287fad754bf662cd23208",
+        "69e63de02461615d5f41b00d"
+       ],
+       "article_id": "69892aec94d3f481f3e07326"
+      },
+      {
+       "id": "d83eda5b5c273931",
+       "company_name": "paytm",
+       "domain": "paytm.com",
+       "round_type": "Secondary Share Sale",
+       "amount_usd": 248400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 20700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Antfin (Netherlands) Holding",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Digital Payments",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": null,
+       "source_sentence": "In Paytm, Antfin (Netherlands) Holding, one of the early investors in the digital payments solutions pioneers in India, is selling shares worth about Rs 2,070 crore.",
+       "published_at": "2025-07-01T18:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898cd672f01d48cd3f9ae39"
+       ],
+       "article_id": "6898cd672f01d48cd3f9ae39"
+      },
+      {
+       "id": "5ce9a9494a3c2719",
+       "company_name": "pine labs",
+       "domain": "pinelabs.com",
+       "round_type": "anchor placement round",
+       "amount_usd": 210360000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 17530000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sbi mutual fund",
+         "domain": "sbimf.com",
+         "amount": null
+        },
+        {
+         "name": "hsbc",
+         "domain": "hsbc.com",
+         "amount": null
+        },
+        {
+         "name": "mirae asset",
+         "domain": "miraeasset.co.id",
+         "amount": null
+        },
+        {
+         "name": "axis mutual fund",
+         "domain": "axismf.com",
+         "amount": null
+        },
+        {
+         "name": "Integrated Core Strategies",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Custody Bank of Japan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "MIT Retirement Plan Trust",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Merchant payments company Pine Labs has raised Rs 1,753 crore through its anchor placement round from 12 domestic mutual funds and several global investors.",
+       "published_at": "2025-11-06T19:06:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "693168cb2db44cbf6cf20f56"
+       ],
+       "article_id": "693168cb2db44cbf6cf20f56"
+      },
+      {
+       "id": "4c9fe7e5e78809b3",
+       "company_name": "Blackopal",
+       "domain": "blackopal.com",
+       "round_type": "Series Not Specified",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mars Capital Advisors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Draupnir Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Payments Finance",
+       "country": "LATAM",
+       "city": null,
+       "use_of_funds": "Support launch of GemStone tokenised asset product",
+       "source_sentence": "BlackOpal, a LATAM-focused global payments finance platform specialising in tokenised real-world assets, has secured significant backing to support the launch of its latest institutional product aimed at opening up Brazilian credit card receivables to global investors.",
+       "published_at": "2026-01-16T16:21:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a39094d3f481f3d6e587"
+       ],
+       "article_id": "6988a39094d3f481f3d6e587"
+      },
+      {
+       "id": "08c4d57718a7a65e",
+       "company_name": "liquid intelligent technologies",
+       "domain": "liquid.tech",
+       "round_type": "equity",
+       "amount_usd": 195000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 195000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cassava technologies",
+         "domain": "cassavatechnologies.com",
+         "amount": 195000000.0
+        }
+       ],
+       "sector": "AI, cloud, data centre, payments, low latency broadband connectivity solutions",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Cassava Technologies is further reinforcing Liquid’s financial position by injecting $195 million in fresh capital into the business.",
+       "published_at": "2026-02-25T20:47:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7effd0887d68fa45ac6e"
+       ],
+       "article_id": "69bc7effd0887d68fa45ac6e"
+      },
+      {
+       "id": "30d6f605771363ae",
+       "company_name": "dojo",
+       "domain": "dojo.co",
+       "round_type": "equity",
+       "amount_usd": 190000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 190000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vitruvian partners",
+         "domain": "vitruvianpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "payments technology",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "London-based Dojo , a payments technology company, has raised $190 million (around €168.66 million) in its first equity funding round. The investment comes from global investment firm Vitruvian Partners.",
+       "published_at": "2025-05-31T06:07:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "699741575fbe93703d60b275"
+       ],
+       "article_id": "699741575fbe93703d60b275"
+      },
+      {
+       "id": "b5912345ac64fde6",
+       "company_name": "dojo",
+       "domain": "dojo.co",
+       "round_type": "Series A",
+       "amount_usd": 190000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 190000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vitruvian partners",
+         "domain": "vitruvianpartners.com",
+         "amount": 190000000.0
+        }
+       ],
+       "sector": "payments",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Support business growth and expand operations in the UK and Europe",
+       "source_sentence": "London-based Dojo, a payments technology provider, has announced an investment of $190M (nearly €168.66M) from global investment firm Vitruvian Partners. This marks Dojo’s first equity raise.",
+       "published_at": "2025-05-29T09:02:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c164d26a78bf0c5653a43f"
+       ],
+       "article_id": "68c164d26a78bf0c5653a43f"
+      },
+      {
+       "id": "b3f153cbffd4890d",
+       "company_name": "dojo",
+       "domain": "dojo.co",
+       "round_type": "equity",
+       "amount_usd": 190000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 190000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vitruvian partners",
+         "domain": "vitruvianpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "payments technology",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Accelerate strategic growth plans and expand across European markets.",
+       "source_sentence": "Dojo, the leading UK payments technology provider, today announces it has secured an investment of $190 million from Vitruvian Partners, a leading global growth investment firm.",
+       "published_at": "2025-05-29T01:16:39",
+       "coverage_count": 3,
+       "article_ids": [
+        "6864105b8882abb7e3ebd67d",
+        "698e7baf8d29a990b6ea50f9",
+        "69bad56b3a84223cbf28da1b"
+       ],
+       "article_id": "6864105b8882abb7e3ebd67d"
+      },
+      {
+       "id": "8ceb0a5345fe8ec1",
+       "company_name": "zilch",
+       "domain": "zilch.com",
+       "round_type": "debt and equity",
+       "amount_usd": 176700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 176700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkcg",
+         "domain": "kkcg.eu",
+         "amount": null
+        },
+        {
+         "name": "BNF Capital",
+         "domain": "bnfcapital.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "payments, financial technology",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "funds to be invested in driving greater brand visibility through increased above-the-line marketing spend, further product development and platform enhancement, and the exploration of strategic M&A opportunities.",
+       "source_sentence": "Zilch, the consumer payments platform powering the future of commerce, today announced it has raised over USD $175 million ($176.7m) in debt and equity. Led by KKCG, the round includes participation from BNF Capital, and several other strategic investors. The raise also includes the expansion of its securitization led by Deutsche Bank.",
+       "published_at": "2025-11-13T00:00:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "6915a4dfe1eade5a8bf3b77d",
+        "693168972db44cbf6cf209bc",
+        "6986866dfdcc616c15df7d77",
+        "6988a84c8fb0ea95e9772b48",
+        "698d15e38d29a990b6cfbb4d",
+        "698e15568d29a990b6e295b4",
+        "69bbc2059153720f4d741b66",
+        "69e8bcab7bb1410d4cb5748c"
+       ],
+       "article_id": "6915a4dfe1eade5a8bf3b77d"
+      },
+      {
+       "id": "5fa999fd8b13a7ba",
+       "company_name": "zilch",
+       "domain": "zilch.com",
+       "round_type": "Debt and equity",
+       "amount_usd": 162000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Consumer payments platform",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "London-based Zilch , a consumer payments platform, has raised over €150 million ($175 million) in debt and equity.",
+       "published_at": "2025-11-15T06:52:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d18a78d29a990b6cff35f"
+       ],
+       "article_id": "698d18a78d29a990b6cff35f"
+      },
+      {
+       "id": "c83635ab35a946f6",
+       "company_name": "zilch",
+       "domain": "zilch.com",
+       "round_type": "Debt and equity",
+       "amount_usd": 162000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkcg",
+         "domain": "kkcg.eu",
+         "amount": null
+        },
+        {
+         "name": "BNF Capital",
+         "domain": "bnfcapital.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Payments, Consumer Payments Platform",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "Increase brand visibility through above-the-line marketing spend, further product development and platform enhancement, and exploration of strategic M&A opportunities.",
+       "source_sentence": "London-based Zilch, a consumer payments platform , today announced it has raised over €150 million ($175 million) in debt and equity to increase brand visibility through increased above-the-line (ATL) marketing spend, further product development and platform enhancement, and the exploration of strategic M&A opportunities.",
+       "published_at": "2025-11-13T12:22:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931b8c23edf5135c9f20b63"
+       ],
+       "article_id": "6931b8c23edf5135c9f20b63"
+      },
+      {
+       "id": "adcdbbf95315c892",
+       "company_name": "Nayax Ltd.",
+       "domain": null,
+       "round_type": "Series A Notes and Series 1 Warrants Expansion",
+       "amount_usd": 152712000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "ILS",
+       "amount": 565600000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Payments",
+       "country": "Israel",
+       "city": "Herzliya",
+       "use_of_funds": "general corporate purposes including potential acquisitions",
+       "source_sentence": "The Company sold a total of 518,381 Units at a price of NIS 1,091 per Unit, for aggregate gross proceeds to the Company of NIS 565.6 million (approximately $176 million) (the “Offering”).",
+       "published_at": "2025-12-10T21:05:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69a1c47751da1a99b27b85ab"
+       ],
+       "article_id": "69a1c47751da1a99b27b85ab"
+      },
+      {
+       "id": "00b16bbcb9b3c0dd",
+       "company_name": "clara",
+       "domain": "clara.co",
+       "round_type": "debt facility renewal",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": 150000000.0
+        }
+       ],
+       "sector": "Payments",
+       "country": "Mexico",
+       "city": null,
+       "use_of_funds": "Scale payment solutions including corporate credit cards, bill pay, cross-border transactions, and TravelPay",
+       "source_sentence": "Clara, Latin America’s leading corporate spend management platform, announced a significant milestone with the renewal of its $150 million debt facility from Goldman Sachs.",
+       "published_at": "2026-02-05T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69870e85dac7b0ca9c632cc9"
+       ],
+       "article_id": "69870e85dac7b0ca9c632cc9"
+      },
+      {
+       "id": "fac7542f2acfd800",
+       "company_name": "imprint",
+       "domain": "imprint.co",
+       "round_type": "Series D",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1200000000.0,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "hedosophia",
+         "domain": "hedosophia.com",
+         "amount": null
+        },
+        {
+         "name": "Spice Capital",
+         "domain": "spicecapital.xyz",
+         "amount": null
+        },
+        {
+         "name": "timeless",
+         "domain": "timeless.space",
+         "amount": null
+        }
+       ],
+       "sector": "Finance, Financial Services, FinTech, Loyalty Programs, Payments",
+       "country": null,
+       "city": null,
+       "use_of_funds": "fast-track investment across four key areas: deepening the core platform to increase the value delivered to brand partners; broadening the product suite beyond credit to include debit, secured cards, and flexible financing options; embedding automation more deeply across the business to build and scale efficiently; and expanding loyalty and advertising capabilities by strengthening partner programs and linking brands with highly engaged, reward-driven customers through the Imprint Rewards Network.",
+       "source_sentence": "Imprint, the modern financial platform transforming how brands engage, reward, and retain their customers, has raised $150 million in Series D financing at a $1.2 billion valuation.",
+       "published_at": "2025-12-18T10:59:42",
+       "coverage_count": 3,
+       "article_ids": [
+        "6989e43194d3f481f3ee3c70",
+        "698d26389ca02490ecf58fc0",
+        "69baf47de897e582f8796356"
+       ],
+       "article_id": "698d26389ca02490ecf58fc0"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 245,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTItMTggMTA6NTk6NDIiLCJrIjoiMTgwNzA1MDQ1OTE0MDU4NjQ5NjAiLCJhIjoxNTAwMDAwMDAuMH0",
+     "totals": {
+      "deals": 245,
+      "deals_with_amount": 220,
+      "deals_without_amount": 25,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 39997399300.0,
+      "median_amount_usd": 17950000.0,
+      "largest_amount_usd": 20000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.124,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.127
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "payments",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "payments"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "591d0ae7d74a43f0",
+       "company_name": "ebury",
+       "domain": "ebury.com",
+       "round_type": "Financing",
+       "amount_usd": 698500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "centerbridge partners",
+         "domain": "centerbridge.com",
+         "amount": null
+        },
+        {
+         "name": "santander",
+         "domain": "santander.com",
+         "amount": 50000000.0
+        },
+        {
+         "name": "vitruvian partners",
+         "domain": "vitruvianpartners.com",
+         "amount": null
+        },
+        {
+         "name": "83north",
+         "domain": "83north.com",
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Santander will invest 50 million pounds (67.4 million dollars) in its international payment technology company Ebury, as part of a round of financing totalling 550 million pounds, according to the Spanish banking giant.The funding rounds are being led by a group formed by Centerbridge Partners, along with current shareholders Santander, Vitruvian Partners and 83North.",
+       "published_at": "2026-04-30T11:36:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8947d8937ef12fc0abbc0"
+       ],
+       "article_id": "69f8947d8937ef12fc0abbc0"
+      },
+      {
+       "id": "a76602573de546d8",
+       "company_name": "Oolka",
+       "domain": "oolka.in",
+       "round_type": "Series A",
+       "amount_usd": 14000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        },
+        {
+         "name": "Vidit Aatrey",
+         "domain": "https://www.linkedin.com/in/vidit-aatrey-a3639120",
+         "amount": null
+        },
+        {
+         "name": "Sanjeev Barnwal",
+         "domain": "https://www.linkedin.com/in/sanjeev-barnwal-4099341b",
+         "amount": null
+        }
+       ],
+       "sector": "Digital Payments",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen AI engineering capabilities, expand product beyond credit use cases, and deepen partnerships with banks and NBFCs",
+       "source_sentence": "Oolka has raised $14 million in a Series A funding round led by Accel, with participation from existing investors Lightspeed and Z47.",
+       "published_at": "2026-04-30T04:26:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f882a6bbf1d3145597845a",
+        "69f9da3c7b2d589e844eed2c"
+       ],
+       "article_id": "69f882a6bbf1d3145597845a"
+      },
+      {
+       "id": "a88b4c7c28c20569",
+       "company_name": "Cobrar CloudWalk Bela (FIDC)",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1055700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1055700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Cloudwalk Institutição de Pagamento e Serviços LTDA.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "banco bradesco",
+         "domain": "banco.bradesco",
+         "amount": null
+        },
+        {
+         "name": "Itaú BBA Assessoria Financeira S.A.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "BTG Pactual Investment Banking Ltda.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Limited Liability Quotas Class A of the Segment of Payments of the Investment Fund in Accounts by Cobrar CloudWalk Bela (FIDC) issued senior, mezzanine A and mezzanine B quotas of the second series, for a total amount of 1,055.7 million dollars (BRL 5.5 billion as of 28 April).",
+       "published_at": "2026-04-28T17:55:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cb84a5706a322e1119b5"
+       ],
+       "article_id": "69f1cb84a5706a322e1119b5"
+      },
+      {
+       "id": "4b8ae82d04c3face",
+       "company_name": "Tapaya",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 1080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "passion capital",
+         "domain": "passioncapital.com",
+         "amount": null
+        },
+        {
+         "name": "depo ventures",
+         "domain": "depoventures.com",
+         "amount": null
+        },
+        {
+         "name": "BADideas.fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "payments infrastructure",
+       "country": "Czech Republic",
+       "city": "Prague",
+       "use_of_funds": "to complete Tapaya’s PCI MPoC certification and further develop its in-house infrastructure",
+       "source_sentence": "Prague-based payments infrastructure startup Tapaya has raised €1 million in a pre-seed funding round led by Passion Capital, with co-lead support from Depo Ventures and participation from BADideas.fund.",
+       "published_at": "2026-04-28T10:08:51",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f0e2a4d325610894207346",
+        "69f1c9ad1e3933a6dd8f20e8",
+        "69f8a6b98937ef12fc0adf72"
+       ],
+       "article_id": "69f0e2a4d325610894207346"
+      },
+      {
+       "id": "4f6c48a0e68d5a0b",
+       "company_name": "Cresora Commerce",
+       "domain": null,
+       "round_type": "initial",
+       "amount_usd": 4000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nashville capital network",
+         "domain": "nashvillecapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare, Payments Infrastructure",
+       "country": "US",
+       "city": "Nashville",
+       "use_of_funds": null,
+       "source_sentence": "Cresora Commerce, a US-based AI-native commerce infrastructure platform, has announced its official launch alongside the close of an initial funding round totalling more than USD 4 million. The round was led by Nashville Capital Network with participation from private investors and was finalised in early 2026.",
+       "published_at": "2026-04-22T10:06:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e51a7bb1410d4cd6a798"
+       ],
+       "article_id": "69e8e51a7bb1410d4cd6a798"
+      },
+      {
+       "id": "ebc43a58ecfa5428",
+       "company_name": "SolvaPay",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 2592000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redstone",
+         "domain": "redstone.finance",
+         "amount": null
+        },
+        {
+         "name": "ms&ad ventures",
+         "domain": "msad.vc",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "greens ventures",
+         "domain": "greens.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "AI payments",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "accelerate the development of its machine-native payment rails and agentic revenue infrastructure",
+       "source_sentence": "SolvaPay, a Stockholm, Sweden-based provider of an AI payments platform, raised €2.4m ($2.8M) in pre‑seed funding. The round was led by Redstone and MS&AD Ventures, with participation from Antler and Greens Ventures.",
+       "published_at": "2026-04-15T15:19:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d7477bb1410d4ccb7278"
+       ],
+       "article_id": "69e8d7477bb1410d4ccb7278"
+      },
+      {
+       "id": "529ba6da571893a5",
+       "company_name": "Ralio",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "payments technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "improve platform features and scalability, providing users with more robust payment solutions",
+       "source_sentence": "Ralio has successfully raised $25 million in a recent funding round aimed at enhancing its agentic payments platform.",
+       "published_at": "2026-04-13T23:58:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e64fee2be6445e4611410f"
+       ],
+       "article_id": "69e64fee2be6445e4611410f"
+      },
+      {
+       "id": "7f77287a183eb8bd",
+       "company_name": "Ralio",
+       "domain": null,
+       "round_type": "Pre-seed",
+       "amount_usd": 2500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Payments infrastructure",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "core platform development and hiring engineers",
+       "source_sentence": "Fintech startup Ralio has just raised $2.5 million of pre-seed funding to make AI agentic payments safer.",
+       "published_at": "2026-04-13T23:02:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e64cf92be6445e460f7121",
+        "69e842bb7bb1410d4c607135",
+        "69e8d42f5cfa3e5ba543efd7",
+        "69e990ccbdd09a23d0896a1c"
+       ],
+       "article_id": "69e64cf92be6445e460f7121"
+      },
+      {
+       "id": "27024fe0ce0d7cf1",
+       "company_name": "Ralio",
+       "domain": null,
+       "round_type": "pre-Seed",
+       "amount_usd": 2268000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Seed X",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "love ventures",
+         "domain": "loveventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "rule30",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Adeline Arts and Science",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "endurance ventures",
+         "domain": "enduranceventures.com",
+         "amount": null
+        },
+        {
+         "name": "campus fund",
+         "domain": "yourcampusfund.com",
+         "amount": null
+        },
+        {
+         "name": "FinTech investor Alan Morgan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech, Payments",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "further develop its core platform and expand its engineering team in London; accelerate product development and ensure AI transacts within accountability framework",
+       "source_sentence": "Ralio, a London-based FinTech startup building a payments platform tailored for business AI agents, has announced a €2.1 million ($2.5 million) pre-Seed funding round to further develop its core platform and expand its engineering team in London.",
+       "published_at": "2026-04-13T00:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e6f58e0f1aa5003e105198",
+        "69e840b79baafc73566765fd",
+        "69e8c7825cfa3e5ba539f3bc",
+        "69e8cbae5cfa3e5ba53d5444"
+       ],
+       "article_id": "69e840b79baafc73566765fd"
+      },
+      {
+       "id": "419de66708860f77",
+       "company_name": "depay",
+       "domain": "depay.com",
+       "round_type": null,
+       "amount_usd": 4000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "CMT Global",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dcg",
+         "domain": "dcg.net",
+         "amount": null
+        },
+        {
+         "name": "verda ventures",
+         "domain": "verda.ventures",
+         "amount": null
+        },
+        {
+         "name": "Onigiri Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hash3",
+         "domain": "hash3.xyz",
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "Argentina",
+       "city": null,
+       "use_of_funds": "expand the payment network in Latin America, connect new instant payment systems in Asia and advance their landing in Africa",
+       "source_sentence": "Depay, Argentina's real-time payment infrastructure startup, announced that it has just raised $4 million to accelerate its network expansion that connects instant payment systems across countries, allowing banks, Wallets and Fintechs to operate in any QR through a single integration. The round was led by North Island Ventures and featured global investors CMT Global, DCG, Verda Ventures, Onigiri Capital and Hash3. The funds will be used to expand the payment network in Latin America, connect new instant payment systems in Asia and advance their landing in Africa.",
+       "published_at": "2026-04-10T19:50:49",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e35c6b44a7294eaacd5da9",
+        "69e8a4c17bb1410d4ca24921",
+        "69e8bcfc5cfa3e5ba531144e"
+       ],
+       "article_id": "69e8a4c17bb1410d4ca24921"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 103,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTAgMTk6NTA6NDkiLCJrIjoiNDcyODE4ODUxNDAwNzkxMjMxMSJ9",
+     "totals": {
+      "deals": 103,
+      "deals_with_amount": 95,
+      "deals_without_amount": 8,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 8273639200.0,
+      "median_amount_usd": 17700000.0,
+      "largest_amount_usd": 2880000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.06,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.063
+    }
+   }
+  }
+ ]
+}

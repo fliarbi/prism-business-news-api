@@ -1,0 +1,3344 @@
+{
+ "slug": "spark-capital-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:31Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Spark Capital",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "spark capital"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 65,
+      "deals_with_amount": 63,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 5482848000.0,
+      "median_amount_usd": 55000000.0,
+      "largest_amount_usd": 1375000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 91448000.0,
+       "median_amount_usd": 17500000.0,
+       "largest_amount_usd": 45000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 605100000.0,
+       "median_amount_usd": 14250000.0,
+       "largest_amount_usd": 540000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 263000000.0,
+       "median_amount_usd": 61500000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 163000000.0,
+       "median_amount_usd": 81500000.0,
+       "largest_amount_usd": 103000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2010000000.0,
+       "median_amount_usd": 250000000.0,
+       "largest_amount_usd": 1375000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 106000000.0,
+       "median_amount_usd": 106000000.0,
+       "largest_amount_usd": 106000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 281000000.0,
+       "median_amount_usd": 105000000.0,
+       "largest_amount_usd": 106000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 84000000.0,
+       "median_amount_usd": 42000000.0,
+       "largest_amount_usd": 55000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 500000000.0,
+       "median_amount_usd": 500000000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 12,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1279500000.0,
+       "median_amount_usd": 65000000.0,
+       "largest_amount_usd": 625000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 398800000.0,
+       "median_amount_usd": 50500000.0,
+       "largest_amount_usd": 170000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.109,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.112
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Spark Capital",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "spark capital"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "2fe92cab6a73f453",
+       "company_name": "crusoe",
+       "domain": "crusoe.ai",
+       "round_type": "Series E",
+       "amount_usd": 1375000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1375000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "137 ventures",
+         "domain": "137ventures.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "Activate Capital",
+         "domain": "activatecapital.ie",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "BAM Elevate",
+         "domain": "bamelevate.com",
+         "amount": null
+        },
+        {
+         "name": "dpr construction",
+         "domain": "dpr.com",
+         "amount": null
+        },
+        {
+         "name": "Ora Global",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "franklin templeton",
+         "domain": "franklintempletonindia.com",
+         "amount": null
+        },
+        {
+         "name": "galvanize",
+         "domain": "galvanizetx.com",
+         "amount": null
+        },
+        {
+         "name": "long journey ventures",
+         "domain": "longjourney.vc",
+         "amount": null
+        },
+        {
+         "name": "lowercarbon capital",
+         "domain": "lowercarboncapital.com",
+         "amount": null
+        },
+        {
+         "name": "M37 Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "mcj",
+         "domain": "mcj.jp",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "radical ventures",
+         "domain": "radical.vc",
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "Saquon Barkley",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "supermicro",
+         "domain": "supermicro.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "upper90",
+         "domain": "upper90.io",
+         "amount": null
+        },
+        {
+         "name": "winklevoss capital",
+         "domain": "winklevosscapital.com",
+         "amount": null
+        },
+        {
+         "name": "zigg capital",
+         "domain": "ziggcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "USA",
+       "city": "San Francisco, Denver",
+       "use_of_funds": "scale its vertically integrated AI infrastructure platform",
+       "source_sentence": "Crusoe, the AI factory company, today announced the initial closing of its anticipated $1.375 billion Series E round, bringing the company's expected valuation to over $10 billion.",
+       "published_at": "2025-10-24T14:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68fe290e46325a41ca293794",
+        "69bad739eec96a7343ffd68d"
+       ],
+       "article_id": "68fe290e46325a41ca293794"
+      },
+      {
+       "id": "878afd6faec35eff",
+       "company_name": "MatX",
+       "domain": "matx.com",
+       "round_type": "Series B",
+       "amount_usd": 625000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 625000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alchip",
+         "domain": "alchip.com",
+         "amount": null
+        },
+        {
+         "name": "Andrej Karpathy",
+         "domain": "https://www.linkedin.com/in/andrej-karpathy-9a650716",
+         "amount": null
+        },
+        {
+         "name": "Dwarkesh Patel",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "harpoon",
+         "domain": "harpoon.io",
+         "amount": null
+        },
+        {
+         "name": "Jane Street Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "John Collison",
+         "domain": "http://www.linkedin.com/in/johnbcollison",
+         "amount": null
+        },
+        {
+         "name": "marvell",
+         "domain": "marvell.com",
+         "amount": null
+        },
+        {
+         "name": "NFDG Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Patrick Collison",
+         "domain": "https://www.linkedin.com/in/patrickcollison/",
+         "amount": null
+        },
+        {
+         "name": "Situational Awareness",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Triatomic Capital",
+         "domain": "triatomic.ai",
+         "amount": null
+        }
+       ],
+       "sector": "AI Infrastructure, Artificial Intelligence (AI), Hardware, Manufacturing, Semiconductor",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "4b64e4225b27a432",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "Series E",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 540000000.0,
+       "valuation": 6000000000.0,
+       "investors": [
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand product offerings, pursue strategic acquisitions, hire additional talent, and further strengthen presence in existing and new global markets",
+       "source_sentence": "Cyera, which helps enterprises protect sensitive information while adopting artificial intelligence, has secured $540m in a Series E funding round.",
+       "published_at": "2025-06-12T10:30:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a21f94d3f481f3d6c903",
+        "698f9b648d29a990b6ffcae2"
+       ],
+       "article_id": "6988a21f94d3f481f3d6c903"
+      },
+      {
+       "id": "652b5daef0fa5b69",
+       "company_name": "MatX",
+       "domain": "matx.com",
+       "round_type": "Series B",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        },
+        {
+         "name": "Situational Awareness",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Marvell Technology",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "founders of Stripe",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Hardware",
+       "country": "United States",
+       "city": "Mountain View",
+       "use_of_funds": "begin fabrication and scale production through TSMC, targeting global deployments",
+       "source_sentence": "AI hardware startup MatX raised $500 million in a Series B financing round led by Jane Street and Situational Awareness, with additional backing from Marvell Technology, Spark Capital, and the founders of Stripe.",
+       "published_at": "2026-02-26T11:01:43",
+       "coverage_count": 5,
+       "article_ids": [
+        "69bc87a24755dcbc87590573",
+        "69bc8814256ce3e68edb9a64",
+        "69bc8819417ea46bd33ec05a",
+        "69cc4289cb088e024d2646bf",
+        "69e1d20927543ca5d7d7b234"
+       ],
+       "article_id": "69bc87a24755dcbc87590573"
+      },
+      {
+       "id": "31dcace47217d260",
+       "company_name": "MatX",
+       "domain": "matx.com",
+       "round_type": "Series B",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        },
+        {
+         "name": "Situational Awareness",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Marvell Technology",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "founders of Stripe",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI training chips / semiconductor accelerators",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "develop AI hardware for large language model training",
+       "source_sentence": "In a newly announced Series B round, MatX secured $500 million led by Jane Street and Situational Awareness.",
+       "published_at": "2026-02-25T23:16:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7ed68db8b8187dd9b82a"
+       ],
+       "article_id": "69bc7ed68db8b8187dd9b82a"
+      },
+      {
+       "id": "20d14f9fa55215a8",
+       "company_name": "MatX",
+       "domain": "matx.com",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        },
+        {
+         "name": "Situational Awareness",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Marvell Technology",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nfdg",
+         "domain": "nfdg.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Patrick Collison",
+         "domain": "https://www.linkedin.com/in/patrickcollison/",
+         "amount": null
+        },
+        {
+         "name": "John Collison",
+         "domain": "http://www.linkedin.com/in/johnbcollison",
+         "amount": null
+        }
+       ],
+       "sector": "AI chip hardware",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": "to secure manufacturing space and obtain important parts, especially memory",
+       "source_sentence": "MatX, founded by two former Google chip engineers, has raised more than $500 million in new funding to develop hardware designed to compete directly with NVIDIA.",
+       "published_at": "2026-02-24T17:29:42",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bce513dfa7512de38820ad",
+        "69e283349b322e6b3e97c12d",
+        "69e296b39b322e6b3e9b3638"
+       ],
+       "article_id": "69e283349b322e6b3e97c12d"
+      },
+      {
+       "id": "3775a1a515258b12",
+       "company_name": "kalshi",
+       "domain": "kalshi.com",
+       "round_type": "Series D",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "Andressen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "coinbase ventures",
+         "domain": "ventures.coinbase.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "prediction market",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Kalshi just raised a $300 million Series D round at a $5 billion valuation.",
+       "published_at": "2025-10-10T13:54:16",
+       "coverage_count": 4,
+       "article_ids": [
+        "68f7299a17f4f9d43d2bd419",
+        "68fe2dbbf2b427082327fac3",
+        "694af6cfedd4d8e72e75c96a",
+        "6988a74f127162d16e0ad533"
+       ],
+       "article_id": "68f7299a17f4f9d43d2bd419"
+      },
+      {
+       "id": "74a2b31e5b627f33",
+       "company_name": "sesame",
+       "domain": "sesamecare.com",
+       "round_type": "Series B",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "other undisclosed VCs",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "wearable AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "launch beta eyewear, expand engineering team, scale manufacturing and distribution",
+       "source_sentence": "Sesame, led by former Oculus executives, secured a $250 million Series B to build AI‑powered smart glasses with an always‑on personal assistant capability.",
+       "published_at": "2025-10-26T02:35:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe83c400ca996aa1d834fd"
+       ],
+       "article_id": "68fe83c400ca996aa1d834fd"
+      },
+      {
+       "id": "1165d01e5dde4c45",
+       "company_name": "sesame",
+       "domain": "sesamecare.com",
+       "round_type": "Series B",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence / Voice-driven smart glasses",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate its voice-based AI",
+       "source_sentence": "Sesame, an AI and smart glasses startup founded by former Oculus execs, raised $250 million in Series B funding, which the company hopes will accelerate its voice-based AI.",
+       "published_at": "2025-10-24T10:54:44",
+       "coverage_count": 4,
+       "article_ids": [
+        "698607e6069c05cbe2795974",
+        "6988b1ff94d3f481f3d7b482",
+        "69bb0226b54f2a520bb54b80",
+        "69bb5717529c413173b5f59c"
+       ],
+       "article_id": "6988b1ff94d3f481f3d7b482"
+      },
+      {
+       "id": "5b255828cd8755e8",
+       "company_name": "9fin",
+       "domain": "9fin.com",
+       "round_type": "Series C",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1300000000.0,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "harbourvest partners",
+         "domain": "harbourvest.com",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "redalpine",
+         "domain": "redalpine.com",
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI in credit markets",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Accelerate AI development, expand proprietary data infrastructure, and support continued growth in the United States",
+       "source_sentence": "9fin, an AI-native data and analytics platform focused on debt capital markets, has raised $170 million in a Series C funding round at a valuation of $1.3 billion.",
+       "published_at": "2026-04-02T11:17:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27d78c1991f786ce0d885"
+       ],
+       "article_id": "69e27d78c1991f786ce0d885"
+      },
+      {
+       "id": "8de219ba320077b0",
+       "company_name": "9fin",
+       "domain": "9fin.com",
+       "round_type": "Series C",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1300000000.0,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "HarbourVest",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "canada pension plan investment board",
+         "domain": "cppib.com",
+         "amount": null
+        },
+        {
+         "name": "redalpine",
+         "domain": "redalpine.com",
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Debt intelligence platform, AI",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "grow its AI capabilities, expand its proprietary dataset and continue its growth in the US",
+       "source_sentence": "AI-powered debt intelligence platform 9fin has been crowned a unicorn following a new $170m (£128.8m) Series C investment.",
+       "published_at": "2026-03-31T13:00:24",
+       "coverage_count": 4,
+       "article_ids": [
+        "69cc5ded1e1adbe011dafcaa",
+        "69d11126749d97354443ba7d",
+        "69d1115644cbe22144533e6f",
+        "69e854375cfa3e5ba5e8b374"
+       ],
+       "article_id": "69d11126749d97354443ba7d"
+      },
+      {
+       "id": "116a4c6edb1a90ba",
+       "company_name": "granola",
+       "domain": "granola.so",
+       "round_type": "Series C",
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "nfdg",
+         "domain": "nfdg.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI meeting intelligence",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "specifically for enterprise expansion",
+       "source_sentence": "The London-based startup announced a $125 million Series C on 25 March, led by Danny Rimer at Index Ventures, with Mamoon Hamid at Kleiner Perkins also participating.",
+       "published_at": "2026-03-28T16:31:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc530a1e8126b2deb40100"
+       ],
+       "article_id": "69cc530a1e8126b2deb40100"
+      },
+      {
+       "id": "5d608c723d05d695",
+       "company_name": "granola",
+       "domain": "granola.so",
+       "round_type": null,
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Granola, a startup whose artificial intelligence software has been gaining traction as a notetaking tool among Silicon Valley workers, is raising $125 million at a $1.5 billion valuation, led by Index Ventures.",
+       "published_at": "2026-03-25T14:07:06",
+       "coverage_count": 4,
+       "article_ids": [
+        "69c8bfe14ca06a20fbc4b20c",
+        "69d1110e97bd33d99f6a1690",
+        "69ea68807e2e51112026db82",
+        "69ea6881b0517977015e6285"
+       ],
+       "article_id": "69d1110e97bd33d99f6a1690"
+      },
+      {
+       "id": "3752f49096fa0640",
+       "company_name": "profluent",
+       "domain": "profluent.com",
+       "round_type": "financing",
+       "amount_usd": 106000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 106000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "air street capital",
+         "domain": "airstreet.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology",
+       "country": "United States",
+       "city": "Emeryville",
+       "use_of_funds": "Accelerate the path from lab breakthroughs to real-world applications and expand the platform’s capabilities.",
+       "source_sentence": "Profluent, a leader in frontier AI for protein design, today announced a $106 million financing co-led by Altimeter Capital and Bezos Expeditions, with participation from existing investors including Spark Capital, Insight Partners, and Air Street Capital.",
+       "published_at": "2025-12-18T12:15:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698ff0d19ca02490ec2a7edf"
+       ],
+       "article_id": "698ff0d19ca02490ec2a7edf"
+      },
+      {
+       "id": "f0b59147758f158e",
+       "company_name": "profluent",
+       "domain": "profluent.com",
+       "round_type": "Series B",
+       "amount_usd": 106000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 106000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "air street capital",
+         "domain": "airstreet.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial intelligence, protein design",
+       "country": "USA",
+       "city": "Emeryville",
+       "use_of_funds": "Accelerating the path from lab breakthroughs to real-world applications, expanding platform capabilities, markets, and bringing abundance to therapeutics, agriculture, and biomanufacturing.",
+       "source_sentence": "Profluent – the Emeryville-based artificial intelligence company focused on protein design – has closed a $106 million Series B financing round that brings its total funding to $150 million. The round was co-led by Altimeter Capital and Bezos Expeditions, with participation from existing investors Spark Capital, Insight Partners, and Air Street Capital.",
+       "published_at": "2025-12-02T09:35:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cb5c644ce85c7a68a230b1"
+       ],
+       "article_id": "69cb5c644ce85c7a68a230b1"
+      },
+      {
+       "id": "3f16b230c2fe850d",
+       "company_name": "profluent",
+       "domain": "profluent.com",
+       "round_type": "Series C",
+       "amount_usd": 106000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 106000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "air street capital",
+         "domain": "airstreet.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI for Protein Design",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The company, a leader in frontier AI for protein design, said it secured $106M in a financing round co-led by Altimeter Capital and Bezos Expeditions, with participation from existing investors including Spark Capital, Insight Partners, and Air Street Capital.",
+       "published_at": "2025-11-21T15:55:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb702051c35210b7b7c432"
+       ],
+       "article_id": "69bb702051c35210b7b7c432"
+      },
+      {
+       "id": "63a07ce1432e91e1",
+       "company_name": "profluent",
+       "domain": "profluent.com",
+       "round_type": null,
+       "amount_usd": 106000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 106000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "air street capital",
+         "domain": "airstreet.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "Scale R&D, expand commercial partnerships, and accelerate therapeutic and biomanufacturing innovation.",
+       "source_sentence": "The funding was co-led by Altimeter Capital and Bezos Expeditions, with continued backing from Spark Capital, Insight Partners, and Air Street Capital.",
+       "published_at": "2025-11-20T05:41:41",
+       "coverage_count": 2,
+       "article_ids": [
+        "694d7a226177c560c9f2ea2e",
+        "698d6b789ca02490ecfac2c1"
+       ],
+       "article_id": "698d6b789ca02490ecfac2c1"
+      },
+      {
+       "id": "2bed60207620c64c",
+       "company_name": "antithesis",
+       "domain": "antithesis.com",
+       "round_type": "Series A",
+       "amount_usd": 105000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 105000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        },
+        {
+         "name": "Amplify Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "tamarack global",
+         "domain": "tamarackglobal.com",
+         "amount": null
+        },
+        {
+         "name": "first in ventures",
+         "domain": "firstinventures.com",
+         "amount": null
+        },
+        {
+         "name": "teamworthy ventures",
+         "domain": "teamworthy.com",
+         "amount": null
+        },
+        {
+         "name": "hyperion capital",
+         "domain": "hyperioncapital.com",
+         "amount": null
+        },
+        {
+         "name": "Patrick Collison",
+         "domain": "https://www.linkedin.com/in/patrickcollison/",
+         "amount": null
+        },
+        {
+         "name": "Dwarkesh Patel",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sholto Douglas",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Software infrastructure",
+       "country": "United States",
+       "city": "Northern Virginia",
+       "use_of_funds": "expand engineering, increase automation, scale go-to-market globally and push distribution through channels including AWS Marketplace",
+       "source_sentence": "Antithesis, a Northern Virginia startup pitching itself as infrastructure for never-down software, raised a $105 million Series A led by Jane Street, a bet that stress-testing distributed systems matters as much for blockchains as it does for high-speed trading.",
+       "published_at": "2025-12-03T13:32:17",
+       "coverage_count": 3,
+       "article_ids": [
+        "693122ccd705e969a3f205a3",
+        "693129d8e1349c1e11f20bec",
+        "6983f5c8e71a535a9c178d76"
+       ],
+       "article_id": "693122ccd705e969a3f205a3"
+      },
+      {
+       "id": "453d27e6cdb00ab6",
+       "company_name": "antithesis",
+       "domain": "antithesis.com",
+       "round_type": "Series A",
+       "amount_usd": 105000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 105000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        },
+        {
+         "name": "Amplify Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "tamarack global",
+         "domain": "tamarackglobal.com",
+         "amount": null
+        },
+        {
+         "name": "first in ventures",
+         "domain": "firstinventures.com",
+         "amount": null
+        },
+        {
+         "name": "teamworthy ventures",
+         "domain": "teamworthy.com",
+         "amount": null
+        },
+        {
+         "name": "hyperion capital",
+         "domain": "hyperioncapital.com",
+         "amount": null
+        },
+        {
+         "name": "Patrick Collison",
+         "domain": "https://www.linkedin.com/in/patrickcollison/",
+         "amount": null
+        },
+        {
+         "name": "Dwarkesh Patel",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sholto Douglas",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "other new and returning investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Software testing",
+       "country": "United States",
+       "city": "Northern Virginia",
+       "use_of_funds": "Accelerate Antithesis’s product innovation and scale its go-to-market operations across North America, Europe, and Asia.",
+       "source_sentence": "Antithesis today announced a $105 million Series A round led by Jane Street",
+       "published_at": "2025-12-03T06:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "693129aa4d1258c91cf20725",
+        "69970da970e6b99bb4c1455f",
+        "69baef8d88a452392c4281e9",
+        "69e64d7e9e87ccc43e3911d8"
+       ],
+       "article_id": "69970da970e6b99bb4c1455f"
+      },
+      {
+       "id": "ee127b73d0a66051",
+       "company_name": "eve",
+       "domain": "evehome.com",
+       "round_type": "Series B",
+       "amount_usd": 103000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1000000000.0,
+       "currency": "USD",
+       "amount": 103000000.0,
+       "valuation": 1000000000.0,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal tech startup",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "The new funding would be used to further the company’s product development efforts and continue expanding its customer support and success teams.",
+       "source_sentence": "On Tuesday, generative artificial intelligence-powered legal tech startup Eve announced that it completed a $103 million series B funding round at a valuation of $1 billion.",
+       "published_at": "2025-09-30T12:37:32",
+       "coverage_count": 8,
+       "article_ids": [
+        "68f70b73b5f4abc34a2b6ea4",
+        "68f7233117f4f9d43d2b423d",
+        "694d7887895e1e8bfef3085f",
+        "698dd2ba9ca02490ec024e1b",
+        "698dd3369ca02490ec025743",
+        "6996b972feeb41363fa2528d",
+        "69bae253cdd39d5d9721358f",
+        "69e8bb025cfa3e5ba52f712d"
+       ],
+       "article_id": "69e8bb025cfa3e5ba52f712d"
+      },
+      {
+       "id": "259b49cc6a96e332",
+       "company_name": "Cambridge Aerospace",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Air defence",
+       "country": "UK",
+       "city": "Cambridge",
+       "use_of_funds": null,
+       "source_sentence": "Cambridge Aerospace has just closed a $100 million (€85 million) funding round led by Spark Capital, which values start-up in a number of countries.",
+       "published_at": "2025-08-26T13:43:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc147ca3b9608a9aec983f"
+       ],
+       "article_id": "69bc147ca3b9608a9aec983f"
+      },
+      {
+       "id": "a576a5fc86efe8ea",
+       "company_name": "latent",
+       "domain": "latenthealth.com",
+       "round_type": null,
+       "amount_usd": 93500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 93500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "mckesson ventures",
+         "domain": "ventures.mckesson.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Transformation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Latent has now raised a total of $93.5M in total equity funding and is backed by Conviction, General Catalyst, McKesson Ventures, Spark Capital, Transformation Capital, and Y Combinator.",
+       "published_at": "2026-03-23T08:27:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a896c8a71dc7ae87bb69"
+       ],
+       "article_id": "69c3a896c8a71dc7ae87bb69"
+      },
+      {
+       "id": "ec3d4e2617c61459",
+       "company_name": "latent",
+       "domain": "latenthealth.com",
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Transformation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "mckesson ventures",
+         "domain": "ventures.mckesson.com",
+         "amount": null
+        },
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "scale its AI platform for medication access, enhance AI models, expand partnerships, and broaden deployment across healthcare networks",
+       "source_sentence": "Latent Health secured $80 million in total funding from investors including Transformation Capital, Spark Capital, McKesson Ventures, Conviction, General Catalyst, and Y Combinator to scale its AI platform for medication access.",
+       "published_at": "2026-04-09T10:57:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84cba7bb1410d4c669c9e"
+       ],
+       "article_id": "69e84cba7bb1410d4c669c9e"
+      },
+      {
+       "id": "46a961e5781a2761",
+       "company_name": "Latent Health",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Transformation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "mckesson ventures",
+         "domain": "ventures.mckesson.com",
+         "amount": null
+        },
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare AI",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "According to Latent’s press release, the San Francisco, CA-based company has raised $80M in total funding from Transformation Capital, Spark Capital, McKesson Ventures, Conviction, General Catalyst, Y Combinator, and others.",
+       "published_at": "2026-03-20T01:00:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc4be3384faa79b68f995f"
+       ],
+       "article_id": "69cc4be3384faa79b68f995f"
+      },
+      {
+       "id": "d604aeedcd95379d",
+       "company_name": "midas",
+       "domain": "midas.com",
+       "round_type": "Series B",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "qed investors",
+         "domain": "qedinvestors.com",
+         "amount": null
+        },
+        {
+         "name": "international finance corporation",
+         "domain": "ifc.org",
+         "amount": null
+        },
+        {
+         "name": "HSG (formerly Sequoia China)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "QuantumLight",
+         "domain": "quantumlightcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Spice Expeditions LP",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "George Rzepecki",
+         "domain": "https://www.linkedin.com/in/georgerzepecki",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "portage ventures",
+         "domain": "portagevc.com",
+         "amount": null
+        },
+        {
+         "name": "Bek Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nigel Morris",
+         "domain": "https://www.linkedin.com/in/nigel-morris-83790635",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Turkey",
+       "city": "Istanbul",
+       "use_of_funds": "Strengthen security infrastructure to international standards and accelerate launch of advanced products for active traders, and introduce derivatives trading in Turkish and US equities.",
+       "source_sentence": "Midas, Turkey’s leading investment platform, has raised $80 million in its Series B funding round.",
+       "published_at": "2025-08-19T19:41:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "68ab40cb2e28036801dcdd14",
+        "68b434113ddf2630a8be3130",
+        "68c58a58a4534b902388c6a1",
+        "6988cf8a94d3f481f3d9e9cd",
+        "698e79df8d29a990b6ea2a0a",
+        "6996ccaa219d71cf48d03f5a",
+        "69974217e7ff408e2d709f3a",
+        "69cbec143a0ed6ac902c8282"
+       ],
+       "article_id": "68ab40cb2e28036801dcdd14"
+      },
+      {
+       "id": "3d38cb171866fc02",
+       "company_name": "midas",
+       "domain": "midas.com",
+       "round_type": "Series B",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "qed investors",
+         "domain": "qedinvestors.com",
+         "amount": null
+        },
+        {
+         "name": "international finance corporation",
+         "domain": "ifc.org",
+         "amount": null
+        },
+        {
+         "name": "HSG (formerly Sequoia China)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "QuantumLight",
+         "domain": "quantumlightcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Spice Expeditions LP",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "George Rzepecki",
+         "domain": "https://www.linkedin.com/in/georgerzepecki",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "portage ventures",
+         "domain": "portagevc.com",
+         "amount": null
+        },
+        {
+         "name": "Bek Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nigel Morris",
+         "domain": "https://www.linkedin.com/in/nigel-morris-83790635",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Turkey",
+       "city": "Istanbul",
+       "use_of_funds": "Strengthen security infrastructure to international standards, accelerate launch of advanced products for active traders, and introduce derivatives trading in Turkish and US equities.",
+       "source_sentence": "ISTANBUL, Aug. 19, 2025 /PRNewswire/ -- Midas, Turkey's leading investment platform, has raised $80 million in its Series B funding round, the largest investment ever secured by a Turkish fintech company.",
+       "published_at": "2025-08-19T14:30:00",
+       "coverage_count": 10,
+       "article_ids": [
+        "68ab3fa92e28036801bc8973",
+        "68d103d791b46c685a2d1b1d",
+        "68d939ce07210b9f0b0b167f",
+        "69868815fdcc616c15df8759",
+        "698f6f988d29a990b6fc82ed",
+        "69e2bb6a9b322e6b3ea2e7ab",
+        "69e3cdf1549ba8a86632f0b3",
+        "69e8585f7bb1410d4c6dbd9d",
+        "69e8d6cc7bb1410d4ccb11d9",
+        "69e8dc2d7bb1410d4ccf4089"
+       ],
+       "article_id": "68d103d791b46c685a2d1b1d"
+      },
+      {
+       "id": "872b205f0cc4bfd9",
+       "company_name": "Edison Scientific",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": 250000000.0,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": 250000000.0,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Triatomic Capital",
+         "domain": "triatomic.ai",
+         "amount": null
+        },
+        {
+         "name": "major US biotech investor",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jeff Dean",
+         "domain": "http://www.linkedin.com/pub/jeff-dean/6/60a/1a",
+         "amount": null
+        },
+        {
+         "name": "Dmitri Alperovitch",
+         "domain": "https://www.linkedin.com/in/dmitrialperovitch",
+         "amount": null
+        }
+       ],
+       "sector": "AI biotechnology",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Hire across AI, biology, chemistry, and engineering; expand the platform and broaden commercial rollout",
+       "source_sentence": "The San Francisco-based startup has raised a $70 million seed round at a roughly $250 million valuation, co‑led by Spark Capital, Triatomic Capital and a major US biotech investor, with angels including Google chief scientist Jeff Dean and CrowdStrike co‑founder Dmitri Alperovitch also participating.",
+       "published_at": "2025-12-19T13:23:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "698fe5968d29a990b60533ac"
+       ],
+       "article_id": "698fe5968d29a990b60533ac"
+      },
+      {
+       "id": "51b77833ec8371fa",
+       "company_name": "Gambit Security",
+       "domain": null,
+       "round_type": "Seed and Series A",
+       "amount_usd": 61000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 61000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Gambit Security, an AI-native enterprise resilience platform, has emerged from stealth with $61m in seed and Series A funding raised in under 12 months from Spark Capital, Kleiner Perkins, and Cyberstarts.",
+       "published_at": "2026-04-16T15:03:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "69e8e1469baafc7356dc880e"
+      },
+      {
+       "id": "48b5cd215c33b952",
+       "company_name": "cardless",
+       "domain": "cardless.com",
+       "round_type": "Series C growth",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "activant capital",
+         "domain": "activantcapital.com",
+         "amount": null
+        },
+        {
+         "name": "industry ventures",
+         "domain": "industryventures.com",
+         "amount": null
+        },
+        {
+         "name": "pear vc",
+         "domain": "pear.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "SAN FRANCISCO",
+       "use_of_funds": "expand its existing card programs, launch new cards with leading companies, and introduce a broader range of financial products",
+       "source_sentence": "Cardless, the credit card platform that lets product-first companies design and launch cards in-house, today announced a $60 million Series C growth round led by Spark Capital.",
+       "published_at": "2025-09-30T10:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe301df2b4270823283b6d"
+       ],
+       "article_id": "68fe301df2b4270823283b6d"
+      },
+      {
+       "id": "b86f7f13da19f074",
+       "company_name": "cardless",
+       "domain": "cardless.com",
+       "round_type": "venture",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "activant capital",
+         "domain": "activantcapital.com",
+         "amount": null
+        },
+        {
+         "name": "industry ventures",
+         "domain": "industryventures.com",
+         "amount": null
+        },
+        {
+         "name": "pear vc",
+         "domain": "pear.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Cardless, a co-brand credit-card startup, raised $60 million in fresh venture funds to add features and build programs with name-brand clients, part of its effort to gain a stronger foothold in a business that traditional banks still dominate.",
+       "published_at": "2025-09-22T11:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d95c5e4ea4015b01126b54"
+       ],
+       "article_id": "68d95c5e4ea4015b01126b54"
+      },
+      {
+       "id": "4c572d59e23f848e",
+       "company_name": "cardless",
+       "domain": "cardless.com",
+       "round_type": "Series C",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "activant capital",
+         "domain": "activantcapital.com",
+         "amount": null
+        },
+        {
+         "name": "industry ventures",
+         "domain": "industryventures.com",
+         "amount": null
+        },
+        {
+         "name": "pear vc",
+         "domain": "pear.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Financial Services",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Cardless will use the funding to expand its existing card programs, launch new cards with leading companies, and introduce a broader range of financial products—all designed for companies to build and deliver financial products tailored to their users.",
+       "source_sentence": "Cardless, the credit card platform that lets product-first companies design and launch cards in-house, today announced a $60 million Series C growth round led by Spark Capital.",
+       "published_at": "2025-09-21T23:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d9387d571cd3f5050af9d8",
+        "6988aad669527f36baaea5d7",
+        "698f758f8d29a990b6fcf8a6"
+       ],
+       "article_id": "68d9387d571cd3f5050af9d8"
+      },
+      {
+       "id": "11c283a298f29ec6",
+       "company_name": "ivo",
+       "domain": "ivo.com.cn",
+       "round_type": null,
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "investment will support expansion of AI products that automate legal document analysis, contract review, and litigation support",
+       "source_sentence": "Legal AI startup Ivo raised $55 million in a funding round led by Andreessen Horowitz with participation from Spark Capital and other venture partners.",
+       "published_at": "2026-01-22T04:12:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c89239f168c6d480fa17e5"
+       ],
+       "article_id": "69c89239f168c6d480fa17e5"
+      },
+      {
+       "id": "417a8b9915d47edc",
+       "company_name": "anrok",
+       "domain": "anrok.com",
+       "round_type": "Series C",
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "accelerate product development of its tax automation software and expand sales globally",
+       "source_sentence": "The round was led by Spark Capital, with co‑investors Sapphire Ventures, Khosla Ventures, Sequoia Capital, and Index Ventures also participating.",
+       "published_at": "2025-10-21T22:15:44",
+       "coverage_count": 2,
+       "article_ids": [
+        "68fe311992ef2af9ad2859b9",
+        "68fe83c400ca996aa1d834fd"
+       ],
+       "article_id": "68fe311992ef2af9ad2859b9"
+      },
+      {
+       "id": "5567be68446ff194",
+       "company_name": "anrok",
+       "domain": "anrok.com",
+       "round_type": "Series C",
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Tax compliance software",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Expand R&D efforts and deepen integrations with global finance systems, and next phase of growth, expanding AI-driven automation and building new partnerships.",
+       "source_sentence": "Today, Anrok announced it has raised $55 million in a Series C funding round led by Spark Capital, with participation from Sapphire Ventures, Khosla Ventures, Sequoia Capital, and Index Ventures.",
+       "published_at": "2025-10-21T14:27:29",
+       "coverage_count": 6,
+       "article_ids": [
+        "68fe20b37a193434f928421e",
+        "68fe2fbc606fcdbfff28326e",
+        "69319ba034551716f0f22b78",
+        "6988a9d3a88ad7b9aae0e1d0",
+        "698e1d8a9ca02490ec07d384",
+        "69974b04e7ff408e2d70c2ab"
+       ],
+       "article_id": "68fe20b37a193434f928421e"
+      },
+      {
+       "id": "009bf9193dbf6e69",
+       "company_name": "qdrant",
+       "domain": "qdrant.tech",
+       "round_type": "Series B",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "avp",
+         "domain": "avp-vt.de",
+         "amount": null
+        },
+        {
+         "name": "bosch ventures",
+         "domain": "rbvc.com",
+         "amount": null
+        },
+        {
+         "name": "unusual ventures",
+         "domain": "unusual.vc",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "42cap",
+         "domain": "42cap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Vector database",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "product research and development, adding personnel, developing go-to-market strategies",
+       "source_sentence": "The Berlin AI infrastructure start-up Qdrant announced today a series B financing round of 50 million US dollars.",
+       "published_at": "2026-03-12T08:15:13",
+       "coverage_count": 4,
+       "article_ids": [
+        "69c3a542e4f9bcdc12bc08db",
+        "69c41b69a12abf47f1ff99fa",
+        "69cbd1a9c6ed362ae7eedd23",
+        "69cbe9a2b153a819bb865dfc"
+       ],
+       "article_id": "69c3a542e4f9bcdc12bc08db"
+      },
+      {
+       "id": "7636385773eeef48",
+       "company_name": "nuvo",
+       "domain": "getnuvo.com",
+       "round_type": "Series",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "human capital",
+         "domain": "human.capital",
+         "amount": null
+        },
+        {
+         "name": "foundation capital",
+         "domain": "foundationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "susa ventures",
+         "domain": "susaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Gokul Rajaram",
+         "domain": "http://www.linkedin.com/in/gokulrajaram1",
+         "amount": null
+        },
+        {
+         "name": "Max Mullen",
+         "domain": "maxmullen.com",
+         "amount": null
+        },
+        {
+         "name": "Matt MacInnis",
+         "domain": "http://www.linkedin.com/in/macinnis",
+         "amount": null
+        },
+        {
+         "name": "Sanjit Biswas",
+         "domain": "https://www.linkedin.com/in/sanjitbiswas",
+         "amount": null
+        },
+        {
+         "name": "John Bicket",
+         "domain": "https://www.linkedin.com/in/jbicket",
+         "amount": null
+        },
+        {
+         "name": "Varun Anand",
+         "domain": "https://www.linkedin.com/in/varunanand",
+         "amount": null
+        },
+        {
+         "name": "Eugene Marinelli",
+         "domain": "https://www.linkedin.com/in/eugenemarinelli",
+         "amount": null
+        },
+        {
+         "name": "Rosco Hill",
+         "domain": "https://www.linkedin.com/in/roscohill/",
+         "amount": null
+        },
+        {
+         "name": "Ryan Petersen",
+         "domain": "http://www.linkedin.com/in/rpetersen",
+         "amount": null
+        },
+        {
+         "name": "Ali Rowghani",
+         "domain": "https://www.linkedin.com/in/ali-rowghani-26996a1b",
+         "amount": null
+        }
+       ],
+       "sector": "B2B Trade Finance",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Nuvo, a network dedicated to modernising B2B trade, has raised $45m in a funding round backed by leading investors including Sequoia Capital, Spark Capital, Founders Fund, Index Ventures, Human Capital, Foundation Capital and Susa Ventures.",
+       "published_at": "2025-05-02T15:39:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cdd399ca02490ecf039a0"
+       ],
+       "article_id": "698cdd399ca02490ecf039a0"
+      },
+      {
+       "id": "70a869cd2b1d4001",
+       "company_name": "nuvo",
+       "domain": "getnuvo.com",
+       "round_type": null,
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "human capital",
+         "domain": "human.capital",
+         "amount": null
+        },
+        {
+         "name": "foundation capital",
+         "domain": "foundationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "susa ventures",
+         "domain": "susaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Gokul Rajaram",
+         "domain": "http://www.linkedin.com/in/gokulrajaram1",
+         "amount": null
+        },
+        {
+         "name": "Max Mullen",
+         "domain": "maxmullen.com",
+         "amount": null
+        },
+        {
+         "name": "Matt MacInnis",
+         "domain": "http://www.linkedin.com/in/macinnis",
+         "amount": null
+        },
+        {
+         "name": "Sanjit Biswas",
+         "domain": "https://www.linkedin.com/in/sanjitbiswas",
+         "amount": null
+        },
+        {
+         "name": "John Bicket",
+         "domain": "https://www.linkedin.com/in/jbicket",
+         "amount": null
+        },
+        {
+         "name": "Varun Anand",
+         "domain": "https://www.linkedin.com/in/varunanand",
+         "amount": null
+        },
+        {
+         "name": "Eugene Marinelli",
+         "domain": "https://www.linkedin.com/in/eugenemarinelli",
+         "amount": null
+        },
+        {
+         "name": "Rosco Hill",
+         "domain": "https://www.linkedin.com/in/roscohill/",
+         "amount": null
+        },
+        {
+         "name": "Ryan Petersen",
+         "domain": "http://www.linkedin.com/in/rpetersen",
+         "amount": null
+        },
+        {
+         "name": "Ali Rowghani",
+         "domain": "https://www.linkedin.com/in/ali-rowghani-26996a1b",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "With the new funding, Nuvo will deepen its reach across core markets such as alcohol and beverage, building materials, chemicals, food service, distribution, and manufacturing, while extending into new verticals.",
+       "source_sentence": "Nuvo, the network accelerating modern B2B trade, announced that it has raised $45 million in funding from Sequoia Capital, Spark Capital, Founders Fund, Index Ventures, Human Capital, Foundation Capital, Susa Ventures, and prominent angel investors including Gokul Rajaram, Max Mullen (Founder, Instacart), Matt MacInnis (COO, Rippling), Sanjit Biswas and John Bicket (Samsara founders), Varun Anand (Founder, Clay), Eugene Marinelli and Rosco Hill (Blend founders), Ryan Petersen (Founder, Flexport), and Ali Rowghani (Former MD, YCombinator).",
+       "published_at": "2025-05-02T07:04:32",
+       "coverage_count": 2,
+       "article_ids": [
+        "698945de94d3f481f3e29d25",
+        "69ca33e2288a36c0c7bdb289"
+       ],
+       "article_id": "69ca33e2288a36c0c7bdb289"
+      },
+      {
+       "id": "90eac42a14194b3e",
+       "company_name": "medallion",
+       "domain": "medallion.co",
+       "round_type": "Growth round (Series C)",
+       "amount_usd": 43000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 43000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "acrew capital",
+         "domain": "acrewcapital.com",
+         "amount": null
+        },
+        {
+         "name": "washington harbour partners",
+         "domain": "washingtonharbour.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "healthcare credentialing automation",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "scale AI capabilities, grow sales and partnerships, onboard more insurers",
+       "source_sentence": "The latest investment was led by Acrew Capital, with participation from Washington Harbour Partners and a who’s who of existing investors, including Sequoia Capital, GV, Spark Capital, and others.",
+       "published_at": "2025-08-19T22:16:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5b847d7fe179be1c89edb"
+       ],
+       "article_id": "68c5b847d7fe179be1c89edb"
+      },
+      {
+       "id": "927724923d7f3815",
+       "company_name": "medallion",
+       "domain": "medallion.co",
+       "round_type": "Series D",
+       "amount_usd": 43000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 43000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "acrew capital",
+         "domain": "acrewcapital.com",
+         "amount": null
+        },
+        {
+         "name": "washington harbour partners",
+         "domain": "washingtonharbour.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "nfdg",
+         "domain": "nfdg.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare technology",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Deploy $43 million to accelerate growth, enhance AI platform capabilities, expand go-to-market, scale CredAlliance clearinghouse, and accelerate product development.",
+       "source_sentence": "Medallion, a leading provider of AI-powered provider network infrastructure, announced today that it has raised $43 million in a new funding round led by Acrew Capital, with participation from Washington Harbour Partners and existing investors, including Sequoia Capital, GV, Spark Capital, and NFDG.",
+       "published_at": "2025-08-19T04:06:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69888822b09f47b0d90affce"
+       ],
+       "article_id": "69888822b09f47b0d90affce"
+      },
+      {
+       "id": "07f1b9b0c000ecf6",
+       "company_name": "medallion",
+       "domain": "medallion.co",
+       "round_type": null,
+       "amount_usd": 43000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 43000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "acrew capital",
+         "domain": "acrewcapital.com",
+         "amount": null
+        },
+        {
+         "name": "washington harbour partners",
+         "domain": "washingtonharbour.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "nfdg",
+         "domain": "nfdg.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare AI / Provider Network Infrastructure",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "The company will use the funds to expand its AI automation platform, scale CredAlliance, a shared credentialing infrastructure for payers, and grow its go-to-market teams and partnerships.",
+       "source_sentence": "Medallion, a San Francisco, CA-based AI-powered infrastructure platform, has raised $43 million in funding.",
+       "published_at": "2025-08-19T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69974d5c5fbe93703d60e814"
+       ],
+       "article_id": "69974d5c5fbe93703d60e814"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 65,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDgtMTkgMDA6MDA6MDAiLCJrIjoiNTcyNDQyNzk2NDM5NDMyNDM4IiwiYSI6NDMwMDAwMDAuMH0",
+     "totals": {
+      "deals": 65,
+      "deals_with_amount": 63,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 5482848000.0,
+      "median_amount_usd": 55000000.0,
+      "largest_amount_usd": 1375000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.13,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.133
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Spark Capital",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "spark capital"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "3054bb9009c69f51",
+       "company_name": "Parallel Web Systems",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2000000000.0,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": 2000000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Terrain Capital",
+         "domain": "terraincapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Internet, AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand sales and marketing teams, invest in research and development, target enterprise customers",
+       "source_sentence": "Former Twitter (now X) CEO Parag Agrawal’s AI agentic platform Parallel Web Systems has raised a $100 million Series B at a $2 billion valuation, led by Sequoia Capital.",
+       "published_at": "2026-04-30T16:04:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f87fe4bbf1d3145595ec05"
+       ],
+       "article_id": "69f87fe4bbf1d3145595ec05"
+      },
+      {
+       "id": "51b77833ec8371fa",
+       "company_name": "Gambit Security",
+       "domain": null,
+       "round_type": "Seed and Series A",
+       "amount_usd": 61000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 61000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Gambit Security, an AI-native enterprise resilience platform, has emerged from stealth with $61m in seed and Series A funding raised in under 12 months from Spark Capital, Kleiner Perkins, and Cyberstarts.",
+       "published_at": "2026-04-16T15:03:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "69e8e1469baafc7356dc880e"
+      },
+      {
+       "id": "aa7146dc16443143",
+       "company_name": "synera",
+       "domain": "synera.io",
+       "round_type": "Series B",
+       "amount_usd": 37800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "revaia",
+         "domain": "revaia.com",
+         "amount": null
+        },
+        {
+         "name": "capgemini",
+         "domain": "capgemini.com",
+         "amount": null
+        },
+        {
+         "name": "uvc partners",
+         "domain": "uvcpartners.com",
+         "amount": null
+        },
+        {
+         "name": "BMW iVentures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cherry ventures",
+         "domain": "cherry.vc",
+         "amount": null
+        },
+        {
+         "name": "Venture Stars",
+         "domain": "venture-stars.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI in manufacturing",
+       "country": "Germany",
+       "city": "Bremen",
+       "use_of_funds": "Growth in US, Asia-Pacific, and Europe",
+       "source_sentence": "Synera has raised €35 million ($40 million) in a Series B round led by Revaia.",
+       "published_at": "2026-04-14T15:00:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8b14f9baafc7356b51203"
+       ],
+       "article_id": "69e8b14f9baafc7356b51203"
+      },
+      {
+       "id": "8e512f63899ecabd",
+       "company_name": "synera",
+       "domain": "synera.io",
+       "round_type": "Series-B",
+       "amount_usd": 37800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "revaia",
+         "domain": "revaia.com",
+         "amount": null
+        },
+        {
+         "name": "uvc partners",
+         "domain": "uvcpartners.com",
+         "amount": null
+        },
+        {
+         "name": "isai cap venture",
+         "domain": "isai.vc",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bmw i ventures",
+         "domain": "bmwiventures.com",
+         "amount": null
+        },
+        {
+         "name": "cherry ventures",
+         "domain": "cherry.vc",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "Germany",
+       "city": "Bremen",
+       "use_of_funds": "product development and international expansion",
+       "source_sentence": "The Bremen-based AI startup Synera has completed a Series-B financing round of 35 million euros.",
+       "published_at": "2026-04-14T13:20:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8ced15cfa3e5ba53fe6f7"
+       ],
+       "article_id": "69e8ced15cfa3e5ba53fe6f7"
+      },
+      {
+       "id": "2b46040b44743a12",
+       "company_name": "synera",
+       "domain": "synera.io",
+       "round_type": "Series B",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "revaia",
+         "domain": "revaia.com",
+         "amount": null
+        },
+        {
+         "name": "Capgemini through ISAI Cap Venture",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "uvc partners",
+         "domain": "uvcpartners.com",
+         "amount": null
+        },
+        {
+         "name": "BMW iVentures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cherry ventures",
+         "domain": "cherry.vc",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "industrial engineering and AI platform",
+       "country": "Germany",
+       "city": "Bremen",
+       "use_of_funds": "expand internationally across the U.S., APAC, and Europe, with plans to build a dedicated team in France alongside its growing teams in the U.S. and Germany",
+       "source_sentence": "Synera, a Bremen, Germany-based provider of a agentic AI platform orchestrating the full industrial engineering value chain, raised $40m (€35M) in Series B funding.",
+       "published_at": "2026-04-14T12:44:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e84f6d7bb1410d4c6854ec",
+        "69e863437bb1410d4c742008"
+       ],
+       "article_id": "69e84f6d7bb1410d4c6854ec"
+      },
+      {
+       "id": "ecf0c4b04432eb0b",
+       "company_name": "synera",
+       "domain": "synera.io",
+       "round_type": "Series B",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "revaia",
+         "domain": "revaia.com",
+         "amount": null
+        },
+        {
+         "name": "Capgemini through ISAI Cap Venture",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "uvc partners",
+         "domain": "uvcpartners.com",
+         "amount": null
+        },
+        {
+         "name": "BMW iVentures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cherry ventures",
+         "domain": "cherry.vc",
+         "amount": null
+        },
+        {
+         "name": "Venture Stars",
+         "domain": "venture-stars.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Industrial AI software",
+       "country": "Germany",
+       "city": "Bremen",
+       "use_of_funds": "Accelerate global expansion and scale agentic AI platform across United States, Europe, and Asia-Pacific",
+       "source_sentence": "Synera announced the close of a $40 million (€35 million) Series B financing round to accelerate global expansion and scale its agentic AI platform for industrial engineering.",
+       "published_at": "2026-04-14T12:43:28",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e842005cfa3e5ba5ddc098",
+        "69e85c3f9baafc73567833de",
+        "69e8cd675cfa3e5ba53eb446",
+        "69f1cf7c399b489398e29c6b"
+       ],
+       "article_id": "69e8cd675cfa3e5ba53eb446"
+      },
+      {
+       "id": "ec3d4e2617c61459",
+       "company_name": "latent",
+       "domain": "latenthealth.com",
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Transformation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "mckesson ventures",
+         "domain": "ventures.mckesson.com",
+         "amount": null
+        },
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "scale its AI platform for medication access, enhance AI models, expand partnerships, and broaden deployment across healthcare networks",
+       "source_sentence": "Latent Health secured $80 million in total funding from investors including Transformation Capital, Spark Capital, McKesson Ventures, Conviction, General Catalyst, and Y Combinator to scale its AI platform for medication access.",
+       "published_at": "2026-04-09T10:57:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84cba7bb1410d4c669c9e"
+       ],
+       "article_id": "69e84cba7bb1410d4c669c9e"
+      },
+      {
+       "id": "5b255828cd8755e8",
+       "company_name": "9fin",
+       "domain": "9fin.com",
+       "round_type": "Series C",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1300000000.0,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "harbourvest partners",
+         "domain": "harbourvest.com",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "redalpine",
+         "domain": "redalpine.com",
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI in credit markets",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Accelerate AI development, expand proprietary data infrastructure, and support continued growth in the United States",
+       "source_sentence": "9fin, an AI-native data and analytics platform focused on debt capital markets, has raised $170 million in a Series C funding round at a valuation of $1.3 billion.",
+       "published_at": "2026-04-02T11:17:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27d78c1991f786ce0d885"
+       ],
+       "article_id": "69e27d78c1991f786ce0d885"
+      },
+      {
+       "id": "8de219ba320077b0",
+       "company_name": "9fin",
+       "domain": "9fin.com",
+       "round_type": "Series C",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1300000000.0,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "HarbourVest",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "canada pension plan investment board",
+         "domain": "cppib.com",
+         "amount": null
+        },
+        {
+         "name": "redalpine",
+         "domain": "redalpine.com",
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Debt intelligence platform, AI",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "grow its AI capabilities, expand its proprietary dataset and continue its growth in the US",
+       "source_sentence": "AI-powered debt intelligence platform 9fin has been crowned a unicorn following a new $170m (£128.8m) Series C investment.",
+       "published_at": "2026-03-31T13:00:24",
+       "coverage_count": 4,
+       "article_ids": [
+        "69cc5ded1e1adbe011dafcaa",
+        "69d11126749d97354443ba7d",
+        "69d1115644cbe22144533e6f",
+        "69e854375cfa3e5ba5e8b374"
+       ],
+       "article_id": "69d11126749d97354443ba7d"
+      },
+      {
+       "id": "5a69af5fb5966f4f",
+       "company_name": "9fin",
+       "domain": "9fin.com",
+       "round_type": "Series C",
+       "amount_usd": 17000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1300000000.0,
+       "currency": "USD",
+       "amount": 17000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "HarbourVest",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "redalpine",
+         "domain": "redalpine.com",
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "To accelerate development of 9fin’s AI capabilities, expand its proprietary dataset, and support continued growth in the United States.",
+       "source_sentence": "HarbourVest leads round with participation from CPP Investments and earlier investors; total funding raised now exceeds $250 million 9fin, the AI-native platform for global debt markets, has raised $170 million in Series C funding at a $1.3 billion valuation.",
+       "published_at": "2026-03-31T10:35:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d10b48c47f8fc6a16613f0"
+       ],
+       "article_id": "69d10b48c47f8fc6a16613f0"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 26,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMzEgMTA6MzU6MDYiLCJrIjoiNjUxNDkzMTE2MTU3MTQyMjAzMSJ9",
+     "totals": {
+      "deals": 26,
+      "deals_with_amount": 25,
+      "deals_without_amount": 1,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 2092300000.0,
+      "median_amount_usd": 52500000.0,
+      "largest_amount_usd": 625000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.094,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.097
+    }
+   }
+  }
+ ]
+}

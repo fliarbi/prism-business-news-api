@@ -1,0 +1,2502 @@
+{
+ "slug": "legaltech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:22Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "legaltech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "legaltech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 78,
+      "deals_with_amount": 76,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 2270314280.0,
+      "median_amount_usd": 5842000.0,
+      "largest_amount_usd": 500000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 157544000.0,
+       "median_amount_usd": 76248000.0,
+       "largest_amount_usd": 80000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 9,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 362635520.0,
+       "median_amount_usd": 3350000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 17200000.0,
+       "median_amount_usd": 4000000.0,
+       "largest_amount_usd": 10000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 3,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 23100000.0,
+       "median_amount_usd": 7500000.0,
+       "largest_amount_usd": 8600000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 9,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 484440000.0,
+       "median_amount_usd": 5300000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 17,
+       "deals_with_amount": 17,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 415275560.0,
+       "median_amount_usd": 7421000.0,
+       "largest_amount_usd": 150000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 3,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 19000000.0,
+       "median_amount_usd": 6000000.0,
+       "largest_amount_usd": 10000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2650000.0,
+       "median_amount_usd": 1325000.0,
+       "largest_amount_usd": 2500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 13,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 213363200.0,
+       "median_amount_usd": 8000000.0,
+       "largest_amount_usd": 60000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 141400000.0,
+       "median_amount_usd": 22000000.0,
+       "largest_amount_usd": 60000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 21026000.0,
+       "median_amount_usd": 2484000.0,
+       "largest_amount_usd": 17780000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 508824000.0,
+       "median_amount_usd": 3162000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.061,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.065
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "legaltech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "legaltech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "175004f33706a0a6",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Legaltech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Legora, an AI-powered legaltech firm, attracted over $500 million amid rising demand for intelligent applications.",
+       "published_at": "2026-04-14T15:20:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d4115cfa3e5ba543d969"
+       ],
+       "article_id": "69e8d4115cfa3e5ba543d969"
+      },
+      {
+       "id": "6787b726d9cb5bf9",
+       "company_name": "filevine",
+       "domain": "filevine.com",
+       "round_type": "Series E",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Halo Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone",
+         "domain": "stepstone.com",
+         "amount": null
+        },
+        {
+         "name": "run ventures",
+         "domain": "run.ventures",
+         "amount": null
+        },
+        {
+         "name": "Album Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Legaltech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "expand product R&D and global go‑to‑market efforts",
+       "source_sentence": null,
+       "published_at": "2025-09-23T22:38:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9ac76c149d2bca77f26eb"
+       ],
+       "article_id": "68d9ac76c149d2bca77f26eb"
+      },
+      {
+       "id": "ee063d2a2bf98269",
+       "company_name": "Harvey AI",
+       "domain": null,
+       "round_type": "Series E",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "openai startup fund",
+         "domain": "openai.fund",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        }
+       ],
+       "sector": "AI / LegalTech / Professional Services Automation",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "double its team, enhance its legal AI offerings, and expand into adjacent sectors such as tax and accounting",
+       "source_sentence": "Harvey AI, a San Francisco-based generative AI platform for the legal and professional services industries, has raised $300 million in Series E funding at a $5 billion valuation.",
+       "published_at": "2025-06-25T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c8e8a25f1a530eb9687e9b",
+        "698a38b51953fdcb20e0ccc6"
+       ],
+       "article_id": "698a38b51953fdcb20e0ccc6"
+      },
+      {
+       "id": "285f26cd47a76788",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "Deepen product portfolio and expand into new geographies",
+       "source_sentence": "Legora, a Sweden-based legal-AI startup founded in 2023, has raised $150 million in a funding round that values the company at approximately $1.8 billion.",
+       "published_at": "2025-10-30T22:07:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "690e38d82a5f111a94243dca"
+       ],
+       "article_id": "690e38d82a5f111a94243dca"
+      },
+      {
+       "id": "ea4259cc6ea343b2",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 675000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI / LegalTech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "The company will use the funds to deepen client collaboration, scale innovation, and accelerate product development to meet the evolving needs of legal professionals.",
+       "source_sentence": "The company will use the funds to deepen client collaboration, scale innovation, and accelerate product development to meet the evolving needs of legal professionals.",
+       "published_at": "2025-05-21T00:00:00",
+       "coverage_count": 11,
+       "article_ids": [
+        "6898cdc62f01d48cd309ae09",
+        "68d1044ffb0e8d0abe2cfa4f",
+        "68f719a0f80e5160742cbd91",
+        "68f71b08e97e6da31e2ce942",
+        "68f72cd96ecd416e342c2027",
+        "698cc0829ca02490ecee30b0",
+        "698f2a7b8d29a990b6f769b4",
+        "698f96818d29a990b6ff6e56",
+        "699740aa5fbe93703d60ae07",
+        "69c3a6f16d029f77a1d3fa36",
+        "69e8bb525cfa3e5ba52faf30"
+       ],
+       "article_id": "699740aa5fbe93703d60ae07"
+      },
+      {
+       "id": "2331485e756d369c",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 76248000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 70600000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "LegalTech",
+       "country": "Sweden",
+       "city": null,
+       "use_of_funds": "its collaborative AI suite for law firms",
+       "source_sentence": "Sweden’s Legora raised €70.6 million for its collaborative AI suite for law firms.",
+       "published_at": "2025-10-28T16:15:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69012c48b9ddd1dc9cd838c3"
+       ],
+       "article_id": "69012c48b9ddd1dc9cd838c3"
+      },
+      {
+       "id": "8b05f96d2181b3d5",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 76248000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 70600000.0,
+       "valuation": 596000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "further develop their collaborative AI platform",
+       "source_sentence": "Legora, a Stockholm-based LegalTech startup, announced today a €70.6 million Series B funding round in order to further develop their collaborative AI platform – landing a €596 million valuation.",
+       "published_at": "2025-05-21T03:59:50",
+       "coverage_count": 5,
+       "article_ids": [
+        "6898b020ab03b1b156e124a4",
+        "6983a42ee67557fb8553d416",
+        "6988ae03127162d16e0b291d",
+        "69974065e7ff408e2d70944b",
+        "69e8b8735cfa3e5ba52d3f66"
+       ],
+       "article_id": "6898b020ab03b1b156e124a4"
+      },
+      {
+       "id": "261a0b72674145ce",
+       "company_name": "lawhive",
+       "domain": "lawhive.co.uk",
+       "round_type": "Series B",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mitch Rales",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tq ventures",
+         "domain": "tqventures.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "balderton capital",
+         "domain": "balderton.com",
+         "amount": null
+        },
+        {
+         "name": "jigsaw",
+         "domain": "jigsawcreate.com",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "to expand into the U.S. and open new offices.",
+       "source_sentence": "Lawhive is a UK-based startup reinventing the general‑practice law firm by combining human lawyers with AI‑powered workflows. … The round was led by Mitch Rales (co‑founder of Danaher), with participation from investors including TQ Ventures, GV (Google Ventures), Balderton Capital, and Jigsaw.",
+       "published_at": "2026-02-05T23:25:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "6985f02c54148f65ea2f7e49"
+       ],
+       "article_id": "6985f02c54148f65ea2f7e49"
+      },
+      {
+       "id": "586a828f650d7bfc",
+       "company_name": "orbital",
+       "domain": "getorbital.com",
+       "round_type": "Series B",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "brighton park capital",
+         "domain": "bpc.com",
+         "amount": null
+        },
+        {
+         "name": "rev",
+         "domain": "rev.com",
+         "amount": null
+        },
+        {
+         "name": "The LegalTech Fund",
+         "domain": "legaltech.com",
+         "amount": null
+        },
+        {
+         "name": "moderne ventures",
+         "domain": "moderneventures.com",
+         "amount": null
+        },
+        {
+         "name": "grosvenor group",
+         "domain": "grosvenor.com",
+         "amount": null
+        },
+        {
+         "name": "jll spark",
+         "domain": "spark.jll.com",
+         "amount": null
+        },
+        {
+         "name": "outward",
+         "domain": "outwardinc.com",
+         "amount": null
+        },
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech / AI for Real Estate",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "The company will use the funding to expand its platform across the US and UK real estate markets, grow the team, establish additional offices, and enhance product development to create a secure, end-to-end workspace for real estate legal work.",
+       "source_sentence": "Orbital, a London, UK–based AI-native platform for real estate law and property due diligence, has raised $60 million in Series B funding.",
+       "published_at": "2026-01-26T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e93759ca02490ec10a3cf"
+       ],
+       "article_id": "698e93759ca02490ec10a3cf"
+      },
+      {
+       "id": "774e5c2a2aa3599f",
+       "company_name": "spotdraft",
+       "domain": "spotdraft.com",
+       "round_type": "Series B",
+       "amount_usd": 56000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 56000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "LegalTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The investment follows SpotDraft’s $56 million Series B raise in February 2025 and reflects accelerating enterprise demand for secure, high-performance legal AI that can run directly on-device.",
+       "published_at": "2026-01-27T05:28:25",
+       "coverage_count": 2,
+       "article_ids": [
+        "6986aaaf069c05cbe27caed1",
+        "6988a00a94d3f481f3d69d3d"
+       ],
+       "article_id": "6986aaaf069c05cbe27caed1"
+      },
+      {
+       "id": "32942bd4ebb42f9c",
+       "company_name": "spotdraft",
+       "domain": "spotdraft.com",
+       "round_type": null,
+       "amount_usd": 56000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 56000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Vertex Growth",
+         "domain": "vertexgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "trident partners",
+         "domain": "tridentpartnersltd.com",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "the company's $56 million funding round led by Vertex Growth and Trident Partners in February 2025.",
+       "published_at": "2026-01-27T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69871d7dca3bd326c77f77ff",
+        "69dca268cefa445fe232feb5"
+       ],
+       "article_id": "69dca268cefa445fe232feb5"
+      },
+      {
+       "id": "e929541aefa857bc",
+       "company_name": "lawhive",
+       "domain": "lawhive.co.uk",
+       "round_type": "Series B",
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "LegalTech",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "accelerate US expansion and scale its AI‑native consumer law firm model",
+       "source_sentence": "Lawhive , a London-based LegalTech company redefining consumer legal services, has raised €50 million ($60 million) in a Series B round to accelerate US expansion and scale its AI‑native consumer law firm model.",
+       "published_at": "2026-02-07T06:29:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a422a88ad7b9aae0a2be"
+       ],
+       "article_id": "6988a422a88ad7b9aae0a2be"
+      },
+      {
+       "id": "820d6a8799cf3fa2",
+       "company_name": "summize",
+       "domain": "summize.com",
+       "round_type": null,
+       "amount_usd": 50800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "maven capital partners",
+         "domain": "mavencp.com",
+         "amount": null
+        },
+        {
+         "name": "kennet partners",
+         "domain": "kennet.com",
+         "amount": null
+        },
+        {
+         "name": "Federated Hermes Private Equity",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "yfm equity partners",
+         "domain": "yfmep.com",
+         "amount": null
+        },
+        {
+         "name": "Maven Investor Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "United Kingdom",
+       "city": "Manchester",
+       "use_of_funds": "accelerate global expansion",
+       "source_sentence": "LegalTech Summize has completed a £40 million funding and reinvestment round to accelerate global expansion.",
+       "published_at": "2026-01-27T13:50:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "69888868b09f47b0d90b038d",
+        "69bc4770ded38472ac52df49"
+       ],
+       "article_id": "69888868b09f47b0d90b038d"
+      },
+      {
+       "id": "894963e4beaf1fca",
+       "company_name": "spellbook",
+       "domain": "spellbook.legal",
+       "round_type": "Series B",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": 350000000.0,
+       "investors": [
+        {
+         "name": "threshold",
+         "domain": "threshold.vc",
+         "amount": null
+        },
+        {
+         "name": "inovia",
+         "domain": "inovia.com",
+         "amount": null
+        },
+        {
+         "name": "bling",
+         "domain": "blingenergy.pt",
+         "amount": null
+        },
+        {
+         "name": "Moxxie",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "path",
+         "domain": "path.org",
+         "amount": null
+        }
+       ],
+       "sector": "Legaltech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "fuel prospective acquisitions",
+       "source_sentence": "Spellbook, co-founded and led by Scott Stevenson, announced a $50 million Series B led by Keith Rabois of Khosla Ventures, valuing the company at approximately $350 million post-money.",
+       "published_at": "2025-10-09T16:16:56",
+       "coverage_count": 3,
+       "article_ids": [
+        "695237a3702501433c169043",
+        "69bceec60ad23ae11150bf85",
+        "69cb5c33cf4c7229a3748042"
+       ],
+       "article_id": "695237a3702501433c169043"
+      },
+      {
+       "id": "6d3071df25effee0",
+       "company_name": "enter",
+       "domain": "enter.de",
+       "round_type": "Series A",
+       "amount_usd": 37500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 37500000.0,
+       "valuation": 350000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legaltech",
+       "country": "Brazil",
+       "city": "São Paulo",
+       "use_of_funds": "The newly acquired funds will be utilized to scale operations, expand Enter’s enterprise client base, and strengthen engineering, sales, and AI deployment teams.",
+       "source_sentence": "São Paulo-based legaltech company Enter has successfully raised $37.5 million in a Series A funding round led by Founders Fund and Sequoia Capital, valuing the company at $375 million post-money.",
+       "published_at": "2025-10-09T13:56:59",
+       "coverage_count": 2,
+       "article_ids": [
+        "698d6cf89ca02490ecfadf94",
+        "69e28b3fa85be7e50657acd5"
+       ],
+       "article_id": "698d6cf89ca02490ecfadf94"
+      },
+      {
+       "id": "586416413482cca8",
+       "company_name": "enter",
+       "domain": "enter.de",
+       "round_type": "Series A",
+       "amount_usd": 35000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000.0,
+       "currency": "USD",
+       "amount": 35000000.0,
+       "valuation": 350000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legaltech / Legal AI",
+       "country": "Brazil",
+       "city": "São Paulo",
+       "use_of_funds": "The company will use the funds to expand its AI platform into complex labor disputes, enhance predictive AI capabilities, and scale its enterprise legal solutions across Latin America.",
+       "source_sentence": "Enter, a São Paulo, Brazil-based legal AI platform for enterprises, has raised $35 million in a Series A round at a $350M valuation.",
+       "published_at": "2025-09-29T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bae1d488dbabbbb7c77245"
+       ],
+       "article_id": "69bae1d488dbabbbb7c77245"
+      },
+      {
+       "id": "74a257bafbea0fc9",
+       "company_name": "Syllo",
+       "domain": "syllo.ai",
+       "round_type": "Growth Funding",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "venrock",
+         "domain": "venrock.com",
+         "amount": null
+        },
+        {
+         "name": "Two Seas Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Strategic individual investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech / AI-Powered Litigation Software",
+       "country": null,
+       "city": "New York",
+       "use_of_funds": "enhance product development, expand engineering and support teams, and accelerate Syllo’s go-to-market strategy.",
+       "source_sentence": "Syllo, a New York–based company that provides AI-powered litigation platform, has secured $30 million in growth funding.",
+       "published_at": "2025-10-29T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "698a35031953fdcb20e081a7",
+        "69baf46c68bf20e367f6ca58"
+       ],
+       "article_id": "698a35031953fdcb20e081a7"
+      },
+      {
+       "id": "e38226e3701cf76c",
+       "company_name": "definely",
+       "domain": "definely.com",
+       "round_type": "Series B",
+       "amount_usd": 27940000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 22000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "revaia",
+         "domain": "revaia.com",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        },
+        {
+         "name": "beacon capital",
+         "domain": "beaconcapital.co.uk",
+         "amount": null
+        },
+        {
+         "name": "clio",
+         "domain": "clio.com",
+         "amount": null
+        },
+        {
+         "name": "octopus ventures",
+         "domain": "octopusventures.com",
+         "amount": null
+        },
+        {
+         "name": "Zrosk Investment Management",
+         "domain": "zrosk.com",
+         "amount": null
+        },
+        {
+         "name": "The Raine Group",
+         "domain": "raine.com",
+         "amount": null
+        },
+        {
+         "name": "cornerstone vc",
+         "domain": "cornerstonevc.co",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "Accelerate global expansion and AI product roadmap",
+       "source_sentence": "A LegalTech company founded by registered blind & migrant lawyers has raised £22m in Series B funding to accelerate its global expansion and AI product roadmap.",
+       "published_at": "2025-06-09T07:57:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a72794d3f481f3d70846"
+       ],
+       "article_id": "6988a72794d3f481f3d70846"
+      },
+      {
+       "id": "7301869ba87ab175",
+       "company_name": "Wordsmith AI",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "Scotland",
+       "city": "Edinburgh",
+       "use_of_funds": "scale Wordsmith’s AI infrastructure, expand its offices in London and New York, and invest in training legal professionals to deploy AI agents across organizations.",
+       "source_sentence": "Wordsmith AI, an Edinburgh, Scotland-based legal intelligence platform for in-house teams, has raised $25 million in Series A funding.",
+       "published_at": "2025-06-03T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e68f98d29a990b6e8e539"
+       ],
+       "article_id": "698e68f98d29a990b6e8e539"
+      },
+      {
+       "id": "3ed1e5210e2018c1",
+       "company_name": "nexl",
+       "domain": "nexl.cloud",
+       "round_type": "Series B",
+       "amount_usd": 23000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 23000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Tidemark Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech / AI CRM for Law Firms",
+       "country": "Australia",
+       "city": "Sydney",
+       "use_of_funds": "The company will use the funds to accelerate development of its AI-powered growth platform, advance its acquisition strategy, and strengthen its leadership team as it scales globally.",
+       "source_sentence": "Nexl, a Sydney, Australia–based AI-driven growth platform for law firms, has raised $23 million in a Series B round.",
+       "published_at": "2025-10-10T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f712e8d29a990b6fca284"
+       ],
+       "article_id": "698f712e8d29a990b6fca284"
+      },
+      {
+       "id": "79c86bfd8af08d8b",
+       "company_name": "firmpilot",
+       "domain": "firmpilot.com",
+       "round_type": "Series A-1",
+       "amount_usd": 22000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 22000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "deepwork capital",
+         "domain": "deepworkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "data point capital",
+         "domain": "datapointcapital.com",
+         "amount": null
+        },
+        {
+         "name": "blumberg capital",
+         "domain": "blumbergcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Thomson Reuters Ventures",
+         "domain": "trventures.com",
+         "amount": null
+        },
+        {
+         "name": "valor ventures",
+         "domain": "valor.vc",
+         "amount": null
+        },
+        {
+         "name": "saas ventures",
+         "domain": "saasventures.co",
+         "amount": null
+        },
+        {
+         "name": "EarlyLight Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "United States",
+       "city": "Miami",
+       "use_of_funds": "expand product capabilities, scale engineering and sales teams, support entry into new geographies and legal market segments, enhance predictive client engagement, workflow automation, and business growth solutions",
+       "source_sentence": "FirmPilot Raises $22M Series A-1 Round Back to Home MIAMI, FL, FirmPilot, the AI-powered legal marketing platform, today announced the close of its oversubscribed Series A-1 funding round.",
+       "published_at": "2026-02-26T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c9d920c534852e935dc271",
+        "69e11a30ba3dbcbfd9c68a51"
+       ],
+       "article_id": "69e11a30ba3dbcbfd9c68a51"
+      },
+      {
+       "id": "9e89672bc032d5e8",
+       "company_name": "Lexroom",
+       "domain": "lexroom.ai",
+       "round_type": "Series A",
+       "amount_usd": 19000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 19000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "base10 partners",
+         "domain": "base10.vc",
+         "amount": null
+        },
+        {
+         "name": "Acurio Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "View Different fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Riccardo Zacconi",
+         "domain": "https://uk.linkedin.com/pub/riccardo-zacconi/0/3a7/b39",
+         "amount": null
+        },
+        {
+         "name": "strategic angel investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "Italy",
+       "city": "Milan",
+       "use_of_funds": "support Lexroom’s plans to expand rapidly across Europe and continue refining its product",
+       "source_sentence": "Lexroom announced today that it has secured $19 million in a Series A funding round led by Silicon Valley’s Base10 Partners. The round also brought in Spanish venture firm Acurio Ventures, Diego Piacentini’s View Different fund, Riccardo Zacconi, and several strategic angel investors.",
+       "published_at": "2025-09-29T06:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "68f7090bf80e5160742b3407",
+        "68f70a17f80e5160742b4d57",
+        "698dd5539ca02490ec0280df",
+        "698e77ba9ca02490ec0e8942",
+        "698f0e8d8d29a990b6f55273",
+        "698f921f9ca02490ec239791"
+       ],
+       "article_id": "698f0e8d8d29a990b6f55273"
+      },
+      {
+       "id": "07278a171b99360e",
+       "company_name": "avvoka",
+       "domain": "avvoka.com",
+       "round_type": "Growth",
+       "amount_usd": 17780000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Valhalla Ventures",
+         "domain": "valhalla.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "Legaltech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "deepen the capabilities of the platform, accelerate US expansion",
+       "source_sentence": "Legaltech platform Avvoka announced that it has secured £14 million of growth investment, in a funding round led by Mark and Lindy O’Hare’s Valhalla Ventures.",
+       "published_at": "2026-03-24T17:02:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbfa4b1c2c193028d6f49c"
+       ],
+       "article_id": "69cbfa4b1c2c193028d6f49c"
+      },
+      {
+       "id": "eb3caa9192c5c016",
+       "company_name": "avvoka",
+       "domain": "avvoka.com",
+       "round_type": null,
+       "amount_usd": 17780000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Valhalla Ventures",
+         "domain": "valhalla.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Mark O’Hare founded Valhalla Ventures following the sale last year and it has led a £14 million investment into LegalTech platform Avvoka.",
+       "published_at": "2026-03-11T14:01:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1e07ef280d4636ad245"
+       ],
+       "article_id": "69cbd1e07ef280d4636ad245"
+      },
+      {
+       "id": "6878af53d62adb6a",
+       "company_name": "Lexroom",
+       "domain": "lexroom.ai",
+       "round_type": null,
+       "amount_usd": 17496000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 16200000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "LegalTech",
+       "country": "Italy",
+       "city": null,
+       "use_of_funds": "expand its generative-AI platform for legal teams, including into Spain",
+       "source_sentence": "Lexroom from Italy closed €16.2 million to expand its generative-AI platform for legal teams, including into Spain.",
+       "published_at": "2025-10-28T16:15:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69012c48b9ddd1dc9cd838c3"
+       ],
+       "article_id": "69012c48b9ddd1dc9cd838c3"
+      },
+      {
+       "id": "082376e702f5f55c",
+       "company_name": "Lexroom",
+       "domain": "lexroom.ai",
+       "round_type": "Series A",
+       "amount_usd": 17496000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 16200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "base10 partners",
+         "domain": "base10.vc",
+         "amount": null
+        },
+        {
+         "name": "Acurio Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "View Different",
+         "domain": "viewdifferent.io",
+         "amount": null
+        },
+        {
+         "name": "Riccardo Zacconi",
+         "domain": "https://uk.linkedin.com/pub/riccardo-zacconi/0/3a7/b39",
+         "amount": null
+        },
+        {
+         "name": "entourage",
+         "domain": "entourageapp.social",
+         "amount": null
+        },
+        {
+         "name": "verve ventures",
+         "domain": "verve.vc",
+         "amount": null
+        },
+        {
+         "name": "Joe Zadeh",
+         "domain": "https://www.linkedin.com/in/joezadeh",
+         "amount": null
+        },
+        {
+         "name": "other strategic angel investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech / legal AI",
+       "country": "Italy",
+       "city": "Milan",
+       "use_of_funds": "accelerate international expansion and further develop its legal AI platform",
+       "source_sentence": "Lexroom, the startup out of Milan using generative AI to transform the legal sector, has closed a €16.2 million Series A round in order to accelerate international expansion and further develop its legal AI platform.",
+       "published_at": "2025-09-29T09:32:08",
+       "coverage_count": 4,
+       "article_ids": [
+        "68fe345a606fcdbfff28b87f",
+        "68fe354c92ef2af9ad28d1a7",
+        "6983a42ee67557fb8553d416",
+        "69e8b8735cfa3e5ba52d3f66"
+       ],
+       "article_id": "68fe345a606fcdbfff28b87f"
+      },
+      {
+       "id": "d4313e66b5868743",
+       "company_name": "Chamelio",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Work-Bench",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "emerge ventures",
+         "domain": "emergeinvesting.com",
+         "amount": null
+        }
+       ],
+       "sector": "LEGALTECH",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "accelerate product development and expand go-to-market efforts",
+       "source_sentence": "Chamelio, a legal intelligence platform for structured analysis, review, and tracking of contracts and critical legal documents for in-house legal teams, has raised $10M in Seed funding led by Work-Bench and Emerge Ventures.",
+       "published_at": "2026-01-28T13:27:29",
+       "coverage_count": 6,
+       "article_ids": [
+        "69864bc19438ce100b1677b5",
+        "6986abffdac7b0ca9c6121a3",
+        "698887fec314f8bff07dd9da",
+        "6988880f868e86f9ec6c8115",
+        "6988ab84eefc5d2f542c0170",
+        "6989d65c94d3f481f3ed4dba"
+       ],
+       "article_id": "6988880f868e86f9ec6c8115"
+      },
+      {
+       "id": "d747833213a32f90",
+       "company_name": "Theo AI",
+       "domain": "theoai.ai",
+       "round_type": null,
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "run ventures",
+         "domain": "run.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech / Predictive Analytics / AI for Legal",
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": "expand its AI capabilities, hire additional engineering talent, and continue developing its predictive analytics platform for the legal industry.",
+       "source_sentence": "Theo Ai, a Palo Alto, CA–based AI-driven prediction platform for Am Law 200 firms and General Counsels, has secured funding, bringing its total raised to over $10 million.",
+       "published_at": "2025-11-17T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f88a29ca02490ec22da4d"
+       ],
+       "article_id": "698f88a29ca02490ec22da4d"
+      },
+      {
+       "id": "0cb297b065d7f0a8",
+       "company_name": "Callidus Legal AI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cervin ventures",
+         "domain": "cervin.com",
+         "amount": null
+        },
+        {
+         "name": "ai fund",
+         "domain": "aifund.ai",
+         "amount": null
+        },
+        {
+         "name": "Myriad Venture Partners",
+         "domain": "myriadventures.com",
+         "amount": null
+        },
+        {
+         "name": "tandem ventures",
+         "domain": "tandem-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "active capital",
+         "domain": "activecapital.com",
+         "amount": null
+        },
+        {
+         "name": "capital factory",
+         "domain": "capitalfactory.com",
+         "amount": null
+        },
+        {
+         "name": "foley & lardner",
+         "domain": "foley.com",
+         "amount": null
+        },
+        {
+         "name": "consortium from a top 25 U.S. law firm",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech / AI for Litigation / Agentic AI",
+       "country": "USA",
+       "city": "McKinney",
+       "use_of_funds": "accelerate product development and support scaling its customer base of over 1,000.",
+       "source_sentence": "Callidus Legal AI, an AI platform for litigators, secured $10 million in seed funding led by Cervin Ventures with participation from AI Fund, Myriad Venture Partners, Tandem Ventures, Active Capital, Capital Factory, Foley & Lardner, and a consortium from a top 25 U.S. law firm.",
+       "published_at": "2025-07-15T17:56:01",
+       "coverage_count": 2,
+       "article_ids": [
+        "694b1e57725c4c269275cbfe",
+        "698fdf649ca02490ec2937c6"
+       ],
+       "article_id": "694b1e57725c4c269275cbfe"
+      },
+      {
+       "id": "8df4e7b1b6986f46",
+       "company_name": "orbital",
+       "domain": "getorbital.com",
+       "round_type": "Series A",
+       "amount_usd": 9288000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 8600000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "LegalTech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "to further automate document-heavy real estate legal workflows",
+       "source_sentence": "after its subsequent 2023 €8.6 million Series A to further automate document-heavy real estate legal workflows.",
+       "published_at": "2026-01-26T09:44:42",
+       "coverage_count": 2,
+       "article_ids": [
+        "6983a42ee67557fb8553d416",
+        "69e8b8735cfa3e5ba52d3f66"
+       ],
+       "article_id": "6983a42ee67557fb8553d416"
+      },
+      {
+       "id": "ec8c298bf3c065b8",
+       "company_name": "Vesence AB",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 9000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "emergence",
+         "domain": "emergence.co.nz",
+         "amount": null
+        },
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "20VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "paul graham",
+         "domain": "paulgrahamltd.com",
+         "amount": null
+        },
+        {
+         "name": "Anton Osika",
+         "domain": "https://www.linkedin.com/in/antonosika/?originalSubdomain=se",
+         "amount": null
+        },
+        {
+         "name": "Jason Bohemig",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech / AI Agent / Microsoft Office Integration",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Enhance AI capabilities, expand the team, and scale adoption across law firms.",
+       "source_sentence": "Vesence, a San Francisco, CA–based AI agent platform for law firms, has raised $9 million in a Seed round.",
+       "published_at": "2025-10-29T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bae252c08180591b814386"
+       ],
+       "article_id": "69bae252c08180591b814386"
+      },
+      {
+       "id": "1aa19dc1658efa9b",
+       "company_name": "streamline ai",
+       "domain": "streamline.ai",
+       "round_type": "Series A",
+       "amount_usd": 8600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blumberg capital",
+         "domain": "blumbergcapital.com",
+         "amount": null
+        },
+        {
+         "name": "tribeca venture partners",
+         "domain": "tribecavp.com",
+         "amount": null
+        },
+        {
+         "name": "acronym venture capital",
+         "domain": "acronymvc.com",
+         "amount": null
+        },
+        {
+         "name": "great oaks venture capital",
+         "domain": "greatoaksvc.com",
+         "amount": null
+        },
+        {
+         "name": "scribble ventures",
+         "domain": "scribble.vc",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "United States",
+       "city": "Burlingame",
+       "use_of_funds": "fuel market expansion to meet the surging demand from mid-market and enterprise legal departments",
+       "source_sentence": "Streamline AI, a Burlingame, CA-based AI-powered intake and matter management platform for in-house legal teams, has raised $8.6 million in Series A funding, bringing its total raised to $14 million.",
+       "published_at": "2025-08-04T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698fdfa88d29a990b604bb94"
+       ],
+       "article_id": "698fdfa88d29a990b604bb94"
+      },
+      {
+       "id": "c822fa81676121cb",
+       "company_name": "spotdraft",
+       "domain": "spotdraft.com",
+       "round_type": null,
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": 8000000.0
+        }
+       ],
+       "sector": "LegalTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "strengthen its product and artificial intelligence (AI) capabilities and to expand its enterprise presence across the Americas, Europe, the Middle East, Africa and India",
+       "source_sentence": "has raised $8 million from Qualcomm Ventures.",
+       "published_at": "2026-01-27T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dca268cefa445fe232feb5"
+       ],
+       "article_id": "69dca268cefa445fe232feb5"
+      },
+      {
+       "id": "b7970245f36722e2",
+       "company_name": "MateyAI, Inc.",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Timespan Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "neo",
+         "domain": "getneo.com",
+         "amount": null
+        },
+        {
+         "name": "streamlined ventures",
+         "domain": "streamlined.vc",
+         "amount": null
+        }
+       ],
+       "sector": "AI / LegalTech",
+       "country": "United States",
+       "city": "Austin",
+       "use_of_funds": "The company will use the funding to expand its product suite, hire across engineering and go-to-market teams, and strengthen partnerships with defense organizations, law firms, and universities.",
+       "source_sentence": "Matey, an Austin, TX–based legal AI company focused on criminal defense, has raised $7.5 million in seed funding.",
+       "published_at": "2025-08-29T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e94328d29a990b6ec2804"
+       ],
+       "article_id": "698e94328d29a990b6ec2804"
+      },
+      {
+       "id": "5f33986bda18db10",
+       "company_name": "august",
+       "domain": "itsaugust.co",
+       "round_type": "Seed",
+       "amount_usd": 7000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        },
+        {
+         "name": "pear vc",
+         "domain": "pear.vc",
+         "amount": null
+        },
+        {
+         "name": "Gokul Rajaram",
+         "domain": "http://www.linkedin.com/in/gokulrajaram1",
+         "amount": null
+        },
+        {
+         "name": "Geoff Charles",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "David Azose",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kevin Zhang",
+         "domain": "https://www.linkedin.com/in/jianrong-zhang-355524103",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech / Legal AI",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "The company will use the funding to support hiring across engineering, legal, product, and sales teams, and to accelerate the deployment of August’s modular AI platform for midsize law firms worldwide.",
+       "source_sentence": "August, a New York-based AI platform built specifically for midsize law firms, has raised $7 million in seed funding.",
+       "published_at": "2025-08-07T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "694d7b0ff6bb6e0f95f2f8d5",
+        "698cbccf8d29a990b6c94c02"
+       ],
+       "article_id": "698cbccf8d29a990b6c94c02"
+      },
+      {
+       "id": "a8fc5247c1949298",
+       "company_name": "Parambil",
+       "domain": "parambil.com",
+       "round_type": "Seed",
+       "amount_usd": 6000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bling capital",
+         "domain": "blingcap.com",
+         "amount": null
+        },
+        {
+         "name": "NVP Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "strategic angel investors specializing in mass torts, personal injury, and legal tech",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered LegalTech / Complex Litigation Intelligence",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "accelerate platform engineering, expand domain-specific AI workflows, and scale customer success to meet growing demand in complex litigation",
+       "source_sentence": "Parambil, a New York-based AI platform for the legal and litigation industry, has raised $6 million in Seed funding.",
+       "published_at": "2026-01-15T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698dafe99ca02490ecffa6e8"
+       ],
+       "article_id": "698dafe99ca02490ecffa6e8"
+      },
+      {
+       "id": "45b1aa12a6a849e3",
+       "company_name": "Ruli.ai",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 6000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "album vc",
+         "domain": "album.vc",
+         "amount": null
+        },
+        {
+         "name": "signalfire",
+         "domain": "signalfire.com",
+         "amount": null
+        },
+        {
+         "name": "pjc",
+         "domain": "pjc.vc",
+         "amount": null
+        },
+        {
+         "name": "foothill ventures",
+         "domain": "foothill.ventures",
+         "amount": null
+        },
+        {
+         "name": "mana",
+         "domain": "mana.app",
+         "amount": null
+        },
+        {
+         "name": "genius ventures",
+         "domain": "genius.vc",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech / AI Legal Intelligence",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "The company will use the funds to expand Ruli.ai’s team, accelerate product development, and drive market adoption of its legal intelligence suite.",
+       "source_sentence": "Ruli.ai, an Austin, Texas-based AI-native legal intelligence platform for in-house teams, has raised $6 million in Seed funding, bringing its total funding to $8 million.",
+       "published_at": "2025-11-05T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "694d7a31f0c50b1f7bf2ead8",
+        "698e66808d29a990b6e8b33e"
+       ],
+       "article_id": "698e66808d29a990b6e8b33e"
+      },
+      {
+       "id": "590281f7169022f9",
+       "company_name": "tessaract",
+       "domain": "tessaract.be",
+       "round_type": "Unknown",
+       "amount_usd": 5842000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 4600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mercia Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "fuel ventures",
+         "domain": "fuel.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech / AI-Powered Workflow & Practice Management",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": "drive its UK expansion, advance product development, including AI-powered process optimization and strengthen client success operations",
+       "source_sentence": "Tessaract, a UK-based legal technology startup that provides a cloud-native platform for law firms, has secured £4.6 million in funding.",
+       "published_at": "2025-10-30T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698fdc338d29a990b604764f"
+       ],
+       "article_id": "698fdc338d29a990b604764f"
+      },
+      {
+       "id": "9ef2873212015d31",
+       "company_name": "syntracts",
+       "domain": "syntracts.com",
+       "round_type": "Seed",
+       "amount_usd": 5300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hyperplane",
+         "domain": "hyperplane.ai",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "top harvest capital",
+         "domain": "topharvestcap.com",
+         "amount": null
+        },
+        {
+         "name": "Fortitude Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Myriad Venture Partners",
+         "domain": "myriadventures.com",
+         "amount": null
+        },
+        {
+         "name": "Point72 Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "United States",
+       "city": "Washington, DC",
+       "use_of_funds": "The company will use the funding to expand adoption across law firms and enterprise teams, enhance its AI-driven contract intelligence platform, and accelerate development of on-premises, API-first integrations with existing legal workflows.",
+       "source_sentence": "Syntracts, a Washington, DC-based, API-first contract intelligence platform built for full on-premises deployment, has raised $5.3 million in Seed funding.",
+       "published_at": "2025-10-23T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e92d09ca02490ec109685"
+       ],
+       "article_id": "698e92d09ca02490ec109685"
+      },
+      {
+       "id": "dddda678f5c348aa",
+       "company_name": "Superpanel",
+       "domain": "superpanel.io",
+       "round_type": "Seed",
+       "amount_usd": 5300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "outlander vc",
+         "domain": "outlander.vc",
+         "amount": null
+        },
+        {
+         "name": "Field Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "LOI Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Zenda Capital",
+         "domain": "zenda.vc",
+         "amount": null
+        },
+        {
+         "name": "8-bit capital",
+         "domain": "8bitcapital.com",
+         "amount": null
+        },
+        {
+         "name": "behind genius ventures",
+         "domain": "behindgeniusventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legaltech",
+       "country": "USA",
+       "city": "Los Angeles, CA",
+       "use_of_funds": "hiring and product development",
+       "source_sentence": "Superpanel, a Los Angeles, CA-based AI-powered legal intake platform, has raised $5.3 million in Seed funding.",
+       "published_at": "2025-09-23T22:38:43",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d9ac76c149d2bca77f26eb",
+        "69bae26a529c413173b446a2"
+       ],
+       "article_id": "68d9ac76c149d2bca77f26eb"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 78,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDktMjMgMjI6Mzg6NDMiLCJrIjoiMTU5ODcxMTcyOTA2ODQ2MzEyMTAiLCJhIjo1MzAwMDAwLjB9",
+     "totals": {
+      "deals": 78,
+      "deals_with_amount": 76,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 2270314280.0,
+      "median_amount_usd": 5842000.0,
+      "largest_amount_usd": 500000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.139,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.146
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "legaltech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "legaltech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "2a2b7c1da86c92ed",
+       "company_name": "lawyered",
+       "domain": "lawyered.in",
+       "round_type": "Pre-Series A",
+       "amount_usd": 2500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Rainmatter",
+         "domain": "rainmatter.com",
+         "amount": null
+        },
+        {
+         "name": "Turbostart",
+         "domain": "turbostart.co",
+         "amount": null
+        },
+        {
+         "name": "finvolve",
+         "domain": "finvolve.co",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "scaling technology infrastructure, strengthening product offerings, accelerating user acquisition, expanding AI-led capabilities",
+       "source_sentence": "Lawyered has raised $2.5 million in a pre-Series A funding round co-led by Rainmatter by Zerodha and Turbostart, with participation from existing investor Finvolve.",
+       "published_at": "2026-04-21T12:06:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e882be7bb1410d4c88621d",
+        "69e9960875f157062cab7d83"
+       ],
+       "article_id": "69e882be7bb1410d4c88621d"
+      },
+      {
+       "id": "43e87d187669b5bd",
+       "company_name": "Beleuert.de",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 3024000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2800000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Jawed Karim",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "moonfire ventures",
+         "domain": "moonfire.com",
+         "amount": null
+        },
+        {
+         "name": "zeno ventures",
+         "domain": "zenoventures.com",
+         "amount": null
+        },
+        {
+         "name": "Combination VC",
+         "domain": "combination.vc",
+         "amount": null
+        },
+        {
+         "name": "orange collective",
+         "domain": "orangecollective.vc",
+         "amount": null
+        },
+        {
+         "name": "other international fishing investors from the Y combinator environment",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Legaltech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expansion",
+       "source_sentence": "The platform is backed by the Legaltech Openlaw, which has completed a seed financing round of 2.8 million euros (3.3 million dollars). Investors include YouTube co-founder Jawed Karim (about Y Ventures), Moonfire Ventures, Zeno Ventures, Combination VC, Orange Collective and other international fishing investors from the Y combinator environment.",
+       "published_at": "2026-04-20T15:14:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9957ed47fc0283214714d"
+       ],
+       "article_id": "69e9957ed47fc0283214714d"
+      },
+      {
+       "id": "3f76a657fd9cf98f",
+       "company_name": "openlaw",
+       "domain": "openlaw.io",
+       "round_type": "seed",
+       "amount_usd": 3300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Jawed Karim",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "moonfire ventures",
+         "domain": "moonfire.com",
+         "amount": null
+        },
+        {
+         "name": "other international VCs and Angel investors from the Y combinator environment",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": null,
+       "source_sentence": "The Munich-based LegalTech-Startup Openlaw has completed a seed financing of 3.3 million US dollars.",
+       "published_at": "2026-04-16T14:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e28a7bb1410d4cd462a2"
+       ],
+       "article_id": "69e8e28a7bb1410d4cd462a2"
+      },
+      {
+       "id": "175004f33706a0a6",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Legaltech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Legora, an AI-powered legaltech firm, attracted over $500 million amid rising demand for intelligent applications.",
+       "published_at": "2026-04-14T15:20:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d4115cfa3e5ba543d969"
+       ],
+       "article_id": "69e8d4115cfa3e5ba543d969"
+      },
+      {
+       "id": "c03f11a124ef3b87",
+       "company_name": "keith",
+       "domain": "keithcompany.com",
+       "round_type": "seed",
+       "amount_usd": 2484000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "backed vc",
+         "domain": "backed.vc",
+         "amount": null
+        },
+        {
+         "name": "breega",
+         "domain": "breega.com",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Keith, a new UK-based AI-native law firm, has raised €2.3 million (£2 million) in seed funding ahead of its launch this summer.",
+       "published_at": "2026-03-27T11:14:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c8be540c9e889c36f37d99"
+       ],
+       "article_id": "69c8be540c9e889c36f37d99"
+      },
+      {
+       "id": "07278a171b99360e",
+       "company_name": "avvoka",
+       "domain": "avvoka.com",
+       "round_type": "Growth",
+       "amount_usd": 17780000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Valhalla Ventures",
+         "domain": "valhalla.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "Legaltech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "deepen the capabilities of the platform, accelerate US expansion",
+       "source_sentence": "Legaltech platform Avvoka announced that it has secured £14 million of growth investment, in a funding round led by Mark and Lindy O’Hare’s Valhalla Ventures.",
+       "published_at": "2026-03-24T17:02:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbfa4b1c2c193028d6f49c"
+       ],
+       "article_id": "69cbfa4b1c2c193028d6f49c"
+      },
+      {
+       "id": "eb3caa9192c5c016",
+       "company_name": "avvoka",
+       "domain": "avvoka.com",
+       "round_type": null,
+       "amount_usd": 17780000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Valhalla Ventures",
+         "domain": "valhalla.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Mark O’Hare founded Valhalla Ventures following the sale last year and it has led a £14 million investment into LegalTech platform Avvoka.",
+       "published_at": "2026-03-11T14:01:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1e07ef280d4636ad245"
+       ],
+       "article_id": "69cbd1e07ef280d4636ad245"
+      },
+      {
+       "id": "c86418a3faf3ef23",
+       "company_name": "avvoka",
+       "domain": "avvoka.com",
+       "round_type": "Angel",
+       "amount_usd": 762000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 600000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "LegalTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Bootstrapped from launch in 2016, with just £600k raised from angel investors, the investment is the first institutional capital raised by the company behind AI-powered drafting infrastructure for law firms.",
+       "published_at": "2026-03-11T14:01:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1e07ef280d4636ad245"
+       ],
+       "article_id": "69cbd1e07ef280d4636ad245"
+      },
+      {
+       "id": "79c86bfd8af08d8b",
+       "company_name": "firmpilot",
+       "domain": "firmpilot.com",
+       "round_type": "Series A-1",
+       "amount_usd": 22000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 22000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "deepwork capital",
+         "domain": "deepworkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "data point capital",
+         "domain": "datapointcapital.com",
+         "amount": null
+        },
+        {
+         "name": "blumberg capital",
+         "domain": "blumbergcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Thomson Reuters Ventures",
+         "domain": "trventures.com",
+         "amount": null
+        },
+        {
+         "name": "valor ventures",
+         "domain": "valor.vc",
+         "amount": null
+        },
+        {
+         "name": "saas ventures",
+         "domain": "saasventures.co",
+         "amount": null
+        },
+        {
+         "name": "EarlyLight Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "United States",
+       "city": "Miami",
+       "use_of_funds": "expand product capabilities, scale engineering and sales teams, support entry into new geographies and legal market segments, enhance predictive client engagement, workflow automation, and business growth solutions",
+       "source_sentence": "FirmPilot Raises $22M Series A-1 Round Back to Home MIAMI, FL, FirmPilot, the AI-powered legal marketing platform, today announced the close of its oversubscribed Series A-1 funding round.",
+       "published_at": "2026-02-26T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c9d920c534852e935dc271",
+        "69e11a30ba3dbcbfd9c68a51"
+       ],
+       "article_id": "69e11a30ba3dbcbfd9c68a51"
+      },
+      {
+       "id": "3a49ec13d68964f5",
+       "company_name": "HAQQ Legal AI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "legaltech",
+       "country": "Lebanon",
+       "city": null,
+       "use_of_funds": "tidying up legal services",
+       "source_sentence": "Lebanon’s HAQQ Legal AI has secured USD 3 million in fresh funding, a notable vote of confidence for a young legaltech company trying to tidy up one of the messiest corners of professional services.",
+       "published_at": "2026-02-09T14:54:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd813f6bf4fc1dd532f079"
+       ],
+       "article_id": "69bd813f6bf4fc1dd532f079"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 27,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDItMDkgMTQ6NTQ6NTEiLCJrIjoiNDIwMDE0NzY5NzQ0NzU2MDQzNyJ9",
+     "totals": {
+      "deals": 27,
+      "deals_with_amount": 27,
+      "deals_without_amount": 0,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 882213200.0,
+      "median_amount_usd": 7000000.0,
+      "largest_amount_usd": 500000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.083,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.088
+    }
+   }
+  }
+ ]
+}

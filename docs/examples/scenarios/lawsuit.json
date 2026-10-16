@@ -1,0 +1,798 @@
+{
+ "slug": "lawsuit",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:47:52Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "lawsuit"
+     ],
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "event_type": [
+       "lawsuit"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 602,
+       "by_type": {
+        "lawsuit": 602
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 510,
+       "by_type": {
+        "lawsuit": 510
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 845,
+       "by_type": {
+        "lawsuit": 845
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 959,
+       "by_type": {
+        "lawsuit": 959
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 889,
+       "by_type": {
+        "lawsuit": 889
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 700,
+       "by_type": {
+        "lawsuit": 700
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 753,
+       "by_type": {
+        "lawsuit": 753
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 735,
+       "by_type": {
+        "lawsuit": 735
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 606,
+       "by_type": {
+        "lawsuit": 606
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 1165,
+       "by_type": {
+        "lawsuit": 1165
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 1037,
+       "by_type": {
+        "lawsuit": 1037
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 1065,
+       "by_type": {
+        "lawsuit": 1065
+       }
+      }
+     ],
+     "totals": {
+      "events": 9866,
+      "articles": 5563,
+      "companies": 3868,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "lawsuit": 9866
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.042,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.049
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "lawsuit"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "event_type": [
+       "lawsuit"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f9dacc7b2d589e844f5301",
+       "headline": "Minority lenders, including Axos Financial and Siemens Financial Services, challenged the LMT in New York state court.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "stgusa.com",
+       "published_at": "2026-04-30T20:54:14",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9dacc7b2d589e844f5301",
+       "headline": "Minority lenders, including Axos Financial and Siemens Financial Services, challenged the LMT in New York state court.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "investors.axosfinancial.com",
+       "published_at": "2026-04-30T20:54:14",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9dacc7b2d589e844f5301",
+       "headline": "Minority lenders, including Axos Financial and Siemens Financial Services, challenged the LMT in New York state court.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "finance.siemens.com",
+       "published_at": "2026-04-30T20:54:14",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8a96a43843dd771d268b1",
+       "headline": "While the $45.6 million award is substantial, it is significantly lower than the $165 million initially sought by Bed Bath & Beyond.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "oocl.com",
+       "published_at": "2026-04-30T18:40:07",
+       "url": "https://indiaseatradenews.com/oocl-ordered-to-pay-record-45-6m-in-fmc-ruling-over-pandemic-contract-breaches/",
+       "publisher": "indiaseatradenews.com",
+       "title": "OOCL Ordered to Pay Record $45.6m in FMC Ruling Over Pandemic Contract Breaches - India Seatrade News"
+      },
+      {
+       "id": "69f8a96a43843dd771d268b1",
+       "headline": "While the $45.6 million award is substantial, it is significantly lower than the $165 million initially sought by Bed Bath & Beyond.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "bedbathandbeyond.com",
+       "published_at": "2026-04-30T18:40:07",
+       "url": "https://indiaseatradenews.com/oocl-ordered-to-pay-record-45-6m-in-fmc-ruling-over-pandemic-contract-breaches/",
+       "publisher": "indiaseatradenews.com",
+       "title": "OOCL Ordered to Pay Record $45.6m in FMC Ruling Over Pandemic Contract Breaches - India Seatrade News"
+      },
+      {
+       "id": "69f8816cbbf1d3145596e341",
+       "headline": "With the trial underway for Elon Musk’s lawsuit against OpenAI CEO Sam Altman and president Greg Brockman, judges and jurors are weighing a central question.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "gregbrockman.com",
+       "published_at": "2026-04-30T16:46:23",
+       "url": "https://observer.com/2026/04/elon-musk-openai-sam-altman-lawsuit-trial/",
+       "publisher": "observer.com",
+       "title": "The Real Stakes Behind Elon Musk’s Showdown with Sam Altman"
+      },
+      {
+       "id": "69f885e68937ef12fc0a502e",
+       "headline": "The National Company Law Tribunal’s (NCLT) special bench on Thursday directed listing the class action lawsuit against Jindal Poly Films before the principal bench as such lawsuits can only be heard by the latter bench.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "jindalpoly.com",
+       "published_at": "2026-04-30T15:27:35",
+       "url": "https://www.financialexpress.com/business/news/nclt-to-hear-class-action-suit-against-jindal-poly-on-may-7/4223512/",
+       "publisher": "financialexpress.com",
+       "title": "NCLT to hear class action suit against Jindal Poly on May 7"
+      },
+      {
+       "id": "69f8800143843dd771ce44c4",
+       "headline": "Continental shareholders had to decide whether they would agree to a million-dollar settlement in the dispute with ex-managers.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "continentalserves.com",
+       "published_at": "2026-04-30T14:26:00",
+       "url": "https://www.dieharke.de/der-norden/continental-dieselskandal-vergleich-ueber-43-7-millionen-euro-beschlossen-VGV22S3X7JCG5NABSE5UH5YPRM.html",
+       "publisher": "dieharke.de",
+       "title": "Dieselskandal abgeschlossen? So haben die Continental-Aktionäre abgestimmt"
+      },
+      {
+       "id": "6a042192220687a966b697c9",
+       "headline": "Renault Group has asked India’s National Company Law Tribunal to approve a reorganization of its local operations",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "renaultgroup.com",
+       "published_at": "2026-04-30T14:20:51",
+       "url": "https://www.storyboard18.com/brand-marketing/renault-seeks-nclt-approval-for-india-overhaul-as-it-bets-on-scale-and-exports-96888.htm",
+       "publisher": "storyboard18.com",
+       "title": "Renault seeks NCLT approval for India overhaul as it bets on scale and exports"
+      },
+      {
+       "id": "69f8811543843dd771cee94e",
+       "headline": "The class action lawsuit argued that Amazon did not give those mandatory breaks to hourly employees in Washington state, as required by state law.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "amazon.com",
+       "published_at": "2026-04-30T14:04:25",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8a5f6bbf1d314559a1cce",
+       "headline": "From pv magazine Germany German solar module manufacturer Soluxtec has filed for insolvency proceedings with the Bitburg District Court on Wednesday.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "soluxtec.de",
+       "published_at": "2026-04-30T13:53:30",
+       "url": "https://www.pv-magazine.com/2026/04/30/german-solar-module-maker-soluxtec-files-for-insolvency/",
+       "publisher": "pv-magazine.com",
+       "title": "German solar module maker Soluxtec files for insolvency"
+      },
+      {
+       "id": "69f8ab2cbbf1d314559a605f",
+       "headline": "Vertu Motors has been notified by its insurers of a successful settlement of the Group’s business interruption insurance claim relating to the cyber-attack on Jaguar Land Rover in September 2025.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "vertumotors.com",
+       "published_at": "2026-04-30T10:49:25",
+       "url": "https://www.motortrader.com/motor-trader-news/automotive-news/vertu-reveals-success-of-its-jlr-cyber-attack-insurance-claim-30-04-2026",
+       "publisher": "motortrader.com",
+       "title": "Vertu reveals success of its JLR cyber attack insurance claim"
+      },
+      {
+       "id": "69f8ad9943843dd771d29f0d",
+       "headline": "South Korea’s Financial Intelligence Unit (FIU) has appealed a court ruling that overturned Dunamu’s three-month partial business suspension, sending the case to a second trial.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "dunamu.com",
+       "published_at": "2026-04-30T08:25:39",
+       "url": "https://www.cryptotimes.io/2026/04/30/south-koreas-fiu-appeals-dunamus-ruling-as-crypto-license-fight-escalates/",
+       "publisher": "cryptotimes.io",
+       "title": "South Korea’s FIU Appeals Dunamu’s Ruling as Crypto License Fight Escalates"
+      },
+      {
+       "id": "69f8ad9943843dd771d29f0d",
+       "headline": "Coinone filed an emergency injunction after receiving a suspension order linked to anti-money laundering violations.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "coinonecorp.com",
+       "published_at": "2026-04-30T08:25:39",
+       "url": "https://www.cryptotimes.io/2026/04/30/south-koreas-fiu-appeals-dunamus-ruling-as-crypto-license-fight-escalates/",
+       "publisher": "cryptotimes.io",
+       "title": "South Korea’s FIU Appeals Dunamu’s Ruling as Crypto License Fight Escalates"
+      },
+      {
+       "id": "69f8ab5bbbf1d314559a6479",
+       "headline": "\"Export Import Bank of the United States (US Exim) filed an insolvency application against the company, alleging a “debt default”\"",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "reliancepower.co.in",
+       "published_at": "2026-04-30T03:24:11",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 3873,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMzAgMDM6MjQ6MTEiLCJpIjoiNjlmOGFiNWJiYmYxZDMxNDU1OWE2NDc5IiwiZG0iOiJyZWxpYW5jZXBvd2VyLmNvLmluIiwiZXQiOiJsYXdzdWl0Iiwicm8iOiJkZWZlbmRhbnQifQ",
+     "by_type": {
+      "lawsuit": 3873
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.496,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.503
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "lawsuit"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "lawsuit"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 2106,
+     "carrying": 2103,
+     "carrier_share_pct": 99.86,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 1,
+       "share": 0.05
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 690,
+       "share": 32.81
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 52,
+       "share": 2.47
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 1049,
+       "share": 49.88
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 55,
+       "share": 2.62
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 164,
+       "share": 7.8
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 7,
+       "share": 0.33
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 85,
+       "share": 4.04
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 1792,
+       "share": 85.21
+      },
+      {
+       "group": "neutral",
+       "count": 55,
+       "share": 2.62
+      },
+      {
+       "group": "positive",
+       "count": 256,
+       "share": 12.17
+      }
+     ],
+     "negative_to_positive_ratio": 7.0,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 9.45,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 369,
+       "negative": 312,
+       "neutral": 13,
+       "positive": 44,
+       "negative_share": 84.55,
+       "positive_share": 11.92,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 110,
+        "fair_neg": 8,
+        "slight_neg": 194,
+        "none": 13,
+        "slight_pos": 29,
+        "fair_pos": 2,
+        "very_pos": 13,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 635,
+       "negative": 516,
+       "neutral": 18,
+       "positive": 101,
+       "negative_share": 81.26,
+       "positive_share": 15.91,
+       "labels": {
+        "extreme_neg": 1,
+        "very_neg": 189,
+        "fair_neg": 22,
+        "slight_neg": 304,
+        "none": 18,
+        "slight_pos": 49,
+        "fair_pos": 4,
+        "very_pos": 48,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 501,
+       "negative": 441,
+       "neutral": 14,
+       "positive": 46,
+       "negative_share": 88.02,
+       "positive_share": 9.18,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 166,
+        "fair_neg": 9,
+        "slight_neg": 266,
+        "none": 14,
+        "slight_pos": 40,
+        "fair_pos": 0,
+        "very_pos": 6,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 598,
+       "negative": 523,
+       "neutral": 10,
+       "positive": 65,
+       "negative_share": 87.46,
+       "positive_share": 10.87,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 225,
+        "fair_neg": 13,
+        "slight_neg": 285,
+        "none": 10,
+        "slight_pos": 46,
+        "fair_pos": 1,
+        "very_pos": 18,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.569,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.575
+    }
+   }
+  }
+ ]
+}

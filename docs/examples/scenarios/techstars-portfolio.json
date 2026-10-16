@@ -1,0 +1,3402 @@
+{
+ "slug": "techstars-portfolio",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:32Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Techstars",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "techstars"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 60,
+      "deals_with_amount": 60,
+      "deals_without_amount": 0,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 424562200.0,
+      "median_amount_usd": 3850000.0,
+      "largest_amount_usd": 150000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 41980000.0,
+       "median_amount_usd": 2100000.0,
+       "largest_amount_usd": 17000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1182600.0,
+       "median_amount_usd": 591300.0,
+       "largest_amount_usd": 642600.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 25862000.0,
+       "median_amount_usd": 5081000.0,
+       "largest_amount_usd": 12000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1500000.0,
+       "median_amount_usd": 1500000.0,
+       "largest_amount_usd": 1500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 26336000.0,
+       "median_amount_usd": 2900000.0,
+       "largest_amount_usd": 13000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 9,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 61180000.0,
+       "median_amount_usd": 5400000.0,
+       "largest_amount_usd": 22680000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 11,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 41425000.0,
+       "median_amount_usd": 3250000.0,
+       "largest_amount_usd": 8200000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 22700000.0,
+       "median_amount_usd": 6500000.0,
+       "largest_amount_usd": 9000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 152500000.0,
+       "median_amount_usd": 2000000.0,
+       "largest_amount_usd": 150000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 21746600.0,
+       "median_amount_usd": 969000.0,
+       "largest_amount_usd": 20000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 14550000.0,
+       "median_amount_usd": 7275000.0,
+       "largest_amount_usd": 7300000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 22000000.0,
+       "median_amount_usd": 6000000.0,
+       "largest_amount_usd": 14000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.083,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.088
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Techstars",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "techstars"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "4e1b729cf0b4610f",
+       "company_name": "preply",
+       "domain": "preply.com",
+       "round_type": "Series D",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1200000000.0,
+       "investors": [
+        {
+         "name": "horizon capital",
+         "domain": "horizoncapital.co.uk",
+         "amount": null
+        },
+        {
+         "name": "hoxton ventures",
+         "domain": "hoxton.vc",
+         "amount": null
+        },
+        {
+         "name": "owl ventures",
+         "domain": "owlventures.com.au",
+         "amount": null
+        },
+        {
+         "name": "Techstars Berlin",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Language Learning Marketplace",
+       "country": "USA",
+       "city": "Kiev",
+       "use_of_funds": "Strengthen AI and data analytics capabilities, expand product and engineering teams, and accelerate global growth",
+       "source_sentence": "Language learning marketplace Preply is now valued at $1.2 billion after raising a $150 million Series D round that marks a new chapter for the 14‑year‑old company, whose previous backers include Horizon Capital, Hoxton Ventures, Owl Ventures and Techstars Berlin.",
+       "published_at": "2026-01-21T12:00:00",
+       "coverage_count": 12,
+       "article_ids": [
+        "6985fc319438ce100b14bb84",
+        "6986a85511e3205ec9928352",
+        "69888905b09f47b0d90b0c82",
+        "6988a7f194d3f481f3d71505",
+        "698a1faa1953fdcb20df2d56",
+        "698cec208d29a990b6ccaec1",
+        "698d17f59ca02490ecf47d43",
+        "698de4ec9ca02490ec03912f",
+        "698f03868d29a990b6f48ff9",
+        "698f03c38d29a990b6f49477",
+        "69bb00bad7b120f5da0314fb",
+        "69bc5498dded76ae100ed2d6"
+       ],
+       "article_id": "6985fc319438ce100b14bb84"
+      },
+      {
+       "id": "35b8ddc1704c44df",
+       "company_name": "sensei",
+       "domain": "sensei.tech",
+       "round_type": "Series A",
+       "amount_usd": 22680000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "metro ag",
+         "domain": "metroag.de",
+         "amount": null
+        },
+        {
+         "name": "techstars ventures",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "bluecrow capital",
+         "domain": "bluecrowcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Lince Capital",
+         "domain": "lince-capital.com",
+         "amount": null
+        },
+        {
+         "name": "explorer investments",
+         "domain": "explorerinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "Kamay Ventures",
+         "domain": "kamayventures.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "Portugal",
+       "city": null,
+       "use_of_funds": "Expanding across Europe and opening the world’s largest autonomous store",
+       "source_sentence": "Last year, Sensei secured €15 million in a Series A funding round. Taking the total raised to €21 million, this is enabling the Portugal-based company to expand across Europe, particularly in central and northern regions, while also opening what is pitched as the world’s largest autonomous store this year.",
+       "published_at": "2025-10-14T04:55:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c8d55253ed30b7ef4fb5b4"
+       ],
+       "article_id": "69c8d55253ed30b7ef4fb5b4"
+      },
+      {
+       "id": "b8a501cc8b939c23",
+       "company_name": "seasats",
+       "domain": "seasats.com",
+       "round_type": "Series A",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Konvoy Ventures",
+         "domain": "konvoy.vc",
+         "amount": null
+        },
+        {
+         "name": "shield capital",
+         "domain": "shieldcap.com",
+         "amount": null
+        },
+        {
+         "name": "dns capital",
+         "domain": "dnscap.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Tanis Venture Management",
+         "domain": "tanisventures.com",
+         "amount": null
+        },
+        {
+         "name": "Crumpton Ventures",
+         "domain": "crumptonventures.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "dorado group",
+         "domain": "dorado-group.com",
+         "amount": null
+        }
+       ],
+       "sector": "Defense",
+       "country": "United States",
+       "city": "San Diego",
+       "use_of_funds": "support the expansion of new facilities, additional product lines, and team growth",
+       "source_sentence": "Seasats, a San Diego, CA-based company which specializes in small uncrewed surface vehicles (sUSVs), raised $20M in Series A funding.",
+       "published_at": "2026-02-17T15:22:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e851ef5cfa3e5ba5e74c50"
+       ],
+       "article_id": "69e851ef5cfa3e5ba5e74c50"
+      },
+      {
+       "id": "4475c1c84ab151a0",
+       "company_name": "seasats",
+       "domain": "seasats.com",
+       "round_type": "Series A",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Konvoy Ventures",
+         "domain": "konvoy.vc",
+         "amount": null
+        },
+        {
+         "name": "shield capital",
+         "domain": "shieldcap.com",
+         "amount": null
+        },
+        {
+         "name": "dns capital",
+         "domain": "dnscap.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Tanis Venture Management",
+         "domain": "tanisventures.com",
+         "amount": null
+        },
+        {
+         "name": "Crumpton Ventures",
+         "domain": "crumptonventures.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "dorado group",
+         "domain": "dorado-group.com",
+         "amount": null
+        }
+       ],
+       "sector": "maritime defense",
+       "country": "United States",
+       "city": "San Diego",
+       "use_of_funds": "expansion of new facilities, additional product lines, and continued team growth",
+       "source_sentence": "Seasats, a leader in small uncrewed surface vehicles (sUSVs), today announced the close of a $20 million Series A financing round.",
+       "published_at": "2026-02-17T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bd9f0efd89557e8dc8a60b",
+        "69e0191343415b9885ac0e04"
+       ],
+       "article_id": "69e0191343415b9885ac0e04"
+      },
+      {
+       "id": "e1474e6c7d76af70",
+       "company_name": "solestial",
+       "domain": "solestial.com",
+       "round_type": "Series A",
+       "amount_usd": 17000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ae ventures",
+         "domain": "ae-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "crosscut ventures",
+         "domain": "crosscut.vc",
+         "amount": null
+        },
+        {
+         "name": "Zeon Ventures",
+         "domain": "zeon.ventures",
+         "amount": null
+        },
+        {
+         "name": "Mitsubishi Electric ME Innovation Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "airbus ventures",
+         "domain": "airbusventures.vc",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        }
+       ],
+       "sector": "Solar Energy",
+       "country": "United States",
+       "city": "Tempe",
+       "use_of_funds": "To continue scaling its manufacturing capacity of silicon photovoltaics to 1 megawatt per year",
+       "source_sentence": "Solestial, Inc. (“Solestial”), the solar energy company for space, today announced a significant milestone with the closing of its $17M Series A funding round led by AE Ventures.",
+       "published_at": "2025-05-15T23:18:25",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c5db3cf4c03d3518c6f617",
+        "69bae256fa8c4837c970d5ed"
+       ],
+       "article_id": "68c5db3cf4c03d3518c6f617"
+      },
+      {
+       "id": "a31176b6a0a1d245",
+       "company_name": "transcrypts",
+       "domain": "transcrypts.com",
+       "round_type": "Seed",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pantera capital",
+         "domain": "panteracapital.com",
+         "amount": null
+        },
+        {
+         "name": "Lightspeed Faction",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "alpha edison",
+         "domain": "alphaedison.com",
+         "amount": null
+        },
+        {
+         "name": "motley fool ventures",
+         "domain": "foolventures.com",
+         "amount": null
+        },
+        {
+         "name": "California Innovation Fund",
+         "domain": "californiainnovationfund.com",
+         "amount": null
+        },
+        {
+         "name": "Tomer London",
+         "domain": "http://www.linkedin.com/in/tomerlondon",
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        },
+        {
+         "name": "protocol labs",
+         "domain": "protocol.ai",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2025-10-08T22:06:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f71268b5f4abc34a2c16e8"
+       ],
+       "article_id": "68f71268b5f4abc34a2c16e8"
+      },
+      {
+       "id": "97a3e8634c0623aa",
+       "company_name": "koda health",
+       "domain": "kodahealthcare.com",
+       "round_type": "Series A",
+       "amount_usd": 14000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "evidenced",
+         "domain": "evidenced.app",
+         "amount": null
+        },
+        {
+         "name": "Mudita Venture Partners",
+         "domain": "muditavp.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "texas medical center",
+         "domain": "texasmedicalcenter.org",
+         "amount": null
+        },
+        {
+         "name": "upmc enterprises",
+         "domain": "enterprises.upmc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Scale operations and expand engineering, clinical strategy and customer success",
+       "source_sentence": "Its series A round was led by Evidenced, with participation from Mudita Venture Partners, Techstars and the Texas Medical Center last year. At the time, the company said the funding would allow it to scale operations and expand engineering, clinical strategy and customer success.",
+       "published_at": "2026-04-30T17:00:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8a62fbbf1d314559a1e89"
+       ],
+       "article_id": "69f8a62fbbf1d314559a1e89"
+      },
+      {
+       "id": "cc9667fdfc179e37",
+       "company_name": "qovery",
+       "domain": "qovery.com",
+       "round_type": "Series A",
+       "amount_usd": 13000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000.0,
+       "valuation": 45000000.0,
+       "investors": [
+        {
+         "name": "iris",
+         "domain": "iris.vc",
+         "amount": null
+        },
+        {
+         "name": "speedinvest",
+         "domain": "speedinvest.com",
+         "amount": null
+        },
+        {
+         "name": "crane venture partners",
+         "domain": "crane.vc",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Irregular Expressions",
+         "domain": "irregular.vc",
+         "amount": null
+        },
+        {
+         "name": "Olivier Pomel",
+         "domain": "http://www.linkedin.com/in/olivierpomel",
+         "amount": null
+        },
+        {
+         "name": "Alexis Lê-Quôc",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sebastian Pahl",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ott Kaukver",
+         "domain": "http://www.linkedin.com/in/ottkaukver",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS, DevOps Automation",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "regional expansion, team growth, and continued AI-driven product development",
+       "source_sentence": "Qovery, a Paris-born SaaS platform that promises to cut through that bottleneck by automating application deployment, just raised $13 million to scale its solution—and its presence in the United States.",
+       "published_at": "2025-09-30T04:01:06",
+       "coverage_count": 3,
+       "article_ids": [
+        "68f7243ff6f885b63d2b58dd",
+        "69000bbb420554c12ad837de",
+        "69baebb968bf20e367f6a6f3"
+       ],
+       "article_id": "69000bbb420554c12ad837de"
+      },
+      {
+       "id": "6ed480cec5768803",
+       "company_name": "qovery",
+       "domain": "qovery.com",
+       "round_type": "Series A",
+       "amount_usd": 13000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iris",
+         "domain": "iris.vc",
+         "amount": null
+        },
+        {
+         "name": "speedinvest",
+         "domain": "speedinvest.com",
+         "amount": null
+        },
+        {
+         "name": "crane venture partners",
+         "domain": "crane.vc",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Irregular Expressions",
+         "domain": "irregular.vc",
+         "amount": null
+        },
+        {
+         "name": "Olivier Pomel",
+         "domain": "http://www.linkedin.com/in/olivierpomel",
+         "amount": null
+        },
+        {
+         "name": "Alexis Le-Quoc",
+         "domain": "http://www.linkedin.com/in/alexislequoc",
+         "amount": null
+        },
+        {
+         "name": "Sebastian Pahl",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ott Kaukver",
+         "domain": "http://www.linkedin.com/in/ottkaukver",
+         "amount": null
+        }
+       ],
+       "sector": "DevOps Automation / Cloud Application Deployment",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "expand regionally, grow its team, and continue developing AI-driven product features",
+       "source_sentence": "Qovery, a Paris, France-based DevOps automation platform, has raised $13 million in a Series A funding round.",
+       "published_at": "2025-09-30T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f93648d29a990b6ff3159"
+       ],
+       "article_id": "698f93648d29a990b6ff3159"
+      },
+      {
+       "id": "05aef5a9ef8f0c99",
+       "company_name": "Yaspa",
+       "domain": "yaspa.com",
+       "round_type": null,
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "discerning capital",
+         "domain": "discerningcap.com",
+         "amount": 10000000.0
+        },
+        {
+         "name": "techstars ventures",
+         "domain": "techstars.com",
+         "amount": null
+        }
+       ],
+       "sector": "Financial technology",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "US expansion, hiring local team, adapting platform to American operators",
+       "source_sentence": "Yaspa, a hyper-growth financial technology company based in London, confirmed that it has received $12 million in its latest funding round.",
+       "published_at": "2025-07-02T07:35:29",
+       "coverage_count": 6,
+       "article_ids": [
+        "6898b6dface6dc7b1fc0b9b3",
+        "6898ce342f01d48cd312c574",
+        "6983a528bb7245ef1950b1af",
+        "6989396e94d3f481f3e19970",
+        "6997411be0523bedf7b39cdb",
+        "69c8b2542fb9da90476b6fb3"
+       ],
+       "article_id": "6898b6dface6dc7b1fc0b9b3"
+      },
+      {
+       "id": "d0460cbcb7a4374d",
+       "company_name": "flexpoint",
+       "domain": "getflexpoint.com",
+       "round_type": "Series A",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "foundry group",
+         "domain": "foundry.vc",
+         "amount": null
+        },
+        {
+         "name": "Haymaker Ventures",
+         "domain": "haymaker.com",
+         "amount": null
+        },
+        {
+         "name": "garuda ventures",
+         "domain": "garudaventures.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Far Out Ventures",
+         "domain": "farout.vc",
+         "amount": null
+        },
+        {
+         "name": "cascade seed fund",
+         "domain": "cascadeseedfund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Payments Automation",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Accelerate growth through hiring, product development, and market expansion; double/triple the team and build a partner program",
+       "source_sentence": "FlexPoint, a payments automation platform for managed service providers (MSPs), secured a $12 million Series A round led by Foundry Group to accelerate its growth through aggressive hiring, product development, and market expansion.",
+       "published_at": "2025-05-13T22:38:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0e03f4cffe656421ee11a"
+       ],
+       "article_id": "68d0e03f4cffe656421ee11a"
+      },
+      {
+       "id": "6f62c6188467ef79",
+       "company_name": "flexpoint",
+       "domain": "getflexpoint.com",
+       "round_type": "Series A",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "foundry group",
+         "domain": "foundry.vc",
+         "amount": null
+        },
+        {
+         "name": "Haymaker Ventures",
+         "domain": "haymaker.com",
+         "amount": null
+        },
+        {
+         "name": "garuda ventures",
+         "domain": "garudaventures.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Far Out Ventures",
+         "domain": "farout.vc",
+         "amount": null
+        },
+        {
+         "name": "cascade seed fund",
+         "domain": "cascadeseedfund.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "enable FlexPoint to double down on product development and further expand their MSP partner program",
+       "source_sentence": "FlexPoint, the trusted payments platform for managed service providers (MSPs) and the businesses they serve, announced today that it has raised $12 million in Series A funding led by Foundry Group, with participation from existing investors Haymaker Ventures, Garuda Ventures, Techstars, Far Out Ventures, and Cascade Seed Fund.",
+       "published_at": "2025-05-13T07:54:23",
+       "coverage_count": 6,
+       "article_ids": [
+        "68640f968882abb7e3b82dec",
+        "698cbdabb58ff92da7538252",
+        "698f078a9ca02490ec196707",
+        "69bae24fbb3472e5f4c3ebe8",
+        "69baeb7365fbf155fa7953e0",
+        "69e8bdae9baafc7356bf1d5c"
+       ],
+       "article_id": "68640f968882abb7e3b82dec"
+      },
+      {
+       "id": "979858b4b4c4e8bf",
+       "company_name": "automotus",
+       "domain": "automotus.co",
+       "round_type": null,
+       "amount_usd": 9000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Santa Barbara Venture Partners",
+         "domain": "santabarbaravp.com",
+         "amount": null
+        },
+        {
+         "name": "weatherford capital",
+         "domain": "weatherfordcapital.com",
+         "amount": null
+        },
+        {
+         "name": "barronkent ventures",
+         "domain": "barronkent.com",
+         "amount": null
+        },
+        {
+         "name": "techstars ventures",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "kineo",
+         "domain": "kineo.gr",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Technology",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "to deeper product offerings, market expansion and customer support",
+       "source_sentence": "Automotus, a Los Angeles-based software company that sells curb management, traffic and associated payment technology, has raised $9 million in a new funding round.",
+       "published_at": "2025-12-22T16:11:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "694ae4027c66ce2ba375b9f0"
+       ],
+       "article_id": "694ae4027c66ce2ba375b9f0"
+      },
+      {
+       "id": "9132cf2e22e199aa",
+       "company_name": "Jeeva AI",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 9000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jll spark",
+         "domain": "spark.jll.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "Alt Capital",
+         "domain": "altcap.com",
+         "amount": null
+        },
+        {
+         "name": "Launch Capital",
+         "domain": "launchcapital.in",
+         "amount": null
+        },
+        {
+         "name": "GTM Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nonstop Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Coyote Capital",
+         "domain": "coyotecapital.net",
+         "amount": null
+        },
+        {
+         "name": "bonfire ventures",
+         "domain": "bonfirevc.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Marc Benioff",
+         "domain": "http://www.linkedin.com/in/marcbenioff",
+         "amount": null
+        },
+        {
+         "name": "mucker capital",
+         "domain": "mucker.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Sales Tools",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "scale platform and reach new industries",
+       "source_sentence": null,
+       "published_at": "2025-12-01T22:41:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "693133764b2dcb732af207a9"
+       ],
+       "article_id": "693133764b2dcb732af207a9"
+      },
+      {
+       "id": "e61d186a347b6bdb",
+       "company_name": "Jeeva AI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 9000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jll spark",
+         "domain": "spark.jll.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "Jack Altman’s Alt Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Launch Capital",
+         "domain": "launchcapital.in",
+         "amount": null
+        },
+        {
+         "name": "GTMfund",
+         "domain": "gtmfund.com",
+         "amount": null
+        },
+        {
+         "name": "Nonstop Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Coyote Capital",
+         "domain": "coyotecapital.net",
+         "amount": null
+        },
+        {
+         "name": "bonfire ventures",
+         "domain": "bonfirevc.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Marc Benioff",
+         "domain": "http://www.linkedin.com/in/marcbenioff",
+         "amount": null
+        },
+        {
+         "name": "mucker capital",
+         "domain": "mucker.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Today, the San Francisco startup announced it has raised a $9 million seed round led by JLL Spark and Sapphire Ventures, with participation from Jack Altman’s Alt Capital, Launch Capital, GTMFund, Nonstop Capital, Coyote Capital, Bonfire Ventures, Techstars, Marc Benioff, and Mucker Capital.",
+       "published_at": "2025-12-01T18:15:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "693128d53fdf2a388bf21a54"
+       ],
+       "article_id": "693128d53fdf2a388bf21a54"
+      },
+      {
+       "id": "8bf1ba77e64e08aa",
+       "company_name": "TestSprite",
+       "domain": "testsprite.com",
+       "round_type": "total equity funding",
+       "amount_usd": 8200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "baidu ventures",
+         "domain": "baidu-venture.com",
+         "amount": null
+        },
+        {
+         "name": "edge case capital partners",
+         "domain": "edgecasecap.com",
+         "amount": null
+        },
+        {
+         "name": "Hat Trick Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jinqiu capital",
+         "domain": "jinqiucapital.com",
+         "amount": null
+        },
+        {
+         "name": "miracleplus",
+         "domain": "miracleplus.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "trilogy equity partners",
+         "domain": "trilogyequity.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Seattle",
+       "use_of_funds": null,
+       "source_sentence": "TestSprite has now raised a total of $8.2M in total equity funding and is backed by Baidu Ventures, Edge Case Capital Partners, Hat Trick Ventures, Jinqiu Capital, MiraclePlus, Techstars, and Trilogy Equity Partners.",
+       "published_at": "2025-11-02T11:27:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a75a94d3f481f3d70b38"
+       ],
+       "article_id": "6988a75a94d3f481f3d70b38"
+      },
+      {
+       "id": "1644d8e8eb1171a3",
+       "company_name": "upward",
+       "domain": "upward.jp",
+       "round_type": "Series Seed+",
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dundee venture capital",
+         "domain": "dundeeventurecapital.com",
+         "amount": null
+        },
+        {
+         "name": "Breakwater Ventures Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "altari ventures",
+         "domain": "altariventures.com",
+         "amount": null
+        },
+        {
+         "name": "cascade seed fund",
+         "domain": "cascadeseedfund.com",
+         "amount": null
+        },
+        {
+         "name": "Outside Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "To expand Upward’s infrastructure, grow its engineering and partnerships capabilities, and bring its turnkey platform to more companies across fintech, creator, and gig workforce sectors.",
+       "source_sentence": "Upward, a fintech infrastructure platform provider empowering companies to launch and scale digital financial products with speed and simplicity, announced its $8 million Series Seed+ round, co-led by Dundee Venture Capital and Breakwater Ventures Fund, with participation from Techstars, Altari Ventures, Cascade Seed Fund, and Outside Ventures.",
+       "published_at": "2025-11-07T13:39:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "69319667c179691691f218a7",
+        "698f75468d29a990b6fcf323"
+       ],
+       "article_id": "69319667c179691691f218a7"
+      },
+      {
+       "id": "24d5647b08fcc70d",
+       "company_name": "ateios",
+       "domain": "ateios.com",
+       "round_type": null,
+       "amount_usd": 7300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Carat Venture Partners",
+         "domain": "caratvp.com",
+         "amount": null
+        },
+        {
+         "name": "E8 Angels",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "elevate ventures",
+         "domain": "elevateventures.com",
+         "amount": null
+        },
+        {
+         "name": "good growth capital",
+         "domain": "goodgrowthvc.com",
+         "amount": null
+        },
+        {
+         "name": "jhh vc",
+         "domain": "jhh.vc",
+         "amount": null
+        },
+        {
+         "name": "keshif ventures",
+         "domain": "keshif.com",
+         "amount": null
+        },
+        {
+         "name": "lateral capital management",
+         "domain": "lateralcapital.com",
+         "amount": null
+        },
+        {
+         "name": "stonecast ventures",
+         "domain": "stonecast-vc.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "titletowntech",
+         "domain": "titletowntech.com",
+         "amount": null
+        },
+        {
+         "name": "visiontech partners",
+         "domain": "visiontech-partners.com",
+         "amount": null
+        },
+        {
+         "name": "zaka vc",
+         "domain": "zaka.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "Newberry",
+       "use_of_funds": null,
+       "source_sentence": "Ateios - $7.3M",
+       "published_at": "2026-03-30T08:27:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d14cf51fc9561313467f64"
+       ],
+       "article_id": "69d14cf51fc9561313467f64"
+      },
+      {
+       "id": "931636a6302d29df",
+       "company_name": "Ateios Systems",
+       "domain": "ateios.com",
+       "round_type": "Series A",
+       "amount_usd": 7250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7250000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "elevate ventures",
+         "domain": "elevateventures.com",
+         "amount": null
+        },
+        {
+         "name": "visiontech partners",
+         "domain": "visiontech-partners.com",
+         "amount": null
+        },
+        {
+         "name": "good growth capital",
+         "domain": "goodgrowthvc.com",
+         "amount": null
+        },
+        {
+         "name": "Lateral Capital",
+         "domain": "lateralcapitalgroup.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "keshif ventures",
+         "domain": "keshif.com",
+         "amount": null
+        },
+        {
+         "name": "JHH Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "stonecast ventures",
+         "domain": "stonecast-vc.com",
+         "amount": null
+        },
+        {
+         "name": "Zaka Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Carat Venture Partners",
+         "domain": "caratvp.com",
+         "amount": null
+        },
+        {
+         "name": "E8 Angels",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery Manufacturing",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Scaling commercial partnerships and expanding production capacity for lithium‑ion battery electrodes",
+       "source_sentence": "One year after winning a million-dollar investment at the inaugural TitletownTech Start-up Draft, Ateios Systems has closed a $7.25M Series A to scale its next‑generation lithium‑ion battery electrodes and supply battery manufacturers at a larger commercial scale.",
+       "published_at": "2026-03-26T17:00:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc2165d11a7cee80d3b8a8"
+       ],
+       "article_id": "69cc2165d11a7cee80d3b8a8"
+      },
+      {
+       "id": "c47db5f37467fa5b",
+       "company_name": "TestSprite",
+       "domain": "testsprite.com",
+       "round_type": "Seed",
+       "amount_usd": 6700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "trilogy equity partners",
+         "domain": "trilogyequity.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "jinqiu capital",
+         "domain": "jinqiucapital.com",
+         "amount": null
+        },
+        {
+         "name": "miracleplus",
+         "domain": "miracleplus.com",
+         "amount": null
+        },
+        {
+         "name": "Hat-trick Capital",
+         "domain": "hat-trickcapital.com",
+         "amount": null
+        },
+        {
+         "name": "baidu ventures",
+         "domain": "baidu-venture.com",
+         "amount": null
+        },
+        {
+         "name": "EdgeCase Capital Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered Software Testing / Developer Tools",
+       "country": "United States",
+       "city": "Seattle",
+       "use_of_funds": "The company plans to use the funding to expand its engineering team, enhance AI-powered test generation and healing capabilities, and scale its infrastructure.",
+       "source_sentence": "TestSprite, a Seattle, WA-based agentic testing tool for AI-native development, has raised $6.7 million in a Seed round.",
+       "published_at": "2025-10-30T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698ffe369ca02490ec2b93f9"
+       ],
+       "article_id": "698ffe369ca02490ec2b93f9"
+      },
+      {
+       "id": "c9daeac1d4ab07cc",
+       "company_name": "TestSprite",
+       "domain": "testsprite.com",
+       "round_type": "seed",
+       "amount_usd": 6700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "trilogy equity partners",
+         "domain": "trilogyequity.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "jinqiu capital",
+         "domain": "jinqiucapital.com",
+         "amount": null
+        },
+        {
+         "name": "miracleplus",
+         "domain": "miracleplus.com",
+         "amount": null
+        },
+        {
+         "name": "Hat-trick Capital",
+         "domain": "hat-trickcapital.com",
+         "amount": null
+        },
+        {
+         "name": "baidu ventures",
+         "domain": "baidu-venture.com",
+         "amount": null
+        },
+        {
+         "name": "EdgeCase Capital Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI-native software testing",
+       "country": "USA",
+       "city": "Seattle",
+       "use_of_funds": "deepen AI test‑generation capabilities and scale infrastructure",
+       "source_sentence": "TestSprite, the agentic testing tool for AI-native development, today announced the close of a $6.7 million seed round, bringing total funds raised to approximately $8.1 million.",
+       "published_at": "2025-10-29T12:37:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "6902a38459b56fb348d83967",
+        "693198b450f36ef331f21ec1",
+        "69e4fbbbd5e7fc42ee0ca8ea"
+       ],
+       "article_id": "69e4fbbbd5e7fc42ee0ca8ea"
+      },
+      {
+       "id": "9915a336c8445952",
+       "company_name": "hormona",
+       "domain": "hormona.io",
+       "round_type": "seed",
+       "amount_usd": 6700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Voima Ventures",
+         "domain": "voimaventures.com",
+         "amount": null
+        },
+        {
+         "name": "SuperNode Global VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "DLF Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nascent Invest",
+         "domain": "nascentinvest.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        }
+       ],
+       "sector": "Health-tech",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "Accelerate expansion, launch innovative hormone tests, develop B2B partnerships, strengthen infrastructure, marketing, sales capabilities, and support team growth to enhance customer experience.",
+       "source_sentence": "The health-tech company, which uses AI and at-home testing to help women track, understand, and optimise their hormones, has secured a $6.7M seed round led by Voima Ventures and co-led by SuperNode Global VC. DLF Ventures and existing investors, Nascent Invest and Techstars, also participated in the round.",
+       "published_at": "2025-05-27T08:43:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bafaf87a841a437be4eb64"
+       ],
+       "article_id": "69bafaf87a841a437be4eb64"
+      },
+      {
+       "id": "a5b1bbc3a4209f45",
+       "company_name": "peakmetrics",
+       "domain": "peakmetrics.com",
+       "round_type": "Series A",
+       "amount_usd": 6000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "moneta ventures",
+         "domain": "moneta.vc",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Parameter Ventures",
+         "domain": "parameterventures.com",
+         "amount": null
+        },
+        {
+         "name": "vitalize venture capital",
+         "domain": "vitalize.vc",
+         "amount": null
+        },
+        {
+         "name": "Gurtin Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI-driven narrative intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate advancements across the AI-driven platform, enhance real-time detection of harmful narratives, deepen intelligence for decisions, and support go-to-market expansion to more organizations across industries and government agencies.",
+       "source_sentence": "PeakMetrics, the leading AI-driven narrative intelligence company, announced the close of its $6M Series A funding round led by Moneta Ventures, with follow-on participation from Techstars, Parameter Ventures, VITALIZE Venture Capital, and Gurtin Ventures, bringing total capital to $16.3M.",
+       "published_at": "2026-04-10T09:38:56",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e88cbf9baafc73569779e9",
+        "69e8cf175cfa3e5ba540240c"
+       ],
+       "article_id": "69e88cbf9baafc73569779e9"
+      },
+      {
+       "id": "8b1c4f443e1d21a5",
+       "company_name": "serve first",
+       "domain": "servefirst.co.uk",
+       "round_type": null,
+       "amount_usd": 5842000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 4600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pembroke vct",
+         "domain": "pembrokevct.com",
+         "amount": null
+        },
+        {
+         "name": "Midlands Engine Investment Fund II",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mercia Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tiny VCT",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Customer Experience, AI",
+       "country": "UK",
+       "city": "Milton Keynes",
+       "use_of_funds": "expansion into UK, Europe, US and product innovation",
+       "source_sentence": "Serve First, the AI-driven customer experience and feedback management platform, has raised £4.6m from Pembroke VCT and the Midlands Engine Investment Fund II, through its appointed fund manager Mercia Ventures, Tiny VCT and Techstars, alongside angel investors.",
+       "published_at": "2025-07-01T04:00:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc16775d6eab2ab8fb77b1"
+       ],
+       "article_id": "69bc16775d6eab2ab8fb77b1"
+      },
+      {
+       "id": "9440c8345bda7ecd",
+       "company_name": "the beans",
+       "domain": "thebeans.io",
+       "round_type": "seed",
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Alloy Alchemist Fund",
+         "domain": "alloyalchemist.fund",
+         "amount": null
+        },
+        {
+         "name": "commerce ventures",
+         "domain": "commerce.vc",
+         "amount": null
+        },
+        {
+         "name": "Impulsum Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "precursor ventures",
+         "domain": "precursorvc.com",
+         "amount": null
+        },
+        {
+         "name": "Swing Ventures",
+         "domain": "swing.ventures",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Esther Dyson",
+         "domain": "http://www.linkedin.com/in/estherdyson",
+         "amount": null
+        },
+        {
+         "name": "TruStage Ventures",
+         "domain": "cmfgventures.com",
+         "amount": null
+        },
+        {
+         "name": "Coyote Ventures",
+         "domain": "coyote.ventures",
+         "amount": null
+        },
+        {
+         "name": "fabric vc",
+         "domain": "fabricvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "to accelerate The Beans’ expansion across healthcare and education sectors",
+       "source_sentence": "The Beans, a FinTech firm providing a financial operating system for caring professionals and workforce development for their employers, has announced the close of its $5.4m seed funding round.",
+       "published_at": "2025-11-07T11:45:28",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a41e4727a5abdc89a02b",
+        "698cbd028f4c6833a62c4a01"
+       ],
+       "article_id": "6988a41e4727a5abdc89a02b"
+      },
+      {
+       "id": "7c48890e9ae7ffd0",
+       "company_name": "catalyx",
+       "domain": "thecatalyx.com",
+       "round_type": "Seed",
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "outlander vc",
+         "domain": "outlander.vc",
+         "amount": null
+        },
+        {
+         "name": "arka venture labs",
+         "domain": "arka.vc",
+         "amount": null
+        },
+        {
+         "name": "Lex Reddy",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "KDX Management LLC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Together Fund",
+         "domain": "together.fund",
+         "amount": null
+        },
+        {
+         "name": "Higher Life Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nivesha Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Prana Tech Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bria",
+         "domain": "bria.ai",
+         "amount": null
+        },
+        {
+         "name": "HF0 Residency",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        }
+       ],
+       "sector": "space infrastructure",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "commercialize its next-gen reentry architecture, bolster overseas operations, and expand its global customer acquisition capabilities",
+       "source_sentence": "SAN FRANCISCO–(BUSINESS WIRE)–Catalyx Space, Inc., a space infrastructure company providing turnkey solutions for orbital missions across industries, recently announced its oversubscribed $5.4 million Seed fundinground led by venture capital firm Outlander VC.",
+       "published_at": "2025-11-04T07:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6931bc36217f91e5e4f22a72",
+        "69baef9228caee93d24d8444"
+       ],
+       "article_id": "69baef9228caee93d24d8444"
+      },
+      {
+       "id": "852d58052837d887",
+       "company_name": "Catalyx Space",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "outlander vc",
+         "domain": "outlander.vc",
+         "amount": null
+        },
+        {
+         "name": "arka venture labs",
+         "domain": "arka.vc",
+         "amount": null
+        },
+        {
+         "name": "Lex Reddy",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "KDX Management LLC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Together Fund",
+         "domain": "together.fund",
+         "amount": null
+        },
+        {
+         "name": "Higher Life Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nivesha Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Prana Tech Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bria",
+         "domain": "bria.ai",
+         "amount": null
+        },
+        {
+         "name": "HF0 Residency",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        }
+       ],
+       "sector": "Space infrastructure",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to commercialize its next‑gen reentry architecture, bolster overseas operations, and expand its global customer acquisition capabilities.",
+       "source_sentence": "Catalyx Space, a space infrastructure company providing turnkey solutions for orbital missions across industries, including logistics, recently announced its oversubscribed $5.4 million Seed funding round led by venture capital firm Outlander VC.",
+       "published_at": "2025-10-31T09:14:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988aad34727a5abdc89f15e"
+       ],
+       "article_id": "6988aad34727a5abdc89f15e"
+      },
+      {
+       "id": "a97a667b37da9c93",
+       "company_name": "Catalyx Space",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "outlander vc",
+         "domain": "outlander.vc",
+         "amount": null
+        },
+        {
+         "name": "arka venture labs",
+         "domain": "arka.vc",
+         "amount": null
+        },
+        {
+         "name": "Lex Reddy",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Together Fund",
+         "domain": "together.fund",
+         "amount": null
+        },
+        {
+         "name": "Techstars et al.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SpaceTech",
+       "country": "India",
+       "city": "USA (anchor)",
+       "use_of_funds": "Finalize “Cosmotron” bus architecture, commercialize “Rex” re‑entry capsule",
+       "source_sentence": "Catalyx Space, a space‑hardware startup founded in India and now operating with a U.S. anchor, has secured $5.4 million in a seed round led by Outlander VC.",
+       "published_at": "2025-10-30T22:07:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "690e38d82a5f111a94243dca"
+       ],
+       "article_id": "690e38d82a5f111a94243dca"
+      },
+      {
+       "id": "45ac9268f5abac6b",
+       "company_name": "catalyx",
+       "domain": "thecatalyx.com",
+       "round_type": "Seed",
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "arka venture labs",
+         "domain": "arka.vc",
+         "amount": null
+        },
+        {
+         "name": "Lex Reddy",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "KDX Management LLC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Together Fund",
+         "domain": "together.fund",
+         "amount": null
+        },
+        {
+         "name": "Higher Life Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nivesha Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Prana Tech Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bria",
+         "domain": "bria.ai",
+         "amount": null
+        },
+        {
+         "name": "HF0 Residency",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        }
+       ],
+       "sector": "Space Infrastructure",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "commercialize its next-gen reentry architecture, bolster overseas operations, and expand its global customer acquisition capabilities.",
+       "source_sentence": "Catalyx Space, Inc., a space infrastructure company providing turnkey solutions for orbital missions across industries, recently announced its oversubscribed $5.4 million Seed funding round led by venture capital firm Outlander VC.",
+       "published_at": "2025-10-30T18:31:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69972e97219d71cf48d22287",
+        "69bd63d66d4d48dd99c82206",
+        "69e2b72c90d9a716b4c1ee35",
+        "69e4f331d5e7fc42ee07b5e2"
+       ],
+       "article_id": "69e2b72c90d9a716b4c1ee35"
+      },
+      {
+       "id": "2624c84eaf82a5ef",
+       "company_name": "Syllotips",
+       "domain": "syllotips.com",
+       "round_type": "seed",
+       "amount_usd": 4536000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 4200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "the techshop",
+         "domain": "techshop.capital",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "cloud accelerator",
+         "domain": "cloudaccelerator.co",
+         "amount": null
+        },
+        {
+         "name": "leo capital",
+         "domain": "leo.capital",
+         "amount": null
+        },
+        {
+         "name": "business angels",
+         "domain": "businessangels.fr",
+         "amount": null
+        }
+       ],
+       "sector": "AI software",
+       "country": "Italy",
+       "city": "Rome",
+       "use_of_funds": "accelerate R&D, expanding agent modules, strengthening governed memory, broadening connectors and integrations, enhancing marketing, hiring senior leaders in AI and sales",
+       "source_sentence": "Rome-based SylloTips, a software company, announced the closing of a €4.2M in a seed funding round led by Azimut through its Azimut Eltif – Venture Capital, ALIcrowd III and IV funds, which are managed by Azimut Libera Impresa SGR.",
+       "published_at": "2025-09-22T12:33:45",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d96d895c3d35fe5b4b20e0",
+        "68d9705b5c3d35fe5b4b6984"
+       ],
+       "article_id": "68d96d895c3d35fe5b4b20e0"
+      },
+      {
+       "id": "770b5d6ab8a034a1",
+       "company_name": "cariqa",
+       "domain": "cariqa.com",
+       "round_type": "Seed",
+       "amount_usd": 4320000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "anthemis",
+         "domain": "anthemis.fr",
+         "amount": null
+        },
+        {
+         "name": "contrarian ventures",
+         "domain": "cventures.vc",
+         "amount": null
+        },
+        {
+         "name": "earth",
+         "domain": "earth-iot.com",
+         "amount": null
+        },
+        {
+         "name": "Anthemis Female Innovators Lab",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "golden egg check",
+         "domain": "goldeneggcheck.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        }
+       ],
+       "sector": "EV Charging Infrastructure / Fintech / Mobility SaaS",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "expand across key European markets, grow its product and engineering teams, and integrate with major operators, OEMs, and fleet providers.",
+       "source_sentence": "Cariqa, a Berlin, Germany–based payments and pricing platform purpose-built for electric vehicle (EV) charging, has raised €4 million in seed funding.",
+       "published_at": "2025-07-08T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988e02f94d3f481f3db2463"
+       ],
+       "article_id": "6988e02f94d3f481f3db2463"
+      },
+      {
+       "id": "5e7495c3faf9b6f8",
+       "company_name": "Azoma",
+       "domain": null,
+       "round_type": "pre-Series A",
+       "amount_usd": 4000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ignite ventures",
+         "domain": "igniteventures.ca",
+         "amount": null
+        },
+        {
+         "name": "Rank Ventures",
+         "domain": "rank-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "eBay Ventures x Techstars",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Twinpath",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "MaRS IAF",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "strategic angels across retail and AI",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "non-dilutive funding",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI search",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "expanding the platform, scaling engineering teams, and deepening coverage across the models and marketplaces that shape AI-first commerce",
+       "source_sentence": "Azoma, a London- and Toronto-based AI startup building technology for the AI-search era, has raised a $4 million pre-Series A round as brands race to understand how they show up in answers generated by ChatGPT, Gemini, Amazon Rufus, and other conversational systems that are beginning to influence buying decisions.",
+       "published_at": "2025-12-04T15:53:14",
+       "coverage_count": 2,
+       "article_ids": [
+        "69320122713e48a5eaf204b9",
+        "6988d23194d3f481f3da1e78"
+       ],
+       "article_id": "69320122713e48a5eaf204b9"
+      },
+      {
+       "id": "10022173b2bc3740",
+       "company_name": "Kilsar",
+       "domain": "kilsar.com",
+       "round_type": "Seed",
+       "amount_usd": 3700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightbank",
+         "domain": "lightbank.com",
+         "amount": null
+        },
+        {
+         "name": "Cotulla Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "ScaleWolf",
+         "domain": "scalewolf.vc",
+         "amount": null
+        }
+       ],
+       "sector": "AI / Workforce Training / Industrial Tech",
+       "country": "USA",
+       "city": "Virginia Beach",
+       "use_of_funds": "grow its engineering and deployment teams, onboard new clients in the defense and commercial sectors, and enhance its AI-powered Orion platform.",
+       "source_sentence": "Kilsar, a Virginia Beach, VA-based dual-use AI software company, has raised $3.7 million in a seed funding round.",
+       "published_at": "2025-07-17T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68a1765c3ff75e010c2b18b1",
+        "698e5b899ca02490ec0c7f1d"
+       ],
+       "article_id": "698e5b899ca02490ec0c7f1d"
+      },
+      {
+       "id": "352f8ba71dd63bf4",
+       "company_name": "orion",
+       "domain": "orionlabs.io",
+       "round_type": null,
+       "amount_usd": 3500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Bravo Victor Venture Capital",
+         "domain": "bvvc.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "service provider capital",
+         "domain": "serviceprovidercapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Risk Intelligence",
+       "country": "United States",
+       "city": "Denver",
+       "use_of_funds": "expand its AI‑powered risk intelligence platform and expand across supply chains and defence networks",
+       "source_sentence": "The round was led by Dynamo Ventures, with participation from Bravo Victor Venture Capital, Techstars, and Service Provider Capital.",
+       "published_at": "2025-11-19T14:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a74bcfd8658683ead30e",
+        "698f0f139ca02490ec19e416"
+       ],
+       "article_id": "698f0f139ca02490ec19e416"
+      },
+      {
+       "id": "17fabea4174e6402",
+       "company_name": "boldr",
+       "domain": "getboldr.com",
+       "round_type": "seed",
+       "amount_usd": 3200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ada ventures",
+         "domain": "adaventures.com",
+         "amount": null
+        },
+        {
+         "name": "unconventional ventures",
+         "domain": "unconventionalventures.com",
+         "amount": null
+        },
+        {
+         "name": "INCLIMO Climate Tech Fund",
+         "domain": "inclimo.com",
+         "amount": null
+        },
+        {
+         "name": "prosegur",
+         "domain": "prosegur.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "S20 Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "viva holdings",
+         "domain": "vivacorp.org",
+         "amount": null
+        }
+       ],
+       "sector": "energy technology",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "expand across the US HVAC market and beyond",
+       "source_sentence": "London-based energy tech company Boldr has raised an oversubscribed $3.2 million seed round to advance its mission of turning homes into active grid participants, helping homeowners reduce costs while supporting grid operators amid rising demand.",
+       "published_at": "2025-09-30T11:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f7231d6ecd416e342b3fb0",
+        "6988c41b94d3f481f3d905bc"
+       ],
+       "article_id": "68f7231d6ecd416e342b3fb0"
+      },
+      {
+       "id": "79d79f7ba785dc0c",
+       "company_name": "Rana Energy",
+       "domain": "ranaenergy.co",
+       "round_type": "hybrid",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "EchoVC Eco",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Chinedu Azodoh",
+         "domain": "https://www.linkedin.com/in/chineduazodoh",
+         "amount": null
+        },
+        {
+         "name": "Tayo Bamiduro",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "optimum global",
+         "domain": "optimumglobal.com",
+         "amount": null
+        },
+        {
+         "name": "fsdh asset management",
+         "domain": "fsdhaml.com",
+         "amount": null
+        }
+       ],
+       "sector": "clean energy",
+       "country": "Nigeria",
+       "city": null,
+       "use_of_funds": "accelerate Rana’s AI-powered clean energy and battery storage solutions for Nigerian businesses",
+       "source_sentence": "Beyond Moniepoint, clean energy startup Rana Energy attracted notable investor attention, securing $3 million in hybrid financing—$500,000 in equity and $2.5 million in green debt. Investors included Techstars, EchoVC Eco, and angel investors Chinedu Azodoh and Tayo Bamiduro, with the debt component arranged by Optimum Global and backed by FSDH Asset Management.",
+       "published_at": "2025-11-20T03:36:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69316ad03fdf06c4d1f20c5f"
+       ],
+       "article_id": "69316ad03fdf06c4d1f20c5f"
+      },
+      {
+       "id": "9e4fdf77e52f40c1",
+       "company_name": "Rana Energy",
+       "domain": "ranaenergy.co",
+       "round_type": "Hybrid financing",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "EchoVC Eco",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Chinedu Azodoh",
+         "domain": "https://www.linkedin.com/in/chineduazodoh",
+         "amount": null
+        },
+        {
+         "name": "Tayo Bamiduro",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "optimum global",
+         "domain": "optimumglobal.com",
+         "amount": null
+        },
+        {
+         "name": "fsdh asset management",
+         "domain": "fsdhaml.com",
+         "amount": null
+        }
+       ],
+       "sector": "clean energy",
+       "country": "Nigeria",
+       "city": null,
+       "use_of_funds": "scale its AI‑powered clean energy and battery storage solutions for Nigerian businesses",
+       "source_sentence": "Clean energy startup Rana Energy also drew notable investor interest during the month, securing a total of $3 million in hybrid financing — a mix of $500,000 equity and $2.5 million green debt.",
+       "published_at": "2025-11-18T15:39:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931491969cd351bfef21cd0"
+       ],
+       "article_id": "6931491969cd351bfef21cd0"
+      },
+      {
+       "id": "3b31e26f36917471",
+       "company_name": "BITE Data",
+       "domain": null,
+       "round_type": "Series Seed",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "las olas venture capital",
+         "domain": "lasolasvc.com",
+         "amount": null
+        },
+        {
+         "name": "new dominion angels",
+         "domain": "newdominionangels.com",
+         "amount": null
+        },
+        {
+         "name": "Blue Impact Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "refashiond ventures",
+         "domain": "refashiond.com",
+         "amount": null
+        }
+       ],
+       "sector": "RegTech",
+       "country": "United States",
+       "city": "Leesburg, VA",
+       "use_of_funds": "Expand engineering and sales teams and build automation tools for global trade compliance",
+       "source_sentence": "The funding includes a $2.5m Series Seed round led by Las Olas Venture Capital (LOVC), with support from New Dominion Angels, Blue Impact Venture Capital, Techstars and Refashiond Ventures.",
+       "published_at": "2025-11-12T15:18:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e148c9ca02490ec071d6c"
+       ],
+       "article_id": "698e148c9ca02490ec071d6c"
+      },
+      {
+       "id": "ddcbd41b40743bba",
+       "company_name": "the folklore",
+       "domain": "thefolklore.com",
+       "round_type": null,
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Black Tech Ventures Funding",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Techstars Seattle",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It has raised $3 million in funding from investors, including Black Tech Ventures Funding and Techstars Seattle.",
+       "published_at": "2025-10-17T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69de029ea83bf5ed2e240733"
+       ],
+       "article_id": "69de029ea83bf5ed2e240733"
+      },
+      {
+       "id": "253694b8f84895ac",
+       "company_name": "Rana Energy",
+       "domain": "ranaenergy.co",
+       "round_type": "pre-seed",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "EchoVC Eco",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Chinedu Azodoh",
+         "domain": "https://www.linkedin.com/in/chineduazodoh",
+         "amount": null
+        },
+        {
+         "name": "Tayo Bamiduro",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "optimum global",
+         "domain": "optimumglobal.com",
+         "amount": null
+        },
+        {
+         "name": "fsdh asset management",
+         "domain": "fsdhaml.com",
+         "amount": null
+        }
+       ],
+       "sector": "clean energy; solar; battery subscription",
+       "country": "Nigeria",
+       "city": "Lagos",
+       "use_of_funds": "Equity to deepen product development and grow the team; debt to fund physical hardware on customer rooftops and yards",
+       "source_sentence": "Rana Energy, a Lagos-based clean energy startup, has closed a $3 million pre‑seed round to scale its AI‑driven solar and battery subscription service for Nigerian businesses.",
+       "published_at": "2025-10-15T00:45:34",
+       "coverage_count": 7,
+       "article_ids": [
+        "69032ac4372d9d06dbd83a03",
+        "6988a4218fb0ea95e97705ed",
+        "698cc617b58ff92da7541796",
+        "698eb9b08d29a990b6ef1762",
+        "698fa4f38d29a990b6006409",
+        "698fb98c8d29a990b601df64",
+        "69bc1b138bf856b2461708f6"
+       ],
+       "article_id": "69bc1b138bf856b2461708f6"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 60,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTAtMTUgMDA6NDU6MzQiLCJrIjoiMjY4MTQ5NDE1MDMwNjEwODg0NCIsImEiOjMwMDAwMDAuMH0",
+     "totals": {
+      "deals": 60,
+      "deals_with_amount": 60,
+      "deals_without_amount": 0,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 424562200.0,
+      "median_amount_usd": 3850000.0,
+      "largest_amount_usd": 150000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.056,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.058
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Techstars",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "techstars"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "97a3e8634c0623aa",
+       "company_name": "koda health",
+       "domain": "kodahealthcare.com",
+       "round_type": "Series A",
+       "amount_usd": 14000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "evidenced",
+         "domain": "evidenced.app",
+         "amount": null
+        },
+        {
+         "name": "Mudita Venture Partners",
+         "domain": "muditavp.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "texas medical center",
+         "domain": "texasmedicalcenter.org",
+         "amount": null
+        },
+        {
+         "name": "upmc enterprises",
+         "domain": "enterprises.upmc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Scale operations and expand engineering, clinical strategy and customer success",
+       "source_sentence": "Its series A round was led by Evidenced, with participation from Mudita Venture Partners, Techstars and the Texas Medical Center last year. At the time, the company said the funding would allow it to scale operations and expand engineering, clinical strategy and customer success.",
+       "published_at": "2026-04-30T17:00:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8a62fbbf1d314559a1e89"
+       ],
+       "article_id": "69f8a62fbbf1d314559a1e89"
+      },
+      {
+       "id": "3d73742a6eec3e6d",
+       "company_name": "manifest",
+       "domain": "manifestcommerce.com",
+       "round_type": "pre-seed",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Brand Fund by Previously Unavailable",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "icehouse ventures",
+         "domain": "icehouseventures.co.nz",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Huljich & Bhatnagar Family Offices",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Henry Innis",
+         "domain": "https://www.linkedin.com/in/henryinnis/",
+         "amount": null
+        },
+        {
+         "name": "Mark Coad",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jamie Mackay",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jonathan Isaacs",
+         "domain": "https://www.linkedin.com/in/jonathan-isaacs-290108",
+         "amount": null
+        },
+        {
+         "name": "James Hutchinson",
+         "domain": "https://www.linkedin.com/in/jamesahutchinson/",
+         "amount": null
+        },
+        {
+         "name": "Jordan Taylor-Bartels",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Connon Bray",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tim Burrowes",
+         "domain": "https://www.linkedin.com/in/timburrowes/",
+         "amount": null
+        }
+       ],
+       "sector": "advertising technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "help advertising agencies better track and value their work amid the rapid adoption of AI across the sector",
+       "source_sentence": "A trans‑Tasman startup has raised $2 million in pre‑seed funding to help advertising agencies better track and value their work amid the rapid adoption of AI across the sector.",
+       "published_at": "2026-04-28T23:58:06",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f1c9d1a5706a322e107cfa",
+        "69f1cef5399b489398e23cdd"
+       ],
+       "article_id": "69f1c9d1a5706a322e107cfa"
+      },
+      {
+       "id": "a5b1bbc3a4209f45",
+       "company_name": "peakmetrics",
+       "domain": "peakmetrics.com",
+       "round_type": "Series A",
+       "amount_usd": 6000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "moneta ventures",
+         "domain": "moneta.vc",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Parameter Ventures",
+         "domain": "parameterventures.com",
+         "amount": null
+        },
+        {
+         "name": "vitalize venture capital",
+         "domain": "vitalize.vc",
+         "amount": null
+        },
+        {
+         "name": "Gurtin Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI-driven narrative intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate advancements across the AI-driven platform, enhance real-time detection of harmful narratives, deepen intelligence for decisions, and support go-to-market expansion to more organizations across industries and government agencies.",
+       "source_sentence": "PeakMetrics, the leading AI-driven narrative intelligence company, announced the close of its $6M Series A funding round led by Moneta Ventures, with follow-on participation from Techstars, Parameter Ventures, VITALIZE Venture Capital, and Gurtin Ventures, bringing total capital to $16.3M.",
+       "published_at": "2026-04-10T09:38:56",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e88cbf9baafc73569779e9",
+        "69e8cf175cfa3e5ba540240c"
+       ],
+       "article_id": "69e88cbf9baafc73569779e9"
+      },
+      {
+       "id": "24d5647b08fcc70d",
+       "company_name": "ateios",
+       "domain": "ateios.com",
+       "round_type": null,
+       "amount_usd": 7300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Carat Venture Partners",
+         "domain": "caratvp.com",
+         "amount": null
+        },
+        {
+         "name": "E8 Angels",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "elevate ventures",
+         "domain": "elevateventures.com",
+         "amount": null
+        },
+        {
+         "name": "good growth capital",
+         "domain": "goodgrowthvc.com",
+         "amount": null
+        },
+        {
+         "name": "jhh vc",
+         "domain": "jhh.vc",
+         "amount": null
+        },
+        {
+         "name": "keshif ventures",
+         "domain": "keshif.com",
+         "amount": null
+        },
+        {
+         "name": "lateral capital management",
+         "domain": "lateralcapital.com",
+         "amount": null
+        },
+        {
+         "name": "stonecast ventures",
+         "domain": "stonecast-vc.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "titletowntech",
+         "domain": "titletowntech.com",
+         "amount": null
+        },
+        {
+         "name": "visiontech partners",
+         "domain": "visiontech-partners.com",
+         "amount": null
+        },
+        {
+         "name": "zaka vc",
+         "domain": "zaka.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "Newberry",
+       "use_of_funds": null,
+       "source_sentence": "Ateios - $7.3M",
+       "published_at": "2026-03-30T08:27:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d14cf51fc9561313467f64"
+       ],
+       "article_id": "69d14cf51fc9561313467f64"
+      },
+      {
+       "id": "931636a6302d29df",
+       "company_name": "Ateios Systems",
+       "domain": "ateios.com",
+       "round_type": "Series A",
+       "amount_usd": 7250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7250000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "elevate ventures",
+         "domain": "elevateventures.com",
+         "amount": null
+        },
+        {
+         "name": "visiontech partners",
+         "domain": "visiontech-partners.com",
+         "amount": null
+        },
+        {
+         "name": "good growth capital",
+         "domain": "goodgrowthvc.com",
+         "amount": null
+        },
+        {
+         "name": "Lateral Capital",
+         "domain": "lateralcapitalgroup.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "keshif ventures",
+         "domain": "keshif.com",
+         "amount": null
+        },
+        {
+         "name": "JHH Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "stonecast ventures",
+         "domain": "stonecast-vc.com",
+         "amount": null
+        },
+        {
+         "name": "Zaka Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Carat Venture Partners",
+         "domain": "caratvp.com",
+         "amount": null
+        },
+        {
+         "name": "E8 Angels",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery Manufacturing",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Scaling commercial partnerships and expanding production capacity for lithium‑ion battery electrodes",
+       "source_sentence": "One year after winning a million-dollar investment at the inaugural TitletownTech Start-up Draft, Ateios Systems has closed a $7.25M Series A to scale its next‑generation lithium‑ion battery electrodes and supply battery manufacturers at a larger commercial scale.",
+       "published_at": "2026-03-26T17:00:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc2165d11a7cee80d3b8a8"
+       ],
+       "article_id": "69cc2165d11a7cee80d3b8a8"
+      },
+      {
+       "id": "b8a501cc8b939c23",
+       "company_name": "seasats",
+       "domain": "seasats.com",
+       "round_type": "Series A",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Konvoy Ventures",
+         "domain": "konvoy.vc",
+         "amount": null
+        },
+        {
+         "name": "shield capital",
+         "domain": "shieldcap.com",
+         "amount": null
+        },
+        {
+         "name": "dns capital",
+         "domain": "dnscap.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Tanis Venture Management",
+         "domain": "tanisventures.com",
+         "amount": null
+        },
+        {
+         "name": "Crumpton Ventures",
+         "domain": "crumptonventures.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "dorado group",
+         "domain": "dorado-group.com",
+         "amount": null
+        }
+       ],
+       "sector": "Defense",
+       "country": "United States",
+       "city": "San Diego",
+       "use_of_funds": "support the expansion of new facilities, additional product lines, and team growth",
+       "source_sentence": "Seasats, a San Diego, CA-based company which specializes in small uncrewed surface vehicles (sUSVs), raised $20M in Series A funding.",
+       "published_at": "2026-02-17T15:22:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e851ef5cfa3e5ba5e74c50"
+       ],
+       "article_id": "69e851ef5cfa3e5ba5e74c50"
+      },
+      {
+       "id": "4475c1c84ab151a0",
+       "company_name": "seasats",
+       "domain": "seasats.com",
+       "round_type": "Series A",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Konvoy Ventures",
+         "domain": "konvoy.vc",
+         "amount": null
+        },
+        {
+         "name": "shield capital",
+         "domain": "shieldcap.com",
+         "amount": null
+        },
+        {
+         "name": "dns capital",
+         "domain": "dnscap.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Tanis Venture Management",
+         "domain": "tanisventures.com",
+         "amount": null
+        },
+        {
+         "name": "Crumpton Ventures",
+         "domain": "crumptonventures.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "dorado group",
+         "domain": "dorado-group.com",
+         "amount": null
+        }
+       ],
+       "sector": "maritime defense",
+       "country": "United States",
+       "city": "San Diego",
+       "use_of_funds": "expansion of new facilities, additional product lines, and continued team growth",
+       "source_sentence": "Seasats, a leader in small uncrewed surface vehicles (sUSVs), today announced the close of a $20 million Series A financing round.",
+       "published_at": "2026-02-17T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bd9f0efd89557e8dc8a60b",
+        "69e0191343415b9885ac0e04"
+       ],
+       "article_id": "69e0191343415b9885ac0e04"
+      },
+      {
+       "id": "6605b81ef129b9f1",
+       "company_name": "Intuos",
+       "domain": "intuos.it",
+       "round_type": null,
+       "amount_usd": 777600.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 720000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "argo",
+         "domain": "watchargo.com",
+         "amount": null
+        },
+        {
+         "name": "Techstars Transformative World Torino",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ventive",
+         "domain": "ventive.co.uk",
+         "amount": null
+        },
+        {
+         "name": "business angels",
+         "domain": "businessangels.fr",
+         "amount": null
+        }
+       ],
+       "sector": "Aviation, fleet management",
+       "country": "Italy",
+       "city": "L’Aquila",
+       "use_of_funds": "upgrade technology and expand into the US market",
+       "source_sentence": "The startup, based at L’Aquila’s Aeroporto dei Parchi, has successfully raised €720k.",
+       "published_at": "2026-02-16T11:09:02",
+       "coverage_count": 4,
+       "article_ids": [
+        "69bbce527a841a437be751ca",
+        "69bc6844fe351803c61118e7",
+        "69bcec765d6eab2ab8fdcce4",
+        "69bd8129edbbccf919a3bccc"
+       ],
+       "article_id": "69bd8129edbbccf919a3bccc"
+      },
+      {
+       "id": "03de9a08f0c798e0",
+       "company_name": "Intuos",
+       "domain": "intuos.it",
+       "round_type": "investment round",
+       "amount_usd": 777600.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 720000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "argo",
+         "domain": "watchargo.com",
+         "amount": null
+        },
+        {
+         "name": "zest",
+         "domain": "zestapp.co",
+         "amount": null
+        },
+        {
+         "name": "Venisia",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "ventive",
+         "domain": "ventive.co.uk",
+         "amount": null
+        },
+        {
+         "name": "several club deals and business angels",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Aviation technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "completion of key technological developments and the company’s initial exploration of the US market",
+       "source_sentence": "Intuos, a startup developing an integrated platform to improve aircraft fleet efficiency, safety, and compliance, has closed a €720,000 investment round.",
+       "published_at": "2026-02-16T10:50:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd80920f7c42aae0d7adf6"
+       ],
+       "article_id": "69bd80920f7c42aae0d7adf6"
+      },
+      {
+       "id": "b3a0bba5f2028300",
+       "company_name": "kumulus water",
+       "domain": "kumuluswater.com",
+       "round_type": "pre-Seed",
+       "amount_usd": 969000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 969000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Paris Techstars Accelerator",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "flat6labs",
+         "domain": "flat6labs.com",
+         "amount": null
+        },
+        {
+         "name": "wilco",
+         "domain": "trywilco.com",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "business angels",
+         "domain": "businessangels.fr",
+         "amount": null
+        }
+       ],
+       "sector": "Water Service",
+       "country": "Tunisia",
+       "city": null,
+       "use_of_funds": "improve the startup’s product and deliver its first pre-ordered machines",
+       "source_sentence": "Kumulus Water, a water service startup based in Tunisia, has raised a $969k pre-Seed funding round from Paris Techstars Accelerator, Flat6Labs, WILCO and Bpifrance, with participation from business angels.",
+       "published_at": "2026-02-04T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfb7c4c1e955063e151075"
+       ],
+       "article_id": "69dfb7c4c1e955063e151075"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 13,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDItMDQgMDA6MDA6MDAiLCJrIjoiMTI5NDM1NTE2NTA0NjcwNTQzMzYifQ",
+     "totals": {
+      "deals": 13,
+      "deals_with_amount": 13,
+      "deals_without_amount": 0,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 210796600.0,
+      "median_amount_usd": 6000000.0,
+      "largest_amount_usd": 150000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.027,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.03
+    }
+   }
+  }
+ ]
+}

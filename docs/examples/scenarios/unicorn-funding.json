@@ -1,0 +1,2727 @@
+{
+ "slug": "unicorn-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:16Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "q": "unicorn",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "unicorn",
+      "match": "any"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 140,
+      "deals_with_amount": 134,
+      "deals_without_amount": 6,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 15324406000.0,
+      "median_amount_usd": 75000000.0,
+      "largest_amount_usd": 2400000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 275000000.0,
+       "median_amount_usd": 100000000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 577340000.0,
+       "median_amount_usd": 87020000.0,
+       "largest_amount_usd": 202300000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 13,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1394616000.0,
+       "median_amount_usd": 50000000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 480300000.0,
+       "median_amount_usd": 65500000.0,
+       "largest_amount_usd": 127500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 19,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4578230000.0,
+       "median_amount_usd": 116515000.0,
+       "largest_amount_usd": 2400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 10,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1008080000.0,
+       "median_amount_usd": 75600000.0,
+       "largest_amount_usd": 450000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 118480000.0,
+       "median_amount_usd": 50000000.0,
+       "largest_amount_usd": 68000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 14,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1286100000.0,
+       "median_amount_usd": 32500000.0,
+       "largest_amount_usd": 540000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 14,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1304900000.0,
+       "median_amount_usd": 100000000.0,
+       "largest_amount_usd": 217000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 16,
+       "deals_with_amount": 16,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1117100000.0,
+       "median_amount_usd": 39525000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1336080000.0,
+       "median_amount_usd": 80000000.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 12,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1898180000.0,
+       "median_amount_usd": 12240000.0,
+       "largest_amount_usd": 1512000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.121,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.126
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "q": "unicorn",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "q": "unicorn"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "be7ee592611972ec",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "Shariah-compliant debt facility",
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo-managed funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Saudi Arabia",
+       "city": null,
+       "use_of_funds": "Broaden payment and credit offerings",
+       "source_sentence": "Tamara, a Saudi “buy-now-pay-later” fintech unicorn, secured a massive $2.4 billion Shariah-compliant credit facility to fuel its expansion.",
+       "published_at": "2025-09-15T22:24:25",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c8e7c75f1a530eb9686745",
+        "68d99acc983a16828b7d8ca2"
+       ],
+       "article_id": "68c8e7c75f1a530eb9686745"
+      },
+      {
+       "id": "f3a6f6d1e805dae2",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "Asset-backed facility",
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "apollo funds",
+         "domain": "apollofunds.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech | Payments",
+       "country": "Saudi Arabia",
+       "city": "Dubai",
+       "use_of_funds": "Supporting the expansion into new credit and payment products, product diversification, and strengthening lending power",
+       "source_sentence": "Tamara, the first homegrown Saudi fintech unicorn, has secured the largest asset-backed facility of its kind in the region of up to $2.4 billion from major financial institutions, including Goldman Sachs, Citi and Apollo funds.",
+       "published_at": "2025-09-15T12:59:09",
+       "coverage_count": 9,
+       "article_ids": [
+        "68d0f87e91b46c685a2c5997",
+        "68d103f650268142442d1892",
+        "6988a95669527f36baae89ec",
+        "698a2b823aeee4a53ffa0794",
+        "698d3f7f8d29a990b6d2e23e",
+        "698e1d599ca02490ec07cfd3",
+        "69db6d5653ffb3b11bcd4cb6",
+        "69dfb26744a6646a5b2b4add",
+        "69dfb577a9936a33b35c3278"
+       ],
+       "article_id": "6988a95669527f36baae89ec"
+      },
+      {
+       "id": "e680ce6faa871af3",
+       "company_name": "helsing",
+       "domain": "helsing.ai",
+       "round_type": null,
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "saab",
+         "domain": "saab.com",
+         "amount": null
+        }
+       ],
+       "sector": "Defence Technology",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "AI systems for national security",
+       "source_sentence": "Helsing has raised over €1.4 billion, achieving unicorn-plus status with a valuation around €3-4 billion in recent rounds backed by General Catalyst, Accel and Saab.",
+       "published_at": "2026-04-06T11:16:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bc0e9b322e6b3ea30c3d"
+       ],
+       "article_id": "69e2bc0e9b322e6b3ea30c3d"
+      },
+      {
+       "id": "f2470a0ec2d17a84",
+       "company_name": "brevo",
+       "domain": "brevo.com",
+       "round_type": "Liquidity event",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general atlantic",
+         "domain": "generalatlantic.com",
+         "amount": null
+        },
+        {
+         "name": "oakley",
+         "domain": "oakley.com",
+         "amount": null
+        },
+        {
+         "name": "partech",
+         "domain": "partechpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "CRM",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "Help conquer the U.S. market and invest in AI",
+       "source_sentence": "Brevo just joined France’s unicorn club with a splashy €500 million announcement, resetting the cap table.",
+       "published_at": "2025-12-15T12:14:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a5514e0667c07f27914c"
+       ],
+       "article_id": "69c3a5514e0667c07f27914c"
+      },
+      {
+       "id": "a60a0775fb85b58e",
+       "company_name": "brevo",
+       "domain": "brevo.com",
+       "round_type": "Funding round",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "French CRM outfit Brevo hits unicorn status following a €500M funding round",
+       "published_at": "2025-12-05T15:46:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "693352303af00a7832f20430"
+       ],
+       "article_id": "693352303af00a7832f20430"
+      },
+      {
+       "id": "47097715c445961b",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "According to a Moneycontrol report, quick-commerce unicorn Zepto is planning to raise $500 million at a $7 billion valuation.",
+       "published_at": "2025-07-09T15:22:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989499994d3f481f3e2eb93"
+       ],
+       "article_id": "6989499994d3f481f3e2eb93"
+      },
+      {
+       "id": "829bf16884e1c13f",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": null,
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": 7000000000.0,
+       "investors": [
+        {
+         "name": "calpers",
+         "domain": "calpers.ca.gov",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "avenir",
+         "domain": "avenir-executive.co.jp",
+         "amount": null
+        },
+        {
+         "name": "avra",
+         "domain": "avraworld.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Glade Brook",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "the stepstone group",
+         "domain": "thestepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Quick Commerce",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "Scale operations and increase market share",
+       "source_sentence": "Zepto is in the advanced stages of raising $450 million (around Rs 3,900 crore) as the quick commerce unicorn looks to double down on its offerings, scale operations and increase market share in a competitive landscape, people familiar with the development told Moneycontrol.",
+       "published_at": "2025-10-01T15:25:40",
+       "coverage_count": 22,
+       "article_ids": [
+        "68f70dbff80e5160742ba927",
+        "68f71ac4017a8a94832cde73",
+        "68f71bf3017a8a94832cfb14",
+        "68f71d02b5f4abc34a2d1bbb",
+        "68f73332f6f885b63d2cb9ff",
+        "68fe13cfadf076a01a298edd",
+        "68fe13d6adf076a01a298fab",
+        "68fe13e0adf076a01a2990e6",
+        "68fe1de646325a41ca27ef27",
+        "68fe1fc941f75f68272824e2",
+        "68fe2dff92ef2af9ad2801da",
+        "68fe2e0592ef2af9ad2802bd",
+        "68fe2e1b606fcdbfff28055f",
+        "68fe2eea92ef2af9ad281aeb",
+        "690e2f276d5fbb10592484aa",
+        "693173124e9768644af20482",
+        "698889975302bdff258774f4",
+        "6988a83dafe26ce3df67305c",
+        "698d6b2e9ca02490ecfabd16",
+        "698e86099ca02490ec0fb158",
+        "69bcdcc8981d28529ed2db42",
+        "69bd89c2236c5426102b7a26"
+       ],
+       "article_id": "68f71ac4017a8a94832cde73"
+      },
+      {
+       "id": "bf1a8d62e634580a",
+       "company_name": "Physicswallah",
+       "domain": "physicswallah.live",
+       "round_type": "equity issue",
+       "amount_usd": 372000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 31000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Education",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Allocate to new offline and hybrid centers: Rs 460.55 crore (4,605,500,000); PW Vidyapeeth: Rs 234.37 crore (2,343,700,000); PW Pathshala: Rs 49.89 crore (498,900,000); PW Other Centers: Rs 176.29 crore (1,762,900,000).",
+       "source_sentence": "Edtech unicorn PhysicsWallah (PW) is expanding its offline presence as it prepares to enter the capital markets with a fresh equity issue of Rs 3,100 crore and an offer for sale (OFS) of Rs 720 crore.",
+       "published_at": "2025-09-25T10:24:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996c19870e6b99bb4bfc6af"
+       ],
+       "article_id": "6996c19870e6b99bb4bfc6af"
+      },
+      {
+       "id": "f8ac39f0283b45a5",
+       "company_name": "Firmus Technologies",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 330000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 330000000.0,
+       "valuation": 600000000.0,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "ellerston capital",
+         "domain": "ellerstoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "Phil King’s Regal Funds Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Archibald Capital",
+         "domain": "archibald.com.au",
+         "amount": null
+        },
+        {
+         "name": "Tectonic Investment Management",
+         "domain": "tectonicim.com",
+         "amount": null
+        },
+        {
+         "name": "Alex Waislitz",
+         "domain": "https://www.linkedin.com/in/avee-waislitz-82119281/",
+         "amount": null
+        },
+        {
+         "name": "Pratt family",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial intelligence infrastructure",
+       "country": "Australia",
+       "city": "Launceston",
+       "use_of_funds": "Build AI factory data centre campus in Tasmania to train and operate AI systems",
+       "source_sentence": "Firmus Technologies has become the latest Australian-founded startup to reach unicorn status, after the artificial intelligence infrastructure company raised $330 million in a round backed by US chip giant Nvidia.",
+       "published_at": "2025-09-15T23:40:46",
+       "coverage_count": 5,
+       "article_ids": [
+        "68d978e65c3d35fe5b4c0923",
+        "68d978ef42a4b594744c085d",
+        "6931759a4b75bd2a55f20d7a",
+        "6931798a54e5d6bc67f20573",
+        "698f5c7d9ca02490ec1fa170"
+       ],
+       "article_id": "68d978e65c3d35fe5b4c0923"
+      },
+      {
+       "id": "505e0c10b42483f4",
+       "company_name": "iqm",
+       "domain": "meetiqm.com",
+       "round_type": null,
+       "amount_usd": 320000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1000000000.0,
+       "currency": "USD",
+       "amount": 320000000.0,
+       "valuation": 1000000000.0,
+       "investors": [
+        {
+         "name": "Ten Eleven Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tesi",
+         "domain": "tesi.fi",
+         "amount": null
+        }
+       ],
+       "sector": "quantum computing",
+       "country": "Finland",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The quantum computing company IQM announced that it raised $320 million in a new round of funding, achieving . .unicorn . status with an assessment of $1 billion.",
+       "published_at": "2025-09-03T19:31:13",
+       "coverage_count": 5,
+       "article_ids": [
+        "68d9b63993ec9fed3880295f",
+        "6997372dfeeb41363fa4d385",
+        "69bb9c61f5797d8e22aea2b9",
+        "69c4288eca903b7f8226cfd8",
+        "69e1d73d3a42e43e5614c9cd"
+       ],
+       "article_id": "6997372dfeeb41363fa4d385"
+      },
+      {
+       "id": "b16cbde6acec2db3",
+       "company_name": "porter",
+       "domain": "helloporter.com",
+       "round_type": "Series F",
+       "amount_usd": 310000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 310000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vitruvian partners",
+         "domain": "vitruvianpartners.com",
+         "amount": null
+        },
+        {
+         "name": "elev8 venture partners",
+         "domain": "elev8vp.com",
+         "amount": null
+        },
+        {
+         "name": "kedaara capital",
+         "domain": "kedaara.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "kae capital",
+         "domain": "kae-capital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Logistics",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Double down on the two-wheeler local logistics service space and grow services such as trucks.",
+       "source_sentence": "Logistics unicorn Porter has raised another $110 million from Vitruvian Partners, Elev8 Venture Partners and others in an extended Series F round.",
+       "published_at": "2025-09-09T05:01:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f718b0b5f4abc34a2caee5"
+       ],
+       "article_id": "68f718b0b5f4abc34a2caee5"
+      },
+      {
+       "id": "70bd91c021c70814",
+       "company_name": "skyryse",
+       "domain": "skyryse.com",
+       "round_type": "Series C",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1150000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 1150000000.0,
+       "investors": [
+        {
+         "name": "Autopilot Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "arrowmark partners",
+         "domain": "arrowmarkpartners.com",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "BAM Elevate",
+         "domain": "bamelevate.com",
+         "amount": null
+        },
+        {
+         "name": "Baron Capital Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "durable capital partners",
+         "domain": "durablecap.com",
+         "amount": null
+        },
+        {
+         "name": "positive sum",
+         "domain": "positivesum.org",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "RCM Private Markets Fund managed by Rokos Capital Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Woodline Partners",
+         "domain": "woodlinepartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "aviation automation",
+       "country": "USA",
+       "city": "El Segundo",
+       "use_of_funds": "to integrate its operating system, SkyOS, across aircraft and advance FAA certification",
+       "source_sentence": "Skyryse, an El Segundo, California-based aviation automation startup, has raised more than $300 million in a Series C investment, pushing its valuation to $1.15 billion and into unicorn territory.",
+       "published_at": "2026-02-03T18:21:23",
+       "coverage_count": 8,
+       "article_ids": [
+        "6985ebd1fdcc616c15dc5725",
+        "6986b7dc9438ce100b187f30",
+        "6986e2d8ca3bd326c77e271a",
+        "6988875767fc62ca0ef3a791",
+        "6996ca510d0db262fa5796ff",
+        "69bd813f0bf92aede2f8a659",
+        "69cc4289cb088e024d2646bf",
+        "69e3c9a5b8c34c1508f47546"
+       ],
+       "article_id": "6986b7dc9438ce100b187f30"
+      },
+      {
+       "id": "00fc99d0d0fe9d50",
+       "company_name": "vantaca",
+       "domain": "vantaca.com",
+       "round_type": "Minority Growth Investment (Late-Stage)",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cove hill partners",
+         "domain": "covehillpartners.com",
+         "amount": null
+        },
+        {
+         "name": "JMI Equity",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Community Association Management Software",
+       "country": "United States",
+       "city": "Wilmington",
+       "use_of_funds": "AI R&D (agentic automations), go-to-market expansion, resident-facing features",
+       "source_sentence": "Vantaca, a leading AI-powered platform for community association management, secured over $300 million in a minority growth investment round, valuing the company at $1.25 billion and marking its entry into unicorn status.",
+       "published_at": "2025-10-18T08:00:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a4b28fb0ea95e9770efd"
+       ],
+       "article_id": "6988a4b28fb0ea95e9770efd"
+      },
+      {
+       "id": "5f014c630678f418",
+       "company_name": "vantaca",
+       "domain": "vantaca.com",
+       "round_type": "minority growth investment",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1250000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 1250000000.0,
+       "investors": [
+        {
+         "name": "cove hill partners",
+         "domain": "covehillpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Vantaca joined the unicorn club after a minority growth investment of over $300 million led by Cove Hill Partners, raising the company's valuation to $1.25 billion.",
+       "published_at": "2025-10-17T14:41:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb5efb8b79b55c8276446e"
+       ],
+       "article_id": "69bb5efb8b79b55c8276446e"
+      },
+      {
+       "id": "b5329124d42a19f1",
+       "company_name": "kreditbee",
+       "domain": "kreditbee.in",
+       "round_type": "Series E",
+       "amount_usd": 280000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 280000000.0,
+       "valuation": 1500000000.0,
+       "investors": [],
+       "sector": "Fintech / Digital lending",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "product expansion, strengthen lending infrastructure, support future IPO",
+       "source_sentence": "KreditBee has raised $280 million in a Series E round, achieving a valuation of $1.5 billion and entering the unicorn club.",
+       "published_at": "2026-04-08T12:46:08",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e2d15d3aab8d96aa3ca110",
+        "69e2e10d601121844c4424f1",
+        "69e852b55cfa3e5ba5e7c9b6"
+       ],
+       "article_id": "69e2e10d601121844c4424f1"
+      },
+      {
+       "id": "195a2088c8c7e59c",
+       "company_name": "kreditbee",
+       "domain": "kreditbee.in",
+       "round_type": "Series E",
+       "amount_usd": 280000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 280000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "motilal oswal alternates",
+         "domain": "motilaloswalalt.com",
+         "amount": null
+        },
+        {
+         "name": "Hornbill Capital",
+         "domain": "hornbillcap.com",
+         "amount": null
+        },
+        {
+         "name": "MUFG-backed Dragon Funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "WhiteOak Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "a.p. moller holding",
+         "domain": "apmoller.com",
+         "amount": null
+        },
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "expand its lending portfolio, strengthen its presence in existing markets and boost its tech stack, scale its AI capabilities",
+       "source_sentence": "Lending tech startup KreditBee has raised $280 Mn (about ₹2,595 Cr) in its Series E round at a post-money valuation of $1.5 Bn, becoming the second startup to enter the unicorn club in 2026 after Juspay.",
+       "published_at": "2026-04-08T03:54:57",
+       "coverage_count": 18,
+       "article_ids": [
+        "69e2c37c3aab8d96aa398234",
+        "69e2c563d754bf662cde93f0",
+        "69e2c87cbd7b10565a409dd3",
+        "69e2c932bd7b10565a40c91b",
+        "69e2cd08277be6ed2da48679",
+        "69e2cd29ff2654c79d6f8553",
+        "69e2cd6e9b322e6b3ea6f261",
+        "69e3546ea60998cfe6bed0fc",
+        "69e356b0e868bb52b25b3697",
+        "69e3c6e5ece2a2fb4f25a221",
+        "69e3c6e5ece2a2fb4f25a287",
+        "69e3c81ab8c34c1508f365ff",
+        "69e3c8d12fd96a624634445c",
+        "69e4efdcd5e7fc42ee05bc9b",
+        "69e4f6d09d0e7fe469a11a8c",
+        "69e84a747bb1410d4c654d9a",
+        "69e84d867bb1410d4c672148",
+        "69f1c9ab399b489398dfd043"
+       ],
+       "article_id": "69e2c87cbd7b10565a409dd3"
+      },
+      {
+       "id": "979176fd4c5d8443",
+       "company_name": "intercom",
+       "domain": "intercom.com",
+       "round_type": "debt",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hercules capital",
+         "domain": "htgc.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "Ireland",
+       "city": "Dublin",
+       "use_of_funds": "to help fund its AI agents",
+       "source_sentence": "Irish unicorn Intercom has raised $250m in debt to help fund its AI agents.",
+       "published_at": "2026-03-10T08:57:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd22c7fd59372e7d17b0f"
+       ],
+       "article_id": "69cbd22c7fd59372e7d17b0f"
+      },
+      {
+       "id": "fa3c58e74a78e4fc",
+       "company_name": "moniepoint",
+       "domain": "moniepoint.com",
+       "round_type": "Series C",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "visa",
+         "domain": "visa.com",
+         "amount": null
+        },
+        {
+         "name": "ifc",
+         "domain": "ifc.org",
+         "amount": null
+        },
+        {
+         "name": "dpi",
+         "domain": "dpi.nl",
+         "amount": null
+        },
+        {
+         "name": "leapfrog investments",
+         "domain": "leapfroginvest.com",
+         "amount": null
+        },
+        {
+         "name": "lightrock",
+         "domain": "lightrock.com",
+         "amount": null
+        },
+        {
+         "name": "Verod Capital Management",
+         "domain": "verod.com",
+         "amount": null
+        },
+        {
+         "name": "proparco",
+         "domain": "proparco.fr",
+         "amount": null
+        },
+        {
+         "name": "swedfund",
+         "domain": "swedfund.se",
+         "amount": null
+        },
+        {
+         "name": "Alder Tree Investments",
+         "domain": "aldertree.eu",
+         "amount": null
+        },
+        {
+         "name": "Google’s Africa Investment Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Nigeria",
+       "city": null,
+       "use_of_funds": "Expanding into new African and international markets, launching innovative financial products, and bolstering infrastructure to support a growing customer base.",
+       "source_sentence": "Moniepoint, a Nigerian fintech company, has officially reached unicorn status by raising $250 million in Series C funding, pushing its valuation beyond $1 billion.",
+       "published_at": "2025-12-27T11:27:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d84d68d29a990b6d7fb7e"
+       ],
+       "article_id": "698d84d68d29a990b6d7fb7e"
+      },
+      {
+       "id": "de0e34058d506be4",
+       "company_name": "tymebank",
+       "domain": "tymebank.co.za",
+       "round_type": null,
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "nubank",
+         "domain": "nubank.com.br",
+         "amount": 250000000.0
+        }
+       ],
+       "sector": "fintech",
+       "country": "South Africa",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "A standout success story was TymeBank, which hit unicorn status in December 2024 after raising $250 million in capital from Nubank, pushing its valuation to $1.5 billion.",
+       "published_at": "2025-07-16T17:44:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "698de91a9ca02490ec03e2d4"
+       ],
+       "article_id": "698de91a9ca02490ec03e2d4"
+      },
+      {
+       "id": "75ea06118e2610e8",
+       "company_name": "airalo",
+       "domain": "airalo.com",
+       "round_type": "Series C",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cvc capital partners",
+         "domain": "cvc.com",
+         "amount": 185000000.0
+        },
+        {
+         "name": "peak xv",
+         "domain": "peakxv.net",
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Embedded SIM",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "improve user support, provide new products, and scale enterprise offering",
+       "source_sentence": "has achieved “unicorn” status by surpassing a $1-billion USD valuation through a $220 million USD ($300 million CAD) Series C round.",
+       "published_at": "2025-07-10T18:47:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a70f8fb0ea95e977190f"
+       ],
+       "article_id": "6988a70f8fb0ea95e977190f"
+      },
+      {
+       "id": "de6cd0a390089d46",
+       "company_name": "gilmour space technologies",
+       "domain": "gspacetech.com",
+       "round_type": null,
+       "amount_usd": 217000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 217000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "National Reconstruction Fund Corporation",
+         "domain": null,
+         "amount": 75000000.0
+        },
+        {
+         "name": "hostplus",
+         "domain": "hostplus.com.au",
+         "amount": 75000000.0
+        },
+        {
+         "name": "future fund",
+         "domain": "futurefund.gov.au",
+         "amount": null
+        },
+        {
+         "name": "hesta",
+         "domain": "hesta.com.au",
+         "amount": null
+        },
+        {
+         "name": "qic",
+         "domain": "qic.com",
+         "amount": null
+        },
+        {
+         "name": "funds sa",
+         "domain": "funds.sa.gov.au",
+         "amount": null
+        },
+        {
+         "name": "ngs super",
+         "domain": "ngssuper.com.au",
+         "amount": null
+        },
+        {
+         "name": "brighter super",
+         "domain": "brightersuper.com.au",
+         "amount": null
+        },
+        {
+         "name": "blackbird",
+         "domain": "blackbirdlp.com",
+         "amount": null
+        },
+        {
+         "name": "Main Sequence",
+         "domain": "mainseq.com",
+         "amount": null
+        }
+       ],
+       "sector": "Space technology",
+       "country": "Australia",
+       "city": "Gold Coast",
+       "use_of_funds": null,
+       "source_sentence": "the funding round, led by the federal government’s National Reconstruction Fund Corporation and superannuation giant Hostplus with $75 million each, making the Queensland company Australia’s newest unicorn – a fast-growth start-up valued at more than $1 billion – and one of the country’s most heavily backed private technology ventures.",
+       "published_at": "2026-01-19T18:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e281c7601121844c301bfc"
+       ],
+       "article_id": "69e281c7601121844c301bfc"
+      },
+      {
+       "id": "7efd7fa32a3beb5e",
+       "company_name": "pharmeasy",
+       "domain": "pharmeasy.in",
+       "round_type": "Debt funding",
+       "amount_usd": 204000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 17000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "360 one",
+         "domain": "360.one",
+         "amount": null
+        },
+        {
+         "name": "Alkram Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "MVS Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bennett Coleman",
+         "domain": "https://www.linkedin.com/in/bennettwcoleman",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech / Pharmacies & Diagnostics",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "repay its Goldman Sachs loan",
+       "source_sentence": "Healthtech unicorn PharmEasy has raised INR 1,700 crore in debt funding led by 360 One, with participation from Alkram Ventures, MVS Ventures, Bennett Coleman, and others.",
+       "published_at": "2025-09-16T15:38:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cc6d38d29a990b6ca0989"
+       ],
+       "article_id": "698cc6d38d29a990b6ca0989"
+      },
+      {
+       "id": "0f1e964ebfa9a84a",
+       "company_name": "groww",
+       "domain": "groww.in",
+       "round_type": "Series F",
+       "amount_usd": 202300000.0,
+       "amount_flag": null,
+       "valuation_usd": 7000000000.0,
+       "currency": "USD",
+       "amount": 202300000.0,
+       "valuation": 7000000000.0,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "raise funds for growth of its existing business and the business of its subsidiaries",
+       "source_sentence": "IPO-bound fintech unicorn Groww will raise $202.3 Mn (INR 1,735 Cr) in its Series F funding round from GIC and ICONIQ Capital.",
+       "published_at": "2025-06-05T12:14:51",
+       "coverage_count": 3,
+       "article_ids": [
+        "6898ce242f01d48cd310391e",
+        "68ab40162e28036801cf833c",
+        "69baf4ee85c39bb46c6e4380"
+       ],
+       "article_id": "69baf4ee85c39bb46c6e4380"
+      },
+      {
+       "id": "f69e5cde36a6023a",
+       "company_name": "fractile",
+       "domain": "fractile.ai",
+       "round_type": null,
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1000000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 1000000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "oxford science enterprises",
+         "domain": "oxfordscienceenterprises.com",
+         "amount": null
+        },
+        {
+         "name": "Nato Innovation Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Cocoa VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kindred capital",
+         "domain": "kindredcapital.vc",
+         "amount": null
+        },
+        {
+         "name": "Hermann Hauser",
+         "domain": "https://www.linkedin.com/in/hermannhauser",
+         "amount": null
+        }
+       ],
+       "sector": "AI chip manufacturing",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "scaling operations, advancing research and development, enhancing marketing efforts",
+       "source_sentence": "Spread the love In a remarkable development for the tech startup landscape, Fractile, a London-based AI chip manufacturer, is in the process of negotiating a substantial $200 million funding round that could propel its valuation to an impressive $1 billion, marking its entry into the coveted unicorn club.",
+       "published_at": "2026-03-31T13:20:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1d1e802a49f7e8cb3fbed"
+       ],
+       "article_id": "69d1d1e802a49f7e8cb3fbed"
+      },
+      {
+       "id": "dd9ea98dd90b3a50",
+       "company_name": "Upscale Ai",
+       "domain": "upscale.ai",
+       "round_type": "Series A",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "xora innovation",
+         "domain": "xora.vc",
+         "amount": null
+        },
+        {
+         "name": "Maverick Silicon",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "mayfield",
+         "domain": "mayfield.com",
+         "amount": null
+        },
+        {
+         "name": "Prosperity7 Ventures",
+         "domain": "prosperity7vc.com",
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI networking",
+       "country": "United States",
+       "city": "Santa Clara",
+       "use_of_funds": "Scaling operations, including silicon development, system integration, and customer deployments with leading hyperscalers and AI operators",
+       "source_sentence": "Upscale AI’s $200 million Series A funding round represents a pivotal milestone for the young company, elevating it to unicorn status with a valuation surpassing $1 billion.",
+       "published_at": "2026-01-22T09:00:34",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988ab75cfd8658683eb18da",
+        "69bb2d08dd3f26d557f00d39"
+       ],
+       "article_id": "6988ab75cfd8658683eb18da"
+      },
+      {
+       "id": "88d22938eb69fabe",
+       "company_name": "apex",
+       "domain": "apexlitigation.com",
+       "round_type": null,
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "interlagos",
+         "domain": "interlagos.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Satellites",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "Scale up manufacturing and become more vertically integrated",
+       "source_sentence": "Space startup Apex has raised $200 million in a new funding round, reaching unicorn status as it supports companies and governments developing satellite networks.",
+       "published_at": "2025-09-12T16:02:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0f81d5421fe0a112c5830"
+       ],
+       "article_id": "68d0f81d5421fe0a112c5830"
+      },
+      {
+       "id": "8de219ba320077b0",
+       "company_name": "9fin",
+       "domain": "9fin.com",
+       "round_type": "Series C",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1300000000.0,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "HarbourVest",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "canada pension plan investment board",
+         "domain": "cppib.com",
+         "amount": null
+        },
+        {
+         "name": "redalpine",
+         "domain": "redalpine.com",
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Debt intelligence platform, AI",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "grow its AI capabilities, expand its proprietary dataset and continue its growth in the US",
+       "source_sentence": "AI-powered debt intelligence platform 9fin has been crowned a unicorn following a new $170m (£128.8m) Series C investment.",
+       "published_at": "2026-03-31T13:00:24",
+       "coverage_count": 4,
+       "article_ids": [
+        "69cc5ded1e1adbe011dafcaa",
+        "69d11126749d97354443ba7d",
+        "69d1115644cbe22144533e6f",
+        "69e854375cfa3e5ba5e8b374"
+       ],
+       "article_id": "69d11126749d97354443ba7d"
+      },
+      {
+       "id": "23770f5c920e1dcc",
+       "company_name": "wefox",
+       "domain": "wefox.com",
+       "round_type": null,
+       "amount_usd": 163080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 151000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Searchlight Capital Partners’ credit fund (Searchlight Opportunities Fund II)",
+         "domain": null,
+         "amount": 75000000.0
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Expand market positions in Austria, the Netherlands and Switzerland; develop MGA and smart insurance distribution businesses internationally.",
+       "source_sentence": "Berlin-based wefox, an insurtech unicorn, has secured €151M funding, which includes €76M raised mainly from existing investors and €75M from refinancing a credit facility with Searchlight Capital Partners’ credit fund, Searchlight Opportunities Fund II.",
+       "published_at": "2025-07-07T09:00:08",
+       "coverage_count": 6,
+       "article_ids": [
+        "6898b01bab03b1b156e038cc",
+        "6988e44094d3f481f3db7301",
+        "698a24411953fdcb20df700c",
+        "698f95a48d29a990b6ff5d84",
+        "6991cd4a40184cd7086560af",
+        "69c9cd82fe85228ad69b2180"
+       ],
+       "article_id": "6988e44094d3f481f3db7301"
+      },
+      {
+       "id": "645ebddeacafb4c0",
+       "company_name": "preply",
+       "domain": "preply.com",
+       "round_type": "Series D",
+       "amount_usd": 162000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1296000000.0,
+       "currency": "EUR",
+       "amount": 150000000.0,
+       "valuation": 1200000000.0,
+       "investors": [],
+       "sector": "Language learning platform",
+       "country": "Spain",
+       "city": "Barcelona",
+       "use_of_funds": null,
+       "source_sentence": "Language learning platform Preply raised €150M in Series D funding at a €1.2B valuation, achieving unicorn status after 14 years.",
+       "published_at": "2026-01-26T06:40:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd0c9b1d0b3f0860f01a53"
+       ],
+       "article_id": "69bd0c9b1d0b3f0860f01a53"
+      },
+      {
+       "id": "f70d08e36a10eede",
+       "company_name": "imprint",
+       "domain": "imprint.co",
+       "round_type": "Series D",
+       "amount_usd": 162000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "hedosophia",
+         "domain": "hedosophia.com",
+         "amount": null
+        },
+        {
+         "name": "Spice Capital",
+         "domain": "spicecapital.xyz",
+         "amount": null
+        },
+        {
+         "name": "timeless",
+         "domain": "timeless.space",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Accelerate growth and product expansion, including expanding beyond credit into debit, secured cards, and flexible financing, and leveraging AI for greater automation.",
+       "source_sentence": "In a round led by Khosla Ventures, and with participation from Thrive Capital, Ribbit Capital, Kleiner Perkins, Hedosophia, Spice Capital and Timeless, Imprint becomes just the latest fintech to hit unicorn status with its Series D raise of €150m.",
+       "published_at": "2025-12-18T08:48:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986b1e854148f65ea335299"
+       ],
+       "article_id": "6986b1e854148f65ea335299"
+      },
+      {
+       "id": "897e1144f6e2a7a2",
+       "company_name": "1komma5°",
+       "domain": "1komma5grad.com",
+       "round_type": "Series A extension",
+       "amount_usd": 162000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sabanci Climate Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hamilton lane",
+         "domain": "hamiltonlane.com",
+         "amount": null
+        },
+        {
+         "name": "calstrs",
+         "domain": "calstrs.com",
+         "amount": null
+        },
+        {
+         "name": "G2VP",
+         "domain": "g2vp.com",
+         "amount": null
+        },
+        {
+         "name": "porsche ventures",
+         "domain": "porsche.ventures",
+         "amount": null
+        },
+        {
+         "name": "eurazeo",
+         "domain": "eurazeo.com",
+         "amount": null
+        },
+        {
+         "name": "b2venture",
+         "domain": "b2venture.vc",
+         "amount": null
+        },
+        {
+         "name": "ecapital",
+         "domain": "ecapital.com",
+         "amount": null
+        },
+        {
+         "name": "2150vc",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Norrsken",
+         "domain": "norrsken.se",
+         "amount": null
+        },
+        {
+         "name": "Blue Elephant Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Haniel family office",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Schürfeld family office",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jan Klatten",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "ClimateTech / Energy Management",
+       "country": "Germany",
+       "city": "Hamburg",
+       "use_of_funds": "accelerate organic growth and scale Heartbeat AI, their energy management software and virtual power plant",
+       "source_sentence": "Hamburg-based 1KOMMA5°, a home electrification startup and ClimateTech unicorn, has extended its €150 million pre-IPO funding round initially closed in December 2024 to accelerate organic growth and scale Heartbeat AI, their energy management software and virtual power plant (VPP). The extension brings Sabanci Climate Ventures, the ClimateTech investment arm of Sabanci Group, on board as a new shareholder. Existing investors include Hamilton Lane, CalSTRS, G2VP, Porsche Ventures, Eurazeo, b2venture, eCapital, 2150vc, Norrsken, Blue Elephant Ventures, the Haniel and Schürfeld family offices, and Jan Klatten.",
+       "published_at": "2025-07-31T09:58:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "699297b9a035766b6b63351a"
+       ],
+       "article_id": "699297b9a035766b6b63351a"
+      },
+      {
+       "id": "bf33cdd9cd900dd5",
+       "company_name": "flatpay",
+       "domain": "flatpay.com",
+       "round_type": "Funding round",
+       "amount_usd": 156600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 145000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dawn capital",
+         "domain": "dawncapital.com",
+         "amount": null
+        },
+        {
+         "name": "avp",
+         "domain": "avp-vt.de",
+         "amount": null
+        },
+        {
+         "name": "Smash Capital",
+         "domain": "smashcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Denmark",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Last month, Flatpay attained unicorn status with €145 million in new funding. The investment came from investors including Dawn Capital, AVP, and Smash Capital.",
+       "published_at": "2025-12-26T08:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f10889ca02490ec1a012f"
+       ],
+       "article_id": "698f10889ca02490ec1a012f"
+      },
+      {
+       "id": "e56d5cb0bc7c6c9c",
+       "company_name": "allica bank",
+       "domain": "allica.bank",
+       "round_type": "Series D",
+       "amount_usd": 155000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1200000000.0,
+       "currency": "USD",
+       "amount": 155000000.0,
+       "valuation": 1200000000.0,
+       "investors": [
+        {
+         "name": "ventura capital",
+         "domain": "vcapital.ae",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "enhance fintech offerings, expand solutions, strengthen market position",
+       "source_sentence": "The challenger bank is said to have netted $155m (£111m) in a Series D fundraise, which will take the firm’s valuation to $1.2bn and over the billion pound mark to declare unicorn status.",
+       "published_at": "2026-02-24T16:11:26",
+       "coverage_count": 11,
+       "article_ids": [
+        "69bc7dc2b34e503b1de08d3f",
+        "69bc7e0258389c352a08c86d",
+        "69bc7f110ad23ae1114f7661",
+        "69bc7f1ddfa7512de38705a7",
+        "69bc7f3aa7b1648247b6fbf5",
+        "69bcecdc1f3c78812b1bb9a8",
+        "69c9c90eeff444794ed820a0",
+        "69c9ca43288a36c0c7badbc1",
+        "69ca380ba7556301c716c155",
+        "69e854375cfa3e5ba5e8b374",
+        "69e8df629baafc7356db0add"
+       ],
+       "article_id": "69bc7f3aa7b1648247b6fbf5"
+      },
+      {
+       "id": "b3fd8aed44ffd504",
+       "company_name": "Alpaca Bags",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "drive capital",
+         "domain": "drivecapital.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Alpaga bags, a brokerage company that has developed an API to help businesses trade options more easily, reached unicorn status in January after its $150m Series D raise.",
+       "published_at": "2026-02-03T09:01:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd117b1d0b3f0860f02ff1"
+       ],
+       "article_id": "69bd117b1d0b3f0860f02ff1"
+      },
+      {
+       "id": "8a019ba6852b1efc",
+       "company_name": "allica bank",
+       "domain": "allica.bank",
+       "round_type": "Series D",
+       "amount_usd": 146050000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 115000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "digital banking",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Allica Bank, a digital bank for small and medium-sized businesses, has raised £115 million in Series D funding, reaching unicorn status in the UK.",
+       "published_at": "2026-02-28T05:40:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9da5cb68ade25f5c9146b"
+       ],
+       "article_id": "69c9da5cb68ade25f5c9146b"
+      },
+      {
+       "id": "dfb286dcb7f278fa",
+       "company_name": "allica bank",
+       "domain": "allica.bank",
+       "round_type": "Series D",
+       "amount_usd": 146050000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 115000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ventura capital",
+         "domain": "vcapital.ae",
+         "amount": null
+        },
+        {
+         "name": "glg",
+         "domain": "glginsights.com",
+         "amount": null
+        },
+        {
+         "name": "Sona AM",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "blue owl",
+         "domain": "blueowl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "Support continued SME lending growth, expand technology stack, leverage AI for smarter lending, and enter markets beyond the UK.",
+       "source_sentence": "Allica Bank, a digital bank for small and medium-sized businesses, has raised £115 million in Series D funding, reaching unicorn status in the UK.",
+       "published_at": "2026-02-27T06:01:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7dd6c95888b56536af10"
+       ],
+       "article_id": "69bc7dd6c95888b56536af10"
+      },
+      {
+       "id": "a2d73383ab03091f",
+       "company_name": "frore systems",
+       "domain": "froresystems.com",
+       "round_type": "Series D",
+       "amount_usd": 143000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1640000000.0,
+       "currency": "USD",
+       "amount": 143000000.0,
+       "valuation": 1640000000.0,
+       "investors": [
+        {
+         "name": "MVP Ventures",
+         "domain": "mvp-vc.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "top tier",
+         "domain": "toptiersportsmed.com",
+         "amount": null
+        },
+        {
+         "name": "mayfield fund",
+         "domain": "mayfield.com",
+         "amount": null
+        },
+        {
+         "name": "clear ventures",
+         "domain": "clear.ventures",
+         "amount": null
+        },
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure, thermal management",
+       "country": "United States",
+       "city": "San Jose",
+       "use_of_funds": "Accelerate global manufacturing expansion, scale production operations in Taiwan, and drive deployment of Frore’s core platforms (LiquidJet, LiquidJet Nexus, and AirJet) across hyperscale data centers and edge environments",
+       "source_sentence": "Frore Systems closed a $143 million Series D funding round, achieving unicorn status with a $1.64 billion valuation and bringing total capital raised to $340 million.",
+       "published_at": "2026-03-17T08:00:16",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a4979a4470e12400b454",
+        "69cbd1a72e41fb6223042801"
+       ],
+       "article_id": "69c3a4979a4470e12400b454"
+      },
+      {
+       "id": "ddc2b409d79b8ab0",
+       "company_name": "Na",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 140000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1200000000.0,
+       "currency": "USD",
+       "amount": 140000000.0,
+       "valuation": 1200000000.0,
+       "investors": [],
+       "sector": "cybersecurity",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "A cybersecurity company became Israel’s latest unicorn after raising $140 million in a Series D funding round, which valued the company at $1.2 billion.",
+       "published_at": "2026-01-23T14:22:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd08ad4ae0326ef5e7265"
+       ],
+       "article_id": "69cbd08ad4ae0326ef5e7265"
+      },
+      {
+       "id": "bbe9ee378e3180b7",
+       "company_name": "defense unicorns",
+       "domain": "defenseunicorns.com",
+       "round_type": "Series B",
+       "amount_usd": 136000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 136000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "ansa capital",
+         "domain": "ansa.co",
+         "amount": null
+        },
+        {
+         "name": "Gen. David Petraeus",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "secure software for U.S. military networks",
+       "country": "USA",
+       "city": "Colorado",
+       "use_of_funds": "expand product development for the Unicorn Delivery Service (UDS), UDS Registry, and UDS Army, further scaling secure software deployment across U.S. and allied military systems.",
+       "source_sentence": "Defense Unicorns has closed a $136 million Series B round, vaulting its valuation above $1 billion.",
+       "published_at": "2026-01-13T23:38:07",
+       "coverage_count": 3,
+       "article_ids": [
+        "6988ee8a94d3f481f3dc3bcb",
+        "69894ed094d3f481f3e34aec",
+        "698f96758d29a990b6ff6d70"
+       ],
+       "article_id": "6988ee8a94d3f481f3dc3bcb"
+      },
+      {
+       "id": "fd89976ff857e778",
+       "company_name": "FuriosaAI",
+       "domain": null,
+       "round_type": "Series C bridge",
+       "amount_usd": 127500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "KRW",
+       "amount": 170000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Korea Development Bank",
+         "domain": "kdb.co.kr",
+         "amount": 30000000000.0
+        },
+        {
+         "name": "industrial bank of korea",
+         "domain": "ibk.co.kr",
+         "amount": 10000000000.0
+        },
+        {
+         "name": "ibk securities",
+         "domain": "ibks.com",
+         "amount": 6000000000.0
+        },
+        {
+         "name": "IBK Venture Capital",
+         "domain": null,
+         "amount": 5000000000.0
+        },
+        {
+         "name": "Eugene-Growth Finance Fund",
+         "domain": null,
+         "amount": 11600000000.0
+        },
+        {
+         "name": "keystone partners",
+         "domain": "keystonepartners.com",
+         "amount": 20000000000.0
+        },
+        {
+         "name": "PI Partners",
+         "domain": null,
+         "amount": 13200000000.0
+        },
+        {
+         "name": "daesung startup investment",
+         "domain": "daesungpe.com",
+         "amount": 5000000000.0
+        },
+        {
+         "name": "kakao investment",
+         "domain": "kakaoinvestment.com",
+         "amount": 3000000000.0
+        }
+       ],
+       "sector": "AI semiconductor",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": "Mass production of its AI processor RNGD and accelerate next‑gen semiconductor development.",
+       "source_sentence": "South Korean AI chip startup FuriosaAI has entered the ranks of the country’s unicorn companies following its ₩170 billion KRW (~$130 million USD) Series C bridge funding round.",
+       "published_at": "2025-08-04T02:14:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "698887d6868e86f9ec6c7dd6"
+       ],
+       "article_id": "698887d6868e86f9ec6c7dd6"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 140,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDgtMDQgMDI6MTQ6NTAiLCJrIjoiMTgyNjkyOTk4NzA1Njg4MDIxNjgiLCJhIjoxMjc1MDAwMDAuMH0",
+     "totals": {
+      "deals": 140,
+      "deals_with_amount": 134,
+      "deals_without_amount": 6,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 15324406000.0,
+      "median_amount_usd": 75000000.0,
+      "largest_amount_usd": 2400000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.144,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.147
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "q": "unicorn",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "q": "unicorn"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "b91b686280567906",
+       "company_name": "Snabbit",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 56000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 56000000.0,
+       "valuation": 350000000.0,
+       "investors": [
+        {
+         "name": "bertelsmann india investments",
+         "domain": "biifund.com",
+         "amount": null
+        },
+        {
+         "name": "Susquehanna Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mirae Asset Venture Investments' Unicorn Growth Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "fj labs",
+         "domain": "fjlabs.com",
+         "amount": null
+        }
+       ],
+       "sector": "home services",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Expanding into new cities while deepening density and leadership in existing markets; Scaling additional high-frequency service categories with proven product-market fit; Strengthening the balance sheet to ensure long-term runway and disciplined capital allocation.",
+       "source_sentence": "Snabbit, India's fastest-growing quick home services platform, today announced a $56 million Series D round co-led by Bertelsmann India Investments, which is doubling down on its investment in the company, along with Susquehanna Venture Capital and Mirae Asset Venture Investments' Unicorn Growth Fund.",
+       "published_at": "2026-04-28T00:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "69f0e27b45272de32e8befb2",
+        "69f0e57d836d28f995cb8e4c",
+        "69f1ca42a5706a322e10bf25",
+        "69f1cc0c399b489398e0c078",
+        "69f22d81c6105443aa5d96e3",
+        "6a040e37220687a966adcc60"
+       ],
+       "article_id": "69f1ca42a5706a322e10bf25"
+      },
+      {
+       "id": "b491b65669532306",
+       "company_name": "Deep Algorithm",
+       "domain": null,
+       "round_type": "Pre-Series A",
+       "amount_usd": 19200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "unicorn india ventures",
+         "domain": "unicornivc.com",
+         "amount": null
+        },
+        {
+         "name": "sb investment",
+         "domain": "sbinvestment.co.kr",
+         "amount": null
+        }
+       ],
+       "sector": "AI / Cybersecurity",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand into international markets, accelerate product development, and strengthen the platform with next-generation features to address evolving identity and AI-driven security needs.",
+       "source_sentence": "Deep Algorithm Raises ₹16 Cr in Pre-Series A Round AI-driven cybersecurity and digital trust company, Deep Algorithms, has raised ₹16 crore in a pre-Series A round led by Unicorn India Ventures, with participation from SB Investment (UAE) and prominent angel investors.",
+       "published_at": "2026-04-23T13:17:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea2c3f8266d9339995a51a"
+       ],
+       "article_id": "69ea2c3f8266d9339995a51a"
+      },
+      {
+       "id": "7b224b7d1577ea69",
+       "company_name": "Deep Algorithm",
+       "domain": null,
+       "round_type": "Pre-Series A",
+       "amount_usd": 19200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "unicorn india ventures",
+         "domain": "unicornivc.com",
+         "amount": null
+        },
+        {
+         "name": "sb investment",
+         "domain": "sbinvestment.co.kr",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-driven cybersecurity",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand into international markets, accelerate product development, and strengthen platform with next-generation features to address evolving identity and AI-driven security needs",
+       "source_sentence": "Deep Algorithm, an AI-driven cybersecurity and digital trust company, has raised ₹16 crore in a pre-Series A round led by Unicorn India Ventures, with participation from SB Investment (UAE) and prominent angel investors.",
+       "published_at": "2026-04-23T13:17:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea1e9f8266d9339994a050"
+       ],
+       "article_id": "69ea1e9f8266d9339994a050"
+      },
+      {
+       "id": "29c4c7a0216cb55c",
+       "company_name": "M",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 12240000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1020000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": 463000000.0
+        },
+        {
+         "name": "blume ventures",
+         "domain": "blume.vc",
+         "amount": 371000000.0
+        },
+        {
+         "name": "cred",
+         "domain": "cred.club",
+         "amount": 186000000.0
+        }
+       ],
+       "sector": "Consumer AI / Home Tech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Kabeer Biswas' M Raises ₹102 Cr from Peak XV, Blume, and CRED Former Dunzo cofounder Kabeer Biswas' new startup, M, is looking to net ₹102 Cr (about $11 Mn) from Peak XV Partners, Blume Ventures, and fintech unicorn CRED in its seed funding round.",
+       "published_at": "2026-04-23T13:17:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea2c3f8266d9339995a51a"
+       ],
+       "article_id": "69ea2c3f8266d9339995a51a"
+      },
+      {
+       "id": "e7d9770c931dde2f",
+       "company_name": "M",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 12240000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1020000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "blume ventures",
+         "domain": "blume.vc",
+         "amount": null
+        },
+        {
+         "name": "cred",
+         "domain": "cred.club",
+         "amount": null
+        }
+       ],
+       "sector": "AI concierge",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "product development and scaling of M's AI capabilities",
+       "source_sentence": "Former Dunzo cofounder Kabeer Biswas’ new startup, M, is looking to net ₹102 Cr (about $11 Mn) from Peak XV Partners, Blume Ventures and fintech unicorn CRED in its seed funding round.",
+       "published_at": "2026-04-22T13:34:20",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e8e01f7bb1410d4cd26efd",
+        "69e9919ad47fc028321148de",
+        "69ea1ec173206aa299ebe8a7",
+        "69ea2c3f8266d9339995a4db",
+        "69ea4bf8b0517977015d373c"
+       ],
+       "article_id": "69e8e01f7bb1410d4cd26efd"
+      },
+      {
+       "id": "a43a62a50a283400",
+       "company_name": "nava",
+       "domain": "navacenter.com",
+       "round_type": "Seed",
+       "amount_usd": 9600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rtp global",
+         "domain": "rtp.vc",
+         "amount": null
+        },
+        {
+         "name": "unicorn india ventures",
+         "domain": "unicornivc.com",
+         "amount": null
+        },
+        {
+         "name": "Blume Founders Fund",
+         "domain": "blumefoundersfund.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "climber capital",
+         "domain": "climbercapital.in",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": null,
+       "source_sentence": "Nava previously raised a $9.6 million seed round led by RTP Global, with participation from Unicorn India Ventures, Blume Founders Fund, and Climber Capital.",
+       "published_at": "2026-04-09T06:41:37",
+       "coverage_count": 12,
+       "article_ids": [
+        "69e2de40bd7b10565a45904d",
+        "69e2dfae3aab8d96aa3fd5cf",
+        "69e2e18cff2654c79d7431eb",
+        "69e328d6f5980ff47337de0b",
+        "69e33fb63016d2ccedad4a38",
+        "69e3457744a7294eaac859fa",
+        "69e34a96522789a582645a53",
+        "69e6f5e6043b81af20d38f5e",
+        "69e6f78b043b81af20d4a661",
+        "69e84b649baafc73566dd7b7",
+        "69e84dc49baafc73566f69ce",
+        "69e875c87bb1410d4c803d53"
+       ],
+       "article_id": "69e84dc49baafc73566f69ce"
+      },
+      {
+       "id": "b5329124d42a19f1",
+       "company_name": "kreditbee",
+       "domain": "kreditbee.in",
+       "round_type": "Series E",
+       "amount_usd": 280000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 280000000.0,
+       "valuation": 1500000000.0,
+       "investors": [],
+       "sector": "Fintech / Digital lending",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "product expansion, strengthen lending infrastructure, support future IPO",
+       "source_sentence": "KreditBee has raised $280 million in a Series E round, achieving a valuation of $1.5 billion and entering the unicorn club.",
+       "published_at": "2026-04-08T12:46:08",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e2d15d3aab8d96aa3ca110",
+        "69e2e10d601121844c4424f1",
+        "69e852b55cfa3e5ba5e7c9b6"
+       ],
+       "article_id": "69e2e10d601121844c4424f1"
+      },
+      {
+       "id": "195a2088c8c7e59c",
+       "company_name": "kreditbee",
+       "domain": "kreditbee.in",
+       "round_type": "Series E",
+       "amount_usd": 280000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 280000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "motilal oswal alternates",
+         "domain": "motilaloswalalt.com",
+         "amount": null
+        },
+        {
+         "name": "Hornbill Capital",
+         "domain": "hornbillcap.com",
+         "amount": null
+        },
+        {
+         "name": "MUFG-backed Dragon Funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "WhiteOak Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "a.p. moller holding",
+         "domain": "apmoller.com",
+         "amount": null
+        },
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "expand its lending portfolio, strengthen its presence in existing markets and boost its tech stack, scale its AI capabilities",
+       "source_sentence": "Lending tech startup KreditBee has raised $280 Mn (about ₹2,595 Cr) in its Series E round at a post-money valuation of $1.5 Bn, becoming the second startup to enter the unicorn club in 2026 after Juspay.",
+       "published_at": "2026-04-08T03:54:57",
+       "coverage_count": 18,
+       "article_ids": [
+        "69e2c37c3aab8d96aa398234",
+        "69e2c563d754bf662cde93f0",
+        "69e2c87cbd7b10565a409dd3",
+        "69e2c932bd7b10565a40c91b",
+        "69e2cd08277be6ed2da48679",
+        "69e2cd29ff2654c79d6f8553",
+        "69e2cd6e9b322e6b3ea6f261",
+        "69e3546ea60998cfe6bed0fc",
+        "69e356b0e868bb52b25b3697",
+        "69e3c6e5ece2a2fb4f25a221",
+        "69e3c6e5ece2a2fb4f25a287",
+        "69e3c81ab8c34c1508f365ff",
+        "69e3c8d12fd96a624634445c",
+        "69e4efdcd5e7fc42ee05bc9b",
+        "69e4f6d09d0e7fe469a11a8c",
+        "69e84a747bb1410d4c654d9a",
+        "69e84d867bb1410d4c672148",
+        "69f1c9ab399b489398dfd043"
+       ],
+       "article_id": "69e2c87cbd7b10565a409dd3"
+      },
+      {
+       "id": "e680ce6faa871af3",
+       "company_name": "helsing",
+       "domain": "helsing.ai",
+       "round_type": null,
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "saab",
+         "domain": "saab.com",
+         "amount": null
+        }
+       ],
+       "sector": "Defence Technology",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "AI systems for national security",
+       "source_sentence": "Helsing has raised over €1.4 billion, achieving unicorn-plus status with a valuation around €3-4 billion in recent rounds backed by General Catalyst, Accel and Saab.",
+       "published_at": "2026-04-06T11:16:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bc0e9b322e6b3ea30c3d"
+       ],
+       "article_id": "69e2bc0e9b322e6b3ea30c3d"
+      },
+      {
+       "id": "59131667d9a08975",
+       "company_name": "SatLeo Labs",
+       "domain": "satleolabs.com",
+       "round_type": null,
+       "amount_usd": 5500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "unicorn india ventures",
+         "domain": "unicornivc.com",
+         "amount": 2200000.0
+        },
+        {
+         "name": "merak ventures",
+         "domain": "merakventures.com",
+         "amount": null
+        },
+        {
+         "name": "Java Capital",
+         "domain": "javacapital.co.za",
+         "amount": null
+        },
+        {
+         "name": "IIMA-CIIE",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Manish Gandhi",
+         "domain": "https://www.linkedin.com/in/manish-gandhi-8a628b8",
+         "amount": null
+        }
+       ],
+       "sector": "Space-tech, Satellite, AI",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Improve thermal satellite mission and develop AI satellite analytics platform",
+       "source_sentence": "SatLeo Labs, a growing space-tech startup, has raised a total of $5.5 million in funding. The latest $2.2 million came from Unicorn India Ventures. Existing investors like Merak Ventures, Java Capital, IIMA-CIIE, and Manish Gandhi also joined the round.",
+       "published_at": "2026-04-06T11:06:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e842f77bb1410d4c60938e"
+       ],
+       "article_id": "69e842f77bb1410d4c60938e"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 57,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDYgMTE6MDY6MjYiLCJrIjoiNjQxODQ5ODUyOTIyMTcwODE0OSJ9",
+     "totals": {
+      "deals": 57,
+      "deals_with_amount": 57,
+      "deals_without_amount": 0,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 5656260000.0,
+      "median_amount_usd": 60000000.0,
+      "largest_amount_usd": 1512000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.136,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.146
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,2057 @@
+{
+ "slug": "hrtech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:22Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "hrtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "hrtech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 35,
+      "deals_with_amount": 32,
+      "deals_without_amount": 3,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 806164041.0,
+      "median_amount_usd": 7250000.0,
+      "largest_amount_usd": 450000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 5,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 32576000.0,
+       "median_amount_usd": 4978000.0,
+       "largest_amount_usd": 21000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 63000000.0,
+       "median_amount_usd": 20000000.0,
+       "largest_amount_usd": 23000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 28060000.0,
+       "median_amount_usd": 3780000.0,
+       "largest_amount_usd": 24000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 40000000.0,
+       "median_amount_usd": 40000000.0,
+       "largest_amount_usd": 40000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5450000.0,
+       "median_amount_usd": 1080000.0,
+       "largest_amount_usd": 4320000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 95040000.0,
+       "median_amount_usd": 28080000.0,
+       "largest_amount_usd": 54000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 4,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 19692000.0,
+       "median_amount_usd": 2214000.0,
+       "largest_amount_usd": 15120000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 27500000.0,
+       "median_amount_usd": 27500000.0,
+       "largest_amount_usd": 27500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 32910000.0,
+       "median_amount_usd": 5500000.0,
+       "largest_amount_usd": 17500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 8126041.0,
+       "median_amount_usd": 8126041.0,
+       "largest_amount_usd": 8126041.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 453810000.0,
+       "median_amount_usd": 226905000.0,
+       "largest_amount_usd": 450000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.04,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.043
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "hrtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "hrtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "96e7a46a91bf7235",
+       "company_name": "Vensure Employer Solutions",
+       "domain": null,
+       "round_type": "Term loan",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Stone Point Capital Markets",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expansion strategy",
+       "source_sentence": "Vensure Employer Solutions received $450 million in support for its expansion strategy through a delayed draw term loan from Stone Point Capital Markets.",
+       "published_at": "2026-04-02T17:18:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27ed8a85be7e5065537b2"
+       ],
+       "article_id": "69e27ed8a85be7e5065537b2"
+      },
+      {
+       "id": "09386a07bad0e10f",
+       "company_name": "sesame",
+       "domain": "sesamecare.com",
+       "round_type": "growth",
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "BBVA Spark",
+         "domain": "bbvaspark.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Spain",
+       "city": "Valencia",
+       "use_of_funds": "acquire new clients and deepen innovation across its AI-powered platform",
+       "source_sentence": "Sesame, a Spanish HRTech startup specializing in AI-driven talent management, has secured up to €50 million in growth funding through a new financing model created with BBVA Spark.",
+       "published_at": "2025-10-29T07:55:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cee539ca02490ecf175b6"
+       ],
+       "article_id": "698cee539ca02490ecf175b6"
+      },
+      {
+       "id": "2618299518371c33",
+       "company_name": "sesame",
+       "domain": "sesamecare.com",
+       "round_type": "growth funding",
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "BBVA Spark",
+         "domain": "bbvaspark.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Spain",
+       "city": "Valencia",
+       "use_of_funds": "acquiring new clients and investing in continued innovation on its AI-driven platform",
+       "source_sentence": "Sesame, a Spanish HRTech startup focused on AI-powered talent management solutions, has secured up to €50 million in growth funding through a unique financial instrument developed in partnership with BBVA Spark.",
+       "published_at": "2025-10-28T12:18:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "6900d66feb6842729fd8388c"
+       ],
+       "article_id": "6900d66feb6842729fd8388c"
+      },
+      {
+       "id": "17c9f0f321772aa7",
+       "company_name": "darwinbox",
+       "domain": "darwinbox.com",
+       "round_type": null,
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Teachers' Venture Growth (TVG)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "India",
+       "city": "Hyderabad",
+       "use_of_funds": "fuel its Agentic AI-led innovation and global expansion plans, especially in the North American market",
+       "source_sentence": "HRTech startup Darwinbox has raised US$40 million (approx. Rs 350 crore) from Teachers’ Venture Growth (TVG), which is the late‑stage venture and growth investment arm of Ontario Teachers’ Pension Plan.",
+       "published_at": "2025-08-14T08:59:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "68ab3631bfdb4fb66398d500",
+        "68ab3ff82e28036801cad6c0",
+        "68f71b7eb5f4abc34a2cf1c6",
+        "6988b96894d3f481f3d83c62",
+        "69c441960b314eaa72e4bf59",
+        "69e284617f3a572cf4a530a6",
+        "69e2851e9b322e6b3e982190"
+       ],
+       "article_id": "68ab3631bfdb4fb66398d500"
+      },
+      {
+       "id": "762e86a76b3c03ca",
+       "company_name": "maki",
+       "domain": "makimaki.nl",
+       "round_type": null,
+       "amount_usd": 28080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 26000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "develop conversational AI agents for HR workflows",
+       "source_sentence": "In France, Maki attracted €26 million to develop conversational AI agents for HR workflows.",
+       "published_at": "2025-10-28T12:18:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "6900d66feb6842729fd8388c"
+       ],
+       "article_id": "6900d66feb6842729fd8388c"
+      },
+      {
+       "id": "327d7e2e24335adc",
+       "company_name": "ben",
+       "domain": "benfleetservices.com",
+       "round_type": "Series B",
+       "amount_usd": 27500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 27500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mercia Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atomico",
+         "domain": "atomico.com",
+         "amount": null
+        },
+        {
+         "name": "cherry ventures",
+         "domain": "cherry.vc",
+         "amount": null
+        },
+        {
+         "name": "dn capital",
+         "domain": "dncapital.com",
+         "amount": null
+        },
+        {
+         "name": "seedcamp",
+         "domain": "seedcamp.com",
+         "amount": null
+        },
+        {
+         "name": "QuantumLight Capital",
+         "domain": "quantumlightcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "Ben plans to use the fresh capital to power its expansion into new markets, strengthen its push against older, less flexible platforms, expand deeper into North America, and invest further in product development, especially AI features.",
+       "source_sentence": "Today, Ben has secured $27.5 million in Series B funding, led by Mercia Ventures with participation from long‑time backers Atomico, Cherry Ventures, DN Capital, and Seedcamp. The round also brings in new support from QuantumLight Capital, the investment firm founded by Revolut’s Nik Storonsky.",
+       "published_at": "2025-12-17T07:49:29",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a7f5127162d16e0ade60",
+        "698cbfe69ca02490ecee25a2"
+       ],
+       "article_id": "698cbfe69ca02490ecee25a2"
+      },
+      {
+       "id": "0a36d7287da3ea6e",
+       "company_name": "wingspan",
+       "domain": "wingspan.app",
+       "round_type": "Series B",
+       "amount_usd": 24000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 24000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Touring Capital",
+         "domain": "touringcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "long journey ventures",
+         "domain": "longjourney.vc",
+         "amount": null
+        },
+        {
+         "name": "Distributed Ventures",
+         "domain": "distributedvc.com",
+         "amount": null
+        },
+        {
+         "name": "company ventures",
+         "domain": "company.co",
+         "amount": null
+        },
+        {
+         "name": "186 ventures",
+         "domain": "186ventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Funding will accelerate Wingspan Embed’s adoption across HCM and HR platforms while expanding the company’s footprint in key verticals.",
+       "source_sentence": "Wingspan, the first modern payroll platform purpose‑built for contractor management, announced that it has raised $24 million in Series B funding led by Touring Capital, bringing its total capital raised to $54 million.",
+       "published_at": "2025-07-30T08:38:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9a2da5af1b12a767e413d"
+       ],
+       "article_id": "68d9a2da5af1b12a767e413d"
+      },
+      {
+       "id": "954e5d629fb7b93d",
+       "company_name": "workwhile",
+       "domain": "workwhilejobs.com",
+       "round_type": "Series B",
+       "amount_usd": 23000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 23000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rethink impact",
+         "domain": "rethinkimpact.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "reach capital",
+         "domain": "reachcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Citi Impact Fund",
+         "domain": "citigroup.com/citi/about/citizenship/citi-impact-fund.html",
+         "amount": null
+        },
+        {
+         "name": "gingerbread capital",
+         "domain": "gingerbreadcap.com",
+         "amount": null
+        },
+        {
+         "name": "Illumen Capital",
+         "domain": "illumencapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Accelerate WorkWhile’s growth",
+       "source_sentence": "WorkWhile, the innovative AI-powered labor platform that matches businesses with reliable hourly workers, announced that it has raised $23 million in Series B funding amid strong growth.",
+       "published_at": "2025-06-16T13:49:47",
+       "coverage_count": 3,
+       "article_ids": [
+        "6898cd9d2f01d48cd3047f0d",
+        "68ab402a2e28036801d2d9b9",
+        "698e19fa8d29a990b6e2f5b8"
+       ],
+       "article_id": "6898cd9d2f01d48cd3047f0d"
+      },
+      {
+       "id": "f88251640c1eb675",
+       "company_name": "origin",
+       "domain": "originww.com",
+       "round_type": "Series A",
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "felix capital",
+         "domain": "felixcap.com",
+         "amount": null
+        },
+        {
+         "name": "acadian ventures",
+         "domain": "acadianventures.com",
+         "amount": null
+        },
+        {
+         "name": "notion capital",
+         "domain": "notion.vc",
+         "amount": null
+        },
+        {
+         "name": "Tudor Havriliuc",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Paul Daugherty",
+         "domain": "http://www.linkedin.com/pub/paul-daugherty/14/14/221",
+         "amount": null
+        },
+        {
+         "name": "Jacqui Canney",
+         "domain": "https://www.linkedin.com/in/jacquicanney/",
+         "amount": null
+        },
+        {
+         "name": "Laura Modiano",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "Expand internationally across the U.S. and Europe, and further develop Origin and its AI engine, Cuido, enhancing its global benefits intelligence capabilities.",
+       "source_sentence": "Origin, a London, UK-based AI-powered global benefits intelligence platform, has raised $21 million in Series A funding.",
+       "published_at": "2025-05-19T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988f80e94d3f481f3dceb57"
+       ],
+       "article_id": "6988f80e94d3f481f3dceb57"
+      },
+      {
+       "id": "2ba78fe0594ecbb6",
+       "company_name": "paraform",
+       "domain": "paraform.com",
+       "round_type": "Series A",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "A*",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Liquid 2",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "co-founders of Canva, Instacart, YouTube, and xAI",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Shyam Sankar",
+         "domain": "https://www.linkedin.com/in/shyamsankar",
+         "amount": null
+        },
+        {
+         "name": "Harley Finklestein",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mark Pincus",
+         "domain": "https://www.linkedin.com/in/markpincus",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "scale platform, deepen product development, grow recruiter community",
+       "source_sentence": "Paraform, the hiring marketplace built for elite recruiters, today announced its $20 million in Series A funding led by Felicis, with participation from A*, BOND, DST Global, Liquid 2, and notable angels including the co-founders of Canva, Instacart, YouTube, and xAI along with Shyam Sankar, Harley Finklestein, Mark Pincus, and others.",
+       "published_at": "2025-06-24T08:04:39",
+       "coverage_count": 3,
+       "article_ids": [
+        "6898ce0d2f01d48cd30d410a",
+        "698ff8059ca02490ec2b14cb",
+        "69cbd209e6465b4d5652264a"
+       ],
+       "article_id": "6898ce0d2f01d48cd30d410a"
+      },
+      {
+       "id": "c572d61ad326f851",
+       "company_name": "zorro",
+       "domain": "myzorro.co",
+       "round_type": "Series A",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "entrée capital",
+         "domain": "entreecap.com",
+         "amount": null
+        },
+        {
+         "name": "10d",
+         "domain": "10d.vc",
+         "amount": null
+        },
+        {
+         "name": "pitango",
+         "domain": "pitango.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "The new capital will fuel the Company’s continued growth, including scaling operations to support increased enrollments, investing in people and processes to support ongoing customer satisfaction and expanding its technology to elevate the ICHRA experience for brokers, employers and employees. It will also accelerate the advancement of Zorro’s AI-powered platform, reinforcing its leadership position as the first fully integrated solution that goes beyond coverage selection to include seamless payment and enrollment integrations, ancillary benefits and financial planning tools—ultimately empowering individuals to manage healthcare and insurance spending across their lifetime.",
+       "source_sentence": "Zorro (the “Company”), a next-generation benefits administration platform using advanced technology and big data to transform how America’s workers plan, pay and save for healthcare, announced that it has secured $20 million in a Series A round led by Entrée Capital, with participation from existing investors 10D and Pitango.",
+       "published_at": "2025-06-12T02:21:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "6898b02dab03b1b156e318f6",
+        "698d4b488d29a990b6d3b53c"
+       ],
+       "article_id": "6898b02dab03b1b156e318f6"
+      },
+      {
+       "id": "9533bbe56b0e29be",
+       "company_name": "comp",
+       "domain": "compareemcasa.com.br",
+       "round_type": "Series A",
+       "amount_usd": 17500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "kaszek",
+         "domain": "kaszek.com",
+         "amount": null
+        },
+        {
+         "name": "canary",
+         "domain": "canary.com.br",
+         "amount": null
+        },
+        {
+         "name": "abstract ventures",
+         "domain": "abstractvc.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        }
+       ],
+       "sector": "HRtech",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "Comp will use the funds to grow its team, improve the platform, and open a US office.",
+       "source_sentence": "The Brazilian HRtech raised $17.5 million in a Series A round led by Khosla Ventures, marking the firm’s first investment in Brazil. Kaszek, Canary, Abstract Ventures, and Endeavor Catalyst also participated.",
+       "published_at": "2026-02-27T09:30:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9cb3ffe85228ad69b114b"
+       ],
+       "article_id": "69c9cb3ffe85228ad69b114b"
+      },
+      {
+       "id": "61a09342447f8a3b",
+       "company_name": "shakers",
+       "domain": "shakersworks.com",
+       "round_type": null,
+       "amount_usd": 15120000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "HRTech",
+       "country": "Spain",
+       "city": null,
+       "use_of_funds": "scale its freelance-talent platform",
+       "source_sentence": "Shakers raising €14 million to scale its freelance-talent platform",
+       "published_at": "2025-11-26T15:03:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "69313c04da7d14ae54f222bb"
+       ],
+       "article_id": "69313c04da7d14ae54f222bb"
+      },
+      {
+       "id": "5013faff0368408f",
+       "company_name": "ordio",
+       "domain": "ordio.com",
+       "round_type": null,
+       "amount_usd": 12960000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Germany’s Ordio added €12 million for payroll automation.",
+       "published_at": "2025-10-28T12:18:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "6900d66feb6842729fd8388c"
+       ],
+       "article_id": "6900d66feb6842729fd8388c"
+      },
+      {
+       "id": "a0dfab44c9dea13a",
+       "company_name": "novaworks",
+       "domain": "novaworks.com",
+       "round_type": "Seed",
+       "amount_usd": 8126041.0,
+       "amount_flag": null,
+       "valuation_usd": 4631240.0,
+       "currency": "USD",
+       "amount": 8126041.0,
+       "valuation": 4631240.0,
+       "investors": [
+        {
+         "name": "Stalwart Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "servicenow",
+         "domain": "servicenow.com",
+         "amount": null
+        },
+        {
+         "name": "Bell Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "United States",
+       "city": "Los Gatos",
+       "use_of_funds": null,
+       "source_sentence": "Novaworks has raised $8M in funding from Stalwart Ventures.",
+       "published_at": "2026-03-31T11:53:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84b095cfa3e5ba5e359ab"
+       ],
+       "article_id": "69e84b095cfa3e5ba5e359ab"
+      },
+      {
+       "id": "5ffda5da10b073fe",
+       "company_name": "elly",
+       "domain": "elly.io",
+       "round_type": null,
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sorenson capital",
+         "domain": "sorensoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "atomic",
+         "domain": "atomic.com",
+         "amount": null
+        },
+        {
+         "name": "Next Wave Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Recruitment / HRTech",
+       "country": "USA",
+       "city": "Miami, FL",
+       "use_of_funds": null,
+       "source_sentence": "Elly announced the launch of its AI-native hiring platform along with $8 million in funding led by Sorenson Capital, with participation from Atomic and Next Wave Capital.",
+       "published_at": "2026-02-25T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e11ad06fdc0a21b24b2dae"
+       ],
+       "article_id": "69e11ad06fdc0a21b24b2dae"
+      },
+      {
+       "id": "207ab431e135792e",
+       "company_name": "briohr",
+       "domain": "briohr.com",
+       "round_type": "Series A",
+       "amount_usd": 6500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Openspace Ventures",
+         "domain": "openspace.vc",
+         "amount": null
+        },
+        {
+         "name": "Taiwania Hive Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Other regional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Malaysia",
+       "city": null,
+       "use_of_funds": "Transform HR processes and expand across Southeast Asia",
+       "source_sentence": "BrioHR, a Malaysian HR software startup, raised S$8.7 million (about $6.5 million) in a Series A round.",
+       "published_at": "2025-05-31T00:35:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c437a351a522a90830c470"
+       ],
+       "article_id": "68c437a351a522a90830c470"
+      },
+      {
+       "id": "b783e00b5b942ba8",
+       "company_name": "Pelgo",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 5500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Flybridge Capital Partners",
+         "domain": "flybridge.com",
+         "amount": null
+        },
+        {
+         "name": "eniac ventures",
+         "domain": "eniac.vc",
+         "amount": null
+        },
+        {
+         "name": "primary venture partners",
+         "domain": "primary.vc",
+         "amount": null
+        },
+        {
+         "name": "645 ventures",
+         "domain": "645ventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "hire additional engineers, accelerate market research and product development, advance path to market ahead of initial product launch in early February",
+       "source_sentence": "Pelgo, the AI-powered career transition agent, announced it has raised $5.5 million in seed funding. Led by Flybridge Capital Partners, with participation from ENIAC Ventures, Primary Venture Partners, and 645 Ventures, Pelgo will use the newly raised capital to hire additional engineers, accelerate the company’s market research and product development, and advance the path to market ahead of its initial product launch in early February.",
+       "published_at": "2026-02-11T08:06:04",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bafeddfa8c4837c9714d6e",
+        "69bbce5c0ad23ae1114d8831"
+       ],
+       "article_id": "69bafeddfa8c4837c9714d6e"
+      },
+      {
+       "id": "76ce93ef74f0548f",
+       "company_name": "kiku",
+       "domain": "kikusolutions.com",
+       "round_type": null,
+       "amount_usd": 4320000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "HRTech",
+       "country": "Denmark",
+       "city": null,
+       "use_of_funds": "address high-volume recruitment",
+       "source_sentence": "Danish startup Kiku secured €4 million to address high-volume recruitment.",
+       "published_at": "2025-09-29T14:37:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f706b7f80e5160742afbf9"
+       ],
+       "article_id": "68f706b7f80e5160742afbf9"
+      },
+      {
+       "id": "df0d220396873e9b",
+       "company_name": "inploi",
+       "domain": "inploi.com",
+       "round_type": null,
+       "amount_usd": 3810000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "yfm equity partners",
+         "domain": "yfmep.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "commercial and product growth, sales and marketing, team expansion, development of AI hiring assistants",
+       "source_sentence": "inploi has secured £3 million in funding from YFM Equity Partners to support its platform candidates use during the hiring process, which is designed for mid-sized employers in sectors with high-volume hiring.",
+       "published_at": "2026-04-21T08:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e87ff25cfa3e5ba5033e2e",
+        "69e995a3d47fc02832148f62",
+        "69e997d375f157062cacf566",
+        "69eaf61d18d3f7bd7a4bc963"
+       ],
+       "article_id": "69e997d375f157062cacf566"
+      },
+      {
+       "id": "2adfe3dad6f2a1dc",
+       "company_name": "toduba",
+       "domain": "toduba.it",
+       "round_type": null,
+       "amount_usd": 3780000.0000000005,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 3500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "P101 SGR",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "CDP Venture Capital Sgr",
+         "domain": "cdpventurecapital.it",
+         "amount": null
+        }
+       ],
+       "sector": "HRtech",
+       "country": "Italy",
+       "city": "Turin",
+       "use_of_funds": "expand Toduba’s product portfolio, strengthen its merchant network, accelerate both organic growth and M&A activity, introduce complementary services in the flexible benefits space, and kick off its international expansion.",
+       "source_sentence": "Italian HRtech startup Toduba has raised €3.5 million in a funding round led by P101 SGR.",
+       "published_at": "2025-07-21T04:33:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "6898b007ab03b1b156dc4f14",
+        "6898b020ab03b1b156e1775e",
+        "698eb2148d29a990b6ee7ffc",
+        "6996b7cbe0523bedf7b0ddb6"
+       ],
+       "article_id": "6898b020ab03b1b156e1775e"
+      },
+      {
+       "id": "bef97ac460f8cfd4",
+       "company_name": "Penzilla",
+       "domain": "penzilla.de",
+       "round_type": "Seed",
+       "amount_usd": 3456000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 3200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "acadian ventures",
+         "domain": "acadianventures.com",
+         "amount": null
+        },
+        {
+         "name": "delin ventures",
+         "domain": "delinventures.com",
+         "amount": null
+        },
+        {
+         "name": "robin capital",
+         "domain": "robincap.com",
+         "amount": null
+        },
+        {
+         "name": "motive ventures",
+         "domain": "motivepartners.com",
+         "amount": null
+        },
+        {
+         "name": "wenvest capital",
+         "domain": "wenvest.capital",
+         "amount": null
+        },
+        {
+         "name": "Diana zur Löwen",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "Further develop product, market development, strengthen position",
+       "source_sentence": "The Munich-based HRTech startup Penzilla has raised €3.2 million in its Seed round in order to further develop a software that simplifies the administration of company pension schemes.",
+       "published_at": "2025-05-14T06:07:49",
+       "coverage_count": 5,
+       "article_ids": [
+        "6898b01bab03b1b156e04caf",
+        "698e181d9ca02490ec07650a",
+        "698f078a9ca02490ec196707",
+        "6997602f70e6b99bb4c2d793",
+        "69bb3c6e680e91ccbda18cfc"
+       ],
+       "article_id": "6898b01bab03b1b156e04caf"
+      },
+      {
+       "id": "fb8e505c00f2239c",
+       "company_name": "Klaaryo",
+       "domain": "klaaryo.com",
+       "round_type": null,
+       "amount_usd": 2268000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "the techshop",
+         "domain": "techshop.capital",
+         "amount": null
+        },
+        {
+         "name": "frontech",
+         "domain": "frontech.com",
+         "amount": null
+        },
+        {
+         "name": "Ottavio Maria Campigli",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "partners from W Executive",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "founders of Hlpy",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Paolo Fois",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRtech, AI recruitment",
+       "country": "Italy",
+       "city": null,
+       "use_of_funds": "Expand team, accelerate development of platform, strengthen market position, consolidate presence in Italy and expand into other European countries",
+       "source_sentence": "Klaaryo, a start-up developing a conversational recruitment system based on WhatsApp and AI, has announced that it has closed an investment round worth over €2.1 million.",
+       "published_at": "2025-11-17T13:20:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "69973bb233af8f1ff8a3c78e"
+       ],
+       "article_id": "69973bb233af8f1ff8a3c78e"
+      },
+      {
+       "id": "925ec6dd4cffa913",
+       "company_name": "Global Work AI",
+       "domain": null,
+       "round_type": "follow-on",
+       "amount_usd": 2160000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Pre-Seed to Succeed",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Yellow Rocks",
+         "domain": "yellowrocks.vc",
+         "amount": null
+        },
+        {
+         "name": "Smart Partnership Capital",
+         "domain": "spc-vc.com",
+         "amount": null
+        },
+        {
+         "name": "altair capital",
+         "domain": "altair.vc",
+         "amount": null
+        },
+        {
+         "name": "tmt investments",
+         "domain": "tmtinvestments.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Poland",
+       "city": "Warsaw",
+       "use_of_funds": "Deepen core AI feature set, including personalized job recommendations, AI-generated CVs and cover letters, CV tailoring, Auto-Apply, and Auto-Fill browser plugin",
+       "source_sentence": "Global Work AI, the Warsaw-based AI-native job-search platform focused exclusively on job seekers, has secured a €2 million ($2.4 million) follow-on investment to deepen its core AI feature set, including personalised job recommendations, AI-generated CVs and cover letters, and its Auto-Fill browser plugin",
+       "published_at": "2025-11-26T15:03:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "69313c04da7d14ae54f222bb"
+       ],
+       "article_id": "69313c04da7d14ae54f222bb"
+      },
+      {
+       "id": "f00f55473f74eb5a",
+       "company_name": "clarait GmbH",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1620000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TGFS Technologiegründerfonds Sachsen",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "HR Angels Club",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "further develop the BRbase and HRflows platforms, expand the distribution organization and expand the market",
+       "source_sentence": "clarait GmbH, a B2B SaaS company specialized in digital committee work and HR processes, has collected over 1.5 million euros in a seed financing round.",
+       "published_at": "2026-02-17T13:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd91c00ad23ae11153323f"
+       ],
+       "article_id": "69bd91c00ad23ae11153323f"
+      },
+      {
+       "id": "b1faf1bb03f80ff1",
+       "company_name": "shyfter",
+       "domain": "shyfter.co",
+       "round_type": null,
+       "amount_usd": 1620000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mike Vandenhooft",
+         "domain": "https://www.linkedin.com/in/mikevandenhooft/",
+         "amount": null
+        },
+        {
+         "name": "welovefounders",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Belgium",
+       "city": null,
+       "use_of_funds": "grow across Europe and improve product with new features such as smart scheduling, better time-tracking, and stronger payroll connections",
+       "source_sentence": "Belgian HRTech company Shyfter, which focuses on SaaS workforce management, has raised €1.5 million to grow faster in France, Spain, and the Netherlands.",
+       "published_at": "2025-05-16T06:31:50",
+       "coverage_count": 2,
+       "article_ids": [
+        "6900d66feb6842729fd8388c",
+        "6996b93e0d0db262fa573df2"
+       ],
+       "article_id": "6996b93e0d0db262fa573df2"
+      },
+      {
+       "id": "0999a02e235a56b9",
+       "company_name": "shyfter",
+       "domain": "shyfter.co",
+       "round_type": "FA",
+       "amount_usd": 1620000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mike Vandenhooft",
+         "domain": "https://www.linkedin.com/in/mikevandenhooft/",
+         "amount": null
+        },
+        {
+         "name": "welovefounders",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Belgium",
+       "city": null,
+       "use_of_funds": "Accelerate international growth in France, Spain and the Netherlands; support development and boost R&D efforts with new features; speed up operations in France.",
+       "source_sentence": "The Belgian HRTech scale-up Shyfter, specialised in SaaS workforce management solutions, announced a €1.5 million fundraising round to accelerate its international growth in France, Spain and the Netherlands.",
+       "published_at": "2025-05-15T11:30:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9a9a3c149d2bca77edeed"
+       ],
+       "article_id": "68d9a9a3c149d2bca77edeed"
+      },
+      {
+       "id": "5d3538ce5fbb6bb9",
+       "company_name": "Talentiqa",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "purple ventures",
+         "domain": "purple-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "Venture to Future Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Czech Republic",
+       "city": "Prague",
+       "use_of_funds": "expand its AI-powered hiring assistant",
+       "source_sentence": "Talentiqa, a recruitment automation startup out of Prague, has secured €1 million in funding to expand its AI-powered hiring assistant.",
+       "published_at": "2025-09-29T14:37:48",
+       "coverage_count": 5,
+       "article_ids": [
+        "68f706b7f80e5160742afbf9",
+        "6900d66feb6842729fd8388c",
+        "69313c04da7d14ae54f222bb",
+        "698db3439ca02490ecffed41",
+        "698e66679ca02490ec0d3b29"
+       ],
+       "article_id": "68f706b7f80e5160742afbf9"
+      },
+      {
+       "id": "e04353b1762fbeb6",
+       "company_name": "atypical advantage",
+       "domain": "atypicaladvantage.in",
+       "round_type": "Seed",
+       "amount_usd": 290000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 290000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Next Bharat Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "India",
+       "city": "Jharkhand",
+       "use_of_funds": null,
+       "source_sentence": "Atypical Advantage Enterprise Applications > HRTech Jharkhand $290K Seed Next Bharat Ventures",
+       "published_at": "2026-02-17T05:41:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbd3d90ad23ae1114d9322"
+       ],
+       "article_id": "69bbd3d90ad23ae1114d9322"
+      },
+      {
+       "id": "ccba636c0220ef36",
+       "company_name": "Kipon",
+       "domain": null,
+       "round_type": "Undisclosed",
+       "amount_usd": 280000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "BRL",
+       "amount": 1400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "DOMO.VC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech / People Management",
+       "country": "Brazil",
+       "city": "São Paulo",
+       "use_of_funds": "The company will use the funding to develop its platform and expand operations into recruitment, employer branding, and talent pipeline management.",
+       "source_sentence": "The company will use the funding to develop its platform. With this investment, Kipon intends to expand its operations into areas such as recruitment, employer branding, and talent pipeline management.",
+       "published_at": "2025-07-17T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988def094d3f481f3db0e5c"
+       ],
+       "article_id": "6988def094d3f481f3db0e5c"
+      },
+      {
+       "id": "a391e53b482c7380",
+       "company_name": "EarlyJobs AI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 144000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": 12000000.0
+        }
+       ],
+       "sector": "HRTech, AI recruitment",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "This planned round follows EarlyJobs AI’s recent seed raise of ₹1.2 crore, funded entirely by one of its enterprise clients.",
+       "published_at": "2025-11-24T09:39:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcbc1a41af9e92ac977e6c"
+       ],
+       "article_id": "69bcbc1a41af9e92ac977e6c"
+      },
+      {
+       "id": "dcf4ab3324f59492",
+       "company_name": "Screenix AI",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 50000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Shukrullo Lutfullaev",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Isaev Akrom",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bekzod Juraev",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Uzbekistan",
+       "city": "Tashkent",
+       "use_of_funds": "Develop product, expand AI interview capabilities, add new integrations, increase system autonomy, strengthen sales, focus on Uzbekistan and neighboring markets, and conduct marketing campaigns.",
+       "source_sentence": "The startup recently raised $50,000 at the pre‑seed stage with an estimated $500,000 from the C‑Space Angels Club.",
+       "published_at": "2025-09-03T03:50:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d11961b214788b49e02ffe"
+       ],
+       "article_id": "69d11961b214788b49e02ffe"
+      },
+      {
+       "id": "e40a96e4595f367f",
+       "company_name": "Emerge Tech",
+       "domain": null,
+       "round_type": "early funding",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [],
+       "sector": "HRTech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "support AI-driven employer-branding tools",
+       "source_sentence": "early funding for Berlin’s Emerge Tech to support AI-driven employer-branding tools",
+       "published_at": "2025-11-26T15:03:56",
+       "coverage_count": 2,
+       "article_ids": [
+        "69313c04da7d14ae54f222bb",
+        "698d1a799ca02490ecf4ae86"
+       ],
+       "article_id": "69313c04da7d14ae54f222bb"
+      },
+      {
+       "id": "9b286bc1602fb96c",
+       "company_name": "Emerge Tech",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "High-Tech Gründerfonds (HTGF)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Heimatboost investment community",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "support product development and preparation for a Seed round",
+       "source_sentence": "German HRTech startup Emerge Tech has secured funding from High-Tech Gründerfonds (HTGF) and the Heimatboost investment community in order to support product development and preparation for a Seed round planned for late 2025.",
+       "published_at": "2025-05-19T11:59:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5b4ac9f14b99474c8524b"
+       ],
+       "article_id": "68c5b4ac9f14b99474c8524b"
+      },
+      {
+       "id": "8ae44df0ea50a87e",
+       "company_name": "Emerge Tech",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "High-Tech Gründerfonds (HTGF)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Heimatboost investment Berlin",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech, AI, Employer Branding",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "platform development and Seed round preparation",
+       "source_sentence": "HRtech startup Emerge Tech has received funding from High-Tech Gründerfonds (HTGF) and the Heimatboost investment Berlin.",
+       "published_at": "2025-05-19T00:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898b6c8ace6dc7b1fbc7e4f"
+       ],
+       "article_id": "6898b6c8ace6dc7b1fbc7e4f"
+      }
+     ],
+     "returned": 35,
+     "total_estimate": 35,
+     "next_cursor": null,
+     "totals": {
+      "deals": 35,
+      "deals_with_amount": 32,
+      "deals_without_amount": 3,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 806164041.0,
+      "median_amount_usd": 7250000.0,
+      "largest_amount_usd": 450000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.159,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.162
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "hrtech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "hrtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "df0d220396873e9b",
+       "company_name": "inploi",
+       "domain": "inploi.com",
+       "round_type": null,
+       "amount_usd": 3810000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "yfm equity partners",
+         "domain": "yfmep.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "commercial and product growth, sales and marketing, team expansion, development of AI hiring assistants",
+       "source_sentence": "inploi has secured £3 million in funding from YFM Equity Partners to support its platform candidates use during the hiring process, which is designed for mid-sized employers in sectors with high-volume hiring.",
+       "published_at": "2026-04-21T08:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e87ff25cfa3e5ba5033e2e",
+        "69e995a3d47fc02832148f62",
+        "69e997d375f157062cacf566",
+        "69eaf61d18d3f7bd7a4bc963"
+       ],
+       "article_id": "69e997d375f157062cacf566"
+      },
+      {
+       "id": "96e7a46a91bf7235",
+       "company_name": "Vensure Employer Solutions",
+       "domain": null,
+       "round_type": "Term loan",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Stone Point Capital Markets",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expansion strategy",
+       "source_sentence": "Vensure Employer Solutions received $450 million in support for its expansion strategy through a delayed draw term loan from Stone Point Capital Markets.",
+       "published_at": "2026-04-02T17:18:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27ed8a85be7e5065537b2"
+       ],
+       "article_id": "69e27ed8a85be7e5065537b2"
+      },
+      {
+       "id": "a0dfab44c9dea13a",
+       "company_name": "novaworks",
+       "domain": "novaworks.com",
+       "round_type": "Seed",
+       "amount_usd": 8126041.0,
+       "amount_flag": null,
+       "valuation_usd": 4631240.0,
+       "currency": "USD",
+       "amount": 8126041.0,
+       "valuation": 4631240.0,
+       "investors": [
+        {
+         "name": "Stalwart Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "servicenow",
+         "domain": "servicenow.com",
+         "amount": null
+        },
+        {
+         "name": "Bell Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "United States",
+       "city": "Los Gatos",
+       "use_of_funds": null,
+       "source_sentence": "Novaworks has raised $8M in funding from Stalwart Ventures.",
+       "published_at": "2026-03-31T11:53:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84b095cfa3e5ba5e359ab"
+       ],
+       "article_id": "69e84b095cfa3e5ba5e359ab"
+      },
+      {
+       "id": "9533bbe56b0e29be",
+       "company_name": "comp",
+       "domain": "compareemcasa.com.br",
+       "round_type": "Series A",
+       "amount_usd": 17500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "kaszek",
+         "domain": "kaszek.com",
+         "amount": null
+        },
+        {
+         "name": "canary",
+         "domain": "canary.com.br",
+         "amount": null
+        },
+        {
+         "name": "abstract ventures",
+         "domain": "abstractvc.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        }
+       ],
+       "sector": "HRtech",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "Comp will use the funds to grow its team, improve the platform, and open a US office.",
+       "source_sentence": "The Brazilian HRtech raised $17.5 million in a Series A round led by Khosla Ventures, marking the firm’s first investment in Brazil. Kaszek, Canary, Abstract Ventures, and Endeavor Catalyst also participated.",
+       "published_at": "2026-02-27T09:30:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9cb3ffe85228ad69b114b"
+       ],
+       "article_id": "69c9cb3ffe85228ad69b114b"
+      },
+      {
+       "id": "5ffda5da10b073fe",
+       "company_name": "elly",
+       "domain": "elly.io",
+       "round_type": null,
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sorenson capital",
+         "domain": "sorensoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "atomic",
+         "domain": "atomic.com",
+         "amount": null
+        },
+        {
+         "name": "Next Wave Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Recruitment / HRTech",
+       "country": "USA",
+       "city": "Miami, FL",
+       "use_of_funds": null,
+       "source_sentence": "Elly announced the launch of its AI-native hiring platform along with $8 million in funding led by Sorenson Capital, with participation from Atomic and Next Wave Capital.",
+       "published_at": "2026-02-25T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e11ad06fdc0a21b24b2dae"
+       ],
+       "article_id": "69e11ad06fdc0a21b24b2dae"
+      },
+      {
+       "id": "f00f55473f74eb5a",
+       "company_name": "clarait GmbH",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1620000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TGFS Technologiegründerfonds Sachsen",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "HR Angels Club",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "further develop the BRbase and HRflows platforms, expand the distribution organization and expand the market",
+       "source_sentence": "clarait GmbH, a B2B SaaS company specialized in digital committee work and HR processes, has collected over 1.5 million euros in a seed financing round.",
+       "published_at": "2026-02-17T13:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd91c00ad23ae11153323f"
+       ],
+       "article_id": "69bd91c00ad23ae11153323f"
+      },
+      {
+       "id": "e04353b1762fbeb6",
+       "company_name": "atypical advantage",
+       "domain": "atypicaladvantage.in",
+       "round_type": "Seed",
+       "amount_usd": 290000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 290000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Next Bharat Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": "India",
+       "city": "Jharkhand",
+       "use_of_funds": null,
+       "source_sentence": "Atypical Advantage Enterprise Applications > HRTech Jharkhand $290K Seed Next Bharat Ventures",
+       "published_at": "2026-02-17T05:41:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbd3d90ad23ae1114d9322"
+       ],
+       "article_id": "69bbd3d90ad23ae1114d9322"
+      },
+      {
+       "id": "b783e00b5b942ba8",
+       "company_name": "Pelgo",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 5500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Flybridge Capital Partners",
+         "domain": "flybridge.com",
+         "amount": null
+        },
+        {
+         "name": "eniac ventures",
+         "domain": "eniac.vc",
+         "amount": null
+        },
+        {
+         "name": "primary venture partners",
+         "domain": "primary.vc",
+         "amount": null
+        },
+        {
+         "name": "645 ventures",
+         "domain": "645ventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "HRTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "hire additional engineers, accelerate market research and product development, advance path to market ahead of initial product launch in early February",
+       "source_sentence": "Pelgo, the AI-powered career transition agent, announced it has raised $5.5 million in seed funding. Led by Flybridge Capital Partners, with participation from ENIAC Ventures, Primary Venture Partners, and 645 Ventures, Pelgo will use the newly raised capital to hire additional engineers, accelerate the company’s market research and product development, and advance the path to market ahead of its initial product launch in early February.",
+       "published_at": "2026-02-11T08:06:04",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bafeddfa8c4837c9714d6e",
+        "69bbce5c0ad23ae1114d8831"
+       ],
+       "article_id": "69bafeddfa8c4837c9714d6e"
+      }
+     ],
+     "returned": 8,
+     "total_estimate": 8,
+     "next_cursor": null,
+     "totals": {
+      "deals": 8,
+      "deals_with_amount": 8,
+      "deals_without_amount": 0,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 494846041.0,
+      "median_amount_usd": 6750000.0,
+      "largest_amount_usd": 450000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.037,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.04
+    }
+   }
+  }
+ ]
+}

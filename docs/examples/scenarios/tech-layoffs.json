@@ -1,0 +1,806 @@
+{
+ "slug": "tech-layoffs",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:24Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "layoffs"
+     ],
+     "q": "tech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "tech",
+      "match": "any",
+      "event_type": [
+       "layoffs"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "layoffs": 3
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 4,
+       "by_type": {
+        "layoffs": 4
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 6,
+       "by_type": {
+        "layoffs": 6
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 4,
+       "by_type": {
+        "layoffs": 4
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 6,
+       "by_type": {
+        "layoffs": 6
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "layoffs": 5
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 4,
+       "by_type": {
+        "layoffs": 4
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 4,
+       "by_type": {
+        "layoffs": 4
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "layoffs": 2
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "layoffs": 3
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "layoffs": 3
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "layoffs": 12
+       }
+      }
+     ],
+     "totals": {
+      "events": 56,
+      "articles": 55,
+      "companies": 36,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "layoffs": 56
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.054,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.057
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "layoffs"
+     ],
+     "q": "tech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "tech",
+      "event_type": [
+       "layoffs"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f9d4e0713680636eec5de8",
+       "headline": "Amazon Web Services (AWS) CEO Matt Garman has addressed the internal shifts within the tech giant, clarifying the strategy behind the recent Amazon layoffs that saw approximately 30,000 roles eliminated.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "aws.amazon.com",
+       "published_at": "2026-04-30T07:53:35",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69efab8b727212302c5f984f",
+       "headline": "Enterprise tech startup SuperOps has laid off around 60 employees as part of a restructuring exercise aimed at improving efficiency and accelerating its transition into an AI-first organisation. The layoffs, largely from its engineering team of nearly 100 employees, account for nearly 30% of the startup’s overall workforce.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "superops.com",
+       "published_at": "2026-04-24T13:39:45",
+       "url": "https://inc42.com/buzz/superops-lays-off-30-staff-in-ai-led-restructuring-push/",
+       "publisher": "inc42.com",
+       "title": "SuperOps Lays Off 30% Staff In AI-Led Restructuring Push"
+      },
+      {
+       "id": "69f1ca4b399b489398e02df0",
+       "headline": "Meanwhile, the layoff wave sweeping through Big Tech showed no signs of slowing, with Meta and Microsoft both announcing fresh cuts this week.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "microsoft.com",
+       "published_at": "2026-04-24T13:07:30",
+       "url": "https://www.indiatoday.in/technology/features/story/launched-this-week-jbl-bar-series-dyson-supersonic-travel-and-3-more-devices-to-check-out-2901139-2026-04-24",
+       "publisher": "indiatoday.in",
+       "title": "Launched This Week: JBL Bar series, Dyson Supersonic Travel and 3 more devices to check out"
+      },
+      {
+       "id": "69f1c8b61e3933a6dd8eaa95",
+       "headline": "Also on Thursday, US media reported that tech giant Microsoft was planning to offer voluntary early retirement buyouts for around 8.700 workers, or about 7% of its workforce.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "microsoft.com",
+       "published_at": "2026-04-24T07:19:29",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f0eb1bd32561089420f6da",
+       "headline": "Tech Mahindra’s headcount fell by 1,108.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "techmahindra.com",
+       "published_at": "2026-04-24T05:21:15",
+       "url": "https://www.outlookbusiness.com/corporate/ai-boom-job-bust-meta-microsoft-eye-23000-cuts-as-hiring-slows-across-tech",
+       "publisher": "outlookbusiness.com",
+       "title": "AI Boom, Job Bust: Meta, Microsoft Eye 23,000 Cuts as Hiring Slows Across Tech – Outlook Business"
+      },
+      {
+       "id": "69e34e77392cc5e9e8fae80e",
+       "headline": "The workforce at the Tech Center is shrinking from currently 1650 to 1000 engineers.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "opel.com",
+       "published_at": "2026-04-10T14:59:02",
+       "url": "https://de.finance.yahoo.com/nachrichten/kahlschlag-opel-diese-stellen-baut-145902996.html",
+       "publisher": "de.finance.yahoo.com",
+       "title": "Kahlschlag bei Opel: Diese Stellen baut Stellantis jetzt ab"
+      },
+      {
+       "id": "69e340c63016d2ccedad83e0",
+       "headline": "According to state records, the tech giant plans to cut around 700 jobs in California by the first of June.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "oracle.com",
+       "published_at": "2026-04-10T08:27:19",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9f067a088760d34c76b4a",
+       "headline": "April 7: Pendo cuts 10% of workforce Raleigh, N.C.-based tech startup Pendo, with a valuation of more than $1 billion, has laid off 90 of its 850 employees, according to Axios.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "pendo.io",
+       "published_at": "2026-04-09T19:38:15",
+       "url": "https://informationweek.com/it-staffing-careers/2026-tech-company-layoffs",
+       "publisher": "informationweek.com",
+       "title": "2026 tech company layoffs"
+      },
+      {
+       "id": "69e2e3b890d9a716b4cc0ff9",
+       "headline": "Tech Mahindra, which is working to turn around its fortune, has reported a reduction of over 3,500 employees in the past three quarters.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "techmahindra.com",
+       "published_at": "2026-04-09T06:26:40",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e2d9f6c1991f786cf444fe",
+       "headline": "On Tuesday, it was announced that some 700 workers at another Bay Area tech company, Oracle, would be out of work by June statewide.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "oracle.com",
+       "published_at": "2026-04-09T02:13:34",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e2e36c3aab8d96aa40abe8",
+       "headline": "On Tuesday, it was announced that some 700 workers at another Bay Area tech company, Oracle, would be out of work by June statewide. The statewide tally along with another nearly 500 firings in Seattle, is part of the software maker’s recently announced bloodbath that is reportedly in the thousands of jobs.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "oracle.com",
+       "published_at": "2026-04-09T02:06:38",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e28ba9ff2654c79d61dcc0",
+       "headline": "Meta Platforms has decided to slash almost 200 jobs in the Bay Area, marking the tech company’s most recent downsizing in the region, a state government filing shows.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "meta.com",
+       "published_at": "2026-04-02T23:01:34",
+       "url": "https://www.siliconvalley.com/2026/04/02/economy-jobs-tech-facebook-meta-layoff-work-ai-bay-area-sunnyvale/",
+       "publisher": "siliconvalley.com",
+       "title": "Meta to eliminate nearly 200 Bay Area jobs"
+      },
+      {
+       "id": "69e27eef9b322e6b3e96cae6",
+       "headline": "Mass layoffs are all the rage in the tech industry.This year alone, Amazon has cut 16,000 jobs, Jack Dorsey's fintech firm Block has slashed half its workforce, and the software company Atlassian has laid off 4,000 employees — about 10% of staff.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "atlassian.com",
+       "published_at": "2026-03-17T12:50:42",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69cc30a3cb088e024d258fa7",
+       "headline": "Meta Layoffs 2026: Mark Zuckerberg-Led Tech Giant Plans 20% Global Job Cuts Amid Mounting AI Infrastructure Costs.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "metavision.com",
+       "published_at": "2026-03-14T02:38:49",
+       "url": "https://www.latestly.com/technology/instagram-to-end-end-to-end-encryption-for-messages-starting-may-8-meta-to-allow-data-downloads-7353405.html",
+       "publisher": "latestly.com",
+       "title": "Instagram To End End-to-End Encryption for Messages Starting May 8; Meta To Allow Data Downloads | 📲 LatestLY"
+      },
+      {
+       "id": "69cb5c3786dd56efcc720488",
+       "headline": "Veteran creative marketplace Envato is set to shed up to 200 jobs – a third of its headcount – following a strategic review of the 20-year-old tech pioneer.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "envato.com",
+       "published_at": "2026-03-04T02:51:23",
+       "url": "https://www.startupdaily.net/advice/business-strategy/shutterstock-owned-envato-is-slashing-its-workforce/",
+       "publisher": "startupdaily.net",
+       "title": "Shutterstock-owned Envato is slashing its workforce"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 20,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMDQgMDI6NTE6MjMiLCJpIjoiNjljYjVjMzc4NmRkNTZlZmNjNzIwNDg4IiwiZG0iOiJlbnZhdG8uY29tIiwiZXQiOiJsYXlvZmZzIiwicm8iOiJwcmltYXJ5In0",
+     "by_type": {
+      "layoffs": 20
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.515,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 7 event(s)"
+     ],
+     "request_seconds": 4.517
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "layoffs"
+     ],
+     "q": "tech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "tech",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "layoffs"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 154,
+     "carrying": 154,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 50,
+       "share": 32.47
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 4,
+       "share": 2.6
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 81,
+       "share": 52.6
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 8,
+       "share": 5.19
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 0.65
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 10,
+       "share": 6.49
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 135,
+       "share": 87.66
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 19,
+       "share": 12.34
+      }
+     ],
+     "negative_to_positive_ratio": 7.105,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 9.59,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 29,
+       "negative": 26,
+       "neutral": 0,
+       "positive": 3,
+       "negative_share": 89.66,
+       "positive_share": 10.34,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 7,
+        "fair_neg": 0,
+        "slight_neg": 19,
+        "none": 0,
+        "slight_pos": 2,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 27,
+       "negative": 24,
+       "neutral": 0,
+       "positive": 3,
+       "negative_share": 88.89,
+       "positive_share": 11.11,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 4,
+        "fair_neg": 2,
+        "slight_neg": 18,
+        "none": 0,
+        "slight_pos": 2,
+        "fair_pos": 1,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 34,
+       "negative": 31,
+       "neutral": 0,
+       "positive": 3,
+       "negative_share": 91.18,
+       "positive_share": 8.82,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 14,
+        "fair_neg": 1,
+        "slight_neg": 16,
+        "none": 0,
+        "slight_pos": 3,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 64,
+       "negative": 54,
+       "neutral": 0,
+       "positive": 10,
+       "negative_share": 84.38,
+       "positive_share": 15.62,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 25,
+        "fair_neg": 1,
+        "slight_neg": 28,
+        "none": 0,
+        "slight_pos": 1,
+        "fair_pos": 0,
+        "very_pos": 9,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 3.15,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 3.153
+    }
+   }
+  }
+ ]
+}

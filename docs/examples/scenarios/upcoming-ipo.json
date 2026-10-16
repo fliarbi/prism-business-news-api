@@ -1,0 +1,806 @@
+{
+ "slug": "upcoming-ipo",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:47:45Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "ipo"
+     ],
+     "q": "upcoming",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "upcoming",
+      "match": "any",
+      "event_type": [
+       "ipo"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 6,
+       "by_type": {
+        "ipo": 6
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "ipo": 11
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 8,
+       "by_type": {
+        "ipo": 8
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "ipo": 12
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 17,
+       "by_type": {
+        "ipo": 17
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 1,
+       "by_type": {
+        "ipo": 1
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "ipo": 2
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "ipo": 3
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "ipo": 5
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "ipo": 3
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 10,
+       "by_type": {
+        "ipo": 10
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "ipo": 3
+       }
+      }
+     ],
+     "totals": {
+      "events": 81,
+      "articles": 79,
+      "companies": 68,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "ipo": 81
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.103,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.108
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "ipo"
+     ],
+     "q": "upcoming",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "upcoming",
+      "event_type": [
+       "ipo"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f0e1d5836d28f995cb4de2",
+       "headline": "Digital lending firm Kissht has pared its upcoming IPO, cutting the fresh issue to Rs 850 crore from Rs 1,000 crore and nearly halving the offer-for-sale, with shares on offer reduced to 4.4 million from 8.9 million earlier, according to its updated red herring prospectus (RHP). The issue, set to open for subscription on Thursday and close on May 5, has a price band of Rs 162-171 per equity share. At the upper end of the price band, the total size of the issue is about Rs 926 crore.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "kissht.com",
+       "published_at": "2026-04-27T13:47:34",
+       "url": "https://www.financialexpress.com/market/ipo-news-kissht-trims-ipo-size-to-raise-rs-850-crore-fresh-capital-4219787/",
+       "publisher": "financialexpress.com",
+       "title": "Kissht trims IPO size, to raise Rs 850 crore fresh capital"
+      },
+      {
+       "id": "69e8b5877bb1410d4caf9bfd",
+       "headline": "The upcoming IPO of Banque du Caire (BdC) seems to be undeterred by the US‑Iran conflict, with the April‑June window still in play amid strong pre‑IPO roadshow demand, Hany Genena, Head of Research at Al Ahly Pharos told Zawya.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "bdc.com.eg",
+       "published_at": "2026-04-13T04:36:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e28ba03aab8d96aa2e28b7",
+       "headline": "Gpixel (2633811D HK) is looking to raise US$380m in its upcoming Hong Kong IPO.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "gpixel.com",
+       "published_at": "2026-04-03T02:01:03",
+       "url": "https://www.smartkarma.com/home/daily-briefs/daily-brief-ecm-huaqin-h-share-listing-the-investment-case-and-more/",
+       "publisher": "smartkarma.com",
+       "title": "Daily Brief ECM: Huaqin H Share Listing: The Investment Case and more | Smartkarma"
+      },
+      {
+       "id": "69e28cdf601121844c322218",
+       "headline": "Cube Highways Trust (CUBEINVI IN) (CHT) plans to raise around US$538m in its upcoming Hong Kong IPO. The deal will be run by Kotak, HSBC, JM and HDFC.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "cubehighwaystrust.com",
+       "published_at": "2026-03-31T02:00:55",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e847005cfa3e5ba5e0e3e5",
+       "headline": "India's largest stock exchange, National Stock Exchange of India, has invited shareholders to tender their shares in its upcoming initial public offering",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "nseindia.com",
+       "published_at": "2026-03-30T08:14:13",
+       "url": "https://www.cnbctv18.com/market/nse-ipo-here-is-eligibility-criteria-for-existing-shareholders-to-tender-shares-drhp-unlisted-market-ws-el-19877632.htm",
+       "publisher": "cnbctv18.com",
+       "title": "NSE IPO: Here's the eligibility criteria for existing shareholders to tender shares - CNBC TV18"
+      },
+      {
+       "id": "69e28137a85be7e50655c45b",
+       "headline": "SmartMore Inc (1811514D CH) (SM) plans to raise around US$300m in its upcoming Hong Kong IPO. The deal will be run by CICC, DB and MS.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "smartmore.com",
+       "published_at": "2026-03-26T02:00:18",
+       "url": "https://www.smartkarma.com/home/daily-briefs/daily-brief-ecm-unitree-robotics-ipo-preview-path-to-market-leadership-and-the-next-wave-of-robotics-and-more/",
+       "publisher": "smartkarma.com",
+       "title": "Daily Brief ECM: Unitree Robotics IPO Preview: Path To Market Leadership and The Next Wave of Robotics and more | Smartkarma"
+      },
+      {
+       "id": "69e28137a85be7e50655c45b",
+       "headline": "COSMOPlat IOT Technology Ltd (1729890D CH) is looking to raise around US$500m in its upcoming Hong Kong IPO.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "cosmoplat.com",
+       "published_at": "2026-03-26T02:00:18",
+       "url": "https://www.smartkarma.com/home/daily-briefs/daily-brief-ecm-unitree-robotics-ipo-preview-path-to-market-leadership-and-the-next-wave-of-robotics-and-more/",
+       "publisher": "smartkarma.com",
+       "title": "Daily Brief ECM: Unitree Robotics IPO Preview: Path To Market Leadership and The Next Wave of Robotics and more | Smartkarma"
+      },
+      {
+       "id": "69cbd2b92c2570848d94c712",
+       "headline": "Our upcoming IPO is aimed at scaling our manufacturing capacity and strengthening our balance sheet to capture this accelerating demand.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "vividgroup.in",
+       "published_at": "2026-03-21T00:21:27",
+       "url": "https://globalprimenews.com/2026/03/21/vivid-electromech-limited-ipo-opens-on-25-march-2026-price-band-set-at-rs-528-555-per-share/",
+       "publisher": "globalprimenews.com",
+       "title": "Global Prime News - News On Click"
+      },
+      {
+       "id": "69cbd2042e41fb6223042f9d",
+       "headline": "Amir Chand Jagdish Kumar (Exports), a Haryana-based basmati rice exporter, has set the price band for its upcoming initial public offering (IPO) at Rs 201 to Rs 212 per share. The company is eyeing to raise Rs 440 crore through this fresh issue of equity shares.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "jaxexports.com",
+       "published_at": "2026-03-19T04:18:10",
+       "url": "https://www.businesstoday.in/markets/ipo-corner/story/amir-chand-jagdish-kumar-exports-ipo-opens-on-march-24-check-all-key-details-here-521311-2026-03-19",
+       "publisher": "businesstoday.in",
+       "title": "Amir Chand Jagdish Kumar (Exports) IPO opens on March 24: Check all key details here - BusinessToday"
+      },
+      {
+       "id": "69c4408970dad9fab963bada",
+       "headline": "The National Stock Exchange (NSE) is looking at a valuation of Rs 6-7 lakh crore ($65 billion to $75 billion) for its upcoming initial public offering (IPO).",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "nseindia.com",
+       "published_at": "2026-03-17T12:22:18",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e29f1bff2654c79d656a66",
+       "headline": "Delton Technology is looking to raise up to US$420m in its upcoming Hong Kong IPO.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "delton-technology.de",
+       "published_at": "2026-03-12T05:34:43",
+       "url": "https://www.smartkarma.com/insights/aequitas-delton-technology-a-h-listing-wide-a-h-premium-and-cheaper-than-international-peers",
+       "publisher": "smartkarma.com",
+       "title": "Aequitas: Delton Technology A/H Listing -  Wide A/H Premium and Cheaper than International Peers - Nicholas Tan"
+      },
+      {
+       "id": "69cba9872c2570848d923631",
+       "headline": "As per the DRHP, the upcoming IPO of the company includes a new issue of equity shares totaling up to ₹1,500 crore, along with an offer for sale (OFS) of as much as 13.6 crore equity shares from the selling shareholders.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "moneyview.nl",
+       "published_at": "2026-03-04T07:16:18",
+       "url": "https://www.livemint.com/market/ipo/upcoming-ipo-moneyview-files-draft-papers-with-sebi-to-raise-rs-1-500-crore-via-primary-market-11772606871888.html",
+       "publisher": "livemint.com",
+       "title": "Upcoming IPO: Moneyview files draft papers with SEBI to raise  ₹1,500 crore via primary market | Stock Market News"
+      },
+      {
+       "id": "69ca902d275db7b7712d1061",
+       "headline": "Rajputana Stainless Limited has fixed the price band of Rs 116 to Rs 122 per equity share (face value Rs 10 each) for its upcoming initial public offering.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "rajputanastainless.com",
+       "published_at": "2026-03-02T09:09:17",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e283b49b322e6b3e97db16",
+       "headline": "Shiprocket (1087190D IN) is looking to raise about US$253m in its upcoming India IPO.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "shiprocket.in",
+       "published_at": "2026-02-22T09:01:18",
+       "url": "https://www.smartkarma.com/home/weekly-top-ten/equity-capital-markets/weekly-top-ten-equity-capital-markets-feb-22-2026/",
+       "publisher": "smartkarma.com",
+       "title": "Weekly Top Ten Equity Capital Markets - Feb 22, 2026 | Smartkarma"
+      },
+      {
+       "id": "69c998470fe98f3340bf1156",
+       "headline": "Omnitech Engineering, a manufacturer of precision-engineed components, on Friday fixed a price band of Rs 216–227 per share for its upcoming Rs 583 crore Initial Public Offering (IPO).",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "omnitech-engineering.com",
+       "published_at": "2026-02-20T09:19:04",
+       "url": "https://www.indiatvnews.com/business/markets/omnitech-engineering-ipo-date-size-price-listing-date-on-nse-bse-omnitech-engineering-gmp-today-2026-02-20-1031021",
+       "publisher": "indiatvnews.com",
+       "title": "Omnitech Engineering IPO: Subscription to begin on February 25, check price band, GMP and other details"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 21,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDItMjAgMDk6MTk6MDQiLCJpIjoiNjljOTk4NDcwZmU5OGYzMzQwYmYxMTU2IiwiZG0iOiJvbW5pdGVjaC1lbmdpbmVlcmluZy5jb20iLCJldCI6ImlwbyIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "ipo": 21
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.511,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 4 event(s)"
+     ],
+     "request_seconds": 4.514
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "ipo"
+     ],
+     "q": "upcoming",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "upcoming",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "ipo"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 38,
+     "carrying": 38,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 3,
+       "share": 7.89
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 15,
+       "share": 39.47
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 2.63
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 19,
+       "share": 50.0
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 3,
+       "share": 7.89
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 35,
+       "share": 92.11
+      }
+     ],
+     "negative_to_positive_ratio": 0.086,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.12,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 12,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 11,
+       "negative_share": 8.33,
+       "positive_share": 91.67,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 4,
+        "fair_pos": 0,
+        "very_pos": 7,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 4,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 4,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 2,
+        "fair_pos": 1,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 15,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 14,
+       "negative_share": 6.67,
+       "positive_share": 93.33,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 5,
+        "fair_pos": 0,
+        "very_pos": 9,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 7,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 6,
+       "negative_share": 14.29,
+       "positive_share": 85.71,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 4,
+        "fair_pos": 0,
+        "very_pos": 2,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.781,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.826
+    }
+   }
+  }
+ ]
+}

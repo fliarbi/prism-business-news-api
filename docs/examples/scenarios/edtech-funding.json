@@ -1,0 +1,2249 @@
+{
+ "slug": "edtech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:18Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "edtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "edtech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 160,
+      "deals_with_amount": 146,
+      "deals_without_amount": 14,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 2206239000.0,
+      "median_amount_usd": 3890000.0,
+      "largest_amount_usd": 741000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 5,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 33195000.0,
+       "median_amount_usd": 7560000.0,
+       "largest_amount_usd": 25000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 22,
+       "deals_with_amount": 22,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 152760000.0,
+       "median_amount_usd": 100000.0,
+       "largest_amount_usd": 48600000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 9,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 53781800.0,
+       "median_amount_usd": 2510000.0,
+       "largest_amount_usd": 19080000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 11,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 47736000.0,
+       "median_amount_usd": 3381000.0,
+       "largest_amount_usd": 10044000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 18,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 980930000.0,
+       "median_amount_usd": 10765000.0,
+       "largest_amount_usd": 741000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 36400000.0,
+       "median_amount_usd": 6000000.0,
+       "largest_amount_usd": 16000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 13,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 408214000.0,
+       "median_amount_usd": 6480000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 12,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 111674400.0,
+       "median_amount_usd": 5000000.0,
+       "largest_amount_usd": 47982000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 16,
+       "deals_with_amount": 14,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 254484800.0,
+       "median_amount_usd": 8000000.0,
+       "largest_amount_usd": 137160000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 14,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 89682000.0,
+       "median_amount_usd": 2500000.0,
+       "largest_amount_usd": 32400000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 12,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 65710000.0,
+       "median_amount_usd": 2430000.0,
+       "largest_amount_usd": 30000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 30455000.0,
+       "median_amount_usd": 1350000.0,
+       "largest_amount_usd": 22000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.25,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.283
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "edtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "edtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "281764eac833bd69",
+       "company_name": "eruditus",
+       "domain": "eruditus.com",
+       "round_type": "Equity",
+       "amount_usd": 741000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 741000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "prosus",
+         "domain": "prosus.com",
+         "amount": null
+        },
+        {
+         "name": "TPG Rise Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "gsv ventures",
+         "domain": "gsv.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Eruditus, which has raised a total of $741 million in equity funding from 27 investors including Prosus, TPG Rise Fund, Peak XV Partners and GSV Ventures, was last valued at $3.2 billion.",
+       "published_at": "2025-09-11T14:05:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0e4d322a1ae9da22b1e96"
+       ],
+       "article_id": "68d0e4d322a1ae9da22b1e96"
+      },
+      {
+       "id": "da07d4be24209cba",
+       "company_name": "aakash educational services",
+       "domain": "aakash.ac.in",
+       "round_type": "Debt-to-Equity Conversion",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Ranjan Pai’s family office",
+         "domain": null,
+         "amount": 300000000.0
+        }
+       ],
+       "sector": "EdTech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "His family office acquired a 39.6% stake after converting a $300 million debt investment into equity in early 2024.",
+       "published_at": "2025-11-13T14:31:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "693196394bc82ccb0df211a9"
+       ],
+       "article_id": "693196394bc82ccb0df211a9"
+      },
+      {
+       "id": "50a6febc3bce42d7",
+       "company_name": "eruditus",
+       "domain": "eruditus.com",
+       "round_type": "Refinancing",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Edtech / Executive education",
+       "country": "IN",
+       "city": null,
+       "use_of_funds": "Liquidity support to navigate the current funding winter in edtech while continuing to scale its executive education programs in partnership with top universities worldwide",
+       "source_sentence": "Global edtech player Eruditus has raised $150 million through refinancing as fresh funding dries up in the sector.",
+       "published_at": "2025-09-11T15:37:40",
+       "coverage_count": 2,
+       "article_ids": [
+        "698ce1428d29a990b6cbf0fe",
+        "698d2aea8d29a990b6d1569f"
+       ],
+       "article_id": "698d2aea8d29a990b6d1569f"
+      },
+      {
+       "id": "97aa7897e18897d5",
+       "company_name": "eruditus",
+       "domain": "eruditus.com",
+       "round_type": "refinancing",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mars Growth Capital",
+         "domain": "marsgrowth.com",
+         "amount": 100000000.0
+        },
+        {
+         "name": "hsbc",
+         "domain": "hsbc.com",
+         "amount": 50000000.0
+        }
+       ],
+       "sector": "Edtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "international expansion and operational scaling",
+       "source_sentence": "Softbank-backed Eruditus closes $150 mn refinancing to drive growth",
+       "published_at": "2025-09-11T00:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "68c58743d4958ca501887590",
+        "68c5a51d209ed6c919c70eeb",
+        "68c5d1bb209ed6c919cac218",
+        "68d0e4d322a1ae9da22b1e96",
+        "68d0ee08469a108b2b2bb09f",
+        "69e3c9f9549ba8a86630327e"
+       ],
+       "article_id": "68d0ee08469a108b2b2bb09f"
+      },
+      {
+       "id": "2f5fe67c31a063ab",
+       "company_name": "eruditus",
+       "domain": "eruditus.com",
+       "round_type": "sequential investment",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "the rise fund",
+         "domain": "therisefund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Eruditus last raised $150 million in September 2024 in an external funding round led by TPG’s impact investment platform The Rise Fund.",
+       "published_at": "2025-09-11T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0ee08469a108b2b2bb09f"
+       ],
+       "article_id": "68d0ee08469a108b2b2bb09f"
+      },
+      {
+       "id": "d3e4fd5376ebc9e6",
+       "company_name": "preply",
+       "domain": "preply.com",
+       "round_type": "Series D",
+       "amount_usd": 137160000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 127000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "westcap",
+         "domain": "westcapmgt.ca",
+         "amount": null
+        },
+        {
+         "name": "Índico Capital Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "Spain",
+       "city": "Barcelona",
+       "use_of_funds": "AI and data capabilities, expand product and engineering teams, accelerate global growth",
+       "source_sentence": "Preply, a US and Spain-based global language learning marketplace, has announced today the closing of its Series D round, securing €127 million ($150 million) in funding to advance its AI and data capabilities, expand its product and engineering teams, and accelerate its global growth.",
+       "published_at": "2026-01-21T12:51:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "69864ececa3bd326c77b4499"
+       ],
+       "article_id": "69864ececa3bd326c77b4499"
+      },
+      {
+       "id": "2acbed2701d9dbac",
+       "company_name": "knowunity",
+       "domain": "knowunity.com",
+       "round_type": "Series B",
+       "amount_usd": 48600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "xange",
+         "domain": "xange.vc",
+         "amount": null
+        },
+        {
+         "name": "portfolion",
+         "domain": "portfolion.hu",
+         "amount": null
+        },
+        {
+         "name": "isomer capital",
+         "domain": "isomercapital.com",
+         "amount": null
+        },
+        {
+         "name": "project a",
+         "domain": "project-a.com",
+         "amount": null
+        },
+        {
+         "name": "redalpine",
+         "domain": "redalpine.com",
+         "amount": null
+        },
+        {
+         "name": "educapital",
+         "domain": "educapital.fr",
+         "amount": null
+        },
+        {
+         "name": "Verena Pausder",
+         "domain": "https://www.linkedin.com/in/verenapausder",
+         "amount": null
+        },
+        {
+         "name": "Arthur Kosten",
+         "domain": "https://www.linkedin.com/in/arthurkosten/",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Further develop its AI learning companion, hire talent, and expand into new markets, particularly the U.S. and Asia, with the long-term goal of reaching 1 billion students worldwide.",
+       "source_sentence": "Knowunity, a Berlin-based learning platform built \"by and for students\", has raised €27 million in a Series B round to further develop its AI learning companion, hire talent, and expand into new markets, particularly the U.S. and Asia, with the long‑term goal of reaching 1 billion students worldwide.",
+       "published_at": "2025-06-13T07:52:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898b048ab03b1b156e4d7f7"
+       ],
+       "article_id": "6898b048ab03b1b156e4d7f7"
+      },
+      {
+       "id": "2009a54ea85733db",
+       "company_name": "PenPencil Edu Services",
+       "domain": null,
+       "round_type": "Equity",
+       "amount_usd": 47982000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 3998500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Physicswallah",
+         "domain": "physicswallah.live",
+         "amount": 3998500000.0
+        }
+       ],
+       "sector": "EdTech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "support corporate requirements and strategic growth initiatives",
+       "source_sentence": "According to a stock exchange filing, the edtech company’s board approved the following investments: Rs 399.85 crore in PenPencil Edu Services; Rs 20 crore in Finz Fintech; Rs 50 crore in Finz Finance, and up to $2 million in Knowledge Planet Holding Ltd.",
+       "published_at": "2025-12-09T05:56:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e88899ca02490ec0fe411"
+       ],
+       "article_id": "698e88899ca02490ec0fe411"
+      },
+      {
+       "id": "430cb1d0d095255f",
+       "company_name": "principia",
+       "domain": "principia.net",
+       "round_type": "Series A",
+       "amount_usd": 34000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 34000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor capital group",
+         "domain": "valorcapitalgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "Accelerate AI-powered academic management software and expand zero‑default tuition solution",
+       "source_sentence": "Principia, an edtech and fintech platform in Brazil, secured $34 million to accelerate its AI-powered academic management software and expand its zero-default tuition solution.",
+       "published_at": "2025-06-06T13:17:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989b90494d3f481f3eb2975"
+       ],
+       "article_id": "6989b90494d3f481f3eb2975"
+      },
+      {
+       "id": "5bb59b52e89cfbe8",
+       "company_name": "bcas",
+       "domain": "bcasapp.com",
+       "round_type": "debt",
+       "amount_usd": 32400000.000000004,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "myinvestor",
+         "domain": "myinvestor.es",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "Spain",
+       "city": "Madrid",
+       "use_of_funds": "expand operational capacity, introduce traditional instalment-based financing at affordable interest rates, and significantly increase the number of students who can access funding",
+       "source_sentence": "BCAS, a Madrid-based EdTech startup specialised in flexible education financing, today announced the closing of a new €30 million debt round, led exclusively by Spanish neobank MyInvestor.",
+       "published_at": "2026-02-04T08:20:34",
+       "coverage_count": 3,
+       "article_ids": [
+        "6983a396e71a535a9c15d0b4",
+        "6996b71a5fbe93703d5df5a0",
+        "69bc9d00834bfa2337fbd82d"
+       ],
+       "article_id": "6983a396e71a535a9c15d0b4"
+      },
+      {
+       "id": "fb4b509a68b90e7d",
+       "company_name": "busright",
+       "domain": "busright.com",
+       "round_type": "Venture",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "volition capital",
+         "domain": "volitioncapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "EDTECH",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "BusRight, a school bus routing, tracking, and safety platform for student transportation operations, has raised $30M in Venture funding led by Volition Capital.",
+       "published_at": "2026-03-18T13:27:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1ac779e2e2bac561a90"
+       ],
+       "article_id": "69cbd1ac779e2e2bac561a90"
+      },
+      {
+       "id": "38de71829040dc3b",
+       "company_name": "emversity",
+       "domain": "emversity.com",
+       "round_type": "Series A",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "deepen presence in healthcare and hospitality skilling programmes, expand into new sectors such as infrastructure-led engineering, procurement and construction (EPC) and manufacturing, and strengthen technology stack",
+       "source_sentence": "Edtech startup Emversity has raised $30 Mn (INR 271 Cr) in a Series A funding round led by Premji Invest, with participation from Lightspeed and Z47.",
+       "published_at": "2026-01-15T01:00:17",
+       "coverage_count": 2,
+       "article_ids": [
+        "698cc6d38d29a990b6ca0987",
+        "69e2c50490d9a716b4c50875"
+       ],
+       "article_id": "69e2c50490d9a716b4c50875"
+      },
+      {
+       "id": "e8e04c269863e43d",
+       "company_name": "emversity",
+       "domain": "emversity.com",
+       "round_type": null,
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "The company will deploy the capital to scale its presence to more than 200 campuses, introduce new skilling verticals focused on engineering, procurement and construction (EPC) and manufacturing, and tap global workforce demand for India-trained talent.",
+       "source_sentence": "Beyond Odds Technologies, parent of skill-based training and higher-education platform Emversity, has closed a $30-million (about Rs 271 crore) funding round led by Premji Invest.Existing investors Lightspeed and Z47, formerly known as Matrix Partners India, also participated in the largely primary round, where new shares accounted for 97% of the capital raised.",
+       "published_at": "2026-01-15T01:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "697c5eb07ac7aa8586c93e12",
+        "697d8a65606af942e3d66319",
+        "69871d64514cbd23b5c6d560"
+       ],
+       "article_id": "697c5eb07ac7aa8586c93e12"
+      },
+      {
+       "id": "86513cad0236ef51",
+       "company_name": "aakash educational services",
+       "domain": "aakash.ac.in",
+       "round_type": "Rights Issue",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 2500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Ranjan Pai’s family office",
+         "domain": null,
+         "amount": 2500000000.0
+        }
+       ],
+       "sector": "EdTech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Ranjan Pai’s family office, the largest shareholder in Aakash Educational Services Ltd (AESL), plans to invest about ₹250 crore in the ongoing ₹450-500 crore rights offer in tranches, depending on the response of other shareholders and the achievement of certain targets set for the company, three people familiar with the matter said.",
+       "published_at": "2025-11-13T14:31:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "693196394bc82ccb0df211a9"
+       ],
+       "article_id": "693196394bc82ccb0df211a9"
+      },
+      {
+       "id": "a4159439e723bdf1",
+       "company_name": "knowunity",
+       "domain": "knowunity.com",
+       "round_type": null,
+       "amount_usd": 29160000.000000004,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 27000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "AI-tutoring",
+       "source_sentence": "German peers Knowunity and EDURINO secured €27 million and €17 million respectively for AI-tutoring and playful early-learning tools.",
+       "published_at": "2025-11-05T15:56:57",
+       "coverage_count": 3,
+       "article_ids": [
+        "6931b8c4ba41cc79d4f20c7d",
+        "69864ececa3bd326c77b4499",
+        "6996b7aafeeb41363fa24925"
+       ],
+       "article_id": "6931b8c4ba41cc79d4f20c7d"
+      },
+      {
+       "id": "37c8fe69e3a61d25",
+       "company_name": "knowunity",
+       "domain": "knowunity.com",
+       "round_type": "Series B",
+       "amount_usd": 29160000.000000004,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 27000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "xange",
+         "domain": "xange.vc",
+         "amount": null
+        },
+        {
+         "name": "portfolion",
+         "domain": "portfolion.hu",
+         "amount": null
+        },
+        {
+         "name": "isomer capital",
+         "domain": "isomercapital.com",
+         "amount": null
+        },
+        {
+         "name": "project a ventures",
+         "domain": "project-a.com",
+         "amount": null
+        },
+        {
+         "name": "redalpine",
+         "domain": "redalpine.com",
+         "amount": null
+        },
+        {
+         "name": "educapital",
+         "domain": "educapital.fr",
+         "amount": null
+        },
+        {
+         "name": "Verena Pausder",
+         "domain": "https://www.linkedin.com/in/verenapausder",
+         "amount": null
+        },
+        {
+         "name": "Booking.com founder Arthur Kosten",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Enrich product and content, hire talent especially in engineering and AI, and expand into the United States and Asia.",
+       "source_sentence": "Knowunity has raised €27M in Series B funding round.",
+       "published_at": "2025-06-16T23:35:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d0f66874d3d5792a2c3ae0",
+        "68d100e465fd12d4142cd3b3"
+       ],
+       "article_id": "68d0f66874d3d5792a2c3ae0"
+      },
+      {
+       "id": "a2c182198f91c1fe",
+       "company_name": "ula",
+       "domain": "ulalaunch.com",
+       "round_type": "Series B",
+       "amount_usd": 28000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 28000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Growth Visions Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jordan Capital & Investment Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "foursan group",
+         "domain": "4san.com",
+         "amount": null
+        }
+       ],
+       "sector": "Edtech, AI education",
+       "country": "Saudi Arabia",
+       "city": null,
+       "use_of_funds": "scale presence in Saudi Arabia and introduce generative AI-backed digital education platform",
+       "source_sentence": "has raised $28 million in a Series B funding round led by Growth Visions Fund, with participation from Jordan Capital & Investment Fund and Foursan Group.",
+       "published_at": "2026-02-04T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfb1fb1d88cc4f6cad81ea"
+       ],
+       "article_id": "69dfb1fb1d88cc4f6cad81ea"
+      },
+      {
+       "id": "4afc7838e5062193",
+       "company_name": "seekho",
+       "domain": "seekho.ai",
+       "round_type": "Series B",
+       "amount_usd": 28000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 28000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goodwater capital",
+         "domain": "goodwatercap.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "build new experiences through new content formats and leverage AI-first solutions",
+       "source_sentence": "Short-form learning platform Seekho has raised $28 million in Series B funding led by Bessemer Venture Partners, with participation from Goodwater Capital and existing investors Lightspeed Venture Partners and Elevation Capital.",
+       "published_at": "2025-09-03T00:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d103f650268142442d15c5"
+       ],
+       "article_id": "68d103f650268142442d15c5"
+      },
+      {
+       "id": "8829c8b25d64e6aa",
+       "company_name": "seekho",
+       "domain": "seekho.ai",
+       "round_type": "Series B",
+       "amount_usd": 28000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 28000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "build new experiences through new content formats and to leverage AI-first solutions",
+       "source_sentence": "Venture Capital firm Bessemer Venture Partners has led a $28 million (around Rs 246 crore) Series B funding round in edtech startup Seekho.",
+       "published_at": "2025-09-03T00:00:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "68c167d96a78bf0c56577101",
+        "68c4376251a522a908268a7a",
+        "68c4376451a522a90826ca25",
+        "68c5846ea4534b9023882871",
+        "6989bc8f94d3f481f3eb6d6a",
+        "6996a7ea9376e7cbced84159",
+        "69bcc091a3b9608a9aee67a6"
+       ],
+       "article_id": "68c5846ea4534b9023882871"
+      },
+      {
+       "id": "3b09ae086ce83214",
+       "company_name": "attensi",
+       "domain": "attensi.com",
+       "round_type": "growth funding",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Ture Invest Partners",
+         "domain": null,
+         "amount": 25000000.0
+        }
+       ],
+       "sector": "edtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expansion in the U.S. and investment in AI-powered training tools.",
+       "source_sentence": "has raised $25 million in non-dilutive growth funding from Nordic lender Ture Invest Partners.",
+       "published_at": "2025-05-20T13:15:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e7d619ca02490ec0f0085"
+       ],
+       "article_id": "698e7d619ca02490ec0f0085"
+      },
+      {
+       "id": "1562b073fc5d1e91",
+       "company_name": "attensi",
+       "domain": "attensi.com",
+       "round_type": "non-dilutive growth funding",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Ture Invest Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "Norway",
+       "city": "Oslo",
+       "use_of_funds": "Invest in high-return growth opportunities and further bolster AI-powered solutions, particularly in the US market",
+       "source_sentence": "Attensi, an edtech providing game-based training and skills development, has raised $25 million in non-dilutive growth funding from Ture Invest Partners, a direct lender in the Nordic region.",
+       "published_at": "2025-05-20T06:56:48",
+       "coverage_count": 3,
+       "article_ids": [
+        "6898b01aab03b1b156dfd24b",
+        "68ab40e32e28036801ddc2e0",
+        "6988a9eea88ad7b9aae0e3c6"
+       ],
+       "article_id": "6898b01aab03b1b156dfd24b"
+      },
+      {
+       "id": "5d31d50104680e8c",
+       "company_name": "gizmo",
+       "domain": "gizmo-experience.com",
+       "round_type": "Series A",
+       "amount_usd": 22000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 22000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "shine capital",
+         "domain": "shine.vc",
+         "amount": null
+        },
+        {
+         "name": "ada ventures",
+         "domain": "adaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Seek Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "gsv",
+         "domain": "gsv.com",
+         "amount": null
+        },
+        {
+         "name": "nfx",
+         "domain": "nfx.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Expand its engineering and AI team to support growth in the US college market and accelerate product expansion to further serve students and deepen engagement across its global user base",
+       "source_sentence": "Gizmo, a London, UK-based provider of an AI-powered learning platform, raised $22M in Series A funding. The round was led by Shine Capital, with participation from Ada Ventures, Seek Investments, GSV, and NFX, who previously led their $3.5M seed round, and others.",
+       "published_at": "2026-04-15T13:09:58",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e852757bb1410d4c6a2a53",
+        "69e852e09baafc735672977f"
+       ],
+       "article_id": "69e852e09baafc735672977f"
+      },
+      {
+       "id": "be21d9d5007e3aa4",
+       "company_name": "boldvoice",
+       "domain": "boldvoice.com",
+       "round_type": "Series A",
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "matrix",
+         "domain": "matrixcos.com",
+         "amount": null
+        }
+       ],
+       "sector": "EDTECH",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "BoldVoice, an accent training app for non-native English speakers, has raised $21M in Series A funding led by Matrix.",
+       "published_at": "2026-01-28T13:27:29",
+       "coverage_count": 4,
+       "article_ids": [
+        "698887fec314f8bff07dd9da",
+        "6988880f868e86f9ec6c8115",
+        "6988ab84eefc5d2f542c0170",
+        "6989d65c94d3f481f3ed4dba"
+       ],
+       "article_id": "6988880f868e86f9ec6c8115"
+      },
+      {
+       "id": "f1155fd71c0be93c",
+       "company_name": "msm unify",
+       "domain": "msmunify.com",
+       "round_type": null,
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Edtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand BIZ in India",
+       "source_sentence": "Edtech Firm MSM Unify Announces $20 Million Investment Plan to Expand BIZ in India",
+       "published_at": "2026-01-21T11:36:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcc63a650bbd41e03f5b40"
+       ],
+       "article_id": "69bcc63a650bbd41e03f5b40"
+      },
+      {
+       "id": "5724f68789d3c8d4",
+       "company_name": "parallel learning",
+       "domain": "parallellearning.com",
+       "round_type": "Series B",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valspring capital",
+         "domain": "valspring.com",
+         "amount": null
+        }
+       ],
+       "sector": "EDTECH",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Parallel Learning – $20M Series B EDTECH Parallel Learning, a provider of teletherapy for special education services for K-12 students, has raised $20M in Series B funding led by Valspring Capital.",
+       "published_at": "2025-12-09T13:27:26",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a7193757765ee8263225",
+        "6988a72aeefc5d2f542bb7f5"
+       ],
+       "article_id": "6988a7193757765ee8263225"
+      },
+      {
+       "id": "6e79f79115f24182",
+       "company_name": "varthana",
+       "domain": "varthana.com",
+       "round_type": "Debt",
+       "amount_usd": 19080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1590000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Various Lenders",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "NBFC / Edtech Lending",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "support expansion into Tier 3 and 4 markets and further product innovation.",
+       "source_sentence": "Bengaluru-based NBFC Varthana, which finances affordable private schools, has secured INR 159 crore through debt funding from multiple financial institutions. The funds will support expansion into Tier 3 and 4 markets and further product innovation.",
+       "published_at": "2025-07-09T15:22:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989499994d3f481f3e2eb93"
+       ],
+       "article_id": "6989499994d3f481f3e2eb93"
+      },
+      {
+       "id": "7953c8b81217cacb",
+       "company_name": "varthana",
+       "domain": "varthana.com",
+       "round_type": "Debt",
+       "amount_usd": 18500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 18500000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "EdTech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "support affordable school financing across Tier 2 and Tier 3 regions",
+       "source_sentence": "In the edtech space, India-based Varthana raised $18.5 million in debt funding to support affordable school financing across Tier 2 and Tier 3 regions.",
+       "published_at": "2025-07-11T08:59:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d66ee8d29a990b6d5ddfd"
+       ],
+       "article_id": "698d66ee8d29a990b6d5ddfd"
+      },
+      {
+       "id": "0b03ff96c6a4890e",
+       "company_name": "edurino",
+       "domain": "edurino.com",
+       "round_type": null,
+       "amount_usd": 18360000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 17000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "playful early-learning tools",
+       "source_sentence": "German peers Knowunity and EDURINO secured €27 million and €17 million respectively for AI-tutoring and playful early-learning tools.",
+       "published_at": "2025-11-05T15:56:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "6931b8c4ba41cc79d4f20c7d",
+        "6996b7aafeeb41363fa24925"
+       ],
+       "article_id": "6931b8c4ba41cc79d4f20c7d"
+      },
+      {
+       "id": "a8f59d86da163928",
+       "company_name": "speakx",
+       "domain": "speakx.ai",
+       "round_type": "Series B",
+       "amount_usd": 16000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech / AI-based Learning",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand its AI-based language learning app, introducing voice-driven lessons, gamified learning, and adaptive exercises. Funds will help recruit talent, enhance platform features, and broaden access to students across India.",
+       "source_sentence": "Edtech startup SpeakX has raised $16 million in Series B funding led by WestBridge Capital.",
+       "published_at": "2025-10-14T17:02:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e1f4d9ca02490ec07f7e0"
+       ],
+       "article_id": "698e1f4d9ca02490ec07f7e0"
+      },
+      {
+       "id": "78942601bd9b616d",
+       "company_name": "speakx",
+       "domain": "speakx.ai",
+       "round_type": null,
+       "amount_usd": 16000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "goodwater capital",
+         "domain": "goodwatercap.com",
+         "amount": null
+        },
+        {
+         "name": "Ronnie Screwvala",
+         "domain": "https://www.linkedin.com/in/ronnie-screwvala-83133994",
+         "amount": null
+        },
+        {
+         "name": "Shyamal Anadkat",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "product development, scaling user growth, expanding the app’s reach to new geographies",
+       "source_sentence": "Edtech company SpeakX (formerly Yellow Class) has raised $16 million in a new funding round led by WestBridge Capital, with participation from Elevation Capital, Goodwater Capital, and angel investors Ronnie Screwvala and Shyamal Anadkat.",
+       "published_at": "2025-10-14T07:45:03",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe13e0adf076a01a2990e6",
+        "68fe38cff2b42708232939c6",
+        "69455a1acf3158de53a34b7e"
+       ],
+       "article_id": "68fe38cff2b42708232939c6"
+      },
+      {
+       "id": "b1059dcdd6e7d15f",
+       "company_name": "SpeakX.ai",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 16000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        },
+        {
+         "name": "goodwater capital",
+         "domain": "goodwatercap.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Shyamal Anadkat of OpenAI",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ronnie Screwvala of upGrad",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen AI stack, expand into regional markets, and scale sustainably",
+       "source_sentence": "AI-powered English learning startup SpeakX.ai has raised $16 million (around Rs 142 crore) in a funding round led by WestBridge Capital, with participation from Goodwater Capital and existing investor Elevation Capital.",
+       "published_at": "2025-10-14T00:30:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f73195f6f885b63d2c96a6"
+       ],
+       "article_id": "68f73195f6f885b63d2c96a6"
+      },
+      {
+       "id": "5b9d03012df666f9",
+       "company_name": "SpeakX.ai",
+       "domain": null,
+       "round_type": "Pre-Series B",
+       "amount_usd": 16000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "goodwater capital",
+         "domain": "goodwatercap.com",
+         "amount": null
+        },
+        {
+         "name": "Shyamal Anadkat",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ronnie Screwvala",
+         "domain": "https://www.linkedin.com/in/ronnie-screwvala-83133994",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "enhance AI technology, expand team, and introduce support for regional languages",
+       "source_sentence": "Generative AI-powered English learning platform SpeakX.ai has raised $16 million in a Pre-Series B round led by WestBridge Capital, with participation from Elevation Capital and Goodwater Capital. Angel investors such as Shyamal Anadkat of OpenAI and Ronnie Screwvala of upGrad also participated.",
+       "published_at": "2025-10-14T00:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f7163df80e5160742c766c"
+       ],
+       "article_id": "68f7163df80e5160742c766c"
+      },
+      {
+       "id": "8f7b569a0f8c9aca",
+       "company_name": "beconfident",
+       "domain": "beconfident.com",
+       "round_type": "Series A",
+       "amount_usd": 15800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15800000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "prosus ventures",
+         "domain": "prosus.com",
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "The funding will help BeConfident grow internationally, expand distribution channels, and invest in advanced AI research through BeConfident Labs.",
+       "source_sentence": "The startup raised $15.8 million in a Series A round led by Prosus Ventures.",
+       "published_at": "2026-02-13T09:30:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcb38ebc0fe678ea68b092"
+       ],
+       "article_id": "69bcb38ebc0fe678ea68b092"
+      },
+      {
+       "id": "d3deb303bdaa2744",
+       "company_name": "speakx",
+       "domain": "speakx.ai",
+       "round_type": null,
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "goodwater capital",
+         "domain": "goodwatercap.com",
+         "amount": null
+        },
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Edtech (personalised English-language learning)",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Mint reported that personalised English-language learning startup SpeakX was seeking to raise up to $15 million from existing investor Elevation Capital alongside US-based consumer tech VC firm Goodwater Capital and WestBridge.",
+       "published_at": "2025-09-21T14:16:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d981b759ff3bc3607dbfa5"
+       ],
+       "article_id": "68d981b759ff3bc3607dbfa5"
+      },
+      {
+       "id": "4416fd335d23ba0a",
+       "company_name": "myedspace",
+       "domain": "myedspace.co.uk",
+       "round_type": null,
+       "amount_usd": 13824000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 12800000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "EdTech",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": "expand blended live-learning platform internationally",
+       "source_sentence": "In the UK, MyEdSpace raised €12.8 million to expand its blended live-learning platform internationally",
+       "published_at": "2026-01-19T15:01:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "6983a3eee71a535a9c15d252",
+        "69864ececa3bd326c77b4499"
+       ],
+       "article_id": "6983a3eee71a535a9c15d252"
+      },
+      {
+       "id": "12c8de3168e86533",
+       "company_name": "acorn",
+       "domain": "acorn.me",
+       "round_type": "Series A",
+       "amount_usd": 12540000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "AUD",
+       "amount": 19000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "level equity",
+         "domain": "levelequity.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-EdTech",
+       "country": "Australia",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Secured A $19 m (US$12.3 m / ≈¥1.9 b) in Series A from Level Equity - Business Wire",
+       "published_at": "2025-06-23T02:01:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb389e333284adb6634600"
+       ],
+       "article_id": "69bb389e333284adb6634600"
+      },
+      {
+       "id": "c5d49a7ac559bb28",
+       "company_name": "nectir",
+       "domain": "nectir.co",
+       "round_type": null,
+       "amount_usd": 12500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gingerbread capital",
+         "domain": "gingerbreadcap.com",
+         "amount": null
+        },
+        {
+         "name": "rethink impact",
+         "domain": "rethinkimpact.com",
+         "amount": null
+        },
+        {
+         "name": "strada",
+         "domain": "strada.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech AI",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": null,
+       "source_sentence": "Nectir – $12.5M",
+       "published_at": "2026-03-16T08:27:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a4844e0667c07f278ba3",
+        "69e2c3ddbd7b10565a3f9aa3"
+       ],
+       "article_id": "69c3a4844e0667c07f278ba3"
+      },
+      {
+       "id": "1745b3f5df913d41",
+       "company_name": "Invigilator",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 11000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 11000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Kaltroco",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "South Africa",
+       "city": null,
+       "use_of_funds": "Bring AI-powered assessment technology to the world, monitoring and validating online assessments to address academic integrity concerns",
+       "source_sentence": "In the education technology space, South African edtech company Invigilator secured $11 million to bring AI-powered assessment technology to the world.",
+       "published_at": "2025-10-07T12:07:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe2191e01ff0caa6285e28"
+       ],
+       "article_id": "68fe2191e01ff0caa6285e28"
+      },
+      {
+       "id": "291157ef8bffc7e8",
+       "company_name": "vedantu",
+       "domain": "vedantu.com",
+       "round_type": "convertible note",
+       "amount_usd": 11000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 11000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "abc world asia",
+         "domain": "abcworld.com.sg",
+         "amount": null
+        },
+        {
+         "name": "accel india",
+         "domain": "accelindia.com",
+         "amount": null
+        },
+        {
+         "name": "omidyar network",
+         "domain": "omidyar.com",
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Deploy funds for organic and inorganic expansions besides technology, artificial intelligence, and adaptive content",
+       "source_sentence": "Edtech startup Vedantu said on Friday it has raised $11 million through convertible notes in a round led by ABC World Asia, a Temasek-backed impact investing fund, along with other existing investors including Accel India and Omidyar Network.",
+       "published_at": "2025-09-27T04:19:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d98c9f82f590e7fe7e7a73"
+       ],
+       "article_id": "68d98c9f82f590e7fe7e7a73"
+      },
+      {
+       "id": "6089a6083a3f1f6c",
+       "company_name": "vedantu",
+       "domain": "vedantu.com",
+       "round_type": "Internal",
+       "amount_usd": 11000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 11000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "EdTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Category expansion, technology, AI, adaptive content",
+       "source_sentence": "EdTech company Vedantu has bagged $11 million in funding from its internal investors as part of an ongoing larger round.",
+       "published_at": "2025-09-26T12:12:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f736c4f6f885b63d2d138d"
+       ],
+       "article_id": "68f736c4f6f885b63d2d138d"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 160,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDktMjYgMTI6MTI6MDkiLCJrIjoiNjk1NjI3MzY1MzcxNzYwNjI1MiIsImEiOjExMDAwMDAwLjB9",
+     "totals": {
+      "deals": 160,
+      "deals_with_amount": 146,
+      "deals_without_amount": 14,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 2206239000.0,
+      "median_amount_usd": 3890000.0,
+      "largest_amount_usd": 741000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.205,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.228
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "edtech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "edtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "8f5ecc8b992b17f6",
+       "company_name": "Elevify",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1350000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1350000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "newtopia",
+         "domain": "newtopia.com",
+         "amount": null
+        },
+        {
+         "name": "GP Investimentos",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Lotux.VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "malta enterprise",
+         "domain": "maltaenterprise.com",
+         "amount": null
+        },
+        {
+         "name": "vivo ventures",
+         "domain": "vivoventures.com",
+         "amount": null
+        },
+        {
+         "name": "Big Bets",
+         "domain": "bigbets.vc",
+         "amount": null
+        }
+       ],
+       "sector": "edtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate its global expansion plans",
+       "source_sentence": "With just over a year of operation and a team of just seven people, edtech recently lifted a $1.35 million seed round to accelerate its global expansion plans. The contribution was led by Newtopia and was attended by GP Investimentos, Lotux.VC and Malta Enterprise — the investment arm of the government of Malta — as well as following-on by Vivo Ventures and Big Bets, who",
+       "published_at": "2026-04-29T11:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f23267c6105443aa601d32"
+       ],
+       "article_id": "69f23267c6105443aa601d32"
+      },
+      {
+       "id": "cfc990a4eb0d7d05",
+       "company_name": "gaia learning",
+       "domain": "gaialearning.co.uk",
+       "round_type": null,
+       "amount_usd": 508000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nesta",
+         "domain": "nesta.org.uk",
+         "amount": null
+        },
+        {
+         "name": "syndicate of angel investors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "gc angels",
+         "domain": "gcangels.uk",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "UK",
+       "city": "Manchester",
+       "use_of_funds": null,
+       "source_sentence": "The Manchester company raised a total of £400k alongside NESTA and a syndicate of angel investors.",
+       "published_at": "2026-04-23T07:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea1fa373206aa299ebfbac"
+       ],
+       "article_id": "69ea1fa373206aa299ebfbac"
+      },
+      {
+       "id": "59ec2ff20e421029",
+       "company_name": "aits",
+       "domain": "aits.co.jp",
+       "round_type": "Pre-Series A",
+       "amount_usd": 4000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "big capital",
+         "domain": "bigcapital.com.ar",
+         "amount": null
+        },
+        {
+         "name": "Redbrook Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sujeet Kumar",
+         "domain": "https://www.linkedin.com/in/sujeet-kumar-3821a41",
+         "amount": null
+        },
+        {
+         "name": "Ramakant Sharma",
+         "domain": "https://www.linkedin.com/in/sharmaramakant",
+         "amount": null
+        },
+        {
+         "name": "Roman Saini",
+         "domain": "https://www.linkedin.com/in/romansaini/",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech / K–12 Schools",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand Rysen School's campus network across emerging cities, strengthen its technology-led learning infrastructure, and scale standardised school operating models.",
+       "source_sentence": "AITS Raises $4 Mn in Pre-Series A Round",
+       "published_at": "2026-04-22T12:18:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8bff75cfa3e5ba533a014",
+        "69e99ea875f157062cb1fe24"
+       ],
+       "article_id": "69e8bff75cfa3e5ba533a014"
+      },
+      {
+       "id": "a5643532095f36d1",
+       "company_name": "gaia learning",
+       "domain": "gaialearning.co.uk",
+       "round_type": null,
+       "amount_usd": 508000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gc angels",
+         "domain": "gcangels.uk",
+         "amount": 400000.0
+        },
+        {
+         "name": "nesta",
+         "domain": "nesta.org.uk",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "edtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The second follow-on investment was into Gaia Learning, an edtech platform for SEND children, which raised £400k alongside NESTA and a syndicate of angel investors.",
+       "published_at": "2026-04-22T09:22:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8980b7bb1410d4c97b6d5"
+       ],
+       "article_id": "69e8980b7bb1410d4c97b6d5"
+      },
+      {
+       "id": "2066369996296c19",
+       "company_name": "Sinai.ai",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 1450000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1450000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "KAUST Innovation Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "Egypt",
+       "city": "Cairo",
+       "use_of_funds": "advance product development, expand platform capabilities, and support early‑stage growth",
+       "source_sentence": "Sinai.ai announced it has closed a $1.45 million pre‑seed funding round to develop its AI‑native books platform.",
+       "published_at": "2026-04-22T04:49:18",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e99b9875f157062cafc419",
+        "69f0e28e45272de32e8bf23c",
+        "69f9d54ca088760d34bf8de6"
+       ],
+       "article_id": "69e99b9875f157062cafc419"
+      },
+      {
+       "id": "7928991573868b29",
+       "company_name": "KingdomOfChess",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 177000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 177000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "BeyondSeed Angel Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Arjun Vaidya",
+         "domain": "https://www.linkedin.com/in/arjunvaidya/",
+         "amount": null
+        },
+        {
+         "name": "Rakesh Amerneni (RevOptic)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jai Ostwal",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Vikrant Potnis",
+         "domain": "https://www.linkedin.com/in/vikrant-potnis-70870158",
+         "amount": null
+        },
+        {
+         "name": "FBSPL",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Aeroflex Enterprises",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "KingdomOfChess Edtech Digital Learning Platform B2C $177K - BeyondSeed Angel Fund, Arjun Vaidya (V3 Ventures), Rakesh Amerneni (RevOptic), Jai Ostwal, Vikrant Potnis (FundEnable), FBSPL, Aeroflex Enterprises BeyondSeed Angel Fund",
+       "published_at": "2026-04-18T03:30:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e864ac7bb1410d4c75051d"
+       ],
+       "article_id": "69e864ac7bb1410d4c75051d"
+      },
+      {
+       "id": "5d31d50104680e8c",
+       "company_name": "gizmo",
+       "domain": "gizmo-experience.com",
+       "round_type": "Series A",
+       "amount_usd": 22000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 22000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "shine capital",
+         "domain": "shine.vc",
+         "amount": null
+        },
+        {
+         "name": "ada ventures",
+         "domain": "adaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Seek Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "gsv",
+         "domain": "gsv.com",
+         "amount": null
+        },
+        {
+         "name": "nfx",
+         "domain": "nfx.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Expand its engineering and AI team to support growth in the US college market and accelerate product expansion to further serve students and deepen engagement across its global user base",
+       "source_sentence": "Gizmo, a London, UK-based provider of an AI-powered learning platform, raised $22M in Series A funding. The round was led by Shine Capital, with participation from Ada Ventures, Seek Investments, GSV, and NFX, who previously led their $3.5M seed round, and others.",
+       "published_at": "2026-04-15T13:09:58",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e852757bb1410d4c6a2a53",
+        "69e852e09baafc735672977f"
+       ],
+       "article_id": "69e852e09baafc735672977f"
+      },
+      {
+       "id": "f79957e55f6c84d3",
+       "company_name": "Kaizen Mentoria",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 970000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 970000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mercurial Atlantic Investments",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "enhance its platform, scale customer acquisition, and expand further across Brazil",
+       "source_sentence": "Kaizen Mentoria raised $970,000 from Mercurial Atlantic Investments.",
+       "published_at": "2026-04-10T09:30:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e88bb27bb1410d4c8e688a"
+       ],
+       "article_id": "69e88bb27bb1410d4c8e688a"
+      },
+      {
+       "id": "59272073b188d533",
+       "company_name": "qweebi",
+       "domain": "qweebi.com",
+       "round_type": "seed",
+       "amount_usd": 500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "inflection point ventures",
+         "domain": "ipventures.in",
+         "amount": null
+        },
+        {
+         "name": "Jeroen Tas",
+         "domain": "https://www.linkedin.com/in/jeroentas",
+         "amount": null
+        },
+        {
+         "name": "Arpit Jain",
+         "domain": "https://www.linkedin.com/in/arpitjain11",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "product development and expand adoption across U.S. school districts",
+       "source_sentence": "has raised $500,000 in a seed funding round led by Inflection Point Ventures (IPV). The round also saw participation from global leaders including Jeroen Tas, former Co-founder of Mphasis and Chief Innovation & Strategy Officer at Philips, and Arpit Jain, Co-founder & CEO of SplashLearn, a leading K-12 math platform in the United States.",
+       "published_at": "2026-03-28T21:40:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc547af038a023dcc46c56"
+       ],
+       "article_id": "69cc547af038a023dcc46c56"
+      },
+      {
+       "id": "c02499dfc9ca6834",
+       "company_name": "GAGA Inc.",
+       "domain": null,
+       "round_type": "Pre Series A",
+       "amount_usd": 2500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "phoenix venture partners",
+         "domain": "phoenix-vp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Edtech",
+       "country": "Saudi Arabia",
+       "city": null,
+       "use_of_funds": "expand educator network, strengthen Arabic content, accelerate technology development",
+       "source_sentence": "Phoenix Venture Partners (PVP) has led the $2.5 million Pre Series A priced equity round in GAGA Inc., the Saudi edtech platform delivering live, interactive learning for students aged 4 to 18.",
+       "published_at": "2026-03-25T10:41:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d12087b12610f7570636d8"
+       ],
+       "article_id": "69d12087b12610f7570636d8"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 50,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjUgMTA6NDE6MzAiLCJrIjoiMTM4NDUzNjAzNDA4ODU5ODk0MjgifQ",
+     "totals": {
+      "deals": 50,
+      "deals_with_amount": 48,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 437831800.0,
+      "median_amount_usd": 2500000.0,
+      "largest_amount_usd": 137160000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.203,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.216
+    }
+   }
+  }
+ ]
+}

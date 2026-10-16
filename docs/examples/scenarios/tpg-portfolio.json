@@ -1,0 +1,2521 @@
+{
+ "slug": "tpg-portfolio",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:25Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "TPG",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "tpg"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 78,
+      "deals_with_amount": 61,
+      "deals_without_amount": 17,
+      "deals_amount_excluded": 8,
+      "sum_amount_usd": 71210613098.0,
+      "median_amount_usd": 375000000.0,
+      "largest_amount_usd": 13000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 64560000.0,
+       "median_amount_usd": 64560000.0,
+       "largest_amount_usd": 64560000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 2,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 415000000.0,
+       "median_amount_usd": 207500000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 531523098.0,
+       "median_amount_usd": 127000000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 6,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 9754500000.0,
+       "median_amount_usd": 222250000.0,
+       "largest_amount_usd": 8300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 17,
+       "deals_with_amount": 16,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 14429030000.0,
+       "median_amount_usd": 150000000.0,
+       "largest_amount_usd": 13000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 0,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 7,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 6660000000.0,
+       "median_amount_usd": 1000000000.0,
+       "largest_amount_usd": 2160000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 266000000.0,
+       "median_amount_usd": 266000000.0,
+       "largest_amount_usd": 266000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 4,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 12806000000.0,
+       "median_amount_usd": 328000000.0,
+       "largest_amount_usd": 12000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 5,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 2500000000.0,
+       "median_amount_usd": 450000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 14830000000.0,
+       "median_amount_usd": 350000000.0,
+       "largest_amount_usd": 10000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 7,
+       "deals_without_amount": 7,
+       "deals_amount_excluded": 5,
+       "sum_amount_usd": 12954000000.0,
+       "median_amount_usd": 2089500000.0,
+       "largest_amount_usd": 4500000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.124,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.138
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "TPG",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "tpg"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "eb38a74914a03819",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "F-series",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "D1",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It finally attracted $13 billion.",
+       "published_at": "2025-09-03T09:48:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd661a412454508620f45b"
+       ],
+       "article_id": "69bd661a412454508620f45b"
+      },
+      {
+       "id": "a56c4f00370c9871",
+       "company_name": "Jackson Financial",
+       "domain": null,
+       "round_type": "credit line",
+       "amount_usd": 12000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "insurance",
+       "country": null,
+       "city": null,
+       "use_of_funds": "investment grade asset based credit and direct loans",
+       "source_sentence": "The asset manager's TPG credit line will initially invest at least $12 billion on behalf of life insurer Jackson Financial, with a long-term target of $20 billion, with a focus on investment grade asset based credit and direct loans, as the companies announced in a statement on Tuesday.",
+       "published_at": "2026-01-06T14:36:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a303e94ebde7b3e66b6be"
+       ],
+       "article_id": "698a303e94ebde7b3e66b6be"
+      },
+      {
+       "id": "38de7fed6c763034",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": null,
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "D. E. Shaw & Co.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "OpenAI - $10.0B",
+       "published_at": "2026-03-30T08:27:19",
+       "coverage_count": 3,
+       "article_ids": [
+        "69d14cf51fc9561313467f64",
+        "69e27db79b322e6b3e96800d",
+        "69e27f3e90d9a716b4b6d1c6"
+       ],
+       "article_id": "69d14cf51fc9561313467f64"
+      },
+      {
+       "id": "ae4fd4863d5e56fc",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": "venture tranche",
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 850000000000.0,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": 850000000000.0,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue-management.com",
+         "amount": null
+        },
+        {
+         "name": "Abu Dhabi-backed MGX",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Capital to maintain compute clusters, energy infrastructure, and further development of GPT‑6.",
+       "source_sentence": "As of March 25, 2026, OpenAI is reportedly in the final stages of securing an additional $10 billion in funding from a consortium of elite venture capital firms and sovereign-backed entities.",
+       "published_at": "2026-03-26T20:31:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc2d16f111344e7e7b3861"
+       ],
+       "article_id": "69cc2d16f111344e7e7b3861"
+      },
+      {
+       "id": "edaf01d66fa3f26f",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": "Private Funding Round (Late-stage)",
+       "amount_usd": 8300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "to accelerate AI development and expand infrastructure",
+       "source_sentence": "OpenAI has raised a massive $8.3 billion in new funding at a staggering $300 billion valuation.",
+       "published_at": "2025-08-04T23:26:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "68a176753ff75e010c30bd60",
+        "690e2dbedb65e9a9d0245a59"
+       ],
+       "article_id": "690e2dbedb65e9a9d0245a59"
+      },
+      {
+       "id": "fe58f09e48d36314",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": null,
+       "amount_usd": 8300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 300000000000.0,
+       "currency": "USD",
+       "amount": 8300000000.0,
+       "valuation": 300000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": 2800000000.0
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital Partners",
+         "domain": "d1capital.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "scale compute infrastructure",
+       "source_sentence": "OpenAI, maker of ChatGPT, has raised $8.3 billion in a new funding round that values the artificial intelligence company at $300 billion, according to a report by The New York Times.",
+       "published_at": "2025-08-01T00:00:00",
+       "coverage_count": 18,
+       "article_ids": [
+        "68a176603ff75e010c2c044c",
+        "68a1766b3ff75e010c2ea8d4",
+        "68a176703ff75e010c2fcaa4",
+        "68a176803ff75e010c33112b",
+        "68b433bd3ddf2630a8b7fc17",
+        "68b439aa3ddf2630a8cefcfc",
+        "69314bbd0c188c23bdf20fcc",
+        "6985f7beca3bd326c7796fb7",
+        "6988d6d494d3f481f3da7cc6",
+        "698f96e69ca02490ec23f5fe",
+        "69bb2b798b0987d8182aa51f",
+        "69bb61a828caee93d24f1598",
+        "69bd477dfd89557e8dc74dcf",
+        "69bd489606529d470d471356",
+        "69de338dc757db6352f88299",
+        "69e28526dc480588dc98640d",
+        "69e861cd7bb1410d4c733e68",
+        "69e99e1abdd09a23d093a2c4"
+       ],
+       "article_id": "69de338dc757db6352f88299"
+      },
+      {
+       "id": "7bc0b85af7f6f9c4",
+       "company_name": "DeployCo",
+       "domain": null,
+       "round_type": "equity",
+       "amount_usd": 4500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10000000000.0,
+       "currency": "USD",
+       "amount": 4500000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "openai",
+         "domain": "openai.com",
+         "amount": 500000000.0
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "Brookfield",
+         "domain": "brookfield.net.au",
+         "amount": null
+        },
+        {
+         "name": "goanna capital",
+         "domain": "goannacapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise AI",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "OpenAI will initially invest $500 million of equity into the joint venture, known internally as DeployCo, which is expected to be valued at $10 billion in a funding round set to close in early May, the report said.",
+       "published_at": "2026-04-22T04:39:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a0367857b84f58d6f72e9c0"
+       ],
+       "article_id": "6a0367857b84f58d6f72e9c0"
+      },
+      {
+       "id": "fd14c2b5b3e18368",
+       "company_name": "DeployCo",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "Brookfield",
+         "domain": "brookfield.net.au",
+         "amount": null
+        },
+        {
+         "name": "goanna capital",
+         "domain": "goannacapital.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "additional support from names such as TPG, Bain Capital, Advent International, Brookfield and Goanna Capital, which together should direct $4 billion in contribution to the joint venture.",
+       "published_at": "2026-04-22T10:41:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8dff09baafc7356db74c7"
+       ],
+       "article_id": "69e8dff09baafc7356db74c7"
+      },
+      {
+       "id": "7e641ae123c9deb3",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": "Private Equity Joint Venture",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10000000000.0,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "brookfield asset management",
+         "domain": "brookfield.com",
+         "amount": null
+        }
+       ],
+       "sector": "Private Equity",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Preferred equity stake in OpenAI",
+       "source_sentence": "A separate PE joint venture with TPG, Advent International, Bain Capital, and Brookfield Asset Management, valued at roughly $10 billion pre‑money, with the PE firms collectively committing around $4 billion in exchange for preferred equity stakes.",
+       "published_at": "2026-04-06T10:51:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e29ccec1991f786ce6d034"
+       ],
+       "article_id": "69e29ccec1991f786ce6d034"
+      },
+      {
+       "id": "748537cad837dc11",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": "Joint Venture",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10000000000.0,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "TPG",
+         "domain": "tpg.com",
+         "amount": null
+        },
+        {
+         "name": "brookfield asset management",
+         "domain": "brookfield.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The joint venture would have a pre-investment valuation of approximately $10 billion and private equity investors would contribute $4 billion",
+       "published_at": "2026-03-17T21:05:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27eb7ff2654c79d5f4bcb"
+       ],
+       "article_id": "69e27eb7ff2654c79d5f4bcb"
+      },
+      {
+       "id": "056e6d48e329f492",
+       "company_name": "hypervault",
+       "domain": "hypervault.com",
+       "round_type": "Equity and debt",
+       "amount_usd": 2160000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 180000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tcs",
+         "domain": "tcs-plc.co.uk",
+         "amount": null
+        },
+        {
+         "name": "TPG Terabyte",
+         "domain": null,
+         "amount": 88200000000.0
+        }
+       ],
+       "sector": "Data centre AI infrastructure",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "To build large GW‑scale AI data centres in India",
+       "source_sentence": "Tata Consultancy Services (TCS) and private equity group TPG will invest up to ₹18,000 crore in a data centre venture, HyperVault, according to a statement on Thursday.",
+       "published_at": "2025-11-20T12:43:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "694df5bcdc18f08d21f2ef8d"
+       ],
+       "article_id": "694df5bcdc18f08d21f2ef8d"
+      },
+      {
+       "id": "ca4660fa58092f03",
+       "company_name": "Connected Infra Group",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Peppertree",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "telecommunications infrastructure",
+       "country": "USA",
+       "city": "South Florida",
+       "use_of_funds": "build a national portfolio of telecom infrastructure assets",
+       "source_sentence": "TPG Peppertree has committed up to $1 billion to Connected Infra Group",
+       "published_at": "2026-02-17T14:18:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd91e2236c5426102b9c65"
+       ],
+       "article_id": "69bd91e2236c5426102b9c65"
+      },
+      {
+       "id": "12abd3d1690ce01e",
+       "company_name": "tata consultancy services",
+       "domain": "tcs.com",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Inc.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Data Infrastructure",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "to fast-track its data infrastructure goals",
+       "source_sentence": "Tata Consultancy Services secured $1 billion in backing from TPG Inc. to fast-track its data infrastructure goals.",
+       "published_at": "2025-11-28T17:58:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931388756946d51c7f20b96"
+       ],
+       "article_id": "6931388756946d51c7f20b96"
+      },
+      {
+       "id": "4f1e360e46bcc7f7",
+       "company_name": "tcs",
+       "domain": "tcs-plc.co.uk",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data center",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Build gigawatt‑scale datacentres in India",
+       "source_sentence": "The company has secured $1 billion funding from private equity firm TPG.",
+       "published_at": "2025-11-21T04:26:31",
+       "coverage_count": 2,
+       "article_ids": [
+        "6931404cee8e57de9bf2046a",
+        "69a1d2b1492dfe32543cc786"
+       ],
+       "article_id": "6931404cee8e57de9bf2046a"
+      },
+      {
+       "id": "20e62db0d7536fd7",
+       "company_name": "HyperVault AI Data Centre Pvt.",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data Center",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "accelerate the build-out of its newly formed data-center subsidiary",
+       "source_sentence": "India’s Tata Consultancy Services — among the world’s largest IT consulting firm — has secured a $1 billion in investment from US private-equity major TPG to accelerate the build-out of its newly formed data-center subsidiary, marking the first major capital commitment behind the company’s plan to become a large-scale infrastructure provider for the global artificial-intelligence market.",
+       "published_at": "2025-11-20T18:41:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f5c188d29a990b6fb1436"
+       ],
+       "article_id": "698f5c188d29a990b6fb1436"
+      },
+      {
+       "id": "907cbf9da5477cce",
+       "company_name": "hypervault",
+       "domain": "hypervault.com",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI data centre",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "to become the world's largest AI‑led IT services company, drive stronger returns to shareholders, reduce capital outlay and create long-term value for the AI data centre platform",
+       "source_sentence": "Tata Consultancy Services Ltd. has raised $1 billion from TPG for its AI data centre business called HyperVault.",
+       "published_at": "2025-11-20T12:01:28",
+       "coverage_count": 2,
+       "article_ids": [
+        "69314127049ef1628cf21ac4",
+        "694df4633eb5f9d8d8f2f9b2"
+       ],
+       "article_id": "69314127049ef1628cf21ac4"
+      },
+      {
+       "id": "90948ce039851519",
+       "company_name": "Tata Motors EVCo",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 75000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Rise Climate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "adq",
+         "domain": "adq.ae",
+         "amount": null
+        }
+       ],
+       "sector": "Electric vehicles",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": null,
+       "source_sentence": "Tata Motors on Tuesday said TPG Rise Climate along with co-investor ADQ will invest Rs 7500 crore in tranches over a period of 18 months for an 11-15 per cent stake in Tata Motor’s EVCo",
+       "published_at": "2025-08-11T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab363cbfdb4fb6639a8511"
+       ],
+       "article_id": "68ab363cbfdb4fb6639a8511"
+      },
+      {
+       "id": "281764eac833bd69",
+       "company_name": "eruditus",
+       "domain": "eruditus.com",
+       "round_type": "Equity",
+       "amount_usd": 741000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 741000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "prosus",
+         "domain": "prosus.com",
+         "amount": null
+        },
+        {
+         "name": "TPG Rise Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "gsv ventures",
+         "domain": "gsv.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "EdTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Eruditus, which has raised a total of $741 million in equity funding from 27 investors including Prosus, TPG Rise Fund, Peak XV Partners and GSV Ventures, was last valued at $3.2 billion.",
+       "published_at": "2025-09-11T14:05:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0e4d322a1ae9da22b1e96"
+       ],
+       "article_id": "68d0e4d322a1ae9da22b1e96"
+      },
+      {
+       "id": "869c2517c0825387",
+       "company_name": "everest infrastructure partners",
+       "domain": "everestinfrastructure.com",
+       "round_type": "Equity",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Peppertree",
+         "domain": null,
+         "amount": 500000000.0
+        }
+       ],
+       "sector": "Wireless Infrastructure",
+       "country": "United States",
+       "city": "Pittsburgh",
+       "use_of_funds": "Fund the company’s growth and expand its portfolio footprint throughout the United States",
+       "source_sentence": "© Shutterstock Ohio-based TPG Peppertree, an investment firm specializing in digital infrastructure, recently committed $500 million in new equity capital commitments in Pittsburgh-based Everest Infrastructure Partners, a wireless tower company.",
+       "published_at": "2026-02-23T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e11a156fdc0a21b24b2a61"
+       ],
+       "article_id": "69e11a156fdc0a21b24b2a61"
+      },
+      {
+       "id": "94cbb2965768b99e",
+       "company_name": "Jackson Financial",
+       "domain": null,
+       "round_type": "equity stake acquisition",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The private equity company will also acquire a $500 million minority stake in Jackson, representing 6.5% of the Lansing, Michigan-based insurer.",
+       "published_at": "2026-01-06T14:36:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a303e94ebde7b3e66b6be"
+       ],
+       "article_id": "698a303e94ebde7b3e66b6be"
+      },
+      {
+       "id": "03e2020f74afbd6c",
+       "company_name": "nextracker",
+       "domain": "nextracker.com",
+       "round_type": "sale of convertible preferred equity",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Rise Climate",
+         "domain": null,
+         "amount": 500000000.0
+        }
+       ],
+       "sector": "solar technology",
+       "country": "USA",
+       "city": "Fremont",
+       "use_of_funds": null,
+       "source_sentence": "and its sale of US$500 million of convertible preferred equity in Nextracker to TPG Rise Climate in February 2022.",
+       "published_at": "2025-11-25T00:45:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a8b0dc480588dc9ef059"
+       ],
+       "article_id": "69e2a8b0dc480588dc9ef059"
+      },
+      {
+       "id": "022ea2fc51c69fe2",
+       "company_name": "nextracker",
+       "domain": "nextracker.com",
+       "round_type": "convertible preferred equity sale",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Rise Climate",
+         "domain": null,
+         "amount": 500000000.0
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "and its sale of US$500 million of convertible preferred equity in Nextracker to TPG Rise Climate in February 2022.",
+       "published_at": "2025-11-25T00:45:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e290e87f3a572cf4a74481"
+       ],
+       "article_id": "69e290e87f3a572cf4a74481"
+      },
+      {
+       "id": "3c89b4c68a9b4ca4",
+       "company_name": "Na",
+       "domain": null,
+       "round_type": "Financing",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Credit",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The joint venture has raised $450 million in financing, led by TPG's credit area, TPG Credit, with the participation of other investors, consisting of long-term guaranteed loans and preferred shares.",
+       "published_at": "2026-02-26T19:49:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7ee70bf92aede2f52620"
+       ],
+       "article_id": "69bc7ee70bf92aede2f52620"
+      },
+      {
+       "id": "25b5eb27c6fec289",
+       "company_name": "Xerox Holdings Corporation",
+       "domain": null,
+       "round_type": "Joint Venture Financing",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Credit",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Software/Technology",
+       "country": "USA",
+       "city": "NORWALK",
+       "use_of_funds": "General corporate purposes including augmenting liquidity, accelerating reinvention and capital structure management",
+       "source_sentence": "The Joint Venture has raised $450 million in aggregate principal amount of financing led by TPG’s credit business, TPG Credit, with participation from other investors, consisting of senior secured term loans and preferred equity (the “Joint Venture Financing”).",
+       "published_at": "2026-02-17T14:17:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc50ff0f458341919bb4db"
+       ],
+       "article_id": "69bc50ff0f458341919bb4db"
+      },
+      {
+       "id": "336164818ee3cb22",
+       "company_name": "XCL Education",
+       "domain": "xcledu.com",
+       "round_type": "private credit loan",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "education",
+       "country": null,
+       "city": null,
+       "use_of_funds": "refinance existing debt",
+       "source_sentence": "XCL Education, a school owner and operator backed by private equity firm TPG, recently obtained a US$400 million private credit loan to refinance its existing debt, Bloomberg News reported.",
+       "published_at": "2025-07-27T12:17:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898b00fab03b1b156de0df3"
+       ],
+       "article_id": "6898b00fab03b1b156de0df3"
+      },
+      {
+       "id": "be488a2178d48144",
+       "company_name": "livspace",
+       "domain": "livspace.com",
+       "round_type": null,
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "tpg growth",
+         "domain": "tpg.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "ikea",
+         "domain": "ikea.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anuj Srivastava, founder of Livspace, shared hard-earned wisdom from raising over $400 million for his company.",
+       "published_at": "2025-06-19T07:11:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "68640fb88882abb7e3c14535"
+       ],
+       "article_id": "68640fb88882abb7e3c14535"
+      },
+      {
+       "id": "fd3a012a69b7afa5",
+       "company_name": "cambridge mobile telematics",
+       "domain": "cmtelematics.com",
+       "round_type": null,
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "allianz",
+         "domain": "allianz.fr",
+         "amount": null
+        },
+        {
+         "name": "state farm",
+         "domain": "statefarm.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United Kingdom",
+       "city": "Cambridge",
+       "use_of_funds": "expand offerings in Europe and further develop AI models for real‑time driving risk assessment and crash detection",
+       "source_sentence": "Cambridge Mobile Telematics, which provides information about consumer driving habits to insurance companies, raised $350 million to expand its offerings in Europe and do more with artificial intelligence models.",
+       "published_at": "2026-03-24T21:20:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc5fddcb088e024d27bd81"
+       ],
+       "article_id": "69cc5fddcb088e024d27bd81"
+      },
+      {
+       "id": "1dac3752b563977e",
+       "company_name": "cambridge mobile telematics",
+       "domain": "cmtelematics.com",
+       "round_type": "Strategic Investment",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "allianz x",
+         "domain": "allianzx.com",
+         "amount": null
+        },
+        {
+         "name": "state farm",
+         "domain": "statefarm.com",
+         "amount": null
+        }
+       ],
+       "sector": "Telematics",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Scaling platform, advancing AI models for real‑time driving risk assessment and crash detection, and growing adoption of Universal Driving Score product",
+       "source_sentence": "CMT has secured a US$350m strategic investment led by TPG and Allianz X, with participation from State Farm...",
+       "published_at": "2026-03-24T07:00:56",
+       "coverage_count": 4,
+       "article_ids": [
+        "69c4367e764549ca7bb9c6d0",
+        "69cbf75a3a0ed6ac902c9806",
+        "69cc1a6bcb088e024d24fa0a",
+        "69cc5476f8e7de13bc1db75a"
+       ],
+       "article_id": "69cbf75a3a0ed6ac902c9806"
+      },
+      {
+       "id": "da3c34f3157eebcd",
+       "company_name": "cambridge mobile telematics",
+       "domain": "cmtelematics.com",
+       "round_type": "strategic investment",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "allianz x",
+         "domain": "allianzx.com",
+         "amount": null
+        },
+        {
+         "name": "state farm",
+         "domain": "statefarm.com",
+         "amount": null
+        }
+       ],
+       "sector": "telematics and AI",
+       "country": "USA",
+       "city": "Cambridge",
+       "use_of_funds": "expansion of global road safety platform, advancement of AI models for real-time driving risk assessment and crash detection, and growing adoption of Universal Driving Score",
+       "source_sentence": "today announced a USD 350 million strategic investment led by TPG and Allianz X, with participation from State Farm.",
+       "published_at": "2026-03-24T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69d10b7cd6ecaa4ef289a64f",
+        "69dccfde57637035f748e852",
+        "69e28a28c1991f786ce3758d"
+       ],
+       "article_id": "69dccfde57637035f748e852"
+      },
+      {
+       "id": "a6b9bab47c2256a7",
+       "company_name": "earnix",
+       "domain": "earnix.com",
+       "round_type": "Continuation Vehicle",
+       "amount_usd": 290000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 290000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG GP Solutions",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "JVP",
+         "domain": "jvpvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI SaaS for insurance and banking",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": "support global expansion and accelerate adoption of AI decisioning across the risk cycle",
+       "source_sentence": "Earnix, a leading provider of dynamic AI for insurance and banking, has raised $290m in a Continuation Vehicle led by TPG GP Solutions alongside JVP.",
+       "published_at": "2025-09-09T10:00:17",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988aa754727a5abdc89ea2f",
+        "698f76328d29a990b6fd048a"
+       ],
+       "article_id": "6988aa754727a5abdc89ea2f"
+      },
+      {
+       "id": "b9f9585e7f46a3f6",
+       "company_name": "earnix",
+       "domain": "earnix.com",
+       "round_type": "Continuation Vehicle",
+       "amount_usd": 290000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 290000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "JVP",
+         "domain": "jvpvc.com",
+         "amount": null
+        },
+        {
+         "name": "TPG GP Solutions",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI transformation and global expansion of Earnix",
+       "source_sentence": "JVP, a leading global venture capital firm, announced today the close of a $290 million single-asset Continuation Vehicle in partnership with TPG GP Solutions, TPG’s dedicated U.S. and European GP-led secondaries strategy.",
+       "published_at": "2025-09-08T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69df4e4bb927f98963c087d0"
+       ],
+       "article_id": "69df4e4bb927f98963c087d0"
+      },
+      {
+       "id": "7d6187f99e360abd",
+       "company_name": "fibe",
+       "domain": "fibe.in",
+       "round_type": null,
+       "amount_usd": 266000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 266000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG’s The Rise Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "norwest venture partners",
+         "domain": "nvp.com",
+         "amount": null
+        },
+        {
+         "name": "eight roads ventures",
+         "domain": "eightroads.com",
+         "amount": null
+        },
+        {
+         "name": "tr capital",
+         "domain": "tr-capital.com",
+         "amount": null
+        },
+        {
+         "name": "piramal finance",
+         "domain": "piramalfinance.com",
+         "amount": null
+        },
+        {
+         "name": "chiratae ventures",
+         "domain": "chiratae.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The FinTech has raised a total of $266m in equity and is backed by TPG’s The Rise Fund, Norwest Venture Partners, Eight Roads Ventures, TR Capital, Piramal Finance Limited, and Chiratae Ventures.",
+       "published_at": "2025-12-10T16:30:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e15b89ca02490ec0734bb"
+       ],
+       "article_id": "698e15b89ca02490ec0734bb"
+      },
+      {
+       "id": "53c3ae34c00791bb",
+       "company_name": "findhelp",
+       "domain": "findhelp.org",
+       "round_type": "Equity",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG’s The Rise Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare platform",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Bridge gaps in care coordination across systems and governments",
+       "source_sentence": "Healthcare platform Findhelp secured $250 million from TPG’s The Rise Fund to bridge gaps in care coordination across systems and governments.",
+       "published_at": "2026-03-06T19:14:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bced80ec94907df10e6de8"
+       ],
+       "article_id": "69bced80ec94907df10e6de8"
+      },
+      {
+       "id": "76403af32634846e",
+       "company_name": "Convene Hospitality Group (CHG)",
+       "domain": null,
+       "round_type": "growth capital",
+       "amount_usd": 230000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 230000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "Ares funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Corporate conferences, meetings and event venues",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Support global expansion across CHG’s multi-brand platform, with capital allocated toward new development, technology and production capabilities and selective acquisitions",
+       "source_sentence": "Convene Hospitality Group (CHG) has secured $230 million in strategic growth capital, led by new lender TPG, with additional equity investment from existing shareholders, including Ares funds.",
+       "published_at": "2026-03-25T13:17:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc14b24a99add5b296623b"
+       ],
+       "article_id": "69cc14b24a99add5b296623b"
+      },
+      {
+       "id": "c754c0102e122945",
+       "company_name": "boohoo group",
+       "domain": "boohooplc.com",
+       "round_type": "refinancing",
+       "amount_usd": 222250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 175000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Angelo Gordon",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "fashion retail",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The new facility is provided by a number of financing parties, led by TPG Angelo Gordon.",
+       "published_at": "2025-08-21T17:16:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0db30d331a24e1f41b14b"
+       ],
+       "article_id": "68d0db30d331a24e1f41b14b"
+      },
+      {
+       "id": "b7f477468368aa48",
+       "company_name": "Debenhams Group",
+       "domain": null,
+       "round_type": "refinancing",
+       "amount_usd": 222250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 175000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Angelo Gordon",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Retail",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "Significantly enhanced financial flexibility to deliver new turnaround strategy",
+       "source_sentence": "Debenhams Group has secured a new three-year facility providing access to funding of up to £175m from its former owner TPG.",
+       "published_at": "2025-08-21T08:27:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5dce6debd721c77c71fe0"
+       ],
+       "article_id": "68c5dce6debd721c77c71fe0"
+      },
+      {
+       "id": "679b59040eae551c",
+       "company_name": "armstrong world industries",
+       "domain": "armstrongceilings.com",
+       "round_type": "Equity Investment",
+       "amount_usd": 179000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 179000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Capital",
+         "domain": null,
+         "amount": 179000000.0
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "But those criteria were canceled when TPG Capital last month bought 12 percent of Armstrong's common stock and the economic interests in another 2 percent for $179 million.",
+       "published_at": "2026-04-26T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efac01727212302c5ff93b"
+       ],
+       "article_id": "69efac01727212302c5ff93b"
+      },
+      {
+       "id": "2dad1c645a1af08d",
+       "company_name": "allogene therapeutics",
+       "domain": "allogene.com",
+       "round_type": "public offering",
+       "amount_usd": 175000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 175000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "jefferies",
+         "domain": "jefferies.com",
+         "amount": null
+        },
+        {
+         "name": "td cowen",
+         "domain": "cowen.eu",
+         "amount": null
+        },
+        {
+         "name": "TPG Capital BD, LLC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "clinical-stage biotechnology",
+       "country": "United States",
+       "city": "South San Francisco",
+       "use_of_funds": "general corporate purposes, which may include clinical trial expenses, research and development expenses, general and administrative expenses, and capital expenditures",
+       "source_sentence": "Allogene Therapeutics, Inc. (Nasdaq: ALLO ) today announced that it intends to offer and sell, in an underwritten public offering and subject to market and other conditions, $175 million of shares of its common stock.",
+       "published_at": "2026-04-13T20:01:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e642862461615d5f447a9d"
+       ],
+       "article_id": "69e642862461615d5f447a9d"
+      },
+      {
+       "id": "0975024506b21176",
+       "company_name": "iD Fresh",
+       "domain": null,
+       "round_type": "Strategic",
+       "amount_usd": 156000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apax partners",
+         "domain": "apax.com",
+         "amount": 13000000000.0
+        },
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "TPG NewQuest",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FMCG",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Expand product catalogue and expand across new markets in India and abroad",
+       "source_sentence": "While the company didn’t disclose the financial terms of the transaction, a report by ET ascertained that the deal would see Apax Partners invest INR 1,300 Cr ($144 Mn) in iD Fresh for 25% stake.",
+       "published_at": "2026-01-05T12:52:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "6984269e3afa3ce7e1acf881"
+       ],
+       "article_id": "6984269e3afa3ce7e1acf881"
+      },
+      {
+       "id": "78fe4db4885e06fa",
+       "company_name": "Jackson Financial",
+       "domain": null,
+       "round_type": "share issuance",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Jackson receives US$150 million of TPG shares at market value, with the potential for more if the partnership grows to US$20 billion.",
+       "published_at": "2026-01-06T14:36:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a303e94ebde7b3e66b6be"
+       ],
+       "article_id": "698a303e94ebde7b3e66b6be"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 78,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDEtMDYgMTQ6MzY6MDIiLCJrIjoiODcxODQ5MTM2NjQxMzE3NDUyMiIsImEiOjE1MDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 78,
+      "deals_with_amount": 61,
+      "deals_without_amount": 17,
+      "deals_amount_excluded": 8,
+      "sum_amount_usd": 71210613098.0,
+      "median_amount_usd": 375000000.0,
+      "largest_amount_usd": 13000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.404,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.416
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "TPG",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "tpg"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "2059e737fbd8d69f",
+       "company_name": "vinted",
+       "domain": "vinted.com",
+       "round_type": "primary funding round",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": 5000000000.0,
+       "currency": "USD",
+       "amount": null,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "Marketplace, e-commerce, second-hand",
+       "country": "Lithuania",
+       "city": "Vilnius",
+       "use_of_funds": null,
+       "source_sentence": "In 2024 it brought in fresh investors in a round led by US investment group TPG, valuing it at $5bn.",
+       "published_at": "2026-04-27T15:03:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e6e7836d28f995cba011"
+       ],
+       "article_id": "69f0e6e7836d28f995cba011"
+      },
+      {
+       "id": "679b59040eae551c",
+       "company_name": "armstrong world industries",
+       "domain": "armstrongceilings.com",
+       "round_type": "Equity Investment",
+       "amount_usd": 179000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 179000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "TPG Capital",
+         "domain": null,
+         "amount": 179000000.0
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "But those criteria were canceled when TPG Capital last month bought 12 percent of Armstrong's common stock and the economic interests in another 2 percent for $179 million.",
+       "published_at": "2026-04-26T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efac01727212302c5ff93b"
+       ],
+       "article_id": "69efac01727212302c5ff93b"
+      },
+      {
+       "id": "fd14c2b5b3e18368",
+       "company_name": "DeployCo",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "Brookfield",
+         "domain": "brookfield.net.au",
+         "amount": null
+        },
+        {
+         "name": "goanna capital",
+         "domain": "goannacapital.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "additional support from names such as TPG, Bain Capital, Advent International, Brookfield and Goanna Capital, which together should direct $4 billion in contribution to the joint venture.",
+       "published_at": "2026-04-22T10:41:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8dff09baafc7356db74c7"
+       ],
+       "article_id": "69e8dff09baafc7356db74c7"
+      },
+      {
+       "id": "7ac945229c591ea9",
+       "company_name": "DeployCo",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": 10000000000.0,
+       "currency": "USD",
+       "amount": null,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "openai",
+         "domain": "openai.com",
+         "amount": 500000000.0
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "Brookfield",
+         "domain": "brookfield.net.au",
+         "amount": null
+        },
+        {
+         "name": "goanna capital",
+         "domain": "goannacapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence, Enterprise AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Speed up adoption of OpenAI’s workplace tools through DeployCo joint venture",
+       "source_sentence": "The ChatGPT maker will initially invest $500 million of equity into the joint venture, known internally as DeployCo, which is expected to be valued at $10 billion in a funding round set to close in early May, the report said.",
+       "published_at": "2026-04-22T05:30:09",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e8992f9baafc7356a0d304",
+        "69e8b50e9baafc7356b7fe8d",
+        "6a03ef87220687a966a12d26"
+       ],
+       "article_id": "6a03ef87220687a966a12d26"
+      },
+      {
+       "id": "7bc0b85af7f6f9c4",
+       "company_name": "DeployCo",
+       "domain": null,
+       "round_type": "equity",
+       "amount_usd": 4500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10000000000.0,
+       "currency": "USD",
+       "amount": 4500000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "openai",
+         "domain": "openai.com",
+         "amount": 500000000.0
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "Brookfield",
+         "domain": "brookfield.net.au",
+         "amount": null
+        },
+        {
+         "name": "goanna capital",
+         "domain": "goannacapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise AI",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "OpenAI will initially invest $500 million of equity into the joint venture, known internally as DeployCo, which is expected to be valued at $10 billion in a funding round set to close in early May, the report said.",
+       "published_at": "2026-04-22T04:39:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a0367857b84f58d6f72e9c0"
+       ],
+       "article_id": "6a0367857b84f58d6f72e9c0"
+      },
+      {
+       "id": "b306be72eac8f7f9",
+       "company_name": "zum",
+       "domain": "ridezum.com",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "Transportation",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "optimize K-12 transportation efficiency",
+       "source_sentence": "Since its 2015 founding, student logistics platform Zum has now raised about $500 million, including a fresh $100 million led by TPG to optimize K-12 transportation efficiency.",
+       "published_at": "2026-04-17T20:39:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e26b5cfa3e5ba54f4498"
+       ],
+       "article_id": "69e8e26b5cfa3e5ba54f4498"
+      },
+      {
+       "id": "063049cf2ab4bd9c",
+       "company_name": "zum",
+       "domain": "ridezum.com",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1700000000.0,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": 1700000000.0,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": 100000000.0
+        }
+       ],
+       "sector": "Connected Mobility Experience",
+       "country": "United States",
+       "city": "Redwood City",
+       "use_of_funds": "Accelerate expansion of Zum CMX across additional school districts nationwide, continue investment in AI-driven coordination and predictive operations, scale infrastructure to support large-scale real-time mobility systems.",
+       "source_sentence": "Zūm, the leader in Connected Mobility Experience (CMX™), today announced a $100 million strategic investment from TPG, bringing the company’s total funding to $430 million and valuing Zum at $1.7 billion.",
+       "published_at": "2026-04-16T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e27f7bb1410d4cd459fe"
+       ],
+       "article_id": "69e8e27f7bb1410d4cd459fe"
+      },
+      {
+       "id": "2dad1c645a1af08d",
+       "company_name": "allogene therapeutics",
+       "domain": "allogene.com",
+       "round_type": "public offering",
+       "amount_usd": 175000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 175000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "jefferies",
+         "domain": "jefferies.com",
+         "amount": null
+        },
+        {
+         "name": "td cowen",
+         "domain": "cowen.eu",
+         "amount": null
+        },
+        {
+         "name": "TPG Capital BD, LLC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "clinical-stage biotechnology",
+       "country": "United States",
+       "city": "South San Francisco",
+       "use_of_funds": "general corporate purposes, which may include clinical trial expenses, research and development expenses, general and administrative expenses, and capital expenditures",
+       "source_sentence": "Allogene Therapeutics, Inc. (Nasdaq: ALLO ) today announced that it intends to offer and sell, in an underwritten public offering and subject to market and other conditions, $175 million of shares of its common stock.",
+       "published_at": "2026-04-13T20:01:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e642862461615d5f447a9d"
+       ],
+       "article_id": "69e642862461615d5f447a9d"
+      },
+      {
+       "id": "5026a575ec204241",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": "implausible_size",
+       "valuation_usd": 852000000000.0,
+       "currency": "USD",
+       "amount": 122000000000.0,
+       "valuation": 852000000000.0,
+       "investors": [
+        {
+         "name": "amazon",
+         "domain": "amazon.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "softbank",
+         "domain": "group.softbank",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "D. E. Shaw Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "T. Rowe Price Associates",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "appaloosa",
+         "domain": "appaloosa.io",
+         "amount": null
+        },
+        {
+         "name": "ARK Invest",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "funds affiliated with BlackRock",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital Partners",
+         "domain": "d1capital.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer",
+         "domain": "dragoneergrowth.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "goanna capital",
+         "domain": "goannacapital.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "the paragon group",
+         "domain": "theparagongroup-inc.com",
+         "amount": null
+        },
+        {
+         "name": "sands capital",
+         "domain": "sandscapital.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "sound ventures",
+         "domain": "soundventures.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "UC Investments",
+         "domain": "uc-investments.lu",
+         "amount": null
+        },
+        {
+         "name": "winslow capital",
+         "domain": "winslowcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "OpenAI has raised USD $122 billion in committed capital, valuing the company at USD $852 billion after the investment. The round was anchored by Amazon, Nvidia and SoftBank, with Microsoft continuing to participate as an existing backer. SoftBank co-led the financing with Andreessen Horowitz, D. E. Shaw Ventures, MGX, TPG and accounts advised by T. Rowe Price Associates.",
+       "published_at": "2026-04-06T16:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2c2bd9b322e6b3ea4899e"
+       ],
+       "article_id": "69e2c2bd9b322e6b3ea4899e"
+      },
+      {
+       "id": "7e641ae123c9deb3",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": "Private Equity Joint Venture",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10000000000.0,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "brookfield asset management",
+         "domain": "brookfield.com",
+         "amount": null
+        }
+       ],
+       "sector": "Private Equity",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Preferred equity stake in OpenAI",
+       "source_sentence": "A separate PE joint venture with TPG, Advent International, Bain Capital, and Brookfield Asset Management, valued at roughly $10 billion pre‑money, with the PE firms collectively committing around $4 billion in exchange for preferred equity stakes.",
+       "published_at": "2026-04-06T10:51:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e29ccec1991f786ce6d034"
+       ],
+       "article_id": "69e29ccec1991f786ce6d034"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 35,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDYgMTA6NTE6MzciLCJrIjoiOTEwNzQzMzkwMDcyMDM4MTYxOSJ9",
+     "totals": {
+      "deals": 35,
+      "deals_with_amount": 24,
+      "deals_without_amount": 11,
+      "deals_amount_excluded": 7,
+      "sum_amount_usd": 39090000000.0,
+      "median_amount_usd": 450000000.0,
+      "largest_amount_usd": 12000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.282,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.295
+    }
+   }
+  }
+ ]
+}

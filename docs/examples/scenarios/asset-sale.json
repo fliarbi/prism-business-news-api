@@ -1,0 +1,826 @@
+{
+ "slug": "asset-sale",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:18Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "ma"
+     ],
+     "q": "sale",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "sale",
+      "match": "any",
+      "event_type": [
+       "asset_acquisition",
+       "ma"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 286,
+       "by_type": {
+        "asset_acquisition": 147,
+        "ma": 139
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 332,
+       "by_type": {
+        "asset_acquisition": 113,
+        "ma": 219
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 375,
+       "by_type": {
+        "asset_acquisition": 179,
+        "ma": 196
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 369,
+       "by_type": {
+        "asset_acquisition": 191,
+        "ma": 178
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 387,
+       "by_type": {
+        "asset_acquisition": 204,
+        "ma": 183
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 424,
+       "by_type": {
+        "asset_acquisition": 186,
+        "ma": 238
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 393,
+       "by_type": {
+        "asset_acquisition": 164,
+        "ma": 229
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 547,
+       "by_type": {
+        "asset_acquisition": 246,
+        "ma": 301
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 401,
+       "by_type": {
+        "asset_acquisition": 190,
+        "ma": 211
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 501,
+       "by_type": {
+        "asset_acquisition": 253,
+        "ma": 248
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 432,
+       "by_type": {
+        "asset_acquisition": 188,
+        "ma": 244
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 455,
+       "by_type": {
+        "asset_acquisition": 236,
+        "ma": 219
+       }
+      }
+     ],
+     "totals": {
+      "events": 4902,
+      "articles": 3456,
+      "companies": 3272,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "asset_acquisition": 2297,
+      "ma": 2605
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.22,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.225
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "ma"
+     ],
+     "q": "sale",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "sale",
+      "event_type": [
+       "asset_acquisition",
+       "ma"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f8ad56bbf1d314559a7904",
+       "headline": "Perrigo Company plc ... today announced that it has completed the previously announced sale of its branded Dermacosmetics business to Karo Healthcare for total consideration of up to €332.6 million.",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "perrigo.com",
+       "published_at": "2026-04-30T20:30:00",
+       "url": "https://www.stocktitan.net/news/PRGO/perrigo-completes-divestiture-of-dermacosmetics-3bosj7csz1zb.html",
+       "publisher": "stocktitan.net",
+       "title": "Perrigo gets €306M upfront as it exits ACO, Biodermal, Emolium, Iwostin"
+      },
+      {
+       "id": "69f8ad56bbf1d314559a7904",
+       "headline": "Perrigo Company plc ... today announced that it has completed the previously announced sale of its branded Dermacosmetics business to Karo Healthcare for total consideration of up to €332.6 million.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "karopharma.com",
+       "published_at": "2026-04-30T20:30:00",
+       "url": "https://www.stocktitan.net/news/PRGO/perrigo-completes-divestiture-of-dermacosmetics-3bosj7csz1zb.html",
+       "publisher": "stocktitan.net",
+       "title": "Perrigo gets €306M upfront as it exits ACO, Biodermal, Emolium, Iwostin"
+      },
+      {
+       "id": "6a0408ed220687a966ab4c61",
+       "headline": "Vistance Networks Inc. shares surged more than 22% Thursday, climbing to $12.84 in morning trading after the networking technology company reported a strong first-quarter earnings beat and announced a transformative $1.846 billion all‑cash sale of its RUCKUS Networks business to Belden Inc.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "ruckusnetworks.com",
+       "published_at": "2026-04-30T15:09:36",
+       "url": "https://ibtimes.com.au/vistance-networks-stock-soars-22-q1-beat-185b-ruckus-sale-belden-100m-buyback-plan-1867876",
+       "publisher": "ibtimes.com.au",
+       "title": "Vistance Networks Stock Soars 22% on Q1 Beat, $1.85B RUCKUS Sale to Belden and $100M Buyback Plan"
+      },
+      {
+       "id": "6a0408ed220687a966ab4c61",
+       "headline": "Vistance Networks Inc. shares surged more than 22% Thursday, climbing to $12.84 in morning trading after the networking technology company reported a strong first-quarter earnings beat and announced a transformative $1.846 billion all‑cash sale of its RUCKUS Networks business to Belden Inc.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "belden.com",
+       "published_at": "2026-04-30T15:09:36",
+       "url": "https://ibtimes.com.au/vistance-networks-stock-soars-22-q1-beat-185b-ruckus-sale-belden-100m-buyback-plan-1867876",
+       "publisher": "ibtimes.com.au",
+       "title": "Vistance Networks Stock Soars 22% on Q1 Beat, $1.85B RUCKUS Sale to Belden and $100M Buyback Plan"
+      },
+      {
+       "id": "6a2ec78383fc01faba404892",
+       "headline": "Daily Mail and General Trust plc (DMGT) announced the sale of its American real estate information subsidiary, Trepp, to the Fitch Group for approximately $1 billion.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "trepp.com",
+       "published_at": "2026-04-30T14:43:15",
+       "url": "https://www.webdisclosure.com/article/dmgt-vend-trepp-a-fitch-group-pour-1-milliard-de-dollars-cVzVrFRgaFQ",
+       "publisher": "webdisclosure.com",
+       "title": "Daily Mail And General Trust Plc |"
+      },
+      {
+       "id": "6a2ec78383fc01faba404892",
+       "headline": "Daily Mail and General Trust plc (DMGT) announced the sale of its American real estate information subsidiary, Trepp, to the Fitch Group for approximately $1 billion.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "fitch.group",
+       "published_at": "2026-04-30T14:43:15",
+       "url": "https://www.webdisclosure.com/article/dmgt-vend-trepp-a-fitch-group-pour-1-milliard-de-dollars-cVzVrFRgaFQ",
+       "publisher": "webdisclosure.com",
+       "title": "Daily Mail And General Trust Plc |"
+      },
+      {
+       "id": "69f8863143843dd771d1f049",
+       "headline": "Meanwhile, the sale to Bidfood is proposed to include T&G’s Fijian business and its Pacific Island Exports business.",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "tandg.global",
+       "published_at": "2026-04-30T14:01:29",
+       "url": "https://www.freshfruitportal.com/news/2026/04/30/tg-global-divestment/",
+       "publisher": "freshfruitportal.com",
+       "title": "T&G Global is in advanced discussions to sell two key parts of its businesses - FreshFruitPortal.com"
+      },
+      {
+       "id": "69f8863143843dd771d1f049",
+       "headline": "Meanwhile, the sale to Bidfood is proposed to include T&G’s Fijian business and its Pacific Island Exports business.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "bidfood.co.uk",
+       "published_at": "2026-04-30T14:01:29",
+       "url": "https://www.freshfruitportal.com/news/2026/04/30/tg-global-divestment/",
+       "publisher": "freshfruitportal.com",
+       "title": "T&G Global is in advanced discussions to sell two key parts of its businesses - FreshFruitPortal.com"
+      },
+      {
+       "id": "69f9d4af7b2d589e844b02a0",
+       "headline": "The proposed sale to Bidfood includes T&G's Fijian business and T&G Fresh's Pacific Island Exports business.",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "tandg.global",
+       "published_at": "2026-04-30T13:51:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d4af7b2d589e844b02a0",
+       "headline": "The proposed sale to Bidfood includes T&G's Fijian business and T&G Fresh's Pacific Island Exports business.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "bidfood.co.uk",
+       "published_at": "2026-04-30T13:51:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8ad1043843dd771d296ed",
+       "headline": "It has announced that it is selling the studio back to its management. EVE Online In a report to the South Korean regulator, Pearl Abyss stated that it will earn $120 million from the sale.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "ccpgames.com",
+       "published_at": "2026-04-30T12:58:08",
+       "url": "https://gameworldobserver.com/2026/04/30/pearl-abyss-sold-the-creators-of-eve-online-for-much-less-than-it-purchased-them-for",
+       "publisher": "gameworldobserver.com",
+       "title": "Pearl Abyss sold the creators of EVE Online for much less than it purchased them for | Game World Observer"
+      },
+      {
+       "id": "69f9dcdda088760d34c53b78",
+       "headline": "Today announced it has successfully completed the sale of its majority stake in Novo Banco, S.A. (“novobanco” or “the bank”), Portugal’s fourth-largest bank, to BPCE",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "novobanco.pt",
+       "published_at": "2026-04-30T10:01:44",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a040798220687a966aac389",
+       "headline": "According to reporting by the Financial Times, global private equity company KKR is exploring a sale of its Flora Food Group business, with a potential valuation of up to $10 billion.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "kkr.com",
+       "published_at": "2026-04-30T09:56:11",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a0362ba7b84f58d6f70a554",
+       "headline": "West Wits Mining (ASX:WWI) sealed a deal with soon-to-list Aventine Resources to divest Mt Cecelia via the sale of subsidiary Northern Reserves.",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "westwitsmining.com",
+       "published_at": "2026-04-30T02:49:42",
+       "url": "https://stockhead.com.au/resources/west-wits-divests-mt-cecelia-to-focus-on-qala-shallows-gold-expansion/",
+       "publisher": "stockhead.com.au",
+       "title": "West Wits divests Mt Cecelia to focus on Qala Shallows gold expansion | Stockhead"
+      },
+      {
+       "id": "69f9d45f713680636eec07e6",
+       "headline": "Press Release Atos Group completes announced divestment of its South American operations to Semantix Paris, France - April 30, 2026 - Atos Group, a global leader of AI-powered digital transformation, today announces the completion of the sale of its South American operations to Semantix, a leading Brazil-based provider of data, analytics and artificial intelligence solutions, following the binding agreement signed on December 26, 2025.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "semantix.ai",
+       "published_at": "2026-04-30T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 1789,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMzAgMDA6MDA6MDAiLCJpIjoiNjlmOWQ0NWY3MTM2ODA2MzZlZWMwN2U2IiwiZG0iOiJzZW1hbnRpeC5haSIsImV0IjoibWEiLCJybyI6ImFjcXVpcmVyIn0",
+     "by_type": {
+      "ma": 922,
+      "asset_acquisition": 867
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.537,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.541
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "ma"
+     ],
+     "q": "sale",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "sale",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "asset_acquisition",
+       "ma"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 1718,
+     "carrying": 1716,
+     "carrier_share_pct": 99.88,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 18,
+       "share": 1.05
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 137,
+       "share": 7.98
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 81,
+       "share": 4.72
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 578,
+       "share": 33.68
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 262,
+       "share": 15.27
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 636,
+       "share": 37.06
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 4,
+       "share": 0.23
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 155,
+       "share": 9.03
+      },
+      {
+       "group": "neutral",
+       "count": 81,
+       "share": 4.72
+      },
+      {
+       "group": "positive",
+       "count": 1480,
+       "share": 86.25
+      }
+     ],
+     "negative_to_positive_ratio": 0.105,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.14,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 367,
+       "negative": 45,
+       "neutral": 18,
+       "positive": 304,
+       "negative_share": 12.26,
+       "positive_share": 82.83,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 8,
+        "fair_neg": 0,
+        "slight_neg": 37,
+        "none": 18,
+        "slight_pos": 107,
+        "fair_pos": 62,
+        "very_pos": 133,
+        "extreme_pos": 2
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 476,
+       "negative": 39,
+       "neutral": 25,
+       "positive": 412,
+       "negative_share": 8.19,
+       "positive_share": 86.55,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 38,
+        "none": 25,
+        "slight_pos": 165,
+        "fair_pos": 75,
+        "very_pos": 170,
+        "extreme_pos": 2
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 454,
+       "negative": 36,
+       "neutral": 27,
+       "positive": 391,
+       "negative_share": 7.93,
+       "positive_share": 86.12,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 5,
+        "fair_neg": 0,
+        "slight_neg": 31,
+        "none": 27,
+        "slight_pos": 155,
+        "fair_pos": 66,
+        "very_pos": 170,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 419,
+       "negative": 35,
+       "neutral": 11,
+       "positive": 373,
+       "negative_share": 8.35,
+       "positive_share": 89.02,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 4,
+        "fair_neg": 0,
+        "slight_neg": 31,
+        "none": 11,
+        "slight_pos": 151,
+        "fair_pos": 59,
+        "very_pos": 163,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.875,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.878
+    }
+   }
+  }
+ ]
+}

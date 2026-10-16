@@ -1,0 +1,798 @@
+{
+ "slug": "new-product-launch",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:00Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "new_product"
+     ],
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "event_type": [
+       "new_product"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 841,
+       "by_type": {
+        "new_product": 841
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 727,
+       "by_type": {
+        "new_product": 727
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 771,
+       "by_type": {
+        "new_product": 771
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 873,
+       "by_type": {
+        "new_product": 873
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 1038,
+       "by_type": {
+        "new_product": 1038
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 1145,
+       "by_type": {
+        "new_product": 1145
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 984,
+       "by_type": {
+        "new_product": 984
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 742,
+       "by_type": {
+        "new_product": 742
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 838,
+       "by_type": {
+        "new_product": 838
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 1112,
+       "by_type": {
+        "new_product": 1112
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 1117,
+       "by_type": {
+        "new_product": 1117
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 1258,
+       "by_type": {
+        "new_product": 1258
+       }
+      }
+     ],
+     "totals": {
+      "events": 11446,
+      "articles": 10475,
+      "companies": 5872,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "new_product": 11446
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.01,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.013
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "new_product"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "event_type": [
+       "new_product"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f9d48ca088760d34bf0e90",
+       "headline": "Vocus' newly launched partner program offers technology solution providers access to its legacy and TPG networks along with a range of benefits.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "vocus.com",
+       "published_at": "2026-04-30T23:25:49",
+       "url": "https://www.arnnet.com.au/article/4165288/vocus-partner-program-to-tap-into-legacy-networks.html",
+       "publisher": "arnnet.com.au",
+       "title": "Vocus partner program to tap into legacy networks"
+      },
+      {
+       "id": "69f8a68e8937ef12fc0adc9d",
+       "headline": "InnovMetric, an independent software development company, has launched PolyWorks® 2026.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "innovmetric.com",
+       "published_at": "2026-04-30T20:49:11",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69fa4551a088760d34c8954d",
+       "headline": "Ant International CEO Peng Yang shares the company’s global strategy for the era of AI commerce and launches its open-sourced Agentic Mobile Protocol (AMP) at the MoMents 2026 fintech executive forum",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "antintl.com",
+       "published_at": "2026-04-30T20:41:02",
+       "url": "https://www.fintechnews.org/expanding-infrastructure-for-the-age-of-ai-commerce-ant-international-connects-over-150-million-merchants-with-more-than-2-billion-consumers/",
+       "publisher": "fintechnews.org",
+       "title": "Expanding infrastructure for the age of AI commerce: Ant International connects over 150 million merchants with more than 2 billion consumers - fintechnews.org"
+      },
+      {
+       "id": "69f8842343843dd771d08309",
+       "headline": "Microsoft packages AI, identity, and security together Microsoft appears to be focused on building an all-in-one platform for AI services, recently introducing Copilot Cowork and 365 E7.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "microsoft.com",
+       "published_at": "2026-04-30T20:11:29",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8842343843dd771d08309",
+       "headline": "Google Cloud is taking a more partner-led approach, expanding partner capacity and reducing regional barriers so customers can scale AI deployments globally through more localized services. Partners are especially rewarded if they can tie deployments to Gemini, its AI model. The company also recently announced a $750M fund to enable partners to build and deploy agentic AI systems at scale.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "cloud.google.com",
+       "published_at": "2026-04-30T20:11:29",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d515713680636eec8375",
+       "headline": "Apollo Launches Int’l Casualty Reinsurance Business, Led by Berkley Re’s Mackenzie Apollo, the London-based subsidiary of Skyward Group, announced the launch of an international casualty reinsurance class of business, which introduces a low-volatility portfolio that offers access to new markets, while solving complex challenges for both new and existing clients.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "apollo-oe.com",
+       "published_at": "2026-04-30T16:31:29",
+       "url": "https://www.insurancejournal.com/news/international/2026/04/30/867927.htm",
+       "publisher": "insurancejournal.com",
+       "title": "People Moves: Apollo Launches Int'l Casualty Reinsurance Business, Led by Berkley Re's Mackenzie; The Fidelis Partnership Promotes Woods as Ireland CEO, With More Key Hires"
+      },
+      {
+       "id": "69f883f28937ef12fc08ff35",
+       "headline": "SEOUL, April 29, 2026 – Hyundai Motor Group (the Group) today unveiled Pleos Connect, a next‑generation in‑vehicle infotainment system designed to fundamentally transform the customer mobility experience.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "hyundaimotorgroup.com",
+       "published_at": "2026-04-30T15:57:36",
+       "url": "https://www.cbtnews.com/hmg-redefines-experience-with-pleos-connect/",
+       "publisher": "cbtnews.com",
+       "title": "Hyundai Motor Group redefines in-vehicle experience with ‘Pleos Connect’ next-generation infotainment system"
+      },
+      {
+       "id": "69f880bfbbf1d3145596767d",
+       "headline": "Prior to China, BI had also launched QRIS usage in South Korea on April 1.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "bi.go.id",
+       "published_at": "2026-04-30T14:27:58",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d532713680636eec9840",
+       "headline": "SUPERAGENT AI, Inc. today announced the general availability of SUPERAGENT 2.0, a comprehensive platform update that transitions the software from an AI feature set into a unified autonomous workforce for independent insurance agencies.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "superagent.com",
+       "published_at": "2026-04-30T13:56:51",
+       "url": "https://globalfintechseries.com/insurtech/superagent-ai-unveils-platform-2-0-delivering-a-unified-autonomous-workforce-for-independent-insurance-agencies/",
+       "publisher": "globalfintechseries.com",
+       "title": "SUPERAGENT AI Unveils Platform 2.0, Delivering a Unified Autonomous Workforce for Independent Insurance Agencies"
+      },
+      {
+       "id": "69f9d591713680636eecdd5f",
+       "headline": "Hyperion Intelligence Inc. (“Hyperion”) today debuted FairMarketValue, an A.I. enabled financial intelligence platform that streamlines how companies and advisors access private market data and insights.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "hyperionmt.com",
+       "published_at": "2026-04-30T13:51:42",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d58d713680636eecdaf5",
+       "headline": "International Motors is rolling out a new connected digital ecosystem designed to bring fleet operations, vehicle health, and dealer communication under one roof. Called My International, the platform combines telematics data, service workflows, and remote vehicle controls into a single interface accessible via desktop or mobile app.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "international-motors.de",
+       "published_at": "2026-04-30T13:51:27",
+       "url": "http://www.truckinginfo.com/news/international-debuts-my-international-connected-platform-to-centralize-fleet-data-service-and-dealer-communication",
+       "publisher": "truckinginfo.com",
+       "title": "International Debuts ‘My International’ Connected Platform to Centralize Fleet Data, Service, and Dealer Communication"
+      },
+      {
+       "id": "6a040839220687a966ab09eb",
+       "headline": "MESA, AZ / ACCESS Newswire / April 30, 2026 / Medical Care Technologies Inc. (OTCID:MDCE) (\"the Company\") today announced the launch of its newly redesigned corporate website , now live at https://medicalcaretechnologies.com , providing investors and stakeholders with expanded visibility into the Company's strategic roadmap, operational priorities, and long-term growth initiatives.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "medcaretechinc.com",
+       "published_at": "2026-04-30T13:30:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8a8868937ef12fc0af563",
+       "headline": "\"More than 500 Delhaize products have now been added.\"",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "delhaize.be",
+       "published_at": "2026-04-30T13:02:04",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8a5efbbf1d314559a1c29",
+       "headline": "Starbucks introduced a new mango flavor to its Refreshers earlier this month.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "starbucks.in",
+       "published_at": "2026-04-30T12:46:20",
+       "url": "https://www.restaurantbusinessonline.com/financing/everybody-doing-refreshers-now-starbucks-isnt-worried",
+       "publisher": "restaurantbusinessonline.com",
+       "title": "Everybody is doing Refreshers now, but Starbucks isn’t worried"
+      },
+      {
+       "id": "69f8a5efbbf1d314559a1c29",
+       "headline": "McDonald’s next month will start selling a half-dozen new drinks, three of which are called “Refreshers,” colorful, fruity drinks with boba or dried fruit.",
+       "event_type": "new_product",
+       "role": "primary",
+       "domain": "mcdonalds.com",
+       "published_at": "2026-04-30T12:46:20",
+       "url": "https://www.restaurantbusinessonline.com/financing/everybody-doing-refreshers-now-starbucks-isnt-worried",
+       "publisher": "restaurantbusinessonline.com",
+       "title": "Everybody is doing Refreshers now, but Starbucks isn’t worried"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 4325,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMzAgMTI6NDY6MjAiLCJpIjoiNjlmOGE1ZWZiYmYxZDMxNDU1OWExYzI5IiwiZG0iOiJtY2RvbmFsZHMuY29tIiwiZXQiOiJuZXdfcHJvZHVjdCIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "new_product": 4325
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.289,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 7 event(s)"
+     ],
+     "request_seconds": 4.291
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "new_product"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "new_product"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 3828,
+     "carrying": 3828,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 1,
+       "share": 0.03
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 1,
+       "share": 0.03
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 44,
+       "share": 1.15
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 8,
+       "share": 0.21
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 322,
+       "share": 8.41
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 323,
+       "share": 8.44
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 3090,
+       "share": 80.72
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 39,
+       "share": 1.02
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 46,
+       "share": 1.2
+      },
+      {
+       "group": "neutral",
+       "count": 8,
+       "share": 0.21
+      },
+      {
+       "group": "positive",
+       "count": 3774,
+       "share": 98.59
+      }
+     ],
+     "negative_to_positive_ratio": 0.012,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.02,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 710,
+       "negative": 11,
+       "neutral": 2,
+       "positive": 697,
+       "negative_share": 1.55,
+       "positive_share": 98.17,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 1,
+        "slight_neg": 9,
+        "none": 2,
+        "slight_pos": 57,
+        "fair_pos": 61,
+        "very_pos": 573,
+        "extreme_pos": 6
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 985,
+       "negative": 12,
+       "neutral": 1,
+       "positive": 972,
+       "negative_share": 1.22,
+       "positive_share": 98.68,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 12,
+        "none": 1,
+        "slight_pos": 83,
+        "fair_pos": 84,
+        "very_pos": 794,
+        "extreme_pos": 11
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 988,
+       "negative": 10,
+       "neutral": 4,
+       "positive": 974,
+       "negative_share": 1.01,
+       "positive_share": 98.58,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 10,
+        "none": 4,
+        "slight_pos": 91,
+        "fair_pos": 91,
+        "very_pos": 778,
+        "extreme_pos": 14
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 1145,
+       "negative": 13,
+       "neutral": 1,
+       "positive": 1131,
+       "negative_share": 1.14,
+       "positive_share": 98.78,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 13,
+        "none": 1,
+        "slight_pos": 91,
+        "fair_pos": 87,
+        "very_pos": 945,
+        "extreme_pos": 8
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.863,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.866
+    }
+   }
+  }
+ ]
+}

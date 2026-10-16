@@ -1,0 +1,806 @@
+{
+ "slug": "restructuring",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:29Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "restructuring",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "restructuring",
+      "match": "any",
+      "event_type": [
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 19,
+       "by_type": {
+        "company_announcement": 19
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 28,
+       "by_type": {
+        "company_announcement": 28
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 24,
+       "by_type": {
+        "company_announcement": 24
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 30,
+       "by_type": {
+        "company_announcement": 30
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 38,
+       "by_type": {
+        "company_announcement": 38
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 44,
+       "by_type": {
+        "company_announcement": 44
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 28,
+       "by_type": {
+        "company_announcement": 28
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 27,
+       "by_type": {
+        "company_announcement": 27
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 23,
+       "by_type": {
+        "company_announcement": 23
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 35,
+       "by_type": {
+        "company_announcement": 35
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 17,
+       "by_type": {
+        "company_announcement": 17
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 27,
+       "by_type": {
+        "company_announcement": 27
+       }
+      }
+     ],
+     "totals": {
+      "events": 340,
+      "articles": 329,
+      "companies": 192,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 340
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.087,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.089
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "restructuring",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "restructuring",
+      "event_type": [
+       "company_announcement"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f8abfbbbf1d314559a6ad0",
+       "headline": "In February Drax confirmed a major restructuring which will lead to 350 redundancies as part of plans to build “a strong, resilient business for the future”.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "drax.com",
+       "published_at": "2026-04-30T12:28:38",
+       "url": "https://www.business-live.co.uk/economic-development/drax-hails-good-performance-supports-33866317",
+       "publisher": "business-live.co.uk",
+       "title": "Drax hails good performance as it 'supports UK energy at a critical time'"
+      },
+      {
+       "id": "69f22e6bc6105443aa5e2bb9",
+       "headline": "United Parcel Service plans to close an additional 27 parcel distribution centers this year as the company continues its aggressive cost restructuring to better align capacity with lower volumes and boost profitability.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "ups.com",
+       "published_at": "2026-04-29T13:40:20",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f228d8c6105443aa5cc88c",
+       "headline": "2025 marked a transition year, with ADS-TEC Energy restructuring its sales approach, prioritizing higher-quality projects and expanding recurring revenue streams from service, software and Own & Operate charging infrastructure.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "adstec-energy.com",
+       "published_at": "2026-04-29T12:30:00",
+       "url": "https://ads-tec-com.mynewsdesk.com/pressreleases/where-flexibility-becomes-a-business-model-ads-tec-energy-releases-updated-investor-presentation-3445668",
+       "publisher": "ads-tec-com.mynewsdesk.com",
+       "title": "Where flexibility becomes a business model: ADS-TEC Energy releases updated investor presentation"
+      },
+      {
+       "id": "69f9d9ee713680636ef01180",
+       "headline": "The company did some restructuring with some facility consolidation, and improved operational efficiency yielded estimated cost benefits.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "unitedrentals.com",
+       "published_at": "2026-04-27T00:00:00",
+       "url": "http://rermag.com/news-analysis/headline-news/article/55373515/specialty-rental-big-projects-continue-strong-in-united-rentals-first-quarter-flannery-says",
+       "publisher": "rermag.com",
+       "title": "Specialty Rental, Big Projects Continue Strong in United Rentals’ First Quarter, Flannery Says"
+      },
+      {
+       "id": "69f9d7137b2d589e844c9e75",
+       "headline": "The company did some restructuring with some facility consolidation, and improved operational efficiency yielded estimated cost benefits.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "unitedrentals.com",
+       "published_at": "2026-04-27T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69efab26727212302c5f5080",
+       "headline": "Talks about a potential demerger could resume once parent Vedanta completes its own restructuring.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "hzlindia.com",
+       "published_at": "2026-04-25T07:32:44",
+       "url": "https://www.outlookbusiness.com/corporate/hindustan-zinc-eyes-capacity-doubling-by-2030-demerger-talks-may-resume",
+       "publisher": "outlookbusiness.com",
+       "title": "Hindustan Zinc Eyes Capacity Doubling by 2030, Demerger Talks May Resume – Outlook Business"
+      },
+      {
+       "id": "69ea4a9ab0517977015d2910",
+       "headline": "The same month, Agilyx transferred ownership of a Houston plastics sorting center to partners LyondellBasell and ExxonMobil as part of a restructuring of the Cyclyx joint venture.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "agilyx.com",
+       "published_at": "2026-04-23T15:06:43",
+       "url": "https://resource-recycling.com/plastics/2026/04/23/lyondellbasell-upgrade-to-prezero-assets-on-hold/",
+       "publisher": "resource-recycling.com",
+       "title": "LyondellBasell upgrade to PreZero assets on hold"
+      },
+      {
+       "id": "69e99a2ed47fc028321827df",
+       "headline": "As of late 2025, Speedcast is undergoing a significant financial restructuring, with S&P Global Ratings reporting a “Negative” outlook due to free cash outflows through the first half of 2024 and high, floating-rate debt.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "speedcast.com",
+       "published_at": "2026-04-22T00:55:39",
+       "url": "https://www.advanced-television.com/2026/04/22/speedcast-claims-business-rise-of-50-in-q1/",
+       "publisher": "advanced-television.com",
+       "title": "Speedcast claims business rise of 50% in Q1"
+      },
+      {
+       "id": "69e8886c7bb1410d4c8c23ee",
+       "headline": "He also highlighted a restructuring of corporate culture.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "sktelecom.com",
+       "published_at": "2026-04-21T15:25:36",
+       "url": "https://www.mobileworldlive.com/asia-pacific/skt-chief-targets-b2b-ai-push/",
+       "publisher": "mobileworldlive.com",
+       "title": "SKT chief targets B2B AI push"
+      },
+      {
+       "id": "69e8e3165cfa3e5ba54fd2a1",
+       "headline": "Currently part of the ecosystem of T&T Group, Vietravel Airlines is undergoing restructuring and strengthening its operations.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "vietravelairlines.com",
+       "published_at": "2026-04-18T00:00:00",
+       "url": "https://vietnamnews.vn/bizhub/1779729/vietravel-airlines-adds-new-aircraft-plans-fleet-expansion.html",
+       "publisher": "vietnamnews.vn",
+       "title": "Vietravel Airlines adds new aircraft, plans fleet expansion"
+      },
+      {
+       "id": "69e8e2e37bb1410d4cd4ac3b",
+       "headline": "Honda Motor Co. is restructuring its China business as it navigates declining sales and intensifying competition from domestic electric vehicle (EV) manufacturers.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "honda.co.jp",
+       "published_at": "2026-04-17T12:40:03",
+       "url": "https://www.domain-b.com/industry/industry-general/honda-china-restructuring-ev-shift-2026",
+       "publisher": "domain-b.com",
+       "title": "Honda scales back China operations amid weak sales and EV transition pressure"
+      },
+      {
+       "id": "69e8e2db9baafc7356ddcdbb",
+       "headline": "Suzlon has reported progress in strengthening its financial position in recent years through: Debt reduction and restructuring efforts Improved cash flows supported by execution of large utility orders Strong pipeline from public sector and competitive bidding projects.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "suzlon.com",
+       "published_at": "2026-04-17T08:16:45",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e84d147bb1410d4c66d640",
+       "headline": "US cartonboard producer Clearwater Paper Corporation has announced the restructuring of its Cypress Bend mill in Arkansas.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "clearwaterpaper.com",
+       "published_at": "2026-04-15T00:00:00",
+       "url": "https://www.euwid-paper.com/news/companies/clearwater-paper-to-reduce-board-production-in-arkansas-150426/",
+       "publisher": "euwid-paper.com",
+       "title": "Clearwater Paper to reduce board production in Arkansas"
+      },
+      {
+       "id": "69dfc9c244a6646a5b2bea83",
+       "headline": "The bearing maker plans to double revenue to ₹2,500 crore by FY31, expand non-mobility verticals, accelerate JVs and acquisitions, and lift exports to 40% as it rebuilds after a fire-hit phase and family restructuring.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "nrbbearings.com",
+       "published_at": "2026-04-15T00:00:00",
+       "url": "https://www.autocarpro.in/news/reclaiming-momentum-how-nrb-bearings-is-positioning-for-a-bigger-more-diverse-future-130019",
+       "publisher": "autocarpro.in",
+       "title": "Reclaiming Momentum: How NRB Bearings Is Positioning for a Bigger, More Diverse Future | Autocar Professional"
+      },
+      {
+       "id": "69e846b49baafc73566b1237",
+       "headline": "The restructuring effort includes major cost‑cutting measures, such as closing seven production plants in Japan and overseas among them the Oppama facility in Yokosuka, Kanagawa Prefecture and reducing its workforce by approximately 20,000 employees.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "nissan-global.com",
+       "published_at": "2026-04-14T16:55:00",
+       "url": "https://mettisglobal.news/Nissan-accelerates-AI-adoption-59682",
+       "publisher": "mettisglobal.news",
+       "title": "Nissan accelerates AI adoption"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 102,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTQgMTY6NTU6MDAiLCJpIjoiNjllODQ2YjQ5YmFhZmM3MzU2NmIxMjM3IiwiZG0iOiJuaXNzYW4tZ2xvYmFsLmNvbSIsImV0IjoiY29tcGFueV9hbm5vdW5jZW1lbnQiLCJybyI6InByaW1hcnkifQ",
+     "by_type": {
+      "company_announcement": 102
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.378,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 3 event(s)"
+     ],
+     "request_seconds": 4.381
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "restructuring",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "restructuring",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 125,
+     "carrying": 124,
+     "carrier_share_pct": 99.2,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 10,
+       "share": 8.06
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 2,
+       "share": 1.61
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 36,
+       "share": 29.03
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 3,
+       "share": 2.42
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 29,
+       "share": 23.39
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 13,
+       "share": 10.48
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 31,
+       "share": 25.0
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 48,
+       "share": 38.71
+      },
+      {
+       "group": "neutral",
+       "count": 3,
+       "share": 2.42
+      },
+      {
+       "group": "positive",
+       "count": 73,
+       "share": 58.87
+      }
+     ],
+     "negative_to_positive_ratio": 0.658,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.89,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 27,
+       "negative": 17,
+       "neutral": 1,
+       "positive": 9,
+       "negative_share": 62.96,
+       "positive_share": 33.33,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 5,
+        "fair_neg": 0,
+        "slight_neg": 12,
+        "none": 1,
+        "slight_pos": 1,
+        "fair_pos": 4,
+        "very_pos": 4,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 38,
+       "negative": 10,
+       "neutral": 0,
+       "positive": 28,
+       "negative_share": 26.32,
+       "positive_share": 73.68,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 1,
+        "slight_neg": 7,
+        "none": 0,
+        "slight_pos": 9,
+        "fair_pos": 5,
+        "very_pos": 14,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 30,
+       "negative": 11,
+       "neutral": 2,
+       "positive": 17,
+       "negative_share": 36.67,
+       "positive_share": 56.67,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 1,
+        "slight_neg": 9,
+        "none": 2,
+        "slight_pos": 8,
+        "fair_pos": 2,
+        "very_pos": 7,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 29,
+       "negative": 10,
+       "neutral": 0,
+       "positive": 19,
+       "negative_share": 34.48,
+       "positive_share": 65.52,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 0,
+        "slight_neg": 8,
+        "none": 0,
+        "slight_pos": 11,
+        "fair_pos": 2,
+        "very_pos": 6,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.446,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.487
+    }
+   }
+  }
+ ]
+}

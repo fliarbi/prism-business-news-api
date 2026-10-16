@@ -1,0 +1,2975 @@
+{
+ "slug": "antler-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:28Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Antler",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "antler"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 187,
+      "deals_with_amount": 178,
+      "deals_without_amount": 9,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 1580031620.0,
+      "median_amount_usd": 1944000.0,
+      "largest_amount_usd": 300000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 4,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 16900000.0,
+       "median_amount_usd": 5600000.0,
+       "largest_amount_usd": 7500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 10,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 193194000.0,
+       "median_amount_usd": 6600000.0,
+       "largest_amount_usd": 88000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 26,
+       "deals_with_amount": 26,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 427517120.0,
+       "median_amount_usd": 1971000.0,
+       "largest_amount_usd": 220000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 19,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 20604000.0,
+       "median_amount_usd": 840000.0,
+       "largest_amount_usd": 4900000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 180700000.0,
+       "median_amount_usd": 3500000.0,
+       "largest_amount_usd": 60000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 19,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 47797000.0,
+       "median_amount_usd": 1594000.0,
+       "largest_amount_usd": 18000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 20,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 142359500.0,
+       "median_amount_usd": 3000000.0,
+       "largest_amount_usd": 40000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 5,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 18156000.0,
+       "median_amount_usd": 1080000.0,
+       "largest_amount_usd": 8160000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 21,
+       "deals_with_amount": 20,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 231513000.0,
+       "median_amount_usd": 160800.0,
+       "largest_amount_usd": 220000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 131470000.0,
+       "median_amount_usd": 3000000.0,
+       "largest_amount_usd": 60000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 429380000.0,
+       "median_amount_usd": 8000000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 10,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 23660000.0,
+       "median_amount_usd": 2430000.0,
+       "largest_amount_usd": 5400000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.058,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.061
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Antler",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "antler"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "a94fa1e20c3e79c3",
+       "company_name": "pixverse",
+       "domain": "pixverse.com",
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "EnvisionX Capital",
+         "domain": "envisionxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "iglobe partners",
+         "domain": "iglobepartners.com",
+         "amount": null
+        },
+        {
+         "name": "Lion X Ventures",
+         "domain": "lionxventures.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "UOB Venture Management",
+         "domain": "uobvm.com.sg",
+         "amount": null
+        },
+        {
+         "name": "3W Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate global expansion and help PixVerse pursue more enterprise customers across North America and Asia",
+       "source_sentence": "Alibaba-backed AI video startup PixVerse has raised $300 million in new funding, according to Bloomberg, pushing the company to a valuation of more than $1 billion as competition in AI-generated video heats up.",
+       "published_at": "2026-03-13T12:11:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbe31a653f29297e767586"
+       ],
+       "article_id": "69cbe31a653f29297e767586"
+      },
+      {
+       "id": "102d7b4572ea68b4",
+       "company_name": "airalo",
+       "domain": "airalo.com",
+       "round_type": "Growth",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cvc capital partners",
+         "domain": "cvc.com",
+         "amount": null
+        },
+        {
+         "name": "peak xv",
+         "domain": "peakxv.net",
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "eSIM connectivity",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to expand its borderless eSIM marketplace",
+       "source_sentence": "Airalo secured $220M to expand its global eSIM connectivity platform",
+       "published_at": "2026-01-06T00:00:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988efb394d3f481f3dc461b"
+       ],
+       "article_id": "6988efb394d3f481f3dc461b"
+      },
+      {
+       "id": "6a50ac7771e95c10",
+       "company_name": "airalo",
+       "domain": "airalo.com",
+       "round_type": "Growth funding",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cvc capital partners",
+         "domain": "cvc.com",
+         "amount": 185000000.0
+        },
+        {
+         "name": "peak xv",
+         "domain": "peakxv.net",
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Travel eSIM provider",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "platform expansion, customer service enhancements, new product development, enterprise connectivity solutions",
+       "source_sentence": "The $220 million funding round was led by new investor CVC through its CVC Asia Fund VI, with CVC contributing $185 million of the total investment. Existing backers Peak XV and Antler Elevate also participated in the round.",
+       "published_at": "2025-07-18T09:37:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "694510d5269a9dedeaa33eca"
+       ],
+       "article_id": "694510d5269a9dedeaa33eca"
+      },
+      {
+       "id": "52ddebb509adfa36",
+       "company_name": "airalo",
+       "domain": "airalo.com",
+       "round_type": "Growth Round",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cvc",
+         "domain": "cvc.com.au",
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "eSIM Marketplace",
+       "country": "United States",
+       "city": "Lewes, Delaware",
+       "use_of_funds": "Airalo will use the funds to scale its platform, enhance customer experience with new products and support, and expand its enterprise offerings.",
+       "source_sentence": "Airalo will use the funds to scale its platform, enhance customer experience with new products and support, and expand its enterprise offerings.",
+       "published_at": "2025-07-10T23:11:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "690301ecdf771495f9d83b20"
+       ],
+       "article_id": "690301ecdf771495f9d83b20"
+      },
+      {
+       "id": "75ea06118e2610e8",
+       "company_name": "airalo",
+       "domain": "airalo.com",
+       "round_type": "Series C",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cvc capital partners",
+         "domain": "cvc.com",
+         "amount": 185000000.0
+        },
+        {
+         "name": "peak xv",
+         "domain": "peakxv.net",
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Embedded SIM",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "improve user support, provide new products, and scale enterprise offering",
+       "source_sentence": "has achieved “unicorn” status by surpassing a $1-billion USD valuation through a $220 million USD ($300 million CAD) Series C round.",
+       "published_at": "2025-07-10T18:47:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a70f8fb0ea95e977190f"
+       ],
+       "article_id": "6988a70f8fb0ea95e977190f"
+      },
+      {
+       "id": "5c42524ef06dc6a1",
+       "company_name": "airalo",
+       "domain": "airalo.com",
+       "round_type": null,
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": 1000000000.0,
+       "investors": [
+        {
+         "name": "cvc",
+         "domain": "cvc.com.au",
+         "amount": 185.0
+        },
+        {
+         "name": "peak xv",
+         "domain": "peakxv.net",
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Telefonica Open Innovation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Orange Ventures",
+         "domain": "ventures.orange.com",
+         "amount": null
+        },
+        {
+         "name": "Liberty Global Ventures",
+         "domain": "libertyglobalventures.vdtrxn",
+         "amount": null
+        }
+       ],
+       "sector": "Travel Technology",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "improving customer experience, including enhanced user support and new products",
+       "source_sentence": "European private equity firm CVC led a $220-million funding round in Singaporean travel technology specialist Airalo, valuing the business at more than $1 billion, the companies said on Thursday.",
+       "published_at": "2025-07-10T00:00:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "6898b6d1ace6dc7b1fbe577f",
+        "68c1727e6a78bf0c5658ee0e",
+        "68c4377751a522a90829e87c",
+        "68f735c76ecd416e342cf7fd",
+        "698eb4f58d29a990b6eebb4a",
+        "6991c61140184cd70864ce64",
+        "69bb636efb5301c850400acb"
+       ],
+       "article_id": "68c1727e6a78bf0c5658ee0e"
+      },
+      {
+       "id": "074096320c657b0b",
+       "company_name": "lovable",
+       "domain": "lovable.it",
+       "round_type": "Growth round",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        },
+        {
+         "name": "20VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "visionaries club",
+         "domain": "visionaries.vc",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Web Development",
+       "country": null,
+       "city": "Stockholm",
+       "use_of_funds": "expand its product team and infrastructure to meet fast-growing demand",
+       "source_sentence": "Lovable Raises $150M Growth Round for AI Web Development",
+       "published_at": "2025-07-04T00:45:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab3f9f2e28036801ba2602"
+       ],
+       "article_id": "68ab3f9f2e28036801ba2602"
+      },
+      {
+       "id": "732dff6c3ce35a18",
+       "company_name": "salmon",
+       "domain": "salmon.ph",
+       "round_type": "Growth (Equity + Debt Financing)",
+       "amount_usd": 88000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 88000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Spice Expeditions",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ifc",
+         "domain": "ifc.org",
+         "amount": null
+        },
+        {
+         "name": "ADQ’s Lunate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "northstar",
+         "domain": "northstarmoney.com",
+         "amount": null
+        }
+       ],
+       "sector": "Consumer Fintech",
+       "country": "Philippines",
+       "city": null,
+       "use_of_funds": "double down on its mission of providing AI-driven, user-friendly financial services in the Philippines and beyond",
+       "source_sentence": "Salmon, a Philippines-based consumer fintech startup operating a digital lending platform and rural bank, secured $88 million in a growth funding round to expand its presence across Southeast Asia and enhance access to credit services.",
+       "published_at": "2025-06-18T22:26:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d100e465fd12d4142cd3b3"
+       ],
+       "article_id": "68d100e465fd12d4142cd3b3"
+      },
+      {
+       "id": "9590808633255dcb",
+       "company_name": "inamo",
+       "domain": "inamo.com",
+       "round_type": "Series A",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13200000.0,
+       "currency": "INR",
+       "amount": 5000000000.0,
+       "valuation": 1100000000.0,
+       "investors": [
+        {
+         "name": "Five SB Limited",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Shastra VC",
+         "domain": "shastra.vc",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "gemba capital",
+         "domain": "gembacapital.in",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce enablement startup",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Quick commerce enablement startup Inamo is raising ₹50 Cr (about $5.4 Mn) in what seems to be its Series A funding round.",
+       "published_at": "2026-02-28T07:51:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbe60ed652ae4c39903fe6"
+       ],
+       "article_id": "69cbe60ed652ae4c39903fe6"
+      },
+      {
+       "id": "443afa79cb371a5b",
+       "company_name": "inamo",
+       "domain": "inamo.com",
+       "round_type": "Series A",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13200000.0,
+       "currency": "INR",
+       "amount": 5000000000.0,
+       "valuation": 1100000000.0,
+       "investors": [
+        {
+         "name": "Five SB Limited",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Shastra VC",
+         "domain": "shastra.vc",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "gemba capital",
+         "domain": "gembacapital.in",
+         "amount": null
+        }
+       ],
+       "sector": "Quick commerce enablement",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its operations",
+       "source_sentence": "Quick commerce enablement startup Inamo is raising ₹50 Cr (about $5.4 Mn) in what seems to be its Series A funding round.",
+       "published_at": "2026-02-28T07:51:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc87f1ded38472ac538a28"
+       ],
+       "article_id": "69bc87f1ded38472ac538a28"
+      },
+      {
+       "id": "3400bc4fcced3f09",
+       "company_name": "aisphere",
+       "domain": "aisphere.tech",
+       "round_type": "Series B",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Fortune Capital",
+         "domain": "fortunecapital.co.in",
+         "amount": null
+        },
+        {
+         "name": "Shenzhen Capital Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Beijing Artificial Intelligence Industry Investment Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Hunan Broadcasting System",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Giant Network",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        }
+       ],
+       "sector": "Video generation",
+       "country": "China",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "AIsphere, a Chinese startup, has raised more than USD 60 million in a Series B funding round led by Alibaba, with participation from Fortune Capital, Shenzhen Capital Group, the Beijing Artificial Intelligence Industry Investment Fund, Hunan Broadcasting System, Giant Network, and Antler.",
+       "published_at": "2025-09-17T02:00:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4e2cb385b3a4597da72"
+       ],
+       "article_id": "69c3a4e2cb385b3a4597da72"
+      },
+      {
+       "id": "e46bdeee1cc4f6b7",
+       "company_name": "aisphere",
+       "domain": "aisphere.tech",
+       "round_type": null,
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alibaba",
+         "domain": "alibaba.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Beijing Artificial Intelligence Industry Investment Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "China",
+       "city": "Beijing",
+       "use_of_funds": "accelerate PixVerse’s research, global product development, and scaling of its backend AI infrastructure",
+       "source_sentence": "Alibaba Group has made waves in the artificial intelligence startup world by leading a $60 million financing round in AIsphere, the Beijing-based company behind the fast-growing AI video generator PixVerse.",
+       "published_at": "2025-09-11T16:32:56",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d9b3dcc149d2bca77fe6d5",
+        "69e3cd68b8c34c1508f700f9"
+       ],
+       "article_id": "68d9b3dcc149d2bca77fe6d5"
+      },
+      {
+       "id": "177d632571f3fd0a",
+       "company_name": "pixverse",
+       "domain": "pixverse.com",
+       "round_type": null,
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Alibaba Group Holding",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Beijing Artificial Intelligence Industry Investment Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial intelligence video generation",
+       "country": "China",
+       "city": "Beijing",
+       "use_of_funds": "R&D and continued global expansion",
+       "source_sentence": "The Beijing-based start-up behind the popular artificial intelligence video generator PixVerse has raised US$60 million in a funding round led by Alibaba Group Holding",
+       "published_at": "2025-09-11T06:30:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d10639a66e20611a2d3670",
+        "69e8760d7bb1410d4c806678"
+       ],
+       "article_id": "68d10639a66e20611a2d3670"
+      },
+      {
+       "id": "49daa252780d0ebe",
+       "company_name": "pixverse",
+       "domain": "pixverse.com",
+       "round_type": "Series B",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alibaba",
+         "domain": "alibaba.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        }
+       ],
+       "sector": "AI video platform",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "accelerate global adoption of AI video creation tools",
+       "source_sentence": "PixVerse, the AI video platform with over 100m users globally, today announced it has raised $60 million in Series B funding led by Alibaba, with participation from new investor Antler.",
+       "published_at": "2025-09-10T05:45:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "698d143f9ca02490ecf440a7",
+        "69bb3c3751c35210b7b704a8"
+       ],
+       "article_id": "69bb3c3751c35210b7b704a8"
+      },
+      {
+       "id": "add5c9924397b928",
+       "company_name": "salmon group",
+       "domain": "salmongroup.no",
+       "round_type": "bond",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "international finance corporation",
+         "domain": "ifc.org",
+         "amount": null
+        },
+        {
+         "name": "ADQ/Lunate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "northstar",
+         "domain": "northstarmoney.com",
+         "amount": null
+        },
+        {
+         "name": "Back in Black Capital",
+         "domain": "backinblack.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Filipino investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Financial Technology",
+       "country": "Philippines",
+       "city": "Manila",
+       "use_of_funds": "Support liquidity and funding operations for technological expansion.",
+       "source_sentence": "The firm said in a statement on Tuesday that the funding transaction consists of the $60 million drawdown under a three-year $150 million Nordic bond framework agreement and $28 million of new equity raised from blue-chip US institutional investors, Antler Elevate as well as existing shareholders of Salmon.",
+       "published_at": "2025-06-17T07:26:45",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d9624abf1dd95b8612fe1c",
+        "698d42928d29a990b6d31f63"
+       ],
+       "article_id": "68d9624abf1dd95b8612fe1c"
+      },
+      {
+       "id": "4b9bc0fcd4d89610",
+       "company_name": "harper",
+       "domain": "harperimage.com",
+       "round_type": null,
+       "amount_usd": 47000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 47000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "10x founders",
+         "domain": "10xfounders.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "emergence capital",
+         "domain": "emergencecapitalpartnersltd.com",
+         "amount": null
+        },
+        {
+         "name": "Fellows Fund",
+         "domain": "fellowsfundvc.com",
+         "amount": null
+        },
+        {
+         "name": "Outset Capital",
+         "domain": "outsetcapital.com",
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Harper – $47.0M",
+       "published_at": "2026-03-02T08:27:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bce513dfa7512de38820ad"
+       ],
+       "article_id": "69bce513dfa7512de38820ad"
+      },
+      {
+       "id": "4c6fc9b1197bda78",
+       "company_name": "Harper Insure",
+       "domain": null,
+       "round_type": "Seed and Series A",
+       "amount_usd": 47000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 47000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "emergence capital",
+         "domain": "emergencecapitalpartnersltd.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "peak xv",
+         "domain": "peakxv.net",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "10x founders",
+         "domain": "10xfounders.com",
+         "amount": null
+        },
+        {
+         "name": "Fellows Fund",
+         "domain": "fellowsfundvc.com",
+         "amount": null
+        },
+        {
+         "name": "Outset Capital",
+         "domain": "outsetcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurance",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "expand the company’s engineering, account management, and operations teams, deepen carrier partnerships, and further invest in the AI systems that power its brokerage services",
+       "source_sentence": "Harper Insure, an AI-native commercial insurance brokerage, announced it has raised $47 million in combined seed and Series A funding to expand its technology-driven approach to commercial insurance.",
+       "published_at": "2026-03-02T03:11:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcc5cf4583f4645ff64328"
+       ],
+       "article_id": "69bcc5cf4583f4645ff64328"
+      },
+      {
+       "id": "68d3be619e6621dd",
+       "company_name": "harper",
+       "domain": "harperimage.com",
+       "round_type": "Seed and Series A",
+       "amount_usd": 47000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 47000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "emergence capital",
+         "domain": "emergencecapitalpartnersltd.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "peak xv",
+         "domain": "peakxv.net",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "10x founders",
+         "domain": "10xfounders.com",
+         "amount": null
+        },
+        {
+         "name": "Fellows Fund",
+         "domain": "fellowsfundvc.com",
+         "amount": null
+        },
+        {
+         "name": "Outset Capital",
+         "domain": "outsetcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurance technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Grow engineering, account management, and operations teams; deepen carrier relationships; expand programmes; develop AI infrastructure.",
+       "source_sentence": "Harper, an AI-powered commercial insurance brokerage, has raised $47m in combined seed and Series A funding.",
+       "published_at": "2026-02-26T10:53:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9c931c534852e935d4cd8"
+       ],
+       "article_id": "69c9c931c534852e935d4cd8"
+      },
+      {
+       "id": "f9c5f295b7d6108b",
+       "company_name": "agentio",
+       "domain": "agentio.com",
+       "round_type": null,
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alleycorp",
+         "domain": "alleycorp.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "forerunner",
+         "domain": "withforerunner.com",
+         "amount": null
+        },
+        {
+         "name": "starting line",
+         "domain": "startingline.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Brooklyn",
+       "use_of_funds": null,
+       "source_sentence": "Agentio has now raised a total of $56.3M in total equity funding and is backed by AlleyCorp, Antler, Benchmark, Craft Ventures, Forerunner, Starting Line.",
+       "published_at": "2025-11-23T13:27:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a74bcfd8658683ead30e",
+        "6988f0ac94d3f481f3dc5956"
+       ],
+       "article_id": "6988a74bcfd8658683ead30e"
+      },
+      {
+       "id": "8886cf03e3ca5b56",
+       "company_name": "agentio",
+       "domain": "agentio.com",
+       "round_type": "Series B",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": 340000000.0,
+       "investors": [
+        {
+         "name": "forerunner",
+         "domain": "withforerunner.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "alleycorp",
+         "domain": "alleycorp.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "starting line",
+         "domain": "startingline.vc",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "expand creator-powered advertising platform",
+       "source_sentence": "Agentio Raises $40M in Series B Funding to Expand Its Creator-Powered Ads Platform",
+       "published_at": "2025-11-19T00:32:19",
+       "coverage_count": 3,
+       "article_ids": [
+        "69313edcc8bec8b2f9f22868",
+        "69316df67d94faa13ff22608",
+        "6991c0563fa9200ed83075d7"
+       ],
+       "article_id": "69316df67d94faa13ff22608"
+      },
+      {
+       "id": "59f949f3fae54902",
+       "company_name": "agentio",
+       "domain": "agentio.com",
+       "round_type": "Series B",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": 340000000.0,
+       "investors": [
+        {
+         "name": "forerunner",
+         "domain": "withforerunner.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "alleycorp",
+         "domain": "alleycorp.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "starting line",
+         "domain": "startingline.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Creator marketing",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Invest in AI technology and triple headcount from 35 to 100-120 employees by end of 2026",
+       "source_sentence": "Agentio has raised $40 million in a Series B round of funding led by venture capital firm Forerunner. Benchmark, Craft Ventures, AlleyCorp, Antler, and Starting Line also participated in the round.",
+       "published_at": "2025-11-18T14:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "69864c4edac7b0ca9c5f4eb1",
+        "69888820c1c877922ff40ddc",
+        "6988a741127162d16e0ad45b",
+        "698e1a449ca02490ec079218",
+        "698f1a819ca02490ec1ace77",
+        "69bb6cd7bb3472e5f4c5d13c"
+       ],
+       "article_id": "69864c4edac7b0ca9c5f4eb1"
+      },
+      {
+       "id": "2191adb4f598e173",
+       "company_name": "salmon group",
+       "domain": "salmongroup.no",
+       "round_type": "equity",
+       "amount_usd": 28000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 28000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Blue-chip US institutional investors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "international finance corporation",
+         "domain": "ifc.org",
+         "amount": null
+        },
+        {
+         "name": "ADQ/Lunate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "northstar",
+         "domain": "northstarmoney.com",
+         "amount": null
+        },
+        {
+         "name": "Back in Black Capital",
+         "domain": "backinblack.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Filipino investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Financial Technology",
+       "country": "Philippines",
+       "city": "Manila",
+       "use_of_funds": "Expand fintech services and support credit access across Southeast Asia.",
+       "source_sentence": "The firm said in a statement on Tuesday that the funding transaction consists of the $60 million drawdown under a three-year $150 million Nordic bond framework agreement and $28 million of new equity raised from blue-chip US institutional investors, Antler Elevate as well as existing shareholders of Salmon.",
+       "published_at": "2025-06-17T07:26:45",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d9624abf1dd95b8612fe1c",
+        "698d42928d29a990b6d31f63"
+       ],
+       "article_id": "68d9624abf1dd95b8612fe1c"
+      },
+      {
+       "id": "c243de7a712e3ddc",
+       "company_name": "Peec AI",
+       "domain": "peec.ai",
+       "round_type": "Series-A",
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Singular VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Identity VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "speedup venture capital group",
+         "domain": "speedupgroup.com",
+         "amount": null
+        },
+        {
+         "name": "Combination VC",
+         "domain": "combination.vc",
+         "amount": null
+        },
+        {
+         "name": "S20",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "The Berlin AI startup Peec AI has completed a 21 million US dollars (around 18 million euros) comprehensive Series-A.",
+       "published_at": "2025-11-21T08:22:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc18c96760819e3846b180"
+       ],
+       "article_id": "69bc18c96760819e3846b180"
+      },
+      {
+       "id": "6cab1ad3816ab915",
+       "company_name": "Peec AI",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "singular",
+         "domain": "singular.uk",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Combination VC",
+         "domain": "combination.vc",
+         "amount": null
+        },
+        {
+         "name": "identity.vc",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "S20",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Marketing / AI Search Analytics",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Open a New York office, hire over 40 team members, and expand the platform beyond analytics into a full AI-era marketing software stack.",
+       "source_sentence": "Peec AI, a Berlin, Germany-based marketing platform built for the age of AI search, has raised $21 million in Series A funding.",
+       "published_at": "2025-11-19T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698df51c9ca02490ec04dbed"
+       ],
+       "article_id": "698df51c9ca02490ec04dbed"
+      },
+      {
+       "id": "a4ebae6374bcc2c1",
+       "company_name": "Peec AI",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "singular",
+         "domain": "singular.uk",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Combination VC",
+         "domain": "combination.vc",
+         "amount": null
+        },
+        {
+         "name": "identity.vc",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "S20",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Marketing",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "accelerate growth, hire staff, support expansion",
+       "source_sentence": "Berlin-based Peec AI, a marketing platform built for the era of AI search, has raised a $21 million Series A round led by European VC firm Singular, with participation from Antler, Combination VC, identity.vc, and S20.",
+       "published_at": "2025-11-18T05:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "6931491969cd351bfef21cc0",
+        "69316f88b12e15d5a3f2195f",
+        "6988a9c6a88ad7b9aae0e0e5",
+        "69baebdffb5301c8503e6748",
+        "69e8bcfc7bb1410d4cb5b2fe"
+       ],
+       "article_id": "69316f88b12e15d5a3f2195f"
+      },
+      {
+       "id": "3399847858db4dfa",
+       "company_name": "teton.ai",
+       "domain": "teton.ai",
+       "round_type": "Series A",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "plural",
+         "domain": "plural.sh",
+         "amount": null
+        },
+        {
+         "name": "bertelsmann investments",
+         "domain": "bertelsmann-investments.com",
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nebular",
+         "domain": "nebular.co",
+         "amount": null
+        },
+        {
+         "name": "PSV Tech",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech",
+       "country": "Denmark",
+       "city": "Copenhagen",
+       "use_of_funds": "Expand AI‑powered predictive care platform for nursing and senior living facilities",
+       "source_sentence": "Teton.ai ... secured a $20 million Series A round to expand its AI‑powered predictive care platform for nursing and senior living facilities.",
+       "published_at": "2025-09-09T21:41:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9ae92c149d2bca77f5ac7"
+       ],
+       "article_id": "68d9ae92c149d2bca77f5ac7"
+      },
+      {
+       "id": "f48c281659f6bbeb",
+       "company_name": "Peec AI",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 19440000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 18000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "singular",
+         "domain": "singular.uk",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Combination VC",
+         "domain": "combination.vc",
+         "amount": null
+        },
+        {
+         "name": "identity.vc",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "S20",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Marketing technology",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "accelerate product development, grow its team, and establish a strategic presence in New York",
+       "source_sentence": "Peec AI, a German marketing platform optimized for the AI-driven search era, today announced the completion of an €18 million ($21 million) Series A round to accelerate product development, grow its team, and establish a strategic presence in New York.",
+       "published_at": "2025-11-18T06:34:10",
+       "coverage_count": 4,
+       "article_ids": [
+        "69452a791765a0ad0ea3396c",
+        "69653e4e85029add80208b65",
+        "6996b783feeb41363fa2480c",
+        "69974092d0eb485af104ff16"
+       ],
+       "article_id": "6996b783feeb41363fa2480c"
+      },
+      {
+       "id": "ec710584b0b15bab",
+       "company_name": "teton.ai",
+       "domain": "teton.ai",
+       "round_type": "Series A",
+       "amount_usd": 18360000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 17000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "plural",
+         "domain": "plural.sh",
+         "amount": null
+        },
+        {
+         "name": "bertelsmann investments",
+         "domain": "bertelsmann-investments.com",
+         "amount": null
+        },
+        {
+         "name": "Antler Elevate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nebular",
+         "domain": "nebular.co",
+         "amount": null
+        },
+        {
+         "name": "PSV Tech",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "Denmark",
+       "city": "Copenhagen",
+       "use_of_funds": "to make healthcare accessible to every part of the care ecosystem",
+       "source_sentence": "Teton.ai, a Danish predictive intelligence company for modern healthcare, today announced a €17 million Series A fundraise to make healthcare accessible to every part of the care ecosystem.",
+       "published_at": "2025-09-09T14:52:37",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d0dc03f429667f9c1ea2fd",
+        "69866e9c514cbd23b5c349b6",
+        "698ce5148d29a990b6cc1db5"
+       ],
+       "article_id": "68d0dc03f429667f9c1ea2fd"
+      },
+      {
+       "id": "f171e69db430d07a",
+       "company_name": "houseeazy",
+       "domain": "houseeazy.com",
+       "round_type": "Series B",
+       "amount_usd": 18000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "chiratae ventures",
+         "domain": "chiratae.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "venture debt funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "secondary housing marketplace",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "technology upgrades, expansion to new cities, brand development",
+       "source_sentence": "HouseEazy, a home resale marketplace, has raised Rs 150 crore ($18 million) in its Series B funding round led by Accel, with participation from Chiratae Ventures, Antler, and venture debt funds.",
+       "published_at": "2025-10-14T09:06:04",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe1f19e01ff0caa6281263",
+        "68fe31e492ef2af9ad2870ff",
+        "698cde4f8d29a990b6cbb57f"
+       ],
+       "article_id": "68fe31e492ef2af9ad2870ff"
+      },
+      {
+       "id": "f549c24f6234ed74",
+       "company_name": "houseeazy",
+       "domain": "houseeazy.com",
+       "round_type": "Series B",
+       "amount_usd": 18000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "chiratae ventures",
+         "domain": "chiratae.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        }
+       ],
+       "sector": "Real Estate Marketplace",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "technology advancements, geographic expansion, brand growth",
+       "source_sentence": "HouseEazy, a marketplace for re-sale homes, has raised ₹150 crore from investors, including Accel, to grow its business.",
+       "published_at": "2025-10-14T07:14:11",
+       "coverage_count": 3,
+       "article_ids": [
+        "68f717bcf80e5160742c9947",
+        "68f730d5f6f885b63d2c84e8",
+        "698e1f4d9ca02490ec07f7e0"
+       ],
+       "article_id": "68f730d5f6f885b63d2c84e8"
+      },
+      {
+       "id": "bac7ad0036fb222f",
+       "company_name": "sweatpals",
+       "domain": "sweatpals.com",
+       "round_type": "total equity funding",
+       "amount_usd": 16000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "a16z speedrun",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Deborah Liu",
+         "domain": "https://www.linkedin.com/in/deborahliu",
+         "amount": null
+        },
+        {
+         "name": "hartbeat ventures",
+         "domain": "hartbeat.com",
+         "amount": null
+        },
+        {
+         "name": "Jeffrey Katzenberg",
+         "domain": "https://www.linkedin.com/in/jeffrey-katzenberg-4b3b47123/",
+         "amount": null
+        },
+        {
+         "name": "Max Mullen",
+         "domain": "maxmullen.com",
+         "amount": null
+        },
+        {
+         "name": "patron",
+         "domain": "patron.studio",
+         "amount": null
+        },
+        {
+         "name": "pear vc",
+         "domain": "pear.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Austin",
+       "use_of_funds": null,
+       "source_sentence": "Sweatpals has now raised a total of $16.0M in total equity funding and is backed by a16z speedrun, Antler, Deborah Liu, HartBeat Ventures, Jeffrey Katzenberg, Max Mullen, Patron, and Pear VC.",
+       "published_at": "2025-11-02T11:27:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a75a94d3f481f3d70b38"
+       ],
+       "article_id": "6988a75a94d3f481f3d70b38"
+      },
+      {
+       "id": "9af14f2d85a8779a",
+       "company_name": "two",
+       "domain": "two.ai",
+       "round_type": "fresh funding",
+       "amount_usd": 14040000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 13000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Idékapital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "shine capital",
+         "domain": "shine.vc",
+         "amount": null
+        },
+        {
+         "name": "Investinor",
+         "domain": "investinor.no",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "alliance ventures",
+         "domain": "alliancernm.com",
+         "amount": null
+        },
+        {
+         "name": "arkwright",
+         "domain": "arkwright.org.uk",
+         "amount": null
+        },
+        {
+         "name": "Local Globe",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "B2B FinTech",
+       "country": "Norway",
+       "city": null,
+       "use_of_funds": "to support Two’s expansion into the US and Western Europe while enhancing its payment infrastructure",
+       "source_sentence": "Two ... has secured €13m (US$15.2m) in fresh funding.",
+       "published_at": "2025-07-11T17:18:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988aa553757765ee8266814"
+       ],
+       "article_id": "6988aa553757765ee8266814"
+      },
+      {
+       "id": "060731d7e4d8fec4",
+       "company_name": "two",
+       "domain": "two.ai",
+       "round_type": "strategic funding round",
+       "amount_usd": 14040000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 13000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Idékapital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "shine capital",
+         "domain": "shine.vc",
+         "amount": null
+        },
+        {
+         "name": "Investinor",
+         "domain": "investinor.no",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "alliance ventures",
+         "domain": "alliancernm.com",
+         "amount": null
+        },
+        {
+         "name": "arkwright",
+         "domain": "arkwright.org.uk",
+         "amount": null
+        },
+        {
+         "name": "Local Globe",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "B2B payments",
+       "country": "Norway",
+       "city": "Oslo",
+       "use_of_funds": "Expansion into the US and select Western European markets, and continued development of productised B2B payments infrastructure",
+       "source_sentence": "Oslo-based Two, a B2B payments platform, has closed a €13 million strategic funding round, bringing Two’s total funding to over €40 million to date.",
+       "published_at": "2025-07-11T05:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898cd542f01d48cd3f5c350"
+       ],
+       "article_id": "6898cd542f01d48cd3f5c350"
+      },
+      {
+       "id": "d73186a9f89c607b",
+       "company_name": "sweatpals",
+       "domain": "sweatpals.com",
+       "round_type": "Seed",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "patron",
+         "domain": "patron.studio",
+         "amount": null
+        },
+        {
+         "name": "a16z Speedrun",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hartbeat ventures",
+         "domain": "hartbeat.com",
+         "amount": null
+        },
+        {
+         "name": "Max Mullen",
+         "domain": "maxmullen.com",
+         "amount": null
+        },
+        {
+         "name": "wndrco",
+         "domain": "wndrco.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "pear vc",
+         "domain": "pear.vc",
+         "amount": null
+        },
+        {
+         "name": "Deb Liu",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "social fitness",
+       "country": "US",
+       "city": "Austin",
+       "use_of_funds": "grow community and help gyms offer social fitness experiences",
+       "source_sentence": "Startup: Sweatpals (social fitness platform)",
+       "published_at": "2025-10-29T23:09:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "6902a38459b56fb348d83967"
+       ],
+       "article_id": "6902a38459b56fb348d83967"
+      },
+      {
+       "id": "8f37e85f55feed94",
+       "company_name": "sweatpals",
+       "domain": "sweatpals.com",
+       "round_type": "seed",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "patron",
+         "domain": "patron.studio",
+         "amount": null
+        },
+        {
+         "name": "a16z speedrun",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hartbeat ventures",
+         "domain": "hartbeat.com",
+         "amount": null
+        },
+        {
+         "name": "Max Mullen",
+         "domain": "maxmullen.com",
+         "amount": null
+        },
+        {
+         "name": "wndrco",
+         "domain": "wndrco.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "pear",
+         "domain": "pearhealthlabs.com",
+         "amount": null
+        },
+        {
+         "name": "Deb Liu",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Wellness, Fitness, Social Networking",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expansion into 12 new U.S. markets, rollout of enhanced tools for studios, gyms, event organisers and hosts",
+       "source_sentence": "Today, the company secured $12 million in seed funding from investors such as Patron, a16z speedrun, and HartBeat Ventures, with additional backing from Max Mullen (Instacart co-founder), WndrCo (Jeffrey Katzenberg, founder of Dreamworks Animations), Antler, Pear, and Deb Liu (Facebook Marketplace, Ancestry CEO).",
+       "published_at": "2025-10-28T13:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e58949ca02490ec0c4401"
+       ],
+       "article_id": "698e58949ca02490ec0c4401"
+      },
+      {
+       "id": "56c58e5d85d25b8d",
+       "company_name": "BazaarNow",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 9000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "whiteboard capital",
+         "domain": "whiteboardcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Expand its dark store network to 18 stores in more than a dozen cities",
+       "source_sentence": "Quick commerce startup BaazarNow is in talks to raise $9 Mn (about ₹82 Cr), sources told Inc42.",
+       "published_at": "2026-03-02T10:55:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcdcc8981d28529ed2db42"
+       ],
+       "article_id": "69bcdcc8981d28529ed2db42"
+      },
+      {
+       "id": "d5e482b393d2227d",
+       "company_name": "Navana.ai",
+       "domain": null,
+       "round_type": "pre-Series A",
+       "amount_usd": 8400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "antler india",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Ajay Agarwal",
+         "domain": "https://www.linkedin.com/in/ajay1agarwal",
+         "amount": null
+        },
+        {
+         "name": "Ronnie Screwvala",
+         "domain": "https://www.linkedin.com/in/ronnie-screwvala-83133994",
+         "amount": null
+        },
+        {
+         "name": "Sandeep Singhal",
+         "domain": "https://www.linkedin.com/in/sandeep-singhal-4467b",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "India",
+       "city": null,
+       "use_of_funds": "research and development (R&D) activities and to scale its products",
+       "source_sentence": "The voice AI startup Navana.ai raised Rs 7 crore in a pre-Series A, led by Antler India along with Ajay Agarwal, Ronnie Screwvala, and Sandeep Singhal.",
+       "published_at": "2025-07-20T18:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898cd7d2f01d48cd3fe2b7f"
+       ],
+       "article_id": "6898cd7d2f01d48cd3fe2b7f"
+      },
+      {
+       "id": "dc7e8d99cf5a9fbf",
+       "company_name": "replyall",
+       "domain": "replyall.me",
+       "round_type": "Maiden",
+       "amount_usd": 8160000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 680000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sparrow capital",
+         "domain": "sparrowvc.com",
+         "amount": null
+        },
+        {
+         "name": "antler india",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "D2C clothing",
+       "country": null,
+       "city": null,
+       "use_of_funds": "product innovation, material R&D, and expanding presence across key markets",
+       "source_sentence": "Apparel startup ReplyAll has raised INR 6.8 Cr in its maiden funding round led by Sparrow Capital and Antler India.",
+       "published_at": "2025-12-03T16:19:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e1fdf8d29a990b6e36e7f"
+       ],
+       "article_id": "698e1fdf8d29a990b6e36e7f"
+      },
+      {
+       "id": "ac16293258a8e8ac",
+       "company_name": "pickup coffee",
+       "domain": "pickup-coffee.com",
+       "round_type": "Convertible Notes",
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Venturi Partners",
+         "domain": "venturi.partners",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        }
+       ],
+       "sector": "Food & Beverage",
+       "country": "Philippines",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "This endeavor includes issuing up to $8 million in convertible notes to Venturi Partners and new investor Antler.",
+       "published_at": "2026-03-13T07:32:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1bad5ebd7d5be53471e"
+       ],
+       "article_id": "69cbd1bad5ebd7d5be53471e"
+      },
+      {
+       "id": "a085104d3a2af344",
+       "company_name": "inamo",
+       "domain": "inamo.com",
+       "round_type": "Series A",
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Shastra VC",
+         "domain": "shastra.vc",
+         "amount": null
+        },
+        {
+         "name": "antler india",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "gemba capital",
+         "domain": "gembacapital.in",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": null,
+       "city": null,
+       "use_of_funds": "network expansion, technology upgrades, operational scaling, adding new dark stores, onboarding additional brands, enhancing platform technology stack",
+       "source_sentence": "Inamo, a quick commerce solutions provider founded in 2024, announced a Series A round of $8 million on March 2, 2026. The funding is intended to support network expansion, technology upgrades and operational scaling. Funding Details and Allocation The round comprises $6 million in equity and $2 million in venture debt. Existing investors Shastra VC, Antler India and Gemba Capital participated alongside lead investor Prime Venture Partners. The capital will be used to add new dark stores, onboard additional brands and enhance the platform’s technology stack.",
+       "published_at": "2026-03-03T03:33:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e289899b322e6b3e98f571"
+       ],
+       "article_id": "69e289899b322e6b3e98f571"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 187,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDMtMDMgMDM6MzM6NDkiLCJrIjoiMTE1NjY2NjkxNDE4NDU0MDY1MzIiLCJhIjo4MDAwMDAwLjB9",
+     "totals": {
+      "deals": 187,
+      "deals_with_amount": 178,
+      "deals_without_amount": 9,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 1580031620.0,
+      "median_amount_usd": 1944000.0,
+      "largest_amount_usd": 300000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.114,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.117
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Antler",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "antler"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "3d73742a6eec3e6d",
+       "company_name": "manifest",
+       "domain": "manifestcommerce.com",
+       "round_type": "pre-seed",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Brand Fund by Previously Unavailable",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "icehouse ventures",
+         "domain": "icehouseventures.co.nz",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "Huljich & Bhatnagar Family Offices",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Henry Innis",
+         "domain": "https://www.linkedin.com/in/henryinnis/",
+         "amount": null
+        },
+        {
+         "name": "Mark Coad",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jamie Mackay",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jonathan Isaacs",
+         "domain": "https://www.linkedin.com/in/jonathan-isaacs-290108",
+         "amount": null
+        },
+        {
+         "name": "James Hutchinson",
+         "domain": "https://www.linkedin.com/in/jamesahutchinson/",
+         "amount": null
+        },
+        {
+         "name": "Jordan Taylor-Bartels",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Connon Bray",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tim Burrowes",
+         "domain": "https://www.linkedin.com/in/timburrowes/",
+         "amount": null
+        }
+       ],
+       "sector": "advertising technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "help advertising agencies better track and value their work amid the rapid adoption of AI across the sector",
+       "source_sentence": "A trans‑Tasman startup has raised $2 million in pre‑seed funding to help advertising agencies better track and value their work amid the rapid adoption of AI across the sector.",
+       "published_at": "2026-04-28T23:58:06",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f1c9d1a5706a322e107cfa",
+        "69f1cef5399b489398e23cdd"
+       ],
+       "article_id": "69f1c9d1a5706a322e107cfa"
+      },
+      {
+       "id": "e478373ab04f5181",
+       "company_name": "SolvaPay",
+       "domain": null,
+       "round_type": "pre-seeded",
+       "amount_usd": 2592000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redstone",
+         "domain": "redstone.finance",
+         "amount": null
+        },
+        {
+         "name": "ms&ad ventures",
+         "domain": "msad.vc",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "greens ventures",
+         "domain": "greens.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "payment infrastructure",
+       "country": null,
+       "city": "Stockholm",
+       "use_of_funds": "build payment infrastructure oriented to the natural economy",
+       "source_sentence": "SolvaPay announced that it raised €2.4 million in a pre-seeded round to build payment infrastructure oriented to the natural economy, an environment in which AI agents can find, negotiate and pay for digital services on behalf of users and companies. The round was led by Redstone, with MS&AD Ventures, Antler and Greens Ventures participating.",
+       "published_at": "2026-04-15T15:48:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d6055cfa3e5ba5457183"
+       ],
+       "article_id": "69e8d6055cfa3e5ba5457183"
+      },
+      {
+       "id": "ebc43a58ecfa5428",
+       "company_name": "SolvaPay",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 2592000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redstone",
+         "domain": "redstone.finance",
+         "amount": null
+        },
+        {
+         "name": "ms&ad ventures",
+         "domain": "msad.vc",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "greens ventures",
+         "domain": "greens.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "AI payments",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "accelerate the development of its machine-native payment rails and agentic revenue infrastructure",
+       "source_sentence": "SolvaPay, a Stockholm, Sweden-based provider of an AI payments platform, raised €2.4m ($2.8M) in pre‑seed funding. The round was led by Redstone and MS&AD Ventures, with participation from Antler and Greens Ventures.",
+       "published_at": "2026-04-15T15:19:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d7477bb1410d4ccb7278"
+       ],
+       "article_id": "69e8d7477bb1410d4ccb7278"
+      },
+      {
+       "id": "3103f93ef5872f86",
+       "company_name": "Stendr",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rainfall",
+         "domain": "rainfall.ro",
+         "amount": null
+        },
+        {
+         "name": "acme",
+         "domain": "acme.vc",
+         "amount": null
+        },
+        {
+         "name": "skyfall",
+         "domain": "skyfallxperience.net",
+         "amount": null
+        },
+        {
+         "name": "Sisyphus",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "startuplab",
+         "domain": "startuplab.no",
+         "amount": null
+        },
+        {
+         "name": "off piste",
+         "domain": "offpiste.no",
+         "amount": null
+        },
+        {
+         "name": "Andøya Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Syndicate of global technology founders and investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "defence technology",
+       "country": "Norway",
+       "city": "Oslo",
+       "use_of_funds": "advance its AI-native platform",
+       "source_sentence": "Stendr, a Norwegian defence technology company, has raised $5.4 million in an oversubscribed pre-seed funding round to advance its AI-native platform.",
+       "published_at": "2026-04-15T14:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e8495e5cfa3e5ba5e25bee",
+        "69e84e967bb1410d4c67d889",
+        "69e851265cfa3e5ba5e6d8a1",
+        "69e85d117bb1410d4c707bbb",
+        "69e878309baafc73568a230e"
+       ],
+       "article_id": "69e84e967bb1410d4c67d889"
+      },
+      {
+       "id": "e346dc5b62e8ee14",
+       "company_name": "SolvaPay",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 2592000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redstone",
+         "domain": "redstone.finance",
+         "amount": null
+        },
+        {
+         "name": "ms&ad ventures",
+         "domain": "msad.vc",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "greens ventures",
+         "domain": "greens.ventures",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "scale its payment infrastructure platform, accelerate product development, and expand integrations that embed payments directly into agent workflows",
+       "source_sentence": "SolvaPay has raised €2.4 million in a pre-seed round to build what it positions as the first payment infrastructure layer for the emerging agentic economy, where AI agents can independently transact across digital services.",
+       "published_at": "2026-04-15T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e84ccc9baafc73566ebe80",
+        "69e8620d9baafc73567ba5fa",
+        "69e8d2699baafc7356d094dd",
+        "69e8d3fa5cfa3e5ba543c715",
+        "69e8de777bb1410d4cd11f5c"
+       ],
+       "article_id": "69e84ccc9baafc73566ebe80"
+      },
+      {
+       "id": "46c96efe05199149",
+       "company_name": "OrtCloud",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 1700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "golden gate ventures",
+         "domain": "goldengate.vc",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        }
+       ],
+       "sector": "cloud infrastructure",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "Expansion of product development, scaling infrastructure, hiring, and go-to-market initiatives across Asia-Pacific and U.S. markets.",
+       "source_sentence": "OrtCloud, a Singapore-based cloud infrastructure company, has raised $1.7 million in a pre-seed funding round led by Southeast Asia-focused early-stage venture capital firm Golden Gate Ventures, with participation from early-stage investor Antler.",
+       "published_at": "2026-04-14T02:46:11",
+       "coverage_count": 6,
+       "article_ids": [
+        "69e862f15cfa3e5ba5f12028",
+        "69e8633a7bb1410d4c7419e4",
+        "69e880d65cfa3e5ba503cc9c",
+        "69e8c5297bb1410d4cbcab00",
+        "69e8c6939baafc7356c6f52f",
+        "69f0e47d836d28f995cb8073"
+       ],
+       "article_id": "69e8c5297bb1410d4cbcab00"
+      },
+      {
+       "id": "54c00ffddf8c94b1",
+       "company_name": "airmo",
+       "domain": "airmo.io",
+       "round_type": "Seed",
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ananda impact ventures",
+         "domain": "ananda.vc",
+         "amount": null
+        },
+        {
+         "name": "unconventional ventures",
+         "domain": "unconventionalventures.com",
+         "amount": null
+        },
+        {
+         "name": "kopa ventures",
+         "domain": "kopa.vc",
+         "amount": null
+        },
+        {
+         "name": "Desai Ventures",
+         "domain": "desaiventures.io",
+         "amount": null
+        },
+        {
+         "name": "Hypernova / New Venture Securities",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "EQT Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Matthias Fackler",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Francesco Starace",
+         "domain": "https://www.linkedin.com/in/francesco-starace/",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Findus Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "E2MC",
+         "domain": "e2mc.space",
+         "amount": null
+        },
+        {
+         "name": "pi labs",
+         "domain": "pilabs.com",
+         "amount": null
+        }
+       ],
+       "sector": "climate-tech, space tech",
+       "country": "Germany, Luxembourg",
+       "city": "Munich",
+       "use_of_funds": "launch first satellite mission in 2027 and expand airborne coverage",
+       "source_sentence": "Airmo, a Munich, Germany- and Luxembourg-based climate-tech and space tech startup, raised €5M in Seed funding.",
+       "published_at": "2026-04-13T10:31:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8dcfb5cfa3e5ba54af722"
+       ],
+       "article_id": "69e8dcfb5cfa3e5ba54af722"
+      },
+      {
+       "id": "27024fe0ce0d7cf1",
+       "company_name": "Ralio",
+       "domain": null,
+       "round_type": "pre-Seed",
+       "amount_usd": 2268000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Seed X",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "love ventures",
+         "domain": "loveventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "rule30",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Adeline Arts and Science",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "endurance ventures",
+         "domain": "enduranceventures.com",
+         "amount": null
+        },
+        {
+         "name": "campus fund",
+         "domain": "yourcampusfund.com",
+         "amount": null
+        },
+        {
+         "name": "FinTech investor Alan Morgan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech, Payments",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "further develop its core platform and expand its engineering team in London; accelerate product development and ensure AI transacts within accountability framework",
+       "source_sentence": "Ralio, a London-based FinTech startup building a payments platform tailored for business AI agents, has announced a €2.1 million ($2.5 million) pre-Seed funding round to further develop its core platform and expand its engineering team in London.",
+       "published_at": "2026-04-13T00:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e6f58e0f1aa5003e105198",
+        "69e840b79baafc73566765fd",
+        "69e8c7825cfa3e5ba539f3bc",
+        "69e8cbae5cfa3e5ba53d5444"
+       ],
+       "article_id": "69e840b79baafc73566765fd"
+      },
+      {
+       "id": "71845e9d8c03a830",
+       "company_name": "onsite",
+       "domain": "onsiteworkshops.com",
+       "round_type": "seed",
+       "amount_usd": 1300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "golden gate ventures",
+         "domain": "goldengate.vc",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "other angel investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Construction technology",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "enhance its digital platform, scale team, refine AI algorithms, integrate IoT sensors for real-time site monitoring",
+       "source_sentence": "Singapore-based contech startup Onsite has raised US$1.3 million in seed funding to enhance its digital platform for construction site operations. The round was led by prominent regional investor Golden Gate Ventures, with participation from Antler and other angel investors.",
+       "published_at": "2026-04-08T02:42:34",
+       "coverage_count": 6,
+       "article_ids": [
+        "69e2c536a85be7e506638dc5",
+        "69e2c5a8d754bf662cdea285",
+        "69e2c86bff2654c79d6e68f2",
+        "69e34311392cc5e9e8f8a403",
+        "69e3c811b8c34c1508f35fac",
+        "69e8c6a47bb1410d4cbe0f15"
+       ],
+       "article_id": "69e2c536a85be7e506638dc5"
+      },
+      {
+       "id": "9cbf4758b6198b81",
+       "company_name": "chatfood",
+       "domain": "chatfood.io",
+       "round_type": null,
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "6G Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "zinal growth",
+         "domain": "zinal.com",
+         "amount": null
+        }
+       ],
+       "sector": "FoodTech",
+       "country": "UAE",
+       "city": null,
+       "use_of_funds": "establish operations in Saudi Arabia, product development to unlock additional efficiencies for restaurants, bars, hotels, and entertainment venues",
+       "source_sentence": "UAE-based FoodTech ChatFood raised $3 million led by Antler with a reserved amount for key strategic Saudi partners where 6G Capital and existing investors such as Zinal Growth also participated.",
+       "published_at": "2026-04-07T20:33:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2b422d754bf662cdabfb9"
+       ],
+       "article_id": "69e2b422d754bf662cdabfb9"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 61,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDcgMjA6MzM6NTQiLCJrIjoiMTEyOTQ4MjQ4MzY4MDYzMTQ4ODEifQ",
+     "totals": {
+      "deals": 61,
+      "deals_with_amount": 60,
+      "deals_without_amount": 1,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 760223000.0,
+      "median_amount_usd": 1700000.0,
+      "largest_amount_usd": 300000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.134,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.137
+    }
+   }
+  }
+ ]
+}

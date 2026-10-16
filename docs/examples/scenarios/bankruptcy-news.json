@@ -1,0 +1,826 @@
+{
+ "slug": "bankruptcy-news",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:28Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "lawsuit"
+     ],
+     "q": "bankruptcy",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "bankruptcy",
+      "match": "any",
+      "event_type": [
+       "company_announcement",
+       "lawsuit"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 15,
+       "by_type": {
+        "company_announcement": 0,
+        "lawsuit": 15
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 19,
+       "by_type": {
+        "company_announcement": 3,
+        "lawsuit": 16
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 24,
+       "by_type": {
+        "company_announcement": 4,
+        "lawsuit": 20
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 50,
+       "by_type": {
+        "company_announcement": 11,
+        "lawsuit": 39
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 31,
+       "by_type": {
+        "company_announcement": 9,
+        "lawsuit": 22
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 20,
+       "by_type": {
+        "company_announcement": 9,
+        "lawsuit": 11
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 27,
+       "by_type": {
+        "company_announcement": 7,
+        "lawsuit": 20
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 27,
+       "by_type": {
+        "company_announcement": 9,
+        "lawsuit": 18
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 28,
+       "by_type": {
+        "company_announcement": 5,
+        "lawsuit": 23
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 39,
+       "by_type": {
+        "company_announcement": 3,
+        "lawsuit": 36
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 17,
+       "by_type": {
+        "company_announcement": 11,
+        "lawsuit": 6
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 28,
+       "by_type": {
+        "company_announcement": 2,
+        "lawsuit": 26
+       }
+      }
+     ],
+     "totals": {
+      "events": 325,
+      "articles": 268,
+      "companies": 190,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 73,
+      "lawsuit": 252
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.179,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.182
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "lawsuit"
+     ],
+     "q": "bankruptcy",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "bankruptcy",
+      "event_type": [
+       "company_announcement",
+       "lawsuit"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f87fce8937ef12fc06ac1e",
+       "headline": "FAT Brands Inc., which oversees the franchise-based chain, filed for Chapter 11 bankruptcy in January to restructure more than $1 billion in debt.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "fatbrands.com",
+       "published_at": "2026-04-29T17:01:54",
+       "url": "https://patch.com/massachusetts/across-ma/longtime-restaurant-chain-closes-all-ma-locations",
+       "publisher": "patch.com",
+       "title": "Longtime Restaurant Chain Closes All MA Locations"
+      },
+      {
+       "id": "69f1cec3399b489398e21e2c",
+       "headline": "First Brands Group LLC doled out bonuses to employees who booked accounting adjustments that inflated its profit margins and picked its outside auditor so that the automotive parts supplier could âdo what we want.â Those and other details about First Brandsâ financial reporting were included in an initial report by a court-appointed examiner filed Monday with a US bankruptcy court in Houston.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "firstbrandsgroup.com",
+       "published_at": "2026-04-28T23:21:04",
+       "url": "https://news.bloomberglaw.com/financial-accounting/bankruptcy-report-sheds-light-on-first-brands-accounting-audits",
+       "publisher": "news.bloomberglaw.com",
+       "title": "Bankruptcy Report Details First Brands Accounting, Audits (1)"
+      },
+      {
+       "id": "69ea51adf4d3fc85b34faecf",
+       "headline": "The QVC Group, which operates the HSN and QVC shopping channels, filed for bankruptcy protection in April.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "qvcgroup.com",
+       "published_at": "2026-04-23T15:45:29",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69ea51adf4d3fc85b34faecf",
+       "headline": "Friendly Franchisees Corporation, a large Carl’s Jr. franchisee, filed for bankruptcy protection in early April.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "ffcorp.org",
+       "published_at": "2026-04-23T15:45:29",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69ea51adf4d3fc85b34faecf",
+       "headline": "The parent company of 801 Chophouse, a small chain of upscale steakhouses primarily in the Midwest, filed for bankruptcy in April.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "801restaurantgroup.com",
+       "published_at": "2026-04-23T15:45:29",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8e94d7bb1410d4cda02bc",
+       "headline": "The bankruptcy court judge, Judith K. Fitzgerald, also approved a settlement between Armstrong and its Web site developer, ending a three-year pay dispute. Proxicom Inc., of Reston, Va., will receive about $654,000 more, on top of the $2.3 million already received from Armstrong. Proxicom had claimed it deserved $2.5 million more.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "proxicom.com",
+       "published_at": "2026-04-22T00:00:00",
+       "url": "https://lancasteronline.com/business/armstrong-gets-another-extension/article_38f5568f-3cfe-529c-9f36-e9c0f0882b5a.html",
+       "publisher": "lancasteronline.com",
+       "title": "Armstrong gets another extension"
+      },
+      {
+       "id": "69e8e94d7bb1410d4cda02bc",
+       "headline": "The bankruptcy court judge, Judith K. Fitzgerald, also approved a settlement between Armstrong and its Web site developer, ending a three-year pay dispute. Proxicom Inc., of Reston, Va., will receive about $654,000 more, on top of the $2.3 million already received from Armstrong. Proxicom had claimed it deserved $2.5 million more.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "armstrongceilings.com",
+       "published_at": "2026-04-22T00:00:00",
+       "url": "https://lancasteronline.com/business/armstrong-gets-another-extension/article_38f5568f-3cfe-529c-9f36-e9c0f0882b5a.html",
+       "publisher": "lancasteronline.com",
+       "title": "Armstrong gets another extension"
+      },
+      {
+       "id": "69e8e15d9baafc7356dc9b86",
+       "headline": "801 Restaurant Group LLC filed for Chapter 11 reorganization last Friday in U.S. Bankruptcy Court in Kansas",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "801restaurantgroup.com",
+       "published_at": "2026-04-17T20:32:42",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8eb999baafc7356e4d214",
+       "headline": "QVC Group jointly filed 70 bankruptcy cases on behalf of itself and its subsidiaries, which include popular QVC brands such as Cornerstone, Ballard Designs, and Diamonique Canada, in U.S. Bankruptcy Court for the Southern District of Texas.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "qvcgroup.com",
+       "published_at": "2026-04-17T19:13:07",
+       "url": "https://www.inquirer.com/business/retail/qvc-bankruptcy-debt-financial-restructuring-20260417.html",
+       "publisher": "inquirer.com",
+       "title": "QVC officially filed for bankruptcy. Here's what to know."
+      },
+      {
+       "id": "69e8e1017bb1410d4cd32478",
+       "headline": "Online retailer QVC Group has initiated voluntary Chapter 11 bankruptcy proceedings in the US after reaching a restructuring support agreement with most of its lenders.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "qvcgroup.com",
+       "published_at": "2026-04-17T12:59:51",
+       "url": "https://www.retail-insight-network.com/news/qvc-group-begins-chapter-11-process/",
+       "publisher": "retail-insight-network.com",
+       "title": "Multimedia retailer QVC Group begins Chapter 11 process"
+      },
+      {
+       "id": "69e862ab9baafc73567c0590",
+       "headline": "In the filing in the U.S. Bankruptcy Court for the Southern District of Texas, under SuperNova Management Inc., the Humble, Texas-based retailer listed estimated assets of $0 to $50,000 vs. estimated liabilities of $1,000,001 to $10 million to an estimated 100 to 199 creditors.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "supernova.io",
+       "published_at": "2026-04-17T11:02:52",
+       "url": "https://www.furnituretoday.com/financial/supernova-furniture-owner-well-come-back-stronger/",
+       "publisher": "furnituretoday.com",
+       "title": "SuperNova Furniture owner: ‘We’ll come back stronger’ - Furniture Today"
+      },
+      {
+       "id": "69e8e11b9baafc7356dc6308",
+       "headline": "Home shopping network QVC Group Inc. has filed for Chapter 11 bankruptcy court protection in Texas to cut $5.3 billion off its debt load.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "qvcgroup.com",
+       "published_at": "2026-04-17T01:48:59",
+       "url": "https://wwd.com/footwear-news/shoe-industry-news/qvc-bankruptcy-clarks-skechers-home-shopping-1238919519/",
+       "publisher": "wwd.com",
+       "title": "Clarks, Skechers Among Shoe Brands Hit by QVC Bankruptcy"
+      },
+      {
+       "id": "69ea278a8266d9339995482e",
+       "headline": "On Friday, the bankruptcy proceedings were opened at the Linz Regional Court over the 'alroka investment gmbh'.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "alroka.at",
+       "published_at": "2026-04-17T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e869869baafc7356806ee9",
+       "headline": "A 801 Restaurant Group LLC, owner of the luxury 801 Chophouse barbecue chain, filed a bankruptcy protection request.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "801restaurantgroup.com",
+       "published_at": "2026-04-16T17:45:09",
+       "url": "https://www.mixvale.com.br/2026/04/16/rede-de-carnes-de-luxo-801-chophouse-protocola-falencia-nos-eua-em-meio-a-precos-altos/",
+       "publisher": "mixvale.com.br",
+       "title": "Rede de carnes de luxo 801 Chophouse protocola falência nos EUA em meio a preços altos"
+      },
+      {
+       "id": "69e84d8f9baafc73566f4406",
+       "headline": "Freedom Forever has filed for Chapter 11 bankruptcy in the U.S. bankruptcy court for the district of Delaware.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "freedomforever.com",
+       "published_at": "2026-04-15T18:37:46",
+       "url": "https://pv-magazine-usa.com/2026/04/15/residential-solar-company-freedom-forever-files-chapter-11-bankruptcy/",
+       "publisher": "pv-magazine-usa.com",
+       "title": "Residential solar company Freedom Forever files chapter 11 bankruptcy"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 112,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTUgMTg6Mzc6NDYiLCJpIjoiNjllODRkOGY5YmFhZmM3MzU2NmY0NDA2IiwiZG0iOiJmcmVlZG9tZm9yZXZlci5jb20iLCJldCI6Imxhd3N1aXQiLCJybyI6ImRlZmVuZGFudCJ9",
+     "by_type": {
+      "lawsuit": 91,
+      "company_announcement": 21
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.537,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.542
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "lawsuit"
+     ],
+     "q": "bankruptcy",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "bankruptcy",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement",
+       "lawsuit"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 157,
+     "carrying": 157,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 67,
+       "share": 42.68
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 68,
+       "share": 43.31
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 2,
+       "share": 1.27
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 10,
+       "share": 6.37
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 5,
+       "share": 3.18
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 5,
+       "share": 3.18
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 135,
+       "share": 85.99
+      },
+      {
+       "group": "neutral",
+       "count": 2,
+       "share": 1.27
+      },
+      {
+       "group": "positive",
+       "count": 20,
+       "share": 12.74
+      }
+     ],
+     "negative_to_positive_ratio": 6.75,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 9.11,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 32,
+       "negative": 27,
+       "neutral": 1,
+       "positive": 4,
+       "negative_share": 84.38,
+       "positive_share": 12.5,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 17,
+        "fair_neg": 0,
+        "slight_neg": 10,
+        "none": 1,
+        "slight_pos": 1,
+        "fair_pos": 1,
+        "very_pos": 2,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 64,
+       "negative": 60,
+       "neutral": 0,
+       "positive": 4,
+       "negative_share": 93.75,
+       "positive_share": 6.25,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 32,
+        "fair_neg": 0,
+        "slight_neg": 28,
+        "none": 0,
+        "slight_pos": 3,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 27,
+       "negative": 24,
+       "neutral": 0,
+       "positive": 3,
+       "negative_share": 88.89,
+       "positive_share": 11.11,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 11,
+        "fair_neg": 0,
+        "slight_neg": 13,
+        "none": 0,
+        "slight_pos": 1,
+        "fair_pos": 0,
+        "very_pos": 2,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 34,
+       "negative": 24,
+       "neutral": 1,
+       "positive": 9,
+       "negative_share": 70.59,
+       "positive_share": 26.47,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 7,
+        "fair_neg": 0,
+        "slight_neg": 17,
+        "none": 1,
+        "slight_pos": 5,
+        "fair_pos": 4,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.346,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.349
+    }
+   }
+  }
+ ]
+}

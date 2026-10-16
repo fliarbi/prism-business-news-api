@@ -1,0 +1,3028 @@
+{
+ "slug": "benchmark-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:26Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Benchmark",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "benchmark"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 61,
+      "deals_with_amount": 58,
+      "deals_without_amount": 3,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 10352548000.0,
+      "median_amount_usd": 80000000.0,
+      "largest_amount_usd": 2800000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 581248000.0,
+       "median_amount_usd": 78124000.0,
+       "largest_amount_usd": 350000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 80000000.0,
+       "median_amount_usd": 40000000.0,
+       "largest_amount_usd": 55000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 3,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 105000000.0,
+       "median_amount_usd": 30000000.0,
+       "largest_amount_usd": 55000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 210000000.0,
+       "median_amount_usd": 100000000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1276000000.0,
+       "median_amount_usd": 30000000.0,
+       "largest_amount_usd": 1100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 11,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2030000000.0,
+       "median_amount_usd": 150000000.0,
+       "largest_amount_usd": 1100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 540600000.0,
+       "median_amount_usd": 40000000.0,
+       "largest_amount_usd": 483600000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 100000000.0,
+       "median_amount_usd": 50000000.0,
+       "largest_amount_usd": 80000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1000000000.0,
+       "median_amount_usd": 1000000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 9,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4285000000.0,
+       "median_amount_usd": 360000000.0,
+       "largest_amount_usd": 2800000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 299700000.0,
+       "median_amount_usd": 47500000.0,
+       "largest_amount_usd": 193900000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.086,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.091
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Benchmark",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "benchmark"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "40561b2069b732cb",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "Series H",
+       "amount_usd": 2800000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2800000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Infrastructure, Artificial Intelligence (AI), Computer, Hardware, RISC, Semiconductor, Software",
+       "country": "USA",
+       "city": "Sunnyvale",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "cb600c0b47b7e927",
+       "company_name": "cerebras",
+       "domain": "cerebras.ai",
+       "round_type": null,
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8100000000.0,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": 8100000000.0,
+       "investors": [
+        {
+         "name": "Fidelity Management & Research Co",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "alphawave",
+         "domain": "awaveip.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI computing chip",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Cerebras, a Silicon Valley startup challenging Nvidia with its dinner-plate-sized AI computing chip, announced it has raised $1.1 billion in fresh funding.",
+       "published_at": "2025-10-01T03:09:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "69928e5ba035766b6b628072"
+       ],
+       "article_id": "69928e5ba035766b6b628072"
+      },
+      {
+       "id": "4f43a2eb94104503",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "Series G",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8100000000.0,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": 8100000000.0,
+       "investors": [
+        {
+         "name": "Fidelity Management and Research Co.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "Alpha Wave Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        }
+       ],
+       "sector": "AI chipmaking",
+       "country": "USA",
+       "city": "Silicon Valley",
+       "use_of_funds": "Expand its Inference Service, continue expanding manufacturing footprint and data center capacity",
+       "source_sentence": "Today @CerebrasSystems announced that we have closed a $1.1 Billion dollar Series G, at an $8.1 billion valuation. The round was led by @Fidelity and @Atreidesmgmt with significant participation from Tiger Global, Valor Equity Partners and @1789Capital as well as existing… — Andrew Feldman (@andrewdfeldman) September 30, 2025",
+       "published_at": "2025-09-30T19:44:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb42fca2269239ea25f1bc"
+       ],
+       "article_id": "69bb42fca2269239ea25f1bc"
+      },
+      {
+       "id": "d77b960cec525736",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "Series G",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8100000000.0,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": 8100000000.0,
+       "investors": [
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "alpha wave",
+         "domain": "alphawave.ne.jp",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI inference chip",
+       "country": "USA",
+       "city": "Sunnyvale",
+       "use_of_funds": "expand its technology portfolio in AI processor design, system design, and AI supercomputers; increase U.S. manufacturing and data centre capacity",
+       "source_sentence": "AI inference chip company Cerebras Systems has raised $1.1 billion in an oversubscribed Series G funding round, valuing the company at $8.1 billion post-money.",
+       "published_at": "2025-09-30T00:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "68f709bbe97e6da31e2b458c",
+        "68fe2191e01ff0caa6285e28",
+        "68fe301df2b4270823283b7e",
+        "698dd8329ca02490ec02b63e",
+        "69bb0226b54f2a520bb54b80",
+        "69e89a9d5cfa3e5ba5160dee"
+       ],
+       "article_id": "69e89a9d5cfa3e5ba5160dee"
+      },
+      {
+       "id": "35707e5b7493c311",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "Series H",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 23000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 23000000000.0,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        }
+       ],
+       "sector": "AI inference chip",
+       "country": "United States",
+       "city": "Sunnyvale",
+       "use_of_funds": "scaling operations and technology development",
+       "source_sentence": "Cerebras Systems, the AI inference chip company, has closed a $1-billion Series H financing at a post-money valuation of about $23 billion.",
+       "published_at": "2026-02-05T06:18:35",
+       "coverage_count": 5,
+       "article_ids": [
+        "6988880cc314f8bff07dda64",
+        "6988a3f0127162d16e0aba57",
+        "699757ec5fbe93703d61144b",
+        "69dfc99e3dd0a435439423be",
+        "69e9993dbdd09a23d0901132"
+       ],
+       "article_id": "69e9993dbdd09a23d0901132"
+      },
+      {
+       "id": "8d9ea6b035cae6f1",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "late-stage",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 23000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 23000000000.0,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI chip manufacturing",
+       "country": "United States",
+       "city": "Sunnyvale",
+       "use_of_funds": "bolster its growth as it competes with Nvidia and AMD",
+       "source_sentence": "AI chipmaker Cerebras Systems said on Wednesday it raised $1 billion in a late-stage funding round that valued it at $23 billion, nearly triple its valuation just over four months after its previous financing.",
+       "published_at": "2026-02-04T17:30:42",
+       "coverage_count": 2,
+       "article_ids": [
+        "6986a952ca3bd326c77cffbf",
+        "6a04165c9c4aac093546a379"
+       ],
+       "article_id": "6a04165c9c4aac093546a379"
+      },
+      {
+       "id": "926755805d45d2fb",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "late-stage",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 23000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 23000000000.0,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "Donald Trump Jr.-backed 1789 Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI chip",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "AI chipmaker Cerebras Systems said on Wednesday it raised $1 billion in a late-stage funding round that valued it at $23 billion.",
+       "published_at": "2026-02-04T16:44:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a69ad754bf662cd7d582"
+       ],
+       "article_id": "69e2a69ad754bf662cd7d582"
+      },
+      {
+       "id": "49f779fbd1a3ab61",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5500000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5500000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Legora Raises $550M in Series D Funding to Expand AI in Legal Operations",
+       "published_at": "2026-03-10T22:32:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cc41766e63f1d240550f7c",
+        "69f8854b43843dd771d132fb"
+       ],
+       "article_id": "69cc41766e63f1d240550f7c"
+      },
+      {
+       "id": "e3c5dcecdaa89d4f",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish start-up Legora has received 550 million dollars in a new round of financing and is now valued at 5.55 billion dollars.",
+       "published_at": "2026-03-10T14:50:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a7c57f3a572cf4abb9ee"
+       ],
+       "article_id": "69e2a7c57f3a572cf4abb9ee"
+      },
+      {
+       "id": "08695f9c2a01bfe5",
+       "company_name": "Legora",
+       "domain": "legora.com",
+       "round_type": null,
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish start-up Legora has received 550 million dollars in a new round of financing and is now valued at 5.55 billion dollars.",
+       "published_at": "2026-03-10T14:50:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03639cca027fb5990b7749"
+       ],
+       "article_id": "6a03639cca027fb5990b7749"
+      },
+      {
+       "id": "6ce6a2310c2e5ecc",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "FirstMark Capital",
+         "domain": "firstmarkcap.com",
+         "amount": null
+        },
+        {
+         "name": "sands capital",
+         "domain": "sandscapital.com",
+         "amount": null
+        },
+        {
+         "name": "starwood capital",
+         "domain": "starwoodcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal Tech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "fuel rapid U.S. expansion",
+       "source_sentence": "Today, we’re thrilled to announce that Menlo Ventures has joined Legora’s $550 million Series D, alongside Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Redpoint Ventures, Y Combinator, Alkeon Capital, Bain Capital, Firstmark Capital, Sands Capital, and Starwood Capital.",
+       "published_at": "2026-03-10T12:00:00",
+       "coverage_count": 20,
+       "article_ids": [
+        "69c3a285c8a71dc7ae87a085",
+        "69c3a479836293942ef6807a",
+        "69c3a5563653d7fe6e7e3f03",
+        "69c3a6f16d029f77a1d3fa36",
+        "69c3a897f7c4e6f108e480ec",
+        "69cbd09bbf09457014d4cbc0",
+        "69cbd09f7aa9ae690c974fff",
+        "69cbd1e02e41fb6223042ccd",
+        "69cc1ddb1e1adbe011d85dd1",
+        "69cc3f8eda8c239a52930b7f",
+        "69e2836c90d9a716b4b7c27c",
+        "69e6468e2461615d5f46c48a",
+        "69e882157bb1410d4c87ec9e",
+        "69e8e3179baafc7356de01b8",
+        "69f87fff43843dd771ce435f",
+        "69f88276bbf1d31455976b0a",
+        "69f8851bbbf1d3145598e7c3",
+        "69f8854b43843dd771d132fb",
+        "69f8a84cbbf1d314559a3e99",
+        "69f8aae6bbf1d314559a5d72"
+       ],
+       "article_id": "69e2836c90d9a716b4b7c27c"
+      },
+      {
+       "id": "472f056288c81815",
+       "company_name": "mercor",
+       "domain": "mercor.com",
+       "round_type": "total equity funding",
+       "amount_usd": 483600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 483600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Mercor has now raised a total of $483.6M in total equity funding and is backed by Benchmark, Felicis, General Catalyst, and Robinhood Ventures.",
+       "published_at": "2025-11-02T11:27:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a75a94d3f481f3d70b38"
+       ],
+       "article_id": "6988a75a94d3f481f3d70b38"
+      },
+      {
+       "id": "64c0bf3e3fd4cd01",
+       "company_name": "mercor",
+       "domain": "mercor.com",
+       "round_type": "C Series",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10000000000.0,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The artificial intelligence startup Mercor announced a new round of funding C Series of $350 million, raising its market assessment to $10 billion. The value represents a five-fold increase in relation to the last capture, carried out in February this year, according to CBNC's informalizations. The round was led by Felicis, who also led the previous investment of $100 million, with the participation of Benchmark, General Catalyst and the new investor Robinhood Ventures.",
+       "published_at": "2025-10-28T06:31:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "697b8e121c3f86fea6462e17"
+       ],
+       "article_id": "697b8e121c3f86fea6462e17"
+      },
+      {
+       "id": "d5fbc26dd3bd1f1b",
+       "company_name": "mercor",
+       "domain": "mercor.com",
+       "round_type": "Series C",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI talent platform",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "expand its automated platform and operations",
+       "source_sentence": "Mercor, a San Francisco–based AI startup, secured a $350 million Series C round at roughly a $10 billion valuation.",
+       "published_at": "2025-10-27T22:54:07",
+       "coverage_count": 3,
+       "article_ids": [
+        "690053816020af1f05d83828",
+        "6901703277c5828be2d83a4f",
+        "69bb23db7a841a437be57d5f"
+       ],
+       "article_id": "690053816020af1f05d83828"
+      },
+      {
+       "id": "b97284e5003cfcab",
+       "company_name": "mercor",
+       "domain": "mercor.com",
+       "round_type": "Series C",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI talent marketplace",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "grow its expert network, improve its AI-matching systems, and speed up project delivery",
+       "source_sentence": "Mercor, which connects AI labs with domain experts for training their foundational AI models, has raised $350 million at a $10 billion valuation, the company confirmed to TechCrunch.",
+       "published_at": "2025-10-27T15:53:34",
+       "coverage_count": 6,
+       "article_ids": [
+        "68ffdbb64192c82a52d8374d",
+        "69000f02d2f3814859d83830",
+        "6914b2b33503abfeddf38d75",
+        "69bb0f1d6ae47bec695f7b9b",
+        "69bb571ebb3472e5f4c584f0",
+        "69c3a5ace3cfcce8916b12ae"
+       ],
+       "article_id": "68ffdbb64192c82a52d8374d"
+      },
+      {
+       "id": "49c78a0a75d8fbd3",
+       "company_name": "mercor",
+       "domain": "mercor.com",
+       "round_type": null,
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Mercor, which counts OpenAI and Anthropic among its customers, is set to raise $350 million, the people said.",
+       "published_at": "2025-10-27T11:00:00",
+       "coverage_count": 11,
+       "article_ids": [
+        "68ff701212684b8ed5d83716",
+        "68ff74eb5bde913d53d836c6",
+        "690e2c376f121541d7242fba",
+        "690e2c65db65e9a9d02432cc",
+        "690e2caa6d5fbb1059243be2",
+        "690e2cb3db65e9a9d0243d2a",
+        "690e2dc96f121541d7245d7e",
+        "690e34ea6f121541d724d40d",
+        "69157f05ea91e703abf3b021",
+        "693168fa657e62559bf212e8",
+        "69bc2f2774855e3327fbdf13"
+       ],
+       "article_id": "68ff701212684b8ed5d83716"
+      },
+      {
+       "id": "22c3f52cd923431c",
+       "company_name": "clickhouse",
+       "domain": "clickhouse.com",
+       "round_type": "Series C",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        },
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "nebius",
+         "domain": "nebius.com",
+         "amount": null
+        }
+       ],
+       "sector": "Real-time analytics, data warehousing, observability, AI/ML",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Scale product development, support global expansion, deepen partnerships with customers and technology providers building the next wave of AI-native applications",
+       "source_sentence": "ClickHouse, Inc., a leader in real-time analytics, data warehousing, observability, and AI/ML, today announced it has raised $350 million in Series C financing.",
+       "published_at": "2025-05-30T07:20:26",
+       "coverage_count": 6,
+       "article_ids": [
+        "6898cd692f01d48cd3fa0602",
+        "68f725c117f4f9d43d2b79dd",
+        "6983e7d3e71a535a9c174c7b",
+        "698f95208d29a990b6ff534a",
+        "69bae1b2680e91ccbda0459c",
+        "69dfb3cd1d88cc4f6cad8c96"
+       ],
+       "article_id": "6898cd692f01d48cd3fa0602"
+      },
+      {
+       "id": "facdcca589047a92",
+       "company_name": "clickhouse",
+       "domain": "clickhouse.com",
+       "round_type": "Series C",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        },
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "nebius",
+         "domain": "nebius.com",
+         "amount": null
+        }
+       ],
+       "sector": "Real-time analytics, data warehousing, observability, AI/ML",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Scale product development, support global expansion, deepen partnerships with customers and technology providers",
+       "source_sentence": "ClickHouse, Inc., a leader in real-time analytics, data warehousing, observability, and AI/ML, today announced it has raised $350 million in Series C financing.",
+       "published_at": "2025-05-29T14:22:53",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d97ea559ff3bc3607d8939",
+        "69bb7b2ec22d22e6b5755f4c",
+        "69cc42a3f111344e7e7c3654"
+       ],
+       "article_id": "69bb7b2ec22d22e6b5755f4c"
+      },
+      {
+       "id": "909437e75a744073",
+       "company_name": "Starcloud",
+       "domain": "starcloud.ee",
+       "round_type": "total equity",
+       "amount_usd": 193900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 193900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "3C AGI Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "adjacent",
+         "domain": "adjacent.us",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "carya venture partners",
+         "domain": "carya.com",
+         "amount": null
+        },
+        {
+         "name": "Dennis Muilenburg",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Redmond",
+       "use_of_funds": null,
+       "source_sentence": "Starcloud has now raised a total of $193.9M in total equity funding and is backed by 3C AGI Partners, Adjacent, Benchmark, Carya Venture Partners, and Dennis Muilenburg.",
+       "published_at": "2026-04-06T08:27:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bcc6ff2654c79d6bcd9b"
+       ],
+       "article_id": "69e2bcc6ff2654c79d6bcd9b"
+      },
+      {
+       "id": "910e5b61b4b10c54",
+       "company_name": "Starcloud",
+       "domain": "starcloud.ee",
+       "round_type": "Series A",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1100000000.0,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 1100000000.0,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "eqt ventures",
+         "domain": "eqtventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "space-based data centers",
+       "country": "United States",
+       "city": "Redmond",
+       "use_of_funds": "finance mass production of its fleet and further development of its space-based compute infrastructure",
+       "source_sentence": "Starcloud Raises $170M in Series A Funding for Space Data Centers",
+       "published_at": "2026-03-30T22:07:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1d02fda5fc84b0bc968aa"
+       ],
+       "article_id": "69d1d02fda5fc84b0bc968aa"
+      },
+      {
+       "id": "fcd7de1575e8aada",
+       "company_name": "Starcloud",
+       "domain": "starcloud.ee",
+       "round_type": "Series A",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1100000000.0,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 1100000000.0,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "eqt ventures",
+         "domain": "eqtventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Space compute infrastructure",
+       "country": "United States",
+       "city": "Redmond",
+       "use_of_funds": "Next-generation satellites, manufacturing expansion and future launch contracts",
+       "source_sentence": "Starcloud has raised US$170 million at a $1.1 billion valuation, as companies including Elon Musk’s SpaceX and Jeff Bezos’ Blue Origin race to move power-hungry AI data centers off-planet.",
+       "published_at": "2026-03-30T12:22:53",
+       "coverage_count": 5,
+       "article_ids": [
+        "69cc1544f8e7de13bc1b554f",
+        "69cc169223fe82b9abc7c384",
+        "69d14cb84a6cba658b2351e5",
+        "69d14cd63a1bafe2c15cf244",
+        "69d150501fc956131346be34"
+       ],
+       "article_id": "69d14cb84a6cba658b2351e5"
+      },
+      {
+       "id": "1db6125ae29e36e0",
+       "company_name": "sunday",
+       "domain": "sundayapp.com",
+       "round_type": null,
+       "amount_usd": 165000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 165000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "xtal",
+         "domain": "xtalinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": "Sunday – $165.0M",
+       "published_at": "2026-03-16T08:27:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4844e0667c07f278ba3"
+       ],
+       "article_id": "69c3a4844e0667c07f278ba3"
+      },
+      {
+       "id": "ba5c396d7b8b1a78",
+       "company_name": "Legora Nabs",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1800000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1800000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Legora Nabs – The collaborative AI platform for lawyers said it completed a Series C round or $150M at a $1.8B valuation. The round was led by Bessemer Venture Partners, with significant investment from existing investors ICONIQ, General Catalyst, Redpoint Ventures, Benchmark, and Y Combinator.",
+       "published_at": "2025-10-31T15:30:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcb520d0887d68fa4646fc"
+       ],
+       "article_id": "69bcb520d0887d68fa4646fc"
+      },
+      {
+       "id": "eeb6d108001e160d",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1800000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1800000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal Tech",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "to accelerate its global expansion and growing product roadmap",
+       "source_sentence": "Legora, the collaborative AI platform for lawyers, today announced the completion of a Series C round of $150 million at a $1.8 billion valuation, led by Bessemer Venture Partners, with significant investment from existing investors ICONIQ, General Catalyst, Redpoint Ventures, Benchmark, and Y Combinator, to accelerate its global expansion and growing product roadmap.",
+       "published_at": "2025-10-30T12:38:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "698cbe719ca02490ecee0a5d",
+        "699351d1379036c8ea1f387a"
+       ],
+       "article_id": "699351d1379036c8ea1f387a"
+      },
+      {
+       "id": "2a167673a51c4ffe",
+       "company_name": "langchain",
+       "domain": "langchain.com",
+       "round_type": "Series B",
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1250000000.0,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": 1250000000.0,
+       "investors": [
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "amplify",
+         "domain": "amplify.la",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence & Developer Tools",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "LangChain has raised $125 million, boosting its valuation to $1.25 billion, the company announced on Monday.",
+       "published_at": "2025-10-22T05:50:55",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bb00b7a271d46de039efc6",
+        "69bb571cef75d924655b5c92"
+       ],
+       "article_id": "69bb00b7a271d46de039efc6"
+      },
+      {
+       "id": "b46e737cb557d2c6",
+       "company_name": "Applied Compute",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": 100000000.0
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Benchmark’s investment valued Applied Compute at $100 million, Upstarts Media reported.",
+       "published_at": "2025-08-09T02:55:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b439db3ddf2630a8cf58d9"
+       ],
+       "article_id": "68b439db3ddf2630a8cf58d9"
+      },
+      {
+       "id": "e204deda9aeba955",
+       "company_name": "decart",
+       "domain": "decart.bg",
+       "round_type": "Series B",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "zeev ventures",
+         "domain": "zeevventures.com",
+         "amount": null
+        },
+        {
+         "name": "Aleph VC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Further R&D and scaling deployment of real‑time generative AI",
+       "source_sentence": "Decart … raised $100 million in Series B funding…",
+       "published_at": "2025-08-09T01:26:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "68a176753ff75e010c30bd60"
+       ],
+       "article_id": "68a176753ff75e010c30bd60"
+      },
+      {
+       "id": "b28cab1bce51b201",
+       "company_name": "exa",
+       "domain": "exa.ai",
+       "round_type": "Series B",
+       "amount_usd": 85000000.0,
+       "amount_flag": null,
+       "valuation_usd": 700000000.0,
+       "currency": "USD",
+       "amount": 85000000.0,
+       "valuation": 700000000.0,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "AI search infrastructure",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Enhance indexing and processing capabilities, expand GPU cluster, develop new techniques, grow team",
+       "source_sentence": "San Francisco-based AI search infrastructure startup, Exa (formerly Metaphor), has raised $85 million in a Series B round at a $700 million valuation led by Benchmark. Lightspeed, Y Combinator, and NVentures, NVIDIA’s venture capital arm, participated in the round.",
+       "published_at": "2025-09-04T12:08:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69baf367a271d46de039bed8"
+       ],
+       "article_id": "69baf367a271d46de039bed8"
+      },
+      {
+       "id": "791143af51efaac2",
+       "company_name": "exa",
+       "domain": "exa.ai",
+       "round_type": "Series B",
+       "amount_usd": 85000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 85000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "to scale web crawling infrastructure and GPU clusters",
+       "source_sentence": "Exa, a San Francisco‑based AI startup reimagining web search for AI applications, announced an $85 million Series B funding round led by Benchmark, valuing the company at around $700 million.",
+       "published_at": "2025-09-03T22:57:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5d112d7fe179be1ca9f73"
+       ],
+       "article_id": "68c5d112d7fe179be1ca9f73"
+      },
+      {
+       "id": "2dbce94d72a5d53d",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "US",
+       "city": "Boston",
+       "use_of_funds": null,
+       "source_sentence": "Boston-based AcuityMD a medtech intelligence platform that leverages AI and precise data to support commercial decision-making.",
+       "published_at": "2026-04-27T08:27:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbed399b489398e0b4a3"
+       ],
+       "article_id": "69f1cbed399b489398e0b4a3"
+      },
+      {
+       "id": "7688c53bef0e0d87",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI / MedTech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "The company will use the funding to enhance its AI capabilities, deepen its proprietary MedTech data ontology, and expand its platform into broader workflows beyond commercial use cases.",
+       "source_sentence": "Funding Details Company: AcuityMD, Inc. Raised: $80.0M Round: Series C Funding Date: April 2026 Lead Investor: StepStone Group Additional Investors: Benchmark, Redpoint Ventures, ICONIQ, Atreides Management Company Website: https://www.acuitymd.com/",
+       "published_at": "2026-04-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d6327b2d589e844c0858"
+       ],
+       "article_id": "69f9d6327b2d589e844c0858"
+      },
+      {
+       "id": "97ee9c42fb1820d5",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "USA",
+       "city": "Boston, MA",
+       "use_of_funds": "advanced artificial intelligence (AI) capabilities",
+       "source_sentence": "AcuityMD Raises $80M Series C Round Back to Home BOSTON, MA, AcuityMD, the AI platform for MedTech, today announced $80 million in new funding.",
+       "published_at": "2026-04-21T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e87eee9baafc73568e5709",
+        "69e997ddbdd09a23d08efe46",
+        "69e99a20d47fc02832181d10",
+        "69f2293b27117df83f93f6f6",
+        "69f8801143843dd771ce4e0d"
+       ],
+       "article_id": "69e997ddbdd09a23d08efe46"
+      },
+      {
+       "id": "43bf9e00138b8de4",
+       "company_name": "Applied Compute",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "By late 2025, reports said it had secured roughly $80 million total from firms including Sequoia Capital, Lux Capital, and Benchmark.",
+       "published_at": "2026-01-21T00:49:31",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988f29194d3f481f3dc7f3b",
+        "69e87f127bb1410d4c860839"
+       ],
+       "article_id": "6988f29194d3f481f3dc7f3b"
+      },
+      {
+       "id": "8e30d3cbe4d22a3b",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 675000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 675000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        }
+       ],
+       "sector": "legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Legora raised $80 million earlier this year, with a valuation of about $675 million, led by ICONIQ and General Catalyst with participation from existing investors such as Redpoint Ventures and Benchmark.",
+       "published_at": "2025-10-01T12:34:58",
+       "coverage_count": 3,
+       "article_ids": [
+        "69035041b0b9656d67d839b8",
+        "698e5b1d9ca02490ec0c76b3",
+        "69bc7864ada7f1c360ff9927"
+       ],
+       "article_id": "698e5b1d9ca02490ec0c76b3"
+      },
+      {
+       "id": "ea4259cc6ea343b2",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 675000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI / LegalTech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "The company will use the funds to deepen client collaboration, scale innovation, and accelerate product development to meet the evolving needs of legal professionals.",
+       "source_sentence": "The company will use the funds to deepen client collaboration, scale innovation, and accelerate product development to meet the evolving needs of legal professionals.",
+       "published_at": "2025-05-21T00:00:00",
+       "coverage_count": 11,
+       "article_ids": [
+        "6898cdc62f01d48cd309ae09",
+        "68d1044ffb0e8d0abe2cfa4f",
+        "68f719a0f80e5160742cbd91",
+        "68f71b08e97e6da31e2ce942",
+        "68f72cd96ecd416e342c2027",
+        "698cc0829ca02490ecee30b0",
+        "698f2a7b8d29a990b6f769b4",
+        "698f96818d29a990b6ff6e56",
+        "699740aa5fbe93703d60ae07",
+        "69c3a6f16d029f77a1d3fa36",
+        "69e8bb525cfa3e5ba52faf30"
+       ],
+       "article_id": "699740aa5fbe93703d60ae07"
+      },
+      {
+       "id": "8b05f96d2181b3d5",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 76248000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 70600000.0,
+       "valuation": 596000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "further develop their collaborative AI platform",
+       "source_sentence": "Legora, a Stockholm-based LegalTech startup, announced today a €70.6 million Series B funding round in order to further develop their collaborative AI platform – landing a €596 million valuation.",
+       "published_at": "2025-05-21T03:59:50",
+       "coverage_count": 5,
+       "article_ids": [
+        "6898b020ab03b1b156e124a4",
+        "6983a42ee67557fb8553d416",
+        "6988ae03127162d16e0b291d",
+        "69974065e7ff408e2d70944b",
+        "69e8b8735cfa3e5ba52d3f66"
+       ],
+       "article_id": "6898b020ab03b1b156e124a4"
+      },
+      {
+       "id": "6157a194e7f63ce8",
+       "company_name": "Reducto",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "boxgroup",
+         "domain": "boxgroup.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Document Intelligence / Document Processing",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Accelerate model research, expand product capabilities, and scale adoption across enterprise and next‑generation AI teams.",
+       "source_sentence": "Reducto, a San Francisco, CA-based AI document intelligence platform, has raised $75 million in Series B funding, bringing its total funding to $108 million.",
+       "published_at": "2025-10-15T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d19909ca02490ecf49cda"
+       ],
+       "article_id": "698d19909ca02490ecf49cda"
+      },
+      {
+       "id": "ddbea0fce7cbcc87",
+       "company_name": "Reducto",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz (lead)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "boxgroup",
+         "domain": "boxgroup.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Document Intelligence",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "The funds will accelerate research on advanced OCR and vision-language models, as Reducto continues to expand use of its document ingestion API in industries from legal and finance to healthcare.",
+       "source_sentence": "Reducto has raised $75 million in Series B funding to accelerate document AI adoption.",
+       "published_at": "2025-10-14T20:13:40",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe2906e01ff0caa62936bb",
+        "68fe30a89f5ecb55fa284c93",
+        "690053816020af1f05d83828"
+       ],
+       "article_id": "68fe2906e01ff0caa62936bb"
+      },
+      {
+       "id": "a62e5ea8af7aa8ef",
+       "company_name": "Manus AI",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": 500000000.0,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": 500000000.0,
+       "investors": [
+        {
+         "name": "benchmark capital",
+         "domain": "benchmarkcapital.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "China",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Manus recently raised US$75 million in funding at a US$500 million valuation in a round led by US venture capital firm Benchmark Capital, according to a Bloomberg report.",
+       "published_at": "2025-05-13T22:10:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e3c9d7b8c34c1508f49728"
+       ],
+       "article_id": "69e3c9d7b8c34c1508f49728"
+      },
+      {
+       "id": "fa2e19a8f6587d27",
+       "company_name": "levelpath",
+       "domain": "levelpath.com",
+       "round_type": "Series B",
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "01A",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "New View Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "World Innovation Lab",
+         "domain": "wilab.com",
+         "amount": null
+        }
+       ],
+       "sector": "Procurement",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Deepen product development, expand go-to-market team, and forge more partnerships to modernize procurement operations.",
+       "source_sentence": "\"Levelpath, a San Francisco-based startup reinventing corporate procurement with AI, has closed in $55 million in Series B financing to accelerate its growth.\"",
+       "published_at": "2025-07-08T22:37:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988ee2a94d3f481f3dc3466"
+       ],
+       "article_id": "6988ee2a94d3f481f3dc3466"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 61,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDctMDggMjI6Mzc6MTEiLCJrIjoiMTgwMjczNzQ1NzE4ODg4Njg2NDciLCJhIjo1NTAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 61,
+      "deals_with_amount": 58,
+      "deals_without_amount": 3,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 10352548000.0,
+      "median_amount_usd": 80000000.0,
+      "largest_amount_usd": 2800000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.228,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.232
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Benchmark",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "benchmark"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "2dbce94d72a5d53d",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "US",
+       "city": "Boston",
+       "use_of_funds": null,
+       "source_sentence": "Boston-based AcuityMD a medtech intelligence platform that leverages AI and precise data to support commercial decision-making.",
+       "published_at": "2026-04-27T08:27:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbed399b489398e0b4a3"
+       ],
+       "article_id": "69f1cbed399b489398e0b4a3"
+      },
+      {
+       "id": "7688c53bef0e0d87",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI / MedTech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "The company will use the funding to enhance its AI capabilities, deepen its proprietary MedTech data ontology, and expand its platform into broader workflows beyond commercial use cases.",
+       "source_sentence": "Funding Details Company: AcuityMD, Inc. Raised: $80.0M Round: Series C Funding Date: April 2026 Lead Investor: StepStone Group Additional Investors: Benchmark, Redpoint Ventures, ICONIQ, Atreides Management Company Website: https://www.acuitymd.com/",
+       "published_at": "2026-04-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d6327b2d589e844c0858"
+       ],
+       "article_id": "69f9d6327b2d589e844c0858"
+      },
+      {
+       "id": "97ee9c42fb1820d5",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "USA",
+       "city": "Boston, MA",
+       "use_of_funds": "advanced artificial intelligence (AI) capabilities",
+       "source_sentence": "AcuityMD Raises $80M Series C Round Back to Home BOSTON, MA, AcuityMD, the AI platform for MedTech, today announced $80 million in new funding.",
+       "published_at": "2026-04-21T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e87eee9baafc73568e5709",
+        "69e997ddbdd09a23d08efe46",
+        "69e99a20d47fc02832181d10",
+        "69f2293b27117df83f93f6f6",
+        "69f8801143843dd771ce4e0d"
+       ],
+       "article_id": "69e997ddbdd09a23d08efe46"
+      },
+      {
+       "id": "7993f1803a0c2e63",
+       "company_name": "eigen",
+       "domain": "eigen.io",
+       "round_type": "seed",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "Ben Silbermann",
+         "domain": "http://www.linkedin.com/in/silbermann",
+         "amount": null
+        },
+        {
+         "name": "David Singleton",
+         "domain": "http://au.linkedin.com/in/davidjsingleton/en",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Hiring the best team on earth, building the best team",
+       "source_sentence": "The stealth AI startup has raised a $15 million seed round from Benchmark with Pinterest founder Ben Silbermann and Dreamer founder David Singleton (who later sold his company to Meta) joining as angel investors, Fortune learned exclusively.",
+       "published_at": "2026-04-16T16:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8618e5cfa3e5ba5f050ca",
+        "69e8e24e9baafc7356dd57a0"
+       ],
+       "article_id": "69e8618e5cfa3e5ba5f050ca"
+      },
+      {
+       "id": "909437e75a744073",
+       "company_name": "Starcloud",
+       "domain": "starcloud.ee",
+       "round_type": "total equity",
+       "amount_usd": 193900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 193900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "3C AGI Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "adjacent",
+         "domain": "adjacent.us",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "carya venture partners",
+         "domain": "carya.com",
+         "amount": null
+        },
+        {
+         "name": "Dennis Muilenburg",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Redmond",
+       "use_of_funds": null,
+       "source_sentence": "Starcloud has now raised a total of $193.9M in total equity funding and is backed by 3C AGI Partners, Adjacent, Benchmark, Carya Venture Partners, and Dennis Muilenburg.",
+       "published_at": "2026-04-06T08:27:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bcc6ff2654c79d6bcd9b"
+       ],
+       "article_id": "69e2bcc6ff2654c79d6bcd9b"
+      },
+      {
+       "id": "9be90e7287d780d3",
+       "company_name": "voltalia",
+       "domain": "voltalia.com",
+       "round_type": "regulated agreement",
+       "amount_usd": 10800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "benchmark shareholder",
+         "domain": null,
+         "amount": 10000000.0
+        }
+       ],
+       "sector": "renewable energies",
+       "country": null,
+       "city": null,
+       "use_of_funds": "necessary flexibility to carry out its program of divestitures",
+       "source_sentence": "Voltalia announces the signing of a regulated agreement for a financing of EUR 100 million, granted by its benchmark shareholder, in the form of an advance in the current account of repayable shareholder of a duration of one year.",
+       "published_at": "2026-04-01T05:26:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1cd7a9f8928f2970ef726"
+       ],
+       "article_id": "69d1cd7a9f8928f2970ef726"
+      },
+      {
+       "id": "910e5b61b4b10c54",
+       "company_name": "Starcloud",
+       "domain": "starcloud.ee",
+       "round_type": "Series A",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1100000000.0,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 1100000000.0,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "eqt ventures",
+         "domain": "eqtventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "space-based data centers",
+       "country": "United States",
+       "city": "Redmond",
+       "use_of_funds": "finance mass production of its fleet and further development of its space-based compute infrastructure",
+       "source_sentence": "Starcloud Raises $170M in Series A Funding for Space Data Centers",
+       "published_at": "2026-03-30T22:07:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1d02fda5fc84b0bc968aa"
+       ],
+       "article_id": "69d1d02fda5fc84b0bc968aa"
+      },
+      {
+       "id": "fcd7de1575e8aada",
+       "company_name": "Starcloud",
+       "domain": "starcloud.ee",
+       "round_type": "Series A",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1100000000.0,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": 1100000000.0,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "eqt ventures",
+         "domain": "eqtventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Space compute infrastructure",
+       "country": "United States",
+       "city": "Redmond",
+       "use_of_funds": "Next-generation satellites, manufacturing expansion and future launch contracts",
+       "source_sentence": "Starcloud has raised US$170 million at a $1.1 billion valuation, as companies including Elon Musk’s SpaceX and Jeff Bezos’ Blue Origin race to move power-hungry AI data centers off-planet.",
+       "published_at": "2026-03-30T12:22:53",
+       "coverage_count": 5,
+       "article_ids": [
+        "69cc1544f8e7de13bc1b554f",
+        "69cc169223fe82b9abc7c384",
+        "69d14cb84a6cba658b2351e5",
+        "69d14cd63a1bafe2c15cf244",
+        "69d150501fc956131346be34"
+       ],
+       "article_id": "69d14cb84a6cba658b2351e5"
+      },
+      {
+       "id": "40561b2069b732cb",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "Series H",
+       "amount_usd": 2800000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2800000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Infrastructure, Artificial Intelligence (AI), Computer, Hardware, RISC, Semiconductor, Software",
+       "country": "USA",
+       "city": "Sunnyvale",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "1db6125ae29e36e0",
+       "company_name": "sunday",
+       "domain": "sundayapp.com",
+       "round_type": null,
+       "amount_usd": 165000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 165000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "xtal",
+         "domain": "xtalinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": "Sunday – $165.0M",
+       "published_at": "2026-03-16T08:27:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4844e0667c07f278ba3"
+       ],
+       "article_id": "69c3a4844e0667c07f278ba3"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 20,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMTYgMDg6Mjc6NTEiLCJrIjoiMjE0MDkxODg1NDQxOTYyNTY5NiJ9",
+     "totals": {
+      "deals": 20,
+      "deals_with_amount": 20,
+      "deals_without_amount": 0,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 5684700000.0,
+      "median_amount_usd": 165000000.0,
+      "largest_amount_usd": 2800000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.146,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.151
+    }
+   }
+  }
+ ]
+}

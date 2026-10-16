@@ -1,0 +1,2187 @@
+{
+ "slug": "bridge-round-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:18Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "round_type": "bridge",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "round_type": [
+       "bridge"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 140,
+      "deals_with_amount": 118,
+      "deals_without_amount": 22,
+      "deals_amount_excluded": 4,
+      "sum_amount_usd": 15991351500.0,
+      "median_amount_usd": 5000000.0,
+      "largest_amount_usd": 6500000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 11,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 100519000.0,
+       "median_amount_usd": 3900000.0,
+       "largest_amount_usd": 33000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 8,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 144669500.0,
+       "median_amount_usd": 1885000.0,
+       "largest_amount_usd": 122100000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 9,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 143548500.0,
+       "median_amount_usd": 2242250.0,
+       "largest_amount_usd": 125000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 22,
+       "deals_with_amount": 21,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 983460000.0,
+       "median_amount_usd": 12300000.0,
+       "largest_amount_usd": 567000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 19,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 83556000.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 25000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 10,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 17438000.0,
+       "median_amount_usd": 1575000.0,
+       "largest_amount_usd": 5000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 11946460000.0,
+       "median_amount_usd": 125000000.0,
+       "largest_amount_usd": 6500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 10,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 456308000.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 216000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 921200000.0,
+       "median_amount_usd": 20000000.0,
+       "largest_amount_usd": 900000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 8,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 45790000.0,
+       "median_amount_usd": 1200000.0,
+       "largest_amount_usd": 32000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 4,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 1364160000.0,
+       "median_amount_usd": 81080000.0,
+       "largest_amount_usd": 1200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 7,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 114942500.0,
+       "median_amount_usd": 4000000.0,
+       "largest_amount_usd": 70000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.054,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.058
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "bridge",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "round_type": [
+       "bridge"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "ed829e17ae0aa3c8",
+       "company_name": "ampere",
+       "domain": "ampere.cars",
+       "round_type": "bridge loan",
+       "amount_usd": 6500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "acquisition",
+       "source_sentence": "a $6.5 billion bridge loan arranged for the acquisition of Ampere",
+       "published_at": "2025-11-11T11:19:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931969b787b9cf425f21d78"
+       ],
+       "article_id": "6931969b787b9cf425f21d78"
+      },
+      {
+       "id": "3086db4a53feeaef",
+       "company_name": "st telemedia global data centres (stt gdc)",
+       "domain": "sttelemediagdc.com",
+       "round_type": "bridge loan",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "singtel",
+         "domain": "singtel.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data centres",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "support proposed purchase of STT GDC",
+       "source_sentence": "Singapore - A consortium comprising KKR and Singtel is in talks with banks for a loan of around $5 billion to support its proposed purchase of ST Telemedia Global Data Centres (STT GDC), according to people familiar with the matter.",
+       "published_at": "2025-11-11T02:37:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986e3ed11e3205ec993ba53"
+       ],
+       "article_id": "6986e3ed11e3205ec993ba53"
+      },
+      {
+       "id": "a54faba9ba396605",
+       "company_name": "companhia siderúrgica nacional",
+       "domain": "csn.com.br",
+       "round_type": "bridge loan",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "Citigroup",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "credit agricole",
+         "domain": "credit-agricole.fr",
+         "amount": null
+        },
+        {
+         "name": "hsbc",
+         "domain": "hsbc.com",
+         "amount": null
+        },
+        {
+         "name": "Banco XP",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bnp paribas",
+         "domain": "group.bnpparibas",
+         "amount": null
+        },
+        {
+         "name": "banco do brasil",
+         "domain": "bb.com.br",
+         "amount": null
+        },
+        {
+         "name": "bradesco",
+         "domain": "bradesco.com.br",
+         "amount": null
+        }
+       ],
+       "sector": "steel, iron ore",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "support ongoing operations until the sale of its cement production area is concluded; restructuring short and medium-term financial obligations",
+       "source_sentence": "Companhia Siderúrgica Nacional (CSN), the Brazilian steel and iron ore producer, received from a pool of banks a bridge loan in the amount of $1.2 billion, destined to support ongoing operations until the sale of its cement production area is concluded.",
+       "published_at": "2026-03-23T16:08:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9b8f175f157062cb4d0a0"
+       ],
+       "article_id": "69e9b8f175f157062cb4d0a0"
+      },
+      {
+       "id": "a911748a16f7b744",
+       "company_name": "sonida senior living",
+       "domain": "sonidaseniorliving.com",
+       "round_type": "Bridge loan",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rbc capital markets",
+         "domain": "rbccm.com",
+         "amount": null
+        },
+        {
+         "name": "bmo capital markets",
+         "domain": "capitalmarkets.bmo.com",
+         "amount": null
+        },
+        {
+         "name": "Citizens Bank, N.A.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "JPMorgan Chase Bank, N.A.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "KeyBanc National Association",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Wells Fargo Bank, National Association",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Senior living",
+       "country": "United States",
+       "city": "Dallas",
+       "use_of_funds": "to support funding of the cash portion of the purchase price and repay CHP’s existing corporate credit facilities",
+       "source_sentence": "At the time of the Merger Agreement announcement, a 364-day committed bridge financing (“Bridge Loan Facility”) of $900 million was provided by RBC Capital Markets (“RBC”) and BMO Capital Markets (“BMO”) to, among other things, support funding of the cash portion of the purchase price and repay CHP’s existing corporate credit facilities.",
+       "published_at": "2026-01-05T13:05:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d92d38d29a990b6d9086c"
+       ],
+       "article_id": "698d92d38d29a990b6d9086c"
+      },
+      {
+       "id": "de09336a8135d772",
+       "company_name": "gerresheimer ag",
+       "domain": "gerresheimer.de",
+       "round_type": "bridge financing",
+       "amount_usd": 567000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 525000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "pharma biotech cosmetics",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "optimising financial structure for predictable and flexible financial operations",
+       "source_sentence": "the remaining bridge financing of around EUR 525 million",
+       "published_at": "2025-08-28T09:35:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c585d1f59f2fdc28884f21"
+       ],
+       "article_id": "68c585d1f59f2fdc28884f21"
+      },
+      {
+       "id": "589885d42c32f503",
+       "company_name": "encavis",
+       "domain": "encavis.com",
+       "round_type": "Bridge financing",
+       "amount_usd": 216000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Renewable Energy",
+       "country": "Germany",
+       "city": "Hamburg",
+       "use_of_funds": "Acquisition of the Italian solar portfolio \"Giotto\" (265 MW)",
+       "source_sentence": "ENCAVIS secures a non-recourse bridge financing of EUR 200 million for the acquisition of the Italian solar portfolio \"Giotto\" (265 MW).",
+       "published_at": "2025-12-16T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfcf10da2167bba6009cff"
+       ],
+       "article_id": "69dfcf10da2167bba6009cff"
+      },
+      {
+       "id": "cd347ddbf0b25684",
+       "company_name": "ivanhoe electric",
+       "domain": "ivanhoeelectric.com",
+       "round_type": "Bridge Facility",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "national bank of canada",
+         "domain": "nbc.ca",
+         "amount": null
+        },
+        {
+         "name": "bmo capital markets",
+         "domain": "capitalmarkets.bmo.com",
+         "amount": null
+        },
+        {
+         "name": "societe generale",
+         "domain": "societegenerale.com",
+         "amount": null
+        }
+       ],
+       "sector": "mineral exploration, mining",
+       "country": "United States",
+       "city": "Phoenix",
+       "use_of_funds": "provides near-term balance sheet strength during ongoing project financing discussions as well as funding for the start of major construction activities at the Santa Cruz Copper Project in 2026",
+       "source_sentence": "Ivanhoe Electric's wholly-owned subsidiary, Mesa Cobre Holding Corporation, has closed its previously announced senior secured multi-draw bridge facility of $200 million (the \"Bridge Facility\") (refer to Ivanhoe Electric's November 13, 2025 news release).",
+       "published_at": "2025-12-15T21:32:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "698ef8fe9ca02490ec1841d4"
+       ],
+       "article_id": "698ef8fe9ca02490ec1841d4"
+      },
+      {
+       "id": "8425658f7bcfaa00",
+       "company_name": "ivanhoe electric",
+       "domain": "ivanhoeelectric.com",
+       "round_type": "senior secured bridge facility",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "national bank of canada",
+         "domain": "nbc.ca",
+         "amount": null
+        },
+        {
+         "name": "bmo capital markets",
+         "domain": "capitalmarkets.bmo.com",
+         "amount": null
+        },
+        {
+         "name": "societe generale",
+         "domain": "societegenerale.com",
+         "amount": null
+        }
+       ],
+       "sector": "mineral exploration",
+       "country": "United States",
+       "city": "Phoenix",
+       "use_of_funds": "balance sheet strength for project financing discussions and funding for the start of major construction activities at the Santa Cruz Copper Project",
+       "source_sentence": "Ivanhoe Electric's wholly-owned subsidiary, Mesa Cobre Holding Corporation, has closed its previously announced senior secured multi-draw bridge facility of $200 million (the \"Bridge Facility\")",
+       "published_at": "2025-12-15T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d56a7bb1410d4cc9daf3"
+       ],
+       "article_id": "69e8d56a7bb1410d4cc9daf3"
+      },
+      {
+       "id": "6edf986a3c2335de",
+       "company_name": "ivanhoe electric",
+       "domain": "ivanhoeelectric.com",
+       "round_type": "Bridge Facility",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "National Bank Capital Markets",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "societe generale",
+         "domain": "societegenerale.com",
+         "amount": null
+        },
+        {
+         "name": "bmo capital markets",
+         "domain": "capitalmarkets.bmo.com",
+         "amount": null
+        }
+       ],
+       "sector": "Copper Mining",
+       "country": "United States",
+       "city": "Phoenix",
+       "use_of_funds": "Provide enhanced liquidity for early construction activities and working capital requirements for the Santa Cruz Copper Project.",
+       "source_sentence": "Ivanhoe Electric's wholly-owned subsidiary, Mesa Cobre Holding Corporation, has received credit approvals from a syndicate of three international financial institutions for a $200 million senior secured multi-draw bridge facility (the \"Bridge Facility\").",
+       "published_at": "2025-11-13T12:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "693151763ca5cd3544f22b34"
+       ],
+       "article_id": "693151763ca5cd3544f22b34"
+      },
+      {
+       "id": "6b6b1287dc85682a",
+       "company_name": "mdh partners",
+       "domain": "mdhpartners.com",
+       "round_type": "bridge debt",
+       "amount_usd": 160000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 160000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "acore capital",
+         "domain": "acorecapital.com",
+         "amount": 160000000.0
+        }
+       ],
+       "sector": "Industrial Real Estate",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "to refinance a portfolio of 10 warehouse properties spread among six states",
+       "source_sentence": "MDH Partners has landed $160 million of bridge debt to refinance a portfolio of 10 warehouse properties spread among six states, Commercial Observer has learned.",
+       "published_at": "2026-03-02T21:55:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e64de52be6445e4610044c"
+       ],
+       "article_id": "69e64de52be6445e4610044c"
+      },
+      {
+       "id": "fd89976ff857e778",
+       "company_name": "FuriosaAI",
+       "domain": null,
+       "round_type": "Series C bridge",
+       "amount_usd": 127500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "KRW",
+       "amount": 170000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Korea Development Bank",
+         "domain": "kdb.co.kr",
+         "amount": 30000000000.0
+        },
+        {
+         "name": "industrial bank of korea",
+         "domain": "ibk.co.kr",
+         "amount": 10000000000.0
+        },
+        {
+         "name": "ibk securities",
+         "domain": "ibks.com",
+         "amount": 6000000000.0
+        },
+        {
+         "name": "IBK Venture Capital",
+         "domain": null,
+         "amount": 5000000000.0
+        },
+        {
+         "name": "Eugene-Growth Finance Fund",
+         "domain": null,
+         "amount": 11600000000.0
+        },
+        {
+         "name": "keystone partners",
+         "domain": "keystonepartners.com",
+         "amount": 20000000000.0
+        },
+        {
+         "name": "PI Partners",
+         "domain": null,
+         "amount": 13200000000.0
+        },
+        {
+         "name": "daesung startup investment",
+         "domain": "daesungpe.com",
+         "amount": 5000000000.0
+        },
+        {
+         "name": "kakao investment",
+         "domain": "kakaoinvestment.com",
+         "amount": 3000000000.0
+        }
+       ],
+       "sector": "AI semiconductor",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": "Mass production of its AI processor RNGD and accelerate next‑gen semiconductor development.",
+       "source_sentence": "South Korean AI chip startup FuriosaAI has entered the ranks of the country’s unicorn companies following its ₩170 billion KRW (~$130 million USD) Series C bridge funding round.",
+       "published_at": "2025-08-04T02:14:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "698887d6868e86f9ec6c7dd6"
+       ],
+       "article_id": "698887d6868e86f9ec6c7dd6"
+      },
+      {
+       "id": "f685b4f8385b4478",
+       "company_name": "clipper equity",
+       "domain": "clipperequity.com",
+       "round_type": "bridge debt",
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valley national bank",
+         "domain": "valleynationalbank.com",
+         "amount": null
+        }
+       ],
+       "sector": "Real Estate",
+       "country": "USA",
+       "city": "Brooklyn",
+       "use_of_funds": null,
+       "source_sentence": "Clipper Equity has nabbed $125 million of bridge debt for a multifamily development in Flatbush, Brooklyn, at the site of a Sears building that operated for 89 years, Commercial Observer has learned.",
+       "published_at": "2025-11-18T17:27:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e22568d29a990b6e3a085"
+       ],
+       "article_id": "698e22568d29a990b6e3a085"
+      },
+      {
+       "id": "618159f16077d71d",
+       "company_name": "FuriosaAI",
+       "domain": null,
+       "round_type": "Series C bridge",
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Korea Development Bank",
+         "domain": "kdb.co.kr",
+         "amount": null
+        },
+        {
+         "name": "industrial bank of korea",
+         "domain": "ibk.co.kr",
+         "amount": null
+        },
+        {
+         "name": "keistone partners",
+         "domain": "keistone.co.kr",
+         "amount": null
+        },
+        {
+         "name": "kakao investment",
+         "domain": "kakaoinvestment.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Semiconductor",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Ramp up production of AI inference chip RNGD",
+       "source_sentence": "FuriosaAI closed $125 million in Series C bridge funding to ramp up production of its energy‑efficient AI inference chip, RNGD.",
+       "published_at": "2025-08-04T05:30:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "694d78327af704e708f303d5"
+       ],
+       "article_id": "694d78327af704e708f303d5"
+      },
+      {
+       "id": "b2d02f5418b0bb15",
+       "company_name": "FuriosaAI",
+       "domain": null,
+       "round_type": "Series C (bridge)",
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Korea Development Bank",
+         "domain": "kdb.co.kr",
+         "amount": null
+        },
+        {
+         "name": "industrial bank of korea",
+         "domain": "ibk.co.kr",
+         "amount": null
+        },
+        {
+         "name": "keistone partners",
+         "domain": "keistone.co.kr",
+         "amount": null
+        },
+        {
+         "name": "kakao investment",
+         "domain": "kakaoinvestment.com",
+         "amount": null
+        },
+        {
+         "name": "among others",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Semiconductors",
+       "country": "South Korea",
+       "city": "Seoul",
+       "use_of_funds": "Ramp up production of next‑generation AI chips",
+       "source_sentence": "FuriosaAI, a Seoul-based semiconductor startup, has closed a $125 million Series C (bridge) funding round to ramp up production of its next-generation AI chips.",
+       "published_at": "2025-08-01T23:55:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d974062c909880704baad6"
+       ],
+       "article_id": "68d974062c909880704baad6"
+      },
+      {
+       "id": "c53d62db5618c915",
+       "company_name": "FuriosaAI",
+       "domain": null,
+       "round_type": "Series C bridge financing",
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Korea Development Bank",
+         "domain": "kdb.co.kr",
+         "amount": null
+        },
+        {
+         "name": "industrial bank of korea",
+         "domain": "ibk.co.kr",
+         "amount": null
+        },
+        {
+         "name": "kakao investment",
+         "domain": "kakaoinvestment.com",
+         "amount": null
+        },
+        {
+         "name": "keistone partners",
+         "domain": "keistone.co.kr",
+         "amount": null
+        },
+        {
+         "name": "PI Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI chip",
+       "country": "South Korea",
+       "city": "Seoul",
+       "use_of_funds": "scale production of its AI inference chip RNGD and develop next-generation chip",
+       "source_sentence": "South Korean AI chip startup FuriosaAI, which Meta considered buying earlier this year, said it has raised a $125 million Series C bridge financing, bringing total funding to date to $246 million.",
+       "published_at": "2025-07-31T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f719e1b5f4abc34a2cc636"
+       ],
+       "article_id": "68f719e1b5f4abc34a2cc636"
+      },
+      {
+       "id": "e27ab9ff16b38abc",
+       "company_name": "torngat metals",
+       "domain": "torngatmetals.com",
+       "round_type": "bridge loan",
+       "amount_usd": 122100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 165000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "export development canada",
+         "domain": "edc.ca",
+         "amount": 110000000.0
+        },
+        {
+         "name": "Canada Infrastructure Bank",
+         "domain": "cib-bic.ca",
+         "amount": 55000000.0
+        }
+       ],
+       "sector": "rare earth mining",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "key pre‑construction activities, engineering and environmental studies needed to submit permit applications for project infrastructure in Quebec and Labrador",
+       "source_sentence": "Torngat Metals – a Quebec‑based rare earth development company – has secured a CA$110 million bridge loan facility agreement with Export Development Canada (EDC) and a loan commitment of up to CA$55 million from the Canada Infrastructure Bank (CIB) to advance the next phase of its Strange Lake project.",
+       "published_at": "2025-06-18T01:11:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb3e54e7c8d3750e0619d3"
+       ],
+       "article_id": "69bb3e54e7c8d3750e0619d3"
+      },
+      {
+       "id": "28dadb2cdd088746",
+       "company_name": "clipper equity",
+       "domain": "clipperequity.com",
+       "round_type": "bridge loan",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bhi",
+         "domain": "bhiusa.com",
+         "amount": null
+        }
+       ],
+       "sector": "real estate",
+       "country": "USA",
+       "city": "Brooklyn",
+       "use_of_funds": "to retire past construction debt",
+       "source_sentence": "The development firm has landed a $120 million bridge loan from BHI to retire past construction debt for a 227-unit multifamily project at 2359 Bedford Avenue in Flatbush, Brooklyn.",
+       "published_at": "2025-11-18T18:50:25",
+       "coverage_count": 2,
+       "article_ids": [
+        "698e23f29ca02490ec08537b",
+        "698e23f29ca02490ec08537b"
+       ],
+       "article_id": "698e23f29ca02490ec08537b"
+      },
+      {
+       "id": "7204fa9e111dad07",
+       "company_name": "norse atlantic airways",
+       "domain": "flynorse.com",
+       "round_type": "Bridge Loan",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Airlines",
+       "country": "Norway",
+       "city": "Oslo",
+       "use_of_funds": "fund liquidity needs pending completion of the rights issue",
+       "source_sentence": "Bridge loan facility of USD70 million to fund the liquidity needs pending completion of the rights issue.",
+       "published_at": "2026-04-16T07:03:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8dd4d9baafc7356d94ae1"
+       ],
+       "article_id": "69e8dd4d9baafc7356d94ae1"
+      },
+      {
+       "id": "4e855e42da991f64",
+       "company_name": "upstage",
+       "domain": "upstage.ai",
+       "round_type": "Series B Bridge",
+       "amount_usd": 46000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 46000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "amazon",
+         "domain": "amazon.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "boosting global expansion and cementing its role as Korea’s AI leader",
+       "source_sentence": "Upstage raised USD 46M Series B bridge funding led by KDB with Amazon and AMD, boosting global expansion and cementing its role as Korea’s AI leader.",
+       "published_at": "2025-08-24T02:45:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd237c58389c352a0ae129"
+       ],
+       "article_id": "69bd237c58389c352a0ae129"
+      },
+      {
+       "id": "aa166bb0f4311130",
+       "company_name": "upstage",
+       "domain": "upstage.ai",
+       "round_type": "Series B bridge",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Korea Development Bank",
+         "domain": "kdb.co.kr",
+         "amount": null
+        },
+        {
+         "name": "amazon",
+         "domain": "amazon.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate development of next-generation Solar language model, advance document AI products, expand go‑to‑market in the U.S. and APAC, support growth across sales and marketing hires, and continue international expansion.",
+       "source_sentence": "Upstage, a key AI company specializing in enterprise-grade generative AI solutions, announced a $45 million Series B bridge round backed by Korea Development Bank (KDB), Amazon, and AMD.",
+       "published_at": "2025-08-20T14:33:54",
+       "coverage_count": 2,
+       "article_ids": [
+        "68ab3600bfdb4fb66391d3f9",
+        "698e1bb69ca02490ec07af03"
+       ],
+       "article_id": "68ab3600bfdb4fb66391d3f9"
+      },
+      {
+       "id": "2180c6d55d482d32",
+       "company_name": "upstage",
+       "domain": "upstage.ai",
+       "round_type": "Series B Bridge",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hanwha investment & securities",
+         "domain": "hanwhawm.com",
+         "amount": null
+        },
+        {
+         "name": "sk networks",
+         "domain": "sknetworks.co.kr",
+         "amount": null
+        },
+        {
+         "name": "kt",
+         "domain": "kt.com",
+         "amount": null
+        },
+        {
+         "name": "Korea Development Bank",
+         "domain": "kdb.co.kr",
+         "amount": null
+        },
+        {
+         "name": "stonebridge ventures",
+         "domain": "stonebridgeventures.co.ke",
+         "amount": null
+        },
+        {
+         "name": "mirae asset venture investment",
+         "domain": "venture.miraeasset.co.kr",
+         "amount": null
+        },
+        {
+         "name": "shinhan venture investment",
+         "domain": "shinhanvc.com",
+         "amount": null
+        },
+        {
+         "name": "Hana Ventures",
+         "domain": "hanaventures.co.kr",
+         "amount": null
+        },
+        {
+         "name": "industrial bank of korea",
+         "domain": "ibk.co.kr",
+         "amount": null
+        },
+        {
+         "name": "sbva",
+         "domain": "sbvacorp.com",
+         "amount": null
+        },
+        {
+         "name": "primer sazze partners",
+         "domain": "primersazze.com",
+         "amount": null
+        },
+        {
+         "name": "company k partners",
+         "domain": "kpartners.co.kr",
+         "amount": null
+        },
+        {
+         "name": "premier partners",
+         "domain": "premierpartnersllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI software",
+       "country": "US",
+       "city": "San Jose",
+       "use_of_funds": "Deploying the $45 million to advance Platform Enhancement (Solar LLM and document AI), Global Market Expansion (North America, Europe, Asia), Team Growth (engineering, data science, go-to-market), R&D Investment (next-generation LLMs and AI-driven document processing), and Partnership Development (cloud providers and enterprise vendors).",
+       "source_sentence": "Upstage raised $45 million in its Series B bridge funding round, led by Hanwha Investment & Securities.",
+       "published_at": "2025-08-20T14:20:19",
+       "coverage_count": 3,
+       "article_ids": [
+        "68b43e3c3ddf2630a8d6616c",
+        "6988a7234727a5abdc89b535",
+        "699740435fbe93703d60ab83"
+       ],
+       "article_id": "6988a7234727a5abdc89b535"
+      },
+      {
+       "id": "5ee20b6f34a231d6",
+       "company_name": "upstage",
+       "domain": "upstage.ai",
+       "round_type": "B Series Bridge Round",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Amazon.com",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Advanced Micro Devices",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "korean development bank",
+         "domain": "kdb.co.kr",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "South Korea",
+       "city": "Seoul",
+       "use_of_funds": "accelerate the development of its next-generation model and expand into the United States and the Asia-Pacific region",
+       "source_sentence": "The Upstage artificial intelligence startup raised $45 million of investors, including Amazon.com and Advanced Micro Devices, to accelerate the development of its next-generation model and expand into the United States and the Asia-Pacific region.",
+       "published_at": "2025-08-20T12:47:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "6998036cd24b4781ec071252"
+       ],
+       "article_id": "6998036cd24b4781ec071252"
+      },
+      {
+       "id": "5c1e09ad6af1e5e2",
+       "company_name": "Na",
+       "domain": null,
+       "round_type": "bridge credit facility",
+       "amount_usd": 33000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 33000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Dunebridge Worldwide Ltd.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "working capital credit facility",
+       "source_sentence": "Announces today that it has entered into an amended and restated bridge credit facility agreement to provide for the Company's previously announced $33 million working capital credit facility with Dunebridge Worldwide Ltd., as administrative agent, security trustee and lender.",
+       "published_at": "2025-05-14T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb531168bf20e367f85426"
+       ],
+       "article_id": "69bb531168bf20e367f85426"
+      },
+      {
+       "id": "387ab5fa44e9f15f",
+       "company_name": "canada nickel",
+       "domain": "canadanickel.com",
+       "round_type": "bridge loan",
+       "amount_usd": 32000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 32000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "auramet",
+         "domain": "auramet.com",
+         "amount": null
+        }
+       ],
+       "sector": "Mining",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "working capital purposes and to repay the existing loan with BT Capital, and advance the Crawford Nickel Sulphide Project",
+       "source_sentence": "Canada Nickel Company Inc. (“Canada Nickel” or the “Company”) (TSXV: CNC) (OTCQX: CNIKF) today announced that the Company has entered into a US$32 million bridge loan facility with Auramet International, Inc. (“Auramet”)",
+       "published_at": "2026-02-06T00:00:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "69871d6411e3205ec9950420",
+        "698dd6b69ca02490ec029a94",
+        "69bbdaa69a756ebbcf2b5bc9",
+        "69bbfbf16760819e38464efb",
+        "69bc847f9a756ebbcf2d2a3e",
+        "69bc84a78bf856b246181a94",
+        "69dfaeaa1d88cc4f6cad7265"
+       ],
+       "article_id": "69dfaeaa1d88cc4f6cad7265"
+      },
+      {
+       "id": "325b97ed37d9fc4e",
+       "company_name": "lifezone metals",
+       "domain": "lifezonemetals.com",
+       "round_type": "Bridge Loan",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Taurus Mining Finance Fund No. 2 L.P.",
+         "domain": null,
+         "amount": 25000000.0
+        }
+       ],
+       "sector": "Mining & Metals",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "pre-FID, early‑stage work, and project financing activities at the Kabanga Nickel Project",
+       "source_sentence": "Current pre-FID, early-stage work, and project financing activities at the Kabanga Nickel Project will continue to be funded via the $60 million senior secured bridge loan facility agreement with Taurus Mining Finance Fund No. 2 L.P. As of today, $25 million has been drawn under the senior secured bridge loan facility, with $35 million still available.",
+       "published_at": "2026-04-23T20:31:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efab8b8a54b8f07c96f016"
+       ],
+       "article_id": "69efab8b8a54b8f07c96f016"
+      },
+      {
+       "id": "e43b8f8ac65e0833",
+       "company_name": "blue tokai coffee roasters",
+       "domain": "bluetokaicoffee.com",
+       "round_type": "Bridge funding",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Coffee",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen retail operations in India, expand roasteries and bakery facilities in Bengaluru and Gurugram, and support the company’s entry into Dubai and its ongoing expansion in Japan",
+       "source_sentence": "INDIA – India’s Blue Tokai Coffee Roasters has raised US$25 million in a bridge funding round to accelerate its domestic expansion and international growth plans.",
+       "published_at": "2025-09-03T13:13:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbb9d4e7c8d3750e076188"
+       ],
+       "article_id": "69bbb9d4e7c8d3750e076188"
+      },
+      {
+       "id": "37e5283e84e10c34",
+       "company_name": "blue tokai coffee roasters",
+       "domain": "bluetokaicoffee.com",
+       "round_type": "Bridge",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "a91 partners",
+         "domain": "a91partners.com",
+         "amount": null
+        },
+        {
+         "name": "anicut",
+         "domain": "anicut.com",
+         "amount": null
+        },
+        {
+         "name": "verlinvest",
+         "domain": "verlinvest.com",
+         "amount": null
+        },
+        {
+         "name": "12 Flags",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Specialty coffee",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Retail store launches, back-end infrastructure expansion",
+       "source_sentence": "Blue Tokai Coffee Roasters, one of the country’s fastest-growing premium coffee chains, has raised $25 million (around ₹220 crore) in a bridge funding round backed by its existing investors – A91 Partners, Anicut, Verlinvest, and 12 Flags.",
+       "published_at": "2025-09-01T16:30:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c58381c6a4a9c884880d19",
+        "68d0dcdc8e3659eba01eb555"
+       ],
+       "article_id": "68d0dcdc8e3659eba01eb555"
+      },
+      {
+       "id": "40cd131fedf015f1",
+       "company_name": "Blue Tokai",
+       "domain": "bluetokaicoffee.com",
+       "round_type": "Bridge",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Specialty Coffee Brand",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand retail footprint, enhance coffee offerings, strengthen supply chain",
+       "source_sentence": "Blue Tokai raised $25 Mn in Bridge round",
+       "published_at": "2025-09-01T15:37:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e1dd58d29a990b6e3451a"
+       ],
+       "article_id": "698e1dd58d29a990b6e3451a"
+      },
+      {
+       "id": "84127567c199ab83",
+       "company_name": "Blue Moon Metals",
+       "domain": "bluemoonmining.com",
+       "round_type": "bridge loan",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hartree partners",
+         "domain": "hartreepartners.com",
+         "amount": null
+        },
+        {
+         "name": "Oaktree Capital Management, L.P.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "mining",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "The Bridge Loan will be used to fund early works, pre-construction activities, development, construction, operation and working capital requirements of the Nussir Copper Project, advancing the Blue Moon Project, and for general corporate and working capital purposes.",
+       "source_sentence": "US$25 million Bridge Loan – Executed and the Company expects to draw on the Bridge Loan to fund critical early works, subject to the satisfaction of all conditions precedent to the first advance and the approval of the TSXV.",
+       "published_at": "2025-08-20T02:40:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc1afa93b550fcb821f1c2"
+       ],
+       "article_id": "69bc1afa93b550fcb821f1c2"
+      },
+      {
+       "id": "c2e07dc8f95a90b9",
+       "company_name": "mountain province diamonds",
+       "domain": "mountainprovince.com",
+       "round_type": "bridge credit facility",
+       "amount_usd": 24420000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 33000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Dunebridge Worldwide Ltd.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Min‑ing",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "working capital",
+       "source_sentence": "Mountain Province Diamonds Inc. (\"Mountain Province\" or the \"Company\") (TSX: MPVD) (OTC: MPVD) announces today that it has entered into an amended and restated bridge credit facility agreement (the \"A&R Bridge Facility Agreement\") to provide for the Company's previously announced CAD$33 million working capital credit facility (the \"WCF\") with Dunebridge Worldwide Ltd., (\"Dunebridge\") as administrative agent, security trustee and lender.",
+       "published_at": "2025-05-14T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bb422b28caee93d24ea37c",
+        "69e85bef9baafc735678056e"
+       ],
+       "article_id": "69bb422b28caee93d24ea37c"
+      },
+      {
+       "id": "5c5b7f62b8ce2599",
+       "company_name": "xepelin",
+       "domain": "xepelin.com",
+       "round_type": "bridge round",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nazca ventures",
+         "domain": "nazca.vc",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Chile",
+       "city": null,
+       "use_of_funds": "Support efforts to obtain a Sofipo license, allowing Xepelin to expand its financial products and operations in Mexico.",
+       "source_sentence": "Following this, Chilean fintech Xepelin secured $20 million in a bridge round led by Nazca Ventures as it moves forward with regulatory expansion in Mexico.",
+       "published_at": "2026-01-09T09:00:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d5f769ca02490ecf9e6d0"
+       ],
+       "article_id": "698d5f769ca02490ecf9e6d0"
+      },
+      {
+       "id": "d728191a49d638b2",
+       "company_name": "Indkal Technologies",
+       "domain": null,
+       "round_type": "bridge",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Consumer Electronics",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "boost product development capabilities and strengthen after-sales service networks",
+       "source_sentence": "Electronics company Indkal Technologies has secured $20 million in bridge funding from its existing investors, aiming to expand its brand, Wobble Displays, across India.",
+       "published_at": "2025-09-24T16:02:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d965b2bf1dd95b8613552a"
+       ],
+       "article_id": "68d965b2bf1dd95b8613552a"
+      },
+      {
+       "id": "576c0fb083742232",
+       "company_name": "Indkal Technologies",
+       "domain": null,
+       "round_type": "Series B Bridge Round",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Consumer electronics",
+       "country": "India",
+       "city": "Hyderabad",
+       "use_of_funds": "strengthen R&D, enhance sales and service network, expand premium product portfolio, support rollout of new display categories, build after-sales infrastructure, invest in marketing",
+       "source_sentence": "Hyderabad, 18th September, 2025: Indkal Technologies, one of India’s fastest-growing consumer electronics companies, has raised USD 20 million in its Series B Bridge Round funding, led by existing investors, to fuel the growth of its brand, Wobble Displays.",
+       "published_at": "2025-09-18T07:03:11",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d98e5e82f590e7fe7e9867",
+        "69bbf15e236c542610267997",
+        "69bc1778ada7f1c360fe9c73"
+       ],
+       "article_id": "69bbf15e236c542610267997"
+      },
+      {
+       "id": "bddf152f7f9341fa",
+       "company_name": "Indcal Technologies",
+       "domain": null,
+       "round_type": "Series B Bridge Round",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Consumer Electronics",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "research and development, extend sales and service network, enhance premium product portfolio",
+       "source_sentence": "Indcal Technologies plans to extend its brand vobal displays to premium TV and interactive display segment by raising $20 million in the Series B Bridge Round.",
+       "published_at": "2025-09-16T17:51:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9794e42a4b594744c126e"
+       ],
+       "article_id": "68d9794e42a4b594744c126e"
+      },
+      {
+       "id": "4e0851d19b82c7e5",
+       "company_name": "Indkal Technologies",
+       "domain": null,
+       "round_type": "Series B Bridge Round",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Consumer electronics",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Accelerate the growth of Wobble Displays, expand R&D capabilities, enhance sales and service infrastructure, support rollout of new display categories, and fuel marketing initiatives to position Wobble Displays as a homegrown luxury brand.",
+       "source_sentence": "Indkal Technologies, has secured $20 million in Series B Bridge Round funding, led by its existing investors.",
+       "published_at": "2025-09-16T11:17:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9b07dc149d2bca77f8f3c"
+       ],
+       "article_id": "68d9b07dc149d2bca77f8f3c"
+      },
+      {
+       "id": "ec3d975dd18f6384",
+       "company_name": "Indkal Technologies",
+       "domain": null,
+       "round_type": "Series B Bridge",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Electronics",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expansion of the Wobble brand into new display categories, product development and innovation.",
+       "source_sentence": "Consumer electronics company Indkal Technologies has raised $20 million in bridge funding from a mix of existing backers and new institutional investors, including domestic family offices.",
+       "published_at": "2025-09-16T05:18:05",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d101f465fd12d4142ce75b",
+        "68d9960d82f590e7fe7f2e97"
+       ],
+       "article_id": "68d101f465fd12d4142ce75b"
+      },
+      {
+       "id": "0154c1b4eb5487f3",
+       "company_name": "canada nickel",
+       "domain": "canadanickel.com",
+       "round_type": "bridge loan",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "BT Strategic Mineral Assets LP",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ber Tov Capital Corporation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Baronet Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Mining",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "Proceeds will be used to repay the Company's remaining balance of the loan from Auramet and for general working capital purposes.",
+       "source_sentence": "Today announced it has closed a US$20 million bridge loan facilitated by Ber Tov Capital Corporation (\"BT Capital\"), signed on May 9, 2025.",
+       "published_at": "2025-05-09T14:32:01",
+       "coverage_count": 2,
+       "article_ids": [
+        "686410788882abb7e3f2eef2",
+        "6996a98324fcf2330e669fef"
+       ],
+       "article_id": "6996a98324fcf2330e669fef"
+      },
+      {
+       "id": "5a85de9df18569fc",
+       "company_name": "conscious chemist",
+       "domain": "consciouschemist.com",
+       "round_type": "Bridge round",
+       "amount_usd": 18000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "atomic capital",
+         "domain": "atomiccapital.io",
+         "amount": null
+        },
+        {
+         "name": "First Port Capital Fund B",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "IPV International",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C skincare / Beauty & personal care",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "enhance leadership hiring, scale inventory and marketing operations, and accelerate R&D",
+       "source_sentence": "D2C skincare brand Conscious Chemist has secured INR 15 crore in a bridge round led by Atomic Capital, with participation from First Port Capital Fund B and IPV International.",
+       "published_at": "2025-12-08T16:37:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cddaa9ca02490ecf0424f"
+       ],
+       "article_id": "698cddaa9ca02490ecf0424f"
+      },
+      {
+       "id": "a25dde2de4261a31",
+       "company_name": "conscious chemist",
+       "domain": "consciouschemist.com",
+       "round_type": "bridge round",
+       "amount_usd": 18000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "atomic capital",
+         "domain": "atomiccapital.io",
+         "amount": null
+        },
+        {
+         "name": "First Port Capital",
+         "domain": "firstportcapital.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "IPV International",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "skincare",
+       "country": null,
+       "city": null,
+       "use_of_funds": "strengthen its leadership team, scale inventory and marketing operations, and invest in product innovation and research",
+       "source_sentence": "Skincare brand Conscious Chemist has raised Rs 15 crore (about $1.8 million) in a bridge round led by Atomic Capital.",
+       "published_at": "2025-12-08T09:19:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "694df3d4a749c29000f2ebf6"
+       ],
+       "article_id": "694df3d4a749c29000f2ebf6"
+      },
+      {
+       "id": "3f53ef3e4999374e",
+       "company_name": "conscious chemist",
+       "domain": "consciouschemist.com",
+       "round_type": "Bridge",
+       "amount_usd": 18000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "atomic capital",
+         "domain": "atomiccapital.io",
+         "amount": null
+        },
+        {
+         "name": "First Port Capital Fund B",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "IPV International",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Skincare",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Hiring talent, scaling inventory operations and marketing, product innovation and research and development",
+       "source_sentence": "D2C Skincare brand Conscious Chemist on Monday said it has secured ₹15 crore in a bridge funding round led by Atomic Capital.",
+       "published_at": "2025-12-08T09:14:50",
+       "coverage_count": 2,
+       "article_ids": [
+        "6945383d7002fa9199a35dbc",
+        "694df074c13754beccf2f796"
+       ],
+       "article_id": "6945383d7002fa9199a35dbc"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 140,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTItMDggMDk6MTQ6NTAiLCJrIjoiNDU2MzI1Mzg5ODI1ODIzMzE2NiIsImEiOjE4MDAwMDAwLjB9",
+     "totals": {
+      "deals": 140,
+      "deals_with_amount": 118,
+      "deals_without_amount": 22,
+      "deals_amount_excluded": 4,
+      "sum_amount_usd": 15991351500.0,
+      "median_amount_usd": 5000000.0,
+      "largest_amount_usd": 6500000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.206,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.209
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "bridge",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "round_type": [
+       "bridge"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "9bb03e70becee336",
+       "company_name": "authid",
+       "domain": "authid.ai",
+       "round_type": "Bridge Loan Financing",
+       "amount_usd": 4000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Biometric identity verification and authentication solutions",
+       "country": "United States",
+       "city": "Denver",
+       "use_of_funds": null,
+       "source_sentence": "authID Announces $4,000,000 Bridge Loan Financing 29.04.26 15:45.",
+       "published_at": "2026-04-29T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8a771bbf1d314559a3050"
+       ],
+       "article_id": "69f8a771bbf1d314559a3050"
+      },
+      {
+       "id": "cd11c2f2e3ba90f6",
+       "company_name": "solidion technology",
+       "domain": "solidiontech.com",
+       "round_type": "bridge facility",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "madison",
+         "domain": "madisonpos.com",
+         "amount": null
+        }
+       ],
+       "sector": "battery technology solutions",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Immediate liquidity support to maintain stabilized working capital while focusing on commercialization and revenue growth",
+       "source_sentence": "Madison Bond LLC is a primary stakeholder and long-term investor of Solidion Technology.",
+       "published_at": "2026-04-28T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e1f045272de32e8be4d0",
+        "69f1cfd2a5706a322e1366c0"
+       ],
+       "article_id": "69f0e1f045272de32e8be4d0"
+      },
+      {
+       "id": "325b97ed37d9fc4e",
+       "company_name": "lifezone metals",
+       "domain": "lifezonemetals.com",
+       "round_type": "Bridge Loan",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Taurus Mining Finance Fund No. 2 L.P.",
+         "domain": null,
+         "amount": 25000000.0
+        }
+       ],
+       "sector": "Mining & Metals",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "pre-FID, early‑stage work, and project financing activities at the Kabanga Nickel Project",
+       "source_sentence": "Current pre-FID, early-stage work, and project financing activities at the Kabanga Nickel Project will continue to be funded via the $60 million senior secured bridge loan facility agreement with Taurus Mining Finance Fund No. 2 L.P. As of today, $25 million has been drawn under the senior secured bridge loan facility, with $35 million still available.",
+       "published_at": "2026-04-23T20:31:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efab8b8a54b8f07c96f016"
+       ],
+       "article_id": "69efab8b8a54b8f07c96f016"
+      },
+      {
+       "id": "ab6832ecbde5ffad",
+       "company_name": "galeria",
+       "domain": "galeria.de",
+       "round_type": "bridge loan",
+       "amount_usd": 10800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "retail",
+       "country": "Germany",
+       "city": "Essen",
+       "use_of_funds": "bridge loan to support liquidity",
+       "source_sentence": "The chain of stores receives a total of ten million euros through this interim financing.",
+       "published_at": "2026-04-22T11:03:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8b5187bb1410d4caf4da5"
+       ],
+       "article_id": "69e8b5187bb1410d4caf4da5"
+      },
+      {
+       "id": "a6e1b50ba6ba22ed",
+       "company_name": "wyld networks",
+       "domain": "wyldnetworks.com",
+       "round_type": "bridge loan",
+       "amount_usd": 142500.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "SEK",
+       "amount": 1500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Aramia AB",
+         "domain": null,
+         "amount": 1500000.0
+        }
+       ],
+       "sector": "Wireless connectivity",
+       "country": "Sweden",
+       "city": null,
+       "use_of_funds": "cover the Company's short-term working capital needs during the period until the completion of the proposed rights issue",
+       "source_sentence": "Wyld Networks AB has entered into an agreement for a bridge loan of SEK 1.5 million with Aramia AB.",
+       "published_at": "2026-04-21T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a042285220687a966b70bfb"
+       ],
+       "article_id": "6a042285220687a966b70bfb"
+      },
+      {
+       "id": "7204fa9e111dad07",
+       "company_name": "norse atlantic airways",
+       "domain": "flynorse.com",
+       "round_type": "Bridge Loan",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Airlines",
+       "country": "Norway",
+       "city": "Oslo",
+       "use_of_funds": "fund liquidity needs pending completion of the rights issue",
+       "source_sentence": "Bridge loan facility of USD70 million to fund the liquidity needs pending completion of the rights issue.",
+       "published_at": "2026-04-16T07:03:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8dd4d9baafc7356d94ae1"
+       ],
+       "article_id": "69e8dd4d9baafc7356d94ae1"
+      },
+      {
+       "id": "b7298dd25d7bce12",
+       "company_name": "prestamype",
+       "domain": "prestamype.com",
+       "round_type": "investment bridge",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alive ventures",
+         "domain": "aliveventures.co",
+         "amount": null
+        },
+        {
+         "name": "oikocredit",
+         "domain": "oikocredit.coop",
+         "amount": null
+        },
+        {
+         "name": "Salkantay Ventures",
+         "domain": "salkantay.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Peru",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Prestamype, the Peruvian company leading in digital financial services focused on micro, small and medium-sized enterprises (mipymes), announced the closing of an investment bridge round for USD 2 million, led by its current investors ALIVE Ventures, Oikocredit and Salkantay Ventures.",
+       "published_at": "2026-04-14T19:15:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d4755cfa3e5ba54425d4"
+       ],
+       "article_id": "69e8d4755cfa3e5ba54425d4"
+      },
+      {
+       "id": "ddac1057efd91060",
+       "company_name": "PhageLab",
+       "domain": null,
+       "round_type": "Bridge",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Kaszek Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotech",
+       "country": "Chile",
+       "city": null,
+       "use_of_funds": "Commercial expansion in Brazil and development of new bacteriophage applications",
+       "source_sentence": "PhageLab secured a $3 million bridge round led by Kaszek Ventures, bringing its total capital raised to approximately $40 million.",
+       "published_at": "2026-04-03T09:30:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e28287277be6ed2d954e46"
+       ],
+       "article_id": "69e28287277be6ed2d954e46"
+      },
+      {
+       "id": "aa2852b748ffe62d",
+       "company_name": "Nuvilab",
+       "domain": "nuvilab.com",
+       "round_type": "Series A bridge",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "NAVER D2SF",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expansion into the North American healthcare market",
+       "source_sentence": "NAVER Corporation’s venture arm, NAVER D2SF, has made follow-on investments in Nuvilab and Soundable Health, extending earlier seed backing into a Series A bridge round and a Pre-Series A round respectively.",
+       "published_at": "2026-03-31T03:12:34",
+       "coverage_count": 3,
+       "article_ids": [
+        "69d10b4e1840dd4fe07bd2e8",
+        "69d10b526fdbd43edfb016da",
+        "69d14ed45c990e7e441d3665"
+       ],
+       "article_id": "69d14ed45c990e7e441d3665"
+      },
+      {
+       "id": "98957faf8c4592b2",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": "bridge financing",
+       "amount_usd": null,
+       "amount_flag": "implausible_size",
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "softbank group",
+         "domain": "global.softbank",
+         "amount": 40000000000.0
+        }
+       ],
+       "sector": "Artificial intelligence",
+       "country": "Japan",
+       "city": null,
+       "use_of_funds": "Continuing investment in OpenAI and general corporate purposes",
+       "source_sentence": "SoftBank Group has formalized a 40 billion-dollar bridge financing agreement (34,636 million euros) to continue its ambitious investment in OpenAI, as well as for other general corporate purposes.",
+       "published_at": "2026-03-27T13:52:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c933ed56216f8b2bd53ad3",
+        "69cc417f7d31e30c784fb8ba"
+       ],
+       "article_id": "69cc417f7d31e30c784fb8ba"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 30,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjcgMTM6NTI6MTUiLCJrIjoiMTA5OTQ4MzQ0NTcyNDQzMDgxNDYifQ",
+     "totals": {
+      "deals": 30,
+      "deals_with_amount": 22,
+      "deals_without_amount": 8,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 2444092500.0,
+      "median_amount_usd": 4750000.0,
+      "largest_amount_usd": 1200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.052,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.057
+    }
+   }
+  }
+ ]
+}

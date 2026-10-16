@@ -1,0 +1,2895 @@
+{
+ "slug": "blackstone-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:23Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Blackstone",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "blackstone"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 135,
+      "deals_with_amount": 117,
+      "deals_without_amount": 18,
+      "deals_amount_excluded": 7,
+      "sum_amount_usd": 139239850100.0,
+      "median_amount_usd": 371520000.0,
+      "largest_amount_usd": 18200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 5,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3860200000.0,
+       "median_amount_usd": 200000000.0,
+       "largest_amount_usd": 2500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 7,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5881480000.0,
+       "median_amount_usd": 342740000.0,
+       "largest_amount_usd": 5180000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 7,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 245412000.0,
+       "median_amount_usd": 25000000.0,
+       "largest_amount_usd": 175000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 3,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 9300000000.0,
+       "median_amount_usd": 4650000000.0,
+       "largest_amount_usd": 8300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 11,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 31055000000.0,
+       "median_amount_usd": 2500000000.0,
+       "largest_amount_usd": 13000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3228161200.0,
+       "median_amount_usd": 634290000.0,
+       "largest_amount_usd": 827000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1522520000.0,
+       "median_amount_usd": 275000000.0,
+       "largest_amount_usd": 525000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4683050000.0,
+       "median_amount_usd": 119000000.0,
+       "largest_amount_usd": 4000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 8,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5014000000.0,
+       "median_amount_usd": 200000000.0,
+       "largest_amount_usd": 4000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 19,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 43607200000.0,
+       "median_amount_usd": 1000000000.0,
+       "largest_amount_usd": 18200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 22,
+       "deals_with_amount": 21,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 14594050000.0,
+       "median_amount_usd": 550000000.0,
+       "largest_amount_usd": 8500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 19,
+       "deals_with_amount": 14,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 4,
+       "sum_amount_usd": 32168826900.0,
+       "median_amount_usd": 1000000000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.078,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.08
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Blackstone",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "blackstone"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "54dff64290263b45",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": null,
+       "amount_usd": 18200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000000.0,
+       "currency": "USD",
+       "amount": 18200000000.0,
+       "valuation": 350000000000.0,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": 200000000.0
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue-management.com",
+         "amount": 1000000000.0
+        },
+        {
+         "name": "Singapore’s GIC",
+         "domain": null,
+         "amount": 1000000000.0
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": 1000000000.0
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The asset manager is planning to invest some $200m in Anthropic’s current round, which values the start-up at $350bn, the news service reported, citing unnamed people.",
+       "published_at": "2026-02-11T09:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bafe95eec96a73430070d1"
+       ],
+       "article_id": "69bafe95eec96a73430070d1"
+      },
+      {
+       "id": "bedfc767d9a7f2ac",
+       "company_name": "related digital",
+       "domain": "relateddigital.com",
+       "round_type": "Financing",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": 2000000000.0
+        },
+        {
+         "name": "bank of america",
+         "domain": "bankofamerica.com",
+         "amount": 14000000000.0
+        }
+       ],
+       "sector": "Data center / AI infrastructure",
+       "country": "United States",
+       "city": "Saline Township",
+       "use_of_funds": "Construction of a massive data center leased to Oracle for AI infrastructure",
+       "source_sentence": "Related Digital – Related Cos.’ new data center arm – has lined up a $16B financing deal for a massive data center in Saline Township, Michigan, that will be leased to Oracle, Bloomberg reported.",
+       "published_at": "2026-04-02T18:27:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27f7b601121844c2f92ec"
+       ],
+       "article_id": "69e27f7b601121844c2f92ec"
+      },
+      {
+       "id": "1f555b39a17ca936",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series-F",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "US",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The US AI startup Anthropic, known for its chatbot Claude, has collected 13 billion US dollars in a new round of financing.",
+       "published_at": "2025-09-10T13:18:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d0db2b800697f0e041b2ae",
+        "6980804eb45e43f180866039"
+       ],
+       "article_id": "68d0db2b800697f0e041b2ae"
+      },
+      {
+       "id": "eb38a74914a03819",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "F-series",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "D1",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It finally attracted $13 billion.",
+       "published_at": "2025-09-03T09:48:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd661a412454508620f45b"
+       ],
+       "article_id": "69bd661a412454508620f45b"
+      },
+      {
+       "id": "c973eb9dd92314c3",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series F",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "to scale its AI infrastructure for growing enterprise demand, invest in AI safety research, and expand internationally",
+       "source_sentence": "Anthropic, the AI research and development company behind the widely adopted Claude AI platform, has secured $13 billion in Series F funding.",
+       "published_at": "2025-09-02T22:30:34",
+       "coverage_count": 3,
+       "article_ids": [
+        "68c1665c6a78bf0c565594c9",
+        "68c4376451a522a90826d2ce",
+        "698a39cc1953fdcb20e0e283"
+       ],
+       "article_id": "68c4376451a522a90826d2ce"
+      },
+      {
+       "id": "8f038f00d1cf8369",
+       "company_name": "Firmus Technologies",
+       "domain": null,
+       "round_type": "debt financing",
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence Infrastructure",
+       "country": "Australia",
+       "city": "Sydney",
+       "use_of_funds": "fuel the next phase of the company’s ambitious Project Southgate, a national rollout of its AI Factory platform",
+       "source_sentence": "Australian artificial intelligence infrastructure company Firmus Technologies has secured a February 9, 2026 commitment for $10 billion in debt financing, led by funds managed by Blackstone and supported by Coatue.",
+       "published_at": "2026-02-09T23:17:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "699713ae219d71cf48d19bdc"
+       ],
+       "article_id": "699713ae219d71cf48d19bdc"
+      },
+      {
+       "id": "2ccb246d58205ac0",
+       "company_name": "Firmus Technologies",
+       "domain": null,
+       "round_type": "debt",
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "Coatue Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "Australia",
+       "city": null,
+       "use_of_funds": "to bankroll the next phase of the data center rollout across Australia, tied directly to Project Southgate",
+       "source_sentence": "Firmus Technologies, an Australian artificial intelligence infrastructure startup backed by Nvidia, has secured a $10 billion debt funding package led by Blackstone, with participation from Coatue Capital, the company reported on Monday.",
+       "published_at": "2026-02-09T12:25:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb0461b54f2a520bb55426"
+       ],
+       "article_id": "69bb0461b54f2a520bb55426"
+      },
+      {
+       "id": "99e90cbd2df1a57c",
+       "company_name": "firmus",
+       "domain": "firmus.ai",
+       "round_type": "debt financing",
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Tactical Opportunities",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "affiliated funds (together, Blackstone)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue-management.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "Australia",
+       "city": "Sydney",
+       "use_of_funds": "advance Project Southgate and national rollout of Firmus’ AI Factory platform",
+       "source_sentence": "Firmus has secured $10bn debt financing facility to advance Project Southgate, its AI infrastructure expansion initiative in Australia.",
+       "published_at": "2026-02-09T09:14:07",
+       "coverage_count": 5,
+       "article_ids": [
+        "6991c107f9d81aa428e7c153",
+        "6997293c70e6b99bb4c1cf2c",
+        "69bb5542ef75d924655b558c",
+        "69bb56140047e0373b20256b",
+        "69bb5d0c8dcdeb577ebbbd99"
+       ],
+       "article_id": "6991c107f9d81aa428e7c153"
+      },
+      {
+       "id": "5decbb90c48a4582",
+       "company_name": "Firmus Technologies",
+       "domain": null,
+       "round_type": "loan",
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "Coatue Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "Australia",
+       "city": null,
+       "use_of_funds": "expand data center plans across Australia",
+       "source_sentence": "Australian AI startup Firmus Technologies has secured a $10 billion loan to expand its data center plans across the country.",
+       "published_at": "2026-02-09T09:09:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bb1c35acefda883e44791c",
+        "69bbedad2d2c4e08920d31b0"
+       ],
+       "article_id": "69bb1c35acefda883e44791c"
+      },
+      {
+       "id": "81dd6caa7bac9862",
+       "company_name": "firmus",
+       "domain": "firmus.ai",
+       "round_type": "debt",
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue-management.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "Australia",
+       "city": null,
+       "use_of_funds": "build the next phase of its Project Southgate, AI training and inference infrastructure, including data centres across Australia",
+       "source_sentence": "Australian artificial intelligence –company Firmus said on Monday it had finalised a $10 billion debt funding package led by global private equity firm Blackstone and Coatue Management, a New  York-based technology –investor.",
+       "published_at": "2026-02-09T03:24:44",
+       "coverage_count": 4,
+       "article_ids": [
+        "698f685c9ca02490ec2092ad",
+        "69bbb7b6fa8c4837c97408da",
+        "69ca853fece4a9e5e1c9fb69",
+        "69e2d1b9bd7b10565a42be58"
+       ],
+       "article_id": "69ca853fece4a9e5e1c9fb69"
+      },
+      {
+       "id": "a2a0f5f37964404b",
+       "company_name": "coreweave",
+       "domain": "coreweave.com",
+       "round_type": "Debt facility",
+       "amount_usd": 8500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mufg",
+         "domain": "mufgcampus.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "JPMorgan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "High-Performance Computing / AI Cloud",
+       "country": "United States",
+       "city": "Livingston",
+       "use_of_funds": "support CoreWeave's continued expansion of its AI cloud platform",
+       "source_sentence": "CoreWeave today announced it has closed an $8.5 billion delayed draw term loan facility (“DDTL 4.0 Facility”), supporting the continued expansion of its AI cloud platform.",
+       "published_at": "2026-04-10T10:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e34ef5a8697b10fabd9fc5"
+       ],
+       "article_id": "69e34ef5a8697b10fabd9fc5"
+      },
+      {
+       "id": "77895303ed5d4195",
+       "company_name": "coreweave",
+       "domain": "coreweave.com",
+       "round_type": "delayed draw term loan facility",
+       "amount_usd": 8500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mufg",
+         "domain": "mufgcampus.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "JPMorgan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "High-performance computing",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support the continued expansion of the company’s AI cloud platform",
+       "source_sentence": "CoreWeave announced that it has closed an $8.5 billion delayed draw term loan facility, marking what it described as the first investment-grade rated financing secured by high-performance computing infrastructure and associated customer contracts.",
+       "published_at": "2026-04-01T00:01:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1d55590386cf4890e06ae"
+       ],
+       "article_id": "69d1d55590386cf4890e06ae"
+      },
+      {
+       "id": "1aac3701b6a8ef56",
+       "company_name": "coreweave",
+       "domain": "coreweave.com",
+       "round_type": "term loan facility",
+       "amount_usd": 8500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mufg",
+         "domain": "mufgcampus.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "JPMorgan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Other financial institutions, asset managers, and insurance investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence, High-Performance Computing",
+       "country": "USA",
+       "city": "Livingston",
+       "use_of_funds": "Support continued expansion of AI cloud platform and meet customer demand.",
+       "source_sentence": "Livingston-based CoreWeave, Inc. has closed an $8.5 billion delayed draw term loan facility (“DDTL 4.0 Facility”) on Mar 31, 2026.",
+       "published_at": "2026-03-31T17:03:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d150d6b63306cd5fc6f4e7"
+       ],
+       "article_id": "69d150d6b63306cd5fc6f4e7"
+      },
+      {
+       "id": "fef164ac28599a8c",
+       "company_name": "coreweave",
+       "domain": "coreweave.com",
+       "round_type": "term loan facility",
+       "amount_usd": 8500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mufg",
+         "domain": "mufgcampus.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "JPMorgan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI cloud computing",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "support CoreWeave’s continued investment to meet customer demand",
+       "source_sentence": "Livingston-based CoreWeave, Inc. announced that it has closed an $8.5 billion delayed draw term loan facility (DDTL 4.0 Facility), supporting the continued expansion of its AI cloud platform.",
+       "published_at": "2026-03-31T16:00:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc167b1e8126b2deb154a7"
+       ],
+       "article_id": "69cc167b1e8126b2deb154a7"
+      },
+      {
+       "id": "db00001179dc6885",
+       "company_name": "coreweave",
+       "domain": "coreweave.com",
+       "round_type": "debt",
+       "amount_usd": 8500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mitsubishi ufj financial group",
+         "domain": "mufg.jp",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "jpmorgan chase",
+         "domain": "jpmorganchase.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        }
+       ],
+       "sector": "cloud computing",
+       "country": "United States",
+       "city": "Livingston",
+       "use_of_funds": "expand cloud computing capacity and build out AI infrastructure",
+       "source_sentence": "Bloomberg CoreWeave Inc. has raised $8.5 billion from a group of banks and investors to help finance an expansion of its cloud computing capacity in what the company says is the largest chip-backed debt deal of its kind.",
+       "published_at": "2026-03-31T15:41:22",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2affdd754bf662cd9cff1",
+        "69e3609da8697b10fac1d695"
+       ],
+       "article_id": "69e2affdd754bf662cd9cff1"
+      },
+      {
+       "id": "4664c5dfbedd6f15",
+       "company_name": "coreweave",
+       "domain": "coreweave.com",
+       "round_type": "term loan",
+       "amount_usd": 8500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mufg",
+         "domain": "mufgcampus.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "JPMorgan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Cloud",
+       "country": "United States",
+       "city": "New York City",
+       "use_of_funds": "Support CoreWeave’s continued expansion of its AI cloud platform and meet customer demand",
+       "source_sentence": "CoreWeave, Inc. , The Essential Cloud for AI™, announced it has closed an $8.5 billion delayed draw term loan facility (“DDTL 4.0 Facility”), supporting the continued expansion of its AI cloud platform.",
+       "published_at": "2026-03-31T13:34:11",
+       "coverage_count": 8,
+       "article_ids": [
+        "69cc5ef1856d39d4c91f2161",
+        "69ccbb9beff7d894fc04e70f",
+        "69d10bccb214788b49df43db",
+        "69d1112744cbe22144533b46",
+        "69d151e9080d96e8a0c6615a",
+        "69d15737080d96e8a0c7199e",
+        "69e2cb0ad754bf662cdfd42a",
+        "69e3cdafb8c34c1508f730f4"
+       ],
+       "article_id": "69d1112744cbe22144533b46"
+      },
+      {
+       "id": "1c00a21d011a586a",
+       "company_name": "coreweave",
+       "domain": "coreweave.com",
+       "round_type": "Term Loan",
+       "amount_usd": 8500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mufg",
+         "domain": "mufgcampus.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "JPMorgan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI cloud computing",
+       "country": "USA",
+       "city": "Livingston, New Jersey",
+       "use_of_funds": "to support CoreWeave’s continued expansion of its AI cloud platform",
+       "source_sentence": "CoreWeave, Inc. (Nasdaq: CRWV ), The Essential Cloud for AI™, today announced it has closed an $8.5 billion delayed draw term loan facility (“DDTL 4.0 Facility”), supporting the continued expansion of its AI cloud platform.",
+       "published_at": "2026-03-31T12:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2e10e7f3a572cf4b87ed9",
+        "69e31acb3a31acc7f37c52a3"
+       ],
+       "article_id": "69e2e10e7f3a572cf4b87ed9"
+      },
+      {
+       "id": "edaf01d66fa3f26f",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": "Private Funding Round (Late-stage)",
+       "amount_usd": 8300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "to accelerate AI development and expand infrastructure",
+       "source_sentence": "OpenAI has raised a massive $8.3 billion in new funding at a staggering $300 billion valuation.",
+       "published_at": "2025-08-04T23:26:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "68a176753ff75e010c30bd60",
+        "690e2dbedb65e9a9d0245a59"
+       ],
+       "article_id": "690e2dbedb65e9a9d0245a59"
+      },
+      {
+       "id": "fe58f09e48d36314",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": null,
+       "amount_usd": 8300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 300000000000.0,
+       "currency": "USD",
+       "amount": 8300000000.0,
+       "valuation": 300000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": 2800000000.0
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital Partners",
+         "domain": "d1capital.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "scale compute infrastructure",
+       "source_sentence": "OpenAI, maker of ChatGPT, has raised $8.3 billion in a new funding round that values the artificial intelligence company at $300 billion, according to a report by The New York Times.",
+       "published_at": "2025-08-01T00:00:00",
+       "coverage_count": 18,
+       "article_ids": [
+        "68a176603ff75e010c2c044c",
+        "68a1766b3ff75e010c2ea8d4",
+        "68a176703ff75e010c2fcaa4",
+        "68a176803ff75e010c33112b",
+        "68b433bd3ddf2630a8b7fc17",
+        "68b439aa3ddf2630a8cefcfc",
+        "69314bbd0c188c23bdf20fcc",
+        "6985f7beca3bd326c7796fb7",
+        "6988d6d494d3f481f3da7cc6",
+        "698f96e69ca02490ec23f5fe",
+        "69bb2b798b0987d8182aa51f",
+        "69bb61a828caee93d24f1598",
+        "69bd477dfd89557e8dc74dcf",
+        "69bd489606529d470d471356",
+        "69de338dc757db6352f88299",
+        "69e28526dc480588dc98640d",
+        "69e861cd7bb1410d4c733e68",
+        "69e99e1abdd09a23d093a2c4"
+       ],
+       "article_id": "69de338dc757db6352f88299"
+      },
+      {
+       "id": "4b5bb9d3a6b5e800",
+       "company_name": "Sempra Infrastructure Partners",
+       "domain": null,
+       "round_type": "Equity",
+       "amount_usd": 7000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Credit and Insurance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo-managed funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Private Credit at Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Liquefied natural gas",
+       "country": "United States",
+       "city": "Port Arthur",
+       "use_of_funds": "Development, construction and operation of phase two of the Port Arthur LNG project",
+       "source_sentence": "Funding for phase two is supported by an equity investment led by Blackstone Credit and Insurance, together with an investor consortium including KKR, Apollo-managed funds and Private Credit at Goldman Sachs Alternatives. Together, these investors have acquired a 49.9 per cent minority equity interest for US$7 billion.",
+       "published_at": "2025-09-26T08:40:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cc1c19ca02490ecee483c"
+       ],
+       "article_id": "698cc1c19ca02490ecee483c"
+      },
+      {
+       "id": "d418b47cf4147b82",
+       "company_name": "Sempra Infrastructure Partners",
+       "domain": null,
+       "round_type": "equity investment",
+       "amount_usd": 7000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo-managed funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Private Credit at Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Oil & Gas",
+       "country": "USA",
+       "city": "Port Arthur",
+       "use_of_funds": "Development, construction, and operation of Phase 2 of the Port Arthur LNG project",
+       "source_sentence": "Funding for the new phase is supported by a $7 billion equity investment led by Blackstone Credit & Insurance, together with an investor consortium including KKR, Apollo-managed funds, and Private Credit at Goldman Sachs Alternatives, for a total of 49.9 percent minority equity interest.",
+       "published_at": "2025-09-25T15:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f7278b17f4f9d43d2ba21b"
+       ],
+       "article_id": "68f7278b17f4f9d43d2ba21b"
+      },
+      {
+       "id": "08b6ff3f5740762b",
+       "company_name": "Sempra Infrastructure Partners",
+       "domain": null,
+       "round_type": "Minority equity",
+       "amount_usd": 7000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Credit & Insurance (BXCI)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo-managed funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Private Credit at Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LNG",
+       "country": "USA",
+       "city": "Port Arthur",
+       "use_of_funds": "Advance the development, construction and operation of the Port Arthur LNG Phase 2",
+       "source_sentence": "Global law firm White & Case LLP has advised the co‑investors in a Blackstone Credit & Insurance (BXCI) led investor consortium on a US$7 billion investment in Sempra Infrastructure Partners' Port Arthur LNG Phase 2.",
+       "published_at": "2025-09-25T10:16:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d2a35cfa3e5ba542dd36"
+       ],
+       "article_id": "69e8d2a35cfa3e5ba542dd36"
+      },
+      {
+       "id": "8b39af04783f10ef",
+       "company_name": "Sempra",
+       "domain": null,
+       "round_type": "equity",
+       "amount_usd": 7000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        }
+       ],
+       "sector": "natural gas export terminal",
+       "country": "USA",
+       "city": "Texas",
+       "use_of_funds": null,
+       "source_sentence": "Blackstone said it would lead a $7 billion investment to take a 49.9% equity stake in the second development phase of Sempra’s Port Arthur export terminal in Texas.",
+       "published_at": "2025-09-23T12:07:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d95dfa4ea4015b01129515"
+       ],
+       "article_id": "68d95dfa4ea4015b01129515"
+      },
+      {
+       "id": "6cab882e0576b213",
+       "company_name": "rogers communications",
+       "domain": "rogers.com",
+       "round_type": "Equity investment",
+       "amount_usd": 5180000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 7000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "Caisse de dépôt et placement du Québec (La Caisse)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "psp investments",
+         "domain": "investpsp.com",
+         "amount": null
+        },
+        {
+         "name": "British Columbia Investment Management Corporation (BCI)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "investment management corporation of ontario (imco)",
+         "domain": "imcoinvest.com",
+         "amount": null
+        }
+       ],
+       "sector": "Telecommunications Infrastructure",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "Provide long-term capital to optimize balance sheet and continue expanding next-generation wireless capabilities",
+       "source_sentence": "Blackstone has successfully closed its previously announced CDN$7 billion equity investment in Rogers Communications Inc.",
+       "published_at": "2025-06-24T11:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6997e1f022f0326c0f9150bb",
+        "69baef9465fbf155fa796359"
+       ],
+       "article_id": "69baef9465fbf155fa796359"
+      },
+      {
+       "id": "a727cb3aa7649ff4",
+       "company_name": "rogers communications",
+       "domain": "rogers.com",
+       "round_type": "equity",
+       "amount_usd": 5180000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 7000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "Blackstone Credit & Insurance (BXCI)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "canada pension plan investment board",
+         "domain": "cppib.com",
+         "amount": null
+        },
+        {
+         "name": "Caisse de dépôt et placement du Québec (La Caisse)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "psp investments",
+         "domain": "investpsp.com",
+         "amount": null
+        },
+        {
+         "name": "British Columbia Investment Management Corporation (BCI)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "investment management corporation of ontario (imco)",
+         "domain": "imcoinvest.com",
+         "amount": null
+        }
+       ],
+       "sector": "Telecommunications",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Blackstone (NYSE: BX) has successfully closed its previously announced CDN$7 billion equity investment in Rogers Communications Inc.",
+       "published_at": "2025-06-23T05:18:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb53a40047e0373b201c89"
+       ],
+       "article_id": "69bb53a40047e0373b201c89"
+      },
+      {
+       "id": "d4be1a89969e2555",
+       "company_name": "rogers communications",
+       "domain": "rogers.com",
+       "round_type": "Equity investment",
+       "amount_usd": 5180000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 7000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "Caisse de dépôt et placement du Québec (La Caisse)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "psp investments",
+         "domain": "investpsp.com",
+         "amount": null
+        },
+        {
+         "name": "British Columbia Investment Management Corporation (BCI)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "investment management corporation of ontario (imco)",
+         "domain": "imcoinvest.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Blackstone (NYSE: BX) has successfully closed its previously announced CDN$7 billion equity investment in Rogers Communications Inc.",
+       "published_at": "2025-06-21T06:22:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb09906de4b21d371057a3"
+       ],
+       "article_id": "69bb09906de4b21d371057a3"
+      },
+      {
+       "id": "fd4c9ad5248d0ba6",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "Venture",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone group",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "infinitum",
+         "domain": "goinfinitum.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan Asset Management",
+         "domain": "jpmorgan.am",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "new enterprise associates",
+         "domain": "nea.com",
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers’ Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Strike Capital",
+         "domain": "strikecapital.net",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "winslow capital",
+         "domain": "winslowcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Analytics, Artificial Intelligence (AI), Data Storage, Information Technology, Machine Learning",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Round: Venture",
+       "published_at": "2026-01-16T09:27:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d77be9ca02490ecfba63d"
+       ],
+       "article_id": "698d77be9ca02490ecfba63d"
+      },
+      {
+       "id": "eb54bbd31d8a28a5",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "L-series",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 134000000000.0,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": 134000000000.0,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jp morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Databricks announces a $4 billion L-series release, bringing its value to $134 billion.",
+       "published_at": "2025-12-17T13:07:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb55a551c35210b7b76336"
+       ],
+       "article_id": "69bb55a551c35210b7b76336"
+      },
+      {
+       "id": "450bc5985083b40e",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "Series L",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 134000000000.0,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": 134000000000.0,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan Asset Management",
+         "domain": "jpmorgan.am",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "winslow capital",
+         "domain": "winslowcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data and AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Build AI apps and agents, provide liquidity for employees, support future AI acquisitions, deepen AI research",
+       "source_sentence": "SAN FRANCISCO, Dec. 16, 2025 /PRNewswire/ — Databricks , the Data and AI company, today announced it is raising a >$4 billion Series L investment, valuing the company at $134 billion.",
+       "published_at": "2025-12-16T13:30:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69451294ba9489700ca33ab2",
+        "698889885302bdff25877413",
+        "6989b98294d3f481f3eb32c8",
+        "69bb558b8dcdeb577ebba461",
+        "69e88e285cfa3e5ba50cd1bb"
+       ],
+       "article_id": "69bb558b8dcdeb577ebba461"
+      },
+      {
+       "id": "93db0b5e9c751994",
+       "company_name": "new world development",
+       "domain": "nwd.com.hk",
+       "round_type": null,
+       "amount_usd": 2500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "Cheng family",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "property",
+       "country": "Hong Kong",
+       "city": "Hong Kong",
+       "use_of_funds": "to provide liquidity",
+       "source_sentence": "Octus reported last month that Blackstone and the Cheng family were considering co-investing about US$2.5 billion in NWD.",
+       "published_at": "2025-09-01T21:25:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d114a2d6ecaa4ef28a21b0"
+       ],
+       "article_id": "69d114a2d6ecaa4ef28a21b0"
+      },
+      {
+       "id": "a308833379df74d2",
+       "company_name": "dream games",
+       "domain": "dreamgames.com",
+       "round_type": "Strategic equity and debt financing",
+       "amount_usd": 2500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4500000000.0,
+       "currency": "USD",
+       "amount": 2500000000.0,
+       "valuation": 4500000000.0,
+       "investors": [
+        {
+         "name": "cvc",
+         "domain": "cvc.com.au",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "Other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Mobile gaming",
+       "country": "Turkey",
+       "city": null,
+       "use_of_funds": "Buy out existing investors",
+       "source_sentence": "Turkey-based mobile games developer Dream Games has announced a strategic equity investment from CVC and debt financing from Blackstone and other investors.",
+       "published_at": "2025-05-07T09:00:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3da0fbb9b7bd2e3aec8b9"
+       ],
+       "article_id": "69c3da0fbb9b7bd2e3aec8b9"
+      },
+      {
+       "id": "4e7696178205774d",
+       "company_name": "Na",
+       "domain": null,
+       "round_type": "equity",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": 2000000000.0
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Blackstone is considering an equity injection of two billion US dollars.",
+       "published_at": "2026-04-08T02:54:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2c5ea601121844c3dee52"
+       ],
+       "article_id": "69e2c5ea601121844c3dee52"
+      },
+      {
+       "id": "cde3c4253bd6e884",
+       "company_name": "related digital",
+       "domain": "relateddigital.com",
+       "round_type": "equity",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": 2000000000.0
+        }
+       ],
+       "sector": "data center",
+       "country": "USA",
+       "city": "Saline Township, Michigan",
+       "use_of_funds": "build a campus in Saline Township to power Oracle and OpenAI applications",
+       "source_sentence": "Blackstone's equity contribution is projected to be lower than expected at nearly $2 billion, amounting to about half of what was initially under consideration, the report said.",
+       "published_at": "2026-04-02T06:36:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e893117bb1410d4c93eef4"
+       ],
+       "article_id": "69e893117bb1410d4c93eef4"
+      },
+      {
+       "id": "b248fc93d2ccdc07",
+       "company_name": "shield ai",
+       "domain": "shield.ai",
+       "round_type": null,
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "Apandion",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackstone group",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "disruptive",
+         "domain": "disruptive.tech",
+         "amount": null
+        },
+        {
+         "name": "InnovationX",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jp morgan chase",
+         "domain": "jpmorganchase.com",
+         "amount": null
+        },
+        {
+         "name": "riot ventures",
+         "domain": "riot.vc",
+         "amount": null
+        },
+        {
+         "name": "snowpoint ventures",
+         "domain": "snowpoint.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "San Diego",
+       "use_of_funds": null,
+       "source_sentence": "Shield AI - $2.0B",
+       "published_at": "2026-03-30T08:27:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d14cf51fc9561313467f64"
+       ],
+       "article_id": "69d14cf51fc9561313467f64"
+      },
+      {
+       "id": "fdcbff902dac998b",
+       "company_name": "shield ai",
+       "domain": "shield.ai",
+       "round_type": "Series G",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 12700000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 12700000000.0,
+       "investors": [
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "JPMorgan Chase's Strategic Investment Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "snowpoint ventures",
+         "domain": "snowpoint.vc",
+         "amount": null
+        },
+        {
+         "name": "riot ventures",
+         "domain": "riot.vc",
+         "amount": null
+        },
+        {
+         "name": "Blackstone-managed funds",
+         "domain": null,
+         "amount": 500000000.0
+        }
+       ],
+       "sector": "Defense technology/AI",
+       "country": "United States",
+       "city": "San Diego",
+       "use_of_funds": "Expand AI-powered software and acquire simulation software maker Aechelon Technology",
+       "source_sentence": "The startup said on Thursday the Series G round was led by Advent International and co‑led by JPMorgan Chase's Strategic Investment Group, with participation from existing investors including Snowpoint Ventures and Riot Ventures.",
+       "published_at": "2026-03-26T14:01:52",
+       "coverage_count": 5,
+       "article_ids": [
+        "69c81317152f93ad885ddbf9",
+        "69c8c0184ca06a20fbc4b356",
+        "69cc43777d31e30c784fca7a",
+        "69e3404233f261aedad8b00b",
+        "69e865939baafc73567de07f"
+       ],
+       "article_id": "69e3404233f261aedad8b00b"
+      },
+      {
+       "id": "6097770bdfbfcb2e",
+       "company_name": "aypa power",
+       "domain": "aypa.com",
+       "round_type": "Credit Facility",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        }
+       ],
+       "sector": "Energy Storage",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "accelerating construction of utility-scale energy storage projects across the U.S.",
+       "source_sentence": "Blackstone-backed energy storage developer Aypa Power announced that it has secured $1.5 billion in warehouse facility financing, with the capital aimed at accelerating the construction of utility-scale energy storage projects across the U.S.",
+       "published_at": "2026-02-04T14:23:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988cbd094d3f481f3d99f82",
+        "698985cf94d3f481f3e71b24"
+       ],
+       "article_id": "6988cbd094d3f481f3d99f82"
+      },
+      {
+       "id": "9bf083e9711ce909",
+       "company_name": "factory",
+       "domain": "factory.com",
+       "round_type": "Series C",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "20VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        },
+        {
+         "name": "Mantis VC",
+         "domain": "mantisvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-driven software engineering",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate investment in research, product development, and global go-to-market efforts",
+       "source_sentence": "Factory announced it has raised $150 million in a Series C funding round led by Khosla Ventures, with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC, bringing the company’s valuation to $1.5 billion.",
+       "published_at": "2026-04-22T03:38:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9980475f157062cad1b90"
+       ],
+       "article_id": "69e9980475f157062cad1b90"
+      },
+      {
+       "id": "281df7e8186ac41b",
+       "company_name": "radius health",
+       "domain": "radiuspharm.com",
+       "round_type": "Merger Financing",
+       "amount_usd": 1300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Partners",
+         "domain": "sixthstreetpartners.com",
+         "amount": 400000000.0
+        },
+        {
+         "name": "oaktree capital management",
+         "domain": "oaktreecapital.com",
+         "amount": null
+        },
+        {
+         "name": "silver point capital",
+         "domain": "silverpointcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Life Sciences",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Support the merger of Paratek Pharmaceuticals and Radius Health",
+       "source_sentence": "Private investment major Blackstone Inc is spearheading a $1.3bn private funding package to support the merger of Paratek Pharmaceuticals and Radius Health, according to a report by Bloomberg.",
+       "published_at": "2026-03-19T14:24:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e85c265cfa3e5ba5ed44b8"
+       ],
+       "article_id": "69e85c265cfa3e5ba5ed44b8"
+      },
+      {
+       "id": "250a8e17ff4068fa",
+       "company_name": "paratek pharmaceuticals",
+       "domain": "paratekpharma.com",
+       "round_type": "Merger Financing",
+       "amount_usd": 1300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Partners",
+         "domain": "sixthstreetpartners.com",
+         "amount": 400000000.0
+        },
+        {
+         "name": "oaktree capital management",
+         "domain": "oaktreecapital.com",
+         "amount": null
+        },
+        {
+         "name": "silver point capital",
+         "domain": "silverpointcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Life Sciences",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Support the merger of Paratek Pharmaceuticals and Radius Health",
+       "source_sentence": "Private investment major Blackstone Inc is spearheading a $1.3bn private funding package to support the merger of Paratek Pharmaceuticals and Radius Health, according to a report by Bloomberg.",
+       "published_at": "2026-03-19T14:24:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e85c265cfa3e5ba5ed44b8"
+       ],
+       "article_id": "69e85c265cfa3e5ba5ed44b8"
+      },
+      {
+       "id": "7ff1b9666bd35e3f",
+       "company_name": "neysa",
+       "domain": "neysa.ai",
+       "round_type": "Financing round",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cloud infrastructure and AI",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": null,
+       "source_sentence": "Earlier this month, it closed a $1.2 billion financing round led by US private equity firm Blackstone, which included $600 million in debt.",
+       "published_at": "2026-02-26T15:06:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbc3567aa9ae690c9691bc"
+       ],
+       "article_id": "69cbc3567aa9ae690c9691bc"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 135,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDItMjYgMTU6MDY6MzkiLCJrIjoiOTIxOTM1Mzc2MTc1MDkzMzA1NSIsImEiOjEyMDAwMDAwMDAuMH0",
+     "totals": {
+      "deals": 135,
+      "deals_with_amount": 117,
+      "deals_without_amount": 18,
+      "deals_amount_excluded": 7,
+      "sum_amount_usd": 139239850100.0,
+      "median_amount_usd": 371520000.0,
+      "largest_amount_usd": 18200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.152,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.156
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Blackstone",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "blackstone"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "10253471fee03774",
+       "company_name": "Anthropic JV",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "hellman & friedman",
+         "domain": "hf.com",
+         "amount": null
+        },
+        {
+         "name": "permira",
+         "domain": "permira.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI, enterprise",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anthropic is pursuing a parallel joint venture with Blackstone, Hellman & Friedman, and Permira at a smaller scale, approximately $1 billion.",
+       "published_at": "2026-04-22T09:11:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8b50e9baafc7356b7fe8d"
+       ],
+       "article_id": "69e8b50e9baafc7356b7fe8d"
+      },
+      {
+       "id": "9bf083e9711ce909",
+       "company_name": "factory",
+       "domain": "factory.com",
+       "round_type": "Series C",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "20VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        },
+        {
+         "name": "Mantis VC",
+         "domain": "mantisvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-driven software engineering",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate investment in research, product development, and global go-to-market efforts",
+       "source_sentence": "Factory announced it has raised $150 million in a Series C funding round led by Khosla Ventures, with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC, bringing the company’s valuation to $1.5 billion.",
+       "published_at": "2026-04-22T03:38:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9980475f157062cad1b90"
+       ],
+       "article_id": "69e9980475f157062cad1b90"
+      },
+      {
+       "id": "9e035d79e6f3ccb4",
+       "company_name": "factory",
+       "domain": "factory.com",
+       "round_type": "Series C",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Factory, an autonomous software engineering platform used by enterprises including Nvidia, Adobe and Adyen, raised $150 million in a Series C led by Khosla Ventures, with participation from Sequoia Capital, Blackstone and Insight Partners, the company announced.",
+       "published_at": "2026-04-20T18:24:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e992fdd47fc02832125e07"
+       ],
+       "article_id": "69e992fdd47fc02832125e07"
+      },
+      {
+       "id": "0d090f7adf0b80f0",
+       "company_name": "factory",
+       "domain": "factory.com",
+       "round_type": null,
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone group",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "mantis venture capital",
+         "domain": "mantisvc.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Factory has now raised a total of $220M in total equity funding and is backed by Blackstone Group, Evantic Capital, Insight Partners, Khosla Ventures, and MANTIS Venture Capital.",
+       "published_at": "2026-04-18T09:27:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e99023bdd09a23d088f072"
+       ],
+       "article_id": "69e99023bdd09a23d088f072"
+      },
+      {
+       "id": "8786651d0e58aa0f",
+       "company_name": "factory",
+       "domain": "factory.com",
+       "round_type": null,
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI software",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate development and capture a larger share of the enterprise AI market.",
+       "source_sentence": "On Wednesday, Factory, a startup developing AI agents for enterprise engineering teams, announced it had raised $150 million at a $1.5 billion valuation.",
+       "published_at": "2026-04-16T22:55:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8661e9baafc73567e40af",
+        "69e8e12f9baafc7356dc73e3"
+       ],
+       "article_id": "69e8661e9baafc73567e40af"
+      },
+      {
+       "id": "778f26942752d70c",
+       "company_name": "firmus",
+       "domain": "firmus.ai",
+       "round_type": "private debt financing",
+       "amount_usd": 330000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "AUD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "Australia",
+       "city": null,
+       "use_of_funds": "funding will support the rollout of Firmus''s AI factory platform and expansion of AI factories across multiple Australian sites",
+       "source_sentence": "In November last year, the neocloud said it had raised AU$500m ($351 million) for Project Southgate.",
+       "published_at": "2026-04-14T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e853e95cfa3e5ba5e8835e"
+       ],
+       "article_id": "69e853e95cfa3e5ba5e8835e"
+      },
+      {
+       "id": "06981aa2195b3611",
+       "company_name": "pennylane",
+       "domain": "pennylane.com",
+       "round_type": null,
+       "amount_usd": 205000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 205000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "Blackstone Growth",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The French accounting software business Pennylane, which targets start-ups and SMEs in Europe, raised $205m in a round led by TCV and Blackstone Growth.",
+       "published_at": "2026-04-13T23:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e854375cfa3e5ba5e8b374"
+       ],
+       "article_id": "69e854375cfa3e5ba5e8b374"
+      },
+      {
+       "id": "0b74779b52e843fd",
+       "company_name": "Sunotec",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Tactical Opportunities",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Renewable Energy",
+       "country": "Bulgaria",
+       "city": "Sofia",
+       "use_of_funds": null,
+       "source_sentence": "Linklaters has advised Sunotec, a leading European system integrator of large-scale renewable energy infrastructure, on a partnership structured equity investment from funds managed by Blackstone Tactical Opportunities.",
+       "published_at": "2026-04-12T14:20:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e50059430a4927fdc374e4"
+       ],
+       "article_id": "69e50059430a4927fdc374e4"
+      },
+      {
+       "id": "a2a0f5f37964404b",
+       "company_name": "coreweave",
+       "domain": "coreweave.com",
+       "round_type": "Debt facility",
+       "amount_usd": 8500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mufg",
+         "domain": "mufgcampus.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "JPMorgan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "High-Performance Computing / AI Cloud",
+       "country": "United States",
+       "city": "Livingston",
+       "use_of_funds": "support CoreWeave's continued expansion of its AI cloud platform",
+       "source_sentence": "CoreWeave today announced it has closed an $8.5 billion delayed draw term loan facility (“DDTL 4.0 Facility”), supporting the continued expansion of its AI cloud platform.",
+       "published_at": "2026-04-10T10:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e34ef5a8697b10fabd9fc5"
+       ],
+       "article_id": "69e34ef5a8697b10fabd9fc5"
+      },
+      {
+       "id": "0f4ae5c1d1487999",
+       "company_name": "teva pharmaceuticals",
+       "domain": "tevapharm.com",
+       "round_type": "Strategic funding agreement",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Life Sciences",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology – Immunology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support the continued clinical development of duvakitug, a human monoclonal antibody targeting TL1A currently in phase 3 clinical studies for ulcerative colitis and Crohn’s disease",
+       "source_sentence": "Teva Pharmaceuticals ... announced a $400 million strategic funding agreement with Blackstone Life Sciences spread across four years to support the continued clinical development of duvakitug.",
+       "published_at": "2026-04-08T08:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e35ab1158f9ddd5d793b5f"
+       ],
+       "article_id": "69e35ab1158f9ddd5d793b5f"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 72,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDggMDg6MDA6MDAiLCJrIjoiMTEwMTk0NTY3OTQ0ODE0NDI4MSJ9",
+     "totals": {
+      "deals": 72,
+      "deals_with_amount": 62,
+      "deals_without_amount": 10,
+      "deals_amount_excluded": 6,
+      "sum_amount_usd": 86284076900.0,
+      "median_amount_usd": 525000000.0,
+      "largest_amount_usd": 18200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.069,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.073
+    }
+   }
+  }
+ ]
+}

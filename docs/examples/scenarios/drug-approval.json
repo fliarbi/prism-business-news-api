@@ -1,0 +1,826 @@
+{
+ "slug": "drug-approval",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:58Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "fda_approval",
+      "regulatory"
+     ],
+     "q": "approval",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "approval",
+      "match": "any",
+      "event_type": [
+       "fda_approval",
+       "regulatory"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 161,
+       "by_type": {
+        "fda_approval": 7,
+        "regulatory": 154
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 126,
+       "by_type": {
+        "fda_approval": 2,
+        "regulatory": 124
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 159,
+       "by_type": {
+        "fda_approval": 7,
+        "regulatory": 152
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 217,
+       "by_type": {
+        "fda_approval": 11,
+        "regulatory": 206
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 245,
+       "by_type": {
+        "fda_approval": 1,
+        "regulatory": 244
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 193,
+       "by_type": {
+        "fda_approval": 6,
+        "regulatory": 187
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 217,
+       "by_type": {
+        "fda_approval": 9,
+        "regulatory": 208
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 242,
+       "by_type": {
+        "fda_approval": 7,
+        "regulatory": 235
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 172,
+       "by_type": {
+        "fda_approval": 7,
+        "regulatory": 165
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 220,
+       "by_type": {
+        "fda_approval": 8,
+        "regulatory": 212
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 199,
+       "by_type": {
+        "fda_approval": 5,
+        "regulatory": 194
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 196,
+       "by_type": {
+        "fda_approval": 6,
+        "regulatory": 190
+       }
+      }
+     ],
+     "totals": {
+      "events": 2347,
+      "articles": 2282,
+      "companies": 1614,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "fda_approval": 76,
+      "regulatory": 2271
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.038,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.044
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "fda_approval",
+      "regulatory"
+     ],
+     "q": "approval",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "approval",
+      "event_type": [
+       "fda_approval",
+       "regulatory"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f87fbc43843dd771ce1bf5",
+       "headline": "What else you need to know: Eli Lilly’s GLP‑1 business got another tailwind during the quarter with the FDA’s approval of Foundayo, the pill version of its weight‑loss drug. “A key milestone was the US FDA approval of Foundayo — the only approved GLP‑1 pill that can be taken any time of day, without food and water restrictions,” Lilly CEO David Ricks said.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "lilly.com",
+       "published_at": "2026-04-30T16:43:08",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a0411e6220687a966af5e2b",
+       "headline": "Infinite IT Solutions, a leading provider of enterprise e-invoicing and automation solutions in the Gulf region, today announced that it has received pre-approval as an accredited service provider (ASP) under the UAE’s upcoming e-invoicing mandate.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "infiniteitsolutions.net",
+       "published_at": "2026-04-30T08:13:38",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f22891122c4392e0ceca1c",
+       "headline": "First up, the agency has requested—again—that Amgen remove the autoimmune therapy Tavneos from the market. Specifically, the FDA says that unblinded study personnel manipulated results of the pivotal clinical trial that supported the drug’s approval to make it look more effective.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "amgen.com",
+       "published_at": "2026-04-29T09:48:22",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a040728220687a966aa9967",
+       "headline": "Eddie Trahearn, currently Chief Strategy & Financial Officer, subject to regulatory approval.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "gbbank.co.uk",
+       "published_at": "2026-04-29T09:13:46",
+       "url": "https://bridgingloandirectory.co.uk/people/gb-bank-ceo-mike-says-to-step-down-as-eddie-trahearn-named-successor/",
+       "publisher": "bridgingloandirectory.co.uk",
+       "title": "GB Bank CEO Mike Says to step down as Eddie Trahearn named successor"
+      },
+      {
+       "id": "69f1cffaa5706a322e1369ca",
+       "headline": "He will be succeeded by Eddie Trahearn, currently chief strategy & financial officer – subject to regulatory approval – at the end of April 2026.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "gbbank.co.uk",
+       "published_at": "2026-04-29T08:22:51",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1cbb7399b489398e09a42",
+       "headline": "Interpolitan Money has received regulatory approval to operate within GIFT City, India, extending its international footprint and adding another regulated node to its cross-border capital infrastructure network.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "interpolitanmoney.com",
+       "published_at": "2026-04-29T05:28:16",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1c7a0399b489398dedd06",
+       "headline": "The Company announces that, subject to approval of the TSX Venture Exchange, it has further extended the term of its marketing agreement (the \"Amending Agreement\") with Capital Gain Media Inc.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "alaskaenergymetals.com",
+       "published_at": "2026-04-29T04:50:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1cad9399b489398e0519e",
+       "headline": "Jade Gas Holdings Limited (ASX:JGH) has secured approval from Mongolia’s Mineral Resources and Petroleum Authority for the appraisal report covering its TTCBM Project, moving the company into the next phase of its long-running attempt to commercialise coal-bed methane in Mongolia.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "jadegas.com.au",
+       "published_at": "2026-04-29T03:25:02",
+       "url": "https://business-news-today.com/jade-gas-asxjgh-advances-mongolia-gas-licence-pathway-as-ttcbm-appraisal-wins-regulator-approval/",
+       "publisher": "business-news-today.com",
+       "title": "Jade Gas (ASX:JGH) advances Mongolia gas licence pathway as TTCBM appraisal"
+      },
+      {
+       "id": "69f1ce41a5706a322e126377",
+       "headline": "Fairchild Gold Corp. (TSXV: FAIR) (FSE: Y4Y) (OTCQB: FCHDF) (“Fairchild” or the “Company“) is pleased to announce, further to its news releases dated September 29, 2025, March 24, 2026, and March 31, 2026, that it has received clearance to proceed with seeking shareholder approval to complete its acquisition of the Golden Arrow Property (the “Property“) from Emergent Metals Corp.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "fairchildgold.com",
+       "published_at": "2026-04-29T03:00:52",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a041590220687a966b12563",
+       "headline": "BaFin's approval only confirms that the EU Prospectus meets the standards of completeness, comprehensibility and consistency required by law.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "rumble.com",
+       "published_at": "2026-04-29T00:00:00",
+       "url": "https://www.finanznachrichten.de/nachrichten-2026-05/68397175-rumble-inc-rumble-announces-receipt-of-all-regulatory-approvals-for-business-combination-with-northern-data-399.htm",
+       "publisher": "finanznachrichten.de",
+       "title": "Rumble, Inc.: Rumble Announces Receipt of all Regulatory Approvals for Business Combination with Northern Data"
+      },
+      {
+       "id": "69f1cee4a5706a322e12c109",
+       "headline": "In April 2026, the company obtained state registration in Florida, marking the first approval of an AGROBODY biocontrol by a US state.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "biotalys.com",
+       "published_at": "2026-04-29T00:00:00",
+       "url": "https://agrigateglobal.com/press-release/biotalys-reports-full-year-2025-financial-results-and-business-highlights/",
+       "publisher": "agrigateglobal.com",
+       "title": "Biotalys Reports Full-Year 2025 Financial Results and Business Highlights"
+      },
+      {
+       "id": "69f229ff122c4392e0cf90d3",
+       "headline": "Spare has received In-Principle Approval (IPA) from the Central Bank of the UAE (CBUAE) to operate under the country’s Open Finance Regulatory Framework.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "gotspare.com",
+       "published_at": "2026-04-28T23:00:00",
+       "url": "https://ffnews.com/newsarticle/paytech/spare-unveils-first-seamless-al-tareq-open-banking-powered-cross-border-transactions-in-the-gcc/",
+       "publisher": "ffnews.com",
+       "title": "Spare Unveils First Seamless Al Tareq (Open Banking) Powered Cross-Border Transactions in the GCC"
+      },
+      {
+       "id": "69f1ca32399b489398e01eee",
+       "headline": "Austral Group achieved a solid 83% approval in the latest edition of the Stakeholders Sustainability Index (SSIndex 2025), representing an increase of 9 points above the overall average of the index, and 2 points above the average of the industrial food sector.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "australholding.com",
+       "published_at": "2026-04-28T19:24:46",
+       "url": "https://www.revistaeconomia.com/austral-group-registra-un-nivel-de-desempeno-por-encima-del-promedio-en-el-ssindex-2025/",
+       "publisher": "revistaeconomia.com",
+       "title": "Austral Group registra un nivel de desempeño por encima del promedio en el SSIndex 2025 - Revista Economía"
+      },
+      {
+       "id": "69f0e349836d28f995cb68b9",
+       "headline": "Santander has obtained the approval of the Prudential Regulatory Authority (PRA), as well as of the European Central Bank (ECB) and the British Markets and Competition Authority (CMA).",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "santanderrio.com.ar",
+       "published_at": "2026-04-28T13:54:26",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f0e31745272de32e8bf9f1",
+       "headline": "Mercury, a US-based banking technology company serving businesses and individuals, has received conditional approval from the Office of the Comptroller of the Currency (OCC) to establish Mercury Bank, N.A., a nationally chartered bank.",
+       "event_type": "regulatory",
+       "role": "primary",
+       "domain": "mercury.co.nz",
+       "published_at": "2026-04-28T04:23:43",
+       "url": "https://thepaypers.com/fintech/news/mercury-receives-conditional-occ-approval-to-establish-mercury-bank-na",
+       "publisher": "thepaypers.com",
+       "title": "Mercury obtains conditional OCC approval for Mercury Bank, N.A. | The Paypers"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 787,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjggMDQ6MjM6NDMiLCJpIjoiNjlmMGUzMTc0NTI3MmRlMzJlOGJmOWYxIiwiZG0iOiJtZXJjdXJ5LmNvLm56IiwiZXQiOiJyZWd1bGF0b3J5Iiwicm8iOiJwcmltYXJ5In0",
+     "by_type": {
+      "regulatory": 761,
+      "fda_approval": 26
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.355,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 8 event(s)"
+     ],
+     "request_seconds": 4.358
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "fda_approval",
+      "regulatory"
+     ],
+     "q": "approval",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "approval",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "fda_approval",
+       "regulatory"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 644,
+     "carrying": 644,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 2,
+       "share": 0.31
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 76,
+       "share": 11.8
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 25,
+       "share": 3.88
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 181,
+       "share": 28.11
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 78,
+       "share": 12.11
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 280,
+       "share": 43.48
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 2,
+       "share": 0.31
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 78,
+       "share": 12.11
+      },
+      {
+       "group": "neutral",
+       "count": 25,
+       "share": 3.88
+      },
+      {
+       "group": "positive",
+       "count": 541,
+       "share": 84.01
+      }
+     ],
+     "negative_to_positive_ratio": 0.144,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.19,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 138,
+       "negative": 17,
+       "neutral": 4,
+       "positive": 117,
+       "negative_share": 12.32,
+       "positive_share": 84.78,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 17,
+        "none": 4,
+        "slight_pos": 48,
+        "fair_pos": 20,
+        "very_pos": 49,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 168,
+       "negative": 21,
+       "neutral": 8,
+       "positive": 139,
+       "negative_share": 12.5,
+       "positive_share": 82.74,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 21,
+        "none": 8,
+        "slight_pos": 50,
+        "fair_pos": 20,
+        "very_pos": 69,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 168,
+       "negative": 26,
+       "neutral": 5,
+       "positive": 137,
+       "negative_share": 15.48,
+       "positive_share": 81.55,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 25,
+        "none": 5,
+        "slight_pos": 38,
+        "fair_pos": 20,
+        "very_pos": 79,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 170,
+       "negative": 14,
+       "neutral": 8,
+       "positive": 148,
+       "negative_share": 8.24,
+       "positive_share": 87.06,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 13,
+        "none": 8,
+        "slight_pos": 45,
+        "fair_pos": 18,
+        "very_pos": 83,
+        "extreme_pos": 2
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 3.274,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 3.279
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,2253 @@
+{
+ "slug": "d2c-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:18Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "d2c",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "d2c"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 61,
+      "deals_with_amount": 56,
+      "deals_without_amount": 5,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 471088200.0,
+      "median_amount_usd": 3950000.0,
+      "largest_amount_usd": 42648000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 7471200.0,
+       "median_amount_usd": 720000.0,
+       "largest_amount_usd": 6600000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 45600000.0,
+       "median_amount_usd": 22800000.0,
+       "largest_amount_usd": 40800000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 20147200.0,
+       "median_amount_usd": 980000.0,
+       "largest_amount_usd": 18000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 28020000.0,
+       "median_amount_usd": 540000.0,
+       "largest_amount_usd": 27000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 64640000.0,
+       "median_amount_usd": 4000000.0,
+       "largest_amount_usd": 33600000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 43553000.0,
+       "median_amount_usd": 480000.0,
+       "largest_amount_usd": 42648000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 27620000.0,
+       "median_amount_usd": 3300000.0,
+       "largest_amount_usd": 16320000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 54600000.0,
+       "median_amount_usd": 13080000.0,
+       "largest_amount_usd": 25440000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 3,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 11620000.0,
+       "median_amount_usd": 3940000.0,
+       "largest_amount_usd": 4800000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 32100000.0,
+       "median_amount_usd": 5950000.0,
+       "largest_amount_usd": 8400000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 5,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 52280000.0,
+       "median_amount_usd": 7500000.0,
+       "largest_amount_usd": 21000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 13,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 83436800.0,
+       "median_amount_usd": 3000000.0,
+       "largest_amount_usd": 36000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.055,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.062
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "d2c",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "d2c"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "62d513fa8ab85a28",
+       "company_name": "fs life",
+       "domain": "fslife.co",
+       "round_type": "Series B",
+       "amount_usd": 42648000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 3554000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Colossa Ventures",
+         "domain": "colossaventures.com",
+         "amount": null
+        },
+        {
+         "name": "fireside ventures",
+         "domain": "firesideventures.com",
+         "amount": null
+        },
+        {
+         "name": "HirePro Consulting",
+         "domain": "hirepro.in",
+         "amount": null
+        },
+        {
+         "name": "Asa Holdings",
+         "domain": "asaholdings.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "NKA Resources",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "other angel investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C women's fashion",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "FS Life, the parent company of D2C women’s fashion brand FableStreet, is raising Rs 35.54 crore (around $4 million) led by Colossa Ventures with the participation of existing investor Fireside Ventures, HirePro Consulting, ASA Holdings, NKA Resources and other angel investors.",
+       "published_at": "2025-10-10T07:04:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f72467f6f885b63d2b5bcb"
+       ],
+       "article_id": "68f72467f6f885b63d2b5bcb"
+      },
+      {
+       "id": "2d788e219d28f2c7",
+       "company_name": "snitch",
+       "domain": "snitch.co.in",
+       "round_type": null,
+       "amount_usd": 40800000.0,
+       "amount_flag": null,
+       "valuation_usd": 300000000.0,
+       "currency": "INR",
+       "amount": 3400000000.0,
+       "valuation": 25000000000.0,
+       "investors": [
+        {
+         "name": "360 One Asset Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ravi modi",
+         "domain": "https://www.linkedin.com/in/ravi-modi-226519148/",
+         "amount": null
+        },
+        {
+         "name": "SWC Global",
+         "domain": "swcglobal.com",
+         "amount": null
+        },
+        {
+         "name": "ivycap ventures",
+         "domain": "ivycapventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fast fashion / D2C menswear",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Growth and expansion of retail footprint, product range, and global presence",
+       "source_sentence": "Snitch, a fast-fashion direct-to-consumer (D2C) menswear brand, has secured ₹340 crore (approximately $40 million) in a combination of primary and secondary funding rounds to drive growth and expand its retail footprint.",
+       "published_at": "2025-06-02T04:57:48",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e3c7c1549ba8a8662eabba",
+        "69e8a4525cfa3e5ba51e104b"
+       ],
+       "article_id": "69e3c7c1549ba8a8662eabba"
+      },
+      {
+       "id": "3b93e2b9df208d00",
+       "company_name": "Dam Good Fish",
+       "domain": "damgoodfish.com",
+       "round_type": "Strategic",
+       "amount_usd": 36000000.0,
+       "amount_flag": null,
+       "valuation_usd": 36000000.0,
+       "currency": "INR",
+       "amount": 3000000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C seafood brand",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "The investment will help strengthen supply chains, expand distribution, and build brand visibility.",
+       "source_sentence": "Dam Good Fish Raises Strategic Funding D2C seafood brand Dam Good Fish raised strategic funding at a valuation of ₹30 crore.",
+       "published_at": "2026-04-06T12:17:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2ccaec1991f786cf136bf"
+       ],
+       "article_id": "69e2ccaec1991f786cf136bf"
+      },
+      {
+       "id": "ef19036e576ba5eb",
+       "company_name": "asaya",
+       "domain": "asaya.asia",
+       "round_type": "pre-Series A",
+       "amount_usd": 33600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 2800000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "RPSG Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "OTP Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "huddle ventures",
+         "domain": "huddleventures.co",
+         "amount": null
+        },
+        {
+         "name": "Suyash Saraf",
+         "domain": "https://www.linkedin.com/in/suyash-saraf-30602a68",
+         "amount": null
+        },
+        {
+         "name": "Anisha Agarwal Saraf",
+         "domain": "https://www.linkedin.com/in/anisha-agarwal-saraf-4057361a6",
+         "amount": null
+        }
+       ],
+       "sector": "D2C skincare",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "set up an innovation centre to boost product development",
+       "source_sentence": "Asaya raised INR 28 Cr (about $3 Mn) in its pre-Series A round led by RPSG Capital.",
+       "published_at": "2025-09-10T08:54:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcc066edbbccf919a083db"
+       ],
+       "article_id": "69bcc066edbbccf919a083db"
+      },
+      {
+       "id": "8294fb644756f76e",
+       "company_name": "r for rabbit",
+       "domain": "rforrabbit.com",
+       "round_type": "Series B (primary & secondary)",
+       "amount_usd": 27000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 27000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "filter capital",
+         "domain": "filtercapital.com",
+         "amount": null
+        },
+        {
+         "name": "3one4 capital",
+         "domain": "3one4capital.com",
+         "amount": null
+        }
+       ],
+       "sector": "D2C baby products",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "R for Rabbit, a direct-to-consumer baby products brand, has raised $27 million in a funding round led by Filter Capital and 3one4 Capital.",
+       "published_at": "2025-08-19T13:36:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cc37e8d29a990b6c9cc82"
+       ],
+       "article_id": "698cc37e8d29a990b6c9cc82"
+      },
+      {
+       "id": "dec2fac2caf091e5",
+       "company_name": "atomberg",
+       "domain": "atomberg.com",
+       "round_type": "Series C extension",
+       "amount_usd": 25440000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 2120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "co-founders",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jungle ventures",
+         "domain": "jungle.vc",
+         "amount": null
+        },
+        {
+         "name": "Inflexor Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "consumer appliances / D2C appliances & home-electronics",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "support manufacturing scale‑up, new product development, and expansion of offline distribution in the consumer appliances / home-electronics sector",
+       "source_sentence": "Atomberg — a consumer‑appliances brand — has raised INR 212 crore (≈ US $24 million) in an extension of its Series C funding round, led by Temasek (via Jongsong Investments), along with participation from its co‑founders and existing backers including Jungle Ventures and Inflexor Fund.",
+       "published_at": "2025-12-01T16:48:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "69894ae394d3f481f3e30745"
+       ],
+       "article_id": "69894ae394d3f481f3e30745"
+      },
+      {
+       "id": "6f7278d6a2cf1b8f",
+       "company_name": "FirstClub",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 23000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 23000000.0,
+       "valuation": 120000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C / Lifestyle",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "strengthen D2C lifestyle platform, expand offerings and accelerate growth",
+       "source_sentence": "FirstClub raised $23 million in Series A",
+       "published_at": "2025-09-04T15:53:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "698d493a8d29a990b6d389b8",
+        "69bb3a9def75d924655af2a3"
+       ],
+       "article_id": "698d493a8d29a990b6d389b8"
+      },
+      {
+       "id": "1bb078d08982fb82",
+       "company_name": "Akshayakalpa Organic",
+       "domain": "akshayakalpa.org",
+       "round_type": "Series D",
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ABC Impact Fund",
+         "domain": null,
+         "amount": 1010000000.0
+        }
+       ],
+       "sector": "Organic dairy / D2C food ecosystem",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Strengthen working capital, expand supply chain infrastructure, and accelerate D2C-led growth strategy",
+       "source_sentence": "Organic dairy startup Akshayakalpa Organic is raising Rs 175 crore (around $19 million) in its Series D round led by ABC Impact Fund, with participation from existing investors.",
+       "published_at": "2026-03-18T05:15:08",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a6e5e4f9bcdc12bc0f82",
+        "69cbd1337aa9ae690c975ab5"
+       ],
+       "article_id": "69c3a6e5e4f9bcdc12bc0f82"
+      },
+      {
+       "id": "9b8db00a8ad11d68",
+       "company_name": "ernesta",
+       "domain": "ernesta.com",
+       "round_type": "Series B",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        }
+       ],
+       "sector": "D2C",
+       "country": "United States",
+       "city": "NYC",
+       "use_of_funds": "Support continued expansion, develop technology platforms, and build omni-channel retail showrooms.",
+       "source_sentence": "Ernesta – $20M Series B D2C Ernesta, a direct-to-consumer custom rug company, has raised $20M in Series B funding led by Addition.",
+       "published_at": "2026-03-11T10:27:23",
+       "coverage_count": 3,
+       "article_ids": [
+        "69cbd08e6ebaadb4d432a354",
+        "69cbd1b1b0961fb2935fb972",
+        "69e85cd95cfa3e5ba5edaf94"
+       ],
+       "article_id": "69cbd1b1b0961fb2935fb972"
+      },
+      {
+       "id": "5a85de9df18569fc",
+       "company_name": "conscious chemist",
+       "domain": "consciouschemist.com",
+       "round_type": "Bridge round",
+       "amount_usd": 18000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "atomic capital",
+         "domain": "atomiccapital.io",
+         "amount": null
+        },
+        {
+         "name": "First Port Capital Fund B",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "IPV International",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C skincare / Beauty & personal care",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "enhance leadership hiring, scale inventory and marketing operations, and accelerate R&D",
+       "source_sentence": "D2C skincare brand Conscious Chemist has secured INR 15 crore in a bridge round led by Atomic Capital, with participation from First Port Capital Fund B and IPV International.",
+       "published_at": "2025-12-08T16:37:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cddaa9ca02490ecf0424f"
+       ],
+       "article_id": "698cddaa9ca02490ecf0424f"
+      },
+      {
+       "id": "7df0701638eb48f2",
+       "company_name": "Khetika",
+       "domain": "khetika.com",
+       "round_type": "Series B",
+       "amount_usd": 18000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 18000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "narotam sekhsaria family office",
+         "domain": "sekhsaria.com",
+         "amount": null
+        },
+        {
+         "name": "anicut capital",
+         "domain": "anicutcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Incofin India Progress Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Rajasthan Gum",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Shree Ram India Gums",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Food / Clean‑label D2C",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Funds will drive brand building, new manufacturing, product launches, and expansion into markets such as Europe, the Middle East, and the US",
+       "source_sentence": "Mumbai-based clean-label food brand Khetika has secured $18 million (approx INR 153 crore) in its Series B round. The round was co-led by Narotam Sekhsaria Family Office and Anicut Capital, with continued participation from Incofin India Progress Fund, Rajasthan Gum, and Shree Ram India Gums.",
+       "published_at": "2025-07-07T14:23:20",
+       "coverage_count": 3,
+       "article_ids": [
+        "68ab40722e28036801d9063a",
+        "68c5a885209ed6c919c75509",
+        "698e28179ca02490ec08a400"
+       ],
+       "article_id": "698e28179ca02490ec08a400"
+      },
+      {
+       "id": "6c2a93b51b350805",
+       "company_name": "bombay shaving company",
+       "domain": "bombayshavingcompany.com",
+       "round_type": null,
+       "amount_usd": 16320000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1360000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sixth Sense Ventures",
+         "domain": "sixthsenseventures.com",
+         "amount": null
+        },
+        {
+         "name": "Shantanu Deshpande",
+         "domain": "https://www.linkedin.com/in/shantanu-deshpande-bb939b4a?authType=name&authToken=kCQx&trk=prof-sb-browse_map-name",
+         "amount": null
+        },
+        {
+         "name": "Rahul Dravid",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Undisclosed family offices and HNIs",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C grooming and personal care",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expand omnichannel presence, strengthen brand building, and prepare for a potential IPO",
+       "source_sentence": "D2C grooming and personal care brand Bombay Shaving Company has raised INR 136 Cr (around $16.3 Mn) in a funding round led by existing investor Sixth Sense Ventures, comprising a mix of primary and secondary infusion.",
+       "published_at": "2025-11-12T09:47:13",
+       "coverage_count": 3,
+       "article_ids": [
+        "6931c3486bb66cfcacf2082f",
+        "69888978868e86f9ec6c9530",
+        "69972704219d71cf48d1fb89"
+       ],
+       "article_id": "69888978868e86f9ec6c9530"
+      },
+      {
+       "id": "806a998f8fdbcc87",
+       "company_name": "hyugalife",
+       "domain": "hyugalife.com",
+       "round_type": "Series A",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ivycap ventures",
+         "domain": "ivycapventures.com",
+         "amount": null
+        },
+        {
+         "name": "first bridge fund",
+         "domain": "firstbridgefund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Health & Nutrition / D2C",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen AI-driven personalisation features, expand its dark store network, and establish offline presence",
+       "source_sentence": "HyugaLife Raises ₹100 Crore Series A",
+       "published_at": "2026-04-28T12:30:15",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f0e57d836d28f995cb8e4c",
+        "69f22d81c6105443aa5d96e3",
+        "6a03f78662bbf617b03c971c"
+       ],
+       "article_id": "69f0e57d836d28f995cb8e4c"
+      },
+      {
+       "id": "4b715927d56011ee",
+       "company_name": "pluckk",
+       "domain": "pluckk.in",
+       "round_type": "Growth",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Euro Gulf Investment",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C fresh produce platform",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expansion into new markets, strengthen supply chain capabilities, enhance product offerings.",
+       "source_sentence": "Pluckk Raises ₹100 Crore from Euro Gulf Investment.",
+       "published_at": "2026-04-09T12:01:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e32b26b66a657f69d2dd40",
+        "69e3402926cb2d2a65f05970"
+       ],
+       "article_id": "69e32b26b66a657f69d2dd40"
+      },
+      {
+       "id": "b7ac33cf5ae14a8b",
+       "company_name": "pluckk",
+       "domain": "pluckk.in",
+       "round_type": "Series A1",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Euro Gulf Investment",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C Grocery / Clean‑Label FMCG",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "Investments in technology and product innovation, AI for product trend identification, quality control automation, supply chain efficiency and demand forecasting, nutrition personalization, offline retail presence establishment, and expansion to tier‑II locations and international markets.",
+       "source_sentence": "D2C grocery startup Pluckk has raised ₹100 Cr (around $10.8 Mn) in its Series A1 funding round led by existing investor Euro Gulf Investment.",
+       "published_at": "2026-04-09T06:44:42",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e319b26a49bee673b8adf7",
+        "69e4efafd5e7fc42ee05a2dc"
+       ],
+       "article_id": "69e319b26a49bee673b8adf7"
+      },
+      {
+       "id": "f773f6f11c9cf000",
+       "company_name": "pluckk",
+       "domain": "pluckk.in",
+       "round_type": null,
+       "amount_usd": 10740000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10740000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "D2C farm produce platform",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Pluckk raised $10.74 million.",
+       "published_at": "2026-04-11T18:27:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e4faf7d5e7fc42ee0c428a"
+       ],
+       "article_id": "69e4faf7d5e7fc42ee0c428a"
+      },
+      {
+       "id": "a616110f97e11c58",
+       "company_name": "home essentials",
+       "domain": "homeessentials.com.hk",
+       "round_type": "pre-Series B",
+       "amount_usd": 8400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "360 ONE Asset",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "india quotient",
+         "domain": "indiaquotient.in",
+         "amount": null
+        }
+       ],
+       "sector": "D2C brand that sells home and kitchen products",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "grow its presence both online and offline and to expand its range of kitchen and home improvement products",
+       "source_sentence": "Home Essentials, a D2C brand that sells home and kitchen products, has raised Rs 70 crore in a pre-Series B funding round.",
+       "published_at": "2026-02-28T04:55:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc87e88db8b8187dd9d40b"
+       ],
+       "article_id": "69bc87e88db8b8187dd9d40b"
+      },
+      {
+       "id": "ab1712842e92cb14",
+       "company_name": "HomeEssentials",
+       "domain": null,
+       "round_type": "Pre-Series B",
+       "amount_usd": 8400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "360 ONE Asset",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "india quotient",
+         "domain": "indiaquotient.in",
+         "amount": null
+        }
+       ],
+       "sector": "D2C Home & Kitchen",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "The company plans to deepen its omnichannel footprint, open physical stores across Tier‑I and Tier‑II cities, expand its product portfolio, and aim for a revenue target of ₹500 crore over the next three years.",
+       "source_sentence": "HomeEssentials, raised ₹70 crore in a Pre‑Series B round led by 360 ONE Asset, with participation from existing investor India Quotient.",
+       "published_at": "2026-02-25T12:37:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9c8f703caa0b7b4a4b641"
+       ],
+       "article_id": "69c9c8f703caa0b7b4a4b641"
+      },
+      {
+       "id": "dc7e8d99cf5a9fbf",
+       "company_name": "replyall",
+       "domain": "replyall.me",
+       "round_type": "Maiden",
+       "amount_usd": 8160000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 680000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sparrow capital",
+         "domain": "sparrowvc.com",
+         "amount": null
+        },
+        {
+         "name": "antler india",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "D2C clothing",
+       "country": null,
+       "city": null,
+       "use_of_funds": "product innovation, material R&D, and expanding presence across key markets",
+       "source_sentence": "Apparel startup ReplyAll has raised INR 6.8 Cr in its maiden funding round led by Sparrow Capital and Antler India.",
+       "published_at": "2025-12-03T16:19:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e1fdf8d29a990b6e36e7f"
+       ],
+       "article_id": "698e1fdf8d29a990b6e36e7f"
+      },
+      {
+       "id": "0c3db1002e15ab26",
+       "company_name": "home essentials",
+       "domain": "homeessentials.com.hk",
+       "round_type": "pre-Series B",
+       "amount_usd": 7600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "360 ONE Asset",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "india quotient",
+         "domain": "indiaquotient.in",
+         "amount": null
+        }
+       ],
+       "sector": "D2C Commerce",
+       "country": "India",
+       "city": "Gwalior",
+       "use_of_funds": "Expand online and offline presence and broaden product range",
+       "source_sentence": "Gwalior-based D2C brand Home Essentials raised approximately $7.6 million in a pre-Series B round led by 360 ONE Asset, with participation from India Quotient.",
+       "published_at": "2026-02-27T09:30:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7f176d4d48dd99c48ae1"
+       ],
+       "article_id": "69bc7f176d4d48dd99c48ae1"
+      },
+      {
+       "id": "6b4a9ee3b7a21bdb",
+       "company_name": "RAS Luxury Skincare",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "unilever ventures",
+         "domain": "unileverventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "D2C Beauty",
+       "country": "India",
+       "city": "Raipur",
+       "use_of_funds": "expand omnichannel presence, invest in research and development, strengthen brand and team capabilities",
+       "source_sentence": "D2C beauty brand RAS Luxury Skincare raised $7.5 million (about ₹68.7 crore) in a Series B round led by Dabur Ventures, with participation from Unilever Ventures.",
+       "published_at": "2026-03-03T11:47:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bceeb758389c352a0a10b7"
+       ],
+       "article_id": "69bceeb758389c352a0a10b7"
+      },
+      {
+       "id": "6db3cc3d2e0e54e2",
+       "company_name": "Palmonas",
+       "domain": "palmonas.com",
+       "round_type": "Series A",
+       "amount_usd": 6600000.0,
+       "amount_flag": null,
+       "valuation_usd": 66000000.0,
+       "currency": "INR",
+       "amount": 550000000.0,
+       "valuation": 5500000000.0,
+       "investors": [
+        {
+         "name": "vertex ventures",
+         "domain": "vertexventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "D2C jewellery",
+       "country": "India",
+       "city": "Pune",
+       "use_of_funds": "expand its signature 9kt gold demi‑fine collection, launch 100 new stores over the next year, and enhance its top‑selling categories",
+       "source_sentence": "\"Vertex Ventures is leading Rs 55 crore in Series A round at a post-money valuation of Rs 550 crore ($65 million),\" said one of the sources requesting anonymity as discussions are yet to be public.",
+       "published_at": "2025-05-26T06:23:19",
+       "coverage_count": 6,
+       "article_ids": [
+        "68b054773b014c087aefdab1",
+        "68b0547b3b014c087af07a7c",
+        "68b44b4d3ddf2630a8eb19de",
+        "68c583cb460fade355881670",
+        "69c945ffcae5463acffea691",
+        "69e2878dff2654c79d6126d8"
+       ],
+       "article_id": "69e2878dff2654c79d6126d8"
+      },
+      {
+       "id": "30924f27000c9410",
+       "company_name": "Cava Athleisure",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 4800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sharrp Ventures",
+         "domain": "sharrpventures.com",
+         "amount": 210000000.0
+        },
+        {
+         "name": "v3 ventures",
+         "domain": "v3-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "spring marketing capital",
+         "domain": "springmarketingcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "D2C athleisure / everyday wear",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Accelerate product development, strengthen brand building, expand omnichannel distribution, and grow leadership team",
+       "source_sentence": "Cava Athleisure secures INR 40 Cr in Series A funding",
+       "published_at": "2026-01-29T16:08:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d485a9ca02490ecf80778"
+       ],
+       "article_id": "698d485a9ca02490ecf80778"
+      },
+      {
+       "id": "09750354d5af9a80",
+       "company_name": "Rabitat",
+       "domain": "rabitat.com",
+       "round_type": "Series A",
+       "amount_usd": 4800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "RPSG Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dsg consumer partners",
+         "domain": "dsgcp.com",
+         "amount": null
+        },
+        {
+         "name": "capital a",
+         "domain": "capital-a.in",
+         "amount": null
+        },
+        {
+         "name": "Accurize Syndicate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Flair Writing Family Office",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "eagle venture fund",
+         "domain": "eagleventurefund.com",
+         "amount": null
+        },
+        {
+         "name": "AG Ventures",
+         "domain": "agventures.co.in",
+         "amount": null
+        },
+        {
+         "name": "The Souled Store founders (Vedang Patel, Harsh Lal & Rohin Samtaney)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "LivSpace founders (Ramakant Sharma & Sourabh Jain)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ankit Nagori",
+         "domain": "https://www.linkedin.com/in/ankitnagori",
+         "amount": null
+        }
+       ],
+       "sector": "D2C kids’ drinkware and foodware products",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": "The capital will fuel the next phase of growth, strengthening partnerships with Indian manufacturers, launching new designs, and building deeper trust with customers.",
+       "source_sentence": "Rabitat has raised ₹40 crore (~USD 5 million) in Series A funding.",
+       "published_at": "2025-06-23T07:42:50",
+       "coverage_count": 3,
+       "article_ids": [
+        "698f83b08d29a990b6fe10cf",
+        "69970c7efeeb41363fa3fa5a",
+        "69bbef12db9ed6b6b938c714"
+       ],
+       "article_id": "69bbef12db9ed6b6b938c714"
+      },
+      {
+       "id": "49e9b3b41834171e",
+       "company_name": "Mydesignation",
+       "domain": "mydesignation.com",
+       "round_type": "Series A",
+       "amount_usd": 4300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "RPSG Capital Ventures",
+         "domain": "rpsgcapital.vc",
+         "amount": null
+        },
+        {
+         "name": "Veltis Capital",
+         "domain": "veltiscapital.com",
+         "amount": null
+        },
+        {
+         "name": "multiply ventures",
+         "domain": "multiplyventures.com",
+         "amount": null
+        },
+        {
+         "name": "Dominor Investments",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C Fashion",
+       "country": "India",
+       "city": "Kerala",
+       "use_of_funds": "Fuel growth and category expansion",
+       "source_sentence": "Kerala-based D2C fashion brand MyDesignation secured around $4.3 million in a Series A round led by RPSG Capital Ventures, with continued backing from Veltis Capital, Multiply Ventures, and Dominor Investments.",
+       "published_at": "2026-02-27T09:30:01",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc7f176d4d48dd99c48ae1",
+        "69dcca48472a0104153f07b6"
+       ],
+       "article_id": "69bc7f176d4d48dd99c48ae1"
+      },
+      {
+       "id": "6a3148e103ac1a8b",
+       "company_name": "clayco",
+       "domain": "claycorp.com",
+       "round_type": "Series A",
+       "amount_usd": 4150800.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 345900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Twenty‑Nine Capital Partners Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ICMG Global Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C / Skincare",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expand product portfolio, strengthen brand presence, scale distribution across India",
+       "source_sentence": "ClayCo has raised INR 34.59 crore in a Series A round led by Twenty‑Nine Capital Partners Ventures, with participation from ICMG Global Ventures.",
+       "published_at": "2026-04-08T12:46:08",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2e10d601121844c4424f1",
+        "69e852b55cfa3e5ba5e7c9b6"
+       ],
+       "article_id": "69e2e10d601121844c4424f1"
+      },
+      {
+       "id": "b636616e85fff238",
+       "company_name": "amwoodo",
+       "domain": "amwoodo.com",
+       "round_type": null,
+       "amount_usd": 4000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Furniture / D2C",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Scale direct-to-consumer operations, enhance online presence, and optimize supply chain management.",
+       "source_sentence": "Furniture startup Amwoodo raised $4 million to scale its direct-to-consumer operations, enhance its online presence, and optimize supply chain management.",
+       "published_at": "2025-09-23T14:51:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e1f729ca02490ec07fb3d"
+       ],
+       "article_id": "698e1f729ca02490ec07fb3d"
+      },
+      {
+       "id": "83512a10a3f4e30f",
+       "company_name": "Haus & Kinder",
+       "domain": "hausandkinder.com",
+       "round_type": null,
+       "amount_usd": 3960000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3960000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Dev Patel",
+         "domain": "http://uk.linkedin.com/pub/dev-patel/2/b89/624",
+         "amount": null
+        }
+       ],
+       "sector": "Home and lifestyle, D2C",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": null,
+       "source_sentence": "The Mumbai-based company had previously raised 3.96 million dollars from Dev Patel and others.",
+       "published_at": "2025-11-12T14:24:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "693173c7f20f8bf353f21890"
+       ],
+       "article_id": "693173c7f20f8bf353f21890"
+      },
+      {
+       "id": "d70174d59aca764f",
+       "company_name": "neeman",
+       "domain": "neeman.se",
+       "round_type": "Series B",
+       "amount_usd": 3940000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3940000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "anicut capital",
+         "domain": "anicutcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Sharrp Ventures",
+         "domain": "sharrpventures.com",
+         "amount": null
+        },
+        {
+         "name": "Harsh Mariwala Investment Office",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Consumer/D2C",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Neeman's $3.94 million Series B round, led by Anicut Capital and Sharrp Ventures | Harsh Mariwala Investment Office , reflects selective optimism returning to the consumer and D2C space.",
+       "published_at": "2026-01-06T01:00:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcf0fe518fdf38742edcbe"
+       ],
+       "article_id": "69bcf0fe518fdf38742edcbe"
+      },
+      {
+       "id": "5b624b7ccf871810",
+       "company_name": "kidbea",
+       "domain": "kidbea.com",
+       "round_type": "Series A",
+       "amount_usd": 3600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Enrission India Capital",
+         "domain": "capital-enrissionindia.jp",
+         "amount": null
+        }
+       ],
+       "sector": "Kids / D2C Apparel",
+       "country": null,
+       "city": null,
+       "use_of_funds": "product expansion, brand building, and scaling distribution channels",
+       "source_sentence": "Kidbea Secures ₹30 Cr Series A Funding led by Enrission India Capital.",
+       "published_at": "2026-03-24T14:25:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc07b723fe82b9abc79436"
+       ],
+       "article_id": "69cc07b723fe82b9abc79436"
+      },
+      {
+       "id": "97e1c3cf1986a91f",
+       "company_name": "Haus & Kinder",
+       "domain": "hausandkinder.com",
+       "round_type": null,
+       "amount_usd": 3300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sauce VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Yogesh Kabra",
+         "domain": "https://www.linkedin.com/in/yogeshkabra",
+         "amount": null
+        },
+        {
+         "name": "Sangeet Agrawal",
+         "domain": "https://www.linkedin.com/in/sangeet-agrawal-2260734a",
+         "amount": null
+        },
+        {
+         "name": "Navin Parwal",
+         "domain": "https://www.linkedin.com/in/navinparwal",
+         "amount": null
+        },
+        {
+         "name": "Chona Family",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Home and lifestyle, D2C",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "expand its presence in quick commerce",
+       "source_sentence": "Home and lifestyle direct-to-consumer D2C brand Haus & Kinder has raised 3.3 million dollars (Rs 30 crore) in a funding round led by Sauce VC, along with participation from angel investors including XYXX founder Yogesh Kabra, Sangeet Agrawal, Navin Parwal, and the Chona Family.",
+       "published_at": "2025-11-12T14:24:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "693173c7f20f8bf353f21890",
+        "69972704219d71cf48d1fb89"
+       ],
+       "article_id": "693173c7f20f8bf353f21890"
+      },
+      {
+       "id": "7a4c3b1b734ca7af",
+       "company_name": "ember",
+       "domain": "ember-infra.com",
+       "round_type": "Funding round",
+       "amount_usd": 3200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Consumer / D2C Cookware",
+       "country": "IN",
+       "city": null,
+       "use_of_funds": "Expand D2C presence, scale product innovation, and strengthen market penetration in the cookware segment",
+       "source_sentence": "Premium cookware brand Ember has secured $3.2 million in funding as it continues to expand its D2C presence.",
+       "published_at": "2025-09-11T15:37:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d2aea8d29a990b6d1569f"
+       ],
+       "article_id": "698d2aea8d29a990b6d1569f"
+      },
+      {
+       "id": "9f63bad1491b8f1d",
+       "company_name": "house of chikankari",
+       "domain": "houseofchikankari.in",
+       "round_type": "Series A",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Cap Alpha Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C / Ethnic Wear",
+       "country": "India",
+       "city": "Delhi",
+       "use_of_funds": "expand product portfolio, strengthen omnichannel presence with offline retail push, and grow global footprint",
+       "source_sentence": "House of Chikankari Raises ₹25 Crore Series A",
+       "published_at": "2026-04-28T12:30:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e57d836d28f995cb8e4c",
+        "69f22d81c6105443aa5d96e3"
+       ],
+       "article_id": "69f0e57d836d28f995cb8e4c"
+      },
+      {
+       "id": "f774e79be902b421",
+       "company_name": "house of chikankari",
+       "domain": "houseofchikankari.in",
+       "round_type": "Series A",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Cap Alpha Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C fashion",
+       "country": "India",
+       "city": "Delhi",
+       "use_of_funds": "Expand product portfolio, strengthen omnichannel presence, push into offline retail and expand global footprint",
+       "source_sentence": "D2C ethnic fashion brand House of Chikankari has raised ₹25 Cr (about $2.6 Mn) in its Series A round led by Cap Alpha Ventures (formerly Client Associates Alternate Fund – CAAF).",
+       "published_at": "2026-04-28T07:50:03",
+       "coverage_count": 4,
+       "article_ids": [
+        "69f0e69fd32561089420b66a",
+        "69f0e8ccd32561089420d45d",
+        "69f0ea17d32561089420e6fd",
+        "69f1ce9a399b489398e204b3"
+       ],
+       "article_id": "69f0e8ccd32561089420d45d"
+      },
+      {
+       "id": "fc831b3bd6aebc05",
+       "company_name": "Rotoris",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Nikhil Kamath",
+         "domain": "https://www.linkedin.com/in/nikhilkamathcio",
+         "amount": null
+        },
+        {
+         "name": "Vivek Anand Oberoi",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "venture catalysts",
+         "domain": "venturecatalysts.in",
+         "amount": null
+        },
+        {
+         "name": "100 Unicorns",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tanmay Bhat",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Varun Alagh",
+         "domain": "https://www.linkedin.com/in/varunalagh84",
+         "amount": null
+        },
+        {
+         "name": "Gaurav Khatri",
+         "domain": "https://www.linkedin.com/in/gauravkhatrigonoise",
+         "amount": null
+        },
+        {
+         "name": "snitch",
+         "domain": "snitch.co.in",
+         "amount": null
+        },
+        {
+         "name": "Nitin Jain",
+         "domain": "https://www.linkedin.com/in/nitinjain121",
+         "amount": null
+        },
+        {
+         "name": "Vishesh Khurana",
+         "domain": "http://www.linkedin.com/in/visheshkhurana",
+         "amount": null
+        },
+        {
+         "name": "Chirag Taneja",
+         "domain": "https://www.linkedin.com/in/chiragtaneja",
+         "amount": null
+        },
+        {
+         "name": "Akash Gupta",
+         "domain": "https://in.linkedin.com/in/akashgor",
+         "amount": null
+        },
+        {
+         "name": "Arjun Vaidya",
+         "domain": "https://www.linkedin.com/in/arjunvaidya/",
+         "amount": null
+        }
+       ],
+       "sector": "Watches / D2C analog watch brand",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": "deepening manufacturing and assembly, upgrade engineering processes, strengthen its supply chain, invest workforce across product, design and brand to support its global expansion roadmap",
+       "source_sentence": "Analog watch company Rotoris on Monday said it has raised a $3 million in a seed funding round led by Nikhil Kamath (Zerodha), Vivek Anand Oberoi, Venture Catalysts, 100 Unicorns and Tanmay Bhat.",
+       "published_at": "2025-12-15T06:55:09",
+       "coverage_count": 3,
+       "article_ids": [
+        "69451b971334aa0ca6a35339",
+        "698cdea49ca02490ecf054e1",
+        "699750b3e0523bedf7b3df47"
+       ],
+       "article_id": "69451b971334aa0ca6a35339"
+      },
+      {
+       "id": "dd56a52d7a480304",
+       "company_name": "SkinInspired",
+       "domain": "skininspired.in",
+       "round_type": "Series A",
+       "amount_usd": 2880000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 240000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spring marketing capital",
+         "domain": "springmarketingcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Lotus Herbals’ Beauty Innovation Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Patni Financial Advisors’ MD Arihant Patni",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "unilever ventures",
+         "domain": "unileverventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "D2C Skincare",
+       "country": "India",
+       "city": "Udaipur",
+       "use_of_funds": "To deploy fresh capital to power R&D function, boost marketing efforts and hire staff",
+       "source_sentence": "D2C skincare brand SkinInspired has raised INR 24 Cr (around $2.7 Mn) in its Series A funding round led by Spring Marketing Capital, along with participation from Lotus Herbals’ Beauty Innovation Fund, Patni Financial Advisors’ MD Arihant Patni, and existing investor Unilever Ventures.",
+       "published_at": "2026-01-06T12:08:36",
+       "coverage_count": 3,
+       "article_ids": [
+        "6996f41733af8f1ff8a23fbe",
+        "69bb5ee05e05f5e7db81be34",
+        "69bcc066256ce3e68edc3489"
+       ],
+       "article_id": "69bb5ee05e05f5e7db81be34"
+      },
+      {
+       "id": "b6f4c5b397b547e4",
+       "company_name": "home essentials",
+       "domain": "homeessentials.com.hk",
+       "round_type": "seed",
+       "amount_usd": 2200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "india quotient",
+         "domain": "indiaquotient.in",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "D2C",
+       "country": "India",
+       "city": "Gwalior",
+       "use_of_funds": null,
+       "source_sentence": "The Gwalior-based company had previously secured $2.2 million in a seed funding round from India Quotient and others.",
+       "published_at": "2026-02-25T08:00:05",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc7f736760819e38480128",
+        "69e2b042dc480588dca0939f"
+       ],
+       "article_id": "69e2b042dc480588dca0939f"
+      },
+      {
+       "id": "06b1afddbef21b94",
+       "company_name": "BeastLife",
+       "domain": "beastlife.in",
+       "round_type": "pre-Series A",
+       "amount_usd": 2150000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2150000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "D2C",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "D2C startup BeastLife raised $2.15 million in a pre-Series A round.",
+       "published_at": "2026-04-06T11:35:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e29a72c1991f786ce658f0"
+       ],
+       "article_id": "69e29a72c1991f786ce658f0"
+      },
+      {
+       "id": "50745f15a1cda747",
+       "company_name": "fae beauty",
+       "domain": "faebeauty.in",
+       "round_type": "Seed/Angel round",
+       "amount_usd": 2040000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 170000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spring marketing capital",
+         "domain": "springmarketingcapital.com",
+         "amount": null
+        },
+        {
+         "name": "titan capital",
+         "domain": "titancapital.vc",
+         "amount": null
+        },
+        {
+         "name": "Arihant Patni",
+         "domain": "https://www.linkedin.com/in/arihantpatni",
+         "amount": null
+        },
+        {
+         "name": "Other Angel Investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Beauty Cosmetics (D2C)",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "Double down product innovation and expand online/offline distribution",
+       "source_sentence": "FAE Beauty, an Indian direct-to-consumer cosmetics startup, has raised ₹17 crore (~$2.1 million USD) in a fresh funding round.",
+       "published_at": "2025-11-24T22:49:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69313edbf298b9e8d0f226db"
+       ],
+       "article_id": "69313edbf298b9e8d0f226db"
+      },
+      {
+       "id": "7c2a906cd38a354f",
+       "company_name": "tendercuts",
+       "domain": "tendercuts.in",
+       "round_type": "debt",
+       "amount_usd": 2000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Lakme Finance",
+         "domain": null,
+         "amount": 2000000.0
+        }
+       ],
+       "sector": "D2C food startup",
+       "country": "India",
+       "city": "Chennai",
+       "use_of_funds": "Working capital requirements; Expansion across core markets; Strengthening operational infrastructure",
+       "source_sentence": "TenderCuts, a Chennai-based omnichannel retailer, has raised $2 million in debt funding from Lakme Finance following its transition to profitability.",
+       "published_at": "2026-04-01T05:08:35",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e27c10dc480588dc965e0a",
+        "69e2b1b4c1991f786ceb27b1",
+        "69e2bc77dc480588dca350f8",
+        "69e99431d47fc02832135f2f"
+       ],
+       "article_id": "69e99431d47fc02832135f2f"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 61,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDQtMDEgMDU6MDg6MzUiLCJrIjoiODk0NzEyMjQwNjgwNDgyOTUxOSIsImEiOjIwMDAwMDAuMH0",
+     "totals": {
+      "deals": 61,
+      "deals_with_amount": 56,
+      "deals_without_amount": 5,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 471088200.0,
+      "median_amount_usd": 3950000.0,
+      "largest_amount_usd": 42648000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.247,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.25
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "d2c",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "d2c"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "9f63bad1491b8f1d",
+       "company_name": "house of chikankari",
+       "domain": "houseofchikankari.in",
+       "round_type": "Series A",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Cap Alpha Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C / Ethnic Wear",
+       "country": "India",
+       "city": "Delhi",
+       "use_of_funds": "expand product portfolio, strengthen omnichannel presence with offline retail push, and grow global footprint",
+       "source_sentence": "House of Chikankari Raises ₹25 Crore Series A",
+       "published_at": "2026-04-28T12:30:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e57d836d28f995cb8e4c",
+        "69f22d81c6105443aa5d96e3"
+       ],
+       "article_id": "69f0e57d836d28f995cb8e4c"
+      },
+      {
+       "id": "806a998f8fdbcc87",
+       "company_name": "hyugalife",
+       "domain": "hyugalife.com",
+       "round_type": "Series A",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ivycap ventures",
+         "domain": "ivycapventures.com",
+         "amount": null
+        },
+        {
+         "name": "first bridge fund",
+         "domain": "firstbridgefund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Health & Nutrition / D2C",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen AI-driven personalisation features, expand its dark store network, and establish offline presence",
+       "source_sentence": "HyugaLife Raises ₹100 Crore Series A",
+       "published_at": "2026-04-28T12:30:15",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f0e57d836d28f995cb8e4c",
+        "69f22d81c6105443aa5d96e3",
+        "6a03f78662bbf617b03c971c"
+       ],
+       "article_id": "69f0e57d836d28f995cb8e4c"
+      },
+      {
+       "id": "f774e79be902b421",
+       "company_name": "house of chikankari",
+       "domain": "houseofchikankari.in",
+       "round_type": "Series A",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Cap Alpha Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C fashion",
+       "country": "India",
+       "city": "Delhi",
+       "use_of_funds": "Expand product portfolio, strengthen omnichannel presence, push into offline retail and expand global footprint",
+       "source_sentence": "D2C ethnic fashion brand House of Chikankari has raised ₹25 Cr (about $2.6 Mn) in its Series A round led by Cap Alpha Ventures (formerly Client Associates Alternate Fund – CAAF).",
+       "published_at": "2026-04-28T07:50:03",
+       "coverage_count": 4,
+       "article_ids": [
+        "69f0e69fd32561089420b66a",
+        "69f0e8ccd32561089420d45d",
+        "69f0ea17d32561089420e6fd",
+        "69f1ce9a399b489398e204b3"
+       ],
+       "article_id": "69f0e8ccd32561089420d45d"
+      },
+      {
+       "id": "74ef432066c7e699",
+       "company_name": "chupps",
+       "domain": "chupps.com",
+       "round_type": "Pre-Series B",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Ajinkya Rahane",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C/Footwear",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Capital investment to support growth and product development.",
+       "source_sentence": "Chupps, India's fast-growing D2C open footwear brand, has announced that Ajinkya Rahane, current captain of Kolkata Knight Riders and former captain of the Indian Test cricket team, has joined the company as an equity investor and strategic advisor as part of its pre-Series B round fundraise.",
+       "published_at": "2026-04-22T12:18:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8bff75cfa3e5ba533a014",
+        "69e99ea875f157062cb1fe24"
+       ],
+       "article_id": "69e8bff75cfa3e5ba533a014"
+      },
+      {
+       "id": "9035b0216b7fc01d",
+       "company_name": "clarity labs",
+       "domain": "clarity.cx",
+       "round_type": "Seed",
+       "amount_usd": 480000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Artha Venture Fund II",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "D2C / Personal Care",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "accelerate new product development, expand categories, and scale omnichannel distribution across D2C, marketplaces, and quick commerce",
+       "source_sentence": "Clarity Labs Raises INR 4 Cr in Seed Round Outcome-driven functional personal care brand, Clarity Labs, has raised over INR 4 crore in seed funding led by Artha Venture Fund II, with participation from angel investors.",
+       "published_at": "2026-04-20T11:33:45",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e882407bb1410d4c880941",
+        "69e99534bdd09a23d08cdf9f"
+       ],
+       "article_id": "69e882407bb1410d4c880941"
+      },
+      {
+       "id": "4c51aeb27e9700db",
+       "company_name": "fifth sense",
+       "domain": "fifthsense.org.uk",
+       "round_type": "Pre-Seed",
+       "amount_usd": 756000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 63000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "OTP Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sadev Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ISV Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Swiggy CEO Rohit Kapoor",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "StayVista co-founder Amit Damani",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C / Fragrance",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "product portfolio expansion, content-driven brand building, and strengthening of supply chain and distribution capabilities",
+       "source_sentence": "FIFTH SENSE has secured ₹6.3 crore in a pre-seed funding round led by OTP Ventures, with participation from Sadev Ventures, ISV Capital, and key angel investors, including Swiggy CEO Rohit Kapoor and StayVista co-founder Amit Damani.",
+       "published_at": "2026-04-17T12:22:50",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8e2475cfa3e5ba54f27ee",
+        "69e8e4f65cfa3e5ba5517e90"
+       ],
+       "article_id": "69e8e2475cfa3e5ba54f27ee"
+      },
+      {
+       "id": "f773f6f11c9cf000",
+       "company_name": "pluckk",
+       "domain": "pluckk.in",
+       "round_type": null,
+       "amount_usd": 10740000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10740000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "D2C farm produce platform",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Pluckk raised $10.74 million.",
+       "published_at": "2026-04-11T18:27:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e4faf7d5e7fc42ee0c428a"
+       ],
+       "article_id": "69e4faf7d5e7fc42ee0c428a"
+      },
+      {
+       "id": "7e6048785fb33376",
+       "company_name": "Fill & Me",
+       "domain": null,
+       "round_type": "pre‑Seed",
+       "amount_usd": 160000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 160000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "D2C kids accessories brand",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "D2C kids accessories brand Fill & Me raised $160,000 in a pre‑Seed round.",
+       "published_at": "2026-04-11T18:27:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e4faf7d5e7fc42ee0c428a"
+       ],
+       "article_id": "69e4faf7d5e7fc42ee0c428a"
+      },
+      {
+       "id": "4b715927d56011ee",
+       "company_name": "pluckk",
+       "domain": "pluckk.in",
+       "round_type": "Growth",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Euro Gulf Investment",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C fresh produce platform",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expansion into new markets, strengthen supply chain capabilities, enhance product offerings.",
+       "source_sentence": "Pluckk Raises ₹100 Crore from Euro Gulf Investment.",
+       "published_at": "2026-04-09T12:01:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e32b26b66a657f69d2dd40",
+        "69e3402926cb2d2a65f05970"
+       ],
+       "article_id": "69e32b26b66a657f69d2dd40"
+      },
+      {
+       "id": "b7ac33cf5ae14a8b",
+       "company_name": "pluckk",
+       "domain": "pluckk.in",
+       "round_type": "Series A1",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Euro Gulf Investment",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "D2C Grocery / Clean‑Label FMCG",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "Investments in technology and product innovation, AI for product trend identification, quality control automation, supply chain efficiency and demand forecasting, nutrition personalization, offline retail presence establishment, and expansion to tier‑II locations and international markets.",
+       "source_sentence": "D2C grocery startup Pluckk has raised ₹100 Cr (around $10.8 Mn) in its Series A1 funding round led by existing investor Euro Gulf Investment.",
+       "published_at": "2026-04-09T06:44:42",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e319b26a49bee673b8adf7",
+        "69e4efafd5e7fc42ee05a2dc"
+       ],
+       "article_id": "69e319b26a49bee673b8adf7"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 32,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDkgMDY6NDQ6NDIiLCJrIjoiMTMyMzUwMTAzNzA2MTEwMDYwOTEifQ",
+     "totals": {
+      "deals": 32,
+      "deals_with_amount": 27,
+      "deals_without_amount": 5,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 179436800.0,
+      "median_amount_usd": 4150800.0,
+      "largest_amount_usd": 36000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.11,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.121
+    }
+   }
+  }
+ ]
+}

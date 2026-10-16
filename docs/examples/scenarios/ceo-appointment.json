@@ -1,0 +1,806 @@
+{
+ "slug": "ceo-appointment",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:22Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "key_people"
+     ],
+     "q": "CEO",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "ceo",
+      "match": "any",
+      "event_type": [
+       "key_people"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 682,
+       "by_type": {
+        "key_people": 682
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 662,
+       "by_type": {
+        "key_people": 662
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 813,
+       "by_type": {
+        "key_people": 813
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 729,
+       "by_type": {
+        "key_people": 729
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 902,
+       "by_type": {
+        "key_people": 902
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 756,
+       "by_type": {
+        "key_people": 756
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 610,
+       "by_type": {
+        "key_people": 610
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 765,
+       "by_type": {
+        "key_people": 765
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 1013,
+       "by_type": {
+        "key_people": 1013
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 1018,
+       "by_type": {
+        "key_people": 1018
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 888,
+       "by_type": {
+        "key_people": 888
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 1014,
+       "by_type": {
+        "key_people": 1014
+       }
+      }
+     ],
+     "totals": {
+      "events": 9852,
+      "articles": 9261,
+      "companies": 5484,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "key_people": 9852
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.26,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.267
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "key_people"
+     ],
+     "q": "CEO",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "ceo",
+      "event_type": [
+       "key_people"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "6a0aff7eae08af3580794e06",
+       "headline": "Toups assumed the role of global chief executive this January, replacing Heather Kernahan, who left the agency in May after nine years in the position. Kernahan acquired agency The Content Bureau in July, taking over the 25-year-old firm as CEO.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "contentbureau.com",
+       "published_at": "2026-04-30T21:09:02",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f88081bbf1d31455964efe",
+       "headline": "Macdonald takes over for Heather Craft, following her departure from Hotwire as its North American CEO in December 2025.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "hotwire.com",
+       "published_at": "2026-04-30T21:09:02",
+       "url": "https://www.prweek.com/article/1956690/hotwire-names-americas-president",
+       "publisher": "prweek.com",
+       "title": "Hotwire names Americas president"
+      },
+      {
+       "id": "69f88081bbf1d31455964efe",
+       "headline": "Kernahan acquired agency The Content Bureau in July, taking over the 25-year-old firm as CEO.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "contentbureau.com",
+       "published_at": "2026-04-30T21:09:02",
+       "url": "https://www.prweek.com/article/1956690/hotwire-names-americas-president",
+       "publisher": "prweek.com",
+       "title": "Hotwire names Americas president"
+      },
+      {
+       "id": "6a2a6370963d76f4afc251d3",
+       "headline": "Cliff Fleet, president and CEO of the Colonial Williamsburg Foundation, announced his retirement after serving in the role since 2020.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "colonialwilliamsburg.org",
+       "published_at": "2026-04-30T20:57:28",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a2acbcbc37f6c5e66f9d15e",
+       "headline": "I'm very happy to see Lisa Graver taking over the CEO role, thus joining my other wonderful colleagues in the executive team.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "alvotech.com",
+       "published_at": "2026-04-30T20:30:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a04084c62bbf617b0435846",
+       "headline": "Lisa Graver taking over the CEO role",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "alvotech.com",
+       "published_at": "2026-04-30T20:30:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a2ab93f5cefb83fe832f533",
+       "headline": "Gabriel, son of the petrochemical company's founder, Henri Slezynger, previously held no position within the company and will assume the role of \"chief restructuring officer,\" succeeding Helena Ramos, who was previously the CEO of Unigel appointed by the creditors.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "unigel.com.br",
+       "published_at": "2026-04-30T17:58:36",
+       "url": "https://valorinternational.globo.com/business/news/2026/04/30/slezynger-family-takes-over-unigel-amid-reorganization.ghtml",
+       "publisher": "valorinternational.globo.com",
+       "title": "Slezynger family takes over Unigel amid reorganization"
+      },
+      {
+       "id": "69f8c45f8937ef12fc0bdb71",
+       "headline": "Queen is taking over the role from Randy Hoffman, a 20-year Oxford vet who served in the position for seven months before taking the role of CEO at Realstar last May",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "oxfordproperties.com",
+       "published_at": "2026-04-30T16:19:31",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a2ec75a83fc01faba4020e6",
+       "headline": "Brockhaus Technologies AG has realigned the management of its subsidiary IHSE, announcing Dr. Thomas Niessen as the new CEO, effective May 2026.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "ihse.com",
+       "published_at": "2026-04-30T16:02:44",
+       "url": "https://www.webdisclosure.com/article/brockhaus-technologies-ag-announces-new-ceo-for-ihse-9XRujmcvv35",
+       "publisher": "webdisclosure.com",
+       "title": "Brockhaus Capital Management AG |"
+      },
+      {
+       "id": "6a2a884a5cefb83fe8122e14",
+       "headline": "Winterhoff, who had served as interim CEO since February 2025, transitioned into the role of Chief Operating Officer once Napoli took over.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "lucidmotors.com",
+       "published_at": "2026-04-30T15:40:57",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8ac3443843dd771d28d3e",
+       "headline": "Sport Manitoba President & CEO JANET MCMAHON “is retiring” on May 1 (WINNIPEG FREE PRESS, 4/29).",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "sportmanitoba.ca",
+       "published_at": "2026-04-30T15:38:33",
+       "url": "https://www.sportsbusinessjournal.com/Articles/2026/04/30/sports-business-daily-executive-transactions-april-30-2026/",
+       "publisher": "sportsbusinessjournal.com",
+       "title": "Sports Business Daily: Executive Transactions - April 30, 2026"
+      },
+      {
+       "id": "69f8ac3443843dd771d28d3e",
+       "headline": "Hawk-Eye Innovations named Managing Dir BEN CROSSING CEO (Hawk-Eye Innovations).",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "hawkeyeinnovations.com",
+       "published_at": "2026-04-30T15:38:33",
+       "url": "https://www.sportsbusinessjournal.com/Articles/2026/04/30/sports-business-daily-executive-transactions-april-30-2026/",
+       "publisher": "sportsbusinessjournal.com",
+       "title": "Sports Business Daily: Executive Transactions - April 30, 2026"
+      },
+      {
+       "id": "6a2b31675cefb83fe888a378",
+       "headline": "After 43 years with New England grocer Market Basket, interim CEO Donald T. Mulligan is retiring, according to a statement released by the company's board of directors.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "shopmarketbasket.com",
+       "published_at": "2026-04-30T15:36:35",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f882d08937ef12fc086223",
+       "headline": "TEWKSBURY — Days after a Delaware judge ruled in their favor, the Market Basket Board of Directors announced Thursday that interim CEO Donald Mulligan will retire from the grocery chain after 43 years.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "shopmarketbasket.com",
+       "published_at": "2026-04-30T15:34:40",
+       "url": "https://www.bostonherald.com/2026/04/30/interim-market-basket-ceo-to-retire-new-president-named/",
+       "publisher": "bostonherald.com",
+       "title": "Interim Market Basket CEO to retire, new president named"
+      },
+      {
+       "id": "69f9d4157b2d589e844aa0ed",
+       "headline": "Ganni chief executive Laura du Rusquec has stepped down ... with former Tom Dixon CEO Hans Hoegstedt taking over as interim CEO.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "ganni.com",
+       "published_at": "2026-04-30T15:30:54",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 3933,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMzAgMTU6MzA6NTQiLCJpIjoiNjlmOWQ0MTU3YjJkNTg5ZTg0NGFhMGVkIiwiZG0iOiJnYW5uaS5jb20iLCJldCI6ImtleV9wZW9wbGUiLCJybyI6InByaW1hcnkifQ",
+     "by_type": {
+      "key_people": 3933
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.484,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 8 event(s)"
+     ],
+     "request_seconds": 4.488
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "key_people"
+     ],
+     "q": "CEO",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "ceo",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "key_people"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 4567,
+     "carrying": 4566,
+     "carrier_share_pct": 99.98,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 39,
+       "share": 0.85
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 2,
+       "share": 0.04
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 331,
+       "share": 7.25
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 130,
+       "share": 2.85
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 991,
+       "share": 21.7
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 389,
+       "share": 8.52
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 2617,
+       "share": 57.31
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 67,
+       "share": 1.47
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 372,
+       "share": 8.15
+      },
+      {
+       "group": "neutral",
+       "count": 130,
+       "share": 2.85
+      },
+      {
+       "group": "positive",
+       "count": 4064,
+       "share": 89.01
+      }
+     ],
+     "negative_to_positive_ratio": 0.092,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.12,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 1094,
+       "negative": 66,
+       "neutral": 32,
+       "positive": 996,
+       "negative_share": 6.03,
+       "positive_share": 91.04,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 4,
+        "fair_neg": 1,
+        "slight_neg": 61,
+        "none": 32,
+        "slight_pos": 231,
+        "fair_pos": 116,
+        "very_pos": 638,
+        "extreme_pos": 11
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 1184,
+       "negative": 116,
+       "neutral": 22,
+       "positive": 1046,
+       "negative_share": 9.8,
+       "positive_share": 88.34,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 16,
+        "fair_neg": 0,
+        "slight_neg": 100,
+        "none": 22,
+        "slight_pos": 264,
+        "fair_pos": 74,
+        "very_pos": 682,
+        "extreme_pos": 26
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 1066,
+       "negative": 104,
+       "neutral": 35,
+       "positive": 927,
+       "negative_share": 9.76,
+       "positive_share": 86.96,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 13,
+        "fair_neg": 0,
+        "slight_neg": 91,
+        "none": 35,
+        "slight_pos": 203,
+        "fair_pos": 81,
+        "very_pos": 628,
+        "extreme_pos": 15
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 1222,
+       "negative": 86,
+       "neutral": 41,
+       "positive": 1095,
+       "negative_share": 7.04,
+       "positive_share": 89.61,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 6,
+        "fair_neg": 1,
+        "slight_neg": 79,
+        "none": 41,
+        "slight_pos": 293,
+        "fair_pos": 118,
+        "very_pos": 669,
+        "extreme_pos": 15
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.456,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.458
+    }
+   }
+  }
+ ]
+}

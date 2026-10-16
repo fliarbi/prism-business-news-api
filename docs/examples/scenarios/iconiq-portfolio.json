@@ -1,0 +1,3131 @@
+{
+ "slug": "iconiq-portfolio",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:29Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "ICONIQ",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "iconiq"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 106,
+      "deals_with_amount": 98,
+      "deals_without_amount": 8,
+      "deals_amount_excluded": 6,
+      "sum_amount_usd": 71239448000.0,
+      "median_amount_usd": 120000000.0,
+      "largest_amount_usd": 20000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 256248000.0,
+       "median_amount_usd": 80000000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 753300000.0,
+       "median_amount_usd": 150000000.0,
+       "largest_amount_usd": 202300000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5900000000.0,
+       "median_amount_usd": 425000000.0,
+       "largest_amount_usd": 5000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 923000000.0,
+       "median_amount_usd": 85000000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 13,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 13170000000.0,
+       "median_amount_usd": 100000000.0,
+       "largest_amount_usd": 13000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 12,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3535000000.0,
+       "median_amount_usd": 352500000.0,
+       "largest_amount_usd": 900000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 75000000.0,
+       "median_amount_usd": 37500000.0,
+       "largest_amount_usd": 40000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 12,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 20500000000.0,
+       "median_amount_usd": 100000000.0,
+       "largest_amount_usd": 20000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 14,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 5,
+       "sum_amount_usd": 44559000000.0,
+       "median_amount_usd": 250000000.0,
+       "largest_amount_usd": 20000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 10,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 2019000000.0,
+       "median_amount_usd": 350000000.0,
+       "largest_amount_usd": 550000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 10,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 648900000.0,
+       "median_amount_usd": 120000000.0,
+       "largest_amount_usd": 170000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.056,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.059
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "ICONIQ",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "iconiq"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "5098c7e5fe16a3c8",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Late-stage mega-round",
+       "amount_usd": 20000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000000.0,
+       "currency": "USD",
+       "amount": 20000000000.0,
+       "valuation": 350000000000.0,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Compute-intensive R&D to build advanced AI models",
+       "source_sentence": "The company is reportedly raising $20 billion in new capital at a staggering $350 billion valuation.",
+       "published_at": "2026-02-09T21:47:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb40e2728db874955197e7"
+       ],
+       "article_id": "69bb40e2728db874955197e7"
+      },
+      {
+       "id": "a41d7dc532cddae9",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": null,
+       "amount_usd": 20000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000000.0,
+       "currency": "USD",
+       "amount": 20000000000.0,
+       "valuation": 350000000000.0,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "g squared",
+         "domain": "gsquared.com",
+         "amount": null
+        },
+        {
+         "name": "factorial funds",
+         "domain": "factorialfunds.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anthropic, one of the fastest‑growing AI start‑ups, is preparing to raise around $20 billion from venture capital firms and other major investors, the Financial Times reported.",
+       "published_at": "2026-01-28T09:02:49",
+       "coverage_count": 8,
+       "article_ids": [
+        "69866fa3514cbd23b5c34ef3",
+        "69bae228ef75d9246559a743",
+        "69bb2f3988dbabbbb7c89205",
+        "69bb702988a452392c44415b",
+        "69bc69bcdded76ae100f1ba0",
+        "69bc8b0b6c5e9c4eedf2beee",
+        "69e2988bbd7b10565a365fba",
+        "69e997e9bdd09a23d08f0886"
+       ],
+       "article_id": "69bb702988a452392c44415b"
+      },
+      {
+       "id": "54dff64290263b45",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": null,
+       "amount_usd": 18200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000000.0,
+       "currency": "USD",
+       "amount": 18200000000.0,
+       "valuation": 350000000000.0,
+       "investors": [
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": 200000000.0
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue-management.com",
+         "amount": 1000000000.0
+        },
+        {
+         "name": "Singapore’s GIC",
+         "domain": null,
+         "amount": 1000000000.0
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": 1000000000.0
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The asset manager is planning to invest some $200m in Anthropic’s current round, which values the start-up at $350bn, the news service reported, citing unnamed people.",
+       "published_at": "2026-02-11T09:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bafe95eec96a73430070d1"
+       ],
+       "article_id": "69bafe95eec96a73430070d1"
+      },
+      {
+       "id": "1f555b39a17ca936",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series-F",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "US",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The US AI startup Anthropic, known for its chatbot Claude, has collected 13 billion US dollars in a new round of financing.",
+       "published_at": "2025-09-10T13:18:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d0db2b800697f0e041b2ae",
+        "6980804eb45e43f180866039"
+       ],
+       "article_id": "68d0db2b800697f0e041b2ae"
+      },
+      {
+       "id": "bcc8594b2de5f150",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series B",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "amazon",
+         "domain": "amazon.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anthropic raised $13 billion in a round led by Iconiq Capital.",
+       "published_at": "2025-09-09T01:25:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0e515300ed74c762b16f6"
+       ],
+       "article_id": "68d0e515300ed74c762b16f6"
+      },
+      {
+       "id": "eb38a74914a03819",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "F-series",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "D1",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It finally attracted $13 billion.",
+       "published_at": "2025-09-03T09:48:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd661a412454508620f45b"
+       ],
+       "article_id": "69bd661a412454508620f45b"
+      },
+      {
+       "id": "f4cf4a7186d577dd",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "F series",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "development and security of future AI systems",
+       "source_sentence": "Dario and Daniela Amodei's start-up has just completed a $13 billion F series led by Iconiq for a $183 billion post-financing valuation. In addition to Iconiq, this round table was co-led by Fidelity Management & Research Company and Lightspeed Venture Partners.",
+       "published_at": "2025-09-03T09:11:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6986b4b154148f65ea335f33",
+        "6988d16694d3f481f3da0f20"
+       ],
+       "article_id": "6986b4b154148f65ea335f33"
+      },
+      {
+       "id": "1db5ad22868e47f7",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI safety research, scaling to meet demand from large enterprises, and international expansion",
+       "source_sentence": "The funding round was led by Iconiq, Fidelity Management & Research, and Lightspeed Venture Partners. Heavyweights like Altimeter, General Catalyst, and Coatue also threw money in.",
+       "published_at": "2025-09-03T01:01:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5a83d9f14b99474c75224"
+       ],
+       "article_id": "68c5a83d9f14b99474c75224"
+      },
+      {
+       "id": "6ba817d3cca57dc9",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series D",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI safety research, scaling to meet enterprise demand, and international expansion",
+       "source_sentence": "The funding round was led by Iconiq, Fidelity Management & Research, and Lightspeed Venture Partners. Heavyweights like Altimeter, General Catalyst, and Coatue also threw money in.",
+       "published_at": "2025-09-03T00:49:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb42f788a452392c43a4be"
+       ],
+       "article_id": "69bb42f788a452392c43a4be"
+      },
+      {
+       "id": "c973eb9dd92314c3",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series F",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "to scale its AI infrastructure for growing enterprise demand, invest in AI safety research, and expand internationally",
+       "source_sentence": "Anthropic, the AI research and development company behind the widely adopted Claude AI platform, has secured $13 billion in Series F funding.",
+       "published_at": "2025-09-02T22:30:34",
+       "coverage_count": 3,
+       "article_ids": [
+        "68c1665c6a78bf0c565594c9",
+        "68c4376451a522a90826d2ce",
+        "698a39cc1953fdcb20e0e283"
+       ],
+       "article_id": "68c4376451a522a90826d2ce"
+      },
+      {
+       "id": "792db899137442b1",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series C (or unspecified)",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Iconiq Capital, Lightspeed, and Fidelity led the round, with Qatar Investment Authority participating after CEO reversed stance on Middle Eastern funding. The four-year-old San Francisco-based AI startup raised $13 billion in one of the largest venture rounds ever (TechCrunch). Singapore’s GIC jumped in. So did Qatar Investment Authority.",
+       "published_at": "2025-09-02T21:12:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84c2b7bb1410d4c664fde"
+       ],
+       "article_id": "69e84c2b7bb1410d4c664fde"
+      },
+      {
+       "id": "ef24ca482edec3ad",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series ?",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management and Research Co.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Singapore GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anthropic has closed a deal to raise $13 billion from investors in a new funding round that nearly triples its valuation to $183 billion, including dollars raised – a larger-than-expected haul that makes the artificial intelligence company one of the most valuable startups in the world.",
+       "published_at": "2025-09-02T17:36:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a575e3cfcce8916b1195"
+       ],
+       "article_id": "69c3a575e3cfcce8916b1195"
+      },
+      {
+       "id": "13bc7b179d4ae1eb",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "Series K",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 134000000000.0,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": 134000000000.0,
+       "investors": [
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "Singapore Temasek",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Macquarie Capital entities",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Singapore GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "wcm investment management",
+         "domain": "wcminvest.com",
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers’ Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "Sands Capital & Wellington Management",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Data & AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "United States data & artificial intelligence (AI) company Databrick has raised $5 billion funding at $134 billion valuation, and with additional $2 billion debt funding.",
+       "published_at": "2026-02-10T15:16:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbb81351c35210b7b8632d"
+       ],
+       "article_id": "69bbb81351c35210b7b8632d"
+      },
+      {
+       "id": "3df67027922a3dd6",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": null,
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 170000000000.0,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": 170000000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": 1000000000.0
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "Singapore’s GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "amazon",
+         "domain": "amazon.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI talent, infrastructure, and advanced model training",
+       "source_sentence": "Artificial intelligence startup Anthropic is reportedly in advanced talks to raise up to $5 billion in fresh funding, a move that would catapult its valuation to a staggering $170 billion, according to sources familiar with the matter.",
+       "published_at": "2025-07-30T10:09:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "6997f9e3d24b4781ec06df51"
+       ],
+       "article_id": "6997f9e3d24b4781ec06df51"
+      },
+      {
+       "id": "5911647203b41936",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": null,
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 170000000000.0,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": 170000000000.0,
+       "investors": [
+        {
+         "name": "Iconiq Capital Investment Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "expansion, infrastructure, talent acquisition, technology development",
+       "source_sentence": "The Iconiq Capital Investment Fund is close to completing a $5 billion round on Claude's owner.",
+       "published_at": "2025-07-29T23:01:07",
+       "coverage_count": 33,
+       "article_ids": [
+        "68a1765d3ff75e010c2b4052",
+        "68ab3618bfdb4fb66394c9e3",
+        "68b433bd3ddf2630a8b7fc17",
+        "68b439aa3ddf2630a8cefcfc",
+        "68d0e9c4a66e20611a2b66e3",
+        "6988b5c994d3f481f3d7fb37",
+        "698903eb94d3f481f3ddc416",
+        "698e07219ca02490ec062942",
+        "69c8933e0f6359d1a8237835",
+        "69e87fcf9baafc73568eed73",
+        "69e87ffc7bb1410d4c869d11",
+        "69e8800a7bb1410d4c86a5a0",
+        "69e880235cfa3e5ba5035c2c",
+        "69e8809c5cfa3e5ba503a968",
+        "69e8815d5cfa3e5ba5042256",
+        "69e883439baafc7356912c09",
+        "69e884257bb1410d4c89486d",
+        "69e884ba9baafc73569217ec",
+        "69e884c15cfa3e5ba50650c4",
+        "69e884cb9baafc73569222f4",
+        "69e8e3289baafc7356de0fbf",
+        "69e9938e75f157062ca96567",
+        "69e9938e75f157062ca96567",
+        "69e99434d47fc02832136148",
+        "69e99468d47fc02832138be9",
+        "69e995b5bdd09a23d08d45b1",
+        "69e995df75f157062cab5b4d",
+        "69e995e4d47fc0283214c4d0",
+        "69e997e9bdd09a23d08f0886",
+        "69efaad2727212302c5f14c2",
+        "69f0eb7bd32561089420fc61",
+        "69f22958c6105443aa5cfde4",
+        "69f8ab3343843dd771d27f0f"
+       ],
+       "article_id": "698e07219ca02490ec062942"
+      },
+      {
+       "id": "e25b369c5e42f9c9",
+       "company_name": "ŌURA",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Whale Rock",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides",
+         "domain": "atreides.io",
+         "amount": null
+        }
+       ],
+       "sector": "Health Technology / Wearables",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Accelerate AI and product innovation, expand global distribution, and invest in development of new health features",
+       "source_sentence": "has announced it has raised over $900M in funding led by Fidelity Management & Research Company with significant participation from new investor ICONIQ and contributions from Whale Rock and Atreides.",
+       "published_at": "2025-10-15T12:25:25",
+       "coverage_count": 4,
+       "article_ids": [
+        "6931b93bba41cc79d4f21a08",
+        "6996f79e0d0db262fa5876dd",
+        "69970b9d219d71cf48d1731b",
+        "69bbb023529c413173b6dd60"
+       ],
+       "article_id": "6996f79e0d0db262fa5876dd"
+      },
+      {
+       "id": "2ef71d7657905aa0",
+       "company_name": "oura",
+       "domain": "ouraring.com",
+       "round_type": null,
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Whale Rock",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides",
+         "domain": "atreides.io",
+         "amount": null
+        }
+       ],
+       "sector": "health tech",
+       "country": "Finland",
+       "city": "San Francisco",
+       "use_of_funds": "AI and production innovation, introducing new health features, and improving its global distribution",
+       "source_sentence": "Finnish health tech company Oura has raised $900 million in fresh funding led by Fidelity Management & Research Company, with participation from new investor ICONIQ and contributions from Whale Rock and Atreides.",
+       "published_at": "2025-10-14T11:11:00",
+       "coverage_count": 9,
+       "article_ids": [
+        "68fe2d9d9f5ecb55fa27f851",
+        "68fe2f899f5ecb55fa282d76",
+        "68fe31e1f2b427082328704b",
+        "68fe32d69f5ecb55fa288dcc",
+        "698d71809ca02490ecfb32ad",
+        "69975f6b219d71cf48d30dcc",
+        "69bb5717529c413173b5f59c",
+        "69c9b83db7c587db32fe19e4",
+        "69f881bd43843dd771cf45b3"
+       ],
+       "article_id": "68fe2f899f5ecb55fa282d76"
+      },
+      {
+       "id": "7434dee9dddccfea",
+       "company_name": "oura",
+       "domain": "ouraring.com",
+       "round_type": "Series E",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Whale Rock",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides",
+         "domain": "atreides.io",
+         "amount": null
+        }
+       ],
+       "sector": "wearables health",
+       "country": "Finland",
+       "city": null,
+       "use_of_funds": "accelerate innovation, expand global reach",
+       "source_sentence": "Oura said Tuesday that it raised over $900 million in a new Series E funding round, bringing the company's valuation to $11 billion.",
+       "published_at": "2025-10-14T11:00:01",
+       "coverage_count": 4,
+       "article_ids": [
+        "68f71819017a8a94832ca017",
+        "694af8b813240442ec75cae3",
+        "6991cd9140184cd708656657",
+        "69924db240184cd7086ef0f0"
+       ],
+       "article_id": "68f71819017a8a94832ca017"
+      },
+      {
+       "id": "311287844d4dd915",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "equity",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "canada pension plan investment board",
+         "domain": "cppib.com",
+         "amount": null
+        },
+        {
+         "name": "power corporation of canada",
+         "domain": "powercorporation.com",
+         "amount": null
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "boost firm’s growth",
+       "source_sentence": "Wealthsimple has unveiled an equity round of up to $750 million at a post-money valuation of $10 billion to accelerate the company’s product roadmap.",
+       "published_at": "2025-10-27T13:00:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "698cdefb9ca02490ecf05b61",
+        "69c947f60fe98f3340bd0e2e"
+       ],
+       "article_id": "698cdefb9ca02490ecf05b61"
+      },
+      {
+       "id": "00dc8119db756771",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "Series E Preferred Shares",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Power Corporation",
+         "domain": null,
+         "amount": 100000000.0
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": 100000000.0
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "dragoneer",
+         "domain": "dragoneergrowth.com",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Financial Innovation",
+       "country": "Canada",
+       "city": "Montreal",
+       "use_of_funds": null,
+       "source_sentence": "Power Corporation of Canada \"Power\" announced that it has agreed to subscribe, through its subsidiary Power Financial Corporation, for Class E Preferred Shares in the capital of Wealthsimple Financial Corp. for an aggregate purchase price of $100 million, as part of a financing round of up to $750 million by Wealthsimple.",
+       "published_at": "2025-10-27T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bade37bb3472e5f4c3dc81"
+       ],
+       "article_id": "69bade37bb3472e5f4c3dc81"
+      },
+      {
+       "id": "6c80ae1326097337",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "equity",
+       "amount_usd": 555000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 750000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "power corporation of canada",
+         "domain": "powercorporation.com",
+         "amount": null
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "accelerate product roadmap and support expansion across its investing, spending and credit offerings",
+       "source_sentence": "Wealthsimple, one of Canada’s leading FinTech companies, has announced a significant equity round of up to CAD $750m, propelling its post-money valuation to CAD $10bn.",
+       "published_at": "2025-10-28T16:12:22",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a3dc3757765ee82618e5",
+        "69e8561e9baafc73567493b1"
+       ],
+       "article_id": "6988a3dc3757765ee82618e5"
+      },
+      {
+       "id": "0fdfd35aefce2976",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "Series E",
+       "amount_usd": 555000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7400000000.0,
+       "currency": "CAD",
+       "amount": 750000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "power corporation of canada",
+         "domain": "powercorporation.com",
+         "amount": null
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "Wealthsimple plans to use this funding to accelerate its product roadmap across investing, spending, and credit, and pursue strategic opportunities to expand its platform.",
+       "source_sentence": "Toronto-based FinTech firm Wealthsimple has announced that it has signed a Series E round of up to $750 million CAD at a post-money valuation of $10 billion.",
+       "published_at": "2025-10-27T22:05:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbcfaa28caee93d25010be"
+       ],
+       "article_id": "69bbcfaa28caee93d25010be"
+      },
+      {
+       "id": "49f779fbd1a3ab61",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5500000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5500000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Legora Raises $550M in Series D Funding to Expand AI in Legal Operations",
+       "published_at": "2026-03-10T22:32:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cc41766e63f1d240550f7c",
+        "69f8854b43843dd771d132fb"
+       ],
+       "article_id": "69cc41766e63f1d240550f7c"
+      },
+      {
+       "id": "e3c5dcecdaa89d4f",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish start-up Legora has received 550 million dollars in a new round of financing and is now valued at 5.55 billion dollars.",
+       "published_at": "2026-03-10T14:50:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a7c57f3a572cf4abb9ee"
+       ],
+       "article_id": "69e2a7c57f3a572cf4abb9ee"
+      },
+      {
+       "id": "08695f9c2a01bfe5",
+       "company_name": "Legora",
+       "domain": "legora.com",
+       "round_type": null,
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish start-up Legora has received 550 million dollars in a new round of financing and is now valued at 5.55 billion dollars.",
+       "published_at": "2026-03-10T14:50:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03639cca027fb5990b7749"
+       ],
+       "article_id": "6a03639cca027fb5990b7749"
+      },
+      {
+       "id": "6ce6a2310c2e5ecc",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "FirstMark Capital",
+         "domain": "firstmarkcap.com",
+         "amount": null
+        },
+        {
+         "name": "sands capital",
+         "domain": "sandscapital.com",
+         "amount": null
+        },
+        {
+         "name": "starwood capital",
+         "domain": "starwoodcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal Tech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "fuel rapid U.S. expansion",
+       "source_sentence": "Today, we’re thrilled to announce that Menlo Ventures has joined Legora’s $550 million Series D, alongside Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Redpoint Ventures, Y Combinator, Alkeon Capital, Bain Capital, Firstmark Capital, Sands Capital, and Starwood Capital.",
+       "published_at": "2026-03-10T12:00:00",
+       "coverage_count": 20,
+       "article_ids": [
+        "69c3a285c8a71dc7ae87a085",
+        "69c3a479836293942ef6807a",
+        "69c3a5563653d7fe6e7e3f03",
+        "69c3a6f16d029f77a1d3fa36",
+        "69c3a897f7c4e6f108e480ec",
+        "69cbd09bbf09457014d4cbc0",
+        "69cbd09f7aa9ae690c974fff",
+        "69cbd1e02e41fb6223042ccd",
+        "69cc1ddb1e1adbe011d85dd1",
+        "69cc3f8eda8c239a52930b7f",
+        "69e2836c90d9a716b4b7c27c",
+        "69e6468e2461615d5f46c48a",
+        "69e882157bb1410d4c87ec9e",
+        "69e8e3179baafc7356de01b8",
+        "69f87fff43843dd771ce435f",
+        "69f88276bbf1d31455976b0a",
+        "69f8851bbbf1d3145598e7c3",
+        "69f8854b43843dd771d132fb",
+        "69f8a84cbbf1d314559a3e99",
+        "69f8aae6bbf1d314559a5d72"
+       ],
+       "article_id": "69e2836c90d9a716b4b7c27c"
+      },
+      {
+       "id": "dc09c90840e32f1b",
+       "company_name": "quince",
+       "domain": "quince.com",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10100000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 10100000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "marcy venture partners",
+         "domain": "marcyvp.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "notable capital",
+         "domain": "notablecapital.com",
+         "amount": null
+        },
+        {
+         "name": "basis set ventures",
+         "domain": "basisset.com",
+         "amount": null
+        },
+        {
+         "name": "wndrco",
+         "domain": "wndrco.com",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce Retail",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Support continued expansion of product assortment, development of supply chain and technology platform, and international growth",
+       "source_sentence": "Online retailer Quince has raised $500 million in funding, valuing the company at $10.1 billion.",
+       "published_at": "2026-03-16T17:38:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c41fb819be37c198784488"
+       ],
+       "article_id": "69c41fb819be37c198784488"
+      },
+      {
+       "id": "5afb15c51a5f9e85",
+       "company_name": "quince",
+       "domain": "quince.com",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "basis set ventures",
+         "domain": "basisset.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "MarcyPen Capital Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "notable capital",
+         "domain": "notablecapital.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "wndrco",
+         "domain": "wndrco.com",
+         "amount": null
+        }
+       ],
+       "sector": "E‑commerce",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Quince – $500.0M",
+       "published_at": "2026-03-16T08:27:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4844e0667c07f278ba3"
+       ],
+       "article_id": "69c3a4844e0667c07f278ba3"
+      },
+      {
+       "id": "1b25759f5874d5ac",
+       "company_name": "elevenlabs",
+       "domain": "elevenlabs.io",
+       "round_type": "Series D",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Voice AI & Multimodal AI",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "expand beyond voice, developing multimodal AI agents",
+       "source_sentence": "ElevenLabs ... raised $500 million in a Series D round led by Sequoia Capital at an $11 billion valuation.",
+       "published_at": "2026-02-04T23:35:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "6986a952ca3bd326c77cffbf",
+        "69bd8f9c0ad23ae1115329db"
+       ],
+       "article_id": "6986a952ca3bd326c77cffbf"
+      },
+      {
+       "id": "5c021a219bf70a02",
+       "company_name": "elevenlabs",
+       "domain": "elevenlabs.io",
+       "round_type": "D-series",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz (a16z)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "artificial intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "global expansion and the advancement of artificial intelligence solutions conversational and voice agents",
+       "source_sentence": "ElevenLabs received a $500 million D-series round.",
+       "published_at": "2026-02-04T20:11:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bae73968bf20e367f69162"
+       ],
+       "article_id": "69bae73968bf20e367f69162"
+      },
+      {
+       "id": "7290a4e30bac2bb9",
+       "company_name": "elevenlabs",
+       "domain": "elevenlabs.io",
+       "round_type": "D series",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "a16z",
+         "domain": "a16z.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial intelligence-specialized audio company",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "the artificial intelligence-specialized audio company ElevenLabs has completed a financing round of the D series of over $500 million and is now valued at $11 billion.",
+       "published_at": "2026-02-04T14:52:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "6985ec5b069c05cbe278e222"
+       ],
+       "article_id": "6985ec5b069c05cbe278e222"
+      },
+      {
+       "id": "ced3c467cbc6b5c9",
+       "company_name": "ramp",
+       "domain": "ramp.network",
+       "round_type": "Series E-2",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 22500000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Expand AI-powered finance stack",
+       "source_sentence": "Ramp, a New York-based expense management fintech startup, raised a hefty $500 million in a Series E-2 round to accelerate its AI-driven corporate finance tools.",
+       "published_at": "2025-08-01T23:55:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d974062c909880704baad6",
+        "69baf4b1b7032a7d5cdff0b2"
+       ],
+       "article_id": "68d974062c909880704baad6"
+      },
+      {
+       "id": "4f3692fd86eafa65",
+       "company_name": "ramp",
+       "domain": "ramp.network",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital Partners",
+         "domain": "d1capital.com",
+         "amount": null
+        }
+       ],
+       "sector": "expense management",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Eric Glyman, co-founder and CEO of expense management startup Ramp, announced on Wednesday a fresh $500 million raise at a whopping $22.5 billion post-money valuation.",
+       "published_at": "2025-07-30T16:19:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "68a1765e3ff75e010c2b95fb",
+        "68d94ff0bf1dd95b8610f356"
+       ],
+       "article_id": "68a1765e3ff75e010c2b95fb"
+      },
+      {
+       "id": "8c2dc1788b902b85",
+       "company_name": "ramp",
+       "domain": "ramp.network",
+       "round_type": "late-stage",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 22500000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 22500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "further development of its own AI agent",
+       "source_sentence": "According to Reuters, the US Fintech Ramp announced on Wednesday that it had accumulated a massive $500 million in a late-stage financing round with a valuation of $22.5 billion.",
+       "published_at": "2025-07-30T14:14:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "6997e38dd24b4781ec067a51"
+       ],
+       "article_id": "6997e38dd24b4781ec067a51"
+      },
+      {
+       "id": "fb396960e12f8a22",
+       "company_name": "ramp",
+       "domain": "ramp.network",
+       "round_type": "Series E-2",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 22500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "The funds will help Ramp hire engineers, product experts and marketing and sales staff who focus on building and selling Ramp’s AI agents.",
+       "source_sentence": "The company… achieved that valuation after raising $500 million in its latest funding round, The Wall Street Journal (WSJ) reported Wednesday (July 30).",
+       "published_at": "2025-07-30T13:40:22",
+       "coverage_count": 6,
+       "article_ids": [
+        "698671fbfdcc616c15df1afd",
+        "6988a3f88fb0ea95e977032a",
+        "698914db94d3f481f3def2a7",
+        "69894f2f94d3f481f3e35253",
+        "698d2a259ca02490ecf5dca9",
+        "69baf2fd28caee93d24d907a"
+       ],
+       "article_id": "698d2a259ca02490ecf5dca9"
+      },
+      {
+       "id": "c0285b5c85b9eb10",
+       "company_name": "ramp",
+       "domain": "ramp.network",
+       "round_type": null,
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        }
+       ],
+       "sector": "expense management",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "the six-year-old expense management startup is reportedly in talks to raise another $350 million, according to The Information, which cited three sources familiar with the deal.",
+       "published_at": "2025-07-28T09:57:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "68a1764d3ff75e010c279a2a"
+       ],
+       "article_id": "68a1764d3ff75e010c279a2a"
+      },
+      {
+       "id": "d3cfa24debb1d076",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "Series C",
+       "amount_usd": 332500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 332500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Blockchain, Cryptocurrency, Decentralized Finance (DeFi), FinTech, Web3",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-02-02T11:27:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "69888801868e86f9ec6c8019",
+        "6988a49469527f36baae5af5"
+       ],
+       "article_id": "69888801868e86f9ec6c8019"
+      },
+      {
+       "id": "94ca07a838639720",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "Series C",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1950000000.0,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 1950000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "FirstMark Capital",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "The new capital will help Rain expand its global payments network, add more enterprise customers, and develop its card and app services for tokenized money.",
+       "source_sentence": "Rain, a crypto-payments startup, closed a $250 million Series C funding led by Iconiq Capital.",
+       "published_at": "2026-02-02T21:41:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988eafd94d3f481f3dbf675"
+       ],
+       "article_id": "6988eafd94d3f481f3dbf675"
+      },
+      {
+       "id": "b62fa764a06b4017",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": null,
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "stablecoin infrastructure platform",
+       "country": null,
+       "city": "New York",
+       "use_of_funds": null,
+       "source_sentence": "Rain – $250.0M",
+       "published_at": "2026-01-12T08:27:33",
+       "coverage_count": 2,
+       "article_ids": [
+        "69888822b09f47b0d90affbd",
+        "6989dfe794d3f481f3edf8c3"
+       ],
+       "article_id": "69888822b09f47b0d90affbd"
+      },
+      {
+       "id": "f18593c17691e410",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "C",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "increase its global, compliant presence, deepen platform capacity and invest in new products that redefine the way payments work worldwide",
+       "source_sentence": "Rain, the business-ready infrastructure for stablecoin-based payments, today announced a financing round of the C series of 250 million US dollars under the direction of ICONIQ and with",
+       "published_at": "2026-01-09T20:14:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8cf1c5cfa3e5ba540299c"
+       ],
+       "article_id": "69e8cf1c5cfa3e5ba540299c"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 106,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDEtMDkgMjA6MTQ6MDAiLCJrIjoiMTc0MDM0Nzg3OTQxNzAzOTM2MTYiLCJhIjoyNTAwMDAwMDAuMH0",
+     "totals": {
+      "deals": 106,
+      "deals_with_amount": 98,
+      "deals_without_amount": 8,
+      "deals_amount_excluded": 6,
+      "sum_amount_usd": 71239448000.0,
+      "median_amount_usd": 120000000.0,
+      "largest_amount_usd": 20000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.274,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.277
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "ICONIQ",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "iconiq"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "94c4344d1dec42f8",
+       "company_name": "hightouch",
+       "domain": "hightouch.com",
+       "round_type": "Series D",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2750000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 2750000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "amplify partners",
+         "domain": "amplifypartners.com",
+         "amount": null
+        },
+        {
+         "name": "Y-Combinator",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "TD7",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Marketing technology",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "continued investment in Hightouch’s platform, expanding its capabilities in AI-driven campaign orchestration, decisioning, and cross-channel execution, with the goal of becoming the end-to-end system for agentic marketing",
+       "source_sentence": "Hightouch , the leader in data and AI for marketing, today announced a $150 million Series D financing led by Growth Equity at Goldman Sachs Alternatives and Bain Capital Ventures, valuing the company at $2.75 billion.",
+       "published_at": "2026-04-29T11:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "69f23011c6105443aa5ec84e",
+        "69f88484bbf1d31455988e30",
+        "69f884a08937ef12fc0962c1",
+        "69f8abce43843dd771d28975",
+        "69f9d6f97b2d589e844c8b8d",
+        "69f9d7b77b2d589e844d16ef"
+       ],
+       "article_id": "69f9d7b77b2d589e844d16ef"
+      },
+      {
+       "id": "55c6b0e191daf673",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": null,
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "US",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "San Francisco-based Omni provides a data collaboration and analytics platform that allows teams to explore, model, and share business data in one environment.",
+       "published_at": "2026-04-27T08:27:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbed399b489398e0b4a3"
+       ],
+       "article_id": "69f1cbed399b489398e0b4a3"
+      },
+      {
+       "id": "2dbce94d72a5d53d",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "US",
+       "city": "Boston",
+       "use_of_funds": null,
+       "source_sentence": "Boston-based AcuityMD a medtech intelligence platform that leverages AI and precise data to support commercial decision-making.",
+       "published_at": "2026-04-27T08:27:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbed399b489398e0b4a3"
+       ],
+       "article_id": "69f1cbed399b489398e0b4a3"
+      },
+      {
+       "id": "ca5e42c5f6a1d990",
+       "company_name": "Omni Analytics, Inc.",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Analytics / Business Intelligence",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "support continued platform development, enterprise expansion, and the scaling of adoption of its AI-powered analytics and data infrastructure.",
+       "source_sentence": "Omni, a San Francisco, CA–based AI analytics platform, has raised $120 million in Series C funding at a $1.5 billion valuation.",
+       "published_at": "2026-04-24T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d7c97b2d589e844d2456"
+       ],
+       "article_id": "69f9d7c97b2d589e844d2456"
+      },
+      {
+       "id": "9d4ff710af853733",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Omni raises $120M Series C for enterprise AI analytics",
+       "published_at": "2026-04-23T21:59:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efaa55a84b609af2b2a2d7"
+       ],
+       "article_id": "69efaa55a84b609af2b2a2d7"
+      },
+      {
+       "id": "f2e5ff75187762cc",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI analytics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "employee tender offer",
+       "source_sentence": "Omni, the AI Analytics platform, today announced its Series C funding round raising $120 million at a $1.5 billion valuation.",
+       "published_at": "2026-04-23T00:00:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "69ea1f4f8266d9339994a613",
+        "69ea210b73206aa299ec2141",
+        "69ea231a73206aa299ec4a90",
+        "69ea383773206aa299ee1b02",
+        "69efaaeda84b609af2b317e6",
+        "69efabec727212302c5fe652",
+        "69efac33a84b609af2b42b31",
+        "69f0e33e45272de32e8bfe41"
+       ],
+       "article_id": "69efac33a84b609af2b42b31"
+      },
+      {
+       "id": "7688c53bef0e0d87",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI / MedTech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "The company will use the funding to enhance its AI capabilities, deepen its proprietary MedTech data ontology, and expand its platform into broader workflows beyond commercial use cases.",
+       "source_sentence": "Funding Details Company: AcuityMD, Inc. Raised: $80.0M Round: Series C Funding Date: April 2026 Lead Investor: StepStone Group Additional Investors: Benchmark, Redpoint Ventures, ICONIQ, Atreides Management Company Website: https://www.acuitymd.com/",
+       "published_at": "2026-04-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d6327b2d589e844c0858"
+       ],
+       "article_id": "69f9d6327b2d589e844c0858"
+      },
+      {
+       "id": "97ee9c42fb1820d5",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "USA",
+       "city": "Boston, MA",
+       "use_of_funds": "advanced artificial intelligence (AI) capabilities",
+       "source_sentence": "AcuityMD Raises $80M Series C Round Back to Home BOSTON, MA, AcuityMD, the AI platform for MedTech, today announced $80 million in new funding.",
+       "published_at": "2026-04-21T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e87eee9baafc73568e5709",
+        "69e997ddbdd09a23d08efe46",
+        "69e99a20d47fc02832181d10",
+        "69f2293b27117df83f93f6f6",
+        "69f8801143843dd771ce4e0d"
+       ],
+       "article_id": "69e997ddbdd09a23d08efe46"
+      },
+      {
+       "id": "dc8de1157c5d2024",
+       "company_name": "xona",
+       "domain": "xonasystems.com",
+       "round_type": "venture",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "samsung next",
+         "domain": "samsungnext.com",
+         "amount": null
+        },
+        {
+         "name": "ngp capital",
+         "domain": "ngpcap.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Mohari Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "woven capital",
+         "domain": "woven.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "The funding enables deployment of high-precision satellite infrastructure supporting autonomous systems, defense, and mobility applications.",
+       "source_sentence": "Xona raised $170 million in venture funding from Craft Ventures, Samsung NEXT, NGP Capital, ICONIQ Capital, Mohari Ventures, and Woven Capital.",
+       "published_at": "2026-04-01T03:48:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ccf251adb5f291e0c6a2d8"
+       ],
+       "article_id": "69ccf251adb5f291e0c6a2d8"
+      },
+      {
+       "id": "308caddd06479cf6",
+       "company_name": "Whirl AI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 8900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        }
+       ],
+       "sector": "enterprise AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "help enterprise IT teams modernize business processes and systems",
+       "source_sentence": "Whirl AI announced it has emerged from stealth with $8.9 million in seed funding to help enterprise IT teams modernize business processes and systems.",
+       "published_at": "2026-04-01T00:17:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ccebeda968873ef35b1893"
+       ],
+       "article_id": "69ccebeda968873ef35b1893"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 54,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDEgMDA6MTc6MTYiLCJrIjoiMzQ5ODM2MjE3NTM2NDc2Njk2NiJ9",
+     "totals": {
+      "deals": 54,
+      "deals_with_amount": 46,
+      "deals_without_amount": 8,
+      "deals_amount_excluded": 6,
+      "sum_amount_usd": 47306900000.0,
+      "median_amount_usd": 120000000.0,
+      "largest_amount_usd": 20000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.243,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.266
+    }
+   }
+  }
+ ]
+}

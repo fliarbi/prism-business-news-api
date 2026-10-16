@@ -1,0 +1,3661 @@
+{
+ "slug": "tiger-global-portfolio",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:26Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Tiger Global",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "tiger global"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 74,
+      "deals_with_amount": 66,
+      "deals_without_amount": 8,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 40275480000.0,
+      "median_amount_usd": 147000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 877000000.0,
+       "median_amount_usd": 135500000.0,
+       "largest_amount_usd": 370000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 340000000.0,
+       "median_amount_usd": 340000000.0,
+       "largest_amount_usd": 340000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 10,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 9781200000.0,
+       "median_amount_usd": 143000000.0,
+       "largest_amount_usd": 8300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 8,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1470780000.0,
+       "median_amount_usd": 143890000.0,
+       "largest_amount_usd": 1100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2595000000.0,
+       "median_amount_usd": 602500000.0,
+       "largest_amount_usd": 1375000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 490000000.0,
+       "median_amount_usd": 117500000.0,
+       "largest_amount_usd": 200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 1,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 75000000.0,
+       "median_amount_usd": 75000000.0,
+       "largest_amount_usd": 75000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 11,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1599000000.0,
+       "median_amount_usd": 120000000.0,
+       "largest_amount_usd": 600000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 9,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 17679000000.0,
+       "median_amount_usd": 114500000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 21614500000.0,
+       "median_amount_usd": 800000000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 1,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 29000000.0,
+       "median_amount_usd": 29000000.0,
+       "largest_amount_usd": 29000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.116,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.119
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Tiger Global",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "tiger global"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "c3d093818aa00b98",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Automotive, Autonomous Vehicles, Sensor, Transportation",
+       "country": null,
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": "Mountain View-based Waymo is a mobility technology company that improves transportation by developing self‑driving solutions for travelers and daily commuters.",
+       "published_at": "2026-03-27T09:27:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69cc4289cb088e024d2646bf"
+      },
+      {
+       "id": "bbc1e5be665f1112",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "investment round",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 126000000000.0,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": 126000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Abu Dhabi sovereign fund Mubadala",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "fidelity management and research company",
+         "domain": "fidelity.com",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "robotaxi, autonomous vehicles",
+       "country": null,
+       "city": null,
+       "use_of_funds": "buy more vehicles to expand fleet",
+       "source_sentence": "Waymo announced a $16 billion investment round aimed at bringing its robotaxi business to more US cities, as well as some overseas markets.",
+       "published_at": "2026-02-02T22:30:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "698649e5514cbd23b5c28d3b"
+       ],
+       "article_id": "698649e5514cbd23b5c28d3b"
+      },
+      {
+       "id": "edaf01d66fa3f26f",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": "Private Funding Round (Late-stage)",
+       "amount_usd": 8300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "to accelerate AI development and expand infrastructure",
+       "source_sentence": "OpenAI has raised a massive $8.3 billion in new funding at a staggering $300 billion valuation.",
+       "published_at": "2025-08-04T23:26:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "68a176753ff75e010c30bd60",
+        "690e2dbedb65e9a9d0245a59"
+       ],
+       "article_id": "690e2dbedb65e9a9d0245a59"
+      },
+      {
+       "id": "fe58f09e48d36314",
+       "company_name": "openai",
+       "domain": "openai.com",
+       "round_type": null,
+       "amount_usd": 8300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 300000000000.0,
+       "currency": "USD",
+       "amount": 8300000000.0,
+       "valuation": 300000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": 2800000000.0
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital Partners",
+         "domain": "d1capital.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "scale compute infrastructure",
+       "source_sentence": "OpenAI, maker of ChatGPT, has raised $8.3 billion in a new funding round that values the artificial intelligence company at $300 billion, according to a report by The New York Times.",
+       "published_at": "2025-08-01T00:00:00",
+       "coverage_count": 18,
+       "article_ids": [
+        "68a176603ff75e010c2c044c",
+        "68a1766b3ff75e010c2ea8d4",
+        "68a176703ff75e010c2fcaa4",
+        "68a176803ff75e010c33112b",
+        "68b433bd3ddf2630a8b7fc17",
+        "68b439aa3ddf2630a8cefcfc",
+        "69314bbd0c188c23bdf20fcc",
+        "6985f7beca3bd326c7796fb7",
+        "6988d6d494d3f481f3da7cc6",
+        "698f96e69ca02490ec23f5fe",
+        "69bb2b798b0987d8182aa51f",
+        "69bb61a828caee93d24f1598",
+        "69bd477dfd89557e8dc74dcf",
+        "69bd489606529d470d471356",
+        "69de338dc757db6352f88299",
+        "69e28526dc480588dc98640d",
+        "69e861cd7bb1410d4c733e68",
+        "69e99e1abdd09a23d093a2c4"
+       ],
+       "article_id": "69de338dc757db6352f88299"
+      },
+      {
+       "id": "40561b2069b732cb",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "Series H",
+       "amount_usd": 2800000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2800000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Infrastructure, Artificial Intelligence (AI), Computer, Hardware, RISC, Semiconductor, Software",
+       "country": "USA",
+       "city": "Sunnyvale",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "2fe92cab6a73f453",
+       "company_name": "crusoe",
+       "domain": "crusoe.ai",
+       "round_type": "Series E",
+       "amount_usd": 1375000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1375000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "137 ventures",
+         "domain": "137ventures.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "Activate Capital",
+         "domain": "activatecapital.ie",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "BAM Elevate",
+         "domain": "bamelevate.com",
+         "amount": null
+        },
+        {
+         "name": "dpr construction",
+         "domain": "dpr.com",
+         "amount": null
+        },
+        {
+         "name": "Ora Global",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "franklin templeton",
+         "domain": "franklintempletonindia.com",
+         "amount": null
+        },
+        {
+         "name": "galvanize",
+         "domain": "galvanizetx.com",
+         "amount": null
+        },
+        {
+         "name": "long journey ventures",
+         "domain": "longjourney.vc",
+         "amount": null
+        },
+        {
+         "name": "lowercarbon capital",
+         "domain": "lowercarboncapital.com",
+         "amount": null
+        },
+        {
+         "name": "M37 Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "mcj",
+         "domain": "mcj.jp",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "radical ventures",
+         "domain": "radical.vc",
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "Saquon Barkley",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "supermicro",
+         "domain": "supermicro.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "upper90",
+         "domain": "upper90.io",
+         "amount": null
+        },
+        {
+         "name": "winklevoss capital",
+         "domain": "winklevosscapital.com",
+         "amount": null
+        },
+        {
+         "name": "zigg capital",
+         "domain": "ziggcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "USA",
+       "city": "San Francisco, Denver",
+       "use_of_funds": "scale its vertically integrated AI infrastructure platform",
+       "source_sentence": "Crusoe, the AI factory company, today announced the initial closing of its anticipated $1.375 billion Series E round, bringing the company's expected valuation to over $10 billion.",
+       "published_at": "2025-10-24T14:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68fe290e46325a41ca293794",
+        "69bad739eec96a7343ffd68d"
+       ],
+       "article_id": "68fe290e46325a41ca293794"
+      },
+      {
+       "id": "cb600c0b47b7e927",
+       "company_name": "cerebras",
+       "domain": "cerebras.ai",
+       "round_type": null,
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8100000000.0,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": 8100000000.0,
+       "investors": [
+        {
+         "name": "Fidelity Management & Research Co",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "alphawave",
+         "domain": "awaveip.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI computing chip",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Cerebras, a Silicon Valley startup challenging Nvidia with its dinner-plate-sized AI computing chip, announced it has raised $1.1 billion in fresh funding.",
+       "published_at": "2025-10-01T03:09:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "69928e5ba035766b6b628072"
+       ],
+       "article_id": "69928e5ba035766b6b628072"
+      },
+      {
+       "id": "4f43a2eb94104503",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "Series G",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8100000000.0,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": 8100000000.0,
+       "investors": [
+        {
+         "name": "Fidelity Management and Research Co.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "Alpha Wave Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        }
+       ],
+       "sector": "AI chipmaking",
+       "country": "USA",
+       "city": "Silicon Valley",
+       "use_of_funds": "Expand its Inference Service, continue expanding manufacturing footprint and data center capacity",
+       "source_sentence": "Today @CerebrasSystems announced that we have closed a $1.1 Billion dollar Series G, at an $8.1 billion valuation. The round was led by @Fidelity and @Atreidesmgmt with significant participation from Tiger Global, Valor Equity Partners and @1789Capital as well as existing… — Andrew Feldman (@andrewdfeldman) September 30, 2025",
+       "published_at": "2025-09-30T19:44:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb42fca2269239ea25f1bc"
+       ],
+       "article_id": "69bb42fca2269239ea25f1bc"
+      },
+      {
+       "id": "d77b960cec525736",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "Series G",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8100000000.0,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": 8100000000.0,
+       "investors": [
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "alpha wave",
+         "domain": "alphawave.ne.jp",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI inference chip",
+       "country": "USA",
+       "city": "Sunnyvale",
+       "use_of_funds": "expand its technology portfolio in AI processor design, system design, and AI supercomputers; increase U.S. manufacturing and data centre capacity",
+       "source_sentence": "AI inference chip company Cerebras Systems has raised $1.1 billion in an oversubscribed Series G funding round, valuing the company at $8.1 billion post-money.",
+       "published_at": "2025-09-30T00:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "68f709bbe97e6da31e2b458c",
+        "68fe2191e01ff0caa6285e28",
+        "68fe301df2b4270823283b7e",
+        "698dd8329ca02490ec02b63e",
+        "69bb0226b54f2a520bb54b80",
+        "69e89a9d5cfa3e5ba5160dee"
+       ],
+       "article_id": "69e89a9d5cfa3e5ba5160dee"
+      },
+      {
+       "id": "43fd45086196edfb",
+       "company_name": "vast data",
+       "domain": "vastdata.com",
+       "round_type": "Series E / Late Stage",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": null,
+       "source_sentence": "VAST Data raises $1B in funding to unify AI data infrastructure at $30B valuation.",
+       "published_at": "2026-03-11T22:40:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd08e6ebaadb4d432a354"
+       ],
+       "article_id": "69cbd08e6ebaadb4d432a354"
+      },
+      {
+       "id": "35707e5b7493c311",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "Series H",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 23000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 23000000000.0,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        }
+       ],
+       "sector": "AI inference chip",
+       "country": "United States",
+       "city": "Sunnyvale",
+       "use_of_funds": "scaling operations and technology development",
+       "source_sentence": "Cerebras Systems, the AI inference chip company, has closed a $1-billion Series H financing at a post-money valuation of about $23 billion.",
+       "published_at": "2026-02-05T06:18:35",
+       "coverage_count": 5,
+       "article_ids": [
+        "6988880cc314f8bff07dda64",
+        "6988a3f0127162d16e0aba57",
+        "699757ec5fbe93703d61144b",
+        "69dfc99e3dd0a435439423be",
+        "69e9993dbdd09a23d0901132"
+       ],
+       "article_id": "69e9993dbdd09a23d0901132"
+      },
+      {
+       "id": "926755805d45d2fb",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "late-stage",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 23000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 23000000000.0,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "Donald Trump Jr.-backed 1789 Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI chip",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "AI chipmaker Cerebras Systems said on Wednesday it raised $1 billion in a late-stage funding round that valued it at $23 billion.",
+       "published_at": "2026-02-04T16:44:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a69ad754bf662cd7d582"
+       ],
+       "article_id": "69e2a69ad754bf662cd7d582"
+      },
+      {
+       "id": "e19b5c205fa340dd",
+       "company_name": "Commonwealth Fusion Systems",
+       "domain": "cfs.energy",
+       "round_type": "Funding Round (private)",
+       "amount_usd": 863000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 863000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "breakthrough energy ventures",
+         "domain": "breakthroughenergy.org",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "lowercarbon capital",
+         "domain": "lowercarboncapital.com",
+         "amount": null
+        },
+        {
+         "name": "emerson collective",
+         "domain": "emersoncollective.com",
+         "amount": null
+        },
+        {
+         "name": "eni",
+         "domain": "eni.com",
+         "amount": null
+        },
+        {
+         "name": "future ventures",
+         "domain": "future.ventures",
+         "amount": null
+        },
+        {
+         "name": "mitsui",
+         "domain": "mitsui.com",
+         "amount": null
+        },
+        {
+         "name": "mitsubishi",
+         "domain": "mitsubishi.com",
+         "amount": null
+        },
+        {
+         "name": "Morgan Stanley Counterpoint",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Nuclear Fusion",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "to advance its SPARC reactor toward scientific breakeven and to lay the groundwork for its future ARC commercial power plant.",
+       "source_sentence": "Commonwealth Fusion Systems (CFS), a Massachusetts-based nuclear fusion startup, closed an $863 million funding round.",
+       "published_at": "2025-08-28T22:56:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d99fbb983a16828b7df942"
+       ],
+       "article_id": "68d99fbb983a16828b7df942"
+      },
+      {
+       "id": "4f8946333eb42ae7",
+       "company_name": "zipline",
+       "domain": "zipline.io",
+       "round_type": "Series H",
+       "amount_usd": 800000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7600000000.0,
+       "currency": "USD",
+       "amount": 800000000.0,
+       "valuation": 7600000000.0,
+       "investors": [
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "drone delivery and logistics",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "accelerate expansion to at least four U.S. states and enter new markets",
+       "source_sentence": "The additional funds, which included participation from crypto investment firm Paradigm, has pushed Zipline’s recent Series H round to $800 million.",
+       "published_at": "2026-03-23T20:37:52",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c4257efdc6f6629d9fa71f",
+        "69c95ff3288a36c0c7b84766"
+       ],
+       "article_id": "69c4257efdc6f6629d9fa71f"
+      },
+      {
+       "id": "ef27d24ba9a7bfce",
+       "company_name": "temporal technologies",
+       "domain": "temporal.io",
+       "round_type": "Series D",
+       "amount_usd": 649500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 649500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "amplify partners",
+         "domain": "amplifypartners.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "madrona",
+         "domain": "madrona.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        }
+       ],
+       "sector": "Information Technology, Internet, Open Source, Software",
+       "country": "USA",
+       "city": "Bellevue",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "242f662f311bf1ca",
+       "company_name": "zipline",
+       "domain": "zipline.io",
+       "round_type": null,
+       "amount_usd": 600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 600000000.0,
+       "valuation": 7600000000.0,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "fidelity management and research company",
+         "domain": "fidelity.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        }
+       ],
+       "sector": "drone delivery",
+       "country": "United States",
+       "city": "South San Francisco",
+       "use_of_funds": "support expansion and growth in the U.S. and new areas",
+       "source_sentence": "Zipline, a drone delivery and logistics startup, has raised more than $600 million in new funding, boosting its valuation to $7.6 billion, as it expands commercial deployments.",
+       "published_at": "2026-01-21T12:00:00",
+       "coverage_count": 13,
+       "article_ids": [
+        "69839a58e67557fb8553a8bc",
+        "698632d4514cbd23b5c20def",
+        "6988a03a94d3f481f3d6a16c",
+        "698d6a819ca02490ecfab022",
+        "698f7aff8d29a990b6fd5f7a",
+        "698fd5869ca02490ec2873a2",
+        "69bba5c8e7c8d3750e07391b",
+        "69bd117b1d0b3f0860f02ff1",
+        "69c4257d516feee34002dd89",
+        "69c93ae3682ef7f3f7635d42",
+        "69d126881840dd4fe07da19a",
+        "69e2cfcc277be6ed2da52731",
+        "6a041d70220687a966b4bc97"
+       ],
+       "article_id": "69839a58e67557fb8553a8bc"
+      },
+      {
+       "id": "d735fbec97464a8c",
+       "company_name": "moglix",
+       "domain": "moglix.com",
+       "round_type": null,
+       "amount_usd": 370000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 370000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        }
+       ],
+       "sector": "Industrial Tools & Equipment B2B Marketplace",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Moglix has raised over $370 million to date.",
+       "published_at": "2025-06-24T12:08:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b4343a3ddf2630a8c2b382"
+       ],
+       "article_id": "68b4343a3ddf2630a8c2b382"
+      },
+      {
+       "id": "485f4f3d0971b479",
+       "company_name": "gupshup",
+       "domain": "gupshup.io",
+       "round_type": null,
+       "amount_usd": 340000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 340000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Think Investments",
+         "domain": "thinkinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "Malabar Investments",
+         "domain": "malabarinvest.com",
+         "amount": null
+        }
+       ],
+       "sector": "Messaging",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "In 2021, Gupshup raised two funding rounds within four months, securing $340 million from prominent investors, including Tiger Global, Fidelity Management, Think Investments, and Malabar Investments.",
+       "published_at": "2025-07-23T01:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898b6f9ace6dc7b1fc397cb"
+       ],
+       "article_id": "6898b6f9ace6dc7b1fc397cb"
+      },
+      {
+       "id": "0e902204d322e002",
+       "company_name": "temporal",
+       "domain": "temporal.io",
+       "round_type": "Series D",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5000000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "madrona venture group",
+         "domain": "madrona.com",
+         "amount": null
+        },
+        {
+         "name": "amplify partners",
+         "domain": "amplifypartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI workflow orchestration",
+       "country": "USA",
+       "city": "Bellevue",
+       "use_of_funds": "Scale cloud services and global engineering to meet surging demand for reliable AI‑driven applications.",
+       "source_sentence": "Temporal raises $300M in Series D funding to orchestrate reliable AI applications",
+       "published_at": "2026-02-17T23:23:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3da80b4478ab0774a022e"
+       ],
+       "article_id": "69c3da80b4478ab0774a022e"
+      },
+      {
+       "id": "d7739d1d93762c35",
+       "company_name": "mews",
+       "domain": "mews.com",
+       "round_type": "Series D",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2500000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 2500000000.0,
+       "investors": [
+        {
+         "name": "eqt growth",
+         "domain": "eqtgroup.com",
+         "amount": null
+        },
+        {
+         "name": "atomico",
+         "domain": "atomico.com",
+         "amount": null
+        },
+        {
+         "name": "harbourvest partners",
+         "domain": "harbourvest.com",
+         "amount": null
+        },
+        {
+         "name": "kinnevik",
+         "domain": "kinnevik.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Hospitality technology",
+       "country": "Czech Republic",
+       "city": "Amsterdam",
+       "use_of_funds": "AI and automation within the Mews platform",
+       "source_sentence": "Czech-founded Mews, a hospitality technology company, has secured a $300 million (€255.17 million) in fresh investment, pushing its valuation to $2.5 billion (approximately €2.13 billion).",
+       "published_at": "2026-01-22T15:22:03",
+       "coverage_count": 13,
+       "article_ids": [
+        "6985eeda11e3205ec98ed494",
+        "6988ab678fb0ea95e97760d1",
+        "6988b3b994d3f481f3d7d4c4",
+        "69896ae094d3f481f3e54737",
+        "6989bdeb94d3f481f3eb881d",
+        "698d17f59ca02490ecf47d43",
+        "698e77669ca02490ec0e8244",
+        "698f03c38d29a990b6f49477",
+        "69bb00bad7b120f5da0314fb",
+        "69bd195a93b550fcb825909a",
+        "69c99625fe85228ad699c1f7",
+        "69ca3019c534852e93602b49",
+        "69e854375cfa3e5ba5e8b374"
+       ],
+       "article_id": "698e77669ca02490ec0e8244"
+      },
+      {
+       "id": "c7416400aa094524",
+       "company_name": "mews",
+       "domain": "mews.com",
+       "round_type": "Series D",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2500000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 2500000000.0,
+       "investors": [
+        {
+         "name": "eqt growth",
+         "domain": "eqtgroup.com",
+         "amount": null
+        },
+        {
+         "name": "atomico",
+         "domain": "atomico.com",
+         "amount": null
+        },
+        {
+         "name": "harbourvest partners",
+         "domain": "harbourvest.com",
+         "amount": null
+        },
+        {
+         "name": "kinnevik",
+         "domain": "kinnevik.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Hospitality technology",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "expand investments in artificial intelligence, embedding agent-driven systems across the platform",
+       "source_sentence": "Mews, the operating system for hospitality, today announced it has raised $300 million in a Series D funding round led by EQT Growth, with new investors Atomico and HarbourVest Partners, and participation from existing investors Kinnevik, Battery Ventures and Tiger Global.",
+       "published_at": "2026-01-22T07:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988b5d594d3f481f3d7fc34",
+        "6991c04a7a11353017a22bca"
+       ],
+       "article_id": "6991c04a7a11353017a22bca"
+      },
+      {
+       "id": "9a45554c96d3690f",
+       "company_name": "frubana",
+       "domain": "frubana.com",
+       "round_type": null,
+       "amount_usd": 271000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 271000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "softbank",
+         "domain": "group.softbank",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "monashees",
+         "domain": "monashees.com.br",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The company went on to raise $271 million thanks to the backing of renowned investors such as SoftBank, DST Global, Tiger Global, Lightspeed Venture Partners and Monashees.",
+       "published_at": "2025-08-20T17:36:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69971c74feeb41363fa44f3c"
+       ],
+       "article_id": "69971c74feeb41363fa44f3c"
+      },
+      {
+       "id": "b881cc142770e605",
+       "company_name": "Nuro, Inc.",
+       "domain": null,
+       "round_type": "Series E",
+       "amount_usd": 203000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 203000000.0,
+       "valuation": 6000000000.0,
+       "investors": [
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "icehouse ventures",
+         "domain": "icehouseventures.co.nz",
+         "amount": null
+        },
+        {
+         "name": "kindred ventures",
+         "domain": "kindredventures.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "pledge ventures",
+         "domain": "pledgeventures.vc",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "xn",
+         "domain": "xn.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous driving technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "scaling of Nuro's AI-first autonomous technology and growth of its commercial partnerships",
+       "source_sentence": "Nuro, Inc. (“Nuro”), a leader in autonomous driving technology, today announced the closing of a $203M Series E funding round at a $6B valuation.",
+       "published_at": "2025-08-21T13:55:17",
+       "coverage_count": 4,
+       "article_ids": [
+        "68b053f23b014c087ae3076c",
+        "68c58939460fade35588a738",
+        "68c5c5eed7fe179be1c9b13f",
+        "69bc9469bc0fe678ea685a94"
+       ],
+       "article_id": "68c58939460fade35588a738"
+      },
+      {
+       "id": "9abceb518fac6a69",
+       "company_name": "zipline",
+       "domain": "zipline.io",
+       "round_type": "Series H",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7600000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 7600000000.0,
+       "investors": [
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        }
+       ],
+       "sector": "Drone logistics",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Expand operations across the United States, with plans to launch services in at least four states this year.",
+       "source_sentence": "US-based drone logistics company Zipline has raised an additional $200 million, bringing its recent Series H funding round to $800 million.",
+       "published_at": "2026-03-24T14:54:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbf762653f29297e76d646"
+       ],
+       "article_id": "69cbf762653f29297e76d646"
+      },
+      {
+       "id": "024c74f667921832",
+       "company_name": "zipline",
+       "domain": "zipline.io",
+       "round_type": "Series H",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7600000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 7600000000.0,
+       "investors": [
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        }
+       ],
+       "sector": "autonomous drone delivery, logistics, healthcare, quick-commerce, food sector",
+       "country": "USA",
+       "city": "South San Francisco",
+       "use_of_funds": "scale global logistics network, accelerate deployment of Platform 2 (P2) home delivery system, expand partnerships across healthcare, quick-commerce, and food sectors",
+       "source_sentence": "Zipline, a South San Francisco, CA-based developer and operator of autonomous drone delivery systems, raised $200m in Series H funding round at a $7.6 billion post-money valuation. The investment was led by Fidelity, with participation from Baillie Gifford, Valor Equity Partners, Tiger Global, and Paradigm.",
+       "published_at": "2026-03-24T11:13:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e851267bb1410d4c695cd4"
+       ],
+       "article_id": "69e851267bb1410d4c695cd4"
+      },
+      {
+       "id": "dd9ea98dd90b3a50",
+       "company_name": "Upscale Ai",
+       "domain": "upscale.ai",
+       "round_type": "Series A",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "xora innovation",
+         "domain": "xora.vc",
+         "amount": null
+        },
+        {
+         "name": "Maverick Silicon",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "mayfield",
+         "domain": "mayfield.com",
+         "amount": null
+        },
+        {
+         "name": "Prosperity7 Ventures",
+         "domain": "prosperity7vc.com",
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI networking",
+       "country": "United States",
+       "city": "Santa Clara",
+       "use_of_funds": "Scaling operations, including silicon development, system integration, and customer deployments with leading hyperscalers and AI operators",
+       "source_sentence": "Upscale AI’s $200 million Series A funding round represents a pivotal milestone for the young company, elevating it to unicorn status with a valuation surpassing $1 billion.",
+       "published_at": "2026-01-22T09:00:34",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988ab75cfd8658683eb18da",
+        "69bb2d08dd3f26d557f00d39"
+       ],
+       "article_id": "6988ab75cfd8658683eb18da"
+      },
+      {
+       "id": "bcf12a1807dec807",
+       "company_name": "Upscale Ai",
+       "domain": "upscale.ai",
+       "round_type": "Series A",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 2000000000.0,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "xora innovation",
+         "domain": "xora.vc",
+         "amount": null
+        },
+        {
+         "name": "Maverick Silicon",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "mayfield",
+         "domain": "mayfield.com",
+         "amount": null
+        },
+        {
+         "name": "Prosperity7 Ventures",
+         "domain": "prosperity7vc.com",
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Networking",
+       "country": "United States",
+       "city": "Santa Clara",
+       "use_of_funds": "expand engineering, sales, and operations",
+       "source_sentence": "California-based Upscale AI has raised $200 million in a Series A round, taking the startup’s total funding to more than $300 million since its launch last year, as investors see networking as the next major bottleneck in scaling artificial intelligence.",
+       "published_at": "2025-11-08T00:00:00",
+       "coverage_count": 12,
+       "article_ids": [
+        "6988a8be3757765ee8264b61",
+        "698d89168d29a990b6d84b38",
+        "698eee879ca02490ec178ce9",
+        "69c41947134b8db540af7a24",
+        "69c9c6d7288a36c0c7bac991",
+        "69dc8fb3472a0104153e8e47",
+        "69dfb275f2a6294de7f7677f",
+        "69dfb2a044a6646a5b2b4c2f",
+        "69e1f0d4a357b78be859b54f",
+        "69e2928d7f3a572cf4a78edf",
+        "69e8d4737bb1410d4cc91b08",
+        "69e8e2615cfa3e5ba54f3d7b"
+       ],
+       "article_id": "69dc8fb3472a0104153e8e47"
+      },
+      {
+       "id": "253cf7ee09cf1002",
+       "company_name": "nothing",
+       "domain": "nothing.tech",
+       "round_type": null,
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "eqt",
+         "domain": "eqt.com",
+         "amount": null
+        }
+       ],
+       "sector": "Consumer Electronics – Smartphones",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "AI integration into its hardware products",
+       "source_sentence": "Nothing has recently secured $200 million in a funding round led by Tiger Global, valuing the company at $1.3 billion, according to a recent report by Reuters.",
+       "published_at": "2025-09-16T12:21:26",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d1016f22a1ae9da22ced18",
+        "68d9a33f983a16828b7e4928"
+       ],
+       "article_id": "68d1016f22a1ae9da22ced18"
+      },
+      {
+       "id": "a8a1f90447cac02a",
+       "company_name": "nothing",
+       "domain": "nothing.tech",
+       "round_type": "Series C",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "eqt",
+         "domain": "eqt.com",
+         "amount": null
+        },
+        {
+         "name": "latitude",
+         "domain": "latitude.io",
+         "amount": null
+        },
+        {
+         "name": "I2BF",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tapestry",
+         "domain": "tapestry.com",
+         "amount": null
+        },
+        {
+         "name": "Nikhil Kamath",
+         "domain": "https://www.linkedin.com/in/nikhilkamathcio",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "consumer electronics",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "fuel its next phase that includes building an AI-native platform where hardware and software merge into a deeply personalised and context-aware operating system",
+       "source_sentence": "Smartphone startup Nothing announced today that it closed its Series C round of $200 million, which was led by the investment firm Tiger Global.",
+       "published_at": "2025-09-16T04:15:00",
+       "coverage_count": 24,
+       "article_ids": [
+        "68d963c92e9612a96e131bb9",
+        "68d96c752c909880704b04e8",
+        "68d970a55c3d35fe5b4b70f9",
+        "68d975e542a4b594744bc6ee",
+        "68d99ae8983a16828b7d8e93",
+        "68d99b535af1b12a767d97e6",
+        "68d9a40093ec9fed387e5a58",
+        "68d9a8dfc149d2bca77ecb11",
+        "68dab4e2f965183cdc889133",
+        "68dae0490e3f1627a0888b64",
+        "68f73093f6f885b63d2c7e86",
+        "694b211097abc5854775b4ee",
+        "698888d5f8e7b174cc0b7ac4",
+        "6988a848127162d16e0ae381",
+        "6988d38c94d3f481f3da3a3e",
+        "6989c50094d3f481f3ec0f1e",
+        "698d2c709ca02490ecf60bbd",
+        "698d6c7d9ca02490ecfad639",
+        "698f5b7a9ca02490ec1f8d67",
+        "698f735a9ca02490ec2151e5",
+        "6991c40640184cd70864b189",
+        "6997e94f2da3986a3f888e46",
+        "69e28e3e277be6ed2d975e5d",
+        "69e869f87bb1410d4c787fde"
+       ],
+       "article_id": "68d96c752c909880704b04e8"
+      },
+      {
+       "id": "1cf7cf3d07b58ec4",
+       "company_name": "nothing",
+       "domain": "nothing.tech",
+       "round_type": "Series C",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1300000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "consumer tech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "expand into AI-driven devices, hardware-software integrated experiences, scaling up its product lines beyond smartphones",
+       "source_sentence": "London-based consumer tech company Nothing has raised $200 million (almost £150m) in a Series C round, valuing the business at $1.3 billion (almost £1bn).",
+       "published_at": "2025-09-15T08:12:23",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d97cb042a4b594744c4e52",
+        "698cc6d38d29a990b6ca0989",
+        "69e31b3862c473c381f3303c"
+       ],
+       "article_id": "69e31b3862c473c381f3303c"
+      },
+      {
+       "id": "675582cabb5c990c",
+       "company_name": "spinny",
+       "domain": "spinny.com",
+       "round_type": "Series F",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "fundamentum",
+         "domain": "fundamentum.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "automotive marketplace",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "Largest funding round in the used-car space",
+       "source_sentence": "Used car marketplace Spinny has secured $30 million in primary capital from investment firm WestBridge Capital, as part of an extension to its ongoing Series F funding round, according to a source familiar with the matter.",
+       "published_at": "2025-06-13T10:39:58",
+       "coverage_count": 4,
+       "article_ids": [
+        "691484a45df5f2205135d7bc",
+        "693141294998bc312ff21a1b",
+        "698ef1da8d29a990b6f325d1",
+        "69bc2c754583f4645ff4b5b4"
+       ],
+       "article_id": "693141294998bc312ff21a1b"
+      },
+      {
+       "id": "d926af13f7affc13",
+       "company_name": "spinny",
+       "domain": "spinny.com",
+       "round_type": "ongoing funding round",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        },
+        {
+         "name": "Accel Leaders Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Used car platform",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": null,
+       "source_sentence": "Used car platform Spinny has increased the size of its ongoing funding round to $170 million, up from $131 million, with the entry of WestBridge Capital, according to people familiar with the matter.",
+       "published_at": "2025-06-12T16:23:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "6864102f8882abb7e3e0a4dd"
+       ],
+       "article_id": "6864102f8882abb7e3e0a4dd"
+      },
+      {
+       "id": "1db6125ae29e36e0",
+       "company_name": "sunday",
+       "domain": "sundayapp.com",
+       "round_type": null,
+       "amount_usd": 165000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 165000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "xtal",
+         "domain": "xtalinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": "Sunday – $165.0M",
+       "published_at": "2026-03-16T08:27:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4844e0667c07f278ba3"
+       ],
+       "article_id": "69c3a4844e0667c07f278ba3"
+      },
+      {
+       "id": "c88ab860848ce49d",
+       "company_name": "harbinger",
+       "domain": "harbingergroup.com",
+       "round_type": "Series C",
+       "amount_usd": 160000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 160000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fedex",
+         "domain": "fedex.com",
+         "amount": null
+        },
+        {
+         "name": "Capricorn’s Technology Impact Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "thor industries",
+         "domain": "thorindustries.com",
+         "amount": null
+        },
+        {
+         "name": "ridgeline",
+         "domain": "ridgelineapps.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Leitmotif",
+         "domain": "leitmotif.vc",
+         "amount": null
+        },
+        {
+         "name": "maniv mobility",
+         "domain": "maniv.com",
+         "amount": null
+        },
+        {
+         "name": "schematic ventures",
+         "domain": "schematicventures.com",
+         "amount": null
+        },
+        {
+         "name": "Overture Climate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ironspring Ventures",
+         "domain": "ironspring.com",
+         "amount": null
+        },
+        {
+         "name": "arctern ventures",
+         "domain": "arcternventures.com",
+         "amount": null
+        },
+        {
+         "name": "Litquidity Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        }
+       ],
+       "sector": "Electric vehicles",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "scaling up production of its commercial vehicle program",
+       "source_sentence": "Harbinger has raised US$160m in a Series C funding round co-led by FedEx, Capricorn’s Technology Impact Fund, and THOR Industries.",
+       "published_at": "2025-11-13T09:16:42",
+       "coverage_count": 6,
+       "article_ids": [
+        "6931650c7f7fb519dcf21697",
+        "693168a4657e62559bf209fc",
+        "6931960c4bc82ccb0df20cbb",
+        "6931bbc4217f91e5e4f21cd5",
+        "6931bc46337006cbbcf22e1f",
+        "698ef8098d29a990b6f3a62e"
+       ],
+       "article_id": "6931960c4bc82ccb0df20cbb"
+      },
+      {
+       "id": "773d6cfedd576ee2",
+       "company_name": "rogo",
+       "domain": "rogodata.com",
+       "round_type": "Series C",
+       "amount_usd": 154000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 154000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Alt Capital",
+         "domain": "altcap.com",
+         "amount": null
+        },
+        {
+         "name": "boxgroup",
+         "domain": "boxgroup.com",
+         "amount": null
+        },
+        {
+         "name": "Henry Kravis",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jp morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "mantis venture capital",
+         "domain": "mantisvc.com",
+         "amount": null
+        },
+        {
+         "name": "positive sum",
+         "domain": "positivesum.org",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Stonecroft Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "truist ventures",
+         "domain": "truist.com",
+         "amount": null
+        },
+        {
+         "name": "wells fargo",
+         "domain": "wellsfargo.com",
+         "amount": null
+        }
+       ],
+       "sector": "Analytics, Artificial Intelligence, Business Intelligence, Financial Services, FinTech, Generative AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-02-02T11:27:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "69888801868e86f9ec6c8019",
+        "6988a49469527f36baae5af5"
+       ],
+       "article_id": "69888801868e86f9ec6c8019"
+      },
+      {
+       "id": "b469695a7a346989",
+       "company_name": "cred",
+       "domain": "cred.club",
+       "round_type": "Series G 2022",
+       "amount_usd": 140000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 140000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "CRED’s latest raise follows its 2022 round, also led by GIC, which brought in $140 million.",
+       "published_at": "2025-06-10T17:25:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69867866dac7b0ca9c6026b1"
+       ],
+       "article_id": "69867866dac7b0ca9c6026b1"
+      },
+      {
+       "id": "c7369366b8f3db35",
+       "company_name": "spinny",
+       "domain": "spinny.com",
+       "round_type": "Series F",
+       "amount_usd": 131000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 131000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Accel (US)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nandan Nilekani’s Fundamentum",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Used car marketplace",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": null,
+       "source_sentence": "Earlier this year, the Gurugram-based startup had raised $131 million from marquee investors including Accel (US), Nandan Nilekani’s Fundamentum, Tiger Global, and Elevation Capital.",
+       "published_at": "2025-06-13T10:00:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988b105a88ad7b9aae14826"
+       ],
+       "article_id": "6988b105a88ad7b9aae14826"
+      },
+      {
+       "id": "ebdc5d29a885b1e7",
+       "company_name": "deepgram",
+       "domain": "deepgram.com",
+       "round_type": "Series C",
+       "amount_usd": 130000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 130000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "avp",
+         "domain": "avp-vt.de",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "madrona",
+         "domain": "madrona.com",
+         "amount": null
+        },
+        {
+         "name": "in-q-tel",
+         "domain": "iqt.org",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        },
+        {
+         "name": "princeville capital",
+         "domain": "princeville-capital.com",
+         "amount": null
+        },
+        {
+         "name": "Twilio Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sap",
+         "domain": "sap.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI speech recognition platform for voice applications",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "The funding will accelerate the company’s Voice AI platform, support the launch of Powered by Deepgram, enable the acquisition of OfOne, expand Deepgram’s patent portfolio, and establish a new Voice AI Collaboration Hub in San Francisco.",
+       "source_sentence": "Deepgram’s platform provides custom speech-recognition models and infrastructure that allow businesses to deploy real-time voice agents in call centers, sales, and customer service.",
+       "published_at": "2026-01-13T23:38:07",
+       "coverage_count": 4,
+       "article_ids": [
+        "6988a1eb94d3f481f3d6c47f",
+        "6988ee8a94d3f481f3dc3bcb",
+        "698a34a81953fdcb20e07ab9",
+        "69bd8f9c0ad23ae1115329db"
+       ],
+       "article_id": "6988ee8a94d3f481f3dc3bcb"
+      },
+      {
+       "id": "d6034887fd93eeb8",
+       "company_name": "mytra",
+       "domain": "mytra.ai",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "SoftBank Vision Fund 2",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "alta park capital",
+         "domain": "altaparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Supply Chain AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "The investment will support global expansion, technology scaling, and deeper enterprise integrations.",
+       "source_sentence": "Mytra has raised $120 million in Series C funding led by General Catalyst, with participation from Tiger Global, SoftBank Vision Fund 2, and Alta Park Capital.",
+       "published_at": "2026-01-15T16:19:42",
+       "coverage_count": 3,
+       "article_ids": [
+        "6983ead2bb7245ef1952349b",
+        "69c9502ca5dd771f46a21637",
+        "69dfb28186bd23245a91366a"
+       ],
+       "article_id": "69c9502ca5dd771f46a21637"
+      },
+      {
+       "id": "e7650111b13db6a0",
+       "company_name": "temporal technologies",
+       "domain": "temporal.io",
+       "round_type": "tender offer",
+       "amount_usd": 105000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 105000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Software",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The $105 million investor-led tender offer was led by GIC with participation from Tiger Global and Index Ventures.",
+       "published_at": "2025-10-03T05:26:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d331c9ca02490ecf67e94"
+       ],
+       "article_id": "698d331c9ca02490ecf67e94"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 74,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTAtMDMgMDU6MjY6NDMiLCJrIjoiMTY2NzM3MzQzNzA5MDg4MTI5NjAiLCJhIjoxMDUwMDAwMDAuMH0",
+     "totals": {
+      "deals": 74,
+      "deals_with_amount": 66,
+      "deals_without_amount": 8,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 40275480000.0,
+      "median_amount_usd": 147000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.086,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.089
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Tiger Global",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "tiger global"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "1d75a236defd743a",
+       "company_name": "battery smart",
+       "domain": "batterysmart.in",
+       "round_type": "Series B (extended)",
+       "amount_usd": 29000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 29000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "blume ventures",
+         "domain": "blume.vc",
+         "amount": null
+        },
+        {
+         "name": "ecosystem integrity fund",
+         "domain": "eif.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Electric Vehicle Battery Swapping",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "With its $65 million Series B round and $29 million extended Series B round, Battery Smart has raised about $192 million in funding thus far.",
+       "published_at": "2026-04-29T06:36:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbafa5706a322e112d41"
+       ],
+       "article_id": "69f1cbafa5706a322e112d41"
+      },
+      {
+       "id": "63e1ce4e288c2c37",
+       "company_name": "spinny",
+       "domain": "spinny.com",
+       "round_type": "Series F",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Accel Leaders Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "westbridge",
+         "domain": "westbridge.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Think Investments",
+         "domain": "thinkinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Used car platform",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Valuedrive Technologies Private Limited, dba Spinny, has raised approximately $340 million across its Series F and its Series G fundraises.",
+       "published_at": "2026-04-20T05:20:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e87ba59baafc73568c3fae"
+       ],
+       "article_id": "69e87ba59baafc73568c3fae"
+      },
+      {
+       "id": "ff8310b5f38ced8c",
+       "company_name": "PopUp Bagels",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Tiger Global Management has invested in the PopUp Bagels franchise, which now claims a valuation of $300 million.",
+       "published_at": "2026-04-14T20:39:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d6bf5cfa3e5ba5460804"
+       ],
+       "article_id": "69e8d6bf5cfa3e5ba5460804"
+      },
+      {
+       "id": "c3d093818aa00b98",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Automotive, Autonomous Vehicles, Sensor, Transportation",
+       "country": null,
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": "Mountain View-based Waymo is a mobility technology company that improves transportation by developing self‑driving solutions for travelers and daily commuters.",
+       "published_at": "2026-03-27T09:27:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69cc4289cb088e024d2646bf"
+      },
+      {
+       "id": "9abceb518fac6a69",
+       "company_name": "zipline",
+       "domain": "zipline.io",
+       "round_type": "Series H",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7600000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 7600000000.0,
+       "investors": [
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        }
+       ],
+       "sector": "Drone logistics",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Expand operations across the United States, with plans to launch services in at least four states this year.",
+       "source_sentence": "US-based drone logistics company Zipline has raised an additional $200 million, bringing its recent Series H funding round to $800 million.",
+       "published_at": "2026-03-24T14:54:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbf762653f29297e76d646"
+       ],
+       "article_id": "69cbf762653f29297e76d646"
+      },
+      {
+       "id": "024c74f667921832",
+       "company_name": "zipline",
+       "domain": "zipline.io",
+       "round_type": "Series H",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7600000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 7600000000.0,
+       "investors": [
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        }
+       ],
+       "sector": "autonomous drone delivery, logistics, healthcare, quick-commerce, food sector",
+       "country": "USA",
+       "city": "South San Francisco",
+       "use_of_funds": "scale global logistics network, accelerate deployment of Platform 2 (P2) home delivery system, expand partnerships across healthcare, quick-commerce, and food sectors",
+       "source_sentence": "Zipline, a South San Francisco, CA-based developer and operator of autonomous drone delivery systems, raised $200m in Series H funding round at a $7.6 billion post-money valuation. The investment was led by Fidelity, with participation from Baillie Gifford, Valor Equity Partners, Tiger Global, and Paradigm.",
+       "published_at": "2026-03-24T11:13:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e851267bb1410d4c695cd4"
+       ],
+       "article_id": "69e851267bb1410d4c695cd4"
+      },
+      {
+       "id": "ef27d24ba9a7bfce",
+       "company_name": "temporal technologies",
+       "domain": "temporal.io",
+       "round_type": "Series D",
+       "amount_usd": 649500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 649500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "amplify partners",
+         "domain": "amplifypartners.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "madrona",
+         "domain": "madrona.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        }
+       ],
+       "sector": "Information Technology, Internet, Open Source, Software",
+       "country": "USA",
+       "city": "Bellevue",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "8f948dfb4c3fa8b9",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": null,
+       "amount_flag": "implausible_size",
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 27100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Automotive, Autonomous Vehicles, Sensor, Transportation",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "40561b2069b732cb",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "Series H",
+       "amount_usd": 2800000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2800000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Infrastructure, Artificial Intelligence (AI), Computer, Hardware, RISC, Semiconductor, Software",
+       "country": "USA",
+       "city": "Sunnyvale",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "4f8946333eb42ae7",
+       "company_name": "zipline",
+       "domain": "zipline.io",
+       "round_type": "Series H",
+       "amount_usd": 800000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7600000000.0,
+       "currency": "USD",
+       "amount": 800000000.0,
+       "valuation": 7600000000.0,
+       "investors": [
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "drone delivery and logistics",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "accelerate expansion to at least four U.S. states and enter new markets",
+       "source_sentence": "The additional funds, which included participation from crypto investment firm Paradigm, has pushed Zipline’s recent Series H round to $800 million.",
+       "published_at": "2026-03-23T20:37:52",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c4257efdc6f6629d9fa71f",
+        "69c95ff3288a36c0c7b84766"
+       ],
+       "article_id": "69c4257efdc6f6629d9fa71f"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 32,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjMgMjA6Mzc6NTIiLCJrIjoiNTczMTE4OTE4NjcxNDkzODA4NyJ9",
+     "totals": {
+      "deals": 32,
+      "deals_with_amount": 29,
+      "deals_without_amount": 3,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 24846500000.0,
+      "median_amount_usd": 165000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.068,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.071
+    }
+   }
+  }
+ ]
+}

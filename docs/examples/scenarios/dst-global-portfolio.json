@@ -1,0 +1,3425 @@
+{
+ "slug": "dst-global-portfolio",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:30Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Dst Global",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "dst global"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 85,
+      "deals_with_amount": 81,
+      "deals_without_amount": 4,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 44628548000.0,
+      "median_amount_usd": 100000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 996000000.0,
+       "median_amount_usd": 225000000.0,
+       "largest_amount_usd": 466000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1680000000.0,
+       "median_amount_usd": 140000000.0,
+       "largest_amount_usd": 900000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1241000000.0,
+       "median_amount_usd": 271000000.0,
+       "largest_amount_usd": 900000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4036836000.0,
+       "median_amount_usd": 175000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2565000000.0,
+       "median_amount_usd": 200000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 3,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 117440000.0,
+       "median_amount_usd": 46440000.0,
+       "largest_amount_usd": 50000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 578800000.0,
+       "median_amount_usd": 64800000.0,
+       "largest_amount_usd": 330000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 17269000000.0,
+       "median_amount_usd": 144500000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 13,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 22063472000.0,
+       "median_amount_usd": 176000000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 8,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 17447000000.0,
+       "median_amount_usd": 500000000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 10069000000.0,
+       "median_amount_usd": 28500000.0,
+       "largest_amount_usd": 10000000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.114,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.118
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Dst Global",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "dst global"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "c3d093818aa00b98",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Automotive, Autonomous Vehicles, Sensor, Transportation",
+       "country": null,
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": "Mountain View-based Waymo is a mobility technology company that improves transportation by developing self‑driving solutions for travelers and daily commuters.",
+       "published_at": "2026-03-27T09:27:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69cc4289cb088e024d2646bf"
+      },
+      {
+       "id": "aa7d8bd1c06b4f8d",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 126000000000.0,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": 126000000000.0,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer",
+         "domain": "dragoneergrowth.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous Vehicles",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": "Expand robotaxi rollout into new U.S. cities and its first international market",
+       "source_sentence": "Waymo secures $16B in funding to accelerate robotaxi expansion",
+       "published_at": "2026-02-03T23:42:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "6985ebb211e3205ec98ec05b"
+       ],
+       "article_id": "6985ebb211e3205ec98ec05b"
+      },
+      {
+       "id": "bbc1e5be665f1112",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "investment round",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 126000000000.0,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": 126000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Abu Dhabi sovereign fund Mubadala",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "fidelity management and research company",
+         "domain": "fidelity.com",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "robotaxi, autonomous vehicles",
+       "country": null,
+       "city": null,
+       "use_of_funds": "buy more vehicles to expand fleet",
+       "source_sentence": "Waymo announced a $16 billion investment round aimed at bringing its robotaxi business to more US cities, as well as some overseas markets.",
+       "published_at": "2026-02-02T22:30:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "698649e5514cbd23b5c28d3b"
+       ],
+       "article_id": "698649e5514cbd23b5c28d3b"
+      },
+      {
+       "id": "5e19d8fd20182735",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series?",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 110000000000.0,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": 110000000000.0,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": 13000000000.0
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        }
+       ],
+       "sector": "autonomous driving",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "expand its international footprint",
+       "source_sentence": "Waymo, Alphabet Inc.’s autonomous driving unit, is aiming to raise about $16 billion in a financing round that would value the unit at nearly $110 billion, according to people familiar with the matter.",
+       "published_at": "2026-01-31T19:46:21",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bd7957518fdf387430ebcb",
+        "69c9718d682ef7f3f764d300"
+       ],
+       "article_id": "69c9718d682ef7f3f764d300"
+      },
+      {
+       "id": "fc5b6f1ff06d007b",
+       "company_name": "Protect Prometheus",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 38000000000.0,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": 38000000000.0,
+       "investors": [
+        {
+         "name": "jpmorgan chase",
+         "domain": "jpmorganchase.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "arch venture partners",
+         "domain": "archventure.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Protect Prometheus, AI lab co-led by Jeff Bezos, has reportedly raised $10 billion in fresh funding.",
+       "published_at": "2026-04-24T05:06:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ec1e2e1e448cd078922234"
+       ],
+       "article_id": "69ec1e2e1e448cd078922234"
+      },
+      {
+       "id": "13bc7b179d4ae1eb",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "Series K",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 134000000000.0,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": 134000000000.0,
+       "investors": [
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "Singapore Temasek",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Macquarie Capital entities",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Singapore GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "wcm investment management",
+         "domain": "wcminvest.com",
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers’ Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "Sands Capital & Wellington Management",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Data & AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "United States data & artificial intelligence (AI) company Databrick has raised $5 billion funding at $134 billion valuation, and with additional $2 billion debt funding.",
+       "published_at": "2026-02-10T15:16:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbb81351c35210b7b8632d"
+       ],
+       "article_id": "69bbb81351c35210b7b8632d"
+      },
+      {
+       "id": "5a10932a0334dc39",
+       "company_name": "reflection ai",
+       "domain": "reflectionai.ca",
+       "round_type": "Series B",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "disruptive",
+         "domain": "disruptive.tech",
+         "amount": null
+        },
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "citi ventures",
+         "domain": "ventures.citi.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "hillspire",
+         "domain": "hillspirellc.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "crv",
+         "domain": "crv4all.co.nz",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Open-source AI",
+       "country": "USA",
+       "city": "Brooklyn",
+       "use_of_funds": "Expand research and development of large-scale AI models",
+       "source_sentence": "Reflection AI raised a colossal $2 billion in a Series B funding round at an $8 billion valuation.",
+       "published_at": "2025-10-09T21:48:39",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f71009017a8a94832bdeb4",
+        "68f72cd96ecd416e342c202d"
+       ],
+       "article_id": "68f72cd96ecd416e342c202d"
+      },
+      {
+       "id": "d51db494875dae69",
+       "company_name": "mistral ai",
+       "domain": "mistral.ai",
+       "round_type": "Series C",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ASML Holding NV",
+         "domain": null,
+         "amount": 1500000000.0
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "investment fuels our scientific research to keep pushing the frontier of AI",
+       "source_sentence": "French startup Mistral AI has secured USD 2bn (EUR 1.7bn) in a Series C round, bringing its valuation to USD 13.8bn, the company announced on September 9, 2025.",
+       "published_at": "2025-09-16T09:10:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a23f305071bc5a4ef1c21"
+       ],
+       "article_id": "698a23f305071bc5a4ef1c21"
+      },
+      {
+       "id": "924a4313fc87d5cd",
+       "company_name": "mistral ai",
+       "domain": "mistral.ai",
+       "round_type": "Series C",
+       "amount_usd": 1836000000.0000002,
+       "amount_flag": null,
+       "valuation_usd": 12636000000.0,
+       "currency": "EUR",
+       "amount": 1700000000.0,
+       "valuation": 11700000000.0,
+       "investors": [
+        {
+         "name": "asml",
+         "domain": "asml.com",
+         "amount": 1300000000.0
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "accelerate technological progress with AI",
+       "source_sentence": "We’ve raised €1.7B to accelerate technological progress with AI! This Series C funding round, led by @ASMLcompany, fuels Mistral AI scientific research to keep pushing the frontier of AI to tackle the most critical technological challenges faced by strategic industries.",
+       "published_at": "2025-09-09T10:16:25",
+       "coverage_count": 4,
+       "article_ids": [
+        "68d0e40950268142442b0893",
+        "68d990011645babb987eb522",
+        "68d9ae92c149d2bca77f5ac7",
+        "69bb2f3cb54f2a520bb5eda8"
+       ],
+       "article_id": "69bb2f3cb54f2a520bb5eda8"
+      },
+      {
+       "id": "02f53b2fe04252c4",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": "Series C",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anysphere, the AI research lab behind AI coding tool Cursor, raised a sizable $900 million Series C round that values the company at nearly $10 billion. The round was led by Thrive Capital with participation from Andreessen Horowitz, Accel, and DST Global.",
+       "published_at": "2025-08-27T17:01:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "68b054613b014c087aed53ed",
+        "69bb0226b54f2a520bb54b80"
+       ],
+       "article_id": "68b054613b014c087aed53ed"
+      },
+      {
+       "id": "73c15ef06238accf",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": "investment round",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": 9900000000.0,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 9900000000.0,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Creator of AI-powered coding assistant Cursor. Startup has surpassed $500M ARR; round led by Thrive Capital with participation from Andreessen Horowitz, Accel, and DST Global.",
+       "published_at": "2025-06-14T17:14:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc42a3f111344e7e7c3654"
+       ],
+       "article_id": "69cc42a3f111344e7e7c3654"
+      },
+      {
+       "id": "b646b3c82778cec6",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": "Series C",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI coding assistant platform",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "The fresh capital will enable Anysphere to further accelerate the growth of its AI coding platform and expand its customer base among enterprises looking to boost developer productivity.",
+       "source_sentence": "Anysphere Raises $900M Round to Scale AI Coding Assistant",
+       "published_at": "2025-06-09T23:02:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c58629a4534b9023885ac3"
+       ],
+       "article_id": "68c58629a4534b9023885ac3"
+      },
+      {
+       "id": "3d13602414394b5f",
+       "company_name": "Earendil Labs",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 787000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 787000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Dimension Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "ince capital",
+         "domain": "incecap.com",
+         "amount": null
+        },
+        {
+         "name": "luminous ventures",
+         "domain": "luminous.vc",
+         "amount": null
+        },
+        {
+         "name": "Miracle Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sanofi",
+         "domain": "sanofi.com",
+         "amount": null
+        },
+        {
+         "name": "Biotech Development Fund (created by Hillhouse and Pfizer)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology",
+       "country": "USA",
+       "city": "Wilmington",
+       "use_of_funds": "accelerate its AI‑driven R&D platform, expand interdisciplinary teams, and advance its pipeline of antibody and biologics programs with the goal of delivering first‑in‑class and best‑in‑class therapies for serious diseases",
+       "source_sentence": "Earendil Labs, an AI-driven biotechnology company advancing next-generation biologics, announced that it has raised $787 million in financing rounds.",
+       "published_at": "2026-03-20T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69dcca1ff536d271b2bb2b98",
+        "69e35ab1158f9ddd5d793b5f"
+       ],
+       "article_id": "69dcca1ff536d271b2bb2b98"
+      },
+      {
+       "id": "dc09c90840e32f1b",
+       "company_name": "quince",
+       "domain": "quince.com",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10100000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 10100000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "marcy venture partners",
+         "domain": "marcyvp.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "notable capital",
+         "domain": "notablecapital.com",
+         "amount": null
+        },
+        {
+         "name": "basis set ventures",
+         "domain": "basisset.com",
+         "amount": null
+        },
+        {
+         "name": "wndrco",
+         "domain": "wndrco.com",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce Retail",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Support continued expansion of product assortment, development of supply chain and technology platform, and international growth",
+       "source_sentence": "Online retailer Quince has raised $500 million in funding, valuing the company at $10.1 billion.",
+       "published_at": "2026-03-16T17:38:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c41fb819be37c198784488"
+       ],
+       "article_id": "69c41fb819be37c198784488"
+      },
+      {
+       "id": "5afb15c51a5f9e85",
+       "company_name": "quince",
+       "domain": "quince.com",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "basis set ventures",
+         "domain": "basisset.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "MarcyPen Capital Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "notable capital",
+         "domain": "notablecapital.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "wndrco",
+         "domain": "wndrco.com",
+         "amount": null
+        }
+       ],
+       "sector": "E‑commerce",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Quince – $500.0M",
+       "published_at": "2026-03-16T08:27:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4844e0667c07f278ba3"
+       ],
+       "article_id": "69c3a4844e0667c07f278ba3"
+      },
+      {
+       "id": "854ff558753b6219",
+       "company_name": "airwallex",
+       "domain": "airwallex.com",
+       "round_type": "Series F",
+       "amount_usd": 466000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 466000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "square peg",
+         "domain": "squarepegfabrication.com",
+         "amount": null
+        },
+        {
+         "name": "blackbird",
+         "domain": "blackbirdlp.com",
+         "amount": null
+        },
+        {
+         "name": "airtree",
+         "domain": "airtree.vc",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "lone pine capital",
+         "domain": "lonepinecapital.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "hostplus",
+         "domain": "hostplus.com.au",
+         "amount": null
+        },
+        {
+         "name": "ngs super",
+         "domain": "ngssuper.com.au",
+         "amount": null
+        },
+        {
+         "name": "Visa Ventures",
+         "domain": "visaventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Australia",
+       "city": null,
+       "use_of_funds": "Build out its global platform, expand into new markets, develop AI tools",
+       "source_sentence": "Cross-border payments company Airwallex has completed an enormous $466 million Series F round, bringing its valuation to $9.6 billion while growing its status as one of Australia’s most important fintech businesses.",
+       "published_at": "2025-05-22T01:09:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d97f3f82f590e7fe7d96e7"
+       ],
+       "article_id": "68d97f3f82f590e7fe7d96e7"
+      },
+      {
+       "id": "db7ff1b8c6c7cfd5",
+       "company_name": "lovable",
+       "domain": "lovable.it",
+       "round_type": "Series B",
+       "amount_usd": 330000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 330000000.0,
+       "valuation": 6600000000.0,
+       "investors": [
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Menlo Ventures' Anthology fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "databricks ventures",
+         "domain": "databricks.com",
+         "amount": null
+        },
+        {
+         "name": "T. Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atlassian ventures",
+         "domain": "atlassian.com",
+         "amount": null
+        },
+        {
+         "name": "hubspot ventures",
+         "domain": "hubspot.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "eqt growth",
+         "domain": "eqtgroup.com",
+         "amount": null
+        },
+        {
+         "name": "kinship ventures",
+         "domain": "kinshipventures.co",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        },
+        {
+         "name": "evantic",
+         "domain": "evantic.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Software",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "Lovable said it would use the new funding for building deeper integrations with third-party apps, expanding its features for enterprise use-cases, and to flesh out its platform with the infrastructure needed — like databases, payments, and hosting — to build full‑fledged applications and services.",
+       "source_sentence": "Lovable has raised $330 million in Series B funding at a $6.6 billion valuation, led by CapitalG and Menlo Ventures' Anthology fund.",
+       "published_at": "2025-12-18T13:29:00",
+       "coverage_count": 17,
+       "article_ids": [
+        "69451164269a9dedeaa34db4",
+        "6986b9d0069c05cbe27ced2d",
+        "698888315302bdff258760dc",
+        "6988a8ff8fb0ea95e97735f2",
+        "6989525b94d3f481f3e39077",
+        "6989c15994d3f481f3ebc94e",
+        "6989d06d94d3f481f3ecdfc9",
+        "698d6a9a8d29a990b6d62450",
+        "698d77be9ca02490ecfba63d",
+        "698e59fd9ca02490ec0c6031",
+        "698ebbd28d29a990b6ef4144",
+        "69baf45c51c35210b7b5fc63",
+        "69bb1a24eec96a734300d70d",
+        "69bb2afa6de4b21d3710cd16",
+        "69bb580ceec96a734301bd78",
+        "69c95ffa56216f8b2bd662f0",
+        "69cbd0cd71a014f1df2d1371"
+       ],
+       "article_id": "69451164269a9dedeaa34db4"
+      },
+      {
+       "id": "d96a2847920cc659",
+       "company_name": "Ricrecursive Intelligence",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4000000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Felicis Ventures 1",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "49 Palms",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "radical ventures",
+         "domain": "radical.vc",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-driven chip design",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The company closed a $300 million Series A round at a $4 billion valuation in January, just two months after a $35 million seed round valued it at $750 million.",
+       "published_at": "2026-02-20T05:11:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c98f1d77f2c3a5a194eaf1"
+       ],
+       "article_id": "69c98f1d77f2c3a5a194eaf1"
+      },
+      {
+       "id": "8bd8c10966b30c64",
+       "company_name": "Ricursive Intelligence",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4000000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "49 Palms",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "radical ventures",
+         "domain": "radical.vc",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI – Chipco‑Design",
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": "Ricursive plans to use the capital to hire top talent and refine its platform.",
+       "source_sentence": "Ricursive Intelligence raises $300M in Series A funding for AI-driven chip design platform",
+       "published_at": "2026-02-18T23:54:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c89643ebfc0891032ac3e3"
+       ],
+       "article_id": "69c89643ebfc0891032ac3e3"
+      },
+      {
+       "id": "9c4ea75aa40a5b97",
+       "company_name": "Ricursive Intelligence Inc.",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4000000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Nvidia’s NVentures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        }
+       ],
+       "sector": "semiconductor chip design",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate chip development using AI",
+       "source_sentence": "Ricursive Intelligence Inc., a newly launched startup, recently secured $300 million in Series A funding at a $4 billion valuation, led by Lightspeed and including investment from Nvidia’s NVentures, DST Global, and Felicis Ventures.",
+       "published_at": "2026-02-15T01:26:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd48945d6eab2ab8ff4314"
+       ],
+       "article_id": "69bd48945d6eab2ab8ff4314"
+      },
+      {
+       "id": "1aaabe3343a788aa",
+       "company_name": "Ricursive Intelligence",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "49 Palms Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "radical ventures",
+         "domain": "radical.vc",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Ricursive Intelligence – $300.0M",
+       "published_at": "2026-02-02T08:27:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988abb069527f36baaeb3f9"
+       ],
+       "article_id": "6988abb069527f36baaeb3f9"
+      },
+      {
+       "id": "817aa1f571b5f7cb",
+       "company_name": "Ricursive Intelligence",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "49 Palms",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "radical ai",
+         "domain": "radicalai.org",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI chip design",
+       "country": "USA",
+       "city": "Palo Alto",
+       "use_of_funds": "This infusion will fund Ricursive’s rapid team and product expansion as demand grows for innovative AI chip solutions amid a global semiconductor crunch.",
+       "source_sentence": "Ricursive Intelligence, a Palo Alto-based AI lab spun out of Google DeepMind alumni, announced a $300 million Series A funding round at a $4 billion valuation.",
+       "published_at": "2026-01-26T22:40:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "6989513d94d3f481f3e37a8d",
+        "69e8d78e7bb1410d4ccba7ad"
+       ],
+       "article_id": "6989513d94d3f481f3e37a8d"
+      },
+      {
+       "id": "b9871b4cfb77ebcd",
+       "company_name": "baseten",
+       "domain": "baseten.co",
+       "round_type": "Series E",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "Alphabet’s CapitalG",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        }
+       ],
+       "sector": "Cloud platform for deploying and scaling AI models in production",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Baseten raised a $300 million Series E round that valued the AI infrastructure startup at $5 billion.",
+       "published_at": "2026-01-20T22:03:20",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988f10b94d3f481f3dc6097",
+        "69bd8f9c0ad23ae1115329db"
+       ],
+       "article_id": "6988f10b94d3f481f3dc6097"
+      },
+      {
+       "id": "dbc3c2244d8a80f5",
+       "company_name": "harvey",
+       "domain": "harvey.ai",
+       "round_type": "Series E",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "openai startup fund",
+         "domain": "openai.fund",
+         "amount": null
+        },
+        {
+         "name": "elemental",
+         "domain": "elemental.biz",
+         "amount": null
+        },
+        {
+         "name": "SV Angel",
+         "domain": "svangel.com",
+         "amount": null
+        },
+        {
+         "name": "rev",
+         "domain": "rev.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Harvey plans to double its team, expand globally, and move into adjacent verticals such as tax and accounting.",
+       "source_sentence": "Harvey, the legal AI platform used by law firms and corporate legal teams worldwide, has raised $300 million in a Series E funding round, bringing its valuation to $5 billion.",
+       "published_at": "2025-06-25T07:29:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "694b217e2037ff785f75c0a7",
+        "698d20089ca02490ecf5185c",
+        "699828085c6382c5a5cfdd30",
+        "69bb3679bb3472e5f4c5123b",
+        "69bb367ad7b120f5da03cfb2",
+        "69bd0a45981d28529ed39e8f",
+        "69cbb3b7779e2e2bac54450c"
+       ],
+       "article_id": "698d20089ca02490ecf5185c"
+      },
+      {
+       "id": "fe907000886aa158",
+       "company_name": "airwallex",
+       "domain": "airwallex.com",
+       "round_type": "Series F",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 6200000000.0,
+       "investors": [
+        {
+         "name": "square peg",
+         "domain": "squarepegfabrication.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "lone pine capital",
+         "domain": "lonepinecapital.com",
+         "amount": null
+        },
+        {
+         "name": "blackbird",
+         "domain": "blackbirdlp.com",
+         "amount": null
+        },
+        {
+         "name": "airtree",
+         "domain": "airtree.vc",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "Visa Ventures",
+         "domain": "visaventures.com",
+         "amount": null
+        },
+        {
+         "name": "several leading pension funds in Australia",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "expand its global infrastructure into new markets and continue refining and scaling the software that empowers businesses to operate anywhere, anytime",
+       "source_sentence": "Airwallex, a leading global payments and financial platform for modern businesses, has completed a $300 million Series F funding round at a $6.2 billion valuation.",
+       "published_at": "2025-05-20T23:00:00",
+       "coverage_count": 18,
+       "article_ids": [
+        "68640f988882abb7e3b8dddd",
+        "6864100a8882abb7e3d6d85c",
+        "68c164d76a78bf0c5653aafa",
+        "68c8debd7e3b558e9c677614",
+        "68d0e3fe65fd12d4142b0907",
+        "68d0f9085421fe0a112c6866",
+        "694df23036b18cb64bf2f3f1",
+        "6988a407eefc5d2f542ba183",
+        "6989dc8b94d3f481f3edbb72",
+        "698a28803aeee4a53ff9efc2",
+        "698d97529ca02490ecfdd872",
+        "698e2ee78d29a990b6e47e22",
+        "698e57b98d29a990b6e7a5a4",
+        "698f60979ca02490ec1ff38b",
+        "698f80428d29a990b6fdc8b4",
+        "69bb2fa5fa8c4837c9721993",
+        "69bb590e8b0987d8182b477e",
+        "69bba5f85e05f5e7db82761e"
+       ],
+       "article_id": "68d0f9085421fe0a112c6866"
+      },
+      {
+       "id": "9a45554c96d3690f",
+       "company_name": "frubana",
+       "domain": "frubana.com",
+       "round_type": null,
+       "amount_usd": 271000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 271000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "softbank",
+         "domain": "group.softbank",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "monashees",
+         "domain": "monashees.com.br",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The company went on to raise $271 million thanks to the backing of renowned investors such as SoftBank, DST Global, Tiger Global, Lightspeed Venture Partners and Monashees.",
+       "published_at": "2025-08-20T17:36:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69971c74feeb41363fa44f3c"
+       ],
+       "article_id": "69971c74feeb41363fa44f3c"
+      },
+      {
+       "id": "4af0ababc56676ca",
+       "company_name": "whatnot",
+       "domain": "whatnot.com",
+       "round_type": "Series F",
+       "amount_usd": 225000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 225000000.0,
+       "valuation": 11500000000.0,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "a16z",
+         "domain": "a16z.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Live shopping, e-commerce marketplace",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "accelerate international expansion, support engineering and marketing teams, drive product innovation, strengthen market leadership, enhance trust and safety, roll out new features for a seamless shopping experience",
+       "source_sentence": "Whatnot, one of the live shopping platforms across the U.S., UK, and Europe, has landed $225 million in Series F funding. The round was co-led by DST Global and CapitalG, with participation from Sequoia Capital, Alkeon Capital, and returning investors including a16z, Greycroft, and BOND.",
+       "published_at": "2025-10-29T13:43:49",
+       "coverage_count": 3,
+       "article_ids": [
+        "698954de94d3f481f3e3c1b0",
+        "69c972000fe98f3340be23c5",
+        "69e854ff5cfa3e5ba5e93121"
+       ],
+       "article_id": "698954de94d3f481f3e3c1b0"
+      },
+      {
+       "id": "e15d7445932ea9a0",
+       "company_name": "whatnot",
+       "domain": "whatnot.com",
+       "round_type": null,
+       "amount_usd": 225000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 225000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Livestream commerce",
+       "country": "United States",
+       "city": "Los Angeles",
+       "use_of_funds": null,
+       "source_sentence": "THE WHAT? Livestream shopping platform Whatnot has secured US$225 million at a valuation of US$11.5 billion, led by CapitalG and DST Global, with participation from Sequoia Capital, Alkeon Capital, and others.",
+       "published_at": "2025-10-29T06:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "694dea40d7afac041ef3028d"
+       ],
+       "article_id": "694dea40d7afac041ef3028d"
+      },
+      {
+       "id": "a908e3f70b086baa",
+       "company_name": "whatnot",
+       "domain": "whatnot.com",
+       "round_type": "Series F",
+       "amount_usd": 225000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 225000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Avra Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "live commerce marketplace",
+       "country": "United States",
+       "city": "Los Angeles",
+       "use_of_funds": "Buy back shares from early investors and accelerate growth of live e‑commerce",
+       "source_sentence": "Whatnot raised $225 million in Series F funding",
+       "published_at": "2025-10-28T22:16:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "6901703277c5828be2d83a4f"
+       ],
+       "article_id": "6901703277c5828be2d83a4f"
+      },
+      {
+       "id": "104f1802bdeb18f3",
+       "company_name": "pennylane",
+       "domain": "pennylane.com",
+       "round_type": "Series E",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "Blackstone Growth",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        }
+       ],
+       "sector": "Accounting software platform",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "Pennylane says it will use the funding to increase its R&D investment, including fine-tuning its product in Germany, where it recently launched, and improving its payment and cash management offering.",
+       "source_sentence": "French accounting software platform Pennylane has raised $200m in a funding round",
+       "published_at": "2026-01-20T09:35:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986a856ca3bd326c77cf97a"
+       ],
+       "article_id": "6986a856ca3bd326c77cf97a"
+      },
+      {
+       "id": "43e785da58f3521a",
+       "company_name": "pennylane",
+       "domain": "pennylane.com",
+       "round_type": "Series E",
+       "amount_usd": 189000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 175000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "Blackstone Growth",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Meritech Capital",
+         "domain": "meritechcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Accounting and bookkeeping SaaS for enterprises and accounting firms",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-01-20T22:03:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988f10b94d3f481f3dc6097"
+       ],
+       "article_id": "6988f10b94d3f481f3dc6097"
+      },
+      {
+       "id": "1f8cc87ac0db594a",
+       "company_name": "pennylane",
+       "domain": "pennylane.com",
+       "round_type": "Growth",
+       "amount_usd": 189000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 175000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "Blackstone Growth",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Meritech Capital",
+         "domain": "meritechcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech / Accounting & Financial Management (SaaS)",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "The company will use the funds to enhance R&D in generative AI tools for accountants, localize the platform for German regulatory requirements, expand payment and cash management offerings, and support electronic invoicing adoption.",
+       "source_sentence": "Pennylane, a Paris, France–based accounting and financial management platform for SMEs and accounting firms, has raised €175 million in a funding round.",
+       "published_at": "2026-01-20T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f973a9ca02490ec23fc56"
+       ],
+       "article_id": "698f973a9ca02490ec23fc56"
+      },
+      {
+       "id": "88f02d38711129d3",
+       "company_name": "distyl ai",
+       "domain": "distyl.ai",
+       "round_type": null,
+       "amount_usd": 175000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1800000000.0,
+       "currency": "USD",
+       "amount": 175000000.0,
+       "valuation": 1800000000.0,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "dell technologies capital",
+         "domain": "delltechnologiescapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Distyl AI, the startup helping blue-chip leaders worldwide build the AI-native enterprises of the future, today announced a $175 million funding round at a $1.8 billion valuation, with participation from Lightspeed Venture Partners, Khosla Ventures, DST Global, Coatue, and Dell Technologies Capital.",
+       "published_at": "2025-10-02T12:15:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698ff0959ca02490ec2a7a3e"
+       ],
+       "article_id": "698ff0959ca02490ec2a7a3e"
+      },
+      {
+       "id": "a1af4d6aa8f323a8",
+       "company_name": "distyl ai",
+       "domain": "distyl.ai",
+       "round_type": "Series B",
+       "amount_usd": 175000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 175000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "dell technologies capital",
+         "domain": "delltechnologiescapital.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise AI consulting",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its team, refine its platform, and deepen strategic partnerships",
+       "source_sentence": "Distyl AI, an enterprise-focused AI consulting startup founded by ex-Palantir engineers, secured $175 million in a Series B financing.",
+       "published_at": "2025-09-28T02:24:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d98c1e1645babb987e6fb5"
+       ],
+       "article_id": "68d98c1e1645babb987e6fb5"
+      },
+      {
+       "id": "042e6aa47b83e00a",
+       "company_name": "distyl ai",
+       "domain": "distyl.ai",
+       "round_type": null,
+       "amount_usd": 175000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1800000000.0,
+       "currency": "USD",
+       "amount": 175000000.0,
+       "valuation": 1800000000.0,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "dell technologies capital",
+         "domain": "delltechnologiescapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Distyl AI, the startup helping blue-chip leaders worldwide build the AI-native enterprises of the future, announced a $175 million funding round at a $1.8 billion valuation, with participation from Lightspeed Venture Partners, Khosla Ventures, DST Global, Coatue, and Dell Technologies Capital.",
+       "published_at": "2025-09-24T07:00:15",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe221841f75f6827286bff",
+        "69bb0226b54f2a520bb54b80",
+        "69c97dbaa5dd771f46a34285"
+       ],
+       "article_id": "69c97dbaa5dd771f46a34285"
+      },
+      {
+       "id": "91058a9bc5e46da6",
+       "company_name": "upgrade",
+       "domain": "upgradeboutique.com",
+       "round_type": "Series G",
+       "amount_usd": 165000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 165000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Neuberger*",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "LuminArx Capital Management**",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "several others",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Upgrade, Inc., a fintech company that offers affordable and responsible credit and banking products to mainstream consumers, today announced that it raised $165 million in new equity investment.",
+       "published_at": "2025-10-15T23:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f71a8df80e5160742cda0e",
+        "6914840b5df5f2205135c958"
+       ],
+       "article_id": "68f71a8df80e5160742cda0e"
+      },
+      {
+       "id": "b979a8cc9eda3f23",
+       "company_name": "glean",
+       "domain": "glean.com",
+       "round_type": "Series F",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 7200000000.0,
+       "investors": [
+        {
+         "name": "capital one ventures",
+         "domain": "capitaloneventures.com",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "Kleiner Parkins",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Latitude Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "bicycle capital",
+         "domain": "bicycle.capital",
+         "amount": null
+        },
+        {
+         "name": "geodesic",
+         "domain": "geodesic.com",
+         "amount": null
+        },
+        {
+         "name": "Archerman Capital",
+         "domain": "archermancap.com",
+         "amount": null
+        }
+       ],
+       "sector": "GenAI enterprise search",
+       "country": "USA",
+       "city": "Palo Alto",
+       "use_of_funds": "To double the size of teams in R&D and sales, expand into the large enterprise market, overseas markets, and build partnerships.",
+       "source_sentence": "Glean raised $150 million in a Series F financing led by Wellington Management.",
+       "published_at": "2025-06-10T05:30:01",
+       "coverage_count": 8,
+       "article_ids": [
+        "68640fed8882abb7e3cf3dfd",
+        "6898ce222f01d48cd30ff2dc",
+        "68c4376951a522a90827583b",
+        "68f709c3e97e6da31e2b4649",
+        "694517b4091ed5bfeca346ad",
+        "694d770f9025cd4db1f2f11b",
+        "69bae2a1333284adb6620964",
+        "69bd0a45981d28529ed39e8f"
+       ],
+       "article_id": "68640fed8882abb7e3cf3dfd"
+      },
+      {
+       "id": "916ef13ca2888f70",
+       "company_name": "airwallex",
+       "domain": "airwallex.com",
+       "round_type": null,
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 6200000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 6200000000.0,
+       "investors": [
+        {
+         "name": "Visa Ventures",
+         "domain": "visaventures.com",
+         "amount": null
+        },
+        {
+         "name": "square peg",
+         "domain": "squarepegfabrication.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Global payments powerhouse Airwallex just scored a major funding win — with Visa Ventures joining the likes of Square Peg, DST Global, Salesforce Ventures, and others in a new round that also includes $150 million in secondary share sales.",
+       "published_at": "2025-05-22T06:10:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc8b418a0c2dc739ef0c1c"
+       ],
+       "article_id": "69bc8b418a0c2dc739ef0c1c"
+      },
+      {
+       "id": "b469695a7a346989",
+       "company_name": "cred",
+       "domain": "cred.club",
+       "round_type": "Series G 2022",
+       "amount_usd": 140000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 140000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "CRED’s latest raise follows its 2022 round, also led by GIC, which brought in $140 million.",
+       "published_at": "2025-06-10T17:25:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69867866dac7b0ca9c6026b1"
+       ],
+       "article_id": "69867866dac7b0ca9c6026b1"
+      },
+      {
+       "id": "a124d8250968acd9",
+       "company_name": "Swap Commerce",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "The capital will accelerate entry into new regions, strengthen payments via partnerships like Adyen, and advance AI for demand forecasting, logistics, and transaction monetization.",
+       "source_sentence": "The $100 million Series C was co-led by DST Global and ICONIQ, the latter doubling its investment from the Series B.",
+       "published_at": "2026-01-08T09:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988ab874727a5abdc89fcfd"
+       ],
+       "article_id": "6988ab874727a5abdc89fcfd"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 85,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDEtMDggMDk6MDA6MDAiLCJrIjoiMTE2MTE2NDMzOTI4NTEyMjU4MTciLCJhIjoxMDAwMDAwMDAuMH0",
+     "totals": {
+      "deals": 85,
+      "deals_with_amount": 81,
+      "deals_without_amount": 4,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 44628548000.0,
+      "median_amount_usd": 100000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.182,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.185
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Dst Global",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "dst global"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "fc5b6f1ff06d007b",
+       "company_name": "Protect Prometheus",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 38000000000.0,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": 38000000000.0,
+       "investors": [
+        {
+         "name": "jpmorgan chase",
+         "domain": "jpmorganchase.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "arch venture partners",
+         "domain": "archventure.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Protect Prometheus, AI lab co-led by Jeff Bezos, has reportedly raised $10 billion in fresh funding.",
+       "published_at": "2026-04-24T05:06:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ec1e2e1e448cd078922234"
+       ],
+       "article_id": "69ec1e2e1e448cd078922234"
+      },
+      {
+       "id": "995cab39359aedd9",
+       "company_name": "Resolve.ai",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Resolve.ai has now raised a total of $200M in total equity funding and is backed by DST Global and Salesforce Ventures.",
+       "published_at": "2026-04-18T09:27:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e99023bdd09a23d088f072"
+       ],
+       "article_id": "69e99023bdd09a23d088f072"
+      },
+      {
+       "id": "adbecf91c177b1e8",
+       "company_name": "Haast",
+       "domain": "haast.io",
+       "round_type": "Series A",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "DST Global Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "airtree",
+         "domain": "airtree.vc",
+         "amount": null
+        },
+        {
+         "name": "aura ventures",
+         "domain": "aura.vc",
+         "amount": null
+        },
+        {
+         "name": "black sheep capital",
+         "domain": "blacksheepcapital.com.au",
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered enterprise compliance engine",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "scale its successful agentic flows, accelerate product development, and expand its global enterprise footprint",
+       "source_sentence": "Today, Haast, the leading AI-powered enterprise compliance engine, announced it has raised $12 million in Series A funding led by Peak XV Partners, with participation from DST Global Partners, Airtree, Aura Ventures, and Black Sheep Capital.",
+       "published_at": "2026-04-17T09:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e3147bb1410d4cd4d741"
+       ],
+       "article_id": "69e8e3147bb1410d4cd4d741"
+      },
+      {
+       "id": "5f83f57067b9e234",
+       "company_name": "resolve ai",
+       "domain": "resolve.ai",
+       "round_type": "Series A Extension",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Resolve AI Raises $40M in Series A Extension for Production AI Operations.",
+       "published_at": "2026-04-16T21:41:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8641e7bb1410d4c74ac19"
+       ],
+       "article_id": "69e8641e7bb1410d4c74ac19"
+      },
+      {
+       "id": "1bd0d954e75bdad8",
+       "company_name": "resolve ai",
+       "domain": "resolve.ai",
+       "round_type": "Series A extension",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "continued investment in Resolve AI’s platform, expansion of its go‑to‑market efforts, and long‑term research through Resolve AI Labs",
+       "source_sentence": "Resolve AI announced it has raised $40 million in a Series A extension at a $1.5 billion valuation",
+       "published_at": "2026-04-16T11:26:40",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e862707bb1410d4c73a371",
+        "69e8e2237bb1410d4cd41129"
+       ],
+       "article_id": "69e862707bb1410d4c73a371"
+      },
+      {
+       "id": "3dd8c3afe66c4017",
+       "company_name": "resolve ai",
+       "domain": "resolve.ai",
+       "round_type": "Series A",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand its AI platform for managing software in production environments.",
+       "source_sentence": "Resolve AI Secures $40M Series A Round Back to Home SAN FRANCISCO, CA, Resolve AI, the AI for running and operating software in production, today announced it has raised $40 million in its Series A Extension at a $1.5 billion valuation.",
+       "published_at": "2026-04-16T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e862dc7bb1410d4c73e42e",
+        "69e868479baafc73567fadda"
+       ],
+       "article_id": "69e862dc7bb1410d4c73e42e"
+      },
+      {
+       "id": "bf9fea994c2065ee",
+       "company_name": "Haast",
+       "domain": "haast.io",
+       "round_type": "Series A",
+       "amount_usd": 17000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "DST Global Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "airtree",
+         "domain": "airtree.vc",
+         "amount": null
+        },
+        {
+         "name": "aura ventures",
+         "domain": "aura.vc",
+         "amount": null
+        },
+        {
+         "name": "black sheep capital",
+         "domain": "blacksheepcapital.com.au",
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered compliance infrastructure",
+       "country": "Australia",
+       "city": "Sydney",
+       "use_of_funds": "scale agentic workflow products and expand global enterprise footprint",
+       "source_sentence": "Haast has raised $17 million (US$12 million) in a Series A round led by Peak XV Partners, with participation from DST Global Partners, Airtree, Aura Ventures and Black Sheep Capital.",
+       "published_at": "2026-04-10T00:27:36",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e3275eb66a657f69d1ff99",
+        "69e32a15adcc4eacc58b9a48",
+        "69e34520c70111d65ec46d1b",
+        "69e345f348ac0efad16aac76",
+        "69e852cb7bb1410d4c6a60ee"
+       ],
+       "article_id": "69e3275eb66a657f69d1ff99"
+      },
+      {
+       "id": "2ca304036f589757",
+       "company_name": "Haast",
+       "domain": "haast.io",
+       "round_type": "Series A",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "DST Global Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "airtree",
+         "domain": "airtree.vc",
+         "amount": null
+        },
+        {
+         "name": "aura ventures",
+         "domain": "aura.vc",
+         "amount": null
+        },
+        {
+         "name": "black sheep capital",
+         "domain": "blacksheepcapital.com.au",
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered enterprise compliance solutions",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "to scale its successful agentic flows, accelerate product development, and expand its global enterprise footprint",
+       "source_sentence": "Haast Secures $12M Series A Funding Back to Home NEW YORK, NY, Today, Haast, the leading AI-powered enterprise compliance engine, announced it has raised $12 million in Series A funding. The round was led by Peak XV Partners, with participation from DST Global Partners, Airtree, Aura Ventures, and Black Sheep Capital.",
+       "published_at": "2026-04-09T00:00:00",
+       "coverage_count": 9,
+       "article_ids": [
+        "69e31b24f5980ff47334a797",
+        "69e31b4995bd72210c4e59bb",
+        "69e31d6e95bd72210c4edc92",
+        "69e34525a8697b10fabbbba8",
+        "69e50aef9d0e7fe469ad3a68",
+        "69e63ef42be6445e46074fa0",
+        "69e6451b2be6445e460af53d",
+        "69e853455cfa3e5ba5e81e36",
+        "69e857e05cfa3e5ba5ead38c"
+       ],
+       "article_id": "69e31d6e95bd72210c4edc92"
+      },
+      {
+       "id": "c3d093818aa00b98",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Automotive, Autonomous Vehicles, Sensor, Transportation",
+       "country": null,
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": "Mountain View-based Waymo is a mobility technology company that improves transportation by developing self‑driving solutions for travelers and daily commuters.",
+       "published_at": "2026-03-27T09:27:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69cc4289cb088e024d2646bf"
+      },
+      {
+       "id": "8f948dfb4c3fa8b9",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": null,
+       "amount_flag": "implausible_size",
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 27100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Automotive, Autonomous Vehicles, Sensor, Transportation",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 46,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjQgMDk6Mjc6MzciLCJrIjoiMTAzNDYwNTAzNTQ0MzI0MjAwMjUifQ",
+     "totals": {
+      "deals": 46,
+      "deals_with_amount": 44,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 34548472000.0,
+      "median_amount_usd": 90000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.177,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.183
+    }
+   }
+  }
+ ]
+}

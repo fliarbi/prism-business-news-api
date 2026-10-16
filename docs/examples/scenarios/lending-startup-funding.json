@@ -1,0 +1,2048 @@
+{
+ "slug": "lending-startup-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:22Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "lending",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "lending"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 113,
+      "deals_with_amount": 101,
+      "deals_without_amount": 12,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 9183320000.0,
+      "median_amount_usd": 26750000.0,
+      "largest_amount_usd": 1905000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 255252000.0,
+       "median_amount_usd": 60950000.0,
+       "largest_amount_usd": 101600000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 813800000.0,
+       "median_amount_usd": 76500000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1947380000.0,
+       "median_amount_usd": 23300000.0,
+       "largest_amount_usd": 1905000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 12,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 329340000.0,
+       "median_amount_usd": 10800000.0,
+       "largest_amount_usd": 120000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 560160000.0,
+       "median_amount_usd": 63960000.0,
+       "largest_amount_usd": 200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 9,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 562150000.0,
+       "median_amount_usd": 18500000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 4,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 732628000.0,
+       "median_amount_usd": 165000000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 11,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 287588000.0,
+       "median_amount_usd": 18000000.0,
+       "largest_amount_usd": 139700000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 10,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 376150000.0,
+       "median_amount_usd": 26400000.0,
+       "largest_amount_usd": 150000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 13,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 688700000.0,
+       "median_amount_usd": 23000000.0,
+       "largest_amount_usd": 350000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 14,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1462800000.0,
+       "median_amount_usd": 21000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 7,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1200000000.0,
+       "median_amount_usd": 140000000.0,
+       "largest_amount_usd": 600000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.048,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.051
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "lending",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "lending"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "45050d0aecd6d930",
+       "company_name": "propel finance",
+       "domain": "propelfinance.co.uk",
+       "round_type": "Series",
+       "amount_usd": 1905000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "barclays",
+         "domain": "barclays.in",
+         "amount": null
+        },
+        {
+         "name": "bank of america",
+         "domain": "bankofamerica.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "british business bank",
+         "domain": "british-business-bank.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Global alternative investment firm",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Asset finance / SME lending",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": "Expand support for small and medium-sized enterprises (SMEs) across the UK",
+       "source_sentence": "Propel Finance has secured a £1.5 billion funding round to expand its support for small and medium-sized enterprises (SMEs) across the UK.",
+       "published_at": "2025-07-03T09:15:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d1023d74d3d5792a2d1503"
+       ],
+       "article_id": "68d1023d74d3d5792a2d1503"
+      },
+      {
+       "id": "bbfd77b1c97ae1ab",
+       "company_name": "upstart",
+       "domain": "upstart.com",
+       "round_type": "forward-flow commitment",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Eltura Capital Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "aperture investors",
+         "domain": "apertureinvestors.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI lending marketplace",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Consumer loans origination via Upstart platform",
+       "source_sentence": "Artificial intelligence (AI) lending marketplace Upstart has secured a $1bn (£0.74bn) forward-flow commitment with alternative asset managers Eltura Capital Management and Aperture Investors, alongside co-investors.",
+       "published_at": "2026-03-17T15:26:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1f57aa9ae690c97699f"
+       ],
+       "article_id": "69cbd1f57aa9ae690c97699f"
+      },
+      {
+       "id": "78ba627d34650bca",
+       "company_name": "poonawalla fincorp",
+       "domain": "poonawallafincorp.com",
+       "round_type": "QIP",
+       "amount_usd": 600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 50000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Lending business",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "growth purposes",
+       "source_sentence": "Poonawalla Fincorp is likely to launch a qualified institutional placement (QIP) to raise up to ₹5,000 crore, according to CNBC-TV18 citing industry sources.",
+       "published_at": "2026-04-08T11:08:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2cab47f3a572cf4b36ab5"
+       ],
+       "article_id": "69e2cab47f3a572cf4b36ab5"
+      },
+      {
+       "id": "2646f0d3a770ca69",
+       "company_name": "Crebrid",
+       "domain": null,
+       "round_type": "credit facility",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "barings",
+         "domain": "barings.com",
+         "amount": 500000000.0
+        }
+       ],
+       "sector": "Real Estate Lending",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand loan offerings",
+       "source_sentence": "Barings has announced a new credit facility with real estate lending platform Crebrid, with Barings’ investors taking a minority equity position in Crebrid and providing an initial flow purchase facility of $500m (£368m).",
+       "published_at": "2025-06-05T14:49:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5ac51d7fe179be1c7a892"
+       ],
+       "article_id": "68c5ac51d7fe179be1c7a892"
+      },
+      {
+       "id": "9b7149b37b005485",
+       "company_name": "Quantum Lending Solutions",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "global asset-based private credit firm",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atlas sp partners",
+         "domain": "atlas-sp.com",
+         "amount": null
+        },
+        {
+         "name": "ll funds",
+         "domain": "llfunds.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-based lending infrastructure platform",
+       "country": "USA",
+       "city": "Reston",
+       "use_of_funds": "continue scaling the lending infrastructure platform",
+       "source_sentence": "Quantum Lending Solutions (“Quantum”), an AI-based enterprise platform that enables banks, marketplaces, and technology platforms to make better credit decisions and provide funding to their small business customers, announced the closing of a $400 million financing round.",
+       "published_at": "2025-11-18T14:31:18",
+       "coverage_count": 3,
+       "article_ids": [
+        "6931511f3ca5cd3544f2220e",
+        "698ff9b09ca02490ec2b36d4",
+        "69bc87a61f3c78812b1a9c02"
+       ],
+       "article_id": "6931511f3ca5cd3544f2220e"
+      },
+      {
+       "id": "e6883787b1ddc1a2",
+       "company_name": "pagaya",
+       "domain": "pagaya.com",
+       "round_type": "ABS transaction",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "One William Street Capital Management, L.P. (OWS)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech, Auto lending",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Pagaya Technologies LTD. (“Pagaya” or “the Company”), a global technology company delivering AI-driven product solutions for the financial ecosystem, announced the closing of RPM 2025-5, a $400 million ABS transaction backed by auto loans originated through Pagaya’s network of top-tier national auto lenders, including partners such as Ally, Westlake, and a top-five auto captive.",
+       "published_at": "2025-10-06T13:27:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f725ad17f4f9d43d2b77f3"
+       ],
+       "article_id": "68f725ad17f4f9d43d2b77f3"
+      },
+      {
+       "id": "9b902c788f3b27c7",
+       "company_name": "kiavi",
+       "domain": "kiavi.com",
+       "round_type": "rated securitization",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Nomura Securities International, Inc.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "barclays",
+         "domain": "barclays.in",
+         "amount": null
+        },
+        {
+         "name": "deutsche bank",
+         "domain": "db.com",
+         "amount": null
+        },
+        {
+         "name": "performance trust capital partners",
+         "domain": "performancetrust.com",
+         "amount": null
+        }
+       ],
+       "sector": "Real estate lending",
+       "country": "United States",
+       "city": "Pittsburgh",
+       "use_of_funds": null,
+       "source_sentence": "Kiavi, a leading AI-powered non-bank lending platform to residential real estate investors, today announced the closing of a $350 million rated securitization of residential transition loans (\"RTLs\").",
+       "published_at": "2026-02-19T19:02:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e28d9d601121844c323eb5"
+       ],
+       "article_id": "69e28d9d601121844c323eb5"
+      },
+      {
+       "id": "f30ae39d0d41d8af",
+       "company_name": "bmg money",
+       "domain": "bmgmoney.com",
+       "round_type": "Financing Facility",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "webbank",
+         "domain": "webbank.bank",
+         "amount": null
+        },
+        {
+         "name": "Waterfall Asset Management",
+         "domain": "waterfallam.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech - Employment-based lending",
+       "country": "USA",
+       "city": "Miami",
+       "use_of_funds": "Expand access to responsible credit solutions for underserved employees",
+       "source_sentence": "BMG Money announced today that it has secured a $300 million financing facility with Utah-based WebBank, a leading national issuer of consumer credit products, and Waterfall Asset Management.",
+       "published_at": "2025-11-05T11:45:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6991c02e3fa9200ed8307306"
+       ],
+       "article_id": "6991c02e3fa9200ed8307306"
+      },
+      {
+       "id": "b5329124d42a19f1",
+       "company_name": "kreditbee",
+       "domain": "kreditbee.in",
+       "round_type": "Series E",
+       "amount_usd": 280000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 280000000.0,
+       "valuation": 1500000000.0,
+       "investors": [],
+       "sector": "Fintech / Digital lending",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "product expansion, strengthen lending infrastructure, support future IPO",
+       "source_sentence": "KreditBee has raised $280 million in a Series E round, achieving a valuation of $1.5 billion and entering the unicorn club.",
+       "published_at": "2026-04-08T12:46:08",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e2d15d3aab8d96aa3ca110",
+        "69e2e10d601121844c4424f1",
+        "69e852b55cfa3e5ba5e7c9b6"
+       ],
+       "article_id": "69e2e10d601121844c4424f1"
+      },
+      {
+       "id": "5944cd5a6c109b5e",
+       "company_name": "youlend",
+       "domain": "youlend.com",
+       "round_type": "forward-flow financing facility",
+       "amount_usd": 225000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 225000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Värde Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "embedded lending",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Expand capital base and accelerate growth in the United States",
+       "source_sentence": "YouLend has secured a multi-year forward-flow financing facility from Värde Partners, in a move aimed at expanding its capital base and accelerating growth in the United States.",
+       "published_at": "2026-03-04T06:18:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bced1dfd89557e8dc5eb5a"
+       ],
+       "article_id": "69bced1dfd89557e8dc5eb5a"
+      },
+      {
+       "id": "e1352353f6fb0413",
+       "company_name": "bayport funding",
+       "domain": "bayportfunding.com",
+       "round_type": "senior credit facility",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "webster bank",
+         "domain": "websterbank.com",
+         "amount": 200000000.0
+        }
+       ],
+       "sector": "bridge lending",
+       "country": "USA",
+       "city": "Great Neck, NY",
+       "use_of_funds": "expand national reach targeting larger multifamily, single-family rental and mixed-use developments",
+       "source_sentence": "Bridge lender Bayport Funding has closed a $200 million senior credit facility with Webster Bank as part of the firm’s plans to expand its national reach targeting larger multifamily, single-family rental and mixed-use developments",
+       "published_at": "2025-09-29T13:00:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "699816ffd24b4781ec07733a"
+       ],
+       "article_id": "699816ffd24b4781ec07733a"
+      },
+      {
+       "id": "61b30eecced731f2",
+       "company_name": "roc360",
+       "domain": "roc360.com",
+       "round_type": null,
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": "Real Estate Lending",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Roc360 – The vertically integrated real estate lending and investment management platform announced that it has secured an additional $150M investment from Temasek, into the Roc360 Real Estate Income Trust, an investment vehicle focused on U.S. residential transition loans for home renovations.",
+       "published_at": "2026-01-09T16:15:47",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc3739650bbd41e03de4a8",
+        "69c9cfedb68ade25f5c8cc35"
+       ],
+       "article_id": "69bc3739650bbd41e03de4a8"
+      },
+      {
+       "id": "e3e106315fb9f228",
+       "company_name": "Oxyzo Financial Services",
+       "domain": "oxyzo.in",
+       "round_type": "Primary Capital",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jp morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        }
+       ],
+       "sector": "Lending",
+       "country": "India",
+       "city": "Gurgaon",
+       "use_of_funds": "expansion plans",
+       "source_sentence": "Mumbai: Oxyzo Financial Services, the lending arm of B2B e-commerce startup OfBusiness, has appointed JP Morgan to raise up to $150 million in primary capital, two people familiar with the matter said.",
+       "published_at": "2025-09-25T00:30:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d981df82f590e7fe7dc2ae"
+       ],
+       "article_id": "68d981df82f590e7fe7dc2ae"
+      },
+      {
+       "id": "89fe40af90b5c649",
+       "company_name": "braviant holdings",
+       "domain": "braviantholdings.com",
+       "round_type": "Revolving asset-backed credit facility",
+       "amount_usd": 145000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 145000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "FinTech / Consumer Lending",
+       "country": "USA",
+       "city": "Chicago",
+       "use_of_funds": "New loan participations on a rolling basis, scale originations, diversify capital structure, expand into new markets",
+       "source_sentence": "Braviant Holdings, a Chicago-based technology-driven consumer lending platform has secured approximately $145m in committed capacity across two new revolving asset-backed credit facilities, alongside the renewal of an existing forward flow arrangement.",
+       "published_at": "2026-04-08T14:10:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2cd40dc480588dca70df9"
+       ],
+       "article_id": "69e2cd40dc480588dca70df9"
+      },
+      {
+       "id": "d96da65c823c8b54",
+       "company_name": "braviant holdings",
+       "domain": "braviantholdings.com",
+       "round_type": null,
+       "amount_usd": 145000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 145000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "institutional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Technology-driven consumer lending",
+       "country": "USA",
+       "city": "Chicago",
+       "use_of_funds": "To fund new consumer loan participations and support origination growth strategy",
+       "source_sentence": "Braviant Holdings, LLC announced the recent closing of two revolving asset-backed credit facilities totaling approximately $145 million in committed capacity.",
+       "published_at": "2026-04-07T12:56:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e500f8d5e7fc42ee0f768a"
+       ],
+       "article_id": "69e500f8d5e7fc42ee0f768a"
+      },
+      {
+       "id": "54ab64acab8f900c",
+       "company_name": "Morpheus Lending",
+       "domain": null,
+       "round_type": "Senior funding line",
+       "amount_usd": 139700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 110000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pollen street capital",
+         "domain": "pollencap.com",
+         "amount": 110000000.0
+        }
+       ],
+       "sector": "Specialist lending / bridging loans",
+       "country": "UK",
+       "city": "Manchester",
+       "use_of_funds": "Further growth and scale to support more property professionals, landlords and SMEs across the UK",
+       "source_sentence": "Morpheus Lending has today announced a new £110m senior funding line with leading alternative asset manager, Pollen Street Capital.",
+       "published_at": "2025-12-11T08:04:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a7f469527f36baae744e"
+       ],
+       "article_id": "6988a7f469527f36baae744e"
+      },
+      {
+       "id": "5b93353966dc6528",
+       "company_name": "Weaver Services",
+       "domain": "weaver.vdtrxn",
+       "round_type": null,
+       "amount_usd": 136000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 136000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Lending",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Leading this sector was Weaver Services, which raised $136 million.",
+       "published_at": "2026-03-22T17:26:12",
+       "coverage_count": 2,
+       "article_ids": [
+        "69ca80684bd63996658fc789",
+        "69cbd4af52bca3a3fe8d73cf"
+       ],
+       "article_id": "69cbd4af52bca3a3fe8d73cf"
+      },
+      {
+       "id": "580567bf562246c9",
+       "company_name": "JPalmer Collective",
+       "domain": null,
+       "round_type": "Credit Facility",
+       "amount_usd": 135000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 135000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Texas Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dime community bank",
+         "domain": "dime.com",
+         "amount": null
+        },
+        {
+         "name": "Forbright Bank",
+         "domain": "forbrightbank.com",
+         "amount": null
+        },
+        {
+         "name": "cambridge savings bank",
+         "domain": "cambridgesavings.com",
+         "amount": null
+        }
+       ],
+       "sector": "Asset-based lending",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "accelerate portfolio growth and meet increasing demand for flexible, customized financing solutions for high-growth brands",
+       "source_sentence": "JPalmer Collective (JPC), an asset-based lending firm supporting fast-growing, women-led and natural products companies, today announced the successful syndication of a $135 million credit facility led by Texas Capital and Dime Community Bank.",
+       "published_at": "2026-04-15T11:07:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03f212220687a966a1fdce"
+       ],
+       "article_id": "6a03f212220687a966a1fdce"
+      },
+      {
+       "id": "1781dbabfab539ce",
+       "company_name": "sancus group",
+       "domain": "sancuscapital.com",
+       "round_type": "credit facility",
+       "amount_usd": 127000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pollen street capital",
+         "domain": "pollencap.com",
+         "amount": 100000000.0
+        }
+       ],
+       "sector": "property lending platform",
+       "country": "UK, Ireland",
+       "city": null,
+       "use_of_funds": "to fund continued growth of its property-backed lending platform across the UK and Ireland",
+       "source_sentence": "This £100 million expansion further boosts Sancus’ capacity to fund the continued growth of its property-backed lending platform across the UK and Ireland.",
+       "published_at": "2026-02-12T09:33:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e28528bd7b10565a32f41c"
+       ],
+       "article_id": "69e28528bd7b10565a32f41c"
+      },
+      {
+       "id": "e25684c29ac2cb54",
+       "company_name": "kissht",
+       "domain": "kissht.com",
+       "round_type": null,
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vertex ventures",
+         "domain": "vertexventures.com",
+         "amount": null
+        },
+        {
+         "name": "ventureast",
+         "domain": "ventureast.net",
+         "amount": null
+        },
+        {
+         "name": "Endiya Seed",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "AION Advisory",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ammar Sdn Bhd",
+         "domain": "ammarsdnbhd.vdtrxn",
+         "amount": null
+        }
+       ],
+       "sector": "Digital lending",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Digital lending platform Kissht, operated by OnEMI Technology Solutions, has filed draft papers with the Securities and Exchange Board of India (SEBI) to raise Rs 1,000 crore through a fresh issue of shares.",
+       "published_at": "2025-08-19T14:52:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5af92209ed6c919c7e28b"
+       ],
+       "article_id": "68c5af92209ed6c919c7e28b"
+      },
+      {
+       "id": "1624213216eac74d",
+       "company_name": "HomeXpress",
+       "domain": null,
+       "round_type": "acquisition",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Chimera Funding TRS",
+         "domain": null,
+         "amount": 120000000.0
+        }
+       ],
+       "sector": "Lending",
+       "country": "United States",
+       "city": "Santa Ana",
+       "use_of_funds": null,
+       "source_sentence": "The deal will be executed by Chimera’s subsidiary, Chimera Funding TRS, which will pay HomeXpress its adjusted book value plus a premium consisting of $120 million in cash and approximately 2.08 million shares of Chimera common stock.",
+       "published_at": "2025-06-12T14:38:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9cb3f2ef7157f445adcb3"
+       ],
+       "article_id": "69c9cb3f2ef7157f445adcb3"
+      },
+      {
+       "id": "2933fc87c1c8017f",
+       "company_name": "family bank",
+       "domain": "familybank.co.ke",
+       "round_type": "Credit Facility",
+       "amount_usd": 108000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "EIB Global",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SME lending, trade and agriculture",
+       "country": "Kenya",
+       "city": "Nairobi",
+       "use_of_funds": "Boost SMEs, women-led and youth-owned businesses in Kenya",
+       "source_sentence": "The European Investment Bank’s development arm, EIB Global, has joined forces with Kenya’s Family Bank to mobilize a combined €100 million (approx. US $111 million) credit facility aimed at boosting small and medium-sized enterprises (SMEs), with a special focus on women-led and youth-owned businesses in Kenya.",
+       "published_at": "2025-06-15T10:48:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d6b229ca02490ecfabc26"
+       ],
+       "article_id": "698d6b229ca02490ecfabc26"
+      },
+      {
+       "id": "2b6651f2d2fa41c4",
+       "company_name": "Zopa Bank",
+       "domain": null,
+       "round_type": "Bond issuance",
+       "amount_usd": 101600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Savings and lending bank",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "help meet financial regulations",
+       "source_sentence": "Zopa Bank is a UK savings and lending bank, has raised £80 million by listing a bond on the London Stock Exchange to help meet financial regulations.",
+       "published_at": "2025-05-17T06:28:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "698db57e9ca02490ec001b47"
+       ],
+       "article_id": "698db57e9ca02490ec001b47"
+      },
+      {
+       "id": "34b50384cfd034d9",
+       "company_name": "CredibleX",
+       "domain": "crediblex.io",
+       "round_type": "senior secured credit facility",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pollen street capital",
+         "domain": "pollencap.com",
+         "amount": null
+        }
+       ],
+       "sector": "SME lending",
+       "country": "United Arab Emirates",
+       "city": "Abu Dhabi",
+       "use_of_funds": "help it offer easier access to quality financing options for SMEs in the region",
+       "source_sentence": "Pollen Street Capital has agreed a $100m (£74m) senior secured credit facility to UAE-based SME lender CredibleX.",
+       "published_at": "2025-09-11T09:22:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "694b32b53cb2023f1975afcc",
+        "698d7e518d29a990b6d77d95"
+       ],
+       "article_id": "694b32b53cb2023f1975afcc"
+      },
+      {
+       "id": "0e166cb56ce3574b",
+       "company_name": "tradebridge",
+       "domain": "tradebridge.com",
+       "round_type": "Financing facility",
+       "amount_usd": 88900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Castlelake",
+         "domain": "castlelake.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech Lending",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Support for B2B and B2C eCommerce marketplace clients",
+       "source_sentence": "TradeBridge, a FinTech lender providing embedded finance solutions to SMEs, has secured an additional £70m financing facility from global investment manager Castlelake.",
+       "published_at": "2025-05-02T15:39:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cdd399ca02490ecf039a0"
+       ],
+       "article_id": "698cdd399ca02490ecf039a0"
+      },
+      {
+       "id": "491cbb8200c3d905",
+       "company_name": "Oxyzo Financial Services",
+       "domain": "oxyzo.in",
+       "round_type": "Debt",
+       "amount_usd": 63960000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 5330000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "neo group",
+         "domain": "neo-group.be",
+         "amount": null
+        }
+       ],
+       "sector": "Lending",
+       "country": "India",
+       "city": "Gurgaon",
+       "use_of_funds": null,
+       "source_sentence": "Earlier this year, Oxyzo also raised a ₹533 crore debt round led by Neo Group, according to an Inc42 report.",
+       "published_at": "2025-09-25T00:30:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d981df82f590e7fe7dc2ae"
+       ],
+       "article_id": "68d981df82f590e7fe7dc2ae"
+      },
+      {
+       "id": "fd5abe4050d9dcd9",
+       "company_name": "valu",
+       "domain": "valu.com.eg",
+       "round_type": "debt",
+       "amount_usd": 63000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 63000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "a local bank",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "lending startup",
+       "country": "Egypt",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Over a third of the month’s funding went to Egypt’s lending startup, valU, which raised $63 million in debt from a local bank.",
+       "published_at": "2026-02-09T18:18:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996d03e33af8f1ff8a18165"
+       ],
+       "article_id": "6996d03e33af8f1ff8a18165"
+      },
+      {
+       "id": "6bbd93676ab6dc48",
+       "company_name": "seeds fincap",
+       "domain": "seedsfincap.com",
+       "round_type": "Pre-Series B",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        },
+        {
+         "name": "Lok Capital",
+         "domain": "lokcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Norinchukin Capital",
+         "domain": "nc-cap.co.jp",
+         "amount": null
+        },
+        {
+         "name": "alteria capital",
+         "domain": "alteriacapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "NBFC — MSME lending",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "The funds will be utilised for geographic expansion and strengthening technology and risk capabilities.",
+       "source_sentence": "Seeds Fincap raised INR 50 crore in Pre-Series B.",
+       "published_at": "2025-08-12T12:49:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69894a0f94d3f481f3e2f565"
+       ],
+       "article_id": "69894a0f94d3f481f3e2f565"
+      },
+      {
+       "id": "36cff16f565b1ba6",
+       "company_name": "salient",
+       "domain": "salient.com",
+       "round_type": "Series A",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "matrix partners",
+         "domain": "matrixpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Michael Ovitz",
+         "domain": "michaelovitz.com",
+         "amount": null
+        }
+       ],
+       "sector": "Digital Lending",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its platform’s capabilities into complex post-origination processes including credit dispute resolution, title management automation, complaint handling and other sophisticated workflows",
+       "source_sentence": "Salient, a FinTech, has raised $60 million in a Series A funding round, the investment was led by Andreessen Horowitz, with participation from Y Combinator, Matrix Partners, and renowned entrepreneur Michael Ovitz.",
+       "published_at": "2025-08-01T11:14:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9bd3dd47fc028321e8ebe"
+       ],
+       "article_id": "69e9bd3dd47fc028321e8ebe"
+      },
+      {
+       "id": "607da8439b88d579",
+       "company_name": "love finance",
+       "domain": "lovefinance.co.uk",
+       "round_type": "Series A",
+       "amount_usd": 57150000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "paragon bank",
+         "domain": "paragonbank.co.uk",
+         "amount": null
+        },
+        {
+         "name": "LGB Capital Markets",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SME lending",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": "Expand SME lending capabilities and accelerate balance‑sheet lending",
+       "source_sentence": "Love Finance secures £45m to scale SME lending",
+       "published_at": "2025-10-03T14:41:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d1d9c8d29a990b6d051f4"
+       ],
+       "article_id": "698d1d9c8d29a990b6d051f4"
+      },
+      {
+       "id": "cae4941f12d53ead",
+       "company_name": "drive finance",
+       "domain": "drivefinance.com.au",
+       "round_type": "securitisation bond issuance",
+       "amount_usd": 50400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50400000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Digital Banking, Digital Lending, Consumer Finance",
+       "country": "Egypt",
+       "city": null,
+       "use_of_funds": "support lending growth and scaling lending activities",
+       "source_sentence": "Drive Finance has completed its sixth securitisation bond issuance, raising $50.4 million in its first tranche under a broader $525 million securitisation programme.",
+       "published_at": "2026-01-02T07:03:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8b7e19baafc7356ba3c10"
+       ],
+       "article_id": "69e8b7e19baafc7356ba3c10"
+      },
+      {
+       "id": "d68d7aaa7d2c21f8",
+       "company_name": "octane",
+       "domain": "octane.co",
+       "round_type": "Series F",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "camping world",
+         "domain": "campingworld.com",
+         "amount": null
+        },
+        {
+         "name": "good sam",
+         "domain": "goodsam.com",
+         "amount": null
+        },
+        {
+         "name": "holler-classic family of dealerships",
+         "domain": "hollerclassic.com",
+         "amount": null
+        },
+        {
+         "name": "huntington national bank",
+         "domain": "huntington.com",
+         "amount": null
+        },
+        {
+         "name": "upper90",
+         "domain": "upper90.io",
+         "amount": null
+        },
+        {
+         "name": "valar ventures",
+         "domain": "valarventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Credit, Financial Services, FinTech, Lending",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "8. Octane $50.0M",
+       "published_at": "2026-01-07T09:27:43",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988881d34d0159e4e74bfc0",
+        "6989e43194d3f481f3ee3c70"
+       ],
+       "article_id": "6988881d34d0159e4e74bfc0"
+      },
+      {
+       "id": "8a1ad8200e2334f7",
+       "company_name": "ascent",
+       "domain": "ascent.io",
+       "round_type": null,
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "education lending",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand outcomes-based student lending",
+       "source_sentence": "Ascent secured $45 million to expand outcomes-based student lending",
+       "published_at": "2026-02-27T11:50:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9c98cc534852e935d4fa8"
+       ],
+       "article_id": "69c9c98cc534852e935d4fa8"
+      },
+      {
+       "id": "4752d942ff665248",
+       "company_name": "ascent",
+       "domain": "ascent.io",
+       "round_type": "Series C",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Unnamed global asset manager",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Student lending",
+       "country": null,
+       "city": null,
+       "use_of_funds": "strengthen leadership team, scale education financing platform and expand into new educational verticals.",
+       "source_sentence": "Ascent, a provider of innovative financial products and student support services, has closed a $45m Series C funding round.",
+       "published_at": "2026-02-20T15:20:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9b840cae5463acf018244"
+       ],
+       "article_id": "69c9b840cae5463acf018244"
+      },
+      {
+       "id": "1df6cbaebd0b2df0",
+       "company_name": "flexiloans",
+       "domain": "flexiloans.com",
+       "round_type": "Series C",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fundamentum",
+         "domain": "fundamentum.com",
+         "amount": null
+        },
+        {
+         "name": "Accion Digital Transformation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nuveen",
+         "domain": "nuveen.com",
+         "amount": null
+        },
+        {
+         "name": "maj invest",
+         "domain": "majinvest.com",
+         "amount": null
+        },
+        {
+         "name": "British International Investment",
+         "domain": "bii.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Digital lending, Fintech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand operations, enhance product offerings, strengthen technology infrastructure",
+       "source_sentence": "Wednesday, 11 June 2025: FlexiLoans.com (Flexiloans), India’s leading MSME-focused digital lending NBFC, announces a successful raise of ~$45Mn in its Series C funding round.",
+       "published_at": "2025-06-11T05:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988ae0ca88ad7b9aae110b2",
+        "69e28e1bff2654c79d623878"
+       ],
+       "article_id": "69e28e1bff2654c79d623878"
+      },
+      {
+       "id": "72615f6e5b0d122d",
+       "company_name": "flexiloans",
+       "domain": "flexiloans.com",
+       "round_type": "Series C",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 3750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nuveen",
+         "domain": "nuveen.com",
+         "amount": null
+        },
+        {
+         "name": "fundamentum",
+         "domain": "fundamentum.com",
+         "amount": null
+        },
+        {
+         "name": "Accion Digital Transformation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "maj invest",
+         "domain": "majinvest.com",
+         "amount": null
+        },
+        {
+         "name": "British International Investment",
+         "domain": "bii.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Digital lending",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "operational expansion",
+       "source_sentence": "FlexiLoans has raised INR 375 Cr in its ongoing Series C funding round in a mix of both primary and secondary deals",
+       "published_at": "2025-06-10T18:29:26",
+       "coverage_count": 5,
+       "article_ids": [
+        "68b053ed3b014c087ae27213",
+        "698e80848d29a990b6eab29d",
+        "69bb07d788dbabbbb7c80205",
+        "69bc7f03dded76ae100f6156",
+        "69e28e1bff2654c79d623878"
+       ],
+       "article_id": "69bc7f03dded76ae100f6156"
+      },
+      {
+       "id": "f4c2f658e9be519b",
+       "company_name": "fincfriends",
+       "domain": "fincfriends.com",
+       "round_type": "debt",
+       "amount_usd": 37560000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 3130000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Grow Money",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Incred Financials",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kisan Dhan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "shine star",
+         "domain": "shinestar.es",
+         "amount": null
+        }
+       ],
+       "sector": "Digital lending",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "onward lending to deepen reach among underserved borrowers",
+       "source_sentence": "FincFriends Private Limited, has signed a term sheet amounting to Rs. 313 crore in debt funding between August and November 2025 to strengthen its digital lending operations through its flagship platform, RupeeRedee.",
+       "published_at": "2025-12-10T08:21:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986b55554148f65ea336248"
+       ],
+       "article_id": "6986b55554148f65ea336248"
+      },
+      {
+       "id": "6f641c988738ef0a",
+       "company_name": "fincfriends",
+       "domain": "fincfriends.com",
+       "round_type": "Debt funding",
+       "amount_usd": 37560000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 3130000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Grow Money",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Incred Financials",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kisan Dhan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "shine star",
+         "domain": "shinestar.es",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Digital Lending",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen digital lending operations through its flagship platform, RupeeRedee, for onward lending and expanding reach among underserved borrowers in Tier 2 and Tier 3 markets",
+       "source_sentence": "The current round saw participation from multiple lenders including Grow Money, Incred Financials, Kisan Dhan, Shine Star, and others.",
+       "published_at": "2025-12-09T05:33:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69453fd187e7fc666aa34389",
+        "694dee8bd9499d420ff2fadb"
+       ],
+       "article_id": "694dee8bd9499d420ff2fadb"
+      },
+      {
+       "id": "2f3d4937588203c5",
+       "company_name": "fibe",
+       "domain": "fibe.in",
+       "round_type": "Series F",
+       "amount_usd": 35000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "international finance corporation",
+         "domain": "ifc.org",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech, Online Lending",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "enhance its product suite further and deliver a unified experience across borrowing, saving, investing and payments",
+       "source_sentence": "TPG-backed online lending platform Fibe has raised $35 million investment from International Finance Corporation (IFC) — a member of the World Bank Group — as part of its Series F funding round.",
+       "published_at": "2025-12-09T11:17:12",
+       "coverage_count": 3,
+       "article_ids": [
+        "694deeedd3404557f5f30361",
+        "698e208b9ca02490ec081131",
+        "69cbd1d2e6465b4d5652222b"
+       ],
+       "article_id": "694deeedd3404557f5f30361"
+      },
+      {
+       "id": "a35b8ef96246888c",
+       "company_name": "fibe",
+       "domain": "fibe.in",
+       "round_type": "Series F",
+       "amount_usd": 35000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "international finance corporation",
+         "domain": "ifc.org",
+         "amount": null
+        }
+       ],
+       "sector": "Digital lending",
+       "country": "India",
+       "city": "Pune",
+       "use_of_funds": "enhance our product suite further and deliver a unified experience across borrowing, saving, investing, and payments while remaining focused on responsible credit and positive socio-economic outcomes",
+       "source_sentence": "Consumer lending company Fibe has raised $35 million in Series F funding round led by International Finance Corporation (IFC), a member of the World Bank Group.",
+       "published_at": "2025-12-09T10:46:02",
+       "coverage_count": 9,
+       "article_ids": [
+        "6988aa674727a5abdc89e913",
+        "698ce7d58d29a990b6cc574b",
+        "698e15b89ca02490ec0734bb",
+        "69bafe86529c413173b4afab",
+        "69bbce561e8b2896ac130a14",
+        "69bd91c341af9e92ac9aa937",
+        "69c3a4c4cce5bf5634ec3db6",
+        "69e2af6f601121844c38e4e8",
+        "69e2c87cbd7b10565a409dd3"
+       ],
+       "article_id": "69bd91c341af9e92ac9aa937"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 113,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTItMDkgMTA6NDY6MDIiLCJrIjoiMTE3NzExNTkyNTI4MDk3MTM4MDQiLCJhIjozNTAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 113,
+      "deals_with_amount": 101,
+      "deals_without_amount": 12,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 9183320000.0,
+      "median_amount_usd": 26750000.0,
+      "largest_amount_usd": 1905000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.173,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.176
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "lending",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "lending"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "ef9c115b3f89d2a8",
+       "company_name": "Revltek",
+       "domain": "revltek.com",
+       "round_type": "revolving line of credit",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Texas Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech, Lending Infrastructure",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Support continued growth, expand lending capacity for home improvement loans, and invest in technology, risk management, and partner support",
+       "source_sentence": "RevlTek, a credit union service organization (CUSO) leveraging financial technology to originate, administer and purchase purpose-driven consumer loans, today announced it has secured a revolving line of credit from Texas Capital.",
+       "published_at": "2026-04-22T08:44:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e999f3bdd09a23d0909529"
+       ],
+       "article_id": "69e999f3bdd09a23d0909529"
+      },
+      {
+       "id": "580567bf562246c9",
+       "company_name": "JPalmer Collective",
+       "domain": null,
+       "round_type": "Credit Facility",
+       "amount_usd": 135000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 135000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Texas Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dime community bank",
+         "domain": "dime.com",
+         "amount": null
+        },
+        {
+         "name": "Forbright Bank",
+         "domain": "forbrightbank.com",
+         "amount": null
+        },
+        {
+         "name": "cambridge savings bank",
+         "domain": "cambridgesavings.com",
+         "amount": null
+        }
+       ],
+       "sector": "Asset-based lending",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "accelerate portfolio growth and meet increasing demand for flexible, customized financing solutions for high-growth brands",
+       "source_sentence": "JPalmer Collective (JPC), an asset-based lending firm supporting fast-growing, women-led and natural products companies, today announced the successful syndication of a $135 million credit facility led by Texas Capital and Dime Community Bank.",
+       "published_at": "2026-04-15T11:07:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03f212220687a966a1fdce"
+       ],
+       "article_id": "6a03f212220687a966a1fdce"
+      },
+      {
+       "id": "ddbb235926e794d7",
+       "company_name": "paywatch",
+       "domain": "paywatch.co.kr",
+       "round_type": null,
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Fintech / Digital Lending",
+       "country": "Malaysia",
+       "city": null,
+       "use_of_funds": "expand digital lending and payments",
+       "source_sentence": "Fintech firms like Paywatch and Funding Societies underscore the sector's appeal, with recent rounds exceeding $20 million each to expand digital lending and payments.",
+       "published_at": "2026-04-08T18:19:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2d0df90d9a716b4c7bd20",
+        "69e507a69d0e7fe469ab1162"
+       ],
+       "article_id": "69e2d0df90d9a716b4c7bd20"
+      },
+      {
+       "id": "b56ab59c884038e9",
+       "company_name": "funding societies",
+       "domain": "fundingsocieties.com",
+       "round_type": null,
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Fintech / Digital Lending",
+       "country": "Malaysia",
+       "city": null,
+       "use_of_funds": "expand digital lending and payments",
+       "source_sentence": "Fintech firms like Paywatch and Funding Societies underscore the sector's appeal, with recent rounds exceeding $20 million each to expand digital lending and payments.",
+       "published_at": "2026-04-08T18:19:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2d0df90d9a716b4c7bd20",
+        "69e507a69d0e7fe469ab1162"
+       ],
+       "article_id": "69e2d0df90d9a716b4c7bd20"
+      },
+      {
+       "id": "89fe40af90b5c649",
+       "company_name": "braviant holdings",
+       "domain": "braviantholdings.com",
+       "round_type": "Revolving asset-backed credit facility",
+       "amount_usd": 145000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 145000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "FinTech / Consumer Lending",
+       "country": "USA",
+       "city": "Chicago",
+       "use_of_funds": "New loan participations on a rolling basis, scale originations, diversify capital structure, expand into new markets",
+       "source_sentence": "Braviant Holdings, a Chicago-based technology-driven consumer lending platform has secured approximately $145m in committed capacity across two new revolving asset-backed credit facilities, alongside the renewal of an existing forward flow arrangement.",
+       "published_at": "2026-04-08T14:10:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2cd40dc480588dca70df9"
+       ],
+       "article_id": "69e2cd40dc480588dca70df9"
+      },
+      {
+       "id": "b5329124d42a19f1",
+       "company_name": "kreditbee",
+       "domain": "kreditbee.in",
+       "round_type": "Series E",
+       "amount_usd": 280000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 280000000.0,
+       "valuation": 1500000000.0,
+       "investors": [],
+       "sector": "Fintech / Digital lending",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "product expansion, strengthen lending infrastructure, support future IPO",
+       "source_sentence": "KreditBee has raised $280 million in a Series E round, achieving a valuation of $1.5 billion and entering the unicorn club.",
+       "published_at": "2026-04-08T12:46:08",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e2d15d3aab8d96aa3ca110",
+        "69e2e10d601121844c4424f1",
+        "69e852b55cfa3e5ba5e7c9b6"
+       ],
+       "article_id": "69e2e10d601121844c4424f1"
+      },
+      {
+       "id": "78ba627d34650bca",
+       "company_name": "poonawalla fincorp",
+       "domain": "poonawallafincorp.com",
+       "round_type": "QIP",
+       "amount_usd": 600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 50000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Lending business",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "growth purposes",
+       "source_sentence": "Poonawalla Fincorp is likely to launch a qualified institutional placement (QIP) to raise up to ₹5,000 crore, according to CNBC-TV18 citing industry sources.",
+       "published_at": "2026-04-08T11:08:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2cab47f3a572cf4b36ab5"
+       ],
+       "article_id": "69e2cab47f3a572cf4b36ab5"
+      },
+      {
+       "id": "d96da65c823c8b54",
+       "company_name": "braviant holdings",
+       "domain": "braviantholdings.com",
+       "round_type": null,
+       "amount_usd": 145000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 145000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "institutional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Technology-driven consumer lending",
+       "country": "USA",
+       "city": "Chicago",
+       "use_of_funds": "To fund new consumer loan participations and support origination growth strategy",
+       "source_sentence": "Braviant Holdings, LLC announced the recent closing of two revolving asset-backed credit facilities totaling approximately $145 million in committed capacity.",
+       "published_at": "2026-04-07T12:56:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e500f8d5e7fc42ee0f768a"
+       ],
+       "article_id": "69e500f8d5e7fc42ee0f768a"
+      },
+      {
+       "id": "68f819c9fca061be",
+       "company_name": "metafin",
+       "domain": "metafin.in",
+       "round_type": null,
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Lending",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "\"Metafin raised $10 million in debt,\"",
+       "published_at": "2026-03-30T05:31:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ca80684bd63996658fc789"
+       ],
+       "article_id": "69ca80684bd63996658fc789"
+      },
+      {
+       "id": "5819951181239fbe",
+       "company_name": "Finfinity",
+       "domain": "finfinity.co.in",
+       "round_type": null,
+       "amount_usd": 2400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Lending",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "\"Finfinity raised $2.4 million,\"",
+       "published_at": "2026-03-30T05:31:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ca80684bd63996658fc789"
+       ],
+       "article_id": "69ca80684bd63996658fc789"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 46,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMzAgMDU6MzE6MjEiLCJrIjoiNjM0ODI2OTA1MjE2OTAwMjk0MiJ9",
+     "totals": {
+      "deals": 46,
+      "deals_with_amount": 44,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 3727650000.0,
+      "median_amount_usd": 24000000.0,
+      "largest_amount_usd": 1000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.097,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.105
+    }
+   }
+  }
+ ]
+}

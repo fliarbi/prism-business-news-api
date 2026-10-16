@@ -1,0 +1,2489 @@
+{
+ "slug": "medtech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:20Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "medtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "medtech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 122,
+      "deals_with_amount": 103,
+      "deals_without_amount": 19,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 1754428610.0,
+      "median_amount_usd": 7128000.0,
+      "largest_amount_usd": 150000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 9,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 117275750.0,
+       "median_amount_usd": 1447200.0,
+       "largest_amount_usd": 60000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 151840000.0,
+       "median_amount_usd": 6655000.0,
+       "largest_amount_usd": 125000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 10,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 120676000.0,
+       "median_amount_usd": 8100000.0,
+       "largest_amount_usd": 35000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 78236000.0,
+       "median_amount_usd": 2700000.0,
+       "largest_amount_usd": 61000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 4,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 69565000.0,
+       "median_amount_usd": 17830000.0,
+       "largest_amount_usd": 32000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 11,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 278578500.0,
+       "median_amount_usd": 11250000.0,
+       "largest_amount_usd": 102500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 9,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 263332000.0,
+       "median_amount_usd": 4320000.0,
+       "largest_amount_usd": 150000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 7,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 199712000.0,
+       "median_amount_usd": 6138000.0,
+       "largest_amount_usd": 124200000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 14,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 246468360.0,
+       "median_amount_usd": 16200000.0,
+       "largest_amount_usd": 74088000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 11,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 56421000.0,
+       "median_amount_usd": 4700000.0,
+       "largest_amount_usd": 20000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 6,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 71680000.0,
+       "median_amount_usd": 9420000.0,
+       "largest_amount_usd": 24840000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 121644000.0,
+       "median_amount_usd": 7900000.0,
+       "largest_amount_usd": 80000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.179,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.209
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "medtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "medtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "dc438c1c97947239",
+       "company_name": "distalmotion",
+       "domain": "distalmotion.com",
+       "round_type": "Series G",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Revival Healthcare Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "inside investor",
+         "domain": "insideinvestor.com",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "Switzerland",
+       "city": "Lausanne",
+       "use_of_funds": "Accelerating US commercial adoption of Dexter and supporting ongoing clinical and product development initiatives",
+       "source_sentence": "Walder Wyss advised Distalmotion, a globally active MedTech company based in Lausanne, throughout closing of its USD 150 million series G financing round.",
+       "published_at": "2025-11-21T10:42:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cedf09ca02490ecf16e2a"
+       ],
+       "article_id": "698cedf09ca02490ecf16e2a"
+      },
+      {
+       "id": "f8929cda8f1e70fc",
+       "company_name": "forsight robotics",
+       "domain": "forsightrobotics.com",
+       "round_type": "Series B",
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        }
+       ],
+       "sector": "Medtech",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "This week, Israeli medtech startup ForSight Robotics raised a massive $125 million in a Series B round led by Eclipse.",
+       "published_at": "2025-06-27T10:33:19",
+       "coverage_count": 2,
+       "article_ids": [
+        "6989b6c394d3f481f3eafcf0",
+        "69d15a901078dcf3634e1481"
+       ],
+       "article_id": "6989b6c394d3f481f3eafcf0"
+      },
+      {
+       "id": "28c00af13fda5036",
+       "company_name": "fire1",
+       "domain": "fire1foundry.com",
+       "round_type": "late-stage deal",
+       "amount_usd": 124200000.00000001,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 115000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "MedTech",
+       "country": "Ireland",
+       "city": "Dublin",
+       "use_of_funds": null,
+       "source_sentence": "Ireland’s maturing ecosystem continued into 2025 with a €115 million (£101m) late-stage deal for Dublin-based medical device firm FIRE1, one of the largest health tech rounds in Europe this year.",
+       "published_at": "2025-12-03T07:30:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "695d0f0506b512f7c6538605"
+       ],
+       "article_id": "695d0f0506b512f7c6538605"
+      },
+      {
+       "id": "d67b62478b85d3b0",
+       "company_name": "comind",
+       "domain": "comind.io",
+       "round_type": null,
+       "amount_usd": 102500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 102500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "plural",
+         "domain": "plural.sh",
+         "amount": null
+        },
+        {
+         "name": "angelini ventures",
+         "domain": "angeliniventures.com",
+         "amount": null
+        },
+        {
+         "name": "localglobe",
+         "domain": "localglobe.vc",
+         "amount": null
+        },
+        {
+         "name": "octopus ventures",
+         "domain": "octopusventures.com",
+         "amount": null
+        },
+        {
+         "name": "crane",
+         "domain": "crane-usa.com",
+         "amount": null
+        },
+        {
+         "name": "backed vc",
+         "domain": "backed.vc",
+         "amount": null
+        },
+        {
+         "name": "Entrepreneurs First",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "complete clinical trials, scale manufacturing and secure regulatory approval for its first product, CoMind One",
+       "source_sentence": "London-based MedTech CoMind has raised $102.5 million (£76.7m) to advance its non-invasive brain monitoring technology aimed at transforming care for critically ill patients.",
+       "published_at": "2025-10-21T15:11:38",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe3a6ff2b4270823296d59",
+        "698889805a4e31ff243aa59b",
+        "69bc0effc95888b5653596a5"
+       ],
+       "article_id": "698889805a4e31ff243aa59b"
+      },
+      {
+       "id": "ead4ce7bcab30f17",
+       "company_name": "Trogenix",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 88900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iq capital",
+         "domain": "iqcapital.vc",
+         "amount": null
+        },
+        {
+         "name": "4bio capital",
+         "domain": "4biocapital.com",
+         "amount": null
+        },
+        {
+         "name": "cancer research horizons",
+         "domain": "cancerresearchhorizons.com",
+         "amount": null
+        },
+        {
+         "name": "National Brain Tumour Society",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "eli lilly",
+         "domain": "lilly.com",
+         "amount": null
+        },
+        {
+         "name": "Meltwind",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "LongeVC",
+         "domain": "longevc.com",
+         "amount": null
+        },
+        {
+         "name": "calculus capital",
+         "domain": "calculuscapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotech / MedTech",
+       "country": "Scotland",
+       "city": "Edinburgh",
+       "use_of_funds": "Advance pipeline of cancer therapies into phase 1 in‑human clinical trials for aggressive brain cancers",
+       "source_sentence": "Edinburgh Uni spinout Trogenix has completed Series A financing of £70 million in a round led by IQ Capital, alongside returning investors 4BIO Capital, Cancer Research Horizons and the National Brain Tumour Society.",
+       "published_at": "2025-11-06T13:40:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "694b2fad70a402cb9f75c8d0"
+       ],
+       "article_id": "694b2fad70a402cb9f75c8d0"
+      },
+      {
+       "id": "7688c53bef0e0d87",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI / MedTech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "The company will use the funding to enhance its AI capabilities, deepen its proprietary MedTech data ontology, and expand its platform into broader workflows beyond commercial use cases.",
+       "source_sentence": "Funding Details Company: AcuityMD, Inc. Raised: $80.0M Round: Series C Funding Date: April 2026 Lead Investor: StepStone Group Additional Investors: Benchmark, Redpoint Ventures, ICONIQ, Atreides Management Company Website: https://www.acuitymd.com/",
+       "published_at": "2026-04-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d6327b2d589e844c0858"
+       ],
+       "article_id": "69f9d6327b2d589e844c0858"
+      },
+      {
+       "id": "97ee9c42fb1820d5",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "USA",
+       "city": "Boston, MA",
+       "use_of_funds": "advanced artificial intelligence (AI) capabilities",
+       "source_sentence": "AcuityMD Raises $80M Series C Round Back to Home BOSTON, MA, AcuityMD, the AI platform for MedTech, today announced $80 million in new funding.",
+       "published_at": "2026-04-21T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e87eee9baafc73568e5709",
+        "69e997ddbdd09a23d08efe46",
+        "69e99a20d47fc02832181d10",
+        "69f2293b27117df83f93f6f6",
+        "69f8801143843dd771ce4e0d"
+       ],
+       "article_id": "69e997ddbdd09a23d08efe46"
+      },
+      {
+       "id": "38de9fd945b23f1b",
+       "company_name": "ProVerum",
+       "domain": "proverummedical.com",
+       "round_type": null,
+       "amount_usd": 74088000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 68600000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "MedTech",
+       "country": "Ireland",
+       "city": null,
+       "use_of_funds": "to advance minimally invasive urology treatment",
+       "source_sentence": "ProVerum secured €68.6 million to advance a minimally invasive urology treatment",
+       "published_at": "2026-01-28T15:21:05",
+       "coverage_count": 2,
+       "article_ids": [
+        "69866ea954148f65ea3216c4",
+        "698e70fc9ca02490ec0e12b3"
+       ],
+       "article_id": "69866ea954148f65ea3216c4"
+      },
+      {
+       "id": "1af2571b8b074dd1",
+       "company_name": "allergy therapeutics",
+       "domain": "allergytherapeutics.com",
+       "round_type": "Warrants exercise",
+       "amount_usd": 69850000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "fully repay its shareholder loan and clear all outstanding debt",
+       "source_sentence": "Allergy Therapeutics has strengthened its finances after raising £55 million from the exercise of 1.38 billion lender warrants, using the proceeds to fully repay its shareholder loan and clear all outstanding debt.",
+       "published_at": "2025-10-29T08:40:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a89994d3f481f3d72036"
+       ],
+       "article_id": "6988a89994d3f481f3d72036"
+      },
+      {
+       "id": "faf490e1dedd3437",
+       "company_name": "allergy therapeutics",
+       "domain": "allergytherapeutics.com",
+       "round_type": "Unsecured loan facility",
+       "amount_usd": 63500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "skygem",
+         "domain": "skygem.aero",
+         "amount": null
+        },
+        {
+         "name": "Southern Fox Investments Limited",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "UK",
+       "city": "West Sussex",
+       "use_of_funds": "providing financial flexibility until 2030",
+       "source_sentence": "The company has also agreed a new £50m unsecured loan facility with long-term backers SkyGem Acquisition Limited and Southern Fox Investments Limited, providing financial flexibility until 2030.",
+       "published_at": "2025-10-29T08:40:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a89994d3f481f3d72036"
+       ],
+       "article_id": "6988a89994d3f481f3d72036"
+      },
+      {
+       "id": "44bc1d586d68b76e",
+       "company_name": "reprieve cardiovascular",
+       "domain": "reprievecardio.com",
+       "round_type": "Series B",
+       "amount_usd": 61000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 61000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "deerfield management",
+         "domain": "deerfield.com",
+         "amount": null
+        },
+        {
+         "name": "Rex Health Ventures",
+         "domain": "rexhealthventures.com",
+         "amount": null
+        },
+        {
+         "name": "arboretum ventures",
+         "domain": "arboretumvc.com",
+         "amount": null
+        },
+        {
+         "name": "lightstone ventures",
+         "domain": "lightstonevc.com",
+         "amount": null
+        },
+        {
+         "name": "sante ventures",
+         "domain": "sante.com",
+         "amount": null
+        },
+        {
+         "name": "genesis capital",
+         "domain": "genesis.cz",
+         "amount": null
+        },
+        {
+         "name": "cadence capital",
+         "domain": "cadencecapital.com.au",
+         "amount": null
+        }
+       ],
+       "sector": "Medtech for heart failure",
+       "country": "USA",
+       "city": "Milford",
+       "use_of_funds": "Support clinical trial and prepare for commercialization of fluid management device",
+       "source_sentence": "Reprieve Cardiovascular, a Milford, MA-based medical device startup, has secured $61 million in Series B financing",
+       "published_at": "2025-08-14T16:15:04",
+       "coverage_count": 2,
+       "article_ids": [
+        "68ab3648bfdb4fb6639ccdef",
+        "68ab3fb42e28036801bf382a"
+       ],
+       "article_id": "68ab3648bfdb4fb6639ccdef"
+      },
+      {
+       "id": "d1011145eefa1f41",
+       "company_name": "salvia bioelectronics",
+       "domain": "salviabioelectronics.com",
+       "round_type": "Series B",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "medtech",
+       "country": "Netherlands",
+       "city": null,
+       "use_of_funds": "develop its MySalvia Therapy",
+       "source_sentence": "Dutch medtech company Salvia BioElectronics has raised $60 million in a Series B funding round to develop its MySalvia Therapy.",
+       "published_at": "2025-05-31T06:07:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "699741575fbe93703d60b275"
+       ],
+       "article_id": "699741575fbe93703d60b275"
+      },
+      {
+       "id": "3609cafd3b7aa926",
+       "company_name": "xeltis",
+       "domain": "xeltis.com",
+       "round_type": null,
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        },
+        {
+         "name": "EQT Life Sciences",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Invest-NL",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "new type of implant that provides reliable blood access for patients undergoing kidney dialysis",
+       "source_sentence": "Wenger Vieli advised vascular implants specialist Xeltis on its financing round, raising approximately EUR 50 million.",
+       "published_at": "2025-12-05T11:07:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "698ce64b9ca02490ecf0d365"
+       ],
+       "article_id": "698ce64b9ca02490ecf0d365"
+      },
+      {
+       "id": "db531b4fc08ccdb6",
+       "company_name": "fineheart",
+       "domain": "fineheart.fr",
+       "round_type": "IPCEI Tech4Cure Grant",
+       "amount_usd": 51840000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 48000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "European IPCEI Tech4Cure program",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Medtech",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "Support clinical validation, industrialization of FlowMaker, and unlock further grants",
+       "source_sentence": "The 48 million in non‑dilutive grants from the European IPCEI Tech4Cure program",
+       "published_at": "2026-01-09T02:43:11",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bb4acfa2269239ea260dcb",
+        "69bbd9c3fa79fa6ed8b7e9fc"
+       ],
+       "article_id": "69bb4acfa2269239ea260dcb"
+      },
+      {
+       "id": "701fb1ea92761bbd",
+       "company_name": "safeheal",
+       "domain": "safeheal.com",
+       "round_type": "Series C",
+       "amount_usd": 37800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gideon strategic partners",
+         "domain": "gideonsp.com",
+         "amount": null
+        },
+        {
+         "name": "M&L Healthcare",
+         "domain": "mnlhealthcare.com",
+         "amount": null
+        },
+        {
+         "name": "sofinnova partners",
+         "domain": "sofinnovapartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "medtech",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "support the completion of SafeHeal’s pivotal IDE study and the commercial launch of Colovac in Europe and the United States",
+       "source_sentence": "Solar Eclipse led the recent €35 million Series C funding round, which closed in April 2025.",
+       "published_at": "2025-05-07T04:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a8838fb0ea95e9772e8e"
+       ],
+       "article_id": "6988a8838fb0ea95e9772e8e"
+      },
+      {
+       "id": "a5b2d1abf7d14870",
+       "company_name": "field medical",
+       "domain": "fieldmedicalinc.com",
+       "round_type": "Series B",
+       "amount_usd": 35000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "biostar capital",
+         "domain": "biostar.capital",
+         "amount": null
+        },
+        {
+         "name": "Cue Growth",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech / Cardiology",
+       "country": "USA",
+       "city": "Cardiff-by-the-Sea",
+       "use_of_funds": "To support the initiation of the company’s pivotal VERITAS trial, advance the FieldForce Ablation System development, and expand clinical and regulatory capabilities.",
+       "source_sentence": "Field Medical, Inc., a clinical-stage company redefining cardiac ablation with next-generation pulsed field ablation (PFA) technology, today announced the close of a $35 million Series B financing round co-led by BioStar Capital and Cue Growth, with participation from existing strategic investors.",
+       "published_at": "2025-07-01T14:47:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "699711b65fbe93703d5fbc6b"
+       ],
+       "article_id": "699711b65fbe93703d5fbc6b"
+      },
+      {
+       "id": "7b9125e55e4ee768",
+       "company_name": "axon therapies",
+       "domain": "axontherapies.com",
+       "round_type": "Series A",
+       "amount_usd": 32000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 32000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "earlybird venture capital",
+         "domain": "earlybird.com",
+         "amount": null
+        },
+        {
+         "name": "Santé Ventures",
+         "domain": "santeventures.com",
+         "amount": null
+        },
+        {
+         "name": "deerfield management",
+         "domain": "deerfield.com",
+         "amount": null
+        },
+        {
+         "name": "cd capital",
+         "domain": "cd-capital.com",
+         "amount": null
+        },
+        {
+         "name": "KOFA Healthcare",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Advance proprietary SAVM therapy and support two randomized feasibility studies for HFpEF and HFrEF.",
+       "source_sentence": "Axon Therapies … has raised $32 million in an oversubscribed Series A financing round that drew the attention of both new and returning investors.",
+       "published_at": "2025-09-29T04:41:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb09f8333284adb6629b93"
+       ],
+       "article_id": "69bb09f8333284adb6629b93"
+      },
+      {
+       "id": "7ffd05eeb9009e72",
+       "company_name": "ShanX Medtech (SXM)",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 25920000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 24000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "MedTech",
+       "country": "Netherlands",
+       "city": "Eindhoven",
+       "use_of_funds": "to scale operations, advance clinical validation and prepare for market launch",
+       "source_sentence": "ShanX Medtech Eindhoven-based MedTech startup ShanX Medtech (SXM), which develops in‑vitro diagnostic platforms for antibiotic susceptibility testing, has raised €24 million in a Seed funding round to scale operations, advance clinical validation and prepare for market launch.",
+       "published_at": "2026-01-10T06:14:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f75c28d29a990b6fcfc38"
+       ],
+       "article_id": "698f75c28d29a990b6fcfc38"
+      },
+      {
+       "id": "a5667a9f061445e3",
+       "company_name": "ShanX Medtech",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 25920000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 24000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "MedTech",
+       "country": "Netherlands",
+       "city": null,
+       "use_of_funds": "to address antimicrobial resistance",
+       "source_sentence": "The €24 million raised announced by ShanX Medtech is not only distinguished by its size, but above all by the widening gap between traditional venture capital tools and the economic, regulatory and industrial realities of critical medtech.",
+       "published_at": "2026-01-07T14:44:46",
+       "coverage_count": 3,
+       "article_ids": [
+        "69648d529152ac030a3e9822",
+        "69866ea954148f65ea3216c4",
+        "698e70fc9ca02490ec0e12b3"
+       ],
+       "article_id": "69648d529152ac030a3e9822"
+      },
+      {
+       "id": "9c5536d167336a7c",
+       "company_name": "ShanX Medtech",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 25920000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 24000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "borski fund",
+         "domain": "borskifund.com",
+         "amount": null
+        },
+        {
+         "name": "NextGen Ventures",
+         "domain": "nextgenventures.nl",
+         "amount": null
+        },
+        {
+         "name": "CbusineZ",
+         "domain": "cbusinez.nl",
+         "amount": null
+        },
+        {
+         "name": "Brabantse Ontwikkelings Maatschappij",
+         "domain": "bom.nl",
+         "amount": null
+        },
+        {
+         "name": "Invest-NL",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "strategic angel fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "Netherlands",
+       "city": "Eindhoven",
+       "use_of_funds": "scale operations, advance clinical validation and prepare for market launch",
+       "source_sentence": "has raised €24 million in a Seed funding round to scale operations, advance clinical validation and prepare for market launch.",
+       "published_at": "2026-01-07T12:14:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996b98433af8f1ff8a1042c"
+       ],
+       "article_id": "6996b98433af8f1ff8a1042c"
+      },
+      {
+       "id": "0ac39561ecd67945",
+       "company_name": "organox",
+       "domain": "organox.com",
+       "round_type": "Follow‑on",
+       "amount_usd": 25400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bgf",
+         "domain": "bgf.co.uk",
+         "amount": 20000000.0
+        }
+       ],
+       "sector": "medtech",
+       "country": "United Kingdom",
+       "city": "Oxford",
+       "use_of_funds": null,
+       "source_sentence": "We saw OrganOx's potential and backed it through seven rounds of funding over six years, from our first investment in 2019 to our £20m follow‑on investment earlier this year.",
+       "published_at": "2025-09-19T07:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d992d959ff3bc3607eeb19"
+       ],
+       "article_id": "68d992d959ff3bc3607eeb19"
+      },
+      {
+       "id": "371916f70497893b",
+       "company_name": "kupando",
+       "domain": "kupando.com",
+       "round_type": "Series A expansion",
+       "amount_usd": 24840000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 23000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "remiges ventures",
+         "domain": "remigesventures.com",
+         "amount": null
+        },
+        {
+         "name": "lifecare partners",
+         "domain": "lifecarevc.com",
+         "amount": null
+        },
+        {
+         "name": "brandenburg kapital",
+         "domain": "brandenburg-kapital.de",
+         "amount": null
+        },
+        {
+         "name": "High-Tech Gründerfonds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ventura biomed investors",
+         "domain": "ventura-biomed.com",
+         "amount": null
+        },
+        {
+         "name": "CARMA FUND",
+         "domain": "carma-fund.com",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech, oncology & infectious diseases",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "to bring KUP101 into clinical trials for solid tumors",
+       "source_sentence": "This will increase the total amount of the round to 23 million euros, reports EU startups.",
+       "published_at": "2026-03-18T16:11:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4bbb2a4bc21b9426afa"
+       ],
+       "article_id": "69c3a4bbb2a4bc21b9426afa"
+      },
+      {
+       "id": "aa5a3a2be855d0e6",
+       "company_name": "restore medical",
+       "domain": "restoremedical.co",
+       "round_type": "Series B",
+       "amount_usd": 23000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 23000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Pitango HealthTech",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "European Innovation Council (EIC) Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "peregrine ventures",
+         "domain": "peregrinevc.com",
+         "amount": null
+        },
+        {
+         "name": "global strategic partner",
+         "domain": "gsp.us.com",
+         "amount": null
+        },
+        {
+         "name": "another global strategic partner",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "Israel",
+       "city": "OR YEHUDA",
+       "use_of_funds": "completion of European feasibility study and launch of U.S.-based clinical study",
+       "source_sentence": "Restore Medical Ltd, a clinical-stage MedTech company developing transcatheter therapies for heart failure, announced today the successful closing of a $23 million Series B financing round.",
+       "published_at": "2025-07-07T13:25:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e63fb72461615d5f42cdf5"
+       ],
+       "article_id": "69e63fb72461615d5f42cdf5"
+      },
+      {
+       "id": "883948224fd2edff",
+       "company_name": "luminate medical",
+       "domain": "luminatemed.com",
+       "round_type": null,
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Medtech",
+       "country": "Ireland",
+       "city": "Galway",
+       "use_of_funds": null,
+       "source_sentence": "Galway-based medtech company Luminate Medical, which raised $21m.",
+       "published_at": "2026-04-28T23:05:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f1ce63399b489398e1e425",
+        "69f1cfafa5706a322e134d35"
+       ],
+       "article_id": "69f1cfafa5706a322e134d35"
+      },
+      {
+       "id": "e257c9525a5fc6b9",
+       "company_name": "luminate medical",
+       "domain": "luminatemed.com",
+       "round_type": "Series A",
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Lachy Groom",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "artis ventures",
+         "domain": "artisventures.com",
+         "amount": null
+        },
+        {
+         "name": "Western Alliance Life Sciences",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "atlantic bridge",
+         "domain": "abven.com",
+         "amount": null
+        },
+        {
+         "name": "faber",
+         "domain": "faberconnect.com",
+         "amount": null
+        },
+        {
+         "name": "scifounders",
+         "domain": "scifounders.com",
+         "amount": null
+        },
+        {
+         "name": "elkstone",
+         "domain": "elkstonepartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "medtech",
+       "country": "Ireland",
+       "city": "Galway",
+       "use_of_funds": "launch access to home cancer care at 40 partner oncology clinics before launching its novel patient-led home infusion technology later in the year",
+       "source_sentence": "Luminate Medical, a Galway-based medtech company, has announced the raising of $21m as part of an expanded Series A funding round, taking its total funding to date to more than $50m.",
+       "published_at": "2026-01-07T12:09:19",
+       "coverage_count": 2,
+       "article_ids": [
+        "6965402ec82797245566ce8d",
+        "6986b3b3fdcc616c15e04e81"
+       ],
+       "article_id": "6965402ec82797245566ce8d"
+      },
+      {
+       "id": "70a74cae2f31fa79",
+       "company_name": "CroíValve",
+       "domain": null,
+       "round_type": "EIC Accelerator Programme",
+       "amount_usd": 20250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 18750000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "European Innovation Council’s (EIC) accelerator programme",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "Ireland",
+       "city": "Dublin",
+       "use_of_funds": null,
+       "source_sentence": "CroíValve and Lios, two Enterprise Ireland-backed women-led start-ups, have collectively received €18.75m from the European Innovation Council’s (EIC) accelerator programme.",
+       "published_at": "2025-07-01T10:44:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898b6c8ace6dc7b1fbc5820"
+       ],
+       "article_id": "6898b6c8ace6dc7b1fbc5820"
+      },
+      {
+       "id": "35adca542ace67d9",
+       "company_name": "flinn",
+       "domain": "flinn.ai",
+       "round_type": "Follow-on",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "BHI – Bertelsmann Healthcare Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cherry ventures",
+         "domain": "cherry.vc",
+         "amount": null
+        },
+        {
+         "name": "speedinvest",
+         "domain": "speedinvest.com",
+         "amount": null
+        },
+        {
+         "name": "squareone",
+         "domain": "squareone.co",
+         "amount": null
+        }
+       ],
+       "sector": "Medtech, Regulatory technology, AI",
+       "country": null,
+       "city": "Vienna",
+       "use_of_funds": "Expand AI-driven regulatory and quality automation platform for medtech manufacturers; support international expansion, including entry into the US",
+       "source_sentence": "Vienna-based startup Flinn secured $20 mn in follow-on funding to expand its AI-driven regulatory and quality automation platform for medtech manufacturers.",
+       "published_at": "2026-02-23T18:39:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7dcf236c54261027e8d4"
+       ],
+       "article_id": "69bc7dcf236c54261027e8d4"
+      },
+      {
+       "id": "82f853bc05b31e3e",
+       "company_name": "flinn",
+       "domain": "flinn.ai",
+       "round_type": null,
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "BHI – Bertelsmann Healthcare Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cherry ventures",
+         "domain": "cherry.vc",
+         "amount": null
+        },
+        {
+         "name": "speedinvest",
+         "domain": "speedinvest.com",
+         "amount": null
+        },
+        {
+         "name": "squareone",
+         "domain": "squareone.co",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": null,
+       "city": "Vienna",
+       "use_of_funds": "Extend platform to earlier development stages and commercial processes, fund international growth across Europe and entry into the US market",
+       "source_sentence": "Vienna-based Flinn, an AI-powered software provider that automates regulatory and quality processes in medtech, has secured $20 million in follow-on funding.",
+       "published_at": "2026-02-19T08:34:20",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc2c8bdded76ae100e4fd2",
+        "69c950c6d3c89f36ed484492"
+       ],
+       "article_id": "69c950c6d3c89f36ed484492"
+      },
+      {
+       "id": "79386adc7093dea5",
+       "company_name": "CroíValve",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 17280000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 16000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "MedTech",
+       "country": "Ireland",
+       "city": "Dublin",
+       "use_of_funds": null,
+       "source_sentence": "Last year, the start-up raised €16m in a Series B funding round.",
+       "published_at": "2025-07-01T10:44:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898b6c8ace6dc7b1fbc5820"
+       ],
+       "article_id": "6898b6c8ace6dc7b1fbc5820"
+      },
+      {
+       "id": "3fe83512e4b936a0",
+       "company_name": "ShanX Medtech",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 16200000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "borski fund",
+         "domain": "borskifund.com",
+         "amount": null
+        },
+        {
+         "name": "NextGen Ventures",
+         "domain": "nextgenventures.nl",
+         "amount": null
+        },
+        {
+         "name": "CbusineZ",
+         "domain": "cbusinez.nl",
+         "amount": null
+        },
+        {
+         "name": "Brabantse Ontwikkelings Maatschappij",
+         "domain": "bom.nl",
+         "amount": null
+        },
+        {
+         "name": "Invest-NL",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Prominent strategic angel fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "Netherlands",
+       "city": "Eindhoven",
+       "use_of_funds": "scale, boost clinical validation, and prepare for market launch",
+       "source_sentence": "Eindhoven-based MedTech startup ShanX Medtech (SXM), which provides in-vitro diagnostic platforms for antibiotic susceptibility testing, has closed a €15 million Seed funding round to scale, boost clinical validation, and prepare for market launch.",
+       "published_at": "2026-01-07T09:02:54",
+       "coverage_count": 3,
+       "article_ids": [
+        "69653e52cd0254b652fbbfe9",
+        "6996cd9ce0523bedf7b15507",
+        "69bc15524755dcbc8757dbfc"
+       ],
+       "article_id": "69653e52cd0254b652fbbfe9"
+      },
+      {
+       "id": "c22b79847119e4c7",
+       "company_name": "deciphex",
+       "domain": "deciphex.com",
+       "round_type": "venture debt",
+       "amount_usd": 16200000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "claret capital partners",
+         "domain": "claret-capital.com",
+         "amount": null
+        }
+       ],
+       "sector": "medtech",
+       "country": "Ireland",
+       "city": "Dublin",
+       "use_of_funds": "accelerate its expansion into the US and become the leading provider of histopathology reporting services in the UK by 2027",
+       "source_sentence": "Deciphex, a Dublin-based medtech specialising in AI-powered digital pathology, has raised €15m in venture debt funding from Claret Capital Partners to accelerate its expansion into the US.",
+       "published_at": "2025-10-02T11:14:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f721c517f4f9d43d2b2330"
+       ],
+       "article_id": "68f721c517f4f9d43d2b2330"
+      },
+      {
+       "id": "7950732eca323ccd",
+       "company_name": "accupulse",
+       "domain": "accupulse.com",
+       "round_type": "pre-Series B",
+       "amount_usd": 14500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "CICC Capital",
+         "domain": "cicccapital.com.cn",
+         "amount": null
+        },
+        {
+         "name": "vision plus capital",
+         "domain": "vplus.vc",
+         "amount": null
+        },
+        {
+         "name": "Undisclosed industry investor",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "China",
+       "city": null,
+       "use_of_funds": "accelerate R&D and commercialization of its pulsed field ablation system, 3D mapping system, and electrophysiology consumables",
+       "source_sentence": "AccuPulse , a Chinese medtech company focused on cardiac electrophysiology, has raised over RMB 100 million (USD 14.5 million) in a pre-Series B round led by a fund managed by CICC Capital.",
+       "published_at": "2026-03-17T03:30:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4e7b3bc4c40880e56f0"
+       ],
+       "article_id": "69c3a4e7b3bc4c40880e56f0"
+      },
+      {
+       "id": "5551e188fe2a5d75",
+       "company_name": "BrightHeart",
+       "domain": "brightheart.fr",
+       "round_type": "A Series",
+       "amount_usd": 11880000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 11000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Odyssey Venture",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "go capital",
+         "domain": "gocapital.fr",
+         "amount": null
+        },
+        {
+         "name": "Mussallem CHD Alliance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Lift Value",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "IDAHO HealthTech Club via Side Angels",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sofinnova partners",
+         "domain": "sofinnovapartners.com",
+         "amount": null
+        },
+        {
+         "name": "clinicians",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "business angels",
+         "domain": "businessangels.fr",
+         "amount": null
+        }
+       ],
+       "sector": "Medtech",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "deploy its large-scale artificial intelligence platform dedicated to prenatal ultrasound",
+       "source_sentence": "The Paris medtech company BrightHeart has completed a EUR 11 million A Series financing round to deploy its large-scale artificial intelligence (AI) platform dedicated to prenatal ultrasound.",
+       "published_at": "2026-01-09T03:12:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e25da8d29a990b6e3e56e"
+       ],
+       "article_id": "698e25da8d29a990b6e3e56e"
+      },
+      {
+       "id": "b5ad7efb82003a0e",
+       "company_name": "BrightHeart",
+       "domain": "brightheart.fr",
+       "round_type": "Series A",
+       "amount_usd": 11880000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 11000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Odyssée Venture",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "go capital",
+         "domain": "gocapital.fr",
+         "amount": null
+        },
+        {
+         "name": "Mussallem CHD Alliance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Lift Value",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "IDAHO HealthTech Club via Side Angels",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sofinnova partners",
+         "domain": "sofinnovapartners.com",
+         "amount": null
+        },
+        {
+         "name": "Professor Laurent Salomon",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sacha Loiseau",
+         "domain": "https://www.linkedin.com/in/sacha-loiseau-62143b3/",
+         "amount": null
+        },
+        {
+         "name": "John Gridley",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "MedTech / AI Diagnostics",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "support U.S. commercialization, expansion across Europe, and continued product development",
+       "source_sentence": "BrightHeart, a Paris-based company developing AI for prenatal ultrasound, has raised €11 million in Series A funding.",
+       "published_at": "2026-01-08T13:54:57",
+       "coverage_count": 10,
+       "article_ids": [
+        "6988a856127162d16e0ae45d",
+        "698f013d8d29a990b6f4625f",
+        "699814b15e72b47edd136d9a",
+        "69bb405765fbf155fa7a7bf3",
+        "69bb4a56f50f9c5e38704190",
+        "69bb979f5e05f5e7db82570c",
+        "69bc3b936d4d48dd99c3acf9",
+        "69bd7cb20f7c42aae0d7a0a5",
+        "69c967ad77f2c3a5a193f457",
+        "69e84cba7bb1410d4c669c9e"
+       ],
+       "article_id": "6988a856127162d16e0ae45d"
+      },
+      {
+       "id": "0b99bdf5139eff85",
+       "company_name": "roclub",
+       "domain": "roclub.com",
+       "round_type": "Series A",
+       "amount_usd": 11700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 11700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Smedvig Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "YZR Capital",
+         "domain": "yzr.vc",
+         "amount": null
+        },
+        {
+         "name": "speedinvest",
+         "domain": "speedinvest.com",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare technology (Medtech teleoperation)",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "AI-based development of roclub’s teleoperation platform and marketplace, expand headcount, strengthen AI-driven platform, expand internationally",
+       "source_sentence": "roclub, a healthcare teleoperation startup founded in 2022 by Dr. Matthias Issing and André Glardon, today announced it has raised $11.7 million in a Series A funding round.",
+       "published_at": "2025-10-22T04:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe207541f75f68272839d5",
+        "698db2b98d29a990b6db573c",
+        "698fe3018d29a990b604ff21"
+       ],
+       "article_id": "698fe3018d29a990b604ff21"
+      },
+      {
+       "id": "4cae8ad29ff87339",
+       "company_name": "roclub",
+       "domain": "roclub.com",
+       "round_type": "Series A",
+       "amount_usd": 11700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 11700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "speedinvest",
+         "domain": "speedinvest.com",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        },
+        {
+         "name": "Smedvig Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "yzr",
+         "domain": "yzr.ai",
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech / Medtech Teleoperation / AI SaaS",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "The company will use the funding to support its U.S. expansion, further develop its teleoperation marketplace connecting healthcare providers with remote technologists, and continue innovating in AI-enabled medtech operations.",
+       "source_sentence": "roclub, a Berlin, Germany–based teleoperation platform for medical technology, has secured $11.7 million in Series A funding.",
+       "published_at": "2025-10-22T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "695e9e59097627ca647b50a7",
+        "69baefb0f50f9c5e386f05fe"
+       ],
+       "article_id": "69baefb0f50f9c5e386f05fe"
+      },
+      {
+       "id": "3771b513e210d92c",
+       "company_name": "neuroclues",
+       "domain": "neuroclues.com",
+       "round_type": "Series A",
+       "amount_usd": 10800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "InvestBW",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "LeanSquare",
+         "domain": "leansquare.be",
+         "amount": null
+        },
+        {
+         "name": "Wallonie Entreprendre",
+         "domain": "wallonie-entreprendre.be",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "France, Belgium",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "neuroClues, a French-Belgian MedTech startup, has raised €10 million in a Series A round, along with additional non-dilutive funding, bringing its total funding to €25 million.",
+       "published_at": "2026-04-08T05:05:12",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2c53cff2654c79d6db531",
+        "69e3c9032fd96a624634696e"
+       ],
+       "article_id": "69e2c53cff2654c79d6db531"
+      },
+      {
+       "id": "c7e0da123b40383b",
+       "company_name": "Montpellieran Sim&Cure",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 10800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "elaia",
+         "domain": "elaia.com",
+         "amount": null
+        },
+        {
+         "name": "IT Translation Investment",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Irdi Capital Investment",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "swen capital partners",
+         "domain": "swen-cp.fr",
+         "amount": null
+        },
+        {
+         "name": "sofilaro",
+         "domain": "sofilaro.fr",
+         "amount": null
+        },
+        {
+         "name": "tudigo",
+         "domain": "tudigo.co",
+         "amount": null
+        },
+        {
+         "name": "Holnest",
+         "domain": "holnest.fr",
+         "amount": null
+        }
+       ],
+       "sector": "Medtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "enable Sim&Cure to accelerate its growth internationally, particularly in China and the Asia-Pacific region",
+       "source_sentence": "Montpellieran Sim&Cure (65 employees), which is publishing digital twin software based on AI to treat brain aneurysm, is closing a fund raising of €10 million.",
+       "published_at": "2025-12-01T10:07:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e87e7d5cfa3e5ba5025368"
+       ],
+       "article_id": "69e87e7d5cfa3e5ba5025368"
+      },
+      {
+       "id": "d647da13b547bac3",
+       "company_name": "roclub",
+       "domain": "roclub.com",
+       "round_type": "Series A",
+       "amount_usd": 10800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Smedvig Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "YZR Capital",
+         "domain": "yzr.vc",
+         "amount": null
+        },
+        {
+         "name": "speedinvest",
+         "domain": "speedinvest.com",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Teleoperation platform for MedTech / AI healthcare technology",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Accelerate global rollout of AI-powered remote operations platform, expand support for additional MedTech equipment, strengthen international commercial teams",
+       "source_sentence": "roclub, the teleoperation platform for medical technology out of Berlin, today announces it has raised €10 million in Series A funding in order to accelerate the global rollout of its AI-powered remote operations platform, expand support for additional MedTech equipment, and strengthen its international commercial teams.",
+       "published_at": "2025-10-22T08:10:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe354a606fcdbfff28d2de"
+       ],
+       "article_id": "68fe354a606fcdbfff28d2de"
+      },
+      {
+       "id": "2cf1d415ac9241de",
+       "company_name": "minmaxmedical",
+       "domain": "minmaxmedical.com",
+       "round_type": "bank financing",
+       "amount_usd": 10260000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 9500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "Caisse d'Epargne CIC BNP Paribas",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "somudimec",
+         "domain": "somudimec.fr",
+         "amount": null
+        }
+       ],
+       "sector": "Medtech",
+       "country": "France",
+       "city": "Apprieu",
+       "use_of_funds": "Build industrial production capacity",
+       "source_sentence": "This funding should enable the Iseroese company to build its industrial production capacity and thus help start-ups.",
+       "published_at": "2025-09-24T08:20:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e6e6ad6da9e225562df0dd"
+       ],
+       "article_id": "69e6e6ad6da9e225562df0dd"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 122,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDktMjQgMDg6MjA6MDAiLCJrIjoiMzIzODYwMjc5NjYxMDc2NTI3OCIsImEiOjEwMjYwMDAwLjB9",
+     "totals": {
+      "deals": 122,
+      "deals_with_amount": 103,
+      "deals_without_amount": 19,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 1754428610.0,
+      "median_amount_usd": 7128000.0,
+      "largest_amount_usd": 150000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.263,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.286
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "medtech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "medtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "883948224fd2edff",
+       "company_name": "luminate medical",
+       "domain": "luminatemed.com",
+       "round_type": null,
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Medtech",
+       "country": "Ireland",
+       "city": "Galway",
+       "use_of_funds": null,
+       "source_sentence": "Galway-based medtech company Luminate Medical, which raised $21m.",
+       "published_at": "2026-04-28T23:05:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f1ce63399b489398e1e425",
+        "69f1cfafa5706a322e134d35"
+       ],
+       "article_id": "69f1cfafa5706a322e134d35"
+      },
+      {
+       "id": "20f1acf65de9164f",
+       "company_name": "plaquetec",
+       "domain": "plaquetec.com",
+       "round_type": null,
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Medtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "PlaqueTec, a medtech company pioneering intracoronary liquid biopsy to identify inflammatory drivers of cardiovascular disease, has raised $5 million.",
+       "published_at": "2026-04-28T08:24:29",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e147836d28f995cb4343",
+        "69f0e14bd325610894206183"
+       ],
+       "article_id": "69f0e147836d28f995cb4343"
+      },
+      {
+       "id": "0211f31f388d34f2",
+       "company_name": "plaquetec",
+       "domain": "plaquetec.com",
+       "round_type": "financing",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Medtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "PlaqueTec, a medtech company pioneering intracoronary liquid biopsy to identify inflammatory drivers of cardiovascular disease, has raised $5 million.",
+       "published_at": "2026-04-27T14:46:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e14bd325610894206195"
+       ],
+       "article_id": "69f0e14bd325610894206195"
+      },
+      {
+       "id": "7688c53bef0e0d87",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI / MedTech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "The company will use the funding to enhance its AI capabilities, deepen its proprietary MedTech data ontology, and expand its platform into broader workflows beyond commercial use cases.",
+       "source_sentence": "Funding Details Company: AcuityMD, Inc. Raised: $80.0M Round: Series C Funding Date: April 2026 Lead Investor: StepStone Group Additional Investors: Benchmark, Redpoint Ventures, ICONIQ, Atreides Management Company Website: https://www.acuitymd.com/",
+       "published_at": "2026-04-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d6327b2d589e844c0858"
+       ],
+       "article_id": "69f9d6327b2d589e844c0858"
+      },
+      {
+       "id": "97ee9c42fb1820d5",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "USA",
+       "city": "Boston, MA",
+       "use_of_funds": "advanced artificial intelligence (AI) capabilities",
+       "source_sentence": "AcuityMD Raises $80M Series C Round Back to Home BOSTON, MA, AcuityMD, the AI platform for MedTech, today announced $80 million in new funding.",
+       "published_at": "2026-04-21T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e87eee9baafc73568e5709",
+        "69e997ddbdd09a23d08efe46",
+        "69e99a20d47fc02832181d10",
+        "69f2293b27117df83f93f6f6",
+        "69f8801143843dd771ce4e0d"
+       ],
+       "article_id": "69e997ddbdd09a23d08efe46"
+      },
+      {
+       "id": "5491928503b0ad7b",
+       "company_name": "AI DIAGNOSTICS",
+       "domain": "ai-diagnostics.net",
+       "round_type": "pre-Series A",
+       "amount_usd": 4590000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "ZAR",
+       "amount": 85000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "steele foundation for hope",
+         "domain": "steelefoundationforhope.org",
+         "amount": null
+        },
+        {
+         "name": "iFSP Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "global innovation fund",
+         "domain": "globalinnovation.fund",
+         "amount": null
+        },
+        {
+         "name": "key early angel investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Medtech",
+       "country": "South Africa",
+       "city": "Cape Town",
+       "use_of_funds": "Funding supports clinical research and validation, continued development of the product and AI model, and the operational infrastructure required to scale a medical device business in South Africa and in emerging markets across sub-Saharan Africa and Asia.",
+       "source_sentence": "A South African medtech company has obtained R85m in funding to develop its AI-driven tool, enhancing the accessibility of TB screening.",
+       "published_at": "2026-04-16T07:28:00",
+       "coverage_count": 9,
+       "article_ids": [
+        "69e8647a7bb1410d4c74e632",
+        "69e864f35cfa3e5ba5f258dc",
+        "69e885969baafc735692aa7d",
+        "69e8de8d7bb1410d4cd13241",
+        "69e8dfdd5cfa3e5ba54d3d36",
+        "69e8dfdd9baafc7356db6605",
+        "69e8e1317bb1410d4cd34cd6",
+        "69e8e1497bb1410d4cd361cb",
+        "6a040dcf220687a966ad90ef"
+       ],
+       "article_id": "69e8de8d7bb1410d4cd13241"
+      },
+      {
+       "id": "846878a03e1d381a",
+       "company_name": "Zelemiq Life Science Limited",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 254000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "foundercatalyst",
+         "domain": "foundercatalyst.com",
+         "amount": 200000.0
+        }
+       ],
+       "sector": "MedTech",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": "accelerate product development, validate the solution for elite sports market, real‑time lactate monitoring, initiate sales & marketing",
+       "source_sentence": "Zelemiq Life Science Limited, the innovator behind the myRipple® metabolic monitoring platform, today announced the successful completion of a new £200,000 seed funding round. The investment, secured through the FounderCatalyst platform, will be used to accelerate the myRipple® product development, further validate the solution for the elite sports market, with a specific focus on real-time lactate monitoring, and initiate sales & marketing.",
+       "published_at": "2026-04-15T11:26:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84cdf7bb1410d4c66b235"
+       ],
+       "article_id": "69e84cdf7bb1410d4c66b235"
+      },
+      {
+       "id": "3771b513e210d92c",
+       "company_name": "neuroclues",
+       "domain": "neuroclues.com",
+       "round_type": "Series A",
+       "amount_usd": 10800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "InvestBW",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "LeanSquare",
+         "domain": "leansquare.be",
+         "amount": null
+        },
+        {
+         "name": "Wallonie Entreprendre",
+         "domain": "wallonie-entreprendre.be",
+         "amount": null
+        }
+       ],
+       "sector": "MedTech",
+       "country": "France, Belgium",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "neuroClues, a French-Belgian MedTech startup, has raised €10 million in a Series A round, along with additional non-dilutive funding, bringing its total funding to €25 million.",
+       "published_at": "2026-04-08T05:05:12",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2c53cff2654c79d6db531",
+        "69e3c9032fd96a624634696e"
+       ],
+       "article_id": "69e2c53cff2654c79d6db531"
+      },
+      {
+       "id": "20200470dcbc2c32",
+       "company_name": "hepta medical",
+       "domain": "heptamed.com",
+       "round_type": "A-series",
+       "amount_usd": 5400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ui investissement",
+         "domain": "ui-investissement.com",
+         "amount": null
+        },
+        {
+         "name": "supernova invest",
+         "domain": "supernovainvest.com",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "M & L",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Cléry",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "md start",
+         "domain": "mdstart.eu",
+         "amount": null
+        }
+       ],
+       "sector": "Medtech",
+       "country": "France",
+       "city": "Suresnes",
+       "use_of_funds": "industrial course and to start the clinical phase.",
+       "source_sentence": "The French Medtech is closing a second part of its A-series raising, for an additional €5 million, bringing the total envelope to almost €10 million.",
+       "published_at": "2026-03-31T06:00:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1d762de1710e5b04cec16"
+       ],
+       "article_id": "69d1d762de1710e5b04cec16"
+      },
+      {
+       "id": "4335b14df0da8db8",
+       "company_name": "lifebloom",
+       "domain": "lifebloomcandles.com",
+       "round_type": null,
+       "amount_usd": 8640000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "private investors",
+         "domain": null,
+         "amount": 6000000.0
+        },
+        {
+         "name": "France 2030",
+         "domain": null,
+         "amount": 2000000.0
+        }
+       ],
+       "sector": "medtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "scale expansion and industrialization of production",
+       "source_sentence": "The medtech will be in the middle of Lifebloom, and will be financing €8 million to change the scale. Founded in 2019, the company specializing in market rehabilitation via its therapy, Lifebloom One, announces a €6 million equity grant to private investors, supplemented by €2 million in grants from France 2030.",
+       "published_at": "2026-03-30T14:58:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8bbc29baafc7356bd81aa"
+       ],
+       "article_id": "69e8bbc29baafc7356bd81aa"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 43,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMzAgMTQ6NTg6MzgiLCJrIjoiNDg0Mjk3MTkyMjYxODI4OTU5MiJ9",
+     "totals": {
+      "deals": 43,
+      "deals_with_amount": 39,
+      "deals_without_amount": 4,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 475213360.0,
+      "median_amount_usd": 8370000.0,
+      "largest_amount_usd": 80000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.297,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.318
+    }
+   }
+  }
+ ]
+}

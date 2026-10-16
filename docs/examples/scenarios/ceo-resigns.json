@@ -1,0 +1,806 @@
+{
+ "slug": "ceo-resigns",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:57Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "key_people"
+     ],
+     "q": "resign",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "resign",
+      "match": "any",
+      "event_type": [
+       "key_people"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 16,
+       "by_type": {
+        "key_people": 16
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "key_people": 11
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 6,
+       "by_type": {
+        "key_people": 6
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 16,
+       "by_type": {
+        "key_people": 16
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "key_people": 12
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "key_people": 3
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "key_people": 11
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "key_people": 11
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 14,
+       "by_type": {
+        "key_people": 14
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 13,
+       "by_type": {
+        "key_people": 13
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 20,
+       "by_type": {
+        "key_people": 20
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 13,
+       "by_type": {
+        "key_people": 13
+       }
+      }
+     ],
+     "totals": {
+      "events": 146,
+      "articles": 146,
+      "companies": 128,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "key_people": 146
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.149,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.154
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "key_people"
+     ],
+     "q": "resign",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "resign",
+      "event_type": [
+       "key_people"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f0e3e6d3256108942086a1",
+       "headline": "It should be noted that he was already part of the Sustainability and Corporate Governance Committee of the Spanish company, a position he will resign in favor of his new status as Executive Advisor.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "endesa.com",
+       "published_at": "2026-04-28T12:29:17",
+       "url": "https://www.bolsamania.com/noticias/empresas/gianni-vittorio-armani-nuevo-ceo-endesa-sustitucion-de-jose-bogas--22367037.html",
+       "publisher": "bolsamania.com",
+       "title": "Gianni Vittorio Armani, nuevo CEO de Endesa en sustitución de José Bogas"
+      },
+      {
+       "id": "69ea6a05f4d3fc85b350a827",
+       "headline": "JD Sports has announced that chair Andrew Higginson intends to resign from the board following the conclusion of the retailer’s annual general meeting on 21 July.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "jdsports.co.uk",
+       "published_at": "2026-04-22T09:38:15",
+       "url": "https://www.retailsector.co.uk/691185-jd-sports-chair-to-step-down-this-summer/",
+       "publisher": "retailsector.co.uk",
+       "title": "JD Sports chair to step down this summer | Retail Sector"
+      },
+      {
+       "id": "69e9965ad47fc02832152521",
+       "headline": "Tim Cook, who has been leading the company for 15 years, will resign the position of CEO on September 1st and change to the role of Chairman of the Board of Directors.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "apple.com",
+       "published_at": "2026-04-20T20:51:26",
+       "url": "https://www.handelsblatt.com/technik/it-internet/apple-john-ternus-uebernimmt-ab-september-den-chefposten-von-tim-cook/100218540.html",
+       "publisher": "handelsblatt.com",
+       "title": "Apple: Tim Cook tritt als CEO ab â Hardware-Chef Ã¼bernimmt"
+      },
+      {
+       "id": "6a21a48521737f945b7bf0e4",
+       "headline": "Jay Sujir will remain on the Board but will resign as Chair.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "outcropgoldcorp.com",
+       "published_at": "2026-04-20T09:45:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e1ebc327543ca5d7d81491",
+       "headline": "Michael Höllerer will resign from his position on the Supervisory Board of RBI with effect from 9 April 2026",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "rbinternational.com",
+       "published_at": "2026-04-17T00:00:00",
+       "url": "https://www.eqs-news.com/news/ad-hoc/raiffeisen-bank-international-ag-michael-hollerer-will-succeed-johann-strobl-as-ceo-of-rbi-on-1-july-2026/7159e11d-5ea2-48ad-a80e-50265dbee62b_en",
+       "publisher": "eqs-news.com",
+       "title": "Raiffeisen Bank International AG / Key word(s): Personnel Raiffeisen Bank International AG: Michael Höllerer will succeed Johann Strobl as CEO of RBI on 1 July 2026 17-Dec-2025 / 17:32 CET/CEST Disclosure of an inside information acc. to Article 17 MAR of the Regulation (EU) No 596/2014, transmitted"
+      },
+      {
+       "id": "6a2fedcbe540a46fb59a6693",
+       "headline": "on April 10, 2026, Smythe LLP, Chartered Professional Accountants (“Smythe”), was asked to resign by the directors of the Company (the “Board”), as the Company’s auditor",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "goldhavenresources.com",
+       "published_at": "2026-04-14T23:45:17",
+       "url": "https://www.globenewswire.com/news-release/2026/04/14/3274060/0/en/GoldHaven-Announces-Change-of-Auditor.html",
+       "publisher": "globenewswire.com",
+       "title": "GoldHaven Announces Change of Auditor"
+      },
+      {
+       "id": "69e8d89f5cfa3e5ba5477c06",
+       "headline": "On October 2026 Obermann will resign from office and will not be available for re-election in 2027.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "airbus.com",
+       "published_at": "2026-04-14T23:38:18",
+       "url": "https://www.boerse-express.com/news/articles/airbus-aktie-historischer-fuehrungswechsel-892449",
+       "publisher": "boerse-express.com",
+       "title": "Airbus Aktie: Historischer Führungswechsel"
+      },
+      {
+       "id": "69e641c72461615d5f440c24",
+       "headline": "Wisconsin AD CHRIS MCINTOSH is slated to resign from his position immediately and join the Big Ten as its newly created deputy commissioner for strategy, SBJ has learned.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "wisconsincheese.com",
+       "published_at": "2026-04-13T15:48:36",
+       "url": "https://www.sportsbusinessjournal.com/Articles/2026/04/13/sports-business-daily-executive-transactions-april-13-2026/",
+       "publisher": "sportsbusinessjournal.com",
+       "title": "Sports Business Daily: Executive Transactions - April 13, 2026"
+      },
+      {
+       "id": "6a2a6d5fc37f6c5e66b92130",
+       "headline": "Shimada will succeed Sheila Rohra, who will resign from Hitachi Vantara for personal reasons on March 31, 2026.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "hitachivantara.com",
+       "published_at": "2026-04-13T12:00:34",
+       "url": "https://www.storagenewsletter.com/2026/04/13/hitachi-vantara-announces-ceo-sheila-rohras-resignation-and-leadership-succession/",
+       "publisher": "storagenewsletter.com",
+       "title": "Hitachi Vantara Announces CEO Sheila Rohra's Resignation and Leadership Succession"
+      },
+      {
+       "id": "69e347c3522789a58263b48a",
+       "headline": "Meanwhile, Roger Clark Rabalais will resign as Nominee Director at Prosus, Swiggy's largest shareholder with over 20% stake in the company.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "prosus.com",
+       "published_at": "2026-04-10T12:41:08",
+       "url": "https://www.newsbytesapp.com/news/business/nandan-reddy-exits-swiggy-to-launch-new-venture/story",
+       "publisher": "newsbytesapp.com",
+       "title": "Swiggy co-founder Nandan Reddy quits to start new venture"
+      },
+      {
+       "id": "6a0eb3e5285a58da6f337dc6",
+       "headline": "Venkatakrishnan communicated his intention to resign from his position as Chief Financial Officer of the company.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "mmforgings.com",
+       "published_at": "2026-04-01T16:18:43",
+       "url": "https://www.thehindubusinessline.com/companies/mm-forgings-appoints-raghunathan-as-cfo/article70811370.ece",
+       "publisher": "thehindubusinessline.com",
+       "title": "MM Forgings appoints Raghunathan as CFO"
+      },
+      {
+       "id": "69e2d43a601121844c41385f",
+       "headline": "Alexandra Dambeck has decided to resign from the position of Chief Finance Officer (CFO) of Springer Nature and to serve as a member of the Executive Board in order to assume a new external role.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "springernature.com",
+       "published_at": "2026-04-01T15:30:53",
+       "url": "https://www.onvista.de/news/2026/04-01-eqs-news-springer-natures-vorstaendin-finanzen-wird-das-unternehmen-bis-ende-2026-verlassen-0-37-26496770",
+       "publisher": "onvista.de",
+       "title": "EQS-News: Springer Natures Vorständin Finanzen wird das Unternehmen bis Ende 2026 verlassen"
+      },
+      {
+       "id": "6a2ae3af963d76f4af187d87",
+       "headline": "Patrick Hillegass' intention to resign as a director effective March 31, 2026.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "petvalu.ca",
+       "published_at": "2026-04-01T00:00:00",
+       "url": "https://simplywall.st/stocks/ca/retail/tsx-pet/pet-valu-holdings-shares/dividend",
+       "publisher": "simplywall.st",
+       "title": "Pet Valu Holdings (TSX:PET) Dividend Yield, History and Growth - Simply Wall St"
+      },
+      {
+       "id": "69cc3c874a99add5b297cce5",
+       "headline": "The outgoing trustees, Mr. Krishnachar Nandakumar and Ms. Maninder Kapoor Puri, will resign from their positions at the close of business hours on 31 March 2026.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "biocon.com",
+       "published_at": "2026-03-27T06:47:42",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69c819d148c46df5a71ce3cf",
+       "headline": "Bob Gerrity, the founder of Vitesse, has elected to resign as Chief Executive Officer and Chairman of the Board effectively immediately.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "vitesse-vts.com",
+       "published_at": "2026-03-26T20:06:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 60,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjYgMjA6MDY6MDAiLCJpIjoiNjljODE5ZDE0OGM0NmRmNWE3MWNlM2NmIiwiZG0iOiJ2aXRlc3NlLXZ0cy5jb20iLCJldCI6ImtleV9wZW9wbGUiLCJybyI6InByaW1hcnkifQ",
+     "by_type": {
+      "key_people": 60
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.372,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 3 event(s)"
+     ],
+     "request_seconds": 4.376
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "key_people"
+     ],
+     "q": "resign",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "resign",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "key_people"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 46,
+     "carrying": 46,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 6,
+       "share": 13.04
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 15,
+       "share": 32.61
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 4,
+       "share": 8.7
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 16,
+       "share": 34.78
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 4,
+       "share": 8.7
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 2.17
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 21,
+       "share": 45.65
+      },
+      {
+       "group": "neutral",
+       "count": 4,
+       "share": 8.7
+      },
+      {
+       "group": "positive",
+       "count": 21,
+       "share": 45.65
+      }
+     ],
+     "negative_to_positive_ratio": 1.0,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 1.35,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 14,
+       "negative": 7,
+       "neutral": 1,
+       "positive": 6,
+       "negative_share": 50.0,
+       "positive_share": 42.86,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 7,
+        "none": 1,
+        "slight_pos": 3,
+        "fair_pos": 0,
+        "very_pos": 3,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 8,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 7,
+       "negative_share": 12.5,
+       "positive_share": 87.5,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 6,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 8,
+       "negative": 4,
+       "neutral": 1,
+       "positive": 3,
+       "negative_share": 50.0,
+       "positive_share": 37.5,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 4,
+        "none": 1,
+        "slight_pos": 3,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 16,
+       "negative": 9,
+       "neutral": 2,
+       "positive": 5,
+       "negative_share": 56.25,
+       "positive_share": 31.25,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 6,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 2,
+        "slight_pos": 4,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.594,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.596
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,826 @@
+{
+ "slug": "insolvency",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:07Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "lawsuit"
+     ],
+     "q": "insolvency",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "insolvency",
+      "match": "any",
+      "event_type": [
+       "company_announcement",
+       "lawsuit"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 24,
+       "by_type": {
+        "company_announcement": 0,
+        "lawsuit": 24
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 32,
+       "by_type": {
+        "company_announcement": 0,
+        "lawsuit": 32
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 27,
+       "by_type": {
+        "company_announcement": 0,
+        "lawsuit": 27
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 19,
+       "by_type": {
+        "company_announcement": 1,
+        "lawsuit": 18
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 15,
+       "by_type": {
+        "company_announcement": 1,
+        "lawsuit": 14
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 7,
+       "by_type": {
+        "company_announcement": 0,
+        "lawsuit": 7
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 10,
+       "by_type": {
+        "company_announcement": 0,
+        "lawsuit": 10
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 10,
+       "by_type": {
+        "company_announcement": 1,
+        "lawsuit": 9
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 7,
+       "by_type": {
+        "company_announcement": 0,
+        "lawsuit": 7
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 14,
+       "by_type": {
+        "company_announcement": 0,
+        "lawsuit": 14
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 18,
+       "by_type": {
+        "company_announcement": 0,
+        "lawsuit": 18
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 21,
+       "by_type": {
+        "company_announcement": 2,
+        "lawsuit": 19
+       }
+      }
+     ],
+     "totals": {
+      "events": 204,
+      "articles": 153,
+      "companies": 124,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 5,
+      "lawsuit": 199
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.12,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.122
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "lawsuit"
+     ],
+     "q": "insolvency",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "insolvency",
+      "event_type": [
+       "company_announcement",
+       "lawsuit"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f8a5f6bbf1d314559a1cce",
+       "headline": "From pv magazine Germany German solar module manufacturer Soluxtec has filed for insolvency proceedings with the Bitburg District Court on Wednesday.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "soluxtec.de",
+       "published_at": "2026-04-30T13:53:30",
+       "url": "https://www.pv-magazine.com/2026/04/30/german-solar-module-maker-soluxtec-files-for-insolvency/",
+       "publisher": "pv-magazine.com",
+       "title": "German solar module maker Soluxtec files for insolvency"
+      },
+      {
+       "id": "69f8ab5bbbf1d314559a6479",
+       "headline": "\"Export Import Bank of the United States (US Exim) filed an insolvency application against the company, alleging a “debt default”\"",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "reliancepower.co.in",
+       "published_at": "2026-04-30T03:24:11",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f87fa1bbf1d3145595c266",
+       "headline": "Dictum GmbH from Plattling in the district of Deggendorf has applied to the insolvency court Deggendorf for self-insolvency.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "dictum.com",
+       "published_at": "2026-04-29T11:12:45",
+       "url": "https://www.t-online.de/finanzen/aktuelles/wirtschaft/id_101234180/werkzeughersteller-dictum-aus-plattling-meldet-insolvenz-an.html",
+       "publisher": "t-online.de",
+       "title": "Nach 170 Jahren: Traditions-Unternehmen aus Bayern stellt Insolvenzantrag"
+      },
+      {
+       "id": "69f9d63ba088760d34c03220",
+       "headline": "Spanish newsprint and recycled containerboard producer Papresa has filed for insolvency. According to a notice from the Spanish insolvency register, the company has entered voluntary insolvency proceedings and moved directly into liquidation on 21 April.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "papresa.es",
+       "published_at": "2026-04-29T00:00:00",
+       "url": "https://euwid-paper.com/news/companies/papresa-files-for-insolvency-and-will-be-liquidated-280426/",
+       "publisher": "euwid-paper.com",
+       "title": "Papresa files for insolvency"
+      },
+      {
+       "id": "69f2159e7d251ccff640e914",
+       "headline": "Spanish newsprint and recycled containerboard producer Papresa has filed for insolvency. According to a notice from the Spanish insolvency register, the company has entered voluntary insolvency proceedings and moved directly into liquidation on 21 April.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "papresa.es",
+       "published_at": "2026-04-29T00:00:00",
+       "url": "https://www.euwid-paper.com/news/companies/papresa-files-for-insolvency-and-will-be-liquidated-280426/",
+       "publisher": "euwid-paper.com",
+       "title": "Papresa files for insolvency and will be liquidated"
+      },
+      {
+       "id": "6a040ce49c4aac09354240cc",
+       "headline": "In 2018, ICICI Bank filed the first insolvency petition against JAL, followed by SBI in 2022.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "sbi.co.in",
+       "published_at": "2026-04-27T00:42:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a040ce49c4aac09354240cc",
+       "headline": "In 2018, ICICI Bank filed the first insolvency petition against JAL, followed by SBI in 2022.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "jalindia.com",
+       "published_at": "2026-04-27T00:42:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a040ce49c4aac09354240cc",
+       "headline": "In 2018, ICICI Bank filed the first insolvency petition against JAL, followed by SBI in 2022.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "icicibank.com",
+       "published_at": "2026-04-27T00:42:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69ea1ec48266d9339994a1bc",
+       "headline": "The Commission has also requested the opening of insolvency proceedings in its own administration on April 1, 2026.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "commissionbureau.com",
+       "published_at": "2026-04-23T12:59:06",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e992ef75f157062ca8e205",
+       "headline": "Following the settlement, TVS Supply Chain withdrew its appeal related to insolvency proceedings, confirming that both companies have mutually resolved the matter.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "tvsscs.com",
+       "published_at": "2026-04-20T08:03:21",
+       "url": "https://www.electronicsforyou.biz/industry-buzz/tvs-supply-chain-settles-debt-dispute-with-zte-telecom-indiatelecomtvs-supply-chain-settles-debt-dispute-with-zte-telecom-india/",
+       "publisher": "electronicsforyou.biz",
+       "title": "TVS Supply Chain Settles Debt Dispute with ZTE Telecom India"
+      },
+      {
+       "id": "69e86cbe7bb1410d4c7a5a4c",
+       "headline": "TVS Supply Chain Solutions has settled its debt dispute with ZTE Telecom India and withdrawn its appeal in NCLAT against an order that rejected insolvency proceedings against the telecom gear manufacturer.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "tvsscs.com",
+       "published_at": "2026-04-19T08:17:30",
+       "url": "https://www.cnbctv18.com/market/tvs-supply-settles-dispute-with-zte-withdraws-insolvency-plea-in-nclat-ws-l-19889199.htm",
+       "publisher": "cnbctv18.com",
+       "title": "TVS Supply settles dispute with ZTE, withdraws insolvency plea in NCLAT - CNBC TV18"
+      },
+      {
+       "id": "69e9915b75f157062ca7ad63",
+       "headline": "\"The teleshopping station has filed for insolvency in the USA.\"",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "qvcgroup.com",
+       "published_at": "2026-04-18T12:06:52",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e85f597bb1410d4c71baf3",
+       "headline": "German viscose fibre producer Kelheim Fibres announced that it would cease operations as of 31 March. The company filed for insolvency in October 2024, and proceedings were opened in self-administration at the beginning of January 2025.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "kelheim-fibres.com",
+       "published_at": "2026-04-16T00:00:00",
+       "url": "https://www.euwid-paper.com/news/companies/fibre-excellence-files-for-insolvency-but-remains-hopeful-of-a-rescue-160426/",
+       "publisher": "euwid-paper.com",
+       "title": "Fibre Excellence files for insolvency, but remains hopeful of a rescue"
+      },
+      {
+       "id": "69e85f597bb1410d4c71baf3",
+       "headline": "French pulp manufacturer Fibre Excellence filed for insolvency with the commercial court of Toulouse on 13 April and is facing potential receivership proceedings.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "fibre-excellence.com",
+       "published_at": "2026-04-16T00:00:00",
+       "url": "https://www.euwid-paper.com/news/companies/fibre-excellence-files-for-insolvency-but-remains-hopeful-of-a-rescue-160426/",
+       "publisher": "euwid-paper.com",
+       "title": "Fibre Excellence files for insolvency, but remains hopeful of a rescue"
+      },
+      {
+       "id": "69e84e389baafc73566fb96a",
+       "headline": "Erich Jaeger, with around 1,000 employees worldwide, has filed an application for insolvency with the local court of Friedberg.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "erich-jaeger.de",
+       "published_at": "2026-04-14T16:01:28",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 60,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTQgMTY6MDE6MjgiLCJpIjoiNjllODRlMzg5YmFhZmM3MzU2NmZiOTZhIiwiZG0iOiJlcmljaC1qYWVnZXIuZGUiLCJldCI6Imxhd3N1aXQiLCJybyI6ImRlZmVuZGFudCJ9",
+     "by_type": {
+      "lawsuit": 58,
+      "company_announcement": 2
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.532,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 7 event(s)"
+     ],
+     "request_seconds": 4.534
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "lawsuit"
+     ],
+     "q": "insolvency",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "insolvency",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement",
+       "lawsuit"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 85,
+     "carrying": 85,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 24,
+       "share": 28.24
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 1,
+       "share": 1.18
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 47,
+       "share": 55.29
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 2,
+       "share": 2.35
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 10,
+       "share": 11.76
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 1.18
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 72,
+       "share": 84.71
+      },
+      {
+       "group": "neutral",
+       "count": 2,
+       "share": 2.35
+      },
+      {
+       "group": "positive",
+       "count": 11,
+       "share": 12.94
+      }
+     ],
+     "negative_to_positive_ratio": 6.545,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 8.83,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 9,
+       "negative": 9,
+       "neutral": 0,
+       "positive": 0,
+       "negative_share": 100.0,
+       "positive_share": 0.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 4,
+        "fair_neg": 0,
+        "slight_neg": 5,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 19,
+       "negative": 16,
+       "neutral": 1,
+       "positive": 2,
+       "negative_share": 84.21,
+       "positive_share": 10.53,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 9,
+        "fair_neg": 0,
+        "slight_neg": 7,
+        "none": 1,
+        "slight_pos": 1,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 30,
+       "negative": 23,
+       "neutral": 1,
+       "positive": 6,
+       "negative_share": 76.67,
+       "positive_share": 20.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 7,
+        "fair_neg": 1,
+        "slight_neg": 15,
+        "none": 1,
+        "slight_pos": 6,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 27,
+       "negative": 24,
+       "neutral": 0,
+       "positive": 3,
+       "negative_share": 88.89,
+       "positive_share": 11.11,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 4,
+        "fair_neg": 0,
+        "slight_neg": 20,
+        "none": 0,
+        "slight_pos": 3,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.322,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.325
+    }
+   }
+  }
+ ]
+}

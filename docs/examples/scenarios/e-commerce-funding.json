@@ -1,0 +1,2330 @@
+{
+ "slug": "e-commerce-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:22Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "e-commerce",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "e-commerce"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 208,
+      "deals_with_amount": 184,
+      "deals_without_amount": 24,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 37576517680.0,
+      "median_amount_usd": 12000000.0,
+      "largest_amount_usd": 14961000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 65228000.0,
+       "median_amount_usd": 5400000.0,
+       "largest_amount_usd": 40000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 19,
+       "deals_with_amount": 17,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 524496000.0,
+       "median_amount_usd": 32500000.0,
+       "largest_amount_usd": 125000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 8,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 724932000.0,
+       "median_amount_usd": 4750000.0,
+       "largest_amount_usd": 698500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 27,
+       "deals_with_amount": 24,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 280740000.0,
+       "median_amount_usd": 8400000.0,
+       "largest_amount_usd": 70000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 22,
+       "deals_with_amount": 19,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3373312000.0,
+       "median_amount_usd": 9000000.0,
+       "largest_amount_usd": 3200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 14,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1274800000.0,
+       "median_amount_usd": 59000000.0,
+       "largest_amount_usd": 510000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 13,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 15286817000.0,
+       "median_amount_usd": 2716000.0,
+       "largest_amount_usd": 14961000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 16,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2045250000.0,
+       "median_amount_usd": 18000000.0,
+       "largest_amount_usd": 750000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 18,
+       "deals_with_amount": 18,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1232790680.0,
+       "median_amount_usd": 7000000.0,
+       "largest_amount_usd": 775000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 21,
+       "deals_with_amount": 16,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 8280637000.0,
+       "median_amount_usd": 12000000.0,
+       "largest_amount_usd": 8000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 24,
+       "deals_with_amount": 23,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2135995000.0,
+       "median_amount_usd": 65000000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 11,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2354720000.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 2250000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.059,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.062
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "e-commerce",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "e-commerce"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "49499ebb997b55c6",
+       "company_name": "Amazon.com, Inc.",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 14961000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14961000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce, Cloud computing",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "On November 20, 2025, Amazon.com, Inc. successfully closed the sale of $14.961 billion in aggregate principal amount of notes with varying maturity dates ranging from 2028 to 2065. This financial move, involving major underwriters such as Goldman Sachs, J.P. Morgan, and Morgan Stanley, is expected to generate approximately $14.926 billion in net proceeds.",
+       "published_at": "2025-11-20T22:27:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcb93174855e3327fd4f53"
+       ],
+       "article_id": "69bcb93174855e3327fd4f53"
+      },
+      {
+       "id": "3160dc1028968da6",
+       "company_name": "sea limited",
+       "domain": "sealimited.com",
+       "round_type": null,
+       "amount_usd": 8000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "E-commerce, gaming",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Sea Limited, home to Shopee and Garena, follows closely with nearly $8 billion raised, cementing Singapore's e-commerce dominance.",
+       "published_at": "2026-02-11T14:10:04",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bafeb59e3448abf09fa8b3",
+        "69bc122d236c54261026d3bf"
+       ],
+       "article_id": "69bafeb59e3448abf09fa8b3"
+      },
+      {
+       "id": "0b257f96f4dd308e",
+       "company_name": "alibaba group",
+       "domain": "alibabagroup.com",
+       "round_type": "Convertible bond",
+       "amount_usd": 3200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3200000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "e-commerce and technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expanding data centers, upgrading technology, improving services; supporting international e-commerce ventures",
+       "source_sentence": "Alibaba Group Holding Ltd. said that it will raise $3.2 billion through a zero-coupon convertible bond.",
+       "published_at": "2025-09-11T02:14:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9b30bc149d2bca77fd1f7"
+       ],
+       "article_id": "68d9b30bc149d2bca77fd1f7"
+      },
+      {
+       "id": "a99eee89a7d554aa",
+       "company_name": "flipkart",
+       "domain": "flipkart.com",
+       "round_type": "pre-IPO",
+       "amount_usd": 2250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2250000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "E-commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "E-commerce major Flipkart is exploring a $2-2.5 billion (around Rs 18,570-23,213 crore) pre-IPO fundraise, while private‑equity firm KKR has …",
+       "published_at": "2026-04-20T04:15:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9dcfb713680636ef2924b"
+       ],
+       "article_id": "69f9dcfb713680636ef2924b"
+      },
+      {
+       "id": "f1ee7ba6899d4744",
+       "company_name": "perch",
+       "domain": "perchinteractive.com",
+       "round_type": "Equity financing",
+       "amount_usd": 775000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 775000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "softbank group",
+         "domain": "global.softbank",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce aggregator",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The restructuring wiped out US$775 million of equity financing that SoftBank had led three years earlier",
+       "published_at": "2026-01-27T02:06:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb1d1b92d3c72cc1abc700"
+       ],
+       "article_id": "69bb1d1b92d3c72cc1abc700"
+      },
+      {
+       "id": "18d8e0fe4b6f2ef5",
+       "company_name": "Mercado Libre",
+       "domain": null,
+       "round_type": "senior unsecured notes",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Citigroup",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "allen & company",
+         "domain": "alleninvestments.com",
+         "amount": null
+        },
+        {
+         "name": "bnp paribas",
+         "domain": "group.bnpparibas",
+         "amount": null
+        },
+        {
+         "name": "bank of america",
+         "domain": "bankofamerica.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "santander",
+         "domain": "santander.com",
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce, fintech, logistics",
+       "country": null,
+       "city": null,
+       "use_of_funds": "general corporate purposes",
+       "source_sentence": "Mercado Libre (NASDAQ:MELI) has just priced USD 750 million of 4.900% senior unsecured notes due 2033 in its first debt issuance since securing Investment Grade status.",
+       "published_at": "2025-12-05T19:16:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "69452aa455e3a4ab9fa33c9a"
+       ],
+       "article_id": "69452aa455e3a4ab9fa33c9a"
+      },
+      {
+       "id": "fb51a419fce7cc91",
+       "company_name": "dhl supply chain",
+       "domain": "dhl.com",
+       "round_type": null,
+       "amount_usd": 698500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce, life-skills",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its infrastructure and accelerate the deployment of automation in its customers' operations",
+       "source_sentence": "DHL Supply Chain today announced an investment of £550 million (€637 million) to expand its infrastructure and accelerate the deployment of automation in its customers' operations in the UK and Ireland, in order to support the growing demand in the e-commerce and life-skills sectors.",
+       "published_at": "2025-07-09T07:27:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986878cfdcc616c15df83b2"
+       ],
+       "article_id": "6986878cfdcc616c15df83b2"
+      },
+      {
+       "id": "500896d804181b4d",
+       "company_name": "meesho",
+       "domain": "meesho.com",
+       "round_type": "equity",
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 42500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "Highway Series 1",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Y Combinator Continuity Holdings I LLC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "golden",
+         "domain": "golden.com",
+         "amount": null
+        },
+        {
+         "name": "VH Capital",
+         "domain": "vhcapital.com",
+         "amount": null
+        },
+        {
+         "name": "VH Capital XI",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Vidit Aatrey",
+         "domain": "https://www.linkedin.com/in/vidit-aatrey-a3639120",
+         "amount": null
+        },
+        {
+         "name": "Sanjeev Kumar",
+         "domain": "http://www.linkedin.com/in/sanjeevkumarprofile",
+         "amount": null
+        },
+        {
+         "name": "Man Hay Tam",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce marketplace",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "investment in cloud infrastructure, AI and machine learning development, marketing and brand initiatives, inorganic growth opportunities, acquisitions, and general corporate purposes",
+       "source_sentence": "Bengaluru-based online marketplace Meesho has filed its updated draft red herring prospectus (UDRHP) with the SEBI to raise up to ₹4,250 crore through a fresh equity issue.",
+       "published_at": "2025-10-19T08:51:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f7372af3ba9a3da52d1f05"
+       ],
+       "article_id": "68f7372af3ba9a3da52d1f05"
+      },
+      {
+       "id": "dc09c90840e32f1b",
+       "company_name": "quince",
+       "domain": "quince.com",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10100000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 10100000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "marcy venture partners",
+         "domain": "marcyvp.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "notable capital",
+         "domain": "notablecapital.com",
+         "amount": null
+        },
+        {
+         "name": "basis set ventures",
+         "domain": "basisset.com",
+         "amount": null
+        },
+        {
+         "name": "wndrco",
+         "domain": "wndrco.com",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce Retail",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Support continued expansion of product assortment, development of supply chain and technology platform, and international growth",
+       "source_sentence": "Online retailer Quince has raised $500 million in funding, valuing the company at $10.1 billion.",
+       "published_at": "2026-03-16T17:38:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c41fb819be37c198784488"
+       ],
+       "article_id": "69c41fb819be37c198784488"
+      },
+      {
+       "id": "b9410b0d76f6a6c3",
+       "company_name": "noon",
+       "domain": "noon.energy",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "public investment fund",
+         "domain": "pif.gov.sa",
+         "amount": null
+        },
+        {
+         "name": "Mohammed Alabbar",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Middle East e-commerce platform noon has raised $500 million in new funding from existing backers, including Saudi Arabia’s Public Investment Fund (PIF), as the company moves closer to a potential initial public offering, according to people familiar with the matter.",
+       "published_at": "2025-12-20T07:17:05",
+       "coverage_count": 2,
+       "article_ids": [
+        "698cea148d29a990b6cc8659",
+        "698f1f3c9ca02490ec1b2d26"
+       ],
+       "article_id": "698f1f3c9ca02490ec1b2d26"
+      },
+      {
+       "id": "7c01b942f93b6871",
+       "company_name": "inkind",
+       "domain": "inkind.com",
+       "round_type": "Venture",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Jenny Just",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Matt Hulsizer",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sarosh Mistry",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Vasanth Williams",
+         "domain": "https://www.linkedin.com/in/vasanthwilliams",
+         "amount": null
+        }
+       ],
+       "sector": "E-Commerce, FinTech, Food and Beverage, Gift Card, Local Business, Restaurants, Small and Medium Businesses",
+       "country": null,
+       "city": "Austin",
+       "use_of_funds": null,
+       "source_sentence": "Austin-based inKind offers rewards to millions of consumers who dine at the best restaurants in the country.",
+       "published_at": "2026-03-27T09:27:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69cc4289cb088e024d2646bf"
+      },
+      {
+       "id": "21f94910a3b66992",
+       "company_name": "asos",
+       "domain": "asos.com",
+       "round_type": "refinancing",
+       "amount_usd": 301625000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 237500000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Fashion / e-commerce",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": "Refinance existing debt and provide additional liquidity headroom",
+       "source_sentence": "The new facility, lasting until November 2030, is comprised of a £150 million secured term loan and £87.5m delayed draw term loan.",
+       "published_at": "2025-11-13T07:59:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988895ec1c877922ff41f3d"
+       ],
+       "article_id": "6988895ec1c877922ff41f3d"
+      },
+      {
+       "id": "3ba1e6ccfc84e985",
+       "company_name": "Autozi Internet Technology (Global) Ltd.",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "CDIB Capital International",
+         "domain": "cdibcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "automotive e-commerce",
+       "country": "China",
+       "city": "Beijing",
+       "use_of_funds": "channel expansion, brand building, product and technology upgrades, localization service system development",
+       "source_sentence": "Pursuant to this letter, CDIB proposes to invest a total of approximately US $300 million in the Company in stages at a comprehensive price of US $5.00 per share.",
+       "published_at": "2025-12-17T12:15:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69653e1fd07c2a5fde9b6f06",
+        "698de4a29ca02490ec038b95",
+        "699721f1219d71cf48d1e503"
+       ],
+       "article_id": "698de4a29ca02490ec038b95"
+      },
+      {
+       "id": "656e753f8cce5514",
+       "company_name": "meesho",
+       "domain": "meesho.com",
+       "round_type": "Initial Public Offering",
+       "amount_usd": 292680000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 24390000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "sbi mutual fund",
+         "domain": "sbimf.com",
+         "amount": null
+        },
+        {
+         "name": "axis mutual fund",
+         "domain": "axismf.com",
+         "amount": null
+        },
+        {
+         "name": "Birla Mutual Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley investment management",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs asset management",
+         "domain": "assetmanagement.gs.com",
+         "amount": null
+        },
+        {
+         "name": "wcm investment management",
+         "domain": "wcminvest.com",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen cloud infrastructure, boost marketing and brand initiatives, pursue acquisitions and other strategic growth opportunities",
+       "source_sentence": "E-commerce company Meesho Ltd on Tuesday (December 2) said it has raised ₹2,439 crore from more than 60 anchor investors ahead of its Initial Public Offering.",
+       "published_at": "2025-12-02T17:47:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "69312395016eac7c87f21d0d"
+       ],
+       "article_id": "69312395016eac7c87f21d0d"
+      },
+      {
+       "id": "5a40314fab04d7ec",
+       "company_name": "whop",
+       "domain": "whop.com",
+       "round_type": "Venture",
+       "amount_usd": 273000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 273000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Tether Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "E-Commerce, Internet, Marketplace",
+       "country": "USA",
+       "city": "Brooklyn",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "4af0ababc56676ca",
+       "company_name": "whatnot",
+       "domain": "whatnot.com",
+       "round_type": "Series F",
+       "amount_usd": 225000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 225000000.0,
+       "valuation": 11500000000.0,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "a16z",
+         "domain": "a16z.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Live shopping, e-commerce marketplace",
+       "country": "USA",
+       "city": "Los Angeles",
+       "use_of_funds": "accelerate international expansion, support engineering and marketing teams, drive product innovation, strengthen market leadership, enhance trust and safety, roll out new features for a seamless shopping experience",
+       "source_sentence": "Whatnot, one of the live shopping platforms across the U.S., UK, and Europe, has landed $225 million in Series F funding. The round was co-led by DST Global and CapitalG, with participation from Sequoia Capital, Alkeon Capital, and returning investors including a16z, Greycroft, and BOND.",
+       "published_at": "2025-10-29T13:43:49",
+       "coverage_count": 3,
+       "article_ids": [
+        "698954de94d3f481f3e3c1b0",
+        "69c972000fe98f3340be23c5",
+        "69e854ff5cfa3e5ba5e93121"
+       ],
+       "article_id": "698954de94d3f481f3e3c1b0"
+      },
+      {
+       "id": "6fcb279b04b32d17",
+       "company_name": "whop",
+       "domain": "whop.com",
+       "round_type": "Late-Stage",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "E-Commerce / Marketplace",
+       "country": "USA",
+       "city": "New York City",
+       "use_of_funds": null,
+       "source_sentence": "Top 10 NYC Venture Capital Deals — February 2026 # Company Amount Round Sector 4 Whop $200M Late-Stage E-Commerce / Marketplace",
+       "published_at": "2026-03-10T11:27:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a48b6d029f77a1d3efa5"
+       ],
+       "article_id": "69c3a48b6d029f77a1d3efa5"
+      },
+      {
+       "id": "0d51541cea073269",
+       "company_name": "whop",
+       "domain": "whop.com",
+       "round_type": "Venture",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Tether Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "E-Commerce, Internet, Marketplace",
+       "country": null,
+       "city": "Brooklyn",
+       "use_of_funds": null,
+       "source_sentence": "Investors in the round: Tether Ventures",
+       "published_at": "2026-03-02T11:27:15",
+       "coverage_count": 3,
+       "article_ids": [
+        "69cb5b6072135531f265dce1",
+        "69cc4289cb088e024d2646bf",
+        "69e63de02461615d5f41b00d"
+       ],
+       "article_id": "69cb5b6072135531f265dce1"
+      },
+      {
+       "id": "10c5f5c245e43240",
+       "company_name": "cart.com",
+       "domain": "cart.com",
+       "round_type": "Series D",
+       "amount_usd": 180000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 180000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "paypal ventures",
+         "domain": "paypal.com",
+         "amount": null
+        },
+        {
+         "name": "Mercury Fund",
+         "domain": "mercuryfund.com",
+         "amount": null
+        },
+        {
+         "name": "Arsenal Growth",
+         "domain": "arsenalgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "oak hc/ft",
+         "domain": "oakhcft.com",
+         "amount": null
+        }
+       ],
+       "sector": "unified e-commerce software and fulfillment provider",
+       "country": "US",
+       "city": "Houston",
+       "use_of_funds": null,
+       "source_sentence": "Cart.com Raises $180M in Series D Funding for Enterprise E-Commerce Platform",
+       "published_at": "2026-03-09T22:09:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c8be0111792db0641e3b22"
+       ],
+       "article_id": "69c8be0111792db0641e3b22"
+      },
+      {
+       "id": "8c0ee1154d6a7660",
+       "company_name": "cart.com",
+       "domain": "cart.com",
+       "round_type": "Growth equity",
+       "amount_usd": 180000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 180000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Springcoast Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "paypal ventures",
+         "domain": "paypal.com",
+         "amount": null
+        },
+        {
+         "name": "arsenal growth equity",
+         "domain": "arsenalgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "Mercury Fund",
+         "domain": "mercuryfund.com",
+         "amount": null
+        },
+        {
+         "name": "oak hc/ft",
+         "domain": "oakhcft.com",
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce and logistics technology",
+       "country": "United States",
+       "city": "Houston",
+       "use_of_funds": "Develop its commerce operating system and expand its U.S. fulfillment infrastructure",
+       "source_sentence": "Cart.com said March 4 that it has secured a $180 million growth equity investment led, with Springcoast Partners leading the funding to expand its logistics network and further develop artificial intelligence (AI) capabilities used in ecommerce and fulfillment operations.",
+       "published_at": "2026-03-05T19:05:53",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cb5c9f5c2a56a76a777a1d",
+        "69cc1733384faa79b68dd333"
+       ],
+       "article_id": "69cb5c9f5c2a56a76a777a1d"
+      },
+      {
+       "id": "4055baff62d40c5c",
+       "company_name": "perch",
+       "domain": "perchinteractive.com",
+       "round_type": "Asset-backed financing",
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apollo global management",
+         "domain": "apollo.com",
+         "amount": null
+        },
+        {
+         "name": "athene",
+         "domain": "athene.com",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce aggregator",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Apollo Global Management took a loss on a portion of a US$170 million asset-backed financing for Amazon brand aggregator Perch",
+       "published_at": "2026-01-27T02:06:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb1d1b92d3c72cc1abc700"
+       ],
+       "article_id": "69bb1d1b92d3c72cc1abc700"
+      },
+      {
+       "id": "11f239a45c65c6de",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": null,
+       "amount_usd": 170000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 170000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "B2C e-commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Top funding rounds this year include Spinny’s $171 million Series F ($131 million + $40 million), followed by Zepto at $ 170 million and $49 million, respectively, GIVA, which raised $68 million across Series C ($62 million) and Series B ($6 million), and TMRW’s $50 million Series C.",
+       "published_at": "2025-10-23T07:52:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "698ef1da8d29a990b6f325d1"
+       ],
+       "article_id": "698ef1da8d29a990b6f325d1"
+      },
+      {
+       "id": "76447a4ce5b14570",
+       "company_name": "uzum",
+       "domain": "uzum.com",
+       "round_type": "Strategic investment",
+       "amount_usd": 130000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2300000000.0,
+       "currency": "USD",
+       "amount": 130000000.0,
+       "valuation": 2300000000.0,
+       "investors": [
+        {
+         "name": "Sovereign entities from the Sultanate of Oman",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "VR Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tencent",
+         "domain": "tencent.com",
+         "amount": null
+        },
+        {
+         "name": "finsight ventures",
+         "domain": "finsightvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Digital ecosystem, e-commerce, digital banking, payments, consumer finance",
+       "country": "Uzbekistan",
+       "city": null,
+       "use_of_funds": "accelerate the next stage of the company’s expansion across its core verticals, including e-commerce, digital banking, payments and lending",
+       "source_sentence": "Uzbekistan’s leading digital ecosystem, Uzum, has secured a strategic investment exceeding $130m in a deal that underscores growing international confidence in the country’s rapidly expanding digital economy.",
+       "published_at": "2026-03-10T08:51:59",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cbd2512c2570848d94bf11",
+        "69cbd4ae6ebaadb4d432dcd9"
+       ],
+       "article_id": "69cbd4ae6ebaadb4d432dcd9"
+      },
+      {
+       "id": "82f911afb1db3ac9",
+       "company_name": "uzum",
+       "domain": "uzum.com",
+       "round_type": "financing round",
+       "amount_usd": 130000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2300000000.0,
+       "currency": "USD",
+       "amount": 130000000.0,
+       "valuation": 2300000000.0,
+       "investors": [
+        {
+         "name": "Oman’s sovereign funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tencent",
+         "domain": "tencent.com",
+         "amount": null
+        },
+        {
+         "name": "vr capital group",
+         "domain": "sg.vr-capital.com",
+         "amount": null
+        },
+        {
+         "name": "finsight ventures",
+         "domain": "finsightvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech, e-commerce",
+       "country": "Uzbekistan",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Uzum raised $130 million in a financing round led by Oman’s sovereign funds that valued the Uzbek fintech and e-commerce company at $2.3 billion.",
+       "published_at": "2026-03-10T07:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e849d57bb1410d4c64ef9b"
+       ],
+       "article_id": "69e849d57bb1410d4c64ef9b"
+      },
+      {
+       "id": "7f1fff1b2a3cc54a",
+       "company_name": "Myntra Design",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "flipkart",
+         "domain": "flipkart.com",
+         "amount": 125000000.0
+        }
+       ],
+       "sector": "e-commerce fashion",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The Singapore-based parent company FK Myntra Holdings provided Rs 1,062.5 crore, or $125 million, to Flipkart’s Indian fashion e-commerce platform, Myntra Design.",
+       "published_at": "2025-06-05T06:40:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "698eade29ca02490ec12b3d0"
+       ],
+       "article_id": "698eade29ca02490ec12b3d0"
+      },
+      {
+       "id": "d0b0aded00bff81d",
+       "company_name": "jumbotail",
+       "domain": "jumbotail.com",
+       "round_type": "Series D",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "invus",
+         "domain": "invus.com",
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        },
+        {
+         "name": "kalaari capital",
+         "domain": "kalaari.com",
+         "amount": null
+        },
+        {
+         "name": "Arkam Ventures",
+         "domain": "arkamvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "B2B E-commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": null,
+       "source_sentence": "B2B e-commerce platform Jumbotail has entered the unicorn club following a $120 million Series D funding round.",
+       "published_at": "2025-06-30T14:05:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "698947a894d3f481f3e2c2a8",
+        "698a2fd63aeee4a53ffa5951"
+       ],
+       "article_id": "698947a894d3f481f3e2c2a8"
+      },
+      {
+       "id": "0145f2342edecb25",
+       "company_name": "jumbotail",
+       "domain": "jumbotail.com",
+       "round_type": "Series D",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sc ventures",
+         "domain": "scventures.io",
+         "amount": 120000000.0
+        },
+        {
+         "name": "Artal Asia",
+         "domain": "artalasia.vdtrxn",
+         "amount": null
+        }
+       ],
+       "sector": "B2B e-commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "B2B ecommerce platform Jumbotail has raised $120 Mn (around INR 1,028 Cr) in its Series D round led by SC Ventures, the investment arm of Standard Chartered.",
+       "published_at": "2025-06-30T10:44:05",
+       "coverage_count": 4,
+       "article_ids": [
+        "6898ce242f01d48cd310391e",
+        "68ab40162e28036801cf833c",
+        "69bb3b077a841a437be5cf49",
+        "69bcb520d0887d68fa4646fc"
+       ],
+       "article_id": "69bb3b077a841a437be5cf49"
+      },
+      {
+       "id": "f017e2ab3cfab4fc",
+       "company_name": "jumbotail",
+       "domain": "jumbotail.com",
+       "round_type": null,
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sc ventures",
+         "domain": "scventures.io",
+         "amount": null
+        },
+        {
+         "name": "Artal Asia",
+         "domain": "artalasia.vdtrxn",
+         "amount": null
+        }
+       ],
+       "sector": "Retail & B2B e-commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "The company plans to invest the newly raised capital into developing AI-native tools and expanding its technology and supply chain capabilities. Jumbotail said it will also accelerate hiring across key functions including category management, decision science, AI/ML, and supply chain.",
+       "source_sentence": "Jumbotail, a B2B marketplace and new retail platform for food and grocery has raised $120 million in a funding round led by SC Ventures, the innovation and investment arm of Standard Chartered Plc.",
+       "published_at": "2025-06-30T09:50:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab40f62e28036801df1593"
+       ],
+       "article_id": "68ab40f62e28036801df1593"
+      },
+      {
+       "id": "f1c17f49cf4184db",
+       "company_name": "udaan",
+       "domain": "udaan.com",
+       "round_type": "flat",
+       "amount_usd": 114000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 114000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "e-commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen its supply chain infrastructure and focus on core business operations",
+       "source_sentence": "B2B e-commerce giant Udaan has secured $114 million in a flat round, maintaining its $1.8 billion valuation.",
+       "published_at": "2025-06-02T17:54:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cd8d58d29a990b6cb4763"
+       ],
+       "article_id": "698cd8d58d29a990b6cb4763"
+      },
+      {
+       "id": "e7ad7ff34740359a",
+       "company_name": "udaan",
+       "domain": "udaan.com",
+       "round_type": "Series G",
+       "amount_usd": 114000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1800000000.0,
+       "currency": "USD",
+       "amount": 114000000.0,
+       "valuation": 1800000000.0,
+       "investors": [
+        {
+         "name": "M&G Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "existing and new investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Business-to-business e-commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "strengthen its presence in key product categories and customer segments, with a focus on FMCG and HoReCa, and scale up private‑label staples offerings",
+       "source_sentence": "Udaan, India’s leading B2B e‑commerce platform, has secured $114 million in fresh equity funding as part of its Series G round, the company announced on Monday.",
+       "published_at": "2025-06-02T08:49:29",
+       "coverage_count": 7,
+       "article_ids": [
+        "6898b05dab03b1b156e61393",
+        "68b4385a3ddf2630a8ccbda1",
+        "68b439c53ddf2630a8cf2df8",
+        "68b43a1c3ddf2630a8cfc574",
+        "698cfed08d29a990b6ce0628",
+        "69bb59b768bf20e367f872bc",
+        "69f0e1fe45272de32e8be718"
+       ],
+       "article_id": "69bb59b768bf20e367f872bc"
+      },
+      {
+       "id": "a124d8250968acd9",
+       "company_name": "Swap Commerce",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "The capital will accelerate entry into new regions, strengthen payments via partnerships like Adyen, and advance AI for demand forecasting, logistics, and transaction monetization.",
+       "source_sentence": "The $100 million Series C was co-led by DST Global and ICONIQ, the latter doubling its investment from the Series B.",
+       "published_at": "2026-01-08T09:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988ab874727a5abdc89fcfd"
+       ],
+       "article_id": "6988ab874727a5abdc89fcfd"
+      },
+      {
+       "id": "6f7fdff19d01cb7c",
+       "company_name": "swap",
+       "domain": "swap.id",
+       "round_type": "Series C",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "others undisclosed",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce operations platform",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Accelerate global e-commerce operations",
+       "source_sentence": "Swap has secured $100 million in a Series C round to accelerate its mission of streamlining global e-commerce.",
+       "published_at": "2026-01-08T00:56:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988bd5394d3f481f3d88289"
+       ],
+       "article_id": "6988bd5394d3f481f3d88289"
+      },
+      {
+       "id": "5cac60b33c6aaee1",
+       "company_name": "nordic knots",
+       "domain": "nordicknots.com",
+       "round_type": null,
+       "amount_usd": 92880000.0,
+       "amount_flag": null,
+       "valuation_usd": 2052000000.0000002,
+       "currency": "EUR",
+       "amount": 86000000.0,
+       "valuation": 1900000000.0,
+       "investors": [],
+       "sector": "e-commerce",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "support its global expansion",
+       "source_sentence": "Stockholm-based Nordic Knots , a design-focused e-commerce brand specialising in rugs and home textiles, has raised around €86 million ($100 million) in new funding to support its global expansion.",
+       "published_at": "2026-03-28T06:06:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c8bfe14ca06a20fbc4b20c"
+       ],
+       "article_id": "69c8bfe14ca06a20fbc4b20c"
+      },
+      {
+       "id": "bb62f37db18c8c12",
+       "company_name": "Autozi Internet Technology (Global) Ltd.",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 90000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 90000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "CDIB",
+         "domain": null,
+         "amount": 90000000.0
+        }
+       ],
+       "sector": "Automotive e-commerce and aftermarket services",
+       "country": "China",
+       "city": "Beijing",
+       "use_of_funds": "Digital transformation, innovation-driven expansion, mergers and acquisitions",
+       "source_sentence": "Autozi Internet Technology (Global) Ltd. (Nasdaq: AZI) ('Autozi' or the 'Company') today announced that its strategic investor, CDIB (Catalyst Digital Intelligence Business Ltd.), has formally confirmed, following a previous letter of intent, an initial equity investment of $90 million USD in Autozi at a price of $3.50 USD per share.",
+       "published_at": "2025-12-19T12:15:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6991ddab40184cd70866a8fa"
+       ],
+       "article_id": "6991ddab40184cd70866a8fa"
+      },
+      {
+       "id": "dfe2e80ca4e50e36",
+       "company_name": "uniuni",
+       "domain": "uniuni.com",
+       "round_type": null,
+       "amount_usd": 85000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 85000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rockets capital",
+         "domain": "rocketscap.com",
+         "amount": 30000000.0
+        },
+        {
+         "name": "royal bank of canada",
+         "domain": "rbc.com",
+         "amount": 55000000.0
+        }
+       ],
+       "sector": "E-commerce Delivery",
+       "country": "Canada",
+       "city": "Richmond, B.C.",
+       "use_of_funds": "Deployment of advanced sorting machines across its expanding North American warehouse network and provide working capital.",
+       "source_sentence": "E-commerce delivery company UniUni, one of Canada’s largest and fastest-growing technology-enabled companies, has raised US$85-million in fresh financing to support its expansion.",
+       "published_at": "2026-03-05T21:25:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcee8b0bf92aede2f66d2a"
+       ],
+       "article_id": "69bcee8b0bf92aede2f66d2a"
+      },
+      {
+       "id": "c467b98568dba7ba",
+       "company_name": "drip capital",
+       "domain": "dripcapital.com",
+       "round_type": "credit facility",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "td bank",
+         "domain": "td.com",
+         "amount": 75000000.0
+        }
+       ],
+       "sector": "Fintech: Trade Finance / B2B e-commerce",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "Buyer Finance programme support",
+       "source_sentence": "Drip Capital, a digital trade finance and B2B e-commerce company, has secured a US$50 million committed credit facility with an additional $25 million accordion feature from Toronto-Dominion Bank (TD Bank)",
+       "published_at": "2025-10-30T10:01:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "690e2d806d5fbb1059245537",
+        "698cc3348d29a990b6c9c6ca"
+       ],
+       "article_id": "690e2d806d5fbb1059245537"
+      },
+      {
+       "id": "f688da54a9f3f535",
+       "company_name": "shopmy",
+       "domain": "shopmy.us",
+       "round_type": null,
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "avenir",
+         "domain": "avenir-executive.co.jp",
+         "amount": null
+        },
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "Sofia Richie Grainge",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Aimee Song",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Raissa Gerona",
+         "domain": "https://www.linkedin.com/in/raissa-gerona-5a456546",
+         "amount": null
+        },
+        {
+         "name": "Gregg Renfrew",
+         "domain": "https://www.linkedin.com/in/gregg-renfrew-16736",
+         "amount": null
+        }
+       ],
+       "sector": "Influencer monetization, affiliate marketing, e-commerce",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Build out engineering and product teams, machine learning and personalization capabilities, tools for brands to measure and scale creator partnerships, offerings for influencers to increase earnings without extra content creation",
+       "source_sentence": "ShopMy, which runs a platform that helps creators monetise their followings with affiliate links, brand sponsorships and other opportunities, said Wednesday it raised $70 million at a $1.5 billion valuation. Led by investment management firm Avenir with participation from Bain Capital Ventures, Bessemer Venture Partners and Menlo Ventures, the round also attracted several high-profile investors, including influencers Sofia Richie Grainge and Aimee Song; Raissa Gerona, the chief brand officer at Revolve and Beautycounter founder Gregg Renfrew.",
+       "published_at": "2025-10-22T04:30:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "68fe8f3e78281ebb99d835aa",
+        "694db1f39fefebe7a7f2f836",
+        "69bb889d1e8b2896ac127d88",
+        "6a040d639c4aac0935428195"
+       ],
+       "article_id": "69bb889d1e8b2896ac127d88"
+      },
+      {
+       "id": "fa66c9ba6a01f2f3",
+       "company_name": "uzum",
+       "domain": "uzum.com",
+       "round_type": "equity round",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tencent",
+         "domain": "tencent.com",
+         "amount": null
+        },
+        {
+         "name": "VR Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "finsight ventures",
+         "domain": "finsightvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech, e-commerce",
+       "country": "Uzbekistan",
+       "city": null,
+       "use_of_funds": "Expand proprietary FinTech infrastructure and product portfolio",
+       "source_sentence": "Uzum has raised $70m in equity financing to accelerate the expansion of its financial and e-commerce services across the country.",
+       "published_at": "2025-08-05T09:08:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cbccf8d29a990b6c94c05"
+       ],
+       "article_id": "698cbccf8d29a990b6c94c05"
+      },
+      {
+       "id": "40b3a27e58343c88",
+       "company_name": "uzum",
+       "domain": "uzum.com",
+       "round_type": "Equity financing",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "tencent",
+         "domain": "tencent.com",
+         "amount": null
+        },
+        {
+         "name": "VR Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "finsight ventures",
+         "domain": "finsightvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech, e-commerce",
+       "country": "Uzbekistan",
+       "city": "Tashkent",
+       "use_of_funds": "The proceeds from this round will be used to accelerate the buildout of Uzum's proprietary fintech infrastructure, broaden its product suite, cementing its leadership across key verticals, and capture the full potential of Uzbekistan's rapidly expanding digital economy.",
+       "source_sentence": "The proceeds from this round will be used to accelerate the buildout of Uzum's proprietary fintech infrastructure, broaden its product suite, cementing its leadership across key verticals, and capture the full potential of Uzbekistan's rapidly expanding digital economy.",
+       "published_at": "2025-08-05T08:58:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e329c726054a607ddd084d",
+        "69e85f325cfa3e5ba5eee7b6"
+       ],
+       "article_id": "69e329c726054a607ddd084d"
+      },
+      {
+       "id": "11d4e0465c4026a0",
+       "company_name": "uzum",
+       "domain": "uzum.com",
+       "round_type": "Equity",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "tencent",
+         "domain": "tencent.com",
+         "amount": null
+        },
+        {
+         "name": "VR Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "finsight ventures",
+         "domain": "finsightvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech, E-commerce",
+       "country": "Uzbekistan",
+       "city": "Tashkent",
+       "use_of_funds": "Fresh capital will be used to help drive the rollout of digital lending and deposit products, expand the Visa debit card program, and further scale financial infrastructure.",
+       "source_sentence": "Uzum, Uzbekistan's leading digital ecosystem, has secured nearly $70 million in equity financing from Tencent and VR Capital, with participation from FinSight Ventures—a U.S. fund focused on AI, fintech and super-app investments, and lead investor in Uzum's first equity round completed in March 2024.",
+       "published_at": "2025-08-01T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68ab40c32e28036801dc790c",
+        "69efaa67727212302c5ec60a"
+       ],
+       "article_id": "68ab40c32e28036801dc790c"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 208,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDgtMDEgMDA6MDA6MDAiLCJrIjoiMTI4NDg5ODM4NjUwNzQ3NDU5MiIsImEiOjcwMDAwMDAwLjB9",
+     "totals": {
+      "deals": 208,
+      "deals_with_amount": 184,
+      "deals_without_amount": 24,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 37576517680.0,
+      "median_amount_usd": 12000000.0,
+      "largest_amount_usd": 14961000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.21,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.214
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "e-commerce",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "e-commerce"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "61836310cb902180",
+       "company_name": "Shiprazor",
+       "domain": "shiprazor.com",
+       "round_type": "seed",
+       "amount_usd": 2650000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2650000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "norrsken22",
+         "domain": "norrsken22.com",
+         "amount": null
+        },
+        {
+         "name": "aaic",
+         "domain": "aaicinc.com",
+         "amount": null
+        },
+        {
+         "name": "e4e",
+         "domain": "e4e.com",
+         "amount": null
+        },
+        {
+         "name": "Tremis Capital",
+         "domain": "tremis.in",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        },
+        {
+         "name": "senior leaders at Google",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce, Logistics",
+       "country": "South Africa",
+       "city": "Cape Town",
+       "use_of_funds": "more couriers, better coverage, lower shipping costs",
+       "source_sentence": "Shiprazor, the Cape Town-based e-commerce merchant technology and smart logistics platform, has raised $2.65 million (R44m) in seed funding to help African online merchants reduce delivery costs, improve conversion, and simplify fulfilment.",
+       "published_at": "2026-04-30T07:57:21",
+       "coverage_count": 5,
+       "article_ids": [
+        "69f8a97143843dd771d2697d",
+        "69f8a986bbf1d314559a4bfe",
+        "69f9d43c7b2d589e844ab8e7",
+        "69f9d5397b2d589e844b5ec7",
+        "69f9d8eea088760d34c21b7b"
+       ],
+       "article_id": "69f9d43c7b2d589e844ab8e7"
+      },
+      {
+       "id": "130db4f887d005b4",
+       "company_name": "pratech brands",
+       "domain": "pratechbrands.com",
+       "round_type": "Series A",
+       "amount_usd": 10600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "IvyCap Ventures Fund III",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "First Bridge India Growth Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce, health and wellness",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "enhancement of the platform's AI-driven personalization features, expansion its dark store network to enable quicker deliveries, and development of a physical retail presence",
+       "source_sentence": "Pratech Brands Private Limited, the parent company of Hyugalife, has raised $10.6 million (~₹100 crore) from a Series A fundraise led by IvyCap Ventures Fund III, with participation from First Bridge India Growth Fund.",
+       "published_at": "2026-04-30T05:18:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8c44dbbf1d314559b0b2c"
+       ],
+       "article_id": "69f8c44dbbf1d314559b0b2c"
+      },
+      {
+       "id": "ef04d9cf9993f06a",
+       "company_name": "cube",
+       "domain": "cubesoftware.com",
+       "round_type": "Series A",
+       "amount_usd": 3700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Betatron",
+         "domain": "betatron.net",
+         "amount": null
+        },
+        {
+         "name": "M Venture Partners",
+         "domain": "m-venturepartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce data intelligence",
+       "country": "Thailand",
+       "city": "Bangkok",
+       "use_of_funds": "Expand geographic footprint beyond Southeast Asia into North Asia and Latin America, broaden product coverage across categories, enhance AI tagging system",
+       "source_sentence": "Cube, an e-commerce data intelligence startup, has raised USD 3.7 million in a Series A funding round led by Betatron, with participation from M Venture Partners.",
+       "published_at": "2026-04-28T13:50:56",
+       "coverage_count": 5,
+       "article_ids": [
+        "69f0e47d836d28f995cb8073",
+        "69f1c7371e3933a6dd8dd9cf",
+        "69f1ceed399b489398e2379a",
+        "69f883c243843dd771d04d1a",
+        "69f9d4677b2d589e844ad42f"
+       ],
+       "article_id": "69f0e47d836d28f995cb8073"
+      },
+      {
+       "id": "b45a9a3e2019653c",
+       "company_name": "swanky",
+       "domain": "swankyagency.com",
+       "round_type": null,
+       "amount_usd": 9652000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 7600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "yfm equity partners",
+         "domain": "yfmep.com",
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce",
+       "country": "United Kingdom",
+       "city": "Exeter",
+       "use_of_funds": "Continued growth, including further investment in talent and service capability, as well as pursuing selective M&A opportunities",
+       "source_sentence": "Swanky has received a £7.6m investment from YFM Equity Partners to fund its next phase of growth.",
+       "published_at": "2026-04-28T06:00:42",
+       "coverage_count": 4,
+       "article_ids": [
+        "69f0e2e445272de32e8bf726",
+        "69f0e8a0d32561089420d100",
+        "69f0e8d7836d28f995cbbfcf",
+        "69f0eb3f836d28f995cbdf88"
+       ],
+       "article_id": "69f0eb3f836d28f995cbdf88"
+      },
+      {
+       "id": "2059e737fbd8d69f",
+       "company_name": "vinted",
+       "domain": "vinted.com",
+       "round_type": "primary funding round",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": 5000000000.0,
+       "currency": "USD",
+       "amount": null,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "Marketplace, e-commerce, second-hand",
+       "country": "Lithuania",
+       "city": "Vilnius",
+       "use_of_funds": null,
+       "source_sentence": "In 2024 it brought in fresh investors in a round led by US investment group TPG, valuing it at $5bn.",
+       "published_at": "2026-04-27T15:03:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e6e7836d28f995cba011"
+       ],
+       "article_id": "69f0e6e7836d28f995cba011"
+      },
+      {
+       "id": "a99eee89a7d554aa",
+       "company_name": "flipkart",
+       "domain": "flipkart.com",
+       "round_type": "pre-IPO",
+       "amount_usd": 2250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2250000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "E-commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "E-commerce major Flipkart is exploring a $2-2.5 billion (around Rs 18,570-23,213 crore) pre-IPO fundraise, while private‑equity firm KKR has …",
+       "published_at": "2026-04-20T04:15:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9dcfb713680636ef2924b"
+       ],
+       "article_id": "69f9dcfb713680636ef2924b"
+      },
+      {
+       "id": "081da2a94f9f2b94",
+       "company_name": "neato",
+       "domain": "neato.com",
+       "round_type": "growth capital",
+       "amount_usd": 25000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "advantage capital",
+         "domain": "advantagecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand Neato's second-party (2P) eCommerce model across global marketplaces, launch new operations centers in Las Vegas and Chicago, expand AI agent stack, and scale its platform across additional eCommerce channels.",
+       "source_sentence": "Neato announced it has raised $25 million in growth capital to expand its second-party (2P) eCommerce model across global marketplaces. The round was led by Advantage Capital and will support the company’s expansion beyond Amazon, including the launch of new operations centers in Las Vegas and Chicago with integrated eCommerce preparation capabilities.",
+       "published_at": "2026-04-16T01:50:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e858d19baafc73567638a1"
+       ],
+       "article_id": "69e858d19baafc73567638a1"
+      },
+      {
+       "id": "d2001f3959f08dcf",
+       "company_name": "Minoxidil Bay",
+       "domain": null,
+       "round_type": "Growth",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Shopify Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce; Hair Regrowth Products",
+       "country": "Canada",
+       "city": "Vancouver",
+       "use_of_funds": "Expand marketing efforts, optimize supply chain, strengthen fulfillment infrastructure",
+       "source_sentence": "Minoxidil Bay, Canada’s trusted online destination for premium hair regrowth products, announced today the expansion of its business operations across the country, supported by Shopify Capital. Shopify Capital Growth Boost The new funding from Shopify Capital will help Minoxidil Bay scale its marketing efforts, optimize its supply chain, and strengthen its fulfillment infrastructure.",
+       "published_at": "2026-04-10T05:42:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e888e95cfa3e5ba5091a55"
+       ],
+       "article_id": "69e888e95cfa3e5ba5091a55"
+      },
+      {
+       "id": "33dc0dc7a57d9efe",
+       "company_name": "aya",
+       "domain": "ayacare.com",
+       "round_type": "Series A",
+       "amount_usd": 7000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "raed ventures",
+         "domain": "raed.vc",
+         "amount": null
+        },
+        {
+         "name": "Nuwa Capital",
+         "domain": "nuwacapital.io",
+         "amount": null
+        },
+        {
+         "name": "Sanabil Investments",
+         "domain": "sanabil.com",
+         "amount": null
+        },
+        {
+         "name": "Joa Capital",
+         "domain": "joa.capital",
+         "amount": null
+        },
+        {
+         "name": "khwarizmi ventures",
+         "domain": "khwarizmivc.com",
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce",
+       "country": "Saudi Arabia",
+       "city": null,
+       "use_of_funds": "expand into new product categories and scale its production model across additional segments",
+       "source_sentence": "Aya, a Saudi Arabia-based e-commerce platform focused on demand-driven fashion, has raised $7 million in a Series A round led by RAED Ventures.",
+       "published_at": "2026-04-09T00:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69e8647a7bb1410d4c74e632",
+        "69e86f8d7bb1410d4c7c3447",
+        "69e87f547bb1410d4c86331f",
+        "69e8ec079baafc7356e51c20",
+        "69e9994abdd09a23d09019ab"
+       ],
+       "article_id": "69e8ec079baafc7356e51c20"
+      },
+      {
+       "id": "5318527794faa849",
+       "company_name": "homzmart",
+       "domain": "homzmart.com",
+       "round_type": "founding round",
+       "amount_usd": 23000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 23000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "stv",
+         "domain": "stv.vc",
+         "amount": null
+        },
+        {
+         "name": "impact46",
+         "domain": "impact46.sa",
+         "amount": null
+        },
+        {
+         "name": "Outliers Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "rise capital",
+         "domain": "risecapital.com",
+         "amount": null
+        },
+        {
+         "name": "Nuwa Capital",
+         "domain": "nuwacapital.io",
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce (furniture and home goods)",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its logistics capacity by 100 trucks",
+       "source_sentence": "Egyptian e-commerce platform Homzmart raised $23 million in its latest founding round from Riyadh-based venture capital fund STV where Impact46, Outliers Ventures, Rise Capital, and NUWA Capital also participated",
+       "published_at": "2026-04-07T20:33:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2b3f5d754bf662cdab5ad"
+       ],
+       "article_id": "69e2b3f5d754bf662cdab5ad"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 76,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDcgMjA6MzM6NTQiLCJrIjoiNTk4NzYyNjM3ODE0MzExNTMzNyJ9",
+     "totals": {
+      "deals": 76,
+      "deals_with_amount": 68,
+      "deals_without_amount": 8,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 14002442680.0,
+      "median_amount_usd": 12200000.0,
+      "largest_amount_usd": 8000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.138,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.141
+    }
+   }
+  }
+ ]
+}

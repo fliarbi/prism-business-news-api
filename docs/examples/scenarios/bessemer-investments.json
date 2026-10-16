@@ -1,0 +1,3262 @@
+{
+ "slug": "bessemer-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:25Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Bessemer",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "bessemer"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 216,
+      "deals_with_amount": 196,
+      "deals_without_amount": 20,
+      "deals_amount_excluded": 3,
+      "sum_amount_usd": 36899296000.0,
+      "median_amount_usd": 33500000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 22,
+       "deals_with_amount": 20,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 744880000.0,
+       "median_amount_usd": 25440000.0,
+       "largest_amount_usd": 350000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 6,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 186000000.0,
+       "median_amount_usd": 40000000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 12,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 402000000.0,
+       "median_amount_usd": 26000000.0,
+       "largest_amount_usd": 150000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 17,
+       "deals_with_amount": 16,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 867800000.0,
+       "median_amount_usd": 25000000.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 13,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 399500000.0,
+       "median_amount_usd": 31000000.0,
+       "largest_amount_usd": 130000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 21,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4555500000.0,
+       "median_amount_usd": 70000000.0,
+       "largest_amount_usd": 3750000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 9,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 475000000.0,
+       "median_amount_usd": 40000000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 16,
+       "deals_with_amount": 14,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1061000000.0,
+       "median_amount_usd": 100000000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 26,
+       "deals_with_amount": 25,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1885136000.0,
+       "median_amount_usd": 32000000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 32,
+       "deals_with_amount": 30,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 2315480000.0,
+       "median_amount_usd": 50750000.0,
+       "largest_amount_usd": 450000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 19,
+       "deals_with_amount": 17,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 22360000000.0,
+       "median_amount_usd": 97500000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 13,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3073000000.0,
+       "median_amount_usd": 16000000.0,
+       "largest_amount_usd": 2600000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.291,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.301
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Bessemer",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "bessemer"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "c3d093818aa00b98",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Automotive, Autonomous Vehicles, Sensor, Transportation",
+       "country": null,
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": "Mountain View-based Waymo is a mobility technology company that improves transportation by developing self‑driving solutions for travelers and daily commuters.",
+       "published_at": "2026-03-27T09:27:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69cc4289cb088e024d2646bf"
+      },
+      {
+       "id": "ebe6c11bc9fb33c4",
+       "company_name": "Anthropic PBC",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 3750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "cisco investments",
+         "domain": "ciscoinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital Partners",
+         "domain": "d1capital.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Co. LLC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "General Catalyst Group Management LLC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jane street group",
+         "domain": "janestreetgroup.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It was followed by Anthropic PBC's $3.75 billion series E round of funding led by Lightspeed Ventures LLC.",
+       "published_at": "2025-10-04T14:24:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68188238661375d1a58ad4ed"
+       ],
+       "article_id": "68188238661375d1a58ad4ed"
+      },
+      {
+       "id": "ce3cb148facfde42",
+       "company_name": "easebuzz",
+       "domain": "easebuzz.in",
+       "round_type": null,
+       "amount_usd": 2880000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 240000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "India",
+       "city": "Pune",
+       "use_of_funds": null,
+       "source_sentence": "In April 2025, Bessemer led the Rs 240 crore infusion into the company.",
+       "published_at": "2026-03-09T00:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bd6390d9a716b4c3519a"
+       ],
+       "article_id": "69e2bd6390d9a716b4c3519a"
+      },
+      {
+       "id": "ff49d70863aebfe1",
+       "company_name": "saronic",
+       "domain": "saronic.com",
+       "round_type": "total equity",
+       "amount_usd": 2600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "BAM Elevate",
+         "domain": "bamelevate.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Austin",
+       "use_of_funds": null,
+       "source_sentence": "Saronic has now raised a total of $2.6B in total equity funding and is backed by 8VC, Advent International, Andreessen Horowitz, BAM Elevate, and Bessemer Venture Partners.",
+       "published_at": "2026-04-06T08:27:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bcc6ff2654c79d6bcd9b"
+       ],
+       "article_id": "69e2bcc6ff2654c79d6bcd9b"
+      },
+      {
+       "id": "f19ac951d074d7ad",
+       "company_name": "Saronic Technologies",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 1750000000.0,
+       "amount_flag": null,
+       "valuation_usd": 9250000000.0,
+       "currency": "USD",
+       "amount": 1750000000.0,
+       "valuation": 9250000000.0,
+       "investors": [
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "advent international",
+         "domain": "adventinternational.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "franklin templeton",
+         "domain": "franklintempletonindia.com",
+         "amount": null
+        }
+       ],
+       "sector": "defense technology",
+       "country": "USA",
+       "city": "Austin, Texas",
+       "use_of_funds": "new capital will accelerate Saronic's ability to bring that model to life, generate entirely new classes of autonomous ships and maritime capabilities, and scale U.S. shipbuilding capacity on a timeline not seen since World War II",
+       "source_sentence": "Saronic Technologies said on Tuesday it had raised $1.75 billion in a late-stage funding round led by venture capital firm Kleiner Perkins, more than doubling the valuation of the maker of autonomous ships in just over a year.",
+       "published_at": "2026-03-31T10:21:46",
+       "coverage_count": 4,
+       "article_ids": [
+        "69cbe6761c2c193028d5b131",
+        "69ccee21adb5f291e0c65f0b",
+        "69d1d08e0b06d48049759ff8",
+        "69e2daa490d9a716b4c9fa93"
+       ],
+       "article_id": "69e2daa490d9a716b4c9fa93"
+      },
+      {
+       "id": "49f779fbd1a3ab61",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5500000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5500000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Legora Raises $550M in Series D Funding to Expand AI in Legal Operations",
+       "published_at": "2026-03-10T22:32:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cc41766e63f1d240550f7c",
+        "69f8854b43843dd771d132fb"
+       ],
+       "article_id": "69cc41766e63f1d240550f7c"
+      },
+      {
+       "id": "e3c5dcecdaa89d4f",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish start-up Legora has received 550 million dollars in a new round of financing and is now valued at 5.55 billion dollars.",
+       "published_at": "2026-03-10T14:50:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a7c57f3a572cf4abb9ee"
+       ],
+       "article_id": "69e2a7c57f3a572cf4abb9ee"
+      },
+      {
+       "id": "08695f9c2a01bfe5",
+       "company_name": "Legora",
+       "domain": "legora.com",
+       "round_type": null,
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": null,
+       "source_sentence": "Swedish start-up Legora has received 550 million dollars in a new round of financing and is now valued at 5.55 billion dollars.",
+       "published_at": "2026-03-10T14:50:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03639cca027fb5990b7749"
+       ],
+       "article_id": "6a03639cca027fb5990b7749"
+      },
+      {
+       "id": "6ce6a2310c2e5ecc",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5550000000.0,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": 5550000000.0,
+       "investors": [
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "alkeon capital",
+         "domain": "alkeoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "FirstMark Capital",
+         "domain": "firstmarkcap.com",
+         "amount": null
+        },
+        {
+         "name": "sands capital",
+         "domain": "sandscapital.com",
+         "amount": null
+        },
+        {
+         "name": "starwood capital",
+         "domain": "starwoodcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal Tech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "fuel rapid U.S. expansion",
+       "source_sentence": "Today, we’re thrilled to announce that Menlo Ventures has joined Legora’s $550 million Series D, alongside Accel, Benchmark, Bessemer Venture Partners, General Catalyst, ICONIQ, Redpoint Ventures, Y Combinator, Alkeon Capital, Bain Capital, Firstmark Capital, Sands Capital, and Starwood Capital.",
+       "published_at": "2026-03-10T12:00:00",
+       "coverage_count": 20,
+       "article_ids": [
+        "69c3a285c8a71dc7ae87a085",
+        "69c3a479836293942ef6807a",
+        "69c3a5563653d7fe6e7e3f03",
+        "69c3a6f16d029f77a1d3fa36",
+        "69c3a897f7c4e6f108e480ec",
+        "69cbd09bbf09457014d4cbc0",
+        "69cbd09f7aa9ae690c974fff",
+        "69cbd1e02e41fb6223042ccd",
+        "69cc1ddb1e1adbe011d85dd1",
+        "69cc3f8eda8c239a52930b7f",
+        "69e2836c90d9a716b4b7c27c",
+        "69e6468e2461615d5f46c48a",
+        "69e882157bb1410d4c87ec9e",
+        "69e8e3179baafc7356de01b8",
+        "69f87fff43843dd771ce435f",
+        "69f88276bbf1d31455976b0a",
+        "69f8851bbbf1d3145598e7c3",
+        "69f8854b43843dd771d132fb",
+        "69f8a84cbbf1d314559a3e99",
+        "69f8aae6bbf1d314559a5d72"
+       ],
+       "article_id": "69e2836c90d9a716b4b7c27c"
+      },
+      {
+       "id": "6cbc4b693ec19c45",
+       "company_name": "inertia",
+       "domain": "inertialab.com",
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        },
+        {
+         "name": "long journey ventures",
+         "domain": "longjourney.vc",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fusion Energy",
+       "country": "United States",
+       "city": "Silicon Valley",
+       "use_of_funds": "The new funding will help Inertia scale up its laser hardware, build a pilot fusion plant, and lay the groundwork for a utility‑scale fusion power facility.",
+       "source_sentence": "Inertia raises $450M in Series A funding to build fusion energy laser system",
+       "published_at": "2026-02-18T23:54:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c89643ebfc0891032ac3e3"
+       ],
+       "article_id": "69c89643ebfc0891032ac3e3"
+      },
+      {
+       "id": "db52b1403a23533c",
+       "company_name": "inertia",
+       "domain": "inertialab.com",
+       "round_type": "total equity funding",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "IQT",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "long journey ventures",
+         "domain": "longjourney.vc",
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "neo",
+         "domain": "getneo.com",
+         "amount": null
+        },
+        {
+         "name": "threshold",
+         "domain": "threshold.vc",
+         "amount": null
+        },
+        {
+         "name": "uncork capital",
+         "domain": "uncorkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "wndrco",
+         "domain": "wndrco.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Inertia has now raised a total of $450.0M in total equity funding and is backed by Bessemer Venture Partners, Google Ventures, IQT, Long Journey Ventures, Modern Capital, Neo, Threshold, Uncork Capital, and WndrCo.",
+       "published_at": "2026-02-16T13:27:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbbf8edd3f26d557f225c1"
+       ],
+       "article_id": "69bbbf8edd3f26d557f225c1"
+      },
+      {
+       "id": "0aad0b6cc9a58508",
+       "company_name": "inertia",
+       "domain": "inertialab.com",
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Clean Energy, Energy Management, Power Grid, Renewable Energy",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Fusion startup Inertia has secured $450 million in Series A funding to accelerate commercialization of inertial confinement fusion, positioning itself as one of the most closely watched entrants in the race to deliver grid scale clean energy. The round was led by Bessemer Venture Partners, with participation from GV, Modern Capital, Threshold Ventures, and other investors seeking exposure to next-generation power infrastructure.",
+       "published_at": "2026-02-13T15:40:03",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bb5fcff50f9c5e38708e59",
+        "69c42bda516feee3400310c2",
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69bb5fcff50f9c5e38708e59"
+      },
+      {
+       "id": "2882041c38413202",
+       "company_name": "Inertia Enterprises",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fusion Energy",
+       "country": null,
+       "city": null,
+       "use_of_funds": "plan to build the world’s most powerful laser for inertial confinement fusion at Lawrence Livermore National Laboratory",
+       "source_sentence": "Inertia Enterprises, a fusion energy startup, has secured a massive $450 million Series A to develop one of the world’s most powerful laser systems for grid-scale fusion power.",
+       "published_at": "2026-02-11T23:25:19",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bb171c68bf20e367f75d05",
+        "69bb487d680e91ccbda1b887",
+        "69bb487e5e05f5e7db816a9a"
+       ],
+       "article_id": "69bb171c68bf20e367f75d05"
+      },
+      {
+       "id": "af15be8be8ad6c37",
+       "company_name": "Inertia Enterprises",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        }
+       ],
+       "sector": "fusion power",
+       "country": "USA",
+       "city": "California",
+       "use_of_funds": "Construction of prototype laser beamlines and establishment of the first dedicated fusion fuel target assembly line in California.",
+       "source_sentence": "Inertia Enterprises, a groundbreaking fusion power startup co-founded by Twilio co-founder Jeff Lawson, has raised $450 million in a Series A funding round.",
+       "published_at": "2026-02-11T22:43:48",
+       "coverage_count": 6,
+       "article_ids": [
+        "69bb14637a841a437be54563",
+        "69bb14648b79b55c82752fb2",
+        "69bb6f2eb7032a7d5ce1ef6d",
+        "69bb6f2ff50f9c5e3870c319",
+        "69bbbe7d9e3448abf0a280e6",
+        "69e2ac4c277be6ed2d9d2b6d"
+       ],
+       "article_id": "69bb14637a841a437be54563"
+      },
+      {
+       "id": "09191682c0a8454e",
+       "company_name": "clickhouse",
+       "domain": "clickhouse.com",
+       "round_type": "Series D",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": 15000000000.0,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": 15000000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "wcm investment management",
+         "domain": "wcminvest.com",
+         "amount": null
+        }
+       ],
+       "sector": "data infrastructure",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "expand into LLM observability and AI data stack unification",
+       "source_sentence": "ClickHouse Inc. has raised $400 million in a Series D round led by Dragoneer Investment Group, marking one of the largest funding rounds in the data infrastructure sector in early 2026.",
+       "published_at": "2026-01-17T01:29:15",
+       "coverage_count": 4,
+       "article_ids": [
+        "698f731f9ca02490ec214d41",
+        "6991c0a5c659adee968354e6",
+        "69bb0eb4c08180591b81e3c4",
+        "69bbe5c6fd89557e8dc30f1b"
+       ],
+       "article_id": "69bb0eb4c08180591b81e3c4"
+      },
+      {
+       "id": "22c3f52cd923431c",
+       "company_name": "clickhouse",
+       "domain": "clickhouse.com",
+       "round_type": "Series C",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        },
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "nebius",
+         "domain": "nebius.com",
+         "amount": null
+        }
+       ],
+       "sector": "Real-time analytics, data warehousing, observability, AI/ML",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Scale product development, support global expansion, deepen partnerships with customers and technology providers building the next wave of AI-native applications",
+       "source_sentence": "ClickHouse, Inc., a leader in real-time analytics, data warehousing, observability, and AI/ML, today announced it has raised $350 million in Series C financing.",
+       "published_at": "2025-05-30T07:20:26",
+       "coverage_count": 6,
+       "article_ids": [
+        "6898cd692f01d48cd3fa0602",
+        "68f725c117f4f9d43d2b79dd",
+        "6983e7d3e71a535a9c174c7b",
+        "698f95208d29a990b6ff534a",
+        "69bae1b2680e91ccbda0459c",
+        "69dfb3cd1d88cc4f6cad8c96"
+       ],
+       "article_id": "6898cd692f01d48cd3fa0602"
+      },
+      {
+       "id": "facdcca589047a92",
+       "company_name": "clickhouse",
+       "domain": "clickhouse.com",
+       "round_type": "Series C",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        },
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "nebius",
+         "domain": "nebius.com",
+         "amount": null
+        }
+       ],
+       "sector": "Real-time analytics, data warehousing, observability, AI/ML",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Scale product development, support global expansion, deepen partnerships with customers and technology providers",
+       "source_sentence": "ClickHouse, Inc., a leader in real-time analytics, data warehousing, observability, and AI/ML, today announced it has raised $350 million in Series C financing.",
+       "published_at": "2025-05-29T14:22:53",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d97ea559ff3bc3607d8939",
+        "69bb7b2ec22d22e6b5755f4c",
+        "69cc42a3f111344e7e7c3654"
+       ],
+       "article_id": "69bb7b2ec22d22e6b5755f4c"
+      },
+      {
+       "id": "d3cfa24debb1d076",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "Series C",
+       "amount_usd": 332500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 332500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Blockchain, Cryptocurrency, Decentralized Finance (DeFi), FinTech, Web3",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-02-02T11:27:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "69888801868e86f9ec6c8019",
+        "6988a49469527f36baae5af5"
+       ],
+       "article_id": "69888801868e86f9ec6c8019"
+      },
+      {
+       "id": "2075955348d3c512",
+       "company_name": "torq",
+       "domain": "torqlogistics.com",
+       "round_type": null,
+       "amount_usd": 332000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 332000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Merlin Ventures",
+         "domain": "merlin.vc",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "greenfield partners",
+         "domain": "greenfieldpartners.com",
+         "amount": null
+        },
+        {
+         "name": "evolution equity partners",
+         "domain": "evolutionequity.com",
+         "amount": null
+        },
+        {
+         "name": "notable capital",
+         "domain": "notablecapital.com",
+         "amount": null
+        },
+        {
+         "name": "JPMorgan Private Bank",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "cybersecurity",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": "allow the hiring of up to 200 new employees",
+       "source_sentence": "The round raised $332 million and included participation from Insight Partners, Bessemer Venture Partners, Greenfield Partners, Evolution Equity Partners, Notable Capital, and JPMorgan Private Bank.",
+       "published_at": "2026-01-23T14:22:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd08ad4ae0326ef5e7265"
+       ],
+       "article_id": "69cbd08ad4ae0326ef5e7265"
+      },
+      {
+       "id": "7b27d75082bccefa",
+       "company_name": "sarvam ai",
+       "domain": "sarvam.ai",
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Amazon.com Inc",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Prosperity7 Ventures",
+         "domain": "prosperity7vc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "India",
+       "city": "Bangalore",
+       "use_of_funds": null,
+       "source_sentence": "India’s homegrown artificial intelligence start-up, Sarvam AI, is close to raising $300 million to $350 million as it seeks to build a domestic player that can compete with leaders from the US and China. Bessemer Venture Partners is expected to lead the round, with Nvidia Corp, Amazon.com Inc and Prosperity7 Ventures also participating.",
+       "published_at": "2026-04-03T04:23:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e647c02461615d5f476598"
+       ],
+       "article_id": "69e647c02461615d5f476598"
+      },
+      {
+       "id": "8c3893336369cbb9",
+       "company_name": "boom supersonic",
+       "domain": "boomsupersonic.com",
+       "round_type": "Series B",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "ark investment management",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "Darsana Capital Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Aerospace, Air Transportation, Manufacturing",
+       "country": "United States",
+       "city": "Centennial",
+       "use_of_funds": null,
+       "source_sentence": "Round: Series B",
+       "published_at": "2026-01-16T09:27:11",
+       "coverage_count": 2,
+       "article_ids": [
+        "698888315302bdff258760dc",
+        "698d77be9ca02490ecfba63d"
+       ],
+       "article_id": "698888315302bdff258760dc"
+      },
+      {
+       "id": "4df7ac3c664b5305",
+       "company_name": "boom supersonic",
+       "domain": "boomsupersonic.com",
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Darsana Capital Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "ARK Invest",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Boom Supersonic, the company building the world’s fastest airliner and a 42-megawatt natural gas turbine that delivers reliable energy to AI data centers, has announced a US$300 million funding round led by Darsana Capital Partners, with participation from Altimeter Capital, ARK Invest, Bessemer Venture Partners, Robinhood Ventures, and Y Combinator.",
+       "published_at": "2025-12-19T07:32:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "69653eb3d07c2a5fde9b7d1a"
+       ],
+       "article_id": "69653eb3d07c2a5fde9b7d1a"
+      },
+      {
+       "id": "ade4d7967a54a294",
+       "company_name": "boom supersonic",
+       "domain": "boomsupersonic.com",
+       "round_type": "total equity funding",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "ark investment management",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "Darsana Capital Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "Centennial",
+       "use_of_funds": null,
+       "source_sentence": "Boom Supersonic has now raised a total of $647.5M in total equity funding and is backed by Altimeter Capital, ARK Investment Management, Bessemer Venture Partners, Darsana Capital Partners, Robinhood Ventures, and Y Combinator.",
+       "published_at": "2025-12-15T08:27:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a730cfd8658683ead142"
+       ],
+       "article_id": "6988a730cfd8658683ead142"
+      },
+      {
+       "id": "cbd854472e274c0e",
+       "company_name": "boom supersonic",
+       "domain": "boomsupersonic.com",
+       "round_type": "Series B",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Darsana Capital Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "ARK Invest",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "supersonic aircraft",
+       "country": "USA",
+       "city": "Denver",
+       "use_of_funds": "commercialize ‘Superpower’ turbines for AI data centers",
+       "source_sentence": "Boom Supersonic Secures $300M Series B to Power AI Data Centers and Supersonic Flight",
+       "published_at": "2025-12-09T23:35:47",
+       "coverage_count": 3,
+       "article_ids": [
+        "69451932a750dd0750a34486",
+        "694dec8833568e6550f30625",
+        "69e88e285cfa3e5ba50cd1bb"
+       ],
+       "article_id": "694dec8833568e6550f30625"
+      },
+      {
+       "id": "09fbd1caf354ec7d",
+       "company_name": "ramp",
+       "domain": "ramp.network",
+       "round_type": "primary financing round",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": 32000000000.0,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 32000000000.0,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital Partners",
+         "domain": "d1capital.com",
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "This investment will support Ramp’s continued growth, enabling the company to enhance its product offerings and expand its customer base.",
+       "source_sentence": "Ramp, a financial operations platform, has announced a US$300 million primary financing round and an employee tender offer, bringing its valuation to US$32 billion.",
+       "published_at": "2025-12-01T07:03:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "6998173122f0326c0f92548d"
+       ],
+       "article_id": "6998173122f0326c0f92548d"
+      },
+      {
+       "id": "76a76db8a0456c34",
+       "company_name": "ramp",
+       "domain": "ramp.network",
+       "round_type": "primary",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 32000000000.0,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "sutter hill ventures",
+         "domain": "shv.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The company announced in a blog post on Monday that it has reached a $32 billion valuation after closing a fresh $300 million primary round led by Lightspeed Venture Partners, paired with an employee tender offer.",
+       "published_at": "2025-11-17T16:30:33",
+       "coverage_count": 2,
+       "article_ids": [
+        "69894eb894d3f481f3e34921",
+        "69baf301e7c8d3750e05148c"
+       ],
+       "article_id": "69894eb894d3f481f3e34921"
+      },
+      {
+       "id": "94ca07a838639720",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "Series C",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1950000000.0,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 1950000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "FirstMark Capital",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "The new capital will help Rain expand its global payments network, add more enterprise customers, and develop its card and app services for tokenized money.",
+       "source_sentence": "Rain, a crypto-payments startup, closed a $250 million Series C funding led by Iconiq Capital.",
+       "published_at": "2026-02-02T21:41:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988eafd94d3f481f3dbf675"
+       ],
+       "article_id": "6988eafd94d3f481f3dbf675"
+      },
+      {
+       "id": "de71d7a666eda3af",
+       "company_name": "upwind",
+       "domain": "upwind.io",
+       "round_type": null,
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "Picture Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its CNAPP capabilities beyond detection and response",
+       "source_sentence": "Cloud security startup Upwind has raised $250 million to expand its CNAPP capabilities beyond detection and response.",
+       "published_at": "2026-02-02T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dc8da5472a0104153e8950"
+       ],
+       "article_id": "69dc8da5472a0104153e8950"
+      },
+      {
+       "id": "f69f38a3081035ee",
+       "company_name": "upwind",
+       "domain": "upwind.io",
+       "round_type": "Series B",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "Picture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "leaders fund",
+         "domain": "leaders.vc",
+         "amount": null
+        },
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "Alta Park",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cerca partners",
+         "domain": "cerca-partners.com",
+         "amount": null
+        },
+        {
+         "name": "Swish Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "penny jar capital",
+         "domain": "pennyjar.com",
+         "amount": null
+        }
+       ],
+       "sector": "cloud security",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Upwind plans to use the funds to accelerate product development and go-to-market efforts as more organizations adopt its approach.",
+       "source_sentence": "Upwind, a San Francisco startup building a runtime-first cloud security platform, announced a $250 million Series B round.",
+       "published_at": "2026-01-26T22:40:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988ed8f94d3f481f3dc28a0",
+        "6989513d94d3f481f3e37a8d"
+       ],
+       "article_id": "6989513d94d3f481f3e37a8d"
+      },
+      {
+       "id": "ca46c9053c00b782",
+       "company_name": "upwind",
+       "domain": "upwind.io",
+       "round_type": "Series B",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "Picture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        }
+       ],
+       "sector": "cloud security",
+       "country": "US",
+       "city": "San Francisco",
+       "use_of_funds": "accelerate product development and global expansion",
+       "source_sentence": "Upwind, a runtime-first cloud security company, has raised $250m in Series B funding as it looks to accelerate product development and global expansion amid strong enterprise adoption.",
+       "published_at": "2026-01-26T15:07:23",
+       "coverage_count": 6,
+       "article_ids": [
+        "698ce0b68d29a990b6cbe58d",
+        "698e18ad9ca02490ec0770fc",
+        "698f19f88d29a990b6f63ae2",
+        "6996d7810d0db262fa57d7a1",
+        "69e28034c1991f786ce17e52",
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "698ce0b68d29a990b6cbe58d"
+      },
+      {
+       "id": "b62fa764a06b4017",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": null,
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "stablecoin infrastructure platform",
+       "country": null,
+       "city": "New York",
+       "use_of_funds": null,
+       "source_sentence": "Rain – $250.0M",
+       "published_at": "2026-01-12T08:27:33",
+       "coverage_count": 2,
+       "article_ids": [
+        "69888822b09f47b0d90affbd",
+        "6989dfe794d3f481f3edf8c3"
+       ],
+       "article_id": "69888822b09f47b0d90affbd"
+      },
+      {
+       "id": "cdd2025a5be049fc",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "Series C",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1950000000.0,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 1950000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        }
+       ],
+       "sector": "Payments",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Expand presence in key licensed markets across North America, South America, Europe, Asia, and Africa; deepen full‑stack stablecoin payments platform through strategic acquisitions and new products.",
+       "source_sentence": "Rain will use the Series C capital to expand its presence in key licensed markets across North America, South America, Europe, Asia, and Africa, so partners can seamlessly launch compliant solutions around the world. The funding will also enable Rain to deepen its full‑stack stablecoin payments platform, including through strategic acquisitions, and to invest ahead of the curve in new products that make stablecoin‑powered payments feel invisible to businesses and consumers.",
+       "published_at": "2026-01-09T12:35:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd795758389c352a0c23fd"
+       ],
+       "article_id": "69bd795758389c352a0c23fd"
+      },
+      {
+       "id": "419dcf3e3c5a557f",
+       "company_name": "rain",
+       "domain": "rain.agency",
+       "round_type": "Series C",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 1950000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "dragonfly",
+         "domain": "dragonflyai.co",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy ventures",
+         "domain": "galaxyventures18.com",
+         "amount": null
+        },
+        {
+         "name": "firstmark",
+         "domain": "firstmark.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "endeavor catalyst",
+         "domain": "endeavor.org",
+         "amount": null
+        }
+       ],
+       "sector": "stablecoin payments, fintech",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "expand its stablecoin settlement infrastructure to new markets and help additional enterprises go live and scale quickly",
+       "source_sentence": "Rain, a stablecoin firm helping businesses integrate stablecoin payments into their systems, has raised $250 million in a Series C round led by global investment firm ICONIQ.",
+       "published_at": "2026-01-09T12:29:43",
+       "coverage_count": 13,
+       "article_ids": [
+        "69804b6285dcbbb2f7f3dfb9",
+        "6988882a868e86f9ec6c825d",
+        "6988a39094d3f481f3d6e587",
+        "69892aec94d3f481f3e07326",
+        "698d779c8d29a990b6d714e4",
+        "698d79288d29a990b6d7319a",
+        "698f08559ca02490ec1976b5",
+        "6996cb210d0db262fa579c49",
+        "69bbda0d0ad23ae1114db1ac",
+        "69bc6e7bdded76ae100f2b99",
+        "69bd117b1d0b3f0860f02ff1",
+        "69e287fad754bf662cd23208",
+        "69e63de02461615d5f41b00d"
+       ],
+       "article_id": "69892aec94d3f481f3e07326"
+      },
+      {
+       "id": "b0e2f909b9188744",
+       "company_name": "Elise AI",
+       "domain": null,
+       "round_type": "Series E",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": "New York City",
+       "use_of_funds": "Optimize sales and marketing for commercial real estate and healthcare",
+       "source_sentence": "New York City-based Elise AI raised a groundbreaking $250 million in a Series E funding round led by venture capital firm Andreessen Horowitz with participation from Sapphire Ventures and Bessemer Venture Partners.",
+       "published_at": "2025-08-27T15:29:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0f20665fd12d4142bf957"
+       ],
+       "article_id": "68d0f20665fd12d4142bf957"
+      },
+      {
+       "id": "19145fb5c07191a7",
+       "company_name": "eliseai",
+       "domain": "eliseai.com",
+       "round_type": "Series E",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz (a16z)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "navitas capital",
+         "domain": "navitascap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence, Healthcare, Housing",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Team expansion, product innovation, market expansion, system integrations, R&D investment",
+       "source_sentence": "EliseAI, the leading AI company automating complex workflows in healthcare and housing, today announced a $250 million Series E funding round, valuing the company at over $2.2 billion.",
+       "published_at": "2025-08-20T15:13:06",
+       "coverage_count": 3,
+       "article_ids": [
+        "68ab3fa92e28036801bc8973",
+        "6988a723cfd8658683ead0a9",
+        "69bae1ba0897f254a7e54208"
+       ],
+       "article_id": "6988a723cfd8658683ead0a9"
+      },
+      {
+       "id": "0ed2ae7d0c9943aa",
+       "company_name": "eliseai",
+       "domain": "eliseai.com",
+       "round_type": "Series E",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 2200000000.0,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise software",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Product innovation and accelerate growth in both real estate and healthcare verticals",
+       "source_sentence": "Enterprise software maker EliseAI, based in New York, has raised $250 million in Series E funding.",
+       "published_at": "2025-08-20T09:56:44",
+       "coverage_count": 9,
+       "article_ids": [
+        "68b434243ddf2630a8bffaf7",
+        "68b4343a3ddf2630a8c2b072",
+        "68c163a46a78bf0c5651089f",
+        "68d961914ea4015b0112efc2",
+        "694d770f9025cd4db1f2f11b",
+        "6988b2ae94d3f481f3d7c154",
+        "698fb9399ca02490ec265a4b",
+        "698ffafc9ca02490ec2b51d8",
+        "69c94d5dc14329b30ec39626"
+       ],
+       "article_id": "6988b2ae94d3f481f3d7c154"
+      },
+      {
+       "id": "980293d428c7d9c3",
+       "company_name": "halter",
+       "domain": "halterhq.com",
+       "round_type": "Series E",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2000000000.0,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": 2000000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "blackbird",
+         "domain": "blackbirdlp.com",
+         "amount": null
+        },
+        {
+         "name": "dcvc",
+         "domain": "dcvc.com",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer",
+         "domain": "bessemerinvestors.com",
+         "amount": null
+        },
+        {
+         "name": "NewView",
+         "domain": "takeanewview.org",
+         "amount": null
+        },
+        {
+         "name": "ubiquity",
+         "domain": "ubiquity.com",
+         "amount": null
+        },
+        {
+         "name": "promus",
+         "domain": "promus.fr",
+         "amount": null
+        },
+        {
+         "name": "icehouse ventures",
+         "domain": "icehouseventures.co.nz",
+         "amount": null
+        }
+       ],
+       "sector": "agtech",
+       "country": "New Zealand",
+       "city": null,
+       "use_of_funds": "expand operations in the U.S., New Zealand, Australia and new markets; scale rancher‑facing software and hardware; hire staff; deepen AI tracking and health monitoring integration",
+       "source_sentence": "Halter, a New Zealand–born agtech startup, announced it has raised $220 million in a Series E round at a $2 billion valuation.",
+       "published_at": "2026-03-24T22:15:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc07c09d3d4bff9ce784f5"
+       ],
+       "article_id": "69cc07c09d3d4bff9ce784f5"
+      },
+      {
+       "id": "bcbdc50e05a34bd8",
+       "company_name": "halter",
+       "domain": "halterhq.com",
+       "round_type": "Series E",
+       "amount_usd": 220000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2000000000.0,
+       "currency": "USD",
+       "amount": 220000000.0,
+       "valuation": 2000000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "blackbird",
+         "domain": "blackbirdlp.com",
+         "amount": null
+        },
+        {
+         "name": "dcvc",
+         "domain": "dcvc.com",
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer",
+         "domain": "bessemerinvestors.com",
+         "amount": null
+        },
+        {
+         "name": "NewView",
+         "domain": "takeanewview.org",
+         "amount": null
+        },
+        {
+         "name": "ubiquity",
+         "domain": "ubiquity.com",
+         "amount": null
+        },
+        {
+         "name": "promus",
+         "domain": "promus.fr",
+         "amount": null
+        },
+        {
+         "name": "icehouse ventures",
+         "domain": "icehouseventures.co.nz",
+         "amount": null
+        }
+       ],
+       "sector": "agtech",
+       "country": "United States",
+       "city": "Boulder",
+       "use_of_funds": "Expand operations alongside ranchers using Halter",
+       "source_sentence": "Halter Closes $220M Series E Financing Back to Home BOULDER, CO, Halter, the global agtech company transforming cattle farming, today announced it has raised $220 million in Series E funding at a $2 billion valuation.",
+       "published_at": "2026-03-24T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69c89f0a8cc3ffdb596fecd1",
+        "69cc1e53f111344e7e7ac62f",
+        "69e1db11ef7caa4b80da55ab"
+       ],
+       "article_id": "69e1db11ef7caa4b80da55ab"
+      },
+      {
+       "id": "ba5c396d7b8b1a78",
+       "company_name": "Legora Nabs",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1800000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 1800000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Legora Nabs – The collaborative AI platform for lawyers said it completed a Series C round or $150M at a $1.8B valuation. The round was led by Bessemer Venture Partners, with significant investment from existing investors ICONIQ, General Catalyst, Redpoint Ventures, Benchmark, and Y Combinator.",
+       "published_at": "2025-10-31T15:30:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcb520d0887d68fa4646fc"
+       ],
+       "article_id": "69bcb520d0887d68fa4646fc"
+      },
+      {
+       "id": "285f26cd47a76788",
+       "company_name": "Legora",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "LegalTech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "Deepen product portfolio and expand into new geographies",
+       "source_sentence": "Legora, a Sweden-based legal-AI startup founded in 2023, has raised $150 million in a funding round that values the company at approximately $1.8 billion.",
+       "published_at": "2025-10-30T22:07:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "690e38d82a5f111a94243dca"
+       ],
+       "article_id": "690e38d82a5f111a94243dca"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 216,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTAtMzAgMjI6MDc6MjEiLCJrIjoiMjkwOTA4NjU0NzQxNjkzNDI4MCIsImEiOjE1MDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 216,
+      "deals_with_amount": 196,
+      "deals_without_amount": 20,
+      "deals_amount_excluded": 3,
+      "sum_amount_usd": 36899296000.0,
+      "median_amount_usd": 33500000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.327,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.351
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Bessemer",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "bessemer"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "26bb68763a5cd220",
+       "company_name": "Amperos",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 16000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "neo",
+         "domain": "getneo.com",
+         "amount": null
+        },
+        {
+         "name": "uncork capital",
+         "domain": "uncorkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "US",
+       "city": "New York",
+       "use_of_funds": null,
+       "source_sentence": "New York-based Amperos an AI-powered revenue recovery and denial management platform that reduces claim rejections and optimize collections.",
+       "published_at": "2026-04-27T08:27:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbed399b489398e0b4a3"
+       ],
+       "article_id": "69f1cbed399b489398e0b4a3"
+      },
+      {
+       "id": "110808f9eed50073",
+       "company_name": "Amperos Health",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 16000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "uncork capital",
+         "domain": "uncorkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "neo",
+         "domain": "getneo.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It announced on Wednesday that it secured $16 million in Series A funding.",
+       "published_at": "2026-04-24T20:09:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efac00a84b609af2b3f3fd"
+       ],
+       "article_id": "69efac00a84b609af2b3f3fd"
+      },
+      {
+       "id": "729130673cd64696",
+       "company_name": "zenskar",
+       "domain": "zenskar.com",
+       "round_type": "Series A",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Susquehanna",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "shine capital",
+         "domain": "shine.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Billing and revenue automation",
+       "country": "United States",
+       "city": "New York City",
+       "use_of_funds": null,
+       "source_sentence": "New York City based billing and revenue automation platform raised $15m in Series A funding led by Susquehanna, Bessemer Venture Partners, Shine Capital and others.",
+       "published_at": "2026-04-17T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e862665cfa3e5ba5f0d1e6"
+       ],
+       "article_id": "69e862665cfa3e5ba5f0d1e6"
+      },
+      {
+       "id": "4b9d3911a9e060d9",
+       "company_name": "zenskar",
+       "domain": "zenskar.com",
+       "round_type": "Series A",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Susquehanna Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "shine capital",
+         "domain": "shine.vc",
+         "amount": null
+        },
+        {
+         "name": "rho",
+         "domain": "rhoworld.com",
+         "amount": null
+        },
+        {
+         "name": "rocketship",
+         "domain": "rocketship.vc",
+         "amount": null
+        },
+        {
+         "name": "J-Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Future Back Ventures by Bain & Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "converge",
+         "domain": "convergeins.com",
+         "amount": null
+        }
+       ],
+       "sector": "Billing and Revenue Automation",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Expand Zenskar's agentic capabilities",
+       "source_sentence": "Zenskar, the AI-native billing and revenue automation platform powering Zero-Touch Finance for real-world complexity, announced a $15 million Series A led by Susquehanna Venture Capital, Bessemer Venture Partners, Shine Capital and Rho.",
+       "published_at": "2026-04-17T00:00:00",
+       "coverage_count": 14,
+       "article_ids": [
+        "69e862997bb1410d4c73bd5e",
+        "69e863305cfa3e5ba5f14281",
+        "69e8636e5cfa3e5ba5f16747",
+        "69e8636f9baafc73567c79c3",
+        "69e865ad9baafc73567df2ae",
+        "69e868027bb1410d4c7736f1",
+        "69e87dbf9baafc73568d8cf6",
+        "69e880f19baafc73568fa380",
+        "69e8817c7bb1410d4c878f56",
+        "69e8a4c69baafc7356aaaddb",
+        "69e8e0ff9baafc7356dc4aee",
+        "69e8e2a77bb1410d4cd47af0",
+        "69e99188d47fc02832113c48",
+        "69efab30a84b609af2b34bf0"
+       ],
+       "article_id": "69e863305cfa3e5ba5f14281"
+      },
+      {
+       "id": "1b754136e0565d7e",
+       "company_name": "bold",
+       "domain": "boldstrategies.com",
+       "round_type": "Series A",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "Picture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "red dot capital partners",
+         "domain": "red-dot.capital",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Bold bags $40m funding round Bold, an enterprise cybersecurity company... The funding round brought in $40m from investors including Bessemer Venture Partners, Picture Capital and Red Dot Capital Partners.",
+       "published_at": "2026-04-16T15:03:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "69e8e1469baafc7356dc880e"
+      },
+      {
+       "id": "8537c8f79eec05e1",
+       "company_name": "hockeystack",
+       "domain": "hockeystack.com",
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "uncorrelated ventures",
+         "domain": "uncorrelated.com",
+         "amount": null
+        }
+       ],
+       "sector": "SalesTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "continued product development and expansion of HockeyStack’s Revenue Agents platform into prospecting, new business and expansion",
+       "source_sentence": "new round of funding with contributions from Bessemer Venture Partners, Y Combinator and Uncorrelated Ventures, bringing the company’s total funding to over $50 million.",
+       "published_at": "2026-04-15T10:31:24",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e852f77bb1410d4c6a7c44",
+        "69e8d4109baafc7356d1b43a",
+        "69e8d4b89baafc7356d23814"
+       ],
+       "article_id": "69e852f77bb1410d4c6a7c44"
+      },
+      {
+       "id": "996e954f45791362",
+       "company_name": "hockeystack",
+       "domain": "hockeystack.com",
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "uncorrelated ventures",
+         "domain": "uncorrelated.com",
+         "amount": null
+        }
+       ],
+       "sector": "enterprise revenue intelligence",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "accelerate product development and the expansion of its platform",
+       "source_sentence": "HockeyStack, a San Francisco, CA-based provider of an enterprise revenue agent platform, raised an undisclosed amount in funding.",
+       "published_at": "2026-04-15T10:18:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e85bed7bb1410d4c6fc9ea"
+       ],
+       "article_id": "69e85bed7bb1410d4c6fc9ea"
+      },
+      {
+       "id": "b2b724098eae073f",
+       "company_name": "hockeystack",
+       "domain": "hockeystack.com",
+       "round_type": null,
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "uncorrelated ventures",
+         "domain": "uncorrelated.com",
+         "amount": null
+        }
+       ],
+       "sector": "Revenue Intelligence / AI Sales Automation",
+       "country": "USA",
+       "city": "San Francisco, CA",
+       "use_of_funds": "product development and expansion of the platform into prospecting, new business and expansion",
+       "source_sentence": "HockeyStack, the enterprise Revenue Agent platform, announced the launch of Revenue Agents for the Enterprise alongside a new round of funding with contributions from Bessemer Venture Partners, Y Combinator and Uncorrelated Ventures, bringing the company's total funding to over $50 million.",
+       "published_at": "2026-04-15T00:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e851b55cfa3e5ba5e72c2f",
+        "69e852ab5cfa3e5ba5e7c3dc",
+        "69e855c65cfa3e5ba5e99eb7",
+        "69e885f85cfa3e5ba507114e"
+       ],
+       "article_id": "69e855c65cfa3e5ba5e99eb7"
+      },
+      {
+       "id": "dec5dddcf8adc11d",
+       "company_name": "OFF/BEAT",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Content and Creator-Led Venture",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Leverage technology and AI to build platform",
+       "source_sentence": "boAt co-founder Aman Gupta has raised Rs 100 crore in funding for his new startup OFF/BEAT.",
+       "published_at": "2026-04-07T10:32:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2d76a9b322e6b3ea9389a"
+       ],
+       "article_id": "69e2d76a9b322e6b3ea9389a"
+      },
+      {
+       "id": "40276cce6f39fa8e",
+       "company_name": "Offbeat Studios",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": 54000000.0,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": 4500000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Venture Studio",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Aman Gupta, cofounder of consumer electronics brand Boat, on Tuesday said that his new venture Offbeat Studios has raised Rs 100 crore. The round was led by Bessemer Venture Partners. The company is valued at Rs 450 crore, according to sources.",
+       "published_at": "2026-04-07T09:00:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2d52cbd7b10565a43854a"
+       ],
+       "article_id": "69e2d52cbd7b10565a43854a"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 92,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDcgMDk6MDA6NDkiLCJrIjoiNDYyMjc4MzE3NjQwNDIzNjk0MiJ9",
+     "totals": {
+      "deals": 92,
+      "deals_with_amount": 85,
+      "deals_without_amount": 7,
+      "deals_amount_excluded": 3,
+      "sum_amount_usd": 29103616000.0,
+      "median_amount_usd": 40000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.081,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.084
+    }
+   }
+  }
+ ]
+}

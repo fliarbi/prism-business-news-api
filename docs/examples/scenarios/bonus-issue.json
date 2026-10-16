@@ -1,0 +1,806 @@
+{
+ "slug": "bonus-issue",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:00Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "bonus",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "bonus",
+      "match": "any",
+      "event_type": [
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 0,
+       "by_type": {
+        "company_announcement": 0
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "company_announcement": 2
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "company_announcement": 5
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 9,
+       "by_type": {
+        "company_announcement": 9
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "company_announcement": 5
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "company_announcement": 2
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 1,
+       "by_type": {
+        "company_announcement": 1
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "company_announcement": 2
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 4,
+       "by_type": {
+        "company_announcement": 4
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "company_announcement": 3
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 4,
+       "by_type": {
+        "company_announcement": 4
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 10,
+       "by_type": {
+        "company_announcement": 10
+       }
+      }
+     ],
+     "totals": {
+      "events": 47,
+      "articles": 44,
+      "companies": 45,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 47
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.087,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.091
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "bonus",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "bonus",
+      "event_type": [
+       "company_announcement"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f8802043843dd771ce58b5",
+       "headline": "According to a calculation by First Cisl, there was an increase in the bonus pool made available by the company, amounting to EUR 177 million, which will be redistributed to workers.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "intesasanpaolo.com",
+       "published_at": "2026-04-30T20:29:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a040dfb220687a966adaa8f",
+       "headline": "Apparently it doesn’t stop here, either, with another bonus due at the beginning of 2027 based on 2026 financial performance.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "pearlabyss.com",
+       "published_at": "2026-04-27T15:03:54",
+       "url": "https://nordic.ign.com/crimson-desert/106833/crimson-desert-has-sold-so-well-developer-pearl-abyss-has-reportedly-given-every-employee-a-3400-bon",
+       "publisher": "nordic.ign.com",
+       "title": "Crimson Desert Has Sold So Well Developer Pearl Abyss Has Reportedly Given Every Employee a $3,400 Bonus"
+      },
+      {
+       "id": "69e8e0939baafc7356dbf4f2",
+       "headline": "Samsung Electronics Co. faces an escalating labor battle after its unions raised their bonus demand to 15% of this year’s operating profit, a sum that could reach 45 trillion won ($30 billion)",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "samsung.com",
+       "published_at": "2026-04-22T12:24:10",
+       "url": "https://www.kedglobal.com/labor-union/newsView/ked202604220007",
+       "publisher": "kedglobal.com",
+       "title": "Samsung’s $203 billion question: Who gets what? - KED Global"
+      },
+      {
+       "id": "69e87f087bb1410d4c860190",
+       "headline": "Post navigation Savills has reported further progress in narrowing its gender pay gap, even as disparities in bonus and ethnicity pay metrics present a more complex picture in its latest 2025 disclosure.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "savills.com",
+       "published_at": "2026-04-21T23:04:27",
+       "url": "https://propertyindustryeye.com/savills-narrows-gender-pay-gap-as-female-representation-edges-up/",
+       "publisher": "propertyindustryeye.com",
+       "title": "Savills narrows gender pay gap as female representation edges up - Property Industry Eye"
+      },
+      {
+       "id": "69e1c71def7caa4b80da096b",
+       "headline": "2011 -Visagar Polytex has given the Bonus in the Ratio of 1:1",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "vpl.visagar.com",
+       "published_at": "2026-04-17T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e1c71def7caa4b80da096b",
+       "headline": "2015 -The Company has allotted the Bonus Shares to its shareholders in the Ratio of 10:1.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "company.co",
+       "published_at": "2026-04-17T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8635d5cfa3e5ba5f15dee",
+       "headline": "2025 board report, presented before shareholders at the general assembly meeting, which approved 20% bonus shares.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "estithmarholding.com",
+       "published_at": "2026-04-15T05:32:52",
+       "url": "https://www.zawya.com/en/business/investment/estithmar-holding-to-expand-global-presence-and-build-sustainable-institutional-value-rlx3j89f",
+       "publisher": "zawya.com",
+       "title": "Estithmar Holding to expand global presence and build sustainable institutional value"
+      },
+      {
+       "id": "69e2c4dad754bf662cde77e4",
+       "headline": "When combined with the new bonus structure, Starbucks estimates that some baristas could see their total pay increase by as much as 8%.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "starbucks.in",
+       "published_at": "2026-04-07T03:14:56",
+       "url": "https://time.news/starbucks-announces-barista-bonuses-and-weekly-pay-in-turnaround-effort/",
+       "publisher": "time.news",
+       "title": "Starbucks Announces Barista Bonuses and Weekly Pay in Turnaround Effort - Time News"
+      },
+      {
+       "id": "69e8de039baafc7356d9e37c",
+       "headline": "Scheduled for rollout in July 2026, the program introduces a new store performance-based bonus structure. Baristas and shift supervisors can now earn up to an additional $1,200 per year ($300 per quarter) when their store meets and exceeds certain sales, operational and customer service targets.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "starbucks.com",
+       "published_at": "2026-04-02T16:50:55",
+       "url": "https://chainstoreage.com/starbucks-launching-new-employee-rewards-program",
+       "publisher": "chainstoreage.com",
+       "title": "Starbucks launching new employee rewards program"
+      },
+      {
+       "id": "69e281819b322e6b3e97619e",
+       "headline": "The Chinese are now launching the next round and extending their 'E-Bonus' until the end of June 2026.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "bydglobal.com",
+       "published_at": "2026-04-02T13:52:50",
+       "url": "https://www.electrive.net/2026/04/02/byd-verlaengert-e-bonus-aktion-in-deutschland-bis-ende-juni/",
+       "publisher": "electrive.net",
+       "title": "BYD verlängert „E-Bonus“-Aktion in Deutschland bis Ende Juni - electrive.net"
+      },
+      {
+       "id": "69c93534a5dd771f46a16856",
+       "headline": "The airline's pilots would have to cut their aircraft's carbon dioxide emissions by 60,000 tons more than their 2025 levels to receive a bonus worth 1% of their base pay, according to documents viewed by Bloomberg News and reported on Tuesday.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "britishairways.com",
+       "published_at": "2026-03-26T14:40:58",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e2966c7f3a572cf4a853e4",
+       "headline": "Times Green Energy (India) Ltd Bonus Issue1:1",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "timesgreenenergy.com",
+       "published_at": "2026-03-23T04:30:43",
+       "url": "https://www.angelone.in/news/market-updates/dividends-bonus-stock-splits-and-rights-issues-this-week-march-23-27-2026-castrol-india-vedanta-and-more",
+       "publisher": "angelone.in",
+       "title": "Dividends, Bonus, Stock Splits and Rights Issues This Week (March 23–27, 2026): Castrol India, Vedanta and More"
+      },
+      {
+       "id": "69e2966c7f3a572cf4a853e4",
+       "headline": "Kilitch Drugs India Ltd Bonus Issue1:1",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "kilitchhealthcare.com",
+       "published_at": "2026-03-23T04:30:43",
+       "url": "https://www.angelone.in/news/market-updates/dividends-bonus-stock-splits-and-rights-issues-this-week-march-23-27-2026-castrol-india-vedanta-and-more",
+       "publisher": "angelone.in",
+       "title": "Dividends, Bonus, Stock Splits and Rights Issues This Week (March 23–27, 2026): Castrol India, Vedanta and More"
+      },
+      {
+       "id": "69cbd2d07aa9ae690c9778df",
+       "headline": "E-commerce giant Flipkart has rolled out a 105% bonus payout for employees for 2025, reflecting strong business performance and continued growth momentum.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "flipkart.com",
+       "published_at": "2026-03-23T02:40:58",
+       "url": "https://trak.in/stories/flipkart-offering-105-bonus-payout-for-eligible-employees/",
+       "publisher": "trak.in",
+       "title": "Flipkart Offering 105% Bonus Payout For Eligible Employees - Trak.in - Indian Business of Tech, Mobile & Startups"
+      },
+      {
+       "id": "69bb72cd333284adb6641ccb",
+       "headline": "DBS has announced it will provide a special one-time bonus of S$1,000 to its junior-ranked employees.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "dbs.com.sg",
+       "published_at": "2026-02-10T03:23:26",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 21,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDItMTAgMDM6MjM6MjYiLCJpIjoiNjliYjcyY2QzMzMyODRhZGI2NjQxY2NiIiwiZG0iOiJkYnMuY29tLnNnIiwiZXQiOiJjb21wYW55X2Fubm91bmNlbWVudCIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "company_announcement": 21
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.512,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.515
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement"
+     ],
+     "q": "bonus",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "bonus",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 32,
+     "carrying": 32,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 1,
+       "share": 3.12
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 1,
+       "share": 3.12
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 8,
+       "share": 25.0
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 2,
+       "share": 6.25
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 18,
+       "share": 56.25
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 2,
+       "share": 6.25
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 1,
+       "share": 3.12
+      },
+      {
+       "group": "neutral",
+       "count": 1,
+       "share": 3.12
+      },
+      {
+       "group": "positive",
+       "count": 30,
+       "share": 93.75
+      }
+     ],
+     "negative_to_positive_ratio": 0.033,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.04,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 9,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 9,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 8,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 6,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 5,
+       "negative_share": 16.67,
+       "positive_share": 83.33,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 1,
+        "very_pos": 4,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 4,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 4,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 1,
+        "fair_pos": 0,
+        "very_pos": 2,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 13,
+       "negative": 0,
+       "neutral": 1,
+       "positive": 12,
+       "negative_share": 0.0,
+       "positive_share": 92.31,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 1,
+        "slight_pos": 7,
+        "fair_pos": 1,
+        "very_pos": 4,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.756,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.759
+    }
+   }
+  }
+ ]
+}

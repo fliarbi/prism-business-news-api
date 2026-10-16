@@ -1,0 +1,2157 @@
+{
+ "slug": "agritech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:19Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "agritech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "agritech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 88,
+      "deals_with_amount": 78,
+      "deals_without_amount": 10,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 626490080.0,
+      "median_amount_usd": 4595000.0,
+      "largest_amount_usd": 87000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 5,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 16496000.0,
+       "median_amount_usd": 3000000.0,
+       "largest_amount_usd": 9200000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 47458680.0,
+       "median_amount_usd": 2376000.0,
+       "largest_amount_usd": 20000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 4,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 19154400.0,
+       "median_amount_usd": 4010000.0,
+       "largest_amount_usd": 10400000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 57888000.0,
+       "median_amount_usd": 9094000.0,
+       "largest_amount_usd": 20000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 9,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 64584000.0,
+       "median_amount_usd": 4552000.0,
+       "largest_amount_usd": 35000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 11500000.0,
+       "median_amount_usd": 2000000.0,
+       "largest_amount_usd": 7500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 9,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 90950000.0,
+       "median_amount_usd": 9620000.0,
+       "largest_amount_usd": 30000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 6,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 57608000.0,
+       "median_amount_usd": 9204000.0,
+       "largest_amount_usd": 21000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 104792000.0,
+       "median_amount_usd": 5000000.0,
+       "largest_amount_usd": 87000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 6,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 64275000.0,
+       "median_amount_usd": 1400000.0,
+       "largest_amount_usd": 50000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 68068000.0,
+       "median_amount_usd": 7500000.0,
+       "largest_amount_usd": 22700000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 9,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 35320000.0,
+       "median_amount_usd": 2700000.0,
+       "largest_amount_usd": 16200000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.048,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.051
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "agritech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "agritech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "1b6f5dfb14fa0d3f",
+       "company_name": "Arya.ag",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 87000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 7250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gef capital partners",
+         "domain": "gefcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": "to drive climate-smart agriculture and reduce food loss",
+       "source_sentence": "New Delhi-based agritech firm Arya.ag has raised Rs 725 crore (around $80.3 million) in its Series D round from GEF Capital Partners.",
+       "published_at": "2026-01-02T09:04:47",
+       "coverage_count": 6,
+       "article_ids": [
+        "69653f86771aed6ff243dcc1",
+        "69653f86c82797245566bd81",
+        "69894e8994d3f481f3e345c1",
+        "698d64568d29a990b6d5a921",
+        "6997652233af8f1ff8a49065",
+        "69baf4880623092a924af503"
+       ],
+       "article_id": "69653f86771aed6ff243dcc1"
+      },
+      {
+       "id": "9558c96f31ab4add",
+       "company_name": "Arya.ag",
+       "domain": null,
+       "round_type": "Equity",
+       "amount_usd": 87000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 7250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "gef capital partners",
+         "domain": "gefcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Agritech, Climate‑Smart Agriculture, Agri Solutions",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": "Deepen farmer engagement, build resilience, reduce post‑harvest losses, and expand agri solutions.",
+       "source_sentence": "today announced that it has raised Rs 725 crore (approximately USD 80.58 million) in equity from GEF Capital Partners.",
+       "published_at": "2026-01-02T07:42:27",
+       "coverage_count": 5,
+       "article_ids": [
+        "695edec762c336f10ea0cca3",
+        "696548db85029add80214b73",
+        "698cc1699ca02490ecee418c",
+        "69bb678a88a452392c442565",
+        "69d0a50301c729ed1e1626e4"
+       ],
+       "article_id": "698cc1699ca02490ecee418c"
+      },
+      {
+       "id": "657901b41d33629d",
+       "company_name": "pure harvest smart farms",
+       "domain": "pureharvest.ae",
+       "round_type": "growth funding",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "SHUAA Capital",
+         "domain": "shuaacapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "UAE",
+       "city": null,
+       "use_of_funds": "supports aggressive growth campaign within the GCC region",
+       "source_sentence": "UAE-based agritech startup, Pure Harvest Smart Farms, has secured $50 million in growth funding through a Sharia-compliant finance solution led by SHUAA Capital.",
+       "published_at": "2026-02-04T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfb7b8f2a6294de7f78a60"
+       ],
+       "article_id": "69dfb7b8f2a6294de7f78a60"
+      },
+      {
+       "id": "eb500ed4bde66f5f",
+       "company_name": "nofence",
+       "domain": "nofence.no",
+       "round_type": null,
+       "amount_usd": 35000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Agritech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "virtual fencing for livestock management",
+       "source_sentence": "Nofence : A virtual fencing company for livestock management raised $35 million.",
+       "published_at": "2025-09-22T07:23:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "699261a140184cd708706154"
+       ],
+       "article_id": "699261a140184cd708706154"
+      },
+      {
+       "id": "c64717d59b9650c4",
+       "company_name": "agrostar",
+       "domain": "agrostar.in",
+       "round_type": null,
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "to accelerate digital agriculture adoption across India",
+       "source_sentence": "AgroStar secured $30 million to accelerate digital agriculture adoption across India.",
+       "published_at": "2025-11-20T23:39:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69313edcc8bec8b2f9f22868"
+       ],
+       "article_id": "69313edcc8bec8b2f9f22868"
+      },
+      {
+       "id": "2528ec7475c8ff19",
+       "company_name": "agrostar",
+       "domain": "agrostar.in",
+       "round_type": null,
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Aavishkaar India",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bertelsmann",
+         "domain": "bertelsmann.com",
+         "amount": null
+        },
+        {
+         "name": "Evolvence India",
+         "domain": "evolvenceindia.com",
+         "amount": null
+        },
+        {
+         "name": "chiratae ventures",
+         "domain": "chiratae.com",
+         "amount": null
+        },
+        {
+         "name": "Hero Enterprises",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "India",
+       "city": "Pune",
+       "use_of_funds": "omnichannel expansion, product innovation, and developing artificial intelligence capabilities",
+       "source_sentence": "Agritech startup AgroStar has raised $30 million in a funding round led by the environment-focussed investment firm Just Climate. The round also saw participation from the firm’s existing backers Aavishkaar India, Bertelsmann, Evolvence India, Chiratae Ventures, and Hero Enterprises.",
+       "published_at": "2025-11-20T00:30:54",
+       "coverage_count": 4,
+       "article_ids": [
+        "69314513222f79889af20587",
+        "69315efc4ae01f1dc4f21441",
+        "69453c6b3f3a9d9bdfa3533a",
+        "698cca6d9ca02490eceed538"
+       ],
+       "article_id": "69314513222f79889af20587"
+      },
+      {
+       "id": "d56bcc1ed436c2fa",
+       "company_name": "waycool",
+       "domain": "waycool.in",
+       "round_type": null,
+       "amount_usd": 22700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 22700000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "B2B food and agritech platform",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "WayCool raised $22.7 million.",
+       "published_at": "2026-03-15T17:24:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a8916a499b02fbb80551"
+       ],
+       "article_id": "69c3a8916a499b02fbb80551"
+      },
+      {
+       "id": "dfcef36ff701f69e",
+       "company_name": "nextprotein",
+       "domain": "nextprotein.co",
+       "round_type": null,
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "agritech",
+       "country": "Tunisia",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "nextProtein, specializing in sustainable agritech and the production of animal protein from insects, secured $21 million.",
+       "published_at": "2025-12-09T10:12:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "6997041de7ff408e2d6f63c2"
+       ],
+       "article_id": "6997041de7ff408e2d6f63c2"
+      },
+      {
+       "id": "01f6107b1fa91d13",
+       "company_name": "maalexi",
+       "domain": "maalexi.com",
+       "round_type": "Debt",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "amwal capital partners",
+         "domain": "amwalcp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Agritech / B2B Food & Agri Fintech",
+       "country": "UAE",
+       "city": null,
+       "use_of_funds": "Enhance platform and drive customer acquisition in UAE and Saudi Arabia",
+       "source_sentence": "This time, Maalexi has secured a shariah-compliant credit facility of up to $20 million (around Rs 176 crore) from Amwal Capital Partners, starting with an initial $5 million tranche.",
+       "published_at": "2025-08-29T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b446fc3ddf2630a8e44d4e"
+       ],
+       "article_id": "68b446fc3ddf2630a8e44d4e"
+      },
+      {
+       "id": "31ea2b7f48274f1e",
+       "company_name": "Eggoz Nutrition",
+       "domain": "eggoz.in",
+       "round_type": "Series C",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "omnivore",
+         "domain": "omnivore.io",
+         "amount": null
+        },
+        {
+         "name": "NABVENTURES",
+         "domain": "nabventures.in",
+         "amount": null
+        },
+        {
+         "name": "Avaana Capital",
+         "domain": "avaanacapital.com",
+         "amount": null
+        },
+        {
+         "name": "Bellerive Capital",
+         "domain": "bellerivefinance.com",
+         "amount": null
+        }
+       ],
+       "sector": "AgriTech (Eggs)",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand footprint across India and enhance cold-chain logistics",
+       "source_sentence": "Brand offering farm-fresh eggs with a tech-integrated supply chain, Eggoz Nutrition raised $20 million in its Series C round.",
+       "published_at": "2025-06-30T14:05:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "698947a894d3f481f3e2c2a8"
+       ],
+       "article_id": "698947a894d3f481f3e2c2a8"
+      },
+      {
+       "id": "ec4f03f092b990e7",
+       "company_name": "nextprotein",
+       "domain": "nextprotein.co",
+       "round_type": "Series B",
+       "amount_usd": 19440000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 18000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "British International Investment",
+         "domain": "bii.co.uk",
+         "amount": null
+        },
+        {
+         "name": "SWEN Capital Partners’ Blue Ocean Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "mirova",
+         "domain": "mirova.com",
+         "amount": null
+        },
+        {
+         "name": "RAISE Impact",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "société générale",
+         "domain": "sgmaroc.com",
+         "amount": null
+        },
+        {
+         "name": "CIC Paris Innovation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "La Banque des Start-ups by LCL",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "accelerate production, support nextProtein’s expansion and fund the construction of a second large-scale production facility in Tunisia",
+       "source_sentence": "The Notes were issued as part of a €18 million Series B funding round for nextProtein",
+       "published_at": "2025-11-08T05:57:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "69319b9534551716f0f22a4e"
+       ],
+       "article_id": "69319b9534551716f0f22a4e"
+      },
+      {
+       "id": "d3866c14ba10c064",
+       "company_name": "aerobotics",
+       "domain": "aerobotics.com",
+       "round_type": null,
+       "amount_usd": 17000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "naspers",
+         "domain": "naspers.com",
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "South Africa",
+       "city": "Cape Town",
+       "use_of_funds": null,
+       "source_sentence": "In 2020, the Cape Town-founded company famously raised R100m from Naspers in a $17m (R253m at the time) funding around.",
+       "published_at": "2025-11-28T06:35:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd5aa71a014f1df2d5da2"
+       ],
+       "article_id": "69cbd5aa71a014f1df2d5da2"
+      },
+      {
+       "id": "3785d547b5a43695",
+       "company_name": "agriodor",
+       "domain": "agriodor.com",
+       "round_type": "Series A",
+       "amount_usd": 16200000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Environmental and Solidarity Revolution Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "région sud investissement",
+         "domain": "regionsudinvestissement.com",
+         "amount": null
+        },
+        {
+         "name": "CAAP Création (Crédit Agricole Alpes-Provence)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "capagro",
+         "domain": "capagro.fr",
+         "amount": null
+        },
+        {
+         "name": "caphorn",
+         "domain": "caphorn.vc",
+         "amount": null
+        },
+        {
+         "name": "swen capital partners",
+         "domain": "swen-cp.fr",
+         "amount": null
+        }
+       ],
+       "sector": "AgriTech",
+       "country": "France",
+       "city": "Rennes",
+       "use_of_funds": "Accelerate growth, deploy olfactory biocontrol technology, expand commercially in Europe, Latin America and North America, and enhance R&D capabilities.",
+       "source_sentence": "Agriodor, a Rennes-based AgriTech startup using natural scents to protect crops, has raised €15 million in Series A funding to accelerate its growth and the global deployment of its olfactory biocontrol technology.",
+       "published_at": "2026-04-15T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8d4037bb1410d4cc8c341",
+        "69e8d4be5cfa3e5ba5445eb0"
+       ],
+       "article_id": "69e8d4037bb1410d4cc8c341"
+      },
+      {
+       "id": "56c019a9f31c594f",
+       "company_name": "Ruminant BioTech",
+       "domain": "ruminantbiotech.com",
+       "round_type": "Series A",
+       "amount_usd": 14800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14800000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Marex Group",
+         "domain": "marex.com",
+         "amount": null
+        },
+        {
+         "name": "AgriZeroNZ",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "New Zealand",
+       "city": null,
+       "use_of_funds": "launching Ruminant Biotech’s product in Australia and New Zealand in 2026 and further development of the company’s technology pipeline",
+       "source_sentence": "\"New Zealand agritech startup Ruminant Biotech has completed a $14.8 million (NZ$17 million) Series A funding round, which gives the company a post-money valuation of $132 million.\"",
+       "published_at": "2025-11-28T00:12:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69314dc9b98f138ae7f2162a"
+       ],
+       "article_id": "69314dc9b98f138ae7f2162a"
+      },
+      {
+       "id": "d5be64e850ebae16",
+       "company_name": "Cropcoin Technologies",
+       "domain": null,
+       "round_type": "Pre-Series A",
+       "amount_usd": 14400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "unicorn india ventures",
+         "domain": "unicornivc.com",
+         "amount": null
+        },
+        {
+         "name": "Climate Angels",
+         "domain": "climateangels.in",
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "further enhance its geographical expansion for scaling operations from 10 districts to the entire 66 districts of Bihar and Jharkhand",
+       "source_sentence": "Cropcoin Technologies, a Mumbai, India-based agritech startup, raised RS 12 Crore ($1.27M) in Pre-Series A funding.",
+       "published_at": "2026-03-30T08:44:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d79f5cfa3e5ba546b5c2"
+       ],
+       "article_id": "69e8d79f5cfa3e5ba546b5c2"
+      },
+      {
+       "id": "22f9b3ba958ea0fc",
+       "company_name": "Pehle Jaisa",
+       "domain": "pehlejaisa.com",
+       "round_type": "Pre-Series A",
+       "amount_usd": 14400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "unicorn india ventures",
+         "domain": "unicornivc.com",
+         "amount": null
+        },
+        {
+         "name": "Climate Angels",
+         "domain": "climateangels.in",
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "geographical expansion, product development, and infrastructure building",
+       "source_sentence": "Agritech startup Cropcoin (Pehle Jaisa) has raised Rs 12 Crore in Pre-Series A round led by Unicorn India Ventures. The round also saw participation from Climate angels.",
+       "published_at": "2026-03-30T05:59:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69ca9666691dbf44999b8b6d",
+        "69e2b8d6a85be7e50660c931",
+        "69e2c516277be6ed2da2bb9a"
+       ],
+       "article_id": "69e2b8d6a85be7e50660c931"
+      },
+      {
+       "id": "4f3b243e9c882793",
+       "company_name": "garuda aerospace",
+       "domain": "garudaaerospace.com",
+       "round_type": "Series B",
+       "amount_usd": 13000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "narotam sekhsaria family office",
+         "domain": "sekhsaria.com",
+         "amount": null
+        },
+        {
+         "name": "we founder circle",
+         "domain": "wefounderscircle.com",
+         "amount": null
+        },
+        {
+         "name": "venture catalysts",
+         "domain": "venturecatalysts.in",
+         "amount": null
+        }
+       ],
+       "sector": "Drone Manufacturing, Defence, Agritech",
+       "country": "India",
+       "city": "Chennai",
+       "use_of_funds": "Boost manufacturing capacity and scale-up production, strengthen R&D for defence drone systems",
+       "source_sentence": "Drone startup Garuda Aerospace, backed by cricket legend MS Dhoni, has raised an additional $1 million in its ongoing Series B round. The fresh capital comes from Narotam Sekhsaria Family Office, alongside existing investor We Founder Circle, further fueling the company’s aggressive scale-up plans. This new infusion adds to the $12 million (Rs 100 crore) that the Chennai-based company secured earlier in the round, led by Venture Catalysts.",
+       "published_at": "2025-06-14T12:42:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988d9f294d3f481f3dab71d"
+       ],
+       "article_id": "6988d9f294d3f481f3dab71d"
+      },
+      {
+       "id": "52aeaec29b8f3851",
+       "company_name": "growit",
+       "domain": "thegrowit.com",
+       "round_type": null,
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "GVFL",
+         "domain": "gvfl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "India",
+       "city": "Surat",
+       "use_of_funds": null,
+       "source_sentence": "GVFL also backed Surat-based agritech venture GrowIT with Rs 10 crore.",
+       "published_at": "2025-08-04T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab3631bfdb4fb66398d46d"
+       ],
+       "article_id": "68ab3631bfdb4fb66398d46d"
+      },
+      {
+       "id": "ae67e6526226a0a8",
+       "company_name": "saga robotics",
+       "domain": "sagarobotics.com",
+       "round_type": "equity capital",
+       "amount_usd": 10668000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 8400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Praesidium Agri-FoodTech",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "aker",
+         "domain": "aker.ag",
+         "amount": null
+        },
+        {
+         "name": "Nysnø Climate Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blystad",
+         "domain": "blystad.no",
+         "amount": null
+        },
+        {
+         "name": "hatteland",
+         "domain": "hatteland.com",
+         "amount": null
+        },
+        {
+         "name": "Melesio",
+         "domain": "melesio.no",
+         "amount": null
+        },
+        {
+         "name": "sanden",
+         "domain": "sanden.co.jp",
+         "amount": null
+        },
+        {
+         "name": "MP Pensjon",
+         "domain": "mppensjon.no",
+         "amount": null
+        }
+       ],
+       "sector": "AgriTech",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": "Accelerate commercial rollout of Thorvald across the UK and US",
+       "source_sentence": "Saga Robotics, the company behind Thorvald, the leading autonomous platform for grapevine and strawberries, has raised GBP 8,4 Million in equity capital to scale its commercial operations in the UK and US.",
+       "published_at": "2025-08-11T17:29:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d101b8469a108b2b2ce74b"
+       ],
+       "article_id": "68d101b8469a108b2b2ce74b"
+      },
+      {
+       "id": "8dd5ca4f1214fd11",
+       "company_name": "complete farmer",
+       "domain": "completefarmer.com",
+       "round_type": "Series A",
+       "amount_usd": 10400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "Ghana",
+       "city": null,
+       "use_of_funds": "strengthen its operations, broaden its reach across West Africa, and roll out embedded finance tools",
+       "source_sentence": "In 2023, the company secured $10.4 million in pre-Series A capital to strengthen its operations, broaden its reach across West Africa, and roll out embedded finance tools.",
+       "published_at": "2025-07-10T19:05:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "6996f21ffeeb41363fa3714c",
+        "69972b2433af8f1ff8a36a30"
+       ],
+       "article_id": "6996f21ffeeb41363fa3714c"
+      },
+      {
+       "id": "7678cf89e7238278",
+       "company_name": "swiftvee",
+       "domain": "swiftvee.com",
+       "round_type": null,
+       "amount_usd": 10100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "HAVAÍC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "exeo capital",
+         "domain": "exeocapital.com",
+         "amount": null
+        },
+        {
+         "name": "Iain Williamson",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "South Africa",
+       "city": null,
+       "use_of_funds": "expand from a livestock marketplace into embedded financial services",
+       "source_sentence": "The biggest splash comes from South African agritech SwiftVEE also made headlines, raising about $10.1 million to expand from a livestock marketplace into embedded financial services.",
+       "published_at": "2025-12-05T11:14:41",
+       "coverage_count": 2,
+       "article_ids": [
+        "698e792f9ca02490ec0ea7b3",
+        "6997041de7ff408e2d6f63c2"
+       ],
+       "article_id": "698e792f9ca02490ec0ea7b3"
+      },
+      {
+       "id": "5331c0cf1112647c",
+       "company_name": "bighaat",
+       "domain": "bighaat.com",
+       "round_type": null,
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bidra innovation ventures",
+         "domain": "bidra.vc",
+         "amount": null
+        },
+        {
+         "name": "jm financial",
+         "domain": "jmfinancialservices.in",
+         "amount": null
+        },
+        {
+         "name": "Ashish Kacholia",
+         "domain": "https://www.linkedin.com/in/ashish-kacholia-308b8018/",
+         "amount": null
+        }
+       ],
+       "sector": "AgriTech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "support BigHaat’s plan to expand its digital farmer-focused ecosystem and build a traceable, globally compliant food value chain",
+       "source_sentence": "Indian AgriTech company BigHaat has raised $10 million in a funding round led by Bidra Innovation Ventures, the U.S.-based venture capital arm of OCP Group, global leader in plant nutrition solutions, according to the firm’s press release.",
+       "published_at": "2026-02-11T08:31:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc133afa3bff8ab9a2977a",
+        "69bd776c93b550fcb8272bfd"
+       ],
+       "article_id": "69bc133afa3bff8ab9a2977a"
+      },
+      {
+       "id": "1b3283924fb4a8ae",
+       "company_name": "complete farmer",
+       "domain": "completefarmer.com",
+       "round_type": "Series B",
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "Ghana",
+       "city": null,
+       "use_of_funds": "grow operations across Ghana and neighbouring countries",
+       "source_sentence": "The funding will enable Complete Farmer to deepen its presence in rural Ghana and scale its services to reach over 50,000 smallholder farmers by 2028. This expansion builds on the $10 million in private capital the company raised in 2023 to grow its operations across Ghana and neighbouring countries.",
+       "published_at": "2025-06-26T16:19:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c166e26a78bf0c56564218"
+       ],
+       "article_id": "68c166e26a78bf0c56564218"
+      },
+      {
+       "id": "a1578a2c567c2443",
+       "company_name": "BNA Ruminant Biotech",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 9768000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "AUD",
+       "amount": 14800000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "agritech",
+       "country": "New Zealand",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "BNA Ruminant Biotech - A$14.8m (≈ ¥1.45b; ≈ US$9.6m) Series A - NZ agritech working on methane‑reducing cattle supplements, planning AU/NZ launch",
+       "published_at": "2025-12-01T01:55:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e858739baafc735675ff3f"
+       ],
+       "article_id": "69e858739baafc735675ff3f"
+      },
+      {
+       "id": "5dd07aaf63789812",
+       "company_name": "terracore",
+       "domain": "terracoregeo.com",
+       "round_type": "equity and strategic debt",
+       "amount_usd": 9200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9200000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "AgriTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand into West Africa and launch a premium analytics product for exporters and cooperatives.",
+       "source_sentence": "Within six months: 📈 TerraCore reopened its raise with renewed momentum 📊 The board became a core part of the investor narrative, not a liability 💰 She secured $9.2M in equity and strategic debt",
+       "published_at": "2025-05-21T19:25:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3da00418caa2f5c5d2ab0"
+       ],
+       "article_id": "69c3da00418caa2f5c5d2ab0"
+      },
+      {
+       "id": "6be3a9f12baa5a33",
+       "company_name": "agriodor",
+       "domain": "agriodor.com",
+       "round_type": null,
+       "amount_usd": 8640000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "AgriTech, Biocontrol",
+       "country": "France",
+       "city": "Rennes",
+       "use_of_funds": "Develop three new products for other crops and accelerate growth",
+       "source_sentence": "After a two-stage operation in 2023-2024, by which it raised €8 million, it is looking for €15 million this time.",
+       "published_at": "2025-12-03T08:40:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bc2490d9a716b4c309cc"
+       ],
+       "article_id": "69e2bc2490d9a716b4c309cc"
+      },
+      {
+       "id": "d201d37664c2dada",
+       "company_name": "kisankonnect",
+       "domain": "kisankonnect.in",
+       "round_type": "pre-Series B",
+       "amount_usd": 8640000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 720000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Bajaj Finserv Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mistry Ventures",
+         "domain": "mistryventures.com",
+         "amount": null
+        },
+        {
+         "name": "Desai Foods",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dhanuka agritech",
+         "domain": "dhanuka.com",
+         "amount": null
+        },
+        {
+         "name": "Action Tessa Family Office",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "scale its fresh produce supply chain intelligence and omni-channel D2C model",
+       "source_sentence": "Farm-to-fork company KisanKonnect has raised Rs 72 crore (around $8 million) in a pre-Series B funding round led by Bajaj Finserv Group, with participation from Mistry Ventures, Desai Foods, Dhanuka Agritech, and Action Tessa Family Office.",
+       "published_at": "2025-09-25T14:35:57",
+       "coverage_count": 4,
+       "article_ids": [
+        "68d97b0b5c3d35fe5b4c347e",
+        "68d9a7f4c149d2bca77eb384",
+        "68d9ac515af1b12a767f222d",
+        "698d2aad9ca02490ecf5e7ca"
+       ],
+       "article_id": "68d97b0b5c3d35fe5b4c347e"
+      },
+      {
+       "id": "9bbc9f0e2add44e9",
+       "company_name": "verge ag",
+       "domain": "vergeag.com",
+       "round_type": null,
+       "amount_usd": 7520000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "BRL",
+       "amount": 37600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "yamaha",
+         "domain": "yamaha.com",
+         "amount": null
+        },
+        {
+         "name": "sp ventures",
+         "domain": "spventures.com.br",
+         "amount": null
+        },
+        {
+         "name": "fall line capital",
+         "domain": "fall-line-capital.com",
+         "amount": null
+        },
+        {
+         "name": "Artesian funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "Canada",
+       "city": "Lethbridge",
+       "use_of_funds": null,
+       "source_sentence": "Yamaha, through its corporate venture capital fund, led a round of R$ 37.6 million (approximately US$ 7.5 million) in the Verge Ag, agritech that uses artificial intelligence to increase efficiency in the field.",
+       "published_at": "2025-08-04T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b054953b014c087af3510a"
+       ],
+       "article_id": "68b054953b014c087af3510a"
+      },
+      {
+       "id": "1600b8b9f5c2d018",
+       "company_name": "aydi",
+       "domain": "aydi.com",
+       "round_type": "pre-seed",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "daltex corporation",
+         "domain": "daltexcorp.com",
+         "amount": null
+        },
+        {
+         "name": "cotu ventures",
+         "domain": "cotu.vc",
+         "amount": null
+        },
+        {
+         "name": "Nuwa Capital",
+         "domain": "nuwacapital.io",
+         "amount": null
+        },
+        {
+         "name": "Magrabi Agriculture",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "foundation ventures",
+         "domain": "foundationventures.co",
+         "amount": null
+        }
+       ],
+       "sector": "AI agritech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Scale ORTH’s reach globally",
+       "source_sentence": "Against this backdrop, Aydi, the company behind ORTH, said it raised $7.5 million in a pre‑seed round to launch what it describes as the world’s first AI‑powered agricultural engineer.",
+       "published_at": "2026-03-16T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dce1f6f536d271b2bb6401"
+       ],
+       "article_id": "69dce1f6f536d271b2bb6401"
+      },
+      {
+       "id": "ef72234067c28eb4",
+       "company_name": "AgriPass",
+       "domain": "agripass.co",
+       "round_type": "Seed",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Harbor Venture Consulting",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "E44 Climate Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": "scaling its affordable, commercial-ready solution across the U.S. and Europe",
+       "source_sentence": "Following a $7.5M Seed round led by Harbor Venture Consulting and E44 Climate Ventures in March 2026, AgriPass is scaling its affordable, commercial-ready solution across the U.S. and Europe.",
+       "published_at": "2026-03-13T09:30:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a47843ca26f2274c30e1"
+       ],
+       "article_id": "69c3a47843ca26f2274c30e1"
+      },
+      {
+       "id": "bab28d7f8369d095",
+       "company_name": "complete farmer",
+       "domain": "completefarmer.com",
+       "round_type": "Series A / Debt Financing",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Agritech",
+       "country": "Ghana",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Complete Farmer Agritech ~$7.5M Series A / Debt Financing",
+       "published_at": "2026-01-13T10:52:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69888a545a4e31ff243ab0ac"
+       ],
+       "article_id": "69888a545a4e31ff243ab0ac"
+      },
+      {
+       "id": "d2a6c710600e8c8a",
+       "company_name": "aydi",
+       "domain": "aydi.com",
+       "round_type": "Seed",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cotu ventures",
+         "domain": "cotu.vc",
+         "amount": null
+        },
+        {
+         "name": "Daltex",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Nuwa Capital",
+         "domain": "nuwacapital.io",
+         "amount": null
+        },
+        {
+         "name": "Magrabi Agriculture",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "foundation ventures",
+         "domain": "foundationventures.co",
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "United Arab Emirates",
+       "city": "Dubai",
+       "use_of_funds": "launch Orth globally, enhance its AI and predictive analytics capabilities, and support Aydi’s mission to make world-class agronomy expertise accessible to all growers",
+       "source_sentence": "Aydi, a Dubai, UAE–based AI-powered platform dedicated to advancing the success and prosperity of growers worldwide, has raised $7.5 million in a Seed funding round.",
+       "published_at": "2025-10-14T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e9a1d8d29a990b6ec9e91"
+       ],
+       "article_id": "698e9a1d8d29a990b6ec9e91"
+      },
+      {
+       "id": "6d6cd12863dbe3ae",
+       "company_name": "babban gona",
+       "domain": "babbangona.com",
+       "round_type": "Debt Financing",
+       "amount_usd": 7500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "British International Investment",
+         "domain": "bii.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "Nigeria",
+       "city": null,
+       "use_of_funds": "providing working capital for smallholder farmers in northern Nigeria",
+       "source_sentence": "On the agritech side, Nigeria’s Babban Gona secured $7.5 million in debt financing from British International Investment (BII).",
+       "published_at": "2025-09-05T10:36:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "698ce4078d29a990b6cc0978"
+       ],
+       "article_id": "698ce4078d29a990b6cc0978"
+      },
+      {
+       "id": "4f977a46cdfa70db",
+       "company_name": "eeki",
+       "domain": "eeki.com",
+       "round_type": null,
+       "amount_usd": 7000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sixth Sense Ventures",
+         "domain": "sixthsenseventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "India",
+       "city": "Kota",
+       "use_of_funds": "nationwide scale-up, strengthen R&D, deployment of advanced Gen 3 Growing Chambers",
+       "source_sentence": "Agritech firm Eeki has raised $7 million from Sixth Sense Ventures. The funds will be used for nationwide scale-up with aeroponic innovation to rapidly expand farm operations across India, strengthen R&D, and scale up the deployment of its advanced Gen 3 Growing Chambers.",
+       "published_at": "2025-07-01T07:55:53",
+       "coverage_count": 3,
+       "article_ids": [
+        "68ab40bd2e28036801dbf32f",
+        "698f1f418d29a990b6f6a53c",
+        "6a03ff6a9c4aac09353c8ae3"
+       ],
+       "article_id": "68ab40bd2e28036801dbf32f"
+      },
+      {
+       "id": "94af575c6d8d512a",
+       "company_name": "agrostar",
+       "domain": "agrostar.in",
+       "round_type": "Series",
+       "amount_usd": 6700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "India",
+       "city": "Pune",
+       "use_of_funds": null,
+       "source_sentence": "the VC firm led a $6.7 million fundraising round in April for the Pune-based startup that offers seeds and farming advice to farmers.",
+       "published_at": "2025-08-05T00:00:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b4341b3ddf2630a8bf0a73"
+       ],
+       "article_id": "68b4341b3ddf2630a8bf0a73"
+      },
+      {
+       "id": "fc3bd3b1c39412d8",
+       "company_name": "grove",
+       "domain": "grove.city",
+       "round_type": "seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Outliers VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "Saudi Arabia",
+       "city": "Riyadh",
+       "use_of_funds": "scale its demand-driven fresh-produce supply chain",
+       "source_sentence": "Riyadh-based Grove secured USD 5 million in a seed funding round. The round was led by Outliers VC with participation from a group of angel investors.",
+       "published_at": "2026-01-20T09:13:11",
+       "coverage_count": 2,
+       "article_ids": [
+        "698d66e09ca02490ecfa69e2",
+        "698e7b508d29a990b6ea4886"
+       ],
+       "article_id": "698d66e09ca02490ecfa69e2"
+      },
+      {
+       "id": "a44e8fd207a6495f",
+       "company_name": "complete farmer",
+       "domain": "completefarmer.com",
+       "round_type": null,
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "agritech marketplace",
+       "country": "Ghana",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Complete Farmer (Ghana) : Raised $5 million to deepen its agritech marketplace",
+       "published_at": "2025-09-11T17:28:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0f01165fd12d4142be1d9"
+       ],
+       "article_id": "68d0f01165fd12d4142be1d9"
+      },
+      {
+       "id": "d27c6fe30617f3b5",
+       "company_name": "Agi3",
+       "domain": "agi3.ai",
+       "round_type": null,
+       "amount_usd": 4700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "scale ai",
+         "domain": "scaleai.ca",
+         "amount": 4700000.0
+        }
+       ],
+       "sector": "Agritech",
+       "country": "Canada",
+       "city": "Oak Bluff",
+       "use_of_funds": null,
+       "source_sentence": "Scale AI — a consortium of private entities, research centres, academia and high-potential startups that is backed by the federal government — is supporting Agi3 with $4.7 million.",
+       "published_at": "2025-12-18T01:48:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986ca73ca3bd326c77d98dc"
+       ],
+       "article_id": "6986ca73ca3bd326c77d98dc"
+      },
+      {
+       "id": "eddd4b619414ce7a",
+       "company_name": "culta",
+       "domain": "culta.io",
+       "round_type": "pre-Series A",
+       "amount_usd": 4690000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "JPY",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "archetype ventures",
+         "domain": "archetype.vc",
+         "amount": null
+        },
+        {
+         "name": "UntroD Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nissay capital",
+         "domain": "nissay-cap.co.jp",
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "Japan",
+       "city": "Tokyo",
+       "use_of_funds": "scale operations and accelerate entry into markets in Southeast Asia and Australia.",
+       "source_sentence": "With the fresh capital, Culta plans to scale operations and accelerate entry into markets in Southeast Asia and Australia.",
+       "published_at": "2026-04-14T14:20:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84ccb5cfa3e5ba5e44dbc"
+       ],
+       "article_id": "69e84ccb5cfa3e5ba5e44dbc"
+      },
+      {
+       "id": "07fb413fc8324883",
+       "company_name": "culta",
+       "domain": "culta.io",
+       "round_type": "Pre-Series A",
+       "amount_usd": 4500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "archetype ventures",
+         "domain": "archetype.vc",
+         "amount": null
+        },
+        {
+         "name": "UntroD Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "Japan",
+       "city": null,
+       "use_of_funds": "The company is developing AI-powered, climate-resilient, non-GMO crops to address global food security challenges.",
+       "source_sentence": "Japan-based agritech startup Culta secured $4.5 million (700 million yen) in a Pre-Series A round co-led by Archetype Ventures and UntroD Capital.",
+       "published_at": "2026-04-17T09:30:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e862f15cfa3e5ba5f12028"
+       ],
+       "article_id": "69e862f15cfa3e5ba5f12028"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 88,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDQtMTcgMDk6MzA6MzkiLCJrIjoiNTc1MTI1MTE5NjE3MzUzODU5IiwiYSI6NDUwMDAwMC4wfQ",
+     "totals": {
+      "deals": 88,
+      "deals_with_amount": 78,
+      "deals_without_amount": 10,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 626490080.0,
+      "median_amount_usd": 4595000.0,
+      "largest_amount_usd": 87000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.082,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.086
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "agritech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "agritech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "07fb413fc8324883",
+       "company_name": "culta",
+       "domain": "culta.io",
+       "round_type": "Pre-Series A",
+       "amount_usd": 4500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "archetype ventures",
+         "domain": "archetype.vc",
+         "amount": null
+        },
+        {
+         "name": "UntroD Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": "Japan",
+       "city": null,
+       "use_of_funds": "The company is developing AI-powered, climate-resilient, non-GMO crops to address global food security challenges.",
+       "source_sentence": "Japan-based agritech startup Culta secured $4.5 million (700 million yen) in a Pre-Series A round co-led by Archetype Ventures and UntroD Capital.",
+       "published_at": "2026-04-17T09:30:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e862f15cfa3e5ba5f12028"
+       ],
+       "article_id": "69e862f15cfa3e5ba5f12028"
+      },
+      {
+       "id": "3785d547b5a43695",
+       "company_name": "agriodor",
+       "domain": "agriodor.com",
+       "round_type": "Series A",
+       "amount_usd": 16200000.000000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Environmental and Solidarity Revolution Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "région sud investissement",
+         "domain": "regionsudinvestissement.com",
+         "amount": null
+        },
+        {
+         "name": "CAAP Création (Crédit Agricole Alpes-Provence)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "capagro",
+         "domain": "capagro.fr",
+         "amount": null
+        },
+        {
+         "name": "caphorn",
+         "domain": "caphorn.vc",
+         "amount": null
+        },
+        {
+         "name": "swen capital partners",
+         "domain": "swen-cp.fr",
+         "amount": null
+        }
+       ],
+       "sector": "AgriTech",
+       "country": "France",
+       "city": "Rennes",
+       "use_of_funds": "Accelerate growth, deploy olfactory biocontrol technology, expand commercially in Europe, Latin America and North America, and enhance R&D capabilities.",
+       "source_sentence": "Agriodor, a Rennes-based AgriTech startup using natural scents to protect crops, has raised €15 million in Series A funding to accelerate its growth and the global deployment of its olfactory biocontrol technology.",
+       "published_at": "2026-04-15T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8d4037bb1410d4cc8c341",
+        "69e8d4be5cfa3e5ba5445eb0"
+       ],
+       "article_id": "69e8d4037bb1410d4cc8c341"
+      },
+      {
+       "id": "eddd4b619414ce7a",
+       "company_name": "culta",
+       "domain": "culta.io",
+       "round_type": "pre-Series A",
+       "amount_usd": 4690000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "JPY",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "archetype ventures",
+         "domain": "archetype.vc",
+         "amount": null
+        },
+        {
+         "name": "UntroD Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nissay capital",
+         "domain": "nissay-cap.co.jp",
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "Japan",
+       "city": "Tokyo",
+       "use_of_funds": "scale operations and accelerate entry into markets in Southeast Asia and Australia.",
+       "source_sentence": "With the fresh capital, Culta plans to scale operations and accelerate entry into markets in Southeast Asia and Australia.",
+       "published_at": "2026-04-14T14:20:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84ccb5cfa3e5ba5e44dbc"
+       ],
+       "article_id": "69e84ccb5cfa3e5ba5e44dbc"
+      },
+      {
+       "id": "c6bdaabdcb728815",
+       "company_name": "Kilimo Fresh",
+       "domain": "kilimofresh.co.tz",
+       "round_type": "pre-seed",
+       "amount_usd": 200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "madica",
+         "domain": "madica.vc",
+         "amount": 200000.0
+        }
+       ],
+       "sector": "agritech",
+       "country": "Tanzania",
+       "city": null,
+       "use_of_funds": "structured program support and runway",
+       "source_sentence": "Madica, a pre‑seed investment programme focused on African startups, has added three new companies to its portfolio, committing up to $600,000 in total funding. The selected startups are Kilimo Fresh, Hakimu, and Biovana, and each will receive up to $200,000 alongside entry into Madica’s 18‑month support programme.",
+       "published_at": "2026-04-08T10:09:31",
+       "coverage_count": 7,
+       "article_ids": [
+        "69e2c92990d9a716b4c5f271",
+        "69e2cf0fdc480588dca776db",
+        "69e2d2e9601121844c40eb8b",
+        "69e2e1ed601121844c44583c",
+        "69e33fa726cb2d2a65f03d1f",
+        "69e4f14a430a4927fdbb1013",
+        "69e8de047bb1410d4cd0bb4e"
+       ],
+       "article_id": "69e2d2e9601121844c40eb8b"
+      },
+      {
+       "id": "50ac6f55cdb06e72",
+       "company_name": "Cropcoin",
+       "domain": null,
+       "round_type": "pre-Series A",
+       "amount_usd": 1290000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1290000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Agritech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Emerging startups Agritech startup Cropcoin raised $1.29 million in a pre-Series A round.",
+       "published_at": "2026-04-06T11:35:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e29a72c1991f786ce658f0"
+       ],
+       "article_id": "69e29a72c1991f786ce658f0"
+      },
+      {
+       "id": "e0d5603e8eb08748",
+       "company_name": "Cropcoin",
+       "domain": null,
+       "round_type": "Pre-Series A",
+       "amount_usd": 1300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "unicorn india ventures",
+         "domain": "unicornivc.com",
+         "amount": null
+        },
+        {
+         "name": "Climate Angels",
+         "domain": "climateangels.in",
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-04-04T03:30:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2817f277be6ed2d9513d1"
+       ],
+       "article_id": "69e2817f277be6ed2d9513d1"
+      },
+      {
+       "id": "57293c4c9cd60dd1",
+       "company_name": "aquapulse",
+       "domain": "aquapulse.vn",
+       "round_type": "Series A",
+       "amount_usd": 2700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "NABVENTURES",
+         "domain": "nabventures.in",
+         "amount": null
+        }
+       ],
+       "sector": "Agritech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-04-04T03:30:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2817f277be6ed2d9513d1"
+       ],
+       "article_id": "69e2817f277be6ed2d9513d1"
+      },
+      {
+       "id": "da7f027adbffbc38",
+       "company_name": "Cropcoin Technologies",
+       "domain": null,
+       "round_type": "pre-Series A",
+       "amount_usd": 1440000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "unicorn india ventures",
+         "domain": "unicornivc.com",
+         "amount": null
+        },
+        {
+         "name": "Climate Angels",
+         "domain": "climateangels.in",
+         "amount": null
+        }
+       ],
+       "sector": "AgriTech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expand operations across Bihar and Jharkhand",
+       "source_sentence": "AgriTech startup Cropcoin Technologies raised INR 12 crore ($1.27 million) in pre-Series A funding led by Unicorn India Ventures, with support from Climate Angels.",
+       "published_at": "2026-04-03T09:30:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e282ecdc480588dc97f4dc"
+       ],
+       "article_id": "69e282ecdc480588dc97f4dc"
+      },
+      {
+       "id": "68fadd33af5a1557",
+       "company_name": "aquapulse",
+       "domain": "aquapulse.vn",
+       "round_type": "Series A",
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "NABVENTURES",
+         "domain": "nabventures.in",
+         "amount": null
+        }
+       ],
+       "sector": "Aquaculture, Agritech",
+       "country": "India",
+       "city": "Bhubaneswar",
+       "use_of_funds": "processing facility, expand farmer network, technology stack",
+       "source_sentence": "Aquaculture-focused agritech startup Aquapulse has netted ₹25 Cr (about $2.7 Mn) in its ongoing Series A round led by NABVENTURES via its AgriSURE Fund.",
+       "published_at": "2026-04-02T10:52:38",
+       "coverage_count": 4,
+       "article_ids": [
+        "69e27e05bd7b10565a316457",
+        "69e27ebfa85be7e506553203",
+        "69e2c088ff2654c79d6ca677",
+        "69e2e0f1277be6ed2da90b39"
+       ],
+       "article_id": "69e27ebfa85be7e506553203"
+      },
+      {
+       "id": "d5be64e850ebae16",
+       "company_name": "Cropcoin Technologies",
+       "domain": null,
+       "round_type": "Pre-Series A",
+       "amount_usd": 14400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "unicorn india ventures",
+         "domain": "unicornivc.com",
+         "amount": null
+        },
+        {
+         "name": "Climate Angels",
+         "domain": "climateangels.in",
+         "amount": null
+        }
+       ],
+       "sector": "agritech",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "further enhance its geographical expansion for scaling operations from 10 districts to the entire 66 districts of Bihar and Jharkhand",
+       "source_sentence": "Cropcoin Technologies, a Mumbai, India-based agritech startup, raised RS 12 Crore ($1.27M) in Pre-Series A funding.",
+       "published_at": "2026-03-30T08:44:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d79f5cfa3e5ba546b5c2"
+       ],
+       "article_id": "69e8d79f5cfa3e5ba546b5c2"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 29,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMzAgMDg6NDQ6MDgiLCJrIjoiMTU0MDE4NTg3MjQ2MDY0ODgwODYifQ",
+     "totals": {
+      "deals": 29,
+      "deals_with_amount": 28,
+      "deals_without_amount": 1,
+      "deals_amount_excluded": 1,
+      "sum_amount_usd": 272455000.0,
+      "median_amount_usd": 4104000.0,
+      "largest_amount_usd": 87000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.103,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.107
+    }
+   }
+  }
+ ]
+}

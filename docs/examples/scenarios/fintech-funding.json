@@ -1,0 +1,2209 @@
+{
+ "slug": "fintech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:16Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "fintech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "fintech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 2062,
+      "deals_with_amount": 1872,
+      "deals_without_amount": 190,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 152741726583.8,
+      "median_amount_usd": 15000000.0,
+      "largest_amount_usd": 10000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 175,
+       "deals_with_amount": 164,
+       "deals_without_amount": 11,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 10993796800.0,
+       "median_amount_usd": 15000000.0,
+       "largest_amount_usd": 2100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 178,
+       "deals_with_amount": 163,
+       "deals_without_amount": 15,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 11472491500.0,
+       "median_amount_usd": 22000000.0,
+       "largest_amount_usd": 5000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 175,
+       "deals_with_amount": 157,
+       "deals_without_amount": 18,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 13506892500.0,
+       "median_amount_usd": 21590000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 171,
+       "deals_with_amount": 154,
+       "deals_without_amount": 17,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 12163946000.0,
+       "median_amount_usd": 18050000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 206,
+       "deals_with_amount": 183,
+       "deals_without_amount": 23,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 13652562500.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 4000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 210,
+       "deals_with_amount": 185,
+       "deals_without_amount": 25,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 16573992631.6,
+       "median_amount_usd": 18000000.0,
+       "largest_amount_usd": 3000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 171,
+       "deals_with_amount": 153,
+       "deals_without_amount": 18,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 10163224460.0,
+       "median_amount_usd": 19000000.0,
+       "largest_amount_usd": 690000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 167,
+       "deals_with_amount": 157,
+       "deals_without_amount": 10,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 12117025000.0,
+       "median_amount_usd": 17500000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 142,
+       "deals_with_amount": 136,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 9600569000.0,
+       "median_amount_usd": 19250000.0,
+       "largest_amount_usd": 1200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 178,
+       "deals_with_amount": 154,
+       "deals_without_amount": 24,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 17983439000.0,
+       "median_amount_usd": 12490000.0,
+       "largest_amount_usd": 10000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 149,
+       "deals_with_amount": 141,
+       "deals_without_amount": 8,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 14287167950.0,
+       "median_amount_usd": 12000000.0,
+       "largest_amount_usd": 6300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 140,
+       "deals_with_amount": 125,
+       "deals_without_amount": 15,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 21240716442.2,
+       "median_amount_usd": 15600000.0,
+       "largest_amount_usd": 9000000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.068,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.072
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "fintech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "fintech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "28779ca92f601714",
+       "company_name": "grab",
+       "domain": "getgrab.com",
+       "round_type": null,
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Ride-hailing, food delivery, fintech",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Grab, the pioneering superapp for ride-hailing, food delivery, and fintech, tops the list with over $10 billion in total funding since its founding in 2012.",
+       "published_at": "2026-02-11T14:10:04",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bafeb59e3448abf09fa8b3",
+        "69bc122d236c54261026d3bf"
+       ],
+       "article_id": "69bafeb59e3448abf09fa8b3"
+      },
+      {
+       "id": "bc1331a44b7f3081",
+       "company_name": "nubank",
+       "domain": "nubank.com.br",
+       "round_type": null,
+       "amount_usd": 9000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "BRL",
+       "amount": 45000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Fintech",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": "Four strategic fronts: continuous development of platforms and credit models based on artificial intelligence; launch of products and services that support and simplify customers’ financial lives; expansion of strategic teams and the office network across the country, with more than BRL 2.5 billion allocated to infrastructure over the next five years; strengthening of the financial base, including equity and lending capacity, to sustain portfolio growth responsibly and at scale.",
+       "source_sentence": "Nubank, one of the largest digital financial services platforms in the world, announces investments of approximately BRL 45 billion (US$8.2 billion) in Brazil in 2026.",
+       "published_at": "2026-04-27T14:34:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0eb10836d28f995cbde16"
+       ],
+       "article_id": "69f0eb10836d28f995cbde16"
+      },
+      {
+       "id": "12e64f68d26ab489",
+       "company_name": "nuvei",
+       "domain": "nuvei.com",
+       "round_type": null,
+       "amount_usd": 6300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Not only did the $6.3 billion take-private of Nuvei affect markets, but it also altered the discourse.",
+       "published_at": "2026-03-19T13:00:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4b6a528a35e1f41eb21"
+       ],
+       "article_id": "69c3a4b6a528a35e1f41eb21"
+      },
+      {
+       "id": "9559e51dd7ff4550",
+       "company_name": "DeFi Development Corp.",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5000000000.0,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "RK Capital Management LLC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "general corporate purposes, potential acquisitions",
+       "source_sentence": "On June 11, 2025, DeFi Development Corp. entered into a Share Purchase Agreement with RK Capital Management LLC, allowing the company to sell up to $5 billion in common stock over 36 months.",
+       "published_at": "2025-06-12T12:30:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcffaf5d6eab2ab8fe1b62"
+       ],
+       "article_id": "69bcffaf5d6eab2ab8fe1b62"
+      },
+      {
+       "id": "7e11c51fd0c0bc07",
+       "company_name": "forward industries",
+       "domain": "forwardindustries.com",
+       "round_type": "ATM Equity Offering",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Blockchain / Fintech",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "General corporate purposes, working capital, strategic growth initiatives, expanding Solana (SOL) treasury holdings",
+       "source_sentence": "Forward Industries has announced plans to establish an at-the-market (ATM) equity offering program, potentially raising up to $4 billion.",
+       "published_at": "2025-09-17T13:14:50",
+       "coverage_count": 2,
+       "article_ids": [
+        "690281194edc0720efd83a6a",
+        "698de4639ca02490ec0386bd"
+       ],
+       "article_id": "698de4639ca02490ec0386bd"
+      },
+      {
+       "id": "9195d0d6480af161",
+       "company_name": "revolut",
+       "domain": "revolut.com",
+       "round_type": null,
+       "amount_usd": 3000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Fintech",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "Expansion and international growth",
+       "source_sentence": "Revolut, the London‑based digital banking giant, has closed a record‑breaking $3 billion funding round, valuing the company at about $75 billion.",
+       "published_at": "2025-10-20T23:36:19",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe1f14e01ff0caa62811a9",
+        "69312fd2b2533e3bf5f220a3",
+        "69867722514cbd23b5c36bbb"
+       ],
+       "article_id": "68fe1f14e01ff0caa62811a9"
+      },
+      {
+       "id": "709c4e5c079880f4",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "debt",
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Saudi Arabia",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Saudi fintech firms, including Tamara, which secured a $2.4 billion debt facility, and Hala, which closed a $157 million Series B round.",
+       "published_at": "2026-02-02T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69dfb1f4a8835284b0419a59"
+       ],
+       "article_id": "69dfb1f4a8835284b0419a59"
+      },
+      {
+       "id": "b446b82099b52d11",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "credit facility",
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "apollo funds",
+         "domain": "apollofunds.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "scale buy-now-pay-later platform in the Middle East",
+       "source_sentence": "Tamara : The Saudi fintech giant secured a $2.4 billion Shariah-compliant credit facility, led by Goldman Sachs , Citi , and Apollo funds, to scale its buy-now-pay-later platform in the Middle East.",
+       "published_at": "2025-09-22T07:23:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "699261a140184cd708706154"
+       ],
+       "article_id": "699261a140184cd708706154"
+      },
+      {
+       "id": "be7ee592611972ec",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "Shariah-compliant debt facility",
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo-managed funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Saudi Arabia",
+       "city": null,
+       "use_of_funds": "Broaden payment and credit offerings",
+       "source_sentence": "Tamara, a Saudi “buy-now-pay-later” fintech unicorn, secured a massive $2.4 billion Shariah-compliant credit facility to fuel its expansion.",
+       "published_at": "2025-09-15T22:24:25",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c8e7c75f1a530eb9686745",
+        "68d99acc983a16828b7d8ca2"
+       ],
+       "article_id": "68c8e7c75f1a530eb9686745"
+      },
+      {
+       "id": "5f439909e85b7112",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "Series D (facility)",
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo-managed funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech – Buy‑now‑pay‑later",
+       "country": "Saudi Arabia",
+       "city": "Riyadh",
+       "use_of_funds": null,
+       "source_sentence": "Tamara has secured up to $2.4 billion in fresh funding backed by Goldman Sachs, Citi, and Apollo-managed funds.",
+       "published_at": "2025-09-15T15:19:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9a0da5af1b12a767e10dc"
+       ],
+       "article_id": "68d9a0da5af1b12a767e10dc"
+      },
+      {
+       "id": "629529f3e7302d6d",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "Financing package",
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "apollo funds",
+         "domain": "apollofunds.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Saudi Arabia",
+       "city": null,
+       "use_of_funds": "help the fintech company expand its credit and payment products",
+       "source_sentence": "Saudi Arabian start-up Tamara has secured an up to $2.4 billion financing package from backers including Goldman Sachs, Citi, and Apollo funds that will help the fintech company expand its credit and payment products, it said on Monday.",
+       "published_at": "2025-09-15T13:57:07",
+       "coverage_count": 2,
+       "article_ids": [
+        "69973ec4219d71cf48d275ce",
+        "69bd3a0f41245450862049dd"
+       ],
+       "article_id": "69bd3a0f41245450862049dd"
+      },
+      {
+       "id": "f7bb00790b618efc",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": null,
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "apollo funds",
+         "domain": "apollofunds.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Saudi Arabia",
+       "city": null,
+       "use_of_funds": "Expand credit and payment products, refinance previous facility",
+       "source_sentence": "Saudi Arabian start-up Tamara has secured an up to $2.4 billion financing package from backers including Goldman Sachs, Citi, and Apollo funds that will help the fintech company expand its credit and payment products, it said on Monday.",
+       "published_at": "2025-09-15T13:57:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bb59b6680e91ccbda1f849",
+        "69e845ff9baafc73566a9d0a",
+        "69e887b65cfa3e5ba5084021"
+       ],
+       "article_id": "69e887b65cfa3e5ba5084021"
+      },
+      {
+       "id": "f3a6f6d1e805dae2",
+       "company_name": "tamara",
+       "domain": "tamara.co",
+       "round_type": "Asset-backed facility",
+       "amount_usd": 2400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "apollo funds",
+         "domain": "apollofunds.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech | Payments",
+       "country": "Saudi Arabia",
+       "city": "Dubai",
+       "use_of_funds": "Supporting the expansion into new credit and payment products, product diversification, and strengthening lending power",
+       "source_sentence": "Tamara, the first homegrown Saudi fintech unicorn, has secured the largest asset-backed facility of its kind in the region of up to $2.4 billion from major financial institutions, including Goldman Sachs, Citi and Apollo funds.",
+       "published_at": "2025-09-15T12:59:09",
+       "coverage_count": 9,
+       "article_ids": [
+        "68d0f87e91b46c685a2c5997",
+        "68d103f650268142442d1892",
+        "6988a95669527f36baae89ec",
+        "698a2b823aeee4a53ffa0794",
+        "698d3f7f8d29a990b6d2e23e",
+        "698e1d599ca02490ec07cfd3",
+        "69db6d5653ffb3b11bcd4cb6",
+        "69dfb26744a6646a5b2b4add",
+        "69dfb577a9936a33b35c3278"
+       ],
+       "article_id": "6988a95669527f36baae89ec"
+      },
+      {
+       "id": "e14a6c7314c4163c",
+       "company_name": "acrisure",
+       "domain": "acrisure.com",
+       "round_type": "New issuance of convertible senior preferred stock",
+       "amount_usd": 2100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "apollo funds",
+         "domain": "apollofunds.com",
+         "amount": null
+        },
+        {
+         "name": "gallatin point capital",
+         "domain": "gallatinpoint.com",
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "Consortium of other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Refinance a portion of its non-convertible preferred stock, pursue strategic acquisitions, and drive platform expansion.",
+       "source_sentence": "Acrisure, a global FinTech company delivering tech-powered financial services to businesses and individuals, has raised $2.1bn through a new issuance of convertible senior preferred stock.",
+       "published_at": "2025-05-23T20:28:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a407eefc5d2f542ba183"
+       ],
+       "article_id": "6988a407eefc5d2f542ba183"
+      },
+      {
+       "id": "39e3cc7485f847c7",
+       "company_name": "acrisure",
+       "domain": "acrisure.com",
+       "round_type": "Convertible preferred",
+       "amount_usd": 2100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "apollo funds",
+         "domain": "apollofunds.com",
+         "amount": null
+        },
+        {
+         "name": "gallatin point capital",
+         "domain": "gallatinpoint.com",
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "consortium of other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "refinance a portion of its non-convertible preferred stock, pursue strategic acquisitions, drive platform expansion, accelerate organic growth and integration of its existing portfolio",
+       "source_sentence": "Acrisure, a global FinTech company delivering tech-powered financial services to businesses and individuals, has raised $2.1bn through a new issuance of convertible senior preferred stock.",
+       "published_at": "2025-05-21T14:20:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a3d2eefc5d2f542b9dc6"
+       ],
+       "article_id": "6988a3d2eefc5d2f542b9dc6"
+      },
+      {
+       "id": "1423142a4c32fa76",
+       "company_name": "klarna",
+       "domain": "klarna.com",
+       "round_type": "Forward-Flow Facility",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "elliott investment management",
+         "domain": "elliottmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Support $17bn US lending capacity",
+       "source_sentence": "The $2 billion forward-flow facility with funds managed by Elliott Investment Management announced in March, which is structured to support up to $17 billion in US lending over its term.",
+       "published_at": "2026-04-02T16:17:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a3b69b322e6b3e9dc2da"
+       ],
+       "article_id": "69e2a3b69b322e6b3e9dc2da"
+      },
+      {
+       "id": "4a66ebdee23f5ddc",
+       "company_name": "blanco",
+       "domain": "blanco.com",
+       "round_type": null,
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "broota",
+         "domain": "broota.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Chile",
+       "city": null,
+       "use_of_funds": "focusing on factoring, but with artificial intelligence as a key ingredient.",
+       "source_sentence": "A $2 billion amount is what the Chilean Fintech Blanco hopes to raise, through Broota.",
+       "published_at": "2025-12-02T15:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988aa25127162d16e0b02ee"
+       ],
+       "article_id": "6988aa25127162d16e0b02ee"
+      },
+      {
+       "id": "0f217e1971ac232c",
+       "company_name": "revolut",
+       "domain": "revolut.com",
+       "round_type": null,
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 75000000000.0,
+       "investors": [],
+       "sector": "Fintech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Revolut’s landmark $2 billion raise",
+       "published_at": "2025-10-13T23:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "68f716df017a8a94832c8476",
+        "694afeaa6a1e937d7a75c189",
+        "698887ed67fc62ca0ef3aff6",
+        "699802c42da3986a3f8906db",
+        "69bbc6e40047e0373b213701"
+       ],
+       "article_id": "68f716df017a8a94832c8476"
+      },
+      {
+       "id": "5544504e19ed3c76",
+       "company_name": "intrafi",
+       "domain": "intrafi.com",
+       "round_type": "Debt Financing",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "Consortium of major banks",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "USA",
+       "city": "Washington, D.C.",
+       "use_of_funds": "Refinance existing obligations and return cash to private equity owners.",
+       "source_sentence": "IntraFi, a Washington, D.C.-based fintech known for its bank deposit network, secured $2 billion through a leveraged loan transaction orchestrated by Wall Street banks.",
+       "published_at": "2025-08-11T20:26:41",
+       "coverage_count": 2,
+       "article_ids": [
+        "68ab3fa92e28036801bc692e",
+        "68ab3fb42e28036801bf382a"
+       ],
+       "article_id": "68ab3fa92e28036801bc692e"
+      },
+      {
+       "id": "ec83b0bcc532caa4",
+       "company_name": "revolut",
+       "domain": "revolut.com",
+       "round_type": "primary",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 75000000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 75000000000.0,
+       "investors": [
+        {
+         "name": "mubadala",
+         "domain": "mubadala.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "The $2 billion raise will fund growth, allowing Revolut to increase investment in regulated financial products, enhance AI‑driven financial planning, and expand its robust retail and business banking portfolios.",
+       "source_sentence": "Revolut, the UK-based fintech, is in talks about $2 billion raise at a $75 billion valuation, combining primary and secondary shares.",
+       "published_at": "2025-07-17T12:01:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e199a8d29a990b6e2ed85"
+       ],
+       "article_id": "698e199a8d29a990b6e2ed85"
+      },
+      {
+       "id": "f874781a78b304c0",
+       "company_name": "klarna",
+       "domain": "klarna.com",
+       "round_type": "Significant Risk Transfer (SRT)",
+       "amount_usd": 1700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Värde Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "Unlock more than $40 billion in loan capacity and expand lending operations",
+       "source_sentence": "has secured a $1.7 billion funding deal designed to unlock more than $40 billion in loan capacity.",
+       "published_at": "2026-04-02T06:10:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e282f33aab8d96aa2c95c8"
+       ],
+       "article_id": "69e282f33aab8d96aa2c95c8"
+      },
+      {
+       "id": "3775e559ca500c24",
+       "company_name": "forward industries",
+       "domain": "forwardindustries.com",
+       "round_type": "Capital Commitment",
+       "amount_usd": 1650000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1650000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "galaxy digital",
+         "domain": "galaxydigital.com",
+         "amount": null
+        },
+        {
+         "name": "jump crypto",
+         "domain": "jumpcrypto.com",
+         "amount": null
+        },
+        {
+         "name": "multicoin capital",
+         "domain": "multicoin.capital",
+         "amount": null
+        }
+       ],
+       "sector": "Blockchain / Fintech",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "Building a significant Solana treasury",
+       "source_sentence": "Earlier in September, Forward Industries announced its plan to build a significant Solana treasury, securing commitments of over $1.65 billion from notable investors like Galaxy Digital, Jump Crypto, and Multicoin Capital.",
+       "published_at": "2025-09-17T13:14:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "698de4639ca02490ec0386bd"
+       ],
+       "article_id": "698de4639ca02490ec0386bd"
+      },
+      {
+       "id": "a1c9e4d4834f4f1f",
+       "company_name": "capital on tap",
+       "domain": "capitalontap.com",
+       "round_type": null,
+       "amount_usd": 1524000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "SMBC Group",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "société générale",
+         "domain": "sgmaroc.com",
+         "amount": null
+        },
+        {
+         "name": "Lloyds",
+         "domain": "lloydscorp.com",
+         "amount": null
+        },
+        {
+         "name": "hsbc",
+         "domain": "hsbc.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "Expand Master Trust facility and enhance funding flexibility for business credit cards",
+       "source_sentence": "Capital on Tap, a UK-based FinTech specialising in business credit cards for small enterprises, has announced a significant expansion of its funding structure with an additional £650m secured, bringing its Master Trust facility to a total of £1.2bn.",
+       "published_at": "2025-05-26T14:41:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d17959ca02490ecf475b2"
+       ],
+       "article_id": "698d17959ca02490ecf475b2"
+      },
+      {
+       "id": "54d6edaeed3a18c7",
+       "company_name": "klarna",
+       "domain": "klarna.com",
+       "round_type": "credit line",
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "santander",
+         "domain": "santander.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Sweden",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The Swedish Fintech company Klarna has concluded a new financing agreement with the Spanish Grand Bank Santander. The “Buy Now, Pay Later” company has access to a credit line of up to 1.4 billion euros via a so-called warehouse facility.",
+       "published_at": "2025-08-25T06:03:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c168ce6a78bf0c565899c2"
+       ],
+       "article_id": "68c168ce6a78bf0c565899c2"
+      },
+      {
+       "id": "c35708fb351cf1e6",
+       "company_name": "ALT5 Sigma Corporation",
+       "domain": null,
+       "round_type": "Private Placement",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "World Liberty Financial",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "invest in United States President Donald Trump Crypto Venture World Liberty Financial tokens",
+       "source_sentence": "United States Fintech ALT5 Sigma Corporation to Raise $1.5 Billion to Invest in United States President Donald Trump Crypto Venture World Liberty Financial tokens ($WLFI), with World Liberty Financial as lead investor in ALT5 Sigma Corporation securities private placement.",
+       "published_at": "2025-08-12T15:47:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "698dc3ab8d29a990b6dcae32"
+       ],
+       "article_id": "698dc3ab8d29a990b6dcae32"
+      },
+      {
+       "id": "43d19d79f7451079",
+       "company_name": "galaxy digital",
+       "domain": "galaxydigital.com",
+       "round_type": "financing package",
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to cover most of the Helios expansion",
+       "source_sentence": "This comes just weeks after Galaxy secured a $1.4 billion financing package to cover most of the Helios expansion.",
+       "published_at": "2025-10-11T13:36:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f7161ce97e6da31e2c7589"
+       ],
+       "article_id": "68f7161ce97e6da31e2c7589"
+      },
+      {
+       "id": "53220c40b449d15b",
+       "company_name": "trade republic",
+       "domain": "traderepublic.com",
+       "round_type": "Secondary round",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13500000000.0,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": 12500000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech, neobroker",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "In December 2025, Trade Republic completed a €1.2 billion secondary fundraising round valuing the company at €12.5 billion, making it Germany’s most valuable startup and a European decacorn.",
+       "published_at": "2025-12-26T08:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f10889ca02490ec1a012f"
+       ],
+       "article_id": "698f10889ca02490ec1a012f"
+      },
+      {
+       "id": "de4f9c5b257a466d",
+       "company_name": "trade republic",
+       "domain": "traderepublic.com",
+       "round_type": "Secondary",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13500000000.0,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": 12500000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Provides liquidity to existing shareholders and strengthens balance sheet.",
+       "source_sentence": "The company valued a secondary transaction of 1.2 billion euros at 12.5 billion euros.",
+       "published_at": "2025-12-17T07:55:24",
+       "coverage_count": 3,
+       "article_ids": [
+        "69648921a55051cde5681155",
+        "698e19ca8d29a990b6e2f16a",
+        "69e848a49baafc73566c3895"
+       ],
+       "article_id": "69e848a49baafc73566c3895"
+      },
+      {
+       "id": "756c3395509e5015",
+       "company_name": "trade republic",
+       "domain": "traderepublic.com",
+       "round_type": "secondary share sale",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13500000000.0,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": 12500000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "wellington",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Arnault family investment arm",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Agnelli family investment arm",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "thrive",
+         "domain": "thrivenextgen.com",
+         "amount": null
+        },
+        {
+         "name": "creandum",
+         "domain": "creandum.com",
+         "amount": null
+        },
+        {
+         "name": "project a",
+         "domain": "project-a.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "Early investors in the Berlin-based group would sell €1.2bn in shares to other backers, including Thiel’s fund and venture capital group Sequoia, the company said on Wednesday.",
+       "published_at": "2025-12-17T05:00:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bbbffd8b79b55c82773843",
+        "69bca8d772dfd2e900a43831"
+       ],
+       "article_id": "69bbbffd8b79b55c82773843"
+      },
+      {
+       "id": "6e94126b57a21bff",
+       "company_name": "revolut",
+       "domain": "revolut.com",
+       "round_type": "private funding round",
+       "amount_usd": 1270000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "mubadala",
+         "domain": "mubadala.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The sources revealed that US investment firm Greenoaks could lead the private funding round, while Abu Dhabi sovereign investor Mubadala is also in talks to be involved in the fundraise.",
+       "published_at": "2025-07-10T10:38:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989c67094d3f481f3ec296e"
+       ],
+       "article_id": "6989c67094d3f481f3ec296e"
+      },
+      {
+       "id": "177981c8e33ad33f",
+       "company_name": "upstart",
+       "domain": "upstart.com",
+       "round_type": "forward-flow commitment",
+       "amount_usd": 1250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fortress investment group",
+         "domain": "fortress.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "United States",
+       "city": "San Mateo",
+       "use_of_funds": null,
+       "source_sentence": "Fortress has agreed to purchase up to $1.25 billion of consumer loans originated through the Upstart platform over the course of 15 months.",
+       "published_at": "2026-04-29T12:45:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8ada5bbf1d314559a7c98"
+       ],
+       "article_id": "69f8ada5bbf1d314559a7c98"
+      },
+      {
+       "id": "aaeff31912d431a3",
+       "company_name": "cloover",
+       "domain": "cloover.co",
+       "round_type": "Series A equity financing",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Climate Fintech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Build an AI operating system to support residential and decentralized renewable energy solutions.",
+       "source_sentence": "Berlin-based climate fintech company Cloover has secured over $1.2 billion in funding commitments, comprising equity and debt facilities from investors, to build an AI operating system to support residential and decentralized renewable energy solutions.",
+       "published_at": "2026-01-28T05:44:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69892a4594d3f481f3e06665"
+       ],
+       "article_id": "69892a4594d3f481f3e06665"
+      },
+      {
+       "id": "63cb65fed9c634d1",
+       "company_name": "moove",
+       "domain": "moove.io",
+       "round_type": "debt financing",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "private credit firms and banks",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Nigeria",
+       "city": null,
+       "use_of_funds": "support the rollout of a fleet of autonomous vehicles in partnership with Alphabet Inc.’s Waymo in the United States",
+       "source_sentence": "African mobility fintech startup, Moove, is on the verge of securing a $1.2 billion debt financing round to support the rollout of a fleet of autonomous vehicles in partnership with Alphabet Inc.’s Waymo in the United States.",
+       "published_at": "2025-07-03T00:51:39",
+       "coverage_count": 2,
+       "article_ids": [
+        "6898cd562f01d48cd3f639e9",
+        "69893e3994d3f481f3e1fce1"
+       ],
+       "article_id": "6898cd562f01d48cd3f639e9"
+      },
+      {
+       "id": "d8caeb8533c18c31",
+       "company_name": "kalshi",
+       "domain": "kalshi.com",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 22000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 22000000000.0,
+       "investors": [
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Kalshi raised $1 billion in March, doubling its valuation to $22 billion led by Coatue.",
+       "published_at": "2026-04-10T12:14:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e34648a60998cfe6bbd218"
+       ],
+       "article_id": "69e34648a60998cfe6bbd218"
+      },
+      {
+       "id": "baf53a1c0f50f3f9",
+       "company_name": "kalshi",
+       "domain": "kalshi.com",
+       "round_type": "Venture",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Coatue Management",
+         "domain": "coatue-management.com",
+         "amount": null
+        }
+       ],
+       "sector": "FINTECH",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Kalshi – $1B Venture Round FINTECH Kalshi, a regulated prediction market platform where users can trade contracts on the outcome of real-world events across finance, sports, politics, and more, has raised $1B in Venture Round funding led by Coatue Management.",
+       "published_at": "2026-03-23T13:27:18",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cbe31c653f29297e7675a0",
+        "69e63de02461615d5f41b00d"
+       ],
+       "article_id": "69cbe31c653f29297e7675a0"
+      },
+      {
+       "id": "42556f5058e07869",
+       "company_name": "plusgrade",
+       "domain": "plusgrade.com",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Canada",
+       "city": "Montreal",
+       "use_of_funds": null,
+       "source_sentence": "At about the same time, Plusgrade, a company established in Montreal, received a $1 billion investment, confirming that significant cash was moving north.",
+       "published_at": "2026-03-19T13:00:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4b6a528a35e1f41eb21"
+       ],
+       "article_id": "69c3a4b6a528a35e1f41eb21"
+      },
+      {
+       "id": "d1722f3f2f376ea9",
+       "company_name": "agibank",
+       "domain": "agibank.com.br",
+       "round_type": "IPO",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "fintech",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Brazilian fintech Agibank seeks to raise US$ 1 billion in its initial public offer of shares in the United States, which was registered today, according to people familiar with the subject, who asked not to be identified, because the value is not yet public.",
+       "published_at": "2026-01-14T21:28:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcac26ded38472ac53f04b"
+       ],
+       "article_id": "69bcac26ded38472ac53f04b"
+      },
+      {
+       "id": "e093ef1e29b08ca3",
+       "company_name": "fintech",
+       "domain": "fintech.global",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Share sales include an investment of $1 billion that was announced.",
+       "published_at": "2026-01-13T14:57:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc5d7e72dfd2e900a36abe"
+       ],
+       "article_id": "69bc5d7e72dfd2e900a36abe"
+      },
+      {
+       "id": "871b32ffb84c16c3",
+       "company_name": "kalshi",
+       "domain": "kalshi.com",
+       "round_type": "Series E",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Meritech Capital",
+         "domain": "meritechcap.com",
+         "amount": null
+        },
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "ARK Invest",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "anthos capital",
+         "domain": "anthoscapital.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "expand its regulated event prediction market",
+       "source_sentence": "Kalshi raised $1 billion in Series E funding to grow its regulated event prediction market.",
+       "published_at": "2025-12-02T23:14:26",
+       "coverage_count": 2,
+       "article_ids": [
+        "69312392b5be4771adf2199b",
+        "69bae659a2269239ea24af54"
+       ],
+       "article_id": "69312392b5be4771adf2199b"
+      },
+      {
+       "id": "0d00965ac6549572",
+       "company_name": "upgrade",
+       "domain": "upgradeboutique.com",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rithm capital",
+         "domain": "rithmcap.com",
+         "amount": 1000000000.0
+        }
+       ],
+       "sector": "FinTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Rithm Capital Corp. committed to buying $1 billion in home‑improvement loans originated by fintech Upgrade , as the asset manager expands its bet on consumer credit.",
+       "published_at": "2025-08-05T12:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0ff6ea66e20611a2cbe60"
+       ],
+       "article_id": "68d0ff6ea66e20611a2cbe60"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 2062,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDgtMDUgMTI6MDA6MDAiLCJrIjoiOTM2OTE0MDM5MTExNzE4MjU4IiwiYSI6MTAwMDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 2062,
+      "deals_with_amount": 1872,
+      "deals_without_amount": 190,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 152741726583.8,
+      "median_amount_usd": 15000000.0,
+      "largest_amount_usd": 10000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.068,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.072
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "fintech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "fintech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "879843ae40bfccf1",
+       "company_name": "performativ",
+       "domain": "performativ.com",
+       "round_type": "Series A",
+       "amount_usd": 14000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Deutsche Börse Group",
+         "domain": "deutsche-boerse.com",
+         "amount": null
+        },
+        {
+         "name": "rabo investments",
+         "domain": "raboinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "fintech collective",
+         "domain": "fintech.io",
+         "amount": null
+        },
+        {
+         "name": "Denmark’s EIFO",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Denmark",
+       "city": null,
+       "use_of_funds": "Accelerate expansion in the enterprise segment and strengthen infrastructure",
+       "source_sentence": "Performativ has raised $14 million in a Series A funding round led by Deutsche Börse Group, with participation from Rabo Investments, as well as existing investors including FinTech Collective and Denmark’s EIFO.",
+       "published_at": "2026-04-30T04:56:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9dd11713680636ef2a6c6"
+       ],
+       "article_id": "69f9dd11713680636ef2a6c6"
+      },
+      {
+       "id": "a87d90ac56fa1254",
+       "company_name": "ebury",
+       "domain": "ebury.com",
+       "round_type": null,
+       "amount_usd": 698500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "santander",
+         "domain": "santander.com",
+         "amount": 50000000.0
+        },
+        {
+         "name": "centerbridge partners",
+         "domain": "centerbridge.com",
+         "amount": null
+        },
+        {
+         "name": "vitruvian partners",
+         "domain": "vitruvianpartners.com",
+         "amount": null
+        },
+        {
+         "name": "83north",
+         "domain": "83north.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate growth through product development and geographic expansion, enhancing AI capabilities to improve payment processing and optimise foreign exchange solutions",
+       "source_sentence": "\"Santander has agreed to participate in c.£550 million funding rounds for Ebury, its global fintech platform focused on cross-border payments and international trade solutions.\"",
+       "published_at": "2026-04-29T23:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8aba3bbf1d314559a6778"
+       ],
+       "article_id": "69f8aba3bbf1d314559a6778"
+      },
+      {
+       "id": "54690952eb74d1e0",
+       "company_name": "payjoy",
+       "domain": "payjoy.com",
+       "round_type": "credit line",
+       "amount_usd": 140000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 140000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "neuberger berman",
+         "domain": "nb.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Peru",
+       "city": null,
+       "use_of_funds": "Corporate credit line",
+       "source_sentence": "On March 17, and gradually around that date in other countries, Peru closed the operation whereby private investment manager Neuberger Berman gave a $140 million corporate credit line to PayJoy, a leading Fintech provider of emerging market credit that, at least in Peru, used as credit guarantees the registered trademarks of its local subsidiary, shares and account balances.",
+       "published_at": "2026-04-29T17:24:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8a51043843dd771d22d0d"
+       ],
+       "article_id": "69f8a51043843dd771d22d0d"
+      },
+      {
+       "id": "177981c8e33ad33f",
+       "company_name": "upstart",
+       "domain": "upstart.com",
+       "round_type": "forward-flow commitment",
+       "amount_usd": 1250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fortress investment group",
+         "domain": "fortress.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "United States",
+       "city": "San Mateo",
+       "use_of_funds": null,
+       "source_sentence": "Fortress has agreed to purchase up to $1.25 billion of consumer loans originated through the Upstart platform over the course of 15 months.",
+       "published_at": "2026-04-29T12:45:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8ada5bbf1d314559a7c98"
+       ],
+       "article_id": "69f8ada5bbf1d314559a7c98"
+      },
+      {
+       "id": "06c565906641b888",
+       "company_name": "sahi",
+       "domain": "sahi.com.tr",
+       "round_type": "Series B",
+       "amount_usd": 33000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 33000000.0,
+       "valuation": 200000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech / Trading",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": "The fresh capital will support product development, user growth, and expansion in India’s fast-growing trading market.",
+       "source_sentence": "Sahi Raises $33 Mn Series B",
+       "published_at": "2026-04-29T12:18:40",
+       "coverage_count": 4,
+       "article_ids": [
+        "69f2295b27117df83f9406df",
+        "69f229c427117df83f9439e5",
+        "69f8809d8937ef12fc072dd3",
+        "69f886468937ef12fc0aa3c6"
+       ],
+       "article_id": "69f229c427117df83f9439e5"
+      },
+      {
+       "id": "4ae589216a4864ce",
+       "company_name": "lemfi",
+       "domain": "lemfi.com",
+       "round_type": null,
+       "amount_usd": 127000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Fintech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Hiring in London, expansion of compliance functions, technology development and research",
+       "source_sentence": "LemFi has committed GBP £100 million to the UK economy over the next five years",
+       "published_at": "2026-04-29T08:15:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f2188bda8ae7be8d221f93"
+       ],
+       "article_id": "69f2188bda8ae7be8d221f93"
+      },
+      {
+       "id": "b728b119777f3f07",
+       "company_name": "Chazm",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "stonebridge",
+         "domain": "stonebridge.ai",
+         "amount": null
+        },
+        {
+         "name": "Shorooq",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kb investment",
+         "domain": "kbic.co.kr",
+         "amount": null
+        },
+        {
+         "name": "futureplay",
+         "domain": "futureplay.co",
+         "amount": null
+        },
+        {
+         "name": "Zero1NE Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "LX Ventures",
+         "domain": "lxventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Automotive Fintech",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Shorooq, a leading multi-strategy investment firm, today announced its investment in the Series A funding round of Chazm, a South Korea-based automotive fintech platform transforming how vehicles are leased, managed, and redistributed across their lifecycle. The round, led by Stonebridge, with Shorooq’s participation, also saw backing from leading financial and strategic investors including KB Investment, Futureplay, Zero1NE Ventures (Hyundai Motor Group’s venture arm), and LX Ventures.",
+       "published_at": "2026-04-29T06:22:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1c8e01e3933a6dd8ebd49"
+       ],
+       "article_id": "69f1c8e01e3933a6dd8ebd49"
+      },
+      {
+       "id": "f515e41267bda17e",
+       "company_name": "novio",
+       "domain": "novio.com",
+       "round_type": "Series A",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cornerstone ventures",
+         "domain": "cornerstone.ventures",
+         "amount": null
+        },
+        {
+         "name": "Shepherd’s Hill Private Equity",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ESV-Arthya AIF",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Roots Ventures",
+         "domain": "roots-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "innoven capital",
+         "domain": "innovencapital.com",
+         "amount": null
+        },
+        {
+         "name": "alteria capital",
+         "domain": "alteriacapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expand its distribution network across tier II to tier V cities, strengthen partnerships with banks, and enhance its product offerings, including UPI integration and AI-led credit advisory tools.",
+       "source_sentence": "Indian FinTech startup Novio has raised ₹100 crore (approximately $10.5 million) in a Series A funding round led by Cornerstone Ventures, with participation from Shepherd’s Hill Private Equity, ESV-Arthya AIF, and Roots Ventures.",
+       "published_at": "2026-04-29T05:18:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1c9da1e3933a6dd8f3b00"
+       ],
+       "article_id": "69f1c9da1e3933a6dd8f3b00"
+      },
+      {
+       "id": "0a1261d144589342",
+       "company_name": "HiSofi",
+       "domain": "hisofi.com",
+       "round_type": "seed",
+       "amount_usd": 1000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "BRL",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sororitê",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "saasholic",
+         "domain": "saasholic.com",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "Brazil",
+       "city": "São Paulo",
+       "use_of_funds": "transform the collection, traditionally treated as an operational process, into a strategic data-driven decision",
+       "source_sentence": "HiSofi, Fintech of São Paulo, has just raised R$ 5 million in a seed round (initial phase of investments in startups) with participation from the Sororitê, SaaSholic and other investors.",
+       "published_at": "2026-04-28T17:06:56",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1c75f399b489398deb433"
+       ],
+       "article_id": "69f1c75f399b489398deb433"
+      },
+      {
+       "id": "7964e76f9722ff13",
+       "company_name": "Onsetto",
+       "domain": null,
+       "round_type": "Seed II",
+       "amount_usd": 9000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "canapi ventures",
+         "domain": "canapi.com",
+         "amount": null
+        },
+        {
+         "name": "EJF Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Idea Fund of La Crosse",
+         "domain": "ideafundvc.com",
+         "amount": null
+        },
+        {
+         "name": "The Perch Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand Onsetto's platform capabilities, grow its team, and accelerate adoption among financial institutions nationwide",
+       "source_sentence": "Onsetto, a fintech platform focused on helping financial institutions win and activate business banking relationships, announced today that it has raised $9 million in Seed II funding.",
+       "published_at": "2026-04-28T14:18:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1c94f1e3933a6dd8ef093"
+       ],
+       "article_id": "69f1c94f1e3933a6dd8ef093"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 609,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjggMTQ6MTg6MjciLCJrIjoiODc0NzM3MDg0MjcyMzM4NTEwNyJ9",
+     "totals": {
+      "deals": 609,
+      "deals_with_amount": 556,
+      "deals_without_amount": 53,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 61511392392.2,
+      "median_amount_usd": 13350000.0,
+      "largest_amount_usd": 10000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.277,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.279
+    }
+   }
+  }
+ ]
+}

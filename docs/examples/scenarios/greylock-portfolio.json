@@ -1,0 +1,2998 @@
+{
+ "slug": "greylock-portfolio",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:28Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Greylock",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "greylock"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 64,
+      "deals_with_amount": 61,
+      "deals_without_amount": 3,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 4207256000.0,
+      "median_amount_usd": 50000000.0,
+      "largest_amount_usd": 750000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 121000000.0,
+       "median_amount_usd": 15000000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 13,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 460356000.0,
+       "median_amount_usd": 49356000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 95000000.0,
+       "median_amount_usd": 31000000.0,
+       "largest_amount_usd": 53000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 559500000.0,
+       "median_amount_usd": 50000000.0,
+       "largest_amount_usd": 203000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 275000000.0,
+       "median_amount_usd": 137500000.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1320500000.0,
+       "median_amount_usd": 555000000.0,
+       "largest_amount_usd": 750000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 8,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 275000000.0,
+       "median_amount_usd": 60000000.0,
+       "largest_amount_usd": 75000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 155000000.0,
+       "median_amount_usd": 77500000.0,
+       "largest_amount_usd": 130000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 250000000.0,
+       "median_amount_usd": 250000000.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 521800000.0,
+       "median_amount_usd": 65000000.0,
+       "largest_amount_usd": 125000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 139000000.0,
+       "median_amount_usd": 45000000.0,
+       "largest_amount_usd": 54000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 253100000.0,
+       "median_amount_usd": 70000000.0,
+       "largest_amount_usd": 143100000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.066,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.068
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Greylock",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "greylock"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "311287844d4dd915",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "equity",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "canada pension plan investment board",
+         "domain": "cppib.com",
+         "amount": null
+        },
+        {
+         "name": "power corporation of canada",
+         "domain": "powercorporation.com",
+         "amount": null
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "boost firm’s growth",
+       "source_sentence": "Wealthsimple has unveiled an equity round of up to $750 million at a post-money valuation of $10 billion to accelerate the company’s product roadmap.",
+       "published_at": "2025-10-27T13:00:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "698cdefb9ca02490ecf05b61",
+        "69c947f60fe98f3340bd0e2e"
+       ],
+       "article_id": "698cdefb9ca02490ecf05b61"
+      },
+      {
+       "id": "00dc8119db756771",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "Series E Preferred Shares",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Power Corporation",
+         "domain": null,
+         "amount": 100000000.0
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": 100000000.0
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "dragoneer",
+         "domain": "dragoneergrowth.com",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Financial Innovation",
+       "country": "Canada",
+       "city": "Montreal",
+       "use_of_funds": null,
+       "source_sentence": "Power Corporation of Canada \"Power\" announced that it has agreed to subscribe, through its subsidiary Power Financial Corporation, for Class E Preferred Shares in the capital of Wealthsimple Financial Corp. for an aggregate purchase price of $100 million, as part of a financing round of up to $750 million by Wealthsimple.",
+       "published_at": "2025-10-27T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bade37bb3472e5f4c3dc81"
+       ],
+       "article_id": "69bade37bb3472e5f4c3dc81"
+      },
+      {
+       "id": "6c80ae1326097337",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "equity",
+       "amount_usd": 555000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 750000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "power corporation of canada",
+         "domain": "powercorporation.com",
+         "amount": null
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "accelerate product roadmap and support expansion across its investing, spending and credit offerings",
+       "source_sentence": "Wealthsimple, one of Canada’s leading FinTech companies, has announced a significant equity round of up to CAD $750m, propelling its post-money valuation to CAD $10bn.",
+       "published_at": "2025-10-28T16:12:22",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a3dc3757765ee82618e5",
+        "69e8561e9baafc73567493b1"
+       ],
+       "article_id": "6988a3dc3757765ee82618e5"
+      },
+      {
+       "id": "0fdfd35aefce2976",
+       "company_name": "wealthsimple",
+       "domain": "wealthsimple.com",
+       "round_type": "Series E",
+       "amount_usd": 555000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7400000000.0,
+       "currency": "CAD",
+       "amount": 750000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "cpp investments",
+         "domain": "cppinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "power corporation of canada",
+         "domain": "powercorporation.com",
+         "amount": null
+        },
+        {
+         "name": "igm financial",
+         "domain": "igmfinancial.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "meritech",
+         "domain": "meritechinc.com",
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "Wealthsimple plans to use this funding to accelerate its product roadmap across investing, spending, and credit, and pursue strategic opportunities to expand its platform.",
+       "source_sentence": "Toronto-based FinTech firm Wealthsimple has announced that it has signed a Series E round of up to $750 million CAD at a post-money valuation of $10 billion.",
+       "published_at": "2025-10-27T22:05:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbcfaa28caee93d25010be"
+       ],
+       "article_id": "69bbcfaa28caee93d25010be"
+      },
+      {
+       "id": "f69f38a3081035ee",
+       "company_name": "upwind",
+       "domain": "upwind.io",
+       "round_type": "Series B",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "Picture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "leaders fund",
+         "domain": "leaders.vc",
+         "amount": null
+        },
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "Alta Park",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cerca partners",
+         "domain": "cerca-partners.com",
+         "amount": null
+        },
+        {
+         "name": "Swish Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "penny jar capital",
+         "domain": "pennyjar.com",
+         "amount": null
+        }
+       ],
+       "sector": "cloud security",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Upwind plans to use the funds to accelerate product development and go-to-market efforts as more organizations adopt its approach.",
+       "source_sentence": "Upwind, a San Francisco startup building a runtime-first cloud security platform, announced a $250 million Series B round.",
+       "published_at": "2026-01-26T22:40:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988ed8f94d3f481f3dc28a0",
+        "6989513d94d3f481f3e37a8d"
+       ],
+       "article_id": "6989513d94d3f481f3e37a8d"
+      },
+      {
+       "id": "ca46c9053c00b782",
+       "company_name": "upwind",
+       "domain": "upwind.io",
+       "round_type": "Series B",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "Picture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        }
+       ],
+       "sector": "cloud security",
+       "country": "US",
+       "city": "San Francisco",
+       "use_of_funds": "accelerate product development and global expansion",
+       "source_sentence": "Upwind, a runtime-first cloud security company, has raised $250m in Series B funding as it looks to accelerate product development and global expansion amid strong enterprise adoption.",
+       "published_at": "2026-01-26T15:07:23",
+       "coverage_count": 6,
+       "article_ids": [
+        "698ce0b68d29a990b6cbe58d",
+        "698e18ad9ca02490ec0770fc",
+        "698f19f88d29a990b6f63ae2",
+        "6996d7810d0db262fa57d7a1",
+        "69e28034c1991f786ce17e52",
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "698ce0b68d29a990b6cbe58d"
+      },
+      {
+       "id": "fd625aeca23d4c7e",
+       "company_name": "modular",
+       "domain": "modular.com",
+       "round_type": null,
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1600000000.0,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 1600000000.0,
+       "investors": [
+        {
+         "name": "U.S. Innovative Technology Fund",
+         "domain": "usinnovativetechnology.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "dfj growth",
+         "domain": "dfjgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI computing",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "expand its engineering and go-to-market team and expand from its current focus on AI inference into the AI training market",
+       "source_sentence": "AI startup Modular said on Wednesday it raised $250 million in a funding round valuing it at $1.6 billion.",
+       "published_at": "2025-09-24T16:05:27",
+       "coverage_count": 4,
+       "article_ids": [
+        "6997f5fb5e72b47edd12dd07",
+        "69bb0226b54f2a520bb54b80",
+        "69bbf25c41af9e92ac95578e",
+        "69bd4f0c981d28529ed4d3c1"
+       ],
+       "article_id": "69bd4f0c981d28529ed4d3c1"
+      },
+      {
+       "id": "b881cc142770e605",
+       "company_name": "Nuro, Inc.",
+       "domain": null,
+       "round_type": "Series E",
+       "amount_usd": 203000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 203000000.0,
+       "valuation": 6000000000.0,
+       "investors": [
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "icehouse ventures",
+         "domain": "icehouseventures.co.nz",
+         "amount": null
+        },
+        {
+         "name": "kindred ventures",
+         "domain": "kindredventures.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "pledge ventures",
+         "domain": "pledgeventures.vc",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "xn",
+         "domain": "xn.com",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous driving technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "scaling of Nuro's AI-first autonomous technology and growth of its commercial partnerships",
+       "source_sentence": "Nuro, Inc. (“Nuro”), a leader in autonomous driving technology, today announced the closing of a $203M Series E funding round at a $6B valuation.",
+       "published_at": "2025-08-21T13:55:17",
+       "coverage_count": 4,
+       "article_ids": [
+        "68b053f23b014c087ae3076c",
+        "68c58939460fade35588a738",
+        "68c5c5eed7fe179be1c9b13f",
+        "69bc9469bc0fe678ea685a94"
+       ],
+       "article_id": "68c58939460fade35588a738"
+      },
+      {
+       "id": "834a62807a60db4c",
+       "company_name": "baseten",
+       "domain": "baseten.co",
+       "round_type": "Series D",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2150000000.0,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 2150000000.0,
+       "investors": [
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Premji",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kevin and Elizabeth Weil of Scribble",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "01a",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "spark",
+         "domain": "sparkadvisors.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI inference",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Scale team and product to meet accelerating customer demand",
+       "source_sentence": "Baseten, the company powering inference for the world’s fastest-growing AI products, has secured a $150 million Series D fundraise at a $2.15 billion valuation. The round was led by BOND, with participation from new investors CapitalG, Premji, and Kevin and Elizabeth Weil of Scribble. Existing investors Conviction, 01a, IVP, Spark, and Greylock also participated.",
+       "published_at": "2025-08-10T00:00:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "68d96d8e0e9dec21704b214f",
+        "694d77df9025cd4db1f2fea7",
+        "698889ecc314f8bff07df54c",
+        "6989c33894d3f481f3ebed93",
+        "698e3ad58d29a990b6e569a7",
+        "698f98779ca02490ec2413c8",
+        "69bb3e9be897e582f87a6ae0",
+        "69dfb51456ae16ebb4bc132f"
+       ],
+       "article_id": "69dfb51456ae16ebb4bc132f"
+      },
+      {
+       "id": "59d6c17c15068ebb",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "total equity",
+       "amount_usd": 143100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 143100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Ann Arbor",
+       "use_of_funds": null,
+       "source_sentence": "Censys has now raised a total of $143.1M in total equity funding and is backed by Decibel Partners, Google Ventures, Greylock, Intel Capital, and Morgan Stanley Expansion Capital.",
+       "published_at": "2026-04-06T08:27:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bcc6ff2654c79d6bcd9b"
+       ],
+       "article_id": "69e2bcc6ff2654c79d6bcd9b"
+      },
+      {
+       "id": "49f4b5583d3c8912",
+       "company_name": "7AI",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 130000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 130000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone innovations investments",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "crv",
+         "domain": "crv4all.co.nz",
+         "amount": null
+        },
+        {
+         "name": "spark",
+         "domain": "sparkadvisors.com",
+         "amount": null
+        },
+        {
+         "name": "all other existing seed investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "expand 7AI’s AI security engineering capabilities and strengthen its go-to-market strategy, and grow its Boston-based expert services team",
+       "source_sentence": "7AI, the company whose customers trust dynamic AI agents to get security work done at scale, has announced a US$130 million Series A funding round led by Index Ventures, with participation from new investor Blackstone Innovations Investments. Greylock, CRV, Spark, and all other existing seed investors also participated in the round.",
+       "published_at": "2025-12-05T05:11:59",
+       "coverage_count": 6,
+       "article_ids": [
+        "69330634765acca46bf20865",
+        "694515bf2f67a2f73ba33d97",
+        "6988aa674727a5abdc89e913",
+        "698cd8b49ca02490ecefdccc",
+        "69bc63ff0ad23ae1114f3106",
+        "69e2ddc27f3a572cf4b7c0cb"
+       ],
+       "article_id": "69330634765acca46bf20865"
+      },
+      {
+       "id": "50aeae90489457ec",
+       "company_name": "resolve ai",
+       "domain": "resolve.ai",
+       "round_type": "Series A",
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1000000000.0,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": 1000000000.0,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "unusual ventures",
+         "domain": "unusual.vc",
+         "amount": null
+        },
+        {
+         "name": "artisanal ventures",
+         "domain": "artisanalv.com",
+         "amount": null
+        },
+        {
+         "name": "A*",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise Software",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "accelerate product development, expand engineering and go-to-market teams, and support growing enterprise adoption as Resolve AI scales AI for prod",
+       "source_sentence": "Resolve AI, a company developing AI for running and operating software in production, has raised $125 million in a non-blended Series A funding at a $1 billion valuation, led by Lightspeed Venture Partners.",
+       "published_at": "2026-02-04T00:00:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "6985fd1611e3205ec98f08c9",
+        "6986086e11e3205ec98f3fbc",
+        "69867222ca3bd326c77bfef6",
+        "698e1cbc9ca02490ec07c3c9",
+        "69bae24c0897f254a7e5459d",
+        "69c96305682ef7f3f7647732",
+        "69dfb4e086bd23245a91438e"
+       ],
+       "article_id": "69dfb4e086bd23245a91438e"
+      },
+      {
+       "id": "f1feb2728a08426c",
+       "company_name": "snorkel ai",
+       "domain": "snorkel.ai",
+       "round_type": "Series D",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "Prosperity7 Ventures",
+         "domain": "prosperity7vc.com",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "BNY Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "qbe ventures",
+         "domain": "qbe.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI – data platform",
+       "country": "USA",
+       "city": "Redwood City",
+       "use_of_funds": "advance its platform for programmatic AI data development and launch new products (Snorkel Evaluate and Expert Data‑as‑a‑Service)",
+       "source_sentence": "Snorkel AI, a Redwood City, CA–based AI software startup, raised $100 million in a Series D round at a $1.3 billion valuation.",
+       "published_at": "2025-06-05T22:48:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69894e7194d3f481f3e3439a"
+       ],
+       "article_id": "69894e7194d3f481f3e3439a"
+      },
+      {
+       "id": "f8046d8f78fadd90",
+       "company_name": "snorkel ai",
+       "domain": "snorkel.ai",
+       "round_type": "Series D",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "Prosperity7 Ventures",
+         "domain": "prosperity7vc.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "BNY Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "qbe ventures",
+         "domain": "qbe.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Data Platform",
+       "country": "USA",
+       "city": "Redwood City",
+       "use_of_funds": "Accelerate growth and launch new products",
+       "source_sentence": "Snorkel AI, a Redwood City, CA startup that provides an AI data development platform, raised $100 million in a Series D round.",
+       "published_at": "2025-05-31T00:35:52",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c437a351a522a90830c470",
+        "69cc42a3f111344e7e7c3654"
+       ],
+       "article_id": "68c437a351a522a90830c470"
+      },
+      {
+       "id": "9fd7e51fd6e9b6fa",
+       "company_name": "Bretton AI",
+       "domain": null,
+       "round_type": "total equity funding",
+       "amount_usd": 95300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Canvas Prime",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "Thomson Reuters Ventures",
+         "domain": "trventures.com",
+         "amount": null
+        },
+        {
+         "name": "TIAA Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Bretton AI has now raised a total of $95.3M in total equity funding and is backed by Canvas Prime, Greylock, Sapphire Ventures, Thomson Reuters Ventures, TIAA Ventures, and Y Combinator.",
+       "published_at": "2026-02-16T13:27:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbbf8edd3f26d557f225c1"
+       ],
+       "article_id": "69bbbf8edd3f26d557f225c1"
+      },
+      {
+       "id": "1d2a6d4e6434a229",
+       "company_name": "Aspora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 93000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 93000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "hummingbird ventures",
+         "domain": "hummingbird.vc",
+         "amount": null
+        },
+        {
+         "name": "soma capital",
+         "domain": "somacap.com",
+         "amount": null
+        },
+        {
+         "name": "global founders capital",
+         "domain": "globalfounderscapital.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "Balaji Srinivasan",
+         "domain": "https://www.linkedin.com/in/balajissrinivasan/",
+         "amount": null
+        },
+        {
+         "name": "Sundeep Jain",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Prasanna Sankar",
+         "domain": "https://www.linkedin.com/in/myprasanna/",
+         "amount": null
+        },
+        {
+         "name": "Chad West",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech, Remittance",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "global expansion and support the development of new, diaspora-focused financial products",
+       "source_sentence": "Aspora has announced a $93 million fundraise spread across three funding rounds.",
+       "published_at": "2025-06-16T08:59:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e198e8d29a990b6e2ec4e"
+       ],
+       "article_id": "698e198e8d29a990b6e2ec4e"
+      },
+      {
+       "id": "dfed0167cd0511ce",
+       "company_name": "braintrust",
+       "domain": "usebraintrust.com",
+       "round_type": "Series B",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "Basecase Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Observability / Production AI Infrastructure",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Expand engineering and go‑to‑market teams, expand footprint to new offices, and develop new products.",
+       "source_sentence": "Braintrust, a San Francisco, CA–based technology company focused on AI observability, has raised $80 million in a Series B round.",
+       "published_at": "2026-02-19T00:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69c945ecfe85228ad697be56",
+        "69c971f7c14329b30ec48a46",
+        "69c9727d1f37db756886397e",
+        "69e11a30ff1bc5d295f371ab"
+       ],
+       "article_id": "69c9727d1f37db756886397e"
+      },
+      {
+       "id": "8ef3dbc4c826b4a6",
+       "company_name": "Braintrust Data",
+       "domain": "braintrustdata.com",
+       "round_type": "Series B",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "BaseCase Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise Software – AI Observability",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "The new capital will be used to expand Braintrust’s engineering team, build out more automated evaluation features, and enter new global markets.",
+       "source_sentence": "Braintrust raises $80M Series B for AI observability platform",
+       "published_at": "2026-02-18T23:54:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c89643ebfc0891032ac3e3"
+       ],
+       "article_id": "69c89643ebfc0891032ac3e3"
+      },
+      {
+       "id": "b5511b5b0eebeca1",
+       "company_name": "Tenzai",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Swish Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity | AI",
+       "country": "Israel",
+       "city": "Tel Aviv",
+       "use_of_funds": "Build autonomous offensive “hacker” agents and expand market presence in North America and Europe",
+       "source_sentence": "Tenzai, a Tel Aviv, Israel-based AI-native cybersecurity startup, launched out of stealth with an unprecedented $75 million seed funding round.",
+       "published_at": "2025-11-26T01:02:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931648366546b0621f20829"
+       ],
+       "article_id": "6931648366546b0621f20829"
+      },
+      {
+       "id": "a9338b31cece2c41",
+       "company_name": "Tenzai",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Swish Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "cybersecurity",
+       "country": "Israel",
+       "city": "Tel Aviv",
+       "use_of_funds": "expand AI research and security teams, enhance autonomous offensive capabilities, strengthen go-to-market presence across North America and Europe",
+       "source_sentence": "Tenzai has emerged from stealth with a $75m seed round — one of the largest ever recorded in the cybersecurity sector.",
+       "published_at": "2025-11-12T09:17:48",
+       "coverage_count": 5,
+       "article_ids": [
+        "69839d51bb7245ef19509005",
+        "6989b23894d3f481f3eaa355",
+        "698d15e38d29a990b6cfbb4d",
+        "69baf2f888a452392c428d8c",
+        "69bc27ac981d28529ed0658c"
+       ],
+       "article_id": "69baf2f888a452392c428d8c"
+      },
+      {
+       "id": "eb041adfeb48e372",
+       "company_name": "Tenzai, Inc.",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Swish Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "prominent angel investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity / AI Penetration Testing",
+       "country": "Israel",
+       "city": "Tel Aviv",
+       "use_of_funds": "The company will use the funding to expand its AI research and security teams, enhance autonomous offensive capabilities, and grow its go-to-market presence in North America and Europe.",
+       "source_sentence": "Tenzai, a Tel Aviv, Israel-based AI-native cybersecurity company, has launched with a $75 million Seed round.",
+       "published_at": "2025-11-12T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a457e1953fdcb20e1bf53"
+       ],
+       "article_id": "698a457e1953fdcb20e1bf53"
+      },
+      {
+       "id": "c051dc271984a0e1",
+       "company_name": "Bretton AI",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "Thomson Reuters Ventures",
+         "domain": "trventures.com",
+         "amount": null
+        },
+        {
+         "name": "canvas ventures",
+         "domain": "canvas.vc",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "TIAA Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Financial technology",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Expand platform across additional financial crime domains, deepen regulatory engagement, and accelerate adoption",
+       "source_sentence": "SAN FRANCISCO — Bretton AI, formerly Greenlite AI, has secured a $75 million Series B funding round, marking an expansion of its mission to define how AI is deployed across financial crime operations in regulated financial institutions.",
+       "published_at": "2025-08-10T00:00:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "69bb62e09153720f4d7337b0",
+        "69dfd1d456ae16ebb4bcca7f",
+        "69dfd244f2a6294de7f82df5",
+        "69e0160d3dd0a43543951812",
+        "69e0235a5512a45fb7ba431c",
+        "69e8dea27bb1410d4cd144e9",
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "69dfd244f2a6294de7f82df5"
+      },
+      {
+       "id": "50fa3a92f4fb158a",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "Series D",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": 40000000.0
+        },
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Undisclosed investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate the development of AI-driven security solutions and pursue global expansion",
+       "source_sentence": "Censys, the internet intelligence and insights platform, has raised $70m in a combined funding round to accelerate the development of its AI-driven security solutions. The raise comprises a $40m Series D led by Morgan Stanley Expansion Capital, alongside $30m in debt financing. The round also saw participation from Decibel Partners, Greylock Partners, GV, Intel Capital, and a number of other undisclosed investors.",
+       "published_at": "2026-04-07T08:44:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a6dfff2654c79d66fade"
+       ],
+       "article_id": "69e2a6dfff2654c79d66fade"
+      },
+      {
+       "id": "132687c5a276e0ca",
+       "company_name": "Shai Morag's startup",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Accel and Greylock funds invested in the new startup of Shai Morag .",
+       "published_at": "2025-11-17T14:35:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69839d51bb7245ef19509005"
+       ],
+       "article_id": "69839d51bb7245ef19509005"
+      },
+      {
+       "id": "e34ac5d99b3d311f",
+       "company_name": "Axiamatic",
+       "domain": "axiamatic.com",
+       "round_type": null,
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 54000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise Transformation",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Consequently, the company has emerged from stealth with $54 million in funding from Greylock Partners and Bessemer Venture Partners.",
+       "published_at": "2026-03-13T07:30:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1112eee624331c0265bfd"
+       ],
+       "article_id": "69d1112eee624331c0265bfd"
+      },
+      {
+       "id": "5c67416d53e6883c",
+       "company_name": "Aspora",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 53000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 53000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "Quantum Light",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Last month, Y Combinator-backed cross-border payments startup Aspora, which provides remittance services for immigrant diaspora, raised $53 million in a funding round led by Sequoia Capital and Greylock Partners, with participation from London-based venture fund Quantum Light",
+       "published_at": "2025-07-21T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6898cd722f01d48cd3fbda02",
+        "68ab3fb72e28036801bfdb97"
+       ],
+       "article_id": "6898cd722f01d48cd3fbda02"
+      },
+      {
+       "id": "6665e234b767d857",
+       "company_name": "Aspora",
+       "domain": null,
+       "round_type": "fundraising",
+       "amount_usd": 53000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 53000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Sequoia Capital and Greylock Partners led the $53 million fundraising effort for Aspora, a cross-border payments startup backed by Y Combinator, last month.",
+       "published_at": "2025-07-10T09:15:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988aa0869527f36baae968d"
+       ],
+       "article_id": "6988aa0869527f36baae968d"
+      },
+      {
+       "id": "5e95fa6f9f0c09fc",
+       "company_name": "Aspora",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 53000000.0,
+       "amount_flag": null,
+       "valuation_usd": 500000000.0,
+       "currency": "USD",
+       "amount": 53000000.0,
+       "valuation": 500000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "Quantum Light",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech, cross-border digital payments",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Build cross-border banking for immigrants",
+       "source_sentence": "a $53 million Series B last month co-led by Sequoia and Greylock, with additional investment from Quantum Light.",
+       "published_at": "2025-06-16T10:55:28",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988ae42a88ad7b9aae1145c",
+        "69baebe96ae47bec695efc7d"
+       ],
+       "article_id": "69baebe96ae47bec695efc7d"
+      },
+      {
+       "id": "caebc65708e84ae5",
+       "company_name": "Aspora",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 53000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 53000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "Quantum Light",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Series B ($53M) – May 2025, co-led by Sequoia and Greylock with Quantum Light (Nik Storonsky’s fund, CEO of Revolut) participating",
+       "published_at": "2025-06-15T23:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "691472eb92b3f69e0235c37d",
+        "69bbf4e1ca83ba01fec62e6a",
+        "69bc37d2ada7f1c360feefc4"
+       ],
+       "article_id": "691472eb92b3f69e0235c37d"
+      },
+      {
+       "id": "115772bf5190d91a",
+       "company_name": "pepper",
+       "domain": "pepper.me",
+       "round_type": "Series C",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lead edge capital",
+         "domain": "leadedge.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "harmony partners",
+         "domain": "harmonyvp.com",
+         "amount": null
+        },
+        {
+         "name": "interplay",
+         "domain": "interplay.com",
+         "amount": null
+        }
+       ],
+       "sector": "Food Distribution",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "expand product innovation, deepen AI-enabled capabilities, accelerate adoption across the independent food distribution ecosystem",
+       "source_sentence": "Pepper, the end-to-end technology platform for independent food distributors, announced it has raised $50 million in Series C funding.",
+       "published_at": "2026-02-20T00:00:00",
+       "coverage_count": 11,
+       "article_ids": [
+        "69bc87adc95888b56536cbc8",
+        "69bceaa3ec94907df10e601a",
+        "69c9ca3c03caa0b7b4a4bf9a",
+        "69c9ca44c534852e935d5588",
+        "69c9ca71d3c89f36ed4b5c47",
+        "69cb5b6072135531f265dce1",
+        "69cb5c9f7c7822b8f1912d7f",
+        "69cf6434cef31a89b347744b",
+        "69cf64575864797440b5f092",
+        "69dca4accf40be8e62a78f6a",
+        "69e63de02461615d5f41b00d"
+       ],
+       "article_id": "69dca4accf40be8e62a78f6a"
+      },
+      {
+       "id": "7a45c760a4e3994b",
+       "company_name": "figma",
+       "domain": "figma.com",
+       "round_type": null,
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": 50000000.0
+        }
+       ],
+       "sector": "Design software",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Greylock Partners saw its $50 million stake grow to $6.75 billion.",
+       "published_at": "2025-08-05T10:00:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd98301d0b3f0860f2803d"
+       ],
+       "article_id": "69bd98301d0b3f0860f2803d"
+      },
+      {
+       "id": "a9e4bffc6913ec6f",
+       "company_name": "Aspora",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "Quantum Light Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "other returning backers",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "Launch in the United States, expand into Canada, Australia and Singapore; develop new cross‑border products such as multi‑country bank accounts and international investment and credit offerings.",
+       "source_sentence": "Aspora has raised $50 million in funding.",
+       "published_at": "2025-06-16T23:35:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0f66874d3d5792a2c3ae0"
+       ],
+       "article_id": "68d0f66874d3d5792a2c3ae0"
+      },
+      {
+       "id": "e98bfba17709aade",
+       "company_name": "Aspora",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 49356000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 45700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "Quantum Light",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Expand across the EU, US, and Canada",
+       "source_sentence": "a €45.7 million Series B in May 2025 co-led by Sequoia and Greylock, with additional backing from Quantum Light.",
+       "published_at": "2025-06-16T02:14:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898b024ab03b1b156e1dc2e"
+       ],
+       "article_id": "6898b024ab03b1b156e1dc2e"
+      },
+      {
+       "id": "c694113729620fe1",
+       "company_name": "Cylake",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": 45000000.0
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Develop a security platform that runs entirely within customers' own infrastructure",
+       "source_sentence": "Cybersecurity startup Cylake has raised $45 million in seed funding to develop a security platform that runs entirely within customers’ own infrastructure.",
+       "published_at": "2026-03-06T09:11:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bcec630bf92aede2f663d7",
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "69bcec630bf92aede2f663d7"
+      },
+      {
+       "id": "7c7ba8fdad4ee7c0",
+       "company_name": "FERMÀT",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vmg partners",
+         "domain": "vmgpartners.com",
+         "amount": null
+        },
+        {
+         "name": "qed investors",
+         "domain": "qedinvestors.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "courtside ventures",
+         "domain": "courtsidevc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-native commerce platform",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "The investment will accelerate FERMÀT’s mission to deliver hyper‑personalized commerce experiences to help prepare enterprise brands and agency partners for the inevitable era of agentic commerce.",
+       "source_sentence": "FERMÀT, the AI-native commerce platform generating brands’ shopping experiences for stronger engagement and conversion, today announced it has raised $45 million in Series B funding.",
+       "published_at": "2025-06-20T10:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f9d139ca02490ec246c4c"
+       ],
+       "article_id": "698f9d139ca02490ec246c4c"
+      },
+      {
+       "id": "5d78f97322499a10",
+       "company_name": "FERMÀT",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vmg partners",
+         "domain": "vmgpartners.com",
+         "amount": null
+        },
+        {
+         "name": "qed investors",
+         "domain": "qedinvestors.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "courtside ventures",
+         "domain": "courtsidevc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-Powered Commerce / E-Commerce Personalization",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "scale its AI capabilities, grow its team, expand its agency partnerships, and enhance its commerce data infrastructure",
+       "source_sentence": "FERMÀT, a San Francisco, CA-based AI-native commerce platform generating brands' shopping experiences, has raised $45 million in Series B funding.",
+       "published_at": "2025-06-12T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e9a069ca02490ec11281e"
+       ],
+       "article_id": "698e9a069ca02490ec11281e"
+      },
+      {
+       "id": "e1e5e78dce06868c",
+       "company_name": "FERMÀT",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vmg partners",
+         "domain": "vmgpartners.com",
+         "amount": null
+        },
+        {
+         "name": "qed investors",
+         "domain": "qedinvestors.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "courtside ventures",
+         "domain": "courtsidevc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI and ecommerce platform",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand product offerings, scale commerce graph database, hire engineering and machine learning teams, grow agency partnerships, increase enterprise sales and customer support",
+       "source_sentence": "Artificial intelligence (AI) and ecommerce platform startup FERMÀT has raised $45 million in new funding to scale its platform, the company says. The round was led by VMG Partners, with additional participation from QED Investors, Greylock, Bain Capital Ventures, and Courtside Ventures.",
+       "published_at": "2025-06-11T19:53:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cdf918d29a990b6cbce13"
+       ],
+       "article_id": "698cdf918d29a990b6cbce13"
+      },
+      {
+       "id": "039e2109a42d1d1b",
+       "company_name": "cogent",
+       "domain": "cogentco.com",
+       "round_type": "Series A",
+       "amount_usd": 42000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 42000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "definition",
+         "domain": "shopdefinition.com",
+         "amount": null
+        },
+        {
+         "name": "openai",
+         "domain": "openai.com",
+         "amount": null
+        },
+        {
+         "name": "abnormal security",
+         "domain": "abnormalsecurity.com",
+         "amount": null
+        },
+        {
+         "name": "datadog",
+         "domain": "datadoghq.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "accelerate product development, expand enterprise deployments and further build out agentic security systems.",
+       "source_sentence": "Cogent Security, a cybersecurity company building autonomous AI agents for enterprise vulnerability remediation, has raised new capital totalling $42m.",
+       "published_at": "2026-02-20T15:20:48",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c9b840cae5463acf018244",
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "69c9b840cae5463acf018244"
+      },
+      {
+       "id": "ed1251ccf16926d1",
+       "company_name": "Cogent Security",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 42000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 42000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "definition",
+         "domain": "shopdefinition.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity / AI-Vulnerability Remediation",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "enhance Cogent’s AI and data platforms, scale go-to-market operations, and hire top engineering and security talent",
+       "source_sentence": "Cogent Security, a San Francisco, CA–based AI-driven vulnerability remediation company, has raised $42 million in a Series A funding round, bringing its total funding to $53 million.",
+       "published_at": "2026-02-19T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c97282682ef7f3f764da91"
+       ],
+       "article_id": "69c97282682ef7f3f764da91"
+      },
+      {
+       "id": "f77ecf069760b688",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "Series D equity",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "additional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "drive product innovation, scale its platform globally, and enhance AI-powered capabilities for modern security operations",
+       "source_sentence": "The financing includes a $40 million Series D equity round alongside $30 million in debt financing.",
+       "published_at": "2026-04-01T04:08:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ccee20adb5f291e0c65ee6"
+       ],
+       "article_id": "69ccee20adb5f291e0c65ee6"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 64,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDQtMDEgMDQ6MDg6MzkiLCJrIjoiMTc4MzM5MTkyMDE2NTAxOTQwNTYiLCJhIjo0MDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 64,
+      "deals_with_amount": 61,
+      "deals_without_amount": 3,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 4207256000.0,
+      "median_amount_usd": 50000000.0,
+      "largest_amount_usd": 750000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.108,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.111
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Greylock",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "greylock"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "50fa3a92f4fb158a",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "Series D",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": 40000000.0
+        },
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Undisclosed investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate the development of AI-driven security solutions and pursue global expansion",
+       "source_sentence": "Censys, the internet intelligence and insights platform, has raised $70m in a combined funding round to accelerate the development of its AI-driven security solutions. The raise comprises a $40m Series D led by Morgan Stanley Expansion Capital, alongside $30m in debt financing. The round also saw participation from Decibel Partners, Greylock Partners, GV, Intel Capital, and a number of other undisclosed investors.",
+       "published_at": "2026-04-07T08:44:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a6dfff2654c79d66fade"
+       ],
+       "article_id": "69e2a6dfff2654c79d66fade"
+      },
+      {
+       "id": "59d6c17c15068ebb",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "total equity",
+       "amount_usd": 143100000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 143100000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Ann Arbor",
+       "use_of_funds": null,
+       "source_sentence": "Censys has now raised a total of $143.1M in total equity funding and is backed by Decibel Partners, Google Ventures, Greylock, Intel Capital, and Morgan Stanley Expansion Capital.",
+       "published_at": "2026-04-06T08:27:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2bcc6ff2654c79d6bcd9b"
+       ],
+       "article_id": "69e2bcc6ff2654c79d6bcd9b"
+      },
+      {
+       "id": "f77ecf069760b688",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "Series D equity",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "additional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "drive product innovation, scale its platform globally, and enhance AI-powered capabilities for modern security operations",
+       "source_sentence": "The financing includes a $40 million Series D equity round alongside $30 million in debt financing.",
+       "published_at": "2026-04-01T04:08:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ccee20adb5f291e0c65ee6"
+       ],
+       "article_id": "69ccee20adb5f291e0c65ee6"
+      },
+      {
+       "id": "c172bff4627bad84",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "Series D",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "USA",
+       "city": "Ann Arbor",
+       "use_of_funds": "accelerate building AI-driven solutions for modern security operations on its recently launched internet intelligence platform; enable faster innovation and global expansion",
+       "source_sentence": "Censys, the Ann Arbor-based Cybersecurity provider, today announced a $40 million Series D funding round led by Morgan Stanley Expansion Capital, with participation from Decibel Partners, Greylock Partners, GV, Intel Capital, and others.",
+       "published_at": "2026-03-31T15:27:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d150d42d835dcca2e21baa"
+       ],
+       "article_id": "69d150d42d835dcca2e21baa"
+      },
+      {
+       "id": "e34ac5d99b3d311f",
+       "company_name": "Axiamatic",
+       "domain": "axiamatic.com",
+       "round_type": null,
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 54000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Enterprise Transformation",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Consequently, the company has emerged from stealth with $54 million in funding from Greylock Partners and Bessemer Venture Partners.",
+       "published_at": "2026-03-13T07:30:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1112eee624331c0265bfd"
+       ],
+       "article_id": "69d1112eee624331c0265bfd"
+      },
+      {
+       "id": "c694113729620fe1",
+       "company_name": "Cylake",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": 45000000.0
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Develop a security platform that runs entirely within customers' own infrastructure",
+       "source_sentence": "Cybersecurity startup Cylake has raised $45 million in seed funding to develop a security platform that runs entirely within customers’ own infrastructure.",
+       "published_at": "2026-03-06T09:11:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bcec630bf92aede2f663d7",
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "69bcec630bf92aede2f663d7"
+      },
+      {
+       "id": "039e2109a42d1d1b",
+       "company_name": "cogent",
+       "domain": "cogentco.com",
+       "round_type": "Series A",
+       "amount_usd": 42000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 42000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "definition",
+         "domain": "shopdefinition.com",
+         "amount": null
+        },
+        {
+         "name": "openai",
+         "domain": "openai.com",
+         "amount": null
+        },
+        {
+         "name": "abnormal security",
+         "domain": "abnormalsecurity.com",
+         "amount": null
+        },
+        {
+         "name": "datadog",
+         "domain": "datadoghq.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "accelerate product development, expand enterprise deployments and further build out agentic security systems.",
+       "source_sentence": "Cogent Security, a cybersecurity company building autonomous AI agents for enterprise vulnerability remediation, has raised new capital totalling $42m.",
+       "published_at": "2026-02-20T15:20:48",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c9b840cae5463acf018244",
+        "69e8e1469baafc7356dc880e"
+       ],
+       "article_id": "69c9b840cae5463acf018244"
+      },
+      {
+       "id": "115772bf5190d91a",
+       "company_name": "pepper",
+       "domain": "pepper.me",
+       "round_type": "Series C",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lead edge capital",
+         "domain": "leadedge.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "harmony partners",
+         "domain": "harmonyvp.com",
+         "amount": null
+        },
+        {
+         "name": "interplay",
+         "domain": "interplay.com",
+         "amount": null
+        }
+       ],
+       "sector": "Food Distribution",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "expand product innovation, deepen AI-enabled capabilities, accelerate adoption across the independent food distribution ecosystem",
+       "source_sentence": "Pepper, the end-to-end technology platform for independent food distributors, announced it has raised $50 million in Series C funding.",
+       "published_at": "2026-02-20T00:00:00",
+       "coverage_count": 11,
+       "article_ids": [
+        "69bc87adc95888b56536cbc8",
+        "69bceaa3ec94907df10e601a",
+        "69c9ca3c03caa0b7b4a4bf9a",
+        "69c9ca44c534852e935d5588",
+        "69c9ca71d3c89f36ed4b5c47",
+        "69cb5b6072135531f265dce1",
+        "69cb5c9f7c7822b8f1912d7f",
+        "69cf6434cef31a89b347744b",
+        "69cf64575864797440b5f092",
+        "69dca4accf40be8e62a78f6a",
+        "69e63de02461615d5f41b00d"
+       ],
+       "article_id": "69dca4accf40be8e62a78f6a"
+      },
+      {
+       "id": "ed1251ccf16926d1",
+       "company_name": "Cogent Security",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 42000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 42000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "definition",
+         "domain": "shopdefinition.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity / AI-Vulnerability Remediation",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "enhance Cogent’s AI and data platforms, scale go-to-market operations, and hire top engineering and security talent",
+       "source_sentence": "Cogent Security, a San Francisco, CA–based AI-driven vulnerability remediation company, has raised $42 million in a Series A funding round, bringing its total funding to $53 million.",
+       "published_at": "2026-02-19T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c97282682ef7f3f764da91"
+       ],
+       "article_id": "69c97282682ef7f3f764da91"
+      },
+      {
+       "id": "dfed0167cd0511ce",
+       "company_name": "braintrust",
+       "domain": "usebraintrust.com",
+       "round_type": "Series B",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "Basecase Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Observability / Production AI Infrastructure",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Expand engineering and go‑to‑market teams, expand footprint to new offices, and develop new products.",
+       "source_sentence": "Braintrust, a San Francisco, CA–based technology company focused on AI observability, has raised $80 million in a Series B round.",
+       "published_at": "2026-02-19T00:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "69c945ecfe85228ad697be56",
+        "69c971f7c14329b30ec48a46",
+        "69c9727d1f37db756886397e",
+        "69e11a30ff1bc5d295f371ab"
+       ],
+       "article_id": "69c9727d1f37db756886397e"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 16,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDItMTkgMDA6MDA6MDAiLCJrIjoiMTYxMzU1NTQ1ODUyNzEyNzU5ODIifQ",
+     "totals": {
+      "deals": 16,
+      "deals_with_amount": 16,
+      "deals_without_amount": 0,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 1123900000.0,
+      "median_amount_usd": 62000000.0,
+      "largest_amount_usd": 250000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.082,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.084
+    }
+   }
+  }
+ ]
+}

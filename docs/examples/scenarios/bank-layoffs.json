@@ -1,0 +1,806 @@
+{
+ "slug": "bank-layoffs",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:48Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "layoffs"
+     ],
+     "q": "bank",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "bank",
+      "match": "any",
+      "event_type": [
+       "layoffs"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 10,
+       "by_type": {
+        "layoffs": 10
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "layoffs": 3
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 6,
+       "by_type": {
+        "layoffs": 6
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "layoffs": 5
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 16,
+       "by_type": {
+        "layoffs": 16
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "layoffs": 2
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 8,
+       "by_type": {
+        "layoffs": 8
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "layoffs": 3
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 6,
+       "by_type": {
+        "layoffs": 6
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "layoffs": 5
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 7,
+       "by_type": {
+        "layoffs": 7
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "layoffs": 11
+       }
+      }
+     ],
+     "totals": {
+      "events": 82,
+      "articles": 77,
+      "companies": 56,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "layoffs": 82
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.102,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.108
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "layoffs"
+     ],
+     "q": "bank",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "bank",
+      "event_type": [
+       "layoffs"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f0e214836d28f995cb5032",
+       "headline": "Axis Bank's total employee strength fell from 1,04,400 at the end of FY25 to 1,01,300 by the close of March 2026, a reduction of over 3,100 people across the organisation.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "axisbank.com",
+       "published_at": "2026-04-27T16:47:39",
+       "url": "https://techstory.in/axis-bank-cuts-over-3100-jobs-in-fy26-as-technology-investments-drive-productivity-gains-across-operations/",
+       "publisher": "techstory.in",
+       "title": "Axis Bank Cuts Over 3,100 Jobs In FY26 As Technology Investments Drive Productivity Gains Across Operations - TechStory"
+      },
+      {
+       "id": "69f0e9ed45272de32e8c69b5",
+       "headline": "Axis Bank has seen a decline in employee headcount for FY26, with its total workforce falling by around 3,000 employees' year-on-year.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "axisbank.com",
+       "published_at": "2026-04-27T12:13:00",
+       "url": "https://www.newsx.com/business/axis-bank-layoffs-cuts-3000-jobs-in-fy26-amid-productivity-gains-from-tech-investments-expands-branch-network-despite-reduced-workforce-206074/",
+       "publisher": "newsx.com",
+       "title": "Axis Bank Layoffs: Cuts 3,000 Jobs In FY26 Amid Productivity Gains From Tech Investments — Expands Branch Network Despite Reduced Workforce"
+      },
+      {
+       "id": "69f0e2ae836d28f995cb5abc",
+       "headline": "Axis Bank Ltd. has reported a reduction in its total workforce by approximately 3,000 employees for the financial year ended March 31, 2026.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "axisbank.com",
+       "published_at": "2026-04-27T05:48:40",
+       "url": "https://www.latestly.com/business/axis-bank-layoffs-3000-employees-affected-in-fy26-amid-banks-digital-transformation-tech-driven-product-gains-7408770.html",
+       "publisher": "latestly.com",
+       "title": "Axis Bank Layoffs: 3,000 Employees Affected in FY26 Amid Bank’s Digital Transformation, Tech-Driven Product Gains | LatestLY"
+      },
+      {
+       "id": "69efaaeaa84b609af2b315d5",
+       "headline": "Axis Bank's headcount fell to 1.01 lakh in FY26, a reduction of 3,000 roles attributed to technology-driven productivity gains.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "axisbank.com",
+       "published_at": "2026-04-25T15:54:52",
+       "url": "https://www.latestly.com/quickly/business/axis-bank-layoffs-axis-banks-employee-headcount-drops-by-3000-in-fy26-as-tech-investments-boost-productivity-7407389.html",
+       "publisher": "latestly.com",
+       "title": "⚡Axis Bank Workforce Optimisation: Tech-Led Strategy Trims Headcount to 1.01 Lakh"
+      },
+      {
+       "id": "69efaab3a84b609af2b2ec62",
+       "headline": "The Bank announced the dismantling of 3900 jobs at the beginning of 2025.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "bank.co.jp",
+       "published_at": "2026-04-24T10:20:55",
+       "url": "https://www.bild.de/politik/medienbericht-noch-ein-stellenabbau-bei-der-commerzbank-69eb2e3826442256f6b586ab",
+       "publisher": "bild.de",
+       "title": "Medienbericht: Noch mehr Stellenabbau bei der Commerzbank?"
+      },
+      {
+       "id": "69e87d7f9baafc73568d66ca",
+       "headline": "Less than five months after PNC Financial Services Group Inc. (NYSE: PNC) closed its $4.1 billion acquisition of FirstBank Holding Co., the Pittsburgh, Pennsylvania-based bank is laying off hundreds of workers at FirstBank’s Lakewood headquarters.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "efirstbank.com",
+       "published_at": "2026-04-20T21:19:20",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e84bc27bb1410d4c6611a2",
+       "headline": "Citigroup with 2,000 and Bank of America with 1,073.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "bankofamerica.com",
+       "published_at": "2026-04-15T16:21:48",
+       "url": "https://www.businesstimes.com.sg/companies-markets/banking-finance/wall-street-banks-cut-more-5000-jobs-even-they-notch-record-profits",
+       "publisher": "businesstimes.com.sg",
+       "title": "Wall Street banks cut more than 5,000 jobs even as they notch record profits"
+      },
+      {
+       "id": "69e8513e7bb1410d4c696a7e",
+       "headline": "The bank recently announced plans to cut 114 positions while reorganizing teams.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "danskebank.fi",
+       "published_at": "2026-04-15T05:00:00",
+       "url": "https://www.lrt.lt/en/news-in-english/19/2898364/ai-or-deindustrialisation-layoffs-surge-in-lithuania",
+       "publisher": "lrt.lt",
+       "title": "AI or deindustrialisation? Layoffs surge in Lithuania"
+      },
+      {
+       "id": "69e8b86a9baafc7356bab2ff",
+       "headline": "The London-based firm, which specialises in bank-to-bank payment solutions, said it had made a redundancy provision for around 90 roles.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "gocardless.com",
+       "published_at": "2026-04-13T10:47:58",
+       "url": "https://www.cityam.com/gocardless-to-axe-90-jobs-as-uk-fintech-eyes-profitability/",
+       "publisher": "cityam.com",
+       "title": "Gocardless to axe 90 jobs as UK fintech eyes profitability"
+      },
+      {
+       "id": "69e887997bb1410d4c8b906a",
+       "headline": "In 2025, the bank joined NAB, Bank of Queensland and ANZ in announcing staff redundancies, with it axing 145 technology jobs impacting 637 workers.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "bendigoadelaide.com.au",
+       "published_at": "2026-04-09T01:01:00",
+       "url": "https://www.ntnews.com.au/business/work/leaders-companies/bank-axes-jobs-after-striking-new-multimilliondollar-partnership-deals/news-story/a02a1f7c128b617a7f85b8a789de772d",
+       "publisher": "ntnews.com.au",
+       "title": "Bank to cut workforce after outsourcing deal"
+      },
+      {
+       "id": "69e285f8277be6ed2d95fc1a",
+       "headline": "Monzo announced on March 31 that it is closing its US operations. The digital bank will stop onboarding new US customers, lay off approximately 50 employees, and allow existing accounts to remain open until June.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "monzo.com",
+       "published_at": "2026-04-03T18:17:00",
+       "url": "https://www.fintechweekly.com/news/digital-bank-european-licence-us-exit-strategy-2026",
+       "publisher": "fintechweekly.com",
+       "title": "Monzo Exited the US Three Months After Getting Its European Banking Licence. The Timing Is Not a Coincidence. - FinTech Weekly"
+      },
+      {
+       "id": "69e2af69a85be7e5065eaa77",
+       "headline": "Additionally, as detailed in the WARN notice, Swiss bank UBS will be laying off 103 employees in Weehawken around June 22 through 24.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "unibiz.com",
+       "published_at": "2026-03-30T16:37:28",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69cc418374cdb9f7951c7cbf",
+       "headline": "On Wednesday, March 25, employees of Kuda, a Nigerian digital bank, were invited to a video call with senior executives. Before it ended, hundreds were told their contracts had been terminated as part of a company-wide restructuring.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "kuda.com",
+       "published_at": "2026-03-27T12:57:11",
+       "url": "https://techcabal.com/2026/03/27/kuda-cuts-several-jobs-as-restructuring-hits-core-units-hundreds-feared-affected/",
+       "publisher": "techcabal.com",
+       "title": "Kuda restructuring cuts jobs, hundreds feared affected"
+      },
+      {
+       "id": "69c81097a7d280b1742fc19c",
+       "headline": "The union said that 197 positions at Suncorp Bank would be impacted, including 66 redundancies, mostly in Brisbane.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "suncorpbank.com.au",
+       "published_at": "2026-03-26T10:47:29",
+       "url": "https://www.retailbankerinternational.com/news/nab-cut-170-jobs/",
+       "publisher": "retailbankerinternational.com",
+       "title": "NAB restructuring to cut 170 jobs, says Finance Union"
+      },
+      {
+       "id": "69c81097a7d280b1742fc19c",
+       "headline": "National Australia Bank (NAB) is set to eliminate around 170 roles as part of a business division restructure, Reuters reported citing the Finance Sector Union (FSU).",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "nab.com.au",
+       "published_at": "2026-03-26T10:47:29",
+       "url": "https://www.retailbankerinternational.com/news/nab-cut-170-jobs/",
+       "publisher": "retailbankerinternational.com",
+       "title": "NAB restructuring to cut 170 jobs, says Finance Union"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 29,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjYgMTA6NDc6MjkiLCJpIjoiNjljODEwOTdhN2QyODBiMTc0MmZjMTljIiwiZG0iOiJuYWIuY29tLmF1IiwiZXQiOiJsYXlvZmZzIiwicm8iOiJwcmltYXJ5In0",
+     "by_type": {
+      "layoffs": 29
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.299,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 2 event(s)"
+     ],
+     "request_seconds": 4.326
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "layoffs"
+     ],
+     "q": "bank",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "bank",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "layoffs"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 46,
+     "carrying": 46,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 10,
+       "share": 21.74
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 25,
+       "share": 54.35
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 8,
+       "share": 17.39
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 3,
+       "share": 6.52
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 35,
+       "share": 76.09
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 11,
+       "share": 23.91
+      }
+     ],
+     "negative_to_positive_ratio": 3.182,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 4.29,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 7,
+       "negative": 6,
+       "neutral": 0,
+       "positive": 1,
+       "negative_share": 85.71,
+       "positive_share": 14.29,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 3,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 9,
+       "negative": 6,
+       "neutral": 0,
+       "positive": 3,
+       "negative_share": 66.67,
+       "positive_share": 33.33,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 6,
+        "none": 0,
+        "slight_pos": 3,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 11,
+       "negative": 8,
+       "neutral": 0,
+       "positive": 3,
+       "negative_share": 72.73,
+       "positive_share": 27.27,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 3,
+        "fair_neg": 0,
+        "slight_neg": 5,
+        "none": 0,
+        "slight_pos": 2,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 19,
+       "negative": 15,
+       "neutral": 0,
+       "positive": 4,
+       "negative_share": 78.95,
+       "positive_share": 21.05,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 4,
+        "fair_neg": 0,
+        "slight_neg": 11,
+        "none": 0,
+        "slight_pos": 3,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.15,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.152
+    }
+   }
+  }
+ ]
+}

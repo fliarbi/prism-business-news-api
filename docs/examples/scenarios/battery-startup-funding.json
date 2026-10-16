@@ -1,0 +1,2171 @@
+{
+ "slug": "battery-startup-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:21Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "battery",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "battery"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 403,
+      "deals_with_amount": 362,
+      "deals_without_amount": 41,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 57304613196.78,
+      "median_amount_usd": 15768000.0,
+      "largest_amount_usd": 15000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 29,
+       "deals_with_amount": 27,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5918325950.0,
+       "median_amount_usd": 15600000.0,
+       "largest_amount_usd": 3900000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 14,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 15339495000.0,
+       "median_amount_usd": 4475000.0,
+       "largest_amount_usd": 15000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 14,
+       "deals_with_amount": 10,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1807722000.0,
+       "median_amount_usd": 108750000.0,
+       "largest_amount_usd": 465000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 19,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1702869000.0,
+       "median_amount_usd": 7400000.0,
+       "largest_amount_usd": 649000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 47,
+       "deals_with_amount": 47,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1821513947.9,
+       "median_amount_usd": 11100000.0,
+       "largest_amount_usd": 463000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 44,
+       "deals_with_amount": 42,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2200746143.9,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 41,
+       "deals_with_amount": 35,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1305427779.9,
+       "median_amount_usd": 7356000.0,
+       "largest_amount_usd": 317000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 35,
+       "deals_with_amount": 35,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4599607841.0,
+       "median_amount_usd": 38600000.0,
+       "largest_amount_usd": 1296000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 27,
+       "deals_with_amount": 23,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1850532671.25,
+       "median_amount_usd": 4990090.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 40,
+       "deals_with_amount": 33,
+       "deals_without_amount": 7,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3529848142.73,
+       "median_amount_usd": 32400000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 32,
+       "deals_with_amount": 29,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2641273500.0,
+       "median_amount_usd": 21857300.0,
+       "largest_amount_usd": 1200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 59,
+       "deals_with_amount": 48,
+       "deals_without_amount": 11,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 15620321000.0,
+       "median_amount_usd": 48220000.0,
+       "largest_amount_usd": 5000000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.064,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.066
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "battery",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "battery"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "87e0049d1c74e52a",
+       "company_name": "northvolt",
+       "domain": "northvolt.com",
+       "round_type": null,
+       "amount_usd": 15000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 12000000000.0,
+       "currency": "USD",
+       "amount": 15000000000.0,
+       "valuation": 12000000000.0,
+       "investors": [
+        {
+         "name": "volkswagen",
+         "domain": "volkswagen.de",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        },
+        {
+         "name": "pension funds",
+         "domain": "pensionfundsonline.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "battery maker",
+       "country": "Sweden",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It collected over $15 billion in a single financing round, as much as no other start-up until then.",
+       "published_at": "2025-06-06T05:07:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68640fea8882abb7e3ce8486",
+        "69bc254172dfd2e900a2dea0"
+       ],
+       "article_id": "68640fea8882abb7e3ce8486"
+      },
+      {
+       "id": "782d3ee68b17481e",
+       "company_name": "contemporary amperex technology",
+       "domain": "catl.com",
+       "round_type": "Share Sale",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "EV Battery",
+       "country": "Hong Kong",
+       "city": "Hong Kong",
+       "use_of_funds": "Expand global capacity, develop zero‑carbon businesses, invest in advanced technology research, and cover general corporate needs.",
+       "source_sentence": "has raised $5 billion through a share sale in Hong Kong",
+       "published_at": "2026-04-28T12:27:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e995836d28f995cbca9f"
+       ],
+       "article_id": "69f0e995836d28f995cbca9f"
+      },
+      {
+       "id": "34d7aacfa98a0eb3",
+       "company_name": "CATL",
+       "domain": null,
+       "round_type": "share placement",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support the expansion of its global manufacturing footprint, research and development, zero‑carbon business, working capital and general corporate purposes",
+       "source_sentence": "From ESS News The world’s leading battery maker, CATL, completed a share placement in Hong Kong on Tuesday, raising about $5 billion in a deal that marks the largest share offering on the stock exchange so far this year.",
+       "published_at": "2026-04-28T10:59:08",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e48845272de32e8c12ac",
+        "69f0e48845272de32e8c12ac"
+       ],
+       "article_id": "69f0e48845272de32e8c12ac"
+      },
+      {
+       "id": "f421916cedb9e47e",
+       "company_name": "CATL",
+       "domain": null,
+       "round_type": "equity offering",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Automotive battery",
+       "country": "China",
+       "city": null,
+       "use_of_funds": "Proceeds from the deal will fund global factory expansion, the development of a zero‑carbon business, research and development, and general working capital",
+       "source_sentence": "(Reuters) -- China's electric vehicle battery maker CATL raised HK$39.2 billion ($5 billion) on Tuesday, tapping strong investor appetite for green energy stocks as the Iran war drives up oil prices and accelerates the global shift away from fossil fuels.",
+       "published_at": "2026-04-28T04:50:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e493d325610894208e27"
+       ],
+       "article_id": "69f0e493d325610894208e27"
+      },
+      {
+       "id": "3ee4b74409eb5cb9",
+       "company_name": "contemporary amperex technology",
+       "domain": "catl.com",
+       "round_type": "IPO",
+       "amount_usd": 3900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "HKD",
+       "amount": 30000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Battery & Energy Storage",
+       "country": "China",
+       "city": "Hong Kong",
+       "use_of_funds": null,
+       "source_sentence": "Contemporary Amperex Technology Co. LTD (CATL), the Chinese company producing batteries for electric vehicles, aims to raise at least 30 billion Hong Kong dollars (€3.555 billion) in its premiere on the Hong Kong Stock Exchange.",
+       "published_at": "2025-05-13T19:00:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "685cd49be6fd25cb9eec29e0"
+       ],
+       "article_id": "685cd49be6fd25cb9eec29e0"
+      },
+      {
+       "id": "f6096aa5ee4de8bc",
+       "company_name": "vulcan energy",
+       "domain": "v-er.eu",
+       "round_type": "debt financing",
+       "amount_usd": 1296000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "export development canada",
+         "domain": "edc.ca",
+         "amount": null
+        },
+        {
+         "name": "export finance australia",
+         "domain": "exportfinance.gov.au",
+         "amount": null
+        },
+        {
+         "name": "Export and Investment Fund of Denmark (EIFO)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "Sace (Italy)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        },
+        {
+         "name": "abn amro",
+         "domain": "abnamro.nl",
+         "amount": null
+        },
+        {
+         "name": "unicredit",
+         "domain": "unicreditgroup.eu",
+         "amount": null
+        },
+        {
+         "name": "natixis",
+         "domain": "natixis.com",
+         "amount": null
+        },
+        {
+         "name": "ing",
+         "domain": "ing.com",
+         "amount": null
+        },
+        {
+         "name": "bnp paribas",
+         "domain": "group.bnpparibas",
+         "amount": null
+        },
+        {
+         "name": "kommunalkredit",
+         "domain": "kommunalkredit.at",
+         "amount": null
+        },
+        {
+         "name": "Ocbc",
+         "domain": "ocbc.com.hk",
+         "amount": null
+        },
+        {
+         "name": "ECAs from Denmark, France, Canada, Italy, and Australia",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Lithium Mining and Battery Production",
+       "country": "Germany",
+       "city": "Frankfurt",
+       "use_of_funds": "Build a processing plant near Frankfurt to convert lithium into lithium hydroxide monohydrate for battery production.",
+       "source_sentence": "Vulcan Energy has closed a €1.2bn financing package with a range of export credit agencies (ECAs) and banks to fund the first phase of a major lithium project in Germany.",
+       "published_at": "2025-12-03T16:13:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "694b49a9e73278395675ae76"
+       ],
+       "article_id": "694b49a9e73278395675ae76"
+      },
+      {
+       "id": "e19b9ba9093b28d6",
+       "company_name": "vulcan",
+       "domain": "vulcan.io",
+       "round_type": "Debt",
+       "amount_usd": 1279800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1185000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": null
+        },
+        {
+         "name": "5 export credit agencies",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "7 commercial banks",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery materials",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The financing package includes EUR 1.185 billion in senior debt funding by a group of 13 financial institutions comprising the European Investment Bank (EIB), five export credit agencies and seven commercial banks.",
+       "published_at": "2025-12-03T11:25:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e880529baafc73568f3e43"
+       ],
+       "article_id": "69e880529baafc73568f3e43"
+      },
+      {
+       "id": "197cfeca9ab10af9",
+       "company_name": "StarPlus Energy",
+       "domain": null,
+       "round_type": "loan",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "KRW",
+       "amount": 1600000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "samsung sdi",
+         "domain": "samsungsdi.com",
+         "amount": 1600000000000.0
+        }
+       ],
+       "sector": "battery",
+       "country": null,
+       "city": null,
+       "use_of_funds": "capital investment",
+       "source_sentence": "South Korea's Samsung SDI said it plans to lend 1.6 trillion won ($1.05 billion) to StarPlus Energy, its battery joint venture with Stellantis. The company said in a regulatory filing that the loan would be used to fund capital investment.",
+       "published_at": "2026-03-31T10:26:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8a5169baafc7356aaf4ab"
+       ],
+       "article_id": "69e8a5169baafc7356aaf4ab"
+      },
+      {
+       "id": "4b39f6703054b1e7",
+       "company_name": "ascend elements",
+       "domain": "ascendelements.com",
+       "round_type": null,
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Battery recycling",
+       "country": "USA",
+       "city": "Westborough",
+       "use_of_funds": null,
+       "source_sentence": "Westborough, Massachusetts-based Ascend, which specializes in reprocessing old batteries into cathode material at a factory in Georgia, has raised more than $1.1 billion in equity and grants since its founding in 2015.",
+       "published_at": "2026-04-10T19:34:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e899157bb1410d4c988b51"
+       ],
+       "article_id": "69e899157bb1410d4c988b51"
+      },
+      {
+       "id": "1650abaff38f98da",
+       "company_name": "ardea resources",
+       "domain": "ardearesources.com.au",
+       "round_type": "Non-binding Funding Support",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "export finance australia",
+         "domain": "exportfinance.gov.au",
+         "amount": 500000000.0
+        },
+        {
+         "name": "Export-Import Bank of the United States (EXIM)",
+         "domain": null,
+         "amount": 350000000.0
+        }
+       ],
+       "sector": "Battery, energy storage, electric vehicle",
+       "country": "Australia",
+       "city": "Kalgoorlie",
+       "use_of_funds": "Project financing for Goongarrie’s nickel‑cobalt hub",
+       "source_sentence": "Ardea Resources has secured up to $1 billion in non-binding funding support from US and Australian government agencies for its Goongarrie nickel–cobalt project in Western Australia.",
+       "published_at": "2026-02-06T02:13:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986d770514cbd23b5c541ab"
+       ],
+       "article_id": "6986d770514cbd23b5c541ab"
+      },
+      {
+       "id": "c1fc635082e13224",
+       "company_name": "base power",
+       "domain": "basepower.in",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "ribbit",
+         "domain": "ribbit.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        }
+       ],
+       "sector": "Battery Storage",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "to turbocharge its home battery buildout",
+       "source_sentence": "The Austin-based startup, which had raised $200 million in April, is back with another $1 billion in funding.",
+       "published_at": "2025-10-08T17:02:03",
+       "coverage_count": 7,
+       "article_ids": [
+        "68f70882f80e5160742b277d",
+        "694af8b813240442ec75cae3",
+        "6983ecc7e67557fb855562bf",
+        "69897f7894d3f481f3e6927f",
+        "698e73cc9ca02490ec0e4e7d",
+        "69c8d5ff1d51eeba947f202a",
+        "69cbd55936f67c5f5aa68a8b"
+       ],
+       "article_id": "68f70882f80e5160742b277d"
+      },
+      {
+       "id": "ba5d0a7fa7930b56",
+       "company_name": "POSCO Future M",
+       "domain": "poscofuturem.com",
+       "round_type": "Rights Offering",
+       "amount_usd": 825000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "KRW",
+       "amount": 1100000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "POSCO Holdings",
+         "domain": "posco-inc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Battery materials",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": "to secure growth capital",
+       "source_sentence": "Posco Future M, the group’s core battery materials subsidiary, had earlier announced a rights offering worth 1.1 trillion won to secure growth capital.",
+       "published_at": "2025-05-13T10:33:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc5432f8e7de13bc1db3f3"
+       ],
+       "article_id": "69cc5432f8e7de13bc1db3f3"
+      },
+      {
+       "id": "65a864a2ad174950",
+       "company_name": "Agratas Energy Storage Solutions Pvt. Ltd",
+       "domain": null,
+       "round_type": "Bank financing",
+       "amount_usd": 730000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 730000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "axis bank",
+         "domain": "axisbank.com",
+         "amount": null
+        },
+        {
+         "name": "dbs bank",
+         "domain": "dbs.com",
+         "amount": null
+        },
+        {
+         "name": "Hong Kong and Shanghai Banking Corp.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Standard Chartered Bank",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery Manufacturing",
+       "country": "India",
+       "city": "Sanand",
+       "use_of_funds": null,
+       "source_sentence": "has raised more than $730 million from a group of banks in 2025, as the company moves closer to starting commercial operations",
+       "published_at": "2026-04-08T15:48:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2c7037f3a572cf4b2944d"
+       ],
+       "article_id": "69e2c7037f3a572cf4b2944d"
+      },
+      {
+       "id": "ffffd92a27e6c3e9",
+       "company_name": "group14 technologies",
+       "domain": "group14.technology",
+       "round_type": null,
+       "amount_usd": 649000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 649000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "battery materials",
+       "country": "USA",
+       "city": "Woodinville",
+       "use_of_funds": null,
+       "source_sentence": "The company previously raised $649 million from investors, bringing its new total to $1.11 billion.",
+       "published_at": "2025-08-20T14:42:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8de8f7bb1410d4cd1344d"
+       ],
+       "article_id": "69e8de8f7bb1410d4cd1344d"
+      },
+      {
+       "id": "521b94da1e09835e",
+       "company_name": "vulcan",
+       "domain": "vulcan.io",
+       "round_type": "Equity",
+       "amount_usd": 570240000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 528000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Unspecified investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery materials",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "At the same time, Vulcan will raise EUR 528 million through a fully underwritten institutional placement and an accelerated and retail entitlement offer, which form part of the overall package.",
+       "published_at": "2025-12-03T11:25:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e880529baafc73568f3e43"
+       ],
+       "article_id": "69e880529baafc73568f3e43"
+      },
+      {
+       "id": "c428f4a15784b57e",
+       "company_name": "Agratas",
+       "domain": null,
+       "round_type": "grant",
+       "amount_usd": 509540000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 509540000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "UK Government",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "apc",
+         "domain": "apc.dk",
+         "amount": null
+        }
+       ],
+       "sector": "Battery manufacturing",
+       "country": "UK",
+       "city": "Somerset",
+       "use_of_funds": "planned electric vehicle battery gigafactory",
+       "source_sentence": "The UK has approved about £380 million ($509.54 million) in funding for Agratas",
+       "published_at": "2026-04-10T08:02:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e324f9c5a11d238528512e"
+       ],
+       "article_id": "69e324f9c5a11d238528512e"
+      },
+      {
+       "id": "6127e65f4ae6c30c",
+       "company_name": "jupiter power",
+       "domain": "jupiterpower.io",
+       "round_type": "senior secured green revolving loan",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "barclays bank",
+         "domain": "barclays.de",
+         "amount": null
+        },
+        {
+         "name": "HSBC Bank USA",
+         "domain": "us.hsbc.com",
+         "amount": null
+        },
+        {
+         "name": "ING Capital",
+         "domain": "ing.com",
+         "amount": null
+        },
+        {
+         "name": "National Association",
+         "domain": "nationalassociation.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "societe generale",
+         "domain": "societegenerale.com",
+         "amount": null
+        },
+        {
+         "name": "smbc",
+         "domain": "smbc.re.kr",
+         "amount": null
+        }
+       ],
+       "sector": "Battery Energy Storage System",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "to support the advancement of its project pipeline across the US",
+       "source_sentence": "US battery energy storage system (BESS) developer-operator Jupiter Power has closed a US$500 million senior secured green revolving loan and letter of credit facility to support the advancement of its project pipeline across the US.",
+       "published_at": "2026-01-30T13:36:08",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a749a88ad7b9aae0b92a",
+        "6988ae46eefc5d2f542c1467"
+       ],
+       "article_id": "6988ae46eefc5d2f542c1467"
+      },
+      {
+       "id": "ddf4f3e4a32c8d1d",
+       "company_name": "Tata Agratas",
+       "domain": null,
+       "round_type": "government support",
+       "amount_usd": 482600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 380000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "UK government",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "battery",
+       "country": "UK",
+       "city": "Somerset",
+       "use_of_funds": "building a new electric vehicle battery plant",
+       "source_sentence": "The UK government has confirmed GBP380 million (US$510 million) in funding to support a new electric vehicle battery plant being built in southwest England by Tata Group's battery unit, Agratas.",
+       "published_at": "2026-04-19T23:44:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e876ca9baafc7356894035"
+       ],
+       "article_id": "69e876ca9baafc7356894035"
+      },
+      {
+       "id": "d6925cbbb97a1cf0",
+       "company_name": "Agratas",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 482600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 380000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "UK government",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Department for Business and Trade",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "advanced propulsion centre uk",
+         "domain": "apcuk.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Battery manufacturing",
+       "country": "UK",
+       "city": "Somerset",
+       "use_of_funds": "Support the development of battery manufacturing capacity",
+       "source_sentence": "A significant portion of the funding – around £380m – has been allocated to Agratas, part of the Tata Group, to support the development of battery manufacturing capacity.",
+       "published_at": "2026-04-14T08:26:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e6f7bf0f1aa5003e11ce80"
+       ],
+       "article_id": "69e6f7bf0f1aa5003e11ce80"
+      },
+      {
+       "id": "4080bbe1bfb9e910",
+       "company_name": "Agratas",
+       "domain": null,
+       "round_type": "grant",
+       "amount_usd": 482600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 380000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Department for Business and Trade",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "DRIVE35 Automotive Transformation Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery solutions",
+       "country": "UK",
+       "city": "Somerset",
+       "use_of_funds": "support transition to zero-emission vehicles",
+       "source_sentence": "The Advanced Propulsion Centre UK (APC) has revealed the latest government‑backed projects under the DRIVE35 programme. It is a package of more than £470m in grants to support the UK automotive industry and includes substantial UK government support of around £380m for Agratas, part of the Tata Group, parent company of JLR.",
+       "published_at": "2026-04-09T17:00:25",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e320373a31acc7f37d966c",
+        "69e3476f522789a58263a140",
+        "69e34815c70111d65ec513e5"
+       ],
+       "article_id": "69e320373a31acc7f37d966c"
+      },
+      {
+       "id": "093ee878d2150d7a",
+       "company_name": "CleanPeak Energy",
+       "domain": "cleanpeakenergy.com.au",
+       "round_type": "debt refinancing",
+       "amount_usd": 465000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 465000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Renewable Energy (Solar, Battery Storage)",
+       "country": "Australia",
+       "city": "Sydney",
+       "use_of_funds": "to move forward on several projects expected to achieve financial close in fiscal 2026",
+       "source_sentence": "The new financing deal comes less than one month after CleanPeak closed a $465 million debt refinancing deal allowing it to move forward on several projects expected to achieve financial close in fiscal 2026.",
+       "published_at": "2025-07-28T01:15:27",
+       "coverage_count": 2,
+       "article_ids": [
+        "6898cdbe2f01d48cd308d88f",
+        "698df4dd9ca02490ec04d6a6"
+       ],
+       "article_id": "6898cdbe2f01d48cd308d88f"
+      },
+      {
+       "id": "ac4d8fff3cc79ebe",
+       "company_name": "Group14",
+       "domain": "group14eng.com",
+       "round_type": "Series D",
+       "amount_usd": 463000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 463000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Battery Materials, Supply Chain Innovation",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate AI-Driven Battery Materials and Supply Chain Innovation",
+       "source_sentence": "Group14 Secures $463 Million Series D to Accelerate AI-Driven Battery Materials and Supply Chain Innovation",
+       "published_at": "2025-09-01T14:16:17",
+       "coverage_count": 2,
+       "article_ids": [
+        "6989c1a594d3f481f3ebcf02",
+        "698f848a9ca02490ec22a5d2"
+       ],
+       "article_id": "6989c1a594d3f481f3ebcf02"
+      },
+      {
+       "id": "4efd9a374c5a046d",
+       "company_name": "Group14",
+       "domain": "group14eng.com",
+       "round_type": null,
+       "amount_usd": 463000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 463000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sk",
+         "domain": "sk.com",
+         "amount": null
+        },
+        {
+         "name": "atl",
+         "domain": "atl.com",
+         "amount": null
+        },
+        {
+         "name": "lightrock",
+         "domain": "lightrock.com",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "porsche",
+         "domain": "porsche.com",
+         "amount": null
+        },
+        {
+         "name": "omers",
+         "domain": "omersventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "battery materials",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its manufacturing footprint",
+       "source_sentence": "Battery materials startup Group14 announced Wednesday it has closed a $463 million funding round to expand its manufacturing footprint, a sign that investors remain confident in the future of electric vehicles.",
+       "published_at": "2025-08-20T20:50:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0ff2f469a108b2b2cb827"
+       ],
+       "article_id": "68d0ff2f469a108b2b2cb827"
+      },
+      {
+       "id": "76d761dd1a15050b",
+       "company_name": "group14 technologies",
+       "domain": "group14.technology",
+       "round_type": "Series D",
+       "amount_usd": 463000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 463000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "SK Inc.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "battery materials",
+       "country": "USA",
+       "city": "Woodinville",
+       "use_of_funds": "accelerate and ramp-up production",
+       "source_sentence": "Next-gen battery materials manufacturer Group14 Technologies today announced $463 million of new funding.",
+       "published_at": "2025-08-20T14:42:26",
+       "coverage_count": 4,
+       "article_ids": [
+        "68b448a73ddf2630a8e6f1f2",
+        "68d0de71b812d825b11ed69d",
+        "698d6cc69ca02490ecfadbd3",
+        "69e8de8f7bb1410d4cd1344d"
+       ],
+       "article_id": "69e8de8f7bb1410d4cd1344d"
+      },
+      {
+       "id": "b03e1e442b4758bb",
+       "company_name": "group14 technologies",
+       "domain": "group14.technology",
+       "round_type": "Series D",
+       "amount_usd": 463000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 463000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "SK, Inc.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Porsche Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "atl",
+         "domain": "atl.com",
+         "amount": null
+        },
+        {
+         "name": "omers",
+         "domain": "omersventures.com",
+         "amount": null
+        },
+        {
+         "name": "Decarbonization Partners",
+         "domain": "decarbonizationpartners.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "Lightrock Climate Impact Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "microsoft climate innovation fund",
+         "domain": "microsoft.com",
+         "amount": null
+        }
+       ],
+       "sector": "Battery Materials",
+       "country": "USA",
+       "city": "Woodinville",
+       "use_of_funds": "Continuing scaling of Group14’s silicon battery material, SCC55, in the U.S. and South Korea to meet demand for energy storage.",
+       "source_sentence": "Group14 Technologies today announced that it has closed a US$463M round led by SK, Inc., with strong participation of other existing investors, including Porsche Investments, ATL, OMERS, Decarbonization Partners, Lightrock Climate Impact Fund, Microsoft Climate Innovation Fund, and others. The funds will be used to continue scaling the manufacture of Group14’s silicon battery material, SCC55, in the U.S. and South Korea, ...",
+       "published_at": "2025-08-20T11:02:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "68b43fea3ddf2630a8d91e88",
+        "698fa0148d29a990b6000cd2",
+        "69973acc0d0db262fa59d562",
+        "69bb3c7188a452392c438d2f",
+        "69e8d1329baafc7356cfb2c2"
+       ],
+       "article_id": "69bb3c7188a452392c438d2f"
+      },
+      {
+       "id": "f1acd2b47b382ef4",
+       "company_name": "redwood materials",
+       "domain": "redwoodmaterials.com",
+       "round_type": "Series E",
+       "amount_usd": 425000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 425000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "capricorn",
+         "domain": "capricorn.de",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        }
+       ],
+       "sector": "Battery recycling, energy storage",
+       "country": "United States",
+       "city": "Carson City",
+       "use_of_funds": "Energy storage to power AI data centers and industrial sites",
+       "source_sentence": "More investors, including newcomer Google, have piled in since, pushing the Series E to $425 million, the company said.",
+       "published_at": "2026-01-28T14:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c971d7a5dd771f46a2f593"
+       ],
+       "article_id": "69c971d7a5dd771f46a2f593"
+      },
+      {
+       "id": "62da61fa4d97fce9",
+       "company_name": "epsilon advanced materials",
+       "domain": "epsilonam.com",
+       "round_type": "Loan",
+       "amount_usd": 420000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 420000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Export-Import Bank of the United States (EXIM)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery materials",
+       "country": "United States",
+       "city": "Leland",
+       "use_of_funds": "Synthetic graphite manufacturing plant",
+       "source_sentence": "Epsilon Advanced Materials Inc (EAM), the battery materials arm of Epsilon Group, has received a non-binding Letter of Interest (LOI) from the Export-Import Bank of the United States (EXIM) for potential debt support of up to $420 million.",
+       "published_at": "2025-07-11T05:24:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c428bf764549ca7bb967d2"
+       ],
+       "article_id": "69c428bf764549ca7bb967d2"
+      },
+      {
+       "id": "10f9dade5fbb79d8",
+       "company_name": "Skyview 2 Battery Energy Storage System",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 401080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CAD",
+       "amount": 542000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "KfW IPEX-Bank",
+         "domain": "kfw-ipex-bank.de",
+         "amount": null
+        },
+        {
+         "name": "Desjardins Group",
+         "domain": "desjardins.com",
+         "amount": null
+        }
+       ],
+       "sector": "Battery energy storage",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The transaction comprises a total financing volume of approximately CAD 542 million.",
+       "published_at": "2026-02-10T09:13:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbae2882c1af17aa4ce1cf"
+       ],
+       "article_id": "69bbae2882c1af17aa4ce1cf"
+      },
+      {
+       "id": "c7ebb2ffd27d92b7",
+       "company_name": "POSCO Future M",
+       "domain": "poscofuturem.com",
+       "round_type": "Equity Investment",
+       "amount_usd": 394200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "KRW",
+       "amount": 525600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "POSCO Holdings",
+         "domain": "posco-inc.com",
+         "amount": 525600000000.0
+        }
+       ],
+       "sector": "Battery materials",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": "The funds will support ongoing projects such as a cathode materials joint venture plant in Canada and capacity expansions at cathode production sites in Pohang, North Gyeongsang, and Gwangyang, South Jeolla.",
+       "source_sentence": "Posco Holdings’ board approved equity investments of 525.6 billion won in Posco Future M, 328 billion won in Posco Pilbara Lithium Solution, and 69 billion won in Posco GS Eco Materials.",
+       "published_at": "2025-05-13T10:33:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc5432f8e7de13bc1db3f3"
+       ],
+       "article_id": "69cc5432f8e7de13bc1db3f3"
+      },
+      {
+       "id": "2777a205afbfdfff",
+       "company_name": "vulcan energy",
+       "domain": "v-er.eu",
+       "round_type": "government funding",
+       "amount_usd": 378000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "German government",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "battery materials",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": "construction phase (Lionheart project)",
+       "source_sentence": "The German government is funding the project with over 350 million euros.",
+       "published_at": "2026-02-07T08:40:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996c790e0523bedf7b12d6d"
+       ],
+       "article_id": "6996c790e0523bedf7b12d6d"
+      },
+      {
+       "id": "b804f61d6741a3ad",
+       "company_name": "nexamp",
+       "domain": "nexamp.com",
+       "round_type": "term loan",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "macquarie asset management",
+         "domain": "macquarie.com",
+         "amount": null
+        }
+       ],
+       "sector": "solar energy and battery storage",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "construction of utility-scale solar and battery storage projects",
+       "source_sentence": "Macquarie Asset Management’s (Macquarie) US$350 million term loan facility for a subsidiary of Nexamp, Inc. (Nexamp) was awarded the “Solar Deal of the Year, North America” at the IJGlobal Awards 2025.",
+       "published_at": "2026-04-01T16:08:58",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e290ac9b322e6b3e9a0d4f",
+        "69e29b78277be6ed2d99d33c"
+       ],
+       "article_id": "69e290ac9b322e6b3e9a0d4f"
+      },
+      {
+       "id": "1c45150d28ee8982",
+       "company_name": "nexamp",
+       "domain": "nexamp.com",
+       "round_type": "term loan facility",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "macquarie asset management",
+         "domain": "macquarie.com",
+         "amount": 350000000.0
+        }
+       ],
+       "sector": "Solar & Battery Storage",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "support the construction of utility-scale solar and battery storage projects",
+       "source_sentence": "Macquarie Asset Management’s (Macquarie) US$350 million term loan facility for a subsidiary of Nexamp, Inc. (Nexamp) was awarded the “Solar Deal of the Year, North America” at the IJGlobal Awards 2025. Sidley represented Macquarie as the lead lender under the facility. Proceeds of the loans advanced under the facility will be used to support the construction of utility-scale solar and battery storage projects in Nexamp’s approximately 6 GW utility-scale solar and storage pipeline.",
+       "published_at": "2026-04-01T16:08:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e29c273aab8d96aa311e64"
+       ],
+       "article_id": "69e29c273aab8d96aa311e64"
+      },
+      {
+       "id": "287a03c3a5921e3d",
+       "company_name": "redwood materials",
+       "domain": "redwoodmaterials.com",
+       "round_type": "Series E",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eclipse ventures",
+         "domain": "eclipse.vc",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Battery recycling & energy storage",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "expand recycling facilities, energy storage deployments, and workforce",
+       "source_sentence": "Redwood Materials, a Nevada-based battery recycling startup founded by Tesla’s former CTO J.B. Straubel, has secured a massive $350 million Series E round to accelerate its mission of building a domestic supply chain for critical battery materials.",
+       "published_at": "2025-10-24T02:57:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe2906e01ff0caa62936c4"
+       ],
+       "article_id": "68fe2906e01ff0caa62936c4"
+      },
+      {
+       "id": "5568176719c7a877",
+       "company_name": "redwood materials",
+       "domain": "redwoodmaterials.com",
+       "round_type": null,
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eclipse ventures",
+         "domain": "eclipse.vc",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "battery recycling",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "expand its energy storage operations, materials production capacity, and employee base across the U.S.",
+       "source_sentence": "Battery recycling startup Redwood Materials has raised $350 million in new funding, led by Eclipse Ventures, with participation from Nvidia’s investment arm, NVentures, and several other investors, the company announced Thursday.",
+       "published_at": "2025-10-23T13:50:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "68fe28457a193434f9291fab",
+        "6952324abee5b6308d169608"
+       ],
+       "article_id": "68fe28457a193434f9291fab"
+      },
+      {
+       "id": "e1b5d96eba5941d1",
+       "company_name": "redwood materials",
+       "domain": "redwoodmaterials.com",
+       "round_type": "Series E",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "battery recycling, cathode production, energy storage",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "expand the company’s burgeoning energy storage business as well as its refining and materials production capacity",
+       "source_sentence": "Battery recycling and cathode production company Redwood Materials has raised $350 million as it grows its new energy storage business in a bid to power the AI data center boom.",
+       "published_at": "2025-10-23T12:00:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "68fe282546325a41ca291bd5",
+        "68fe37cb92ef2af9ad291b80",
+        "68fe38d992ef2af9ad293bd4",
+        "694ae778f1dfa4d59175b472",
+        "6986bb5511e3205ec992d6e3"
+       ],
+       "article_id": "68fe282546325a41ca291bd5"
+      },
+      {
+       "id": "e0990762d42fb7db",
+       "company_name": "Irish Power Capital Renewable Energy IPP",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 348840000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 323000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eiffel investment group",
+         "domain": "eiffel-ig.com",
+         "amount": null
+        }
+       ],
+       "sector": "Battery Energy Storage Systems (BESS)",
+       "country": "Ireland",
+       "city": null,
+       "use_of_funds": "Refinancing of existing credit facilities of 2023 and 2024, while providing flexible capital to support the implementation of the",
+       "source_sentence": "it is the turn of the Parisian asset manager Eiffel Investment Group to announce a historic financing of up to 323 million euros in the Irish Power Capital Renewable Energy IPP.",
+       "published_at": "2025-09-25T07:30:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989ab8494d3f481f3ea2581"
+       ],
+       "article_id": "6989ab8494d3f481f3ea2581"
+      },
+      {
+       "id": "70bce0d07f306f1a",
+       "company_name": "nouveau monde graphite",
+       "domain": "nmg.com",
+       "round_type": null,
+       "amount_usd": 335000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 335000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lenders",
+         "domain": "lenders.lt",
+         "amount": null
+        }
+       ],
+       "sector": "battery materials",
+       "country": null,
+       "city": null,
+       "use_of_funds": "financing of the Matawinie Mine",
+       "source_sentence": "With the recent US$335-million commitment package from lenders toward financing of the Matawinie Mine, the Company is well positioned and focused on completing the remaining steps to reach a final investment decision, advancing a sequenced FID for the First-Stage Bécancour Battery Material Plant, and preparing for construction and commercial execution.",
+       "published_at": "2026-03-26T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc21bc2ca99408382d734b"
+       ],
+       "article_id": "69cc21bc2ca99408382d734b"
+      },
+      {
+       "id": "63b267f5242bc045",
+       "company_name": "CleanPeak Energy",
+       "domain": "cleanpeakenergy.com.au",
+       "round_type": null,
+       "amount_usd": 330000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "AUD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 500000000.0
+        }
+       ],
+       "sector": "Renewable Energy (Solar, Battery Storage)",
+       "country": "Australia",
+       "city": "Sydney",
+       "use_of_funds": "support CleanPeak Energy in growing and developing a pipeline of behind- and front-of-meter solar, battery energy storage systems, and microgrids for Australia’s commercial and industrial (C&I) sector",
+       "source_sentence": "US-headquartered private equity giant KKR has announced it will invest AUD 500 million to support CleanPeak Energy in growing and developing a pipeline of behind- and front-of-meter solar, battery energy storage systems, and microgrids for Australia’s commercial and industrial sector.",
+       "published_at": "2025-07-28T01:15:27",
+       "coverage_count": 2,
+       "article_ids": [
+        "6898cdbe2f01d48cd308d88f",
+        "698e1ce18d29a990b6e3321a"
+       ],
+       "article_id": "6898cdbe2f01d48cd308d88f"
+      },
+      {
+       "id": "a2c1119875d2db05",
+       "company_name": "ACME Sigma Urja Private Limited",
+       "domain": null,
+       "round_type": "term loan",
+       "amount_usd": 325920000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 27160000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "power finance",
+         "domain": "pfcindia.com",
+         "amount": 27160000000.0
+        }
+       ],
+       "sector": "Solar Photovoltaic, Battery Energy Storage System",
+       "country": "India",
+       "city": "Chittorgarh",
+       "use_of_funds": "Setting up and implementing a 300 MWAC / 783 MWDC solar photovoltaic project with 1,356 MWh battery energy storage system.",
+       "source_sentence": "The transaction involved the provision of a rupee term loan of ₹2,716 crore by Power Finance Corporation Limited for setting up and implementing a 300 MWAC / 783 MWDC solar photovoltaic project with 1,356 MWh battery energy storage system.",
+       "published_at": "2026-02-05T07:35:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a24df1953fdcb20df77fb"
+       ],
+       "article_id": "698a24df1953fdcb20df77fb"
+      },
+      {
+       "id": "9025c229948cd845",
+       "company_name": "ascend elements",
+       "domain": "ascendelements.com",
+       "round_type": "grant",
+       "amount_usd": 320000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 320000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Poland’s Ministry of Economic Development and Technology",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery recycling",
+       "country": "United States",
+       "city": "Westborough",
+       "use_of_funds": "Construction of a precursor cathode active material (pCAM) manufacturing facility in Poland",
+       "source_sentence": "Lithium-ion battery (LIB) recycler Ascend Elements, Westborough, Massachusetts, has been offered up to $320 million by Poland’s Ministry of Economic Development and Technology to support the construction of a precursor cathode active material (pCAM) manufacturing facility in the country.",
+       "published_at": "2025-05-07T18:57:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69971c205fbe93703d5ff66d",
+        "69cbd7f152bca3a3fe8da8ae"
+       ],
+       "article_id": "69971c205fbe93703d5ff66d"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 403,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDUtMDcgMTg6NTc6MDAiLCJrIjoiMTAzODY5MjE1OTk0NDE2MjMxMDkiLCJhIjozMjAwMDAwMDAuMH0",
+     "totals": {
+      "deals": 403,
+      "deals_with_amount": 362,
+      "deals_without_amount": 41,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 57304613196.78,
+      "median_amount_usd": 15768000.0,
+      "largest_amount_usd": 15000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.231,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.235
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "battery",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "battery"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "adeb8a140a23e15e",
+       "company_name": "nouveau monde graphite",
+       "domain": "nmg.com",
+       "round_type": "Equity Financing",
+       "amount_usd": 297000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 297000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Canada Growth Fund",
+         "domain": null,
+         "amount": 82000000.0
+        },
+        {
+         "name": "Investissement Québec",
+         "domain": null,
+         "amount": 61000000.0
+        },
+        {
+         "name": "eni",
+         "domain": "eni.com",
+         "amount": 70000000.0
+        }
+       ],
+       "sector": "Graphite Mining / Battery Materials",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "support its Phase 2 Matawinie Mine project",
+       "source_sentence": "Canadian graphite mine developer Nouveau Monde Graphite (NMG) has received a commitment of $297 million in financing to support its Phase 2 Matawinie Mine project.",
+       "published_at": "2026-04-30T13:41:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f883e48937ef12fc08f6bf"
+       ],
+       "article_id": "69f883e48937ef12fc08f6bf"
+      },
+      {
+       "id": "a3d6144cbe64fd2a",
+       "company_name": "matrix renewables",
+       "domain": "matrixrenewables.com",
+       "round_type": "non-recourse financing",
+       "amount_usd": 311150000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 245000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cibc",
+         "domain": "cibccm.com",
+         "amount": null
+        },
+        {
+         "name": "mufg bank",
+         "domain": "bk.mufg.jp",
+         "amount": null
+        },
+        {
+         "name": "natwest",
+         "domain": "natwest.com",
+         "amount": null
+        }
+       ],
+       "sector": "Renewable Energy / Battery Storage",
+       "country": "United Kingdom",
+       "city": "Eccles",
+       "use_of_funds": "construction of a 500MW / 1,000MWh battery energy storage system (BESS)",
+       "source_sentence": "Matrix Renewables has reached financial close on a £245 million non-recourse financing package to support the construction of a 500MW / 1,000MWh battery energy storage system (BESS) at Eccles–Leitholm in southern Scotland.",
+       "published_at": "2026-04-29T09:57:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f2306a27117df83f963754"
+       ],
+       "article_id": "69f2306a27117df83f963754"
+      },
+      {
+       "id": "1d75a236defd743a",
+       "company_name": "battery smart",
+       "domain": "batterysmart.in",
+       "round_type": "Series B (extended)",
+       "amount_usd": 29000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 29000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "blume ventures",
+         "domain": "blume.vc",
+         "amount": null
+        },
+        {
+         "name": "ecosystem integrity fund",
+         "domain": "eif.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Electric Vehicle Battery Swapping",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "With its $65 million Series B round and $29 million extended Series B round, Battery Smart has raised about $192 million in funding thus far.",
+       "published_at": "2026-04-29T06:36:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cbafa5706a322e112d41"
+       ],
+       "article_id": "69f1cbafa5706a322e112d41"
+      },
+      {
+       "id": "ee495974fd793d88",
+       "company_name": "nexamp",
+       "domain": "nexamp.com",
+       "round_type": "credit facility",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Nuveen Energy Infrastructure Credit",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "solar and battery storage",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "The proceeds will be used to accelerate the deployment of Nexamp’s solar projects and expand its customer base amid rising electricity demand.",
+       "source_sentence": "Nexamp, a developer of solar and battery storage projects, secured a $200 million credit facility from Nuveen Energy Infrastructure Credit, acting as the sole lender. The facility is structured as a delayed-draw term loan, with an initial commitment of $125 million and the option to access an additional $75 million.",
+       "published_at": "2026-04-29T05:21:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f885418937ef12fc09c703"
+       ],
+       "article_id": "69f885418937ef12fc09c703"
+      },
+      {
+       "id": "88016597ed88ea6d",
+       "company_name": "battery smart",
+       "domain": "batterysmart.in",
+       "round_type": "Debt financing",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mirova",
+         "domain": "mirova.com",
+         "amount": null
+        }
+       ],
+       "sector": "EV battery swapping",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expand its Battery as a Service (BaaS) infrastructure across more cities in India",
+       "source_sentence": "Battery Smart, India's leading EV battery swapping provider, has raised $15 million in debt financing. The funding round was led by Mirova, a French asset management firm focused on sustainable investments.",
+       "published_at": "2026-04-29T02:04:56",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f1cc36a5706a322e1166ab",
+        "69f883c243843dd771d04d1a",
+        "69f9d4677b2d589e844ad42f"
+       ],
+       "article_id": "69f1cc36a5706a322e1166ab"
+      },
+      {
+       "id": "a8bdaa3ac5bd5f68",
+       "company_name": "renewable metals",
+       "domain": "renewable-metals.com",
+       "round_type": "Series A",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "CEFC/Virescent Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "emr",
+         "domain": "emr-inc.com",
+         "amount": null
+        },
+        {
+         "name": "Neglected Climate Opportunities",
+         "domain": "neglectedclimateopportunitiesllc.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "investible",
+         "domain": "investible.com",
+         "amount": null
+        },
+        {
+         "name": "Climate Tech Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery recycling",
+       "country": "Australia",
+       "city": "Sydney",
+       "use_of_funds": "Build pilot plants in Australia, US and Europe for lithium-ion battery recycling",
+       "source_sentence": "Renewable Metals Raises $12M Series A for Battery Recycling.",
+       "published_at": "2026-04-28T23:30:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1cc0c399b489398e0c078"
+       ],
+       "article_id": "69f1cc0c399b489398e0c078"
+      },
+      {
+       "id": "bccf4ad119cb95f0",
+       "company_name": "battery smart",
+       "domain": "batterysmart.in",
+       "round_type": "Debt",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mirova",
+         "domain": "mirova.com",
+         "amount": null
+        }
+       ],
+       "sector": "Battery Smart / Battery Swapping",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expand its battery-as-a-service (BaaS) infrastructure and strengthen its network of partner-led stations across urban and semi-urban markets",
+       "source_sentence": "Battery Smart Secures $15 Mn in Debt",
+       "published_at": "2026-04-28T12:30:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e57d836d28f995cb8e4c",
+        "69f22d81c6105443aa5d96e3"
+       ],
+       "article_id": "69f0e57d836d28f995cb8e4c"
+      },
+      {
+       "id": "782d3ee68b17481e",
+       "company_name": "contemporary amperex technology",
+       "domain": "catl.com",
+       "round_type": "Share Sale",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "EV Battery",
+       "country": "Hong Kong",
+       "city": "Hong Kong",
+       "use_of_funds": "Expand global capacity, develop zero‑carbon businesses, invest in advanced technology research, and cover general corporate needs.",
+       "source_sentence": "has raised $5 billion through a share sale in Hong Kong",
+       "published_at": "2026-04-28T12:27:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e995836d28f995cbca9f"
+       ],
+       "article_id": "69f0e995836d28f995cbca9f"
+      },
+      {
+       "id": "e6376fd06fbccab5",
+       "company_name": "battery smart",
+       "domain": "batterysmart.in",
+       "round_type": "debt",
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "mirova",
+         "domain": "mirova.com",
+         "amount": null
+        }
+       ],
+       "sector": "Battery-as-a-service",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "Expand BaaS infrastructure and develop partner-operated stations across major urban and semi-urban regions",
+       "source_sentence": "Battery-as-a-service (BaaS) startup Battery Smart on Tuesday raised $15 million in debt funding from Mirova, an affiliate of Natixis Investment Managers.",
+       "published_at": "2026-04-28T11:22:35",
+       "coverage_count": 5,
+       "article_ids": [
+        "69f1c8e2a5706a322e1001a1",
+        "69f1cbafa5706a322e112d41",
+        "69f1ce95a5706a322e12924a",
+        "69f884a343843dd771d0c7ea",
+        "69f9d459a088760d34beec71"
+       ],
+       "article_id": "69f1c8e2a5706a322e1001a1"
+      },
+      {
+       "id": "34d7aacfa98a0eb3",
+       "company_name": "CATL",
+       "domain": null,
+       "round_type": "share placement",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support the expansion of its global manufacturing footprint, research and development, zero‑carbon business, working capital and general corporate purposes",
+       "source_sentence": "From ESS News The world’s leading battery maker, CATL, completed a share placement in Hong Kong on Tuesday, raising about $5 billion in a deal that marks the largest share offering on the stock exchange so far this year.",
+       "published_at": "2026-04-28T10:59:08",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e48845272de32e8c12ac",
+        "69f0e48845272de32e8c12ac"
+       ],
+       "article_id": "69f0e48845272de32e8c12ac"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 158,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjggMTA6NTk6MDgiLCJrIjoiMzgwNzY5OTgxODg0NDM5MzEzOSJ9",
+     "totals": {
+      "deals": 158,
+      "deals_with_amount": 133,
+      "deals_without_amount": 25,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 23465535313.98,
+      "median_amount_usd": 32000000.0,
+      "largest_amount_usd": 5000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.199,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.202
+    }
+   }
+  }
+ ]
+}

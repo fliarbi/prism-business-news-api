@@ -1,0 +1,3403 @@
+{
+ "slug": "lightspeed-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:27Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Lightspeed",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "lightspeed"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 350,
+      "deals_with_amount": 333,
+      "deals_without_amount": 17,
+      "deals_amount_excluded": 3,
+      "sum_amount_usd": 71923249200.0,
+      "median_amount_usd": 55000000.0,
+      "largest_amount_usd": 20000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 17,
+       "deals_with_amount": 17,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 805706000.0,
+       "median_amount_usd": 22356000.0,
+       "largest_amount_usd": 350000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 24,
+       "deals_with_amount": 23,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3048240000.0,
+       "median_amount_usd": 114000000.0,
+       "largest_amount_usd": 650000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 10,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 721700000.0,
+       "median_amount_usd": 50000000.0,
+       "largest_amount_usd": 350000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 22,
+       "deals_with_amount": 21,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4399800000.0,
+       "median_amount_usd": 58000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 41,
+       "deals_with_amount": 39,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 17829836000.0,
+       "median_amount_usd": 47000000.0,
+       "largest_amount_usd": 13000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 38,
+       "deals_with_amount": 37,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 9612168000.0,
+       "median_amount_usd": 68000000.0,
+       "largest_amount_usd": 3750000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 21,
+       "deals_with_amount": 20,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1646683200.0,
+       "median_amount_usd": 51500000.0,
+       "largest_amount_usd": 307000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 21,
+       "deals_with_amount": 17,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2080000000.0,
+       "median_amount_usd": 130000000.0,
+       "largest_amount_usd": 475000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 47,
+       "deals_with_amount": 46,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 26364000000.0,
+       "median_amount_usd": 85000000.0,
+       "largest_amount_usd": 20000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 46,
+       "deals_with_amount": 43,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 23026800000.0,
+       "median_amount_usd": 45000000.0,
+       "largest_amount_usd": 20000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 42,
+       "deals_with_amount": 39,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 3915916000.0,
+       "median_amount_usd": 65000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 21,
+       "deals_with_amount": 21,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1828100000.0,
+       "median_amount_usd": 27000000.0,
+       "largest_amount_usd": 1100000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.08,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.082
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Lightspeed",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "lightspeed"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "5098c7e5fe16a3c8",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Late-stage mega-round",
+       "amount_usd": 20000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000000.0,
+       "currency": "USD",
+       "amount": 20000000000.0,
+       "valuation": 350000000000.0,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Compute-intensive R&D to build advanced AI models",
+       "source_sentence": "The company is reportedly raising $20 billion in new capital at a staggering $350 billion valuation.",
+       "published_at": "2026-02-09T21:47:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb40e2728db874955197e7"
+       ],
+       "article_id": "69bb40e2728db874955197e7"
+      },
+      {
+       "id": "a41d7dc532cddae9",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": null,
+       "amount_usd": 20000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000000.0,
+       "currency": "USD",
+       "amount": 20000000000.0,
+       "valuation": 350000000000.0,
+       "investors": [
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "g squared",
+         "domain": "gsquared.com",
+         "amount": null
+        },
+        {
+         "name": "factorial funds",
+         "domain": "factorialfunds.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anthropic, one of the fastest‑growing AI start‑ups, is preparing to raise around $20 billion from venture capital firms and other major investors, the Financial Times reported.",
+       "published_at": "2026-01-28T09:02:49",
+       "coverage_count": 8,
+       "article_ids": [
+        "69866fa3514cbd23b5c34ef3",
+        "69bae228ef75d9246559a743",
+        "69bb2f3988dbabbbb7c89205",
+        "69bb702988a452392c44415b",
+        "69bc69bcdded76ae100f1ba0",
+        "69bc8b0b6c5e9c4eedf2beee",
+        "69e2988bbd7b10565a365fba",
+        "69e997e9bdd09a23d08f0886"
+       ],
+       "article_id": "69bb702988a452392c44415b"
+      },
+      {
+       "id": "1f555b39a17ca936",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series-F",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "US",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The US AI startup Anthropic, known for its chatbot Claude, has collected 13 billion US dollars in a new round of financing.",
+       "published_at": "2025-09-10T13:18:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d0db2b800697f0e041b2ae",
+        "6980804eb45e43f180866039"
+       ],
+       "article_id": "68d0db2b800697f0e041b2ae"
+      },
+      {
+       "id": "eb38a74914a03819",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "F-series",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "D1",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tpg",
+         "domain": "preservationgroup.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It finally attracted $13 billion.",
+       "published_at": "2025-09-03T09:48:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd661a412454508620f45b"
+       ],
+       "article_id": "69bd661a412454508620f45b"
+      },
+      {
+       "id": "f4cf4a7186d577dd",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "F series",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "development and security of future AI systems",
+       "source_sentence": "Dario and Daniela Amodei's start-up has just completed a $13 billion F series led by Iconiq for a $183 billion post-financing valuation. In addition to Iconiq, this round table was co-led by Fidelity Management & Research Company and Lightspeed Venture Partners.",
+       "published_at": "2025-09-03T09:11:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6986b4b154148f65ea335f33",
+        "6988d16694d3f481f3da0f20"
+       ],
+       "article_id": "6986b4b154148f65ea335f33"
+      },
+      {
+       "id": "1db5ad22868e47f7",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI safety research, scaling to meet demand from large enterprises, and international expansion",
+       "source_sentence": "The funding round was led by Iconiq, Fidelity Management & Research, and Lightspeed Venture Partners. Heavyweights like Altimeter, General Catalyst, and Coatue also threw money in.",
+       "published_at": "2025-09-03T01:01:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5a83d9f14b99474c75224"
+       ],
+       "article_id": "68c5a83d9f14b99474c75224"
+      },
+      {
+       "id": "6ba817d3cca57dc9",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series D",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Altimeter",
+         "domain": "altimetersoftware.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI safety research, scaling to meet enterprise demand, and international expansion",
+       "source_sentence": "The funding round was led by Iconiq, Fidelity Management & Research, and Lightspeed Venture Partners. Heavyweights like Altimeter, General Catalyst, and Coatue also threw money in.",
+       "published_at": "2025-09-03T00:49:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb42f788a452392c43a4be"
+       ],
+       "article_id": "69bb42f788a452392c43a4be"
+      },
+      {
+       "id": "c973eb9dd92314c3",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series F",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "to scale its AI infrastructure for growing enterprise demand, invest in AI safety research, and expand internationally",
+       "source_sentence": "Anthropic, the AI research and development company behind the widely adopted Claude AI platform, has secured $13 billion in Series F funding.",
+       "published_at": "2025-09-02T22:30:34",
+       "coverage_count": 3,
+       "article_ids": [
+        "68c1665c6a78bf0c565594c9",
+        "68c4376451a522a90826d2ce",
+        "698a39cc1953fdcb20e0e283"
+       ],
+       "article_id": "68c4376451a522a90826d2ce"
+      },
+      {
+       "id": "792db899137442b1",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series C (or unspecified)",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Iconiq Capital, Lightspeed, and Fidelity led the round, with Qatar Investment Authority participating after CEO reversed stance on Middle Eastern funding. The four-year-old San Francisco-based AI startup raised $13 billion in one of the largest venture rounds ever (TechCrunch). Singapore’s GIC jumped in. So did Qatar Investment Authority.",
+       "published_at": "2025-09-02T21:12:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84c2b7bb1410d4c664fde"
+       ],
+       "article_id": "69e84c2b7bb1410d4c664fde"
+      },
+      {
+       "id": "ef24ca482edec3ad",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series ?",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 183000000000.0,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": 183000000000.0,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management and Research Co.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Singapore GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anthropic has closed a deal to raise $13 billion from investors in a new funding round that nearly triples its valuation to $183 billion, including dollars raised – a larger-than-expected haul that makes the artificial intelligence company one of the most valuable startups in the world.",
+       "published_at": "2025-09-02T17:36:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a575e3cfcce8916b1195"
+       ],
+       "article_id": "69c3a575e3cfcce8916b1195"
+      },
+      {
+       "id": "ebe6c11bc9fb33c4",
+       "company_name": "Anthropic PBC",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 3750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "cisco investments",
+         "domain": "ciscoinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "D1 Capital Partners",
+         "domain": "d1capital.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Co. LLC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "General Catalyst Group Management LLC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "jane street group",
+         "domain": "janestreetgroup.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It was followed by Anthropic PBC's $3.75 billion series E round of funding led by Lightspeed Ventures LLC.",
+       "published_at": "2025-10-04T14:24:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68188238661375d1a58ad4ed"
+       ],
+       "article_id": "68188238661375d1a58ad4ed"
+      },
+      {
+       "id": "110921852419605c",
+       "company_name": "reflection ai",
+       "domain": "reflectionai.ca",
+       "round_type": null,
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 8000000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 8000000000.0,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "disruptive",
+         "domain": "disruptive.tech",
+         "amount": null
+        },
+        {
+         "name": "dst",
+         "domain": "dst.com.bn",
+         "amount": null
+        },
+        {
+         "name": "1789",
+         "domain": "1789group.com",
+         "amount": null
+        },
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Eric Yuan",
+         "domain": "https://www.linkedin.com/in/ericsyuan",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "crv",
+         "domain": "crv4all.co.nz",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Reflection AI on Friday raised $2 billion at an $8 billion valuation, surpassing its previous valuation just seven months ago by 15x from $545 million.",
+       "published_at": "2025-10-10T06:12:03",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f71061017a8a94832be754",
+        "69bc5c098db8b8187dd95be8"
+       ],
+       "article_id": "69bc5c098db8b8187dd95be8"
+      },
+      {
+       "id": "5a10932a0334dc39",
+       "company_name": "reflection ai",
+       "domain": "reflectionai.ca",
+       "round_type": "Series B",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "disruptive",
+         "domain": "disruptive.tech",
+         "amount": null
+        },
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "citi ventures",
+         "domain": "ventures.citi.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "hillspire",
+         "domain": "hillspirellc.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "crv",
+         "domain": "crv4all.co.nz",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Open-source AI",
+       "country": "USA",
+       "city": "Brooklyn",
+       "use_of_funds": "Expand research and development of large-scale AI models",
+       "source_sentence": "Reflection AI raised a colossal $2 billion in a Series B funding round at an $8 billion valuation.",
+       "published_at": "2025-10-09T21:48:39",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f71009017a8a94832bdeb4",
+        "68f72cd96ecd416e342c202d"
+       ],
+       "article_id": "68f72cd96ecd416e342c202d"
+      },
+      {
+       "id": "d51db494875dae69",
+       "company_name": "mistral ai",
+       "domain": "mistral.ai",
+       "round_type": "Series C",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ASML Holding NV",
+         "domain": null,
+         "amount": 1500000000.0
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "investment fuels our scientific research to keep pushing the frontier of AI",
+       "source_sentence": "French startup Mistral AI has secured USD 2bn (EUR 1.7bn) in a Series C round, bringing its valuation to USD 13.8bn, the company announced on September 9, 2025.",
+       "published_at": "2025-09-16T09:10:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a23f305071bc5a4ef1c21"
+       ],
+       "article_id": "698a23f305071bc5a4ef1c21"
+      },
+      {
+       "id": "f7162902d76b3cef",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series ?",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The generative AI company, which makes the popular chatbot Claude, is set to raise $2 billion in a new funding round led by venture capital firm Lightspeed Venture Partners, two sources with knowledge of those talks confirmed to Forbes on Wednesday.",
+       "published_at": "2025-08-23T18:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab40072e28036801cdbf4c"
+       ],
+       "article_id": "68ab40072e28036801cdbf4c"
+      },
+      {
+       "id": "924a4313fc87d5cd",
+       "company_name": "mistral ai",
+       "domain": "mistral.ai",
+       "round_type": "Series C",
+       "amount_usd": 1836000000.0000002,
+       "amount_flag": null,
+       "valuation_usd": 12636000000.0,
+       "currency": "EUR",
+       "amount": 1700000000.0,
+       "valuation": 11700000000.0,
+       "investors": [
+        {
+         "name": "asml",
+         "domain": "asml.com",
+         "amount": 1300000000.0
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "accelerate technological progress with AI",
+       "source_sentence": "We’ve raised €1.7B to accelerate technological progress with AI! This Series C funding round, led by @ASMLcompany, fuels Mistral AI scientific research to keep pushing the frontier of AI to tackle the most critical technological challenges faced by strategic industries.",
+       "published_at": "2025-09-09T10:16:25",
+       "coverage_count": 4,
+       "article_ids": [
+        "68d0e40950268142442b0893",
+        "68d990011645babb987eb522",
+        "68d9ae92c149d2bca77f5ac7",
+        "69bb2f3cb54f2a520bb5eda8"
+       ],
+       "article_id": "69bb2f3cb54f2a520bb5eda8"
+      },
+      {
+       "id": "4041b3aeb53c30e8",
+       "company_name": "Skild AI",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": 14000000000.0,
+       "investors": [
+        {
+         "name": "softbank group",
+         "domain": "global.softbank",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "macquarie capital",
+         "domain": "macquarie.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "lg",
+         "domain": "lg.com",
+         "amount": null
+        },
+        {
+         "name": "schneider electric",
+         "domain": "se.com",
+         "amount": null
+        },
+        {
+         "name": "commonspirit health",
+         "domain": "commonspirit.org",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics AI",
+       "country": "US",
+       "city": "Pittsburgh",
+       "use_of_funds": "Fund extensive model training and global deployments of the Skild Brain platform.",
+       "source_sentence": "Skild AI, a Pittsburgh-based robotics AI startup, secured a mammoth $1.4 billion funding round to accelerate development of its “omni-bodied” foundation model for robots.",
+       "published_at": "2026-01-14T21:40:01",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988ba4494d3f481f3d84b37",
+        "69bb40e2728db874955197e7"
+       ],
+       "article_id": "6988ba4494d3f481f3d84b37"
+      },
+      {
+       "id": "dacbf82c3342b892",
+       "company_name": "Skild AI",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": 14000000000.0,
+       "investors": [
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Jeff Bezos",
+         "domain": "https://www.linkedin.com/showcase/jeff-bezos-newslines",
+         "amount": null
+        },
+        {
+         "name": "Unnamed entities administered by Macquarie Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "disruptive",
+         "domain": "disruptive.tech",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "lg",
+         "domain": "lg.com",
+         "amount": null
+        },
+        {
+         "name": "schneider",
+         "domain": "schneider-om.com",
+         "amount": null
+        },
+        {
+         "name": "commonspirit",
+         "domain": "commonspirit.org",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "tf capital",
+         "domain": "tfcapital.co.uk",
+         "amount": null
+        },
+        {
+         "name": "andra capital",
+         "domain": "andracapital.com",
+         "amount": null
+        },
+        {
+         "name": "Palo Alto Growth Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kic",
+         "domain": "kicthermal.com",
+         "amount": null
+        },
+        {
+         "name": "Alpha Square",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "mirae asset",
+         "domain": "miraeasset.co.id",
+         "amount": null
+        },
+        {
+         "name": "destiny",
+         "domain": "destiny.xyz",
+         "amount": null
+        }
+       ],
+       "sector": "robotics AI",
+       "country": "USA",
+       "city": "Pittsburgh",
+       "use_of_funds": "The company will use the new capital to continue scaling its model training and grow the future deployment of its technology",
+       "source_sentence": "The East Liberty-based AI robotics startup Skild AI has raised $1.4 billion in fresh funding, boosting the company’s valuation to over $14 billion.",
+       "published_at": "2026-01-14T17:40:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "6986abb511e3205ec9929984",
+        "6986ca2c9438ce100b18d261",
+        "6988a73f4727a5abdc89b674",
+        "698fd6998d29a990b6040821",
+        "6991c0c7f9d81aa428e7bd2d",
+        "69c96523a5dd771f46a2a5bf",
+        "69cc39159d3d4bff9ce90bb2",
+        "69e84e967bb1410d4c67d89a"
+       ],
+       "article_id": "6986abb511e3205ec9929984"
+      },
+      {
+       "id": "7234624008480517",
+       "company_name": "Skild AI Inc.",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": 14000000000.0,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": 14000000000.0,
+       "investors": [
+        {
+         "name": "softbank group",
+         "domain": "global.softbank",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "macquarie group",
+         "domain": "macquarie.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "samsung electronics",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "LG Electronics",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "salesforce",
+         "domain": "salesforce.com",
+         "amount": null
+        }
+       ],
+       "sector": "robotics software",
+       "country": "USA",
+       "city": "Pittsburgh",
+       "use_of_funds": "expand deployment of its software, enhance training systems, and roll out robots across more environments",
+       "source_sentence": "Skild AI Inc., a rapidly growing robotics software startup, secures approximately $1.4 billion in a Series C funding round, valuing the company at more than $14 billion.",
+       "published_at": "2026-01-14T15:35:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc59411e8126b2deb45d6d"
+       ],
+       "article_id": "69cc59411e8126b2deb45d6d"
+      },
+      {
+       "id": "eda32696f077566c",
+       "company_name": "Ineffable Intelligence",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5100000000.0,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": 5100000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "David Silver has raised $1.1bn (£880m) for his London-based startup Ineffable Intelligence at a valuation of $5.1bn, in a round led by Sequoia Capital and Lightspeed Venture Partners, with backing from Nvidia, Google and Index Ventures.",
+       "published_at": "2026-04-27T15:29:32",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e308836d28f995cb6301",
+        "69f0e9f045272de32e8c69cd"
+       ],
+       "article_id": "69f0e308836d28f995cb6301"
+      },
+      {
+       "id": "f6bdc0dbac74ee7c",
+       "company_name": "physical intelligence",
+       "domain": "physicalintelligence.company",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "robotics, artificial intelligence",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Physical Intelligence, the two-year-old San Francisco robotics startup, is in discussions to raise about $1 billion in new funding at a valuation exceeding $11 billion, according to Bloomberg.",
+       "published_at": "2026-03-27T23:59:40",
+       "coverage_count": 6,
+       "article_ids": [
+        "69c8bffc1d51eeba947e838a",
+        "69c8c76e6156bd1776427f1c",
+        "69c8c76e6156bd1776427f1c",
+        "69d11a27749d973544444bff",
+        "69d14ccdd863c6b0966013d4",
+        "69e2b5dfd754bf662cdb22a9"
+       ],
+       "article_id": "69c8bffc1d51eeba947e838a"
+      },
+      {
+       "id": "2a5b27386b51b5a7",
+       "company_name": "base power",
+       "domain": "basepower.in",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "other new and existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Energy storage",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "Accelerate deployment of home battery systems and build a battery manufacturing factory",
+       "source_sentence": "Base Power, an Austin-based energy startup modernizing the U.S. power grid, has secured a whopping $1 billion in Series C funding to accelerate deployment of home battery systems nationwide.",
+       "published_at": "2025-10-08T22:06:50",
+       "coverage_count": 3,
+       "article_ids": [
+        "68f71009017a8a94832bdeb4",
+        "68f71268b5f4abc34a2c16e8",
+        "68f72cd96ecd416e342c202d"
+       ],
+       "article_id": "68f71268b5f4abc34a2c16e8"
+      },
+      {
+       "id": "c1fc635082e13224",
+       "company_name": "base power",
+       "domain": "basepower.in",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "ribbit",
+         "domain": "ribbit.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        }
+       ],
+       "sector": "Battery Storage",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "to turbocharge its home battery buildout",
+       "source_sentence": "The Austin-based startup, which had raised $200 million in April, is back with another $1 billion in funding.",
+       "published_at": "2025-10-08T17:02:03",
+       "coverage_count": 7,
+       "article_ids": [
+        "68f70882f80e5160742b277d",
+        "694af8b813240442ec75cae3",
+        "6983ecc7e67557fb855562bf",
+        "69897f7894d3f481f3e6927f",
+        "698e73cc9ca02490ec0e4e7d",
+        "69c8d5ff1d51eeba947f202a",
+        "69cbd55936f67c5f5aa68a8b"
+       ],
+       "article_id": "68f70882f80e5160742b277d"
+      },
+      {
+       "id": "724893e4bfa307da",
+       "company_name": "unconventional",
+       "domain": "unconventional.com",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "databricks",
+         "domain": "databricks.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI hardware",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to develop a new type of computer, a new substrate for intelligence",
+       "source_sentence": "Naveen Rao, who was formerly the head of artificial intelligence at Databricks, is in talks to raise $1 billion at a $5 billion valuation for a new startup called Unconventional, Inc., that’s building a new type of computer, according to four people familiar with discussions.",
+       "published_at": "2025-10-03T21:56:58",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f723e117f4f9d43d2b520b",
+        "69bb0099e7c8d3750e05446d"
+       ],
+       "article_id": "68f723e117f4f9d43d2b520b"
+      },
+      {
+       "id": "010746f99a629865",
+       "company_name": "mistral",
+       "domain": "mistralpubblicita.it",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "samsung venture investment",
+         "domain": "samsungventure.co.kr",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "bpi france",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "Xavier Niel",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "accelerate the commercial rollout of its chatbot, Le Chat, and further develop its large language models",
+       "source_sentence": "The company – which has been hailed as Europe’s AI champion and a potential rival to OpenAI and DeepSeek — is looking to raise $1 billion to accelerate the commercial rollout of its chatbot, Le Chat, and further develop its large language models",
+       "published_at": "2025-08-05T14:01:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9b02493ec9fed387f8621"
+       ],
+       "article_id": "68d9b02493ec9fed387f8621"
+      },
+      {
+       "id": "9971185da09045ff",
+       "company_name": "neuralink",
+       "domain": "neuralink.com",
+       "round_type": null,
+       "amount_usd": 650000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 650000000.0,
+       "valuation": 9700000000.0,
+       "investors": [
+        {
+         "name": "ARK Invest",
+         "domain": "ark-invest.com",
+         "amount": null
+        },
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "other firms",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "U.S.",
+       "city": null,
+       "use_of_funds": "help the company develop new devices and bring technology to more patients",
+       "source_sentence": "Elon Musk's brain tech startup Neuralink has closed a $650 million funding round.",
+       "published_at": "2025-06-02T10:17:14",
+       "coverage_count": 6,
+       "article_ids": [
+        "68640ff48882abb7e3d0e9e1",
+        "686410378882abb7e3e29bb6",
+        "68d94ff92e9612a96e10f25b",
+        "69bd0a45981d28529ed39e8f",
+        "69c3a4e583f93681eafea9c2",
+        "69dfb57fa8835284b041ad4a"
+       ],
+       "article_id": "68640ff48882abb7e3d0e9e1"
+      },
+      {
+       "id": "ef27d24ba9a7bfce",
+       "company_name": "temporal technologies",
+       "domain": "temporal.io",
+       "round_type": "Series D",
+       "amount_usd": 649500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 649500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "amplify partners",
+         "domain": "amplifypartners.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "madrona",
+         "domain": "madrona.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        }
+       ],
+       "sector": "Information Technology, Internet, Open Source, Software",
+       "country": "USA",
+       "city": "Bellevue",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "b1b89dcf9c156339",
+       "company_name": "mistral",
+       "domain": "mistralpubblicita.it",
+       "round_type": "Series B",
+       "amount_usd": 648000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "accelerate the commercial rollout of Mistral's Le Chat chatbot and support continued development of its large language models",
+       "source_sentence": "The startup raised 600 million euros in a Series B funding round that valued the company at 5.8 billion euros last year.",
+       "published_at": "2025-08-04T04:56:38",
+       "coverage_count": 2,
+       "article_ids": [
+        "68ab3fd02e28036801c549a6",
+        "68ab40cb2e28036801dceaae"
+       ],
+       "article_id": "68ab40cb2e28036801dceaae"
+      },
+      {
+       "id": "d909b31f0b16d9a1",
+       "company_name": "helsing",
+       "domain": "helsing.ai",
+       "round_type": "D-series",
+       "amount_usd": 648000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "prima materia",
+         "domain": "prima-materia.com",
+         "amount": null
+        },
+        {
+         "name": "Lightspeed Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "plural",
+         "domain": "plural.sh",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "saab",
+         "domain": "saab.com",
+         "amount": null
+        },
+        {
+         "name": "BTD & MSD Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Defence/AI",
+       "country": "Europe",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Helsing, European start-up specializing in embedded artificial intelligence (AI) for defence systems announced Tuesday that it had raised 600 million euros, a strategic step in the face of an increasing demand for digital sovereignty in Europe. This D-series fund-raising (very advanced stage) for the company that supplies drones attack to Ukraine was conducted by the investment company Prima Materia, with the participation of investors such as Lightspeed Ventures, Accel, Plural, General Catalyst, Saab, BTD & MSD Partners.",
+       "published_at": "2025-06-17T07:53:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c98136682ef7f3f76539f4",
+        "69cc439af038a023dcc3360f"
+       ],
+       "article_id": "69c98136682ef7f3f76539f4"
+      },
+      {
+       "id": "c19dc7f40a387444",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "Series E",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": 6000000000.0,
+       "currency": "USD",
+       "amount": 540000000.0,
+       "valuation": 6000000000.0,
+       "investors": [
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI data security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Continue expanding further",
+       "source_sentence": "Cyera ... announced their $540 million Series E round in December, doubling its valuation to $6 billion.",
+       "published_at": "2026-01-07T07:01:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e88e285cfa3e5ba50cd1bb"
+       ],
+       "article_id": "69e88e285cfa3e5ba50cd1bb"
+      },
+      {
+       "id": "4b64e4225b27a432",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "Series E",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 540000000.0,
+       "valuation": 6000000000.0,
+       "investors": [
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire ventures",
+         "domain": "sapphireventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand product offerings, pursue strategic acquisitions, hire additional talent, and further strengthen presence in existing and new global markets",
+       "source_sentence": "Cyera, which helps enterprises protect sensitive information while adopting artificial intelligence, has secured $540m in a Series E funding round.",
+       "published_at": "2025-06-12T10:30:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a21f94d3f481f3d6c903",
+        "698f9b648d29a990b6ffcae2"
+       ],
+       "article_id": "6988a21f94d3f481f3d6c903"
+      },
+      {
+       "id": "1ca863ac8fe4e87d",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "Series E",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 540000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "data security posture management platform",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Expand product suite and scale go-to-market partnerships",
+       "source_sentence": "Cybersecurity startup Cyera has closed a massive $540 million Series E round.",
+       "published_at": "2025-06-11T20:59:28",
+       "coverage_count": 3,
+       "article_ids": [
+        "68c5a10b209ed6c919c6b65a",
+        "68d1008aa66e20611a2cc45a",
+        "69e8622e9baafc73567bbc8e"
+       ],
+       "article_id": "68c5a10b209ed6c919c6b65a"
+      },
+      {
+       "id": "5acdcab8c009f746",
+       "company_name": "cyera",
+       "domain": "cyera.io",
+       "round_type": "late-stage",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 540000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "georgian",
+         "domain": "georgian.io",
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "cyberstarts",
+         "domain": "cyberstarts.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "sapphire",
+         "domain": "sapphiretechnologies.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "spark",
+         "domain": "sparkadvisors.com",
+         "amount": null
+        }
+       ],
+       "sector": "data security",
+       "country": "Israel",
+       "city": null,
+       "use_of_funds": "expand its platform and fuel growth efforts",
+       "source_sentence": "Cyera is on a tear. The Israeli data security startup just pulled in $540 million in a late-stage funding round, more than doubling its valuation to $6 billion in just seven months.",
+       "published_at": "2025-06-11T15:15:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9ae8f93ec9fed387f5c97"
+       ],
+       "article_id": "68d9ae8f93ec9fed387f5c97"
+      },
+      {
+       "id": "0d2e6db35ec14873",
+       "company_name": "Nexthop AI",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "emergent ventures",
+         "domain": "emergent.vc",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "US Innovative Technology Fund",
+         "domain": "usinnovativetechnologyfund.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Networking AI",
+       "country": "USA",
+       "city": "Santa Clara",
+       "use_of_funds": null,
+       "source_sentence": "Nexthop AI – $500.0M",
+       "published_at": "2026-03-16T08:27:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a4844e0667c07f278ba3"
+       ],
+       "article_id": "69c3a4844e0667c07f278ba3"
+      },
+      {
+       "id": "5a34b5347f7735ef",
+       "company_name": "Nexthop AI",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4200000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 4200000000.0,
+       "investors": [
+        {
+         "name": "a16z",
+         "domain": "a16z.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "emergent ventures",
+         "domain": "emergent.vc",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "U.S. Innovative Technology Fund",
+         "domain": "usinnovativetechnology.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI & Cloud Networking",
+       "country": "USA",
+       "city": "Santa Clara",
+       "use_of_funds": "accelerate the construction of efficient AI network infrastructure and launch three foundational network platforms",
+       "source_sentence": "AI infrastructure company Nexthop AI announced the completion of a $500 million oversubscribed Series B funding round, raising its valuation to approximately $4.2 billion.",
+       "published_at": "2026-03-11T09:31:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69c3a33783f93681eafea1f2",
+        "69d111261840dd4fe07c345d",
+        "69f2187bda8ae7be8d22170d"
+       ],
+       "article_id": "69f2187bda8ae7be8d22170d"
+      },
+      {
+       "id": "8908ea85270eadd2",
+       "company_name": "Nexthop AI",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4200000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 4200000000.0,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "altimeter capital",
+         "domain": "altimeter.com",
+         "amount": null
+        },
+        {
+         "name": "US Innovative Technology Fund",
+         "domain": "usinnovativetechnologyfund.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "westbridge capital",
+         "domain": "westbridgecap.com",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "emergent ventures",
+         "domain": "emergent.vc",
+         "amount": null
+        }
+       ],
+       "sector": "AI networking",
+       "country": "United States",
+       "city": "Santa Clara",
+       "use_of_funds": "Accelerate hypergrowth: expand product development, scale engineering and operations teams, enhance partnerships, and accelerate go-to-market activities",
+       "source_sentence": "Round Date Amount Raised Valuation Lead Investor(s) Key Participants Series B March 10, 2026 $500M $4.2B Lightspeed Venture Partners Andreessen Horowitz (major investor), Altimeter Capital, US Innovative Technology Fund, and all prior investors",
+       "published_at": "2026-03-11T08:00:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1b8d4ae0326ef5e88d6"
+       ],
+       "article_id": "69cbd1b8d4ae0326ef5e88d6"
+      },
+      {
+       "id": "1b25759f5874d5ac",
+       "company_name": "elevenlabs",
+       "domain": "elevenlabs.io",
+       "round_type": "Series D",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Voice AI & Multimodal AI",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "expand beyond voice, developing multimodal AI agents",
+       "source_sentence": "ElevenLabs ... raised $500 million in a Series D round led by Sequoia Capital at an $11 billion valuation.",
+       "published_at": "2026-02-04T23:35:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "6986a952ca3bd326c77cffbf",
+        "69bd8f9c0ad23ae1115329db"
+       ],
+       "article_id": "6986a952ca3bd326c77cffbf"
+      },
+      {
+       "id": "5c021a219bf70a02",
+       "company_name": "elevenlabs",
+       "domain": "elevenlabs.io",
+       "round_type": "D-series",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz (a16z)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "artificial intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "global expansion and the advancement of artificial intelligence solutions conversational and voice agents",
+       "source_sentence": "ElevenLabs received a $500 million D-series round.",
+       "published_at": "2026-02-04T20:11:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bae73968bf20e367f69162"
+       ],
+       "article_id": "69bae73968bf20e367f69162"
+      },
+      {
+       "id": "7290a4e30bac2bb9",
+       "company_name": "elevenlabs",
+       "domain": "elevenlabs.io",
+       "round_type": "D series",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "a16z",
+         "domain": "a16z.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bond",
+         "domain": "bondbl.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial intelligence-specialized audio company",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "the artificial intelligence-specialized audio company ElevenLabs has completed a financing round of the D series of over $500 million and is now valued at $11 billion.",
+       "published_at": "2026-02-04T14:52:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "6985ec5b069c05cbe278e222"
+       ],
+       "article_id": "6985ec5b069c05cbe278e222"
+      },
+      {
+       "id": "665a09146bcc2cd6",
+       "company_name": "Unconventional AI",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 475000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4500000000.0,
+       "currency": "USD",
+       "amount": 475000000.0,
+       "valuation": 4500000000.0,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "High Tech, Native AI, Semiconductors",
+       "country": "United States",
+       "city": "San Diego",
+       "use_of_funds": "extensive prototyping of multiple computing architectures",
+       "source_sentence": "Unconventional AI has raised $475M in funding from Lightspeed Venture Partners and Andreessen Horowitz , with a current valuation of $4.5B .",
+       "published_at": "2025-12-09T11:51:38",
+       "coverage_count": 6,
+       "article_ids": [
+        "69453b856b368d3859a33e3f",
+        "694dec8833568e6550f30625",
+        "69888a6e34d0159e4e74df5f",
+        "69e866617bb1410d4c762685",
+        "69e88e285cfa3e5ba50cd1bb",
+        "69e89e179baafc7356a4ea5f"
+       ],
+       "article_id": "69e89e179baafc7356a4ea5f"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 350,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTItMDkgMTE6NTE6MzgiLCJrIjoiNzM3NTIxNzMyMzA4NTE0NzM1MCIsImEiOjQ3NTAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 350,
+      "deals_with_amount": 333,
+      "deals_without_amount": 17,
+      "deals_amount_excluded": 3,
+      "sum_amount_usd": 71923249200.0,
+      "median_amount_usd": 55000000.0,
+      "largest_amount_usd": 20000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.387,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.391
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Lightspeed",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "lightspeed"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "db0269d2f4735bb5",
+       "company_name": "coral",
+       "domain": "getcoral.app",
+       "round_type": "investment",
+       "amount_usd": 12500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The company announced a $12.5 million investment led by Lightspeed and Z47.",
+       "published_at": "2026-04-30T15:32:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f885dbbbf1d31455998969"
+       ],
+       "article_id": "69f885dbbbf1d31455998969"
+      },
+      {
+       "id": "a76602573de546d8",
+       "company_name": "Oolka",
+       "domain": "oolka.in",
+       "round_type": "Series A",
+       "amount_usd": 14000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        },
+        {
+         "name": "Vidit Aatrey",
+         "domain": "https://www.linkedin.com/in/vidit-aatrey-a3639120",
+         "amount": null
+        },
+        {
+         "name": "Sanjeev Barnwal",
+         "domain": "https://www.linkedin.com/in/sanjeev-barnwal-4099341b",
+         "amount": null
+        }
+       ],
+       "sector": "Digital Payments",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen AI engineering capabilities, expand product beyond credit use cases, and deepen partnerships with banks and NBFCs",
+       "source_sentence": "Oolka has raised $14 million in a Series A funding round led by Accel, with participation from existing investors Lightspeed and Z47.",
+       "published_at": "2026-04-30T04:26:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f882a6bbf1d3145597845a",
+        "69f9da3c7b2d589e844eed2c"
+       ],
+       "article_id": "69f882a6bbf1d3145597845a"
+      },
+      {
+       "id": "207961ed9edc41d9",
+       "company_name": "Zocks Communications",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rfg advisory",
+         "domain": "rfgadvisory.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "qed investors",
+         "domain": "qedinvestors.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI assistant, notetaker, meeting automation application for financial advisors",
+       "country": "USA",
+       "city": "Birmingham",
+       "use_of_funds": "Expand agentic AI capabilities and help financial advisors identify insights and planning opportunities across their client base",
+       "source_sentence": "Zocks announced its Series B funding in January, raising $45 million...",
+       "published_at": "2026-04-28T10:00:02",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f0e9dc45272de32e8c6711",
+        "69f9db2ea088760d34c3c452",
+        "6a04078a220687a966aabdfc"
+       ],
+       "article_id": "69f0e9dc45272de32e8c6711"
+      },
+      {
+       "id": "e7fe4708aeb78d31",
+       "company_name": "Snabbit",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 56000000.0,
+       "amount_flag": null,
+       "valuation_usd": 350000000.0,
+       "currency": "USD",
+       "amount": 56000000.0,
+       "valuation": 350000000.0,
+       "investors": [
+        {
+         "name": "Susquehanna Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mirae Asset Venture Investments’ Unicorn Growth Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bertelsmann india investments",
+         "domain": "biifund.com",
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "fj labs",
+         "domain": "fjlabs.com",
+         "amount": null
+        }
+       ],
+       "sector": "On-demand home services",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "extend the runway, deepen its presence and expand into new service categories",
+       "source_sentence": "Snabbit, an Indian on-demand home services startup, has closed a $56 million funding round, confirming TechCrunch’s earlier report.",
+       "published_at": "2026-04-28T03:30:00",
+       "coverage_count": 13,
+       "article_ids": [
+        "69f0e1ab45272de32e8bdfce",
+        "69f0e1bf836d28f995cb4b41",
+        "69f0e273836d28f995cb579c",
+        "69f0e58445272de32e8c2287",
+        "69f0e5eb45272de32e8c2b16",
+        "69f0e69645272de32e8c376a",
+        "69f0e86fd32561089420cf8d",
+        "69f0e88745272de32e8c5339",
+        "69f0ea9f836d28f995cbd9b2",
+        "69f1c82b1e3933a6dd8e687c",
+        "69f1cf25399b489398e25bc1",
+        "69f8807fbbf1d31455964d20",
+        "69f884a343843dd771d0c7ea"
+       ],
+       "article_id": "69f0e273836d28f995cb579c"
+      },
+      {
+       "id": "b91b686280567906",
+       "company_name": "Snabbit",
+       "domain": null,
+       "round_type": "Series D",
+       "amount_usd": 56000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 56000000.0,
+       "valuation": 350000000.0,
+       "investors": [
+        {
+         "name": "bertelsmann india investments",
+         "domain": "biifund.com",
+         "amount": null
+        },
+        {
+         "name": "Susquehanna Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mirae Asset Venture Investments' Unicorn Growth Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "fj labs",
+         "domain": "fjlabs.com",
+         "amount": null
+        }
+       ],
+       "sector": "home services",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Expanding into new cities while deepening density and leadership in existing markets; Scaling additional high-frequency service categories with proven product-market fit; Strengthening the balance sheet to ensure long-term runway and disciplined capital allocation.",
+       "source_sentence": "Snabbit, India's fastest-growing quick home services platform, today announced a $56 million Series D round co-led by Bertelsmann India Investments, which is doubling down on its investment in the company, along with Susquehanna Venture Capital and Mirae Asset Venture Investments' Unicorn Growth Fund.",
+       "published_at": "2026-04-28T00:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "69f0e27b45272de32e8befb2",
+        "69f0e57d836d28f995cb8e4c",
+        "69f1ca42a5706a322e10bf25",
+        "69f1cc0c399b489398e0c078",
+        "69f22d81c6105443aa5d96e3",
+        "6a040e37220687a966adcc60"
+       ],
+       "article_id": "69f1ca42a5706a322e10bf25"
+      },
+      {
+       "id": "eda32696f077566c",
+       "company_name": "Ineffable Intelligence",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5100000000.0,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": 5100000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "David Silver has raised $1.1bn (£880m) for his London-based startup Ineffable Intelligence at a valuation of $5.1bn, in a round led by Sequoia Capital and Lightspeed Venture Partners, with backing from Nvidia, Google and Index Ventures.",
+       "published_at": "2026-04-27T15:29:32",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e308836d28f995cb6301",
+        "69f0e9f045272de32e8c69cd"
+       ],
+       "article_id": "69f0e308836d28f995cb6301"
+      },
+      {
+       "id": "529a0b9866be7812",
+       "company_name": "Snabbit",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": 400000000.0,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": 400000000.0,
+       "investors": [
+        {
+         "name": "Susquehanna Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "mirae asset",
+         "domain": "miraeasset.co.id",
+         "amount": null
+        },
+        {
+         "name": "fj labs",
+         "domain": "fjlabs.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "bertelsmann india investments",
+         "domain": "biifund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Instant house-help",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Scale operations, enhance worker training, capture market share in urban India",
+       "source_sentence": "The Bengaluru-based startup is in talks to raise around $50 million in the round, according to three people with knowledge of the deal.",
+       "published_at": "2026-04-25T14:57:26",
+       "coverage_count": 4,
+       "article_ids": [
+        "69efa9858a54b8f07c9568c4",
+        "69efaa698a54b8f07c9614d2",
+        "69efaab1a84b609af2b2ead6",
+        "69efac11727212302c60095b"
+       ],
+       "article_id": "69efaab1a84b609af2b2ead6"
+      },
+      {
+       "id": "946fe5a557b41837",
+       "company_name": "coral",
+       "domain": "getcoral.app",
+       "round_type": "Seed",
+       "amount_usd": 12500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        }
+       ],
+       "sector": "Health care automation",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": null,
+       "source_sentence": "Coral, a health care automation company, announced a $12.5 million investment led by Lightspeed and Z47.",
+       "published_at": "2026-04-25T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efab93727212302c5f9eb2"
+       ],
+       "article_id": "69efab93727212302c5f9eb2"
+      },
+      {
+       "id": "f062c3bf4f3a223c",
+       "company_name": "Oolka",
+       "domain": "oolka.in",
+       "round_type": "Series A",
+       "amount_usd": 15600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        },
+        {
+         "name": "Meesho founders",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fintech / AI",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand engineering and product teams, build AI-native credit tools, and enhance user experience through hyper-personalisation.",
+       "source_sentence": "Oolka Raises ₹130 Cr Series A Oolka, an AI-powered credit management platform, has raised INR 130 crore (~$14 million) in a Series A round led by Accel, with participation from Lightspeed, Z47, and the co-founders of Meesho.",
+       "published_at": "2026-04-24T11:41:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e563d32561089420a0cc"
+       ],
+       "article_id": "69f0e563d32561089420a0cc"
+      },
+      {
+       "id": "a181dd92939737b8",
+       "company_name": "reliable robotics",
+       "domain": "reliable.co",
+       "round_type": null,
+       "amount_usd": 160000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 160000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nimble partners",
+         "domain": "nimblepartners.vc",
+         "amount": null
+        },
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "pathbreaker ventures",
+         "domain": "pathbreakervc.com",
+         "amount": null
+        },
+        {
+         "name": "Island Green Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cox enterprises",
+         "domain": "coxenterprises.com",
+         "amount": null
+        },
+        {
+         "name": "ae ventures",
+         "domain": "ae-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "RTX Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "presidio ventures",
+         "domain": "presidio-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "UP.Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "KAS Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "what if ventures",
+         "domain": "whatif.vc",
+         "amount": null
+        },
+        {
+         "name": "calm ventures",
+         "domain": "calmventures.com",
+         "amount": null
+        },
+        {
+         "name": "gaingels",
+         "domain": "gaingels.com",
+         "amount": null
+        },
+        {
+         "name": "mana ventures",
+         "domain": "manaventures.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Aviation",
+       "country": "United States",
+       "city": "Mountain View",
+       "use_of_funds": "accelerate deployment and scale production of the Reliable Autonomy System (RAS)",
+       "source_sentence": "today announced $160M in new funding to accelerate deployment and scale production of the Reliable Autonomy System (RAS) – the first Federal Aviation Administration (FAA) certifiable system enabling fully automated operation of an aircraft.",
+       "published_at": "2026-04-23T10:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69ea379c8266d9339996ac00",
+        "69f1cbed399b489398e0b4a3"
+       ],
+       "article_id": "69ea379c8266d9339996ac00"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 156,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjMgMTA6MDA6MDAiLCJrIjoiMTE2Mzc4MjY1MzM3MTMxOTY5ODQifQ",
+     "totals": {
+      "deals": 156,
+      "deals_with_amount": 149,
+      "deals_without_amount": 7,
+      "deals_amount_excluded": 3,
+      "sum_amount_usd": 34416816000.0,
+      "median_amount_usd": 56000000.0,
+      "largest_amount_usd": 20000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.243,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.259
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,806 @@
+{
+ "slug": "sme-ipo",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:22Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "ipo"
+     ],
+     "q": "SME",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "sme",
+      "match": "any",
+      "event_type": [
+       "ipo"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 16,
+       "by_type": {
+        "ipo": 16
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 18,
+       "by_type": {
+        "ipo": 18
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 29,
+       "by_type": {
+        "ipo": 29
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 18,
+       "by_type": {
+        "ipo": 18
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 26,
+       "by_type": {
+        "ipo": 26
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 22,
+       "by_type": {
+        "ipo": 22
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "ipo": 5
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "ipo": 12
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 17,
+       "by_type": {
+        "ipo": 17
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 8,
+       "by_type": {
+        "ipo": 8
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "ipo": 12
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "ipo": 3
+       }
+      }
+     ],
+     "totals": {
+      "events": 186,
+      "articles": 166,
+      "companies": 111,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "ipo": 186
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.085,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.088
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "ipo"
+     ],
+     "q": "SME",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "sme",
+      "event_type": [
+       "ipo"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69ea37a48266d9339996ac6f",
+       "headline": "Leapfrog Engineering Services Limited has announced its plan to raise funds through an Initial Public Offering (IPO) on the BSE SME platform.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "lesgroup.in",
+       "published_at": "2026-04-23T15:07:30",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e9af95d47fc028321d991a",
+       "headline": "Leapfrog Engineering Services Limited has announced its plan to raise funds through an Initial Public Offering (IPO) on the BSE SME platform.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "lesgroup.in",
+       "published_at": "2026-04-23T04:55:12",
+       "url": "https://www.aninews.in/news/business/leapfrog-engineering-services-limited-plans-sme-ipo-signals-expansion-push20260423102512",
+       "publisher": "aninews.in",
+       "title": "Leapfrog Engineering Services Limited Plans SME IPO, Signals Expansion Push"
+      },
+      {
+       "id": "69e1e885f7b7ddc2fcdfa87e",
+       "headline": "Premier Roadlines shares list at 30% premium on the NSE SME platform, debuting at Rs 87.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "prlindia.com",
+       "published_at": "2026-04-17T00:00:00",
+       "url": "https://economictimes.indiatimes.com/premier-roadlines-ltd/stocksupdate/companyid-2199024.cms",
+       "publisher": "economictimes.indiatimes.com",
+       "title": "Premier Roadlines  News - Premier Roadlines  Announcement, Latest News on Premier Roadlines  - The Economic Times"
+      },
+      {
+       "id": "69d14f5ee40098589ef11e39",
+       "headline": "Monomark Engineering IPO open date is 2026 and the IPO will close on 2026. Monomark Engineering IPO is a Bookbuilding IPO Issue. The company to raise around [.] crores via IPO that comprises fresh issue of ₹[.] crores and offer for sale up to equity shares with face value of ₹10 each. Monomark Engineering IPO price band is [.] per share. The retail quota is 35%, QIB is 50%, and HNI is 15%. Monomark Engineering IPO to list on BSE SME on 2026. The allotment of Monomark Engineering IPO date is 2026. The company reported revenue of ₹477.29 crores in 2025 against ₹392.14 crores in 2024. The company reported profit of ₹18.21 crores in 2025 against profit of ₹14.83 crores in 2024. As per the financials the IPO investors should apply the IPO for a long term.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "monomark.co.in",
+       "published_at": "2026-03-31T08:53:17",
+       "url": "https://ipowatch.in/monomark-engineering-ipo-date-review-price-allotment-details/",
+       "publisher": "ipowatch.in",
+       "title": "Monomark Engineering IPO Date, Review, Price, Allotment Details - IPO Watch"
+      },
+      {
+       "id": "69e2adb5601121844c3881a7",
+       "headline": "The SME initial public offer (IPO) of Emiac Technologies Limited will open for bidding on Friday and close on Wednesday, April 8.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "emiactech.com",
+       "published_at": "2026-03-27T02:01:00",
+       "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/rs-32-crore-sme-ipo-of-emiac-technologies-opens-today-check-price-band-gmp-other-details/articleshow/129837083.cms",
+       "publisher": "economictimes.indiatimes.com",
+       "title": "Rs 32 crore SME IPO of Emiac Technologies opens today - check price band, GMP, other details"
+      },
+      {
+       "id": "69f9db81713680636ef13a3c",
+       "headline": "The SME initial public offer (IPO) of Vivid Electromech opened for bidding on Wednesday and will close on Monday March 30.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "vividgroup.in",
+       "published_at": "2026-03-25T08:32:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e887907bb1410d4c8b89dc",
+       "headline": "Explore how Tipco Engineering India Ltd.’s IPO performed during its subscription period, including investor participation on Day 1, price band details, key dates, and how to apply through ASBA or UPI. The Tipco Engineering India Ltd. IPO opened for subscription on March 23, 2026, marking the company’s entry into the SME segment of the Indian stock market. The company operates in the engineering and industrial solutions space, catering to infrastructure and project-based requirements. The IPO is a book-built issue with a price band of ₹84 to ₹89 per share, aiming to raise approximately ₹60.55 crore. On its opening day, the issue saw limited visible participation, with subscription figures yet to build momentum.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "tipcoengineering.com",
+       "published_at": "2026-03-24T23:38:04",
+       "url": "https://www.bajajfinservmarkets.in/discover/tipco-engineering-india-ipo-subscription-status",
+       "publisher": "bajajfinservmarkets.in",
+       "title": "Explore how Tipco Engineering India Ltd.’s IPO performed during its subscription period, including investor participation on Day 1, price band details, key dates, and how to apply through ASBA or UPI. The Tipco Engineering India Ltd. IPO opened for subscription on March 23, 2026, marking the company"
+      },
+      {
+       "id": "69cbd4e9d4ae0326ef5eb1d1",
+       "headline": "Tipco Engineering India Limited, an integrated engineering powerhouse based in Mumbai, is set to launch its Initial Public Offering (IPO) on March 23, 2026. This strategic move aims to raise ₹60.55 crores, with plans to list the shares on the BSE SME platform.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "tipcoengineering.com",
+       "published_at": "2026-03-23T12:37:19",
+       "url": "https://www.devdiscourse.com/article/business/3847420-tipco-engineerings-strategic-ipo-a-new-era-of-growth",
+       "publisher": "devdiscourse.com",
+       "title": "Tipco Engineering's Strategic IPO: A New Era of Growth | Business"
+      },
+      {
+       "id": "69e2e1f490d9a716b4cba8f6",
+       "headline": "Digital advertising agency Liqvd Asia, after submitting its DRHP in late 2025, received regulatory approval in early 2026 for its SME listing.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "liqvd.asia",
+       "published_at": "2026-03-23T03:43:10",
+       "url": "http://www.storyboard18.com/advertising/ipo-wave-hits-digital-ad-agencies-as-indies-choose-scale-over-sellouts-92883.htm",
+       "publisher": "storyboard18.com",
+       "title": "IPO wave hits digital ad agencies as indies choose scale over sellouts"
+      },
+      {
+       "id": "69f9d756a088760d34c0f4b6",
+       "headline": "Speciality Medicines, engaged in the marketing and distribution of speciality pharmaceutical products across multiple therapeutic areas, plans to raise ₹29 crore through an initial public offering on BSE SME platform.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "specialitymedicine.com",
+       "published_at": "2026-03-17T09:50:05",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69cc3e74856d39d4c91cf696",
+       "headline": "Novus Loyalty Limited will launch its IPO on March 17, with the issue closing on March 20. The SME IPO has a price band of Rs 139 to Rs 146 per share and aims to raise around Rs 60.15 crore.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "novusloyalty.com",
+       "published_at": "2026-03-14T06:08:00",
+       "url": "https://economictimes.indiatimes.com/markets/ipos/fpos/ipo-calendar-coal-india-subsidiary-among-3-ipos-scheduled-for-next-week/articleshow/129569743.cms",
+       "publisher": "economictimes.indiatimes.com",
+       "title": "IPO Calendar: Coal India subsidiary among 3 IPOs scheduled for next week"
+      },
+      {
+       "id": "69e297fd277be6ed2d9923e7",
+       "headline": "The ₹60.15 crore SME issue of Novus Loyalty is a mix of a fresh issue worth ₹48.18 crore and an OFS of ₹11.97 crore by Deepak Tomar and Sweta Singh. The IPO, which has set a price band of ₹139 to ₹146 per share, is open from March 17 to March 20. The funds raised will be used for upgrading existing products and developing new products, business development and marketing activities and general corporate purposes.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "novusloyalty.com",
+       "published_at": "2026-03-13T06:25:18",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69c41b892b0bad5fde263616",
+       "headline": "Shares of Mobilise App Lab are set to list on the NSE SME platform on March 2, with the grey market premium currently at around 5% over the issue price of Rs 80.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "mobilise.co.in",
+       "published_at": "2026-03-02T01:55:00",
+       "url": "https://economictimes.indiatimes.com/markets/stocks/news/mobilise-app-shares-to-debut-on-nse-sme-today-gmp-indicates-positive-listing/articleshow/128933334.cms",
+       "publisher": "economictimes.indiatimes.com",
+       "title": "Mobilise App shares to debut on NSE SME today. GMP indicates positive listing"
+      },
+      {
+       "id": "69bcc287b34e503b1de14907",
+       "headline": "Yaap Digital IPO: SME, lists on NSE SME, tentative listing 5 March 2026.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "yaap.in",
+       "published_at": "2026-03-01T11:40:28",
+       "url": "https://www.timesnownews.com/business-economy/markets/ipo-rush-next-week-three-new-issues-and-eight-listings-set-to-shake-the-market-article-153726714",
+       "publisher": "timesnownews.com",
+       "title": "IPO Rush Next Week: Three New Issues And Eight Listings Set To Shake The Market"
+      },
+      {
+       "id": "69ca3736288a36c0c7bdccfa",
+       "headline": "The company of the SME segment is bringing Elfin Agro India its public issue on March 5. Investors will be able to apply till March 9. The company is trying to raise Rs 25.03 crore through IPO.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "elfinagroindia.com",
+       "published_at": "2026-03-01T07:53:13",
+       "url": "https://www.abplive.com/business/ipo/indian-stock-market-upcoming-ipo-march-2026-price-band-gmp-know-the-details-3095993",
+       "publisher": "abplive.com",
+       "title": "निवेशकों के लिए मौका! मार्च के पहले हफ्ते में 3 कंपनियां ला रही हैं पब्लिक इश्यू; जानिए प्राइस"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 40,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMDEgMDc6NTM6MTMiLCJpIjoiNjljYTM3MzYyODhhMzZjMGM3YmRjY2ZhIiwiZG0iOiJlbGZpbmFncm9pbmRpYS5jb20iLCJldCI6ImlwbyIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "ipo": 40
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.498,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 4 event(s)"
+     ],
+     "request_seconds": 4.5
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "ipo"
+     ],
+     "q": "SME",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "sme",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "ipo"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 95,
+     "carrying": 95,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 7,
+       "share": 7.37
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 29,
+       "share": 30.53
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 9,
+       "share": 9.47
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 50,
+       "share": 52.63
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 7,
+       "share": 7.37
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 88,
+       "share": 92.63
+      }
+     ],
+     "negative_to_positive_ratio": 0.08,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.11,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 31,
+       "negative": 2,
+       "neutral": 0,
+       "positive": 29,
+       "negative_share": 6.45,
+       "positive_share": 93.55,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 0,
+        "slight_pos": 9,
+        "fair_pos": 5,
+        "very_pos": 15,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 17,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 16,
+       "negative_share": 5.88,
+       "positive_share": 94.12,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 6,
+        "fair_pos": 3,
+        "very_pos": 7,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 34,
+       "negative": 4,
+       "neutral": 0,
+       "positive": 30,
+       "negative_share": 11.76,
+       "positive_share": 88.24,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 4,
+        "none": 0,
+        "slight_pos": 10,
+        "fair_pos": 0,
+        "very_pos": 20,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 13,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 13,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 4,
+        "fair_pos": 1,
+        "very_pos": 8,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.025,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.032
+    }
+   }
+  }
+ ]
+}

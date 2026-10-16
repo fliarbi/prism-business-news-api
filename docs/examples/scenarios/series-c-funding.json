@@ -1,0 +1,2926 @@
+{
+ "slug": "series-c-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:15Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "round_type": "series c",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "round_type": [
+       "series c"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 817,
+      "deals_with_amount": 767,
+      "deals_without_amount": 50,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 104851646400.0,
+      "median_amount_usd": 70000000.0,
+      "largest_amount_usd": 13000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 52,
+       "deals_with_amount": 51,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2763560000.0,
+       "median_amount_usd": 41000000.0,
+       "largest_amount_usd": 350000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 66,
+       "deals_with_amount": 60,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4757380000.0,
+       "median_amount_usd": 63000000.0,
+       "largest_amount_usd": 900000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 48,
+       "deals_with_amount": 44,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3176008400.0,
+       "median_amount_usd": 64000000.0,
+       "largest_amount_usd": 260000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 68,
+       "deals_with_amount": 64,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5770120000.0,
+       "median_amount_usd": 55000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 81,
+       "deals_with_amount": 77,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 26727610000.0,
+       "median_amount_usd": 84240000.0,
+       "largest_amount_usd": 13000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 85,
+       "deals_with_amount": 80,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 10372656000.0,
+       "median_amount_usd": 77500000.0,
+       "largest_amount_usd": 1800000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 56,
+       "deals_with_amount": 54,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 7992588000.0,
+       "median_amount_usd": 115000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 53,
+       "deals_with_amount": 50,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5102220000.0,
+       "median_amount_usd": 35000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 87,
+       "deals_with_amount": 84,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 18621764000.0,
+       "median_amount_usd": 75000000.0,
+       "largest_amount_usd": 3000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 66,
+       "deals_with_amount": 63,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 9166156000.0,
+       "median_amount_usd": 96000000.0,
+       "largest_amount_usd": 1400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 81,
+       "deals_with_amount": 74,
+       "deals_without_amount": 7,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 9949184000.0,
+       "median_amount_usd": 80000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 74,
+       "deals_with_amount": 66,
+       "deals_without_amount": 8,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 7432800000.0,
+       "median_amount_usd": 80000000.0,
+       "largest_amount_usd": 1500000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.06,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.067
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "series c",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "round_type": [
+       "series c"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "792db899137442b1",
+       "company_name": "anthropic",
+       "domain": "anthropic.com",
+       "round_type": "Series C (or unspecified)",
+       "amount_usd": 13000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "iconiq capital",
+         "domain": "iconiqcapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Iconiq Capital, Lightspeed, and Fidelity led the round, with Qatar Investment Authority participating after CEO reversed stance on Middle Eastern funding. The four-year-old San Francisco-based AI startup raised $13 billion in one of the largest venture rounds ever (TechCrunch). Singapore’s GIC jumped in. So did Qatar Investment Authority.",
+       "published_at": "2025-09-02T21:12:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84c2b7bb1410d4c664fde"
+       ],
+       "article_id": "69e84c2b7bb1410d4c664fde"
+      },
+      {
+       "id": "cb48a355e5526c2b",
+       "company_name": "QXO",
+       "domain": null,
+       "round_type": "Series C convertible perpetual preferred stock",
+       "amount_usd": 3000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apollo global management",
+         "domain": "apollo.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "building-products distribution",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "purchasing preferred shares to fund acquisitions",
+       "source_sentence": "QXO has expanded its previously announced financing to $3 billion, increasing its capacity to pursue acquisitions as it targets consolidation opportunities in the building-products distribution sector.",
+       "published_at": "2026-01-13T17:48:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc217a06529d470d42bc10"
+       ],
+       "article_id": "69bc217a06529d470d42bc10"
+      },
+      {
+       "id": "3d73f3b4aac740e8",
+       "company_name": "Nscale",
+       "domain": "nscale.com",
+       "round_type": "Series C",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 14600000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 14600000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Nscale , a London-based provider of AI infrastructure and cloud platforms, has raised $2 billion in Series C funding, valuing the company at $14.6 billion.",
+       "published_at": "2026-03-14T06:38:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd23936f67c5f5aa6638b"
+       ],
+       "article_id": "69cbd23936f67c5f5aa6638b"
+      },
+      {
+       "id": "2ce26d37de7bb2ec",
+       "company_name": "Nscale",
+       "domain": "nscale.com",
+       "round_type": "Series C",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 14600000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 14600000000.0,
+       "investors": [
+        {
+         "name": "aker asa",
+         "domain": "akerasa.com",
+         "amount": null
+        },
+        {
+         "name": "8090 Industries",
+         "domain": "8090industries.com",
+         "amount": null
+        },
+        {
+         "name": "astra capital management",
+         "domain": "astracapitalmgmt.com",
+         "amount": null
+        },
+        {
+         "name": "citadel",
+         "domain": "citadelbanking.com",
+         "amount": null
+        },
+        {
+         "name": "dell",
+         "domain": "dell.com",
+         "amount": null
+        },
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        },
+        {
+         "name": "lenovo",
+         "domain": "lenovo.com",
+         "amount": null
+        },
+        {
+         "name": "linden advisors",
+         "domain": "lindenadvisors.com",
+         "amount": null
+        },
+        {
+         "name": "nokia",
+         "domain": "nokia.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "point72",
+         "domain": "point72.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "Accelerating Nscale's global development of vertically integrated AI infrastructure, including GPU compute, networking, data services, and orchestration software.",
+       "source_sentence": "U.K.- based AI infrastructure hyperscaler Nscale today announced its $2 billion in Series C funding, led by Aker ASA and 8090 Industries. This round values Nscale at $14.6 billion.",
+       "published_at": "2026-03-09T08:02:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "69c3a478e36c3064e455d011",
+        "69c8be0111792db0641e3b22",
+        "69e854375cfa3e5ba5e8b374",
+        "69e8b6707bb1410d4cb04c17",
+        "69e8ba787bb1410d4cb3aa8a",
+        "69efab14a84b609af2b33659"
+       ],
+       "article_id": "69e8ba787bb1410d4cb3aa8a"
+      },
+      {
+       "id": "39939f93df07e5a8",
+       "company_name": "dayone",
+       "domain": "dayoneny.org",
+       "round_type": "Series C",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Coatue Management",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "Indonesia Investment Authority",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Data Centre & Hyperscale Infrastructure",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "Advance DayOne’s Finland business and support growth across Singapore, Malaysia, Indonesia, Thailand, Japan and Hong Kong",
+       "source_sentence": "DayOne, the overseas arm of Shanghai-based GDS Holdings, has won the backing of Indonesia’s sovereign wealth fund as part of a Series C round that raised $2 billion in equity for the data centre operator.",
+       "published_at": "2026-01-06T16:16:04",
+       "coverage_count": 4,
+       "article_ids": [
+        "698d64568d29a990b6d5a921",
+        "69bc10fbde89f3fa1c9a82a9",
+        "69e8d4205cfa3e5ba543e526",
+        "69e99cdfbdd09a23d092d606"
+       ],
+       "article_id": "69bc10fbde89f3fa1c9a82a9"
+      },
+      {
+       "id": "794356df996546d3",
+       "company_name": "DayOne Data Centers",
+       "domain": null,
+       "round_type": "Series C equity financing",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "Indonesia Investment Authority (INA)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Data Centers",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "Accelerate next phase of global expansion, support development of Finland platform and expansion across Asia‑Pacific markets.",
+       "source_sentence": "DayOne Data Centers, a Singapore-headquartered hyperscale data center platform, announced Monday that it has entered into definitive agreements for over $2 billion dollar Series C equity financing.",
+       "published_at": "2026-01-06T06:37:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d89b49ca02490ecfce5c4"
+       ],
+       "article_id": "698d89b49ca02490ecfce5c4"
+      },
+      {
+       "id": "2ca9631ac55f3932",
+       "company_name": "DayOne Data Centers",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 10000000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "boyu capital",
+         "domain": "boyucapital.com",
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "Hillhouse Investment",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "softbank vision fund",
+         "domain": "visionfund.com",
+         "amount": null
+        },
+        {
+         "name": "citadel",
+         "domain": "citadelbanking.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data Centres",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "help support its expansion in international markets",
+       "source_sentence": "– DayOne Data Centers is in advanced talks to raise more than US$2 billion (S$2.6 billion) in an upsized Series C funding round to help support its expansion in international markets, according to people familiar with the matter.",
+       "published_at": "2025-12-05T05:08:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "698e643d8d29a990b6e884a7",
+        "69bc5b7d8bf856b24617aaab"
+       ],
+       "article_id": "698e643d8d29a990b6e884a7"
+      },
+      {
+       "id": "d51db494875dae69",
+       "company_name": "mistral ai",
+       "domain": "mistral.ai",
+       "round_type": "Series C",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ASML Holding NV",
+         "domain": null,
+         "amount": 1500000000.0
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "investment fuels our scientific research to keep pushing the frontier of AI",
+       "source_sentence": "French startup Mistral AI has secured USD 2bn (EUR 1.7bn) in a Series C round, bringing its valuation to USD 13.8bn, the company announced on September 9, 2025.",
+       "published_at": "2025-09-16T09:10:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a23f305071bc5a4ef1c21"
+       ],
+       "article_id": "698a23f305071bc5a4ef1c21"
+      },
+      {
+       "id": "332368fcbaff8227",
+       "company_name": "mistral ai",
+       "domain": "mistral.ai",
+       "round_type": "Series C",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1700000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 1700000000.0,
+       "investors": [
+        {
+         "name": "asml",
+         "domain": "asml.com",
+         "amount": 1500000000.0
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "strengthening finances, reducing dependence on U.S. and Chinese AI models, bolstering Europe’s technological independence",
+       "source_sentence": "The French AI startup Mistral AI has completed a financing round of the C series of two billion dollars, reports Reuters.",
+       "published_at": "2025-09-08T08:49:58",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d0eb36fb0e8d0abe2b8158",
+        "68d952e32e9612a96e11427d",
+        "69c952a8c14329b30ec3b865"
+       ],
+       "article_id": "68d952e32e9612a96e11427d"
+      },
+      {
+       "id": "e5e0120ed5fce1a0",
+       "company_name": "mistral",
+       "domain": "mistralpubblicita.it",
+       "round_type": "Series C",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 14000000000.0,
+       "investors": [
+        {
+         "name": "asml",
+         "domain": "asml.com",
+         "amount": 1500000000.0
+        }
+       ],
+       "sector": "AI",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": null,
+       "source_sentence": "Paris-based AI start-up Mistral is reported to be finalising a Series C round of $2bn. Reuters reports Dutch chip giant ASML is set to become top shareholder.",
+       "published_at": "2025-09-08T07:52:46",
+       "coverage_count": 4,
+       "article_ids": [
+        "68c163a66a78bf0c565139a7",
+        "68c5cda39f14b99474ca673e",
+        "69cb554e984a596c0c7d7040",
+        "69cbd22e36f67c5f5aa662bc"
+       ],
+       "article_id": "68c163a66a78bf0c565139a7"
+      },
+      {
+       "id": "11553f3f9f8f29d5",
+       "company_name": "Nscale",
+       "domain": "nscale.com",
+       "round_type": "Series C",
+       "amount_usd": 1836000000.0000002,
+       "amount_flag": null,
+       "valuation_usd": 15768000000.000002,
+       "currency": "EUR",
+       "amount": 1700000000.0,
+       "valuation": 14600000000.0,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "citadel",
+         "domain": "citadelbanking.com",
+         "amount": null
+        },
+        {
+         "name": "dell",
+         "domain": "dell.com",
+         "amount": null
+        },
+        {
+         "name": "nokia",
+         "domain": "nokia.com",
+         "amount": null
+        },
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        },
+        {
+         "name": "point72",
+         "domain": "point72.com",
+         "amount": null
+        },
+        {
+         "name": "aker asa",
+         "domain": "akerasa.com",
+         "amount": null
+        },
+        {
+         "name": "8090 Industries",
+         "domain": "8090industries.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "Nscale – €1.7 billion Series C | London, UK",
+       "published_at": "2026-03-15T13:02:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd3037ef280d4636ae63a"
+       ],
+       "article_id": "69cbd3037ef280d4636ae63a"
+      },
+      {
+       "id": "924a4313fc87d5cd",
+       "company_name": "mistral ai",
+       "domain": "mistral.ai",
+       "round_type": "Series C",
+       "amount_usd": 1836000000.0000002,
+       "amount_flag": null,
+       "valuation_usd": 12636000000.0,
+       "currency": "EUR",
+       "amount": 1700000000.0,
+       "valuation": 11700000000.0,
+       "investors": [
+        {
+         "name": "asml",
+         "domain": "asml.com",
+         "amount": 1300000000.0
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "accelerate technological progress with AI",
+       "source_sentence": "We’ve raised €1.7B to accelerate technological progress with AI! This Series C funding round, led by @ASMLcompany, fuels Mistral AI scientific research to keep pushing the frontier of AI to tackle the most critical technological challenges faced by strategic industries.",
+       "published_at": "2025-09-09T10:16:25",
+       "coverage_count": 4,
+       "article_ids": [
+        "68d0e40950268142442b0893",
+        "68d990011645babb987eb522",
+        "68d9ae92c149d2bca77f5ac7",
+        "69bb2f3cb54f2a520bb5eda8"
+       ],
+       "article_id": "69bb2f3cb54f2a520bb5eda8"
+      },
+      {
+       "id": "1b2056026208cf01",
+       "company_name": "dayone",
+       "domain": "dayoneny.org",
+       "round_type": "Series C",
+       "amount_usd": 1800000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1800000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Hillhouse Investment",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "boyu capital",
+         "domain": "boyucapital.com",
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "softbank vision fund",
+         "domain": "visionfund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data centre",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "In 2024, the business raised roughly $1.8 billion from two funding rounds, according to GDS.",
+       "published_at": "2025-10-20T08:47:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a25e194ebde7b3e66256b"
+       ],
+       "article_id": "698a25e194ebde7b3e66256b"
+      },
+      {
+       "id": "9bf083e9711ce909",
+       "company_name": "factory",
+       "domain": "factory.com",
+       "round_type": "Series C",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Evantic Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "20VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        },
+        {
+         "name": "Mantis VC",
+         "domain": "mantisvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI-driven software engineering",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate investment in research, product development, and global go-to-market efforts",
+       "source_sentence": "Factory announced it has raised $150 million in a Series C funding round led by Khosla Ventures, with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC, bringing the company’s valuation to $1.5 billion.",
+       "published_at": "2026-04-22T03:38:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9980475f157062cad1b90"
+       ],
+       "article_id": "69e9980475f157062cad1b90"
+      },
+      {
+       "id": "a3aea3851aa29b79",
+       "company_name": "mistral ai",
+       "domain": "mistral.ai",
+       "round_type": "Series C",
+       "amount_usd": 1404000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ASML Holding NV",
+         "domain": null,
+         "amount": 1300000000.0
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "Accelerate chipmaking innovation",
+       "source_sentence": "The Dutch company’s decision to lead Mistral AI’s Series C funding round with a €1.3 billion investment — securing an 11 percent fully diluted stake — sent a signal that Europe’s largest technology firm is serious about fusing advanced AI with chipmaking infrastructure.",
+       "published_at": "2025-09-13T09:18:34",
+       "coverage_count": 2,
+       "article_ids": [
+        "698dc1c88d29a990b6dc899c",
+        "69bb9eebcdd5bea27ae941ca"
+       ],
+       "article_id": "698dc1c88d29a990b6dc899c"
+      },
+      {
+       "id": "c49e5516de991909",
+       "company_name": "SkildAI",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": 14000000000.0,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": 14000000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "SkildAI, which builds AI models to power robots, raised a $1.4 billion Series C round that valued the startup at $14 billion.",
+       "published_at": "2026-02-17T14:58:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bd8f9c0ad23ae1115329db"
+       ],
+       "article_id": "69bd8f9c0ad23ae1115329db"
+      },
+      {
+       "id": "4041b3aeb53c30e8",
+       "company_name": "Skild AI",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": 14000000000.0,
+       "investors": [
+        {
+         "name": "softbank group",
+         "domain": "global.softbank",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "macquarie capital",
+         "domain": "macquarie.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "lg",
+         "domain": "lg.com",
+         "amount": null
+        },
+        {
+         "name": "schneider electric",
+         "domain": "se.com",
+         "amount": null
+        },
+        {
+         "name": "commonspirit health",
+         "domain": "commonspirit.org",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics AI",
+       "country": "US",
+       "city": "Pittsburgh",
+       "use_of_funds": "Fund extensive model training and global deployments of the Skild Brain platform.",
+       "source_sentence": "Skild AI, a Pittsburgh-based robotics AI startup, secured a mammoth $1.4 billion funding round to accelerate development of its “omni-bodied” foundation model for robots.",
+       "published_at": "2026-01-14T21:40:01",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988ba4494d3f481f3d84b37",
+        "69bb40e2728db874955197e7"
+       ],
+       "article_id": "6988ba4494d3f481f3d84b37"
+      },
+      {
+       "id": "b763610c3c754241",
+       "company_name": "Skild AI",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": 14000000000.0,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": 14000000000.0,
+       "investors": [
+        {
+         "name": "softbank",
+         "domain": "group.softbank",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "macquarie group",
+         "domain": "macquarie.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Robotic software / foundation models for robots",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "scaling deployment across industrial automation, logistics, and defense applications",
+       "source_sentence": "The startup has raised a $1.4 billion Series C round that values it at more than $14 billion, Bloomberg reported.",
+       "published_at": "2026-01-14T16:13:33",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bba5c8e7c8d3750e07391b",
+        "69bbcdb0b54f2a520bb79c51",
+        "69e2830da85be7e506562bce"
+       ],
+       "article_id": "69bbcdb0b54f2a520bb79c51"
+      },
+      {
+       "id": "7234624008480517",
+       "company_name": "Skild AI Inc.",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": 14000000000.0,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": 14000000000.0,
+       "investors": [
+        {
+         "name": "softbank group",
+         "domain": "global.softbank",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "macquarie group",
+         "domain": "macquarie.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "Coatue Management",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "samsung electronics",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "LG Electronics",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "salesforce",
+         "domain": "salesforce.com",
+         "amount": null
+        }
+       ],
+       "sector": "robotics software",
+       "country": "USA",
+       "city": "Pittsburgh",
+       "use_of_funds": "expand deployment of its software, enhance training systems, and roll out robots across more environments",
+       "source_sentence": "Skild AI Inc., a rapidly growing robotics software startup, secures approximately $1.4 billion in a Series C funding round, valuing the company at more than $14 billion.",
+       "published_at": "2026-01-14T15:35:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc59411e8126b2deb45d6d"
+       ],
+       "article_id": "69cc59411e8126b2deb45d6d"
+      },
+      {
+       "id": "5d7bbec33364a64a",
+       "company_name": "QXO Inc",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apollo global management",
+         "domain": "apollo.com",
+         "amount": null
+        },
+        {
+         "name": "Other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "Finance large acquisitions",
+       "source_sentence": "On January 5, 2026, QXO Inc. announced that funds managed by Apollo Global Management and other investors agreed to invest up to $1.2 billion in a new Series C convertible perpetual preferred stock, structured as a private placement, to finance one or more large acquisitions.",
+       "published_at": "2026-01-06T05:52:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb5cfe529c413173b60c2f"
+       ],
+       "article_id": "69bb5cfe529c413173b60c2f"
+      },
+      {
+       "id": "477e100d8cebcaff",
+       "company_name": "world labs",
+       "domain": "worldlabs.vdtrxn",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "autodesk",
+         "domain": "autodesk.org",
+         "amount": 200000000.0
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "emerson collective",
+         "domain": "emersoncollective.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "sea",
+         "domain": "sea.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI – Spatial Intelligence",
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": "The new funding – which comes just 16 months after World Labs’ launch – will fuel research into Li’s vision of AI that can reason about the physical world for applications in robotics, augmented reality, and more.",
+       "source_sentence": "World Labs raises $1B in Series C funding for spatial AI platform",
+       "published_at": "2026-02-18T23:54:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c89643ebfc0891032ac3e3"
+       ],
+       "article_id": "69c89643ebfc0891032ac3e3"
+      },
+      {
+       "id": "ac2622f7d387997f",
+       "company_name": "Waabi Innovation Inc.",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "G2 Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Volvo AB (venture capital arm)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "porsche automobil holding",
+         "domain": "porsche-se.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "Uber (milestone-based future investment)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous vehicles",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "Commercial expansion and launching robotaxis",
+       "source_sentence": "Waabi Innovation Inc., a Canadian startup that develops self-driving technology for trucks, has secured $1 billion in funding for its commercial expansion, including entering the robotaxi market with partner Uber Technologies Inc.",
+       "published_at": "2026-01-28T14:02:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2d4d590d9a716b4c8a689"
+       ],
+       "article_id": "69e2d4d590d9a716b4c8a689"
+      },
+      {
+       "id": "850f76a52a7cb874",
+       "company_name": "waabi",
+       "domain": "waabi.ai",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "G2 Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "porsche",
+         "domain": "porsche.com",
+         "amount": null
+        },
+        {
+         "name": "volvo",
+         "domain": "volvobuses.in",
+         "amount": null
+        },
+        {
+         "name": "radical ventures",
+         "domain": "radical.vc",
+         "amount": null
+        },
+        {
+         "name": "harbourvest partners",
+         "domain": "harbourvest.com",
+         "amount": null
+        },
+        {
+         "name": "Incharge Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Thrive Venture Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "export development canada",
+         "domain": "edc.ca",
+         "amount": null
+        },
+        {
+         "name": "Telus Global Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bmo global asset management",
+         "domain": "bmogam.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "abu dhabi investment authority",
+         "domain": "adia.ae",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous Vehicles",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "Accelerate development of its physical AI platform, speed up efforts to commercialize self-driving trucks, and help the company move into a new target market—robotaxis",
+       "source_sentence": "Toronto-based autonomous vehicle (AV) startup Waabi announced this morning that it has secured $750 million USD ($1.02 billion CAD) in financing in what appears to be the largest funding round in Canadian tech history.",
+       "published_at": "2026-01-28T11:00:00",
+       "coverage_count": 4,
+       "article_ids": [
+        "6988a70069527f36baae665a",
+        "69bb41186ae47bec69602e1e",
+        "69bd83b8a75fc0dcb025760f",
+        "69cc2572fc7cf9505388c57a"
+       ],
+       "article_id": "6988a70069527f36baae665a"
+      },
+      {
+       "id": "cf3ed147d6bbb7aa",
+       "company_name": "kalshi",
+       "domain": "kalshi.com",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 11000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 11000000000.0,
+       "investors": [
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "paradigm",
+         "domain": "paradigm.xyz",
+         "amount": null
+        },
+        {
+         "name": "anthos capital",
+         "domain": "anthoscapital.com",
+         "amount": null
+        },
+        {
+         "name": "neo",
+         "domain": "getneo.com",
+         "amount": null
+        }
+       ],
+       "sector": "Prediction Market",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Kalshi has reportedly raised another $1B in funding at a $11B valuation.",
+       "published_at": "2025-11-21T15:55:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb702051c35210b7b7c432"
+       ],
+       "article_id": "69bb702051c35210b7b7c432"
+      },
+      {
+       "id": "a985dfddd56eb4f3",
+       "company_name": "dayone",
+       "domain": "dayoneny.org",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Data Centre",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "accelerate its expansion plans across Southeast Asia and Europe",
+       "source_sentence": "DayOne, a global data centre operator affiliated with GDS Holdings, one of China’s largest data centre firms, is seeking to raise more than $1 billion in a new funding round, according to four people familiar with the matter.",
+       "published_at": "2025-10-17T06:01:07",
+       "coverage_count": 2,
+       "article_ids": [
+        "68fe204646325a41ca283415",
+        "699293a7a035766b6b62e738"
+       ],
+       "article_id": "699293a7a035766b6b62e738"
+      },
+      {
+       "id": "2a5b27386b51b5a7",
+       "company_name": "base power",
+       "domain": "basepower.in",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "other new and existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Energy storage",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "Accelerate deployment of home battery systems and build a battery manufacturing factory",
+       "source_sentence": "Base Power, an Austin-based energy startup modernizing the U.S. power grid, has secured a whopping $1 billion in Series C funding to accelerate deployment of home battery systems nationwide.",
+       "published_at": "2025-10-08T22:06:50",
+       "coverage_count": 3,
+       "article_ids": [
+        "68f71009017a8a94832bdeb4",
+        "68f71268b5f4abc34a2c16e8",
+        "68f72cd96ecd416e342c202d"
+       ],
+       "article_id": "68f71268b5f4abc34a2c16e8"
+      },
+      {
+       "id": "c1fc635082e13224",
+       "company_name": "base power",
+       "domain": "basepower.in",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "addition",
+         "domain": "addition-llc.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "ribbit",
+         "domain": "ribbit.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        }
+       ],
+       "sector": "Battery Storage",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "to turbocharge its home battery buildout",
+       "source_sentence": "The Austin-based startup, which had raised $200 million in April, is back with another $1 billion in funding.",
+       "published_at": "2025-10-08T17:02:03",
+       "coverage_count": 7,
+       "article_ids": [
+        "68f70882f80e5160742b277d",
+        "694af8b813240442ec75cae3",
+        "6983ecc7e67557fb855562bf",
+        "69897f7894d3f481f3e6927f",
+        "698e73cc9ca02490ec0e4e7d",
+        "69c8d5ff1d51eeba947f202a",
+        "69cbd55936f67c5f5aa68a8b"
+       ],
+       "article_id": "68f70882f80e5160742b277d"
+      },
+      {
+       "id": "7c34923ea31aa85d",
+       "company_name": "Figure AI",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 39000000000.0,
+       "investors": [
+        {
+         "name": "brookfield asset management",
+         "domain": "brookfield.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "macquarie capital",
+         "domain": "macquarie.com",
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "align ventures",
+         "domain": "align.vc",
+         "amount": null
+        },
+        {
+         "name": "lg technology ventures",
+         "domain": "lgtechventures.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce",
+         "domain": "salesforce.com",
+         "amount": null
+        },
+        {
+         "name": "T-Mobile Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "scale production of humanoid robots, boost AI platform (Helix), expand manufacturing via BotQ facility, increase data collection and infrastructure for training and simulation",
+       "source_sentence": "Figure AI, the robotics startup known for its work in humanoid robots, has closed a Series C funding round exceeding US$1 billion, reaching a post-money valuation of around US$39 billion.",
+       "published_at": "2025-09-23T14:41:41",
+       "coverage_count": 5,
+       "article_ids": [
+        "68f70b7df80e5160742b6fa0",
+        "69523a97eecfdf72a7169023",
+        "6989c50094d3f481f3ec0f1e",
+        "698d2c709ca02490ecf60bbd",
+        "698f6e369ca02490ec20ea67"
+       ],
+       "article_id": "698d2c709ca02490ecf60bbd"
+      },
+      {
+       "id": "37be1b8b2071c44d",
+       "company_name": "figure",
+       "domain": "figure.ai",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 39000000000.0,
+       "investors": [
+        {
+         "name": "Parkway Venture Capital",
+         "domain": "parkway.vc",
+         "amount": null
+        },
+        {
+         "name": "brookfield asset management",
+         "domain": "brookfield.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics",
+       "country": "United States",
+       "city": "San Jose",
+       "use_of_funds": "to scale the company’s fleet of humanoid robots, build the necessary infrastructure to accelerate robot training, and launch advanced data collection efforts",
+       "source_sentence": "The round, which “exceeded $1 billion,” said Figure, was led by Parkway Venture Capital with participation from Brookfield Asset Management, Nvidia, and Intel Capital, among others.",
+       "published_at": "2025-09-16T16:49:44",
+       "coverage_count": 7,
+       "article_ids": [
+        "68d98f6859ff3bc3607ea81e",
+        "698d81a78d29a990b6d7bd97",
+        "6996d15333af8f1ff8a1889b",
+        "69982a1d2da3986a3f89cdc4",
+        "69baf45e92d3c72cc1ab2db4",
+        "69bb1c6cef75d924655a81ed",
+        "69bbb9bca2269239ea2728c4"
+       ],
+       "article_id": "68d98f6859ff3bc3607ea81e"
+      },
+      {
+       "id": "e96f9defff9fc0e7",
+       "company_name": "figure",
+       "domain": "figure.ai",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 39000000000.0,
+       "investors": [
+        {
+         "name": "Parkway Venture Capital",
+         "domain": "parkway.vc",
+         "amount": null
+        },
+        {
+         "name": "brookfield asset management",
+         "domain": "brookfield.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "macquarie capital",
+         "domain": "macquarie.com",
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "align ventures",
+         "domain": "align.vc",
+         "amount": null
+        },
+        {
+         "name": "tamarack global",
+         "domain": "tamarackglobal.com",
+         "amount": null
+        },
+        {
+         "name": "lg technology ventures",
+         "domain": "lgtechventures.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce",
+         "domain": "salesforce.com",
+         "amount": null
+        },
+        {
+         "name": "T‑Mobile Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Robotics",
+       "country": "United States",
+       "city": "San Jose",
+       "use_of_funds": "Accelerate the company's efforts to bring general‑purpose humanoid robots into real‑world environments at scale, including scaling deployment in homes and commercial operations, building NVIDIA GPU infrastructure for training and simulation, and launching advanced data collection efforts.",
+       "source_sentence": "Figure, the AI robotics company developing autonomous general‑purpose humanoid robots, today announced it has exceeded more than $1 billion in committed capital through its Series C financing round, at a post‑money valuation of $39 billion.",
+       "published_at": "2025-09-16T13:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d97cb042a4b594744c4e52",
+        "68f7176fe97e6da31e2c9503",
+        "69c3a67017a23a4389b46fe1"
+       ],
+       "article_id": "68f7176fe97e6da31e2c9503"
+      },
+      {
+       "id": "010746f99a629865",
+       "company_name": "mistral",
+       "domain": "mistralpubblicita.it",
+       "round_type": "Series C",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "samsung venture investment",
+         "domain": "samsungventure.co.kr",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        },
+        {
+         "name": "bpi france",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "Xavier Niel",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "accelerate the commercial rollout of its chatbot, Le Chat, and further develop its large language models",
+       "source_sentence": "The company – which has been hailed as Europe’s AI champion and a potential rival to OpenAI and DeepSeek — is looking to raise $1 billion to accelerate the commercial rollout of its chatbot, Le Chat, and further develop its large language models",
+       "published_at": "2025-08-05T14:01:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9b02493ec9fed387f8621"
+       ],
+       "article_id": "68d9b02493ec9fed387f8621"
+      },
+      {
+       "id": "9d8e98f222dfbadd",
+       "company_name": "luma ai",
+       "domain": "lumalabs.ai",
+       "round_type": "Series C",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "humain",
+         "domain": "humain.dk",
+         "amount": null
+        },
+        {
+         "name": "AMD Ventures",
+         "domain": "amdventures.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "amplify partners",
+         "domain": "amplifypartners.com",
+         "amount": null
+        },
+        {
+         "name": "matrix partners",
+         "domain": "matrixpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United States",
+       "city": "Washington, D.C.",
+       "use_of_funds": "To train and deploy next-generation AI systems",
+       "source_sentence": "Luma AI, the frontier artificial intelligence company building multimodal AGI, today announced it has raised $900 million in Series C funding, led by HUMAIN, a PIF company delivering global full-stack AI solutions, with significant participation from AMD Ventures, and existing investors Andreessen Horowitz, Amplify Partners, and Matrix Partners.",
+       "published_at": "2025-11-19T20:16:57",
+       "coverage_count": 11,
+       "article_ids": [
+        "69313ef5997ccdbb88f2294a",
+        "693165ad66546b0621f228f5",
+        "694af6cfedd4d8e72e75c96a",
+        "694d7a75f0c50b1f7bf2f069",
+        "698a3f451953fdcb20e14fa0",
+        "698ce0e88d29a990b6cbe9f7",
+        "698d409c8d29a990b6d2f831",
+        "699822342da3986a3f89a606",
+        "69baf4afbb3472e5f4c42d16",
+        "69bb702051c35210b7b7c432",
+        "69dce3f9cf40be8e62a82311"
+       ],
+       "article_id": "698ce0e88d29a990b6cbe9f7"
+      },
+      {
+       "id": "1165369d41173e54",
+       "company_name": "luma ai",
+       "domain": "lumalabs.ai",
+       "round_type": "Series C",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "AMD Ventures",
+         "domain": "amdventures.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "amplify partners",
+         "domain": "amplifypartners.com",
+         "amount": null
+        },
+        {
+         "name": "matrix partners",
+         "domain": "matrixpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "Washington, D.C.",
+       "use_of_funds": "accelerate its mission to build advanced AI systems capable of understanding and generating video, audio, imagery and language",
+       "source_sentence": "Luma AI, the California-based frontier AI company building multimodal “world models,” has raised $900 million in Series C funding led by HUMAIN, a subsidiary of Saudi Arabia’s Public Investment Fund (PIF).",
+       "published_at": "2025-11-19T19:38:48",
+       "coverage_count": 6,
+       "article_ids": [
+        "69316a954f9f804609f20642",
+        "69892dd094d3f481f3e0ac60",
+        "698cdf7a9ca02490ecf06545",
+        "69baf46b0047e0373b1ecf86",
+        "69bb040bb54f2a520bb5522b",
+        "69bbeeac41245450861c4fa3"
+       ],
+       "article_id": "69892dd094d3f481f3e0ac60"
+      },
+      {
+       "id": "9725906b1ac4c0a2",
+       "company_name": "cursor",
+       "domain": "cursor.com",
+       "round_type": "Series C",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "which it achieved in its $900 million Series C round in June.",
+       "published_at": "2025-11-13T13:58:44",
+       "coverage_count": 3,
+       "article_ids": [
+        "69315d64a03357202bf21c18",
+        "694d770f9025cd4db1f2f11b",
+        "694d770f9025cd4db1f2f11b"
+       ],
+       "article_id": "69315d64a03357202bf21c18"
+      },
+      {
+       "id": "02f53b2fe04252c4",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": "Series C",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": 10000000000.0,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Anysphere, the AI research lab behind AI coding tool Cursor, raised a sizable $900 million Series C round that values the company at nearly $10 billion. The round was led by Thrive Capital with participation from Andreessen Horowitz, Accel, and DST Global.",
+       "published_at": "2025-08-27T17:01:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "68b054613b014c087aed53ed",
+        "69bb0226b54f2a520bb54b80"
+       ],
+       "article_id": "68b054613b014c087aed53ed"
+      },
+      {
+       "id": "b646b3c82778cec6",
+       "company_name": "anysphere",
+       "domain": "anysphere.inc",
+       "round_type": "Series C",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI coding assistant platform",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "The fresh capital will enable Anysphere to further accelerate the growth of its AI coding platform and expand its customer base among enterprises looking to boost developer productivity.",
+       "source_sentence": "Anysphere Raises $900M Round to Scale AI Coding Assistant",
+       "published_at": "2025-06-09T23:02:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c58629a4534b9023885ac3"
+       ],
+       "article_id": "68c58629a4534b9023885ac3"
+      },
+      {
+       "id": "4cdfa687196e35d2",
+       "company_name": "waabi",
+       "domain": "waabi.ai",
+       "round_type": "Series C",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "G2 Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": null
+        },
+        {
+         "name": "NVIDIA’s NVentures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Volvo Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "porsche holding",
+         "domain": "porsche-holding.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "radical ventures",
+         "domain": "radical.vc",
+         "amount": null
+        },
+        {
+         "name": "HarbourVest",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "adia",
+         "domain": "adia.ae",
+         "amount": null
+        },
+        {
+         "name": "Canadian federal VC funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "The capital will fuel the continued development of Waabi’s simulation-driven AI, expand its trucking business, and enable a rapid rollout of robotaxis.",
+       "source_sentence": "Waabi has secured a massive $750 million Series C, the largest-ever tech fundraising in Canadian history.",
+       "published_at": "2026-02-02T21:41:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988eafd94d3f481f3dbf675"
+       ],
+       "article_id": "6988eafd94d3f481f3dbf675"
+      },
+      {
+       "id": "8e7baefe9ef06972",
+       "company_name": "waabi",
+       "domain": "waabi.ai",
+       "round_type": "Series C",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "G2 Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "Volvo Group Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "porsche automobil holding",
+         "domain": "porsche-se.com",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "radical ventures",
+         "domain": "radical.vc",
+         "amount": null
+        },
+        {
+         "name": "Abu Dhabi Investment Authority subsidiary",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "autonomous vehicles",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "Accelerating commercial progress in trucking while supporting expansion into robotaxis",
+       "source_sentence": "The funding consists of a $750 million Series C round led by Khosla Ventures and G2 Venture Partners, plus an additional $250 million milestone-based investment from Uber tied to the robotaxi deployment.",
+       "published_at": "2026-01-28T11:18:34",
+       "coverage_count": 7,
+       "article_ids": [
+        "6988a77a8fb0ea95e9771eef",
+        "6988ee7e94d3f481f3dc3ae1",
+        "698e59b59ca02490ec0c5a90",
+        "69bb063b51c35210b7b6408b",
+        "69bb4acc8dcdeb577ebb7fb1",
+        "69bc7ed1a7b1648247b6fa14",
+        "69bc9989fa3bff8ab9a40080"
+       ],
+       "article_id": "6988a77a8fb0ea95e9771eef"
+      },
+      {
+       "id": "033509939b5b75d1",
+       "company_name": "X-energy",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Nuclear technology",
+       "country": "United States",
+       "city": "Rockville",
+       "use_of_funds": null,
+       "source_sentence": "The new round follows an earlier $700 million Series C financing round completed by X-energy earlier this year, led by Amazon’s Climate Pledge Fund, alongside an agreement with Amazon to bring more than 5 GW of projects online across the U.S. by 2039.",
+       "published_at": "2025-11-24T15:49:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "693164d97f7fb519dcf211c3",
+        "694b0cd16b6869c40c75b900"
+       ],
+       "article_id": "694b0cd16b6869c40c75b900"
+      },
+      {
+       "id": "4dd84c70443bdddd",
+       "company_name": "Slate Auto",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 650000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 650000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Jeff Bezos",
+         "domain": "https://www.linkedin.com/showcase/jeff-bezos-newslines",
+         "amount": 650000000.0
+        }
+       ],
+       "sector": "Electric pickup trucks and SUVs",
+       "country": "US",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Michigan's Slate Auto secured $650 million in Series C funding last week, backed by Jeff Bezos, to develop affordable electric pickup trucks and customizable SUVs with deliveries planned for later in 2026.",
+       "published_at": "2026-04-23T12:02:38",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea20b673206aa299ec1b6f"
+       ],
+       "article_id": "69ea20b673206aa299ec1b6f"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 817,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDQtMjMgMTI6MDI6MzgiLCJrIjoiNTYwOTMxNzM4MDk1NDc3NTAwNSIsImEiOjY1MDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 817,
+      "deals_with_amount": 767,
+      "deals_without_amount": 50,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 104851646400.0,
+      "median_amount_usd": 70000000.0,
+      "largest_amount_usd": 13000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.105,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.11
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "series c",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "round_type": [
+       "series c"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "640a593ec4d08b94",
+       "company_name": "lucid group",
+       "domain": "wearelucidgroup.com",
+       "round_type": "Series C",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ayar",
+         "domain": "ayar.com.sa",
+         "amount": 550000000.0
+        }
+       ],
+       "sector": null,
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "On April 28, 2026, Ayar Third Investment Company (“Ayar”), an affiliate of the Public Investment Fund (“PIF”) purchased from Lucid Group, Inc. (the “Issuer” or the “Company”) $550 million of Series C Convertible Preferred Stock, par value $0.0001 per share (the “Series C Convertible Preferred Stock” and, together with the Series A Convertible Preferred Stock, the Series B Convertible Preferred Stock, the “Convertible Preferred Stock”), in a private placement (the “Private Placement”).",
+       "published_at": "2026-04-30T22:26:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a0407d99c4aac09353ffd4b"
+       ],
+       "article_id": "6a0407d99c4aac09353ffd4b"
+      },
+      {
+       "id": "ee1a471c8427ba6a",
+       "company_name": "counterpart",
+       "domain": "counterpart.biz",
+       "round_type": "Series C",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "valor equity partners",
+         "domain": "valorep.com",
+         "amount": null
+        },
+        {
+         "name": "vy capital",
+         "domain": "vycapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Specialty insurance",
+       "country": "United States",
+       "city": "Covina",
+       "use_of_funds": "launching new specialty insurance products; building industry-specific programs; expanding claims and risk management capabilities; collateralizing Counterpart Insurance Company",
+       "source_sentence": "today announced the close of its $50M Series C financing round led by Valor Equity Partners, with continued participation from existing investor Vy Capital.",
+       "published_at": "2026-04-29T00:22:52",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f1c9181e3933a6dd8ed649",
+        "69f8a74a8937ef12fc0ae6ae",
+        "69f8ac498937ef12fc0b2291"
+       ],
+       "article_id": "69f1c9181e3933a6dd8ed649"
+      },
+      {
+       "id": "afbe7f737e053a0e",
+       "company_name": "liquid instruments",
+       "domain": "liquidinstruments.com",
+       "round_type": "Series C",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "National Reconstruction Fund",
+         "domain": null,
+         "amount": 28450000.0
+        }
+       ],
+       "sector": "Quantum computing, aerospace, defence, AI",
+       "country": "Australia",
+       "city": "Canberra",
+       "use_of_funds": "Supports manufacturing relocation to Melbourne and expansion of local workforce",
+       "source_sentence": "Liquid Instruments announced its plan on Wednesday after winning a $28.45 million stake from the National Reconstruction Fund.",
+       "published_at": "2026-04-28T23:19:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f1ca2fa5706a322e10b30e"
+       ],
+       "article_id": "69f1ca2fa5706a322e10b30e"
+      },
+      {
+       "id": "06ab81bf74f4c1c1",
+       "company_name": "liquid instruments",
+       "domain": "liquidinstruments.com",
+       "round_type": "Series C",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "keysight technologies",
+         "domain": "keysight.com",
+         "amount": null
+        },
+        {
+         "name": "NRFC",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI-driven software-defined test solutions",
+       "country": "United States",
+       "city": "San Diego",
+       "use_of_funds": "accelerate product development, scale Liquid Instruments’ AI-powered platform, and expand go-to-market in key verticals, including aerospace, defense, and semiconductor",
+       "source_sentence": "Liquid Instruments , a pioneer in software-defined test solutions, today announced the close of its $50 million Series C funding round, co-led by Keysight Technologies, Inc. (NYSE: KEYS ), a global leader in design, emulation, and test solutions, and the Australian Government’s National Reconstruction Fund Corporation (NRFC) .",
+       "published_at": "2026-04-28T13:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e8c945272de32e8c5a0d",
+        "69f1cf8ca5706a322e133142"
+       ],
+       "article_id": "69f1cf8ca5706a322e133142"
+      },
+      {
+       "id": "2143e4ed59c7ae09",
+       "company_name": "volant",
+       "domain": "volant.aero",
+       "round_type": "Series C",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "stone",
+         "domain": "stone.co",
+         "amount": null
+        },
+        {
+         "name": "Sequoia China",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Fortera Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "eVTOL",
+       "country": "China",
+       "city": null,
+       "use_of_funds": "Accelerate manufacturing, certification flight testing, mass production, delivery, customer service, and transition to commercial operation of the VE25-100 model.",
+       "source_sentence": "Gasgoo Munich- VOLANT has recently closed a Series C funding round exceeding $300 million.",
+       "published_at": "2026-04-27T20:04:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e2cf45272de32e8bf584"
+       ],
+       "article_id": "69f0e2cf45272de32e8bf584"
+      },
+      {
+       "id": "73143fa6f4a2e70b",
+       "company_name": "kashable",
+       "domain": "kashable.com",
+       "round_type": "Series C",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": 50000000.0
+        },
+        {
+         "name": "revolution",
+         "domain": "revolution.com",
+         "amount": null
+        },
+        {
+         "name": "EJF Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "fintech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "broadening Kashable’s employer network, strengthening relationships with HR, benefits and finance teams at client organisations, developing its data-driven platform to deliver greater value to both employers and employees",
+       "source_sentence": "Kashable, a fintech specializing in employee financial wellness, has secured a $60 million Series C funding round. The investment was led by Goldman Sachs Alternatives, which committed up to $50 million, with existing backers Revolution and EJF Ventures also participating.",
+       "published_at": "2026-04-27T12:50:04",
+       "coverage_count": 3,
+       "article_ids": [
+        "69f0e5e045272de32e8c28e7",
+        "69f0e66e45272de32e8c34ab",
+        "69f1c808a5706a322e0f9111"
+       ],
+       "article_id": "69f0e5e045272de32e8c28e7"
+      },
+      {
+       "id": "a57b0ab402e410d7",
+       "company_name": "hqlaᵡ",
+       "domain": "hqla-x.com",
+       "round_type": "Series C–1",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Broadridge Financial Solutions",
+         "domain": "broadridge.com",
+         "amount": null
+        },
+        {
+         "name": "digital asset",
+         "domain": "digitalasset.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech infrastructure",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to support expansion of its platform on the Canton Network and enhance digital collateral services",
+       "source_sentence": "HQLAᵡ announced it has secured strategic minority investments from Broadridge Financial Solutions and Digital Asset in its Series C–1 funding round.",
+       "published_at": "2026-04-24T07:53:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efa90f727212302c5dcf73"
+       ],
+       "article_id": "69efa90f727212302c5dcf73"
+      },
+      {
+       "id": "ca5e42c5f6a1d990",
+       "company_name": "Omni Analytics, Inc.",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Analytics / Business Intelligence",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "support continued platform development, enterprise expansion, and the scaling of adoption of its AI-powered analytics and data infrastructure.",
+       "source_sentence": "Omni, a San Francisco, CA–based AI analytics platform, has raised $120 million in Series C funding at a $1.5 billion valuation.",
+       "published_at": "2026-04-24T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d7c97b2d589e844d2456"
+       ],
+       "article_id": "69f9d7c97b2d589e844d2456"
+      },
+      {
+       "id": "a2072a9efe70e231",
+       "company_name": "cloudsmith",
+       "domain": "cloudsmith.io",
+       "round_type": "Series C",
+       "amount_usd": 72000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 72000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "other existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "DevOps / Software Supply Chain / AI Infrastructure",
+       "country": "United Kingdom",
+       "city": "Belfast",
+       "use_of_funds": "The company will use the funding to accelerate product development and expand go-to-market efforts as enterprises adopt AI-driven software development.",
+       "source_sentence": "Cloudsmith Raises $72M Series C for AI-Era Software Supply Chain Security",
+       "published_at": "2026-04-23T21:59:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "69efaa55a84b609af2b2a2d7",
+        "6a0400cc62bbf617b040315e"
+       ],
+       "article_id": "69efaa55a84b609af2b2a2d7"
+      },
+      {
+       "id": "9d4ff710af853733",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Omni raises $120M Series C for enterprise AI analytics",
+       "published_at": "2026-04-23T21:59:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efaa55a84b609af2b2a2d7"
+       ],
+       "article_id": "69efaa55a84b609af2b2a2d7"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 308,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjMgMjE6NTk6MzAiLCJrIjoiMTEzMzU1NTA0MzgxNTExMDg0MDMifQ",
+     "totals": {
+      "deals": 308,
+      "deals_with_amount": 287,
+      "deals_without_amount": 21,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 43593904000.0,
+      "median_amount_usd": 77500000.0,
+      "largest_amount_usd": 3000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.118,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.121
+    }
+   }
+  }
+ ]
+}

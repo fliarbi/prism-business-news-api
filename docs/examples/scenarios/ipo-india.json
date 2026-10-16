@@ -1,0 +1,806 @@
+{
+ "slug": "ipo-india",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:44Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "ipo"
+     ],
+     "q": "India",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "india",
+      "match": "any",
+      "event_type": [
+       "ipo"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 28,
+       "by_type": {
+        "ipo": 28
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 41,
+       "by_type": {
+        "ipo": 41
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 39,
+       "by_type": {
+        "ipo": 39
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 18,
+       "by_type": {
+        "ipo": 18
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 53,
+       "by_type": {
+        "ipo": 53
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 46,
+       "by_type": {
+        "ipo": 46
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 19,
+       "by_type": {
+        "ipo": 19
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 37,
+       "by_type": {
+        "ipo": 37
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 41,
+       "by_type": {
+        "ipo": 41
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 29,
+       "by_type": {
+        "ipo": 29
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 35,
+       "by_type": {
+        "ipo": 35
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 20,
+       "by_type": {
+        "ipo": 20
+       }
+      }
+     ],
+     "totals": {
+      "events": 406,
+      "articles": 392,
+      "companies": 205,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "ipo": 406
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.061,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.066
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "ipo"
+     ],
+     "q": "India",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "india",
+      "event_type": [
+       "ipo"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f0e211d325610894206ba2",
+       "headline": "Modern Times Group (MTG) has confirmed that its India-based subsidiary PlaySimple has filed for an initial public offering in Mumbai valued at up to ₹31.5 billion ($334.8 million).",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "playsimple.in",
+       "published_at": "2026-04-28T14:36:00",
+       "url": "https://www.pocketgamer.biz/modern-times-group-confirms-playsimple-ipo-filing-targeting-up-to-335m-in-mumbai/",
+       "publisher": "pocketgamer.biz",
+       "title": "Modern Times Group confirms PlaySimple IPO filing targeting up to $335m in Mumbai"
+      },
+      {
+       "id": "69f9e463a088760d34c72ff3",
+       "headline": "Virtusa Corp, a global information technology services firm owned by Swedish private equity giant EQT, is exploring an initial public offering in India that could value it at $7 billion or more, four people with knowledge of the matter said.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "virtusa.com",
+       "published_at": "2026-04-28T10:22:28",
+       "url": "https://www.thehindubusinessline.com/markets/it-firm-virtusa-eyes-india-ipo-could-raise-over-1-billion/article70915980.ece",
+       "publisher": "thehindubusinessline.com",
+       "title": "IT firm Virtusa eyes India IPO, could raise over $1 billion"
+      },
+      {
+       "id": "69f1c69c399b489398de2a70",
+       "headline": "PlaySimple has today, on Thursday, April 23, 2026, filed its Draft Red Herring Prospectus (“DRHP”) containing the information related to the proposed initial public offering of equity shares of PlaySimple (“Offer”) with the Securities and Exchange Board of India. The Offer is a secondary offering, and the proceeds will be received by MTG. The size of the offer, as set out in the DRHP, is currently expected to be up to INR 31.5 billion...",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "playsimple.in",
+       "published_at": "2026-04-23T19:06:24",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e99c41bdd09a23d09260b5",
+       "headline": "The Mumbai-based start-up is preparing for an initial public offering of around ₹1,000 crore in FY27 and plans to file its draft red herring prospectus with the Securities and Exchange Board of India in the third quarter.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "imarticus.org",
+       "published_at": "2026-04-20T08:56:55",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e1dd371c9ae6b9f4b5ff7a",
+       "headline": "Tac Infosec shares surged following its U.S. subsidiary, CyberScope's, announcement of a planned Nasdaq IPO, a first for an India-listed cybersecurity firm.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "cyberscope.fr",
+       "published_at": "2026-04-17T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e64f742be6445e4610f708",
+       "headline": "Nodwin Gaming, a subsidiary of India's only listed mobile gaming firm Nazara Technologies Ltd, is looking to raise over $100 million and has inducted Manish Agarwal to its board as a non-executive director as it prepares for an initial public offering (IPO).",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "nodwingaming.com",
+       "published_at": "2026-04-14T00:30:24",
+       "url": "https://www.livemint.com/companies/nodwin-gaming-eyes-ipo-momentum-inducts-manish-agarwal-board-11776066788697.html",
+       "publisher": "livemint.com",
+       "title": "Nodwin Gaming eyes IPO momentum, inducts Manish Agarwal to board | Company Business News"
+      },
+      {
+       "id": "69e63dc72be6445e46069867",
+       "headline": "The proposed maiden issue of the stock exchange could reportedly raise over Rs 20,000 crore from India’s primary markets...",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "nseindia.com",
+       "published_at": "2026-04-13T09:32:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e9925cd47fc0283211e45d",
+       "headline": "Bonbloc Technologies Limited, an AI-native enterprise technology and SaaS solutions provider, has issued an Addendum cum Corrigendum to its Draft Red Herring Prospectus (DRHP) filed with the Securities and Exchange Board of India (SEBI) for its proposed IPO.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "bonbloc.com",
+       "published_at": "2026-04-12T20:43:27",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e50192430a4927fdc42649",
+       "headline": "Linklaters has advised ICICI Securities Limited, IIFL Capital Services Limited and Nuvama Wealth Management Limited as lead underwriters on Powerica Limited’s INR 11 billion IPO on the National Stock Exchange of India Limited and BSE Limited.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "powericaltd.com",
+       "published_at": "2026-04-12T14:18:26",
+       "url": "https://legaldesire.com/linklaters-advises-underwriters-on-powerica-limiteds-inr-11bn-ipo/",
+       "publisher": "legaldesire.com",
+       "title": "Linklaters advises underwriters on Powerica Limited’s INR 11bn IPO"
+      },
+      {
+       "id": "69e2e102dc480588dcab8312",
+       "headline": "Powerica Limited’s INR 11 billion IPO on the National Stock Exchange of India Limited and BSE Limited.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "powericaltd.com",
+       "published_at": "2026-04-09T08:09:47",
+       "url": "https://conventuslaw.com/press-releases/india-linklaters-advises-underwriters-on-powerica-limiteds-inr-11bn-ipo/",
+       "publisher": "conventuslaw.com",
+       "title": "India - Linklaters Advises Underwriters On Powerica Limited’s INR 11bn IPO. - Conventus Law"
+      },
+      {
+       "id": "69f1cb64399b489398e07185",
+       "headline": "seeing with a good eye the SBI Funds Management Limited (SBI AMC) public offering project (IPO) in India.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "sbifunds.com",
+       "published_at": "2026-04-09T07:25:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e2c8c89b322e6b3ea5df01",
+       "headline": "Om Power Transmission Limited (the “Company”), a power transmission infrastructure engineering, procurement, and construction (“EPC”) company engaged in executing high-voltage (“HV”) and extra-high voltage (“EHV”) transmission lines, substations, underground cabling projects, and providing comprehensive operation and maintenance (“O&M”) services proposes to open its Initial Public Offering on April 09, 2026, with Equity Shares to be listed on the National Stock Exchange of India Limited and BSE Limited.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "ompowertransmission.com",
+       "published_at": "2026-04-08T08:14:09",
+       "url": "https://up18news.com/om-power-transmission-limited-ipo-opens-on-april-09-2026/",
+       "publisher": "up18news.com",
+       "title": "Om Power Transmission Limited IPO Opens on April 09, 2026 - Up18 News"
+      },
+      {
+       "id": "69e2a90bff2654c79d67669d",
+       "headline": "Om Power Transmission Limited (the 'Company') proposes to open its Initial Public Offering on April 09, 2026, with Equity Shares to be listed on the National Stock Exchange of India Limited and BSE Limited.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "ompowertransmission.com",
+       "published_at": "2026-04-07T11:38:47",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e321e96a49bee673ba933f",
+       "headline": "Om Power Transmission Limited (the “Company”), a power transmission infrastructure engineering, procurement, and construction (“EPC”) company engaged in executing high-voltage (“HV”) and extra‑high voltage (“EHV”) transmission line, substation, underground cable projects providing O&M services proposes to open its Initial Public Offering on April 09, 2026, with Equity Shares to be listed on the National Stock Exchange of India Limited and BSE Limited (collectively, “Stock Exchanges”).",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "ompowertransmission.com",
+       "published_at": "2026-04-07T00:07:14",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e29a42601121844c348f67",
+       "headline": "Punjab Carbonic Limited has filed its Draft Red Herring Prospectus with India's securities regulatory authorities, aiming to launch a public offering of up to 95,00,000 equity shares.",
+       "event_type": "ipo",
+       "role": "primary",
+       "domain": "punjabfashion.co.uk",
+       "published_at": "2026-04-06T09:32:55",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 125,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDYgMDk6MzI6NTUiLCJpIjoiNjllMjlhNDI2MDExMjE4NDRjMzQ4ZjY3IiwiZG0iOiJwdW5qYWJmYXNoaW9uLmNvLnVrIiwiZXQiOiJpcG8iLCJybyI6InByaW1hcnkifQ",
+     "by_type": {
+      "ipo": 125
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.57,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 9 event(s)"
+     ],
+     "request_seconds": 4.572
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "ipo"
+     ],
+     "q": "India",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "india",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "ipo"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 477,
+     "carrying": 477,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 1,
+       "share": 0.21
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 30,
+       "share": 6.29
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 3,
+       "share": 0.63
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 174,
+       "share": 36.48
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 54,
+       "share": 11.32
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 213,
+       "share": 44.65
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 2,
+       "share": 0.42
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 31,
+       "share": 6.5
+      },
+      {
+       "group": "neutral",
+       "count": 3,
+       "share": 0.63
+      },
+      {
+       "group": "positive",
+       "count": 443,
+       "share": 92.87
+      }
+     ],
+     "negative_to_positive_ratio": 0.07,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.09,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 130,
+       "negative": 9,
+       "neutral": 2,
+       "positive": 119,
+       "negative_share": 6.92,
+       "positive_share": 91.54,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 9,
+        "none": 2,
+        "slight_pos": 36,
+        "fair_pos": 20,
+        "very_pos": 63,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 103,
+       "negative": 3,
+       "neutral": 0,
+       "positive": 100,
+       "negative_share": 2.91,
+       "positive_share": 97.09,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 0,
+        "slight_pos": 35,
+        "fair_pos": 8,
+        "very_pos": 57,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 168,
+       "negative": 15,
+       "neutral": 1,
+       "positive": 152,
+       "negative_share": 8.93,
+       "positive_share": 90.48,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 14,
+        "none": 1,
+        "slight_pos": 81,
+        "fair_pos": 12,
+        "very_pos": 58,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 76,
+       "negative": 4,
+       "neutral": 0,
+       "positive": 72,
+       "negative_share": 5.26,
+       "positive_share": 94.74,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 4,
+        "none": 0,
+        "slight_pos": 22,
+        "fair_pos": 14,
+        "very_pos": 35,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 3.151,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 3.154
+    }
+   }
+  }
+ ]
+}

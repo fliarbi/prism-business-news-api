@@ -1,0 +1,2018 @@
+{
+ "slug": "crypto-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:16Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "crypto",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "crypto"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 105,
+      "deals_with_amount": 100,
+      "deals_without_amount": 5,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 38177772583.15,
+      "median_amount_usd": 22300000.0,
+      "largest_amount_usd": 10000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1135000000.0,
+       "median_amount_usd": 567500000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5478500000.0,
+       "median_amount_usd": 40000000.0,
+       "largest_amount_usd": 5000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 175100000.0,
+       "median_amount_usd": 4000000.0,
+       "largest_amount_usd": 95000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 10410948000.0,
+       "median_amount_usd": 21600000.0,
+       "largest_amount_usd": 10000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 17,
+       "deals_with_amount": 17,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 8717014000.0,
+       "median_amount_usd": 20000000.0,
+       "largest_amount_usd": 3200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 11,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1083865583.15,
+       "median_amount_usd": 15000000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1580200000.0,
+       "median_amount_usd": 32400000.0,
+       "largest_amount_usd": 800000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1000000000.0,
+       "median_amount_usd": 1000000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 12,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 264900000.0,
+       "median_amount_usd": 14200000.0,
+       "largest_amount_usd": 150000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 50700000.0,
+       "median_amount_usd": 11250000.0,
+       "largest_amount_usd": 23000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 10,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 8031220000.0,
+       "median_amount_usd": 100000000.0,
+       "largest_amount_usd": 5400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 8,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 250725000.0,
+       "median_amount_usd": 7890000.0,
+       "largest_amount_usd": 200000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.029,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.042
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "crypto",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "crypto"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "1cce1530460995bb",
+       "company_name": "ETHZilla",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "clear street",
+         "domain": "clearstreet.io",
+         "amount": null
+        }
+       ],
+       "sector": "crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Build Ethereum reserves",
+       "source_sentence": "ETHZilla, an Ethereum reserve company, announced plans on August 23 to sell common stock worth up to $10 billion via Clear Street LLC.",
+       "published_at": "2025-08-23T21:37:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0edad74d3d5792a2bae09"
+       ],
+       "article_id": "68d0edad74d3d5792a2bae09"
+      },
+      {
+       "id": "3bb454885d794394",
+       "company_name": "Metaplanet",
+       "domain": "metaplanet.jp",
+       "round_type": "stock acquisition rights",
+       "amount_usd": 5400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5400000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Bitcoin purchases and related operations",
+       "source_sentence": "Bloomberg reported a separate, larger capital program of roughly $5.4 billion tied to stock acquisition rights, which moved the share price on announcement.",
+       "published_at": "2026-03-16T22:13:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e995ccd47fc0283214b116"
+       ],
+       "article_id": "69e995ccd47fc0283214b116"
+      },
+      {
+       "id": "ea7f0a754a95462b",
+       "company_name": "DeFi Development Corp.",
+       "domain": null,
+       "round_type": "Equity Line of Credit",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "RK Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto / Solana Treasury",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Purchase Solana (SOL)",
+       "source_sentence": "Publicly traded DeFi Development Corp. entered into an agreement for a $5 billion equity line of credit with RK Capital",
+       "published_at": "2025-06-12T21:45:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "6864101b8882abb7e3db64ae"
+       ],
+       "article_id": "6864101b8882abb7e3db64ae"
+      },
+      {
+       "id": "9b00b7dc0ead5253",
+       "company_name": "terawulf",
+       "domain": "terawulf.com",
+       "round_type": null,
+       "amount_usd": 3200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": 3000000000.0
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": 1400000000.0
+        }
+       ],
+       "sector": "crypto mining",
+       "country": "U.S.",
+       "city": null,
+       "use_of_funds": "build data centers",
+       "source_sentence": "Crypto mining company TeraWulf is reportedly raising approximately $3 billion through Morgan Stanley to build data centers.",
+       "published_at": "2025-09-26T05:43:55",
+       "coverage_count": 4,
+       "article_ids": [
+        "68d9acdb5af1b12a767f2f8e",
+        "68d9b61ac149d2bca78025de",
+        "68f723e1f3ba9a3da52b50a8",
+        "69c39ed783f93681eafe8d65"
+       ],
+       "article_id": "68d9b61ac149d2bca78025de"
+      },
+      {
+       "id": "5333eda90a69cf8b",
+       "company_name": "terawulf",
+       "domain": "terawulf.com",
+       "round_type": "debt financing",
+       "amount_usd": 3000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": 1400000000.0
+        }
+       ],
+       "sector": "crypto mining",
+       "country": null,
+       "city": null,
+       "use_of_funds": "data centers and AI infrastructure",
+       "source_sentence": "According to CFO Patrick Fleury, the company is working with Morgan Stanley on a deal that could launch as early as October, potentially tapping high‑yield bond or leveraged loan markets. The raise would total around $3 billion, with Google already committed to backstopping $1.4 billion of the package.",
+       "published_at": "2025-09-26T15:50:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9ace7c149d2bca77f3256"
+       ],
+       "article_id": "68d9ace7c149d2bca77f3256"
+      },
+      {
+       "id": "3660984e0b8a218b",
+       "company_name": "Metaplanet",
+       "domain": "metaplanet.jp",
+       "round_type": "equity",
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Bitcoin purchases and related operations",
+       "source_sentence": "international share sale in September 2025 raised about ¥205 billion (~$1.4 billion), with most proceeds earmarked for Bitcoin and a smaller portion for related operations.",
+       "published_at": "2026-03-16T22:13:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e995ccd47fc0283214b116"
+       ],
+       "article_id": "69e995ccd47fc0283214b116"
+      },
+      {
+       "id": "a89375f39fdf0638",
+       "company_name": "cipher mining",
+       "domain": "ciphermining.com",
+       "round_type": "equity stake",
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": 1400000000.0
+        }
+       ],
+       "sector": "crypto mining",
+       "country": null,
+       "city": null,
+       "use_of_funds": "access to data center capacity",
+       "source_sentence": "Last week, Google agreed to backstop $1.4B of Fluidstack’s lease obligations in a 10-year deal with crypto miner Cipher Mining. In return, Google received a 5.4% stake in Cipher.",
+       "published_at": "2025-09-29T18:34:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcf31d6467b30648e38894"
+       ],
+       "article_id": "69bcf31d6467b30648e38894"
+      },
+      {
+       "id": "a0823934b948d0ce",
+       "company_name": "cipher mining",
+       "domain": "ciphermining.com",
+       "round_type": "debt",
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "fluidstack",
+         "domain": "fluidstack.io",
+         "amount": null
+        }
+       ],
+       "sector": "crypto mining",
+       "country": null,
+       "city": null,
+       "use_of_funds": "obligations tied to a deal with Google and Fluidstack",
+       "source_sentence": "Cipher Mining struck a similar agreement with Google and Fluidstack this week. Google will also backstop $1.4 billion in obligations tied to that deal and take an equity stake in Cipher",
+       "published_at": "2025-09-27T15:53:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9aaf7c149d2bca77eff81"
+       ],
+       "article_id": "68d9aaf7c149d2bca77eff81"
+      },
+      {
+       "id": "2f7b42ad427e631a",
+       "company_name": "cipher mining",
+       "domain": "ciphermining.com",
+       "round_type": null,
+       "amount_usd": 1400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": 1400000000.0
+        }
+       ],
+       "sector": "Crypto mining",
+       "country": "U.S.",
+       "city": null,
+       "use_of_funds": "data-center capacity and obligations under colocation agreement",
+       "source_sentence": "Cipher Mining announced a very similar agreement on Thursday, partnering with the same AI cloud firm Fluidstack and being backed by Google, which took a 5.4% stake in the company.",
+       "published_at": "2025-09-26T05:43:55",
+       "coverage_count": 4,
+       "article_ids": [
+        "68d9acdb5af1b12a767f2f8e",
+        "68d9b61ac149d2bca78025de",
+        "68f723e1f3ba9a3da52b50a8",
+        "69c39ed783f93681eafe8d65"
+       ],
+       "article_id": "68d9b61ac149d2bca78025de"
+      },
+      {
+       "id": "264794e3526a41bc",
+       "company_name": "Jiuzi Holdings, Inc.",
+       "domain": null,
+       "round_type": "Private Placement",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "several institutional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto Asset Services",
+       "country": "China",
+       "city": "Hangzhou",
+       "use_of_funds": "support the development of the Company's crypto asset business, including building advanced secure custody infrastructure and innovative storage solutions",
+       "source_sentence": "Jiuzi Holdings, Inc. (Nasdaq: JZXN) (\"Jiuzi\" or the \"Company\") today announced that it has signed a Memorandum of Understanding (\"MOU\") with several institutional investors to increase its private placement financing size to up to US$1 billion.",
+       "published_at": "2025-12-12T12:20:22",
+       "coverage_count": 2,
+       "article_ids": [
+        "694526f4062f605666a3455b",
+        "69bba796a2269239ea270623"
+       ],
+       "article_id": "694526f4062f605666a3455b"
+      },
+      {
+       "id": "b0dea198908937db",
+       "company_name": "SOL Strategies Inc.",
+       "domain": null,
+       "round_type": "Shelf prospectus",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Blockchain/crypto",
+       "country": "Canada",
+       "city": "Vancouver",
+       "use_of_funds": "Invest in Solana network",
+       "source_sentence": "SOL Strategies Inc. (CSE: HODL), a Vancouver-based company focused on the growth and development of the Solana (SOL) network, announced that it filed a preliminary short-form base shelf prospectus with the securities regulators in Canada to issue up to $1 billion in securities over the next 25 months.",
+       "published_at": "2025-05-28T01:20:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "68640fc88882abb7e3c57b51"
+       ],
+       "article_id": "68640fc88882abb7e3c57b51"
+      },
+      {
+       "id": "1f0b1c3c17cc08dc",
+       "company_name": "kraken",
+       "domain": "kraken.com",
+       "round_type": null,
+       "amount_usd": 800000000.0,
+       "amount_flag": null,
+       "valuation_usd": 20000000000.0,
+       "currency": "USD",
+       "amount": 800000000.0,
+       "valuation": 20000000000.0,
+       "investors": [
+        {
+         "name": "citadel securities",
+         "domain": "citadelsecurities.com",
+         "amount": 200000000.0
+        },
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        },
+        {
+         "name": "drw venture capital",
+         "domain": "drwvc.com",
+         "amount": null
+        },
+        {
+         "name": "hsg",
+         "domain": "hsginc.org",
+         "amount": null
+        },
+        {
+         "name": "tribe capital",
+         "domain": "tribecap.co",
+         "amount": null
+        },
+        {
+         "name": "Family office of Kraken Co-CEO Arjun Sethi",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto exchange",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Enhance regulated presence and expand product suite through organic development and targeted acquisitions",
+       "source_sentence": "Kraken said the funding will be used to enhance its regulated presence and expand its product suite through organic development and targeted acquisitions.",
+       "published_at": "2025-11-19T03:38:49",
+       "coverage_count": 11,
+       "article_ids": [
+        "69314b670c188c23bdf2041a",
+        "69316a953fdf06c4d1f20636",
+        "69316d3cfb4031b45df212d0",
+        "694af6cfedd4d8e72e75c96a",
+        "6988a74bcfd8658683ead30e",
+        "698cbcbd8f4c6833a62c44f5",
+        "69973bb2e0523bedf7b38489",
+        "69baf7450897f254a7e5929d",
+        "69bc1ab58db8b8187dd8b613",
+        "69bcb2d67b829b0952546e83",
+        "69e2a838601121844c3757db"
+       ],
+       "article_id": "69973bb2e0523bedf7b38489"
+      },
+      {
+       "id": "aa4c44edd02acdc7",
+       "company_name": "Metaplanet",
+       "domain": "metaplanet.jp",
+       "round_type": "stock acquisition rights",
+       "amount_usd": 513220000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "JPY",
+       "amount": 76600000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": "stock acquisition rights under the “21 Million Plan”",
+       "source_sentence": "According to Executives-Edge, Metaplanet had raised approximately ¥76.6 billion via stock acquisition rights by May 2025 under its “21 Million Plan.”",
+       "published_at": "2026-03-16T22:13:17",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a6a53c4c503be018a0bc",
+        "69e995ccd47fc0283214b116"
+       ],
+       "article_id": "69c3a6a53c4c503be018a0bc"
+      },
+      {
+       "id": "cb4aa98aebe37167",
+       "company_name": "core scientific",
+       "domain": "corescientific.com",
+       "round_type": "financing facility",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": "crypto mining",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "acquisition of real estate, pre-development costs, additional energy contracts and equipment for AI workload conversion",
+       "source_sentence": "Core Scientific secured a $500 million financing facility granted by Morgan Stanley through a 364-day loan arrangement, with an expansion option that could raise the total committed amount to $1 billion.",
+       "published_at": "2026-03-05T18:51:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c8a7101d51eeba947de493"
+       ],
+       "article_id": "69c8a7101d51eeba947de493"
+      },
+      {
+       "id": "273293fcc56e5ad3",
+       "company_name": "ripple",
+       "domain": "rippleenergy.com",
+       "round_type": "Strategic Investment",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fortress investment group",
+         "domain": "fortress.com",
+         "amount": null
+        },
+        {
+         "name": "citadel securities",
+         "domain": "citadelsecurities.com",
+         "amount": null
+        },
+        {
+         "name": "pantera capital",
+         "domain": "panteracapital.com",
+         "amount": null
+        },
+        {
+         "name": "galaxy digital",
+         "domain": "galaxydigital.com",
+         "amount": null
+        },
+        {
+         "name": "brevan howard",
+         "domain": "brevanhoward.com",
+         "amount": null
+        },
+        {
+         "name": "marshall wace",
+         "domain": "mwam.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cryptocurrency / Crypto banking",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Expand beyond cross-border payments and transform into a full-service crypto banking platform",
+       "source_sentence": "Ripple Lands $500M in Funding at $40B Valuation to Build Out Crypto Banking Empire",
+       "published_at": "2025-11-05T22:38:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931bbdf217f91e5e4f21fd9"
+       ],
+       "article_id": "6931bbdf217f91e5e4f21fd9"
+      },
+      {
+       "id": "f5e367a11950f5d3",
+       "company_name": "terawulf",
+       "domain": "terawulf.com",
+       "round_type": "convertible note offering",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto mining / AI infrastructure",
+       "country": "United States",
+       "city": "Abernathy",
+       "use_of_funds": "fund the Texas data center and general corporate purposes",
+       "source_sentence": "Crypto mining firm TeraWulf is set to raise $500 million through a convertible note offering to finance the construction of a new AI-ready data center campus in Abernathy, Texas.",
+       "published_at": "2025-10-29T13:57:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc115a595be15cddd11445"
+       ],
+       "article_id": "69bc115a595be15cddd11445"
+      },
+      {
+       "id": "efe6b9e1437104e6",
+       "company_name": "kraken",
+       "domain": "kraken.com",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 15000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 15000000000.0,
+       "investors": [
+        {
+         "name": "tribe capital",
+         "domain": "tribecap.co",
+         "amount": null
+        },
+        {
+         "name": "Arjun Sethi",
+         "domain": "https://www.linkedin.com/in/asethi/",
+         "amount": null
+        }
+       ],
+       "sector": "crypto exchange",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "According to Fortune, cryptocurrency exchange Kraken completed a $500 million funding round this month, valuing the exchange at $15 billion. This round, with no lead investor and terms set by Kraken itself, included Tribe Capital and its co-CEO, Arjun Sethi.",
+       "published_at": "2025-09-26T09:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c8b2542fb9da90476b6fb3",
+        "69e861657bb1410d4c72fd77"
+       ],
+       "article_id": "69e861657bb1410d4c72fd77"
+      },
+      {
+       "id": "1109f5a085c04b79",
+       "company_name": "Avalanche Foundation",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Nasdaq-listed companies",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto Treasury",
+       "country": "U.S.",
+       "city": null,
+       "use_of_funds": "digital asset treasury companies dedicated to acquiring and holding millions of AVAX tokens",
+       "source_sentence": "It is expected to raise up to $500 million from Nasdaq-listed companies, with prominent crypto investor and former White House Press Secretary Anthony Scaramucci rumored to be advising the deal.",
+       "published_at": "2025-09-11T07:08:27",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e3452d751e1066665d7472",
+        "69e3452d751e1066665d7472"
+       ],
+       "article_id": "69e3452d751e1066665d7472"
+      },
+      {
+       "id": "885e17aa883bfa5f",
+       "company_name": "PS Miner",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 328930000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 259000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "crypto and cloud infrastructure",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "NScale securing a £1.1bn investment with other major deals including Rapyd Financial, which offers payments, mobile wallets, money transfers, card issuing, and fraud protection, netting £370m and crypto and cloud infrastructure firm PS Miner landing £259m.",
+       "published_at": "2025-10-27T11:30:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc10ec41af9e92ac95b210"
+       ],
+       "article_id": "69bc10ec41af9e92ac95b210"
+      },
+      {
+       "id": "c72c0ea315ab214e",
+       "company_name": "PS Miner",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 328930000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 259000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "crypto and cloud infrastructure",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "and crypto and cloud infrastructure firm PS Miner landing £259 million.",
+       "published_at": "2025-10-27T08:18:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698888c7868e86f9ec6c8abf"
+       ],
+       "article_id": "698888c7868e86f9ec6c8abf"
+      },
+      {
+       "id": "3354dde07812beec",
+       "company_name": "Webus International Limited",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Crypto payments",
+       "country": "China",
+       "city": "Hangzhou",
+       "use_of_funds": "XRP-focused reserve",
+       "source_sentence": "Webus International Limited filed a Form 6-K with the SEC to ask for $300 million for an XRP-focused reserve.",
+       "published_at": "2025-06-12T17:24:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc76464583f4645ff56e4f"
+       ],
+       "article_id": "69bc76464583f4645ff56e4f"
+      },
+      {
+       "id": "f77ab2fe5ed4c629",
+       "company_name": "Payward",
+       "domain": null,
+       "round_type": "Strategic Investment",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "German stock exchange",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto",
+       "country": "Germany",
+       "city": "Eschborn",
+       "use_of_funds": null,
+       "source_sentence": "The broker from Eschborn near Frankfurt acquires a share of 1.5 percent of the Kraken parent company Payward for 200 million dollars, as the company announced on Tuesday.",
+       "published_at": "2026-04-14T11:00:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8444e7bb1410d4c616636"
+       ],
+       "article_id": "69e8444e7bb1410d4c616636"
+      },
+      {
+       "id": "9ca8f708f0dd0739",
+       "company_name": "kraken",
+       "domain": "kraken.com",
+       "round_type": null,
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 20000000000.0,
+       "investors": [
+        {
+         "name": "citadel securities",
+         "domain": "citadelsecurities.com",
+         "amount": 200000000.0
+        }
+       ],
+       "sector": "Crypto",
+       "country": "USA",
+       "city": "Cheyenne",
+       "use_of_funds": null,
+       "source_sentence": "An agreement for a subsequent $200 million strategic investment from Citadel Securities was executed at a $20 billion valuation.",
+       "published_at": "2025-11-18T22:03:09",
+       "coverage_count": 2,
+       "article_ids": [
+        "69316ee9aa190d8beff20808",
+        "69bbbe0088a452392c44e8f0"
+       ],
+       "article_id": "69316ee9aa190d8beff20808"
+      },
+      {
+       "id": "d93d1f58ce6ba1c0",
+       "company_name": "Flying Tulip",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1000000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 1000000000.0,
+       "investors": [
+        {
+         "name": "brevan howard",
+         "domain": "brevanhoward.com",
+         "amount": null
+        },
+        {
+         "name": "coinfund",
+         "domain": "coinfund.io",
+         "amount": null
+        },
+        {
+         "name": "dwf labs",
+         "domain": "dwf-labs.com",
+         "amount": null
+        }
+       ],
+       "sector": "Crypto Exchange",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Flying Tulip, a full stack on-chain exchange, raised $200 million in a Seed round",
+       "published_at": "2025-10-04T21:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bba8f758389c352a06a541"
+       ],
+       "article_id": "69bba8f758389c352a06a541"
+      },
+      {
+       "id": "e2a6824b2624ac55",
+       "company_name": "strive",
+       "domain": "strive.com",
+       "round_type": "Preferred stock offering",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Crypto Treasury",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Paying off debt and buying Bitcoin",
+       "source_sentence": "Strive, a fund management company founded by former US Presidential candidate Vivek Ramaswamy, is on the brink of raising as much as $150 million via a preferred stock offering.",
+       "published_at": "2026-01-22T11:37:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "698dfe4a8d29a990b6e0e3bc"
+       ],
+       "article_id": "698dfe4a8d29a990b6e0e3bc"
+      },
+      {
+       "id": "4c69339fc06318da",
+       "company_name": "strive",
+       "domain": "strive.com",
+       "round_type": "Series A",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "barclays",
+         "domain": "barclays.in",
+         "amount": null
+        },
+        {
+         "name": "cantor",
+         "domain": "cantoranalytics.com",
+         "amount": null
+        },
+        {
+         "name": "clear street",
+         "domain": "clearstreet.io",
+         "amount": null
+        }
+       ],
+       "sector": "Crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Retire legacy convertible debt and expand Bitcoin holdings",
+       "source_sentence": "Strive announced today that it intends to raise up to $150 million through a follow-on offering of its Variable Rate Series A Perpetual Preferred Stock, known as SATA Stock, subject to market conditions.",
+       "published_at": "2026-01-21T21:50:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "698606b254148f65ea2fd583"
+       ],
+       "article_id": "698606b254148f65ea2fd583"
+      },
+      {
+       "id": "611fb48d077301c1",
+       "company_name": "polymarket",
+       "domain": "polymarket.com",
+       "round_type": "Series B (unconfirmed)",
+       "amount_usd": 135400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 135400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "founders fund",
+         "domain": "foundersfund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Crypto",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "to expand platform operations and product offerings",
+       "source_sentence": "Polymarket, a New York-based prediction market startup, has secured $135.4 million in a new funding round to expand its platform.",
+       "published_at": "2025-08-04T23:26:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "68a176753ff75e010c30bd60",
+        "690e2dbedb65e9a9d0245a59"
+       ],
+       "article_id": "690e2dbedb65e9a9d0245a59"
+      },
+      {
+       "id": "d479f8462f66de4a",
+       "company_name": "World (Tools for Humanity / Worldcoin project)",
+       "domain": null,
+       "round_type": "Private token funding round",
+       "amount_usd": 135000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 135000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz (lead purchaser)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bain Capital Crypto",
+         "domain": "baincapitalcrypto.com",
+         "amount": null
+        },
+        {
+         "name": "Selini Capital",
+         "domain": "selinicapital.com",
+         "amount": null
+        },
+        {
+         "name": "Mirana Ventures",
+         "domain": "mirana.xyz",
+         "amount": null
+        },
+        {
+         "name": "Arctic Digital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto-based digital identity project",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Deploy biometric Orb devices and expand digital ID and crypto payment infrastructure",
+       "source_sentence": "World Raises $135 M to Expand Worldcoin Crypto and Digital ID Project",
+       "published_at": "2025-05-22T22:29:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d937ffde859477a80aefd0"
+       ],
+       "article_id": "68d937ffde859477a80aefd0"
+      },
+      {
+       "id": "1604ae84d6430a31",
+       "company_name": "Metaplanet",
+       "domain": "metaplanet.jp",
+       "round_type": "loan",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": "additional BTC purchases and business activity",
+       "source_sentence": "Yahoo Finance reported a $100 million loan secured by Bitcoin, part of a $500 million facility, with proceeds directed to additional BTC purchases and business activity.",
+       "published_at": "2026-03-16T22:13:17",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a6a53c4c503be018a0bc",
+        "69e995ccd47fc0283214b116"
+       ],
+       "article_id": "69c3a6a53c4c503be018a0bc"
+      },
+      {
+       "id": "c7a17f4300847987",
+       "company_name": "bitgo",
+       "domain": "bitgo.com",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Crypto services",
+       "country": null,
+       "city": null,
+       "use_of_funds": "initial investment",
+       "source_sentence": "BitGo has approved an initial investment of $100 million.",
+       "published_at": "2025-06-12T17:24:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc76464583f4645ff56e4f"
+       ],
+       "article_id": "69bc76464583f4645ff56e4f"
+      },
+      {
+       "id": "6f30219fdfbfc4e2",
+       "company_name": "TWL Miner",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 95000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 95000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto mining",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "Advance AI and renewable energy initiatives to expand AI-driven operations and develop a global renewable energy data center network and AI system for dynamic resource management.",
+       "source_sentence": "TWL Miner, a UK cloud mining platform, completed a $95 million Series B funding round on July 1 to advance AI and renewable energy initiatives.",
+       "published_at": "2025-07-01T17:23:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898b012ab03b1b156de9f26"
+       ],
+       "article_id": "6898b012ab03b1b156de9f26"
+      },
+      {
+       "id": "66ff455e750560ac",
+       "company_name": "anchorage digital",
+       "domain": "anchorage.com",
+       "round_type": null,
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        }
+       ],
+       "sector": "crypto, blockchain",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The startup raised $80 million in previous rounds.",
+       "published_at": "2025-08-25T21:31:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b054653b014c087aeda458"
+       ],
+       "article_id": "68b054653b014c087aeda458"
+      },
+      {
+       "id": "5d350348728144a5",
+       "company_name": "Bakkt Holdings, Inc.",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "clear street",
+         "domain": "clearstreet.io",
+         "amount": null
+        },
+        {
+         "name": "cohen & company capital markets",
+         "domain": "cohencm.com",
+         "amount": null
+        }
+       ],
+       "sector": "Crypto",
+       "country": "United States",
+       "city": "Alpharetta",
+       "use_of_funds": "purchase Bitcoin and other digital assets in accordance with its investment policy, for working capital and for general corporate purposes.",
+       "source_sentence": "Bakkt Announces Closing of $75 Million Public Offering",
+       "published_at": "2025-07-30T20:49:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7ea43ca60e76cf2f9ec4"
+       ],
+       "article_id": "69bc7ea43ca60e76cf2f9ec4"
+      },
+      {
+       "id": "edcfccff95d7d96c",
+       "company_name": "portal",
+       "domain": "portal.bio",
+       "round_type": "round",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "crypto protocols",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "DeFi protocols dominated August funding with multiple major raises, including Portal's $50 million round, M0's $40 million Series B, and aPriori's $20 million strategic investment.",
+       "published_at": "2025-09-12T00:00:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc1d5af111344e7e7abf73"
+       ],
+       "article_id": "69cc1d5af111344e7e7abf73"
+      },
+      {
+       "id": "81adf327aa5660a6",
+       "company_name": "cryptio",
+       "domain": "cryptio.co",
+       "round_type": null,
+       "amount_usd": 44500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 44500000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Cryptio, a back-office platform for digital assets transforming data into auditable records, has raised $44.5M in funding according to a recent SEC filing.",
+       "published_at": "2026-03-09T09:27:34",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a48e29aae2bd4e2d4bc3",
+        "69e2abd7277be6ed2d9d11b7"
+       ],
+       "article_id": "69c3a48e29aae2bd4e2d4bc3"
+      },
+      {
+       "id": "ecfed8965f2a8d8a",
+       "company_name": "zebedee",
+       "domain": "zebedee.io",
+       "round_type": "Series C",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blockstream Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto fintech payments",
+       "country": "USA",
+       "city": "New Jersey",
+       "use_of_funds": "Scale bitcoin payments platform to more game developers and virtual economies.",
+       "source_sentence": "Zebedee (ZBD), a crypto‑fintech startup based in New Jersey, raised $40 million in a Series C round on Jan. 22, 2026.",
+       "published_at": "2026-01-23T00:00:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "6985ebe5ca3bd326c7793b8f"
+       ],
+       "article_id": "6985ebe5ca3bd326c7793b8f"
+      },
+      {
+       "id": "2380d3a87a88b2b2",
+       "company_name": "anchorage digital",
+       "domain": "anchorage.com",
+       "round_type": null,
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        }
+       ],
+       "sector": "crypto, blockchain",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The startup raised $40 million in previous rounds.",
+       "published_at": "2025-08-25T21:31:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b054653b014c087aeda458"
+       ],
+       "article_id": "68b054653b014c087aeda458"
+      },
+      {
+       "id": "00a1728ba766ff14",
+       "company_name": "hypernative",
+       "domain": "hypernative.io",
+       "round_type": "Series B",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Ten Eleven Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ballistic Ventures",
+         "domain": "ballistic-studio.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "boldstart ventures",
+         "domain": "boldstart.vc",
+         "amount": null
+        },
+        {
+         "name": "IBI Tech Fund",
+         "domain": "tech.ibi.co.il",
+         "amount": null
+        }
+       ],
+       "sector": "Crypto Security",
+       "country": "Israel",
+       "city": "Tel Aviv",
+       "use_of_funds": "expand its AI-powered security tools, grow its workforce, and improve customer service",
+       "source_sentence": "Crypto security firm Hypernative has raised $40 million in a Series B funding round.",
+       "published_at": "2025-06-10T15:13:05",
+       "coverage_count": 2,
+       "article_ids": [
+        "696487b3c3f4bc732dd3bd82",
+        "698d18919ca02490ecf48936"
+       ],
+       "article_id": "696487b3c3f4bc732dd3bd82"
+      },
+      {
+       "id": "4f1c60fc0fd756c0",
+       "company_name": "metacomp",
+       "domain": "metacomp.de",
+       "round_type": "Pre-A",
+       "amount_usd": 35000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alibaba",
+         "domain": "alibaba.com",
+         "amount": null
+        },
+        {
+         "name": "Spark Venture",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "institutional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto-enabled fintech / Regulated hybrid fiat‑stablecoin payment infrastructure",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "Geographic expansion of the StableX Network into the Middle East, Africa, and Latin America; AI‑enhanced compliance tools",
+       "source_sentence": "Key Highlights Alibaba leads $35 million Pre-A round for MetaComp, completing two funding closes in just three months.",
+       "published_at": "2026-03-13T06:37:50",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8ca1f7bb1410d4cc0f2a3",
+        "6a0360d5c2856acf8e8628be"
+       ],
+       "article_id": "6a0360d5c2856acf8e8628be"
+      },
+      {
+       "id": "4e71fa654ce90915",
+       "company_name": "ETHZilla",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 34400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 34400000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Build Ethereum reserves",
+       "source_sentence": "The firm has already raised approximately $34.4 million from prior share offerings.",
+       "published_at": "2025-08-23T21:37:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0edad74d3d5792a2bae09"
+       ],
+       "article_id": "68d0edad74d3d5792a2bae09"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 105,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDgtMjMgMjE6Mzc6NDkiLCJrIjoiNTY1MjU3NDMyMDMxNTY2NDY2MSIsImEiOjM0NDAwMDAwLjB9",
+     "totals": {
+      "deals": 105,
+      "deals_with_amount": 100,
+      "deals_without_amount": 5,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 38177772583.15,
+      "median_amount_usd": 22300000.0,
+      "largest_amount_usd": 10000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.167,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.175
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "crypto",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "crypto"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "a5a5565f2b0e67d9",
+       "company_name": "Robin Markets",
+       "domain": null,
+       "round_type": "angel",
+       "amount_usd": 475000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 475000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fabric vc",
+         "domain": "fabricvc.com",
+         "amount": null
+        },
+        {
+         "name": "animoca brands",
+         "domain": "animocabrands.co.jp",
+         "amount": null
+        },
+        {
+         "name": "ATKA Incubator",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "John Lilic",
+         "domain": "https://www.linkedin.com/in/jlilic",
+         "amount": null
+        },
+        {
+         "name": "Gnosis co-founder Stefan D. George",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "hilbert capital",
+         "domain": "hilbertcapital.com",
+         "amount": null
+        },
+        {
+         "name": "LayerZero",
+         "domain": "cross-layerzero.network",
+         "amount": null
+        },
+        {
+         "name": "gnosis",
+         "domain": "gnosis-safe.io",
+         "amount": null
+        }
+       ],
+       "sector": "crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": "product development",
+       "source_sentence": "Robin Markets has completed a $475,000 angel round led by Fabric VC, with joint leads from Animoca Brands, ATKA Incubator, John Lilic, and Gnosis co-founder Stefan D. George.",
+       "published_at": "2026-04-24T15:33:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efac27727212302c6022f4"
+       ],
+       "article_id": "69efac27727212302c6022f4"
+      },
+      {
+       "id": "c2bece2bf062e944",
+       "company_name": "minter",
+       "domain": "minter.network",
+       "round_type": "A series",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "east group",
+         "domain": "eastups.com",
+         "amount": null
+        },
+        {
+         "name": "legend capital",
+         "domain": "legendcapital.com.cn",
+         "amount": null
+        },
+        {
+         "name": "individual investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "infrastructure for data centers for crypto-mining",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Now, the vehicle announced a new contribution, leading an A series at Minter, a company specializing in infrastructure for data centers for crypto-mining. The round, which had no disclosed value, also had the participation of the East Group, Legend Capital and individual investors with activity in the sector.",
+       "published_at": "2026-04-22T17:25:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e99f8dd47fc028321c354c"
+       ],
+       "article_id": "69e99f8dd47fc028321c354c"
+      },
+      {
+       "id": "eebfb2419958be57",
+       "company_name": "BetHog",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "will ventures",
+         "domain": "willventures.com",
+         "amount": null
+        },
+        {
+         "name": "RockawayX",
+         "domain": "rockawayx.com",
+         "amount": null
+        },
+        {
+         "name": "pcv",
+         "domain": "pcvservices.com",
+         "amount": null
+        },
+        {
+         "name": "6MV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bullpen capital",
+         "domain": "bullpencap.com",
+         "amount": null
+        },
+        {
+         "name": "advancit capital",
+         "domain": "advancitcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Online Gambling / Crypto Casino",
+       "country": "US",
+       "city": "New York City",
+       "use_of_funds": "expand its AI dealer technology on its own platform and accelerate adoption of Sentient Studios among global gaming operators",
+       "source_sentence": "BetHog has announced a $10 million Series A financing and the launch of Sentient Studios, a new B2B provider that enables casino operators to deploy AI-powered dealers across their live online casino offerings.",
+       "published_at": "2026-04-22T12:38:09",
+       "coverage_count": 6,
+       "article_ids": [
+        "69e99eadbdd09a23d093ff4b",
+        "69ea1efe75c44d9ce8820ce0",
+        "69ea1f4f8266d9339994a613",
+        "69ea201175c44d9ce8821b6e",
+        "69ea231a73206aa299ec4a90",
+        "69f1c68aa5706a322e0e90c5"
+       ],
+       "article_id": "69e99eadbdd09a23d093ff4b"
+      },
+      {
+       "id": "0bf324d3730d36e6",
+       "company_name": "QLink World",
+       "domain": null,
+       "round_type": "Strategic Investment",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "foresight ventures",
+         "domain": "foresightventures.com",
+         "amount": 20000000.0
+        }
+       ],
+       "sector": "Web3 / Crypto Economy",
+       "country": "United Arab Emirates",
+       "city": "Dubai",
+       "use_of_funds": "to jointly build a new civilization of global value interconnection",
+       "source_sentence": "Leading the Web3 super gateways: QLink World received $20 million strategic investment led by Foresight Ventures, aiming to jointly build a new civilization of global value interconnection",
+       "published_at": "2026-04-21T05:37:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9a2fdbdd09a23d09542ed"
+       ],
+       "article_id": "69e9a2fdbdd09a23d09542ed"
+      },
+      {
+       "id": "4553dafcc482493c",
+       "company_name": "eden block",
+       "domain": "edenblock.com",
+       "round_type": "equity investment",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "optiver",
+         "domain": "optiver.com",
+         "amount": null
+        }
+       ],
+       "sector": "crypto and AI venture capital",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Optiver has made an equity investment in crypto and AI venture capital fund Eden Block to gain exposure to early-stage AI and digital asset companies.",
+       "published_at": "2026-04-21T00:41:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e995fc75f157062cab744a"
+       ],
+       "article_id": "69e995fc75f157062cab744a"
+      },
+      {
+       "id": "d5442b3e45b0d3bf",
+       "company_name": "Maxi Doge",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 4300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4300000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The project has raised roughly $4.3 million",
+       "published_at": "2026-04-19T21:00:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e98f6f75f157062ca642e4"
+       ],
+       "article_id": "69e98f6f75f157062ca642e4"
+      },
+      {
+       "id": "b64c7e4ad6525167",
+       "company_name": "Pepeto",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 9200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9200000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Pepeto leads with over $9.2 million raised, a SolidProof audit, and a confirmed Binance listing",
+       "published_at": "2026-04-19T21:00:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e98f6f75f157062ca642e4"
+       ],
+       "article_id": "69e98f6f75f157062ca642e4"
+      },
+      {
+       "id": "67875ddb76735c18",
+       "company_name": "NectarFi",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 170000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 170000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Crypto and Fintech",
+       "country": "Nigeria",
+       "city": "Lagos",
+       "use_of_funds": "early funding alongside its public launch",
+       "source_sentence": "The startup raised early funding alongside its public launch, having already onboarded more than 1,000 users across Nigeria, South Africa, Kenya, Ghana, Thailand, Indonesia, Brazil, and Argentina during a private testing phase.",
+       "published_at": "2026-04-17T09:30:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8647a7bb1410d4c74e632"
+       ],
+       "article_id": "69e8647a7bb1410d4c74e632"
+      },
+      {
+       "id": "f77ab2fe5ed4c629",
+       "company_name": "Payward",
+       "domain": null,
+       "round_type": "Strategic Investment",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "German stock exchange",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Crypto",
+       "country": "Germany",
+       "city": "Eschborn",
+       "use_of_funds": null,
+       "source_sentence": "The broker from Eschborn near Frankfurt acquires a share of 1.5 percent of the Kraken parent company Payward for 200 million dollars, as the company announced on Tuesday.",
+       "published_at": "2026-04-14T11:00:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8444e7bb1410d4c616636"
+       ],
+       "article_id": "69e8444e7bb1410d4c616636"
+      },
+      {
+       "id": "eebde57cf23fff3a",
+       "company_name": "Ozak AI",
+       "domain": null,
+       "round_type": "Presale",
+       "amount_usd": 6580000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6580000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "crypto",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Currently, Ozak AI has raised over $6.58 million in presale funding, and over 1.156 billion OZ tokens have been sold.",
+       "published_at": "2026-04-01T06:38:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d14c602d835dcca2e1c617"
+       ],
+       "article_id": "69d14c602d835dcca2e1c617"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 37,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDEgMDY6Mzg6MjYiLCJrIjoiMTcyMDMxNTg0NzY0MjgxNDg1MzgifQ",
+     "totals": {
+      "deals": 37,
+      "deals_with_amount": 34,
+      "deals_without_amount": 3,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 8597545000.0,
+      "median_amount_usd": 18000000.0,
+      "largest_amount_usd": 5400000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.191,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.218
+    }
+   }
+  }
+ ]
+}

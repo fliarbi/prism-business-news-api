@@ -1,0 +1,2707 @@
+{
+ "slug": "series-a-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:15Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "round_type": "series a",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "round_type": [
+       "series a"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 3824,
+      "deals_with_amount": 3547,
+      "deals_without_amount": 277,
+      "deals_amount_excluded": 5,
+      "sum_amount_usd": 104620887578.0,
+      "median_amount_usd": 15000000.0,
+      "largest_amount_usd": 20000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 247,
+       "deals_with_amount": 235,
+       "deals_without_amount": 12,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4254811000.0,
+       "median_amount_usd": 13000000.0,
+       "largest_amount_usd": 700000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 272,
+       "deals_with_amount": 249,
+       "deals_without_amount": 23,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5580481000.0,
+       "median_amount_usd": 15375000.0,
+       "largest_amount_usd": 979700000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 287,
+       "deals_with_amount": 259,
+       "deals_without_amount": 28,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 7394355600.0,
+       "median_amount_usd": 12960000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 276,
+       "deals_with_amount": 255,
+       "deals_without_amount": 21,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4255104470.0,
+       "median_amount_usd": 12000000.0,
+       "largest_amount_usd": 405000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 352,
+       "deals_with_amount": 326,
+       "deals_without_amount": 26,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5673927460.0,
+       "median_amount_usd": 14000000.0,
+       "largest_amount_usd": 235000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 347,
+       "deals_with_amount": 325,
+       "deals_without_amount": 22,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 27998276800.0,
+       "median_amount_usd": 15000000.0,
+       "largest_amount_usd": 20000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 297,
+       "deals_with_amount": 278,
+       "deals_without_amount": 19,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 7048034746.0,
+       "median_amount_usd": 15600000.0,
+       "largest_amount_usd": 715000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 286,
+       "deals_with_amount": 268,
+       "deals_without_amount": 18,
+       "deals_amount_excluded": 3,
+       "sum_amount_usd": 6418596000.0,
+       "median_amount_usd": 18360000.0,
+       "largest_amount_usd": 360000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 308,
+       "deals_with_amount": 279,
+       "deals_without_amount": 29,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 8255666000.0,
+       "median_amount_usd": 15000000.0,
+       "largest_amount_usd": 1200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 444,
+       "deals_with_amount": 417,
+       "deals_without_amount": 27,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 14870874411.0,
+       "median_amount_usd": 16700000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 341,
+       "deals_with_amount": 315,
+       "deals_without_amount": 26,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 10063634057.0,
+       "median_amount_usd": 19900000.0,
+       "largest_amount_usd": 963600000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 367,
+       "deals_with_amount": 341,
+       "deals_without_amount": 26,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 6762944034.0,
+       "median_amount_usd": 15000000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.047,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.05
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "series a",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "round_type": [
+       "series a"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "6c6dabb6ca1a3cc5",
+       "company_name": "xai",
+       "domain": "x.ai",
+       "round_type": "Series A/Series B/etc. (undetermined)",
+       "amount_usd": 20000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": 2000000000.0
+        },
+        {
+         "name": "apollo global management",
+         "domain": "apollo.com",
+         "amount": null
+        },
+        {
+         "name": "diameter capital partners",
+         "domain": "diametercap.com",
+         "amount": null
+        },
+        {
+         "name": "valor capital",
+         "domain": "valorc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Buy Nvidia processors for use in the Colossus 2 data centre and rent them out to support infrastructure investment.",
+       "source_sentence": "Elon Musk’s AI startup xAI is raising more financing than initially planned, tapping backers including Nvidia Corp. to lift its ongoing funding round to $20 billion.",
+       "published_at": "2025-10-09T02:30:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f70c7be97e6da31e2b882e"
+       ],
+       "article_id": "68f70c7be97e6da31e2b882e"
+      },
+      {
+       "id": "8febab1cc4259f07",
+       "company_name": "Thinking Machines Lab",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 12000000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 12000000000.0,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Thinking Machines Lab Co‑Founded by former OpenAI CTO Mira Murati, the startup secured a $2 billion Series A round at a $12 billion valuation—an early‑stage deal nearly unprecedented in scale.",
+       "published_at": "2025-07-23T12:00:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbc5db779e2e2bac5565b8"
+       ],
+       "article_id": "69cbc5db779e2e2bac5565b8"
+      },
+      {
+       "id": "db279d59cb6a918d",
+       "company_name": "Thinking Machines Lab",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "servicenow",
+         "domain": "servicenow.com",
+         "amount": null
+        },
+        {
+         "name": "cisco",
+         "domain": "cisco.com",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        },
+        {
+         "name": "jane street",
+         "domain": "janestreet.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI safety",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Develop trustworthy AI systems and launch products beyond current models",
+       "source_sentence": "Thinking Machines Lab has raised an unprecedented $2 billion early-stage funding round led by Andreessen Horowitz.",
+       "published_at": "2025-07-15T23:22:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0dd74570f9983661eba6f"
+       ],
+       "article_id": "68d0dd74570f9983661eba6f"
+      },
+      {
+       "id": "aaeff31912d431a3",
+       "company_name": "cloover",
+       "domain": "cloover.co",
+       "round_type": "Series A equity financing",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Climate Fintech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Build an AI operating system to support residential and decentralized renewable energy solutions.",
+       "source_sentence": "Berlin-based climate fintech company Cloover has secured over $1.2 billion in funding commitments, comprising equity and debt facilities from investors, to build an AI operating system to support residential and decentralized renewable energy solutions.",
+       "published_at": "2026-01-28T05:44:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69892a4594d3f481f3e06665"
+       ],
+       "article_id": "69892a4594d3f481f3e06665"
+      },
+      {
+       "id": "68e1fc1486499a67",
+       "company_name": "zyphra",
+       "domain": "zyphra.com",
+       "round_type": "Series A",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 1000000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI infrastructure",
+       "country": "US",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Zyphra is a full‑stack AI startup developing both foundation models and its Inference Cloud, a scalable platform for deploying generative AI across applications. Based in San Francisco, it raised a large Series A at a $1 billion+ valuation, signaling strong investor belief in its infrastructure vision.",
+       "published_at": "2026-02-26T08:03:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9d7e51f37db756888e584"
+       ],
+       "article_id": "69c9d7e51f37db756888e584"
+      },
+      {
+       "id": "09e36f3bc58b8f12",
+       "company_name": "strategy",
+       "domain": "strategygbd.com",
+       "round_type": "Series A Perpetual Preferred Stock",
+       "amount_usd": 979700000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 979700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "barclays",
+         "domain": "barclays.in",
+         "amount": null
+        }
+       ],
+       "sector": "Digital asset, Enterprise analytics",
+       "country": null,
+       "city": null,
+       "use_of_funds": "general corporate purposes, including acquiring Bitcoin and working capital",
+       "source_sentence": "On June 5, 2025, Strategy announced an underwriting agreement with Barclays Capital Inc. for the issuance and sale of 11,764,700 shares of its 10.00% Series A Perpetual Stride Preferred Stock at $85.00 per share, expected to settle on June 10, 2025. The offering aims to raise approximately $979.7 million, which will be used for general corporate purposes, including acquiring Bitcoin and working capital.",
+       "published_at": "2025-06-06T11:29:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bce2cf0f7c42aae0d54517"
+       ],
+       "article_id": "69bce2cf0f7c42aae0d54517"
+      },
+      {
+       "id": "fe8c3e54b937fc18",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series A",
+       "amount_usd": 963600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 963600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "AT&T Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "Datapower Ventures",
+         "domain": "datapower.vc",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "john deere",
+         "domain": "deere.com",
+         "amount": null
+        },
+        {
+         "name": "Mercedes-Benz Group",
+         "domain": "group.mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "peak 6",
+         "domain": "peak6.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "Rockaway Ventures",
+         "domain": "rockawayventures.com",
+         "amount": null
+        },
+        {
+         "name": "scrum ventures",
+         "domain": "scrum.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Industrial Automation, Machinery Manufacturing, Robotics",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "d61878259ef6083f",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series A",
+       "amount_usd": 935000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5300000000.0,
+       "currency": "USD",
+       "amount": 935000000.0,
+       "valuation": 5300000000.0,
+       "investors": [
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "mercedes-benz",
+         "domain": "mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "University of Texas spinout Apptronik, a builder of humanoid robots for Google DeepMind among others, on Wednesday announced that it re-opened its Series A to raise a total of $935 million for the round.",
+       "published_at": "2026-02-11T14:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bafeb3c22d22e6b573afed"
+       ],
+       "article_id": "69bafeb3c22d22e6b573afed"
+      },
+      {
+       "id": "b547938f9a93d263",
+       "company_name": "waabi",
+       "domain": "waabi.ai",
+       "round_type": "Series A/B (latest raise)",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3000000000.0,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "uber",
+         "domain": "uber.com",
+         "amount": 500000000.0
+        },
+        {
+         "name": "G2 Venture Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "porsche",
+         "domain": "porsche.com",
+         "amount": null
+        },
+        {
+         "name": "volvo",
+         "domain": "volvobuses.in",
+         "amount": null
+        }
+       ],
+       "sector": "Autonomous Vehicles / Self-driving Trucks / Robotaxi",
+       "country": "Canada",
+       "city": "Toronto",
+       "use_of_funds": "Help Waabi expand into the robotaxi market, deploy 25,000 vehicles equipped with its sensor kit on Uber’s ride‑hailing network.",
+       "source_sentence": "Uber will invest $250mn as part of a $750mn raise that values the company at $3bn, according to people familiar with the matter.",
+       "published_at": "2026-01-28T11:00:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9a542c14329b30ec5d6a9"
+       ],
+       "article_id": "69c9a542c14329b30ec5d6a9"
+      },
+      {
+       "id": "84d376185be320c1",
+       "company_name": "strategy",
+       "domain": "strategygbd.com",
+       "round_type": "Series A",
+       "amount_usd": 715000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 715000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "general corporate purposes, future bitcoin acquisitions, strengthening working capital",
+       "source_sentence": "Strategy (MSTR) closed a new issuance of Series A perpetual preferred shares under the ticker STRE, raising $715 million—twice its original target.",
+       "published_at": "2025-11-07T19:48:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "699722ec5fbe93703d601869"
+       ],
+       "article_id": "699722ec5fbe93703d601869"
+      },
+      {
+       "id": "ad100f85f5487613",
+       "company_name": "strategy",
+       "domain": "strategygbd.com",
+       "round_type": "Preferential Shares Series A",
+       "amount_usd": 715000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 715000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Strategy (MSTR) closed a new issue of perpetual Preferential Shares Series A, under the STRE ticker, which raised $715 million, twice its initial target.",
+       "published_at": "2025-11-07T19:47:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb10b765fbf155fa79d73a"
+       ],
+       "article_id": "69bb10b765fbf155fa79d73a"
+      },
+      {
+       "id": "902843c64039ce3c",
+       "company_name": "Slate Auto",
+       "domain": null,
+       "round_type": "Series A and B",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "TWG Global",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Electric Vehicles",
+       "country": "United States",
+       "city": "Long Beach",
+       "use_of_funds": null,
+       "source_sentence": "Slate Auto, the startup electric vehicle manufacturer, today confirmed to Newsweek that the company raised $700 million total through Series A and B funding, with the last round closing in late 2024.",
+       "published_at": "2025-05-08T19:54:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "684303b9210ca338eb18e70b"
+       ],
+       "article_id": "684303b9210ca338eb18e70b"
+      },
+      {
+       "id": "128dbcad79c6f963",
+       "company_name": "strategy inc",
+       "domain": "strategyinc.net",
+       "round_type": "Series A Preferred Stock Offering",
+       "amount_usd": 669600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 620000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "barclays",
+         "domain": "barclays.in",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "moelis & company",
+         "domain": "moelis.com",
+         "amount": null
+        },
+        {
+         "name": "td securities",
+         "domain": "tdsecurities.com",
+         "amount": null
+        },
+        {
+         "name": "Canaccord Genuity",
+         "domain": "canaccordgenuity.com",
+         "amount": null
+        },
+        {
+         "name": "StoneX Financial",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Software",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Company growth, expansion, daily operations, and purchase of more Bitcoin (BTC)",
+       "source_sentence": "Strategy Inc., a software firm led by billionaire Michael Saylor, announced today that it has priced its initial public offering of 10% Series A Perpetual Stream Preferred Stock, known as STRE, raising about €620 million ($715 million) and will officially close on November 13, 2025, after getting final approvals.",
+       "published_at": "2025-11-07T18:38:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "693150417f04acb5d8f2065d"
+       ],
+       "article_id": "693150417f04acb5d8f2065d"
+      },
+      {
+       "id": "a97827c566937f2b",
+       "company_name": "YASC",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 532000000.00000006,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CNY",
+       "amount": 3800000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Semiconductors",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It follows a Series A round of over 3.8 billion yuan in 2023.",
+       "published_at": "2026-02-10T19:51:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "69983eb222f0326c0f931ecb"
+       ],
+       "article_id": "69983eb222f0326c0f931ecb"
+      },
+      {
+       "id": "b967b84fc88f893a",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series A-X Extension",
+       "amount_usd": 520000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5000000000.0,
+       "currency": "USD",
+       "amount": 520000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "mercedes-benz",
+         "domain": "mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "peak6",
+         "domain": "peak6.com",
+         "amount": null
+        },
+        {
+         "name": "AT&T Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "john deere",
+         "domain": "deere.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "humanoid robotics",
+       "country": "United States",
+       "city": "Austin",
+       "use_of_funds": "Accelerate time to market, invest in robot training facilities, and fuel continued innovation in human-centered robot design.",
+       "source_sentence": "AI-powered robotics company Apptronik today announced a $520 million Series A-X funding round, with participation from existing investors including B Capital, Google, Mercedes-Benz and PEAK6, and new investors including AT&T Ventures, John Deere and Qatar Investment Authority (QIA).",
+       "published_at": "2026-02-12T13:30:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc79a1d95eacb99a4d47b8"
+       ],
+       "article_id": "69bc79a1d95eacb99a4d47b8"
+      },
+      {
+       "id": "46f12b43a2e88d47",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series A extension",
+       "amount_usd": 520000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 520000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "mercedes-benz",
+         "domain": "mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "peak6",
+         "domain": "peak6.com",
+         "amount": null
+        },
+        {
+         "name": "AT&T Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "john deere",
+         "domain": "deere.com",
+         "amount": null
+        },
+        {
+         "name": "QIA",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI humanoid robotics",
+       "country": "USA",
+       "city": "Austin, Texas",
+       "use_of_funds": "scale production and deployments of its Apollo humanoid robot, expand training facilities and data collection for retail, manufacturing and logistics customers",
+       "source_sentence": "US-based AI humanoid robotics startup Apptronik announced a $520 million Series A extension round in Austin, Texas.",
+       "published_at": "2026-02-12T12:52:07",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bb3172680e91ccbda16784",
+        "69bcb584fa3bff8ab9a44df5"
+       ],
+       "article_id": "69bb3172680e91ccbda16784"
+      },
+      {
+       "id": "ccf0691af03667f6",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series-A-X",
+       "amount_usd": 520000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 520000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "mercedes-benz",
+         "domain": "mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "peak6",
+         "domain": "peak6.com",
+         "amount": null
+        },
+        {
+         "name": "AT&T Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "john deere",
+         "domain": "deere.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The AI robotics company Apptronik has completed a Series-A-X financing round of over $520 million.",
+       "published_at": "2026-02-12T08:19:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb294468bf20e367f7a8e6"
+       ],
+       "article_id": "69bb294468bf20e367f7a8e6"
+      },
+      {
+       "id": "edb591e369c29c76",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series A-X extension",
+       "amount_usd": 520000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 520000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "mercedes-benz",
+         "domain": "mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "peak6",
+         "domain": "peak6.com",
+         "amount": null
+        },
+        {
+         "name": "AT&T Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "john deere",
+         "domain": "deere.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "AI robotics",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Ramp up production of humanoid robot Apollo, expand global deployment network, accelerate time to market, invest in robot training and data collection facilities, and fuel innovation of human-centered robot design",
+       "source_sentence": "AI-powered robotics company Apptronik has announced a $520 million Series A-X funding round, with participation from existing investors including B Capital, Google, Mercedes-Benz and PEAK6, and new investors including AT&T Ventures, John Deere and Qatar Investment Authority (QIA).",
+       "published_at": "2026-02-12T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69dc76ec70a2fcf9d15ddd40",
+        "69e99389d47fc0283212ce40"
+       ],
+       "article_id": "69dc76ec70a2fcf9d15ddd40"
+      },
+      {
+       "id": "c33bf40a939570ee",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series A-X",
+       "amount_usd": 520000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 520000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "mercedes-benz",
+         "domain": "mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "peak6",
+         "domain": "peak6.com",
+         "amount": null
+        },
+        {
+         "name": "AT&T Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "john deere",
+         "domain": "deere.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered robotics",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "Apptronik said it will ramp up production of its humanoid robot, Apollo, and expand its global network of commercial and pilot deployments. The investment will accelerate time to market and enable Apptronik to invest in projects needed to solve use cases of its large number of retail, manufacturing, and logistics customers, including building state-of-the-art facilities for robot training and data collection. The company said the funding will also fuel continued innovation of its human-centered robot design.",
+       "source_sentence": "AI-powered robotics company Apptronik has announced a $520 million Series A-X funding round, with participation from existing investors including B Capital, Google, Mercedes-Benz and PEAK6, and new investors including AT&T Ventures, John Deere and Qatar Investment Authority (QIA).",
+       "published_at": "2026-02-12T00:00:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "69bb2aecacefda883e44ae18",
+        "69bc763b1d0b3f0860ede3f5",
+        "69bc8f23ca83ba01fec7c5b4",
+        "69dc7704cf40be8e62a7123d",
+        "69dfe9aa1d88cc4f6caea349",
+        "69dfe9dfa9936a33b35d3e26",
+        "69f8846f8937ef12fc094571"
+       ],
+       "article_id": "69dc7704cf40be8e62a7123d"
+      },
+      {
+       "id": "88692e27cb58a5f9",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series A (extension)",
+       "amount_usd": 520000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 520000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "mercedes-benz",
+         "domain": "mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "AT&T Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "john deere",
+         "domain": "deere.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "Humanoid Robotics",
+       "country": "US",
+       "city": "Austin",
+       "use_of_funds": null,
+       "source_sentence": "Apptronik, the Austin-based maker of humanoid robots, has raised $520 million in a Series A extension round to accelerate production of its human-like robots.",
+       "published_at": "2026-02-11T23:25:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb171c68bf20e367f75d05"
+       ],
+       "article_id": "69bb171c68bf20e367f75d05"
+      },
+      {
+       "id": "3076782fb9088bdf",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series A",
+       "amount_usd": 520000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5000000000.0,
+       "currency": "USD",
+       "amount": 520000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "expanded operations, increased robot production, and new facilities in Texas and California",
+       "source_sentence": "The Austin-based startup has raised $520 million in new funding at a $5 billion valuation, pushing its Series A total to $935 million. The round was co‑led by B Capital, chaired by Howard Morgan, and Google.",
+       "published_at": "2026-02-11T14:43:44",
+       "coverage_count": 5,
+       "article_ids": [
+        "69bb0281c08180591b81b8f8",
+        "69bb6f2eb7032a7d5ce1ef6d",
+        "69bb6f2ff50f9c5e3870c319",
+        "69cc4289cb088e024d2646bf",
+        "6a57be17fba445171995385a"
+       ],
+       "article_id": "69bb0281c08180591b81b8f8"
+      },
+      {
+       "id": "13fa57ae7a4fd33c",
+       "company_name": "Mind Robotics",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": null,
+       "source_sentence": "Mind Robotics raises $500M Series A to automate industrial manufacturing.",
+       "published_at": "2026-03-11T22:40:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd08e6ebaadb4d432a354"
+       ],
+       "article_id": "69cbd08e6ebaadb4d432a354"
+      },
+      {
+       "id": "5b58d6fcd1c60df0",
+       "company_name": "Mind Robotics",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 2000000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Industrial Robotics",
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": "Develop what it calls ‘AI-enabled’ robotic systems",
+       "source_sentence": "Mind Robotics, an industrial robotics lab spun out of the electric vehicle maker Rivian, has raised $500 million in a Series A funding round co-led by venture firms Accel and Andreessen Horowitz.",
+       "published_at": "2026-03-11T16:12:02",
+       "coverage_count": 10,
+       "article_ids": [
+        "69c3a69c9a4470e12400bc24",
+        "69cbd2b6f331a1b39ff76be6",
+        "69cc5de9f111344e7e7dd3ef",
+        "69d1183897bd33d99f6ab6d7",
+        "69d14ed81fc956131346a215",
+        "69e2c56dc1991f786cef9122",
+        "69e854375cfa3e5ba5e8b374",
+        "69e8e2e37bb1410d4cd4accd",
+        "69e8e3387bb1410d4cd4f562",
+        "69e8ec339baafc7356e53afd"
+       ],
+       "article_id": "69cbd2b6f331a1b39ff76be6"
+      },
+      {
+       "id": "25133949bdcba98e",
+       "company_name": "vast",
+       "domain": "vast.com",
+       "round_type": "Series A",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Balerion Space Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "IQT",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "mitsui",
+         "domain": "mitsui.com",
+         "amount": null
+        },
+        {
+         "name": "mufg",
+         "domain": "mufgcampus.com",
+         "amount": null
+        },
+        {
+         "name": "Nikon Corporation",
+         "domain": "nikonretinastation.com",
+         "amount": null
+        },
+        {
+         "name": "stellar ventures",
+         "domain": "stellarventuresllc.com",
+         "amount": null
+        },
+        {
+         "name": "space capital",
+         "domain": "spacecapital.com",
+         "amount": null
+        },
+        {
+         "name": "Earthrise Ventures",
+         "domain": "earthrise.vc",
+         "amount": null
+        }
+       ],
+       "sector": "aerospace",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "Expand facilities, grow the team, advance Haven-2, and achieve continuous human presence in low-Earth orbit",
+       "source_sentence": "Qatar Investment Authority joined a USD 500 million funding round for US-based Vast.",
+       "published_at": "2026-03-10T12:01:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1f67fd59372e7d1777a"
+       ],
+       "article_id": "69cbd1f67fd59372e7d1777a"
+      },
+      {
+       "id": "ce8290755bbd73a6",
+       "company_name": "vast",
+       "domain": "vast.com",
+       "round_type": "Series A equity",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Balerion Space Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "IQT",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "QIA",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "mitsui & co",
+         "domain": "mitsui.com",
+         "amount": null
+        },
+        {
+         "name": "mufg",
+         "domain": "mufgcampus.com",
+         "amount": null
+        },
+        {
+         "name": "Nikon Corporation",
+         "domain": "nikonretinastation.com",
+         "amount": null
+        },
+        {
+         "name": "stellar ventures",
+         "domain": "stellarventuresllc.com",
+         "amount": null
+        },
+        {
+         "name": "space capital",
+         "domain": "spacecapital.com",
+         "amount": null
+        },
+        {
+         "name": "Earthrise Ventures",
+         "domain": "earthrise.vc",
+         "amount": null
+        },
+        {
+         "name": "Jed McCaleb",
+         "domain": "https://www.linkedin.com/in/jed-mccaleb-4052a4",
+         "amount": null
+        }
+       ],
+       "sector": "Space technology",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Expand facilities, scale the team, and advance development of Haven-2",
+       "source_sentence": "Qatar Investment Authority (QIA) has participated in a $500m financing round for Vast, a California-based company developing next-generation commercial space stations.",
+       "published_at": "2026-03-06T05:42:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cb5dbcd36caf5748bf98a9"
+       ],
+       "article_id": "69cb5dbcd36caf5748bf98a9"
+      },
+      {
+       "id": "3dc60e036555e029",
+       "company_name": "vast",
+       "domain": "vast.com",
+       "round_type": "Series A equity and debt",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Balerion Space Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "IQT",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "mitsui",
+         "domain": "mitsui.com",
+         "amount": null
+        },
+        {
+         "name": "mufg",
+         "domain": "mufgcampus.com",
+         "amount": null
+        },
+        {
+         "name": "Nikon Corporation",
+         "domain": "nikonretinastation.com",
+         "amount": null
+        },
+        {
+         "name": "stellar ventures",
+         "domain": "stellarventuresllc.com",
+         "amount": null
+        },
+        {
+         "name": "space capital",
+         "domain": "spacecapital.com",
+         "amount": null
+        },
+        {
+         "name": "Earthrise Ventures",
+         "domain": "earthrise.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Aerospace",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Expand facilities, grow the team, and advance Haven‑2",
+       "source_sentence": "Qatar Investment Authority has joined a $500 million funding round for US-based aerospace company Vast, which is developing commercial space stations and artificial‑gravity habitats for future space missions.",
+       "published_at": "2026-02-23T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bced80ec94907df10e6de8",
+        "69c3a67ce557041f410f49a1",
+        "69dcca34fb3510fa5be255e6"
+       ],
+       "article_id": "69dcca34fb3510fa5be255e6"
+      },
+      {
+       "id": "6609a58ebe16f523",
+       "company_name": "tempo",
+       "domain": "heytempo.com",
+       "round_type": "Series A",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "SV Angel",
+         "domain": "svangel.com",
+         "amount": null
+        }
+       ],
+       "sector": "Blockchain, payments, stablecoins",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Tempo, a Layer 1 blockchain project, received $500 million in Series A funding from prominent venture capitalists Greenoaks and Thrive Capital.",
+       "published_at": "2025-10-18T00:29:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe1f4846325a41ca281793"
+       ],
+       "article_id": "68fe1f4846325a41ca281793"
+      },
+      {
+       "id": "44614883fcb90b05",
+       "company_name": "Rhoda AI",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "mayfield",
+         "domain": "mayfield.com",
+         "amount": null
+        },
+        {
+         "name": "capricorn investment group",
+         "domain": "capricornllc.com",
+         "amount": null
+        },
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "xora innovation",
+         "domain": "xora.vc",
+         "amount": null
+        },
+        {
+         "name": "John Doerr",
+         "domain": "https://www.linkedin.com/in/john-doerr-03248211",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": null,
+       "source_sentence": "Rhoda AI raises $450M Series A to advance real-world robotics intelligence.",
+       "published_at": "2026-03-11T22:40:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd08e6ebaadb4d432a354"
+       ],
+       "article_id": "69cbd08e6ebaadb4d432a354"
+      },
+      {
+       "id": "fad0b4e37ee58ba9",
+       "company_name": "Rhoda AI",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": 1700000000.0,
+       "investors": [
+        {
+         "name": "capricorn investment group",
+         "domain": "capricornllc.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Leitmotif",
+         "domain": "leitmotif.vc",
+         "amount": null
+        },
+        {
+         "name": "Matter Venture Partners",
+         "domain": "mattervp.com",
+         "amount": null
+        },
+        {
+         "name": "mayfield",
+         "domain": "mayfield.com",
+         "amount": null
+        },
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "prelude ventures",
+         "domain": "preludeventures.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "xora",
+         "domain": "xora.com",
+         "amount": null
+        },
+        {
+         "name": "John Doerr",
+         "domain": "https://www.linkedin.com/in/john-doerr-03248211",
+         "amount": null
+        }
+       ],
+       "sector": "Robotics, Artificial Intelligence",
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": "Accelerate robotics development and industrial deployment",
+       "source_sentence": "Temasek-backed robotics firm Rhoda AI has raised $450 million in Series A funding to accelerate robotics development and industrial deployment.",
+       "published_at": "2026-03-11T08:24:07",
+       "coverage_count": 5,
+       "article_ids": [
+        "69c3a4784e0667c07f278b10",
+        "69c42c05ca903b7f8226e6b5",
+        "69cbd1bad5ebd7d5be534723",
+        "69cbd2b7d4ae0326ef5e9a4b",
+        "69cc1df61e8126b2deb18883"
+       ],
+       "article_id": "69cc1df61e8126b2deb18883"
+      },
+      {
+       "id": "6cbc4b693ec19c45",
+       "company_name": "inertia",
+       "domain": "inertialab.com",
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        },
+        {
+         "name": "long journey ventures",
+         "domain": "longjourney.vc",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fusion Energy",
+       "country": "United States",
+       "city": "Silicon Valley",
+       "use_of_funds": "The new funding will help Inertia scale up its laser hardware, build a pilot fusion plant, and lay the groundwork for a utility‑scale fusion power facility.",
+       "source_sentence": "Inertia raises $450M in Series A funding to build fusion energy laser system",
+       "published_at": "2026-02-18T23:54:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c89643ebfc0891032ac3e3"
+       ],
+       "article_id": "69c89643ebfc0891032ac3e3"
+      },
+      {
+       "id": "0aad0b6cc9a58508",
+       "company_name": "inertia",
+       "domain": "inertialab.com",
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Clean Energy, Energy Management, Power Grid, Renewable Energy",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Fusion startup Inertia has secured $450 million in Series A funding to accelerate commercialization of inertial confinement fusion, positioning itself as one of the most closely watched entrants in the race to deliver grid scale clean energy. The round was led by Bessemer Venture Partners, with participation from GV, Modern Capital, Threshold Ventures, and other investors seeking exposure to next-generation power infrastructure.",
+       "published_at": "2026-02-13T15:40:03",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bb5fcff50f9c5e38708e59",
+        "69c42bda516feee3400310c2",
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69bb5fcff50f9c5e38708e59"
+      },
+      {
+       "id": "2882041c38413202",
+       "company_name": "Inertia Enterprises",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fusion Energy",
+       "country": null,
+       "city": null,
+       "use_of_funds": "plan to build the world’s most powerful laser for inertial confinement fusion at Lawrence Livermore National Laboratory",
+       "source_sentence": "Inertia Enterprises, a fusion energy startup, has secured a massive $450 million Series A to develop one of the world’s most powerful laser systems for grid-scale fusion power.",
+       "published_at": "2026-02-11T23:25:19",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bb171c68bf20e367f75d05",
+        "69bb487d680e91ccbda1b887",
+        "69bb487e5e05f5e7db816a9a"
+       ],
+       "article_id": "69bb171c68bf20e367f75d05"
+      },
+      {
+       "id": "af15be8be8ad6c37",
+       "company_name": "Inertia Enterprises",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        }
+       ],
+       "sector": "fusion power",
+       "country": "USA",
+       "city": "California",
+       "use_of_funds": "Construction of prototype laser beamlines and establishment of the first dedicated fusion fuel target assembly line in California.",
+       "source_sentence": "Inertia Enterprises, a groundbreaking fusion power startup co-founded by Twilio co-founder Jeff Lawson, has raised $450 million in a Series A funding round.",
+       "published_at": "2026-02-11T22:43:48",
+       "coverage_count": 6,
+       "article_ids": [
+        "69bb14637a841a437be54563",
+        "69bb14648b79b55c82752fb2",
+        "69bb6f2eb7032a7d5ce1ef6d",
+        "69bb6f2ff50f9c5e3870c319",
+        "69bbbe7d9e3448abf0a280e6",
+        "69e2ac4c277be6ed2d9d2b6d"
+       ],
+       "article_id": "69bb14637a841a437be54563"
+      },
+      {
+       "id": "f87833fa11ad4eea",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series-A",
+       "amount_usd": 415000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 415000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The expansion follows an oversubscribed initial Series-A round of $415 million in 2025.",
+       "published_at": "2026-02-12T08:19:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb294468bf20e367f7a8e6"
+       ],
+       "article_id": "69bb294468bf20e367f7a8e6"
+      },
+      {
+       "id": "c83355c596db48cf",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series A extension",
+       "amount_usd": 415000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 415000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        }
+       ],
+       "sector": "robotics",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "B Capital and the Qatar Investment Authority also participated in the so-called Series A extension, roughly a year after Apptronik raised $415 million.",
+       "published_at": "2026-02-11T16:41:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbe432edbbccf9199d9cee"
+       ],
+       "article_id": "69bbe432edbbccf9199d9cee"
+      },
+      {
+       "id": "d329e6896f8ade78",
+       "company_name": "FieldAI",
+       "domain": null,
+       "round_type": "Series A & A1",
+       "amount_usd": 405000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 405000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "prysm",
+         "domain": "prysmcorp.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "Nvidia’s NVentures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "canaan partners",
+         "domain": "canaan.com",
+         "amount": null
+        },
+        {
+         "name": "Gates Frontier",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI robotics",
+       "country": "USA",
+       "city": "Irvine",
+       "use_of_funds": "scale up its team and deployment contracts globally",
+       "source_sentence": "FieldAI has closed a massive $405 million in funding across consecutive funding rounds at a valuation of $2 billion.",
+       "published_at": "2025-08-20T21:04:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab3fa92e28036801bc8973"
+       ],
+       "article_id": "68ab3fa92e28036801bc8973"
+      },
+      {
+       "id": "5ebdf386637cbf90",
+       "company_name": "vodafone idea limited",
+       "domain": "vodafoneidea.com",
+       "round_type": "Series A secured tranche",
+       "amount_usd": 360000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 30000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tata capital",
+         "domain": "tatacapital.com",
+         "amount": 5000000000.0
+        },
+        {
+         "name": "JM Financial Credit Solutions",
+         "domain": "jmfinancialcreditsolutions.in",
+         "amount": 4000000000.0
+        },
+        {
+         "name": "aditya birla capital",
+         "domain": "adityabirlacapital.com",
+         "amount": 4000000000.0
+        },
+        {
+         "name": "hero fincorp",
+         "domain": "herofincorp.com",
+         "amount": 4000000000.0
+        },
+        {
+         "name": "Nomura Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mutual funds and overseas investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Telecom",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Repay business consideration to Vi following the transfer of fibre assets to the infrastructure arm, and to support the telecom operator’s capital expenditure plans and business expansion",
+       "source_sentence": "The offering was split into two secured tranches: series A comprised Rs 30 billion of notes with a 12 per cent coupon, while series B consisted of Rs 3 billion carrying a 7 per cent coupon.",
+       "published_at": "2025-12-22T06:37:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69865f0b514cbd23b5c2f1dc"
+       ],
+       "article_id": "69865f0b514cbd23b5c2f1dc"
+      },
+      {
+       "id": "816bab427f676a53",
+       "company_name": "infinity natural resources",
+       "domain": "infinitynaturalresources.com",
+       "round_type": "Series A Convertible Preferred Stock",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "quantum capital group",
+         "domain": "quantumcap.com",
+         "amount": null
+        },
+        {
+         "name": "carnelian energy capital management",
+         "domain": "carnelianenergy.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "Reduces pro forma leverage and increases liquidity; accelerates development of drilling inventory and pursues additional strategic consolidation opportunities within the Appalachian Basin.",
+       "source_sentence": "using a portion of the proceeds of a US$350 million strategic equity investment from leading energy-focused private capital investors Quantum Capital Group and Carnelian Energy Capital Management.",
+       "published_at": "2026-03-27T03:04:07",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c8ad439d3350d3d976e167"
+       ],
+       "article_id": "69c8ad439d3350d3d976e167"
+      },
+      {
+       "id": "27168789343b659d",
+       "company_name": "axiom space",
+       "domain": "axiomspace.com",
+       "round_type": "Series A",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "aljazira capital",
+         "domain": "aljaziracapital.com.sa",
+         "amount": null
+        },
+        {
+         "name": "Boryung",
+         "domain": "boryungbio.co.kr",
+         "amount": null
+        }
+       ],
+       "sector": "Space Technology",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It last announced a funding round in August 2023, a $350 million round co-led by Aljazira Capital and Boryung Co., Ltd.",
+       "published_at": "2026-02-12T21:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc8d5741245450861dfe31"
+       ],
+       "article_id": "69bc8d5741245450861dfe31"
+      },
+      {
+       "id": "199e465281bcd772",
+       "company_name": "Lila Sciences",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "Nvidia’s venture arm",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "Abu Dhabi Investment Authority subsidiary",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology / Artificial Intelligence",
+       "country": "United Kingdom",
+       "city": "Cambridge",
+       "use_of_funds": "Expand AI-driven research centers",
+       "source_sentence": "The company has raised $115 million in an extension of its Series A round, backed by Nvidia’s venture arm and other investors, lifting its valuation to over $1.3 billion, according to Reuters.",
+       "published_at": "2025-10-14T15:02:52",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe204a41f75f68272833e4",
+        "69bb0226b54f2a520bb54b80",
+        "69bb98179d363b958753ec69"
+       ],
+       "article_id": "68fe204a41f75f68272833e4"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 3824,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTAtMTQgMTU6MDI6NTIiLCJrIjoiMTg0NTk5MDIxNzQ0NjM4MTQyNiIsImEiOjM1MDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 3824,
+      "deals_with_amount": 3547,
+      "deals_without_amount": 277,
+      "deals_amount_excluded": 5,
+      "sum_amount_usd": 104620887578.0,
+      "median_amount_usd": 15000000.0,
+      "largest_amount_usd": 20000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.37,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.373
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "series a",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "round_type": [
+       "series a"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "2146b783282e70a6",
+       "company_name": "Featherless.ai",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "AMD Ventures",
+         "domain": "amdventures.com",
+         "amount": null
+        },
+        {
+         "name": "airbus ventures",
+         "domain": "airbusventures.vc",
+         "amount": null
+        },
+        {
+         "name": "bmw i ventures",
+         "domain": "bmwiventures.com",
+         "amount": null
+        },
+        {
+         "name": "kickstart ventures",
+         "domain": "kickstart.ph",
+         "amount": null
+        },
+        {
+         "name": "panache ventures",
+         "domain": "panache.vc",
+         "amount": null
+        },
+        {
+         "name": "Wavemaker Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Scale global infrastructure, launch a dedicated marketplace for specialized open models, and deepen technical integration with diverse hardware architectures",
+       "source_sentence": "Featherless.ai, a Singapore co-founded artificial intelligence (AI) firm, has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures.",
+       "published_at": "2026-04-30T23:33:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8a6fb43843dd771d249ae"
+       ],
+       "article_id": "69f8a6fb43843dd771d249ae"
+      },
+      {
+       "id": "97a3e8634c0623aa",
+       "company_name": "koda health",
+       "domain": "kodahealthcare.com",
+       "round_type": "Series A",
+       "amount_usd": 14000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "evidenced",
+         "domain": "evidenced.app",
+         "amount": null
+        },
+        {
+         "name": "Mudita Venture Partners",
+         "domain": "muditavp.com",
+         "amount": null
+        },
+        {
+         "name": "techstars",
+         "domain": "techstars.com",
+         "amount": null
+        },
+        {
+         "name": "texas medical center",
+         "domain": "texasmedicalcenter.org",
+         "amount": null
+        },
+        {
+         "name": "upmc enterprises",
+         "domain": "enterprises.upmc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Scale operations and expand engineering, clinical strategy and customer success",
+       "source_sentence": "Its series A round was led by Evidenced, with participation from Mudita Venture Partners, Techstars and the Texas Medical Center last year. At the time, the company said the funding would allow it to scale operations and expand engineering, clinical strategy and customer success.",
+       "published_at": "2026-04-30T17:00:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8a62fbbf1d314559a1e89"
+       ],
+       "article_id": "69f8a62fbbf1d314559a1e89"
+      },
+      {
+       "id": "fc060572f80948e9",
+       "company_name": "moleculent",
+       "domain": "moleculent.com",
+       "round_type": "Extended Series A",
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Rubicon Healthcare Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "arch venture partners",
+         "domain": "archventure.com",
+         "amount": null
+        },
+        {
+         "name": "eir ventures",
+         "domain": "eirventures.eu",
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "Expand early-access program and build commercial team in the US",
+       "source_sentence": "NEW YORK – Swedish startup Moleculent said on Thursday that it has raised $20 million in extended Series A financing to help drive the commercialization of its spatial functional proteomics platform for profiling cell-cell communication.",
+       "published_at": "2026-04-30T14:01:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8aba88937ef12fc0b1ad0"
+       ],
+       "article_id": "69f8aba88937ef12fc0b1ad0"
+      },
+      {
+       "id": "3d96511ab860efb1",
+       "company_name": "dreamteam",
+       "domain": "dreamteam.gg",
+       "round_type": "Series A",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Together Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI‑CRM",
+       "country": "India",
+       "city": "Chennai",
+       "use_of_funds": "product development, engineering, go‑to‑market expansion, AI capability enhancement, global customer acquisition",
+       "source_sentence": "Chennai-based AI startup Dreamteam is in advanced discussions to raise around $40 million in its Series A funding round, with Accel and Together Fund expected to lead the investment, according to sources.",
+       "published_at": "2026-04-30T10:36:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f883f543843dd771d068de",
+        "69f9d4e77b2d589e844b24a5"
+       ],
+       "article_id": "69f9d4e77b2d589e844b24a5"
+      },
+      {
+       "id": "fecaec6e83093e49",
+       "company_name": "axoft",
+       "domain": "axoft.us",
+       "round_type": "Series A",
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "C.P. Group Innovation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        },
+        {
+         "name": "Stanford President’s Venture Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Gaorong Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Brain‑Computer Interface",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "Continuation of existing global clinical trials, progress in US regulatory activities, and construction of a GMP facility in Boston for mass production of its iBCIs.",
+       "source_sentence": "With the completion of a $55m fundraise, Axoft is planning to advance the development of its implantable brain-computer interfaces (iBCI).",
+       "published_at": "2026-04-30T10:22:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8a92f8937ef12fc0aff87"
+       ],
+       "article_id": "69f8a92f8937ef12fc0aff87"
+      },
+      {
+       "id": "29add06743fa19c6",
+       "company_name": "rocsys",
+       "domain": "rocsys.com",
+       "round_type": "Series A",
+       "amount_usd": 13000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "capricorn partners",
+         "domain": "capricorn.be",
+         "amount": null
+        },
+        {
+         "name": "Scania Invest",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Forward.One",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "seb greentech venture capital",
+         "domain": "sebgroup.com",
+         "amount": null
+        },
+        {
+         "name": "Graduate Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "robotaxi charging",
+       "country": "Netherlands",
+       "city": null,
+       "use_of_funds": "to fund its rollout",
+       "source_sentence": "The Dutch startup announced the Rocsys M1, which it describes as the world’s first hands-free charging system capable of serving multiple bays in robotaxi depot operations, and a $13 million Series A extension to fund its rollout. The round was led by Capricorn Partners, with participation from Scania Invest, Forward.One, SEB Greentech Venture Capital, and Graduate Ventures.",
+       "published_at": "2026-04-30T10:15:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8b48543843dd771d2b9a6"
+       ],
+       "article_id": "69f8b48543843dd771d2b9a6"
+      },
+      {
+       "id": "d50ea27189ffaa9c",
+       "company_name": "rogo",
+       "domain": "rogodata.com",
+       "round_type": "Series A",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Khosla",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "financial technology",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-04-30T08:00:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8aa108937ef12fc0b0627"
+       ],
+       "article_id": "69f8aa108937ef12fc0b0627"
+      },
+      {
+       "id": "63dd4126d62b7e9f",
+       "company_name": "studentcrowd",
+       "domain": "studentcrowd.com",
+       "round_type": "Series A",
+       "amount_usd": 8890000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 7000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "yfm equity partners",
+         "domain": "yfmep.com",
+         "amount": null
+        },
+        {
+         "name": "Midlands Engine Investment Fund II via Mercia Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "student accommodation data and analytics",
+       "country": "UK",
+       "city": "Loughborough",
+       "use_of_funds": "Accelerate product development and support expansion into Europe and the US",
+       "source_sentence": "StudentCrowd has secured £7m in Series A funding as it looks to expand its data platform into international markets.",
+       "published_at": "2026-04-30T06:00:04",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f8aadcbbf1d314559a5d45",
+        "6a03f1a59c4aac09353776d8"
+       ],
+       "article_id": "6a03f1a59c4aac09353776d8"
+      },
+      {
+       "id": "130db4f887d005b4",
+       "company_name": "pratech brands",
+       "domain": "pratechbrands.com",
+       "round_type": "Series A",
+       "amount_usd": 10600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "IvyCap Ventures Fund III",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "First Bridge India Growth Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "e-commerce, health and wellness",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "enhancement of the platform's AI-driven personalization features, expansion its dark store network to enable quicker deliveries, and development of a physical retail presence",
+       "source_sentence": "Pratech Brands Private Limited, the parent company of Hyugalife, has raised $10.6 million (~₹100 crore) from a Series A fundraise led by IvyCap Ventures Fund III, with participation from First Bridge India Growth Fund.",
+       "published_at": "2026-04-30T05:18:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8c44dbbf1d314559b0b2c"
+       ],
+       "article_id": "69f8c44dbbf1d314559b0b2c"
+      },
+      {
+       "id": "879843ae40bfccf1",
+       "company_name": "performativ",
+       "domain": "performativ.com",
+       "round_type": "Series A",
+       "amount_usd": 14000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Deutsche Börse Group",
+         "domain": "deutsche-boerse.com",
+         "amount": null
+        },
+        {
+         "name": "rabo investments",
+         "domain": "raboinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "fintech collective",
+         "domain": "fintech.io",
+         "amount": null
+        },
+        {
+         "name": "Denmark’s EIFO",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech",
+       "country": "Denmark",
+       "city": null,
+       "use_of_funds": "Accelerate expansion in the enterprise segment and strengthen infrastructure",
+       "source_sentence": "Performativ has raised $14 million in a Series A funding round led by Deutsche Börse Group, with participation from Rabo Investments, as well as existing investors including FinTech Collective and Denmark’s EIFO.",
+       "published_at": "2026-04-30T04:56:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9dd11713680636ef2a6c6"
+       ],
+       "article_id": "69f9dd11713680636ef2a6c6"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 1460,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMzAgMDQ6NTY6MzciLCJrIjoiOTc3MDYzMzgwNzI2OTk3MzIzMyJ9",
+     "totals": {
+      "deals": 1460,
+      "deals_with_amount": 1352,
+      "deals_without_amount": 108,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 38287858502.0,
+      "median_amount_usd": 16000000.0,
+      "largest_amount_usd": 1200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.184,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.272
+    }
+   }
+  }
+ ]
+}

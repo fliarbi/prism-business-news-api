@@ -1,0 +1,2257 @@
+{
+ "slug": "kkr-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:23Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "KKR",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "kkr"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 116,
+      "deals_with_amount": 93,
+      "deals_without_amount": 23,
+      "deals_amount_excluded": 3,
+      "sum_amount_usd": 102675390000.0,
+      "median_amount_usd": 500000000.0,
+      "largest_amount_usd": 10000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 4,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 12130000000.0,
+       "median_amount_usd": 5130000000.0,
+       "largest_amount_usd": 6750000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 6,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 2692300000.0,
+       "median_amount_usd": 546000000.0,
+       "largest_amount_usd": 600000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 9,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5730100000.0,
+       "median_amount_usd": 330000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 5,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 3647600000.0,
+       "median_amount_usd": 290500000.0,
+       "largest_amount_usd": 3000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 10,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 27458000000.0,
+       "median_amount_usd": 3630000000.0,
+       "largest_amount_usd": 10000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 1,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 60000000.0,
+       "median_amount_usd": 60000000.0,
+       "largest_amount_usd": 60000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 16,
+       "deals_with_amount": 12,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 13027190000.0,
+       "median_amount_usd": 750000000.0,
+       "largest_amount_usd": 5000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 9,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1544000000.0,
+       "median_amount_usd": 312000000.0,
+       "largest_amount_usd": 700000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 7,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 14159000000.0,
+       "median_amount_usd": 1700000000.0,
+       "largest_amount_usd": 5000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 5,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 11531600000.0,
+       "median_amount_usd": 1500000000.0,
+       "largest_amount_usd": 4500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 12,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5877280000.0,
+       "median_amount_usd": 310000000.0,
+       "largest_amount_usd": 3996000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 13,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 6118320000.0,
+       "median_amount_usd": 750000000.0,
+       "largest_amount_usd": 1500000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.103,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.107
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "KKR",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "kkr"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "1deacdab336846e9",
+       "company_name": "Sempra Infrastructure Partners",
+       "domain": null,
+       "round_type": "Equity sale",
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "canada pension plan investment board",
+         "domain": "cppib.com",
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        }
+       ],
+       "sector": "Oil & Gas",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Topping the list is its agreement to sell 45 percent of Sempra Infrastructure Partners, one of North America’s leading energy infrastructure platforms, to the Canada Pension Plan Investment Board (CPP Investments) and affiliates of KKR for $10 billion in cash.",
+       "published_at": "2025-09-24T15:30:43",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d9819059ff3bc3607dbd75",
+        "68f7278b17f4f9d43d2ba21b"
+       ],
+       "article_id": "68d9819059ff3bc3607dbd75"
+      },
+      {
+       "id": "1af8640e2fef5ec1",
+       "company_name": "Sempra",
+       "domain": null,
+       "round_type": "equity",
+       "amount_usd": 10000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "KKR & Co.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "canada pension plan investment board",
+         "domain": "cppib.com",
+         "amount": null
+        }
+       ],
+       "sector": "natural gas",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "KKR and Canada Pension Plan Investment Board on Tuesday agreed to pay $10 billion for a 45% equity stake in Sempra’s infrastructure arm, which builds liquefied natural gas projects.",
+       "published_at": "2025-09-23T12:07:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d95dfa4ea4015b01129515"
+       ],
+       "article_id": "68d95dfa4ea4015b01129515"
+      },
+      {
+       "id": "4b5bb9d3a6b5e800",
+       "company_name": "Sempra Infrastructure Partners",
+       "domain": null,
+       "round_type": "Equity",
+       "amount_usd": 7000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Credit and Insurance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo-managed funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Private Credit at Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Liquefied natural gas",
+       "country": "United States",
+       "city": "Port Arthur",
+       "use_of_funds": "Development, construction and operation of phase two of the Port Arthur LNG project",
+       "source_sentence": "Funding for phase two is supported by an equity investment led by Blackstone Credit and Insurance, together with an investor consortium including KKR, Apollo-managed funds and Private Credit at Goldman Sachs Alternatives. Together, these investors have acquired a 49.9 per cent minority equity interest for US$7 billion.",
+       "published_at": "2025-09-26T08:40:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cc1c19ca02490ecee483c"
+       ],
+       "article_id": "698cc1c19ca02490ecee483c"
+      },
+      {
+       "id": "d418b47cf4147b82",
+       "company_name": "Sempra Infrastructure Partners",
+       "domain": null,
+       "round_type": "equity investment",
+       "amount_usd": 7000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Credit & Insurance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo-managed funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Private Credit at Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Oil & Gas",
+       "country": "USA",
+       "city": "Port Arthur",
+       "use_of_funds": "Development, construction, and operation of Phase 2 of the Port Arthur LNG project",
+       "source_sentence": "Funding for the new phase is supported by a $7 billion equity investment led by Blackstone Credit & Insurance, together with an investor consortium including KKR, Apollo-managed funds, and Private Credit at Goldman Sachs Alternatives, for a total of 49.9 percent minority equity interest.",
+       "published_at": "2025-09-25T15:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f7278b17f4f9d43d2ba21b"
+       ],
+       "article_id": "68f7278b17f4f9d43d2ba21b"
+      },
+      {
+       "id": "08b6ff3f5740762b",
+       "company_name": "Sempra Infrastructure Partners",
+       "domain": null,
+       "round_type": "Minority equity",
+       "amount_usd": 7000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Blackstone Credit & Insurance (BXCI)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo-managed funds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Private Credit at Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "LNG",
+       "country": "USA",
+       "city": "Port Arthur",
+       "use_of_funds": "Advance the development, construction and operation of the Port Arthur LNG Phase 2",
+       "source_sentence": "Global law firm White & Case LLP has advised the co‑investors in a Blackstone Credit & Insurance (BXCI) led investor consortium on a US$7 billion investment in Sempra Infrastructure Partners' Port Arthur LNG Phase 2.",
+       "published_at": "2025-09-25T10:16:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d2a35cfa3e5ba542dd36"
+       ],
+       "article_id": "69e8d2a35cfa3e5ba542dd36"
+      },
+      {
+       "id": "02262cb9e95c141f",
+       "company_name": "Masorange",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 6750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 6250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "orange",
+         "domain": "orange.jo",
+         "amount": null
+        },
+        {
+         "name": "providence",
+         "domain": "providenceresources.com",
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "cinven",
+         "domain": "cinven.com",
+         "amount": null
+        }
+       ],
+       "sector": "Telecommunications",
+       "country": "Spain",
+       "city": null,
+       "use_of_funds": "Improve Masorange’s financial conditions by refinancing senior debt",
+       "source_sentence": "This financing package includes €6.25 billion to improve Masorange’s financial conditions by refinancing the senior debt",
+       "published_at": "2025-05-21T08:36:55",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bbe5e8db9ed6b6b938a7ec",
+        "69cba9bbd4ae0326ef5c5abd"
+       ],
+       "article_id": "69bbe5e8db9ed6b6b938a7ec"
+      },
+      {
+       "id": "d4a60b943d03d5d4",
+       "company_name": "Masorange",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 5130000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 4750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "orange",
+         "domain": "orange.jo",
+         "amount": null
+        },
+        {
+         "name": "providence",
+         "domain": "providenceresources.com",
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "cinven",
+         "domain": "cinven.com",
+         "amount": null
+        }
+       ],
+       "sector": "Telecommunications",
+       "country": "Spain",
+       "city": null,
+       "use_of_funds": "Cover the infrastructure of the future FiberCo (Surf)",
+       "source_sentence": "also obtains €4.75 billion to cover the infrastructure of the future FiberCo, known internally as Surf",
+       "published_at": "2025-05-21T08:36:55",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bbe5e8db9ed6b6b938a7ec",
+        "69cba9bbd4ae0326ef5c5abd"
+       ],
+       "article_id": "69bbe5e8db9ed6b6b938a7ec"
+      },
+      {
+       "id": "f0ecd6969d4b69fb",
+       "company_name": "AV AirFinance",
+       "domain": "avairfinance.com",
+       "round_type": null,
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "KKR-managed funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The investment is financed by the KKR balance sheet and is supplemented by the already over 5 billion USD, which has invested KKR-managed funds in aircraft leases and credit transactions.",
+       "published_at": "2026-01-20T14:52:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "699753a7d0eb485af105569b"
+       ],
+       "article_id": "699753a7d0eb485af105569b"
+      },
+      {
+       "id": "1e4a91cdc6d99acd",
+       "company_name": "altavair",
+       "domain": "altavair.com",
+       "round_type": null,
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "KKR-managed funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The investment is financed by the KKR balance sheet and is supplemented by the already over 5 billion USD, which has invested KKR-managed funds in aircraft leases and credit transactions.",
+       "published_at": "2026-01-20T14:52:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "699753a7d0eb485af105569b"
+       ],
+       "article_id": "699753a7d0eb485af105569b"
+      },
+      {
+       "id": "3086db4a53feeaef",
+       "company_name": "st telemedia global data centres (stt gdc)",
+       "domain": "sttelemediagdc.com",
+       "round_type": "bridge loan",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "singtel",
+         "domain": "singtel.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data centres",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "support proposed purchase of STT GDC",
+       "source_sentence": "Singapore - A consortium comprising KKR and Singtel is in talks with banks for a loan of around $5 billion to support its proposed purchase of ST Telemedia Global Data Centres (STT GDC), according to people familiar with the matter.",
+       "published_at": "2025-11-11T02:37:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986e3ed11e3205ec993ba53"
+       ],
+       "article_id": "6986e3ed11e3205ec993ba53"
+      },
+      {
+       "id": "3ec4eb285690b7bc",
+       "company_name": "beverage",
+       "domain": "dedebeverage.com",
+       "round_type": "convertible preferred equity",
+       "amount_usd": 4500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apollo",
+         "domain": "apollo-oe.com",
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "T Rowe Price Investment Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Refreshment beverage",
+       "country": "USA",
+       "city": "Frisco",
+       "use_of_funds": null,
+       "source_sentence": "The upsized convertible preferred equity round is co-led by Apollo and KKR, with additional participation from backerts including accounts advised by T Rowe Price Investment Management.",
+       "published_at": "2026-02-24T11:59:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27f25c1991f786ce13ec4"
+       ],
+       "article_id": "69e27f25c1991f786ce13ec4"
+      },
+      {
+       "id": "09f46b11a5c76b7c",
+       "company_name": "Global Coffee Co. pod manufacturing joint venture",
+       "domain": null,
+       "round_type": "equity investment",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apollo",
+         "domain": "apollo-oe.com",
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Coffee manufacturing",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "That JV includes a $4bn investment co-led by Apollo and KKR, with participation from Goldman Sachs Alternatives, and remains subject to customary closing conditions.",
+       "published_at": "2026-02-24T11:59:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27f25c1991f786ce13ec4"
+       ],
+       "article_id": "69e27f25c1991f786ce13ec4"
+      },
+      {
+       "id": "2a59b95c207130b8",
+       "company_name": "Global Sport Group (GSG)",
+       "domain": null,
+       "round_type": "Financing deal",
+       "amount_usd": 3996000000.0000005,
+       "amount_flag": null,
+       "valuation_usd": 7560000000.000001,
+       "currency": "EUR",
+       "amount": 3700000000.0,
+       "valuation": 7000000000.0,
+       "investors": [
+        {
+         "name": "pimco",
+         "domain": "pimco.com",
+         "amount": 1500000000.0
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 1400000000.0
+        }
+       ],
+       "sector": "Sports",
+       "country": null,
+       "city": null,
+       "use_of_funds": "providing more financial support for its properties",
+       "source_sentence": "CVC Capital Partners has raised €3.7 billion (US$4.29 billion) for its Global Sport Group (GSG) division after reportedly agreeing a complex financing deal with Pimco and KKR.",
+       "published_at": "2026-03-11T16:34:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e88c059baafc735696fc25"
+       ],
+       "article_id": "69e88c059baafc735696fc25"
+      },
+      {
+       "id": "979ad7b496660301",
+       "company_name": "serentica renewables",
+       "domain": "serenticaglobal.com",
+       "round_type": null,
+       "amount_usd": 3000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        }
+       ],
+       "sector": "clean energy",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "acquisitions and expansion of clean energy capacity",
+       "source_sentence": "The first phase of the planned investment, about $3 billion, is fully funded",
+       "published_at": "2025-11-27T08:32:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69453a1f1859a0fcf4a35097"
+       ],
+       "article_id": "69453a1f1859a0fcf4a35097"
+      },
+      {
+       "id": "967afa0379ad5145",
+       "company_name": "flexera software",
+       "domain": "flexerasoftware.com",
+       "round_type": "debt financing",
+       "amount_usd": 3000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 3000000000.0
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "recapitalization",
+       "source_sentence": "KKR ( NYSE: KKR ) announced on Tuesday an investment in the debt financing round for recapitalization of the technology spend and risk intelligence company, Flexera Software.",
+       "published_at": "2025-08-19T11:23:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d93a2e571cd3f5050b1e46"
+       ],
+       "article_id": "68d93a2e571cd3f5050b1e46"
+      },
+      {
+       "id": "10fdb2fbe6c81ecf",
+       "company_name": "new reinsurance sidecar-like co-investment vehicle",
+       "domain": null,
+       "round_type": "Co-investment sidecar vehicle",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "japan post insurance",
+         "domain": "jp-life.japanpost.jp",
+         "amount": 2000000000.0
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "global atlantic",
+         "domain": "forethought.com",
+         "amount": null
+        }
+       ],
+       "sector": "Reinsurance, Life Insurance, Annuities",
+       "country": "Japan",
+       "city": null,
+       "use_of_funds": "Diversifying insurance-linked returns and accessing strategic returns from Global Atlantic’s life, retirement and annuities activities",
+       "source_sentence": "Japan Post Insurance investing the maximum $2 billion into the structure, as it looks to diversify its own sources of insurance-linked returns through access to the KKR owned life specialists underwriting.",
+       "published_at": "2025-07-30T07:30:53",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0e8be50268142442b5b62"
+       ],
+       "article_id": "68d0e8be50268142442b5b62"
+      },
+      {
+       "id": "7cdd166b3bd71ddd",
+       "company_name": "global technical realty",
+       "domain": "globaltechnicalrealty.com",
+       "round_type": "equity",
+       "amount_usd": 1900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1900000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 1500000000.0
+        },
+        {
+         "name": "Oak Hill Capital",
+         "domain": "oakhill.com",
+         "amount": 400000000.0
+        }
+       ],
+       "sector": "Data Center Infrastructure",
+       "country": null,
+       "city": null,
+       "use_of_funds": "greenfield capacity and new market entries across Europe",
+       "source_sentence": "KKR, a leading global investment firm, today announced that it is making an additional $1.5 billion equity commitment to Global Technical Realty (“GTR”), a multi-billion dollar European built-to-suit data center platform. In connection with this investment, Oak Hill Capital (“Oak Hill”), a thematic, middle-market private equity firm, will join as an investor in the company, committing approximately $400 million.",
+       "published_at": "2026-01-07T14:55:18",
+       "coverage_count": 3,
+       "article_ids": [
+        "698cf6bd8d29a990b6cd8369",
+        "69bb0b1f9153720f4d71f37c",
+        "69bd1a7a834bfa2337fd74c4"
+       ],
+       "article_id": "698cf6bd8d29a990b6cd8369"
+      },
+      {
+       "id": "d68cf45dc9ed5b19",
+       "company_name": "global technical realty",
+       "domain": "globaltechnicalrealty.com",
+       "round_type": null,
+       "amount_usd": 1900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1900000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 1500000000.0
+        },
+        {
+         "name": "Oak Hill Capital",
+         "domain": "oakhill.com",
+         "amount": 400000000.0
+        }
+       ],
+       "sector": "Data Centers",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "support GTR’s substantial development pipeline, including additional greenfield capacity and new market entries across Europe",
+       "source_sentence": "KKR will make an additional $1.5 billion equity commitment to Global Technical Realty, a multi-billion dollar European built-to-suit data center platform. In connection with this investment, Oak Hill Capital will join as an investor in the company, committing around $400 million.",
+       "published_at": "2026-01-07T12:49:43",
+       "coverage_count": 4,
+       "article_ids": [
+        "698d6eea8d29a990b6d6742e",
+        "698e71959ca02490ec0e1f02",
+        "69bbd0a1e7e0d8fce946b7af",
+        "69c41ff5a12abf47f1ffc055"
+       ],
+       "article_id": "69bbd0a1e7e0d8fce946b7af"
+      },
+      {
+       "id": "544fa151db748f0a",
+       "company_name": "st telemedia global data centres (stt gdc)",
+       "domain": "sttelemediagdc.com",
+       "round_type": "equity investment",
+       "amount_usd": 1750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "singtel",
+         "domain": "singtel.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data centres",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "minority stake in STT GDC",
+       "source_sentence": "The proposed buyout follows the consortium’s $1.75 billion investment in 2024 for a minority stake in STT GDC, Bloomberg News reported.",
+       "published_at": "2025-11-11T02:37:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986e3ed11e3205ec993ba53"
+       ],
+       "article_id": "6986e3ed11e3205ec993ba53"
+      },
+      {
+       "id": "eccb4ed2059a36fe",
+       "company_name": "vertical bridge",
+       "domain": "verticalbridge.com",
+       "round_type": "Strategic Equity",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "digitalbridge",
+         "domain": "digitalbridge.com",
+         "amount": null
+        },
+        {
+         "name": "CDPQ",
+         "domain": "cdpq.com",
+         "amount": null
+        },
+        {
+         "name": "Caisse",
+         "domain": "caisse.biz",
+         "amount": null
+        }
+       ],
+       "sector": "Telecommunications / Communications Infrastructure",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Accelerate expansion of nationwide wireless infrastructure, build-to-suit towers, collocation opportunities, and M&A to consolidate or enter new markets",
+       "source_sentence": "Vertical Bridge has secured a $1.5 billion strategic equity investment from KKR to accelerate the expansion of its nationwide wireless infrastructure.",
+       "published_at": "2026-04-24T08:00:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efac1da84b609af2b41236"
+       ],
+       "article_id": "69efac1da84b609af2b41236"
+      },
+      {
+       "id": "6d623b53cb25f76b",
+       "company_name": "Vertical Bridge REIT",
+       "domain": null,
+       "round_type": "equity investment",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 1500000000.0
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "support its future growth",
+       "source_sentence": "KKR has plans to make a $1.5 billion equity investment in Vertical Bridge REIT to support its future growth.",
+       "published_at": "2026-04-23T14:26:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea2ded75c44d9ce88368fc"
+       ],
+       "article_id": "69ea2ded75c44d9ce88368fc"
+      },
+      {
+       "id": "1b2bc2ad6baf1258",
+       "company_name": "vertical bridge",
+       "domain": "verticalbridge.com",
+       "round_type": "equity",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 1500000000.0
+        },
+        {
+         "name": "digitalbridge",
+         "domain": "digitalbridge.com",
+         "amount": null
+        },
+        {
+         "name": "La Caisse",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "communications infrastructure",
+       "country": "United States",
+       "city": "Delray Beach, Florida",
+       "use_of_funds": "Support future growth and expand communications infrastructure portfolio.",
+       "source_sentence": "Vertical Bridge REIT, LLC (“Vertical Bridge” or the “Company”), the largest private owner and operator of communications infrastructure in the United States , and leading global investment firm KKR today announced that KKR will make a $1.5 billion equity investment in the Company to support its future growth.",
+       "published_at": "2026-04-22T20:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69fa00a4a088760d34c7b8eb"
+       ],
+       "article_id": "69fa00a4a088760d34c7b8eb"
+      },
+      {
+       "id": "e2b613341bdcc706",
+       "company_name": "keurig dr pepper",
+       "domain": "keurigdrpepper.com",
+       "round_type": "equity",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apollo",
+         "domain": "apollo-oe.com",
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "T. Rowe Price Investment Management",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Beverages",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Financing plan for acquisition of JDE Peet's",
+       "source_sentence": "Keurig Dr Pepper said it has raised an additional $1.5 billion (€1.3 billion) of equity funding from long-term investors as part of its financing plan for the roughly $18 billion (€15.3 billion) acquisition of Dutch coffee giant JDE Peet's.",
+       "published_at": "2026-02-24T11:00:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9c970fe85228ad69b04bb"
+       ],
+       "article_id": "69c9c970fe85228ad69b04bb"
+      },
+      {
+       "id": "f09f2efe45c47b94",
+       "company_name": "global technical realty",
+       "domain": "globaltechnicalrealty.com",
+       "round_type": "Equity investment",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 1500000000.0
+        }
+       ],
+       "sector": "Technology",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Development of existing facilities in the south of England and other locations in Barcelona, Zurich and Tel Aviv; funding of new sites and potential mergers and acquisitions.",
+       "source_sentence": "Private capital group KKR is investing $1.5bn into its European data centre platform in a bet that surging demand for artificial intelligence infrastructure will continue in the region.",
+       "published_at": "2026-01-07T11:45:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3db36f3c2e39de09793f1"
+       ],
+       "article_id": "69c3db36f3c2e39de09793f1"
+      },
+      {
+       "id": "8ee0f89f4aba3cd2",
+       "company_name": "jsw paints",
+       "domain": "jswpaints.in",
+       "round_type": "Acquisition",
+       "amount_usd": 1080000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 90000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sajjan Jindal and family",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "barclays",
+         "domain": "barclays.in",
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "aries",
+         "domain": "ariesnow.com",
+         "amount": null
+        }
+       ],
+       "sector": "Paint",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Acquisition of Akzo Nobel India, raising debt and equity infusion to become top 3 paint maker in India.",
+       "source_sentence": "JSW Paints’ ₹9,000 crore Akzo India buy will propel the Sajjan Jindal-led company to the No 4 slot in the Indian paints market.",
+       "published_at": "2025-07-01T11:16:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab40a22e28036801da9048"
+       ],
+       "article_id": "68ab40a22e28036801da9048"
+      },
+      {
+       "id": "860169bdf688a035",
+       "company_name": "samsung sds",
+       "domain": "samsungsds.com",
+       "round_type": "convertible bonds",
+       "amount_usd": 915000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "KRW",
+       "amount": 1220000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "KKR & Co.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "IT services",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Samsung SDS Co., South Korea’s enterprise IT service provider, has raised 1.22 trillion won ($820 million) from KKR & Co. through convertible bonds.",
+       "published_at": "2026-04-15T15:07:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84bd27bb1410d4c661afc"
+       ],
+       "article_id": "69e84bd27bb1410d4c661afc"
+      },
+      {
+       "id": "9659c59b1a62f2c4",
+       "company_name": "samsung sds",
+       "domain": "samsungsds.com",
+       "round_type": null,
+       "amount_usd": 915000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "KRW",
+       "amount": 1220000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 1220000000000.0
+        }
+       ],
+       "sector": "AI, digital transformation, technology",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": "strengthen infrastructure and accelerate Samsung SDS’ push into end-to-end AI transformation offerings",
+       "source_sentence": "KKR said it would invest about 1.22 trillion won ($820 million) via convertible bonds to support the company’s expansion into AI and digital transformation services.",
+       "published_at": "2026-04-15T03:36:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e878a77bb1410d4c82050e"
+       ],
+       "article_id": "69e878a77bb1410d4c82050e"
+      },
+      {
+       "id": "db09c396fd558a25",
+       "company_name": "fabbrica italiana sintetici",
+       "domain": "fisvi.com",
+       "round_type": "Senior Secured Notes",
+       "amount_usd": 831600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 770000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bnp paribas",
+         "domain": "group.bnpparibas",
+         "amount": null
+        },
+        {
+         "name": "Goldman Sachs International",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nomura",
+         "domain": "nomura.com",
+         "amount": null
+        },
+        {
+         "name": "Banca Akros",
+         "domain": "bancaakros.it",
+         "amount": null
+        },
+        {
+         "name": "barclays",
+         "domain": "barclays.in",
+         "amount": null
+        },
+        {
+         "name": "BofA Securities",
+         "domain": "business.bofa.com",
+         "amount": null
+        },
+        {
+         "name": "BPER",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Citigroup",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "intesa sanpaolo",
+         "domain": "intesasanpaolo.com",
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "morgan stanley",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "rbc",
+         "domain": "rbc.ru",
+         "amount": null
+        },
+        {
+         "name": "unicredit",
+         "domain": "unicreditgroup.eu",
+         "amount": null
+        }
+       ],
+       "sector": "Pharmaceuticals / Active Pharmaceutical Ingredients",
+       "country": "Italy",
+       "city": "Montecchio Maggiore",
+       "use_of_funds": null,
+       "source_sentence": "FIS – Fabbrica Italiana Sintetici (\"FIS\"), a leading Italian company and one of the top players in Europe in the development and production of active pharmaceutical ingredients (APIs) for the global pharmaceutical industry, today announces the settlement of its €770 million Senior Secured Notes.",
+       "published_at": "2026-02-05T15:15:21",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a23082244829555bb5279"
+       ],
+       "article_id": "698a23082244829555bb5279"
+      },
+      {
+       "id": "b035a9cd9d8a0250",
+       "company_name": "Skeena Gold & Silver",
+       "domain": null,
+       "round_type": "Senior secured notes",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "bank of america",
+         "domain": "bankofamerica.com",
+         "amount": null
+        }
+       ],
+       "sector": "Mining",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "Refinancing and capital allocation, including repurchase of gold stream, construction, general corporate and transaction-related expenses",
+       "source_sentence": "Skeena Gold & Silver announced it has completed a $750 million aggregate principal offering of 8.500% senior secured notes maturing in 2031",
+       "published_at": "2026-04-14T02:33:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e6e6c26da9e225562dff93"
+       ],
+       "article_id": "69e6e6c26da9e225562dff93"
+      },
+      {
+       "id": "21014d5425879954",
+       "company_name": "skeena resources",
+       "domain": "skeenaresources.com",
+       "round_type": "Debt",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "bank of america",
+         "domain": "bankofamerica.com",
+         "amount": null
+        }
+       ],
+       "sector": "Mining",
+       "country": "Canada",
+       "city": "Vancouver",
+       "use_of_funds": "Repurchase of Gold Stream, prefund interest, remaining capital for construction and general corporate purposes.",
+       "source_sentence": "The strong support for this debt issuance from leading global investment firms, including KKR and Bank of America, underscores growing confidence in our strategy, our management team, and the robustness of the Eskay Creek project as we progress toward initial production in Q2 2027.",
+       "published_at": "2026-04-10T14:01:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e891dd9baafc73569b3957"
+       ],
+       "article_id": "69e891dd9baafc73569b3957"
+      },
+      {
+       "id": "5c521a920f1db121",
+       "company_name": "skeena resources",
+       "domain": "skeenaresources.com",
+       "round_type": "Senior Secured Notes",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "bank of america",
+         "domain": "bankofamerica.com",
+         "amount": null
+        }
+       ],
+       "sector": "Mining",
+       "country": "Canada",
+       "city": "Vancouver",
+       "use_of_funds": "Repurchase of Gold Stream, prefund interest on the Notes for 18 months, and support remaining construction at Eskay Creek and general corporate purposes.",
+       "source_sentence": "Skeena Resources Limited announces that it has completed its previously announced offering of US$750 million aggregate principal amount of 8.500% Senior Secured Notes.",
+       "published_at": "2026-04-10T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e34acf392cc5e9e8fa6374",
+        "69e98ee3bdd09a23d087f647"
+       ],
+       "article_id": "69e34acf392cc5e9e8fa6374"
+      },
+      {
+       "id": "246cc99e788e5a9f",
+       "company_name": "chandra asri",
+       "domain": "chandra-asri.com",
+       "round_type": "unitranche facility",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        }
+       ],
+       "sector": "energy, chemical, and infrastructure solutions",
+       "country": "Indonesia",
+       "city": null,
+       "use_of_funds": "support expansion agenda, including planned acquisition of ExxonMobil’s Esso-branded service station network in Singapore",
+       "source_sentence": "Latham & Watkins has advised Chandra Asri, Indonesia’s leading energy, chemical, and infrastructure solutions provider, on a US$750 million unitranche facility from KKR. The financing will be used to support Chandra Asri’s expansion agenda, including the planned acquisition of ExxonMobil’s Esso-branded service station network in Singapore.",
+       "published_at": "2025-11-24T05:08:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931652d99a6129312f21918"
+       ],
+       "article_id": "6931652d99a6129312f21918"
+      },
+      {
+       "id": "2620799a66e12e62",
+       "company_name": "Chandra Asri Group",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 750000000.0
+        }
+       ],
+       "sector": "Energy Retail",
+       "country": "Indonesia",
+       "city": null,
+       "use_of_funds": "Expansion of retail and energy footprint",
+       "source_sentence": "KKR (NYSE:KKR) just made a bold move into Southeast Asia's energy retail story, putting $750 million behind Chandra Asri Group as the Indonesian player pushes deeper into Singapore's fuel-station market.",
+       "published_at": "2025-11-17T10:08:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69316fa9b0d6b9ba72f21bcb"
+       ],
+       "article_id": "69316fa9b0d6b9ba72f21bcb"
+      },
+      {
+       "id": "cee592af1ec97228",
+       "company_name": "Chandra Asri Pacific",
+       "domain": null,
+       "round_type": "financing package",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "KKR Capital Markets",
+         "domain": null,
+         "amount": 750000000.0
+        }
+       ],
+       "sector": "Energy, Retail fuel stations",
+       "country": "Indonesia",
+       "city": null,
+       "use_of_funds": "purchase of ExxonMobil’s Esso-branded retail fuel station network in Singapore",
+       "source_sentence": "Indonesia’s Chandra Asri Pacific said on Monday it has secured a bespoke $750 million financing package from investment firm KKR to support its purchase of ExxonMobil’s Esso-branded retail fuel station network in Singapore.",
+       "published_at": "2025-11-17T05:54:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e502ca9d0e7fe469a7eacf"
+       ],
+       "article_id": "69e502ca9d0e7fe469a7eacf"
+      },
+      {
+       "id": "7061396edeecf0dc",
+       "company_name": "Chandra Asri Pacific",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        }
+       ],
+       "sector": "Oil & Gas",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "Support acquisition of Esso petrol stations in Singapore",
+       "source_sentence": "Chandra Asri Pacific —controlled by Indonesian tycoon Prajogo Pangestu —said it has obtained $750 million in financing from New York-based private equity firm KKR to support the acquisition of Esso petrol stations in Singapore.",
+       "published_at": "2025-11-17T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6931544e30c10bc1d4f21fbc",
+        "694dee11d9499d420ff2f02a"
+       ],
+       "article_id": "694dee11d9499d420ff2f02a"
+      },
+      {
+       "id": "61be5a22cc3e9a5f",
+       "company_name": "Chandra Asri Group",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        }
+       ],
+       "sector": "Energy, Chemicals, Infrastructure, Retail Fuel",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Acquisition of Esso-branded retail fuel station network in Singapore",
+       "source_sentence": "$750-million bespoke financing solution arranged by KKR Capital Markets and anchored by KKR’s private credit and insurance platforms to Chandra Asri Group.",
+       "published_at": "2025-11-16T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbe63fd0887d68fa441a7f"
+       ],
+       "article_id": "69bbe63fd0887d68fa441a7f"
+      },
+      {
+       "id": "a38a4c8c966383aa",
+       "company_name": "contourglobal",
+       "domain": "contourglobal.com",
+       "round_type": "bond issuance",
+       "amount_usd": 729000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 675000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "santander",
+         "domain": "santander.com",
+         "amount": null
+        },
+        {
+         "name": "bnp paribas",
+         "domain": "group.bnpparibas",
+         "amount": null
+        },
+        {
+         "name": "Goldman Sachs International",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "mizuho",
+         "domain": "mizuho-sbs.com",
+         "amount": null
+        },
+        {
+         "name": "unicredit",
+         "domain": "unicreditgroup.eu",
+         "amount": null
+        }
+       ],
+       "sector": "Renewable Energy",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "refinance existing debt and support growth",
+       "source_sentence": "London, January 27th, 2026 The successful issuance of €675 million in aggregate principal amount of 4.375% corporate-level senior secured notes due 2031 (the “Notes”) reflects strong investor confidence in our strategy, credit profile and growth outlook.",
+       "published_at": "2026-01-27T10:47:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e283b2bd7b10565a32aa4a"
+       ],
+       "article_id": "69e283b2bd7b10565a32aa4a"
+      },
+      {
+       "id": "6d5700ee0551624c",
+       "company_name": "saviynt",
+       "domain": "saviynt.com",
+       "round_type": "growth equity",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3000000000.0,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Growth",
+         "domain": "sixthstreetgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "TenEleven",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carrick capital partners",
+         "domain": "carrickcapitalpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "United States",
+       "city": "El Segundo",
+       "use_of_funds": "build technology platform and expand footprint in Los Angeles and globally",
+       "source_sentence": "El Segundo-based cybersecurity firm Saviynt had one of the longest stretches between venture rounds, as it raised $700 million of growth equity a full seven years after its Series A funding.",
+       "published_at": "2026-02-22T09:07:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e31b268c1f2eecc2d4bd74"
+       ],
+       "article_id": "69e31b268c1f2eecc2d4bd74"
+      },
+      {
+       "id": "1bf3d6e1c4dd0c35",
+       "company_name": "saviynt",
+       "domain": "saviynt.com",
+       "round_type": "Series B Growth Equity",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3000000000.0,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Growth",
+         "domain": "sixthstreetgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "TenEleven",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carrick capital partners",
+         "domain": "carrickcapitalpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Identity Security / AI-Driven Identity & Access Management",
+       "country": null,
+       "city": "Los Angeles, New York",
+       "use_of_funds": "The company will use the funding to accelerate product development, expand AI capabilities, enable deeper integrations with cloud and SaaS platforms, and support global scaling of Saviynt’s identity security solutions.",
+       "source_sentence": "Saviynt, a Los Angeles- and New York-based identity security company, has raised $700 million in a Series B funding at a valuation of approximately $3 billion.",
+       "published_at": "2025-12-11T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f1a878d29a990b6f64647"
+       ],
+       "article_id": "698f1a878d29a990b6f64647"
+      },
+      {
+       "id": "47ef9c83cb93c386",
+       "company_name": "saviynt",
+       "domain": "saviynt.com",
+       "round_type": "Series B",
+       "amount_usd": 700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 700000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Sixth Street Growth",
+         "domain": "sixthstreetgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "TenEleven",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carrick capital partners",
+         "domain": "carrickcapitalpartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "Identity Security",
+       "country": "USA",
+       "city": "El Segundo",
+       "use_of_funds": "Accelerate R&D, deepen integrations with hyperscalers and SaaS providers, help customers migrate from legacy systems",
+       "source_sentence": "Saviynt, the identity security specialist, has raised $700m in a Series B growth equity round led by KKR, alongside Sixth Street Growth, TenEleven and existing investor Carrick Capital Partners.",
+       "published_at": "2025-12-10T16:03:41",
+       "coverage_count": 7,
+       "article_ids": [
+        "69451b6a5826dfd1b9a3502f",
+        "698398d9e67557fb8553a17d",
+        "6988aa674727a5abdc89e913",
+        "698d14949ca02490ecf4472d",
+        "698d39e19ca02490ecf708a5",
+        "698d77be9ca02490ecfba63d",
+        "69e2ddc27f3a572cf4b7c0cb"
+       ],
+       "article_id": "698d14949ca02490ecf4472d"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 116,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTItMTAgMTY6MDM6NDEiLCJrIjoiNTE4MzUzMzc4NTk5NjgzNzc2NiIsImEiOjcwMDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 116,
+      "deals_with_amount": 93,
+      "deals_without_amount": 23,
+      "deals_amount_excluded": 3,
+      "sum_amount_usd": 102675390000.0,
+      "median_amount_usd": 500000000.0,
+      "largest_amount_usd": 10000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.188,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.191
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "KKR",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "kkr"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "e484c0c34e4d87f9",
+       "company_name": "baby memorial hospital",
+       "domain": "babymhospital.org",
+       "round_type": "initial investment",
+       "amount_usd": 252000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 21000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 21000000000.0
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "India",
+       "city": "Kozhikode",
+       "use_of_funds": "create a platform of hospitals in southern India",
+       "source_sentence": "KKR had initially invested ₹2,100 crore in Baby Memorial Hospital in July 2024 to create a platform of hospitals in southern India.",
+       "published_at": "2026-04-28T19:19:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03665ac2856acf8e891d13"
+       ],
+       "article_id": "6a03665ac2856acf8e891d13"
+      },
+      {
+       "id": "cc58e327227343e3",
+       "company_name": "baby memorial hospital",
+       "domain": "babymhospital.org",
+       "round_type": "rights issue",
+       "amount_usd": 210000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 17500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 17500000000.0
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "India",
+       "city": "Kozhikode",
+       "use_of_funds": "acquisitions and expansion",
+       "source_sentence": "KKR has pumped ₹1,750 crore in Baby Memorial Hospital by way of a rights issue as it positions the Kozhikode-based healthcare player for a larger region-wide footprint, according to documents reviewed by ET.",
+       "published_at": "2026-04-28T19:19:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03665ac2856acf8e891d13"
+       ],
+       "article_id": "6a03665ac2856acf8e891d13"
+      },
+      {
+       "id": "74e6c404d4b9b73e",
+       "company_name": "baby memorial hospital",
+       "domain": "babymhospital.org",
+       "round_type": "follow-on investment",
+       "amount_usd": 151320000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 12610000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 12610000000.0
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "India",
+       "city": "Kozhikode",
+       "use_of_funds": null,
+       "source_sentence": "It increased its investment by ₹1,261 crore in the hospital in September last year before the latest funding round, the documents showed.",
+       "published_at": "2026-04-28T19:19:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a03665ac2856acf8e891d13"
+       ],
+       "article_id": "6a03665ac2856acf8e891d13"
+      },
+      {
+       "id": "eccb4ed2059a36fe",
+       "company_name": "vertical bridge",
+       "domain": "verticalbridge.com",
+       "round_type": "Strategic Equity",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "digitalbridge",
+         "domain": "digitalbridge.com",
+         "amount": null
+        },
+        {
+         "name": "CDPQ",
+         "domain": "cdpq.com",
+         "amount": null
+        },
+        {
+         "name": "Caisse",
+         "domain": "caisse.biz",
+         "amount": null
+        }
+       ],
+       "sector": "Telecommunications / Communications Infrastructure",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Accelerate expansion of nationwide wireless infrastructure, build-to-suit towers, collocation opportunities, and M&A to consolidate or enter new markets",
+       "source_sentence": "Vertical Bridge has secured a $1.5 billion strategic equity investment from KKR to accelerate the expansion of its nationwide wireless infrastructure.",
+       "published_at": "2026-04-24T08:00:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efac1da84b609af2b41236"
+       ],
+       "article_id": "69efac1da84b609af2b41236"
+      },
+      {
+       "id": "6d623b53cb25f76b",
+       "company_name": "Vertical Bridge REIT",
+       "domain": null,
+       "round_type": "equity investment",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 1500000000.0
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "support its future growth",
+       "source_sentence": "KKR has plans to make a $1.5 billion equity investment in Vertical Bridge REIT to support its future growth.",
+       "published_at": "2026-04-23T14:26:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea2ded75c44d9ce88368fc"
+       ],
+       "article_id": "69ea2ded75c44d9ce88368fc"
+      },
+      {
+       "id": "1b2bc2ad6baf1258",
+       "company_name": "vertical bridge",
+       "domain": "verticalbridge.com",
+       "round_type": "equity",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 1500000000.0
+        },
+        {
+         "name": "digitalbridge",
+         "domain": "digitalbridge.com",
+         "amount": null
+        },
+        {
+         "name": "La Caisse",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "communications infrastructure",
+       "country": "United States",
+       "city": "Delray Beach, Florida",
+       "use_of_funds": "Support future growth and expand communications infrastructure portfolio.",
+       "source_sentence": "Vertical Bridge REIT, LLC (“Vertical Bridge” or the “Company”), the largest private owner and operator of communications infrastructure in the United States , and leading global investment firm KKR today announced that KKR will make a $1.5 billion equity investment in the Company to support its future growth.",
+       "published_at": "2026-04-22T20:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69fa00a4a088760d34c7b8eb"
+       ],
+       "article_id": "69fa00a4a088760d34c7b8eb"
+      },
+      {
+       "id": "860169bdf688a035",
+       "company_name": "samsung sds",
+       "domain": "samsungsds.com",
+       "round_type": "convertible bonds",
+       "amount_usd": 915000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "KRW",
+       "amount": 1220000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "KKR & Co.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "IT services",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Samsung SDS Co., South Korea’s enterprise IT service provider, has raised 1.22 trillion won ($820 million) from KKR & Co. through convertible bonds.",
+       "published_at": "2026-04-15T15:07:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84bd27bb1410d4c661afc"
+       ],
+       "article_id": "69e84bd27bb1410d4c661afc"
+      },
+      {
+       "id": "9659c59b1a62f2c4",
+       "company_name": "samsung sds",
+       "domain": "samsungsds.com",
+       "round_type": null,
+       "amount_usd": 915000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "KRW",
+       "amount": 1220000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": 1220000000000.0
+        }
+       ],
+       "sector": "AI, digital transformation, technology",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": "strengthen infrastructure and accelerate Samsung SDS’ push into end-to-end AI transformation offerings",
+       "source_sentence": "KKR said it would invest about 1.22 trillion won ($820 million) via convertible bonds to support the company’s expansion into AI and digital transformation services.",
+       "published_at": "2026-04-15T03:36:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e878a77bb1410d4c82050e"
+       ],
+       "article_id": "69e878a77bb1410d4c82050e"
+      },
+      {
+       "id": "b035a9cd9d8a0250",
+       "company_name": "Skeena Gold & Silver",
+       "domain": null,
+       "round_type": "Senior secured notes",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "bank of america",
+         "domain": "bankofamerica.com",
+         "amount": null
+        }
+       ],
+       "sector": "Mining",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": "Refinancing and capital allocation, including repurchase of gold stream, construction, general corporate and transaction-related expenses",
+       "source_sentence": "Skeena Gold & Silver announced it has completed a $750 million aggregate principal offering of 8.500% senior secured notes maturing in 2031",
+       "published_at": "2026-04-14T02:33:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e6e6c26da9e225562dff93"
+       ],
+       "article_id": "69e6e6c26da9e225562dff93"
+      },
+      {
+       "id": "21014d5425879954",
+       "company_name": "skeena resources",
+       "domain": "skeenaresources.com",
+       "round_type": "Debt",
+       "amount_usd": 750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "bank of america",
+         "domain": "bankofamerica.com",
+         "amount": null
+        }
+       ],
+       "sector": "Mining",
+       "country": "Canada",
+       "city": "Vancouver",
+       "use_of_funds": "Repurchase of Gold Stream, prefund interest, remaining capital for construction and general corporate purposes.",
+       "source_sentence": "The strong support for this debt issuance from leading global investment firms, including KKR and Bank of America, underscores growing confidence in our strategy, our management team, and the robustness of the Eskay Creek project as we progress toward initial production in Q2 2027.",
+       "published_at": "2026-04-10T14:01:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e891dd9baafc73569b3957"
+       ],
+       "article_id": "69e891dd9baafc73569b3957"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 43,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTAgMTQ6MDE6MDAiLCJrIjoiMjM3ODI2NzEwMjAzMDU2Nzc2NCJ9",
+     "totals": {
+      "deals": 43,
+      "deals_with_amount": 37,
+      "deals_without_amount": 6,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 37686200000.0,
+      "median_amount_usd": 700000000.0,
+      "largest_amount_usd": 5000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.122,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.126
+    }
+   }
+  }
+ ]
+}

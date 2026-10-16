@@ -1,0 +1,826 @@
+{
+ "slug": "data-center-investment",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:32Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "company_announcement"
+     ],
+     "q": "data center",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "data center",
+      "match": "any",
+      "event_type": [
+       "asset_acquisition",
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 23,
+       "by_type": {
+        "asset_acquisition": 11,
+        "company_announcement": 12
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 23,
+       "by_type": {
+        "asset_acquisition": 9,
+        "company_announcement": 14
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 27,
+       "by_type": {
+        "asset_acquisition": 2,
+        "company_announcement": 25
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 50,
+       "by_type": {
+        "asset_acquisition": 30,
+        "company_announcement": 20
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 26,
+       "by_type": {
+        "asset_acquisition": 5,
+        "company_announcement": 21
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 30,
+       "by_type": {
+        "asset_acquisition": 8,
+        "company_announcement": 22
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 25,
+       "by_type": {
+        "asset_acquisition": 6,
+        "company_announcement": 19
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 21,
+       "by_type": {
+        "asset_acquisition": 8,
+        "company_announcement": 13
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 25,
+       "by_type": {
+        "asset_acquisition": 7,
+        "company_announcement": 18
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 32,
+       "by_type": {
+        "asset_acquisition": 12,
+        "company_announcement": 20
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 41,
+       "by_type": {
+        "asset_acquisition": 15,
+        "company_announcement": 26
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 30,
+       "by_type": {
+        "asset_acquisition": 14,
+        "company_announcement": 16
+       }
+      }
+     ],
+     "totals": {
+      "events": 353,
+      "articles": 294,
+      "companies": 191,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "asset_acquisition": 127,
+      "company_announcement": 226
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.108,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.112
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "company_announcement"
+     ],
+     "q": "data center",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "data center",
+      "event_type": [
+       "asset_acquisition",
+       "company_announcement"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f8aa8cbbf1d314559a57a1",
+       "headline": "CEO Cristiano Amon revealed that the company is on track to begin shipping data center chips to “a large hyperscaler” within the calendar year.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "qualcomm.com",
+       "published_at": "2026-04-30T06:08:25",
+       "url": "https://www.businesstoday.in/markets/stocks/story/why-qualcomm-shares-jumped-after-ceo-cristiano-amons-comments-key-details-528176-2026-04-30",
+       "publisher": "businesstoday.in",
+       "title": "Why Qualcomm shares jumped after CEO Cristiano Amon's comments - BusinessToday"
+      },
+      {
+       "id": "6a03692f7b84f58d6f73785d",
+       "headline": "ProPetro Holding Corp. (NYSE: PUMP) (“ProPetro”) today announced that its PROPWR business unit has entered into a strategic framework agreement with Caterpillar Inc. (NYSE: CAT ) (“Caterpillar”) to purchase up to 2.1 gigawatts of power generation assets to support the growing energy demands of data center, oil and gas and industrial customers with efficient, reliable solutions.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "propetroservices.com",
+       "published_at": "2026-04-29T20:15:00",
+       "url": "https://www.stocktitan.net/news/PUMP/propwr-secures-strategic-framework-agreement-with-caterpillar-dzx7vgpheh9i.html",
+       "publisher": "stocktitan.net",
+       "title": "To serve data centers, ProPetro targets 2.6 GW of power by 2031"
+      },
+      {
+       "id": "6a03692f7b84f58d6f73785d",
+       "headline": "ProPetro Holding Corp. (NYSE: PUMP) (“ProPetro”) today announced that its PROPWR business unit has entered into a strategic framework agreement with Caterpillar Inc. (NYSE: CAT ) (“Caterpillar”) to purchase up to 2.1 gigawatts of power generation assets to support the growing energy demands of data center, oil and gas and industrial customers with efficient, reliable solutions.",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "caterpillar.com",
+       "published_at": "2026-04-29T20:15:00",
+       "url": "https://www.stocktitan.net/news/PUMP/propwr-secures-strategic-framework-agreement-with-caterpillar-dzx7vgpheh9i.html",
+       "publisher": "stocktitan.net",
+       "title": "To serve data centers, ProPetro targets 2.6 GW of power by 2031"
+      },
+      {
+       "id": "69f1c8da399b489398df72aa",
+       "headline": "I Squared Capital, a Miami-based global infrastructure investment manager with 55 billion dollars in assets under management, has agreed to acquire Elea Data Centers, one of the largest carrier-neutral data center platforms in Brazil.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "isquaredcapital.com",
+       "published_at": "2026-04-29T02:31:29",
+       "url": "https://pulse2.com/i-squared-capital-acquires-elea-data-centers-to-expand-brazilian-digital-infrastructure-platform/",
+       "publisher": "pulse2.com",
+       "title": "I Squared Capital Acquires Elea Data Centers To Expand Brazilian Digital Infrastructure Platform"
+      },
+      {
+       "id": "69ec1e10836bff4eb97584b8",
+       "headline": "VNET Group, Inc. (NASDAQ: VNET) (“VNET” or the “Company”), a leading carrier- and cloud-neutral internet data center services provider in China, today announced it has published its 2025 Environmental, Social and Governance Report (the “2025 ESG Report”).",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "vnet.com",
+       "published_at": "2026-04-24T09:00:00",
+       "url": "https://technode.global/prnasia/vnet-publishes-2025-environmental-social-and-governance-report/",
+       "publisher": "technode.global",
+       "title": "VNET Publishes 2025 Environmental, Social and Governance Report - TNGlobal"
+      },
+      {
+       "id": "69ea1eb073206aa299ebe809",
+       "headline": "Google plans to develop a new data center in LaGrange, the company announced on Tuesday.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "google.com",
+       "published_at": "2026-04-23T00:00:00",
+       "url": "https://metroatlantaceo.com/news/2026/04/google-announces-new-data-center-lagrange/",
+       "publisher": "metroatlantaceo.com",
+       "title": "Google Announces New Data Center in LaGrange"
+      },
+      {
+       "id": "69f9d45a713680636eec046e",
+       "headline": "On April 21, 2026, VivoPower PLC (the “Company” or “VivoPower”), today announced the closing of the transaction to acquire certain operating subsidiaries of Cowa, which collectively own and operate an energized and operational 41.5MW data center infrastructure facility in the Mo i Rana industrial precinct in Norway, powered by 100% renewable hydroelectric energy.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "vivopower.com",
+       "published_at": "2026-04-21T15:11:01",
+       "url": "https://www.stocktitan.net/sec-filings/VIVO/6-k-vivo-power-plc-current-report-foreign-issuer-b73511a92291.html",
+       "publisher": "stocktitan.net",
+       "title": "Norway data center lifts VivoPower (NASDAQ: VIVO) to EBITDA profit"
+      },
+      {
+       "id": "69f9d45a713680636eec046e",
+       "headline": "On April 21, 2026, VivoPower PLC (the “Company” or “VivoPower”), today announced the closing of the transaction to acquire certain operating subsidiaries of Cowa, which collectively own and operate an energized and operational 41.5MW data center infrastructure facility in the Mo i Rana industrial precinct in Norway, powered by 100% renewable hydroelectric energy.",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "cowa.ai",
+       "published_at": "2026-04-21T15:11:01",
+       "url": "https://www.stocktitan.net/sec-filings/VIVO/6-k-vivo-power-plc-current-report-foreign-issuer-b73511a92291.html",
+       "publisher": "stocktitan.net",
+       "title": "Norway data center lifts VivoPower (NASDAQ: VIVO) to EBITDA profit"
+      },
+      {
+       "id": "69e85b2c7bb1410d4c6f5a9c",
+       "headline": "Aon plc is expanding its proprietary Data Center Lifecycle Insurance Program (DCLP) with an additional $1 billion, increasing the program’s capacity to $3.5 billion.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "aon.com",
+       "published_at": "2026-04-16T05:10:19",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8df087bb1410d4cd1954d",
+       "headline": "Aon plc announced an additional $1 billion expansion of its proprietary Data Center Lifecycle Insurance Program (DCLP), increasing total program capacity to $3.5 billion and expanding the program to now include coverage for existing data centers coming off the first year of operations.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "aon.com",
+       "published_at": "2026-04-15T23:00:00",
+       "url": "https://ffnews.com/newsarticle/insurtech/aon-expands-data-center-lifecycle-insurance-program-capacity-to-3-5-billion-in-support-of-digital-infrastructure-clients/",
+       "publisher": "ffnews.com",
+       "title": "Aon Expands Data Center Lifecycle Insurance Program Capacity to $3.5 Billion in Support of Digital Infrastructure Clients"
+      },
+      {
+       "id": "69e859489baafc735676821a",
+       "headline": "today announced an additional $1 billion expansion of its proprietary Data Center Lifecycle Insurance Program (DCLP), increasing total program capacity to $3.5 billion and expanding the program to now include coverage for existing data centers coming off the first year of operations.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "aon.com",
+       "published_at": "2026-04-15T07:03:17",
+       "url": "https://mediabulletins.com/business/aon-expands-data-center-lifecycle-insurance-program-capacity-to-3-5-billion-in-support-of-digital-infrastructure-clients/",
+       "publisher": "mediabulletins.com",
+       "title": "Aon expands Data Center Lifecycle Insurance Program capacity to $3.5 billion in support of Digital Infrastructure clients"
+      },
+      {
+       "id": "69e84ed77bb1410d4c67fb9d",
+       "headline": "Aon plc today announced an additional $1 billion expansion of its proprietary Data Center Lifecycle Insurance Program (DCLP), increasing total program capacity to $3.5 billion.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "aon.com",
+       "published_at": "2026-04-15T07:00:00",
+       "url": "https://businessfortnight.com/aon-expands-data-center-lifecycle-insurance-program-capacity-to-3-5-billion-in-support-of-digital-infrastructure-clients/",
+       "publisher": "businessfortnight.com",
+       "title": "Latest News Aon expands Data Center Lifecycle Insurance Program capacity to $3.5 billion in support of Digital Infrastructure clients - Businessfortnight"
+      },
+      {
+       "id": "69e8d2c07bb1410d4cc7e43e",
+       "headline": "For example, a $14 billion data center project in Michigan shows that the company is committed to the hardware that huge language models need for the long run.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "oracle.com",
+       "published_at": "2026-04-14T03:50:50",
+       "url": "https://www.fxleaders.com/news/2026/04/14/oracle-surges-13-as-ai-announcements-spark-broad-software-rally/",
+       "publisher": "fxleaders.com",
+       "title": "Oracle Surges 13% as AI Announcements Spark Broad Software Rally"
+      },
+      {
+       "id": "69e8daeb7bb1410d4cce4241",
+       "headline": "Unsurprisingly, this acceleration has come with a continued growth in capex, with a new quarterly high of $37.5 billion, of which two-thirds went to \"short-lived assets\" like GPUs and CPUs, and data center leases accounted for $6.7bn.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "microsoft.com",
+       "published_at": "2026-04-14T00:00:00",
+       "url": "https://www.datacenterdynamics.com/en/news/microsoft-brings-1gw-of-data-center-capacity-online-in-q2-2026/",
+       "publisher": "datacenterdynamics.com",
+       "title": "Microsoft brings 1GW of data center capacity online in Q2 2026"
+      },
+      {
+       "id": "69e8da789baafc7356d6f3a9",
+       "headline": "Founded in 2020, Hyperco was acquired by Edgnex, the data center arm of Dubai real estate firm Damac, in April 2025.",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "hypercoils.com",
+       "published_at": "2026-04-14T00:00:00",
+       "url": "https://www.datacenterdynamics.com/en/news/former-paper-mill-site-in-finland-targeted-for-data-center-use-report/",
+       "publisher": "datacenterdynamics.com",
+       "title": "Former paper mill site in Finland targeted for data center use - report"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 128,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTQgMDA6MDA6MDAiLCJpIjoiNjllOGRhNzg5YmFhZmM3MzU2ZDZmM2E5IiwiZG0iOiJoeXBlcmNvaWxzLmNvbSIsImV0IjoiYXNzZXRfYWNxdWlzaXRpb24iLCJybyI6InNlbGxlciJ9",
+     "by_type": {
+      "company_announcement": 80,
+      "asset_acquisition": 48
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.448,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 1 event(s)"
+     ],
+     "request_seconds": 4.452
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "company_announcement"
+     ],
+     "q": "data center",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "data center",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "asset_acquisition",
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 138,
+     "carrying": 138,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 1,
+       "share": 0.72
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 26,
+       "share": 18.84
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 19,
+       "share": 13.77
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 92,
+       "share": 66.67
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "neutral",
+       "count": 1,
+       "share": 0.72
+      },
+      {
+       "group": "positive",
+       "count": 137,
+       "share": 99.28
+      }
+     ],
+     "negative_to_positive_ratio": 0.0,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": null,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 28,
+       "negative": 0,
+       "neutral": 1,
+       "positive": 27,
+       "negative_share": 0.0,
+       "positive_share": 96.43,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 1,
+        "slight_pos": 3,
+        "fair_pos": 4,
+        "very_pos": 20,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 27,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 27,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 4,
+        "fair_pos": 4,
+        "very_pos": 19,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 38,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 38,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 9,
+        "fair_pos": 5,
+        "very_pos": 24,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 45,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 45,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 10,
+        "fair_pos": 6,
+        "very_pos": 29,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 5.109,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 5.112
+    }
+   }
+  }
+ ]
+}

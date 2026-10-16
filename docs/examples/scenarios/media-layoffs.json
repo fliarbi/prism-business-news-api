@@ -1,0 +1,806 @@
+{
+ "slug": "media-layoffs",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:54Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "layoffs"
+     ],
+     "q": "media",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "media",
+      "match": "any",
+      "event_type": [
+       "layoffs"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "layoffs": 11
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "layoffs": 5
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 7,
+       "by_type": {
+        "layoffs": 7
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 7,
+       "by_type": {
+        "layoffs": 7
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 6,
+       "by_type": {
+        "layoffs": 6
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "layoffs": 5
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "layoffs": 5
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "layoffs": 2
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "layoffs": 2
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "layoffs": 3
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 6,
+       "by_type": {
+        "layoffs": 6
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 7,
+       "by_type": {
+        "layoffs": 7
+       }
+      }
+     ],
+     "totals": {
+      "events": 66,
+      "articles": 64,
+      "companies": 55,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "layoffs": 66
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.064,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.067
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "layoffs"
+     ],
+     "q": "media",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "media",
+      "event_type": [
+       "layoffs"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69efab9e727212302c5fa679",
+       "headline": "In Germany and Spain, media reports suggested the cuts in those countries amount to around 300 each, with a further 185 in Italy.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "nestle.com",
+       "published_at": "2026-04-24T13:38:31",
+       "url": "https://www.just-food.com/news/nestle-job-cuts-begin-in-europe-under-plan-to-eliminate-16000-positions/",
+       "publisher": "just-food.com",
+       "title": "Nestlé job cull begins in Europe under plan to eliminate 16,000 positions"
+      },
+      {
+       "id": "69f1c8b61e3933a6dd8eaa95",
+       "headline": "Also on Thursday, US media reported that tech giant Microsoft was planning to offer voluntary early retirement buyouts for around 8.700 workers, or about 7% of its workforce.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "microsoft.com",
+       "published_at": "2026-04-24T07:19:29",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8e33c9baafc7356de2104",
+       "headline": "The parent of major social media platforms, Meta, eliminated approximately 2,400 roles.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "metavision.com",
+       "published_at": "2026-04-17T10:19:06",
+       "url": "https://www.latestly.com/technology/tech-layoffs-surge-globally-job-cuts-across-sector-cross-over-80000-in-q1-as-tech-giants-shift-toward-ai-infrastructure-7396737.html",
+       "publisher": "latestly.com",
+       "title": "Tech Layoffs Surge Globally: Job Cuts Across Sector Cross Over 80,000 in Q1 As Tech Giants Shift Toward AI Infrastructure | 📲 LatestLY"
+      },
+      {
+       "id": "69e8e30b7bb1410d4cd4cf57",
+       "headline": "The parent of major social media platforms, Meta, eliminated approximately 2,400 roles.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "metavision.com",
+       "published_at": "2026-04-17T08:55:30",
+       "url": "https://www.socialnews.xyz/2026/04/17/global-tech-layoffs-hit-80000-in-q1-tally-may-cross-3-lakh-this-year-report/",
+       "publisher": "socialnews.xyz",
+       "title": "Global tech layoffs hit 80,000 in Q1, tally may cross 3 lakh this year: Report - Social News XYZ"
+      },
+      {
+       "id": "69e8e2479baafc7356dd5246",
+       "headline": "This followed earlier cuts of about 100 employees, taking the total number of layoffs this year to nearly 200, according to media reports.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "olakrutrim.com",
+       "published_at": "2026-04-17T06:03:34",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e860c45cfa3e5ba5efd9e5",
+       "headline": "According to a recent media report, the precious metal manufacturer and recycler Saxonia, based in Dresden (Saxony), has now decided to take this step and will dissolve a subsidiary in Baden-Württemberg at the end of the year.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "saxoniaguesthouse.co.uk",
+       "published_at": "2026-04-16T09:45:36",
+       "url": "https://www.merkur.de/wirtschaft/traditionsunternehmen-soll-aufgeloest-werden-was-wird-aus-den-mitarbeitern-94264497.html",
+       "publisher": "merkur.de",
+       "title": "Deutsches Traditionsunternehmen soll aufgelöst werden – was wird aus den Mitarbeitern?"
+      },
+      {
+       "id": "69f9f067a088760d34c76b4a",
+       "headline": "April 15: Snap lays off 16% of workforce Snap, parent company of social media platform Snapchat, is reducing its headcount by 1,000 jobs, according to Business Insider.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "snapacc.com",
+       "published_at": "2026-04-09T19:38:15",
+       "url": "https://informationweek.com/it-staffing-careers/2026-tech-company-layoffs",
+       "publisher": "informationweek.com",
+       "title": "2026 tech company layoffs"
+      },
+      {
+       "id": "69cbd21944f4fd4c50a2eb57",
+       "headline": "United Natural Foods Inc. (UNFI) plans to close a distribution facility in Racine, Wis., according to multiple media reports. The move will lay off 443 workers.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "unfi.com",
+       "published_at": "2026-03-18T18:06:50",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69cbd2612c2570848d94c02f",
+       "headline": "CANAL+, the French media giant, plans to cut staff at its African pay-TV subsidiary MultiChoice Group through a voluntary severance package to employees in support roles as part of a $115 million turnaround investment.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "multichoiceafrica.com",
+       "published_at": "2026-03-17T12:48:08",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e99ae8bdd09a23d091507a",
+       "headline": "About 50 workers are expected to lose their jobs, according to Slovak media reports.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "antolin.com",
+       "published_at": "2026-03-11T20:41:15",
+       "url": "https://spectator.sme.sk/business/c/spanish-automotive-supplier-to-shut-one-of-its-plants-in-slovakia",
+       "publisher": "spectator.sme.sk",
+       "title": "Spanish automotive supplier to shut Trnava plant"
+      },
+      {
+       "id": "69c3d26d83d8fecbb366c029",
+       "headline": "Horizon Media, among the world’s largest independent ad agencies, underwent a round of layoffs this week, cutting 50 roles out of a headcount of over 2,000 globally as part of a broader restructuring.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "hndpx.com",
+       "published_at": "2026-03-11T15:58:12",
+       "url": "https://www.adweek.com/agencies/horizon-media-layoffs-march-2026/",
+       "publisher": "adweek.com",
+       "title": "EXCLUSIVE: Horizon Media Cuts 50 Roles in AI-Focused Agency ‘Realignment’"
+      },
+      {
+       "id": "69cc44d074cdb9f7951c9531",
+       "headline": "French media group Canal+ plans to cut the workforce at MultiChoice through voluntary severance offers targeted at support functions.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "multichoice.com",
+       "published_at": "2026-03-11T10:43:33",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69cb5ce1d36caf5748bf91ce",
+       "headline": "and in Jackson. Tenn., where 59 workers will lose their jobs, according to media reports in both markets.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "paceind.com",
+       "published_at": "2026-03-05T19:16:13",
+       "url": "https://www.crainsgrandrapids.com/news/manufacturing/pace-industries-to-close-pair-of-muskegon-plants-cut-145-jobs/",
+       "publisher": "crainsgrandrapids.com",
+       "title": "Pace Industries to close pair of Muskegon plants, cut 145 jobs"
+      },
+      {
+       "id": "69c8cf90314a265bf577c711",
+       "headline": "Earlier this month, Bell Media cut 60 jobs, following 650 layoffs in late 2025.",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "gobellmedia.com",
+       "published_at": "2026-02-20T17:35:57",
+       "url": "https://www.iphoneincanada.ca/2026/02/20/rogers-job-cuts-it-staff-eliminated-in-ontario-as-outsourcing-trend-grows/",
+       "publisher": "iphoneincanada.ca",
+       "title": "Rogers Job Cuts: IT Staff Eliminated in Ontario as Outsourcing Trend Grows | iPhone in Canada"
+      },
+      {
+       "id": "69cc4363f8e7de13bc1ccfd1",
+       "headline": "Most recently, in early February, Bell said it had laid off 60 employees in its Bell Media division",
+       "event_type": "layoffs",
+       "role": "primary",
+       "domain": "bell.ca",
+       "published_at": "2026-02-19T23:30:18",
+       "url": "https://www.theglobeandmail.com/business/article-rogers-layoffs-tech-support-team/",
+       "publisher": "theglobeandmail.com",
+       "title": "Rogers lays off part of in-house IT support team"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 18,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDItMTkgMjM6MzA6MTgiLCJpIjoiNjljYzQzNjNmOGU3ZGUxM2JjMWNjZmQxIiwiZG0iOiJiZWxsLmNhIiwiZXQiOiJsYXlvZmZzIiwicm8iOiJwcmltYXJ5In0",
+     "by_type": {
+      "layoffs": 18
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.393,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.395
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "layoffs"
+     ],
+     "q": "media",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "media",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "layoffs"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 69,
+     "carrying": 69,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 23,
+       "share": 33.33
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 34,
+       "share": 49.28
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 10,
+       "share": 14.49
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 2,
+       "share": 2.9
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 57,
+       "share": 82.61
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 12,
+       "share": 17.39
+      }
+     ],
+     "negative_to_positive_ratio": 4.75,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 6.41,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 18,
+       "negative": 18,
+       "neutral": 0,
+       "positive": 0,
+       "negative_share": 100.0,
+       "positive_share": 0.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 9,
+        "fair_neg": 0,
+        "slight_neg": 9,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 23,
+       "negative": 17,
+       "neutral": 0,
+       "positive": 6,
+       "negative_share": 73.91,
+       "positive_share": 26.09,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 9,
+        "fair_neg": 0,
+        "slight_neg": 8,
+        "none": 0,
+        "slight_pos": 5,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 13,
+       "negative": 11,
+       "neutral": 0,
+       "positive": 2,
+       "negative_share": 84.62,
+       "positive_share": 15.38,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 0,
+        "slight_neg": 9,
+        "none": 0,
+        "slight_pos": 1,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 15,
+       "negative": 11,
+       "neutral": 0,
+       "positive": 4,
+       "negative_share": 73.33,
+       "positive_share": 26.67,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 3,
+        "fair_neg": 0,
+        "slight_neg": 8,
+        "none": 0,
+        "slight_pos": 4,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.876,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.878
+    }
+   }
+  }
+ ]
+}

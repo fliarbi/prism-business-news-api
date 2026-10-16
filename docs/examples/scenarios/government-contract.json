@@ -1,0 +1,806 @@
+{
+ "slug": "government-contract",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:16Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "contracts"
+     ],
+     "q": "government",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "government",
+      "match": "any",
+      "event_type": [
+       "contracts"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 33,
+       "by_type": {
+        "contracts": 33
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 30,
+       "by_type": {
+        "contracts": 30
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 60,
+       "by_type": {
+        "contracts": 60
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 77,
+       "by_type": {
+        "contracts": 77
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 87,
+       "by_type": {
+        "contracts": 87
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 60,
+       "by_type": {
+        "contracts": 60
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 49,
+       "by_type": {
+        "contracts": 49
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 42,
+       "by_type": {
+        "contracts": 42
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 49,
+       "by_type": {
+        "contracts": 49
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 71,
+       "by_type": {
+        "contracts": 71
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 57,
+       "by_type": {
+        "contracts": 57
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 68,
+       "by_type": {
+        "contracts": 68
+       }
+      }
+     ],
+     "totals": {
+      "events": 683,
+      "articles": 520,
+      "companies": 452,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "contracts": 683
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.029,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.032
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "contracts"
+     ],
+     "q": "government",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "government",
+      "event_type": [
+       "contracts"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f0e3de836d28f995cb76bf",
+       "headline": "ground‑segment infrastructure contracts from government integrators in Asia and Europe.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "stengg.com",
+       "published_at": "2026-04-27T11:55:20",
+       "url": "https://www.businesstimes.com.sg/companies-markets/st-engineering-bags-s4-8-billion-q1-contracts-middle-east-defence-aerospace-demand",
+       "publisher": "businesstimes.com.sg",
+       "title": "ST Engineering bags S$4.8 billion in Q1 contracts on Middle East defence, aerospace demand"
+      },
+      {
+       "id": "69efab2e727212302c5f551d",
+       "headline": "Through subsidiaries SK Telekom and SK Innovation, the conglomerate struck memorandums of understanding (MOUs) with the Vietnam’s National Innovation Center (NIC) and the Nghe An Provincial government. The deals cover the potential buildout of an AI data centre project in Nghe An, Vietnam’s largest province located on the northern coast.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "skgroup.co",
+       "published_at": "2026-04-24T10:38:49",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69efaa9aa84b609af2b2d8f3",
+       "headline": "The Dutch government has signed a framework agreement with the German cloud platform Stackit.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "stackitgroup.com",
+       "published_at": "2026-04-24T07:25:36",
+       "url": "https://www.techzine.eu/news/infrastructure/140768/dutch-government-selects-stackit-lidls-sister-company-as-its-cloud-alternative/",
+       "publisher": "techzine.eu",
+       "title": "Dutch government selects Stackit, Lidl's sister company, as its cloud alternative"
+      },
+      {
+       "id": "69fa3fe8713680636ef59832",
+       "headline": "Loom Solar has secured a second land allotment from the Uttar Pradesh government to scale its solar and Battery Energy Storage Systems (BESS) manufacturing capacity.",
+       "event_type": "contracts",
+       "role": "client",
+       "domain": "loomsolar.com",
+       "published_at": "2026-04-23T05:55:47",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e87c285cfa3e5ba500e18f",
+       "headline": "The Finocchiaro CLP Government and Samsung C&T have signed a Memorandum of Understanding (MoU) to unlock new projects and investment across energy, marine, digital and defence-support sectors.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "samsungcnt.com",
+       "published_at": "2026-04-19T21:03:47",
+       "url": "https://www.nationaltribune.com.au/strengthening-investment-cooperation-with-south-korea/",
+       "publisher": "nationaltribune.com.au",
+       "title": "Strengthening Investment Cooperation With South Korea"
+      },
+      {
+       "id": "69e86cdf9baafc735682b418",
+       "headline": "The federal government is contributing $240 million towards the precinct and stadium, which was conditional on the master plan being approved.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "gov.au",
+       "published_at": "2026-04-19T03:52:03",
+       "url": "https://www.yarrawongachronicle.com.au/aap-entertainment/chinese-state-firm-among-top-afl-stadium-build-bidders/",
+       "publisher": "yarrawongachronicle.com.au",
+       "title": "The Tasmanian government has selected Constructure Joint Venture and BESIX Watpac to participate in the tender process to build Hobart's Macquarie Point Multipurpose Stadium. The divisive 23,000-seat roofed waterfront venue, which was approved by state parliament in December, will be the home of the"
+      },
+      {
+       "id": "69e8e28a5cfa3e5ba54f5e93",
+       "headline": "Tripartite Agreement to Ensure Feedstock Supply The proposed agreement will bring together HPCL Rajasthan Refinery Limited (HRRL), the state government, and downstream industries.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "hrrl.in",
+       "published_at": "2026-04-18T05:15:22",
+       "url": "https://chemindigest.com/rajasthan-fast-tracks-tripartite-pact-for-petro-zone-development/",
+       "publisher": "chemindigest.com",
+       "title": "Rajasthan Fast-Tracks Tripartite Pact for Petro Zone Development | Chemical Industry Digest"
+      },
+      {
+       "id": "69e86a2e9baafc735680e1e2",
+       "headline": "APOLLO MICRO SYSTEMS HAS POINTED OUT IN EXCHANGE FILING THAT THE COMPANY FOR MANUFACTURING A VARIETY OF DIFFERENT DEFENCE SYSTEMS AND AMMUNITION OF AMMUNITION TO THE GOVERNMENT OF INDIA",
+       "event_type": "contracts",
+       "role": "client",
+       "domain": "india.gov.in",
+       "published_at": "2026-04-17T14:27:07",
+       "url": "https://www.livehindustan.com/business/defence-stock-apollo-micro-systems-jumped-over-16-percent-today-company-bagged-license-for-manufacture-of-ammunitions-201776435369843.html",
+       "publisher": "livehindustan.com",
+       "title": "सरकार से मिला मिसाइल और रॉकेट बनाने का लाइसेंस, डिफेंस शेयर में तूफानी तेजी"
+      },
+      {
+       "id": "69e86a2e9baafc735680e1e2",
+       "headline": "APOLLO MICRO SYSTEMS HAS POINTED OUT IN EXCHANGE FILING THAT THE COMPANY FOR MANUFACTURING A VARIETY OF DIFFERENT DEFENCE SYSTEMS AND AMMUNITION OF AMMUNITION TO THE GOVERNMENT OF INDIA",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "apollo-micro.com",
+       "published_at": "2026-04-17T14:27:07",
+       "url": "https://www.livehindustan.com/business/defence-stock-apollo-micro-systems-jumped-over-16-percent-today-company-bagged-license-for-manufacture-of-ammunitions-201776435369843.html",
+       "publisher": "livehindustan.com",
+       "title": "सरकार से मिला मिसाइल और रॉकेट बनाने का लाइसेंस, डिफेंस शेयर में तूफानी तेजी"
+      },
+      {
+       "id": "69e9931e75f157062ca90967",
+       "headline": "Government agency Active Travel England has appointed communications firm Fusion Media to support the delivery of its Making Active Places Conference 2026 in Manchester this September.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "fusionmedialtd.com",
+       "published_at": "2026-04-17T07:10:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e1dfccc25f02fb0e9fc4b0",
+       "headline": "French energy giant TotalEnergies will no longer pursue offshore wind projects in the US after securing a US$1bn deal with the government to focus on gas development.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "totalenergies.eg",
+       "published_at": "2026-04-17T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8e27a5cfa3e5ba54f50bf",
+       "headline": "Spanish Repsol announced on Thursday (16) an agreement with the government of Venezuela and the state PDVSA to resume operational control of assets in the country, opening the way to raise oil production.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "repsol.com",
+       "published_at": "2026-04-16T16:22:51",
+       "url": "https://www.moneytimes.com.br/repsol-retoma-controle-na-venezuela-e-planeja-triplicar-producao-de-petroleo-em-3-anos-2/",
+       "publisher": "moneytimes.com.br",
+       "title": "Espanhola Repsol retoma controle na Venezuela e planeja triplicar produção de petróleo em 3 anos – Money Times"
+      },
+      {
+       "id": "69f1c7aba5706a322e0f5ea5",
+       "headline": "Spanish energy Repsol has signed an agreement with the Venezuelan government and the state company Petróleos de Venezuela (PDVSA) that will allow it to regain control of the operations and increase oil production in Petroquiriquire and guarantee payment mechanisms. In this way, it is prepared to increase gross oil production in the country by 50% within 12 months and triple it in the next three years, “if the necessary conditions continue to exist”, the company said this Thursday in a statement sent to the National Securities Market Commission.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "repsol.com",
+       "published_at": "2026-04-16T13:33:59",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e867a77bb1410d4c76fd13",
+       "headline": "Spanish energy company Repsol confirmed that it is regaining operational control of its oil assets in Venezuela after reaching an agreement with the country’s government and state oil company PDVSA.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "repsol.com",
+       "published_at": "2026-04-16T11:51:42",
+       "url": "https://www.euronews.com/business/2026/04/16/repsol-agrees-venezuela-deal-to-boost-oil-production-and-regain-control-of-assets",
+       "publisher": "euronews.com",
+       "title": "Repsol regains control of Venezuela oil assets and boosts production"
+      },
+      {
+       "id": "69e862297bb1410d4c7379d9",
+       "headline": "PEZA, a Philippine government investment promotion agency, has signed a registration agreement with GREEENC clearing the way for the company to manufacture, assemble, and export PV modules from an industrial park in Batangas province, south of Manila.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "peza.ml",
+       "published_at": "2026-04-16T10:01:18",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 245,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTYgMTA6MDE6MTgiLCJpIjoiNjllODYyMjk3YmIxNDEwZDRjNzM3OWQ5IiwiZG0iOiJwZXphLm1sIiwiZXQiOiJjb250cmFjdHMiLCJybyI6ImNvbnRyYWN0b3IifQ",
+     "by_type": {
+      "contracts": 245
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.242,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 6 event(s)"
+     ],
+     "request_seconds": 4.245
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "contracts"
+     ],
+     "q": "government",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "government",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "contracts"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 256,
+     "carrying": 256,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 2,
+       "share": 0.78
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 15,
+       "share": 5.86
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 2,
+       "share": 0.78
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 37,
+       "share": 14.45
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 28,
+       "share": 10.94
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 171,
+       "share": 66.8
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 0.39
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 17,
+       "share": 6.64
+      },
+      {
+       "group": "neutral",
+       "count": 2,
+       "share": 0.78
+      },
+      {
+       "group": "positive",
+       "count": 237,
+       "share": 92.58
+      }
+     ],
+     "negative_to_positive_ratio": 0.072,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.1,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 55,
+       "negative": 3,
+       "neutral": 0,
+       "positive": 52,
+       "negative_share": 5.45,
+       "positive_share": 94.55,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 0,
+        "slight_pos": 9,
+        "fair_pos": 2,
+        "very_pos": 41,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 79,
+       "negative": 6,
+       "neutral": 0,
+       "positive": 73,
+       "negative_share": 7.59,
+       "positive_share": 92.41,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 5,
+        "none": 0,
+        "slight_pos": 12,
+        "fair_pos": 9,
+        "very_pos": 51,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 49,
+       "negative": 1,
+       "neutral": 1,
+       "positive": 47,
+       "negative_share": 2.04,
+       "positive_share": 95.92,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 1,
+        "slight_pos": 7,
+        "fair_pos": 8,
+        "very_pos": 32,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 73,
+       "negative": 7,
+       "neutral": 1,
+       "positive": 65,
+       "negative_share": 9.59,
+       "positive_share": 89.04,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 7,
+        "none": 1,
+        "slight_pos": 9,
+        "fair_pos": 9,
+        "very_pos": 47,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.381,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.389
+    }
+   }
+  }
+ ]
+}

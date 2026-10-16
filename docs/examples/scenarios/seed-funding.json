@@ -1,0 +1,2739 @@
+{
+ "slug": "seed-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:15Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "round_type": "seed",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "round_type": [
+       "seed"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 5078,
+      "deals_with_amount": 4641,
+      "deals_without_amount": 437,
+      "deals_amount_excluded": 7,
+      "sum_amount_usd": 67822446433.28,
+      "median_amount_usd": 3240000.0,
+      "largest_amount_usd": 12000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 361,
+       "deals_with_amount": 329,
+       "deals_without_amount": 32,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2314159390.0,
+       "median_amount_usd": 3780000.0,
+       "largest_amount_usd": 218000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 394,
+       "deals_with_amount": 350,
+       "deals_without_amount": 44,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 3587797710.0,
+       "median_amount_usd": 3500000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 412,
+       "deals_with_amount": 362,
+       "deals_without_amount": 50,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 16007160075.0,
+       "median_amount_usd": 3240000.0,
+       "largest_amount_usd": 12000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 397,
+       "deals_with_amount": 356,
+       "deals_without_amount": 41,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5199823000.0,
+       "median_amount_usd": 2700000.0,
+       "largest_amount_usd": 3000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 494,
+       "deals_with_amount": 459,
+       "deals_without_amount": 35,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2497419311.0,
+       "median_amount_usd": 3300000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 487,
+       "deals_with_amount": 455,
+       "deals_without_amount": 32,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5703337281.0,
+       "median_amount_usd": 3500000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 452,
+       "deals_with_amount": 418,
+       "deals_without_amount": 34,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2617392376.28,
+       "median_amount_usd": 3450000.0,
+       "largest_amount_usd": 218000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 351,
+       "deals_with_amount": 321,
+       "deals_without_amount": 30,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2360047209.0,
+       "median_amount_usd": 3780000.0,
+       "largest_amount_usd": 475000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 399,
+       "deals_with_amount": 366,
+       "deals_without_amount": 33,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 6030013418.0,
+       "median_amount_usd": 3000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 477,
+       "deals_with_amount": 439,
+       "deals_without_amount": 38,
+       "deals_amount_excluded": 3,
+       "sum_amount_usd": 4011457919.0,
+       "median_amount_usd": 3240000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 405,
+       "deals_with_amount": 375,
+       "deals_without_amount": 30,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 15124176166.0,
+       "median_amount_usd": 4000000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 449,
+       "deals_with_amount": 411,
+       "deals_without_amount": 38,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4478587478.0,
+       "median_amount_usd": 3062000.0,
+       "largest_amount_usd": 1100000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.041,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.044
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "seed",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "round_type": [
+       "seed"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "765357105d185983",
+       "company_name": "Thinking Machines Lab",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 12000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 12000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "07/15/25 — Thinking Machines Lab — $12B Seed",
+       "published_at": "2025-07-21T12:00:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc4009d11a7cee80d4ce5c"
+       ],
+       "article_id": "69cc4009d11a7cee80d4ce5c"
+      },
+      {
+       "id": "fd74771cf18c2193",
+       "company_name": "Thinking Machines Lab",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 3000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 12000000000.0,
+       "currency": "USD",
+       "amount": 3000000000.0,
+       "valuation": 12000000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Thinking Machines Lab raised an incredible $3 billion seed round with a post-money valuation of $12 billion.",
+       "published_at": "2025-08-05T14:13:47",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb8b5fc08180591b83773d"
+       ],
+       "article_id": "69bb8b5fc08180591b83773d"
+      },
+      {
+       "id": "dd023d86b8db98b6",
+       "company_name": "Thinking Machine Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 12000000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 12000000000.0,
+       "investors": [
+        {
+         "name": "Mira Murati",
+         "domain": "https://www.linkedin.com/in/mira-murati-4b39a066/",
+         "amount": 2000000000.0
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Mira Murati’s $2 billion seed for Thinking Machine Labs at a $12 billion valuation.",
+       "published_at": "2026-03-31T21:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d1d2df9f8928f2970f568d"
+       ],
+       "article_id": "69d1d2df9f8928f2970f568d"
+      },
+      {
+       "id": "9b085c63369973bf",
+       "company_name": "thinking machines",
+       "domain": "thinkingmachin.es",
+       "round_type": "seed",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 12000000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 12000000000.0,
+       "investors": [],
+       "sector": "AI",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Thinking Machines raising a record $2 billion seed round in July at a ~$12 billion valuation.",
+       "published_at": "2026-01-20T02:25:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e84e967bb1410d4c67d89a"
+       ],
+       "article_id": "69e84e967bb1410d4c67d89a"
+      },
+      {
+       "id": "46fef0b0da231ad4",
+       "company_name": "Thinking Machines Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 12000000000.0,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": 12000000000.0,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Thinking Machines Labs, the AI firm started by former OpenAI CTO Mira Murati, raised $2 billion in a seed round earlier this year at a $12 billion valuation.",
+       "published_at": "2025-10-31T22:54:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbeca0b153a819bb866522"
+       ],
+       "article_id": "69cbeca0b153a819bb866522"
+      },
+      {
+       "id": "4eba837bc137112e",
+       "company_name": "Thinking Machine Lab",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "This is what happened to the Thinking Machine Lab, which closed the biggest seed or seed round of all time: $2 billion.",
+       "published_at": "2025-07-27T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898b009ab03b1b156dc9e55"
+       ],
+       "article_id": "6898b009ab03b1b156dc9e55"
+      },
+      {
+       "id": "1417bfbdbae943a7",
+       "company_name": "Thinking Machines Lab",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "other prominent venture firms",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "product development and expansion of the founding team",
+       "source_sentence": "San Francisco-based Thinking Machines Lab, founded by former OpenAI CTO Mira Murati and other AI veterans, announced it has closed a historic $2 billion seed financing at a $10 billion valuation.",
+       "published_at": "2025-06-23T23:21:06",
+       "coverage_count": 3,
+       "article_ids": [
+        "68c8e8a25f1a530eb9687e9b",
+        "68d94ce52e9612a96e10a026",
+        "6988bc1394d3f481f3d86981"
+       ],
+       "article_id": "6988bc1394d3f481f3d86981"
+      },
+      {
+       "id": "d246d46aa4c2311f",
+       "company_name": "Ineffable Intelligence",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5100000000.0,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": 5100000000.0,
+       "investors": [],
+       "sector": "AI",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "Develop a superlearner system capable of discovering knowledge from its own experience",
+       "source_sentence": "Startup Ineffable Intelligence has just come out of stealth.The company, with a mission to make first contact with superintelligence, has raised $1.1 billion in Seed funding, the largest ever in Europe, at a valuation of $5.1 billion, according to the company.",
+       "published_at": "2026-04-27T14:53:00",
+       "coverage_count": 9,
+       "article_ids": [
+        "69f0e174836d28f995cb470d",
+        "69f0e397836d28f995cb7104",
+        "69f0e5a7836d28f995cb9115",
+        "69f0e5ce45272de32e8c271d",
+        "69f0e6dcd32561089420b952",
+        "69f0e8d645272de32e8c5a5d",
+        "69f0e977d32561089420deaa",
+        "69f0e9add32561089420e228",
+        "69f1c7161e3933a6dd8dc293"
+       ],
+       "article_id": "69f0e5a7836d28f995cb9115"
+      },
+      {
+       "id": "6e18428060cde6c1",
+       "company_name": "Ami Labs",
+       "domain": "amilabs.xyz",
+       "round_type": "seed",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The new start-up AMI Labs from AI pioneer Yann LeCun has collected 1.1 billion dollars (890 million euros) â , the largest start-up financing that a European start-up has ever received.",
+       "published_at": "2026-03-13T15:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6a0369387b84f58d6f737b78"
+       ],
+       "article_id": "6a0369387b84f58d6f737b78"
+      },
+      {
+       "id": "09ca4cac9c0f4bb7",
+       "company_name": "AMI Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The new start-up AMI Labs from AI pioneer Yann LeCun has collected 1.1 billion dollars (890 million euros) â , the largest start-up financing that a European start-up has ever received.",
+       "published_at": "2026-03-13T15:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd31331f507d55385c3be"
+       ],
+       "article_id": "69cbd31331f507d55385c3be"
+      },
+      {
+       "id": "4444b59954da881d",
+       "company_name": "Advanced Machine Intelligence Labs – AMI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Yann LeCun, one of the three Turing winners who founded the field of deep learning, collected $1.03 billion in a seed round with his new start-up Advanced Machine Intelligence Labs – AMI for short.",
+       "published_at": "2026-03-18T05:50:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a78edc60619379a81744"
+       ],
+       "article_id": "69c3a78edc60619379a81744"
+      },
+      {
+       "id": "0b725d1ceae7281a",
+       "company_name": "Ami Labs",
+       "domain": "amilabs.xyz",
+       "round_type": "seed round",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Artificial Intelligence",
+       "country": "Europe",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "His new startup, AMI Labs, has just raised $1,030 million in a seed round.",
+       "published_at": "2026-03-17T13:16:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc2214f111344e7e7ae001"
+       ],
+       "article_id": "69cc2214f111344e7e7ae001"
+      },
+      {
+       "id": "c6eade1540e28c36",
+       "company_name": "AMI Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "sea",
+         "domain": "sea.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "Tim and Rosemary Berners-Lee",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        },
+        {
+         "name": "Xavier Niel",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "first year will be devoted entirely to research",
+       "source_sentence": "AI’s Godfather, Yann LeCun, has launched a bold new venture with his AMI Labs (Advanced Machine Intelligence Labs), which just secured $1.03 billion in seed funding at a $3.5 billion pre-money valuation.",
+       "published_at": "2026-03-10T14:35:16",
+       "coverage_count": 6,
+       "article_ids": [
+        "69c3a6f7b2bc8ebb701d7792",
+        "69c3a89d6a499b02fbb80586",
+        "69cbd1327aa9ae690c975a92",
+        "69cbd1c431f507d55385abef",
+        "69cbd3037ef280d4636ae63a",
+        "69e2b568c1991f786cebfddd"
+       ],
+       "article_id": "69c3a6f7b2bc8ebb701d7792"
+      },
+      {
+       "id": "b2c4df683df8358b",
+       "company_name": "AMI Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "sea",
+         "domain": "sea.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "Tim and Rosemary Berners‑Lee",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jim Breyer",
+         "domain": "https://www.linkedin.com/in/jim-breyer-361900b2/",
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "Xavier Niel",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        }
+       ],
+       "sector": "AI, Machine Learning",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": null,
+       "source_sentence": "We just completed our seed round: $1.03B / €890M, one of the largest seeds ever, probably the largest for a European company.",
+       "published_at": "2026-03-10T12:59:58",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a478e36c3064e455d023",
+        "69cc41766e63f1d240550f7c"
+       ],
+       "article_id": "69c3a478e36c3064e455d023"
+      },
+      {
+       "id": "ecb7e059de5d2bbd",
+       "company_name": "Advanced Machine Intelligence Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "toyota",
+         "domain": "toyotaconnected.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "daphni",
+         "domain": "daphni.com",
+         "amount": null
+        },
+        {
+         "name": "sbva",
+         "domain": "sbvacorp.com",
+         "amount": null
+        },
+        {
+         "name": "Tim and Rosemary Berners‑Lee",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jim Breyer",
+         "domain": "https://www.linkedin.com/in/jim-breyer-361900b2/",
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "research and development",
+       "source_sentence": "\"Advanced Machine Intelligence Labs, AMI, pronounced like the French word for “friend”, announced its seed round on 10 March 2026, just four months after its founding. The round values the company at $3.5 billion on a pre-money basis and is believed to be the largest seed round ever raised by a European startup.\"",
+       "published_at": "2026-03-10T11:06:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c437c1272ca905f400e9ed"
+       ],
+       "article_id": "69c437c1272ca905f400e9ed"
+      },
+      {
+       "id": "b67b33124bdd6930",
+       "company_name": "Advanced Machine Intelligence (AMI)",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "New Legacy Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "sbva",
+         "domain": "sbvacorp.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "Association Familiale Mulliez",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Groupe industriel Marcel Dassault",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sea",
+         "domain": "sea.com",
+         "amount": null
+        },
+        {
+         "name": "alpha intelligence capital",
+         "domain": "aicapital.ai",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "bpifrance digital venture",
+         "domain": "bpifrance.fr",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence, world models",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "Developing AI systems that understand the world, have persistent memory, can reason and plan, and are controllable and safe.",
+       "source_sentence": "Advanced Machine Intelligence (AMI), which is an artificial intelligence (AI) start-up founded by former Meta AI chief Yann LeCun, has raised $1.03bn in seed funding.",
+       "published_at": "2026-03-10T09:33:07",
+       "coverage_count": 4,
+       "article_ids": [
+        "69c3a51f16d7eea204f1260d",
+        "69c3a5214e0667c07f278fbe",
+        "69e27db79b322e6b3e96800d",
+        "69e27f3e90d9a716b4b6d1c6"
+       ],
+       "article_id": "69c3a51f16d7eea204f1260d"
+      },
+      {
+       "id": "f6f90890e17a601c",
+       "company_name": "Advanced Machine Intelligence (AMI) Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        },
+        {
+         "name": "Tim Berners-Lee",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": null,
+       "source_sentence": "AMI Labs raised $1.03bn at a $3.5bn valuation, in a round co‑led by Paris‑based VC firm Cathay Innovation, Greycroft, Hiro Capital, HV Capital and Jeff Bezos’ Bezos Expeditions.",
+       "published_at": "2026-03-10T09:15:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a285c8a71dc7ae87a06d",
+        "69cbd2357aa9ae690c976df1"
+       ],
+       "article_id": "69c3a285c8a71dc7ae87a06d"
+      },
+      {
+       "id": "52e3b5663ca1df6c",
+       "company_name": "Advanced Machine Intelligence Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "to fuel mission to build intelligent systems capable of truly understanding the real world—a long-term scientific endeavor",
+       "source_sentence": "We have secured a $1.03 billion USD seed round to fuel our mission to build intelligent systems capable of truly understanding the real world—a long-term scientific endeavor,",
+       "published_at": "2026-03-10T09:07:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c8be074ca06a20fbc4a766",
+        "69e2afeb3aab8d96aa352545"
+       ],
+       "article_id": "69e2afeb3aab8d96aa352545"
+      },
+      {
+       "id": "a7f36a8112df6423",
+       "company_name": "Ami Labs",
+       "domain": "amilabs.xyz",
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "SBVA (Seoul)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "sea",
+         "domain": "sea.com",
+         "amount": null
+        },
+        {
+         "name": "alpha intelligence capital",
+         "domain": "aicapital.ai",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "bpifrance digital venture",
+         "domain": "bpifrance.fr",
+         "amount": null
+        },
+        {
+         "name": "Jim Breyer",
+         "domain": "https://www.linkedin.com/in/jim-breyer-361900b2/",
+         "amount": null
+        },
+        {
+         "name": "Tim and Rosemary Berners-Lee",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mark Leslie",
+         "domain": "https://www.linkedin.com/in/markleslie1",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": null,
+       "source_sentence": "Advanced Machine Intelligence Labs (AMI) has now raised $1.03 billion (approximately €890 million) in a seed financing round.",
+       "published_at": "2026-03-10T05:58:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e3242b6a49bee673bb18c9",
+        "6a0427d39c4aac09354e8229"
+       ],
+       "article_id": "6a0427d39c4aac09354e8229"
+      },
+      {
+       "id": "f7212f5fa11f8565",
+       "company_name": "Advanced Machine Intelligence",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "AI research",
+       "country": null,
+       "city": null,
+       "use_of_funds": "frontier physical AI research",
+       "source_sentence": "Advanced Machine Intelligence achieved the continent's largest seed round ever at $1 billion for frontier physical AI research.",
+       "published_at": "2026-04-14T15:20:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d4115cfa3e5ba543d969"
+       ],
+       "article_id": "69e8d4115cfa3e5ba543d969"
+      },
+      {
+       "id": "6e21f4a663df97bc",
+       "company_name": "Ineffable Intelligence",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": 1000000000.0
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "microsoft",
+         "domain": "microsoft.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": null,
+       "source_sentence": "David Silver, one of Britain’s top AI researchers, is raising $1bn for a new company aiming to build “superhuman intelligence” in a deal led by Sequoia Capital that would be the largest seed round ever in Europe.",
+       "published_at": "2026-02-18T05:00:39",
+       "coverage_count": 5,
+       "article_ids": [
+        "69bc80635d6eab2ab8fc91b2",
+        "69c892fec0e15b6160a50356",
+        "69c946022ef7157f4456fab8",
+        "69e3cb102fd96a624635ce4b",
+        "69f0e2a945272de32e8bf36f"
+       ],
+       "article_id": "69bc80635d6eab2ab8fc91b2"
+      },
+      {
+       "id": "2ef0b63b98e887d1",
+       "company_name": "Advanced Machine Intelligence (AMI)",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 961200000.0000001,
+       "amount_flag": null,
+       "valuation_usd": 3240000000.0,
+       "currency": "EUR",
+       "amount": 890000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": null,
+       "source_sentence": "Advanced Machine Intelligence (AMI) , a Paris-based AI startup founded by Yann LeCun, Meta’s former Chief AI Scientist and 2018 ACM A.M. Turing Award co-recipient, has raised nearly €890 million ($1.03 billion) in Seed funding at a €3 billion ($3.5 billion) pre-money valuation.",
+       "published_at": "2026-03-14T06:38:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd23936f67c5f5aa6638b"
+       ],
+       "article_id": "69cbd23936f67c5f5aa6638b"
+      },
+      {
+       "id": "8c7f302d794c6e3d",
+       "company_name": "Refold AI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 650000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 650000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eniac ventures",
+         "domain": "eniac.vc",
+         "amount": null
+        },
+        {
+         "name": "tidal ventures",
+         "domain": "tidalvc.com",
+         "amount": null
+        },
+        {
+         "name": "better capital",
+         "domain": "bettercapital.gg",
+         "amount": null
+        },
+        {
+         "name": "AHEAD VC",
+         "domain": "aheadvc.com",
+         "amount": null
+        },
+        {
+         "name": "Karman Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "z21",
+         "domain": "z21.nl",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "A US-headquartered start-up secured $650 million in seed funding it stated would drive its work to employ agentic AI to tackle a hefty annual bill enterprises face to connect APIs.",
+       "published_at": "2025-08-13T15:57:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc1736db9ed6b6b9395191"
+       ],
+       "article_id": "69bc1736db9ed6b6b9395191"
+      },
+      {
+       "id": "b9ad0f7e4dc56041",
+       "company_name": "stoke space technologies",
+       "domain": "stoke-space.com",
+       "round_type": "Seed",
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 510000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "US Innovative Technology Fund",
+         "domain": "usinnovativetechnologyfund.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "silicon valley bank",
+         "domain": "svb.com",
+         "amount": null
+        }
+       ],
+       "sector": "Aerospace",
+       "country": "USA",
+       "city": "Kent, Washington",
+       "use_of_funds": "Accelerate development of the Nova rocket and build manufacturing and test infrastructure",
+       "source_sentence": "Stoke Space, a Kent, Washington-based rocket company building fully reusable launch vehicles, has raised a staggering $510 million in new funding described as a Seed funding round.",
+       "published_at": "2025-10-09T21:48:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f72cd96ecd416e342c202d"
+       ],
+       "article_id": "68f72cd96ecd416e342c202d"
+      },
+      {
+       "id": "2da99f7fc2778a82",
+       "company_name": "humans&",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 480000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4480000000.0,
+       "currency": "USD",
+       "amount": 480000000.0,
+       "valuation": 4480000000.0,
+       "investors": [
+        {
+         "name": "SV Angel",
+         "domain": "svangel.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Jeff Bezos",
+         "domain": "https://www.linkedin.com/showcase/jeff-bezos-newslines",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "emerson collective",
+         "domain": "emersoncollective.com",
+         "amount": null
+        },
+        {
+         "name": "forerunner ventures",
+         "domain": "forerunnerventures.com",
+         "amount": null
+        },
+        {
+         "name": "S32",
+         "domain": "s32.com",
+         "amount": null
+        },
+        {
+         "name": "dcvc",
+         "domain": "dcvc.com",
+         "amount": null
+        },
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "crv",
+         "domain": "crv4all.co.nz",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "The funding will fuel humans&’ development of AI tools that center human relationships.",
+       "source_sentence": "humans& raises $480M Seed to build a human-centric AI research lab",
+       "published_at": "2026-03-23T20:41:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbe45bac8bd552f8e8aba8"
+       ],
+       "article_id": "69cbe45bac8bd552f8e8aba8"
+      },
+      {
+       "id": "b7d2c7a6d4866a33",
+       "company_name": "Humans&",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 480000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 480000000.0,
+       "valuation": 4480000000.0,
+       "investors": [
+        {
+         "name": "Ron Conway’s SV Angel",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Georges Harik",
+         "domain": "https://www.linkedin.com/in/georges-harik-4579271",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Jeff Bezos",
+         "domain": "https://www.linkedin.com/showcase/jeff-bezos-newslines",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "emerson collective",
+         "domain": "emersoncollective.com",
+         "amount": null
+        },
+        {
+         "name": "felicis ventures",
+         "domain": "felicis.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI R&D lab for collaborative, human-aligned AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "AI research lab humans& raised a monster $480 million seed round that was announced on January 20.",
+       "published_at": "2026-01-20T22:03:20",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988f10b94d3f481f3dc6097",
+        "69bd8f9c0ad23ae1115329db"
+       ],
+       "article_id": "6988f10b94d3f481f3dc6097"
+      },
+      {
+       "id": "c0ca0940c7c173a1",
+       "company_name": "Humans&",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 480000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4480000000.0,
+       "currency": "USD",
+       "amount": 480000000.0,
+       "valuation": 4480000000.0,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Jeff Bezos",
+         "domain": "https://www.linkedin.com/showcase/jeff-bezos-newslines",
+         "amount": null
+        },
+        {
+         "name": "SV Angel",
+         "domain": "svangel.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "emerson collective",
+         "domain": "emersoncollective.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "development of AI systems that can plan and learn over longer periods of time",
+       "source_sentence": "\"Humans&, a startup with a philosophy that AI should empower people rather than replace them, has raised $480 million in seed funding at a $4.48 billion valuation, reports The New York Times.\"",
+       "published_at": "2026-01-20T16:00:57",
+       "coverage_count": 16,
+       "article_ids": [
+        "6983fec5e71a535a9c17b55d",
+        "6986f5cc514cbd23b5c5ec4b",
+        "698d16079ca02490ecf45639",
+        "69bb638f333284adb663e5d4",
+        "69bba5c8e7c8d3750e07391b",
+        "69bcc7050bf92aede2f5eed5",
+        "69bccf89a75fc0dcb022d1c3",
+        "69bd117b1d0b3f0860f02ff1",
+        "69bd80d31d0b3f0860f21b5e",
+        "69c8c10d8e7a569bab3beac6",
+        "69c93ae3682ef7f3f7635d42",
+        "69cb5b32984a596c0c7daeb3",
+        "69cbe0f9837ebf2e172ac659",
+        "69cc5becfc7cf950538be0a3",
+        "69e2ae8f601121844c38b2cc",
+        "69f885ea8937ef12fc0a5450"
+       ],
+       "article_id": "69bd80d31d0b3f0860f21b5e"
+      },
+      {
+       "id": "84fae92ab8fbc1c2",
+       "company_name": "Na",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 475000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 475000000.0,
+       "valuation": 4480000000.0,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "A two-month-old AI computer company raised a massive $475 million seed round.",
+       "published_at": "2026-01-19T17:57:01",
+       "coverage_count": 2,
+       "article_ids": [
+        "697b9ac5cba863fcf1204d27",
+        "698fd6998d29a990b6040821"
+       ],
+       "article_id": "697b9ac5cba863fcf1204d27"
+      },
+      {
+       "id": "01db951c517df2e0",
+       "company_name": "cursor",
+       "domain": "cursor.com",
+       "round_type": "seed",
+       "amount_usd": 475000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 475000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "a16z",
+         "domain": "a16z.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI coding",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "A two-month-old AI computer company raised a massive $475 million seed round",
+       "published_at": "2026-01-19T17:57:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69861e6a11e3205ec98fc2b4"
+       ],
+       "article_id": "69861e6a11e3205ec98fc2b4"
+      },
+      {
+       "id": "665a09146bcc2cd6",
+       "company_name": "Unconventional AI",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 475000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4500000000.0,
+       "currency": "USD",
+       "amount": 475000000.0,
+       "valuation": 4500000000.0,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "High Tech, Native AI, Semiconductors",
+       "country": "United States",
+       "city": "San Diego",
+       "use_of_funds": "extensive prototyping of multiple computing architectures",
+       "source_sentence": "Unconventional AI has raised $475M in funding from Lightspeed Venture Partners and Andreessen Horowitz , with a current valuation of $4.5B .",
+       "published_at": "2025-12-09T11:51:38",
+       "coverage_count": 6,
+       "article_ids": [
+        "69453b856b368d3859a33e3f",
+        "694dec8833568e6550f30625",
+        "69888a6e34d0159e4e74df5f",
+        "69e866617bb1410d4c762685",
+        "69e88e285cfa3e5ba50cd1bb",
+        "69e89e179baafc7356a4ea5f"
+       ],
+       "article_id": "69e89e179baafc7356a4ea5f"
+      },
+      {
+       "id": "4ddfcaca933a9b9c",
+       "company_name": "Unconventional AI",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 475000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 475000000.0,
+       "valuation": 4500000000.0,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "dcvc",
+         "domain": "dcvc.com",
+         "amount": null
+        },
+        {
+         "name": "databricks",
+         "domain": "databricks.com",
+         "amount": null
+        },
+        {
+         "name": "Jeff Bezos",
+         "domain": "https://www.linkedin.com/showcase/jeff-bezos-newslines",
+         "amount": null
+        },
+        {
+         "name": "Naveen Rao",
+         "domain": "http://www.linkedin.com/pub/naveen-rao/1/5b0/bba",
+         "amount": 10000000.0
+        }
+       ],
+       "sector": "AI",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "intelligent substrate development",
+       "source_sentence": "Unconventional AI raised $475 million in a deal co-led by Andreessen Horowitz and Lightspeed Venture Partners, said Naveen Rao , who left Databricks in September and is chief executive officer of the startup.",
+       "published_at": "2025-12-08T15:00:03",
+       "coverage_count": 13,
+       "article_ids": [
+        "69452f5f83d39b5583a34ad1",
+        "69452f75ccd27e129aa34b23",
+        "694540bf56eb644f26a35a56",
+        "694dec8833568e6550f3067c",
+        "698398d9e67557fb8553a17d",
+        "6988b9b894d3f481f3d841dc",
+        "698d77be9ca02490ecfba63d",
+        "69bbbe90e7e0d8fce946819b",
+        "69bbf79f1d0b3f0860ec3ee3",
+        "69bd80d31d0b3f0860f21b5e",
+        "69c41feda3bcecce613b1c35",
+        "69cc1aa4f8e7de13bc1b74dd",
+        "69e8dad65cfa3e5ba549324d"
+       ],
+       "article_id": "694540bf56eb644f26a35a56"
+      },
+      {
+       "id": "125b55dbaf822e90",
+       "company_name": "Toesca Permanent Crops II Fund",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Astarte Capital Partners",
+         "domain": "astartecp.com",
+         "amount": null
+        },
+        {
+         "name": "toesca",
+         "domain": "toesca.com",
+         "amount": null
+        }
+       ],
+       "sector": "Agriculture - Permanent Crops",
+       "country": "Chile",
+       "city": "Santiago",
+       "use_of_funds": "Targeting $350 million for Chilean orchards with planned expansion into Peru, focusing on farmland and projects poised to improve soil health, biodiversity and resilience.",
+       "source_sentence": "The platform targets $350 million for Chilean orchards with planned expansion into Peru.",
+       "published_at": "2025-10-30T16:47:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996ba28e0523bedf7b0eb16"
+       ],
+       "article_id": "6996ba28e0523bedf7b0eb16"
+      },
+      {
+       "id": "34d0b92608b9976e",
+       "company_name": "Periodic Labs",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Jeff Bezos",
+         "domain": "https://www.linkedin.com/showcase/jeff-bezos-newslines",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial intelligence research",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": "Accelerate materials discovery and design",
+       "source_sentence": "Mountain View-based Periodic Labs secured $300 million in initial funding from Andreessen Horowitz, Nvidia, Jeff Bezos, and Eric Schmidt.",
+       "published_at": "2025-10-07T12:07:01",
+       "coverage_count": 4,
+       "article_ids": [
+        "68fe2191e01ff0caa6285e28",
+        "69bb0226b54f2a520bb54b80",
+        "69c8a15c2e59a3a2d505cfe5",
+        "69c8ab1c6743c370e22427de"
+       ],
+       "article_id": "68fe2191e01ff0caa6285e28"
+      },
+      {
+       "id": "6ff772322d214a9d",
+       "company_name": "Periodic Labs",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "dst",
+         "domain": "dst.com.bn",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "Jeff Bezos",
+         "domain": "https://www.linkedin.com/showcase/jeff-bezos-newslines",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        },
+        {
+         "name": "Jeff Dean",
+         "domain": "http://www.linkedin.com/pub/jeff-dean/6/60a/1a",
+         "amount": null
+        }
+       ],
+       "sector": "AI laboratories",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Build specialized robotics, laboratory equipment, and computing infrastructure for end-to-end scientific discovery.",
+       "source_sentence": "Periodic Labs, a startup founded by former OpenAI VP Liam Fedus and ex-DeepMind lead Ekin Dogus Cubuk, closed a record-breaking $300 million seed round on Tuesday.",
+       "published_at": "2025-09-30T23:34:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f72a92f3ba9a3da52be90c"
+       ],
+       "article_id": "68f72a92f3ba9a3da52be90c"
+      },
+      {
+       "id": "b8cf6c06dcb50ca5",
+       "company_name": "Merge Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 252000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 252000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "openai",
+         "domain": "openai.com",
+         "amount": null
+        },
+        {
+         "name": "bain capital",
+         "domain": "baincapital.com",
+         "amount": null
+        },
+        {
+         "name": "Gabe Newell",
+         "domain": "https://www.linkedin.com/in/gabe-newell-00611444/",
+         "amount": null
+        }
+       ],
+       "sector": "Brain computer interface",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Developing non-invasive technologies to connect the human brain directly to AI systems",
+       "source_sentence": "OpenAI did not disclose the amount of its investment, a portion of the $252 million seed round that also came from investors including Bain Capital and Gabe Newell, co-founder and CEO of Valve.",
+       "published_at": "2026-01-16T00:13:06",
+       "coverage_count": 5,
+       "article_ids": [
+        "697fc661a53571d23119c632",
+        "69808825b45e43f180869244",
+        "698ce33e8d29a990b6cbfa00",
+        "69c44197aeca06e4513b0c6b",
+        "69e84e967bb1410d4c67d89a"
+       ],
+       "article_id": "69c44197aeca06e4513b0c6b"
+      },
+      {
+       "id": "808d73584e297d3d",
+       "company_name": "Merge Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 252000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 252000000.0,
+       "valuation": 850000000.0,
+       "investors": [
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "openai",
+         "domain": "openai.com",
+         "amount": null
+        },
+        {
+         "name": "Gabe Newell",
+         "domain": "https://www.linkedin.com/in/gabe-newell-00611444/",
+         "amount": null
+        },
+        {
+         "name": "Other angels",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Brain‑computer interface research",
+       "country": "United States",
+       "city": "Los Angeles",
+       "use_of_funds": "Fundamental research and talent recruitment to develop non‑invasive BCI technologies",
+       "source_sentence": "Merge Labs emerges from stealth with $252M in seed funding to advance brain‑computer interfaces.",
+       "published_at": "2026-01-15T23:00:07",
+       "coverage_count": 2,
+       "article_ids": [
+        "69894ed094d3f481f3e34aec",
+        "69bcc08afe351803c6120220"
+       ],
+       "article_id": "69894ed094d3f481f3e34aec"
+      },
+      {
+       "id": "d04cfeacc369160b",
+       "company_name": "world labs",
+       "domain": "worldlabs.vdtrxn",
+       "round_type": "seed",
+       "amount_usd": 230000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 230000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "a16z",
+         "domain": "a16z.com",
+         "amount": null
+        },
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Building on its 2024 seed raise of $230 million co-led by a16z and NEA, the company now boasts over $1.2 billion in total funding.",
+       "published_at": "2026-02-20T19:38:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9b84c56216f8b2bd8916a"
+       ],
+       "article_id": "69c9b84c56216f8b2bd8916a"
+      },
+      {
+       "id": "19d632fb129f8308",
+       "company_name": "mal",
+       "domain": "malrock.com",
+       "round_type": "Seed",
+       "amount_usd": 230000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 230000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "BlueFive Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI-powered digital bank built on Islamic finance principles",
+       "country": "UAE",
+       "city": "Abu Dhabi",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-01-20T22:03:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988f10b94d3f481f3dc6097"
+       ],
+       "article_id": "6988f10b94d3f481f3dc6097"
+      },
+      {
+       "id": "11f9c287e8fec04c",
+       "company_name": "mal",
+       "domain": "malrock.com",
+       "round_type": "seed",
+       "amount_usd": 230000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 230000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "BlueFive Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Financial technology, Islamic digital banking",
+       "country": "UAE",
+       "city": "Abu Dhabi",
+       "use_of_funds": "Product development, licensing efforts, go-to-market strategy",
+       "source_sentence": "Abu Dhabi: Backed by a strategic $230M raise led by global investment platform BlueFive Capital, amongst other strategic investors and family offices, and founded by serial fintech entrepreneur Abdallah Abu-Sheikh, Mal, the AI-native Islamic digital bank, is now gearing up for its official launch.",
+       "published_at": "2026-01-14T08:31:04",
+       "coverage_count": 4,
+       "article_ids": [
+        "698d6b9f8d29a990b6d637ed",
+        "69973422e7ff408e2d7058a0",
+        "6997fd8f2da3986a3f88ef3c",
+        "69bad7356ae47bec695ea7ad"
+       ],
+       "article_id": "69973422e7ff408e2d7058a0"
+      },
+      {
+       "id": "2f694c14c61a194a",
+       "company_name": "PB Healthcare Services Private Limited",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 218000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 218000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "faering capital",
+         "domain": "faeringcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bay capital",
+         "domain": "bay-cap.com",
+         "amount": null
+        },
+        {
+         "name": "Think Investments",
+         "domain": "thinkinvestments.com",
+         "amount": null
+        },
+        {
+         "name": "avataar",
+         "domain": "avataar.ai",
+         "amount": null
+        },
+        {
+         "name": "select group",
+         "domain": "selectgroup.in",
+         "amount": null
+        },
+        {
+         "name": "select angel investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": null,
+       "source_sentence": "PB Healthcare Services Private Limited (“PB Health”), a transformative healthcare venture incubated by PB Fintech (parent of Policybazaar), has announced the full roster of investors in its $218 million seed round, first unveiled in May 2025. The round saw participation from Faering Capital, Bay Capital, Think Investments, Avataar, Select Group, and select angel investors, led by global investment firm General Catalyst.",
+       "published_at": "2025-11-06T06:23:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "699804446163b042a4d78849"
+       ],
+       "article_id": "699804446163b042a4d78849"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 5078,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTEtMDYgMDY6MjM6MzciLCJrIjoiMzQxNjM0NTQ0NDQ0Mzg4Nzk0NiIsImEiOjIxODAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 5078,
+      "deals_with_amount": 4641,
+      "deals_without_amount": 437,
+      "deals_amount_excluded": 7,
+      "sum_amount_usd": 67822446433.28,
+      "median_amount_usd": 3240000.0,
+      "largest_amount_usd": 12000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.081,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.085
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "round_type": "seed",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "round_type": [
+       "seed"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "db75c9907d4e73cf",
+       "company_name": "opalia",
+       "domain": "opaliafoods.com",
+       "round_type": "Seed",
+       "amount_usd": 3200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3200000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Green Queen 🇨🇦 Montreal cell-based dairy company Opalia closes $3.2m seed round with commercial pilots already underway",
+       "published_at": "2026-04-30T20:35:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8a6d28937ef12fc0ae01e"
+       ],
+       "article_id": "69f8a6d28937ef12fc0ae01e"
+      },
+      {
+       "id": "9ce46ac666509b87",
+       "company_name": "exponent",
+       "domain": "exponentpe.com",
+       "round_type": "seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "multicoin capital",
+         "domain": "multicoin.capital",
+         "amount": null
+        }
+       ],
+       "sector": "DeFi",
+       "country": null,
+       "city": null,
+       "use_of_funds": "build out its core protocol, conduct security audits, and begin bootstrapping initial liquidity",
+       "source_sentence": "Exponent has raised $5 million in a seed round led by Multicoin Capital",
+       "published_at": "2026-04-30T19:16:34",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f8855b43843dd771d13f8a",
+        "69f9d7fd7b2d589e844d44da"
+       ],
+       "article_id": "69f8855b43843dd771d13f8a"
+      },
+      {
+       "id": "0179b9b626a0a15e",
+       "company_name": "hyugalife",
+       "domain": "hyugalife.com",
+       "round_type": "seed",
+       "amount_usd": 6300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv",
+         "domain": "peakxv.net",
+         "amount": null
+        },
+        {
+         "name": "spring marketing capital",
+         "domain": "springmarketingcapital.com",
+         "amount": null
+        },
+        {
+         "name": "stride ventures",
+         "domain": "strideventures.in",
+         "amount": null
+        },
+        {
+         "name": "getvantage",
+         "domain": "getvantage.co",
+         "amount": null
+        },
+        {
+         "name": "KL Rahul",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Nutrition",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": null,
+       "source_sentence": "The raise follows a $6.3 million seed round in February 2024 from Peak XV and Spring Marketing Capital, with additional backing from Stride Ventures, Getvantage, and Indian cricketer KL Rahul.",
+       "published_at": "2026-04-30T12:41:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d5357b2d589e844b5b5c"
+       ],
+       "article_id": "69f9d5357b2d589e844b5b5c"
+      },
+      {
+       "id": "96c6c676074680b1",
+       "company_name": "Ubiqedge",
+       "domain": "ubiqedge.com",
+       "round_type": "seed",
+       "amount_usd": 1200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Piper Serica",
+         "domain": "piperserica.com",
+         "amount": null
+        },
+        {
+         "name": "Shibam Das",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Sumit Chhazed",
+         "domain": "https://www.linkedin.com/in/sumitchhazed",
+         "amount": null
+        }
+       ],
+       "sector": "IoT",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "strengthen its artificial intelligence capabilities, scale deployments across various industrial use cases, and expand its ecosystem of system integrators and OEM partners.",
+       "source_sentence": "IoT startup Ubiqedge on Thursday raised ₹10 crore in a seed funding round led by Piper Serica, with participation from Atomberg co-founder and CEO Shibam Das and OTO co-founder and CEO Sumit Chhazed.",
+       "published_at": "2026-04-30T11:28:31",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f9fd0f713680636ef4a569",
+        "69fa0089713680636ef4ca18"
+       ],
+       "article_id": "69fa0089713680636ef4ca18"
+      },
+      {
+       "id": "eff57b27ef8b602f",
+       "company_name": "Spiral Hydrogen",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 2916000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "byfounders",
+         "domain": "byfounders.vc",
+         "amount": null
+        },
+        {
+         "name": "Norrsken Evolve",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "superangel",
+         "domain": "superangel.io",
+         "amount": null
+        }
+       ],
+       "sector": "deeptech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to develop its bubble-free electrolysis technology",
+       "source_sentence": "Estonian-Dutch deeptech startup Spiral Hydrogen has raised €2.7 million in pre-seed funding, along with €0.7 million in grants, to develop its bubble-free electrolysis technology.",
+       "published_at": "2026-04-30T09:26:48",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f8a6b98937ef12fc0adf72",
+        "69f8aaf0bbf1d314559a5eec"
+       ],
+       "article_id": "69f8aaf0bbf1d314559a5eec"
+      },
+      {
+       "id": "1e333d7f69f1bfcb",
+       "company_name": "Misti AI",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 336000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 336000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fuel ventures",
+         "domain": "fuel.ventures",
+         "amount": 336000.0
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": null,
+       "city": null,
+       "use_of_funds": "scale AI platform for industrial environments",
+       "source_sentence": "Misti AI has secured $336,000 in pre‑seed funding led by Fuel Ventures, with the round still open as the company targets a total of $673,000, aiming to upscale its artificial intelligence (AI) platform for industrial environments.",
+       "published_at": "2026-04-30T09:24:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9dce7713680636ef27dc6"
+       ],
+       "article_id": "69f9dce7713680636ef27dc6"
+      },
+      {
+       "id": "61836310cb902180",
+       "company_name": "Shiprazor",
+       "domain": "shiprazor.com",
+       "round_type": "seed",
+       "amount_usd": 2650000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2650000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "norrsken22",
+         "domain": "norrsken22.com",
+         "amount": null
+        },
+        {
+         "name": "aaic",
+         "domain": "aaicinc.com",
+         "amount": null
+        },
+        {
+         "name": "e4e",
+         "domain": "e4e.com",
+         "amount": null
+        },
+        {
+         "name": "Tremis Capital",
+         "domain": "tremis.in",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        },
+        {
+         "name": "senior leaders at Google",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "E-commerce, Logistics",
+       "country": "South Africa",
+       "city": "Cape Town",
+       "use_of_funds": "more couriers, better coverage, lower shipping costs",
+       "source_sentence": "Shiprazor, the Cape Town-based e-commerce merchant technology and smart logistics platform, has raised $2.65 million (R44m) in seed funding to help African online merchants reduce delivery costs, improve conversion, and simplify fulfilment.",
+       "published_at": "2026-04-30T07:57:21",
+       "coverage_count": 5,
+       "article_ids": [
+        "69f8a97143843dd771d2697d",
+        "69f8a986bbf1d314559a4bfe",
+        "69f9d43c7b2d589e844ab8e7",
+        "69f9d5397b2d589e844b5ec7",
+        "69f9d8eea088760d34c21b7b"
+       ],
+       "article_id": "69f9d43c7b2d589e844ab8e7"
+      },
+      {
+       "id": "5828ee823ac21640",
+       "company_name": "ctruh",
+       "domain": "ctruh.com",
+       "round_type": "Seed",
+       "amount_usd": 2500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "inflection point ventures",
+         "domain": "ipventures.in",
+         "amount": null
+        },
+        {
+         "name": "Avinya Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "india accelerator",
+         "domain": "indiaaccelerator.co",
+         "amount": null
+        },
+        {
+         "name": "Founder's Avenue",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "anthill ventures",
+         "domain": "anthillventures.com",
+         "amount": null
+        },
+        {
+         "name": "lvx",
+         "domain": "maraba.lvx.com.tr",
+         "amount": null
+        },
+        {
+         "name": "Vivek Sinha",
+         "domain": "http://www.linkedin.com/in/sinhavs",
+         "amount": null
+        },
+        {
+         "name": "Shivakumar Ganesan",
+         "domain": "http://www.linkedin.com/in/shivku",
+         "amount": null
+        }
+       ],
+       "sector": "deep-tech",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "advancing its R&D initiatives, product development of its proprietary browser-native 3D engine and VersaAI generative AI platform and scaling its Go-To-Market (GTM) efforts across the United States and the UAE.",
+       "source_sentence": "Ctruh, the deep-tech company building the infrastructure layer for the spatial internet, has raised $2.5 Million in a Seed funding round led by Inflection Point Ventures. The round also saw participation from Avinya Ventures, India Accelerator, Founder's Avenue, Anthill Ventures, and LVX, alongside angel investors Vivek Sinha (Founder & CEO, Emversity; Ex-COO, Unacademy) and Shivakumar Ganesan (Founder & CEO, Exotel).",
+       "published_at": "2026-04-30T07:34:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f87fc243843dd771ce1f89"
+       ],
+       "article_id": "69f87fc243843dd771ce1f89"
+      },
+      {
+       "id": "9b3e1a273cf4888d",
+       "company_name": "synaps",
+       "domain": "synaps.io",
+       "round_type": "pre-seed",
+       "amount_usd": 3600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "plug and play",
+         "domain": "plugandplaytechcenter.com",
+         "amount": null
+        },
+        {
+         "name": "Fil Rouge Capital",
+         "domain": "filrougecapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI design",
+       "country": "Austria",
+       "city": "Vienna",
+       "use_of_funds": null,
+       "source_sentence": "Five months later, Synaps is announcing a $3.6 million pre‑seed funding round from US‑based accelerator and VC Plug and Play, and Zagreb‑based Fil Rouge Capital.",
+       "published_at": "2026-04-30T07:31:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8854abbf1d31455990b53"
+       ],
+       "article_id": "69f8854abbf1d31455990b53"
+      },
+      {
+       "id": "227b48f37ae4ae53",
+       "company_name": "ctruh",
+       "domain": "ctruh.com",
+       "round_type": "Seed",
+       "amount_usd": 2500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "inflection point ventures",
+         "domain": "ipventures.in",
+         "amount": null
+        },
+        {
+         "name": "Avinya Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "india accelerator",
+         "domain": "indiaaccelerator.co",
+         "amount": null
+        },
+        {
+         "name": "Founder's Avenue",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "anthill ventures",
+         "domain": "anthillventures.com",
+         "amount": null
+        },
+        {
+         "name": "lvx",
+         "domain": "maraba.lvx.com.tr",
+         "amount": null
+        },
+        {
+         "name": "Vivek Sinha",
+         "domain": "http://www.linkedin.com/in/sinhavs",
+         "amount": null
+        },
+        {
+         "name": "Shivakumar Ganesan",
+         "domain": "http://www.linkedin.com/in/shivku",
+         "amount": null
+        }
+       ],
+       "sector": "XR",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "R&D and product development of the proprietary browser‑native 3D engine and VersaAI generative AI platform, and scaling go‑to‑market efforts across the United States and the UAE.",
+       "source_sentence": "Ctruh, the deep-tech company building the infrastructure layer for the spatial internet, has raised $2.5 Million in a Seed funding round led by Inflection Point Ventures.",
+       "published_at": "2026-04-30T07:05:19",
+       "coverage_count": 6,
+       "article_ids": [
+        "69f880408937ef12fc06f1c1",
+        "69f8835f8937ef12fc08b05a",
+        "69f88464bbf1d31455987ce8",
+        "69f8a5158937ef12fc0accda",
+        "69f8ad31bbf1d314559a7671",
+        "69f9d4f37b2d589e844b2da0"
+       ],
+       "article_id": "69f880408937ef12fc06f1c1"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 1730,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMzAgMDc6MDU6MTkiLCJrIjoiMjQ4NDY1OTgzMDAwMTAyMDQ5OSJ9",
+     "totals": {
+      "deals": 1730,
+      "deals_with_amount": 1591,
+      "deals_without_amount": 139,
+      "deals_amount_excluded": 5,
+      "sum_amount_usd": 28923974981.0,
+      "median_amount_usd": 3240000.0,
+      "largest_amount_usd": 2000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.527,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.53
+    }
+   }
+  }
+ ]
+}

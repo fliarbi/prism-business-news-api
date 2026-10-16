@@ -1,0 +1,2621 @@
+{
+ "slug": "insurtech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:18Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "insurtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "insurtech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 187,
+      "deals_with_amount": 163,
+      "deals_without_amount": 24,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 5924599436.0,
+      "median_amount_usd": 12156000.0,
+      "largest_amount_usd": 1600000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 3,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1764052000.0,
+       "median_amount_usd": 162000000.0,
+       "largest_amount_usd": 1600000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 24,
+       "deals_with_amount": 22,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 364572000.0,
+       "median_amount_usd": 11480000.0,
+       "largest_amount_usd": 147000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 28,
+       "deals_with_amount": 23,
+       "deals_without_amount": 5,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 309321400.0,
+       "median_amount_usd": 7000000.0,
+       "largest_amount_usd": 163080000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 93025000.0,
+       "median_amount_usd": 12000000.0,
+       "largest_amount_usd": 40000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 8,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 332950000.0,
+       "median_amount_usd": 9180000.0,
+       "largest_amount_usd": 290000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 28,
+       "deals_with_amount": 21,
+       "deals_without_amount": 7,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 324252000.0,
+       "median_amount_usd": 13750000.0,
+       "largest_amount_usd": 82000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 11,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 116950000.0,
+       "median_amount_usd": 10000000.0,
+       "largest_amount_usd": 30000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 168696000.0,
+       "median_amount_usd": 4320000.0,
+       "largest_amount_usd": 163080000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 24,
+       "deals_with_amount": 20,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 313852036.0,
+       "median_amount_usd": 5000000.0,
+       "largest_amount_usd": 108000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 20,
+       "deals_with_amount": 20,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1843150000.0,
+       "median_amount_usd": 23000000.0,
+       "largest_amount_usd": 598000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 333999000.0,
+       "median_amount_usd": 23160000.0,
+       "largest_amount_usd": 108000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 10,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 199780000.0,
+       "median_amount_usd": 9000000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.049,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.053
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "insurtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "insurtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "a8791517c2cf4c00",
+       "company_name": "hub international",
+       "domain": "hubinternational.com",
+       "round_type": "minority equity investment",
+       "amount_usd": 1600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1600000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "InsurTech",
+       "country": "United States",
+       "city": "Chicago",
+       "use_of_funds": "Further acquisitions, repayment of debt, and general corporate purposes",
+       "source_sentence": "HUB International, a global insurance brokerage firm headquartered in Chicago, has secured a landmark $1.6bn minority equity investment, pushing its valuation to $29bn, the highest valuation ever recorded for a privately held insurance broker.",
+       "published_at": "2025-05-14T09:32:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d4b138d29a990b6d3b119"
+       ],
+       "article_id": "698d4b138d29a990b6d3b119"
+      },
+      {
+       "id": "88f7a4b55affe27d",
+       "company_name": "Acko General Insurance",
+       "domain": "acko.com",
+       "round_type": null,
+       "amount_usd": 598000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 598000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "InsurTech",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": null,
+       "source_sentence": "ACKO has raised $598 million — the highest among all funded InsurTech companies in India as of January 2026.",
+       "published_at": "2026-02-27T16:14:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9d61963ac913d8d407a98"
+       ],
+       "article_id": "69c9d61963ac913d8d407a98"
+      },
+      {
+       "id": "8ebe732c3d0f85dd",
+       "company_name": "Go Digit Insurance",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 538000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 538000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fairfax financial holdings",
+         "domain": "fairfax.ca",
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": null,
+       "source_sentence": "Go Digit Insurance has raised a total funding of over $538 million since 2017 and is reshaping the Indian insurance industry with a customer‑centric and innovative approach.",
+       "published_at": "2026-02-27T16:14:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9d61963ac913d8d407a98"
+       ],
+       "article_id": "69c9d61963ac913d8d407a98"
+      },
+      {
+       "id": "f13c2b85fa2fb752",
+       "company_name": "insurancedekho",
+       "domain": "insurancedekho.com",
+       "round_type": null,
+       "amount_usd": 362000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 362000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "InsurTech",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": null,
+       "source_sentence": "Founded: 2016 | Headquarters: Gurugram | Total Funding: $362 million",
+       "published_at": "2026-02-27T16:14:28",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9d61963ac913d8d407a98"
+       ],
+       "article_id": "69c9d61963ac913d8d407a98"
+      },
+      {
+       "id": "b9f9585e7f46a3f6",
+       "company_name": "earnix",
+       "domain": "earnix.com",
+       "round_type": "Continuation Vehicle",
+       "amount_usd": 290000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 290000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "JVP",
+         "domain": "jvpvc.com",
+         "amount": null
+        },
+        {
+         "name": "TPG GP Solutions",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI transformation and global expansion of Earnix",
+       "source_sentence": "JVP, a leading global venture capital firm, announced today the close of a $290 million single-asset Continuation Vehicle in partnership with TPG GP Solutions, TPG’s dedicated U.S. and European GP-led secondaries strategy.",
+       "published_at": "2025-09-08T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69df4e4bb927f98963c087d0"
+       ],
+       "article_id": "69df4e4bb927f98963c087d0"
+      },
+      {
+       "id": "a64d3c0ea4923561",
+       "company_name": "wefox",
+       "domain": "wefox.com",
+       "round_type": "Strategic funding round",
+       "amount_usd": 163080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 151000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "searchlight capital partners",
+         "domain": "searchlightcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "Germany",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "wefox secured €151 million in a strategic funding round in July. The round comprises a €76 million capital raise from existing investors and a €75 million refinancing of a credit facility with Searchlight Capital Partners’ fund.",
+       "published_at": "2025-12-26T08:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f10889ca02490ec1a012f"
+       ],
+       "article_id": "698f10889ca02490ec1a012f"
+      },
+      {
+       "id": "452654e5769b234a",
+       "company_name": "wefox",
+       "domain": "wefox.com",
+       "round_type": "capital raise & refinancing",
+       "amount_usd": 163080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 151000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Searchlight Capital Partners’ credit fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "to strengthen its positions in Austria, the Netherlands and Switzerland, and expand its MGA and smart insurance distribution internationally",
+       "source_sentence": "German InsurTech giant wefox ... secured €151m ($176.6m) in a funding round to bolster its position in the European market.",
+       "published_at": "2025-07-11T17:18:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988aa553757765ee8266814"
+       ],
+       "article_id": "6988aa553757765ee8266814"
+      },
+      {
+       "id": "23770f5c920e1dcc",
+       "company_name": "wefox",
+       "domain": "wefox.com",
+       "round_type": null,
+       "amount_usd": 163080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 151000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Searchlight Capital Partners’ credit fund (Searchlight Opportunities Fund II)",
+         "domain": null,
+         "amount": 75000000.0
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "Expand market positions in Austria, the Netherlands and Switzerland; develop MGA and smart insurance distribution businesses internationally.",
+       "source_sentence": "Berlin-based wefox, an insurtech unicorn, has secured €151M funding, which includes €76M raised mainly from existing investors and €75M from refinancing a credit facility with Searchlight Capital Partners’ credit fund, Searchlight Opportunities Fund II.",
+       "published_at": "2025-07-07T09:00:08",
+       "coverage_count": 6,
+       "article_ids": [
+        "6898b01bab03b1b156e038cc",
+        "6988e44094d3f481f3db7301",
+        "698a24411953fdcb20df700c",
+        "698f95a48d29a990b6ff5d84",
+        "6991cd4a40184cd7086560af",
+        "69c9cd82fe85228ad69b2180"
+       ],
+       "article_id": "6988e44094d3f481f3db7301"
+      },
+      {
+       "id": "efc6a025e05809ee",
+       "company_name": "empathy",
+       "domain": "empathy.com",
+       "round_type": "Series C",
+       "amount_usd": 162000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 162000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "adams street partners",
+         "domain": "adamsstreetpartners.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "index ventures",
+         "domain": "indexventures.com",
+         "amount": null
+        },
+        {
+         "name": "entrée capital",
+         "domain": "entreecap.com",
+         "amount": null
+        },
+        {
+         "name": "brewer lane ventures",
+         "domain": "brewerlane.com",
+         "amount": null
+        },
+        {
+         "name": "SemperVirens",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "latitude",
+         "domain": "latitude.io",
+         "amount": null
+        },
+        {
+         "name": "liontree",
+         "domain": "liontree.com",
+         "amount": null
+        },
+        {
+         "name": "Aflac Ventures",
+         "domain": "aflacventures.com",
+         "amount": null
+        },
+        {
+         "name": "allianz life ventures",
+         "domain": "allianzlifeventures.com",
+         "amount": null
+        },
+        {
+         "name": "Citi Impact Fund",
+         "domain": "citigroup.com/citi/about/citizenship/citi-impact-fund.html",
+         "amount": null
+        },
+        {
+         "name": "munich re",
+         "domain": "munichre.com",
+         "amount": null
+        },
+        {
+         "name": "metlife",
+         "domain": "metlife.com",
+         "amount": null
+        },
+        {
+         "name": "New York Life",
+         "domain": "cbizlife.com",
+         "amount": null
+        },
+        {
+         "name": "Securian",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "TIAA Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "insurtech / legacy planning",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "support further growth in its insurtech business and integrate solutions into policy offerings",
+       "source_sentence": "InsurTech startup Empathy has raised $72 million in a Series C round to expand its platform for legacy planning and end-of-life services.",
+       "published_at": "2025-05-29T22:18:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "690e3093db65e9a9d024a022"
+       ],
+       "article_id": "690e3093db65e9a9d024a022"
+      },
+      {
+       "id": "2c4b4a8c2ccc96ff",
+       "company_name": "bolttech",
+       "domain": "bolttech.io",
+       "round_type": "Series C",
+       "amount_usd": 147000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 147000000.0,
+       "valuation": 2100000000.0,
+       "investors": [
+        {
+         "name": "sumitomo corporation",
+         "domain": "sumitomocorp.com.au",
+         "amount": null
+        },
+        {
+         "name": "iberis capital",
+         "domain": "iberiscapital.com",
+         "amount": null
+        },
+        {
+         "name": "Dragon Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "Generali's Lion River",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "Enhance platform capabilities and accelerate global growth strategy",
+       "source_sentence": "With investments totalling US$147 million, bolttech closes Series C with the addition of new investors",
+       "published_at": "2025-06-04T15:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "68c4378c51a522a9082e37df",
+        "69868e6e11e3205ec992177d",
+        "69894e7194d3f481f3e3439a",
+        "69e2876aa85be7e5065701c4",
+        "69e2ac133aab8d96aa3444d9",
+        "69e2bf399b322e6b3ea3bf3b"
+       ],
+       "article_id": "69868e6e11e3205ec992177d"
+      },
+      {
+       "id": "40b9127a791da085",
+       "company_name": "bolttech",
+       "domain": "bolttech.io",
+       "round_type": "Series C",
+       "amount_usd": 147000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 147000000.0,
+       "valuation": 2100000000.0,
+       "investors": [
+        {
+         "name": "Dragon Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "generali",
+         "domain": "generali.co.th",
+         "amount": null
+        },
+        {
+         "name": "sumitomo corporation",
+         "domain": "sumitomocorp.com.au",
+         "amount": null
+        },
+        {
+         "name": "iberis capital",
+         "domain": "iberiscapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Embedded Insurance / Insurtech",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "Enhance R&D capabilities, improve insurance technology (data analytics and AI), expand operations in Africa and North America",
+       "source_sentence": "One such company, Singapore-based Bolttech, which acts as the connective tissue between insurers, distributors, and their target customers, said on Wednesday it has closed a $147 million Series C round of funding at a $2.1 billion valuation.",
+       "published_at": "2025-06-04T13:00:00",
+       "coverage_count": 12,
+       "article_ids": [
+        "68640f7b8882abb7e3b120b3",
+        "68c5a18f209ed6c919c6c5aa",
+        "68d94aa22e9612a96e1063eb",
+        "68d974095c3d35fe5b4bae15",
+        "68d9820694c916e3e07dc614",
+        "68fe30a792ef2af9ad284ab5",
+        "6988ab3eafe26ce3df6764f3",
+        "698a26a83aeee4a53ff9d986",
+        "698cc252b58ff92da753d51d",
+        "698d185f8d29a990b6cfed61",
+        "698d5ff68d29a990b6d562ee",
+        "698dfaee9ca02490ec05345d"
+       ],
+       "article_id": "68d9820694c916e3e07dc614"
+      },
+      {
+       "id": "8b39de9bd479d1fd",
+       "company_name": "alan",
+       "domain": "alan.com",
+       "round_type": "Series A",
+       "amount_usd": 108000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5400000000.0,
+       "currency": "EUR",
+       "amount": 100000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "Kaaf",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "SH",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "strategic partner Belfius",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tobi Lütke",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Antoine Griezmann",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "International expansion and product development",
+       "source_sentence": "Alan valued at €5bn after €100m funding round",
+       "published_at": "2026-03-13T14:12:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd2512c2570848d94bf11"
+       ],
+       "article_id": "69cbd2512c2570848d94bf11"
+      },
+      {
+       "id": "96d4e3f31516ae28",
+       "company_name": "alan",
+       "domain": "alan.com",
+       "round_type": null,
+       "amount_usd": 108000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5400000000.0,
+       "currency": "EUR",
+       "amount": 100000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "Index Venture",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "greenoaks",
+         "domain": "greenoaks.com",
+         "amount": null
+        },
+        {
+         "name": "Kaaf",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "belfius",
+         "domain": "belfius.be",
+         "amount": null
+        },
+        {
+         "name": "SH",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tobi Lütke",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Antoine Griezmann",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "France",
+       "city": null,
+       "use_of_funds": "AI investments",
+       "source_sentence": "French insurtech Alan has hit a €5bn post-money valuation following a €100m raise led by long-standing backer Index Venture.",
+       "published_at": "2026-03-11T12:31:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a52183f93681eafeab6d"
+       ],
+       "article_id": "69c3a52183f93681eafeab6d"
+      },
+      {
+       "id": "ee169fdc1f600a4e",
+       "company_name": "corgi",
+       "domain": "corgi.co.uk",
+       "round_type": null,
+       "amount_usd": 108000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 108000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "kindred ventures",
+         "domain": "kindredventures.com",
+         "amount": null
+        },
+        {
+         "name": "contrary",
+         "domain": "contrary.com",
+         "amount": null
+        },
+        {
+         "name": "Oliver Jung",
+         "domain": "https://www.linkedin.com/in/oliver-jung-465351",
+         "amount": null
+        },
+        {
+         "name": "glade brook capital partners",
+         "domain": "gladebrookcapital.com",
+         "amount": null
+        },
+        {
+         "name": "seven stars",
+         "domain": "sevenstars.nl",
+         "amount": null
+        },
+        {
+         "name": "Leblon Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Andrej Henkler",
+         "domain": "https://de.linkedin.com/in/andrej-henkler-021993",
+         "amount": null
+        },
+        {
+         "name": "Fadwa Ouardani",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Fellows Fund",
+         "domain": "fellowsfundvc.com",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        },
+        {
+         "name": "Quadri Ventures",
+         "domain": "quadriventures.com",
+         "amount": null
+        },
+        {
+         "name": "Vocal Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Phosphor Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "SV Angel",
+         "domain": "svangel.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "The capital will be used to grow Corgi’s startup-focused insurance offerings, including broader coverage options, expanded distribution, and continued development of the AI systems that support underwriting, claims processing, and policy administration.",
+       "source_sentence": "Corgi, a technology-driven insurance company, has secured $108 million in total financing from a group of investors that includes Y Combinator, Kindred Ventures, Contrary, Oliver Jung, Glade Brook Capital Partners, Seven Stars, Leblon Capital (Andrej Henkler, Fadwa Ouardani), Fellows Fund, Alumni Ventures, Quadri Ventures, Vocal Ventures, Phosphor Capital, SV Angel, and others.",
+       "published_at": "2026-01-13T07:30:24",
+       "coverage_count": 3,
+       "article_ids": [
+        "6983e8eae67557fb85555297",
+        "6988a39094d3f481f3d6e587",
+        "698cdc068d29a990b6cb886c"
+       ],
+       "article_id": "6983e8eae67557fb85555297"
+      },
+      {
+       "id": "52e6815f2cf021bb",
+       "company_name": "corgi",
+       "domain": "corgi.co.uk",
+       "round_type": "Seed and Series A",
+       "amount_usd": 108000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 108000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "YCombinator",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "contrary",
+         "domain": "contrary.com",
+         "amount": null
+        },
+        {
+         "name": "Oliver Jung",
+         "domain": "https://www.linkedin.com/in/oliver-jung-465351",
+         "amount": null
+        },
+        {
+         "name": "SV Angel",
+         "domain": "svangel.com",
+         "amount": null
+        },
+        {
+         "name": "Phosphor Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Today, we’re thrilled to announce our investment in Corgi as part of their $108M Seed and Series A rounds.",
+       "published_at": "2026-01-08T22:18:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e28e7f277be6ed2d97681f"
+       ],
+       "article_id": "69e28e7f277be6ed2d97681f"
+      },
+      {
+       "id": "b34ff29f98f42b38",
+       "company_name": "openly",
+       "domain": "openly.com",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Homeowners Insurance, Insurtech",
+       "country": "US",
+       "city": "Boston",
+       "use_of_funds": null,
+       "source_sentence": "The insurtech previously raised $US193 million ($269.92 million) in January last year – a round Allianz also participated in – and $US100 million a year earlier.",
+       "published_at": "2026-04-27T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e8a0d32561089420d0f5"
+       ],
+       "article_id": "69f0e8a0d32561089420d0f5"
+      },
+      {
+       "id": "8352aba16bab50e3",
+       "company_name": "meanwhile",
+       "domain": "meanwhile.bm",
+       "round_type": "Series B",
+       "amount_usd": 82000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 82000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Bain Capital Crypto",
+         "domain": "baincapitalcrypto.com",
+         "amount": null
+        },
+        {
+         "name": "Haun Ventures",
+         "domain": "haun.co",
+         "amount": null
+        },
+        {
+         "name": "pantera capital",
+         "domain": "panteracapital.com",
+         "amount": null
+        },
+        {
+         "name": "apollo",
+         "domain": "apollo-oe.com",
+         "amount": null
+        },
+        {
+         "name": "northwestern mutual future ventures",
+         "domain": "innovation.northwesternmutual.com",
+         "amount": null
+        },
+        {
+         "name": "stillmark",
+         "domain": "stillmark.com",
+         "amount": null
+        }
+       ],
+       "sector": "insurtech",
+       "country": "Bermuda",
+       "city": null,
+       "use_of_funds": "build partnerships with insurance firms worldwide and roll out new bitcoin‑based financial products",
+       "source_sentence": "Meanwhile, the Bermuda-based Bitcoin life insurance startup, today announced that it secured $82 million in new funding to scale its Bitcoin‑denominated savings, annuities, and insurance offerings.",
+       "published_at": "2025-10-07T21:51:55",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f71009017a8a94832bdeb4",
+        "68f723336ecd416e342b41f3"
+       ],
+       "article_id": "68f723336ecd416e342b41f3"
+      },
+      {
+       "id": "2b91bbbc145a8ab4",
+       "company_name": "ledgebrook",
+       "domain": "ledgebrook.com",
+       "round_type": "Series C",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "the stephens group",
+         "domain": "stephensgroup.com",
+         "amount": null
+        },
+        {
+         "name": "Duquesne",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "brand foundry",
+         "domain": "brandfoundry.co.za",
+         "amount": null
+        },
+        {
+         "name": "floating point",
+         "domain": "floating.vc",
+         "amount": null
+        },
+        {
+         "name": "american family ventures",
+         "domain": "amfamventures.com",
+         "amount": null
+        },
+        {
+         "name": "Hummingbird Nomads",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "United States",
+       "city": "Needham",
+       "use_of_funds": "Bring in further talent, grow and enhance its client-service-led approach to wholesale brokers, offer new insurance products through its platform, and participate further in retaining risk on the insurance it is writing on behalf of its carrier partners.",
+       "source_sentence": "Ledgebrook Inc, an Excess and Surplus Lines Insurtech, announced today that it has completed the close of an oversubscribed $65m Series C funding round, led by existing investor The Stephens Group, LLC (\"Stephens Group\"), a leading private investment firm.",
+       "published_at": "2025-06-24T14:05:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c8e8a25f1a530eb9687e9b",
+        "69e28fcfd754bf662cd36f69"
+       ],
+       "article_id": "69e28fcfd754bf662cd36f69"
+      },
+      {
+       "id": "587031fb611739be",
+       "company_name": "ledgebrook",
+       "domain": "ledgebrook.com",
+       "round_type": "Series C",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "the stephens group",
+         "domain": "stephensgroup.com",
+         "amount": null
+        },
+        {
+         "name": "Duquesne",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "brand foundry",
+         "domain": "brandfoundry.co.za",
+         "amount": null
+        },
+        {
+         "name": "floating point",
+         "domain": "floating.vc",
+         "amount": null
+        },
+        {
+         "name": "Hummingbird Nomads",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "american family ventures",
+         "domain": "amfamventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "USA",
+       "city": "Massachusetts",
+       "use_of_funds": "expansion, hiring new talent, broadening product portfolio, enhancing service for wholesale partners, increasing participation in risk retention with carrier collaborators",
+       "source_sentence": "Ledgebrook, a US-based InsurTech firm specialising in excess and surplus (E&S) lines of insurance, has raised $65m in a Series C funding round.",
+       "published_at": "2025-06-24T09:53:20",
+       "coverage_count": 3,
+       "article_ids": [
+        "6988a3a24727a5abdc8997bb",
+        "698d80d08d29a990b6d7accd",
+        "698e3ffd8d29a990b6e5d061"
+       ],
+       "article_id": "6988a3a24727a5abdc8997bb"
+      },
+      {
+       "id": "8cfd62d8032445f5",
+       "company_name": "gyde",
+       "domain": "gyde.ai",
+       "round_type": "Venture Funding",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "optum ventures",
+         "domain": "optumventures.com",
+         "amount": null
+        },
+        {
+         "name": "crystal venture partners",
+         "domain": "crystalventurepartners.com",
+         "amount": null
+        },
+        {
+         "name": "virtue",
+         "domain": "virtuelabs.com",
+         "amount": null
+        },
+        {
+         "name": "MVP Ventures",
+         "domain": "mvp-vc.com",
+         "amount": null
+        },
+        {
+         "name": "multiple endowment funds",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech / AI-Native Brokerage Platform",
+       "country": "United States",
+       "city": "Austin",
+       "use_of_funds": "accelerate platform development, expand partnerships through acquisitions, and scale its AI-driven brokerage operations",
+       "source_sentence": "Gyde, an Austin, Texas–based AI-native brokerage platform, announced its official launch and $60 million in financing.",
+       "published_at": "2026-01-29T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988b10dafe26ce3df67b2be"
+       ],
+       "article_id": "6988b10dafe26ce3df67b2be"
+      },
+      {
+       "id": "24cb5c4221037fa5",
+       "company_name": "alaffia health",
+       "domain": "alaffiahealth.com",
+       "round_type": "Series B",
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Transformation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech/InsurTech",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Scale AI‑powered health insurance claims platform",
+       "source_sentence": "Alaffia Health raises $55M in Series B funding to automate health insurance claims",
+       "published_at": "2026-02-03T23:42:46",
+       "coverage_count": 2,
+       "article_ids": [
+        "6985ebb211e3205ec98ec05b",
+        "698953d794d3f481f3e3ad9c"
+       ],
+       "article_id": "6985ebb211e3205ec98ec05b"
+      },
+      {
+       "id": "aefb383b2b0e57bf",
+       "company_name": "sixfold ai",
+       "domain": "sixfold.ai",
+       "round_type": "Series B",
+       "amount_usd": 51500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 51500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "brewer lane ventures",
+         "domain": "brewerlane.com",
+         "amount": null
+        },
+        {
+         "name": "guidewire software",
+         "domain": "guidewire.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence, Generative AI, InsurTech, Productivity Tools",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-02-02T11:27:13",
+       "coverage_count": 2,
+       "article_ids": [
+        "69888801868e86f9ec6c8019",
+        "6988a49469527f36baae5af5"
+       ],
+       "article_id": "69888801868e86f9ec6c8019"
+      },
+      {
+       "id": "4fe801e85cb5f2f2",
+       "company_name": "mea",
+       "domain": "meausa.com",
+       "round_type": "equity investment",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sep",
+         "domain": "sep.com",
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate product development and increase customer engagement as mea continues to scale internationally.",
+       "source_sentence": "The company has secured $50m in funding from SEP.",
+       "published_at": "2026-02-20T15:20:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9b840cae5463acf018244"
+       ],
+       "article_id": "69c9b840cae5463acf018244"
+      },
+      {
+       "id": "4dfe73aaaa832693",
+       "company_name": "liberate",
+       "domain": "liberateinc.com",
+       "round_type": "Series B",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "canapi ventures",
+         "domain": "canapi.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "commerce ventures",
+         "domain": "commerce.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "expand Liberate’s reasoning capabilities and support broader deployment across insurers",
+       "source_sentence": "Liberate, an AI startup automating insurance operations, has raised $50 million in a round led by Battery Ventures as it looks to scale its agentic deployments across carriers and agencies globally.",
+       "published_at": "2025-10-15T17:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe2f8e606fcdbfff282d75",
+        "698d1cc49ca02490ecf4da85",
+        "69bce0681d0b3f0860ef57e7"
+       ],
+       "article_id": "68fe2f8e606fcdbfff282d75"
+      },
+      {
+       "id": "f85dbf50e874bbb2",
+       "company_name": "harper",
+       "domain": "harperimage.com",
+       "round_type": "Series A",
+       "amount_usd": 47000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 47000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "emergence capital",
+         "domain": "emergencecapitalpartnersltd.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "product development, market expansion, and the enhancement of AI-based brokerage workflows",
+       "source_sentence": "AI-enabled insurtech startup Harper raised approximately $47 million in a Series A financing led by Emergence Capital, with participation from Y Combinator and Peak XV Partners.",
+       "published_at": "2026-02-26T11:03:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9d920c14329b30ec72ef2"
+       ],
+       "article_id": "69c9d920c14329b30ec72ef2"
+      },
+      {
+       "id": "313add8e0c64b410",
+       "company_name": "harper",
+       "domain": "harperimage.com",
+       "round_type": "Series A",
+       "amount_usd": 47000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 47000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "emergence capital",
+         "domain": "emergencecapitalpartnersltd.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech AI brokerage",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its automated brokerage platform",
+       "source_sentence": "Harper is an AI-native insurance brokerage that automates quoting…",
+       "published_at": "2026-02-25T23:16:33",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7ed68db8b8187dd9b82a"
+       ],
+       "article_id": "69bc7ed68db8b8187dd9b82a"
+      },
+      {
+       "id": "a4b2b16887be69f2",
+       "company_name": "managemy",
+       "domain": "managemy.com",
+       "round_type": "Series B",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ventura capital",
+         "domain": "vcapital.ae",
+         "amount": null
+        },
+        {
+         "name": "OCVC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bnf",
+         "domain": "bnf.gov.py",
+         "amount": null
+        },
+        {
+         "name": "consortium of strategic leaders in both traditional insurance and InsurTech",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "FinTech, InsurTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Market expansion, product expansion, go-to-market execution, team scaling",
+       "source_sentence": "ManageMy, the Intelligent Orchestration Platform transforming how insurers sell, service, underwrite, and manage policies, announced it has raised $45 million, $20m of which was secured in its recent Series B round, co-led by Ventura Capital and OCVC, with backing from BNF and a consortium of strategic leaders in both traditional insurance and InsurTech.",
+       "published_at": "2026-02-16T09:44:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbbedaacefda883e464c0b"
+       ],
+       "article_id": "69bbbedaacefda883e464c0b"
+      },
+      {
+       "id": "86718b8dbdc43aae",
+       "company_name": "managemy",
+       "domain": "managemy.com",
+       "round_type": null,
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ventura capital",
+         "domain": "vcapital.ae",
+         "amount": null
+        },
+        {
+         "name": "OCVC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bnf",
+         "domain": "bnf.gov.py",
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand into new territories, especially North America",
+       "source_sentence": "InsurTech firm ManageMy has secured $45m in new funding as it accelerates international expansion and steps up investment in artificial intelligence-driven capabilities.",
+       "published_at": "2026-02-13T16:07:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb62e09153720f4d7337b0"
+       ],
+       "article_id": "69bb62e09153720f4d7337b0"
+      },
+      {
+       "id": "a3ce3bd56c7147ed",
+       "company_name": "managemy",
+       "domain": "managemy.com",
+       "round_type": "Series B",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ventura capital",
+         "domain": "vcapital.ae",
+         "amount": null
+        },
+        {
+         "name": "OCVC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bnf",
+         "domain": "bnf.gov.py",
+         "amount": null
+        },
+        {
+         "name": "consortium of traditional insurance and InsurTech Leaders",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": null,
+       "city": "London",
+       "use_of_funds": "Geographic expansion into North America; product development, including deeper investment in AI-driven functionality",
+       "source_sentence": "It has now raised a Series B round of funding led by Ventura Capital, taking its total funding to $45m following a 2022 Series A.",
+       "published_at": "2026-02-10T14:46:19",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bb01c07a841a437be502ce",
+        "69bbb7b8aeb7f69856dda996"
+       ],
+       "article_id": "69bbb7b8aeb7f69856dda996"
+      },
+      {
+       "id": "46d357685044b56d",
+       "company_name": "Insurtech Shepherd",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 42000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 42000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Intact Private Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "costanoa ventures",
+         "domain": "costanoavc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Team growth",
+       "source_sentence": "Insurtech Shepherd, a technology platform focused on commercial industries, has closed a $42 mn Series B round led by Intact Private Capital, with participation from Spark Capital, Costanoa Ventures, and other investors.",
+       "published_at": "2026-03-26T20:08:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc2d1e1e8126b2deb1fbd4"
+       ],
+       "article_id": "69cc2d1e1e8126b2deb1fbd4"
+      },
+      {
+       "id": "4a65a09d622ba512",
+       "company_name": "shepherd",
+       "domain": "shprd.com",
+       "round_type": "Series B",
+       "amount_usd": 42000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 42000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Intact Private Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "costanoa ventures",
+         "domain": "costanoavc.com",
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "insurtech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "expand technical and underwriting teams; scale into new verticals and geographies",
+       "source_sentence": "Shepherd, a U.S. insurtech startup, announced a $42 million Series B led by Intact Private Capital.",
+       "published_at": "2026-03-24T22:15:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc07c09d3d4bff9ce784f5"
+       ],
+       "article_id": "69cc07c09d3d4bff9ce784f5"
+      },
+      {
+       "id": "ff9c49f9cfa9eb95",
+       "company_name": "WithCoverage",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 42000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 42000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": null,
+       "source_sentence": "WithCoverage, a risk management and insurance brokerage platform for fast-growing businesses, has raised $42M in Series B funding led by Sequoia Capital and Khosla Ventures.",
+       "published_at": "2026-01-14T13:27:17",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989defb94d3f481f3ede778"
+       ],
+       "article_id": "6989defb94d3f481f3ede778"
+      },
+      {
+       "id": "e77f43c318042494",
+       "company_name": "WithCoverage",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 42000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 42000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "crystal venture partners",
+         "domain": "crystalventurepartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "expand WithCoverage’s product capabilities, grow its workforce, and support entry into new industry verticals",
+       "source_sentence": "AI-enabled risk management platform WithCoverage has secured $42 million in Series B funding in a round led by Sequoia Capital and Khosla Ventures, with additional backing from 8VC and Crystal Venture Partners.",
+       "published_at": "2026-01-13T16:00:05",
+       "coverage_count": 8,
+       "article_ids": [
+        "6983e8f8e67557fb855552d5",
+        "69888801868e86f9ec6c8019",
+        "6988882a868e86f9ec6c825d",
+        "69888841c615dcea3f5cea16",
+        "6988a39094d3f481f3d6e587",
+        "6988a49469527f36baae5af5",
+        "6988aaf8a88ad7b9aae0f7ce",
+        "698d779c8d29a990b6d714e4"
+       ],
+       "article_id": "6983e8f8e67557fb855552d5"
+      },
+      {
+       "id": "b50e0c9566e656cc",
+       "company_name": "cover whale",
+       "domain": "coverwhale.com",
+       "round_type": "equity funding",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "US",
+       "city": null,
+       "use_of_funds": "expand its product offerings, enhance its analytics, and accelerate upgrades to its technology stack",
+       "source_sentence": "Cover Whale, a US‑based InsurTech specialising in connected insurance for the commercial auto sector, has secured $40m in equity funding from Morgan Stanley Expansion Capital.",
+       "published_at": "2025-08-01T17:41:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a3f88fb0ea95e977032a"
+       ],
+       "article_id": "6988a3f88fb0ea95e977032a"
+      },
+      {
+       "id": "a5403c5c1af19fa4",
+       "company_name": "Cover Whale Insurance Solutions",
+       "domain": "coverwhale.com",
+       "round_type": "equity",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "US",
+       "city": "New York",
+       "use_of_funds": "Accelerate investments in technology platform, analytics, and expand product offerings to drive growth and profitability.",
+       "source_sentence": "Cover Whale Insurance Solutions, Inc., a leading insurtech specializing in connected insurance for commercial auto, announced $40 million in new equity financing from Morgan Stanley Expansion Capital.",
+       "published_at": "2025-07-28T18:30:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "6898cd602f01d48cd3f82c64",
+        "698f400d9ca02490ec1d846e"
+       ],
+       "article_id": "6898cd602f01d48cd3f82c64"
+      },
+      {
+       "id": "b75f032f2fd3e7cd",
+       "company_name": "Cover Whale Insurance Solutions",
+       "domain": "coverwhale.com",
+       "round_type": "equity",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "accelerate investments in its technology platform, analytics, and expand its product offerings to drive increased growth and profitability.",
+       "source_sentence": "Cover Whale Insurance Solutions, Inc., a leading insurtech specializing in connected insurance for commercial auto, announced $40 million in new equity financing from Morgan Stanley Expansion Capital.",
+       "published_at": "2025-07-27T23:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "6914730092b3f69e0235c52f",
+        "6988a3e64727a5abdc899cc0",
+        "698ff6399ca02490ec2aefe7"
+       ],
+       "article_id": "6914730092b3f69e0235c52f"
+      },
+      {
+       "id": "d86d7b975aa7c0bb",
+       "company_name": "yuzu health",
+       "domain": "yuzu.health",
+       "round_type": "Series A",
+       "amount_usd": 35000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "chemistry",
+         "domain": "trychemistry.com",
+         "amount": null
+        },
+        {
+         "name": "Anthropic’s Anthology Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bain Future Back Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Timeless Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Lachy Groom",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "neo",
+         "domain": "getneo.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Expand engineering team, scale platform nationally, and automate processes",
+       "source_sentence": "Yuzu Health, a next-generation third‑party administrator focused on modernizing the infrastructure behind health insurance plans, announced it has raised $35 million in Series A funding, bringing its total capital raised to $40 million.",
+       "published_at": "2026-04-06T13:58:50",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e2a6f8277be6ed2d9c17be",
+        "69e2b080ff2654c79d690ab5",
+        "69e2c39fd754bf662cde30d3"
+       ],
+       "article_id": "69e2c39fd754bf662cde30d3"
+      },
+      {
+       "id": "ae89546f2afb7743",
+       "company_name": "Stand Insurance",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 35000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eclipse",
+         "domain": "eclipse.xyz",
+         "amount": null
+        },
+        {
+         "name": "lowercarbon capital",
+         "domain": "lowercarboncapital.com",
+         "amount": null
+        },
+        {
+         "name": "inspired capital",
+         "domain": "inspiredcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Expand coverage into Florida",
+       "source_sentence": "Stand Insurance has raised $35 million in a Series B funding round to expand its artificial intelligence-powered coverage for homeowners.",
+       "published_at": "2025-10-17T05:01:42",
+       "coverage_count": 4,
+       "article_ids": [
+        "68fe23a541f75f6827289b1c",
+        "68fe2edaf2b427082328189d",
+        "69cbd4f3c6ed362ae7ef09ce",
+        "69e87edf5cfa3e5ba5029176"
+       ],
+       "article_id": "69e87edf5cfa3e5ba5029176"
+      },
+      {
+       "id": "aaee7a5f8ac5c272",
+       "company_name": "sixfold",
+       "domain": "sixfold.ai",
+       "round_type": "Series B",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Brewer Lane",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "guidewire",
+         "domain": "guidewire.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "salesforce ventures",
+         "domain": "salesforceventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Support development of Sixfold’s AI Underwriter, expand research and engineering teams, scale commercial operations, and support global expansion.",
+       "source_sentence": "Sixfold, the AI-driven insurtech platform trusted by global insurers, has raised US$30 million in a Series B funding round.",
+       "published_at": "2026-01-29T15:50:05",
+       "coverage_count": 3,
+       "article_ids": [
+        "698710319438ce100b1a61f0",
+        "698e18ad9ca02490ec0770fc",
+        "69bce06bedbbccf919a0f545"
+       ],
+       "article_id": "69bce06bedbbccf919a0f545"
+      },
+      {
+       "id": "5fdff5c4de1112b2",
+       "company_name": "nava",
+       "domain": "navacenter.com",
+       "round_type": "Series C",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 30000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        },
+        {
+         "name": "fenwick & west",
+         "domain": "fenwick.com",
+         "amount": null
+        },
+        {
+         "name": "gaingels",
+         "domain": "gaingels.com",
+         "amount": null
+        },
+        {
+         "name": "glynn capital management",
+         "domain": "glynncapital.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "pascal ventures",
+         "domain": "pascalventures.com",
+         "amount": null
+        },
+        {
+         "name": "PeopleTech Partners",
+         "domain": "peopletechpartners.com",
+         "amount": null
+        },
+        {
+         "name": "quiet capital",
+         "domain": "quiet.com",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        }
+       ],
+       "sector": "Employee Benefits,Health Care,Insurance,InsurTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Nava provides employee benefits brokerage services with a focus on affordable healthcare.",
+       "published_at": "2025-11-13T09:27:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a74f127162d16e0ad533"
+       ],
+       "article_id": "6988a74f127162d16e0ad533"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 187,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMTEtMTMgMDk6Mjc6MDkiLCJrIjoiNjkwODUxMDU3OTI5NzY4NjE5NCIsImEiOjMwMDAwMDAwLjB9",
+     "totals": {
+      "deals": 187,
+      "deals_with_amount": 163,
+      "deals_without_amount": 24,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 5924599436.0,
+      "median_amount_usd": 12156000.0,
+      "largest_amount_usd": 1600000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.175,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.179
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "insurtech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "insurtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "1aa3828d238c9a4d",
+       "company_name": "qover",
+       "domain": "qover.com",
+       "round_type": "growth financing",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cibc innovation banking",
+         "domain": "innovationbanking.cibc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "Belgium",
+       "city": "Brussels",
+       "use_of_funds": "support Qover’s continued expansion and growth",
+       "source_sentence": "CIBC Innovation Banking today announced that it has provided growth financing to Qover, a European-based embedded insurance platform.",
+       "published_at": "2026-04-30T11:00:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f87f948937ef12fc068946"
+       ],
+       "article_id": "69f87f948937ef12fc068946"
+      },
+      {
+       "id": "0509ee28d316b858",
+       "company_name": "segura",
+       "domain": "segura-moto.fr",
+       "round_type": "seed",
+       "amount_usd": 9000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "BRL",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "big_bets",
+         "domain": "bigbets.com.br",
+         "amount": null
+        },
+        {
+         "name": "Assaf Wand",
+         "domain": "https://www.linkedin.com/in/assafwand",
+         "amount": null
+        },
+        {
+         "name": "Marcelo Blay",
+         "domain": "https://www.linkedin.com/in/marceloblay/",
+         "amount": null
+        },
+        {
+         "name": "Fersen Lambraño",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Anderson Thees",
+         "domain": "http://www.linkedin.com/in/amthees",
+         "amount": null
+        },
+        {
+         "name": "Mario Augusto Sá",
+         "domain": "https://www.linkedin.com/in/marioaugustosa/",
+         "amount": null
+        },
+        {
+         "name": "Almeida Braga family",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "Brazil",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "She just lifted her first institutional round, a portentous R$ 45 million seed coliderated by Andreessen Horowitz (a16z) and Kaszek. The contribution also includes the participation of Big_Bets and a team of renowned angel investors: Assaf Wand, founder of Hippo; Marcelo Blay, founder of Minute Insurance; Fersen Lambraño, chairman of GP Investments; Anderson Thees, managing partner of Redpoint e.ventures; Mario Augusto Sá (NG.CASH) and the Almeida Braga family,",
+       "published_at": "2026-04-27T08:59:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e1e045272de32e8be335",
+        "69f0e7bc836d28f995cbb0b9"
+       ],
+       "article_id": "69f0e7bc836d28f995cbb0b9"
+      },
+      {
+       "id": "b34ff29f98f42b38",
+       "company_name": "openly",
+       "domain": "openly.com",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Homeowners Insurance, Insurtech",
+       "country": "US",
+       "city": "Boston",
+       "use_of_funds": null,
+       "source_sentence": "The insurtech previously raised $US193 million ($269.92 million) in January last year – a round Allianz also participated in – and $US100 million a year earlier.",
+       "published_at": "2026-04-27T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e8a0d32561089420d0f5"
+       ],
+       "article_id": "69f0e8a0d32561089420d0f5"
+      },
+      {
+       "id": "74ed86acb291979f",
+       "company_name": "openly",
+       "domain": "openly.com",
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "allianz",
+         "domain": "allianz.fr",
+         "amount": null
+        },
+        {
+         "name": "Eden Global Partners",
+         "domain": "edengp.com",
+         "amount": null
+        },
+        {
+         "name": "advance venture partners",
+         "domain": "avp.vc",
+         "amount": null
+        },
+        {
+         "name": "gradient",
+         "domain": "gradientcorp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Homeowners Insurance, Insurtech",
+       "country": "US",
+       "city": "Boston",
+       "use_of_funds": null,
+       "source_sentence": "Allianz has invested more in Boston-based homeowners insurance platform Openly and expanded a reinsurance partnership.",
+       "published_at": "2026-04-27T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e8a0d32561089420d0f5"
+       ],
+       "article_id": "69f0e8a0d32561089420d0f5"
+      },
+      {
+       "id": "e550ff891e326c07",
+       "company_name": "Insurteam",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1300000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "InsurTech",
+       "country": "Switzerland",
+       "city": null,
+       "use_of_funds": "Accelerate European expansion and extend Managing General Agent operations across the continent",
+       "source_sentence": "Switzerland-based InsurTech firm Insurteam, a travel insurance automation specialist, has closed a $1.3m funding round to accelerate its European expansion, according VentureLab.",
+       "published_at": "2026-04-13T15:20:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e641209e87ccc43e321674"
+       ],
+       "article_id": "69e641209e87ccc43e321674"
+      },
+      {
+       "id": "9a3475dce2b1b507",
+       "company_name": "eleos life",
+       "domain": "eleos.co.uk",
+       "round_type": null,
+       "amount_usd": 3000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mercurius Media Capital",
+         "domain": null,
+         "amount": 3000000.0
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "accelerate brand awareness and customer acquisition across the United States",
+       "source_sentence": "InsurTech Eleos Life has secured $3m in capital from Mercurius Media Capital (MMC), a US-based media-for-equity venture fund, to accelerate brand awareness and customer acquisition across the United States.",
+       "published_at": "2026-04-13T09:46:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8b7d99baafc7356ba3585"
+       ],
+       "article_id": "69e8b7d99baafc7356ba3585"
+      },
+      {
+       "id": "defbdbbf9627724d",
+       "company_name": "Flora Fertility",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ManchesterStory",
+         "domain": "manchesterstory.com",
+         "amount": null
+        },
+        {
+         "name": "Slauson",
+         "domain": "slauson.co",
+         "amount": null
+        },
+        {
+         "name": "TruStage Ventures",
+         "domain": "cmfgventures.com",
+         "amount": null
+        },
+        {
+         "name": "BDC Capital",
+         "domain": "bdcnewengland.com",
+         "amount": null
+        },
+        {
+         "name": "Marathon Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Adara Venture Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech, Fertility Insurance",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Expand access to reproductive care across the U.S. market and capitalize on the company’s first‑mover advantage in private fertility insurance to offer proactive family planning solutions.",
+       "source_sentence": "Flora Fertility, a Calgary, Alberta, Canada- and Chicago, IL-based fertility insurance platform provider, raised USD$5M in Seed funding.",
+       "published_at": "2026-04-13T07:41:07",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e851465cfa3e5ba5e6ead1",
+        "69e8e3119baafc7356ddfc05"
+       ],
+       "article_id": "69e851465cfa3e5ba5e6ead1"
+      },
+      {
+       "id": "a47f8858cc43dbf1",
+       "company_name": "Flora Fertility",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ManchesterStory",
+         "domain": "manchesterstory.com",
+         "amount": null
+        },
+        {
+         "name": "Slauson",
+         "domain": "slauson.co",
+         "amount": null
+        },
+        {
+         "name": "bdc",
+         "domain": "bdc.ca",
+         "amount": null
+        },
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "InsurTech",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "build individually owned fertility insurance that isn’t tied to an employer",
+       "source_sentence": "Flora Fertility has raised $5 million in seed funding to build individually owned fertility insurance that isn’t tied to an employer.",
+       "published_at": "2026-04-07T18:12:09",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e2b15f7f3a572cf4adc8aa",
+        "69e6451b2be6445e460af53d",
+        "69e8b5727bb1410d4caf8c30"
+       ],
+       "article_id": "69e2b15f7f3a572cf4adc8aa"
+      },
+      {
+       "id": "d86d7b975aa7c0bb",
+       "company_name": "yuzu health",
+       "domain": "yuzu.health",
+       "round_type": "Series A",
+       "amount_usd": 35000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 35000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "chemistry",
+         "domain": "trychemistry.com",
+         "amount": null
+        },
+        {
+         "name": "Anthropic’s Anthology Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bain Future Back Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Timeless Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Lachy Groom",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "neo",
+         "domain": "getneo.com",
+         "amount": null
+        }
+       ],
+       "sector": "Insurtech",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Expand engineering team, scale platform nationally, and automate processes",
+       "source_sentence": "Yuzu Health, a next-generation third‑party administrator focused on modernizing the infrastructure behind health insurance plans, announced it has raised $35 million in Series A funding, bringing its total capital raised to $40 million.",
+       "published_at": "2026-04-06T13:58:50",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e2a6f8277be6ed2d9c17be",
+        "69e2b080ff2654c79d690ab5",
+        "69e2c39fd754bf662cde30d3"
+       ],
+       "article_id": "69e2c39fd754bf662cde30d3"
+      },
+      {
+       "id": "30e81ca5007a43aa",
+       "company_name": "policystreet",
+       "domain": "policystreet.com",
+       "round_type": "Series C",
+       "amount_usd": 21000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 21000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cool japan fund",
+         "domain": "cj-fund.co.jp",
+         "amount": null
+        },
+        {
+         "name": "altara ventures",
+         "domain": "altaraventures.com",
+         "amount": null
+        },
+        {
+         "name": "gobi partners",
+         "domain": "gobi.vc",
+         "amount": null
+        }
+       ],
+       "sector": "insurtech",
+       "country": "Malaysia",
+       "city": "Kuala Lumpur",
+       "use_of_funds": "support next phase of growth, accelerating regional expansion, strengthening technology infrastructure, deepening partnerships across Asia's digital economy",
+       "source_sentence": "KUALA LUMPUR, 1 APRIL2026 — PolicyStreet, a Malaysian-born regional insurtech company, has secured US$21 million in the first close of its Series Cfunding round, led by Cool Japan Fund (CJF), Japan’s sovereign wealth fund,with participation from existing investors Altara Ventures and Gobi Partners.",
+       "published_at": "2026-04-03T03:57:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e28c69c1991f786ce3cf9e"
+       ],
+       "article_id": "69e28c69c1991f786ce3cf9e"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 72,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDMgMDM6NTc6MTAiLCJrIjoiMzUyNDA5ODIwMzQyMDYwNzQwMiJ9",
+     "totals": {
+      "deals": 72,
+      "deals_with_amount": 65,
+      "deals_without_amount": 7,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 2659281036.0,
+      "median_amount_usd": 21000000.0,
+      "largest_amount_usd": 598000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.085,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.092
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,826 @@
+{
+ "slug": "new-factory",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:38Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "asset_acquisition"
+     ],
+     "q": "factory",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "factory",
+      "match": "any",
+      "event_type": [
+       "company_announcement",
+       "asset_acquisition"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 38,
+       "by_type": {
+        "company_announcement": 26,
+        "asset_acquisition": 12
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "company_announcement": 11,
+        "asset_acquisition": 0
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 49,
+       "by_type": {
+        "company_announcement": 39,
+        "asset_acquisition": 10
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 111,
+       "by_type": {
+        "company_announcement": 66,
+        "asset_acquisition": 45
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 55,
+       "by_type": {
+        "company_announcement": 48,
+        "asset_acquisition": 7
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 37,
+       "by_type": {
+        "company_announcement": 34,
+        "asset_acquisition": 3
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 37,
+       "by_type": {
+        "company_announcement": 28,
+        "asset_acquisition": 9
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 34,
+       "by_type": {
+        "company_announcement": 30,
+        "asset_acquisition": 4
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 41,
+       "by_type": {
+        "company_announcement": 29,
+        "asset_acquisition": 12
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 43,
+       "by_type": {
+        "company_announcement": 33,
+        "asset_acquisition": 10
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 39,
+       "by_type": {
+        "company_announcement": 35,
+        "asset_acquisition": 4
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 47,
+       "by_type": {
+        "company_announcement": 41,
+        "asset_acquisition": 6
+       }
+      }
+     ],
+     "totals": {
+      "events": 542,
+      "articles": 488,
+      "companies": 324,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 420,
+      "asset_acquisition": 122
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.093,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.096
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "asset_acquisition"
+     ],
+     "q": "factory",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "factory",
+      "event_type": [
+       "company_announcement",
+       "asset_acquisition"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f9db83713680636ef13bc4",
+       "headline": "Minister of Economics Lex Delles and CEO Mario Grotz presented the Annual Report 2025 on Thursday, and also provided an update to the Luxembourg AI Factory",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "luxinnovation.lu",
+       "published_at": "2026-04-30T12:25:00",
+       "url": "https://www.wort.lu/wirtschaft/luxinnovation-schliesst-strategische-neuausrichtung-ab/150465278.html",
+       "publisher": "wort.lu",
+       "title": "Luxinnovation schließt strategische Neuausrichtung ab"
+      },
+      {
+       "id": "6a04214a9c4aac09354ba0ba",
+       "headline": "Talley's is closing its Westport fish processing factory, the company has confirmed.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "talleys.co.nz",
+       "published_at": "2026-04-30T03:47:52",
+       "url": "https://www.odt.co.nz/regions/west-coast/talleys-confirms-westport-factory-closure-rnz",
+       "publisher": "odt.co.nz",
+       "title": "Talley's confirms Westport factory closure"
+      },
+      {
+       "id": "6a03f8149c4aac093539cc8d",
+       "headline": "In March, Corning broke ground on a brand-new factory where it will manufacture cables specifically for Meta, which highlights the scale of the deal.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "corning.com",
+       "published_at": "2026-04-29T11:35:00",
+       "url": "https://www.theglobeandmail.com/investing/markets/stocks/GLW/pressreleases/1594991/this-super-semiconductor-stock-is-obliterating-nvidia-amd-and-broadcom-in-2026/",
+       "publisher": "theglobeandmail.com",
+       "title": "This Super Semiconductor Stock Is Obliterating Nvidia, AMD, and Broadcom in 2026"
+      },
+      {
+       "id": "69f22a0327117df83f945cbe",
+       "headline": "Singer (Sri Lanka) PLC has officially entered into a Sale Purchase Agreement to acquire the factory premises of ACME Printing and Packaging PLC.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "singer.lk",
+       "published_at": "2026-04-29T09:25:02",
+       "url": "http://bizenglish.adaderana.lk/singer-to-acquire-acme-printing-factory-for-rs-630-million/",
+       "publisher": "bizenglish.adaderana.lk",
+       "title": "Singer to Acquire ACME Printing Factory for Rs. 630 Million - Adaderana Biz English | Sri Lanka Business News"
+      },
+      {
+       "id": "69f22a0327117df83f945cbe",
+       "headline": "Singer (Sri Lanka) PLC has officially entered into a Sale Purchase Agreement to acquire the factory premises of ACME Printing and Packaging PLC.",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "acmelk.com",
+       "published_at": "2026-04-29T09:25:02",
+       "url": "http://bizenglish.adaderana.lk/singer-to-acquire-acme-printing-factory-for-rs-630-million/",
+       "publisher": "bizenglish.adaderana.lk",
+       "title": "Singer to Acquire ACME Printing Factory for Rs. 630 Million - Adaderana Biz English | Sri Lanka Business News"
+      },
+      {
+       "id": "69f1c68ca5706a322e0e92a8",
+       "headline": "The Forvia automotive manufacturer, which has a factory in Bains-sur-Oust (Ille-et-Vilaine), announces that he has entered into an agreement with the funds managed by Apollo for the sale of its \"Interior Business Group\".",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "forvia.com",
+       "published_at": "2026-04-28T13:23:50",
+       "url": "https://www.lejournaldesentreprises.com/breve/lusine-forvia-de-bains-sur-oust-va-passer-aux-mains-du-fonds-americain-apollo-2141931",
+       "publisher": "lejournaldesentreprises.com",
+       "title": "L'usine Forvia de Bains-sur-Oust va passer aux mains du fonds américain Apollo"
+      },
+      {
+       "id": "69f1c68ca5706a322e0e92a8",
+       "headline": "The Forvia automotive manufacturer, which has a factory in Bains-sur-Oust (Ille-et-Vilaine), announces that he has entered into an agreement with the funds managed by Apollo for the sale of its \"Interior Business Group\".",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "apollo-oe.com",
+       "published_at": "2026-04-28T13:23:50",
+       "url": "https://www.lejournaldesentreprises.com/breve/lusine-forvia-de-bains-sur-oust-va-passer-aux-mains-du-fonds-americain-apollo-2141931",
+       "publisher": "lejournaldesentreprises.com",
+       "title": "L'usine Forvia de Bains-sur-Oust va passer aux mains du fonds américain Apollo"
+      },
+      {
+       "id": "69e8e68d5cfa3e5ba552c130",
+       "headline": "Nomad Foods has announced the intention to close the factory by the end of 2026.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "nomadfoods.com",
+       "published_at": "2026-04-22T14:31:11",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8ab3d9baafc7356b03f40",
+       "headline": "The automaker certainly appears to think so, and is reportedly considering a factory in northern Spain, with the Aragon region cited as a leading candidate due to its existing automotive and battery supply chain infrastructure.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "changanqatar.com",
+       "published_at": "2026-04-22T10:51:38",
+       "url": "https://www.automotiveworld.com/news/changan-aims-to-crack-top-ten-global-oems-by-2030/",
+       "publisher": "automotiveworld.com",
+       "title": "Changan aims to crack top ten global OEMs by 2030 | Automotive World"
+      },
+      {
+       "id": "69f9e1c9713680636ef4225a",
+       "headline": "SUSE AI Factory, a joint solution combining SUSE’s open-source AI stack with Nvidia’s enterprise AI infrastructure, was launched on Tuesday.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "suse.com",
+       "published_at": "2026-04-22T00:30:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f883708937ef12fc08b9d1",
+       "headline": "A tornado struck Rivian’s electric vehicle factory in Normal, Illinois, last Friday, temporarily halting operations at a newer section of the facility.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "rivian.com",
+       "published_at": "2026-04-22T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e99bb2bdd09a23d091ea77",
+       "headline": "On March 31 local time, NVIDIA and Marvell announced a strategic partnership to connect Marvell with NVIDIA's AI factory and AI-RAN ecosystem through NVIDIA NVLINKFusion.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "nvidia.com",
+       "published_at": "2026-04-22T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e87ded7bb1410d4c8541ec",
+       "headline": "The Peach Cobbler Factory is expanding its footprint in the Lone Star State with a new location bringing its famous indulgent desserts to Forney, Texas.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "peachcobblerfactory.com",
+       "published_at": "2026-04-21T11:13:14",
+       "url": "https://www.restaurantnews.com/restaurant-franchise-news-from-roy-rogers-nothing-bundt-cakes-crave-subs-and-more-042126/",
+       "publisher": "restaurantnews.com",
+       "title": "Restaurant Franchise News from Roy Rogers, Nothing Bundt Cakes, Crave Subs, and More! | RestaurantNews.com"
+      },
+      {
+       "id": "69e99586d47fc028321478ae",
+       "headline": "Ashby said cutting typical repair times on factory equipment by 10 per cent to 15 per cent could translate into multi-billion-dollar savings, along with improving safety, productivity and performance at its sites.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "kruger.com",
+       "published_at": "2026-04-21T08:02:14",
+       "url": "https://www.tahawultech.com/home-slide/accenture-invests-in-agentic-ai-factory-initiatives/",
+       "publisher": "tahawultech.com",
+       "title": "Accenture invests in agentic AI factory initiatives | TahawulTech.com"
+      },
+      {
+       "id": "69e8982c9baafc73569ffe04",
+       "headline": "Accenture revealed the agentic AI factory move at the Hannover Messe event in Germany, stating it is working to push beyond “traditional manufacturing analytics, dashboards and oversight tools”.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "accenture.com",
+       "published_at": "2026-04-21T08:02:14",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 170,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjEgMDg6MDI6MTQiLCJpIjoiNjllODk4MmM5YmFhZmM3MzU2OWZmZTA0IiwiZG0iOiJhY2NlbnR1cmUuY29tIiwiZXQiOiJjb21wYW55X2Fubm91bmNlbWVudCIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "company_announcement": 138,
+      "asset_acquisition": 32
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.514,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.517
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "asset_acquisition"
+     ],
+     "q": "factory",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "factory",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement",
+       "asset_acquisition"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 167,
+     "carrying": 167,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 11,
+       "share": 6.59
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 27,
+       "share": 16.17
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 2,
+       "share": 1.2
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 37,
+       "share": 22.16
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 27,
+       "share": 16.17
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 62,
+       "share": 37.13
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 0.6
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 38,
+       "share": 22.75
+      },
+      {
+       "group": "neutral",
+       "count": 2,
+       "share": 1.2
+      },
+      {
+       "group": "positive",
+       "count": 127,
+       "share": 76.05
+      }
+     ],
+     "negative_to_positive_ratio": 0.299,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.4,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 31,
+       "negative": 7,
+       "neutral": 0,
+       "positive": 24,
+       "negative_share": 22.58,
+       "positive_share": 77.42,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 6,
+        "none": 0,
+        "slight_pos": 8,
+        "fair_pos": 4,
+        "very_pos": 12,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 41,
+       "negative": 5,
+       "neutral": 1,
+       "positive": 35,
+       "negative_share": 12.2,
+       "positive_share": 85.37,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 1,
+        "slight_pos": 10,
+        "fair_pos": 9,
+        "very_pos": 16,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 39,
+       "negative": 10,
+       "neutral": 1,
+       "positive": 28,
+       "negative_share": 25.64,
+       "positive_share": 71.79,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 0,
+        "slight_neg": 8,
+        "none": 1,
+        "slight_pos": 7,
+        "fair_pos": 5,
+        "very_pos": 15,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 56,
+       "negative": 16,
+       "neutral": 0,
+       "positive": 40,
+       "negative_share": 28.57,
+       "positive_share": 71.43,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 6,
+        "fair_neg": 0,
+        "slight_neg": 10,
+        "none": 0,
+        "slight_pos": 12,
+        "fair_pos": 9,
+        "very_pos": 19,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 5.275,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 5.279
+    }
+   }
+  }
+ ]
+}

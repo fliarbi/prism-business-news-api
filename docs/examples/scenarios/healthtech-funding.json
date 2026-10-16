@@ -1,0 +1,2485 @@
+{
+ "slug": "healthtech-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:19Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "healthtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "healthtech"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 325,
+      "deals_with_amount": 287,
+      "deals_without_amount": 38,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 6425494925.0,
+      "median_amount_usd": 6480000.0,
+      "largest_amount_usd": 400000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 19,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 574593500.0,
+       "median_amount_usd": 9000000.0,
+       "largest_amount_usd": 218000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 24,
+       "deals_with_amount": 21,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 366274300.0,
+       "median_amount_usd": 8856000.0,
+       "largest_amount_usd": 125000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 24,
+       "deals_with_amount": 23,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 511489500.0,
+       "median_amount_usd": 7672000.0,
+       "largest_amount_usd": 218000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 32,
+       "deals_with_amount": 21,
+       "deals_without_amount": 11,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 406708600.0,
+       "median_amount_usd": 6000000.0,
+       "largest_amount_usd": 216000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 34,
+       "deals_with_amount": 31,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1849615000.0,
+       "median_amount_usd": 20000000.0,
+       "largest_amount_usd": 400000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 40,
+       "deals_with_amount": 38,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 794926000.0,
+       "median_amount_usd": 7780000.0,
+       "largest_amount_usd": 200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 19,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 582461000.0,
+       "median_amount_usd": 5000000.0,
+       "largest_amount_usd": 298000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 12,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 116254000.0,
+       "median_amount_usd": 3370000.0,
+       "largest_amount_usd": 30000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 23,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 328855000.0,
+       "median_amount_usd": 3600000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 38,
+       "deals_with_amount": 37,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 447772025.0,
+       "median_amount_usd": 6480000.0,
+       "largest_amount_usd": 55000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 28,
+       "deals_with_amount": 24,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 867671000.0,
+       "median_amount_usd": 9350000.0,
+       "largest_amount_usd": 200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 19,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 142435000.0,
+       "median_amount_usd": 1900000.0,
+       "largest_amount_usd": 80000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.058,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.063
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "healthtech",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "healthtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "46ec1399a84dc75f",
+       "company_name": "Judi Health (Capital Rx)",
+       "domain": null,
+       "round_type": "Series F",
+       "amount_usd": 400000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "wellington management",
+         "domain": "wellington.com",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "Generation IM",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Goldman Sachs Growth Equity",
+         "domain": "growth.gs.com",
+         "amount": null
+        },
+        {
+         "name": "9yards capital",
+         "domain": "9yardscapital.com",
+         "amount": null
+        },
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "edison partners",
+         "domain": "edisonpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Prime Health Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Transformation Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "expand PBM operations and deploy unified health benefits software",
+       "source_sentence": null,
+       "published_at": "2025-09-23T22:38:43",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9ac76c149d2bca77f26eb"
+       ],
+       "article_id": "68d9ac76c149d2bca77f26eb"
+      },
+      {
+       "id": "77e590704adea8b5",
+       "company_name": "function health",
+       "domain": "functionhealth.com",
+       "round_type": "Series B",
+       "amount_usd": 298000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 298000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "aglaé ventures",
+         "domain": "aglaeventures.com",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": null,
+       "city": "Austin",
+       "use_of_funds": null,
+       "source_sentence": "Function Health raised $298 million in Series B funding.",
+       "published_at": "2025-11-20T00:26:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "693165c77f7fb519dcf22a6b"
+       ],
+       "article_id": "693165c77f7fb519dcf22a6b"
+      },
+      {
+       "id": "b5119234ac7bc2f0",
+       "company_name": "PB Healthcare",
+       "domain": null,
+       "round_type": "initial round of funding",
+       "amount_usd": 218000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 218000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        }
+       ],
+       "sector": "healthtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "In May of this year, the vertical raised $218 million in its initial round of funding, which was headed by General Catalyst.",
+       "published_at": "2025-07-15T09:54:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cd43f8d29a990b6caee16"
+       ],
+       "article_id": "698cd43f8d29a990b6caee16"
+      },
+      {
+       "id": "8496f3d3f7c92c2b",
+       "company_name": "PB Healthcare",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 218000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 218000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        }
+       ],
+       "sector": "healthtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Seed round",
+       "source_sentence": "Healthcare company PB Healthcare led this segment with an impressive $218 million seed round, backed by General Catalyst.",
+       "published_at": "2025-05-10T08:49:27",
+       "coverage_count": 5,
+       "article_ids": [
+        "68430e42210ca338eb2f9aba",
+        "6898b01dab03b1b156e09bf3",
+        "68fea67554382b3e1bd83697",
+        "6988b19c3757765ee826d1f9",
+        "69bc1b0874855e3327fbac4d"
+       ],
+       "article_id": "68430e42210ca338eb2f9aba"
+      },
+      {
+       "id": "b9d65955e58ca3e6",
+       "company_name": "Ortivity",
+       "domain": "ortivity.de",
+       "round_type": "Not disclosed",
+       "amount_usd": 216000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apheon",
+         "domain": "apheon.com",
+         "amount": null
+        },
+        {
+         "name": "unigestion",
+         "domain": "unigestion.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "expand platform across Germany",
+       "source_sentence": "Ortivity, a Munich‑based healthtech startup focused on outpatient orthopedic care, has raised €200 million (approximately $215 million) in a new funding round to grow its platform across Germany.",
+       "published_at": "2025-09-04T23:11:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d98ffe1645babb987eb4f4"
+       ],
+       "article_id": "68d98ffe1645babb987eb4f4"
+      },
+      {
+       "id": "51df986fbcd141ca",
+       "company_name": "Ortivity",
+       "domain": "ortivity.de",
+       "round_type": null,
+       "amount_usd": 216000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apheon",
+         "domain": "apheon.com",
+         "amount": null
+        },
+        {
+         "name": "unigestion",
+         "domain": "unigestion.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": null,
+       "source_sentence": "The HealthTech startup Ortivity from Munich receives funding of around 200 million euros. The financing round is led by the existing majority investor Apheon, supported by the Swiss private equity company Unigestion.",
+       "published_at": "2025-08-27T13:21:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c58acab434e1071988d3c8"
+       ],
+       "article_id": "68c58acab434e1071988d3c8"
+      },
+      {
+       "id": "ef58a93176a291da",
+       "company_name": "pharmeasy",
+       "domain": "pharmeasy.in",
+       "round_type": "Debt Financing",
+       "amount_usd": 204000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 17000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "360 one",
+         "domain": "360.one",
+         "amount": null
+        },
+        {
+         "name": "Alkram Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "MVS Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bennett Coleman",
+         "domain": "https://www.linkedin.com/in/bennettwcoleman",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "The funding will be used primarily to repay a loan from Goldman Sachs, as PharmEasy works to restructure its obligations following a valuation cut of roughly 90%.",
+       "source_sentence": "The funding will be used primarily to repay a loan from Goldman Sachs, as PharmEasy works to restructure its obligations following a valuation cut of roughly 90%.",
+       "published_at": "2025-09-16T22:07:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d97cb042a4b594744c4e52"
+       ],
+       "article_id": "68d97cb042a4b594744c4e52"
+      },
+      {
+       "id": "7efd7fa32a3beb5e",
+       "company_name": "pharmeasy",
+       "domain": "pharmeasy.in",
+       "round_type": "Debt funding",
+       "amount_usd": 204000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 17000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "360 one",
+         "domain": "360.one",
+         "amount": null
+        },
+        {
+         "name": "Alkram Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "MVS Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bennett Coleman",
+         "domain": "https://www.linkedin.com/in/bennettwcoleman",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech / Pharmacies & Diagnostics",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "repay its Goldman Sachs loan",
+       "source_sentence": "Healthtech unicorn PharmEasy has raised INR 1,700 crore in debt funding led by 360 One, with participation from Alkram Ventures, MVS Ventures, Bennett Coleman, and others.",
+       "published_at": "2025-09-16T15:38:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cc6d38d29a990b6ca0989"
+       ],
+       "article_id": "698cc6d38d29a990b6ca0989"
+      },
+      {
+       "id": "335953a2c7dcac1d",
+       "company_name": "whoop",
+       "domain": "whoop.com",
+       "round_type": "Financing round",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3400000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 3400000000.0,
+       "investors": [
+        {
+         "name": "softbank",
+         "domain": "group.softbank",
+         "amount": null
+        },
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "GP Bullhound Fund V",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech",
+       "country": "United States",
+       "city": "Boston",
+       "use_of_funds": null,
+       "source_sentence": "In September 2021, GP Bullhound announced a new investment into WHOOP. The $200m financing round at a $3.4bn valuation was led by Softbank with participation from IVP and GP Bullhound Fund V.",
+       "published_at": "2026-03-31T11:18:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d14eecb63306cd5fc6b246"
+       ],
+       "article_id": "69d14eecb63306cd5fc6b246"
+      },
+      {
+       "id": "24a81043cafd8ac0",
+       "company_name": "emed",
+       "domain": "emed.com",
+       "round_type": null,
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 2000000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 2000000000.0,
+       "investors": [
+        {
+         "name": "AON Consulting, Inc.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "NFL legend and eMed Founding Chief Wellness Officer Tom Brady",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jeff Aronin, Founder, Chairman and CEO of Paragon Biosciences",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ara Cohen, Co-Founder and Co-Managing Member of Knighthead Capital Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Antonio Gracias, Founder and CEO of Valor Equity Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Joe Lonsdale, Founder and Managing Partner at 8VC and Co-Founder of Palantir",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "R.J. Melman, CEO, Lettuce Entertain You Restaurants",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tom Ricketts, Chairman of the Chicago Cubs",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "former X CEO and current eMed CEO Linda Yaccarino",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech",
+       "country": "USA",
+       "city": "MIAMI",
+       "use_of_funds": "expansion of digital health diagnostics platform and scaling of AI-driven healthcare delivery",
+       "source_sentence": "eMed today announced it has raised $200 million in funding at a $2 billion plus valuation.",
+       "published_at": "2026-03-26T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69cc5dccf8e7de13bc1e26d2",
+        "69dcd70a9232f7156912efca",
+        "69e29cf07f3a572cf4a9977e"
+       ],
+       "article_id": "69dcd70a9232f7156912efca"
+      },
+      {
+       "id": "800f6ae8814bd181",
+       "company_name": "oura",
+       "domain": "ouraring.com",
+       "round_type": null,
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 5000000000.0,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech",
+       "country": "Finland",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The round values Oura at around $11 billion, more than double its valuation of $5 billion when it raised $200 million.",
+       "published_at": "2025-10-15T06:25:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "69975f6b219d71cf48d30dcc"
+       ],
+       "article_id": "69975f6b219d71cf48d30dcc"
+      },
+      {
+       "id": "67454ed8becd3d37",
+       "company_name": "craneware",
+       "domain": "craneware.com",
+       "round_type": "Credit Facility",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hsbc",
+         "domain": "hsbc.com",
+         "amount": null
+        },
+        {
+         "name": "barclays",
+         "domain": "barclays.in",
+         "amount": null
+        },
+        {
+         "name": "natwest",
+         "domain": "natwest.com",
+         "amount": null
+        },
+        {
+         "name": "santander",
+         "domain": "santander.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "Support potential M&A activities and refinance existing debt",
+       "source_sentence": "Craneware said it has renewed its $100 million revolving credit facility (RCF) on improved terms, with the option of extending it for two further one-year terms.",
+       "published_at": "2025-09-01T17:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbd7590bf92aede2f3540c"
+       ],
+       "article_id": "69bbd7590bf92aede2f3540c"
+      },
+      {
+       "id": "2330765f422f1e26",
+       "company_name": "pharmeasy",
+       "domain": "pharmeasy.in",
+       "round_type": "debt",
+       "amount_usd": 193000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 193000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "360 one",
+         "domain": "360.one",
+         "amount": null
+        }
+       ],
+       "sector": "healthtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Growth and late-stage funding this week reached $320 million, led by healthtech firm Pharmeasy’s Rs 1,700 crore ($193 million) debt round from 360 One.",
+       "published_at": "2025-09-20T07:19:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d98d2a94c916e3e07e8582"
+       ],
+       "article_id": "68d98d2a94c916e3e07e8582"
+      },
+      {
+       "id": "45c9aaf9d5e24b1f",
+       "company_name": "UltraGreen.ai",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 188000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 188000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "65 Equity Partners",
+         "domain": "65equitypartners.com",
+         "amount": null
+        },
+        {
+         "name": "vitruvian partners",
+         "domain": "vitruvianpartners.com",
+         "amount": null
+        },
+        {
+         "name": "August Global Partners",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech",
+       "country": "Singapore",
+       "city": "Singapore",
+       "use_of_funds": "The capital raised will be used to expand the company’s capability and business, with people hired in the last eight weeks to help with regulations and cardiac data management support. There is also potential for possible acquisitions with the capital raised. The capital is also key in getting the manufacturing of the dye in Singapore.",
+       "source_sentence": "UltraGreen.ai has secured a US$188 million investment round led by 65 Equity Partners and Vitruvian Partners.",
+       "published_at": "2025-09-15T01:54:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c8e4765f1a530eb9680584"
+       ],
+       "article_id": "68c8e4765f1a530eb9680584"
+      },
+      {
+       "id": "7ea43cde8c19c501",
+       "company_name": "grow therapy",
+       "domain": "growtherapy.com",
+       "round_type": "Series D",
+       "amount_usd": 150000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 150000000.0,
+       "valuation": 3000000000.0,
+       "investors": [
+        {
+         "name": "tcv",
+         "domain": "tcv.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        }
+       ],
+       "sector": "HEALTHTECH",
+       "country": "United States",
+       "city": "New York City",
+       "use_of_funds": "Expand into employer-sponsored mental health benefits, integrate with primary care partnerships, and build advanced AI tools",
+       "source_sentence": "Grow Therapy – $150M Series D HEALTHTECH Grow Therapy, an online therapy platform for virtual or in-person therapy with licensed therapists, has raised $150M in Series D funding led by TCV and Goldman Sachs.",
+       "published_at": "2026-03-03T10:27:52",
+       "coverage_count": 7,
+       "article_ids": [
+        "69bcec950f7c42aae0d5680b",
+        "69c3a48e29aae2bd4e2d4bc3",
+        "69cba95136f67c5f5aa40ef1",
+        "69e2872abd7b10565a335614",
+        "69e287b9277be6ed2d964dc1",
+        "69e28e80c1991f786ce41fc0",
+        "69e63de02461615d5f41b00d"
+       ],
+       "article_id": "69bcec950f7c42aae0d5680b"
+      },
+      {
+       "id": "7fa6a486d4930a1a",
+       "company_name": "harbor health",
+       "domain": "harborhealth.com",
+       "round_type": "Series C",
+       "amount_usd": 130000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 130000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "alta partners",
+         "domain": "altapartners.com",
+         "amount": null
+        },
+        {
+         "name": "DFO Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Health2047 Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lemhi ventures",
+         "domain": "lemhiventures.com",
+         "amount": null
+        },
+        {
+         "name": "martin ventures",
+         "domain": "martinventures.com",
+         "amount": null
+        },
+        {
+         "name": "breyer capital",
+         "domain": "breyercapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "healthtech",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": "scale its integrated “payvider” model of care",
+       "source_sentence": "Harbor Health secured $130M in funding to scale integrated care platform.",
+       "published_at": "2025-09-10T22:25:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0fe15fb0e8d0abe2ca21b"
+       ],
+       "article_id": "68d0fe15fb0e8d0abe2ca21b"
+      },
+      {
+       "id": "659be7ed18317400",
+       "company_name": "ubie",
+       "domain": "ubiehealth.com",
+       "round_type": null,
+       "amount_usd": 125000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 125000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "Japan Post Capital",
+         "domain": "jp-capital.jp",
+         "amount": null
+        },
+        {
+         "name": "ntt docomo",
+         "domain": "nttdocomo.co.jp",
+         "amount": null
+        },
+        {
+         "name": "SEVEN-ELEVEN JAPAN",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "japan finance corporation",
+         "domain": "jfc.go.jp",
+         "amount": null
+        },
+        {
+         "name": "The Shoko Chukin Bank",
+         "domain": "shokochukin.co.jp",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI Diagnostics / Patient Navigation",
+       "country": null,
+       "city": null,
+       "use_of_funds": "The funding will support Ubie’s U.S. expansion, the development of generative AI for patient education, and the continued refinement of its provider-focused solutions in partnership with the Mayo Clinic.",
+       "source_sentence": "The funding will support Ubie’s U.S. expansion, the development of generative AI for patient education, and the continued refinement of its provider-focused solutions in partnership with the Mayo Clinic.",
+       "published_at": "2025-06-27T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f6fbc9ca02490ec2108fe"
+       ],
+       "article_id": "698f6fbc9ca02490ec2108fe"
+      },
+      {
+       "id": "799266fcee2e4dbf",
+       "company_name": "tandem",
+       "domain": "tandem.chat",
+       "round_type": "Series B",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        }
+       ],
+       "sector": "HEALTHTECH",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Tandem, an AI-powered healthcare platform that automates prescription access tasks for providers and patients, has raised $100M in Series B funding led by Accel.",
+       "published_at": "2026-01-27T13:27:28",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988a6ff3757765ee82630e5",
+        "6989d88a94d3f481f3ed74e4"
+       ],
+       "article_id": "6988a6ff3757765ee82630e5"
+      },
+      {
+       "id": "5ad8bee912168699",
+       "company_name": "Tala Health",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sofreh Capital",
+         "domain": "sofrehcapital.vdtrxn",
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech / AI‑enabled virtual care",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Rapid scaling of clinical AI model team and expand go‑to‑market",
+       "source_sentence": "Tala Health Secures $100M in Seed Funding at $1.2B Valuation to Re-Imagine AI-Enabled Healthcare",
+       "published_at": "2025-11-05T22:38:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931bbdf217f91e5e4f21fd9"
+       ],
+       "article_id": "6931bbdf217f91e5e4f21fd9"
+      },
+      {
+       "id": "714c7d6c42148c16",
+       "company_name": "inspiren",
+       "domain": "inspiren.com",
+       "round_type": "Series B",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "avenir",
+         "domain": "avenir-executive.co.jp",
+         "amount": null
+        },
+        {
+         "name": "primary venture partners",
+         "domain": "primary.vc",
+         "amount": null
+        },
+        {
+         "name": "scale venture partners",
+         "domain": "scalevp.com",
+         "amount": null
+        },
+        {
+         "name": "story ventures",
+         "domain": "storyventures.vc",
+         "amount": null
+        },
+        {
+         "name": "third prime",
+         "domain": "thirdprime.vc",
+         "amount": null
+        },
+        {
+         "name": "studio vc",
+         "domain": "studio.vc",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI / Senior Living Technology",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "The company will use the funds to enhance its AI capabilities, expand its senior living ecosystem nationwide, and advance clinical outcomes, staff efficiency, and resident satisfaction.",
+       "source_sentence": "Inspiren, a Brooklyn-based provider of AI-powered solutions for senior living, has raised $100 million in Series B funding.",
+       "published_at": "2025-10-07T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996b782a2e0730fa1ae7aa2"
+       ],
+       "article_id": "6996b782a2e0730fa1ae7aa2"
+      },
+      {
+       "id": "b508e400654cff08",
+       "company_name": "hearX",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "healthtech",
+       "country": "South Africa",
+       "city": null,
+       "use_of_funds": "driving growth in the healthtech sector",
+       "source_sentence": "hearX in South Africa secured $100 million, driving growth in the healthtech sector.",
+       "published_at": "2025-07-01T09:46:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcba689fa363bce365071f"
+       ],
+       "article_id": "69bcba689fa363bce365071f"
+      },
+      {
+       "id": "367b88c5c79d7188",
+       "company_name": "hearX",
+       "domain": null,
+       "round_type": "Merger",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eargo",
+         "domain": "eargo.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech",
+       "country": "South Africa",
+       "city": null,
+       "use_of_funds": "Merger",
+       "source_sentence": "One of the major deals recorded is South Africa’s healthtech startup, hearX, which raised $100 million through its merger with the US-based hearing aid firm, Eargo.",
+       "published_at": "2025-05-06T14:08:23",
+       "coverage_count": 3,
+       "article_ids": [
+        "68fe266ae01ff0caa628e9ad",
+        "6988a474eefc5d2f542ba953",
+        "6988dc0694d3f481f3dadc20"
+       ],
+       "article_id": "6988dc0694d3f481f3dadc20"
+      },
+      {
+       "id": "e2493b53ce8abbf0",
+       "company_name": "pomelo care",
+       "domain": "pomelocare.com",
+       "round_type": "Series C",
+       "amount_usd": 92000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 92000000.0,
+       "valuation": 1700000000.0,
+       "investors": [
+        {
+         "name": "stripes",
+         "domain": "stripes.co",
+         "amount": null
+        }
+       ],
+       "sector": "HEALTHTECH",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "expand beyond maternity care into broader women’s and pediatric care, scale partnerships",
+       "source_sentence": "Pomelo Care, a virtual maternal care platform, has raised $92M in Series C funding led by Stripes.",
+       "published_at": "2026-01-08T13:27:57",
+       "coverage_count": 3,
+       "article_ids": [
+        "69888819c314f8bff07ddb3c",
+        "6988b8f194d3f481f3d8347e",
+        "69baf4706ae47bec695f1a72"
+       ],
+       "article_id": "69888819c314f8bff07ddb3c"
+      },
+      {
+       "id": "6b37de1b3846521b",
+       "company_name": "comind",
+       "domain": "comind.io",
+       "round_type": null,
+       "amount_usd": 91800000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 85000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "neuro-healthtech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "advance its non-invasive brain monitoring technology that tracks vital brain parameters without drilling into the skull",
+       "source_sentence": "London-based CoMind , a neuro-healthtech startup, has raised over €85 million in total funding to advance its non-invasive brain monitoring technology that tracks vital brain parameters without drilling into the skull.",
+       "published_at": "2025-10-25T05:40:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e80ce9ca02490ec0f45b0"
+       ],
+       "article_id": "698e80ce9ca02490ec0f45b0"
+      },
+      {
+       "id": "7688c53bef0e0d87",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI / MedTech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "The company will use the funding to enhance its AI capabilities, deepen its proprietary MedTech data ontology, and expand its platform into broader workflows beyond commercial use cases.",
+       "source_sentence": "Funding Details Company: AcuityMD, Inc. Raised: $80.0M Round: Series C Funding Date: April 2026 Lead Investor: StepStone Group Additional Investors: Benchmark, Redpoint Ventures, ICONIQ, Atreides Management Company Website: https://www.acuitymd.com/",
+       "published_at": "2026-04-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d6327b2d589e844c0858"
+       ],
+       "article_id": "69f9d6327b2d589e844c0858"
+      },
+      {
+       "id": "23c19d25e452f1dc",
+       "company_name": "Assort Health",
+       "domain": "assorthealth.com",
+       "round_type": "Series B",
+       "amount_usd": 76000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 76000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "felicis",
+         "domain": "felicis.com",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "chemistry",
+         "domain": "trychemistry.com",
+         "amount": null
+        },
+        {
+         "name": "A*",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Liquid 2",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "quiet capital",
+         "domain": "quiet.com",
+         "amount": null
+        }
+       ],
+       "sector": "healthtech",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Fuel the expansion of engineering and product teams and accelerate development of the comprehensive patient experience suite, Assort OS.",
+       "source_sentence": "Assort Health, a San Francisco-based healthtech startup specializing in agentic AI for patient access, has raised $76 million in a Series B funding round led by Lightspeed Venture Partners.",
+       "published_at": "2025-09-30T23:34:25",
+       "coverage_count": 2,
+       "article_ids": [
+        "68f72a92f3ba9a3da52be90c",
+        "6996ba2533af8f1ff8a10843"
+       ],
+       "article_id": "68f72a92f3ba9a3da52be90c"
+      },
+      {
+       "id": "cbedbc35f8d06a46",
+       "company_name": "reveal healthtech",
+       "domain": "revealhealthtech.com",
+       "round_type": "Funding",
+       "amount_usd": 72000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 72000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech / AI in Healthcare",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "power mission to revolutionize healthcare delivery leveraging AI, data and next‑gen digital solutions",
+       "source_sentence": "Reveal HealthTech raised $72 million in funding",
+       "published_at": "2025-09-04T15:53:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d493a8d29a990b6d389b8"
+       ],
+       "article_id": "698d493a8d29a990b6d389b8"
+      },
+      {
+       "id": "7a140628e70c3be5",
+       "company_name": "sage",
+       "domain": "sageworld.com",
+       "round_type": "Series C",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Growth Equity at Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HEALTHTECH",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Expand its artificial intelligence platform designed to help caregivers in nursing homes and assisted living facilities",
+       "source_sentence": "Sage, an integrated care platform built for senior living and skilled nursing facilities, has raised $65M in Series C funding led by Growth Equity at Goldman Sachs Alternatives.",
+       "published_at": "2026-03-05T13:27:17",
+       "coverage_count": 7,
+       "article_ids": [
+        "69bcec590f7c42aae0d566c7",
+        "69bcec9358389c352a0a07c7",
+        "69bced01bc0fe678ea695928",
+        "69c3a48e29aae2bd4e2d4bc3",
+        "69cbd22f7aa9ae690c976d6b",
+        "69e63de02461615d5f41b00d",
+        "69e88ec47bb1410d4c90bf36"
+       ],
+       "article_id": "69bcec9358389c352a0a07c7"
+      },
+      {
+       "id": "f8704e06b578b391",
+       "company_name": "ReproNovo",
+       "domain": null,
+       "round_type": "Series-A",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Jeito Capital – AXA IM Alts",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "m ventures",
+         "domain": "merck-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "ysios capital",
+         "domain": "ysioscapital.com",
+         "amount": null
+        },
+        {
+         "name": "ALSA Ventures",
+         "domain": "alsaventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": "Switzerland",
+       "city": "Lausanne",
+       "use_of_funds": "further development of several phase 2 programmes in reproductive medicine",
+       "source_sentence": "The HealthTech start-up ReproNovo, based in Lausanne, has successfully completed a series-A financing round of over $65 million.",
+       "published_at": "2025-05-22T11:36:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c168a56a78bf0c56586b4e"
+       ],
+       "article_id": "68c168a56a78bf0c56586b4e"
+      },
+      {
+       "id": "37fbd95cb34ef10b",
+       "company_name": "comind",
+       "domain": "comind.io",
+       "round_type": null,
+       "amount_usd": 55080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 51000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "plural",
+         "domain": "plural.sh",
+         "amount": null
+        },
+        {
+         "name": "localglobe",
+         "domain": "localglobe.vc",
+         "amount": null
+        },
+        {
+         "name": "latitude",
+         "domain": "latitude.io",
+         "amount": null
+        },
+        {
+         "name": "octopus ventures",
+         "domain": "octopusventures.com",
+         "amount": null
+        },
+        {
+         "name": "crane",
+         "domain": "crane-usa.com",
+         "amount": null
+        },
+        {
+         "name": "angelini ventures",
+         "domain": "angeliniventures.com",
+         "amount": null
+        },
+        {
+         "name": "Lord David Prior",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Neurological HealthTech",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "support US clinical trials, regulatory approval journey, and manufacturing partnerships",
+       "source_sentence": "The company’s most recent round brought in €51 million, led by Plural, with participation from longstanding backers including LocalGlobe, Latitude, Octopus Ventures, Crane, Angelini Ventures, and Lord David Prior. This investment will support the company’s US clinical trials, regulatory approval journey, and manufacturing partnerships, as CoMind prepares to scale globally.",
+       "published_at": "2025-10-20T08:08:26",
+       "coverage_count": 2,
+       "article_ids": [
+        "68fe2309e01ff0caa6288a9c",
+        "698db1448d29a990b6db38dc"
+       ],
+       "article_id": "68fe2309e01ff0caa6288a9c"
+      },
+      {
+       "id": "24cb5c4221037fa5",
+       "company_name": "alaffia health",
+       "domain": "alaffiahealth.com",
+       "round_type": "Series B",
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Transformation Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech/InsurTech",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Scale AI‑powered health insurance claims platform",
+       "source_sentence": "Alaffia Health raises $55M in Series B funding to automate health insurance claims",
+       "published_at": "2026-02-03T23:42:46",
+       "coverage_count": 2,
+       "article_ids": [
+        "6985ebb211e3205ec98ec05b",
+        "698953d794d3f481f3e3ad9c"
+       ],
+       "article_id": "6985ebb211e3205ec98ec05b"
+      },
+      {
+       "id": "d35c9dd6f0346428",
+       "company_name": "alaffia health",
+       "domain": "alaffiahealth.com",
+       "round_type": "Series B",
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Transformation Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HEALTHTECH",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Further develop AI and expand its agent capabilities across different types of claims, and hire engineers, product leads, and growth professionals.",
+       "source_sentence": "Alaffia Health, an AI-powered platform that helps automate review and reduce waste in health insurance claims for health plans, has raised $55M in Series B funding led by Transformation Capital.",
+       "published_at": "2026-02-03T10:27:01",
+       "coverage_count": 9,
+       "article_ids": [
+        "6985ebb754148f65ea2f638f",
+        "6988880134d0159e4e74be53",
+        "6988ab8b3757765ee8267f4a",
+        "698f95bc8d29a990b6ff5f67",
+        "69bb1cb96ae47bec695fac40",
+        "69bb34730623092a924bd4e6",
+        "69bc0ee2ca83ba01fec67886",
+        "69cb5b6072135531f265dce1",
+        "69e63de02461615d5f41b00d"
+       ],
+       "article_id": "6988880134d0159e4e74be53"
+      },
+      {
+       "id": "b59d9b48259a759e",
+       "company_name": "ultromics",
+       "domain": "ultromics.com",
+       "round_type": "Series C",
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "legal & general",
+         "domain": "legalandgeneral.com",
+         "amount": null
+        },
+        {
+         "name": "allegis capital",
+         "domain": "allegiscapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightrock",
+         "domain": "lightrock.com",
+         "amount": null
+        },
+        {
+         "name": "oxford science enterprises",
+         "domain": "oxfordscienceenterprises.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "Blue Venture Fund",
+         "domain": "blueventurefund.com",
+         "amount": null
+        },
+        {
+         "name": "UCM Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "upmc enterprises",
+         "domain": "enterprises.upmc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech / AI diagnostics",
+       "country": "United Kingdom",
+       "city": "Oxford",
+       "use_of_funds": "Expand platform in U.S. healthcare market",
+       "source_sentence": "Ultromics, an Oxford, UK-based healthtech company using AI to detect heart disease from ultrasound images, raised $55 million in Series C funding to expand its platform in the U.S. healthcare market.",
+       "published_at": "2025-08-01T23:55:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d974062c909880704baad6"
+       ],
+       "article_id": "68d974062c909880704baad6"
+      },
+      {
+       "id": "acb5c63b2eb68d49",
+       "company_name": "Biorce",
+       "domain": "biorce.com",
+       "round_type": "Series A",
+       "amount_usd": 52000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 52000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "DST Global Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "norrsken vc",
+         "domain": "norrsken.org",
+         "amount": null
+        },
+        {
+         "name": "YZR Capital",
+         "domain": "yzr.vc",
+         "amount": null
+        },
+        {
+         "name": "mustard seed maze",
+         "domain": "mustardseed.vc",
+         "amount": null
+        },
+        {
+         "name": "Arthur Mensch",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Albert Nieto",
+         "domain": "https://www.linkedin.com/in/albert-nieto-riera-78ba9135",
+         "amount": null
+        },
+        {
+         "name": "Paulo Rosado",
+         "domain": "https://www.linkedin.com/in/paulorosado",
+         "amount": null
+        },
+        {
+         "name": "Nik Storonsky",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "healthtech",
+       "country": "Spain",
+       "city": "Barcelona",
+       "use_of_funds": "Expand internationally, build engineering and commercial teams, accelerate AI development",
+       "source_sentence": "Today, Biorce has raised $52 million in Series A funding, led by DST Global Partners, with Norrsken VC and YZR Capital doubling their commitments.",
+       "published_at": "2026-02-02T05:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69870213dac7b0ca9c62e908",
+        "6988ddf394d3f481f3dafd50",
+        "698f96859ca02490ec23ee7d"
+       ],
+       "article_id": "698f96859ca02490ec23ee7d"
+      },
+      {
+       "id": "322df69abecbb0d9",
+       "company_name": "arbiter",
+       "domain": "arbiter.me",
+       "round_type": "Venture",
+       "amount_usd": 52000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 52000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "MFO Ventures",
+         "domain": "mfoventures.com",
+         "amount": null
+        },
+        {
+         "name": "TriEdge Investments",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HEALTHTECH",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Arbiter – $52M Venture HEALTHTECH Arbiter, an orchestration platform for healthcare that connects patients, providers, and payers, has raised $52M in Venture funding led by MFO Ventures and TriEdge Investments.",
+       "published_at": "2025-11-20T13:27:35",
+       "coverage_count": 2,
+       "article_ids": [
+        "6988884fc314f8bff07ddde4",
+        "6988a741127162d16e0ad45b"
+       ],
+       "article_id": "6988884fc314f8bff07ddde4"
+      },
+      {
+       "id": "b58a772ca0ba3cb1",
+       "company_name": "SheMed",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": "UK",
+       "city": null,
+       "use_of_funds": "The new funding will be used to expand the firm’s UK operations, scaling its medical and technology teams, strengthening clinical infrastructure and enhancing its data-driven capabilities.",
+       "source_sentence": "Female-founded HealthTech firm SheMed has reached unicorn status after a $50 million (£37.3m) Series A funding round, taking its valuation to $1bn (£750m).",
+       "published_at": "2025-10-24T12:45:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "695d40347505245c57535ee5"
+       ],
+       "article_id": "695d40347505245c57535ee5"
+      },
+      {
+       "id": "69e9f8b925674fed",
+       "company_name": "tandem health",
+       "domain": "tandemhealth.ai",
+       "round_type": "Series A",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kinnevik",
+         "domain": "kinnevik.com",
+         "amount": null
+        },
+        {
+         "name": "northzone",
+         "domain": "northzone.com",
+         "amount": null
+        },
+        {
+         "name": "amino collective",
+         "domain": "aminocollective.com",
+         "amount": null
+        },
+        {
+         "name": "visionaries club",
+         "domain": "visionaries.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech AI clinician co‑pilot",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "expand product suite and accelerate growth across Europe",
+       "source_sentence": "Tandem Health, a Stockholm‑based AI healthtech startup, secured $50 million in a Series A round led by Kinnevik.",
+       "published_at": "2025-06-30T22:57:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d94cd8bf1dd95b86109f05"
+       ],
+       "article_id": "68d94cd8bf1dd95b86109f05"
+      },
+      {
+       "id": "eb9afabee045342f",
+       "company_name": "Biorce",
+       "domain": "biorce.com",
+       "round_type": "Series A",
+       "amount_usd": 47304000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 43800000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "DST Global Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "norrsken vc",
+         "domain": "norrsken.org",
+         "amount": null
+        },
+        {
+         "name": "YZR Capital",
+         "domain": "yzr.vc",
+         "amount": null
+        },
+        {
+         "name": "mustard seed maze",
+         "domain": "mustardseed.vc",
+         "amount": null
+        },
+        {
+         "name": "Arthur Mensch",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Albert Nieto",
+         "domain": "https://www.linkedin.com/in/albert-nieto-riera-78ba9135",
+         "amount": null
+        },
+        {
+         "name": "Paulo Rosado",
+         "domain": "https://www.linkedin.com/in/paulorosado",
+         "amount": null
+        },
+        {
+         "name": "Nik Storonsky",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": "Spain",
+       "city": "Barcelona",
+       "use_of_funds": "international growth, product development and hiring",
+       "source_sentence": "Biorce, a HealthTech company from Barcelona using AI to improve clinical trials, has closed a €43.8 million ($52 million) Series A round.",
+       "published_at": "2026-02-02T08:39:48",
+       "coverage_count": 4,
+       "article_ids": [
+        "6988a422a88ad7b9aae0a2be",
+        "698ceaf89ca02490ecf13502",
+        "698d51c98d29a990b6d43dbc",
+        "69bcd96f72dfd2e900a4bbee"
+       ],
+       "article_id": "698ceaf89ca02490ecf13502"
+      },
+      {
+       "id": "5b9081905dd0db1a",
+       "company_name": "Thesis Care",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 45000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "oak hc/ft",
+         "domain": "oakhcft.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": "USA",
+       "city": "NYC",
+       "use_of_funds": null,
+       "source_sentence": "Thesis Care, an AI-powered care team platform that deploys clinical AI agents backed by human clinicians to handle care management and clinical operations for healthcare organizations, has raised $45M in Series A funding led by Oak HC/FT.",
+       "published_at": "2026-03-26T13:27:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc307062898d9e03caff4b"
+       ],
+       "article_id": "69cc307062898d9e03caff4b"
+      },
+      {
+       "id": "a73cab6353672a7c",
+       "company_name": "hublo",
+       "domain": "hublo.com",
+       "round_type": "Reinvestment",
+       "amount_usd": 43200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "revaia",
+         "domain": "revaia.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "Support growth and expansion post‑sale",
+       "source_sentence": "Hublo, a Paris-based provider of workforce management software solutions for the healthcare sector, has raised received a €40 million reinvestment vehicle from growth investment firm Revaia.",
+       "published_at": "2026-02-03T12:24:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "6983a38a3afa3ce7e1aa48d6"
+       ],
+       "article_id": "6983a38a3afa3ce7e1aa48d6"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 325,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDItMDMgMTI6MjQ6MjkiLCJrIjoiMTIwNTA2OTUxNDYwMjU5ODY2ODQiLCJhIjo0MzIwMDAwMC4wfQ",
+     "totals": {
+      "deals": 325,
+      "deals_with_amount": 287,
+      "deals_without_amount": 38,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 6425494925.0,
+      "median_amount_usd": 6480000.0,
+      "largest_amount_usd": 400000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.09,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.095
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "healthtech",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "healthtech"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "ddfd0c1b6f1e0b6f",
+       "company_name": "sprect",
+       "domain": "sprect.com",
+       "round_type": "Seed",
+       "amount_usd": 240000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Healthtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "The startup plans to use the capital to expand its network of experts and improve its platform.",
+       "source_sentence": "Sprect Raises ₹2 Cr Seed Round",
+       "published_at": "2026-04-29T12:18:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f229c427117df83f9439e5"
+       ],
+       "article_id": "69f229c427117df83f9439e5"
+      },
+      {
+       "id": "802d21f49d67fd57",
+       "company_name": "sprect",
+       "domain": "sprect.com",
+       "round_type": "Seed",
+       "amount_usd": 2400000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Healthtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expand its network of experts and improve its platform",
+       "source_sentence": "Sprect Raises ₹2 Cr Seed Round Sprect, a platform offering expert consultations, raised INR 2 crore in funding.",
+       "published_at": "2026-04-29T12:18:40",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f8809d8937ef12fc072dd3"
+       ],
+       "article_id": "69f8809d8937ef12fc072dd3"
+      },
+      {
+       "id": "6f9240cda046f9d3",
+       "company_name": "dehaze",
+       "domain": "dehaze.io",
+       "round_type": "seed",
+       "amount_usd": 3456000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 3200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "YZR Capital",
+         "domain": "yzr.vc",
+         "amount": null
+        },
+        {
+         "name": "dn capital",
+         "domain": "dncapital.com",
+         "amount": null
+        },
+        {
+         "name": "angel invest",
+         "domain": "angelinvest.ventures",
+         "amount": null
+        },
+        {
+         "name": "zoho",
+         "domain": "zoho.com",
+         "amount": null
+        },
+        {
+         "name": "better ventures",
+         "domain": "better.vc",
+         "amount": null
+        }
+       ],
+       "sector": "healthtech",
+       "country": "Germany",
+       "city": "Munich",
+       "use_of_funds": "scale its AI platform for detection of chronic diseases and drive forward international expansion",
+       "source_sentence": "The Munich-based healthtech start-up Dehaze has completed a seed round of 3.2 million euros.",
+       "published_at": "2026-04-28T11:00:17",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e5dd45272de32e8c28a1",
+        "69f1ce52399b489398e1d983"
+       ],
+       "article_id": "69f0e5dd45272de32e8c28a1"
+      },
+      {
+       "id": "dbf75b225ba32693",
+       "company_name": "TriFetch",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 1900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "hippocratic ai",
+         "domain": "hippocraticai.com",
+         "amount": null
+        },
+        {
+         "name": "mercor",
+         "domain": "mercor.com",
+         "amount": null
+        },
+        {
+         "name": "mit",
+         "domain": "mitec.com.mx",
+         "amount": null
+        }
+       ],
+       "sector": "healthtech",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "TriFetch, a San Francisco-based healthtech startup, has raised $1.9 million in pre-seed funding led by Nexus Venture Partners, with angel participation from operators at Google, Hippocratic AI, Mercor and MIT.",
+       "published_at": "2026-04-27T12:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69f0e93fd32561089420dbbe",
+        "69f885dbbbf1d31455998969"
+       ],
+       "article_id": "69f0e93fd32561089420dbbe"
+      },
+      {
+       "id": "a34bbda986cebe21",
+       "company_name": "calibre",
+       "domain": "calibre-ebook.com",
+       "round_type": "pre-Seed",
+       "amount_usd": 3024000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2800000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Berlin-based Amino Collective",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Daybreak Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "cocoa ventures",
+         "domain": "cocoa.vc",
+         "amount": null
+        },
+        {
+         "name": "group of experienced founders, operators and medical experts",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Timo Boldt",
+         "domain": "https://www.linkedin.com/in/timo-boldt-18b52463/",
+         "amount": null
+        },
+        {
+         "name": "Maximilian Tayenthal",
+         "domain": "https://www.linkedin.com/in/maximilian-tayenthal-04019a68/",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "To advance proactive health by introducing and expanding the Causal Health Navigation approach",
+       "source_sentence": "Calibre, a London-based HealthTech company, exits stealth mode after raising €2.8 million (£2.5 million) in pre-Seed funding to date.",
+       "published_at": "2026-04-22T00:00:00",
+       "coverage_count": 3,
+       "article_ids": [
+        "69e8bc695cfa3e5ba5309e79",
+        "69e99931d47fc02832176ccd",
+        "6a2a88bcc37f6c5e66cb151a"
+       ],
+       "article_id": "69e99931d47fc02832176ccd"
+      },
+      {
+       "id": "7688c53bef0e0d87",
+       "company_name": "acuitymd",
+       "domain": "acuitymd.com",
+       "round_type": "Series C",
+       "amount_usd": 80000000.0,
+       "amount_flag": null,
+       "valuation_usd": 955000000.0,
+       "currency": "USD",
+       "amount": 80000000.0,
+       "valuation": 955000000.0,
+       "investors": [
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "atreides management",
+         "domain": "atreidesmgmt.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / AI / MedTech",
+       "country": "USA",
+       "city": "Boston",
+       "use_of_funds": "The company will use the funding to enhance its AI capabilities, deepen its proprietary MedTech data ontology, and expand its platform into broader workflows beyond commercial use cases.",
+       "source_sentence": "Funding Details Company: AcuityMD, Inc. Raised: $80.0M Round: Series C Funding Date: April 2026 Lead Investor: StepStone Group Additional Investors: Benchmark, Redpoint Ventures, ICONIQ, Atreides Management Company Website: https://www.acuitymd.com/",
+       "published_at": "2026-04-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d6327b2d589e844c0858"
+       ],
+       "article_id": "69f9d6327b2d589e844c0858"
+      },
+      {
+       "id": "20f567cf7c8437c8",
+       "company_name": "Axten Hospitals",
+       "domain": null,
+       "round_type": "Pre-Seed",
+       "amount_usd": 300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 25000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pedalstart",
+         "domain": "pedalstart.com",
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech / Surgical Care",
+       "country": "India",
+       "city": "New Delhi",
+       "use_of_funds": "launch three new hospital facilities over the next 12 months through a predominantly asset-light model",
+       "source_sentence": "Axten Hospitals Raises INR 2.5 Cr from PedalStart A unit of TAH Global Healthcare Pvt. Ltd., Axten Hospitals, has raised INR 2.5 crore in its first structured funding round led by PedalStart with participation from angel investors.",
+       "published_at": "2026-04-20T11:33:45",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e882407bb1410d4c880941",
+        "69e99534bdd09a23d08cdf9f"
+       ],
+       "article_id": "69e882407bb1410d4c880941"
+      },
+      {
+       "id": "e703e10d06e27026",
+       "company_name": "Na",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 1710000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1710000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Caret Capital",
+         "domain": "caretcap.com",
+         "amount": null
+        },
+        {
+         "name": "Ev2 Ventures",
+         "domain": "ev2.vc",
+         "amount": null
+        },
+        {
+         "name": "ThinKuvate",
+         "domain": "thinkuvate.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthtech",
+       "country": "India",
+       "city": "Kochi",
+       "use_of_funds": null,
+       "source_sentence": "In a previous seed funding round, the Kochi-based startup raised about $1.71 million from investors like Caret Capital, Ev2 Ventures, and ThinKuvate.",
+       "published_at": "2026-04-11T11:18:44",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8a8fb7bb1410d4ca5d843",
+        "6a2aa687963d76f4afed4aa6"
+       ],
+       "article_id": "69e8a8fb7bb1410d4ca5d843"
+      },
+      {
+       "id": "0a4e3b15cd06c845",
+       "company_name": "Surf Therapeutics",
+       "domain": "surftherapeutics.vdtrxn",
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Jetstream Venture Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "HealthTech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "development of a non-invasive ultrasound neuromodulation platform to treat chronic inflammatory disorders such as rheumatoid arthritis",
+       "source_sentence": "Jetstream Venture Fund announced it has secured positions in two startups, Surf Therapeutics and Hill Research, marking a significant expansion of its HealthTech and artificial intelligence portfolio. The moves underscore the fund’s strategy of providing broader investor access to venture-style opportunities traditionally limited to institutional capital. The fund’s investment in Surf Therapeutics targets the development of a non-invasive ultrasound neuromodulation platform designed to treat chronic inflammatory disorders such as rheumatoid arthritis.",
+       "published_at": "2026-04-10T14:38:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e349e7ac5738806591334b"
+       ],
+       "article_id": "69e349e7ac5738806591334b"
+      },
+      {
+       "id": "b41ee9870303ffd7",
+       "company_name": "Gabify",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 30000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 2500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "GHRTBI",
+         "domain": null,
+         "amount": 2500000.0
+        }
+       ],
+       "sector": "healthtech",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "team growth, technology development, and clinical validation",
+       "source_sentence": "Additionally, the startup received Rs 25 lakh from GHRTBI under the Nidhi Seed Support Scheme.",
+       "published_at": "2026-04-10T07:46:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8894a5cfa3e5ba5096270"
+       ],
+       "article_id": "69e8894a5cfa3e5ba5096270"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 112,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTAgMDc6NDY6MjciLCJrIjoiMTI5NzkwNjc5NDIyMDg3OTg2NzkifQ",
+     "totals": {
+      "deals": 112,
+      "deals_with_amount": 103,
+      "deals_without_amount": 9,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 1786733025.0,
+      "median_amount_usd": 5000000.0,
+      "largest_amount_usd": 200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.183,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.196
+    }
+   }
+  }
+ ]
+}

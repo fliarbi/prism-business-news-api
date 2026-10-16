@@ -1,0 +1,2595 @@
+{
+ "slug": "quick-commerce-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:21Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "quick commerce",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "quick commerce"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 81,
+      "deals_with_amount": 72,
+      "deals_without_amount": 9,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 5114355000.0,
+      "median_amount_usd": 12000000.0,
+      "largest_amount_usd": 1200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 356000000.0,
+       "median_amount_usd": 100000000.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 0,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 4,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4150000.0,
+       "median_amount_usd": 900000.0,
+       "largest_amount_usd": 3000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 16,
+       "deals_with_amount": 15,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 486000000.0,
+       "median_amount_usd": 6100000.0,
+       "largest_amount_usd": 350000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 49000000.0,
+       "median_amount_usd": 23000000.0,
+       "largest_amount_usd": 23000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 6,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 456500000.0,
+       "median_amount_usd": 3300000.0,
+       "largest_amount_usd": 450000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 7,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2140000000.0,
+       "median_amount_usd": 465000000.0,
+       "largest_amount_usd": 1200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 4,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2300000000.0,
+       "median_amount_usd": 1150000000.0,
+       "largest_amount_usd": 1200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 10,
+       "deals_with_amount": 8,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 115700000.0,
+       "median_amount_usd": 8000000.0,
+       "largest_amount_usd": 60000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 18,
+       "deals_with_amount": 17,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 274705000.0,
+       "median_amount_usd": 9000000.0,
+       "largest_amount_usd": 100000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 601000000.0,
+       "median_amount_usd": 300000000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.086,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.099
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "quick commerce",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "quick commerce"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "0752ec1c51b7caf7",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "Qualified institutional placement",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 100000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "capital group",
+         "domain": "capitalgroup.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        }
+       ],
+       "sector": "Food Delivery, Quick Commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Brand marketing and promotion, technology and cloud infrastructure, quick-commerce fulfilment network expansion, inorganic growth through acquisitions, general corporate purposes",
+       "source_sentence": "Swiggy, the Indian food delivery and quick-commerce company, has raised ₹10,000 crore through a qualified institutions placement, arming itself with fresh capital at a moment when brand visibility, speed and consumer trust are becoming as decisive as logistics in India’s crowded consumer internet market.",
+       "published_at": "2025-12-22T03:01:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cdf159ca02490ecf05d6a"
+       ],
+       "article_id": "698cdf159ca02490ecf05d6a"
+      },
+      {
+       "id": "42730d23f5cb0750",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "Qualified Institutional Placement (QIP)",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 100000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Foodtech; Quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expansion of quick commerce vertical Instamart",
+       "source_sentence": "Swiggy today said its shareholders approved a proposal to raise up to INR 10,000 Cr via qualified institutional placement (QIP).",
+       "published_at": "2025-12-08T17:46:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9460977f2c3a5a19316d1"
+       ],
+       "article_id": "69c9460977f2c3a5a19316d1"
+      },
+      {
+       "id": "3fcdbc1497ca13eb",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "Qualified Institutional Placement",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 100000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "bolster cash reserves, expand quick-commerce fulfillment networks, invest in technology and cloud infrastructure, support customer acquisition, fund brand marketing efforts, repay or pre-pay borrowings, and possibly pursue acquisitions",
+       "source_sentence": "Swiggy is pitching a Qualified Institutional Placement (QIP) of up to ₹10,000 crore.",
+       "published_at": "2025-11-28T07:19:42",
+       "coverage_count": 3,
+       "article_ids": [
+        "6989819294d3f481f3e6bd74",
+        "698e88e78d29a990b6eb5e2b",
+        "69bbe9978d57adc3f4d85f96"
+       ],
+       "article_id": "6989819294d3f481f3e6bd74"
+      },
+      {
+       "id": "43fe9084563e8aac",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "QIP",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 100000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Quick commerce / Food delivery",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "war chest / shore up balance sheet",
+       "source_sentence": "Swiggy has recently cleared a fundraising plan of up to Rs 10,000 crore, through a combination of public or private offerings to shore up its balance sheet and gain market share in India’s fiercely competitive quick-commerce and food delivery markets.",
+       "published_at": "2025-11-19T08:09:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "6931322a82aa3a0a39f20bfb",
+        "69316bf7f835cfe63ff2294f",
+        "69452beb0edad51474a35816",
+        "69bbc0b4ac5a7877f6e7405c",
+        "69cc5b70384faa79b69072a1",
+        "69de0e4b2a90a3afcfba74a5"
+       ],
+       "article_id": "69316bf7f835cfe63ff2294f"
+      },
+      {
+       "id": "4f83db039167619e",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "Qualified Institutional Placement",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 100000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jp morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "Kotak Mahindra Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "citi",
+         "domain": "citigroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strategic reserves and innovation capital",
+       "source_sentence": "The company has reportedly onboarded JP Morgan, Kotak Mahindra Capital, and Citi as advisors for a Qualified Institutional Placement (QIP) worth up to ₹10,000 crore, according to industry sources.",
+       "published_at": "2025-11-11T14:53:47",
+       "coverage_count": 5,
+       "article_ids": [
+        "6931272546356ea632f21902",
+        "693173124e9768644af20482",
+        "6931b934b72fd1fcc3f215a7",
+        "694540ab87e7fc666aa357d4",
+        "69efa9638a54b8f07c954e90"
+       ],
+       "article_id": "6931b934b72fd1fcc3f215a7"
+      },
+      {
+       "id": "89d6d0f79e80d2c6",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "QIP",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 100000000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Swiggy has board approval for a ₹10,000-crore QIP, which analysts view as a pre-emptive move to shore up liquidity amid intensifying competition.",
+       "published_at": "2025-11-11T13:51:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69146fda90abce7a8a2dfc2a"
+       ],
+       "article_id": "69146fda90abce7a8a2dfc2a"
+      },
+      {
+       "id": "54db7f6f0e17b704",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "QIP",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Citigroup",
+         "domain": "citigroup.com",
+         "amount": null
+        },
+        {
+         "name": "jpmorgan chase",
+         "domain": "jpmorganchase.com",
+         "amount": null
+        },
+        {
+         "name": "Kotak Mahindra Capital",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Food and grocery delivery, quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Strategic flexibility and growth capital",
+       "source_sentence": "Swiggy Limited shares closed at ₹402.60 on Wednesday, today, up 0.80 per cent or ₹3.20 from the previous close of ₹399.40, as the company prepares to raise $1.1 billion through a qualified institutional placement as early as next week, according to a Bloomberg report.",
+       "published_at": "2025-12-03T11:08:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "694df5cb972c532215f2f15c"
+       ],
+       "article_id": "694df5cb972c532215f2f15c"
+      },
+      {
+       "id": "c19bd23a7b5a5e24",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "Qualified Institutional Placement",
+       "amount_usd": 1100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1100000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Quick commerce company Swiggy is planning to raise $1.1 billion through a qualified institutional placement, said a Bloomberg report.",
+       "published_at": "2025-12-02T11:00:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "693132372b76550db3f20ef8"
+       ],
+       "article_id": "693132372b76550db3f20ef8"
+      },
+      {
+       "id": "e552bf56b61e3b2b",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": "Confidential filing",
+       "amount_usd": 480000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 40000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Zepto is preparing a confidential filing to raise around ₹4,000 crore.",
+       "published_at": "2025-11-28T07:19:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989819294d3f481f3e6bd74"
+       ],
+       "article_id": "6989819294d3f481f3e6bd74"
+      },
+      {
+       "id": "dc537d0a03eb25ca",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": null,
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "calpers",
+         "domain": "calpers.ca.gov",
+         "amount": 450000000.0
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": null,
+       "source_sentence": "The Mumbai-based start-up has raised nearly $2 billion over the past two years, including $450 million in a round led by the California Public Employees’ Retirement System (CalPERS) — one of the world’s largest pension funds.",
+       "published_at": "2025-11-11T13:51:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69146fda90abce7a8a2dfc2a"
+       ],
+       "article_id": "69146fda90abce7a8a2dfc2a"
+      },
+      {
+       "id": "53c1b9248b5fbbe6",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": "pre-IPO round",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7000000000.0,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": 7000000000.0,
+       "investors": [
+        {
+         "name": "calpers",
+         "domain": "calpers.ca.gov",
+         "amount": null
+        },
+        {
+         "name": "avenir",
+         "domain": "avenir-executive.co.jp",
+         "amount": null
+        },
+        {
+         "name": "avra",
+         "domain": "avraworld.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "Glade Brook Capital",
+         "domain": "gladebrookcapital.com",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": null,
+       "source_sentence": "Mumbai-based quick commerce company Zepto has secured $450 million in fresh funding led by the California Public Employees’ Retirement System (CalPERS), one of the world’s largest pension funds, valuing the startup at $7 billion.",
+       "published_at": "2025-10-16T14:58:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69a1d1dde1d8424ccc7b3a7b"
+       ],
+       "article_id": "69a1d1dde1d8424ccc7b3a7b"
+      },
+      {
+       "id": "ec68d32c3b9b7524",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": "Series Unknown",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7000000000.0,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": 7000000000.0,
+       "investors": [
+        {
+         "name": "calpers",
+         "domain": "calpers.ca.gov",
+         "amount": null
+        },
+        {
+         "name": "avenir",
+         "domain": "avenir-executive.co.jp",
+         "amount": null
+        },
+        {
+         "name": "avra",
+         "domain": "avraworld.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Glade Brook",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": null,
+       "city": null,
+       "use_of_funds": "The fresh capital will support Zepto in regaining market share in the quick commerce market.",
+       "source_sentence": "Quick commerce major Zepto has raised nearly $450 Mn (around INR 3,955 Cr) in a funding round led by US-based pension fund California Public Employees’ Retirement System (CalPERS).",
+       "published_at": "2025-10-16T11:53:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "6998176a5c8cb4670490cac6"
+       ],
+       "article_id": "6998176a5c8cb4670490cac6"
+      },
+      {
+       "id": "88fc95d7d91ebf1c",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": "pre-IPO financing",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "calpers",
+         "domain": "calpers.ca.gov",
+         "amount": null
+        },
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "We are also investing in technology and IP creation - from automating financial processes and building supply chain intelligence to deepening our advertising and AI capabilities.",
+       "source_sentence": "Mumbai-based quick commerce startup Zepto has raised close to $450 million in a mix of primary and secondary transactions (majority being primary), valuing the company at $7 billion.",
+       "published_at": "2025-10-16T10:42:15",
+       "coverage_count": 1,
+       "article_ids": [
+        "68fe1df841f75f682727f135"
+       ],
+       "article_id": "68fe1df841f75f682727f135"
+      },
+      {
+       "id": "829bf16884e1c13f",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": null,
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": 7000000000.0,
+       "investors": [
+        {
+         "name": "calpers",
+         "domain": "calpers.ca.gov",
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "avenir",
+         "domain": "avenir-executive.co.jp",
+         "amount": null
+        },
+        {
+         "name": "avra",
+         "domain": "avraworld.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "Glade Brook",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "the stepstone group",
+         "domain": "thestepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Quick Commerce",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "Scale operations and increase market share",
+       "source_sentence": "Zepto is in the advanced stages of raising $450 million (around Rs 3,900 crore) as the quick commerce unicorn looks to double down on its offerings, scale operations and increase market share in a competitive landscape, people familiar with the development told Moneycontrol.",
+       "published_at": "2025-10-01T15:25:40",
+       "coverage_count": 22,
+       "article_ids": [
+        "68f70dbff80e5160742ba927",
+        "68f71ac4017a8a94832cde73",
+        "68f71bf3017a8a94832cfb14",
+        "68f71d02b5f4abc34a2d1bbb",
+        "68f73332f6f885b63d2cb9ff",
+        "68fe13cfadf076a01a298edd",
+        "68fe13d6adf076a01a298fab",
+        "68fe13e0adf076a01a2990e6",
+        "68fe1de646325a41ca27ef27",
+        "68fe1fc941f75f68272824e2",
+        "68fe2dff92ef2af9ad2801da",
+        "68fe2e0592ef2af9ad2802bd",
+        "68fe2e1b606fcdbfff28055f",
+        "68fe2eea92ef2af9ad281aeb",
+        "690e2f276d5fbb10592484aa",
+        "693173124e9768644af20482",
+        "698889975302bdff258774f4",
+        "6988a83dafe26ce3df67305c",
+        "698d6b2e9ca02490ecfabd16",
+        "698e86099ca02490ec0fb158",
+        "69bcdcc8981d28529ed2db42",
+        "69bd89c2236c5426102b7a26"
+       ],
+       "article_id": "68f71ac4017a8a94832cde73"
+      },
+      {
+       "id": "71984ff0ffc18d03",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": "Financing",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "motilal oswal",
+         "domain": "motilaloswal.com",
+         "amount": null
+        },
+        {
+         "name": "Raamdeo Agrawal",
+         "domain": "https://www.linkedin.com/in/raamdeo-agrawal-68276a84",
+         "amount": null
+        },
+        {
+         "name": "Motilal Oswal’s clients",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Notably, the latest fundraise comes months after MOFSL’s founders Motilal Oswal and Raamdeo Agrawal bought Zepto shares worth $100 Mn in May. This was part of a larger $350 Mn round, with the remaining amount being mopped up by Motilal Oswal’s clients, including domestic family offices.",
+       "published_at": "2025-08-12T16:36:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcce9d1d0b3f0860ef1b69"
+       ],
+       "article_id": "69bcce9d1d0b3f0860ef1b69"
+      },
+      {
+       "id": "1950ca67266d0125",
+       "company_name": "Amazon Now",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Amazon India",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Quick Commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand Amazon Now to 100 cities across India, build micro‑fulfilment centres and scale operations.",
+       "source_sentence": "Amazon India has announced a ₹2,800 crore (approximately $300 million) investment to dramatically scale its quick commerce vertical, Amazon Now.",
+       "published_at": "2026-04-27T10:39:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e8ee836d28f995cbc119"
+       ],
+       "article_id": "69f0e8ee836d28f995cbc119"
+      },
+      {
+       "id": "82e454626e231ea9",
+       "company_name": "Amazon India",
+       "domain": null,
+       "round_type": "Investment",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Amazon India",
+         "domain": null,
+         "amount": 300000000.0
+        }
+       ],
+       "sector": "Logistics & Quick Commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Scale its logistics and Amazon Now quick commerce network while enhancing associate safety and wellbeing",
+       "source_sentence": "Amazon India will invest over INR 2,800 crore (USD 300 million) to scale its logistics and \"Amazon Now\" quick commerce network while enhancing associate safety and wellbeing.",
+       "published_at": "2026-04-23T10:33:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea38fa73206aa299ee2154"
+       ],
+       "article_id": "69ea38fa73206aa299ee2154"
+      },
+      {
+       "id": "e5ba846634619cfb",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": "secondary sale",
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "motilal oswal",
+         "domain": "motilaloswal.com",
+         "amount": null
+        },
+        {
+         "name": "Edelweiss Hero Fincorp",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": null,
+       "source_sentence": "Zepto also lead a secondary sale round to the tune of $250 million, wherein the company may pool-in money from domestic investors including Motilal Oswal (the firm), Edelweiss Hero Fincorp and others to buy shares from its foreign investors to push the domestic ownership.",
+       "published_at": "2025-05-13T04:12:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bafcd2fa8c4837c971444d"
+       ],
+       "article_id": "69bafcd2fa8c4837c971444d"
+      },
+      {
+       "id": "f8dd1e51341c71f0",
+       "company_name": "flink",
+       "domain": "miflink.com",
+       "round_type": "growth funding",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "prosus",
+         "domain": "prosus.com",
+         "amount": null
+        },
+        {
+         "name": "btomorrow ventures",
+         "domain": "btomorrowv.com",
+         "amount": null
+        },
+        {
+         "name": "existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "open targeted hubs in Germany, expand in the Netherlands, improve operations and logistics",
+       "source_sentence": "Today, the company raised $100 million in growth funding led by Prosus, along with existing investors and new backer Btomorrow Ventures, BAT’s corporate venture capital arm.",
+       "published_at": "2026-03-03T07:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e869755cfa3e5ba5f5361d"
+       ],
+       "article_id": "69e869755cfa3e5ba5f5361d"
+      },
+      {
+       "id": "c7cb92ab474811af",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": "secondary share sale",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "motilal oswal",
+         "domain": "motilaloswal.com",
+         "amount": 50000000.0
+        },
+        {
+         "name": "Raamdeo Agrawal",
+         "domain": "https://www.linkedin.com/in/raamdeo-agrawal-68276a84",
+         "amount": 50000000.0
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": null,
+       "source_sentence": "Both marquee names of Dalal Street have bought shares worth $50 million (nearly Rs 425 crore) each in the quick commerce (QC) unicorn, said a report from Moneycontrol, citing sources.",
+       "published_at": "2025-05-13T04:12:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bafcd2fa8c4837c971444d"
+       ],
+       "article_id": "69bafcd2fa8c4837c971444d"
+      },
+      {
+       "id": "628e08e206542160",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": "personal investment",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "motilal oswal",
+         "domain": "motilaloswal.com",
+         "amount": 50000000.0
+        },
+        {
+         "name": "Raamdeo Agrawal",
+         "domain": "https://www.linkedin.com/in/raamdeo-agrawal-68276a84",
+         "amount": 50000000.0
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Motilal Oswal and Raamdeo Agrawal, co-founders of Motilal Oswal Financial Services , have each invested $50 million in quick commerce startup Zepto in their personal capacities, totalling $100 million, sources told CNBC-TV18.",
+       "published_at": "2025-05-12T12:39:04",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b054653b014c087aedc5e7"
+       ],
+       "article_id": "68b054653b014c087aedc5e7"
+      },
+      {
+       "id": "9590808633255dcb",
+       "company_name": "inamo",
+       "domain": "inamo.com",
+       "round_type": "Series A",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13200000.0,
+       "currency": "INR",
+       "amount": 5000000000.0,
+       "valuation": 1100000000.0,
+       "investors": [
+        {
+         "name": "Five SB Limited",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Shastra VC",
+         "domain": "shastra.vc",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "gemba capital",
+         "domain": "gembacapital.in",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce enablement startup",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Quick commerce enablement startup Inamo is raising ₹50 Cr (about $5.4 Mn) in what seems to be its Series A funding round.",
+       "published_at": "2026-02-28T07:51:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbe60ed652ae4c39903fe6"
+       ],
+       "article_id": "69cbe60ed652ae4c39903fe6"
+      },
+      {
+       "id": "443afa79cb371a5b",
+       "company_name": "inamo",
+       "domain": "inamo.com",
+       "round_type": "Series A",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": 13200000.0,
+       "currency": "INR",
+       "amount": 5000000000.0,
+       "valuation": 1100000000.0,
+       "investors": [
+        {
+         "name": "Five SB Limited",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Shastra VC",
+         "domain": "shastra.vc",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "gemba capital",
+         "domain": "gembacapital.in",
+         "amount": null
+        }
+       ],
+       "sector": "Quick commerce enablement",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand its operations",
+       "source_sentence": "Quick commerce enablement startup Inamo is raising ₹50 Cr (about $5.4 Mn) in what seems to be its Series A funding round.",
+       "published_at": "2026-02-28T07:51:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc87f1ded38472ac538a28"
+       ],
+       "article_id": "69bc87f1ded38472ac538a28"
+      },
+      {
+       "id": "4d0c19eab1e82d59",
+       "company_name": "blinkit",
+       "domain": "blinkit.com",
+       "round_type": "Rights Issue",
+       "amount_usd": 54000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 4500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "eternal",
+         "domain": "eternal.bio",
+         "amount": 4500000000.0
+        }
+       ],
+       "sector": "Quick Commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "strengthen its operations and expand its quick-commerce network",
+       "source_sentence": "Eternal, the parent entity of quick-commerce platform Blinkit, has infused ₹450 crore through a rights issue",
+       "published_at": "2026-03-12T12:53:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd1e631f507d55385aea5"
+       ],
+       "article_id": "69cbd1e631f507d55385aea5"
+      },
+      {
+       "id": "bea6efb2bab64a2e",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": "Financing",
+       "amount_usd": 48000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 4000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "motilal oswal financial services",
+         "domain": "motilaloswalgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Adding to its spree of fundraises in the past two weeks, quick commerce major Zepto has now raised INR 400 Cr (about $45.7 Mn) from financial services company Motilal Oswal Financial Services Ltd (MOFSL).",
+       "published_at": "2025-08-12T16:36:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcce9d1d0b3f0860ef1b69"
+       ],
+       "article_id": "69bcce9d1d0b3f0860ef1b69"
+      },
+      {
+       "id": "6875959361634559",
+       "company_name": "zepto",
+       "domain": "zepto.com.au",
+       "round_type": null,
+       "amount_usd": 46000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 46000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "motilal oswal financial services",
+         "domain": "motilaloswalgroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Quick commerce unicorn Zepto followed with a $46 million round led by Motilal Oswal Financial Services…",
+       "published_at": "2025-08-16T06:14:13",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d0eb9e65fd12d4142b9af4",
+        "68f73332f6f885b63d2cb9ff",
+        "698ef1da8d29a990b6f325d1"
+       ],
+       "article_id": "68d0eb9e65fd12d4142b9af4"
+      },
+      {
+       "id": "ca24e101e9b0dc9d",
+       "company_name": "Munchmart Technologies Private Limited (Swish)",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 38000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 38000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Hara Global Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "accel india",
+         "domain": "accelindia.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce and food delivery",
+       "country": null,
+       "city": null,
+       "use_of_funds": "scaling operations and strengthening position",
+       "source_sentence": "Munchmart Technologies Private Limited, dba Swish, has raised $38 million from a Series B fundraise led by Hara Global Capital with participation from Bain Capital Ventures and Accel India.",
+       "published_at": "2026-03-30T05:52:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d0ad1aab77624179098cc9"
+       ],
+       "article_id": "69d0ad1aab77624179098cc9"
+      },
+      {
+       "id": "6df472a7f5e55cd3",
+       "company_name": "swish",
+       "domain": "swishanalytics.com",
+       "round_type": "Series B",
+       "amount_usd": 38000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 38000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Hara Global",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "alteria capital",
+         "domain": "alteriacapital.com",
+         "amount": null
+        },
+        {
+         "name": "stride ventures",
+         "domain": "strideventures.in",
+         "amount": null
+        }
+       ],
+       "sector": "Foodtech / Quick Commerce",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand into new cities, invest in kitchen automation, strengthen supply chain and team",
+       "source_sentence": "Swish, a 10-minute food delivery startup, raised $38 million in a Series B round led by Hara Global and Bain Capital Ventures, with participation from Accel and venture debt from Alteria Capital and Stride Ventures.",
+       "published_at": "2026-03-24T14:25:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc07b723fe82b9abc79436"
+       ],
+       "article_id": "69cc07b723fe82b9abc79436"
+      },
+      {
+       "id": "fb65178aac4fd3dd",
+       "company_name": "FirstClub Technology Pvt. Ltd.",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 23000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 23000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "rtp global",
+         "domain": "rtp.vc",
+         "amount": null
+        },
+        {
+         "name": "Blume Founders Fund",
+         "domain": "blumefoundersfund.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "2am VC",
+         "domain": "2amvc.com",
+         "amount": null
+        },
+        {
+         "name": "Paramark Ventures",
+         "domain": "paramark.vc",
+         "amount": null
+        },
+        {
+         "name": "Aditya Birla Ventures",
+         "domain": "adityabirlaventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "expansion of clubhouses, launch of new fulfillment formats, new category introductions, and hiring",
+       "source_sentence": "India’s only quality-first quick commerce platform FirstClub Technology Pvt. Ltd., today announced it has raised $23 million in Series A funding.",
+       "published_at": "2025-09-04T10:45:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "68c57643d16fb305ef945c81",
+        "68d9461d8b9b1745e60fdde8"
+       ],
+       "article_id": "68d9461d8b9b1745e60fdde8"
+      },
+      {
+       "id": "ae2d730f93b7a809",
+       "company_name": "FirstClub",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 23000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 23000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "rtp global",
+         "domain": "rtp.vc",
+         "amount": null
+        },
+        {
+         "name": "blume ventures",
+         "domain": "blume.vc",
+         "amount": null
+        },
+        {
+         "name": "2am VC",
+         "domain": "2amvc.com",
+         "amount": null
+        },
+        {
+         "name": "Paramark Ventures",
+         "domain": "paramark.vc",
+         "amount": null
+        },
+        {
+         "name": "Aditya Birla Ventures",
+         "domain": "adityabirlaventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "opening new dark stores in Bengaluru, rolling out cafes and daily subscriptions, expanding into new categories, hiring talent, and investing in brand building",
+       "source_sentence": "Quick commerce startup FirstClub has raised $23 million in a funding round led by venture capital firms Accel and RTP Global , who had also co-led the previous round.",
+       "published_at": "2025-09-04T00:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c163a56a78bf0c565114d7"
+       ],
+       "article_id": "68c163a56a78bf0c565114d7"
+      },
+      {
+       "id": "7ce5215be43d1531",
+       "company_name": "FirstClub",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 23000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 23000000.0,
+       "valuation": 120000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "rtp global",
+         "domain": "rtp.vc",
+         "amount": null
+        },
+        {
+         "name": "Blume Founders Fund",
+         "domain": "blumefoundersfund.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "2am VC",
+         "domain": "2amvc.com",
+         "amount": null
+        },
+        {
+         "name": "Paramark Ventures",
+         "domain": "paramark.vc",
+         "amount": null
+        },
+        {
+         "name": "Aditya Birla Ventures",
+         "domain": "adityabirlaventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Quick commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Expand clubhouses and product categories",
+       "source_sentence": "At a post-money valuation of $120 million, the Bengaluru-based startup has raised $23 million in a Series A round (comprising more than 90% equity and the rest in debt) co-led by returning investors Accel and RTP Global.",
+       "published_at": "2025-09-03T20:21:08",
+       "coverage_count": 10,
+       "article_ids": [
+        "68c163a56a78bf0c56511f8b",
+        "68c584f9b434e10719883734",
+        "68c5cbde9f14b99474ca3f29",
+        "68d942a84ea4015b010f728b",
+        "68d96198bf1dd95b8612ec75",
+        "68db4bbd153b726bcd889f9e",
+        "698685f754148f65ea3285c2",
+        "698888d05a4e31ff243a9b12",
+        "6989bc8f94d3f481f3eb6d6a",
+        "69bb278a8dcdeb577ebb042d"
+       ],
+       "article_id": "68d96198bf1dd95b8612ec75"
+      },
+      {
+       "id": "3e033bc1f4650d47",
+       "company_name": "FirstClub",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 20000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 20000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "rtp global",
+         "domain": "rtp.vc",
+         "amount": null
+        },
+        {
+         "name": "Paramark Ventures",
+         "domain": "paramark.vc",
+         "amount": null
+        },
+        {
+         "name": "Blume Founders Fund",
+         "domain": "blumefoundersfund.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "quiet capital",
+         "domain": "quiet.com",
+         "amount": null
+        },
+        {
+         "name": "2am VC",
+         "domain": "2amvc.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "expansion into Delhi and Mumbai",
+       "source_sentence": "FirstClub, the members-only rapid delivery startup founded by former Flipkart senior vice president (SVP) Ayyappan R, is in advanced stages to raise $20 million (around Rs 170 crore) from existing investors including Accel and RTP Global, with new backer Paramark Ventures also expected to join, sources told Moneycontrol.",
+       "published_at": "2025-08-20T03:01:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d102ffb4da52a1072d11a0"
+       ],
+       "article_id": "68d102ffb4da52a1072d11a0"
+      },
+      {
+       "id": "65c580a405f43167",
+       "company_name": "ShopZilo",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 15300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": 8000000.0
+        },
+        {
+         "name": "info edge ventures",
+         "domain": "infoedgeventures.in",
+         "amount": 2500000.0
+        },
+        {
+         "name": "chiratae ventures",
+         "domain": "chiratae.com",
+         "amount": 2500000.0
+        },
+        {
+         "name": "alteria capital",
+         "domain": "alteriacapital.com",
+         "amount": null
+        },
+        {
+         "name": "stride ventures",
+         "domain": "strideventures.in",
+         "amount": null
+        },
+        {
+         "name": "Groww founder and CEO Lalit Keshre",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "CRED founder Kunal Shah",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Orginity founder Sachin Oswal",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "FirstClub founder Ayyappan R",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Shadowfax cofounder Abhishek Bansal",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Servify founder Sreevathsa Prabhakar",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Preeta Sukhtankar, equity partner at Foxtale and Luma Fertility",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Fashion quick commerce",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "expand dark store capacity, strengthen last mile delivery partnerships, invest in technology that improves inventory planning and customer experience, brand building to increase recall in competitive metro markets",
+       "source_sentence": "Mumbai: Fashion quick commerce startup ShopZilo has closed a $15.3 million Series A funding round, roughly Rs 140 crore, as it steps up efforts to build a rapid delivery platform for apparel and accessories in urban India. The round was led by Peak XV Partners, with participation from Info Edge Ventures, Chiratae Ventures, Alteria Capital and Stride Ventures, the company said.",
+       "published_at": "2026-02-05T10:02:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986b3d7069c05cbe27cd918"
+       ],
+       "article_id": "6986b3d7069c05cbe27cd918"
+      },
+      {
+       "id": "e1b708109beb0834",
+       "company_name": "zilo",
+       "domain": "zilo.co.uk",
+       "round_type": null,
+       "amount_usd": 15300000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15300000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": 8000000.0
+        },
+        {
+         "name": "InfoEdge Ventures",
+         "domain": "infoedgeventures.in",
+         "amount": 2500000.0
+        },
+        {
+         "name": "chiratae ventures",
+         "domain": "chiratae.com",
+         "amount": 2500000.0
+        },
+        {
+         "name": "alteria capital",
+         "domain": "alteriacapital.com",
+         "amount": null
+        },
+        {
+         "name": "stride ventures",
+         "domain": "strideventures.in",
+         "amount": null
+        },
+        {
+         "name": "Lalit Keshre",
+         "domain": "https://www.linkedin.com/in/lalitkeshre",
+         "amount": null
+        },
+        {
+         "name": "Kunal Shah",
+         "domain": "https://www.linkedin.com/in/cvkunal",
+         "amount": null
+        },
+        {
+         "name": "Sachin Oswal",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ayyappan R",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Abhishek Bansal",
+         "domain": "https://www.linkedin.com/in/abhishek-bansal-69b08624",
+         "amount": null
+        },
+        {
+         "name": "Sreevathsa Prabhakar",
+         "domain": "https://linkedin.com/in/sreevathsap",
+         "amount": null
+        },
+        {
+         "name": "Preeta Sukhtankar",
+         "domain": "https://www.linkedin.com/in/preeta-sukhtankar-37a79350",
+         "amount": null
+        }
+       ],
+       "sector": "Fashion quick commerce",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "Deploy the fresh capital to scale operations, invest in technology, expand into new markets, and support expansion beyond Mumbai over the next year",
+       "source_sentence": "Fashion quick commerce startup ZILO has raised $15.3 million in funding in a round led by Peak XV Partners, according to a company statement, thereby strengthening its expansion plans.",
+       "published_at": "2026-02-05T08:14:14",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988a8218fb0ea95e977290e"
+       ],
+       "article_id": "6988a8218fb0ea95e977290e"
+      },
+      {
+       "id": "43f9b1f8e055c8aa",
+       "company_name": "homerun",
+       "domain": "homerun.com",
+       "round_type": null,
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nexus venture partners",
+         "domain": "nexusvp.com",
+         "amount": null
+        },
+        {
+         "name": "Sorin Investments",
+         "domain": "sorininvestments.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce for construction and home improvement materials",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Expand operations in newer cities by setting up newer dark stores, strengthen presence in Bengaluru, expand to Hyderabad and Pune",
+       "source_sentence": "Bengaluru-based quick commerce for construction and home improvement materials startup HomeRun is in talks to raise around ₹100 Cr (about $11 Mn) and is likely to be led by Nexus Venture Partners with participation from HomeRun’s existing investors including Sorin Investments.",
+       "published_at": "2026-03-10T09:56:52",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cbe61d91e0786981cccf0b",
+        "69e35cfd158f9ddd5d79c2f9"
+       ],
+       "article_id": "69cbe61d91e0786981cccf0b"
+      },
+      {
+       "id": "b7614cc8f2eb4fb2",
+       "company_name": "Ozi",
+       "domain": "ozi.ng",
+       "round_type": null,
+       "amount_usd": 10000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 10000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rtp global",
+         "domain": "rtp.vc",
+         "amount": null
+        },
+        {
+         "name": "blume ventures",
+         "domain": "blume.vc",
+         "amount": null
+        }
+       ],
+       "sector": "baby care quick commerce",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": null,
+       "source_sentence": "Ozi, a Gurugram-based baby care quick commerce startup which raised $3.3 million (around Rs 29 crore) from Blume Ventures in October, is “now raising around $10 million (about Rs 88 crore) in a new round led by RTP Global,” one of the persons cited above said.",
+       "published_at": "2025-11-28T02:00:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2ab489b322e6b3e9f4380"
+       ],
+       "article_id": "69e2ab489b322e6b3e9f4380"
+      },
+      {
+       "id": "56c58e5d85d25b8d",
+       "company_name": "BazaarNow",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 9000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "whiteboard capital",
+         "domain": "whiteboardcap.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Expand its dark store network to 18 stores in more than a dozen cities",
+       "source_sentence": "Quick commerce startup BaazarNow is in talks to raise $9 Mn (about ₹82 Cr), sources told Inc42.",
+       "published_at": "2026-03-02T10:55:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcdcc8981d28529ed2db42"
+       ],
+       "article_id": "69bcdcc8981d28529ed2db42"
+      },
+      {
+       "id": "1275efd747399456",
+       "company_name": "chowdeck",
+       "domain": "chowdeck.com",
+       "round_type": "Series A equity",
+       "amount_usd": 9000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 9000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "novastar ventures",
+         "domain": "novastarventures.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "aaic investment",
+         "domain": "aaicinvestment.com",
+         "amount": null
+        },
+        {
+         "name": "rebel fund",
+         "domain": "rebelfund.vc",
+         "amount": null
+        },
+        {
+         "name": "gfr fund",
+         "domain": "gfrfund.com",
+         "amount": null
+        },
+        {
+         "name": "kaleo",
+         "domain": "kaleo.com",
+         "amount": null
+        },
+        {
+         "name": "HoaQ",
+         "domain": "hoaq.club",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "on-demand delivery, logistics, quick commerce",
+       "country": null,
+       "city": null,
+       "use_of_funds": "roll out quick commerce and expand its reach across Nigeria and Ghana",
+       "source_sentence": "The round was led by Novastar Ventures , with backing from Y Combinator, AAIC Investment, Rebel Fund, GFR Fund, Kaleo, HoaQ and others.",
+       "published_at": "2025-08-11T08:36:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989e4cc94d3f481f3ee4ab8"
+       ],
+       "article_id": "6989e4cc94d3f481f3ee4ab8"
+      },
+      {
+       "id": "2c7e4527620e087e",
+       "company_name": "inamo",
+       "domain": "inamo.com",
+       "round_type": null,
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "prime venture partners",
+         "domain": "primevp.in",
+         "amount": null
+        }
+       ],
+       "sector": "Quick commerce enablement",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Last month, quick commerce enablement platform Inamo raised $8 Mn in a round led by Prime Venture Partners.",
+       "published_at": "2026-03-24T01:00:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42785764549ca7bb95e94"
+       ],
+       "article_id": "69c42785764549ca7bb95e94"
+      },
+      {
+       "id": "a085104d3a2af344",
+       "company_name": "inamo",
+       "domain": "inamo.com",
+       "round_type": "Series A",
+       "amount_usd": 8000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 8000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Shastra VC",
+         "domain": "shastra.vc",
+         "amount": null
+        },
+        {
+         "name": "antler india",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "gemba capital",
+         "domain": "gembacapital.in",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": null,
+       "city": null,
+       "use_of_funds": "network expansion, technology upgrades, operational scaling, adding new dark stores, onboarding additional brands, enhancing platform technology stack",
+       "source_sentence": "Inamo, a quick commerce solutions provider founded in 2024, announced a Series A round of $8 million on March 2, 2026. The funding is intended to support network expansion, technology upgrades and operational scaling. Funding Details and Allocation The round comprises $6 million in equity and $2 million in venture debt. Existing investors Shastra VC, Antler India and Gemba Capital participated alongside lead investor Prime Venture Partners. The capital will be used to add new dark stores, onboard additional brands and enhance the platform’s technology stack.",
+       "published_at": "2026-03-03T03:33:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e289899b322e6b3e98f571"
+       ],
+       "article_id": "69e289899b322e6b3e98f571"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 81,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDMtMDMgMDM6MzM6NDkiLCJrIjoiMTE1NjY2NjkxNDE4NDU0MDY1MzIiLCJhIjo4MDAwMDAwLjB9",
+     "totals": {
+      "deals": 81,
+      "deals_with_amount": 72,
+      "deals_without_amount": 9,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 5114355000.0,
+      "median_amount_usd": 12000000.0,
+      "largest_amount_usd": 1200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.186,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.192
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "quick commerce",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "quick commerce"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "1950ca67266d0125",
+       "company_name": "Amazon Now",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Amazon India",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Quick Commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand Amazon Now to 100 cities across India, build micro‑fulfilment centres and scale operations.",
+       "source_sentence": "Amazon India has announced a ₹2,800 crore (approximately $300 million) investment to dramatically scale its quick commerce vertical, Amazon Now.",
+       "published_at": "2026-04-27T10:39:52",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e8ee836d28f995cbc119"
+       ],
+       "article_id": "69f0e8ee836d28f995cbc119"
+      },
+      {
+       "id": "82e454626e231ea9",
+       "company_name": "Amazon India",
+       "domain": null,
+       "round_type": "Investment",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Amazon India",
+         "domain": null,
+         "amount": 300000000.0
+        }
+       ],
+       "sector": "Logistics & Quick Commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Scale its logistics and Amazon Now quick commerce network while enhancing associate safety and wellbeing",
+       "source_sentence": "Amazon India will invest over INR 2,800 crore (USD 300 million) to scale its logistics and \"Amazon Now\" quick commerce network while enhancing associate safety and wellbeing.",
+       "published_at": "2026-04-23T10:33:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea38fa73206aa299ee2154"
+       ],
+       "article_id": "69ea38fa73206aa299ee2154"
+      },
+      {
+       "id": "464f4d43fa83c4a8",
+       "company_name": "Try and Buy",
+       "domain": null,
+       "round_type": "pre-Seed",
+       "amount_usd": 1000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Quick Commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Try and Buy quick commerce startup raised $1 million in a pre-Seed round.",
+       "published_at": "2026-04-06T11:35:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e29a72c1991f786ce658f0"
+       ],
+       "article_id": "69e29a72c1991f786ce658f0"
+      },
+      {
+       "id": "8c388bc1e175c6c5",
+       "company_name": "epik",
+       "domain": "epik.com",
+       "round_type": "pre-seed",
+       "amount_usd": 1000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "InfoEdge Ventures",
+         "domain": "infoedgeventures.in",
+         "amount": null
+        },
+        {
+         "name": "Raghu Pavan T S",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Anirudh Prasad",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bhaskar Raju K",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Deepak K Gowda",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Venus Dhuria",
+         "domain": "https://www.linkedin.com/in/venus-dhuria-1776721a/",
+         "amount": null
+        },
+        {
+         "name": "Srinivasan Namala",
+         "domain": "https://www.linkedin.com/in/srinivasannamala/",
+         "amount": null
+        },
+        {
+         "name": "Vaibhav Vashisht",
+         "domain": "https://www.linkedin.com/in/vaibhavvashisht1",
+         "amount": null
+        },
+        {
+         "name": "Sanil Bhatia",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Akash Jain",
+         "domain": "https://www.linkedin.com/in/aakashj",
+         "amount": null
+        },
+        {
+         "name": "Vineet Jain",
+         "domain": "https://www.linkedin.com/in/vineetkjain",
+         "amount": null
+        },
+        {
+         "name": "Mahek Mody",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Vedang Patel",
+         "domain": "https://www.linkedin.com/in/vedang-patel-40aba34b",
+         "amount": null
+        },
+        {
+         "name": "Kushal Sanghvi",
+         "domain": "https://www.linkedin.com/in/kushalvmukti",
+         "amount": null
+        },
+        {
+         "name": "Panshul Garg",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Vaibhav Longani",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Chandrashekhar D H",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce, experiential retail, consumer electronics",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "deploy the fresh capital towards building its fulfilment infrastructure, expanding its product catalogue, and strengthening its demo operations network across Indian cities.",
+       "source_sentence": "Epik, a Try and Buy quick commerce startup focused on consumer electronics and home appliances, has announced that it has raised $1 million in a pre-seed funding round led by InfoEdge Ventures.",
+       "published_at": "2026-03-31T13:05:30",
+       "coverage_count": 2,
+       "article_ids": [
+        "69cbe676653f29297e76b4de",
+        "69d10b5444cbe2214452daf5"
+       ],
+       "article_id": "69cbe676653f29297e76b4de"
+      },
+      {
+       "id": "d973c142256bb65e",
+       "company_name": "epik",
+       "domain": "epik.com",
+       "round_type": "pre-seed",
+       "amount_usd": 1000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "InfoEdge Ventures",
+         "domain": "infoedgeventures.in",
+         "amount": null
+        },
+        {
+         "name": "Raghu Pavan T S",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Anirudh Prasad",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bhaskar Raju K",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Deepak K Gowda",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Venus Dhuria",
+         "domain": "https://www.linkedin.com/in/venus-dhuria-1776721a/",
+         "amount": null
+        },
+        {
+         "name": "Srinivasan Namala",
+         "domain": "https://www.linkedin.com/in/srinivasannamala/",
+         "amount": null
+        },
+        {
+         "name": "Vaibhav Vashisht",
+         "domain": "https://www.linkedin.com/in/vaibhavvashisht1",
+         "amount": null
+        },
+        {
+         "name": "Sanil Bhatia",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Akash Jain",
+         "domain": "https://www.linkedin.com/in/aakashj",
+         "amount": null
+        },
+        {
+         "name": "Vineet Jain",
+         "domain": "https://www.linkedin.com/in/vineetkjain",
+         "amount": null
+        },
+        {
+         "name": "Mahek Mody",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Vedang Patel",
+         "domain": "https://www.linkedin.com/in/vedang-patel-40aba34b",
+         "amount": null
+        },
+        {
+         "name": "Kushal Sanghvi",
+         "domain": "https://www.linkedin.com/in/kushalvmukti",
+         "amount": null
+        },
+        {
+         "name": "Panshul Garg",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Vaibhav Longani",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Chandrashekhar D H",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "building its fulfilment infrastructure, expanding its product catalogue, and strengthening its demo operations network across Indian cities",
+       "source_sentence": "Epik, a Try and Buy quick commerce startup focused on consumer electronics and home appliances, has announced that it has raised $1 million in a pre-seed funding round led by InfoEdge Ventures.",
+       "published_at": "2026-03-30T08:21:06",
+       "coverage_count": 7,
+       "article_ids": [
+        "69cc5d35f038a023dcc4fb8f",
+        "69d10b460fb329646157fa34",
+        "69d10bd70fb32964615803df",
+        "69d1cf3187c2546189af838d",
+        "69e282ecdc480588dc97f4dc",
+        "69e2af20bd7b10565a3af4f9",
+        "69e341b13016d2ccedadb3e4"
+       ],
+       "article_id": "69d1cf3187c2546189af838d"
+      },
+      {
+       "id": "ca24e101e9b0dc9d",
+       "company_name": "Munchmart Technologies Private Limited (Swish)",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 38000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 38000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Hara Global Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "accel india",
+         "domain": "accelindia.com",
+         "amount": null
+        }
+       ],
+       "sector": "quick commerce and food delivery",
+       "country": null,
+       "city": null,
+       "use_of_funds": "scaling operations and strengthening position",
+       "source_sentence": "Munchmart Technologies Private Limited, dba Swish, has raised $38 million from a Series B fundraise led by Hara Global Capital with participation from Bain Capital Ventures and Accel India.",
+       "published_at": "2026-03-30T05:52:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d0ad1aab77624179098cc9"
+       ],
+       "article_id": "69d0ad1aab77624179098cc9"
+      },
+      {
+       "id": "6df472a7f5e55cd3",
+       "company_name": "swish",
+       "domain": "swishanalytics.com",
+       "round_type": "Series B",
+       "amount_usd": 38000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 38000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Hara Global",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bain capital ventures",
+         "domain": "baincapitalventures.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "alteria capital",
+         "domain": "alteriacapital.com",
+         "amount": null
+        },
+        {
+         "name": "stride ventures",
+         "domain": "strideventures.in",
+         "amount": null
+        }
+       ],
+       "sector": "Foodtech / Quick Commerce",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand into new cities, invest in kitchen automation, strengthen supply chain and team",
+       "source_sentence": "Swish, a 10-minute food delivery startup, raised $38 million in a Series B round led by Hara Global and Bain Capital Ventures, with participation from Accel and venture debt from Alteria Capital and Stride Ventures.",
+       "published_at": "2026-03-24T14:25:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc07b723fe82b9abc79436"
+       ],
+       "article_id": "69cc07b723fe82b9abc79436"
+      },
+      {
+       "id": "00604446d6558802",
+       "company_name": "Ozi",
+       "domain": "ozi.ng",
+       "round_type": "Seed",
+       "amount_usd": 6200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rtp global",
+         "domain": "rtp.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Quick Commerce / Kids",
+       "country": null,
+       "city": null,
+       "use_of_funds": "expand operations, strengthen logistics, and scale platform",
+       "source_sentence": "Ozi Raises $6.2 Mn Led by RTP Global.",
+       "published_at": "2026-03-24T14:25:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc07b723fe82b9abc79436"
+       ],
+       "article_id": "69cc07b723fe82b9abc79436"
+      },
+      {
+       "id": "5eb58d4e1541f7b0",
+       "company_name": "Ozi",
+       "domain": "ozi.ng",
+       "round_type": null,
+       "amount_usd": 6200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "rtp global",
+         "domain": "rtp.vc",
+         "amount": null
+        },
+        {
+         "name": "blume ventures",
+         "domain": "blume.vc",
+         "amount": null
+        },
+        {
+         "name": "huddle ventures",
+         "domain": "huddleventures.co",
+         "amount": null
+        },
+        {
+         "name": "Zeropearl VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "some angel investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Quick Commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "The funding will be used to deepen Ozi’s operations across Gurugram and NCR, invest in brand building and technology, and expand its product portfolio.",
+       "source_sentence": "Ozi, a quick commerce startup for baby and kids’ products, has raised $6.2 million led by RTP Global with participation from existing investors Blume Ventures, Huddle Ventures, Zeropearl VC, and some angel investors.",
+       "published_at": "2026-03-24T12:19:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c99d45b68ade25f5c78291",
+        "69e8df8e5cfa3e5ba54d0277"
+       ],
+       "article_id": "69c99d45b68ade25f5c78291"
+      },
+      {
+       "id": "cebfd582eb0ff70f",
+       "company_name": "zilo",
+       "domain": "zilo.co.uk",
+       "round_type": "Series A",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": null,
+       "valuation": null,
+       "investors": [],
+       "sector": "fashion quick commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Fashion-focused quick commerce startup ZILO has raised a larger Series A round of over $15 million led by institutional investors.",
+       "published_at": "2026-03-24T04:44:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cf6428d3abc4d3e2657202"
+       ],
+       "article_id": "69cf6428d3abc4d3e2657202"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 31,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjQgMDQ6NDQ6MzciLCJrIjoiMTQ4OTc4NjA4NTA2MzEwNDY5MjcifQ",
+     "totals": {
+      "deals": 31,
+      "deals_with_amount": 28,
+      "deals_without_amount": 3,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 976805000.0,
+      "median_amount_usd": 12000000.0,
+      "largest_amount_usd": 300000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.151,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.155
+    }
+   }
+  }
+ ]
+}

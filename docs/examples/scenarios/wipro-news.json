@@ -1,0 +1,1186 @@
+{
+ "slug": "wipro-news",
+ "segment": "company-monitoring",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:52:57Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "company_news",
+   "request": {
+    "method": "GET",
+    "path": "/v1/business/companies/wipro.com/news",
+    "body": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "limit": 12
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.company_news",
+    "subject": {
+     "domain": "wipro.com",
+     "filters": {
+      "company": "wipro.com",
+      "company_match": "domain",
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 12
+     },
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "domain": "wipro.com",
+     "headlines": {
+      "items": [
+       {
+        "id": "6a2ae1b0963d76f4af171b35",
+        "headline": "Tech Giant Wipro Acquires Alpha Net Consulting",
+        "url": "https://sightsinplus.com/news/tech-giant-wipro-acquires-alpha-net-consulting/",
+        "publisher": "sightsinplus.com",
+        "published_at": "2026-04-15T13:22:50",
+        "lede": "wipro limited, a leading global information technology, consulting, and business process services company, has finalized a strategic agreement to acquire certain contracts and employee assets from alpha net consulting llc. advertisement advertisement this move is designed to bolster wipro’s high-end digital consulting capabilities and strengthen its presence in the competitive",
+        "sentiment": {
+         "label": "very_pos",
+         "score": 0.83,
+         "group": "positive"
+        },
+        "priority": 5,
+        "classes": [
+         {
+          "code": 0,
+          "path": "/News/Business News/Company News",
+          "score": 0.54
+         },
+         {
+          "code": 241,
+          "path": "/Business & Industrial/Business Services/Consulting",
+          "score": 0.48
+         }
+        ],
+        "country": null,
+        "organizations": [],
+        "people": [],
+        "events": [
+         {
+          "event_type": "ma",
+          "domain": "anetcorp.com",
+          "role": "target"
+         },
+         {
+          "event_type": "ma",
+          "domain": "wipro.com",
+          "role": "acquirer"
+         }
+        ]
+       },
+       {
+        "id": "6a2af494963d76f4af23fd43",
+        "headline": "Wipro Enterprises Names Sandeep K. Vasudevan as Head of IT Infrastructure",
+        "url": "https://www.techcircle.in/2026/01/20/wipro-enterprises-names-sandeep-k-vasudevan-as-head-of-it-infrastructure",
+        "publisher": "techcircle.in",
+        "published_at": "2026-01-20T09:18:20",
+        "lede": "wipro enterprises private limited has announced the appointment of sandeep k. vasudevan as its new head of information technology infrastructure, underscoring the company’s commitment to strengthening its technology backbone and supporting its ongoing digital transformation strategy. in this strategic leadership role, vasudevan will be responsible for shaping and executing the",
+        "sentiment": {
+         "label": "very_pos",
+         "score": 0.96,
+         "group": "positive"
+        },
+        "priority": 5,
+        "classes": [
+         {
+          "code": 0,
+          "path": "/News/Business News/Company News",
+          "score": 0.55
+         },
+         {
+          "code": 79,
+          "path": "/Computers & Electronics/Enterprise Technology/Other",
+          "score": 0.49
+         }
+        ],
+        "country": null,
+        "organizations": [],
+        "people": [],
+        "events": [
+         {
+          "event_type": "key_people",
+          "domain": "wipro.com",
+          "role": "primary"
+         },
+         {
+          "event_type": "key_people",
+          "domain": "wiproenterprises.com",
+          "role": "primary"
+         }
+        ]
+       }
+      ],
+      "returned": 2,
+      "total_estimate": 7,
+      "next_cursor": null,
+      "unresolved": 5,
+      "duplicates_dropped": 0,
+      "limit": 12,
+      "sort": "newest",
+      "with_events": 2,
+      "window": {
+       "since": "2026-01-01",
+       "until": "2026-04-30",
+       "days": 120,
+       "data_through": "2026-08-24",
+       "freshness": "volume thins after 2026-05; the last months are partial"
+      },
+      "notes": [
+       "Some requested articles are temporarily unavailable.",
+       "5 requested article(s) are unavailable"
+      ]
+     },
+     "events": {
+      "items": [
+       {
+        "id": "6a2ae1b0963d76f4af171b35",
+        "headline": "Wipro Limited, a leading global information technology, consulting, and business process services company, has finalized a strategic agreement to acquire certain contracts and employee assets from Alpha Net Consulting LLC.",
+        "event_type": "ma",
+        "role": "acquirer",
+        "domain": "wipro.com",
+        "published_at": "2026-04-15T13:22:50"
+       },
+       {
+        "id": "6a2a5323c37f6c5e66a73cef",
+        "headline": "Wipro Limited, through its subsidiaries, signed a definitive agreement on April 14, 2026 to acquire select customer contracts of Alpha Net Consulting LLC and its subsidiaries.",
+        "event_type": "ma",
+        "role": "acquirer",
+        "domain": "wipro.com",
+        "published_at": "2026-04-14T00:00:00"
+       },
+       {
+        "id": "6a2a9bd2963d76f4afe64413",
+        "headline": "Wipro Limited has announced a definitive agreement to acquire Mindsprint, the IT and digital services arm of Singapore-based Olam Group, for $375 million.",
+        "event_type": "ma",
+        "role": "acquirer",
+        "domain": "wipro.com",
+        "published_at": "2026-04-07T11:27:17"
+       },
+       {
+        "id": "6a2a4e56c37f6c5e66a3a18d",
+        "headline": "Wipro has also signed a definitive agreement to acquire Mindsprint, Olam's IT and digital services subsidiary, for an enterprise value of $375 million.",
+        "event_type": "ma",
+        "role": "acquirer",
+        "domain": "wipro.com",
+        "published_at": "2026-04-06T05:30:25"
+       },
+       {
+        "id": "6a03febd62bbf617b03f5b75",
+        "headline": "Wipro Limited ... entered into a multi-year contract for business and technology modernization for TruStage’s retirement services business.",
+        "event_type": "contracts",
+        "role": "contractor",
+        "domain": "wipro.com",
+        "published_at": "2026-03-11T12:22:22"
+       },
+       {
+        "id": "6a2af494963d76f4af23fd43",
+        "headline": "Other key appointments include Vikram GR as Chief Information Security Officer and Brijesh Singh as Global Head of AI at Wipro Ltd.",
+        "event_type": "key_people",
+        "role": "primary",
+        "domain": "wipro.com",
+        "published_at": "2026-01-20T09:18:20"
+       }
+      ],
+      "returned": 6,
+      "total_estimate": 6,
+      "next_cursor": null,
+      "by_type": {
+       "ma": 4,
+       "key_people": 1,
+       "contracts": 1
+      },
+      "limit": 12,
+      "sort": "newest",
+      "resolved": false,
+      "window": {
+       "since": "2026-01-01",
+       "until": "2026-04-30",
+       "days": 120,
+       "data_through": "2026-08-07",
+       "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+      },
+      "notes": []
+     },
+     "funding": {
+      "items": [],
+      "returned": 0,
+      "total_estimate": 0,
+      "next_cursor": null,
+      "window": null,
+      "notes": [],
+      "empty_reason": "no funding round matches these filters in the window"
+     },
+     "counts": {
+      "headlines": 7,
+      "events": 6,
+      "funding": 0
+     }
+    },
+    "window": {
+     "headlines": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "days": 120,
+      "data_through": "2026-08-24",
+      "freshness": "volume thins after 2026-05; the last months are partial"
+     },
+     "events": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "days": 120,
+      "data_through": "2026-08-07",
+      "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+     },
+     "funding": null,
+     "data_through": "2026-08-24",
+     "linkage_data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 7.431,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "5 requested article(s) are unavailable"
+     ],
+     "request_seconds": 7.441
+    }
+   }
+  },
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "company": "wipro.com",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "company": "wipro.com",
+      "company_match": "domain"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 2,
+        "ma": 0,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 0,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 0,
+        "ma": 0,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 0,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 0,
+        "ma": 0,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 0,
+        "ma": 2,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 0,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 0,
+        "ma": 0,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 0,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 0,
+        "ma": 0,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 0,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 0,
+        "ma": 0,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 0,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 0,
+        "ma": 0,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 1,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 1,
+        "ma": 0,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 0,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 0,
+        "ma": 0,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 1,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 0,
+        "ma": 0,
+        "company_announcement": 0,
+        "contracts": 1,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 4,
+       "by_type": {
+        "earnings": 0,
+        "key_people": 0,
+        "ma": 4,
+        "company_announcement": 0,
+        "contracts": 0,
+        "funding_rounds": 0,
+        "asset_acquisition": 0,
+        "lawsuit": 0,
+        "new_product": 0,
+        "regulatory": 0,
+        "capital_infusion": 0,
+        "ipo": 0,
+        "job_creation": 0,
+        "layoffs": 0,
+        "board_updates": 0,
+        "funds_raising": 0,
+        "buyback": 0,
+        "incorporation": 0,
+        "fda_approval": 0
+       }
+      }
+     ],
+     "totals": {
+      "events": 10,
+      "articles": 10,
+      "companies": 1,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "earnings": 0,
+      "key_people": 3,
+      "ma": 6,
+      "company_announcement": 0,
+      "contracts": 1,
+      "funding_rounds": 0,
+      "asset_acquisition": 0,
+      "lawsuit": 0,
+      "new_product": 0,
+      "regulatory": 0,
+      "capital_infusion": 0,
+      "ipo": 0,
+      "job_creation": 0,
+      "layoffs": 0,
+      "board_updates": 0,
+      "funds_raising": 0,
+      "buyback": 0,
+      "incorporation": 0,
+      "fda_approval": 0
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.014,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.017
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "company": "wipro.com",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "company": "wipro.com",
+      "company_match": "domain"
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 7,
+     "carrying": 7,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 14.29
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 14.29
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 5,
+       "share": 71.43
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 7,
+       "share": 100.0
+      }
+     ],
+     "negative_to_positive_ratio": 0.0,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": null,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 1,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 1,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 0,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 0,
+       "negative_share": null,
+       "positive_share": null,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 1,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 1,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 5,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 5,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 1,
+        "fair_pos": 1,
+        "very_pos": 3,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.521,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.525
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "company": "wipro.com",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 12,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 12,
+      "sort": "newest",
+      "company": "wipro.com",
+      "company_match": "domain",
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "6a2ae1b0963d76f4af171b35",
+       "headline": "Wipro Limited, a leading global information technology, consulting, and business process services company, has finalized a strategic agreement to acquire certain contracts and employee assets from Alpha Net Consulting LLC.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "wipro.com",
+       "published_at": "2026-04-15T13:22:50",
+       "url": "https://sightsinplus.com/news/tech-giant-wipro-acquires-alpha-net-consulting/",
+       "publisher": "sightsinplus.com",
+       "title": "Tech Giant Wipro Acquires Alpha Net Consulting"
+      },
+      {
+       "id": "6a2a5323c37f6c5e66a73cef",
+       "headline": "Wipro Limited, through its subsidiaries, signed a definitive agreement on April 14, 2026 to acquire select customer contracts of Alpha Net Consulting LLC and its subsidiaries.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "wipro.com",
+       "published_at": "2026-04-14T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a2a9bd2963d76f4afe64413",
+       "headline": "Wipro Limited has announced a definitive agreement to acquire Mindsprint, the IT and digital services arm of Singapore-based Olam Group, for $375 million.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "wipro.com",
+       "published_at": "2026-04-07T11:27:17",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a2a4e56c37f6c5e66a3a18d",
+       "headline": "Wipro has also signed a definitive agreement to acquire Mindsprint, Olam's IT and digital services subsidiary, for an enterprise value of $375 million.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "wipro.com",
+       "published_at": "2026-04-06T05:30:25",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a03febd62bbf617b03f5b75",
+       "headline": "Wipro Limited ... entered into a multi-year contract for business and technology modernization for TruStage’s retirement services business.",
+       "event_type": "contracts",
+       "role": "contractor",
+       "domain": "wipro.com",
+       "published_at": "2026-03-11T12:22:22",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a2af494963d76f4af23fd43",
+       "headline": "Other key appointments include Vikram GR as Chief Information Security Officer and Brijesh Singh as Global Head of AI at Wipro Ltd.",
+       "event_type": "key_people",
+       "role": "primary",
+       "domain": "wipro.com",
+       "published_at": "2026-01-20T09:18:20",
+       "url": "https://www.techcircle.in/2026/01/20/wipro-enterprises-names-sandeep-k-vasudevan-as-head-of-it-infrastructure",
+       "publisher": "techcircle.in",
+       "title": "Wipro Enterprises Names Sandeep K. Vasudevan as Head of IT Infrastructure"
+      }
+     ],
+     "returned": 6,
+     "total_estimate": 6,
+     "next_cursor": null,
+     "by_type": {
+      "ma": 4,
+      "key_people": 1,
+      "contracts": 1
+     },
+     "limit": 12,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.511,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 4 event(s)"
+     ],
+     "request_seconds": 4.516
+    }
+   }
+  }
+ ]
+}

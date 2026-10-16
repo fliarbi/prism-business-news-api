@@ -1,0 +1,1921 @@
+{
+ "slug": "creator-economy-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:19Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "creator",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "creator"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 32,
+      "deals_with_amount": 27,
+      "deals_without_amount": 5,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 560384600.0,
+      "median_amount_usd": 12000000.0,
+      "largest_amount_usd": 200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 0,
+       "deals_with_amount": 0,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2740000.0,
+       "median_amount_usd": 1000000.0,
+       "largest_amount_usd": 1200000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 2,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 13375000.0,
+       "median_amount_usd": 6687500.0,
+       "largest_amount_usd": 13000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 0,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 2,
+       "deals_with_amount": 2,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3330000.0,
+       "median_amount_usd": 1665000.0,
+       "largest_amount_usd": 2250000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 103330000.0,
+       "median_amount_usd": 22500000.0,
+       "largest_amount_usd": 56130000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 1,
+       "deals_with_amount": 1,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 15000000.0,
+       "median_amount_usd": 15000000.0,
+       "largest_amount_usd": 15000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 362000000.0,
+       "median_amount_usd": 70000000.0,
+       "largest_amount_usd": 200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 3,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 17500000.0,
+       "median_amount_usd": 17500000.0,
+       "largest_amount_usd": 17500000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 1,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 609600.0,
+       "median_amount_usd": 609600.0,
+       "largest_amount_usd": 609600.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 42500000.0,
+       "median_amount_usd": 12000000.0,
+       "largest_amount_usd": 12000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.075,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.078
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "creator",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "creator"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "02839e1ea952d749",
+       "company_name": "Beast Industries",
+       "domain": null,
+       "round_type": "equity",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ARK's Cathie Wood",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kraken",
+         "domain": "kraken.com",
+         "amount": null
+        }
+       ],
+       "sector": "content creator platform",
+       "country": null,
+       "city": null,
+       "use_of_funds": "growth trajectory and new ventures in decentralized finance",
+       "source_sentence": "On January 15, 2026, Bitmine Immersion Technologies, Inc. announced a substantial $200 million equity investment in Beast Industries.",
+       "published_at": "2026-01-15T13:20:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcddf50f458341919d3718"
+       ],
+       "article_id": "69bcddf50f458341919d3718"
+      },
+      {
+       "id": "1480982f0cc78961",
+       "company_name": "Fenix360",
+       "domain": "myfenix360.com",
+       "round_type": "Share Subscription Facility",
+       "amount_usd": 90000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 90000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "GEM Global Yield LLC SCS",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Social media, creator economy",
+       "country": "United States",
+       "city": "Miami, FL",
+       "use_of_funds": "Flexible equity financing to support global expansion, platform development, and strategic alliances",
+       "source_sentence": "FENIX360 Pte Ltd (\"FENIX360\"), a global artist & creator-centric social-media platform, today announced that it has entered into a definitive Share Subscription Facility agreement for up to USD 90 million with GEM Global Yield LLC SCS.",
+       "published_at": "2026-01-23T05:55:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "699717fbe0523bedf7b2c656"
+       ],
+       "article_id": "699717fbe0523bedf7b2c656"
+      },
+      {
+       "id": "566a0714510a6e85",
+       "company_name": "Fenix360",
+       "domain": "myfenix360.com",
+       "round_type": "Equity Commitment",
+       "amount_usd": 90000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 90000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "GEM Global Yield LLC SCS",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Social Media / Creator Economy",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": "Support global expansion, platform development, and strategic alliances",
+       "source_sentence": "FENIX360 Secures USD 90 Million Equity Commitment from GEM Global Yield",
+       "published_at": "2026-01-22T23:54:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb2b387a841a437be5977b"
+       ],
+       "article_id": "69bb2b387a841a437be5977b"
+      },
+      {
+       "id": "ba8be01e840cdce8",
+       "company_name": "agentio",
+       "domain": "agentio.com",
+       "round_type": "Series B",
+       "amount_usd": 56130000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 56130000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "forerunner",
+         "domain": "withforerunner.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator Advertising",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Agentio – $40M Series B CREATOR ADVERTISING Agentio, an AI-powered platform and marketplace for creator advertising, has raised $40M in Series B funding led by Forerunner.",
+       "published_at": "2025-11-18T13:27:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988885267fc62ca0ef3b5d3"
+       ],
+       "article_id": "6988885267fc62ca0ef3b5d3"
+      },
+      {
+       "id": "b0fd39a48564e4f0",
+       "company_name": "duetti",
+       "domain": "duetti.co",
+       "round_type": "Series C",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "The Raine Group",
+         "domain": "raine.com",
+         "amount": null
+        }
+       ],
+       "sector": "CREATOR ECONOMY",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Duetti, a financing platform for independent artists, has raised $50M in Series C funding led by The Raine Group.",
+       "published_at": "2026-01-21T13:27:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "6989dafd94d3f481f3eda123"
+       ],
+       "article_id": "6989dafd94d3f481f3eda123"
+      },
+      {
+       "id": "999e1bf87953c356",
+       "company_name": "duetti",
+       "domain": "duetti.co",
+       "round_type": "Series C",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "The Raine Group",
+         "domain": "raine.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator Economy",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Duetti, a financing platform for independent artists, has raised $50M in Series C funding led by The Raine Group.",
+       "published_at": "2026-01-21T13:27:48",
+       "coverage_count": 3,
+       "article_ids": [
+        "6988a713a88ad7b9aae0b63b",
+        "6988a716cfd8658683eacffd",
+        "698d76c08d29a990b6d70659"
+       ],
+       "article_id": "6988a716cfd8658683eacffd"
+      },
+      {
+       "id": "59f949f3fae54902",
+       "company_name": "agentio",
+       "domain": "agentio.com",
+       "round_type": "Series B",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": 340000000.0,
+       "investors": [
+        {
+         "name": "forerunner",
+         "domain": "withforerunner.com",
+         "amount": null
+        },
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "craft ventures",
+         "domain": "craftventures.com",
+         "amount": null
+        },
+        {
+         "name": "alleycorp",
+         "domain": "alleycorp.com",
+         "amount": null
+        },
+        {
+         "name": "antler",
+         "domain": "antler.co",
+         "amount": null
+        },
+        {
+         "name": "starting line",
+         "domain": "startingline.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Creator marketing",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Invest in AI technology and triple headcount from 35 to 100-120 employees by end of 2026",
+       "source_sentence": "Agentio has raised $40 million in a Series B round of funding led by venture capital firm Forerunner. Benchmark, Craft Ventures, AlleyCorp, Antler, and Starting Line also participated in the round.",
+       "published_at": "2025-11-18T14:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "69864c4edac7b0ca9c5f4eb1",
+        "69888820c1c877922ff40ddc",
+        "6988a741127162d16e0ad45b",
+        "698e1a449ca02490ec079218",
+        "698f1a819ca02490ec1ace77",
+        "69bb6cd7bb3472e5f4c5d13c"
+       ],
+       "article_id": "69864c4edac7b0ca9c5f4eb1"
+      },
+      {
+       "id": "9b151bae250b8d49",
+       "company_name": "fanvue",
+       "domain": "fanvue.com",
+       "round_type": "Series A",
+       "amount_usd": 22000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 22000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "inner circle",
+         "domain": "theinnercircle.co",
+         "amount": null
+        },
+        {
+         "name": "René Rechtman",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Founders of Marshmallow",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "General Partners from leading European VC firms",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Creator Economy",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "International expansion, attract top-tier talent, further develop its AI capabilities",
+       "source_sentence": "Fanvue, a creator monetization service leveraging AI, has just revealed it secured $22 million in Series A funds.",
+       "published_at": "2026-01-19T09:33:09",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bb404b0897f254a7e69366",
+        "69bc82bbdfa7512de3871041"
+       ],
+       "article_id": "69bb404b0897f254a7e69366"
+      },
+      {
+       "id": "e540f03c8201f26f",
+       "company_name": "fanvue",
+       "domain": "fanvue.com",
+       "round_type": "Series A",
+       "amount_usd": 22000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 22000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Moonbug founder René Rechtman",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "founders of UK unicorn Marshmallow",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "general partners from leading European venture firms",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Creator Monetization Platform / AI Content Tools",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "accelerate global expansion, hire world-class talent, and enhance AI capabilities to scale its Creator AI Economy platform.",
+       "source_sentence": "Fanvue, a London, UK-based AI-powered creator monetization platform, has raised $22 million in a Series A round.",
+       "published_at": "2026-01-19T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f93d08d29a990b6ff39ed"
+       ],
+       "article_id": "698f93d08d29a990b6ff39ed"
+      },
+      {
+       "id": "47a49999af0c89d9",
+       "company_name": "wishlink",
+       "domain": "wishlink.com",
+       "round_type": "Series B",
+       "amount_usd": 17500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vertex ventures southeast asia & india",
+         "domain": "vertexventures.sg",
+         "amount": null
+        },
+        {
+         "name": "fundamentum",
+         "domain": "fundamentum.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator-focused commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Creator-focused commerce startup Wishlink has raised $17.5 million in a Series B funding round led by Vertex Ventures Southeast Asia & India.",
+       "published_at": "2026-02-28T04:55:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc87e88db8b8187dd9d40b"
+       ],
+       "article_id": "69bc87e88db8b8187dd9d40b"
+      },
+      {
+       "id": "8096e37591ec4fca",
+       "company_name": "wishlink",
+       "domain": "wishlink.com",
+       "round_type": "Series B",
+       "amount_usd": 17500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fundamentum",
+         "domain": "fundamentum.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator commerce",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "The company plans to deploy the newly raised capital to strengthen its technology stack across creators, brands, and consumers.",
+       "source_sentence": "Creator commerce platform Wishlink has raised $17.5 million in its Series B funding round, and the investment highlights the growing momentum of influencer-driven shopping in India.",
+       "published_at": "2026-02-24T04:41:38",
+       "coverage_count": 8,
+       "article_ids": [
+        "69bc7dbd236c54261027e8a6",
+        "69bc7dcc1f3c78812b1a7ea8",
+        "69bc7ddadfa7512de38702ce",
+        "69c9c973c534852e935d4f06",
+        "69c9e3ebb68ade25f5c960be",
+        "69cb5cca8a9312907d58f570",
+        "69e31eaa62c473c381f400e1",
+        "69e3209526054a607ddae3e4"
+       ],
+       "article_id": "69c9c973c534852e935d4f06"
+      },
+      {
+       "id": "d2c0742bdd05f2c6",
+       "company_name": "wishlink",
+       "domain": "wishlink.com",
+       "round_type": null,
+       "amount_usd": 17500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Vertex Ventures Southeast Asia",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "fundamentum",
+         "domain": "fundamentum.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator commerce platform",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "Expand its creator and brand network and invest in technology to enhance its creator tools",
+       "source_sentence": "Creator commerce platform Wishlink has raised $17.5 million in a round led by Vertex Ventures Southeast Asia and India, with participation from existing investors Fundamentum and Elevation Capital.",
+       "published_at": "2026-02-24T00:45:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc82829fa363bce36469ab",
+        "69e63f819e87ccc43e312850"
+       ],
+       "article_id": "69bc82829fa363bce36469ab"
+      },
+      {
+       "id": "96297dbede0c2cf6",
+       "company_name": "humanz",
+       "domain": "humanz.com",
+       "round_type": null,
+       "amount_usd": 15000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 15000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Creator Economy / AI Marketing Platform",
+       "country": "Israel",
+       "city": "Tel Aviv",
+       "use_of_funds": "strengthen its AI infrastructure and support global expansion through additional planned acquisitions",
+       "source_sentence": "Humanz, a Tel Aviv, Israel–based AI-powered platform for the creator economy, has raised a $15 million funding round.",
+       "published_at": "2025-12-19T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f06708d29a990b6f4c996"
+       ],
+       "article_id": "698f06708d29a990b6f4c996"
+      },
+      {
+       "id": "ea5f1e32f57dda8f",
+       "company_name": "Dashverse",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 13000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 13000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "Z47",
+         "domain": "z47.com",
+         "amount": null
+        },
+        {
+         "name": "stellaris venture partners",
+         "domain": "stellarisvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI entertainment / creator platforms",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "The funding will support product development and creator ecosystem growth.",
+       "source_sentence": "Dashverse raised $13 million in Series A.",
+       "published_at": "2025-08-12T12:49:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69894a0f94d3f481f3e2f565"
+       ],
+       "article_id": "69894a0f94d3f481f3e2f565"
+      },
+      {
+       "id": "dec5dddcf8adc11d",
+       "company_name": "OFF/BEAT",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Content and Creator-Led Venture",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Leverage technology and AI to build platform",
+       "source_sentence": "boAt co-founder Aman Gupta has raised Rs 100 crore in funding for his new startup OFF/BEAT.",
+       "published_at": "2026-04-07T10:32:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2d76a9b322e6b3ea9389a"
+       ],
+       "article_id": "69e2d76a9b322e6b3ea9389a"
+      },
+      {
+       "id": "66cb5992db9bb0ee",
+       "company_name": "off beat",
+       "domain": "offbeat-inc.co.jp",
+       "round_type": "seed",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": 54000000.0,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": 4500000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "content and creator-led",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "to control cutting-edge technology and AI to power its platform",
+       "source_sentence": "Aman Gupta, co-founder of boAt, has raised Rs 100 crore in seed funding for his new venture, Off Beat. The round was led by Bessemer Venture Partners.",
+       "published_at": "2026-04-07T08:27:32",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2a7bc7f3a572cf4abb7e0",
+        "69e2d795ff2654c79d71eb67"
+       ],
+       "article_id": "69e2d795ff2654c79d71eb67"
+      },
+      {
+       "id": "a8956062d1aa665a",
+       "company_name": "OffBeat Studios",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": 4500000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator-focused",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Build platform using technology and AI",
+       "source_sentence": "Boat co-founder Aman Gupta has raised Rs 100 crore in seed funding for his new venture, OffBeat Studios, in a round led by Bessemer Venture Partners.",
+       "published_at": "2026-04-07T08:21:39",
+       "coverage_count": 8,
+       "article_ids": [
+        "69e2a4ccd754bf662cd778e4",
+        "69e2a58fff2654c79d66b78d",
+        "69e2a7007f3a572cf4ab92b5",
+        "69e2a7bc7f3a572cf4abb7e0",
+        "69e2c7cf3aab8d96aa3a7090",
+        "69e2d257d754bf662ce182b1",
+        "69e2de6ddc480588dcaaee1a",
+        "69e2e306d754bf662ce53de8"
+       ],
+       "article_id": "69e2a4ccd754bf662cd778e4"
+      },
+      {
+       "id": "2d27360f71289d49",
+       "company_name": "supershare",
+       "domain": "ssup.co",
+       "round_type": "Series A",
+       "amount_usd": 6500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Lachy Groom",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel india",
+         "domain": "accelindia.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        }
+       ],
+       "sector": "Content sharing, creator platform",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate product and market development activities, launch its app in the coming months",
+       "source_sentence": "Content sharing startup SuperShare raised $6.5 million in Series A from Lachy Groom, Accel India and Lightspeed where content creators including Tanmay Bhat and MythPat along with several executives from influencer management agencies also participated.",
+       "published_at": "2026-04-07T20:33:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e326a362c473c381f5e8f2"
+       ],
+       "article_id": "69e326a362c473c381f5e8f2"
+      },
+      {
+       "id": "45d23e5d2150d9f9",
+       "company_name": "Mantayay Global Holdings Pte Ltd",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 5000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Kairous Capital via its Kairous Asia Venture Fund II (SEA)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "creator‑economy and digital media",
+       "country": "Malaysia",
+       "city": null,
+       "use_of_funds": "accelerate the company’s regional expansion, strengthen Mantayay’s regional creator network, advance AI-enabled content and commerce infrastructure across key markets",
+       "source_sentence": "Mantayay Global Holdings Pte Ltd, a creator‑economy and digital media company, announced on Monday a $5 million investment led by Kairous Capital via its Kairous Asia Venture Fund II (SEA).",
+       "published_at": "2025-11-03T06:46:19",
+       "coverage_count": 2,
+       "article_ids": [
+        "690e3a952a5f111a94246c32",
+        "698f7e998d29a990b6fda762"
+       ],
+       "article_id": "690e3a952a5f111a94246c32"
+      },
+      {
+       "id": "0c1ff26bca6cd683",
+       "company_name": "kliq",
+       "domain": "kliqapp.co",
+       "round_type": "Seed",
+       "amount_usd": 2250000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2250000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sanabil Venture Studio",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "stryber",
+         "domain": "stryber.com",
+         "amount": null
+        }
+       ],
+       "sector": "Influencer Marketing / Creator Economy / AI Marketing Platform",
+       "country": "Saudi Arabia",
+       "city": "Riyadh",
+       "use_of_funds": "enhance its AI capabilities, expand brand and creator onboarding, and develop new tools for efficient and impactful collaboration",
+       "source_sentence": "KLIQ, a Riyadh, Saudi Arabia-based end-to-end AI-powered influencer marketing platform, has raised $2.25 million in a Seed round.",
+       "published_at": "2025-10-20T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f19388d29a990b6f62a75"
+       ],
+       "article_id": "698f19388d29a990b6f62a75"
+      },
+      {
+       "id": "790b8093ef1d960a",
+       "company_name": "Paage",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 2200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "aglaé ventures",
+         "domain": "aglaeventures.com",
+         "amount": null
+        },
+        {
+         "name": "kima ventures",
+         "domain": "kimaventures.com",
+         "amount": null
+        },
+        {
+         "name": "cassius",
+         "domain": "cassius.vc",
+         "amount": null
+        },
+        {
+         "name": "Alexandre Eruimy",
+         "domain": "https://www.linkedin.com/in/alexandre-eruimy/",
+         "amount": null
+        },
+        {
+         "name": "Felix Malfait",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Darren Lachtman",
+         "domain": "http://www.linkedin.com/in/darrenlachtman",
+         "amount": null
+        },
+        {
+         "name": "Enzo Mattioli Ferrari",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Social Commerce / Creator Tools",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "The new capital will be used to accelerate Paage’s AI and product development, scale its design and engineering teams, expand integrations across payments, CRM, e-commerce, and email marketing platforms, and support international growth.",
+       "source_sentence": "Paage, a Paris, France-based AI platform that helps creators turn ideas into fully designed, interactive pages, has raised $2.2 million in Seed funding.",
+       "published_at": "2025-11-24T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988b1813757765ee826d004"
+       ],
+       "article_id": "6988b1813757765ee826d004"
+      },
+      {
+       "id": "796a39be4e4a6a22",
+       "company_name": "streamforge",
+       "domain": "streamforge.com",
+       "round_type": "Seed",
+       "amount_usd": 1200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Anges Québec",
+         "domain": "angesquebec.com",
+         "amount": null
+        },
+        {
+         "name": "Triptyq Capital",
+         "domain": "triptyq.vc",
+         "amount": null
+        },
+        {
+         "name": "telegraph hill capital",
+         "domain": "thcap.com",
+         "amount": null
+        },
+        {
+         "name": "StarForge Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Angel Investors",
+         "domain": "angelinvestorsllc.com",
+         "amount": null
+        }
+       ],
+       "sector": "MarTech / Creator Economy / Business Intelligence",
+       "country": "Canada",
+       "city": "Montreal",
+       "use_of_funds": "The company will use the funds to support the rollout of Streamforge’s free tier and the launch of an AI-powered Audience Analysis tool, developed in partnership with Google AI.",
+       "source_sentence": "Streamforge, a Montreal, Canada-based AI-driven business intelligence solutions for the creator economy, has raised $1.2 million in a seed funding round.",
+       "published_at": "2025-07-18T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988e04894d3f481f3db2615"
+       ],
+       "article_id": "6988e04894d3f481f3db2615"
+      },
+      {
+       "id": "ce1749c230768496",
+       "company_name": "bryght",
+       "domain": "bryght.nl",
+       "round_type": "pre-seed",
+       "amount_usd": 1080000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Reziprok",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Creator tools",
+       "country": null,
+       "city": null,
+       "use_of_funds": "further develop the platform and strengthen its position in the market",
+       "source_sentence": "BRYGHT, the platform that is to focus more on content creators and their communities, has increased its pre-seed funding by another €500,000 to a total of € 1 million.",
+       "published_at": "2025-10-06T10:00:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e87f009baafc73568e63b9"
+       ],
+       "article_id": "69e87f009baafc73568e63b9"
+      },
+      {
+       "id": "5c87704205e2c07b",
+       "company_name": "qoruz",
+       "domain": "qoruz.com",
+       "round_type": "pre-Series A",
+       "amount_usd": 1000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Chennai Angels",
+         "domain": null,
+         "amount": 500000.0
+        }
+       ],
+       "sector": "Creator Intelligence and Collaboration Platform",
+       "country": "India",
+       "city": "Chennai",
+       "use_of_funds": "Increase AI capabilities, diversify into new market verticals, fortify global presence with emphasis on Middle East and Southeast Asia",
+       "source_sentence": "The Chennai Angels have contributed $500K to Qoruz, a platform for creator intelligence and collaboration, as part of its ongoing pre-Series A round, which aims to raise $1 million.",
+       "published_at": "2025-07-09T06:49:46",
+       "coverage_count": 2,
+       "article_ids": [
+        "698fca759ca02490ec27afe9",
+        "69c3a699e36c3064e455d9e7"
+       ],
+       "article_id": "698fca759ca02490ec27afe9"
+      },
+      {
+       "id": "dd71a50b0291eb11",
+       "company_name": "Deaku",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 609600.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 480000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fuel ventures",
+         "domain": "fuel.ventures",
+         "amount": null
+        },
+        {
+         "name": "Rob Landes",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Charles Berthoud",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Rob Van Impe",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mario Joos",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Creator Economy",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate product development, expand engineering team, strengthen support capabilities, invest in go-to-market initiatives",
+       "source_sentence": "Deaku, an AI-powered workspace designed for the Creator Economy, has raised £480,000 in a pre‑seed funding round led by Fuel Ventures.",
+       "published_at": "2026-03-17T12:25:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c4294870dad9fab9632756"
+       ],
+       "article_id": "69c4294870dad9fab9632756"
+      },
+      {
+       "id": "ac50185bce4a66fd",
+       "company_name": "qoruz",
+       "domain": "qoruz.com",
+       "round_type": "seed",
+       "amount_usd": 540000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 45000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "IIM Indore Alumni Fund",
+         "domain": "iimiaf.com",
+         "amount": null
+        },
+        {
+         "name": "Dexter Angels",
+         "domain": "dexterangels.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator Intelligence and Collaboration Platform",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "In a previous seed funding round, the Bengaluru-based startup raised 4.5 crore from the IIM Indore Alumni Fund and Dexter Angels.",
+       "published_at": "2025-07-09T06:49:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "698fca759ca02490ec27afe9"
+       ],
+       "article_id": "698fca759ca02490ec27afe9"
+      },
+      {
+       "id": "5397775101f220cc",
+       "company_name": "The New Grey",
+       "domain": null,
+       "round_type": "TIPS program backing",
+       "amount_usd": 375000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "KRW",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tips program",
+         "domain": "jointips.or.kr",
+         "amount": null
+        }
+       ],
+       "sector": "Senior creator economy / AI-driven content commerce",
+       "country": "South Korea",
+       "city": null,
+       "use_of_funds": "research and development",
+       "source_sentence": "The selection follows a recommendation from its seed investor, Bluepoint Partners, and grants the company up to ₩500 million KRW (approx. $367,000 USD) in research and development funding over two years.",
+       "published_at": "2025-08-08T01:56:42",
+       "coverage_count": 1,
+       "article_ids": [
+        "698986f994d3f481f3e7359d"
+       ],
+       "article_id": "698986f994d3f481f3e7359d"
+      },
+      {
+       "id": "233fdfd3f0d04dca",
+       "company_name": "qoruz",
+       "domain": "qoruz.com",
+       "round_type": "Series A",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": null,
+       "valuation": null,
+       "investors": [],
+       "sector": "Creator intelligence platform",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": null,
+       "source_sentence": "With the Series A, we are looking to enter the US market.",
+       "published_at": "2026-03-23T11:28:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a699e36c3064e455d9e7"
+       ],
+       "article_id": "69c3a699e36c3064e455d9e7"
+      },
+      {
+       "id": "16d8688c16cc1adb",
+       "company_name": "HeartRock Partners",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wade Miquelon",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Dr. Will Kirby",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bassem Mansour",
+         "domain": "https://www.linkedin.com/in/bassemmansour/",
+         "amount": null
+        },
+        {
+         "name": "entrepreneur media",
+         "domain": "entrepreneur.com",
+         "amount": null
+        },
+        {
+         "name": "Randy Markey",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Brett Kaufman",
+         "domain": "https://www.linkedin.com/in/brettmkaufman",
+         "amount": null
+        }
+       ],
+       "sector": "Creator and brand spaces",
+       "country": "USA",
+       "city": "Cleveland",
+       "use_of_funds": "grow business in the creator and brand spaces and follows its first hires last month",
+       "source_sentence": "It has now secured a seven-figure investment round, largely from private individuals with backgrounds in retail, consumer products and manufacturing.",
+       "published_at": "2026-03-06T17:53:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcee8aec94907df10e7051"
+       ],
+       "article_id": "69bcee8aec94907df10e7051"
+      },
+      {
+       "id": "09ad2125feb4850b",
+       "company_name": "finnet",
+       "domain": "finnet.com.br",
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "pocket aces",
+         "domain": "pocketaces.in",
+         "amount": null
+        }
+       ],
+       "sector": "Creator management",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "\"Cut to today, we have been strategically invested in by Saregama-backed Pocket Aces!\"",
+       "published_at": "2025-09-25T11:42:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "699242c540184cd7086e18f5"
+       ],
+       "article_id": "699242c540184cd7086e18f5"
+      },
+      {
+       "id": "04d6cf67ece91e8f",
+       "company_name": "arcade",
+       "domain": "arcade2earn.io",
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "lumina media",
+         "domain": "luminamedia.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator Economy",
+       "country": "United Kingdom",
+       "city": null,
+       "use_of_funds": "Expansion of Arcade's platform across Europe, Middle East, and Africa (EMEA).",
+       "source_sentence": "On September 22, 2025, their management company, Arcade, announced a seven-figure investment from Thomas Benski’s Lumina Media, as reported by Deadline.",
+       "published_at": "2025-09-22T07:04:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "695234643a077ed4ac169a3e"
+       ],
+       "article_id": "695234643a077ed4ac169a3e"
+      },
+      {
+       "id": "0fe14a35bf9fe104",
+       "company_name": "twiva",
+       "domain": "twiva.co.ke",
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sony innovation fund",
+         "domain": "sonyinnovationfund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator monetization",
+       "country": "Kenya",
+       "city": "Nairobi",
+       "use_of_funds": "expand its footprint across key African markets, strengthen its technology infrastructure including AI-powered creator tools, and accelerate the rollout of innovations such as Twiva Pay and LPO financing for influencer marketing campaigns.",
+       "source_sentence": "Twiva, Africa’s leading creator monetization platform, has secured investment from the Sony Innovatio corporate venture capital arm of Sony Group Corporation.",
+       "published_at": "2025-08-06T19:07:58",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb5b148dcdeb577ebbb734"
+       ],
+       "article_id": "69bb5b148dcdeb577ebbb734"
+      }
+     ],
+     "returned": 32,
+     "total_estimate": 32,
+     "next_cursor": null,
+     "totals": {
+      "deals": 32,
+      "deals_with_amount": 27,
+      "deals_without_amount": 5,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 560384600.0,
+      "median_amount_usd": 12000000.0,
+      "largest_amount_usd": 200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.118,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.121
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "creator",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "creator"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "2d27360f71289d49",
+       "company_name": "supershare",
+       "domain": "ssup.co",
+       "round_type": "Series A",
+       "amount_usd": 6500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 6500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Lachy Groom",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "accel india",
+         "domain": "accelindia.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        }
+       ],
+       "sector": "Content sharing, creator platform",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate product and market development activities, launch its app in the coming months",
+       "source_sentence": "Content sharing startup SuperShare raised $6.5 million in Series A from Lachy Groom, Accel India and Lightspeed where content creators including Tanmay Bhat and MythPat along with several executives from influencer management agencies also participated.",
+       "published_at": "2026-04-07T20:33:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e326a362c473c381f5e8f2"
+       ],
+       "article_id": "69e326a362c473c381f5e8f2"
+      },
+      {
+       "id": "dec5dddcf8adc11d",
+       "company_name": "OFF/BEAT",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Content and Creator-Led Venture",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Leverage technology and AI to build platform",
+       "source_sentence": "boAt co-founder Aman Gupta has raised Rs 100 crore in funding for his new startup OFF/BEAT.",
+       "published_at": "2026-04-07T10:32:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2d76a9b322e6b3ea9389a"
+       ],
+       "article_id": "69e2d76a9b322e6b3ea9389a"
+      },
+      {
+       "id": "66cb5992db9bb0ee",
+       "company_name": "off beat",
+       "domain": "offbeat-inc.co.jp",
+       "round_type": "seed",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": 54000000.0,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": 4500000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "content and creator-led",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "to control cutting-edge technology and AI to power its platform",
+       "source_sentence": "Aman Gupta, co-founder of boAt, has raised Rs 100 crore in seed funding for his new venture, Off Beat. The round was led by Bessemer Venture Partners.",
+       "published_at": "2026-04-07T08:27:32",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2a7bc7f3a572cf4abb7e0",
+        "69e2d795ff2654c79d71eb67"
+       ],
+       "article_id": "69e2d795ff2654c79d71eb67"
+      },
+      {
+       "id": "a8956062d1aa665a",
+       "company_name": "OffBeat Studios",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 12000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000.0,
+       "valuation": 4500000000.0,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator-focused",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Build platform using technology and AI",
+       "source_sentence": "Boat co-founder Aman Gupta has raised Rs 100 crore in seed funding for his new venture, OffBeat Studios, in a round led by Bessemer Venture Partners.",
+       "published_at": "2026-04-07T08:21:39",
+       "coverage_count": 8,
+       "article_ids": [
+        "69e2a4ccd754bf662cd778e4",
+        "69e2a58fff2654c79d66b78d",
+        "69e2a7007f3a572cf4ab92b5",
+        "69e2a7bc7f3a572cf4abb7e0",
+        "69e2c7cf3aab8d96aa3a7090",
+        "69e2d257d754bf662ce182b1",
+        "69e2de6ddc480588dcaaee1a",
+        "69e2e306d754bf662ce53de8"
+       ],
+       "article_id": "69e2a4ccd754bf662cd778e4"
+      },
+      {
+       "id": "233fdfd3f0d04dca",
+       "company_name": "qoruz",
+       "domain": "qoruz.com",
+       "round_type": "Series A",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": null,
+       "valuation": null,
+       "investors": [],
+       "sector": "Creator intelligence platform",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": null,
+       "source_sentence": "With the Series A, we are looking to enter the US market.",
+       "published_at": "2026-03-23T11:28:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c3a699e36c3064e455d9e7"
+       ],
+       "article_id": "69c3a699e36c3064e455d9e7"
+      },
+      {
+       "id": "dd71a50b0291eb11",
+       "company_name": "Deaku",
+       "domain": null,
+       "round_type": "pre-seed",
+       "amount_usd": 609600.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 480000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fuel ventures",
+         "domain": "fuel.ventures",
+         "amount": null
+        },
+        {
+         "name": "Rob Landes",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Charles Berthoud",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Rob Van Impe",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mario Joos",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Creator Economy",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate product development, expand engineering team, strengthen support capabilities, invest in go-to-market initiatives",
+       "source_sentence": "Deaku, an AI-powered workspace designed for the Creator Economy, has raised £480,000 in a pre‑seed funding round led by Fuel Ventures.",
+       "published_at": "2026-03-17T12:25:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c4294870dad9fab9632756"
+       ],
+       "article_id": "69c4294870dad9fab9632756"
+      },
+      {
+       "id": "16d8688c16cc1adb",
+       "company_name": "HeartRock Partners",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wade Miquelon",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Dr. Will Kirby",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Bassem Mansour",
+         "domain": "https://www.linkedin.com/in/bassemmansour/",
+         "amount": null
+        },
+        {
+         "name": "entrepreneur media",
+         "domain": "entrepreneur.com",
+         "amount": null
+        },
+        {
+         "name": "Randy Markey",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Brett Kaufman",
+         "domain": "https://www.linkedin.com/in/brettmkaufman",
+         "amount": null
+        }
+       ],
+       "sector": "Creator and brand spaces",
+       "country": "USA",
+       "city": "Cleveland",
+       "use_of_funds": "grow business in the creator and brand spaces and follows its first hires last month",
+       "source_sentence": "It has now secured a seven-figure investment round, largely from private individuals with backgrounds in retail, consumer products and manufacturing.",
+       "published_at": "2026-03-06T17:53:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcee8aec94907df10e7051"
+       ],
+       "article_id": "69bcee8aec94907df10e7051"
+      },
+      {
+       "id": "47a49999af0c89d9",
+       "company_name": "wishlink",
+       "domain": "wishlink.com",
+       "round_type": "Series B",
+       "amount_usd": 17500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vertex ventures southeast asia & india",
+         "domain": "vertexventures.sg",
+         "amount": null
+        },
+        {
+         "name": "fundamentum",
+         "domain": "fundamentum.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator-focused commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Creator-focused commerce startup Wishlink has raised $17.5 million in a Series B funding round led by Vertex Ventures Southeast Asia & India.",
+       "published_at": "2026-02-28T04:55:51",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc87e88db8b8187dd9d40b"
+       ],
+       "article_id": "69bc87e88db8b8187dd9d40b"
+      },
+      {
+       "id": "8096e37591ec4fca",
+       "company_name": "wishlink",
+       "domain": "wishlink.com",
+       "round_type": "Series B",
+       "amount_usd": 17500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "fundamentum",
+         "domain": "fundamentum.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator commerce",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "The company plans to deploy the newly raised capital to strengthen its technology stack across creators, brands, and consumers.",
+       "source_sentence": "Creator commerce platform Wishlink has raised $17.5 million in its Series B funding round, and the investment highlights the growing momentum of influencer-driven shopping in India.",
+       "published_at": "2026-02-24T04:41:38",
+       "coverage_count": 8,
+       "article_ids": [
+        "69bc7dbd236c54261027e8a6",
+        "69bc7dcc1f3c78812b1a7ea8",
+        "69bc7ddadfa7512de38702ce",
+        "69c9c973c534852e935d4f06",
+        "69c9e3ebb68ade25f5c960be",
+        "69cb5cca8a9312907d58f570",
+        "69e31eaa62c473c381f400e1",
+        "69e3209526054a607ddae3e4"
+       ],
+       "article_id": "69c9c973c534852e935d4f06"
+      },
+      {
+       "id": "d2c0742bdd05f2c6",
+       "company_name": "wishlink",
+       "domain": "wishlink.com",
+       "round_type": null,
+       "amount_usd": 17500000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 17500000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Vertex Ventures Southeast Asia",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "fundamentum",
+         "domain": "fundamentum.com",
+         "amount": null
+        },
+        {
+         "name": "elevation capital",
+         "domain": "elevationcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Creator commerce platform",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "Expand its creator and brand network and invest in technology to enhance its creator tools",
+       "source_sentence": "Creator commerce platform Wishlink has raised $17.5 million in a round led by Vertex Ventures Southeast Asia and India, with participation from existing investors Fundamentum and Elevation Capital.",
+       "published_at": "2026-02-24T00:45:15",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bc82829fa363bce36469ab",
+        "69e63f819e87ccc43e312850"
+       ],
+       "article_id": "69bc82829fa363bce36469ab"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 17,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDItMjQgMDA6NDU6MTUiLCJrIjoiMTUxODYyNjU2NzUyMzM4ODI4MjIifQ",
+     "totals": {
+      "deals": 17,
+      "deals_with_amount": 15,
+      "deals_without_amount": 2,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 422609600.0,
+      "median_amount_usd": 14750000.0,
+      "largest_amount_usd": 200000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.025,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.027
+    }
+   }
+  }
+ ]
+}

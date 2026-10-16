@@ -1,0 +1,798 @@
+{
+ "slug": "capital-infusion",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:15Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "capital_infusion"
+     ],
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "event_type": [
+       "capital_infusion"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 507,
+       "by_type": {
+        "capital_infusion": 507
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 569,
+       "by_type": {
+        "capital_infusion": 569
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 609,
+       "by_type": {
+        "capital_infusion": 609
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 656,
+       "by_type": {
+        "capital_infusion": 656
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 663,
+       "by_type": {
+        "capital_infusion": 663
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 643,
+       "by_type": {
+        "capital_infusion": 643
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 620,
+       "by_type": {
+        "capital_infusion": 620
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 588,
+       "by_type": {
+        "capital_infusion": 588
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 596,
+       "by_type": {
+        "capital_infusion": 596
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 892,
+       "by_type": {
+        "capital_infusion": 892
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 778,
+       "by_type": {
+        "capital_infusion": 778
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 837,
+       "by_type": {
+        "capital_infusion": 837
+       }
+      }
+     ],
+     "totals": {
+      "events": 7958,
+      "articles": 6657,
+      "companies": 5544,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "capital_infusion": 7958
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.014,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.018
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "capital_infusion"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "event_type": [
+       "capital_infusion"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "6a0365bfca027fb5990c8603",
+       "headline": "The company approved an increase in capital of approximately US$ 330 million, intended to finance its robust investment plan from US$ 1,033 million to 2033.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "parauco.com",
+       "published_at": "2026-04-30T23:34:59",
+       "url": "https://www.df.cl/empresas/retail/parque-arauco-saca-cuentas-alegres-en-el-primer-trimestre-y-utilidad-total",
+       "publisher": "df.cl",
+       "title": "Parque Arauco saca cuentas alegres en el primer trimestre y utilidad total crece 55% | Diario Financiero"
+      },
+      {
+       "id": "6a040839220687a966ab0a00",
+       "headline": "with the total investment estimated at around 300 billion yen ($1.91 billion), the report said.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "global.toyota",
+       "published_at": "2026-04-30T23:21:41",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8805543843dd771ce779a",
+       "headline": "Osaic has clinched more than $2 billion in new capital with Bain Capital joining existing investors Ares and Lexington Partners.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "osaic.com",
+       "published_at": "2026-04-30T22:30:03",
+       "url": "https://www.investmentnews.com/independent-broker-dealers/osaic-clinches-more-than-2-billion-in-new-capital-as-bain-capital-joins-investors/266389",
+       "publisher": "investmentnews.com",
+       "title": "Osaic clinches more than $2 billion in new capital as Bain Capital joins investors"
+      },
+      {
+       "id": "69f8a59f43843dd771d238eb",
+       "headline": "DOE will now loan Rivian $4.5 billion, instead of the originally agreed amount of $6.6 billion",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "rivian.com",
+       "published_at": "2026-04-30T20:05:00",
+       "url": "https://www.theverge.com/transportation/921585/rivian-georgia-factory-capacity-doe-loan",
+       "publisher": "theverge.com",
+       "title": "Rivian downsizes new EV factory after Trump’s DOE slashes loan agreement"
+      },
+      {
+       "id": "69f9d468713680636eec0e36",
+       "headline": "The deal raises more than $2 billion in fresh capital for Osaic,",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "osaic.com",
+       "published_at": "2026-04-30T18:02:38",
+       "url": "https://www.wealthmanagement.com/ibd-news/reverence-capital-partners-closes-2b-osaic-recapitalization",
+       "publisher": "wealthmanagement.com",
+       "title": "Reverence Capital Partners Closes $2B Osaic Recapitalization"
+      },
+      {
+       "id": "69f87fa1bbf1d3145595c207",
+       "headline": "Toledo Propulsion Systems: This site will see a new $40 million investment to support capacity in 10-speed transmission manufacturing for GM's light-duty trucks.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "gm.com",
+       "published_at": "2026-04-30T17:54:53",
+       "url": "https://www.cbsnews.com/detroit/news/general-motors-830-million-investment-romulus-saginaw-toledo-sites/",
+       "publisher": "cbsnews.com",
+       "title": "General Motors announces $830 million investment at Romulus, Saginaw, Toledo sites"
+      },
+      {
+       "id": "69f885f28937ef12fc0a5a94",
+       "headline": "$6.1bn raised in the quarter from these investors.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "blueowl.com",
+       "published_at": "2026-04-30T16:06:31",
+       "url": "https://alternativecreditinvestor.com/2026/04/30/blue-owl-grows-aum-and-earnings-despite-wealth-jitters/",
+       "publisher": "alternativecreditinvestor.com",
+       "title": "Blue Owl grows AUM and earnings despite wealth jitters"
+      },
+      {
+       "id": "6a04182762bbf617b04a568e",
+       "headline": "This quarter, we announced an expansion of our long-term strategic relationship with Cain and Eldridge Industries by providing a $1.5 billion mezzanine loan as part of the construction financing for the One Beverly Hills development project.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "viciproperties.com",
+       "published_at": "2026-04-30T15:07:01",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d64da088760d34c03e74",
+       "headline": "Continuously at least 1.5 billion euros would be invested annually in the preservation and also new plants in Ludwigshafen, explained the manager.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "basf.com",
+       "published_at": "2026-04-30T14:48:03",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8815f8937ef12fc07a3f9",
+       "headline": "Arbonis (€50 million from CA, 135 employees) is an entity of the Vinci Group and subsidiary of Vinci Construction (€31.7 billion from CA).",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "arbonis.com",
+       "published_at": "2026-04-30T14:30:41",
+       "url": "https://www.lejournaldesentreprises.com/article/le-specialiste-de-la-construction-en-bois-lamelle-colle-arbonis-construit-une-nouvelle-usine-2142145",
+       "publisher": "lejournaldesentreprises.com",
+       "title": "Le spécialiste de la construction en bois lamellé-collé Arbonis construit une nouvelle usine à Chemillé-en-Anjou"
+      },
+      {
+       "id": "69f8a7db43843dd771d25399",
+       "headline": "Ctruh, a Bengaluru-based deep-tech company building the infrastructure layer for the spatial internet, has announced the successful closure of its $2.5 million seed funding round",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "ctruh.com",
+       "published_at": "2026-04-30T13:22:57",
+       "url": "https://www.passionateinmarketing.com/deep-tech-startup-ctruh-raises-2-5-million-seed-round-to-build-the-infrastructure-layer-of-the-spatial-internet-sets-us-and-uae-launch-for-2026/",
+       "publisher": "passionateinmarketing.com",
+       "title": "Ctruh Raises $2.5M to Build Spatial Internet"
+      },
+      {
+       "id": "69f8ab258937ef12fc0b1324",
+       "headline": "Novartis to expand in Durham and Wake Counties, adding 700 jobs with a $771 million investment.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "novartis.com",
+       "published_at": "2026-04-30T12:55:00",
+       "url": "https://abc11.com/post/novartis-open-new-drug-manufacturing-facility-morrisville-north-carolina/19005550/",
+       "publisher": "abc11.com",
+       "title": "Novartis finalizes new manufacturing facility in Morrisville as part of major US expansion"
+      },
+      {
+       "id": "69f8ac148937ef12fc0b20ac",
+       "headline": "It will focus on investing in greenfield Grade A industrial and logistics assets across West and South India, including Pune, Mumbai, Chennai and Bengaluru. The fund is expected to raise an additional ₹500 crore through co-investment commitments alongside the main corpus.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "kshinfra.com",
+       "published_at": "2026-04-30T12:36:37",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a0403d162bbf617b0417f21",
+       "headline": "has announced a $40 million strategic growth investment in Trimex Foods Private Limited (“Trimex”)",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "trimex.be",
+       "published_at": "2026-04-30T08:59:11",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8a80cbbf1d314559a3b16",
+       "headline": "3030e Deutsche Beteiligungs AG invests in Bug Bounty Switzerland AG and thus expands its portfolio in the field of cybersecurity. The listed equity firm from Frankfurt am Main acquires a minority stake in the Swiss pioneer for intelligent security testing.",
+       "event_type": "capital_infusion",
+       "role": "primary",
+       "domain": "bugbounty.sa",
+       "published_at": "2026-04-30T08:34:31",
+       "url": "https://www.unternehmeredition.de/dbag-setzt-auf-schweizer-cybersecurity-experten/",
+       "publisher": "unternehmeredition.de",
+       "title": "DBAG setzt auf Schweizer Cybersecurity-Experten"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 3103,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMzAgMDg6MzQ6MzEiLCJpIjoiNjlmOGE4MGNiYmYxZDMxNDU1OWEzYjE2IiwiZG0iOiJidWdib3VudHkuc2EiLCJldCI6ImNhcGl0YWxfaW5mdXNpb24iLCJybyI6InByaW1hcnkifQ",
+     "by_type": {
+      "capital_infusion": 3103
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.377,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.381
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "capital_infusion"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "capital_infusion"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 2541,
+     "carrying": 2539,
+     "carrier_share_pct": 99.92,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 8,
+       "share": 0.32
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 96,
+       "share": 3.78
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 20,
+       "share": 0.79
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 366,
+       "share": 14.42
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 340,
+       "share": 13.39
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 1697,
+       "share": 66.84
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 12,
+       "share": 0.47
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 104,
+       "share": 4.1
+      },
+      {
+       "group": "neutral",
+       "count": 20,
+       "share": 0.79
+      },
+      {
+       "group": "positive",
+       "count": 2415,
+       "share": 95.12
+      }
+     ],
+     "negative_to_positive_ratio": 0.043,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.06,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 466,
+       "negative": 12,
+       "neutral": 5,
+       "positive": 449,
+       "negative_share": 2.58,
+       "positive_share": 96.35,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 4,
+        "fair_neg": 0,
+        "slight_neg": 8,
+        "none": 5,
+        "slight_pos": 50,
+        "fair_pos": 46,
+        "very_pos": 346,
+        "extreme_pos": 7
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 723,
+       "negative": 31,
+       "neutral": 5,
+       "positive": 687,
+       "negative_share": 4.29,
+       "positive_share": 95.02,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 4,
+        "fair_neg": 0,
+        "slight_neg": 27,
+        "none": 5,
+        "slight_pos": 104,
+        "fair_pos": 101,
+        "very_pos": 480,
+        "extreme_pos": 2
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 650,
+       "negative": 23,
+       "neutral": 7,
+       "positive": 620,
+       "negative_share": 3.54,
+       "positive_share": 95.38,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 23,
+        "none": 7,
+        "slight_pos": 106,
+        "fair_pos": 91,
+        "very_pos": 422,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 700,
+       "negative": 38,
+       "neutral": 3,
+       "positive": 659,
+       "negative_share": 5.43,
+       "positive_share": 94.14,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 38,
+        "none": 3,
+        "slight_pos": 106,
+        "fair_pos": 102,
+        "very_pos": 449,
+        "extreme_pos": 2
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.544,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.547
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,749 @@
+{
+ "slug": "demerger",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:41Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "ma"
+     ],
+     "q": "demerger",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "demerger",
+      "match": "any",
+      "event_type": [
+       "company_announcement",
+       "ma"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 0,
+       "by_type": {
+        "company_announcement": 0,
+        "ma": 0
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 0,
+       "by_type": {
+        "company_announcement": 0,
+        "ma": 0
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "company_announcement": 4,
+        "ma": 1
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "company_announcement": 1,
+        "ma": 1
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "company_announcement": 1,
+        "ma": 2
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 5,
+       "by_type": {
+        "company_announcement": 4,
+        "ma": 1
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "company_announcement": 1,
+        "ma": 2
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 1,
+       "by_type": {
+        "company_announcement": 1,
+        "ma": 0
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "company_announcement": 1,
+        "ma": 1
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 2,
+       "by_type": {
+        "company_announcement": 2,
+        "ma": 0
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 3,
+       "by_type": {
+        "company_announcement": 0,
+        "ma": 3
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 1,
+       "by_type": {
+        "company_announcement": 1,
+        "ma": 0
+       }
+      }
+     ],
+     "totals": {
+      "events": 27,
+      "articles": 25,
+      "companies": 21,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "company_announcement": 16,
+      "ma": 11
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.114,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.12
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "ma"
+     ],
+     "q": "demerger",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "demerger",
+      "event_type": [
+       "company_announcement",
+       "ma"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69efab26727212302c5f5080",
+       "headline": "Talks about a potential demerger could resume once parent Vedanta completes its own restructuring.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "hzlindia.com",
+       "published_at": "2026-04-25T07:32:44",
+       "url": "https://www.outlookbusiness.com/corporate/hindustan-zinc-eyes-capacity-doubling-by-2030-demerger-talks-may-resume",
+       "publisher": "outlookbusiness.com",
+       "title": "Hindustan Zinc Eyes Capacity Doubling by 2030, Demerger Talks May Resume – Outlook Business"
+      },
+      {
+       "id": "69c427a97c4635ab38e7d2b3",
+       "headline": "TalkTalk Business has acquired Oxfordshire-based Planet IT, as part of its plans to expand its managed services and cyber, following its demerger from TalkTalk Group, which concluded in February 2026.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "talktalkbusiness.co.uk",
+       "published_at": "2026-03-24T00:31:04",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69c427a97c4635ab38e7d2b3",
+       "headline": "TalkTalk Business has acquired Oxfordshire-based Planet IT, as part of its plans to expand its managed services and cyber, following its demerger from TalkTalk Group, which concluded in February 2026.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "planet-limited.com",
+       "published_at": "2026-03-24T00:31:04",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69c3d258c0415c9db99995e8",
+       "headline": "The open offer was triggered pursuant to the share purchase agreement executed between certain Magnum entities and Unilever entities whereby Magnum had agreed to acquire a controlling stake (i.e., 61.90%) in Kwality Wall's from Unilever following the demerger.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "unilever.com",
+       "published_at": "2026-03-18T13:48:15",
+       "url": "https://www.barandbench.com/dealstreet/khaitan-co-advises-magnum-ice-cream-company-on-stake-acquisition-in-kwality-walls",
+       "publisher": "barandbench.com",
+       "title": "Khaitan & Co advises Magnum Ice Cream Company on stake acquisition in Kwality Wall's"
+      },
+      {
+       "id": "69bd815c981d28529ed5af36",
+       "headline": "Religare Enterprises: The boards of Religare Enterprises and Religare Finvest have approved a demerger to separate the financial services and insurance businesses into two independently listed entities.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "religare.com",
+       "published_at": "2026-02-16T02:58:00",
+       "url": "https://www.equitypandit.com/stocks-in-focus-garden-reach-shipbuilder-hindustan-copper-and-others/",
+       "publisher": "equitypandit.com",
+       "title": "Stocks in Focus: Garden Reach Shipbuilder, Hindustan Copper, and Others"
+      },
+      {
+       "id": "69e2b4cb277be6ed2d9f1a26",
+       "headline": "Later today, you will also have the opportunity to follow company presentations of Kongsberg Maritime and Kongsberg following the demerger -- the announced demerger.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "kongsberg.com",
+       "published_at": "2026-02-06T11:04:19",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69976446219d71cf48d321d5",
+       "headline": "This was followed by the amalgamation of DLF City Centre Limited, DLF Lands India Private Limited, DLF Info City Developers (Kolkata) Limited, and DLF Emporio Limited, along with the demerger and vesting of three SEZ undertakings (located in Silokhera, Hyderabad and Chennai) of DLF Assets Limited into DLF Cyber City Developers Limited.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "dlfcybercity.com",
+       "published_at": "2026-01-14T14:11:07",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "698cc3348d29a990b6c9c6e7",
+       "headline": "Rim pointed to last year’s milestones as groundwork for the next phase, citing the company’s completed demerger, the securing of land for a third Bio Campus in Songdo, and the acquisition of the Rockville facility.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "samsungbiologics.com",
+       "published_at": "2026-01-02T06:00:06",
+       "url": "https://www.koreabiomed.com/news/articleView.html?idxno=30163",
+       "publisher": "koreabiomed.com",
+       "title": "Samsung Biologics CEO lays out 2026 strategy as competition tightens, highlights Rockville site and ADC buildout"
+      }
+     ],
+     "returned": 8,
+     "total_estimate": 8,
+     "next_cursor": null,
+     "by_type": {
+      "company_announcement": 4,
+      "ma": 4
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.541,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 4 event(s)"
+     ],
+     "request_seconds": 4.554
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "company_announcement",
+      "ma"
+     ],
+     "q": "demerger",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "demerger",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "company_announcement",
+       "ma"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 3,
+     "carrying": 3,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 33.33
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 2,
+       "share": 66.67
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 3,
+       "share": 100.0
+      }
+     ],
+     "negative_to_positive_ratio": 0.0,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": null,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 0,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 0,
+       "negative_share": null,
+       "positive_share": null,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 1,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 1,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 1,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 1,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 0,
+        "fair_pos": 0,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 1,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 1,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 1,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 4.922,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 4.926
+    }
+   }
+  }
+ ]
+}

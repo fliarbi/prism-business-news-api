@@ -1,0 +1,806 @@
+{
+ "slug": "class-action-lawsuit",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:47:59Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "lawsuit"
+     ],
+     "q": "class action",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "class action",
+      "match": "any",
+      "event_type": [
+       "lawsuit"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 30,
+       "by_type": {
+        "lawsuit": 30
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 20,
+       "by_type": {
+        "lawsuit": 20
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 47,
+       "by_type": {
+        "lawsuit": 47
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 15,
+       "by_type": {
+        "lawsuit": 15
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 31,
+       "by_type": {
+        "lawsuit": 31
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 34,
+       "by_type": {
+        "lawsuit": 34
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 81,
+       "by_type": {
+        "lawsuit": 81
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 35,
+       "by_type": {
+        "lawsuit": 35
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 26,
+       "by_type": {
+        "lawsuit": 26
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 111,
+       "by_type": {
+        "lawsuit": 111
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 69,
+       "by_type": {
+        "lawsuit": 69
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 97,
+       "by_type": {
+        "lawsuit": 97
+       }
+      }
+     ],
+     "totals": {
+      "events": 596,
+      "articles": 433,
+      "companies": 269,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "lawsuit": 596
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.072,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.075
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "lawsuit"
+     ],
+     "q": "class action",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "class action",
+      "event_type": [
+       "lawsuit"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f885e68937ef12fc0a502e",
+       "headline": "The National Company Law Tribunal’s (NCLT) special bench on Thursday directed listing the class action lawsuit against Jindal Poly Films before the principal bench as such lawsuits can only be heard by the latter bench.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "jindalpoly.com",
+       "published_at": "2026-04-30T15:27:35",
+       "url": "https://www.financialexpress.com/business/news/nclt-to-hear-class-action-suit-against-jindal-poly-on-may-7/4223512/",
+       "publisher": "financialexpress.com",
+       "title": "NCLT to hear class action suit against Jindal Poly on May 7"
+      },
+      {
+       "id": "69f8811543843dd771cee94e",
+       "headline": "The class action lawsuit argued that Amazon did not give those mandatory breaks to hourly employees in Washington state, as required by state law.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "amazon.com",
+       "published_at": "2026-04-30T14:04:25",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1c74aa5706a322e0f1fb8",
+       "headline": "A securities class action lawsuit has been filed against China’s largest online travel agency, Trip.com Group.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "hbsslaw.com",
+       "published_at": "2026-04-28T00:00:00",
+       "url": "https://www.advertisingtoday.com/article/908859617-investor-deadline-trip-com-group-tcom-investors-with-substantial-losses-have-opportunity-to-lead-the-trip-com-class-action-lawsuit-hagens-berman",
+       "publisher": "advertisingtoday.com",
+       "title": "SAN FRANCISCO, April 28, 2026 (GLOBE NEWSWIRE) -- A securities class action lawsuit has been filed against China’s largest online travel agency, Trip.com Group (NASDAQ: TCOM), seeking to represent investors who purchased Trip.com securities between April 30, 2024 and January 13, 2026. The lawsuit fo"
+      },
+      {
+       "id": "69efac2b8a54b8f07c978381",
+       "headline": "On April 25, 2026, Pomerantz LLP, a prominent law firm known for its work in securities class actions and corporate governance, announced the filing of a class action lawsuit against Babcock & Wilcox Enterprises, Inc. (NYSE: BW) in the United States District Court for the Northern District of Ohio.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "pomerantzlaw.com",
+       "published_at": "2026-04-26T13:14:14",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69efac2b8a54b8f07c978381",
+       "headline": "On April 25, 2026, Pomerantz LLP, a prominent law firm known for its work in securities class actions and corporate governance, announced the filing of a class action lawsuit against Babcock & Wilcox Enterprises, Inc. (NYSE: BW) in the United States District Court for the Northern District of Ohio.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "babcock.com",
+       "published_at": "2026-04-26T13:14:14",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69efa918a84b609af2b1b637",
+       "headline": "Kahn Swick & Foti, LLC announced the initiation of a significant securities fraud class action lawsuit against Driven Brands Holdings Inc.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "drivenbrands.com",
+       "published_at": "2026-04-25T13:13:52",
+       "url": "https://www.theedadvocate.org/understanding-the-driven-brands-holdings-inc-securities-fraud-class-action-implications-and-investor-insights/",
+       "publisher": "theedadvocate.org",
+       "title": "Understanding the Driven Brands Holdings Inc. Securities Fraud Class Action: Implications and Investor Insights"
+      },
+      {
+       "id": "69ea1e698266d93399949d33",
+       "headline": "Nintendo fans in the US have filed a class action lawsuit against the Switch manufacturer.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "nintendo.com",
+       "published_at": "2026-04-23T12:48:23",
+       "url": "https://www.gamingdeputy.com/nintendo-under-pressure-switch-players-want-their-money-back/",
+       "publisher": "gamingdeputy.com",
+       "title": "Nintendo under pressure: Switch players want their money back - GAMINGDEPUTY"
+      },
+      {
+       "id": "69f9fcb6713680636ef4a10d",
+       "headline": "several US law firms have filed a class action.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "stellantis.com",
+       "published_at": "2026-04-23T11:32:19",
+       "url": "https://www.boerse-express.com/news/articles/stellantis-juni-deadline-fuer-klage-anmeldung-896373",
+       "publisher": "boerse-express.com",
+       "title": "Stellantis: Juni-Deadline für Klage-Anmeldung"
+      },
+      {
+       "id": "69e9a12fd47fc028321ccbf4",
+       "headline": "Gaming supplier Light & Wonder Inc has been served with a class action lawsuit in Australia linked to disclosures regarding its “Dragon Train” game, the firm said in a Thursday filing.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "lnw.com",
+       "published_at": "2026-04-23T01:15:48",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e88a4e7bb1410d4c8d848f",
+       "headline": "Slater and Gordon is investigating a potential shareholder class action against James Hardie Industries plc in relation to its 1Q FY26 results and downgraded FY26 guidance released on 20 August 2025.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "jameshardie.com",
+       "published_at": "2026-04-22T08:03:25",
+       "url": "https://www.nationaltribune.com.au/slater-and-gordon-announces-james-hardie-shareholder-investigation/",
+       "publisher": "nationaltribune.com.au",
+       "title": "Slater and Gordon announces James Hardie Shareholder Investigation"
+      },
+      {
+       "id": "69e998f2bdd09a23d08fdb01",
+       "headline": "Driven Brands Holdings Inc. (NASDAQ: DRVN) finds itself embroiled in a class action lawsuit that accuses the company and its senior executives of securities fraud.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "drivenbrands.com",
+       "published_at": "2026-04-21T13:07:24",
+       "url": "https://www.theedadvocate.org/driven-brands-faces-securities-fraud-allegations-amidst-financial-restatements/",
+       "publisher": "theedadvocate.org",
+       "title": "Driven Brands Faces Securities Fraud Allegations Amidst Financial Restatements"
+      },
+      {
+       "id": "69e87e555cfa3e5ba502367f",
+       "headline": "A separate securities class action, Taylor v. Hercules Capital, Inc., No. 3:26-cv-02465 (N.D. Cal.), is already pending.",
+       "event_type": "lawsuit",
+       "role": "plaintiff",
+       "domain": "taylor.solar",
+       "published_at": "2026-04-21T03:00:24",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e87e555cfa3e5ba502367f",
+       "headline": "A separate securities class action, Taylor v. Hercules Capital, Inc., No. 3:26-cv-02465 (N.D. Cal.), is already pending.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "htgc.com",
+       "published_at": "2026-04-21T03:00:24",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8680a5cfa3e5ba5f44fa3",
+       "headline": "The Law Offices of Howard G. Smith announces that investors with substantial losses have opportunity to lead the securities fraud class action lawsuit against Lakeland Industries, Inc.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "lakeland.com",
+       "published_at": "2026-04-16T16:00:00",
+       "url": "https://www.prnewswire.com/news-releases/lakeland-industries-inc-lake-shareholders-who-lost-money-have-opportunity-to-lead-securities-fraud-lawsuit-302744291.html",
+       "publisher": "prnewswire.com",
+       "title": "Lakeland Industries, Inc. (LAKE) Shareholders Who Lost Money Have Opportunity to Lead Securities Fraud Lawsuit"
+      },
+      {
+       "id": "69e8dfdc5cfa3e5ba54d3ca3",
+       "headline": "Bernstein Liebhard LLP announces that a shareholder has filed a securities class action lawsuit on behalf of investors (the “Class”) who purchased or acquired the common stock of NuScale Power Corporation (“NuScale” or the “Company”) (NYSE: SMR) between May 13, 2025 and November 6, 2025, inclusive.",
+       "event_type": "lawsuit",
+       "role": "defendant",
+       "domain": "nuscalepower.com",
+       "published_at": "2026-04-16T00:00:00",
+       "url": "https://www.advertisingtoday.com/article/906104329-smr-investor-alert-bernstein-liebhard-llp-announces-a-securities-fraud-class-action-lawsuit-has-been-filed-against-nuscale-power-corporation",
+       "publisher": "advertisingtoday.com",
+       "title": "NEW YORK, April 16, 2026 (GLOBE NEWSWIRE) -- Bernstein Liebhard LLP announces that a shareholder has filed a securities class action lawsuit on behalf of investors (the “Class”) who purchased or acquired the common stock of NuScale Power Corporation (“NuScale” or the “Company”) (NYSE: SMR) between M"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 303,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTYgMDA6MDA6MDAiLCJpIjoiNjllOGRmZGM1Y2ZhM2U1YmE1NGQzY2EzIiwiZG0iOiJudXNjYWxlcG93ZXIuY29tIiwiZXQiOiJsYXdzdWl0Iiwicm8iOiJkZWZlbmRhbnQifQ",
+     "by_type": {
+      "lawsuit": 303
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.48,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 6 event(s)"
+     ],
+     "request_seconds": 4.485
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "lawsuit"
+     ],
+     "q": "class action",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "class action",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "lawsuit"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 230,
+     "carrying": 230,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 125,
+       "share": 54.35
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 6,
+       "share": 2.61
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 78,
+       "share": 33.91
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 3,
+       "share": 1.3
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 16,
+       "share": 6.96
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 0.43
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 0.43
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 209,
+       "share": 90.87
+      },
+      {
+       "group": "neutral",
+       "count": 3,
+       "share": 1.3
+      },
+      {
+       "group": "positive",
+       "count": 18,
+       "share": 7.83
+      }
+     ],
+     "negative_to_positive_ratio": 11.611,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 15.67,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 22,
+       "negative": 20,
+       "neutral": 1,
+       "positive": 1,
+       "negative_share": 90.91,
+       "positive_share": 4.55,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 7,
+        "fair_neg": 1,
+        "slight_neg": 12,
+        "none": 1,
+        "slight_pos": 1,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 73,
+       "negative": 64,
+       "neutral": 1,
+       "positive": 8,
+       "negative_share": 87.67,
+       "positive_share": 10.96,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 39,
+        "fair_neg": 3,
+        "slight_neg": 22,
+        "none": 1,
+        "slight_pos": 6,
+        "fair_pos": 1,
+        "very_pos": 1,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 53,
+       "negative": 51,
+       "neutral": 1,
+       "positive": 1,
+       "negative_share": 96.23,
+       "positive_share": 1.89,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 32,
+        "fair_neg": 1,
+        "slight_neg": 18,
+        "none": 1,
+        "slight_pos": 1,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 82,
+       "negative": 74,
+       "neutral": 0,
+       "positive": 8,
+       "negative_share": 90.24,
+       "positive_share": 9.76,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 47,
+        "fair_neg": 1,
+        "slight_neg": 26,
+        "none": 0,
+        "slight_pos": 8,
+        "fair_pos": 0,
+        "very_pos": 0,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.848,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.851
+    }
+   }
+  }
+ ]
+}

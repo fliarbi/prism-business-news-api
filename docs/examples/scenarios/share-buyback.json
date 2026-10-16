@@ -1,0 +1,798 @@
+{
+ "slug": "share-buyback",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:23Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "buyback"
+     ],
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "event_type": [
+       "buyback"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 251,
+       "by_type": {
+        "buyback": 251
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 220,
+       "by_type": {
+        "buyback": 220
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 237,
+       "by_type": {
+        "buyback": 237
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 307,
+       "by_type": {
+        "buyback": 307
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 474,
+       "by_type": {
+        "buyback": 474
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 270,
+       "by_type": {
+        "buyback": 270
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 379,
+       "by_type": {
+        "buyback": 379
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 320,
+       "by_type": {
+        "buyback": 320
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 274,
+       "by_type": {
+        "buyback": 274
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 549,
+       "by_type": {
+        "buyback": 549
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 384,
+       "by_type": {
+        "buyback": 384
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 326,
+       "by_type": {
+        "buyback": 326
+       }
+      }
+     ],
+     "totals": {
+      "events": 3991,
+      "articles": 3929,
+      "companies": 1893,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "buyback": 3991
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.011,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.013
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "buyback"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "event_type": [
+       "buyback"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "6a03fcb99c4aac09353b82cf",
+       "headline": "Share Repurchase and Dividend – $164 million spent to repurchase 3.4 million shares, and $94 million paid as cash dividends",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "molsoncoors.com",
+       "published_at": "2026-04-30T17:10:56",
+       "url": "https://www.fool.com/earnings/call-transcripts/2026/04/30/molson-coors-tap-q1-2026-earnings-transcript/",
+       "publisher": "fool.com",
+       "title": "Molson Coors (TAP) Q1 2026 Earnings Transcript | The Motley Fool"
+      },
+      {
+       "id": "69f9d4307b2d589e844ab218",
+       "headline": "Calling for a divestiture of Markel Ventures along with a $2 billion tender offer to repurchase shares ahead of such divestiture.",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "markel.io",
+       "published_at": "2026-04-30T17:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a03f29962bbf617b03ad530",
+       "headline": "In first quarter 2026, we returned $26.3 million to shareholders, including $18.1 million, or $0.70 per share, of cash dividends declared and $8.2 million through the repurchase of shares of common stock.",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "interdigital.com",
+       "published_at": "2026-04-30T12:40:25",
+       "url": "https://www.stocktitan.net/sec-filings/IDCC/10-q-inter-digital-inc-quarterly-earnings-report-a18d94a2ca37.html",
+       "publisher": "stocktitan.net",
+       "title": "Earnings drop as InterDigital (NASDAQ: IDCC) ramps IP enforcement"
+      },
+      {
+       "id": "6a03f67f9c4aac0935391dcd",
+       "headline": "Cardinal Health reduces debt and completes additional $250 million share repurchase, bringing FY26 repurchase total to $1.0 billion",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "cardinalhealth.com",
+       "published_at": "2026-04-30T10:45:00",
+       "url": "https://www.stocktitan.net/news/CAH/cardinal-health-reports-third-quarter-fiscal-year-2026-results-and-z84ev9vzr0r4.html",
+       "publisher": "stocktitan.net",
+       "title": "A $184M charge hit Cardinal Health, but it still raised EPS guidance"
+      },
+      {
+       "id": "69f883938937ef12fc08ce29",
+       "headline": "Orange draw 1,3 billion euros for a key buyback in the Fiber L-Operator announces the signing of a €1.3 billion financing from BNP Paribas and CaixaBank to buy Scorefit, a strategic company in its very high-speed access ecosystem.",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "orange.jo",
+       "published_at": "2026-04-30T10:22:46",
+       "url": "https://www.universfreebox.com/article/593867/orange-degaine-13-milliard-deuros-pour-un-rachat-cle-dans-la-fibre",
+       "publisher": "universfreebox.com",
+       "title": "Orange dégaine 1,3 milliard d’euros pour un rachat clé dans la fibre"
+      },
+      {
+       "id": "69f881f48937ef12fc07f197",
+       "headline": "Kajaria Ceramics has announced a buyback of its fully paid-up equity shares at a price of ₹1,380 per share, totalling an aggregate amount of ₹296.70 crores.",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "kajariaceramics.com",
+       "published_at": "2026-04-30T09:32:57",
+       "url": "https://www.businessupturn.com/business/kajaria-ceramics-announces-rs-296-70-crore-buyback-at-rs-1380-per-share/",
+       "publisher": "businessupturn.com",
+       "title": "Kajaria Ceramics announces buyback of Rs 296 crore at 15% premium"
+      },
+      {
+       "id": "69f880868937ef12fc071ecb",
+       "headline": "The amendment of the maximum buyback price from 3 RON/share to 4 RON/share for a maximum of 43,300,000 own shares, representing 4.86% of the share capital, in order to continue the operation approved at the EGMS of 29 October 2025.",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "evergent.ro",
+       "published_at": "2026-04-30T07:06:04",
+       "url": "https://www.romania-insider.com/evergent-investments-shareholders-approved-all-proposals-board-directors-general-meetings",
+       "publisher": "romania-insider.com",
+       "title": "EVERGENT Investments shareholders approved all proposals from the Board of Directors at the General Meetings"
+      },
+      {
+       "id": "69f9d6a2a088760d34c072bb",
+       "headline": "the Board of Directors of the Company will consider a proposal for buyback of fully paid-up equity shares of the Company and other matters necessary and incidental thereto, at its meeting to be held on 06 May 2026…",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "bajajauto.com",
+       "published_at": "2026-04-30T05:56:57",
+       "url": "https://www.livemint.com/market/stock-market-news/bajaj-auto-board-to-consider-share-buyback-with-q4-results-dividend-on-may-6-stock-gains-11777528263531.html",
+       "publisher": "livemint.com",
+       "title": "Bajaj Auto board to consider share buyback with Q4 results, dividend on May 6; stock gains | Stock Market News"
+      },
+      {
+       "id": "69f9d4917b2d589e844aefaf",
+       "headline": "On April 21, Adobe announced that its board had approved a stock buyback plan of up to $25 billion.",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "adobe.com",
+       "published_at": "2026-04-30T03:44:00",
+       "url": "https://theglobeandmail.com/investing/markets/stocks/ADBE/pressreleases/1610976/should-you-buy-adobe-stock-after-the-companys-25-billion-share-repurchase-announcement/",
+       "publisher": "theglobeandmail.com",
+       "title": "Should You Buy Adobe Stock After the Company's $25 Billion Share Repurchase Announcement?"
+      },
+      {
+       "id": "6a0361d3ca027fb5990a7386",
+       "headline": "Universal Music’s newly approved (second) share-buyback program could have something to do with it. As we previously reported, the company’s been repurchasing all manner of shares under a $584 million/€500 million program; now, the board’s agreed to double its size.",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "universalmusic.com",
+       "published_at": "2026-04-30T00:50:49",
+       "url": "https://www.digitalmusicnews.com/2026/04/29/universal-music-earnings-q1-2026/",
+       "publisher": "digitalmusicnews.com",
+       "title": "UMG Posts Mixed Q1 '26 Financials, Ups Share Buyback Program"
+      },
+      {
+       "id": "6a03f38c220687a966a27903",
+       "headline": "In the period from April 27 – April 30, 2026, Kontron AG acquired a total of 80,000 own shares (ISIN AT0000A0E9W5, WKN A0X9EJ, KTN) under the share buyback as announced on March 25, 2026",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "kontron.com",
+       "published_at": "2026-04-30T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a03f1d79c4aac09353787bb",
+       "headline": "Purchases of treasury stock ( 89.5 )",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "irco.com",
+       "published_at": "2026-04-29T20:23:32",
+       "url": "https://www.stocktitan.net/sec-filings/IR/10-q-ingersoll-rand-inc-quarterly-earnings-report-b2629f3a1cce.html",
+       "publisher": "stocktitan.net",
+       "title": "Ingersoll Rand (IR) posts higher Q1 2026 profit on $1.85B sales"
+      },
+      {
+       "id": "69f87fd243843dd771ce2901",
+       "headline": "Universal Music Group announced that it will sell half of its equity stake in Spotify and double its share buyback program, in the middle of a quarter marked by the impact of the dollar's weakness on its revenue.",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "universalmusic.com",
+       "published_at": "2026-04-29T20:10:09",
+       "url": "https://miled.com/2026/04/29/universal-vendera-acciones-de-spotify-titulos/",
+       "publisher": "miled.com",
+       "title": "Universal Venderá Acciones De Spotify Y Recompra Títulos"
+      },
+      {
+       "id": "69f9d41ca088760d34bec453",
+       "headline": "The Board of Directors has approved a new plan to repurchase, in open market transactions at prevailing market prices, up to 310,000, approximately 3.0%, of the outstanding shares of ACNB’s common stock.",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "acnb.com",
+       "published_at": "2026-04-29T13:00:00",
+       "url": "https://www.stocktitan.net/news/ACNB/acnb-corporation-announces-second-quarter-of-2026-regular-and-yhr4xm65krgl.html",
+       "publisher": "stocktitan.net",
+       "title": "ACNB shareholders get a bigger quarterly payout plus a $0.50 extra"
+      },
+      {
+       "id": "69f22f6627117df83f95cde2",
+       "headline": "5.9 million from the purchase and cancellation of 1.5 million common shares through a Normal Course Issuer Bid",
+       "event_type": "buyback",
+       "role": "primary",
+       "domain": "amerigoresources.com",
+       "published_at": "2026-04-29T11:33:02",
+       "url": "https://www.juniorminingnetwork.com/junior-miner-news/press-releases/1282-tsx/arg/202194-amerigo-announces-q1-2026-results-quarterly-dividend.html",
+       "publisher": "juniorminingnetwork.com",
+       "title": "Amerigo Resources Announces Q1-2026 Results & Quarterly Dividend"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 1533,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjkgMTE6MzM6MDIiLCJpIjoiNjlmMjJmNjYyNzExN2RmODNmOTVjZGUyIiwiZG0iOiJhbWVyaWdvcmVzb3VyY2VzLmNvbSIsImV0IjoiYnV5YmFjayIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "buyback": 1533
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.095,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 2 event(s)"
+     ],
+     "request_seconds": 4.098
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "buyback"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "buyback"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 1501,
+     "carrying": 1501,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 9,
+       "share": 0.6
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 1,
+       "share": 0.07
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 120,
+       "share": 7.99
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 198,
+       "share": 13.19
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 739,
+       "share": 49.23
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 102,
+       "share": 6.8
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 329,
+       "share": 21.92
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 3,
+       "share": 0.2
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 130,
+       "share": 8.66
+      },
+      {
+       "group": "neutral",
+       "count": 198,
+       "share": 13.19
+      },
+      {
+       "group": "positive",
+       "count": 1173,
+       "share": 78.15
+      }
+     ],
+     "negative_to_positive_ratio": 0.111,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.15,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 270,
+       "negative": 12,
+       "neutral": 44,
+       "positive": 214,
+       "negative_share": 4.44,
+       "positive_share": 79.26,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 11,
+        "none": 44,
+        "slight_pos": 141,
+        "fair_pos": 12,
+        "very_pos": 61,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 535,
+       "negative": 44,
+       "neutral": 65,
+       "positive": 426,
+       "negative_share": 8.22,
+       "positive_share": 79.63,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 4,
+        "fair_neg": 1,
+        "slight_neg": 39,
+        "none": 65,
+        "slight_pos": 246,
+        "fair_pos": 46,
+        "very_pos": 132,
+        "extreme_pos": 2
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 372,
+       "negative": 41,
+       "neutral": 45,
+       "positive": 286,
+       "negative_share": 11.02,
+       "positive_share": 76.88,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 0,
+        "slight_neg": 39,
+        "none": 45,
+        "slight_pos": 169,
+        "fair_pos": 24,
+        "very_pos": 92,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 324,
+       "negative": 33,
+       "neutral": 44,
+       "positive": 247,
+       "negative_share": 10.19,
+       "positive_share": 76.23,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 2,
+        "fair_neg": 0,
+        "slight_neg": 31,
+        "none": 44,
+        "slight_pos": 183,
+        "fair_pos": 20,
+        "very_pos": 44,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.669,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.671
+    }
+   }
+  }
+ ]
+}

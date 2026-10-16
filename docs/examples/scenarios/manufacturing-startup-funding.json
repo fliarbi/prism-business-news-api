@@ -1,0 +1,2262 @@
+{
+ "slug": "manufacturing-startup-funding",
+ "segment": "funding-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:19Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "sector": "manufacturing",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "sector": [
+       "manufacturing"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 671,
+      "deals_with_amount": 599,
+      "deals_without_amount": 72,
+      "deals_amount_excluded": 3,
+      "sum_amount_usd": 87620781681.71,
+      "median_amount_usd": 18000000.0,
+      "largest_amount_usd": 14000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 29,
+       "deals_with_amount": 26,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 4965890750.0,
+       "median_amount_usd": 31200000.0,
+       "largest_amount_usd": 1489000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 64,
+       "deals_with_amount": 60,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3941543700.0,
+       "median_amount_usd": 13500000.0,
+       "largest_amount_usd": 1750000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 51,
+       "deals_with_amount": 40,
+       "deals_without_amount": 11,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 3258323500.0,
+       "median_amount_usd": 17000000.0,
+       "largest_amount_usd": 1489000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 62,
+       "deals_with_amount": 56,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 5145895427.52,
+       "median_amount_usd": 7260000.0,
+       "largest_amount_usd": 2000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 60,
+       "deals_with_amount": 57,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 11917622290.0,
+       "median_amount_usd": 34500000.0,
+       "largest_amount_usd": 5000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 35,
+       "deals_with_amount": 31,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2209723920.0,
+       "median_amount_usd": 15120000.0,
+       "largest_amount_usd": 1053000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 52,
+       "deals_with_amount": 49,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1704297800.0,
+       "median_amount_usd": 8250000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 48,
+       "deals_with_amount": 42,
+       "deals_without_amount": 6,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 6438382600.0,
+       "median_amount_usd": 10100000.0,
+       "largest_amount_usd": 1944000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 70,
+       "deals_with_amount": 63,
+       "deals_without_amount": 7,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 8919008097.99,
+       "median_amount_usd": 32600000.0,
+       "largest_amount_usd": 900000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 65,
+       "deals_with_amount": 54,
+       "deals_without_amount": 11,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 13442564400.0,
+       "median_amount_usd": 24000000.0,
+       "largest_amount_usd": 6200000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 78,
+       "deals_with_amount": 68,
+       "deals_without_amount": 10,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 7741980196.2,
+       "median_amount_usd": 28400000.0,
+       "largest_amount_usd": 963600000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 57,
+       "deals_with_amount": 53,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 20879809000.0,
+       "median_amount_usd": 27378000.0,
+       "largest_amount_usd": 14000000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.074,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.079
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "manufacturing",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "sector": [
+       "manufacturing"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "baa6c0d27ea117b2",
+       "company_name": "tata electronics",
+       "domain": "tata.com",
+       "round_type": "capital investment",
+       "amount_usd": 14000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 14000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tata group",
+         "domain": "tata.com",
+         "amount": 14000000000.0
+        }
+       ],
+       "sector": "Semiconductor manufacturing",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "semiconductor fabrication and assembly facilities",
+       "source_sentence": "The company is making a major $14 billion investment in semiconductor fabrication and assembly facilities.",
+       "published_at": "2026-04-15T11:09:49",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d89e5cfa3e5ba5477b59"
+       ],
+       "article_id": "69e8d89e5cfa3e5ba5477b59"
+      },
+      {
+       "id": "99b7d40206a745a5",
+       "company_name": "prometheus",
+       "domain": "prometeoapi.com",
+       "round_type": null,
+       "amount_usd": 6200000000.0,
+       "amount_flag": null,
+       "valuation_usd": 30000000000.0,
+       "currency": "USD",
+       "amount": 6200000000.0,
+       "valuation": 30000000000.0,
+       "investors": [
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI, Manufacturing Transformation",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "It raised $6.2 billion late last year at a valuation of about $30 billion, excluding any new funding now under discussion.",
+       "published_at": "2026-02-27T14:07:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9d62efe85228ad69b5d11"
+       ],
+       "article_id": "69c9d62efe85228ad69b5d11"
+      },
+      {
+       "id": "da08708b624d5c46",
+       "company_name": "intel",
+       "domain": "intel.com",
+       "round_type": "investment",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": "chip manufacturing",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "purchase of Intel common stock",
+       "source_sentence": "Nvidia announced Thursday that it will invest $5 billion in Intel, supporting the US chip manufacturer in difficulty, but did not offer a manufacturing agreement.",
+       "published_at": "2025-09-18T12:15:21",
+       "coverage_count": 4,
+       "article_ids": [
+        "68d93cb9de859477a80b5b3c",
+        "68d981b182f590e7fe7dc025",
+        "69312233d6b7b171f8f22343",
+        "698ec9158d29a990b6f02bcc"
+       ],
+       "article_id": "698ec9158d29a990b6f02bcc"
+      },
+      {
+       "id": "09f46b11a5c76b7c",
+       "company_name": "Global Coffee Co. pod manufacturing joint venture",
+       "domain": null,
+       "round_type": "equity investment",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apollo",
+         "domain": "apollo-oe.com",
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "Goldman Sachs Alternatives",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Coffee manufacturing",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "That JV includes a $4bn investment co-led by Apollo and KKR, with participation from Goldman Sachs Alternatives, and remains subject to customary closing conditions.",
+       "published_at": "2026-02-24T11:59:20",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e27f25c1991f786ce13ec4"
+       ],
+       "article_id": "69e27f25c1991f786ce13ec4"
+      },
+      {
+       "id": "7c2f2ac314673aa5",
+       "company_name": "BriHyNergy",
+       "domain": "brihynergy.com",
+       "round_type": "Pre-B",
+       "amount_usd": 2800000000.0000005,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CNY",
+       "amount": 20000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Shenzhen Energy Storage Fund",
+         "domain": null,
+         "amount": 20000000000.0
+        }
+       ],
+       "sector": "electrolyzer manufacturing",
+       "country": "China",
+       "city": null,
+       "use_of_funds": "to set up overseas production, scale existing manufacturing, undertake R&D, and hire staff",
+       "source_sentence": "The raise saw the state-backed RMB 20bn ($2.9bn) electrochemical energy storage-focused Shenzhen Energy Storage Fund invest in the original equipment manufacturer (OEM).",
+       "published_at": "2026-04-08T08:30:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2c239c1991f786ceedb87"
+       ],
+       "article_id": "69e2c239c1991f786ceedb87"
+      },
+      {
+       "id": "fd4a8c9b532faff0",
+       "company_name": "Tata Steel Netherlands",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 2160000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Dutch government",
+         "domain": null,
+         "amount": 2000000000.0
+        }
+       ],
+       "sector": "Steel manufacturing",
+       "country": "Netherlands",
+       "city": "IJmuiden",
+       "use_of_funds": "support for decarbonisation project",
+       "source_sentence": "The Dutch government has agreed to provide €2 billion in support for Tata SteelNetherlands’ (TSN) decarbonisation project.",
+       "published_at": "2025-09-29T17:22:54",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f7200e17f4f9d43d2afecb"
+       ],
+       "article_id": "68f7200e17f4f9d43d2afecb"
+      },
+      {
+       "id": "b20cc36c5b8ad69a",
+       "company_name": "intel",
+       "domain": "intel.com",
+       "round_type": "Investment",
+       "amount_usd": 2000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "softbank group",
+         "domain": "global.softbank",
+         "amount": 2000000000.0
+        }
+       ],
+       "sector": "Chip manufacturing",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "SoftBank Group signed an agreement to make a $2 billion investment in the American Intel chip manufacturer, both companies said in a joint communiqué on Monday.",
+       "published_at": "2025-08-19T14:51:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "6996e0c5e0523bedf7b1ad16"
+       ],
+       "article_id": "6996e0c5e0523bedf7b1ad16"
+      },
+      {
+       "id": "f4dbe99f949caf4f",
+       "company_name": "celsa",
+       "domain": "celsa.com.co",
+       "round_type": "debt refinancing",
+       "amount_usd": 1944000000.0000002,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1800000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Strategic Value Partners, LLC and its affiliates (SVP)",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Steel manufacturing (green steel)",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "Debt and equity refinancing to support operational transformation",
+       "source_sentence": "Celsa has announced the successful completion of its refinancing. As part of the transaction, Celsa is issuing €600m of HoldCo PIK notes, co-led by funds managed by Strategic Value Partners, LLC and its affiliates (together, “SVP”), alongside a €1.2bn issuance of senior secured bonds.",
+       "published_at": "2025-12-10T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69db57d8bfc03f5a7197474f"
+       ],
+       "article_id": "69db57d8bfc03f5a7197474f"
+      },
+      {
+       "id": "58b34e54a6033b69",
+       "company_name": "nippon steel",
+       "domain": "nipponsteel.com",
+       "round_type": "government grant",
+       "amount_usd": 1750000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1750000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Japanese government",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "steel manufacturing",
+       "country": "Japan",
+       "city": null,
+       "use_of_funds": "Construction of a new 2 million-tons-per-year EAF production line at Kyushu Works complex, expansion of EAF capacity at Setouchi Works, modification and restart of 400k t/y line at Yamaguchi Works",
+       "source_sentence": "Nippon Steel Corp. (NSC) will receive about $1.75 billion in Japanese government funding to help it expand its recycled-content electric arc furnace (EAF) steelmaking capacity in its home country...",
+       "published_at": "2025-06-02T01:51:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698e3a758d29a990b6e56279"
+       ],
+       "article_id": "698e3a758d29a990b6e56279"
+      },
+      {
+       "id": "4430a25e428ce95e",
+       "company_name": "si group",
+       "domain": "siigroup.com",
+       "round_type": "recapitalization",
+       "amount_usd": 1700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1700000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Manufacturing/chemical intermediates",
+       "country": "USA",
+       "city": "The Woodlands",
+       "use_of_funds": "Renewable credit line",
+       "source_sentence": "Significant deleveraging transaction resulting in an overall debt reduction of approximately $1.7 billion",
+       "published_at": "2025-12-24T18:25:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e29fb2dc480588dc9d2cee",
+        "69e32393660da7a6a2021fbc"
+       ],
+       "article_id": "69e29fb2dc480588dc9d2cee"
+      },
+      {
+       "id": "6345b895e1fd20f2",
+       "company_name": "braidy industries",
+       "domain": "braidyindustries.com",
+       "round_type": "crowdfunding",
+       "amount_usd": 1700000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1700000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "United Co. Rusal",
+         "domain": null,
+         "amount": 200000000.0
+        }
+       ],
+       "sector": "Aluminum manufacturing",
+       "country": "USA",
+       "city": "Ashland",
+       "use_of_funds": "Construction of a $1.7 billion aluminum mill in eastern Kentucky",
+       "source_sentence": "United Co. Rusal, a Russian aluminum company, plans to invest $200 million in the project.",
+       "published_at": "2025-08-02T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68a176893ff75e010c352085"
+       ],
+       "article_id": "68a176893ff75e010c352085"
+      },
+      {
+       "id": "395828b847c719ac",
+       "company_name": "Yuzhan Technology (India) Private Limited",
+       "domain": null,
+       "round_type": "investment",
+       "amount_usd": 1489000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1489000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "foxconn",
+         "domain": "foxconn.com.tw",
+         "amount": null
+        }
+       ],
+       "sector": "Electronics Manufacturing",
+       "country": "India",
+       "city": "Tamil Nadu",
+       "use_of_funds": null,
+       "source_sentence": "Apple’s key supplier Foxconn has invested $1.48 billion (approximately Rs 12,800 crore) in its India operations over the past five days, the company disclosed in a regulatory filing.",
+       "published_at": "2025-07-01T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898ce1c2f01d48cd30f6601"
+       ],
+       "article_id": "6898ce1c2f01d48cd30f6601"
+      },
+      {
+       "id": "860766e16ba4eff2",
+       "company_name": "Yuzhan Technology (India) Private Limited",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1489000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1489000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "foxconn",
+         "domain": "foxconn.com.tw",
+         "amount": null
+        }
+       ],
+       "sector": "electronics manufacturing",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Apple vendor Foxconn has invested USD 1.48 billion or about Rs 12,800 crore in its India unit in the last five days, the company said in a regulatory note.",
+       "published_at": "2025-05-19T18:35:59",
+       "coverage_count": 2,
+       "article_ids": [
+        "699223ee40184cd7086bd40d",
+        "699821d5a9a137bc0bdfcc44"
+       ],
+       "article_id": "699821d5a9a137bc0bdfcc44"
+      },
+      {
+       "id": "1ecf2d8afed5481e",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": "Financing round",
+       "amount_usd": 1053000000.0000001,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 975000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Green steel manufacturing",
+       "country": "Sweden",
+       "city": "Boden",
+       "use_of_funds": "higher project costs and secure a financial buffer",
+       "source_sentence": "In a statement, the firm (formerly H2 Green Steel) said the €975m funding will cover ‘higher project costs and secure a financial buffer’.",
+       "published_at": "2025-10-21T10:43:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e840699baafc7356672cc1"
+       ],
+       "article_id": "69e840699baafc7356672cc1"
+      },
+      {
+       "id": "8d9ea6b035cae6f1",
+       "company_name": "cerebras systems",
+       "domain": "cerebras.net",
+       "round_type": "late-stage",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 23000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 23000000000.0,
+       "investors": [
+        {
+         "name": "benchmark",
+         "domain": "bench.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "amd",
+         "domain": "amd.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI chip manufacturing",
+       "country": "United States",
+       "city": "Sunnyvale",
+       "use_of_funds": "bolster its growth as it competes with Nvidia and AMD",
+       "source_sentence": "AI chipmaker Cerebras Systems said on Wednesday it raised $1 billion in a late-stage funding round that valued it at $23 billion, nearly triple its valuation just over four months after its previous financing.",
+       "published_at": "2026-02-04T17:30:42",
+       "coverage_count": 2,
+       "article_ids": [
+        "6986a952ca3bd326c77cffbf",
+        "6a04165c9c4aac093546a379"
+       ],
+       "article_id": "6a04165c9c4aac093546a379"
+      },
+      {
+       "id": "fe8c3e54b937fc18",
+       "company_name": "apptronik",
+       "domain": "apptronik.com",
+       "round_type": "Series A",
+       "amount_usd": 963600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 963600000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "AT&T Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "b capital",
+         "domain": "bcapital.partners",
+         "amount": null
+        },
+        {
+         "name": "Datapower Ventures",
+         "domain": "datapower.vc",
+         "amount": null
+        },
+        {
+         "name": "google",
+         "domain": "google.com",
+         "amount": null
+        },
+        {
+         "name": "john deere",
+         "domain": "deere.com",
+         "amount": null
+        },
+        {
+         "name": "Mercedes-Benz Group",
+         "domain": "group.mercedes-benz.com",
+         "amount": null
+        },
+        {
+         "name": "peak 6",
+         "domain": "peak6.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "Rockaway Ventures",
+         "domain": "rockawayventures.com",
+         "amount": null
+        },
+        {
+         "name": "scrum ventures",
+         "domain": "scrum.vc",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Industrial Automation, Machinery Manufacturing, Robotics",
+       "country": "USA",
+       "city": "Austin",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "9c1f7a9d756d936f",
+       "company_name": "fuyao glass industry group",
+       "domain": "fuyaogroup.com",
+       "round_type": "IPO",
+       "amount_usd": 951000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 951000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "glass manufacturing",
+       "country": "China",
+       "city": "Fuqing",
+       "use_of_funds": null,
+       "source_sentence": "Fuyao Glass, a Chinese maker of car windows, has raised US$951 million in Hong Kong’s biggest initial public offering so far this year, a person familiar with the situation said.",
+       "published_at": "2025-12-12T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69db585b9b2f49318b887a05"
+       ],
+       "article_id": "69db585b9b2f49318b887a05"
+      },
+      {
+       "id": "ba7e8d20c3927d73",
+       "company_name": "United Solar Polysilicon",
+       "domain": null,
+       "round_type": "debt financing",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ifc",
+         "domain": "ifc.org",
+         "amount": null
+        },
+        {
+         "name": "local banks",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "renewable energy, solar photovoltaic manufacturing",
+       "country": "Oman",
+       "city": "Sohar",
+       "use_of_funds": "Construction and operation of a 100,000‑tonne polysilicon plant to support solar photovoltaic manufacturing and enhance renewable supply chains.",
+       "source_sentence": "including more than $900 million in recent debt financing led by IFC and local banks.",
+       "published_at": "2026-01-21T07:05:55",
+       "coverage_count": 1,
+       "article_ids": [
+        "698eb77c9ca02490ec137705"
+       ],
+       "article_id": "698eb77c9ca02490ec137705"
+      },
+      {
+       "id": "4fc49c5e056c6e6d",
+       "company_name": "United Solar Holding",
+       "domain": null,
+       "round_type": "debt",
+       "amount_usd": 900000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 900000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "international finance corporation",
+         "domain": "ifc.org",
+         "amount": 200000000.0
+        },
+        {
+         "name": "OPEC Fund for International Development",
+         "domain": "opecfund.org",
+         "amount": 50000000.0
+        },
+        {
+         "name": "abu dhabi commercial bank",
+         "domain": "adcb.com",
+         "amount": null
+        },
+        {
+         "name": "al ahli bank of kuwait",
+         "domain": "eahli.com",
+         "amount": null
+        },
+        {
+         "name": "Commercial Bank of Dubai",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "first abu dhabi bank",
+         "domain": "bankfab.ae",
+         "amount": null
+        },
+        {
+         "name": "oman arab bank",
+         "domain": "oman-arabbank.com",
+         "amount": 220000000.0
+        },
+        {
+         "name": "Other local commercial banks",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Solar manufacturing",
+       "country": "Oman",
+       "city": "Sohar Freezone",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-01-20T11:56:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986c34711e3205ec992fc0a"
+       ],
+       "article_id": "6986c34711e3205ec992fc0a"
+      },
+      {
+       "id": "e304c4d73adef411",
+       "company_name": "axiom space",
+       "domain": "axiomspace.com",
+       "round_type": "Venture",
+       "amount_usd": 850000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 850000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "4ig",
+         "domain": "4ig.hu",
+         "amount": null
+        },
+        {
+         "name": "Kam Ghaffarian",
+         "domain": "https://www.linkedin.com/in/kam-ghaffarian-3623b7196",
+         "amount": null
+        },
+        {
+         "name": "luminarx capital management lp",
+         "domain": "luminarxcap.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "type one ventures",
+         "domain": "type1ventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "Aerospace, Industrial Manufacturing, Space Travel",
+       "country": "USA",
+       "city": "Houston",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "0dde0ea38a0ffc82",
+       "company_name": "nfi group",
+       "domain": "nfigroup.com",
+       "round_type": "revolving credit facility",
+       "amount_usd": 845000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 845000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "national bank of canada",
+         "domain": "nbc.ca",
+         "amount": null
+        },
+        {
+         "name": "National Bank Financial",
+         "domain": "nbfwm.ca",
+         "amount": null
+        },
+        {
+         "name": "Bank of Nova Scotia",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bmo capital markets",
+         "domain": "capitalmarkets.bmo.com",
+         "amount": null
+        },
+        {
+         "name": "canadian imperial bank of commerce",
+         "domain": "cibc.com",
+         "amount": null
+        },
+        {
+         "name": "td bank",
+         "domain": "td.com",
+         "amount": null
+        }
+       ],
+       "sector": "bus manufacturing and mobility solutions",
+       "country": "Canada",
+       "city": "Winnipeg",
+       "use_of_funds": "improve covenants, increased liquidity and greater financial flexibility",
+       "source_sentence": "NFI Group Inc. (NFI), a leader in propulsion-agnostic bus and coach mobility solutions, today announced that it and certain of its subsidiaries (collectively, the Company) have entered into a new revolving credit facility (the First Lien Facility) with a total borrowing limit of \\$845 million, which includes \\$300 million in letter of credit availability.",
+       "published_at": "2025-05-07T21:00:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "698fe8348d29a990b6056826"
+       ],
+       "article_id": "698fe8348d29a990b6056826"
+      },
+      {
+       "id": "67590237123e39ea",
+       "company_name": "Tata Semiconductor Manufacturing",
+       "domain": null,
+       "round_type": "loan",
+       "amount_usd": 735000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 735000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "consortium of global banks",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Semiconductor manufacturing",
+       "country": "India",
+       "city": "Dholera",
+       "use_of_funds": "build Dholera fabrication plant",
+       "source_sentence": "Tata Semiconductor Manufacturing has secured a US$735 million loan from a consortium of global banks to fund its Dholera fabrication plant, marking a major step in India's semiconductor ambitions.",
+       "published_at": "2026-03-30T02:36:50",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc5adaf8e7de13bc1e0360"
+       ],
+       "article_id": "69cc5adaf8e7de13bc1e0360"
+      },
+      {
+       "id": "65a864a2ad174950",
+       "company_name": "Agratas Energy Storage Solutions Pvt. Ltd",
+       "domain": null,
+       "round_type": "Bank financing",
+       "amount_usd": 730000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 730000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "axis bank",
+         "domain": "axisbank.com",
+         "amount": null
+        },
+        {
+         "name": "dbs bank",
+         "domain": "dbs.com",
+         "amount": null
+        },
+        {
+         "name": "Hong Kong and Shanghai Banking Corp.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Standard Chartered Bank",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery Manufacturing",
+       "country": "India",
+       "city": "Sanand",
+       "use_of_funds": null,
+       "source_sentence": "has raised more than $730 million from a group of banks in 2025, as the company moves closer to starting commercial operations",
+       "published_at": "2026-04-08T15:48:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2c7037f3a572cf4b2944d"
+       ],
+       "article_id": "69e2c7037f3a572cf4b2944d"
+      },
+      {
+       "id": "b5d29dfeb0bfd774",
+       "company_name": "ktm",
+       "domain": "ktm.com",
+       "round_type": "Loan",
+       "amount_usd": 651720000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 54310000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "jp morgan chase",
+         "domain": "jpmorganchase.com",
+         "amount": null
+        },
+        {
+         "name": "dbs bank",
+         "domain": "dbs.com",
+         "amount": null
+        },
+        {
+         "name": "citigroup global markets",
+         "domain": "citigroup.com",
+         "amount": null
+        }
+       ],
+       "sector": "Motorcycle manufacturing",
+       "country": "Austria",
+       "city": "Pune",
+       "use_of_funds": "Help KTM manage liquidity, sustain product development, and improve production and supply chain efficiency",
+       "source_sentence": "Bajaj Auto International Holdings, a subsidiary of Bajaj Auto, has raised Rs. 5,431 crore to financially support KTM — the Austrian motorcycle brand in which it holds a 49.9 per cent stake.",
+       "published_at": "2025-05-19T13:39:14",
+       "coverage_count": 3,
+       "article_ids": [
+        "68640fa58882abb7e3bc5a9c",
+        "686410788882abb7e3f323d5",
+        "698e5ef89ca02490ec0ca4a5"
+       ],
+       "article_id": "698e5ef89ca02490ec0ca4a5"
+      },
+      {
+       "id": "ced003c5ea1177fe",
+       "company_name": "Ducommun Incorporated",
+       "domain": "ducommun.com",
+       "round_type": "Credit Facility",
+       "amount_usd": 650000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 650000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Manufacturing / Aerospace, Defense",
+       "country": "USA",
+       "city": "COSTA MESA",
+       "use_of_funds": "Repay existing facilities, pay transaction fees and expenses, fund working capital, and other general corporate purposes",
+       "source_sentence": "Ducommun Incorporated (NYSE: DCO) (“Ducommu” or the “Company”) today announced that effective November 24, 2025, it entered into an amended credit facility consisting of a $450 million revolving line of credit and a $200 million term loan to replace its existing facility.",
+       "published_at": "2025-12-01T21:16:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6931341a677ed65aaef21b01"
+       ],
+       "article_id": "6931341a677ed65aaef21b01"
+      },
+      {
+       "id": "878afd6faec35eff",
+       "company_name": "MatX",
+       "domain": "matx.com",
+       "round_type": "Series B",
+       "amount_usd": 625000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 625000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alchip",
+         "domain": "alchip.com",
+         "amount": null
+        },
+        {
+         "name": "Andrej Karpathy",
+         "domain": "https://www.linkedin.com/in/andrej-karpathy-9a650716",
+         "amount": null
+        },
+        {
+         "name": "Dwarkesh Patel",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "harpoon",
+         "domain": "harpoon.io",
+         "amount": null
+        },
+        {
+         "name": "Jane Street Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "John Collison",
+         "domain": "http://www.linkedin.com/in/johnbcollison",
+         "amount": null
+        },
+        {
+         "name": "marvell",
+         "domain": "marvell.com",
+         "amount": null
+        },
+        {
+         "name": "NFDG Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Patrick Collison",
+         "domain": "https://www.linkedin.com/in/patrickcollison/",
+         "amount": null
+        },
+        {
+         "name": "Situational Awareness",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "spark capital",
+         "domain": "sparkcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Triatomic Capital",
+         "domain": "triatomic.ai",
+         "amount": null
+        }
+       ],
+       "sector": "AI Infrastructure, Artificial Intelligence (AI), Hardware, Manufacturing, Semiconductor",
+       "country": "USA",
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "124b6bc4c176d6f0",
+       "company_name": "New Flyer Holdings, Inc.",
+       "domain": null,
+       "round_type": "Debt",
+       "amount_usd": 600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 600000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Bus manufacturing",
+       "country": "Canada",
+       "city": "Winnipeg",
+       "use_of_funds": "Repay existing indebtedness under credit facilities and pay related fees and expenses.",
+       "source_sentence": "NFI Group Inc. (‘NFI’ …) today announced that its subsidiary, New Flyer Holdings, Inc. (the ‘Issuer’), intends to offer, subject to market conditions, $600 million in aggregate principal amount of second lien senior secured notes (the ‘Notes’) in a private offering.",
+       "published_at": "2025-05-28T12:37:01",
+       "coverage_count": 1,
+       "article_ids": [
+        "69888a3b5302bdff25877d6a"
+       ],
+       "article_id": "69888a3b5302bdff25877d6a"
+      },
+      {
+       "id": "65704bfef1a3275f",
+       "company_name": "KTM AG",
+       "domain": null,
+       "round_type": "refinancing",
+       "amount_usd": 594000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "J.P. Morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "hsbc",
+         "domain": "hsbc.com",
+         "amount": null
+        },
+        {
+         "name": "dbs bank",
+         "domain": "dbs.com",
+         "amount": null
+        },
+        {
+         "name": "mufg bank",
+         "domain": "bk.mufg.jp",
+         "amount": null
+        }
+       ],
+       "sector": "motorcycle manufacturing",
+       "country": "Austria",
+       "city": null,
+       "use_of_funds": "product development, market expansion and operational improvement",
+       "source_sentence": "Bajaj Mobility AG has announced that its wholly owned subsidiary KTM AG has completed a major refinancing transaction, securing a €550 million loan from an international banking consortium.",
+       "published_at": "2026-03-02T05:29:48",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ca395803caa0b7b4a7c684"
+       ],
+       "article_id": "69ca395803caa0b7b4a7c684"
+      },
+      {
+       "id": "7b4f2a15b897b8d5",
+       "company_name": "KTM AG",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 567000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 525000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Bajaj Auto International Holdings B.V.",
+         "domain": null,
+         "amount": 450000000.0
+        },
+        {
+         "name": "Na",
+         "domain": null,
+         "amount": 150000000.0
+        },
+        {
+         "name": "Mother Pierer Mobility",
+         "domain": null,
+         "amount": 150000000.0
+        }
+       ],
+       "sector": "Motorcycle manufacturing and engineering",
+       "country": null,
+       "city": null,
+       "use_of_funds": "pay quota to creditors and avert bankruptcy of KTM AG and its subsidiaries",
+       "source_sentence": "Bajaj therefore granted KTM a loan of 450 million. EUR 150 million, additional EUR 150 million Euro comes from Mother Pierer Mobility. The three restructuring plans will finance the quota of 525 million Euro.",
+       "published_at": "2025-05-22T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898cd982f01d48cd30392c1"
+       ],
+       "article_id": "6898cd982f01d48cd30392c1"
+      },
+      {
+       "id": "e86a073b18b7e8eb",
+       "company_name": "perimeter",
+       "domain": "perimeterplatform.com",
+       "round_type": "debt",
+       "amount_usd": 550000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 550000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Medical Manufacturing",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "acquisition of Medical Manufacturing Technologies, LLC and related transaction costs",
+       "source_sentence": "On January 2, 2026, Perimeter Holdings, LLC, an indirect wholly owned subsidiary of Perimeter Solutions, Inc., completed a $550 million offering of 6.250% senior secured notes due January 15, 2034, in a private placement exempt from SEC registration, with interest payable semi-annually starting July 15, 2026.",
+       "published_at": "2026-01-03T15:44:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb89ed7a841a437be6c2cd"
+       ],
+       "article_id": "69bb89ed7a841a437be6c2cd"
+      },
+      {
+       "id": "f442527854585753",
+       "company_name": "stmicroelectronics",
+       "domain": "st.com",
+       "round_type": "credit line",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "european investment bank",
+         "domain": "eib.org",
+         "amount": 500000000.0
+        }
+       ],
+       "sector": "Semiconductor manufacturing",
+       "country": null,
+       "city": null,
+       "use_of_funds": "investment programme in innovative semiconductor technologies and devices in Italy and France, focused on high-volume manufacturing and R&D",
+       "source_sentence": "The European Investment Bank (EIB) and STMicroelectronics have signed a €500 million financing agreement to boost Europe’s competitiveness and strategic autonomy.",
+       "published_at": "2025-12-12T16:03:32",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bb29d365fbf155fa7a3077"
+       ],
+       "article_id": "69bb29d365fbf155fa7a3077"
+      },
+      {
+       "id": "490c57954c53f08f",
+       "company_name": "lenzing",
+       "domain": "lenzing.com",
+       "round_type": "Hybrid bond",
+       "amount_usd": 540000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bnp paribas",
+         "domain": "group.bnpparibas",
+         "amount": null
+        },
+        {
+         "name": "commerzbank",
+         "domain": "commerzbank.com",
+         "amount": null
+        },
+        {
+         "name": "erste group",
+         "domain": "erstegroup.com",
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "raiffeisen bank international",
+         "domain": "rbinternational.com",
+         "amount": null
+        },
+        {
+         "name": "unicredit",
+         "domain": "unicreditgroup.eu",
+         "amount": null
+        }
+       ],
+       "sector": "Textile and nonwovens manufacturing",
+       "country": "Austria",
+       "city": "Lenzing",
+       "use_of_funds": "Sustainable strengthening of capital structure and secured financing through 2027",
+       "source_sentence": "The issuer is solely responsible for the content of this announcement. Lenzing AG places new hybrid bond of EUR 500 million.",
+       "published_at": "2025-07-03T14:39:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bcd0ab4755dcbc8759d35a"
+       ],
+       "article_id": "69bcd0ab4755dcbc8759d35a"
+      },
+      {
+       "id": "2be782ebd4fa7297",
+       "company_name": "Şişecam",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 510000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "International Finance Corp",
+         "domain": "internationalfinancecorp.com",
+         "amount": null
+        },
+        {
+         "name": "industrial and commercial bank of china",
+         "domain": "icbc-ltd.com",
+         "amount": null
+        },
+        {
+         "name": "Emirates NBD Bank",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bnp paribas",
+         "domain": "group.bnpparibas",
+         "amount": null
+        },
+        {
+         "name": "hsbc",
+         "domain": "hsbc.com",
+         "amount": null
+        },
+        {
+         "name": "Bank of Bahrain and Kuwait",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ilx",
+         "domain": "ilxfund.com",
+         "amount": null
+        },
+        {
+         "name": "standard chartered",
+         "domain": "sc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Glass Manufacturing",
+       "country": "Turkey",
+       "city": "Tarsus",
+       "use_of_funds": "upgrade production facilities, refinance existing debt, new float and solar glass plant, strengthen working capital",
+       "source_sentence": "The $510 million financing package was arranged by IFC, with participation by a consortium of leading international banks, including Industrial and Commercial Bank of China, Emirates NBD Bank, BNP Paribas, HSBC, Bank of Bahrain and Kuwait, ILX and Standard Chartered.",
+       "published_at": "2026-01-26T17:12:26",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d20578d29a990b6d08639"
+       ],
+       "article_id": "698d20578d29a990b6d08639"
+      },
+      {
+       "id": "41036b2729997454",
+       "company_name": "VinFast Auto",
+       "domain": "vinfastauto.com",
+       "round_type": "private credit loan",
+       "amount_usd": 510000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 510000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Private credit lenders",
+         "domain": null,
+         "amount": 510000000.0
+        }
+       ],
+       "sector": "electric vehicle manufacturing",
+       "country": "Vietnam",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "It also borrowed $510 million in a private credit loan in July and secured a 1.84 trillion rupiah ($112 million) syndicated facility in April for a factory project in Indonesia.",
+       "published_at": "2025-09-15T08:35:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0f8e3300ed74c762c6641"
+       ],
+       "article_id": "68d0f8e3300ed74c762c6641"
+      },
+      {
+       "id": "c428f4a15784b57e",
+       "company_name": "Agratas",
+       "domain": null,
+       "round_type": "grant",
+       "amount_usd": 509540000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 509540000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "UK Government",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "apc",
+         "domain": "apc.dk",
+         "amount": null
+        }
+       ],
+       "sector": "Battery manufacturing",
+       "country": "UK",
+       "city": "Somerset",
+       "use_of_funds": "planned electric vehicle battery gigafactory",
+       "source_sentence": "The UK has approved about £380 million ($509.54 million) in funding for Agratas",
+       "published_at": "2026-04-10T08:02:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e324f9c5a11d238528512e"
+       ],
+       "article_id": "69e324f9c5a11d238528512e"
+      },
+      {
+       "id": "7afda19fd206a63b",
+       "company_name": "algoma steel",
+       "domain": "algoma.com",
+       "round_type": null,
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Canada Enterprise Emergency Funding Corporation (“CEEFC”), a subsidiary of Canada Development Investment Corporation (CDEV)",
+         "domain": null,
+         "amount": 400000000.0
+        },
+        {
+         "name": "Province of Ontario (“Ontario”)",
+         "domain": null,
+         "amount": 100000000.0
+        }
+       ],
+       "sector": "Steel manufacturing",
+       "country": "Canada",
+       "city": "Sault Ste. Marie",
+       "use_of_funds": "support operations and transformation milestones",
+       "source_sentence": "Algoma Steel Group Inc. (NASDAQ: ASTL; TSX: ASTL) (\"Algoma\" or \"the Company\"), a leading Canadian producer of hot and cold rolled steel sheet and plate products, today announced that it has completed its $500 million financing transaction with the Governments of Canada and Ontario, consistent with the binding term sheets announced on September 29, 2025.",
+       "published_at": "2025-11-17T13:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6998374b2da3986a3f8a111e"
+       ],
+       "article_id": "6998374b2da3986a3f8a111e"
+      },
+      {
+       "id": "783487e411686d8a",
+       "company_name": "algoma steel",
+       "domain": "algoma.com",
+       "round_type": "government financing transaction",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Canada Enterprise Emergency Funding Corporation (CEEFC)",
+         "domain": null,
+         "amount": 400000000.0
+        },
+        {
+         "name": "Province of Ontario",
+         "domain": null,
+         "amount": 100000000.0
+        }
+       ],
+       "sector": "steel manufacturing",
+       "country": "Canada",
+       "city": "Sault Ste. Marie",
+       "use_of_funds": "providing enhanced financial flexibility to support the company's Electric Arc Furnace (EAF) transition and continued operational efficiency",
+       "source_sentence": "$400 million from the Canada Enterprise Emergency Funding Corporation (CEEFC) and $100 million from the Province of Ontario strengthening Algoma’s balance sheet as the Company advances its EAF transition",
+       "published_at": "2025-11-17T13:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc5fe362898d9e03cfe470"
+       ],
+       "article_id": "69cc5fe362898d9e03cfe470"
+      },
+      {
+       "id": "ed42074e0a98d69c",
+       "company_name": "algoma steel",
+       "domain": "algoma.com",
+       "round_type": "loan",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": 500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "federal government",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Ontario government",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Steel manufacturing/Metals",
+       "country": "Canada",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The $500 million in government loans to Algoma Steel Group Inc.",
+       "published_at": "2025-09-29T17:04:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "6986c8459438ce100b18cd41"
+       ],
+       "article_id": "6986c8459438ce100b18cd41"
+      },
+      {
+       "id": "c03868d87d3edb4b",
+       "company_name": "aixtron se",
+       "domain": "aixtron.com",
+       "round_type": "convertible bonds",
+       "amount_usd": 486000000.00000006,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "Semiconductor equipment manufacturing",
+       "country": "Germany",
+       "city": "Herzogenrath",
+       "use_of_funds": "General corporate purposes, including investments to support organic growth, acquisitions and share buybacks",
+       "source_sentence": "AIXTRON SE successfully places convertible bonds in the total nominal amount of EUR 450 million 15.04.2026 / 22:47 CET/CEST",
+       "published_at": "2026-04-15T00:00:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "69e8514b7bb1410d4c6971bb",
+        "69e851df5cfa3e5ba5e7434a",
+        "69e851e77bb1410d4c69cfb3",
+        "69e853575cfa3e5ba5e828e5",
+        "69e8537d7bb1410d4c6ac946",
+        "69e854609baafc735673831f",
+        "69e854c79baafc735673c521",
+        "69e859689baafc735676952d"
+       ],
+       "article_id": "69e8514b7bb1410d4c6971bb"
+      },
+      {
+       "id": "d6925cbbb97a1cf0",
+       "company_name": "Agratas",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 482600000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "GBP",
+       "amount": 380000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "UK government",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Department for Business and Trade",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "advanced propulsion centre uk",
+         "domain": "apcuk.co.uk",
+         "amount": null
+        }
+       ],
+       "sector": "Battery manufacturing",
+       "country": "UK",
+       "city": "Somerset",
+       "use_of_funds": "Support the development of battery manufacturing capacity",
+       "source_sentence": "A significant portion of the funding – around £380m – has been allocated to Agratas, part of the Tata Group, to support the development of battery manufacturing capacity.",
+       "published_at": "2026-04-14T08:26:08",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e6f7bf0f1aa5003e11ce80"
+       ],
+       "article_id": "69e6f7bf0f1aa5003e11ce80"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 671,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDQtMTQgMDg6MjY6MDgiLCJrIjoiMTU0NjE1MjI0MzIwNTY3NjE1ODQiLCJhIjo0ODI2MDAwMDAuMH0",
+     "totals": {
+      "deals": 671,
+      "deals_with_amount": 599,
+      "deals_without_amount": 72,
+      "deals_amount_excluded": 3,
+      "sum_amount_usd": 87620781681.71,
+      "median_amount_usd": 18000000.0,
+      "largest_amount_usd": 14000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.121,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.124
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "sector": "manufacturing",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "sector": [
+       "manufacturing"
+      ]
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "38b19a25a3e734c6",
+       "company_name": "velo3d",
+       "domain": "velo3d.com",
+       "round_type": "direct offering",
+       "amount_usd": 50000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 50000000.0,
+       "valuation": null,
+       "investors": [],
+       "sector": "metal additive manufacturing",
+       "country": "United States",
+       "city": "Fremont",
+       "use_of_funds": "working capital and general corporate purposes",
+       "source_sentence": "Velo3D, Inc. announced the closing of its previously announced firm commitment underwritten registered direct offering of 3,571,428 shares of its common stock (the \"Offering\"), with gross proceeds of approximately $50 million.",
+       "published_at": "2026-04-28T16:36:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f0e7a1836d28f995cbacaf"
+       ],
+       "article_id": "69f0e7a1836d28f995cbacaf"
+      },
+      {
+       "id": "7f6175c95992df97",
+       "company_name": "saffron",
+       "domain": "saffroncooks.com",
+       "round_type": "equity",
+       "amount_usd": 110720000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 110720000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "POSCO-India Private Limited",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "POSCO Co., Ltd",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Steel manufacturing",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The transaction involves the issuance of shares of Saffron Resources Private Limited, a wholly owned subsidiary of JSW Steel, to POSCO-India Private Limited and POSCO Co., Ltd (entities part of the POSCO Group), pursuant to which such subsidiary would become a 50:50 joint venture between JSW Steel and the POSCO Group for a total consideration of $110.72 million ($ 55.36 million for 50%).",
+       "published_at": "2026-04-24T05:54:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69eb300bcb232e514c41eeff"
+       ],
+       "article_id": "69eb300bcb232e514c41eeff"
+      },
+      {
+       "id": "c2e6928507d7bd9b",
+       "company_name": "stch",
+       "domain": "stchgroup.com",
+       "round_type": "Pre-Series A",
+       "amount_usd": 7000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 7000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "omnivore",
+         "domain": "omnivore.io",
+         "amount": null
+        },
+        {
+         "name": "kae capital",
+         "domain": "kae-capital.com",
+         "amount": null
+        },
+        {
+         "name": "WVC",
+         "domain": "wvc.org",
+         "amount": null
+        }
+       ],
+       "sector": "AI / Textile Manufacturing",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Expand AI capabilities, build a fabric R&D lab, deepen manufacturing partnerships, and scale delivery across key markets",
+       "source_sentence": "STCH, an AI startup focused on fabric development and textile manufacturing, has raised $7 million (around ₹66 crore) in a pre-Series A round led by Omnivore, with participation from Kae Capital and WVC.",
+       "published_at": "2026-04-23T13:17:25",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ea1e9f8266d9339994a050"
+       ],
+       "article_id": "69ea1e9f8266d9339994a050"
+      },
+      {
+       "id": "1dd00c4cddbd3df0",
+       "company_name": "powerplus energy",
+       "domain": "powerplus-energy.com.au",
+       "round_type": null,
+       "amount_usd": 2320000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 2320000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Australian Renewable Energy Agency (ARENA)",
+         "domain": null,
+         "amount": 2320000.0
+        }
+       ],
+       "sector": "battery manufacturing",
+       "country": "Australia",
+       "city": null,
+       "use_of_funds": "expand and automate parts of its battery pack assembly line",
+       "source_sentence": "Under the announcement, PowerPlus Energy will receive $2.32 million to expand and automate parts of its battery pack assembly line in Victoria.",
+       "published_at": "2026-04-23T03:35:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e9af53d47fc028321d9564"
+       ],
+       "article_id": "69e9af53d47fc028321d9564"
+      },
+      {
+       "id": "62accdfff9347f4e",
+       "company_name": "C-Infinity",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 16000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "canaan partners",
+         "domain": "canaan.com",
+         "amount": null
+        },
+        {
+         "name": "inventus capital partners",
+         "domain": "inventuscap.com",
+         "amount": null
+        },
+        {
+         "name": "bee partners",
+         "domain": "beepartners.vc",
+         "amount": null
+        },
+        {
+         "name": "radius capital",
+         "domain": "radius.capital",
+         "amount": null
+        }
+       ],
+       "sector": "Manufacturing",
+       "country": "United States",
+       "city": "Mountain View",
+       "use_of_funds": "Expand the platform’s capabilities and accelerate adoption across the manufacturing sector",
+       "source_sentence": "C-Infinity announced it has raised $16 million in funding to accelerate development of its AI platform, AutoAssembler, which automates the translation of digital designs into production-ready manufacturing plans.",
+       "published_at": "2026-04-22T17:00:50",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e99f91bdd09a23d0949e91",
+        "69efac0b8a54b8f07c97611f"
+       ],
+       "article_id": "69e99f91bdd09a23d0949e91"
+      },
+      {
+       "id": "20d877c5f71c7d8f",
+       "company_name": "atmos space cargo",
+       "domain": "atmos-space-cargo.com",
+       "round_type": "Series A",
+       "amount_usd": 27756000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 25700000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Balnord",
+         "domain": "balnord.vc",
+         "amount": null
+        },
+        {
+         "name": "Expansion Ventures",
+         "domain": "expansion-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "Keen Defence and Security",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "european innovation council",
+         "domain": "eic.ec.europa.eu",
+         "amount": null
+        },
+        {
+         "name": "OTB Ventures",
+         "domain": "otb.vc",
+         "amount": null
+        },
+        {
+         "name": "High-Tech Gründerfonds",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "apex ventures",
+         "domain": "apex.ventures",
+         "amount": null
+        },
+        {
+         "name": "seraphim",
+         "domain": "seraphim.vc",
+         "amount": null
+        },
+        {
+         "name": "Seven additional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Space manufacturing",
+       "country": "Germany",
+       "city": "Lichtenau",
+       "use_of_funds": "support a three-vehicle PHOENIX 2 operational campaign, the launch of ATMOS WORKS for European government and defence clients, and the early development of PHOENIX 3.",
+       "source_sentence": "ATMOS Space Cargo has completed a €25.7 million Series A funding round, co-led by Balnord and Expansion Ventures, with support from Keen Defence and Security, the European Innovation Council, OTB Ventures, High-Tech Gründerfonds, APEX Ventures, Seraphim, and seven additional investors.",
+       "published_at": "2026-04-22T04:00:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "69e8837f5cfa3e5ba5058696",
+        "69e887a77bb1410d4c8b9806",
+        "69e88fe95cfa3e5ba50e203b",
+        "69e898065cfa3e5ba5141cc8",
+        "69e99ab175f157062caf1c5c",
+        "69e9a26375f157062cb344b0",
+        "69efab17727212302c5f44d1"
+       ],
+       "article_id": "69e887a77bb1410d4c8b9806"
+      },
+      {
+       "id": "06a57dfc01d9692f",
+       "company_name": "steel exchange india",
+       "domain": "seil.co.in",
+       "round_type": "Preferential issue of convertible warrants",
+       "amount_usd": 42000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 3500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "M/s India Coke and Power Private Limited",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "M/s IMR Steel Private Limited",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "steel manufacturing",
+       "country": "India",
+       "city": "Vishakhapatnam",
+       "use_of_funds": "operational efficiency, supply chain strengthening, debt reduction and overall competitiveness, including access to global sourcing of key raw materials such as metallurgical coke, coking coal, non-coking coal and ferrous scrap",
+       "source_sentence": "Steel Exchange India Limited has received an aggregate amount of ₹75 Crore from M/s India Coke and Power Private Limited and M/s IMR Steel Private Limited towards subscription of convertible warrants under its preferential issue.",
+       "published_at": "2026-04-21T14:32:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e99589bdd09a23d08d227e"
+       ],
+       "article_id": "69e99589bdd09a23d08d227e"
+      },
+      {
+       "id": "b33faf5e240cbcf1",
+       "company_name": "PMGC Holdings Inc.",
+       "domain": null,
+       "round_type": "equity purchase facility",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "institutional investor",
+         "domain": "institutionalinvestor.com",
+         "amount": null
+        }
+       ],
+       "sector": "Aerospace, Defense, Industrial Manufacturing",
+       "country": "United States",
+       "city": "Newport Beach",
+       "use_of_funds": "Continue building its U.S. precision manufacturing platform through accretive acquisitions and organic investment across aerospace, defense, and industrial end markets.",
+       "source_sentence": "PMGC Holdings Inc. (Nasdaq: ELAB) (“PMGC” or the “Company”), a diversified holding company executing a targeted roll-up strategy in U.S.-based precision manufacturing, today announced its entry into a $40 million equity purchase facility (the “Facility”) with an institutional investor. The initial tranche of approximately $10 million is expected to be funded at closing, anticipated today.",
+       "published_at": "2026-04-17T11:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f22d21c6105443aa5d88a2"
+       ],
+       "article_id": "69f22d21c6105443aa5d88a2"
+      },
+      {
+       "id": "a20aa2998535efb0",
+       "company_name": "Evonith Steel",
+       "domain": null,
+       "round_type": "Non-Convertible Debentures",
+       "amount_usd": 30000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 2500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "hdfc mutual fund",
+         "domain": "hdfcfund.com",
+         "amount": null
+        }
+       ],
+       "sector": "Steel manufacturing",
+       "country": "India",
+       "city": "Chennai",
+       "use_of_funds": "Diversify investment across top tier financial institutions",
+       "source_sentence": "Furthermore, the Company has raised an additional INR 250 Cr of Non-Convertible Debenture’s (NCDs) from HDFC Mutual Fund further bolstering its diversity across the top tier of financial institutions.",
+       "published_at": "2026-04-17T05:26:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e882609baafc7356908f90"
+       ],
+       "article_id": "69e882609baafc7356908f90"
+      },
+      {
+       "id": "ab9f5c1ee42ed7b9",
+       "company_name": "NG Electro Products",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 18000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "JM Financial Private Equity",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "some family offices",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Consumer goods-focused contract manufacturing platform",
+       "country": "India",
+       "city": "Mumbai",
+       "use_of_funds": "expand manufacturing capacity, accelerate investment in R&D and product innovation, and strengthen its quality and compliance infrastructure",
+       "source_sentence": "Consumer goods-focused NG Electro Products on Thursday said it has raised Rs 150 crore from JM Financial Private Equity and some family offices.",
+       "published_at": "2026-04-16T14:24:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8e0ff7bb1410d4cd3239d",
+        "69f9d623713680636eed46a5"
+       ],
+       "article_id": "69f9d623713680636eed46a5"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 270,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMTYgMTQ6MjQ6MDAiLCJrIjoiMTIzNjY3MDQzODk1Mjk3MjA3NjEifQ",
+     "totals": {
+      "deals": 270,
+      "deals_with_amount": 238,
+      "deals_without_amount": 32,
+      "deals_amount_excluded": 2,
+      "sum_amount_usd": 50664301694.19,
+      "median_amount_usd": 28215000.0,
+      "largest_amount_usd": 14000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.334,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.366
+    }
+   }
+  }
+ ]
+}

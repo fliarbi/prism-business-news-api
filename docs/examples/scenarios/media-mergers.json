@@ -1,0 +1,806 @@
+{
+ "slug": "media-mergers",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:36Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "ma"
+     ],
+     "q": "media",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "media",
+      "match": "any",
+      "event_type": [
+       "ma"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 65,
+       "by_type": {
+        "ma": 65
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 74,
+       "by_type": {
+        "ma": 74
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 115,
+       "by_type": {
+        "ma": 115
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 100,
+       "by_type": {
+        "ma": 100
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 133,
+       "by_type": {
+        "ma": 133
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 85,
+       "by_type": {
+        "ma": 85
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 96,
+       "by_type": {
+        "ma": 96
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 125,
+       "by_type": {
+        "ma": 125
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 68,
+       "by_type": {
+        "ma": 68
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 130,
+       "by_type": {
+        "ma": 130
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 118,
+       "by_type": {
+        "ma": 118
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 74,
+       "by_type": {
+        "ma": 74
+       }
+      }
+     ],
+     "totals": {
+      "events": 1183,
+      "articles": 771,
+      "companies": 719,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "ma": 1183
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.306,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.329
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "ma"
+     ],
+     "q": "media",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "media",
+      "event_type": [
+       "ma"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "6a2a66235cefb83fe8fd188c",
+       "headline": "announced that it served as the exclusive sell side financial advisor to HealthLeaders, a brand of Simplify Compliance, a Leeds Equity Partners portfolio company, on its acquisition by WTWH Media, a portfolio company of Mountaingate Capital.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "wtwhmedia.com",
+       "published_at": "2026-04-30T16:15:08",
+       "url": "https://intrepidib.com/intrepid-investment-bankers-advises-healthleaders-on-its-sale-to-wtwh-media/",
+       "publisher": "intrepidib.com",
+       "title": "Intrepid Investment Bankers Advises HealthLeaders on Its Sale to WTWH Media | Intrepid Investment Bankers"
+      },
+      {
+       "id": "6a2a66235cefb83fe8fd188c",
+       "headline": "announced that it served as the exclusive sell side financial advisor to HealthLeaders, a brand of Simplify Compliance, a Leeds Equity Partners portfolio company, on its acquisition by WTWH Media, a portfolio company of Mountaingate Capital.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "healthleadersmedia.com",
+       "published_at": "2026-04-30T16:15:08",
+       "url": "https://intrepidib.com/intrepid-investment-bankers-advises-healthleaders-on-its-sale-to-wtwh-media/",
+       "publisher": "intrepidib.com",
+       "title": "Intrepid Investment Bankers Advises HealthLeaders on Its Sale to WTWH Media | Intrepid Investment Bankers"
+      },
+      {
+       "id": "6a2a8cd05cefb83fe8151277",
+       "headline": "Beyond Capital Partners Fund III, advised by Beyond Capital Partners GmbH (“BCP”), has acquired a majority stake in Munich-based SPCR Media GmbH (“SC Media House”) via its portfolio company ECD International Holding GmbH (“ECD”).",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "ecdinternational.co.uk",
+       "published_at": "2026-04-30T14:15:10",
+       "url": "https://www.fyb.de/en/beyond-capital-acquires-majority-stake-in-spcr-invest",
+       "publisher": "fyb.de",
+       "title": "Beyond Capital acquires majority stake in SPCR Invest - FYB Financial Yearbook"
+      },
+      {
+       "id": "69f9d5187b2d589e844b4678",
+       "headline": "The Finnish group Sanoma, owner since 2021 of Santillana Spain, has acquired the Catalan publisher Vicens Vives, one of the main providers of educational content in Spain, as confirmed in a statement by the company, one of the main media and educational groups in Europe.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "media.sanoma.fi",
+       "published_at": "2026-04-30T12:47:03",
+       "url": "https://www.elperiodico.com/es/ocio-y-cultura/20260430/grupo-finlandes-sanoma-compra-vicens-129708886",
+       "publisher": "elperiodico.com",
+       "title": "El grupo finlandés Sanoma compra la histórica editorial Vicens Vives"
+      },
+      {
+       "id": "69f8813443843dd771cefe24",
+       "headline": "Otokar has signed an agreement to acquire a majority stake in Automecanica S.A. and its production facility in Mediaș, Romania. The agreement covers the purchase of 96.77% of Automecanica’s shares for approximately €85 million.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "otokar.com.tr",
+       "published_at": "2026-04-30T08:51:28",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8aaf88937ef12fc0b108d",
+       "headline": "Xcel Brands, the media and consumer products company, sold the Judith Ripka jewelry brand to Fuzion Creations, a large wholesale manufacturer of fine jewelry. The transaction was valued at approximately $3 million, according to Xcel.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "judithripka.com",
+       "published_at": "2026-04-30T04:01:00",
+       "url": "https://wwd.com/business-news/retail/xcel-brands-sells-judith-ripka-jewelry-brand-1238933629/",
+       "publisher": "wwd.com",
+       "title": "EXCLUSIVE: Xcel Brands Sells Judith Ripka"
+      },
+      {
+       "id": "69f8846443843dd771d0a688",
+       "headline": "Perseus Operating Group announced it has acquired Starkwood, a website design and digital media services provider, in a tech M&A deal.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "starkwood.com",
+       "published_at": "2026-04-29T16:53:50",
+       "url": "https://infotechlead.com/analytics/tech-ma-deals-all-things-mobile-analytic-glass-atlas-perseus-operating-95472",
+       "publisher": "infotechlead.com",
+       "title": "Tech M&A Deals: All Things Mobile Analytic, Glass Atlas, Perseus Operating - InfotechLead"
+      },
+      {
+       "id": "69f8846443843dd771d0a688",
+       "headline": "Perseus Operating Group announced it has acquired Starkwood, a website design and digital media services provider, in a tech M&A deal.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "csiperseus.com",
+       "published_at": "2026-04-29T16:53:50",
+       "url": "https://infotechlead.com/analytics/tech-ma-deals-all-things-mobile-analytic-glass-atlas-perseus-operating-95472",
+       "publisher": "infotechlead.com",
+       "title": "Tech M&A Deals: All Things Mobile Analytic, Glass Atlas, Perseus Operating - InfotechLead"
+      },
+      {
+       "id": "69f1cfa0399b489398e2b8c5",
+       "headline": "In this transaction, announced in November, TotalEnergies acquires 50% of a flexible electricity generation activity (gas and biomass power stations, batteries) owned by EPH, a group owned by M. Kretinsky, magnate of energy, media.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "totalenergies.eg",
+       "published_at": "2026-04-29T07:59:42",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1cfa0399b489398e2b8c5",
+       "headline": "In this transaction, announced in November, TotalEnergies acquires 50% of a flexible electricity generation activity (gas and biomass power stations, batteries) owned by EPH, a group owned by M. Kretinsky, magnate of energy, media.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "eph-elektronik.de",
+       "published_at": "2026-04-29T07:59:42",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1c8de399b489398df7444",
+       "headline": "Pacific Equity Partners has reportedly made a $747 million non-binding indicative offer to acquire ASX-listed out-of-home media company oOh!media.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "pep.com.au",
+       "published_at": "2026-04-29T00:00:00",
+       "url": "https://www.mediaweek.com.au/private-equity-firm-makes-747m-play-for-oohmedia/",
+       "publisher": "mediaweek.com.au",
+       "title": "Private equity firm makes $747m play for oOh!media - Mediaweek"
+      },
+      {
+       "id": "69f1c8de399b489398df7444",
+       "headline": "Pacific Equity Partners has reportedly made a $747 million non-binding indicative offer to acquire ASX-listed out-of-home media company oOh!media.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "oohmedia.com.au",
+       "published_at": "2026-04-29T00:00:00",
+       "url": "https://www.mediaweek.com.au/private-equity-firm-makes-747m-play-for-oohmedia/",
+       "publisher": "mediaweek.com.au",
+       "title": "Private equity firm makes $747m play for oOh!media - Mediaweek"
+      },
+      {
+       "id": "69f1cce0a5706a322e11c546",
+       "headline": "Bertelsmann announced this on Tuesday. The media company pays the owners of Concord for this once 1,16 billion dollars in cash.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "concordenergy.com",
+       "published_at": "2026-04-28T12:00:00",
+       "url": "https://www.handelsblatt.com/unternehmen/it-medien/musikunternehmen-bertelsmann-fusioniert-in-milliardendeal-bmg-und-concord/100220350.html",
+       "publisher": "handelsblatt.com",
+       "title": "Musikunternehmen: Bertelsmann fusioniert in Milliardendeal BMG und Concord"
+      },
+      {
+       "id": "69f1cce0a5706a322e11c546",
+       "headline": "Bertelsmann announced this on Tuesday. The media company pays the owners of Concord for this once 1,16 billion dollars in cash.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "bertelsmann.com",
+       "published_at": "2026-04-28T12:00:00",
+       "url": "https://www.handelsblatt.com/unternehmen/it-medien/musikunternehmen-bertelsmann-fusioniert-in-milliardendeal-bmg-und-concord/100220350.html",
+       "publisher": "handelsblatt.com",
+       "title": "Musikunternehmen: Bertelsmann fusioniert in Milliardendeal BMG und Concord"
+      },
+      {
+       "id": "69f0e2c0836d28f995cb5d10",
+       "headline": "Warner Bros Discovery shareholders have approved a $111 billion takeover by Paramount, moving one of the biggest media deals closer to completion and potentially reshaping the global entertainment industry.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "paramount.com",
+       "published_at": "2026-04-24T02:34:28",
+       "url": "https://www.indiatoday.in/business/companies/story/warner-bros-paramount-deal-shareholder-approval-111-billion-merger-explained-2900744-2026-04-24",
+       "publisher": "indiatoday.in",
+       "title": "Warner Bros shareholders approve $111 billion Paramount takeover"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 390,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjQgMDI6MzQ6MjgiLCJpIjoiNjlmMGUyYzA4MzZkMjhmOTk1Y2I1ZDEwIiwiZG0iOiJwYXJhbW91bnQuY29tIiwiZXQiOiJtYSIsInJvIjoiYWNxdWlyZXIifQ",
+     "by_type": {
+      "ma": 390
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.202,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 3 event(s)"
+     ],
+     "request_seconds": 4.205
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "ma"
+     ],
+     "q": "media",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "media",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "ma"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 598,
+     "carrying": 597,
+     "carrier_share_pct": 99.83,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 2,
+       "share": 0.34
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 56,
+       "share": 9.38
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 17,
+       "share": 2.85
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 206,
+       "share": 34.51
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 63,
+       "share": 10.55
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 252,
+       "share": 42.21
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 1,
+       "share": 0.17
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 58,
+       "share": 9.72
+      },
+      {
+       "group": "neutral",
+       "count": 17,
+       "share": 2.85
+      },
+      {
+       "group": "positive",
+       "count": 522,
+       "share": 87.44
+      }
+     ],
+     "negative_to_positive_ratio": 0.111,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.15,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 114,
+       "negative": 10,
+       "neutral": 2,
+       "positive": 102,
+       "negative_share": 8.77,
+       "positive_share": 89.47,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 9,
+        "none": 2,
+        "slight_pos": 44,
+        "fair_pos": 9,
+        "very_pos": 49,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 195,
+       "negative": 21,
+       "neutral": 6,
+       "positive": 168,
+       "negative_share": 10.77,
+       "positive_share": 86.15,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 21,
+        "none": 6,
+        "slight_pos": 60,
+        "fair_pos": 28,
+        "very_pos": 79,
+        "extreme_pos": 1
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 144,
+       "negative": 18,
+       "neutral": 4,
+       "positive": 122,
+       "negative_share": 12.5,
+       "positive_share": 84.72,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 1,
+        "fair_neg": 0,
+        "slight_neg": 17,
+        "none": 4,
+        "slight_pos": 53,
+        "fair_pos": 16,
+        "very_pos": 53,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 144,
+       "negative": 9,
+       "neutral": 5,
+       "positive": 130,
+       "negative_share": 6.25,
+       "positive_share": 90.28,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 9,
+        "none": 5,
+        "slight_pos": 49,
+        "fair_pos": 10,
+        "very_pos": 71,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 5.879,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 5.883
+    }
+   }
+  }
+ ]
+}

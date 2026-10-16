@@ -1,0 +1,798 @@
+{
+ "slug": "fda-approval",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:31Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "fda_approval"
+     ],
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "event_type": [
+       "fda_approval"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 16,
+       "by_type": {
+        "fda_approval": 16
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 14,
+       "by_type": {
+        "fda_approval": 14
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 16,
+       "by_type": {
+        "fda_approval": 16
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 26,
+       "by_type": {
+        "fda_approval": 26
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 17,
+       "by_type": {
+        "fda_approval": 17
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 31,
+       "by_type": {
+        "fda_approval": 31
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 25,
+       "by_type": {
+        "fda_approval": 25
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 24,
+       "by_type": {
+        "fda_approval": 24
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 11,
+       "by_type": {
+        "fda_approval": 11
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 18,
+       "by_type": {
+        "fda_approval": 18
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 16,
+       "by_type": {
+        "fda_approval": 16
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "fda_approval": 12
+       }
+      }
+     ],
+     "totals": {
+      "events": 226,
+      "articles": 213,
+      "companies": 142,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "fda_approval": 226
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.045,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.06
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "fda_approval"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "event_type": [
+       "fda_approval"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f87fbc43843dd771ce1bf5",
+       "headline": "What else you need to know: Eli Lilly’s GLP‑1 business got another tailwind during the quarter with the FDA’s approval of Foundayo, the pill version of its weight‑loss drug. “A key milestone was the US FDA approval of Foundayo — the only approved GLP‑1 pill that can be taken any time of day, without food and water restrictions,” Lilly CEO David Ricks said.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "lilly.com",
+       "published_at": "2026-04-30T16:43:08",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69ea1fe673206aa299ec0084",
+       "headline": "Cipla’s wholly owned subsidiary — Cipla USA Inc (Cipla) has received final approval from the United States Food and Drug Administration (USFDA) for the Abbreviated New Drug Application (ANDA) submitted for Albuterol Sulfate Inhalation Aerosol, 90 mcg per actuation, the first AB rated generic therapeutic equivalent of Ventolin HFA, marketed by GlaxoSmithKline.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "ciplausa.com",
+       "published_at": "2026-04-23T07:28:33",
+       "url": "https://udaipurkiran.com/cipla-shines-as-its-arm-gets-usfdas-final-nod-for-albuterol-sulfate-inhalation-aerosol/",
+       "publisher": "udaipurkiran.com",
+       "title": "Cipla shines as its arm gets USFDA’s final nod for Albuterol Sulfate Inhalation Aerosol"
+      },
+      {
+       "id": "69e863b09baafc73567ca1d7",
+       "headline": "Aurobindo Pharma has received final approval from the US Food & Drug Administration (USFDA) to manufacture and market Glycerol Phenylbutyrate Oral Liquid, 1.1 grams per mL, which is bioequivalent and therapeutically equivalent to the reference listed drug (RLD), Ravicti Oral Liquid 1.1 grams per mL, of Horizon Therapeutics U.S. Holding LLC.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "aurobindo.com",
+       "published_at": "2026-04-17T07:22:53",
+       "url": "https://udaipurkiran.com/aurobindo-pharma-inches-up-on-getting-usfdas-final-nod-for-glycerol-phenylbutyrate-oral-liquid/",
+       "publisher": "udaipurkiran.com",
+       "title": "Aurobindo Pharma inches up on getting USFDA’s final nod for Glycerol Phenylbutyrate Oral Liquid"
+      },
+      {
+       "id": "69e8dadd7bb1410d4cce34d1",
+       "headline": "received “self-affirmed FDA food safe status” from the US Food and Drug Administration",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "bluetree.ai",
+       "published_at": "2026-04-16T04:19:55",
+       "url": "https://www.dairyprocessing.com/articles/2470-reduced-sugar-tech-for-beverages-gets-fda-approval",
+       "publisher": "dairyprocessing.com",
+       "title": "Reduced-sugar tech for beverages gets FDA approval"
+      },
+      {
+       "id": "69e849357bb1410d4c648abc",
+       "headline": "the company announced that the FDA approved FILSPARI to reduce proteinuria in adult and pediatric patients aged 8 years and older with focal segmental glomerulosclerosis without nephrotic syndrome.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "travere.com",
+       "published_at": "2026-04-14T16:30:22",
+       "url": "https://benzinga.com/markets/market-summary/26/04/51811493/crude-oil-falls-sharply-wells-fargo-earnings-miss-views",
+       "publisher": "benzinga.com",
+       "title": "Crude Oil Falls Sharply; Wells Fargo Earnings Miss Views - Avanos Medical (NYSE:AVNS), Clearmind Medicine"
+      },
+      {
+       "id": "69e34df9a8697b10fabd64af",
+       "headline": "The move was triggered by Telix's announcement that the U.S. Food and Drug Administration accepted its resubmitted New Drug Application for TLX101-Px, known as Pixclara (18F-FET), an imaging agent designed to improve diagnosis and management of glioma.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "telixpharma.com",
+       "published_at": "2026-04-10T13:47:57",
+       "url": "https://www.ibtimes.com.au/telix-pharmaceuticals-shares-jump-7-fda-nod-brain-cancer-imaging-agent-amid-strong-revenue-1866078",
+       "publisher": "ibtimes.com.au",
+       "title": "Telix Pharmaceuticals Shares Jump 7% on FDA Nod for Brain Cancer Imaging Agent Amid Strong Revenue Momentum"
+      },
+      {
+       "id": "69e329e08fb0fff17dd4dc8d",
+       "headline": "Telix Pharmaceuticals Ltd (ASX: TLX) led the S&P/ASX 200 gainers Friday with a 3.23 percent surge to $14.08 after the U.S. Food and Drug Administration accepted its resubmitted New Drug Application for TLX101-Px (Pixclara), an investigational PET imaging agent for brain cancer (glioma).",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "telixpharma.com",
+       "published_at": "2026-04-10T06:47:47",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e2c512ff2654c79d6dac64",
+       "headline": "Biocon: The company launched Bosaya and Aukelso (denosumab-kyqq) in the United States after receiving approval and interchangeable designation from the USFDA in September 2025.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "biocon.com",
+       "published_at": "2026-04-08T02:40:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e2c512ff2654c79d6dac64",
+       "headline": "The company secured final approval from the US Food and Drug Administration to manufacture and market Dapagliflozin and Metformin hydrochloride extended-release tablets in multiple strengths.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "aurobindo.com",
+       "published_at": "2026-04-08T02:40:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e2cad7d754bf662cdfc8b9",
+       "headline": "Today announced that the U.S. Food and Drug Administration has granted 510(k) clearance for the Bi-Blade+ advanced dual-port vitrectomy cutter and the Adaptive Fluidics advanced update on the Stellaris Elite® Vision Enhancement System.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "bauschsurgical.eu",
+       "published_at": "2026-04-08T00:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e2c9bfdc480588dca63fd0",
+       "headline": "Today announced that the U.S. Food and Drug Administration has granted 510(k) clearance for the Bi-Blade+ advanced dual-port vitrectomy cutter and the Adaptive Fluidics advanced update on the Stellaris Elite® Vision Enhancement System.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "bauschsurgical.eu",
+       "published_at": "2026-04-08T00:00:00",
+       "url": "https://www.baystreet.ca/stocksinplayarticles/46901/Bausch-Lomb-Corporation",
+       "publisher": "baystreet.ca",
+       "title": "Bausch + Lomb Corporation"
+      },
+      {
+       "id": "69e2a441dc480588dc9e12e3",
+       "headline": "Alembic Pharmaceuticals has secured final approval from the US Food & Drug Administration (USFDA) for its Abbreviated New Drug Application (ANDA) Dapagliflozin Tablets, 5 mg and 10 mg.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "alembicpharmaceuticals.com",
+       "published_at": "2026-04-07T09:33:53",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69d1117b78e97f45a1a18ea1",
+       "headline": "FDA approves a higher‑dose SPINRAZA regimen, broadening Biogen’s commercial opportunity in spinal muscular atrophy and supporting longer‑term rare‑disease revenue.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "biogen.co.uk",
+       "published_at": "2026-03-31T16:17:00",
+       "url": "https://www.watchlistnews.com/biogen-nasdaqbiib-shares-gap-down-heres-why/11037781.html",
+       "publisher": "watchlistnews.com",
+       "title": "Biogen (NASDAQ:BIIB) Shares Gap Down   – Here’s Why"
+      },
+      {
+       "id": "69d1142ab12610f7570586af",
+       "headline": "Butterfly Network obtains FDA clearance for an innovative ultrasound tool designed to expand maternal care access.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "butterflynetwork.com",
+       "published_at": "2026-03-30T21:01:51",
+       "url": "https://www.devdiscourse.com/article/science-environment/3856407-global-health-sector-faces-transformative-shifts-with-ai-innovations-and-policy-changes",
+       "publisher": "devdiscourse.com",
+       "title": "Global Health Sector Faces Transformative Shifts with AI Innovations and Policy Changes | Science-Environment"
+      },
+      {
+       "id": "69d1cee41aa6174eeffae672",
+       "headline": "The FDA has given the green light: Bayer's non-hormonal menopause drug Lynkuet can now be marketed in the USA.",
+       "event_type": "fda_approval",
+       "role": "primary",
+       "domain": "bayer.com",
+       "published_at": "2026-03-28T21:27:32",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 57,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjggMjE6Mjc6MzIiLCJpIjoiNjlkMWNlZTQxYWE2MTc0ZWVmZmFlNjcyIiwiZG0iOiJiYXllci5jb20iLCJldCI6ImZkYV9hcHByb3ZhbCIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "fda_approval": 57
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.457,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 7 event(s)"
+     ],
+     "request_seconds": 4.482
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "fda_approval"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "fda_approval"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 53,
+     "carrying": 53,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 6,
+       "share": 11.32
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 24,
+       "share": 45.28
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 3,
+       "share": 5.66
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 20,
+       "share": 37.74
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 6,
+       "share": 11.32
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 47,
+       "share": 88.68
+      }
+     ],
+     "negative_to_positive_ratio": 0.128,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.17,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 9,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 9,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 6,
+        "fair_pos": 0,
+        "very_pos": 3,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 16,
+       "negative": 3,
+       "neutral": 0,
+       "positive": 13,
+       "negative_share": 18.75,
+       "positive_share": 81.25,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 0,
+        "slight_pos": 7,
+        "fair_pos": 3,
+        "very_pos": 3,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 16,
+       "negative": 3,
+       "neutral": 0,
+       "positive": 13,
+       "negative_share": 18.75,
+       "positive_share": 81.25,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 3,
+        "none": 0,
+        "slight_pos": 4,
+        "fair_pos": 0,
+        "very_pos": 9,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 12,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 12,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 7,
+        "fair_pos": 0,
+        "very_pos": 5,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.072,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.074
+    }
+   }
+  }
+ ]
+}

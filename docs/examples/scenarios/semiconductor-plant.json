@@ -1,0 +1,826 @@
+{
+ "slug": "semiconductor-plant",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:41Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "company_announcement"
+     ],
+     "q": "semiconductor",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "semiconductor",
+      "match": "any",
+      "event_type": [
+       "asset_acquisition",
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 10,
+       "by_type": {
+        "asset_acquisition": 0,
+        "company_announcement": 10
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 12,
+       "by_type": {
+        "asset_acquisition": 4,
+        "company_announcement": 8
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 18,
+       "by_type": {
+        "asset_acquisition": 3,
+        "company_announcement": 15
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 18,
+       "by_type": {
+        "asset_acquisition": 3,
+        "company_announcement": 15
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 30,
+       "by_type": {
+        "asset_acquisition": 5,
+        "company_announcement": 25
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 24,
+       "by_type": {
+        "asset_acquisition": 4,
+        "company_announcement": 20
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 20,
+       "by_type": {
+        "asset_acquisition": 2,
+        "company_announcement": 18
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 13,
+       "by_type": {
+        "asset_acquisition": 2,
+        "company_announcement": 11
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 32,
+       "by_type": {
+        "asset_acquisition": 13,
+        "company_announcement": 19
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 16,
+       "by_type": {
+        "asset_acquisition": 0,
+        "company_announcement": 16
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 13,
+       "by_type": {
+        "asset_acquisition": 1,
+        "company_announcement": 12
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 21,
+       "by_type": {
+        "asset_acquisition": 9,
+        "company_announcement": 12
+       }
+      }
+     ],
+     "totals": {
+      "events": 227,
+      "articles": 195,
+      "companies": 102,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "asset_acquisition": 46,
+      "company_announcement": 181
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.106,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.109
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "company_announcement"
+     ],
+     "q": "semiconductor",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "semiconductor",
+      "event_type": [
+       "asset_acquisition",
+       "company_announcement"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f9d70ea088760d34c0c03f",
+       "headline": "Air Products said it is currently executing around $1bn in air separation and hydrogen projects in Asia tied to multi-phase semiconductor and memory developments, with further expansion expected as new fabrication capacity is built out.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "airproducts.com",
+       "published_at": "2026-04-30T14:21:31",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d65fa088760d34c04ad7",
+       "headline": "Air Products said it is currently executing around $1bn in air separation and hydrogen projects in Asia tied to multi-phase semiconductor and memory developments, with further expansion expected as new fabrication capacity is built out.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "airproducts.com",
+       "published_at": "2026-04-30T14:21:31",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a04009362bbf617b0401992",
+       "headline": "Amazon is now among the top three datacenter chip businesses in the world, as its semiconductor business surpassed a $20 billion annual run rate ... and it would be closer to $50 billion if it included itself among the customers, CEO Andy Jassy said during the company’s first quarter earnings call on Wednesday.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "amazon.com",
+       "published_at": "2026-04-29T23:47:45",
+       "url": "https://www.theregister.com/software/2026/04/30/amazons-chips-become-a-20b-business/5221236",
+       "publisher": "theregister.com",
+       "title": "Amazon's chips become a $20B business"
+      },
+      {
+       "id": "69f8a97e43843dd771d26a8d",
+       "headline": "Amazon is now among the top three datacenter chip businesses in the world, as its semiconductor business surpassed a $20 billion annual run rate ... and it would be closer to $50 billion if it included itself among the customers, CEO Andy Jassy said during the company’s first quarter earnings call on Wednesday.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "amazon.com",
+       "published_at": "2026-04-29T23:47:45",
+       "url": "https://www.theregister.com/2026/04/29/amazon_chips_20b_business/",
+       "publisher": "theregister.com",
+       "title": "Amazon's chips become a $20B business"
+      },
+      {
+       "id": "69f88479bbf1d31455988766",
+       "headline": "Amazon is now among the top three datacenter chip businesses in the world, as its semiconductor business surpassed a $20 billion annual run rate ...",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "amazon.com",
+       "published_at": "2026-04-29T23:47:45",
+       "url": "https://theregister.com/2026/04/29/amazon_chips_20b_business/",
+       "publisher": "theregister.com",
+       "title": "Amazon's chips become a $20B business"
+      },
+      {
+       "id": "69f1c770a5706a322e0f3bc9",
+       "headline": "Infineon Technologies, Germany’s largest semiconductor manufacturer, has announced a major acceleration of its footprint in India, pivoting toward a collaborative manufacturing model to meet skyrocketing global demand.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "infineon.com",
+       "published_at": "2026-04-28T20:31:21",
+       "url": "https://techstory.in/infineons-rapid-expansion-into-the-indian-semiconductor-ecosystem/",
+       "publisher": "techstory.in",
+       "title": "Infineon Rapid Expansion into the Indian Semiconductor Ecosystem - TechStory"
+      },
+      {
+       "id": "69e99f8cbdd09a23d0949995",
+       "headline": "SANTA CLARA, California -- Taiwan Semiconductor Manufacturing Co. on Wednesday gave a glimpse of its next-generation A13 and A12 chipmaking technologies, which promise to make more powerful chips in smaller nodes.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "tsmc.com",
+       "published_at": "2026-04-22T21:50:30",
+       "url": "https://asia.nikkei.com/business/tech/semiconductors/tsmc-teases-next-gen-a13-and-a12-technologies-for-2029-production",
+       "publisher": "asia.nikkei.com",
+       "title": "TSMC teases next-gen A13 and A12 technologies for 2029 production"
+      },
+      {
+       "id": "69e995c3bdd09a23d08d5091",
+       "headline": "In 2025, Samsung signed a semiconductor manufacturing agreement with Tesla valued at approximately $16.5 billion.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "samsung.com",
+       "published_at": "2026-04-22T02:42:04",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e899005cfa3e5ba514d7c8",
+       "headline": "shares of Samsung Electro-Mechanics, the Samsung Electro-Mechanics' FC-BGA substrate for autonomous driving Samsung Electro-Mechanics Co. has developed an advanced semiconductor substrate for autonomous driving, which is expected to drive the top South Korean electronic component maker’s sales and profit growth.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "samsungsem.co.kr",
+       "published_at": "2026-04-21T13:21:35",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e880d77bb1410d4c8725a0",
+       "headline": "Banner Health has acquired an 18.8-acre land parcel near the massive Taiwan Semiconductor Manufacturing Company (TSMC) factory in north Phoenix, paying $22.13 million for the site.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "bannerhealth.com",
+       "published_at": "2026-04-20T18:15:20",
+       "url": "https://cremarketbeat.com/banner-health-pays-22m-for-18-8-acres-near-tsmcs-165b-chip-plant-in-north-phoenix/",
+       "publisher": "cremarketbeat.com",
+       "title": "Banner Health Pays $22M for 18.8 Acres Near TSMC’s $165B Chip Plant in North Phoenix | CRE Market Beat"
+      },
+      {
+       "id": "69e858f29baafc7356764d43",
+       "headline": "the semiconductor giant announced its involvement with Musk’s companies—SpaceX, xAI and Tesla—on Terafab.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "intel.com",
+       "published_at": "2026-04-16T00:38:23",
+       "url": "https://www.crn.com.au/news-network/components-peripherals/2026/exclusive-intel-tells-staff-it-will-disclose-scope-of-work-w",
+       "publisher": "crn.com.au",
+       "title": "Exclusive: Intel Tells Staff It Will Disclose Scope Of Work With Elon Musk In ‘Coming Weeks’"
+      },
+      {
+       "id": "69e8d2c99baafc7356d0cef4",
+       "headline": "Taiwan Semiconductor Manufacturing Company (TSMC) is accelerating its multibillion dollar expansion in Arizona semiconductor manufacturing site, as the AI chip supplier responds to surging demand from the artificial intelligence sector, according to CNBC.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "tsmc.com",
+       "published_at": "2026-04-13T16:37:44",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e8df159baafc7356dacaad",
+       "headline": "Taiwan Semiconductor Manufacturing Co (TSMC) is set to accelerate its multibillion-dollar expansion in Arizona, according to CNBC, deepening its US footprint as demand for AI, high‑performance computing and advanced mobile chips continues to climb. TSMC has invested an estimated US$165bn across its first three Arizona fabs.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "tsmc.com",
+       "published_at": "2026-04-13T14:55:23",
+       "url": "http://technologymagazine.com/news/tsmc-accelerates-arizona-expansion-as-ai-demand-surges",
+       "publisher": "technologymagazine.com",
+       "title": "TSMC Accelerates Arizona Expansion as AI Demand Surges"
+      },
+      {
+       "id": "69e3498ea8697b10fabcb926",
+       "headline": "Vanguard Group Inc. now owns 655,877 shares of the semiconductor company’s stock worth $3,975,000 after acquiring an additional 28,587 shares during the last quarter.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "vanguardlogistics.com",
+       "published_at": "2026-04-07T22:10:46",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69e3498ea8697b10fabcb926",
+       "headline": "State Street Corp now owns 65,056 shares of the semiconductor company’s stock worth $391,000 after acquiring an additional 3,100 shares during the last quarter.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "statestreet.com",
+       "published_at": "2026-04-07T22:10:46",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 82,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDcgMjI6MTA6NDYiLCJpIjoiNjllMzQ5OGVhODY5N2IxMGZhYmNiOTI2IiwiZG0iOiJzdGF0ZXN0cmVldC5jb20iLCJldCI6ImFzc2V0X2FjcXVpc2l0aW9uIiwicm8iOiJhY3F1aXJlciJ9",
+     "by_type": {
+      "company_announcement": 59,
+      "asset_acquisition": 23
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.278,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 7 event(s)"
+     ],
+     "request_seconds": 4.281
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "company_announcement"
+     ],
+     "q": "semiconductor",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "semiconductor",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "asset_acquisition",
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 108,
+     "carrying": 108,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 5,
+       "share": 4.63
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 21,
+       "share": 19.44
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 23,
+       "share": 21.3
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 59,
+       "share": 54.63
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 5,
+       "share": 4.63
+      },
+      {
+       "group": "neutral",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "group": "positive",
+       "count": 103,
+       "share": 95.37
+      }
+     ],
+     "negative_to_positive_ratio": 0.049,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.07,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 18,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 18,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 3,
+        "fair_pos": 4,
+        "very_pos": 11,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 32,
+       "negative": 2,
+       "neutral": 0,
+       "positive": 30,
+       "negative_share": 6.25,
+       "positive_share": 93.75,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 0,
+        "slight_pos": 7,
+        "fair_pos": 3,
+        "very_pos": 20,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 24,
+       "negative": 2,
+       "neutral": 0,
+       "positive": 22,
+       "negative_share": 8.33,
+       "positive_share": 91.67,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 2,
+        "none": 0,
+        "slight_pos": 6,
+        "fair_pos": 8,
+        "very_pos": 8,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 34,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 33,
+       "negative_share": 2.94,
+       "positive_share": 97.06,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 5,
+        "fair_pos": 8,
+        "very_pos": 20,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 5.058,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 5.062
+    }
+   }
+  }
+ ]
+}

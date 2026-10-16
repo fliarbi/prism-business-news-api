@@ -1,0 +1,798 @@
+{
+ "slug": "mergers-and-acquisitions",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:48:13Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "ma"
+     ],
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "event_type": [
+       "ma"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 3758,
+       "by_type": {
+        "ma": 3758
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 4191,
+       "by_type": {
+        "ma": 4191
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 5189,
+       "by_type": {
+        "ma": 5189
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 4716,
+       "by_type": {
+        "ma": 4716
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 5328,
+       "by_type": {
+        "ma": 5328
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 5348,
+       "by_type": {
+        "ma": 5348
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 4769,
+       "by_type": {
+        "ma": 4769
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 6304,
+       "by_type": {
+        "ma": 6304
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 5636,
+       "by_type": {
+        "ma": 5636
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 6209,
+       "by_type": {
+        "ma": 6209
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 5861,
+       "by_type": {
+        "ma": 5861
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 6302,
+       "by_type": {
+        "ma": 6302
+       }
+      }
+     ],
+     "totals": {
+      "events": 63611,
+      "articles": 38935,
+      "companies": 28088,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "ma": 63611
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.047,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.052
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "ma"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "event_type": [
+       "ma"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f8a6048937ef12fc0ad60f",
+       "headline": "Skio, a 2020 Y Combinator alum that was founded by self‑described college dropout Kennan Frost, has been acquired by competitor Recharge, the companies announced on Thursday.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "skio.com",
+       "published_at": "2026-04-30T23:58:52",
+       "url": "https://techcrunch.com/2026/04/30/y-combinator-alum-skio-sells-for-105m-cash-only-raised-8m-founder-says/",
+       "publisher": "techcrunch.com",
+       "title": "Y Combinator alum Skio sells for $105M cash, only raised $8M, founder says | TechCrunch"
+      },
+      {
+       "id": "69f8a6048937ef12fc0ad60f",
+       "headline": "Skio, a 2020 Y Combinator alum that was founded by self‑described college dropout Kennan Frost, has been acquired by competitor Recharge, the companies announced on Thursday.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "getrecharge.com",
+       "published_at": "2026-04-30T23:58:52",
+       "url": "https://techcrunch.com/2026/04/30/y-combinator-alum-skio-sells-for-105m-cash-only-raised-8m-founder-says/",
+       "publisher": "techcrunch.com",
+       "title": "Y Combinator alum Skio sells for $105M cash, only raised $8M, founder says | TechCrunch"
+      },
+      {
+       "id": "69f8abe0bbf1d314559a6920",
+       "headline": "Oil Check Laboratory Services Limited (OCLS), a fluid analysis laboratory business based in South Yorkshire, has been acquired by a US group.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "polarislabs.com",
+       "published_at": "2026-04-30T23:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8abd88937ef12fc0b1c86",
+       "headline": "Eden Futures, a private equity-backed independent supported living provider, has expanded with the acquisition of Complesso.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "edenfutures.org",
+       "published_at": "2026-04-30T23:00:00",
+       "url": "https://www.business-sale.com/news/business-sale/pebacked-supported-living-provider-acquires-home-care-business-229137",
+       "publisher": "business-sale.com",
+       "title": "PE-backed supported living provider acquires home care business"
+      },
+      {
+       "id": "69f8abd88937ef12fc0b1c86",
+       "headline": "Eden Futures, a private equity-backed independent supported living provider, has expanded with the acquisition of Complesso.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "complesso.co.uk",
+       "published_at": "2026-04-30T23:00:00",
+       "url": "https://www.business-sale.com/news/business-sale/pebacked-supported-living-provider-acquires-home-care-business-229137",
+       "publisher": "business-sale.com",
+       "title": "PE-backed supported living provider acquires home care business"
+      },
+      {
+       "id": "69f9d865a088760d34c1b59c",
+       "headline": "Devon Energy Corp. (NYSE: DVN ) is acquiring Coterra Energy in a deal expected to close soon, pending final closing conditions.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "devonenergy.com",
+       "published_at": "2026-04-30T22:23:00",
+       "url": "https://www.stocktitan.net/news/SPGI/veeva-systems-set-to-join-s-p-pgiwfg3po3wz.html",
+       "publisher": "stocktitan.net",
+       "title": "S&P 500 swap on May 7 puts Veeva in and removes Coterra"
+      },
+      {
+       "id": "69f9d865a088760d34c1b59c",
+       "headline": "Devon Energy Corp. (NYSE: DVN ) is acquiring Coterra Energy in a deal expected to close soon, pending final closing conditions.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "coterra.com",
+       "published_at": "2026-04-30T22:23:00",
+       "url": "https://www.stocktitan.net/news/SPGI/veeva-systems-set-to-join-s-p-pgiwfg3po3wz.html",
+       "publisher": "stocktitan.net",
+       "title": "S&P 500 swap on May 7 puts Veeva in and removes Coterra"
+      },
+      {
+       "id": "6a2b320b5cefb83fe88923af",
+       "headline": "Badger Meter, Inc. (NYSE:BMI) completed the acquisition of UDlive Limited on May 1, 2026.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "udlive.io",
+       "published_at": "2026-04-30T22:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "6a2b320b5cefb83fe88923af",
+       "headline": "Badger Meter, Inc. (NYSE:BMI) completed the acquisition of UDlive Limited on May 1, 2026.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "badgermeter.com",
+       "published_at": "2026-04-30T22:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9d88e7b2d589e844daf4f",
+       "headline": "AIMCo acquired 1.38 million strategic Inc. (MSTR) shares worth 219 million dollars.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "aimco.ca",
+       "published_at": "2026-04-30T21:13:16",
+       "url": "https://crypto-economy.com/es/gigante-de-pensiones-canadiense-adquiere-219-millones-de-dolares-en-strategy-shares-y-suma-138-millones-de-mstr/",
+       "publisher": "crypto-economy.com",
+       "title": "Gigante de pensiones canadiense adquiere 219 millones de dólares en acciones de Strategy   - Crypto Economy ESP"
+      },
+      {
+       "id": "6a03692bc2856acf8e8a4155",
+       "headline": "Flow Control Group (“the Company” or “FCG”), a leading North American network of technical flow control and industrial automation distributors and solutions providers, today announced that KKR , the Company’s existing investor, and Neuberger Private Markets (“Neuberger”) have agreed to jointly acquire the Company.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "flowcontrolgroup.com",
+       "published_at": "2026-04-30T21:00:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8854943843dd771d130b4",
+       "headline": "Teledyne Technologies is merging ChartWorld and Raymarine Commercial under a single commercial navigation brand.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "teledyne.com",
+       "published_at": "2026-04-30T20:47:35",
+       "url": "https://splash247.com/teledyne-folds-chartworld-into-raymarine-commercial-brand/",
+       "publisher": "splash247.com",
+       "title": "Teledyne folds ChartWorld into Raymarine Commercial brand - Splash247"
+      },
+      {
+       "id": "6a2a5429c37f6c5e66a7fb5a",
+       "headline": "Mark Zuckerberg and Tim Cook, CEOs of Meta and Apple, respectively, are interested in buying the Seattle Seahawks, NFL champion, whose sales value can reach between $9 and $11 billion.",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "seahawks.com",
+       "published_at": "2026-04-30T20:42:59",
+       "url": "https://oglobo.globo.com/esportes/noticia/2026/04/30/mark-zuckerberg-e-ceo-da-apple-devem-disputar-compra-de-time-campeao-da-nfl.ghtml",
+       "publisher": "oglobo.globo.com",
+       "title": "Mark Zuckerberg e CEO da Apple devem disputar compra de time campeão da NFL; veja valores e fortunas"
+      },
+      {
+       "id": "6a2a5429c37f6c5e66a7fb5a",
+       "headline": "Mark Zuckerberg and Tim Cook, CEOs of Meta and Apple, respectively, are interested in buying the Seattle Seahawks, NFL champion, whose sales value can reach between $9 and $11 billion.",
+       "event_type": "ma",
+       "role": "acquirer",
+       "domain": "https://www.linkedin.com/in/mark-zuckerberg-618bba58",
+       "published_at": "2026-04-30T20:42:59",
+       "url": "https://oglobo.globo.com/esportes/noticia/2026/04/30/mark-zuckerberg-e-ceo-da-apple-devem-disputar-compra-de-time-campeao-da-nfl.ghtml",
+       "publisher": "oglobo.globo.com",
+       "title": "Mark Zuckerberg e CEO da Apple devem disputar compra de time campeão da NFL; veja valores e fortunas"
+      },
+      {
+       "id": "6a2edb458e67a2fcb3e32197",
+       "headline": "Boardwalk Pipelines, LP, today announced the completion of its acquisition of Spire Marketing Inc., a gas marketing business formerly owned by Spire Inc. (NYSE: SR).",
+       "event_type": "ma",
+       "role": "target",
+       "domain": "spire-services.com",
+       "published_at": "2026-04-30T20:30:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 24008,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMzAgMjA6MzA6MDAiLCJpIjoiNmEyZWRiNDU4ZTY3YTJmY2IzZTMyMTk3IiwiZG0iOiJzcGlyZS1zZXJ2aWNlcy5jb20iLCJldCI6Im1hIiwicm8iOiJ0YXJnZXQifQ",
+     "by_type": {
+      "ma": 24008
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.508,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.511
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "ma"
+     ],
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "ma"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 14402,
+     "carrying": 14391,
+     "carrier_share_pct": 99.92,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 53,
+       "share": 0.37
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 3,
+       "share": 0.02
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 617,
+       "share": 4.29
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 527,
+       "share": 3.66
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 3970,
+       "share": 27.59
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 2182,
+       "share": 15.16
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 6995,
+       "share": 48.61
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 44,
+       "share": 0.31
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 673,
+       "share": 4.68
+      },
+      {
+       "group": "neutral",
+       "count": 527,
+       "share": 3.66
+      },
+      {
+       "group": "positive",
+       "count": 13191,
+       "share": 91.66
+      }
+     ],
+     "negative_to_positive_ratio": 0.051,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.07,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 3347,
+       "negative": 174,
+       "neutral": 136,
+       "positive": 3037,
+       "negative_share": 5.2,
+       "positive_share": 90.74,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 18,
+        "fair_neg": 1,
+        "slight_neg": 155,
+        "none": 136,
+        "slight_pos": 855,
+        "fair_pos": 492,
+        "very_pos": 1681,
+        "extreme_pos": 9
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 3691,
+       "negative": 181,
+       "neutral": 129,
+       "positive": 3381,
+       "negative_share": 4.9,
+       "positive_share": 91.6,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 11,
+        "fair_neg": 1,
+        "slight_neg": 169,
+        "none": 129,
+        "slight_pos": 990,
+        "fair_pos": 525,
+        "very_pos": 1848,
+        "extreme_pos": 18
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 3596,
+       "negative": 147,
+       "neutral": 151,
+       "positive": 3298,
+       "negative_share": 4.09,
+       "positive_share": 91.71,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 13,
+        "fair_neg": 1,
+        "slight_neg": 133,
+        "none": 151,
+        "slight_pos": 1055,
+        "fair_pos": 586,
+        "very_pos": 1647,
+        "extreme_pos": 10
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 3757,
+       "negative": 171,
+       "neutral": 111,
+       "positive": 3475,
+       "negative_share": 4.55,
+       "positive_share": 92.49,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 11,
+        "fair_neg": 0,
+        "slight_neg": 160,
+        "none": 111,
+        "slight_pos": 1070,
+        "fair_pos": 579,
+        "very_pos": 1819,
+        "extreme_pos": 7
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.569,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.575
+    }
+   }
+  }
+ ]
+}

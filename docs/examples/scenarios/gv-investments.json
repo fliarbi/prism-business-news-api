@@ -1,0 +1,3256 @@
+{
+ "slug": "gv-investments",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:30Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "GV",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "gv"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 129,
+      "deals_with_amount": 123,
+      "deals_without_amount": 6,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 7676302000.0,
+      "median_amount_usd": 28040000.0,
+      "largest_amount_usd": 1500000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 16,
+       "deals_with_amount": 16,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 342576000.0,
+       "median_amount_usd": 20600000.0,
+       "largest_amount_usd": 108000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 526600000.0,
+       "median_amount_usd": 52500000.0,
+       "largest_amount_usd": 300000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 16,
+       "deals_with_amount": 13,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 223946000.0,
+       "median_amount_usd": 4000000.0,
+       "largest_amount_usd": 58000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 17,
+       "deals_with_amount": 16,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 406880000.0,
+       "median_amount_usd": 12000000.0,
+       "largest_amount_usd": 101000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 675480000.0,
+       "median_amount_usd": 112500000.0,
+       "largest_amount_usd": 250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 12,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 396300000.0,
+       "median_amount_usd": 23900000.0,
+       "largest_amount_usd": 120000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 11,
+       "deals_with_amount": 10,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 139664000.0,
+       "median_amount_usd": 7000000.0,
+       "largest_amount_usd": 65000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 159600000.0,
+       "median_amount_usd": 8000000.0,
+       "largest_amount_usd": 78000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 6,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 732000000.0,
+       "median_amount_usd": 107000000.0,
+       "largest_amount_usd": 480000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 15,
+       "deals_with_amount": 15,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1569200000.0,
+       "median_amount_usd": 50000000.0,
+       "largest_amount_usd": 450000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 7,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1802816000.0,
+       "median_amount_usd": 53500000.0,
+       "largest_amount_usd": 1500000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 8,
+       "deals_with_amount": 8,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 915240000.0,
+       "median_amount_usd": 70000000.0,
+       "largest_amount_usd": 500000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.092,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.1
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "GV",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "gv"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "ce44e488f6b0301f",
+       "company_name": "SambaNova",
+       "domain": null,
+       "round_type": "Series E",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "cambium capital partners",
+         "domain": "cambium.vc",
+         "amount": null
+        },
+        {
+         "name": "first data",
+         "domain": "firstdata.com",
+         "amount": null
+        },
+        {
+         "name": "gulf",
+         "domain": "gulf.co.th",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "mayfield fund",
+         "domain": "mayfield.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "vista equity partners",
+         "domain": "vistaequitypartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Infrastructure, Analytics, Artificial Intelligence (AI), Machine Learning, Semiconductor, Software",
+       "country": "USA",
+       "city": "Palo Alto",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      },
+      {
+       "id": "3d4c62b4ad676e3e",
+       "company_name": "Recursive Superintelligence",
+       "domain": null,
+       "round_type": "Private round",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI system development",
+       "source_sentence": "Recursive Superintelligence raised $500M+ private round for self‑improving AI systems.",
+       "published_at": "2026-04-20T21:10:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e880557bb1410d4c86d42d"
+       ],
+       "article_id": "69e880557bb1410d4c86d42d"
+      },
+      {
+       "id": "c0ca0940c7c173a1",
+       "company_name": "Humans&",
+       "domain": null,
+       "round_type": "Seed",
+       "amount_usd": 480000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4480000000.0,
+       "currency": "USD",
+       "amount": 480000000.0,
+       "valuation": 4480000000.0,
+       "investors": [
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Jeff Bezos",
+         "domain": "https://www.linkedin.com/showcase/jeff-bezos-newslines",
+         "amount": null
+        },
+        {
+         "name": "SV Angel",
+         "domain": "svangel.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "emerson collective",
+         "domain": "emersoncollective.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "development of AI systems that can plan and learn over longer periods of time",
+       "source_sentence": "\"Humans&, a startup with a philosophy that AI should empower people rather than replace them, has raised $480 million in seed funding at a $4.48 billion valuation, reports The New York Times.\"",
+       "published_at": "2026-01-20T16:00:57",
+       "coverage_count": 16,
+       "article_ids": [
+        "6983fec5e71a535a9c17b55d",
+        "6986f5cc514cbd23b5c5ec4b",
+        "698d16079ca02490ecf45639",
+        "69bb638f333284adb663e5d4",
+        "69bba5c8e7c8d3750e07391b",
+        "69bcc7050bf92aede2f5eed5",
+        "69bccf89a75fc0dcb022d1c3",
+        "69bd117b1d0b3f0860f02ff1",
+        "69bd80d31d0b3f0860f21b5e",
+        "69c8c10d8e7a569bab3beac6",
+        "69c93ae3682ef7f3f7635d42",
+        "69cb5b32984a596c0c7daeb3",
+        "69cbe0f9837ebf2e172ac659",
+        "69cc5becfc7cf950538be0a3",
+        "69e2ae8f601121844c38b2cc",
+        "69f885ea8937ef12fc0a5450"
+       ],
+       "article_id": "69bd80d31d0b3f0860f21b5e"
+      },
+      {
+       "id": "0aad0b6cc9a58508",
+       "company_name": "inertia",
+       "domain": "inertialab.com",
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Clean Energy, Energy Management, Power Grid, Renewable Energy",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Fusion startup Inertia has secured $450 million in Series A funding to accelerate commercialization of inertial confinement fusion, positioning itself as one of the most closely watched entrants in the race to deliver grid scale clean energy. The round was led by Bessemer Venture Partners, with participation from GV, Modern Capital, Threshold Ventures, and other investors seeking exposure to next-generation power infrastructure.",
+       "published_at": "2026-02-13T15:40:03",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bb5fcff50f9c5e38708e59",
+        "69c42bda516feee3400310c2",
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69bb5fcff50f9c5e38708e59"
+      },
+      {
+       "id": "2882041c38413202",
+       "company_name": "Inertia Enterprises",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fusion Energy",
+       "country": null,
+       "city": null,
+       "use_of_funds": "plan to build the world’s most powerful laser for inertial confinement fusion at Lawrence Livermore National Laboratory",
+       "source_sentence": "Inertia Enterprises, a fusion energy startup, has secured a massive $450 million Series A to develop one of the world’s most powerful laser systems for grid-scale fusion power.",
+       "published_at": "2026-02-11T23:25:19",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bb171c68bf20e367f75d05",
+        "69bb487d680e91ccbda1b887",
+        "69bb487e5e05f5e7db816a9a"
+       ],
+       "article_id": "69bb171c68bf20e367f75d05"
+      },
+      {
+       "id": "af15be8be8ad6c37",
+       "company_name": "Inertia Enterprises",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "modern capital",
+         "domain": "moderncap.com",
+         "amount": null
+        },
+        {
+         "name": "Threshold Ventures",
+         "domain": "threshold.vc",
+         "amount": null
+        }
+       ],
+       "sector": "fusion power",
+       "country": "USA",
+       "city": "California",
+       "use_of_funds": "Construction of prototype laser beamlines and establishment of the first dedicated fusion fuel target assembly line in California.",
+       "source_sentence": "Inertia Enterprises, a groundbreaking fusion power startup co-founded by Twilio co-founder Jeff Lawson, has raised $450 million in a Series A funding round.",
+       "published_at": "2026-02-11T22:43:48",
+       "coverage_count": 6,
+       "article_ids": [
+        "69bb14637a841a437be54563",
+        "69bb14648b79b55c82752fb2",
+        "69bb6f2eb7032a7d5ce1ef6d",
+        "69bb6f2ff50f9c5e3870c319",
+        "69bbbe7d9e3448abf0a280e6",
+        "69e2ac4c277be6ed2d9d2b6d"
+       ],
+       "article_id": "69bb14637a841a437be54563"
+      },
+      {
+       "id": "ffbab46b985e7d9f",
+       "company_name": "SambaNova",
+       "domain": null,
+       "round_type": "Series E",
+       "amount_usd": 350000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 350000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "vista equity partners",
+         "domain": "vistaequitypartners.com",
+         "amount": null
+        },
+        {
+         "name": "Cambium Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "gulf development",
+         "domain": "gulfdevelopment.com",
+         "amount": null
+        },
+        {
+         "name": "Assam Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "atlantic bridge",
+         "domain": "abven.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Infrastructure, Analytics, Artificial Intelligence (AI), Machine Learning, Semiconductor, Software",
+       "country": null,
+       "city": "Palo Alto",
+       "use_of_funds": "Expand production of SN50 chip, scale SambaCloud, deepen enterprise software integrations",
+       "source_sentence": "Intel-backed Nvidia rival SambaNova has raised $350m in a Series E round led by Vista Equity Partners and Cambium Capital, with strong participation from Intel Capital.",
+       "published_at": "2026-02-25T12:49:02",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c9cb09c14329b30ec6c7c9",
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69c9cb09c14329b30ec6c7c9"
+      },
+      {
+       "id": "dbc3c2244d8a80f5",
+       "company_name": "harvey",
+       "domain": "harvey.ai",
+       "round_type": "Series E",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": 5000000000.0,
+       "investors": [
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "conviction",
+         "domain": "conviction.org.uk",
+         "amount": null
+        },
+        {
+         "name": "Elad Gil",
+         "domain": "eladgil.com",
+         "amount": null
+        },
+        {
+         "name": "openai startup fund",
+         "domain": "openai.fund",
+         "amount": null
+        },
+        {
+         "name": "elemental",
+         "domain": "elemental.biz",
+         "amount": null
+        },
+        {
+         "name": "SV Angel",
+         "domain": "svangel.com",
+         "amount": null
+        },
+        {
+         "name": "rev",
+         "domain": "rev.com",
+         "amount": null
+        }
+       ],
+       "sector": "Legal AI",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "Harvey plans to double its team, expand globally, and move into adjacent verticals such as tax and accounting.",
+       "source_sentence": "Harvey, the legal AI platform used by law firms and corporate legal teams worldwide, has raised $300 million in a Series E funding round, bringing its valuation to $5 billion.",
+       "published_at": "2025-06-25T07:29:00",
+       "coverage_count": 7,
+       "article_ids": [
+        "694b217e2037ff785f75c0a7",
+        "698d20089ca02490ecf5185c",
+        "699828085c6382c5a5cfdd30",
+        "69bb3679bb3472e5f4c5123b",
+        "69bb367ad7b120f5da03cfb2",
+        "69bd0a45981d28529ed39e8f",
+        "69cbb3b7779e2e2bac54450c"
+       ],
+       "article_id": "698d20089ca02490ecf5185c"
+      },
+      {
+       "id": "20b46ccf1c6d7e65",
+       "company_name": "harvey",
+       "domain": "harvey.ai",
+       "round_type": "Series E",
+       "amount_usd": 300000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 300000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "openai startup fund",
+         "domain": "openai.fund",
+         "amount": null
+        },
+        {
+         "name": "sequoia",
+         "domain": "sequoia.com.au",
+         "amount": null
+        },
+        {
+         "name": "RELX/LexisNexis",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Legal Technology",
+       "country": null,
+       "city": null,
+       "use_of_funds": "accelerate product development and expansion",
+       "source_sentence": "Legal AI startup Harvey (formerly Counsel AI) announced a $300 million Series E round that values the company at $5 billion.",
+       "published_at": "2025-06-23T23:21:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "6988bc1394d3f481f3d86981"
+       ],
+       "article_id": "6988bc1394d3f481f3d86981"
+      },
+      {
+       "id": "fd625aeca23d4c7e",
+       "company_name": "modular",
+       "domain": "modular.com",
+       "round_type": null,
+       "amount_usd": 250000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1600000000.0,
+       "currency": "USD",
+       "amount": 250000000.0,
+       "valuation": 1600000000.0,
+       "investors": [
+        {
+         "name": "U.S. Innovative Technology Fund",
+         "domain": "usinnovativetechnology.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "dfj growth",
+         "domain": "dfjgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "greylock",
+         "domain": "greylock.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI computing",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "expand its engineering and go-to-market team and expand from its current focus on AI inference into the AI training market",
+       "source_sentence": "AI startup Modular said on Wednesday it raised $250 million in a funding round valuing it at $1.6 billion.",
+       "published_at": "2025-09-24T16:05:27",
+       "coverage_count": 4,
+       "article_ids": [
+        "6997f5fb5e72b47edd12dd07",
+        "69bb0226b54f2a520bb54b80",
+        "69bbf25c41af9e92ac95578e",
+        "69bd4f0c981d28529ed4d3c1"
+       ],
+       "article_id": "69bd4f0c981d28529ed4d3c1"
+      },
+      {
+       "id": "253cf7ee09cf1002",
+       "company_name": "nothing",
+       "domain": "nothing.tech",
+       "round_type": null,
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "eqt",
+         "domain": "eqt.com",
+         "amount": null
+        }
+       ],
+       "sector": "Consumer Electronics – Smartphones",
+       "country": "UK",
+       "city": "London",
+       "use_of_funds": "AI integration into its hardware products",
+       "source_sentence": "Nothing has recently secured $200 million in a funding round led by Tiger Global, valuing the company at $1.3 billion, according to a recent report by Reuters.",
+       "published_at": "2025-09-16T12:21:26",
+       "coverage_count": 2,
+       "article_ids": [
+        "68d1016f22a1ae9da22ced18",
+        "68d9a33f983a16828b7e4928"
+       ],
+       "article_id": "68d1016f22a1ae9da22ced18"
+      },
+      {
+       "id": "a8a1f90447cac02a",
+       "company_name": "nothing",
+       "domain": "nothing.tech",
+       "round_type": "Series C",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": 1300000000.0,
+       "investors": [
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "highland europe",
+         "domain": "highlandeurope.com",
+         "amount": null
+        },
+        {
+         "name": "eqt",
+         "domain": "eqt.com",
+         "amount": null
+        },
+        {
+         "name": "latitude",
+         "domain": "latitude.io",
+         "amount": null
+        },
+        {
+         "name": "I2BF",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tapestry",
+         "domain": "tapestry.com",
+         "amount": null
+        },
+        {
+         "name": "Nikhil Kamath",
+         "domain": "https://www.linkedin.com/in/nikhilkamathcio",
+         "amount": null
+        },
+        {
+         "name": "qualcomm ventures",
+         "domain": "qualcommventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "consumer electronics",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "fuel its next phase that includes building an AI-native platform where hardware and software merge into a deeply personalised and context-aware operating system",
+       "source_sentence": "Smartphone startup Nothing announced today that it closed its Series C round of $200 million, which was led by the investment firm Tiger Global.",
+       "published_at": "2025-09-16T04:15:00",
+       "coverage_count": 24,
+       "article_ids": [
+        "68d963c92e9612a96e131bb9",
+        "68d96c752c909880704b04e8",
+        "68d970a55c3d35fe5b4b70f9",
+        "68d975e542a4b594744bc6ee",
+        "68d99ae8983a16828b7d8e93",
+        "68d99b535af1b12a767d97e6",
+        "68d9a40093ec9fed387e5a58",
+        "68d9a8dfc149d2bca77ecb11",
+        "68dab4e2f965183cdc889133",
+        "68dae0490e3f1627a0888b64",
+        "68f73093f6f885b63d2c7e86",
+        "694b211097abc5854775b4ee",
+        "698888d5f8e7b174cc0b7ac4",
+        "6988a848127162d16e0ae381",
+        "6988d38c94d3f481f3da3a3e",
+        "6989c50094d3f481f3ec0f1e",
+        "698d2c709ca02490ecf60bbd",
+        "698d6c7d9ca02490ecfad639",
+        "698f5b7a9ca02490ec1f8d67",
+        "698f735a9ca02490ec2151e5",
+        "6991c40640184cd70864b189",
+        "6997e94f2da3986a3f888e46",
+        "69e28e3e277be6ed2d975e5d",
+        "69e869f87bb1410d4c787fde"
+       ],
+       "article_id": "68d96c752c909880704b04e8"
+      },
+      {
+       "id": "087777b28c30a785",
+       "company_name": "treeline biosciences",
+       "domain": "treeline.bio",
+       "round_type": "Growth",
+       "amount_usd": 200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 200000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "arch venture partners",
+         "domain": "archventure.com",
+         "amount": null
+        },
+        {
+         "name": "orbimed",
+         "domain": "orbimed.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology",
+       "country": "USA",
+       "city": "Watertown",
+       "use_of_funds": "to fund early‑stage trials and further pipeline expansion",
+       "source_sentence": "Treeline Biosciences, a secretive biotech startup co‑founded by Loxo Oncology’s Josh Bilenker and former Novartis oncology head Jeff Engelman, has emerged from stealth with $200 million in new funding to propel multiple cancer drugs into clinical trials.",
+       "published_at": "2025-09-03T22:57:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "68c5d112d7fe179be1ca9f73"
+       ],
+       "article_id": "68c5d112d7fe179be1ca9f73"
+      },
+      {
+       "id": "89202cd587ad9b4b",
+       "company_name": "Armadin",
+       "domain": null,
+       "round_type": "Combined Seed and Series A",
+       "amount_usd": 189900000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 189900000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "menlo ventures",
+         "domain": "menlovc.com",
+         "amount": null
+        },
+        {
+         "name": "in-q-tel",
+         "domain": "iqt.org",
+         "amount": null
+        },
+        {
+         "name": "8vc",
+         "domain": "8vc.com",
+         "amount": null
+        },
+        {
+         "name": "Ballistic Ventures",
+         "domain": "ballistic-studio.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Kevin Mandia has launched a new cybersecurity company, Armadin, with $189.9 million in combined seed and Series A funding.",
+       "published_at": "2026-03-11T19:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cf601769c1992666a3b282"
+       ],
+       "article_id": "69cf601769c1992666a3b282"
+      },
+      {
+       "id": "ca5e42c5f6a1d990",
+       "company_name": "Omni Analytics, Inc.",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Analytics / Business Intelligence",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "support continued platform development, enterprise expansion, and the scaling of adoption of its AI-powered analytics and data infrastructure.",
+       "source_sentence": "Omni, a San Francisco, CA–based AI analytics platform, has raised $120 million in Series C funding at a $1.5 billion valuation.",
+       "published_at": "2026-04-24T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d7c97b2d589e844d2456"
+       ],
+       "article_id": "69f9d7c97b2d589e844d2456"
+      },
+      {
+       "id": "9d4ff710af853733",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Omni raises $120M Series C for enterprise AI analytics",
+       "published_at": "2026-04-23T21:59:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efaa55a84b609af2b2a2d7"
+       ],
+       "article_id": "69efaa55a84b609af2b2a2d7"
+      },
+      {
+       "id": "f2e5ff75187762cc",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI analytics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "employee tender offer",
+       "source_sentence": "Omni, the AI Analytics platform, today announced its Series C funding round raising $120 million at a $1.5 billion valuation.",
+       "published_at": "2026-04-23T00:00:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "69ea1f4f8266d9339994a613",
+        "69ea210b73206aa299ec2141",
+        "69ea231a73206aa299ec4a90",
+        "69ea383773206aa299ee1b02",
+        "69efaaeda84b609af2b317e6",
+        "69efabec727212302c5fe652",
+        "69efac33a84b609af2b42b31",
+        "69f0e33e45272de32e8bfe41"
+       ],
+       "article_id": "69efac33a84b609af2b42b31"
+      },
+      {
+       "id": "da797fe00cec2a64",
+       "company_name": "pelage pharmaceuticals",
+       "domain": "pelagepharma.com",
+       "round_type": "Series B",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "arch venture partners",
+         "domain": "archventure.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "main street advisors",
+         "domain": "mainstreetadv.com",
+         "amount": null
+        },
+        {
+         "name": "Visionary Ventures",
+         "domain": "visionaryvc.com",
+         "amount": null
+        },
+        {
+         "name": "YK Bioventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "biotech hair‑loss drug",
+       "country": "United States",
+       "city": "Los Angeles",
+       "use_of_funds": "Advance the hair‑loss drug through Phase 3 clinical trials",
+       "source_sentence": "Pelage Pharmaceuticals raised $120 million in Series B funding",
+       "published_at": "2025-10-28T22:16:10",
+       "coverage_count": 1,
+       "article_ids": [
+        "6901703277c5828be2d83a4f"
+       ],
+       "article_id": "6901703277c5828be2d83a4f"
+      },
+      {
+       "id": "e0e4047d9f10defb",
+       "company_name": "zanskar",
+       "domain": "zanskar.com",
+       "round_type": "Series C",
+       "amount_usd": 115000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 115000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "spring lane capital",
+         "domain": "springlanecapital.com",
+         "amount": null
+        },
+        {
+         "name": "obvious ventures",
+         "domain": "obvious.com",
+         "amount": null
+        },
+        {
+         "name": "union square ventures",
+         "domain": "usv.com",
+         "amount": null
+        },
+        {
+         "name": "lowercarbon capital",
+         "domain": "lowercarboncapital.com",
+         "amount": null
+        },
+        {
+         "name": "munich re ventures",
+         "domain": "munichreventures.com",
+         "amount": null
+        },
+        {
+         "name": "Susquehanna Sustainable Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "clearvision ventures",
+         "domain": "clearvisionventures.com",
+         "amount": null
+        },
+        {
+         "name": "Orion Industrial Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "safar partners",
+         "domain": "safar.partners",
+         "amount": null
+        },
+        {
+         "name": "Imperative Ventures",
+         "domain": "imperative.vc",
+         "amount": null
+        },
+        {
+         "name": "stepstone group",
+         "domain": "stepstonegroup.com",
+         "amount": null
+        },
+        {
+         "name": "university growth fund",
+         "domain": "ugrowthfund.com",
+         "amount": null
+        },
+        {
+         "name": "cross creek",
+         "domain": "crosscreek.vc",
+         "amount": null
+        },
+        {
+         "name": "GVP Climate",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tranquillion",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "carica sustainable investments",
+         "domain": "caricapartners.com",
+         "amount": null
+        },
+        {
+         "name": "UP.Partners",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "All Aboard Fund",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Geothermal",
+       "country": "United States",
+       "city": "Salt Lake City",
+       "use_of_funds": "to expand its AI discovery platform and to begin building geothermal power plants at sites it has discovered within its multi-gigawatt geothermal pipeline",
+       "source_sentence": "Zanskar, a company using custom-built AI to become the world’s most successful geothermal explorer, announced a $115 million Series C funding round led by Spring Lane Capital.",
+       "published_at": "2026-01-21T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d561b8d29a990b6d4989a"
+       ],
+       "article_id": "698d561b8d29a990b6d4989a"
+      },
+      {
+       "id": "a3b2a19e4286ac0d",
+       "company_name": "veza",
+       "domain": "veza.com",
+       "round_type": "Series D",
+       "amount_usd": 108000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 108000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "new enterprise associates",
+         "domain": "nea.com",
+         "amount": null
+        },
+        {
+         "name": "atlassian ventures",
+         "domain": "atlassian.com",
+         "amount": null
+        },
+        {
+         "name": "workday ventures",
+         "domain": "ventures.workday.com",
+         "amount": null
+        },
+        {
+         "name": "snowflake ventures",
+         "domain": "snowflake.com",
+         "amount": null
+        },
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "true ventures",
+         "domain": "trueventures.com",
+         "amount": null
+        },
+        {
+         "name": "Norwest",
+         "domain": "norwestcorp.com",
+         "amount": null
+        },
+        {
+         "name": "Ballistic Ventures",
+         "domain": "ballistic-studio.com",
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan",
+         "domain": "jpmorgan.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone innovations investments",
+         "domain": "blackstone.com",
+         "amount": null
+        }
+       ],
+       "sector": "Identity Security / Cybersecurity",
+       "country": "United States",
+       "city": "Los Gatos",
+       "use_of_funds": "accelerate its global go-to-market (GTM) strategy and continue advancing its unified identity security platform.",
+       "source_sentence": "Veza, a Los Gatos, CA-based identity security company, has raised $108 million in Series D funding at an $808 million valuation.",
+       "published_at": "2025-05-05T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698a375b1953fdcb20e0b132"
+       ],
+       "article_id": "698a375b1953fdcb20e0b132"
+      },
+      {
+       "id": "5ad30fd36b949a4e",
+       "company_name": "epibiologics",
+       "domain": "epibiologics.com",
+       "round_type": "Series B",
+       "amount_usd": 107000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 107000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "johnson & johnson",
+         "domain": "jnj.com",
+         "amount": null
+        },
+        {
+         "name": "novartis venture fund",
+         "domain": "nvfund.com",
+         "amount": null
+        },
+        {
+         "name": "Aulis Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Avego BioScience Capital",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "samsara biocapital",
+         "domain": "samsaracap.com",
+         "amount": null
+        },
+        {
+         "name": "polaris partners",
+         "domain": "polarispartners.com",
+         "amount": null
+        },
+        {
+         "name": "digitalis ventures",
+         "domain": "digitalisventures.com",
+         "amount": null
+        },
+        {
+         "name": "taiho ventures",
+         "domain": "taihoventures.com",
+         "amount": null
+        },
+        {
+         "name": "vivo capital",
+         "domain": "vivocapital.com",
+         "amount": null
+        },
+        {
+         "name": "codon capital",
+         "domain": "codoncapital.com",
+         "amount": null
+        },
+        {
+         "name": "mission biocapital",
+         "domain": "missionbiocapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology",
+       "country": "United States",
+       "city": "San Mateo",
+       "use_of_funds": null,
+       "source_sentence": "EpiBiologics, a leader in tissue‑selective extracellular protein degradation, today announced the completion of a $107 million Series B financing co‑led by GV (Google Ventures) and Johnson & Johnson, through its corporate venture capital organization, Johnson & Johnson Innovation – JJDC, Inc (JJDC).",
+       "published_at": "2026-01-15T11:30:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69baf47cc22d22e6b5738955"
+       ],
+       "article_id": "69baf47cc22d22e6b5738955"
+      },
+      {
+       "id": "35e2bd811187b37e",
+       "company_name": "tennr",
+       "domain": "tennr.com",
+       "round_type": "Series C",
+       "amount_usd": 101000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 101000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "lightspeed venture partners",
+         "domain": "lsvp.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Healthcare AI startup Tennr announced it raised a $101 million Series C round led by IVP with participation from Lightspeed Venture Partners, GV, and Andreessen Horowitz, among others.",
+       "published_at": "2025-08-27T17:01:57",
+       "coverage_count": 1,
+       "article_ids": [
+        "68b054613b014c087aed53ed"
+       ],
+       "article_id": "68b054613b014c087aed53ed"
+      },
+      {
+       "id": "dd5511093c195848",
+       "company_name": "tennr",
+       "domain": "tennr.com",
+       "round_type": "Series C",
+       "amount_usd": 101000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 101000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "ivp",
+         "domain": "ivpindia.com",
+         "amount": null
+        },
+        {
+         "name": "andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lightspeed",
+         "domain": "lightspeed.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "foundation capital",
+         "domain": "foundationcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Frank Slootman",
+         "domain": "http://www.linkedin.com/in/frankslootman",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "To expand the Tennr platform and launch the Tennr Network, improving the patient referral process.",
+       "source_sentence": "Tennr, a company dedicated to streamlining the complex patient referral process, has just secured a considerable $101 million in Series C funding. This financial boost, led by IVP, with participation from andreessen Horowitz, Lightspeed, GV, ICONIQ, Foundation Capital, and Frank Slootman, will fuel Tennr’s mission to untangle the often chaotic world of patient referrals.",
+       "published_at": "2025-06-19T00:16:21",
+       "coverage_count": 2,
+       "article_ids": [
+        "686410878882abb7e3f6adf2",
+        "68d99adb93ec9fed387d8e18"
+       ],
+       "article_id": "686410878882abb7e3f6adf2"
+      },
+      {
+       "id": "f3a581a37b8a4a3f",
+       "company_name": "basis",
+       "domain": "basis.io",
+       "round_type": "Series B",
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1150000000.0,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": 1150000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Lloyd Blankfein",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI accounting platform",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "Support product development and sales expansion.",
+       "source_sentence": "Basis, an AI-driven accounting software startup, has raised $100 million in a Series B round ...",
+       "published_at": "2026-02-24T22:34:34",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc7ed1518fdf38742d8ea3"
+       ],
+       "article_id": "69bc7ed1518fdf38742d8ea3"
+      },
+      {
+       "id": "9b76349b79d16500",
+       "company_name": "basis",
+       "domain": "basis.io",
+       "round_type": null,
+       "amount_usd": 100000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1150000000.0,
+       "currency": "USD",
+       "amount": 100000000.0,
+       "valuation": 1150000000.0,
+       "investors": [
+        {
+         "name": "accel",
+         "domain": "accel-india.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Lloyd Blankfein",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI accounting",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "expand customer base, deepen capabilities in tax and audit, grow machine learning and engineering teams",
+       "source_sentence": "Now, AI-for-accounting startup Basis has joined the unicorn club. The company has raised $100 million in a fresh funding round at a valuation of $1.15 billion, according to Bloomberg.",
+       "published_at": "2026-02-24T17:38:08",
+       "coverage_count": 3,
+       "article_ids": [
+        "69bc87aa0f7c42aae0d4429c",
+        "69bce513dfa7512de38820ad",
+        "69cb5c84d91805cc282d000e"
+       ],
+       "article_id": "69cb5c84d91805cc282d000e"
+      },
+      {
+       "id": "d0a592f62dacbcb6",
+       "company_name": "paradigm health",
+       "domain": "myparadigmhealth.com",
+       "round_type": "Series B",
+       "amount_usd": 78000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 78000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "arch venture partners",
+         "domain": "archventure.com",
+         "amount": null
+        },
+        {
+         "name": "dfj growth",
+         "domain": "dfjgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "F-Prime",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "general catalyst",
+         "domain": "generalcatalyst.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "lux capital",
+         "domain": "luxcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "American Cancer Society’s BrightEdge Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Healthcare",
+       "country": "USA",
+       "city": "COLUMBUS",
+       "use_of_funds": "accelerate Paradigm Health’s expansion",
+       "source_sentence": "Paradigm Health, the technology company rebuilding the clinical research ecosystem, today announced an oversubscribed $78 million Series B financing. The round was led by ARCH Venture Partners, with participation from new investor DFJ Growth and existing investors F-Prime, General Catalyst, GV, Lux Capital, Mubadala Capital, the American Cancer Society’s BrightEdge Fund, and others, several of whom took super pro-rata positions.",
+       "published_at": "2025-12-22T07:20:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698ff68d8d29a990b60670c0"
+       ],
+       "article_id": "698ff68d8d29a990b60670c0"
+      },
+      {
+       "id": "cbf13e0bd86c4062",
+       "company_name": "atacor medical",
+       "domain": "atacor.com",
+       "round_type": "Financing",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "arboretum ventures",
+         "domain": "arboretumvc.com",
+         "amount": null
+        },
+        {
+         "name": "broadview ventures",
+         "domain": "broadviewventures.org",
+         "amount": null
+        },
+        {
+         "name": "longview ventures",
+         "domain": "broadviewventures.org",
+         "amount": null
+        },
+        {
+         "name": "hatteras venture partners",
+         "domain": "hatterasvp.com",
+         "amount": null
+        },
+        {
+         "name": "catalyst health ventures",
+         "domain": "chv.vc",
+         "amount": null
+        },
+        {
+         "name": "baymed venture partners",
+         "domain": "baymedvp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Medical Device",
+       "country": "United States",
+       "city": "San Clemente",
+       "use_of_funds": "Fund the company's U.S. FDA Pivotal Study evaluating AtaCor's parasternal extravascular implantable cardioverter-defibrillator (EV-ICD) system for the treatment of life-threatening ventricular tachyarrhythmias.",
+       "source_sentence": "AtaCor Medical, Inc., a privately-held medical device company focused on transforming cardiac rhythm management systems, announced today that it has entered into a financing of up to $75 million.",
+       "published_at": "2025-10-07T07:08:59",
+       "coverage_count": 1,
+       "article_ids": [
+        "68f7236af6f885b63d2b46a7"
+       ],
+       "article_id": "68f7236af6f885b63d2b46a7"
+      },
+      {
+       "id": "228e81fc39b63538",
+       "company_name": "posthog",
+       "domain": "posthog.com",
+       "round_type": "Series E",
+       "amount_usd": 75000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1400000000.0,
+       "currency": "USD",
+       "amount": 75000000.0,
+       "valuation": 1400000000.0,
+       "investors": [
+        {
+         "name": "peak xv partners",
+         "domain": "peakxv.com",
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "stripe",
+         "domain": "stripe.com",
+         "amount": null
+        },
+        {
+         "name": "Formus Capital",
+         "domain": "formuscap.com",
+         "amount": null
+        }
+       ],
+       "sector": "SaaS / Developer Tools / Analytics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "enhance its suite of tools and launch new products that provide deeper product performance insights and developer-focused features.",
+       "source_sentence": "PostHog, a San Francisco, CA-based SaaS startup building a suite of tools for product engineers, has raised $75 million in a Series E round at a $1.4 billion valuation.",
+       "published_at": "2025-10-03T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "698f99c38d29a990b6ffac71"
+       ],
+       "article_id": "698f99c38d29a990b6ffac71"
+      },
+      {
+       "id": "50fa3a92f4fb158a",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "Series D",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": 40000000.0
+        },
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Undisclosed investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate the development of AI-driven security solutions and pursue global expansion",
+       "source_sentence": "Censys, the internet intelligence and insights platform, has raised $70m in a combined funding round to accelerate the development of its AI-driven security solutions. The raise comprises a $40m Series D led by Morgan Stanley Expansion Capital, alongside $30m in debt financing. The round also saw participation from Decibel Partners, Greylock Partners, GV, Intel Capital, and a number of other undisclosed investors.",
+       "published_at": "2026-04-07T08:44:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a6dfff2654c79d66fade"
+       ],
+       "article_id": "69e2a6dfff2654c79d66fade"
+      },
+      {
+       "id": "8b9ffd508f11e8fb",
+       "company_name": "posthog",
+       "domain": "posthog.com",
+       "round_type": "Series D",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "stripe",
+         "domain": "stripe.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "y combinator",
+         "domain": "ycombinator.com",
+         "amount": null
+        },
+        {
+         "name": "other existing investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "SaaS",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "Accelerate development of AI‑driven analytics assistant “Max AI” and expand the team to support a growing community of developers and enterprises.",
+       "source_sentence": "PostHog has secured $70 million in Series D funding.",
+       "published_at": "2025-06-16T23:35:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0f66874d3d5792a2c3ae0"
+       ],
+       "article_id": "68d0f66874d3d5792a2c3ae0"
+      },
+      {
+       "id": "c8ad20a2b3c5fad8",
+       "company_name": "lyka",
+       "domain": "lyka.com.au",
+       "round_type": "Series C",
+       "amount_usd": 67000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 67000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "LGVP",
+         "domain": "lgvp.vdtrxn",
+         "amount": null
+        }
+       ],
+       "sector": "Pet food",
+       "country": "Australia",
+       "city": null,
+       "use_of_funds": "global expansion and clinical research into dog health and longevity",
+       "source_sentence": "Lyka has raised $67 million in a Series C led by US investors to fund global expansion and clinical research into dog health and longevity.",
+       "published_at": "2026-03-02T23:06:39",
+       "coverage_count": 2,
+       "article_ids": [
+        "69bced7f41af9e92ac981c14",
+        "69cb5decb39cc503f50ec78a"
+       ],
+       "article_id": "69bced7f41af9e92ac981c14"
+      },
+      {
+       "id": "f8bd1e692f96e02e",
+       "company_name": "Wealth.com",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "charles schwab",
+         "domain": "aboutschwab.com",
+         "amount": null
+        },
+        {
+         "name": "titanium ventures",
+         "domain": "titaniumventuresgroup.com",
+         "amount": null
+        },
+        {
+         "name": "pruven capital",
+         "domain": "pruvencap.com",
+         "amount": null
+        },
+        {
+         "name": "the k fund",
+         "domain": "thekfund.com",
+         "amount": null
+        },
+        {
+         "name": "dynasty financial partners",
+         "domain": "dynastyfinancialpartners.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "citi ventures",
+         "domain": "ventures.citi.com",
+         "amount": null
+        },
+        {
+         "name": "53 Stations",
+         "domain": "53stations.com",
+         "amount": null
+        },
+        {
+         "name": "anthos capital",
+         "domain": "anthoscapital.com",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Wealth.com Raises $65M Series B for AI-Powered Estate and Tax Planning.",
+       "published_at": "2026-04-16T21:41:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8641e7bb1410d4c74ac19"
+       ],
+       "article_id": "69e8641e7bb1410d4c74ac19"
+      },
+      {
+       "id": "353389881db7865a",
+       "company_name": "gate bioscience",
+       "domain": "gatebio.com",
+       "round_type": "Series B",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Forbion",
+         "domain": "forbion.com",
+         "amount": null
+        },
+        {
+         "name": "Eli Lilly and Company",
+         "domain": "lilly.com",
+         "amount": null
+        },
+        {
+         "name": "versant ventures",
+         "domain": "versantventures.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz (a16z) Bio + Health",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "arch venture partners",
+         "domain": "archventure.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology",
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The Series B was led by new investor Forbion and was joined by additional new investor Eli Lilly and Company, as well as existing investors Versant Ventures, Andreessen Horowitz (a16z) Bio + Health, GV, and ARCH Venture Partners.",
+       "published_at": "2025-12-05T05:12:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69330d0f753c425910f2064f"
+       ],
+       "article_id": "69330d0f753c425910f2064f"
+      },
+      {
+       "id": "f14edd035661a5f6",
+       "company_name": "gate bioscience",
+       "domain": "gatebio.com",
+       "round_type": "Series B",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Forbion",
+         "domain": "forbion.com",
+         "amount": null
+        },
+        {
+         "name": "eli lilly",
+         "domain": "lilly.com",
+         "amount": null
+        },
+        {
+         "name": "versant ventures",
+         "domain": "versantventures.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz (a16z) Bio + Health",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "arch venture partners",
+         "domain": "archventure.com",
+         "amount": null
+        }
+       ],
+       "sector": "biotechnology",
+       "country": "USA",
+       "city": "Brisbane",
+       "use_of_funds": "Advance its lead molecular gate programs into the clinic and support the continued expansion of its differentiated molecular gate programs across inflammation and other therapeutic areas.",
+       "source_sentence": "Gate Bioscience, a Brisbane, California-based biotechnology company developing a new class of small molecule medicines aiming to eliminate disease-causing proteins at their source, closed a $65m Series B financing.",
+       "published_at": "2025-11-13T17:03:23",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e85bf27bb1410d4c6fcd39"
+       ],
+       "article_id": "69e85bf27bb1410d4c6fcd39"
+      },
+      {
+       "id": "08010e2385744d1c",
+       "company_name": "haya therapeutics",
+       "domain": "hayatx.com",
+       "round_type": "Series A",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "sofinnova partners",
+         "domain": "sofinnovapartners.com",
+         "amount": null
+        },
+        {
+         "name": "earlybird venture capital",
+         "domain": "earlybird.com",
+         "amount": null
+        },
+        {
+         "name": "Eli Lilly and Company",
+         "domain": "lilly.com",
+         "amount": null
+        },
+        {
+         "name": "athos",
+         "domain": "liveathos.com",
+         "amount": null
+        },
+        {
+         "name": "+nd capital",
+         "domain": "nd.capital",
+         "amount": null
+        },
+        {
+         "name": "Alexandria Venture Investments",
+         "domain": "alexandriaventureinvestments.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "LifeLink Ventures",
+         "domain": "lifelinkventures.com",
+         "amount": null
+        },
+        {
+         "name": "Apollo Health Ventures",
+         "domain": "apollo.vc",
+         "amount": null
+        },
+        {
+         "name": "longview ventures",
+         "domain": "broadviewventures.org",
+         "amount": null
+        },
+        {
+         "name": "4see ventures",
+         "domain": "4seeventures.ch",
+         "amount": null
+        },
+        {
+         "name": "bernina bioinvest",
+         "domain": "berninabioinvest.com",
+         "amount": null
+        },
+        {
+         "name": "schroders capital",
+         "domain": "schroderscapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cardiology",
+       "country": "Switzerland",
+       "city": "Lausanne",
+       "use_of_funds": "accelerate clinical development of lead candidate HTX-001, expand the RNA‑guided regulatory genome platform, and develop additional disease‑modifying therapies",
+       "source_sentence": "HAYA Therapeutics, SA, a biotechnology company pioneering precision RNA‑guided regulatory genome targeting therapeutics that reprogram disease‑driving cell states for rare, common, chronic and age‑related diseases, announced that the company has raised $65 million in Series A funding.",
+       "published_at": "2025-05-08T13:29:37",
+       "coverage_count": 3,
+       "article_ids": [
+        "6931b9719cf13e0108f21d9d",
+        "698f95448d29a990b6ff5682",
+        "69d110e4b214788b49df97ec"
+       ],
+       "article_id": "6931b9719cf13e0108f21d9d"
+      },
+      {
+       "id": "4d3f4001359e3a7e",
+       "company_name": "lawhive",
+       "domain": "lawhive.co.uk",
+       "round_type": "Series B",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Mitch Rales",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "tq ventures",
+         "domain": "tqventures.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "balderton capital",
+         "domain": "balderton.com",
+         "amount": null
+        },
+        {
+         "name": "jigsaw",
+         "domain": "jigsawcreate.com",
+         "amount": null
+        }
+       ],
+       "sector": "legal services",
+       "country": "United Kingdom",
+       "city": "London",
+       "use_of_funds": "accelerate its expansion in the U.S.",
+       "source_sentence": "Lawhive, a British startup that wants to use AI to transform the business model of law firms that perform routine legal work for individuals and small businesses, has raised $60 million in new venture capital funding to accelerate its expansion in the U.S.",
+       "published_at": "2026-02-05T08:00:00",
+       "coverage_count": 6,
+       "article_ids": [
+        "6986acd711e3205ec992a00a",
+        "6986bd90514cbd23b5c4b19b",
+        "6986c2e2514cbd23b5c4ca17",
+        "698888535a4e31ff243a93e6",
+        "6988a6ab8fb0ea95e9771408",
+        "698cdc1f8d29a990b6cb8a4c"
+       ],
+       "article_id": "6986bd90514cbd23b5c4b19b"
+      },
+      {
+       "id": "137800525d52348f",
+       "company_name": "ivix",
+       "domain": "ivix.ai",
+       "round_type": "Series B",
+       "amount_usd": 60000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 60000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "O.G. Venture Partners (OGVP)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "citi ventures",
+         "domain": "ventures.citi.com",
+         "amount": null
+        },
+        {
+         "name": "team8",
+         "domain": "team8.vc",
+         "amount": null
+        },
+        {
+         "name": "Disruptive AI",
+         "domain": "disruptiveai.fund",
+         "amount": null
+        },
+        {
+         "name": "cardumen capital",
+         "domain": "cardumencapital.com",
+         "amount": null
+        },
+        {
+         "name": "cerca",
+         "domain": "cerca.io",
+         "amount": null
+        }
+       ],
+       "sector": "financial crime technology",
+       "country": "USA",
+       "city": "New York",
+       "use_of_funds": "accelerate R&D and expand global adoption",
+       "source_sentence": "The latest example is IVIX, an AI‑powered platform built to help governments combat financial crime at scale, which has closed a $60 million Series B round, bringing its total funding to $85 million.",
+       "published_at": "2025-08-18T11:50:43",
+       "coverage_count": 5,
+       "article_ids": [
+        "694b2ebd70a402cb9f75b27b",
+        "69889d9f94d3f481f3d66b27",
+        "6988def094d3f481f3db0e5e",
+        "698ff3249ca02490ec2aadb4",
+        "69cc1d5af111344e7e7abf73"
+       ],
+       "article_id": "694b2ebd70a402cb9f75b27b"
+      },
+      {
+       "id": "0f8d6bbdb01a4719",
+       "company_name": "buena",
+       "domain": "buena.com",
+       "round_type": "Series-A",
+       "amount_usd": 58000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 58000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "20VC",
+         "domain": "20vc.com",
+         "amount": null
+        },
+        {
+         "name": "stride",
+         "domain": "stridelearning.com",
+         "amount": null
+        },
+        {
+         "name": "Capnamic",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "PropTech",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": null,
+       "source_sentence": "The Berlin-based PropTech start-up Buena secures 58 million dollars of financing in a Series-A round. GV (formerly Google Ventures) leads the financing round, with participation of investors such as 20VC, Stride and Capnamic.",
+       "published_at": "2025-07-23T11:17:06",
+       "coverage_count": 1,
+       "article_ids": [
+        "6898ce2c2f01d48cd311f008"
+       ],
+       "article_id": "6898ce2c2f01d48cd311f008"
+      },
+      {
+       "id": "fcb7fdffd3b4c227",
+       "company_name": "buena",
+       "domain": "buena.com",
+       "round_type": "Series A",
+       "amount_usd": 58000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 58000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "20VC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "stride",
+         "domain": "stridelearning.com",
+         "amount": null
+        },
+        {
+         "name": "Capnamic",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Property management",
+       "country": "Germany",
+       "city": "Berlin",
+       "use_of_funds": "further develop its AI-supported software and expand throughout Germany",
+       "source_sentence": "Berlin proptech Buena has raised a total of $58 million in funding, including a Series A funding round led by GV, with participation from 20VC, Stride, and Capnamic.",
+       "published_at": "2025-07-23T02:19:57",
+       "coverage_count": 2,
+       "article_ids": [
+        "6898cd912f01d48cd3020ab6",
+        "6988adf5127162d16e0b27b6"
+       ],
+       "article_id": "6898cd912f01d48cd3020ab6"
+      },
+      {
+       "id": "45872d972bdb1889",
+       "company_name": "ultromics",
+       "domain": "ultromics.com",
+       "round_type": "Series C",
+       "amount_usd": 55000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 55000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "L&G",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "allegis capital",
+         "domain": "allegiscapital.com",
+         "amount": null
+        },
+        {
+         "name": "lightrock",
+         "domain": "lightrock.com",
+         "amount": null
+        },
+        {
+         "name": "oxford science enterprises",
+         "domain": "oxfordscienceenterprises.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Blue Venture Fund",
+         "domain": "blueventurefund.com",
+         "amount": null
+        },
+        {
+         "name": "Oxford University",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "UCM Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "upmc enterprises",
+         "domain": "enterprises.upmc.com",
+         "amount": null
+        }
+       ],
+       "sector": "Biotechnology / Cardiology",
+       "country": "United Kingdom",
+       "city": "Oxford",
+       "use_of_funds": "expand across hospitals in the US, include additional cardiac conditions, new distribution channels, deeper partnerships with health systems",
+       "source_sentence": "Ultromics, an Oxford, UK-based company which specializes in AI-driven cardiology solutions, raised $55M in Series C funding. The round was led by L&G, Allegis Capital and Lightrock, with continued support from Oxford Science Enterprises, GV, Blue Venture Fund and Oxford University. UChicago Medicine’s venture investment vehicle, UCM Ventures, and UPMC Enterprises also participated.",
+       "published_at": "2025-07-31T09:58:37",
+       "coverage_count": 3,
+       "article_ids": [
+        "694b2ca3a2e948e6dc75c9ec",
+        "699297b9a035766b6b63351a",
+        "69e2884ea85be7e506572b01"
+       ],
+       "article_id": "699297b9a035766b6b63351a"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 129,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjUtMDctMzEgMDk6NTg6MzciLCJrIjoiNTAxMDAyMzIzNzc3MjA1NjcxMyIsImEiOjU1MDAwMDAwLjB9",
+     "totals": {
+      "deals": 129,
+      "deals_with_amount": 123,
+      "deals_without_amount": 6,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 7676302000.0,
+      "median_amount_usd": 28040000.0,
+      "largest_amount_usd": 1500000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.152,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.157
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "GV",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "gv"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "ca5e42c5f6a1d990",
+       "company_name": "Omni Analytics, Inc.",
+       "domain": null,
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI Analytics / Business Intelligence",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": "support continued platform development, enterprise expansion, and the scaling of adoption of its AI-powered analytics and data infrastructure.",
+       "source_sentence": "Omni, a San Francisco, CA–based AI analytics platform, has raised $120 million in Series C funding at a $1.5 billion valuation.",
+       "published_at": "2026-04-24T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69f9d7c97b2d589e844d2456"
+       ],
+       "article_id": "69f9d7c97b2d589e844d2456"
+      },
+      {
+       "id": "9d4ff710af853733",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Omni raises $120M Series C for enterprise AI analytics",
+       "published_at": "2026-04-23T21:59:30",
+       "coverage_count": 1,
+       "article_ids": [
+        "69efaa55a84b609af2b2a2d7"
+       ],
+       "article_id": "69efaa55a84b609af2b2a2d7"
+      },
+      {
+       "id": "f2e5ff75187762cc",
+       "company_name": "omni",
+       "domain": "exploreomni.com",
+       "round_type": "Series C",
+       "amount_usd": 120000000.0,
+       "amount_flag": null,
+       "valuation_usd": 1500000000.0,
+       "currency": "USD",
+       "amount": 120000000.0,
+       "valuation": 1500000000.0,
+       "investors": [
+        {
+         "name": "iconiq",
+         "domain": "iconiq.ai",
+         "amount": null
+        },
+        {
+         "name": "Theory Ventures",
+         "domain": "theory.ventures",
+         "amount": null
+        },
+        {
+         "name": "first round capital",
+         "domain": "firstround.com",
+         "amount": null
+        },
+        {
+         "name": "redpoint ventures",
+         "domain": "redpoint.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "AI analytics",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "employee tender offer",
+       "source_sentence": "Omni, the AI Analytics platform, today announced its Series C funding round raising $120 million at a $1.5 billion valuation.",
+       "published_at": "2026-04-23T00:00:00",
+       "coverage_count": 8,
+       "article_ids": [
+        "69ea1f4f8266d9339994a613",
+        "69ea210b73206aa299ec2141",
+        "69ea231a73206aa299ec4a90",
+        "69ea383773206aa299ee1b02",
+        "69efaaeda84b609af2b317e6",
+        "69efabec727212302c5fe652",
+        "69efac33a84b609af2b42b31",
+        "69f0e33e45272de32e8bfe41"
+       ],
+       "article_id": "69efac33a84b609af2b42b31"
+      },
+      {
+       "id": "3d4c62b4ad676e3e",
+       "company_name": "Recursive Superintelligence",
+       "domain": null,
+       "round_type": "Private round",
+       "amount_usd": 500000000.0,
+       "amount_flag": null,
+       "valuation_usd": 4000000000.0,
+       "currency": "USD",
+       "amount": 500000000.0,
+       "valuation": 4000000000.0,
+       "investors": [
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI system development",
+       "source_sentence": "Recursive Superintelligence raised $500M+ private round for self‑improving AI systems.",
+       "published_at": "2026-04-20T21:10:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e880557bb1410d4c86d42d"
+       ],
+       "article_id": "69e880557bb1410d4c86d42d"
+      },
+      {
+       "id": "f8bd1e692f96e02e",
+       "company_name": "Wealth.com",
+       "domain": null,
+       "round_type": "Series B",
+       "amount_usd": 65000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 65000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "charles schwab",
+         "domain": "aboutschwab.com",
+         "amount": null
+        },
+        {
+         "name": "titanium ventures",
+         "domain": "titaniumventuresgroup.com",
+         "amount": null
+        },
+        {
+         "name": "pruven capital",
+         "domain": "pruvencap.com",
+         "amount": null
+        },
+        {
+         "name": "the k fund",
+         "domain": "thekfund.com",
+         "amount": null
+        },
+        {
+         "name": "dynasty financial partners",
+         "domain": "dynastyfinancialpartners.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "citi ventures",
+         "domain": "ventures.citi.com",
+         "amount": null
+        },
+        {
+         "name": "53 Stations",
+         "domain": "53stations.com",
+         "amount": null
+        },
+        {
+         "name": "anthos capital",
+         "domain": "anthoscapital.com",
+         "amount": null
+        },
+        {
+         "name": "alumni ventures",
+         "domain": "av.vc",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Wealth.com Raises $65M Series B for AI-Powered Estate and Tax Planning.",
+       "published_at": "2026-04-16T21:41:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8641e7bb1410d4c74ac19"
+       ],
+       "article_id": "69e8641e7bb1410d4c74ac19"
+      },
+      {
+       "id": "50fa3a92f4fb158a",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "Series D",
+       "amount_usd": 70000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 70000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": 40000000.0
+        },
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "Undisclosed investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Security",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Accelerate the development of AI-driven security solutions and pursue global expansion",
+       "source_sentence": "Censys, the internet intelligence and insights platform, has raised $70m in a combined funding round to accelerate the development of its AI-driven security solutions. The raise comprises a $40m Series D led by Morgan Stanley Expansion Capital, alongside $30m in debt financing. The round also saw participation from Decibel Partners, Greylock Partners, GV, Intel Capital, and a number of other undisclosed investors.",
+       "published_at": "2026-04-07T08:44:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e2a6dfff2654c79d66fade"
+       ],
+       "article_id": "69e2a6dfff2654c79d66fade"
+      },
+      {
+       "id": "9981e7e436238fe4",
+       "company_name": "BeastLife",
+       "domain": "beastlife.in",
+       "round_type": "pre-Series A",
+       "amount_usd": 240000.0,
+       "amount_flag": null,
+       "valuation_usd": 38400000.0,
+       "currency": "INR",
+       "amount": 20000000.0,
+       "valuation": 3200000000.0,
+       "investors": [
+        {
+         "name": "GVFL",
+         "domain": "gvfl.com",
+         "amount": null
+        },
+        {
+         "name": "Equentis",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "fitness",
+       "country": "India",
+       "city": "Gurugram",
+       "use_of_funds": "to scale operations, bolster its staff, and increase its visibility through both online and offline channels",
+       "source_sentence": "D2C nutrition company BeastLife has raised Rs 20 crore from GVFL and Equentis in a pre-Series A funding round valued at Rs 320 crore.",
+       "published_at": "2026-04-06T07:27:22",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e29111601121844c32c471"
+       ],
+       "article_id": "69e29111601121844c32c471"
+      },
+      {
+       "id": "f77ecf069760b688",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "Series D equity",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "additional investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "drive product innovation, scale its platform globally, and enhance AI-powered capabilities for modern security operations",
+       "source_sentence": "The financing includes a $40 million Series D equity round alongside $30 million in debt financing.",
+       "published_at": "2026-04-01T04:08:39",
+       "coverage_count": 1,
+       "article_ids": [
+        "69ccee20adb5f291e0c65ee6"
+       ],
+       "article_id": "69ccee20adb5f291e0c65ee6"
+      },
+      {
+       "id": "c172bff4627bad84",
+       "company_name": "censys",
+       "domain": "censys.com",
+       "round_type": "Series D",
+       "amount_usd": 40000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 40000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "morgan stanley expansion capital",
+         "domain": "morganstanley.com",
+         "amount": null
+        },
+        {
+         "name": "decibel partners",
+         "domain": "decibel.vc",
+         "amount": null
+        },
+        {
+         "name": "Greylock Partners",
+         "domain": "greylock.com",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "others",
+         "domain": "othersapp.com",
+         "amount": null
+        }
+       ],
+       "sector": "Cybersecurity",
+       "country": "USA",
+       "city": "Ann Arbor",
+       "use_of_funds": "accelerate building AI-driven solutions for modern security operations on its recently launched internet intelligence platform; enable faster innovation and global expansion",
+       "source_sentence": "Censys, the Ann Arbor-based Cybersecurity provider, today announced a $40 million Series D funding round led by Morgan Stanley Expansion Capital, with participation from Decibel Partners, Greylock Partners, GV, Intel Capital, and others.",
+       "published_at": "2026-03-31T15:27:13",
+       "coverage_count": 1,
+       "article_ids": [
+        "69d150d42d835dcca2e21baa"
+       ],
+       "article_id": "69d150d42d835dcca2e21baa"
+      },
+      {
+       "id": "ce44e488f6b0301f",
+       "company_name": "SambaNova",
+       "domain": null,
+       "round_type": "Series E",
+       "amount_usd": 1500000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1500000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "battery ventures",
+         "domain": "battery.com",
+         "amount": null
+        },
+        {
+         "name": "cambium capital partners",
+         "domain": "cambium.vc",
+         "amount": null
+        },
+        {
+         "name": "first data",
+         "domain": "firstdata.com",
+         "amount": null
+        },
+        {
+         "name": "gulf",
+         "domain": "gulf.co.th",
+         "amount": null
+        },
+        {
+         "name": "GV",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "intel capital",
+         "domain": "intelcapital.com",
+         "amount": null
+        },
+        {
+         "name": "mayfield fund",
+         "domain": "mayfield.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "vista equity partners",
+         "domain": "vistaequitypartners.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI Infrastructure, Analytics, Artificial Intelligence (AI), Machine Learning, Semiconductor, Software",
+       "country": "USA",
+       "city": "Palo Alto",
+       "use_of_funds": null,
+       "source_sentence": null,
+       "published_at": "2026-03-24T09:27:37",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c42bda516feee3400310c2"
+       ],
+       "article_id": "69c42bda516feee3400310c2"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 37,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDMtMjQgMDk6Mjc6MzciLCJrIjoiMTQ4NjMyNTU5NDcxMzQ5MDYzOTkifQ",
+     "totals": {
+      "deals": 37,
+      "deals_with_amount": 36,
+      "deals_without_amount": 1,
+      "deals_amount_excluded": 0,
+      "sum_amount_usd": 4979256000.0,
+      "median_amount_usd": 66000000.0,
+      "largest_amount_usd": 1500000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.181,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.184
+    }
+   }
+  }
+ ]
+}

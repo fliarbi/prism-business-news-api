@@ -1,0 +1,826 @@
+{
+ "slug": "battery-plant",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:25Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "company_announcement"
+     ],
+     "q": "battery",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "battery",
+      "match": "any",
+      "event_type": [
+       "asset_acquisition",
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 48,
+       "by_type": {
+        "asset_acquisition": 10,
+        "company_announcement": 38
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 35,
+       "by_type": {
+        "asset_acquisition": 3,
+        "company_announcement": 32
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 50,
+       "by_type": {
+        "asset_acquisition": 21,
+        "company_announcement": 29
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 119,
+       "by_type": {
+        "asset_acquisition": 56,
+        "company_announcement": 63
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 70,
+       "by_type": {
+        "asset_acquisition": 18,
+        "company_announcement": 52
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 56,
+       "by_type": {
+        "asset_acquisition": 16,
+        "company_announcement": 40
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 43,
+       "by_type": {
+        "asset_acquisition": 12,
+        "company_announcement": 31
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 44,
+       "by_type": {
+        "asset_acquisition": 14,
+        "company_announcement": 30
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 53,
+       "by_type": {
+        "asset_acquisition": 14,
+        "company_announcement": 39
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 85,
+       "by_type": {
+        "asset_acquisition": 37,
+        "company_announcement": 48
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 73,
+       "by_type": {
+        "asset_acquisition": 26,
+        "company_announcement": 47
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 108,
+       "by_type": {
+        "asset_acquisition": 27,
+        "company_announcement": 81
+       }
+      }
+     ],
+     "totals": {
+      "events": 784,
+      "articles": 674,
+      "companies": 364,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "asset_acquisition": 254,
+      "company_announcement": 530
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.116,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.118
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "company_announcement"
+     ],
+     "q": "battery",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "battery",
+      "event_type": [
+       "asset_acquisition",
+       "company_announcement"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f9d570a088760d34bfa68a",
+       "headline": "Menarini confirms that a Class II battery-electric vehicle is under development, extending its product range beyond urban applications toward intercity operations.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "menarini.com",
+       "published_at": "2026-04-30T12:50:42",
+       "url": "https://www.sustainable-bus.com/news/menarini-new-electric-bus-model-and-intercity-project/",
+       "publisher": "sustainable-bus.com",
+       "title": "Menarini focuses on Europe-wide presence, upcoming e-bus debut and intercity electric platform - Sustainable Bus"
+      },
+      {
+       "id": "69f8abfbbbf1d314559a6ad0",
+       "headline": "With our first battery storage projects and the commissioning of our first OCGT unit progressing, we are growing our UK FlexGen portfolio.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "drax.com",
+       "published_at": "2026-04-30T12:28:38",
+       "url": "https://www.business-live.co.uk/economic-development/drax-hails-good-performance-supports-33866317",
+       "publisher": "business-live.co.uk",
+       "title": "Drax hails good performance as it 'supports UK energy at a critical time'"
+      },
+      {
+       "id": "69f228d8c6105443aa5cc88c",
+       "headline": "Large-scale storage as a strategic next step With the SKM project (1 GW / 4 GWh), ADS-TEC Energy is developing one of Europe’s largest battery storage assets, designed for participation across all major energy markets and structured to attract long-term investors.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "adstec-energy.com",
+       "published_at": "2026-04-29T12:30:00",
+       "url": "https://ads-tec-com.mynewsdesk.com/pressreleases/where-flexibility-becomes-a-business-model-ads-tec-energy-releases-updated-investor-presentation-3445668",
+       "publisher": "ads-tec-com.mynewsdesk.com",
+       "title": "Where flexibility becomes a business model: ADS-TEC Energy releases updated investor presentation"
+      },
+      {
+       "id": "69f0e995836d28f995cbca67",
+       "headline": "The €783 million project is operated by Keliber Oy, a Finnish mining and battery-materials company.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "keliber.fi",
+       "published_at": "2026-04-28T16:15:06",
+       "url": "http://www.euronews.com/business/2026/04/28/finland-becomes-first-in-europe-to-run-full-lithium-mine-to-refinery-cycle",
+       "publisher": "euronews.com",
+       "title": "Finland launches Europe's first full lithium mine-to-refinery product"
+      },
+      {
+       "id": "69f0e87f45272de32e8c52e5",
+       "headline": "The €783 million project is operated by Keliber Oy, a Finnish mining and battery-materials company.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "keliber.fi",
+       "published_at": "2026-04-28T16:15:06",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1ce95a5706a322e1292cf",
+       "headline": "South Star Battery Metals Corp. (\" South Star \" or the \" Company \") (TSXV: STS) (OTCQB: STSBF ) is pleased to report that the first week of operations at the Santa Cruz plant delivered outstanding results.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "southstarbatterymetals.com",
+       "published_at": "2026-04-28T14:45:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f1c9c71e3933a6dd8f2fa2",
+       "headline": "The company plans to invest about Rs 15,000 crore to add battery energy storage capacity over 10 gigawat-hour (GWH) in the current fiscal year.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "adanigreenenergy.com",
+       "published_at": "2026-04-26T12:15:59",
+       "url": "https://www.livehindustan.com/business/adani-group-company-adani-green-to-invest-15000-crore-rs-to-add-10-gigawatt-battery-storage-in-fy27-now-share-in-focus-201777205336624.html",
+       "publisher": "livehindustan.com",
+       "title": "अडानी की इस कंपनी ने ₹15000 करोड़ निवेश का किया ऐलान, शेयर पर रहेगी नजर"
+      },
+      {
+       "id": "69f1c678399b489398de0f60",
+       "headline": "Geely also revealed major progress in solid-state battery technology, with testing of its first internally developed battery pack set to begin in 2026.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "zgh.com",
+       "published_at": "2026-04-26T11:58:13",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69efac2aa84b609af2b42077",
+       "headline": "Among its upcoming projects is a large 5.2GW solar development in Abu Dhabi, which will be combined with 19GWh of battery energy storage.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "masdar.ae",
+       "published_at": "2026-04-24T09:56:32",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69ea380d73206aa299ee16ee",
+       "headline": "Through the deal, Allianz further expands its exposure to the large-scale battery storage sector.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "allianzgi.com",
+       "published_at": "2026-04-23T13:47:40",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69ea37f873206aa299ee1508",
+       "headline": "the transaction represents the company's second investment in battery storage in Germany after it agreed in March to buy a 50% stake in a project portfolio developed by a unit of French energy major TotalEnergies.",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "totalenergies.eg",
+       "published_at": "2026-04-23T13:47:40",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69ea37f873206aa299ee1508",
+       "headline": "the transaction represents the company's second investment in battery storage in Germany after it agreed in March to buy a 50% stake in a project portfolio developed by a unit of French energy major TotalEnergies.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "allianzgi.com",
+       "published_at": "2026-04-23T13:47:40",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69ea1f9673206aa299ebfae1",
+       "headline": "Eku Energy acquired the battery system from NTT Anode Energy Corp, a wholly owned subsidiary of NTT Inc (TYO:9432), the company announced on Wednesday.",
+       "event_type": "asset_acquisition",
+       "role": "seller",
+       "domain": "ntt-ae.co.jp",
+       "published_at": "2026-04-23T12:22:10",
+       "url": "https://renewablesnow.com/news/eku-energy-japan-starts-up-2-mw-battery-in-fukuoka-1293591/",
+       "publisher": "renewablesnow.com",
+       "title": "Eku Energy Japan starts up 2-MW battery in Fukuoka"
+      },
+      {
+       "id": "69ea1f9673206aa299ebfae1",
+       "headline": "Eku Energy acquired the battery system from NTT Anode Energy Corp, a wholly owned subsidiary of NTT Inc (TYO:9432), the company announced on Wednesday.",
+       "event_type": "asset_acquisition",
+       "role": "acquirer",
+       "domain": "ekuenergy.com",
+       "published_at": "2026-04-23T12:22:10",
+       "url": "https://renewablesnow.com/news/eku-energy-japan-starts-up-2-mw-battery-in-fukuoka-1293591/",
+       "publisher": "renewablesnow.com",
+       "title": "Eku Energy Japan starts up 2-MW battery in Fukuoka"
+      },
+      {
+       "id": "69e99c52bdd09a23d0926cd7",
+       "headline": "General Motors Co. has indefinitely delayed development of its next-generation full-size electric trucks, including refreshed versions of the Chevrolet Silverado EV, GMC Sierra EV, Cadillac Escalade IQ and GMC Hummer EV models, as the automaker shifts resources toward internal combustion engines and hybrid technology in response to softening demand for battery-electric pickups.",
+       "event_type": "company_announcement",
+       "role": "primary",
+       "domain": "gm.com",
+       "published_at": "2026-04-22T12:25:26",
+       "url": "https://www.ibtimes.com/gm-suspends-next-gen-electric-trucks-it-pivots-gas-engines-hybrids-amid-slowing-ev-demand-3801731",
+       "publisher": "ibtimes.com",
+       "title": "GM Suspends Next-Gen Electric Trucks as It Pivots to Gas Engines and Hybrids Amid Slowing EV Demand"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 319,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjIgMTI6MjU6MjYiLCJpIjoiNjllOTljNTJiZGQwOWEyM2QwOTI2Y2Q3IiwiZG0iOiJnbS5jb20iLCJldCI6ImNvbXBhbnlfYW5ub3VuY2VtZW50Iiwicm8iOiJwcmltYXJ5In0",
+     "by_type": {
+      "company_announcement": 215,
+      "asset_acquisition": 104
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.505,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 7 event(s)"
+     ],
+     "request_seconds": 4.508
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "asset_acquisition",
+      "company_announcement"
+     ],
+     "q": "battery",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "battery",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "asset_acquisition",
+       "company_announcement"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 263,
+     "carrying": 263,
+     "carrier_share_pct": 100.0,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 8,
+       "share": 3.04
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 1,
+       "share": 0.38
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 44,
+       "share": 16.73
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 55,
+       "share": 20.91
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 155,
+       "share": 58.94
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 0,
+       "share": 0.0
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 8,
+       "share": 3.04
+      },
+      {
+       "group": "neutral",
+       "count": 1,
+       "share": 0.38
+      },
+      {
+       "group": "positive",
+       "count": 254,
+       "share": 96.58
+      }
+     ],
+     "negative_to_positive_ratio": 0.031,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.04,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 39,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 38,
+       "negative_share": 2.56,
+       "positive_share": 97.44,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 2,
+        "fair_pos": 10,
+        "very_pos": 26,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 75,
+       "negative": 6,
+       "neutral": 1,
+       "positive": 68,
+       "negative_share": 8.0,
+       "positive_share": 90.67,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 6,
+        "none": 1,
+        "slight_pos": 18,
+        "fair_pos": 15,
+        "very_pos": 35,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 56,
+       "negative": 1,
+       "neutral": 0,
+       "positive": 55,
+       "negative_share": 1.79,
+       "positive_share": 98.21,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 1,
+        "none": 0,
+        "slight_pos": 9,
+        "fair_pos": 10,
+        "very_pos": 36,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 93,
+       "negative": 0,
+       "neutral": 0,
+       "positive": 93,
+       "negative_share": 0.0,
+       "positive_share": 100.0,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 0,
+        "fair_neg": 0,
+        "slight_neg": 0,
+        "none": 0,
+        "slight_pos": 15,
+        "fair_pos": 20,
+        "very_pos": 58,
+        "extreme_pos": 0
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 2.96,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 2.963
+    }
+   }
+  }
+ ]
+}

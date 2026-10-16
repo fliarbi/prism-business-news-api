@@ -1,0 +1,806 @@
+{
+ "slug": "bank-results",
+ "segment": "company-events",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:49:10Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "event_trends",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/event-trends",
+    "body": {
+     "event_type": [
+      "earnings"
+     ],
+     "q": "bank",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.event_trends",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "bank",
+      "match": "any",
+      "event_type": [
+       "earnings"
+      ]
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "events": 215,
+       "by_type": {
+        "earnings": 215
+       }
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "events": 39,
+       "by_type": {
+        "earnings": 39
+       }
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "events": 392,
+       "by_type": {
+        "earnings": 392
+       }
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "events": 324,
+       "by_type": {
+        "earnings": 324
+       }
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "events": 48,
+       "by_type": {
+        "earnings": 48
+       }
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "events": 321,
+       "by_type": {
+        "earnings": 321
+       }
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "events": 127,
+       "by_type": {
+        "earnings": 127
+       }
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "events": 39,
+       "by_type": {
+        "earnings": 39
+       }
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "events": 330,
+       "by_type": {
+        "earnings": 330
+       }
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "events": 196,
+       "by_type": {
+        "earnings": 196
+       }
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "events": 65,
+       "by_type": {
+        "earnings": 65
+       }
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "events": 369,
+       "by_type": {
+        "earnings": 369
+       }
+      }
+     ],
+     "totals": {
+      "events": 2465,
+      "articles": 2128,
+      "companies": 719,
+      "counting": "One event is a distinct article, company domain, event type, role and publication time. Repeated sentences with the same event identity count once. One article can contain multiple events; company counts exclude missing domains."
+     },
+     "by_type": {
+      "earnings": 2465
+     },
+     "complete_periods": 12,
+     "partial_periods": 0
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-08-07",
+     "datasets": {
+      "news": "2026-08-24",
+      "events": "2026-08-07"
+     },
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.089,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.",
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred.",
+      "Zero-count periods are included; partial_period marks buckets only partly covered by the window."
+     ],
+     "request_seconds": 0.091
+    }
+   }
+  },
+  {
+   "name": "events",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/events",
+    "body": {
+     "event_type": [
+      "earnings"
+     ],
+     "q": "bank",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 15,
+     "resolve": true
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.events",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 15,
+      "sort": "newest",
+      "q": "bank",
+      "event_type": [
+       "earnings"
+      ],
+      "resolve": true
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "69f87f9443843dd771ce0466",
+       "headline": "The bank reported $0.57 EPS for the quarter, missing the consensus estimate of $0.58 by ($0.01), FiscalAI reports.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "bancochile.cl",
+       "published_at": "2026-04-30T23:30:52",
+       "url": "https://www.tickerreport.com/banking-finance/13424255/banco-de-chile-nysebch-posts-earnings-results-misses-estimates-by-0-01-eps.html",
+       "publisher": "tickerreport.com",
+       "title": "Banco De Chile (NYSE:BCH) Posts Earnings Results, Misses Estimates By $0.01 EPS"
+      },
+      {
+       "id": "69f8a6fd43843dd771d24a7c",
+       "headline": "Mashreq Bank, one of the leading financial institutions in the MENA region, has delivered a strong first-quarter performance, with operating income growing to AED3.4 billion ($925.8 million) and net profit before tax increasing to AED2.3 billion ($626.28 million). Net profit after tax was AED1.9 billion ($517.36 million).",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "mashreqbank.com",
+       "published_at": "2026-04-30T15:03:48",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f881c843843dd771cf4b06",
+       "headline": "Wema Bank Plc reported a profit after tax of ₦63.13 billion for the first quarter (Q1) ended March 31, 2026, representing a 76.1 percent increase from ₦35.85 billion recorded in the corresponding period of 2025.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "wemabank.com",
+       "published_at": "2026-04-30T12:39:55",
+       "url": "https://investorsking.com/2026/04/30/wema-bank-profit-rises-to-%e2%82%a663-13-billion-as-interest-income-drives-strong-q1-2026-performance/",
+       "publisher": "investorsking.com",
+       "title": "Wema Bank Profit Rises To ₦63.13 Billion As Interest Income Drives Strong Q1 2026 Performance | Investors King"
+      },
+      {
+       "id": "69f885198937ef12fc09a7b7",
+       "headline": "CRDB Bank Plc has cemented its position as the undisputed leader in Tanzania’s banking sector, after reporting a Profit After Tax (PAT) of Sh206 billion, representing a robust 18.9% year-on-year growth in the first quarter of 2026.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "crdbbank.com",
+       "published_at": "2026-04-30T12:35:56",
+       "url": "https://www.thecitizen.co.tz/tanzania/supplement/crdb-bank-becomes-undisputed-market-leader-as-q1-profit-surges-to-sh206-billion--5442062",
+       "publisher": "thecitizen.co.tz",
+       "title": "CRDB Bank becomes undisputed market leader as Q1 profit surges to Sh206 billion"
+      },
+      {
+       "id": "69f8824a8937ef12fc081cfd",
+       "headline": "Indian Bank reported its quarterly results on April 29.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "indianbank.in",
+       "published_at": "2026-04-30T09:43:00",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8ab31bbf1d314559a610c",
+       "headline": "Shares of IDBI Bank fell around 3 per cent from day’s high after the LIC-promoted lender reported a 5.26 per cent year-on-year (YoY) drop in net profit at Rs 1,943 crore for the March quarter compared with Rs 2,051 crore in the same quarter last year.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "idbibank.in",
+       "published_at": "2026-04-30T09:21:39",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f8a87b43843dd771d25b62",
+       "headline": "IDBI Bank reported a standalone net profit of ₹1,943.2 crore in the fourth quarter of FY26, registering a fall of 5.3% from ₹2,051.2 crore in the year-ago period.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "idbibank.in",
+       "published_at": "2026-04-30T08:29:48",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f9dcaea088760d34c50b2d",
+       "headline": "National Bank of Pakistan (PSX: NBP) reported a 26% decline in its consolidated profit after taxation for the first quarter ended March 31, 2026, falling to Rs16.29bn compared to Rs22.11bn in the corresponding period last year.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "nbp.com.pk",
+       "published_at": "2026-04-30T07:43:12",
+       "url": "https://mettisglobal.news/MG-Morning-Breeze-Updates-to-Skim-before-Market-60114",
+       "publisher": "mettisglobal.news",
+       "title": "MG Morning Breeze: Updates to Skim before Market"
+      },
+      {
+       "id": "69f9dcaea088760d34c50b2d",
+       "headline": "JS Bank Limited (PSX: JSBL) reported a 62.68% year-on-year contraction in profit after taxation for the three months ended March 31, 2026, recording Rs1.16bn compared to Rs3.10bn in the corresponding period last year.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "jsbl.com",
+       "published_at": "2026-04-30T07:43:12",
+       "url": "https://mettisglobal.news/MG-Morning-Breeze-Updates-to-Skim-before-Market-60114",
+       "publisher": "mettisglobal.news",
+       "title": "MG Morning Breeze: Updates to Skim before Market"
+      },
+      {
+       "id": "69f8ab3dbbf1d314559a6240",
+       "headline": "The lender reported a 22 percent rise in consolidated net profit for the quarter ended March, led by stronger core earnings. The Kochi-based bank reported a net profit of Rs 1,259.1 crore in Q4 against Rs 1,030.2 crore in the prior corresponding period.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "federalbank.co.in",
+       "published_at": "2026-04-30T04:41:40",
+       "url": "https://www.businesstoday.in/markets/stocks/story/risk-reward-less-favourable-for-this-jhunjhunwala-stock-post-q4-earnings-buy-or-sell-528155-2026-04-30",
+       "publisher": "businesstoday.in",
+       "title": "Risk reward 'less favourable' for this Jhunjhunwala stock post Q4 earnings; buy or sell? - BusinessToday"
+      },
+      {
+       "id": "69f8aa7843843dd771d2761c",
+       "headline": "\"Fino Payments Bank: The private lender’s net profit sank 70.4 per cent YoY to Rs 7.1 crore, while revenue grew 31.5 per cent YoY to Rs 35.2 crore for January-March 2026 period.\"",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "finobank.com",
+       "published_at": "2026-04-30T02:11:04",
+       "url": "https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-bajaj-finance-vedanta-lt-indegene-schaeffler-moil-hindzinc-hul-528123-2026-04-30",
+       "publisher": "businesstoday.in",
+       "title": "Top stocks in news: Bajaj Finance, Vedanta, L&T, Indegene, Schaeffler, MOIL, HindZinc, HUL - BusinessToday"
+      },
+      {
+       "id": "69f229c727117df83f943b38",
+       "headline": "Fino Payments Bank net profit for the quarter ended March 31, 2026 (Q4 FY26) plummeted 70% to ₹7.1 Cr from ₹24 Cr in the year-ago quarter.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "finobank.com",
+       "published_at": "2026-04-29T14:02:10",
+       "url": null,
+       "publisher": null,
+       "title": null
+      },
+      {
+       "id": "69f22991122c4392e0cf53d9",
+       "headline": "For FY'26, Fino Bank reported a revenue of ₹1,587.9 crore, a 14% decrease year-on-year, while net revenue remained stable at ₹584.4 crore.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "finobank.com",
+       "published_at": "2026-04-29T13:49:05",
+       "url": "https://www.businessupturn.com/business/fino-payments-bank-reports-highest-ever-quarterly-casa-renewal-income-of-%e2%82%b962-2-crore/",
+       "publisher": "businessupturn.com",
+       "title": "Fino Payments Bank reports highest ever quarterly CASA renewal income of ₹62.2 crore - Business Upturn"
+      },
+      {
+       "id": "69f22d86c6105443aa5d99d3",
+       "headline": "National Bank of Pakistan (PSX: NBP) reported a 26% decline in its consolidated profit after taxation for the first quarter ended March 31, 2026, falling to Rs16.29bn compared to Rs22.11bn in the corresponding period last year.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "nbp.com.pk",
+       "published_at": "2026-04-29T12:45:19",
+       "url": "https://mettisglobal.news/NBP-posts-26-drop-in-Q1CY26-profit-60088",
+       "publisher": "mettisglobal.news",
+       "title": "NBP posts 26% drop in Q1CY26 profit"
+      },
+      {
+       "id": "69f22ee427117df83f957544",
+       "headline": "Gránit Bank Shareholders Vote to Place 2025 Profit in Reserves Shareholders of Gránit Bank approved a proposal to place all HUF 19.2 billion of 2025 earnings into profit reserves at an annual general meeting on Tuesday, the lender said.",
+       "event_type": "earnings",
+       "role": "primary",
+       "domain": "granitbank.hu",
+       "published_at": "2026-04-29T12:40:00",
+       "url": "https://bbj.hu/economy/finance/banking/granit-bank-shareholders-vote-to-place-2025-profit-in-reserves/",
+       "publisher": "bbj.hu",
+       "title": "Gránit Bank Shareholders Vote to Place 2025 Profit in Reserves - Budapest Business Journal"
+      }
+     ],
+     "returned": 15,
+     "total_estimate": 960,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZXYiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMjkgMTI6NDA6MDAiLCJpIjoiNjlmMjJlZTQyNzExN2RmODNmOTU3NTQ0IiwiZG0iOiJncmFuaXRiYW5rLmh1IiwiZXQiOiJlYXJuaW5ncyIsInJvIjoicHJpbWFyeSJ9",
+     "by_type": {
+      "earnings": 960
+     },
+     "limit": 15,
+     "sort": "newest",
+     "resolved": true
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-07",
+     "freshness": "this business dataset is available through 2026-08-07; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 4.678,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Some requested articles are temporarily unavailable.",
+      "original article details are unavailable for 5 event(s)"
+     ],
+     "request_seconds": 4.713
+    }
+   }
+  },
+  {
+   "name": "sentiment",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/sentiment",
+    "body": {
+     "event_type": [
+      "earnings"
+     ],
+     "q": "bank",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.sentiment",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "q": "bank",
+      "match": "any",
+      "classes": [
+       0,
+       5,
+       11,
+       14,
+       15,
+       22,
+       25,
+       26,
+       32,
+       36,
+       42,
+       44,
+       45,
+       54,
+       55,
+       56,
+       57,
+       71,
+       78,
+       80,
+       81,
+       83,
+       84,
+       86,
+       93,
+       94,
+       95,
+       97,
+       102,
+       111,
+       114,
+       120,
+       123,
+       128,
+       140,
+       147,
+       151,
+       153,
+       157,
+       160,
+       161,
+       164,
+       165,
+       167,
+       170,
+       172,
+       177,
+       180,
+       187,
+       194,
+       200,
+       203,
+       218,
+       230,
+       235,
+       241,
+       242,
+       248,
+       258,
+       259,
+       263,
+       266,
+       288,
+       290,
+       291,
+       294,
+       302,
+       303,
+       315,
+       316,
+       322,
+       324,
+       327,
+       330,
+       337,
+       343,
+       347,
+       349,
+       350,
+       361,
+       365,
+       371,
+       373,
+       375,
+       376,
+       386,
+       387,
+       410,
+       412,
+       424,
+       439,
+       456,
+       458,
+       467,
+       477,
+       492,
+       496,
+       497,
+       516,
+       533,
+       544,
+       588,
+       607,
+       608,
+       616,
+       637,
+       644,
+       653,
+       656,
+       660,
+       672,
+       676,
+       678,
+       691,
+       695,
+       696,
+       702,
+       708,
+       734,
+       768,
+       774,
+       775,
+       777,
+       783,
+       800,
+       801,
+       825,
+       833,
+       840,
+       843,
+       844,
+       863,
+       877,
+       919,
+       972,
+       1033,
+       1037,
+       1055
+      ],
+      "event_type": [
+       "earnings"
+      ]
+     },
+     "granularity": "monthly",
+     "scope": {
+      "applied": "default",
+      "class_prefixes": [
+       "/News/Business News",
+       "/Business & Industrial",
+       "/Finance"
+      ],
+      "class_count": 138,
+      "note": "default: articles classified under the business categories; pass classes or class_prefix to replace it"
+     }
+    },
+    "data": {
+     "matched": 3306,
+     "carrying": 3305,
+     "carrier_share_pct": 99.97,
+     "labels": [
+      {
+       "label": "extreme_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "very_neg",
+       "group": "negative",
+       "count": 41,
+       "share": 1.24
+      },
+      {
+       "label": "fair_neg",
+       "group": "negative",
+       "count": 0,
+       "share": 0.0
+      },
+      {
+       "label": "slight_neg",
+       "group": "negative",
+       "count": 400,
+       "share": 12.1
+      },
+      {
+       "label": "none",
+       "group": "neutral",
+       "count": 41,
+       "share": 1.24
+      },
+      {
+       "label": "slight_pos",
+       "group": "positive",
+       "count": 1650,
+       "share": 49.92
+      },
+      {
+       "label": "fair_pos",
+       "group": "positive",
+       "count": 59,
+       "share": 1.79
+      },
+      {
+       "label": "very_pos",
+       "group": "positive",
+       "count": 1065,
+       "share": 32.22
+      },
+      {
+       "label": "extreme_pos",
+       "group": "positive",
+       "count": 49,
+       "share": 1.48
+      }
+     ],
+     "groups": [
+      {
+       "group": "negative",
+       "count": 441,
+       "share": 13.34
+      },
+      {
+       "group": "neutral",
+       "count": 41,
+       "share": 1.24
+      },
+      {
+       "group": "positive",
+       "count": 2823,
+       "share": 85.42
+      }
+     ],
+     "negative_to_positive_ratio": 0.156,
+     "baseline": {
+      "since": "2026-07-26",
+      "until": "2026-08-24",
+      "days": 30,
+      "articles": 13835,
+      "carrying": 13802,
+      "note": "Archive comparison over the 30 days ending at data_through",
+      "groups": {
+       "negative": {
+        "count": 5610,
+        "share": 40.65
+       },
+       "neutral": {
+        "count": 622,
+        "share": 4.51
+       },
+       "positive": {
+        "count": 7570,
+        "share": 54.85
+       }
+      },
+      "negative_to_positive_ratio": 0.741
+     },
+     "vs_baseline_ratio": 0.21,
+     "granularity": "monthly",
+     "timeline": [
+      {
+       "period": "2026-01-01",
+       "total": 1081,
+       "negative": 145,
+       "neutral": 12,
+       "positive": 924,
+       "negative_share": 13.41,
+       "positive_share": 85.48,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 10,
+        "fair_neg": 0,
+        "slight_neg": 135,
+        "none": 12,
+        "slight_pos": 537,
+        "fair_pos": 23,
+        "very_pos": 354,
+        "extreme_pos": 10
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-02-01",
+       "total": 840,
+       "negative": 139,
+       "neutral": 9,
+       "positive": 692,
+       "negative_share": 16.55,
+       "positive_share": 82.38,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 18,
+        "fair_neg": 0,
+        "slight_neg": 121,
+        "none": 9,
+        "slight_pos": 419,
+        "fair_pos": 17,
+        "very_pos": 245,
+        "extreme_pos": 11
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-03-01",
+       "total": 317,
+       "negative": 36,
+       "neutral": 4,
+       "positive": 277,
+       "negative_share": 11.36,
+       "positive_share": 87.38,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 6,
+        "fair_neg": 0,
+        "slight_neg": 30,
+        "none": 4,
+        "slight_pos": 130,
+        "fair_pos": 5,
+        "very_pos": 133,
+        "extreme_pos": 9
+       },
+       "partial_period": false
+      },
+      {
+       "period": "2026-04-01",
+       "total": 1067,
+       "negative": 121,
+       "neutral": 16,
+       "positive": 930,
+       "negative_share": 11.34,
+       "positive_share": 87.16,
+       "labels": {
+        "extreme_neg": 0,
+        "very_neg": 7,
+        "fair_neg": 0,
+        "slight_neg": 114,
+        "none": 16,
+        "slight_pos": 564,
+        "fair_pos": 14,
+        "very_pos": 333,
+        "extreme_pos": 19
+       },
+       "partial_period": false
+      }
+     ]
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-08-24",
+     "freshness": "volume thins after 2026-05; the last months are partial",
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 5.513,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)"
+     ],
+     "request_seconds": 5.517
+    }
+   }
+  }
+ ]
+}

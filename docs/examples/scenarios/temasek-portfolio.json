@@ -1,0 +1,3605 @@
+{
+ "slug": "temasek-portfolio",
+ "segment": "investor-research",
+ "kind": "captured",
+ "captured_at": "2026-10-16T04:57:28Z",
+ "coverage_note": "93% of archive rows (1 of 14 shards offline)",
+ "calls": [
+  {
+   "name": "summary",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding/summary",
+    "body": {
+     "investor": "Temasek",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "granularity": "monthly"
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding_summary",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 100,
+      "sort": "newest",
+      "investor": "temasek"
+     },
+     "granularity": "monthly"
+    },
+    "data": {
+     "totals": {
+      "deals": 113,
+      "deals_with_amount": 95,
+      "deals_without_amount": 18,
+      "deals_amount_excluded": 5,
+      "sum_amount_usd": 67263008000.0,
+      "median_amount_usd": 181800000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "granularity": "monthly",
+     "points": [
+      {
+       "period": "2025-05-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 4,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 1690000000.0,
+       "median_amount_usd": 845000000.0,
+       "largest_amount_usd": 1600000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-06-01",
+       "partial_period": false,
+       "deals": 5,
+       "deals_with_amount": 4,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 938884000.0,
+       "median_amount_usd": 130842000.0,
+       "largest_amount_usd": 675000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-07-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2556400000.0,
+       "median_amount_usd": 480000000.0,
+       "largest_amount_usd": 1080000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-08-01",
+       "partial_period": false,
+       "deals": 16,
+       "deals_with_amount": 14,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2656600000.0,
+       "median_amount_usd": 162000000.0,
+       "largest_amount_usd": 1250000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-09-01",
+       "partial_period": false,
+       "deals": 12,
+       "deals_with_amount": 12,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 2784800000.0,
+       "median_amount_usd": 136000000.0,
+       "largest_amount_usd": 1000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-10-01",
+       "partial_period": false,
+       "deals": 3,
+       "deals_with_amount": 0,
+       "deals_without_amount": 3,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": null,
+       "median_amount_usd": null,
+       "largest_amount_usd": null,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-11-01",
+       "partial_period": false,
+       "deals": 4,
+       "deals_with_amount": 4,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 805000000.0,
+       "median_amount_usd": 275000000.0,
+       "largest_amount_usd": 450000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2025-12-01",
+       "partial_period": false,
+       "deals": 9,
+       "deals_with_amount": 8,
+       "deals_without_amount": 1,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 17433440000.0,
+       "median_amount_usd": 654000000.0,
+       "largest_amount_usd": 12000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-01-01",
+       "partial_period": false,
+       "deals": 6,
+       "deals_with_amount": 6,
+       "deals_without_amount": 0,
+       "deals_amount_excluded": 0,
+       "sum_amount_usd": 12735000000.0,
+       "median_amount_usd": 2400000000.0,
+       "largest_amount_usd": 4000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-02-01",
+       "partial_period": false,
+       "deals": 7,
+       "deals_with_amount": 5,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 1,
+       "sum_amount_usd": 21292680000.0,
+       "median_amount_usd": 180000000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-03-01",
+       "partial_period": false,
+       "deals": 23,
+       "deals_with_amount": 21,
+       "deals_without_amount": 2,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 22477004000.0,
+       "median_amount_usd": 408600000.0,
+       "largest_amount_usd": 16000000000.0,
+       "currency": "USD"
+      },
+      {
+       "period": "2026-04-01",
+       "partial_period": false,
+       "deals": 13,
+       "deals_with_amount": 9,
+       "deals_without_amount": 4,
+       "deals_amount_excluded": 2,
+       "sum_amount_usd": 3085200000.0,
+       "median_amount_usd": 392000000.0,
+       "largest_amount_usd": 1512000000.0,
+       "currency": "USD"
+      }
+     ]
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "datasets": {
+      "news": "2026-08-24",
+      "funding": "2026-07-16"
+     },
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates",
+     "max_days": 366,
+     "granularity": "monthly"
+    },
+    "meta": {
+     "seconds": 0.112,
+     "coverage": {
+      "available": false
+     },
+     "notes": [
+      "Dates refer to source publication dates, not necessarily the date an event or deal occurred."
+     ],
+     "request_seconds": 0.116
+    }
+   }
+  },
+  {
+   "name": "largest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Temasek",
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "sort": "amount",
+     "limit": 40
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2025-05-01",
+      "until": "2026-04-30",
+      "limit": 40,
+      "sort": "amount",
+      "investor": "temasek"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "c3d093818aa00b98",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "Series D",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "alphabet",
+         "domain": "abc.xyz",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "bdt & msd partners",
+         "domain": "bdtmsd.com",
+         "amount": null
+        },
+        {
+         "name": "bessemer venture partners",
+         "domain": "bvp.com",
+         "amount": null
+        },
+        {
+         "name": "capitalg",
+         "domain": "capitalg.com",
+         "amount": null
+        },
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "google ventures",
+         "domain": "gv.com",
+         "amount": null
+        },
+        {
+         "name": "kleiner perkins",
+         "domain": "kleinerperkins.com",
+         "amount": null
+        },
+        {
+         "name": "Mubadala Capital",
+         "domain": "mubadalacapital.ae",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "tiger global management",
+         "domain": "tigerglobal.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence (AI), Automotive, Autonomous Vehicles, Sensor, Transportation",
+       "country": null,
+       "city": "Mountain View",
+       "use_of_funds": null,
+       "source_sentence": "Mountain View-based Waymo is a mobility technology company that improves transportation by developing self‑driving solutions for travelers and daily commuters.",
+       "published_at": "2026-03-27T09:27:36",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cc4289cb088e024d2646bf"
+       ],
+       "article_id": "69cc4289cb088e024d2646bf"
+      },
+      {
+       "id": "bbc1e5be665f1112",
+       "company_name": "waymo",
+       "domain": "waymo.com",
+       "round_type": "investment round",
+       "amount_usd": 16000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 126000000000.0,
+       "currency": "USD",
+       "amount": 16000000000.0,
+       "valuation": 126000000000.0,
+       "investors": [
+        {
+         "name": "dragoneer investment group",
+         "domain": "dragoneer.com",
+         "amount": null
+        },
+        {
+         "name": "sequoia capital",
+         "domain": "sequoiacap.com",
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Abu Dhabi sovereign fund Mubadala",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "fidelity management and research company",
+         "domain": "fidelity.com",
+         "amount": null
+        },
+        {
+         "name": "Perry Creek Capital",
+         "domain": "perrycreekcap.com",
+         "amount": null
+        },
+        {
+         "name": "silver lake",
+         "domain": "silverlake.com",
+         "amount": null
+        },
+        {
+         "name": "tiger global",
+         "domain": "tigerglobal.co.uk",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "robotaxi, autonomous vehicles",
+       "country": null,
+       "city": null,
+       "use_of_funds": "buy more vehicles to expand fleet",
+       "source_sentence": "Waymo announced a $16 billion investment round aimed at bringing its robotaxi business to more US cities, as well as some overseas markets.",
+       "published_at": "2026-02-02T22:30:19",
+       "coverage_count": 1,
+       "article_ids": [
+        "698649e5514cbd23b5c28d3b"
+       ],
+       "article_id": "698649e5514cbd23b5c28d3b"
+      },
+      {
+       "id": "fa4208c4f224d320",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "Qualified Institutional Placement",
+       "amount_usd": 12000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 1000000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "icici prudential mutual fund",
+         "domain": "icicipruamc.com",
+         "amount": null
+        },
+        {
+         "name": "sbi mutual fund",
+         "domain": "sbimf.com",
+         "amount": null
+        },
+        {
+         "name": "Aditya Birla Sun Life Mutual Fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Norway’s sovereign wealth fund",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "vanguard",
+         "domain": "vanguardlogistics.com",
+         "amount": null
+        },
+        {
+         "name": "capital group",
+         "domain": "capitalgroup.com",
+         "amount": null
+        },
+        {
+         "name": "nomura",
+         "domain": "nomura.com",
+         "amount": null
+        },
+        {
+         "name": "goldman sachs",
+         "domain": "goldmansachs.com",
+         "amount": null
+        }
+       ],
+       "sector": "Food and grocery delivery",
+       "country": "India",
+       "city": "Bengaluru",
+       "use_of_funds": "Expand its quick commerce network",
+       "source_sentence": "Swiggy has said it plans to deploy ₹4,475 crore from the QIP proceeds towards expanding its quick commerce network.",
+       "published_at": "2025-12-13T14:42:44",
+       "coverage_count": 1,
+       "article_ids": [
+        "6945244505c47fd0a3a35919"
+       ],
+       "article_id": "6945244505c47fd0a3a35919"
+      },
+      {
+       "id": "13bc7b179d4ae1eb",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "Series K",
+       "amount_usd": 5000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 134000000000.0,
+       "currency": "USD",
+       "amount": 5000000000.0,
+       "valuation": 134000000000.0,
+       "investors": [
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "Singapore Temasek",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Macquarie Capital entities",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "dst global",
+         "domain": "dst-global.com",
+         "amount": null
+        },
+        {
+         "name": "Singapore GIC",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "wcm investment management",
+         "domain": "wcminvest.com",
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers’ Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "iconiq growth",
+         "domain": "iconiqgrowth.com",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "Sands Capital & Wellington Management",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Data & AI",
+       "country": "United States",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "United States data & artificial intelligence (AI) company Databrick has raised $5 billion funding at $134 billion valuation, and with additional $2 billion debt funding.",
+       "published_at": "2026-02-10T15:16:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bbb81351c35210b7b8632d"
+       ],
+       "article_id": "69bbb81351c35210b7b8632d"
+      },
+      {
+       "id": "fd4c9ad5248d0ba6",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "Venture",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone group",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "infinitum",
+         "domain": "goinfinitum.com",
+         "amount": null
+        },
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan Asset Management",
+         "domain": "jpmorgan.am",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "new enterprise associates",
+         "domain": "nea.com",
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers’ Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Strike Capital",
+         "domain": "strikecapital.net",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "winslow capital",
+         "domain": "winslowcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Analytics, Artificial Intelligence (AI), Data Storage, Information Technology, Machine Learning",
+       "country": "United States",
+       "city": "San Francisco",
+       "use_of_funds": null,
+       "source_sentence": "Round: Venture",
+       "published_at": "2026-01-16T09:27:11",
+       "coverage_count": 1,
+       "article_ids": [
+        "698d77be9ca02490ecfba63d"
+       ],
+       "article_id": "698d77be9ca02490ecfba63d"
+      },
+      {
+       "id": "450bc5985083b40e",
+       "company_name": "databricks",
+       "domain": "databricks.com",
+       "round_type": "Series L",
+       "amount_usd": 4000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 134000000000.0,
+       "currency": "USD",
+       "amount": 4000000000.0,
+       "valuation": 134000000000.0,
+       "investors": [
+        {
+         "name": "insight partners",
+         "domain": "insightpartners.com",
+         "amount": null
+        },
+        {
+         "name": "Fidelity Management & Research Company",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "J.P. Morgan Asset Management",
+         "domain": "jpmorgan.am",
+         "amount": null
+        },
+        {
+         "name": "Andreessen Horowitz",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "blackstone",
+         "domain": "blackstone.com",
+         "amount": null
+        },
+        {
+         "name": "coatue",
+         "domain": "coatue.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "MGX",
+         "domain": "mgxdigital.com",
+         "amount": null
+        },
+        {
+         "name": "nea",
+         "domain": "nea.org",
+         "amount": null
+        },
+        {
+         "name": "Ontario Teachers Pension Plan",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Robinhood Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "thrive capital",
+         "domain": "thrivecap.com",
+         "amount": null
+        },
+        {
+         "name": "winslow capital",
+         "domain": "winslowcapital.com",
+         "amount": null
+        }
+       ],
+       "sector": "Data and AI",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Build AI apps and agents, provide liquidity for employees, support future AI acquisitions, deepen AI research",
+       "source_sentence": "SAN FRANCISCO, Dec. 16, 2025 /PRNewswire/ — Databricks , the Data and AI company, today announced it is raising a >$4 billion Series L investment, valuing the company at $134 billion.",
+       "published_at": "2025-12-16T13:30:00",
+       "coverage_count": 5,
+       "article_ids": [
+        "69451294ba9489700ca33ab2",
+        "698889885302bdff25877413",
+        "6989b98294d3f481f3eb32c8",
+        "69bb558b8dcdeb577ebba461",
+        "69e88e285cfa3e5ba50cd1bb"
+       ],
+       "article_id": "69bb558b8dcdeb577ebba461"
+      },
+      {
+       "id": "cb48a355e5526c2b",
+       "company_name": "QXO",
+       "domain": null,
+       "round_type": "Series C convertible perpetual preferred stock",
+       "amount_usd": 3000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apollo global management",
+         "domain": "apollo.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "building-products distribution",
+       "country": "USA",
+       "city": null,
+       "use_of_funds": "purchasing preferred shares to fund acquisitions",
+       "source_sentence": "QXO has expanded its previously announced financing to $3 billion, increasing its capacity to pursue acquisitions as it targets consolidation opportunities in the building-products distribution sector.",
+       "published_at": "2026-01-13T17:48:31",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc217a06529d470d42bc10"
+       ],
+       "article_id": "69bc217a06529d470d42bc10"
+      },
+      {
+       "id": "d82f838c6bf8bc67",
+       "company_name": "QXO Inc",
+       "domain": null,
+       "round_type": "convertible preferred equity financing",
+       "amount_usd": 3000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 3000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apollo funds",
+         "domain": "apollofunds.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "other investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "private placement strengthens QXO’s balance sheet and enhances its financial flexibility to pursue strategic, acquisition-led expansion",
+       "source_sentence": "On January 12, 2026, QXO Inc. announced it had upsized its previously disclosed convertible preferred equity financing, boosting the total committed investment to $3 billion from $1.2 billion.",
+       "published_at": "2026-01-13T05:36:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "6998021b22f0326c0f91ea18"
+       ],
+       "article_id": "6998021b22f0326c0f91ea18"
+      },
+      {
+       "id": "e0e13a38e7838a39",
+       "company_name": "QXO",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1800000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1800000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "apollo",
+         "domain": "apollo-oe.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": "building products distribution",
+       "country": null,
+       "city": null,
+       "use_of_funds": "support future acquisitions",
+       "source_sentence": "With an additional $1.8 billion in funding from Apollo, Temasek, and other investors announced on Monday.",
+       "published_at": "2026-01-12T22:03:45",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bc29aeca83ba01fec6bc6a"
+       ],
+       "article_id": "69bc29aeca83ba01fec6bc6a"
+      },
+      {
+       "id": "de10a164bfe1911f",
+       "company_name": "hub international",
+       "domain": "hubinternational.com",
+       "round_type": "equity",
+       "amount_usd": 1600000000.0,
+       "amount_flag": null,
+       "valuation_usd": 29000000000.0,
+       "currency": "USD",
+       "amount": 1600000000.0,
+       "valuation": 29000000000.0,
+       "investors": [
+        {
+         "name": "T. Rowe Price Investment Management Inc.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Alpha Wave Global L.P.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "Unspecified investors",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "primary capital for growth initiatives and other general corporate purposes, such as acquisitions, debt repayments, and maintaining excess cash",
+       "source_sentence": "Financial services firm Hub International Ltd. was valued at $29 billion for a $1.6 billion equity investment led by T. Rowe Price Investment Management Inc., multi-asset investment manager Alpha Wave Global L.P. and Singapore-based, state-owned Temasek Holdings Ltd, with participation from new, unspecified investors. The transaction is set to close in May.",
+       "published_at": "2025-05-14T13:11:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "69badff66de4b21d370fbe42"
+       ],
+       "article_id": "69badff66de4b21d370fbe42"
+      },
+      {
+       "id": "12eecf66c8d125f6",
+       "company_name": "hub international",
+       "domain": "hubinternational.com",
+       "round_type": "minority equity",
+       "amount_usd": 1600000000.0,
+       "amount_flag": null,
+       "valuation_usd": 29000000000.0,
+       "currency": "USD",
+       "amount": 1600000000.0,
+       "valuation": 29000000000.0,
+       "investors": [
+        {
+         "name": "T Rowe Price Investment Management",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": "Insurance brokerage and financial services",
+       "country": "USA",
+       "city": "Chicago",
+       "use_of_funds": "Proceeds of the investment will provide capital for growth initiatives and other general corporate purposes, such as acquisitions, debt repayments and maintaining excess cash on Hub’s balance sheet.",
+       "source_sentence": "Hub International, a Chicago-based insurance brokerage and financial services company, has agreed to receive a minority equity investment of about $1.6 billion.",
+       "published_at": "2025-05-12T14:05:46",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bce29bada7f1c36000c65d"
+       ],
+       "article_id": "69bce29bada7f1c36000c65d"
+      },
+      {
+       "id": "b335d27f38a10e7e",
+       "company_name": "hub international",
+       "domain": "hubinternational.com",
+       "round_type": "minority common equity investment",
+       "amount_usd": 1600000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1600000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "T. Rowe Price Investment Management, Inc.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "alpha wave global",
+         "domain": "alphawaveglobal.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": "insurance brokerage and financial services",
+       "country": "USA",
+       "city": "Chicago",
+       "use_of_funds": "primary capital for growth initiatives and other general corporate purposes, such as acquisitions, debt repayments, and maintaining excess cash on HUB's balance sheet",
+       "source_sentence": "Hub International Limited (HUB), a leading global insurance brokerage and financial services firm, announced today that it has entered into a definitive agreement for a minority common equity investment of approximately $1.6 billion, valuing HUB at a $29 billion total enterprise valuation.",
+       "published_at": "2025-05-12T12:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69654fd3d07c2a5fde9cba59"
+       ],
+       "article_id": "69654fd3d07c2a5fde9cba59"
+      },
+      {
+       "id": "f4c390723c8b7727",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": "Rescue funding",
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wallenberg family",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "imas",
+         "domain": "imasweb.it",
+         "amount": null
+        },
+        {
+         "name": "altor",
+         "domain": "altor.tech",
+         "amount": null
+        },
+        {
+         "name": "hy24",
+         "domain": "hy24partners.com",
+         "amount": null
+        },
+        {
+         "name": "just climate",
+         "domain": "justclimate.com",
+         "amount": null
+        }
+       ],
+       "sector": "green steel",
+       "country": "Sweden",
+       "city": "Boden",
+       "use_of_funds": "Construction and commissioning of the green steel plant",
+       "source_sentence": "Swedish green-tech startup Stegra has secured €1.4bn in rescue funding from a consortium led by the prominent Swedish Wallenberg family, as it looks to finish construction of the world's largest green-steel plant.",
+       "published_at": "2026-04-14T10:10:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e6f8da043b81af20d58f29"
+       ],
+       "article_id": "69e6f8da043b81af20d58f29"
+      },
+      {
+       "id": "301f2a1f64dfba78",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": "Financing",
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wallenberg Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "imas",
+         "domain": "imasweb.it",
+         "amount": null
+        },
+        {
+         "name": "altor",
+         "domain": "altor.tech",
+         "amount": null
+        },
+        {
+         "name": "hy24",
+         "domain": "hy24partners.com",
+         "amount": null
+        },
+        {
+         "name": "just climate",
+         "domain": "justclimate.com",
+         "amount": null
+        }
+       ],
+       "sector": "Green steel production",
+       "country": "Sweden",
+       "city": "Boden",
+       "use_of_funds": "To complete the construction and commissioning of the Boden green steel plant, including scope expansions, covering increased project costs and providing a financial buffer",
+       "source_sentence": "Stegra has agreed in principle to secure €1.4 billion in new financing from a combination of new and existing investors, which will allow the company to complete the construction and commissioning of its large-scale green steel facility in Boden, Sweden.",
+       "published_at": "2026-04-14T09:07:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e883e25cfa3e5ba505c397",
+        "69e9b8b7bdd09a23d096c5d8"
+       ],
+       "article_id": "69e9b8b7bdd09a23d096c5d8"
+      },
+      {
+       "id": "de14dedd3bc29feb",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": "Financing round",
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wallenberg Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "imas",
+         "domain": "imasweb.it",
+         "amount": null
+        },
+        {
+         "name": "altor",
+         "domain": "altor.tech",
+         "amount": null
+        },
+        {
+         "name": "hy24",
+         "domain": "hy24partners.com",
+         "amount": null
+        },
+        {
+         "name": "just climate",
+         "domain": "justclimate.com",
+         "amount": null
+        },
+        {
+         "name": "Senior lenders",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Junior lenders",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Green Steel",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "Complete construction of its green steel plant in Boden, including scope expansions, covering increased project costs and establishing a financial buffer.",
+       "source_sentence": "Stegra has agreed in principle on €1.4 billion in new financing from a combination of new and existing investors to complete the construction of its large-scale green steel plant in Boden, Sweden.",
+       "published_at": "2026-04-14T06:20:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d82d7bb1410d4ccc1e61"
+       ],
+       "article_id": "69e8d82d7bb1410d4ccc1e61"
+      },
+      {
+       "id": "e3f90f5c11ea5c71",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wallenberg Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "imas",
+         "domain": "imasweb.it",
+         "amount": null
+        },
+        {
+         "name": "altor",
+         "domain": "altor.tech",
+         "amount": null
+        },
+        {
+         "name": "hy24",
+         "domain": "hy24partners.com",
+         "amount": null
+        },
+        {
+         "name": "just climate",
+         "domain": "justclimate.com",
+         "amount": null
+        }
+       ],
+       "sector": "green steel",
+       "country": "Sweden",
+       "city": "Boden",
+       "use_of_funds": "to complete the construction of its green steel plant in Boden, including scope expansions and financial buffer",
+       "source_sentence": "Stegra has agreed in principle on €1.4 billion in new financing from a combination of new and existing investors to complete the construction of its large-scale green steel plant in Boden, Sweden.",
+       "published_at": "2026-04-14T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e6f616043b81af20d3adee"
+       ],
+       "article_id": "69e6f616043b81af20d3adee"
+      },
+      {
+       "id": "9656dfd61fe811e9",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": "financing",
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wallenberg Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "imas",
+         "domain": "imasweb.it",
+         "amount": null
+        },
+        {
+         "name": "altor",
+         "domain": "altor.tech",
+         "amount": null
+        },
+        {
+         "name": "hy24",
+         "domain": "hy24partners.com",
+         "amount": null
+        },
+        {
+         "name": "just climate",
+         "domain": "justclimate.com",
+         "amount": null
+        }
+       ],
+       "sector": "Green steel",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "Complete construction of the green steel plant in Boden, Sweden, including expansions, increased project costs, and a financial buffer.",
+       "source_sentence": "Stegra has agreed in principle on €1.4 billion in new financing from a combination of new and existing investors to complete the construction of its large-scale green steel plant in Boden, Sweden.",
+       "published_at": "2026-04-13T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e6f819043b81af20d50ba5",
+        "69e8d1c65cfa3e5ba5424489"
+       ],
+       "article_id": "69e6f819043b81af20d50ba5"
+      },
+      {
+       "id": "beabeacb0bbb2fa4",
+       "company_name": "Bharti Airtel Africa Unit",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1250000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1250000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Warberg Pinks",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "singtel",
+         "domain": "singtel.com",
+         "amount": null
+        },
+        {
+         "name": "SoftBank Group International",
+         "domain": "global.softbank",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "The Africa Unit of Bharti Airtel is raising $ 1.25 billion (approximately Rs 9200 crore) by releasing fresh shares to six global investors including Warberg Pinks, Temasek, Singtel, SoftBank Group International.",
+       "published_at": "2025-08-01T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab3fb12e28036801be6b72"
+       ],
+       "article_id": "68ab3fb12e28036801be6b72"
+      },
+      {
+       "id": "0752ec1c51b7caf7",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "Qualified institutional placement",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 100000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "capital group",
+         "domain": "capitalgroup.com",
+         "amount": null
+        },
+        {
+         "name": "gic",
+         "domain": "gic.com.sg",
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        }
+       ],
+       "sector": "Food Delivery, Quick Commerce",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Brand marketing and promotion, technology and cloud infrastructure, quick-commerce fulfilment network expansion, inorganic growth through acquisitions, general corporate purposes",
+       "source_sentence": "Swiggy, the Indian food delivery and quick-commerce company, has raised ₹10,000 crore through a qualified institutions placement, arming itself with fresh capital at a moment when brand visibility, speed and consumer trust are becoming as decisive as logistics in India’s crowded consumer internet market.",
+       "published_at": "2025-12-22T03:01:24",
+       "coverage_count": 1,
+       "article_ids": [
+        "698cdf159ca02490ecf05d6a"
+       ],
+       "article_id": "698cdf159ca02490ecf05d6a"
+      },
+      {
+       "id": "93b84990a92ac28c",
+       "company_name": "swiggy",
+       "domain": "swiggy.com",
+       "round_type": "Qualified Institutions Placement",
+       "amount_usd": 1200000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 100000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Government of Singapore Investment Corporation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "fidelity",
+         "domain": "fidelityinternational.com",
+         "amount": null
+        },
+        {
+         "name": "capital group",
+         "domain": "capitalgroup.com",
+         "amount": null
+        },
+        {
+         "name": "icici prudential life insurance",
+         "domain": "iciciprulife.com",
+         "amount": null
+        },
+        {
+         "name": "HDFC Life Insurance",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sbi mutual fund",
+         "domain": "sbimf.com",
+         "amount": null
+        },
+        {
+         "name": "nippon india mutual fund",
+         "domain": "nipponindiamf.com",
+         "amount": null
+        },
+        {
+         "name": "kotak mutual fund",
+         "domain": "kotakmf.com",
+         "amount": null
+        },
+        {
+         "name": "axis mutual fund",
+         "domain": "axismf.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": "Consumer internet",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "expansion of the quick commerce fulfillment network including dark stores and warehouses, investment in technology and cloud infrastructure, brand marketing and visibility, and strategic acquisitions",
+       "source_sentence": "Swiggy Limited has raised ₹10,000 crore through a Qualified Institutions Placement, positioning itself among India’s largest public market fundraisers in the consumer internet sector.",
+       "published_at": "2025-12-15T00:57:27",
+       "coverage_count": 1,
+       "article_ids": [
+        "69bad5f36ae47bec695ea441"
+       ],
+       "article_id": "69bad5f36ae47bec695ea441"
+      },
+      {
+       "id": "8ee0f89f4aba3cd2",
+       "company_name": "jsw paints",
+       "domain": "jswpaints.in",
+       "round_type": "Acquisition",
+       "amount_usd": 1080000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 90000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Sajjan Jindal and family",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "barclays",
+         "domain": "barclays.in",
+         "amount": null
+        },
+        {
+         "name": "kkr",
+         "domain": "kkr.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "aries",
+         "domain": "ariesnow.com",
+         "amount": null
+        }
+       ],
+       "sector": "Paint",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Acquisition of Akzo Nobel India, raising debt and equity infusion to become top 3 paint maker in India.",
+       "source_sentence": "JSW Paints’ ₹9,000 crore Akzo India buy will propel the Sajjan Jindal-led company to the No 4 slot in the Indian paints market.",
+       "published_at": "2025-07-01T11:16:05",
+       "coverage_count": 1,
+       "article_ids": [
+        "68ab40a22e28036801da9048"
+       ],
+       "article_id": "68ab40a22e28036801da9048"
+      },
+      {
+       "id": "dbdb42a6d27bdfbb",
+       "company_name": "AMI Labs",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "In March the company raised $1.03bn at a pre money valuation of $3.5bn. led by Cathay Innovation, Bezos Expeditions, Temasek and Nvidia.",
+       "published_at": "2026-04-13T23:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e854375cfa3e5ba5e8b374"
+       ],
+       "article_id": "69e854375cfa3e5ba5e8b374"
+      },
+      {
+       "id": "c6eade1540e28c36",
+       "company_name": "AMI Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "sea",
+         "domain": "sea.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "bpifrance",
+         "domain": "bpifrance.com",
+         "amount": null
+        },
+        {
+         "name": "Tim and Rosemary Berners-Lee",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        },
+        {
+         "name": "Xavier Niel",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "first year will be devoted entirely to research",
+       "source_sentence": "AI’s Godfather, Yann LeCun, has launched a bold new venture with his AMI Labs (Advanced Machine Intelligence Labs), which just secured $1.03 billion in seed funding at a $3.5 billion pre-money valuation.",
+       "published_at": "2026-03-10T14:35:16",
+       "coverage_count": 6,
+       "article_ids": [
+        "69c3a6f7b2bc8ebb701d7792",
+        "69c3a89d6a499b02fbb80586",
+        "69cbd1327aa9ae690c975a92",
+        "69cbd1c431f507d55385abef",
+        "69cbd3037ef280d4636ae63a",
+        "69e2b568c1991f786cebfddd"
+       ],
+       "article_id": "69c3a6f7b2bc8ebb701d7792"
+      },
+      {
+       "id": "b2c4df683df8358b",
+       "company_name": "AMI Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "sea",
+         "domain": "sea.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "Tim and Rosemary Berners‑Lee",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jim Breyer",
+         "domain": "https://www.linkedin.com/in/jim-breyer-361900b2/",
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "Xavier Niel",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        }
+       ],
+       "sector": "AI, Machine Learning",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": null,
+       "source_sentence": "We just completed our seed round: $1.03B / €890M, one of the largest seeds ever, probably the largest for a European company.",
+       "published_at": "2026-03-10T12:59:58",
+       "coverage_count": 2,
+       "article_ids": [
+        "69c3a478e36c3064e455d023",
+        "69cc41766e63f1d240550f7c"
+       ],
+       "article_id": "69c3a478e36c3064e455d023"
+      },
+      {
+       "id": "ecb7e059de5d2bbd",
+       "company_name": "Advanced Machine Intelligence Labs",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "toyota",
+         "domain": "toyotaconnected.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "daphni",
+         "domain": "daphni.com",
+         "amount": null
+        },
+        {
+         "name": "sbva",
+         "domain": "sbvacorp.com",
+         "amount": null
+        },
+        {
+         "name": "Tim and Rosemary Berners‑Lee",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jim Breyer",
+         "domain": "https://www.linkedin.com/in/jim-breyer-361900b2/",
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "research and development",
+       "source_sentence": "\"Advanced Machine Intelligence Labs, AMI, pronounced like the French word for “friend”, announced its seed round on 10 March 2026, just four months after its founding. The round values the company at $3.5 billion on a pre-money basis and is believed to be the largest seed round ever raised by a European startup.\"",
+       "published_at": "2026-03-10T11:06:09",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c437c1272ca905f400e9ed"
+       ],
+       "article_id": "69c437c1272ca905f400e9ed"
+      },
+      {
+       "id": "b67b33124bdd6930",
+       "company_name": "Advanced Machine Intelligence (AMI)",
+       "domain": null,
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "New Legacy Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "sbva",
+         "domain": "sbvacorp.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "Association Familiale Mulliez",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Groupe industriel Marcel Dassault",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "sea",
+         "domain": "sea.com",
+         "amount": null
+        },
+        {
+         "name": "alpha intelligence capital",
+         "domain": "aicapital.ai",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "bpifrance digital venture",
+         "domain": "bpifrance.fr",
+         "amount": null
+        }
+       ],
+       "sector": "Artificial Intelligence, world models",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": "Developing AI systems that understand the world, have persistent memory, can reason and plan, and are controllable and safe.",
+       "source_sentence": "Advanced Machine Intelligence (AMI), which is an artificial intelligence (AI) start-up founded by former Meta AI chief Yann LeCun, has raised $1.03bn in seed funding.",
+       "published_at": "2026-03-10T09:33:07",
+       "coverage_count": 4,
+       "article_ids": [
+        "69c3a51f16d7eea204f1260d",
+        "69c3a5214e0667c07f278fbe",
+        "69e27db79b322e6b3e96800d",
+        "69e27f3e90d9a716b4b6d1c6"
+       ],
+       "article_id": "69c3a51f16d7eea204f1260d"
+      },
+      {
+       "id": "e0c2920c444b0cb2",
+       "company_name": "Advanced Machine Intelligence (AMI)",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "Tim and Rosemary Berners‑Lee",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Jim Breyer",
+         "domain": "https://www.linkedin.com/in/jim-breyer-361900b2/",
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "Mark Leslie",
+         "domain": "https://www.linkedin.com/in/markleslie1",
+         "amount": null
+        },
+        {
+         "name": "Xavier Niel",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "sea",
+         "domain": "sea.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "Association Familiale Mulliez",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Groupe Industriel Marcel Dassault",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "publicis groupe",
+         "domain": "publicisgroupe.com",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": null,
+       "city": null,
+       "use_of_funds": "Build and commercialise advanced AI systems, fund computing power, build talent across global hubs, sell AI to businesses that run complex systems, support consumer applications such as domestic robots and smart glasses.",
+       "source_sentence": "Advanced Machine Intelligence (AMI), the AI startup founded by Yann LeCun, the former chief AI scientist at Meta and winner of the Turing Award, has raised $1.03 billion in funding at a pre-money valuation of $3.50 billion.",
+       "published_at": "2026-03-10T06:49:16",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbe0f03e6b5ee693666a36"
+       ],
+       "article_id": "69cbe0f03e6b5ee693666a36"
+      },
+      {
+       "id": "a7f36a8112df6423",
+       "company_name": "Ami Labs",
+       "domain": "amilabs.xyz",
+       "round_type": "seed",
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "greycroft",
+         "domain": "greycroft.com",
+         "amount": null
+        },
+        {
+         "name": "hiro capital",
+         "domain": "hiro.capital",
+         "amount": null
+        },
+        {
+         "name": "hv capital",
+         "domain": "hvcapital.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "toyota ventures",
+         "domain": "toyota.ventures",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "SBVA (Seoul)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "Mark Cuban",
+         "domain": "https://www.linkedin.com/in/mark-cuban-06a0755b",
+         "amount": null
+        },
+        {
+         "name": "sea",
+         "domain": "sea.com",
+         "amount": null
+        },
+        {
+         "name": "alpha intelligence capital",
+         "domain": "aicapital.ai",
+         "amount": null
+        },
+        {
+         "name": "Eric Schmidt",
+         "domain": "https://www.linkedin.com/in/eric-schmidt-02158951",
+         "amount": null
+        },
+        {
+         "name": "samsung",
+         "domain": "samsung.com",
+         "amount": null
+        },
+        {
+         "name": "bpifrance digital venture",
+         "domain": "bpifrance.fr",
+         "amount": null
+        },
+        {
+         "name": "Jim Breyer",
+         "domain": "https://www.linkedin.com/in/jim-breyer-361900b2/",
+         "amount": null
+        },
+        {
+         "name": "Tim and Rosemary Berners-Lee",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Mark Leslie",
+         "domain": "https://www.linkedin.com/in/markleslie1",
+         "amount": null
+        }
+       ],
+       "sector": "AI",
+       "country": "France",
+       "city": "Paris",
+       "use_of_funds": null,
+       "source_sentence": "Advanced Machine Intelligence Labs (AMI) has now raised $1.03 billion (approximately €890 million) in a seed financing round.",
+       "published_at": "2026-03-10T05:58:51",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e3242b6a49bee673bb18c9",
+        "6a0427d39c4aac09354e8229"
+       ],
+       "article_id": "6a0427d39c4aac09354e8229"
+      },
+      {
+       "id": "855b81d62e8e0bce",
+       "company_name": "Advanced Machine Intelligence Labs",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "Yann LeCun's Advanced Machine Intelligence Labs has raised over $1 billion in the last round of global investor financing.",
+       "published_at": "2026-03-10T11:12:35",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbf37f12cf28a458fce730"
+       ],
+       "article_id": "69cbf37f12cf28a458fce730"
+      },
+      {
+       "id": "daa284c9129fcc8b",
+       "company_name": "Haldiram’s",
+       "domain": "haldiramsminutekhana.com",
+       "round_type": null,
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": "Food & Snacks",
+       "country": "India",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "\"Last year, Temasek acquired 10% stake in Haldiram’s for $1 billion.\"",
+       "published_at": "2025-09-11T00:10:02",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d0eb54b4da52a1072b7cc3"
+       ],
+       "article_id": "68d0eb54b4da52a1072b7cc3"
+      },
+      {
+       "id": "d67e640b2eaea91e",
+       "company_name": "psiquantum",
+       "domain": "psiquantum.com",
+       "round_type": "Series E",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "macquarie",
+         "domain": "macquarie.aero",
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "Morgan Stanley Counterpoint",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "SentinelOne Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "blackbird",
+         "domain": "blackbirdlp.com",
+         "amount": null
+        },
+        {
+         "name": "third point",
+         "domain": "thirdpoint.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "quantum computing",
+       "country": "USA",
+       "city": "Palo Alto",
+       "use_of_funds": "to build the world’s first utility-scale quantum computer",
+       "source_sentence": "PsiQuantum secured a $1 billion Series E to build the world’s first utility-scale quantum computer.",
+       "published_at": "2025-09-10T22:25:15",
+       "coverage_count": 3,
+       "article_ids": [
+        "68d0fe15fb0e8d0abe2ca21b",
+        "68d0fe15fb0e8d0abe2ca21b",
+        "68d990011645babb987eb522"
+       ],
+       "article_id": "68d0fe15fb0e8d0abe2ca21b"
+      },
+      {
+       "id": "9727410f872cd4b1",
+       "company_name": "psiquantum",
+       "domain": "psiquantum.com",
+       "round_type": "Series E",
+       "amount_usd": 1000000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7000000000.0,
+       "currency": "USD",
+       "amount": 1000000000.0,
+       "valuation": 7000000000.0,
+       "investors": [
+        {
+         "name": "blackrock",
+         "domain": "blackrock.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "baillie gifford",
+         "domain": "bailliegifford.com",
+         "amount": null
+        },
+        {
+         "name": "macquarie capital",
+         "domain": "macquarie.com",
+         "amount": null
+        },
+        {
+         "name": "ribbit capital",
+         "domain": "ribbitcap.com",
+         "amount": null
+        },
+        {
+         "name": "nventures",
+         "domain": "nventures.co.uk",
+         "amount": null
+        },
+        {
+         "name": "adage capital management",
+         "domain": "adagecapital.com",
+         "amount": null
+        },
+        {
+         "name": "qatar investment authority",
+         "domain": "qia.qa",
+         "amount": null
+        },
+        {
+         "name": "type one ventures",
+         "domain": "type1ventures.com",
+         "amount": null
+        },
+        {
+         "name": "Counterpoint Global",
+         "domain": "counterpointglobal.vdtrxn",
+         "amount": null
+        },
+        {
+         "name": "1789 Capital",
+         "domain": "1789capital.io",
+         "amount": null
+        },
+        {
+         "name": "s ventures",
+         "domain": "s-ventures.com",
+         "amount": null
+        },
+        {
+         "name": "blackbird",
+         "domain": "blackbirdlp.com",
+         "amount": null
+        },
+        {
+         "name": "third point ventures",
+         "domain": "thirdpointventures.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        }
+       ],
+       "sector": "Quantum Computing",
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": "This funding will equip the company to break ground on utility‑scale quantum computing sites in Brisbane and Chicago, deploy large‑scale prototype systems to validate systems architecture and integration, and further advance the performance of its quantum photonic chips and fault‑tolerant architecture.",
+       "source_sentence": "PsiQuantum today announced it has raised $1 billion in funding for its Series E round to build the world’s first commercially useful, fault‑tolerant quantum computers.",
+       "published_at": "2025-09-10T10:54:16",
+       "coverage_count": 11,
+       "article_ids": [
+        "68c8df115f1a530eb9677f66",
+        "68d0e8e491b46c685a2b5db0",
+        "68d1006f22a1ae9da22ce436",
+        "68d1066b65fd12d4142d3223",
+        "68d9b63993ec9fed3880295f",
+        "6991c732780013cb53f2d9ce",
+        "69973b56e0523bedf7b38275",
+        "69baef280897f254a7e5738e",
+        "69bcdcbcd0887d68fa46b49a",
+        "69e2907fa85be7e50658747f",
+        "69e2c3f4ff2654c79d6d6d0a"
+       ],
+       "article_id": "69e2907fa85be7e50658747f"
+      },
+      {
+       "id": "cd4d281a3cee7b3e",
+       "company_name": "icapital",
+       "domain": "icapital.com",
+       "round_type": "financing round",
+       "amount_usd": 820000000.0,
+       "amount_flag": null,
+       "valuation_usd": 7500000000.0,
+       "currency": "USD",
+       "amount": 820000000.0,
+       "valuation": 7500000000.0,
+       "investors": [
+        {
+         "name": "T Rowe Price",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "SurgoCap Partners",
+         "domain": "surgocap.com",
+         "amount": null
+        },
+        {
+         "name": "state street",
+         "domain": "statestreet.com",
+         "amount": null
+        },
+        {
+         "name": "BNY",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "ubs",
+         "domain": "unibiz.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "Accelerate acquisition efforts, enhance tech platform, expand data capabilities, geographic expansion, technology innovation",
+       "source_sentence": "New York-based alternative investment fintech iCapital has raised over $820 million in a newly-completed financing round, elevating the company's valuation to more than $7.5 billion.",
+       "published_at": "2025-07-14T05:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8dd8e9baafc7356d98028"
+       ],
+       "article_id": "69e8dd8e9baafc7356d98028"
+      },
+      {
+       "id": "45235e8a18d0762d",
+       "company_name": "icapital",
+       "domain": "icapital.com",
+       "round_type": null,
+       "amount_usd": 820000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 820000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "SurgoCap Partners",
+         "domain": "surgocap.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "ubs",
+         "domain": "unibiz.com",
+         "amount": null
+        },
+        {
+         "name": "bny mellon",
+         "domain": "bnymellon.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": "strategic acquisitions, international expansion, and further investment in its technology",
+       "source_sentence": "iCapital, a fintech platform for alternative investments, has raised an $820 million funding round at a valuation above $7.5 billion to fuel its next phase of growth.",
+       "published_at": "2025-07-11T23:46:29",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d9ae8e5af1b12a767f594c"
+       ],
+       "article_id": "68d9ae8e5af1b12a767f594c"
+      },
+      {
+       "id": "ae3d7b4fa55f6b3a",
+       "company_name": "icapital",
+       "domain": "icapital.com",
+       "round_type": "Late-stage (Private round)",
+       "amount_usd": 820000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 820000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "SurgoCap Partners",
+         "domain": "surgocap.com",
+         "amount": null
+        },
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "ubs",
+         "domain": "unibiz.com",
+         "amount": null
+        },
+        {
+         "name": "bny mellon",
+         "domain": "bnymellon.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fintech",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "iCapital plans to use the capital to pursue strategic acquisitions, expand its global footprint, and further develop its technology, strengthening its position as a leading marketplace for alternative assets.",
+       "source_sentence": "iCapital plans to use the capital to pursue strategic acquisitions, expand its global footprint, and further develop its technology, strengthening its position as a leading marketplace for alternative assets.",
+       "published_at": "2025-07-10T23:11:18",
+       "coverage_count": 1,
+       "article_ids": [
+        "690301ecdf771495f9d83b20"
+       ],
+       "article_id": "690301ecdf771495f9d83b20"
+      },
+      {
+       "id": "249c1881871ad9d6",
+       "company_name": "icapital",
+       "domain": "icapital.com",
+       "round_type": null,
+       "amount_usd": 820000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 820000000.0,
+       "valuation": 7500000000.0,
+       "investors": [
+        {
+         "name": "t. rowe price",
+         "domain": "troweprice.com",
+         "amount": null
+        },
+        {
+         "name": "T. Rowe Price Investment Management, Inc.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "SurgoCap Partners",
+         "domain": "surgocap.com",
+         "amount": null
+        },
+        {
+         "name": "state street",
+         "domain": "statestreet.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "ubs",
+         "domain": "unibiz.com",
+         "amount": null
+        },
+        {
+         "name": "BNY",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Financial Technology",
+       "country": "United States",
+       "city": "New York",
+       "use_of_funds": "The capital will be used to support strategic acquisitions that improve the advisor and client experience, empower asset managers to expand their reach and attract a broader range of investors, and create opportunities to reduce friction in the ecosystem.",
+       "source_sentence": "iCapital, the global fintech company shaping the future of investing, today announced it has raised over $820 million with the completion of its latest financing round co-led and funded by accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc. (“T. Rowe Price”) and SurgoCap Partners, bringing the company’s valuation to over $7.5 billion.",
+       "published_at": "2025-07-10T12:58:25",
+       "coverage_count": 7,
+       "article_ids": [
+        "6898cd5c2f01d48cd3f77f37",
+        "6898cd672f01d48cd3f9a262",
+        "6898ce1b2f01d48cd30f0887",
+        "69839ee33afa3ce7e1aa35ce",
+        "6988aa553757765ee8266814",
+        "6989446a94d3f481f3e27ece",
+        "69bb4649c9a954196de18a0f"
+       ],
+       "article_id": "6898ce1b2f01d48cd30f0887"
+      },
+      {
+       "id": "6cd321003b240173",
+       "company_name": "playlist",
+       "domain": "playlist.com",
+       "round_type": null,
+       "amount_usd": 785000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 785000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Affinity Partners",
+         "domain": "affinitypartners.com.au",
+         "amount": null
+        },
+        {
+         "name": "vista equity partners",
+         "domain": "vistaequitypartners.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "l catterton",
+         "domain": "lcatterton.com",
+         "amount": null
+        }
+       ],
+       "sector": "Fitness & Wellness tech",
+       "country": null,
+       "city": null,
+       "use_of_funds": "AI initiatives to help fitness studios, gyms and wellness operators drive more sustainable growth worldwide",
+       "source_sentence": "The transaction includes $785 million in new equity investments to fuel AI initiatives aimed at helping fitness studios, gyms and wellness operators drive more sustainable growth worldwide.",
+       "published_at": "2026-01-15T14:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69c9cad71f37db75688881ea"
+       ],
+       "article_id": "69c9cad71f37db75688881ea"
+      },
+      {
+       "id": "5046ca8d4f428e25",
+       "company_name": "JSW Neo Energy Ltd.",
+       "domain": null,
+       "round_type": "loan",
+       "amount_usd": 675000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 675000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "EQT AB",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": "Renewable Energy",
+       "country": "India",
+       "city": null,
+       "use_of_funds": "Purchase of renewable energy platform O2 Power",
+       "source_sentence": "India’s JSW Neo Energy Ltd. is seeking a loan of about $675 million to back its purchase of renewable energy platform O2 Power from Sweden’s EQT AB and Singapore’s Temasek Holdings.",
+       "published_at": "2025-06-03T08:37:41",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d95c39bf1dd95b861264ef"
+       ],
+       "article_id": "68d95c39bf1dd95b861264ef"
+      },
+      {
+       "id": "94bf5cabcdad19d9",
+       "company_name": "Manipal Education & Medical Group",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 480000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "INR",
+       "amount": 40000000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "dbs group",
+         "domain": "edizionidbs.it",
+         "amount": null
+        },
+        {
+         "name": "deutsche bank",
+         "domain": "db.com",
+         "amount": null
+        },
+        {
+         "name": "jpmorgan chase",
+         "domain": "jpmorganchase.com",
+         "amount": null
+        },
+        {
+         "name": "standard chartered",
+         "domain": "sc.com",
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "India",
+       "city": null,
+       "use_of_funds": "to help fund its purchase of Sahyadri Hospitals",
+       "source_sentence": "India’s Manipal Education & Medical Group is in talks with a group of global lenders to raise about 40 billion rupees ($466 million) to help fund its purchase of Sahyadri Hospitals, according to people familiar with the matter.",
+       "published_at": "2025-07-14T05:09:12",
+       "coverage_count": 1,
+       "article_ids": [
+        "68d103f650268142442d14b2"
+       ],
+       "article_id": "68d103f650268142442d14b2"
+      },
+      {
+       "id": "44614883fcb90b05",
+       "company_name": "Rhoda AI",
+       "domain": null,
+       "round_type": "Series A",
+       "amount_usd": 450000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 450000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "mayfield",
+         "domain": "mayfield.com",
+         "amount": null
+        },
+        {
+         "name": "capricorn investment group",
+         "domain": "capricornllc.com",
+         "amount": null
+        },
+        {
+         "name": "premji invest",
+         "domain": "premjiinvest.com",
+         "amount": null
+        },
+        {
+         "name": "xora innovation",
+         "domain": "xora.vc",
+         "amount": null
+        },
+        {
+         "name": "John Doerr",
+         "domain": "https://www.linkedin.com/in/john-doerr-03248211",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": "United States",
+       "city": "Palo Alto",
+       "use_of_funds": null,
+       "source_sentence": "Rhoda AI raises $450M Series A to advance real-world robotics intelligence.",
+       "published_at": "2026-03-11T22:40:03",
+       "coverage_count": 1,
+       "article_ids": [
+        "69cbd08e6ebaadb4d432a354"
+       ],
+       "article_id": "69cbd08e6ebaadb4d432a354"
+      }
+     ],
+     "returned": 40,
+     "total_estimate": 113,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoiYW1vdW50IiwiZCI6IjIwMjYtMDMtMTEgMjI6NDA6MDMiLCJrIjoiNDkyNzI5OTE5OTAzNzkzNDM0MSIsImEiOjQ1MDAwMDAwMC4wfQ",
+     "totals": {
+      "deals": 113,
+      "deals_with_amount": 95,
+      "deals_without_amount": 18,
+      "deals_amount_excluded": 5,
+      "sum_amount_usd": 67263008000.0,
+      "median_amount_usd": 181800000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 40,
+     "sort": "amount"
+    },
+    "window": {
+     "since": "2025-05-01",
+     "until": "2026-04-30",
+     "days": 365,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.349,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.352
+    }
+   }
+  },
+  {
+   "name": "latest",
+   "request": {
+    "method": "POST",
+    "path": "/v1/business/funding",
+    "body": {
+     "investor": "Temasek",
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "sort": "newest",
+     "limit": 10
+    }
+   },
+   "status": 200,
+   "response": {
+    "ok": true,
+    "feature": "business.funding",
+    "subject": {
+     "filters": {
+      "since": "2026-01-01",
+      "until": "2026-04-30",
+      "limit": 10,
+      "sort": "newest",
+      "investor": "temasek"
+     }
+    },
+    "data": {
+     "items": [
+      {
+       "id": "f4c390723c8b7727",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": "Rescue funding",
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wallenberg family",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "imas",
+         "domain": "imasweb.it",
+         "amount": null
+        },
+        {
+         "name": "altor",
+         "domain": "altor.tech",
+         "amount": null
+        },
+        {
+         "name": "hy24",
+         "domain": "hy24partners.com",
+         "amount": null
+        },
+        {
+         "name": "just climate",
+         "domain": "justclimate.com",
+         "amount": null
+        }
+       ],
+       "sector": "green steel",
+       "country": "Sweden",
+       "city": "Boden",
+       "use_of_funds": "Construction and commissioning of the green steel plant",
+       "source_sentence": "Swedish green-tech startup Stegra has secured €1.4bn in rescue funding from a consortium led by the prominent Swedish Wallenberg family, as it looks to finish construction of the world's largest green-steel plant.",
+       "published_at": "2026-04-14T10:10:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e6f8da043b81af20d58f29"
+       ],
+       "article_id": "69e6f8da043b81af20d58f29"
+      },
+      {
+       "id": "301f2a1f64dfba78",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": "Financing",
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wallenberg Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "imas",
+         "domain": "imasweb.it",
+         "amount": null
+        },
+        {
+         "name": "altor",
+         "domain": "altor.tech",
+         "amount": null
+        },
+        {
+         "name": "hy24",
+         "domain": "hy24partners.com",
+         "amount": null
+        },
+        {
+         "name": "just climate",
+         "domain": "justclimate.com",
+         "amount": null
+        }
+       ],
+       "sector": "Green steel production",
+       "country": "Sweden",
+       "city": "Boden",
+       "use_of_funds": "To complete the construction and commissioning of the Boden green steel plant, including scope expansions, covering increased project costs and providing a financial buffer",
+       "source_sentence": "Stegra has agreed in principle to secure €1.4 billion in new financing from a combination of new and existing investors, which will allow the company to complete the construction and commissioning of its large-scale green steel facility in Boden, Sweden.",
+       "published_at": "2026-04-14T09:07:10",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e883e25cfa3e5ba505c397",
+        "69e9b8b7bdd09a23d096c5d8"
+       ],
+       "article_id": "69e9b8b7bdd09a23d096c5d8"
+      },
+      {
+       "id": "de14dedd3bc29feb",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": "Financing round",
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wallenberg Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "imas",
+         "domain": "imasweb.it",
+         "amount": null
+        },
+        {
+         "name": "altor",
+         "domain": "altor.tech",
+         "amount": null
+        },
+        {
+         "name": "hy24",
+         "domain": "hy24partners.com",
+         "amount": null
+        },
+        {
+         "name": "just climate",
+         "domain": "justclimate.com",
+         "amount": null
+        },
+        {
+         "name": "Senior lenders",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Junior lenders",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Green Steel",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "Complete construction of its green steel plant in Boden, including scope expansions, covering increased project costs and establishing a financial buffer.",
+       "source_sentence": "Stegra has agreed in principle on €1.4 billion in new financing from a combination of new and existing investors to complete the construction of its large-scale green steel plant in Boden, Sweden.",
+       "published_at": "2026-04-14T06:20:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e8d82d7bb1410d4ccc1e61"
+       ],
+       "article_id": "69e8d82d7bb1410d4ccc1e61"
+      },
+      {
+       "id": "e3f90f5c11ea5c71",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wallenberg Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "imas",
+         "domain": "imasweb.it",
+         "amount": null
+        },
+        {
+         "name": "altor",
+         "domain": "altor.tech",
+         "amount": null
+        },
+        {
+         "name": "hy24",
+         "domain": "hy24partners.com",
+         "amount": null
+        },
+        {
+         "name": "just climate",
+         "domain": "justclimate.com",
+         "amount": null
+        }
+       ],
+       "sector": "green steel",
+       "country": "Sweden",
+       "city": "Boden",
+       "use_of_funds": "to complete the construction of its green steel plant in Boden, including scope expansions and financial buffer",
+       "source_sentence": "Stegra has agreed in principle on €1.4 billion in new financing from a combination of new and existing investors to complete the construction of its large-scale green steel plant in Boden, Sweden.",
+       "published_at": "2026-04-14T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e6f616043b81af20d3adee"
+       ],
+       "article_id": "69e6f616043b81af20d3adee"
+      },
+      {
+       "id": "4e4c82ff695f08b7",
+       "company_name": "Nio Inc.",
+       "domain": null,
+       "round_type": "Investment",
+       "amount_usd": 392000000.00000006,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "CNY",
+       "amount": 2800000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Anhui provincial government entities",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Tencent Holdings",
+         "domain": "tencentholdingsltd.co",
+         "amount": null
+        },
+        {
+         "name": "Baidu Inc.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek holdings",
+         "domain": "temasek.com.sg",
+         "amount": null
+        }
+       ],
+       "sector": "Automotive",
+       "country": "China",
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "In an effort to control costs, Nio reduced unprofitable ventures, and concurrently, the company steps up funding efforts, securing a 2.8 billion yuan investment from entities controlled by Anhui’s provincial government, with financial backing from key investors like Tencent Holdings, Baidu Inc., and Temasek Holdings.",
+       "published_at": "2026-04-14T00:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69de021b9beb59b53c897fb0"
+       ],
+       "article_id": "69de021b9beb59b53c897fb0"
+      },
+      {
+       "id": "dbdb42a6d27bdfbb",
+       "company_name": "AMI Labs",
+       "domain": null,
+       "round_type": null,
+       "amount_usd": 1030000000.0,
+       "amount_flag": null,
+       "valuation_usd": 3500000000.0,
+       "currency": "USD",
+       "amount": 1030000000.0,
+       "valuation": 3500000000.0,
+       "investors": [
+        {
+         "name": "cathay innovation",
+         "domain": "cathayinnovation.com",
+         "amount": null
+        },
+        {
+         "name": "bezos expeditions",
+         "domain": "bezosexpeditions.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "nvidia",
+         "domain": "nvidia.com",
+         "amount": null
+        }
+       ],
+       "sector": null,
+       "country": null,
+       "city": null,
+       "use_of_funds": null,
+       "source_sentence": "In March the company raised $1.03bn at a pre money valuation of $3.5bn. led by Cathay Innovation, Bezos Expeditions, Temasek and Nvidia.",
+       "published_at": "2026-04-13T23:00:00",
+       "coverage_count": 1,
+       "article_ids": [
+        "69e854375cfa3e5ba5e8b374"
+       ],
+       "article_id": "69e854375cfa3e5ba5e8b374"
+      },
+      {
+       "id": "9656dfd61fe811e9",
+       "company_name": "Stegra",
+       "domain": null,
+       "round_type": "financing",
+       "amount_usd": 1512000000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "EUR",
+       "amount": 1400000000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Wallenberg Investments",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "imas",
+         "domain": "imasweb.it",
+         "amount": null
+        },
+        {
+         "name": "altor",
+         "domain": "altor.tech",
+         "amount": null
+        },
+        {
+         "name": "hy24",
+         "domain": "hy24partners.com",
+         "amount": null
+        },
+        {
+         "name": "just climate",
+         "domain": "justclimate.com",
+         "amount": null
+        }
+       ],
+       "sector": "Green steel",
+       "country": "Sweden",
+       "city": "Stockholm",
+       "use_of_funds": "Complete construction of the green steel plant in Boden, Sweden, including expansions, increased project costs, and a financial buffer.",
+       "source_sentence": "Stegra has agreed in principle on €1.4 billion in new financing from a combination of new and existing investors to complete the construction of its large-scale green steel plant in Boden, Sweden.",
+       "published_at": "2026-04-13T00:00:00",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e6f819043b81af20d50ba5",
+        "69e8d1c65cfa3e5ba5424489"
+       ],
+       "article_id": "69e6f819043b81af20d50ba5"
+      },
+      {
+       "id": "05d3643aa00ae3d8",
+       "company_name": "terawatt technology",
+       "domain": "terawatt-technology.com",
+       "round_type": "Series C",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "jic venture growth investments",
+         "domain": "j-vgi.co.jp",
+         "amount": null
+        },
+        {
+         "name": "Japan Bank for International Cooperation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Japan Green Investment Corp. for Carbon Neutrality",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kyuden International",
+         "domain": "kyuden-intl.co.jp",
+         "amount": null
+        },
+        {
+         "name": "JERA Co., Inc.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ITOCHU Technology Ventures",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Energy Storage / Lithium-ion Batteries",
+       "country": "USA",
+       "city": "San Francisco",
+       "use_of_funds": "Expand initial mass production facility, support global battery storage opportunities, and commercialize energy services.",
+       "source_sentence": "TeraWatt Technology announced the completion of the final close of its Series C funding round, bringing in a mix of financial and strategic investors to accelerate the commercialization and deployment of its next-generation lithium-ion batteries.",
+       "published_at": "2026-04-08T16:06:41",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2cea1c1991f786cf1a955",
+        "69e853767bb1410d4c6ac556"
+       ],
+       "article_id": "69e2cea1c1991f786cf1a955"
+      },
+      {
+       "id": "08e0ae420f1bf31f",
+       "company_name": "injewelme",
+       "domain": "injewelme.com",
+       "round_type": "pre-seed",
+       "amount_usd": 1200000.0,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": "USD",
+       "amount": 1200000.0,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "Temasek Trust's C3H (Catalytic Capital for Climate and Health)",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Richardson Family office",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "healthtech",
+       "country": "Singapore",
+       "city": null,
+       "use_of_funds": "propel AI-driven health monitoring innovations",
+       "source_sentence": "Singapore-based healthtech startup Injewelme has raised $1.2 million in a funding round to propel its AI-driven health monitoring innovations.",
+       "published_at": "2026-04-08T12:46:36",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e2ca6f9b322e6b3ea64148",
+        "69e4f3d2430a4927fdbc8dca"
+       ],
+       "article_id": "69e2ca6f9b322e6b3ea64148"
+      },
+      {
+       "id": "02e53f75f9a45e9b",
+       "company_name": "terawatt technology",
+       "domain": "terawatt-technology.com",
+       "round_type": "Series C",
+       "amount_usd": null,
+       "amount_flag": null,
+       "valuation_usd": null,
+       "currency": null,
+       "amount": null,
+       "valuation": null,
+       "investors": [
+        {
+         "name": "khosla ventures",
+         "domain": "khoslaventures.com",
+         "amount": null
+        },
+        {
+         "name": "temasek",
+         "domain": "temasek.com.sg",
+         "amount": null
+        },
+        {
+         "name": "jic venture growth investments",
+         "domain": "j-vgi.co.jp",
+         "amount": null
+        },
+        {
+         "name": "Japan Bank for International Cooperation",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "GX Acceleration Agency",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "G. K. Goh Ventures",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Japan Green Investment Corp. for Carbon Neutrality",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "Kyuden International",
+         "domain": "kyuden-intl.co.jp",
+         "amount": null
+        },
+        {
+         "name": "JERA Co.",
+         "domain": null,
+         "amount": null
+        },
+        {
+         "name": "ITOCHU Technology Ventures, Inc.",
+         "domain": null,
+         "amount": null
+        }
+       ],
+       "sector": "Battery manufacturing",
+       "country": "US",
+       "city": "San Francisco",
+       "use_of_funds": "Enhance capital investment in its initial mass production facility to enable phased capacity expansion, while strategic partnerships will accelerate both production scale-up and market deployment.",
+       "source_sentence": "TeraWatt Technology Inc., a San Francisco, CA-based company developing lithium-ion batteries, closed Series C funding. The amount of the deal was not disclosed.",
+       "published_at": "2026-04-08T07:50:50",
+       "coverage_count": 2,
+       "article_ids": [
+        "69e8527f7bb1410d4c6a30cc",
+        "69e87f489baafc73568e94a0"
+       ],
+       "article_id": "69e8527f7bb1410d4c6a30cc"
+      }
+     ],
+     "returned": 10,
+     "total_estimate": 49,
+     "next_cursor": "eyJ2IjoxLCJ0IjoiZnIiLCJzIjoibmV3ZXN0IiwiZCI6IjIwMjYtMDQtMDggMDc6NTA6NTAiLCJrIjoiMjA4NjQyNzMzNjc0NjE4NTIzIn0",
+     "totals": {
+      "deals": 49,
+      "deals_with_amount": 41,
+      "deals_without_amount": 8,
+      "deals_amount_excluded": 5,
+      "sum_amount_usd": 42559884000.0,
+      "median_amount_usd": 421000000.0,
+      "largest_amount_usd": 16000000000.0,
+      "currency": "USD",
+      "note": "Each matched deal record counts once, regardless of how many articles report it. Counts are measured over the entire filtered window, independent of result limits. USD amounts use fixed conversion rates, not current or transaction-date exchange rates. Only usable amounts enter sums, medians and maxima: finite, positive, converted to USD and at most 25,000,000,000 USD. Larger or unconverted figures are counted in deals_amount_excluded. Sums and medians count one company and amount once, because the same round is often reported under several round labels. Missing, zero, negative and non-finite amounts count as unknown; amount statistics are null when no matched deal has a usable amount. Deal records include equity rounds, debt facilities, placements and announced commitments. Amounts are reported figures, not independently verified financial amounts."
+     },
+     "limit": 10,
+     "sort": "newest"
+    },
+    "window": {
+     "since": "2026-01-01",
+     "until": "2026-04-30",
+     "days": 120,
+     "data_through": "2026-07-16",
+     "freshness": "this business dataset is available through 2026-07-16; company events, funding and company-linked news may have different latest available dates"
+    },
+    "meta": {
+     "seconds": 0.196,
+     "coverage": {
+      "available": false
+     },
+     "notes": [],
+     "request_seconds": 0.204
+    }
+   }
+  }
+ ]
+}
