@@ -23,8 +23,8 @@ Search business headlines, monitor company events, and analyze funding deals. Th
 
 ## Access and first query
 
-1. Sign in to the [Fliar dashboard](https://fliarbi.com/radar/dashboard?tab=apikeys) and open **Fliar Prism workspace → API keys**.
-2. When enabled for your account, create a named key and copy it when shown. If the key control is unavailable, request preview access from Fliar; production dashboard issuance is pending.
+1. Request a preview API key from Fliar. Self-service key creation in the Fliar dashboard is not live yet; it will appear there when the API launches.
+2. You receive the key once; copy it when shown. The same key works on the general News API.
 3. Set `API_BASE` to the Business News API base URL supplied with access and `PRISM_API_KEY` to the issued key. Keep the key private and out of public application code.
 
 ```bash

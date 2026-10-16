@@ -93,7 +93,7 @@ See [Getting started](docs/GETTING_STARTED.md) for options, every command and tr
 
 | Step | Do this | You get |
 |---:|---|---|
-| 1 | Sign in to the [Fliar dashboard](https://fliarbi.com/radar/dashboard?tab=apikeys) → **Fliar Prism workspace → API keys** → create a key | One key for both News APIs (shared monthly quota) |
+| 1 | Request a preview API key from Fliar (dashboard self-service is not live yet) | One key for both News APIs (shared monthly quota) and the base URLs |
 | 2 | Run the one-line installer above | The `prism-news` and `prism-business-news` commands |
 | 3 | `prism-business-news login` | Base URLs and key saved owner-only in `~/.config/prism/config.json` |
 | 4 | `prism-business-news status`, then `prism-business-news me` | Data dates, your plan, limits and this month's usage |
@@ -113,7 +113,7 @@ See [Getting started](docs/GETTING_STARTED.md) for options, every command and tr
 
 ## Make a first request with curl or Python
 
-1. Sign in to the [Fliar dashboard](https://fliarbi.com/radar/dashboard?tab=apikeys), then open **Fliar Prism workspace → API keys**. Once enabled for your account, create and copy a key. If unavailable, request preview access from Fliar.
+1. Request a preview API key from Fliar. Self-service key creation in the Fliar dashboard is not live yet; it will appear there when the API launches.
 2. Set `API_BASE` to the Business News API base URL supplied with your access and `PRISM_API_KEY` to your issued key. The two APIs use the same key and share account quotas.
 3. Check access, then search:
 
