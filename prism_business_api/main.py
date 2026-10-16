@@ -29,7 +29,7 @@ Explore business headlines, company events, funding deals and measured trends.
 Filter by topic, company, event type, sentiment, category, country and date.
 Funding analysis also supports sector, round type, investor and minimum USD amount.
 
-Prism's owner-provided archive size is 450M+ articles. This product-wide figure
+Prism covers 450M+ historical and real-time news articles (owner-provided figure). This product-wide figure
 is separate from measured API counts for a requested dataset and date window.
 Aggregations use at most 366 days per request, within your plan's history access.
 Theme exploration requires a search query and returns at most five results.

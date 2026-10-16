@@ -1,6 +1,6 @@
 # Prism Business News API user guide
 
-Explore business news within Fliar’s **450M+ news archive**. Archive size is supplied by Fliar; query counts reflect available matching coverage.
+Explore business news within **450M+ historical and real-time news articles** from Fliar. The article count is supplied by Fliar; query counts reflect available matching coverage.
 
 Search business headlines, monitor company events, and analyze funding deals. This guide covers the business workflows and endpoint reference. The [shared News API guide](https://github.com/fliarbi/prism-news-api/blob/main/docs/USER_GUIDE.md) explains common filters, GCP content codes, export formats, quotas and errors in detail.
 
@@ -172,7 +172,7 @@ print(headlines["data"]["returned"], headlines["data"]["next_cursor"])
 
 There is no separate business theme-headlines path: supply `themes` to `/v1/business/headlines`. Keep the original phrase, sentiment, priority, GCP codes, company/event filters and normalized dates when moving from discovery to reading.
 
-Discovery items include `theme`, support `count`, `share`, `lift` and previous-period comparison fields. If the preceding equal-length window is outside your plan’s history allowance, `previous_period`, `previous_period_count` and `delta_pct` are `null`. A zero previous count also makes `delta_pct` null. Shares divide by matching articles carrying themes. Lift compares against the general 30-day archive baseline, so a theme common in business coverage can be prominent relative to that broader baseline. `null` ratios represent an unavailable comparison, not zero.
+Discovery items include `theme`, support `count`, `share`, `lift` and previous-period comparison fields. If the preceding equal-length window is outside your plan’s history allowance, `previous_period`, `previous_period_count` and `delta_pct` are `null`. A zero previous count also makes `delta_pct` null. Shares divide by matching articles carrying themes. Lift compares against the general 30-day all-news baseline, so a theme common in business coverage can be prominent relative to that broader baseline. `null` ratios represent an unavailable comparison, not zero.
 
 Headlines, single articles and exports **do not return theme metadata**. Select themes through the bounded discovery operation. A selected theme yields **100 headlines per page by default** and **100 full articles per export batch by default**; higher caps depend on your plan. See [full-article retrieval](#pagination-and-full-article-retrieval) to preserve scope when exporting.
 
@@ -263,7 +263,7 @@ curl -sS "$API_BASE/v1/business/overview" \
 
 `data` contains:
 
-- `archive`: publisher-supplied archive description, separate from measured results.
+- `archive`: publisher-supplied description of the news data (450M+ historical and real-time articles), separate from measured results.
 - `news`: `articles`, `critical`, `negative`, `positive` and a counting explanation.
 - `events`: `events`, `articles`, `companies` and a counting explanation.
 - `funding`: `deals`, `deals_with_amount`, `deals_without_amount`, amount statistics, `currency` and a note.
@@ -419,7 +419,7 @@ Exports default to **100** full articles per batch; `data.limits.max_export_batc
 - Dates describe source publication, not necessarily when an event or investment occurred. USD conversions use fixed rates; use original currency and amount fields when that distinction matters.
 - An event or deal may be available while its full source article is not. Missing article details are not evidence that the event did not occur.
 
-Archive size is supplied by Fliar; query counts reflect the available matching coverage. `/v1/status` and `/v1/me` should be interpreted together with each business response's own window; `/healthz` establishes liveness only.
+The article count is supplied by Fliar; query counts reflect the available matching coverage. `/v1/status` and `/v1/me` should be interpreted together with each business response's own window; `/healthz` establishes liveness only.
 
 ## Quotas, errors and retry
 
@@ -435,12 +435,12 @@ Shared `/v1/me`, `/v1/status`, `/v1/vocabulary`, GCP code search and GCP code de
 |---|---|
 | `400 bad_request` | Correct parameters. Check discovery `q` and limit, domain-only company operations, unsupported filters, listing controls on summaries and cursor/sort consistency. |
 | `401 unauthenticated` / `invalid_key` | Supply a valid key header or replace the key through your access process. |
-| `402 quota_exceeded` | Inspect `/v1/me`; wait for the monthly reset or upgrade in the Fliar dashboard under **API keys → Prism News API plans**. |
+| `402 quota_exceeded` | The plan allowance is used and no prepaid credits are available. Add credits and a monthly spending limit on the API key page (pay-as-you-go: 1 credit per request or full-text article, ₹0.84 or US$0.01), upgrade the plan, or wait for the monthly reset. |
 | `404 no_data` | Read the reason; verify the route, dates, company and filters. A missing source article is possible even when an event/deal exists. |
 | `429 rate_limited` | Honor `Retry-After` and reduce concurrency. |
 | `500 internal` / `502 upstream` | Retry a limited number of times with backoff; report persistent failures with sanitized request details. |
 | `503 coverage_unavailable` | Coverage could not be established; retry later, and do not record the result as zero. |
-| Note: *Part of the archive is temporarily offline* | The answer uses the available part of the archive; treat its counts as minimums. |
+| Note: *Part of the news index is temporarily offline* | The answer uses the available part of the news index; treat its counts as minimums. |
 
 Use bounded exponential backoff with jitter for transient failures, for example up to three retries with roughly 1, 2 and 4 seconds between attempts, or a longer `Retry-After`. Retries can consume request allowance. After a full-article or export timeout, check saved output and usage before repeating; there is no documented idempotency key.
 
@@ -469,6 +469,6 @@ All `/v1` endpoints require a key. Common news filters and business extras are d
 | `GET /v1/classes/{code}/headlines` | Common news filters and a GCP code; 100 headlines by default. Metered. |
 | `GET /v1/vocabulary` | Static public sentiment/priority and request options; plan metadata, no dynamic dictionary. |
 | `GET /v1/me` | Key summary, access limits and usage. |
-| `GET /v1/status` | Public availability and freshness with publisher-supplied archive description. |
+| `GET /v1/status` | Public availability and freshness with the publisher-supplied description of the news data. |
 
 `GET /healthz` is a liveness check without a key. `GET /guide` serves this guide as Markdown. `/docs` and `/v1/openapi.json` are the interactive and machine-readable references for the supplied access environment. General news exploration routes are available on the News API base URL, not implied by the business base URL.

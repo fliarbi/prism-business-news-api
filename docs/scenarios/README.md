@@ -15,7 +15,7 @@ only when the API returned populated results.
 | [Company monitoring research](company-monitoring/README.md) | 50 | [Vodafone Idea News](company-monitoring/vodafone-idea-news.md), [Adani News](company-monitoring/adani-news.md), [Tesla News](company-monitoring/tesla-news.md) |
 | [Investor research](investor-research/README.md) | 50 | [KKR Investments](investor-research/kkr-investments.md), [Blackstone Investments](investor-research/blackstone-investments.md), [Mubadala Investments](investor-research/mubadala-investments.md) |
 
-Captured 16 Oct 2026 from the live API. Part of the archive was offline (1 of 14 shards,
+Captured 16 Oct 2026 from the live API. Part of the news index was offline (1 of 14 shards,
 about 93% of rows available), so every count is a lower bound; some source articles were
 temporarily unavailable and each page says how many.
 

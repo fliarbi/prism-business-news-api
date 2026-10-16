@@ -3,7 +3,7 @@
 [Startup funding research](README.md) · [All demonstrations](../README.md) · [Keyword research](../../research/KEYWORD_RESEARCH.md) · [User guide](../../USER_GUIDE.md)
 
 > **Search demand:** “mobility funding” · 20/month India · 50/month US  
-> **Data:** Captured 16 Oct 2026 from the live API · 93% of archive rows (1 of 14 shards offline): counts are lower bounds. Saved API responses: [mobility-funding.json](../../examples/scenarios/mobility-funding.json).
+> **Data:** Captured 16 Oct 2026 from the live API · 93% of indexed articles (1 of 14 shards offline): counts are lower bounds. Saved API responses: [mobility-funding.json](../../examples/scenarios/mobility-funding.json).
 
 **Question.** How many mobility deals were reported over the twelve months to April 2026, how much money did they report, and which rounds were the largest and the latest?
 
@@ -102,7 +102,7 @@ print(r.json()["data"])
 
 - Windows: twelve months (1 May 2025 – 30 Apr 2026) for series and totals; 1 Jan – 30 Apr 2026 for the latest lists.
 - Dates are source publication dates, not necessarily when a deal or event happened.
-- Captured while part of the archive was offline (93% of archive rows (1 of 14 shards offline)). Every count is a lower bound.
+- Captured while part of the news index was offline (93% of indexed articles (1 of 14 shards offline)). Every count is a lower bound.
 - Amounts are reported figures converted at fixed rates; one company and amount count once in totals, and flagged amounts (over $25B or unconverted) are left out.
 - Dates refer to source publication dates, not necessarily the date an event or deal occurred.
 

@@ -3,7 +3,7 @@
 [Company monitoring research](README.md) · [All demonstrations](../README.md) · [Keyword research](../../research/KEYWORD_RESEARCH.md) · [User guide](../../USER_GUIDE.md)
 
 > **Search demand:** “palantir news” · 260/month India · 9,900/month US  
-> **Data:** Captured 16 Oct 2026 from the live API · 93% of archive rows (1 of 14 shards offline): counts are lower bounds. Saved API responses: [palantir-news.json](../../examples/scenarios/palantir-news.json).
+> **Data:** Captured 16 Oct 2026 from the live API · 93% of indexed articles (1 of 14 shards offline): counts are lower bounds. Saved API responses: [palantir-news.json](../../examples/scenarios/palantir-news.json).
 
 **Question.** What has the news reported about Palantir in January–April 2026: latest headlines, events attributed to its domain over twelve months, tone and funding records?
 
@@ -118,7 +118,7 @@ print(r.json()["data"])
 
 - Windows: twelve months (1 May 2025 – 30 Apr 2026) for series and totals; 1 Jan – 30 Apr 2026 for the latest lists.
 - Dates are source publication dates, not necessarily when a deal or event happened.
-- Captured while part of the archive was offline (93% of archive rows (1 of 14 shards offline)). Every count is a lower bound.
+- Captured while part of the news index was offline (93% of indexed articles (1 of 14 shards offline)). Every count is a lower bound.
 - Dates refer to source publication dates, not necessarily the date an event or deal occurred.
 - Zero-count periods are included; partial_period marks buckets only partly covered by the window.
 - shares divide by articles carrying a sentiment label (one label per article: the top-scoring one)

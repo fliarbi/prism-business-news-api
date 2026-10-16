@@ -1,10 +1,10 @@
 # Prism Business News API
 
-Explore business news within Fliar’s **450M+ news archive**. Archive size is supplied by Fliar; query counts reflect available matching coverage.
+Explore business news within **450M+ historical and real-time news articles** from Fliar. The article count is supplied by Fliar; query counts reflect available matching coverage.
 
 Search business coverage, monitor company events, and explore funding deals. Combine sentiment, priority, GCP content codes and themes to turn a broad news search into a focused reading list.
 
-**Live.** Base URL `https://radar-api.fliarbi.com/business-news` (general news endpoints: `https://radar-api.fliarbi.com/news`). Create your own key in the Fliar dashboard; one key works on the Radar API and both News APIs. Free tier included; see [plans and prices](#plans-and-prices). While part of the archive is offline, answers say so in `meta.notes` and their counts are lower bounds.
+**Live.** Base URL `https://radar-api.fliarbi.com/business-news` (general news endpoints: `https://radar-api.fliarbi.com/news`). Create your own key in the Fliar dashboard; one key works on the Radar API and both News APIs. Free tier included; see [plans and prices](#plans-and-prices). While part of the news index is offline, answers say so in `meta.notes` and their counts are lower bounds.
 
 <!-- scenarios:start -->
 ## 200 worked demonstrations
@@ -22,7 +22,7 @@ behind them with evidence sentences and sources, plus the exact CLI, curl and Py
 | **[Investor research](docs/scenarios/investor-research/README.md)** | 50 | [KKR](docs/scenarios/investor-research/kkr-investments.md) · [Blackstone](docs/scenarios/investor-research/blackstone-investments.md) · [Mubadala](docs/scenarios/investor-research/mubadala-investments.md) · [Sequoia](docs/scenarios/investor-research/sequoia-investments.md) |
 
 Topics come from [keyword research](docs/research/KEYWORD_RESEARCH.md) (India and US monthly searches).
-Captured with 1 of 14 archive shards offline, so counts are lower bounds.
+Captured with 1 of 14 news-index shards offline, so counts are lower bounds.
 <!-- scenarios:end -->
 
 <!-- demos:start -->
@@ -113,14 +113,21 @@ See [Getting started](docs/GETTING_STARTED.md) for options, every command and tr
 | Plan | Price / month (excl. GST) | Requests | Full-text exports | Headlines per call | History |
 |---|---|---:|---:|---:|---|
 | Free | ₹0 | 1,000 | 100 | 100 | Last 365 days |
-| Pro | ₹4,000 (US$49) | 25,000 | 2,500 | 100 | Full archive |
-| Business | ₹15,000 (US$180) | 150,000 | 15,000 | 500 | Full archive |
-| Enterprise | Custom | 2,000,000 | 200,000 | 1,000 | Full archive |
+| Pro | ₹4,000 (US$49) | 25,000 | 2,500 | 100 | Full history |
+| Business | ₹15,000 (US$180) | 150,000 | 15,000 | 500 | Full history |
+| Enterprise | Custom | 2,000,000 | 200,000 | 1,000 | Full history |
 
 One plan covers both the Prism News API and the Prism Business News API. Upgrade in the
 [Fliar dashboard](https://fliarbi.com/radar/dashboard?ws=marketai&tab=radarapi) under
 **API keys → Prism News API plans**; Enterprise is by arrangement with Fliar. `/v1/me`
 always shows the limits that apply to your key.
+
+**Pay as you go.** When a plan's monthly allowance is used up, requests continue on
+prepaid credits instead of stopping: **1 credit per request and 1 per full-text article**
+delivered (₹0.84 or US$0.01 per credit; minimum top-up 500 credits, US$5). Credits are
+bought on the [API key page](https://fliarbi.com/radar-api/developer), are shared with
+the Radar API, and stop at the monthly spending limit you set there. Failed requests are
+refunded, and a response paid with credits says so in `meta.notes`.
 
 ## Make a first request with curl or Python
 

@@ -3,7 +3,7 @@
 [Company events research](README.md) · [All demonstrations](../README.md) · [Keyword research](../../research/KEYWORD_RESEARCH.md) · [User guide](../../USER_GUIDE.md)
 
 > **Search demand:** “pharma layoffs” · 40/month India · 720/month US  
-> **Data:** Captured 16 Oct 2026 from the live API · 93% of archive rows (1 of 14 shards offline): counts are lower bounds. Saved API responses: [pharma-layoffs.json](../../examples/scenarios/pharma-layoffs.json).
+> **Data:** Captured 16 Oct 2026 from the live API · 93% of indexed articles (1 of 14 shards offline): counts are lower bounds. Saved API responses: [pharma-layoffs.json](../../examples/scenarios/pharma-layoffs.json).
 
 **Question.** How many pharma layoffs events were reported each month over the twelve months to April 2026, which companies were involved, and what do the latest evidence sentences say?
 
@@ -75,7 +75,7 @@ print(r.json()["data"])
 
 - Windows: twelve months (1 May 2025 – 30 Apr 2026) for series and totals; 1 Jan – 30 Apr 2026 for the latest lists.
 - Dates are source publication dates, not necessarily when a deal or event happened.
-- Captured while part of the archive was offline (93% of archive rows (1 of 14 shards offline)). Every count is a lower bound.
+- Captured while part of the news index was offline (93% of indexed articles (1 of 14 shards offline)). Every count is a lower bound.
 - Article filters require a matching source article in the same window; records without a matching article are excluded. Each deal still counts once.
 - Dates refer to source publication dates, not necessarily the date an event or deal occurred.
 - Zero-count periods are included; partial_period marks buckets only partly covered by the window.

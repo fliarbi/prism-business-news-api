@@ -305,7 +305,7 @@ def page(s: dict, rec: dict, related: list[dict]) -> str:
     caveats = ["Windows: twelve months (1 May 2025 – 30 Apr 2026) for series and totals; 1 Jan – 30 Apr 2026 for the latest lists.",
                "Dates are source publication dates, not necessarily when a deal or event happened."]
     if rec.get("coverage_note"):
-        caveats.append(f"Captured while part of the archive was offline ({rec['coverage_note']}). Every count is a lower bound.")
+        caveats.append(f"Captured while part of the news index was offline ({rec['coverage_note']}). Every count is a lower bound.")
     if seg in ("funding-research", "investor-research"):
         caveats.append("Amounts are reported figures converted at fixed rates; one company and amount count once in totals, and flagged amounts (over $25B or unconverted) are left out.")
     if seg == "investor-research":
@@ -387,7 +387,7 @@ only when the API returned populated results.
 
 {table(["Segment", "Pages", "Highest-demand pages"], rows, "lrl")}
 
-Captured {day(when)} from the live API. Part of the archive was offline (1 of 14 shards,
+Captured {day(when)} from the live API. Part of the news index was offline (1 of 14 shards,
 about 93% of rows available), so every count is a lower bound; some source articles were
 temporarily unavailable and each page says how many.
 
@@ -437,7 +437,7 @@ behind them with evidence sentences and sources, plus the exact CLI, curl and Py
 {table(["Segment", "Pages", "Start with"], rows, "lrl")}
 
 Topics come from [keyword research](docs/research/KEYWORD_RESEARCH.md) (India and US monthly searches).
-Captured with 1 of 14 archive shards offline, so counts are lower bounds.
+Captured with 1 of 14 news-index shards offline, so counts are lower bounds.
 {sc.README_END}"""
     readme = sc.ROOT / "README.md"
     readme.write_text(sc.replace_section(readme.read_text(), section, sc.README_START, sc.README_END,
