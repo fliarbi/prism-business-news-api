@@ -23,7 +23,7 @@ Search business headlines, monitor company events, and analyze funding deals. Th
 
 ## Access and first query
 
-1. Request a preview API key from Fliar. Self-service key creation in the Fliar dashboard is not live yet; it will appear there when the API launches.
+1. Sign in to the [Fliar dashboard](https://fliarbi.com/radar/dashboard?tab=radarapi), open **API keys** (in the Radar or the Fliar Prism workspace) and choose **Create or manage API keys**. On the key page, choose **Connect Radar session**, pick **All data** or **News only** access and create a key. It starts with `rdr_` and also works on the Radar API.
 2. You receive the key once; copy it when shown. The same key works on the general News API.
 3. Set `API_BASE` to the Business News API base URL supplied with access and `PRISM_API_KEY` to the issued key. Keep the key private and out of public application code.
 
